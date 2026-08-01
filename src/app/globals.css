@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #1e40af; /* Tailwind blue-800 */
+  --secondary: #3b82f6; /* Tailwind blue-500 */
+  --accent: #10b981; /* Tailwind emerald-500 */
+  --background: #f8fafc;
+  --foreground: #0f172a;
+}
+
+@theme {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+}
+
+@layer base {
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+}
