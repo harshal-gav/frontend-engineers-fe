@@ -1,0 +1,21 @@
+{
+  "company": "Viki",
+  "slug": "viki",
+  "careersUrl": "https://jobs.lever.co/viki",
+  "website": "https://viki.com",
+  "industry": "Technology",
+  "atsType": "lever",
+  "boardUrl": "https://jobs.lever.co/viki",
+  "selectors": {
+    "jobList": ".posting",
+    "jobTitle": ".posting-title h5",
+    "jobLocation": ".sort-by-location",
+    "jobDepartment": ".sort-by-team",
+    "jobLink": "a.posting-title"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

@@ -1,0 +1,21 @@
+{
+  "company": "Kiva",
+  "slug": "kiva",
+  "careersUrl": "https://jobs.lever.co/kiva",
+  "website": "https://kiva.com",
+  "industry": "Technology",
+  "atsType": "lever",
+  "boardUrl": "https://jobs.lever.co/kiva",
+  "selectors": {
+    "jobList": ".posting",
+    "jobTitle": ".posting-title h5",
+    "jobLocation": ".sort-by-location",
+    "jobDepartment": ".sort-by-team",
+    "jobLink": "a.posting-title"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

@@ -1,0 +1,21 @@
+{
+  "company": "Tubi",
+  "slug": "tubi",
+  "careersUrl": "https://jobs.lever.co/tubi",
+  "website": "https://tubi.com",
+  "industry": "Technology",
+  "atsType": "lever",
+  "boardUrl": "https://jobs.lever.co/tubi",
+  "selectors": {
+    "jobList": ".posting",
+    "jobTitle": ".posting-title h5",
+    "jobLocation": ".sort-by-location",
+    "jobDepartment": ".sort-by-team",
+    "jobLink": "a.posting-title"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

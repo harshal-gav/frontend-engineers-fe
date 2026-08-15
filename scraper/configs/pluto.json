@@ -1,0 +1,21 @@
+{
+  "company": "Pluto",
+  "slug": "pluto",
+  "careersUrl": "https://jobs.lever.co/pluto",
+  "website": "https://pluto.com",
+  "industry": "Technology",
+  "atsType": "lever",
+  "boardUrl": "https://jobs.lever.co/pluto",
+  "selectors": {
+    "jobList": ".posting",
+    "jobTitle": ".posting-title h5",
+    "jobLocation": ".sort-by-location",
+    "jobDepartment": ".sort-by-team",
+    "jobLink": "a.posting-title"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

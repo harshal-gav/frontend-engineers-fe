@@ -1,17 +1,17 @@
 {
   "company": "Kraken",
   "slug": "kraken",
-  "careersUrl": "https://jobs.lever.co/kraken",
+  "careersUrl": "https://boards.greenhouse.io/kraken",
   "website": "https://kraken.com",
   "industry": "Technology",
-  "atsType": "lever",
-  "boardUrl": "https://jobs.lever.co/kraken",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/kraken",
   "selectors": {
-    "jobList": ".posting",
-    "jobTitle": ".posting-title h5",
-    "jobLocation": ".sort-by-location",
-    "jobDepartment": ".sort-by-team",
-    "jobLink": "a.posting-title"
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
   },
   "pagination": {
     "type": "none"

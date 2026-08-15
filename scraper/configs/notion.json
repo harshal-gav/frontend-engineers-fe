@@ -1,14 +1,21 @@
 {
   "company": "Notion",
   "slug": "notion",
-  "careersUrl": "https://www.notion.so/careers",
-  "website": "https://notion.so",
-  "industry": "Productivity",
-  "atsType": "ashby",
-  "boardUrl": "https://jobs.ashbyhq.com/notion",
-  "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
-  "crawlIntervalHours": 12,
-  "respectRobotsTxt": true,
-  "requestDelayMs": 1000,
-  "pagination": { "type": "none" }
+  "careersUrl": "https://boards.greenhouse.io/notion",
+  "website": "https://notion.com",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/notion",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

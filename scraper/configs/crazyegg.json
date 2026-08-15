@@ -1,0 +1,21 @@
+{
+  "company": "Crazyegg",
+  "slug": "crazyegg",
+  "careersUrl": "https://jobs.lever.co/crazyegg",
+  "website": "https://crazyegg.com",
+  "industry": "Technology",
+  "atsType": "lever",
+  "boardUrl": "https://jobs.lever.co/crazyegg",
+  "selectors": {
+    "jobList": ".posting",
+    "jobTitle": ".posting-title h5",
+    "jobLocation": ".sort-by-location",
+    "jobDepartment": ".sort-by-team",
+    "jobLink": "a.posting-title"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

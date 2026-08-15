@@ -1,0 +1,21 @@
+{
+  "company": "Coursera",
+  "slug": "coursera",
+  "careersUrl": "https://boards.greenhouse.io/coursera",
+  "website": "https://coursera.com",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/coursera",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

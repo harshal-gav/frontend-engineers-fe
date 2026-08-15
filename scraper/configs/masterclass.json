@@ -1,0 +1,21 @@
+{
+  "company": "Masterclass",
+  "slug": "masterclass",
+  "careersUrl": "https://boards.greenhouse.io/masterclass",
+  "website": "https://masterclass.com",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/masterclass",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

@@ -92,8 +92,10 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
   const gradientIndex = job.company.name.charCodeAt(0) % gradients.length;
 
   return (
-    <Link
-      href={`/jobs/${job.id}`}
+    <a
+      href={job.applyUrl}
+      target="_blank"
+      rel="noopener noreferrer"
       className="block animate-fade-in-up"
       style={{ animationDelay: `${index * 60}ms` }}
     >
@@ -188,6 +190,6 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
           </div>
         </div>
       </div>
-    </Link>
+    </a>
   );
 }

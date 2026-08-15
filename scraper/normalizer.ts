@@ -333,6 +333,7 @@ export interface RawScrapedJob {
 }
 
 export interface NormalizedJob {
+  id: string;
   title: string;
   applyUrl: string;
   description: string | null;
@@ -390,7 +391,10 @@ export function normalizeJob(
     }
   }
 
+  const sourceHash = generateSourceHash(companyId, raw.title, raw.location || '', postedAt);
+  
   return {
+    id: sourceHash,
     title: raw.title.trim(),
     applyUrl: raw.url,
     description: raw.description?.trim() || null,
@@ -406,6 +410,6 @@ export function normalizeJob(
     employmentType: inferEmploymentType(fullText),
     department: raw.department?.trim() || null,
     postedAt,
-    sourceHash: generateSourceHash(companyId, raw.title, raw.location || '', postedAt),
+    sourceHash,
   };
 }

@@ -85,7 +85,7 @@ export default function JobsClientPage() {
   useEffect(() => {
     const loadData = async () => {
       try {
-        const res = await fetch("/data/jobs.json");
+        const res = await fetch(`/data/jobs.json?t=${new Date().getTime()}`);
         if (res.ok) {
           const data = await res.json();
           // Strictly filter on the client side to guarantee only Remote Frontend jobs

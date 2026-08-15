@@ -1,21 +1,20 @@
 {
   "company": "Vercel",
   "slug": "vercel",
-  "careersUrl": "https://jobs.ashbyhq.com/vercel",
+  "careersUrl": "https://boards.greenhouse.io/vercel",
   "website": "https://vercel.com",
   "industry": "Technology",
-  "atsType": "ashby",
-  "boardUrl": "https://jobs.ashbyhq.com/vercel",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/vercel",
   "selectors": {
-    "jobList": ".job-post",
-    "jobTitle": "h3",
+    "jobList": ".opening",
+    "jobTitle": "a",
     "jobLocation": ".location",
     "jobDepartment": ".department",
     "jobLink": "a"
   },
   "pagination": {
-    "type": "scroll",
-    "maxScrolls": 5
+    "type": "none"
   },
   "crawlIntervalHours": 24,
   "respectRobotsTxt": true

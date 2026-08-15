@@ -1,0 +1,21 @@
+{
+  "company": "Webflow",
+  "slug": "webflow",
+  "careersUrl": "https://boards.greenhouse.io/webflow",
+  "website": "https://webflow.com",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/webflow",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

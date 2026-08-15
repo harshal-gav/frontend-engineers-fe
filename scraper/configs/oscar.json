@@ -1,0 +1,21 @@
+{
+  "company": "Oscar",
+  "slug": "oscar",
+  "careersUrl": "https://boards.greenhouse.io/oscar",
+  "website": "https://oscar.com",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/oscar",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

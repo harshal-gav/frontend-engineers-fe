@@ -1,0 +1,21 @@
+{
+  "company": "Fastly",
+  "slug": "fastly",
+  "careersUrl": "https://boards.greenhouse.io/fastly",
+  "website": "https://fastly.com",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/fastly",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

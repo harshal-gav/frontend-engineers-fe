@@ -1,0 +1,21 @@
+{
+  "company": "Auth0",
+  "slug": "auth0",
+  "careersUrl": "https://boards.greenhouse.io/auth0",
+  "website": "https://auth0.com",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/auth0",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

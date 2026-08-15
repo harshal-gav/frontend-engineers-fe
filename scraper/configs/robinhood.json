@@ -1,0 +1,21 @@
+{
+  "company": "Robinhood",
+  "slug": "robinhood",
+  "careersUrl": "https://boards.greenhouse.io/robinhood",
+  "website": "https://robinhood.com",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/robinhood",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}

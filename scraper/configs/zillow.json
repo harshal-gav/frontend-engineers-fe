@@ -1,0 +1,21 @@
+{
+  "company": "Zillow",
+  "slug": "zillow",
+  "careersUrl": "https://boards.greenhouse.io/zillow",
+  "website": "https://zillow.com",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/zillow",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
+}
