@@ -75,6 +75,7 @@ export default function JobsClientPage() {
   const [allJobs, setAllJobs] = useState<any[]>([]);
   const [jobs, setJobs] = useState<any[]>([]);
   const [loading, setLoading] = useState(true);
+  const [dataLoaded, setDataLoaded] = useState(false);
   const [totalJobs, setTotalJobs] = useState(0);
   const [page, setPage] = useState(1);
   const [hasMore, setHasMore] = useState(false);
@@ -87,10 +88,12 @@ export default function JobsClientPage() {
         const res = await fetch("/data/jobs.json");
         if (res.ok) {
           const data = await res.json();
-          setAllJobs(data);
+          setAllJobs(data || []);
         }
       } catch (e) {
         console.error("Failed to load jobs JSON", e);
+      } finally {
+        setDataLoaded(true);
       }
     };
     loadData();
@@ -98,8 +101,12 @@ export default function JobsClientPage() {
 
   // Filter & Paginate on client side whenever allJobs or filters or page changes
   useEffect(() => {
+    if (!dataLoaded) return;
+    
     if (allJobs.length === 0) {
-      if (!loading) setLoading(true);
+      setJobs([]);
+      setTotalJobs(0);
+      setLoading(false);
       return;
     }
     
