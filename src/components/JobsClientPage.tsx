@@ -217,6 +217,11 @@ export default function JobsClientPage() {
                 <span className="text-sm font-medium hidden sm:block text-[#00ffcc]">
                   {isSubscribed ? "Pro Member" : user.email}
                 </span>
+                {!isSubscribed && (
+                  <Link href="/pricing" className="btn-primary text-sm bg-[#00ffcc] text-black font-semibold rounded px-4 py-2 hover:bg-[#00e6b8]">
+                    Subscribe Now
+                  </Link>
+                )}
                 <button onClick={handleLogout} className="btn-secondary text-sm">
                   Log Out
                 </button>

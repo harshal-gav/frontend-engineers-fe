@@ -60,13 +60,21 @@ export default function PricingPage() {
             </li>
           </ul>
 
-          <button 
-            onClick={handleSubscribe} 
-            disabled={loading}
-            className="w-full btn-primary py-3 rounded text-black bg-[#00ffcc] font-bold text-lg disabled:opacity-50"
-          >
-            {loading ? "Redirecting to checkout..." : "Subscribe with LemonSqueezy"}
-          </button>
+          <div className="flex flex-col gap-3">
+            <button 
+              onClick={handleSubscribe} 
+              disabled={loading}
+              className="w-full btn-primary py-3 rounded text-black bg-[#00ffcc] font-bold text-lg disabled:opacity-50"
+            >
+              {loading ? "Redirecting to checkout..." : "Subscribe with LemonSqueezy"}
+            </button>
+            <button 
+              onClick={() => router.push("/")} 
+              className="w-full text-gray-400 hover:text-white py-3 transition-colors underline"
+            >
+              Continue to portal (Free Preview)
+            </button>
+          </div>
         </div>
       </div>
     </div>
