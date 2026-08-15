@@ -88,7 +88,17 @@ export default function JobsClientPage() {
         const res = await fetch("/data/jobs.json");
         if (res.ok) {
           const data = await res.json();
-          setAllJobs(data || []);
+          // Strictly filter on the client side to guarantee only Remote Frontend jobs
+          const strictlyFiltered = (data || []).filter((job: any) => {
+            const isRemote = job.remoteType === 'REMOTE' || 
+                            (job.location && /remote|anywhere/i.test(job.location));
+                            
+            const isFrontend = /\b(frontend|front-end|react|vue|angular|ui|ux|web developer)\b/i.test(job.title) ||
+                               (job.description && /\b(frontend|front-end|react|vue|angular)\b/i.test(job.description));
+                               
+            return isRemote && isFrontend;
+          });
+          setAllJobs(strictlyFiltered);
         }
       } catch (e) {
         console.error("Failed to load jobs JSON", e);
