@@ -16,23 +16,63 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "FrontendEngineers.com — Remote Frontend Jobs",
-  description:
-    "Discover the best remote frontend jobs for React, Vue, Angular, and UI/UX Engineers. Work from anywhere.",
+  metadataBase: new URL("https://frontendengineers.com"),
+  title: {
+    default: "FrontendEngineers.com — Premium Remote Frontend Jobs",
+    template: "%s | FrontendEngineers.com"
+  },
+  description: "The #1 premium job board for remote frontend developers. Discover hand-curated React, Vue, Angular, and UI/UX engineering jobs at top tech companies.",
   keywords: [
     "frontend jobs",
-    "remote jobs",
-    "react jobs",
-    "vue jobs",
-    "angular jobs",
-    "frontend developer",
-    "remote frontend",
+    "remote frontend jobs",
+    "react developer jobs",
+    "vue developer jobs",
+    "angular developer jobs",
+    "ui engineer jobs",
+    "ux engineer jobs",
+    "software engineer remote",
+    "web developer jobs remote",
+    "front end engineering",
+    "remote tech jobs",
+    "typescript jobs",
+    "javascript jobs",
+    "nextjs jobs"
   ],
+  authors: [{ name: "FrontendEngineers.com" }],
+  creator: "FrontendEngineers.com",
+  publisher: "FrontendEngineers.com",
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  alternates: {
+    canonical: "/",
+  },
   openGraph: {
-    title: "FrontendEngineers.com — Remote Frontend Jobs",
-    description:
-      "Discover the best remote frontend jobs for React, Vue, Angular, and UI/UX Engineers.",
+    title: "FrontendEngineers.com — Premium Remote Frontend Jobs",
+    description: "The #1 premium job board for remote frontend developers. Discover hand-curated React, Vue, Angular, and UI/UX engineering jobs at top tech companies.",
+    url: "https://frontendengineers.com",
+    siteName: "FrontendEngineers.com",
+    locale: "en_US",
     type: "website",
+    // images: [{ url: "/og-image.png", width: 1200, height: 630 }], // Note: upload an og-image.png to /public for this to work
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "FrontendEngineers.com — Premium Remote Frontend Jobs",
+    description: "The #1 premium job board for remote frontend developers. Discover hand-curated React, Vue, Angular, and UI/UX engineering jobs at top tech companies.",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
   },
 };
 

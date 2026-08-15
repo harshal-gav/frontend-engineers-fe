@@ -326,10 +326,14 @@ export default function JobsClientPage() {
         </div>
       </main>
 
-      <footer
-        className="border-t py-8 text-center text-sm border-[#333] text-gray-500 bg-[#0a0a0a]"
-      >
-        <p>© 2024 FrontendEngineers.com. All rights reserved.</p>
+      <footer className="border-t py-8 border-[#333] bg-[#0a0a0a]">
+        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
+          <p>© 2026 FrontendEngineers.com. All rights reserved.</p>
+          <div className="flex gap-6 mt-4 md:mt-0">
+            <Link href="/privacy" className="hover:text-[#00ffcc] transition-colors">Privacy Policy</Link>
+            <Link href="/terms" className="hover:text-[#00ffcc] transition-colors">Terms of Service</Link>
+          </div>
+        </div>
       </footer>
     </>
   );

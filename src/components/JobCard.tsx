@@ -99,7 +99,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
       className="block animate-fade-in-up"
       style={{ animationDelay: `${index * 60}ms` }}
     >
-      <div className="glass-card p-5 cursor-pointer group">
+      <article className="glass-card p-5 cursor-pointer group hover:bg-[#111] transition-all">
         <div className="flex items-start gap-4">
           {/* Company Logo */}
           <div
@@ -189,7 +189,7 @@ export default function JobCard({ job, index = 0 }: { job: Job; index?: number }
             )}
           </div>
         </div>
-      </div>
+      </article>
     </a>
   );
 }
