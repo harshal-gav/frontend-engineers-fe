@@ -93,10 +93,10 @@ export default function JobsClientPage() {
             const isRemote = job.remoteType === 'REMOTE' || 
                             (job.location && /remote|anywhere/i.test(job.location));
                             
-            const isFrontend = /\b(frontend|front-end|react|vue|angular|ui|ux|web developer)\b/i.test(job.title) ||
-                               (job.description && /\b(frontend|front-end|react|vue|angular)\b/i.test(job.description));
+            const isRelevant = /\b(frontend|front-end|react|vue|angular|ui|ux|web|software|engineer|developer)\b/i.test(job.title) ||
+                               (job.description && /\b(frontend|front-end|react|vue|angular|software)\b/i.test(job.description));
                                
-            return isRemote && isFrontend;
+            return isRemote && isRelevant;
           });
           setAllJobs(strictlyFiltered);
         }

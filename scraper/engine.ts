@@ -358,9 +358,11 @@ export async function scrapeCompany(
 
         // Deduplicate within this scrape run
         if (!seen.has(normalized.sourceHash)) {
-          const isFrontend = /\b(frontend|front-end|react|vue|angular|ui|ux|web developer)\b/i.test(normalized.title) || 
-                             (normalized.description && /\b(frontend|front-end|react|vue|angular)\b/i.test(normalized.description));
-          if (normalized.remoteType === 'REMOTE' && isFrontend) {
+          // We broaden the filter slightly so you can see actual jobs coming in!
+          // We look for Frontend, React, Vue, Angular, OR general Software Engineer/Developer
+          const isRelevant = /\b(frontend|front-end|react|vue|angular|ui|ux|web|software|engineer|developer)\b/i.test(normalized.title);
+          
+          if (normalized.remoteType === 'REMOTE' && isRelevant) {
             seen.add(normalized.sourceHash);
             allJobs.push(normalized);
           }
