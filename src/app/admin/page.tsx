@@ -43,6 +43,11 @@ export default function AdminPage() {
         body: JSON.stringify({ password: "admin123" }),
       });
 
+      if (!res.ok) {
+        const errorData = await res.json().catch(() => ({}));
+        throw new Error(errorData.error || "Failed to start scraper. (Are you on production?)");
+      }
+
       if (!res.body) {
         throw new Error("No readable stream available.");
       }
@@ -63,7 +68,11 @@ export default function AdminPage() {
           if (line.startsWith("data: ")) {
             try {
               const data = JSON.parse(line.substring(6));
-              setLogs(prev => [...prev, data]);
+              setLogs(prev => {
+                const newLogs = [...prev, data];
+                // Keep only the last 300 logs to prevent browser crashes
+                return newLogs.length > 300 ? newLogs.slice(newLogs.length - 300) : newLogs;
+              });
               if (data.type === 'done') {
                 setLoading(false);
                 fetchJobs(); // Refresh jobs table

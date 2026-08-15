@@ -364,6 +364,13 @@ export async function scrapeCompany(
           
           if (normalized.remoteType === 'REMOTE' && isRelevant) {
             seen.add(normalized.sourceHash);
+            normalized.company = {
+              id: companyId,
+              name: config.company,
+              logoUrl: config.logoUrl || null,
+              industry: config.industry,
+              website: config.website
+            };
             allJobs.push(normalized);
           }
         }

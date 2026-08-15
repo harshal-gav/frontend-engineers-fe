@@ -349,6 +349,13 @@ export interface NormalizedJob {
   department: string | null;
   postedAt: Date | null;
   sourceHash: string;
+  company?: {
+    id: string;
+    name: string;
+    logoUrl: string | null;
+    industry: string | null;
+    website: string | null;
+  };
 }
 
 export function normalizeJob(
