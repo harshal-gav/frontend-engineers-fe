@@ -1,43 +1,86 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 
 export default function AdminPage() {
   const [password, setPassword] = useState("");
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [status, setStatus] = useState("");
+  const [logs, setLogs] = useState<{type: string, message: string}[]>([]);
   const [loading, setLoading] = useState(false);
+  const [jobs, setJobs] = useState<any[]>([]);
+  const logsEndRef = useRef<HTMLDivElement>(null);
 
   const handleLogin = (e: React.FormEvent) => {
     e.preventDefault();
     if (password === "admin123") {
       setIsLoggedIn(true);
+      fetchJobs();
     } else {
       alert("Invalid password");
     }
   };
 
+  const fetchJobs = async () => {
+    try {
+      const res = await fetch("/data/jobs.json?" + new Date().getTime());
+      if (res.ok) {
+        const data = await res.json();
+        setJobs(data || []);
+      }
+    } catch (e) {
+      console.error("Failed to load jobs", e);
+    }
+  };
+
   const handleScrape = async () => {
     setLoading(true);
-    setStatus("Scraping started... Please check your terminal for progress.");
+    setLogs([{ type: 'log', message: 'Connecting to scraper stream...' }]);
+    
     try {
       const res = await fetch("/api/admin/scrape", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ password: "admin123" }),
       });
-      const data = await res.json();
-      if (res.ok) {
-        setStatus(`Scraping complete! Found ${data.total} jobs.`);
-      } else {
-        setStatus(`Error: ${data.error}`);
+
+      if (!res.body) {
+        throw new Error("No readable stream available.");
       }
-    } catch (e) {
-      setStatus("Error triggering scraper.");
-    } finally {
+
+      const reader = res.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = "";
+
+      while (true) {
+        const { done, value } = await reader.read();
+        if (done) break;
+
+        buffer += decoder.decode(value, { stream: true });
+        const lines = buffer.split("\n\n");
+        buffer = lines.pop() || "";
+
+        for (const line of lines) {
+          if (line.startsWith("data: ")) {
+            try {
+              const data = JSON.parse(line.substring(6));
+              setLogs(prev => [...prev, data]);
+              if (data.type === 'done') {
+                setLoading(false);
+                fetchJobs(); // Refresh jobs table
+              }
+            } catch (err) {}
+          }
+        }
+      }
+    } catch (e: any) {
+      setLogs(prev => [...prev, { type: 'error', message: e.message || "Failed to stream logs" }]);
       setLoading(false);
     }
   };
+
+  useEffect(() => {
+    logsEndRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [logs]);
 
   if (!isLoggedIn) {
     return (
@@ -61,28 +104,76 @@ export default function AdminPage() {
 
   return (
     <div className="min-h-screen p-8 bg-[#0a0a0a] text-white">
-      <div className="max-w-4xl mx-auto space-y-8">
-        <h1 className="text-3xl font-bold text-[#00ffcc]">FrontendEngineers Admin</h1>
-        <div className="glass-card p-6">
-          <h2 className="text-xl mb-4">Remote Job Scraper</h2>
-          <p className="text-gray-400 mb-6">
-            Click the button below to start scraping Remote Frontend jobs. This will update the local <code>public/data/jobs.json</code> file.
-            <br/><br/>
-            <strong>Note:</strong> This scraper only runs locally. After scraping, commit and push your changes to Vercel to update the live site.
-          </p>
+      <div className="max-w-6xl mx-auto space-y-8">
+        <div className="flex justify-between items-center">
+          <h1 className="text-3xl font-bold text-[#00ffcc]">FrontendEngineers Admin</h1>
           <button 
             onClick={handleScrape} 
             disabled={loading}
-            className="btn-primary py-3 px-6 bg-[#00ffcc] text-black font-semibold rounded disabled:opacity-50"
+            className="btn-primary py-2 px-6 bg-[#00ffcc] text-black font-semibold rounded disabled:opacity-50 flex items-center gap-2"
           >
+            {loading && <span className="animate-spin inline-block w-4 h-4 border-2 border-black border-t-transparent rounded-full"></span>}
             {loading ? "Scraping in progress..." : "Run Scraper Now"}
           </button>
-          
-          {status && (
-            <div className="mt-6 p-4 rounded bg-black/50 border border-gray-700 text-[#00ffcc]">
-              {status}
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+          {/* Terminal Box */}
+          <div className="glass-card p-0 overflow-hidden flex flex-col h-[600px] border border-[#333]">
+            <div className="bg-[#111] p-3 border-b border-[#333] flex items-center gap-2">
+              <div className="flex gap-1.5">
+                <div className="w-3 h-3 rounded-full bg-red-500"></div>
+                <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
+                <div className="w-3 h-3 rounded-full bg-green-500"></div>
+              </div>
+              <span className="text-sm text-gray-400 font-mono ml-2">Live Scraper Logs</span>
             </div>
-          )}
+            <div className="p-4 flex-1 overflow-y-auto bg-black font-mono text-sm space-y-1">
+              {logs.length === 0 && <div className="text-gray-500 italic">Waiting for scraper to start...</div>}
+              {logs.map((log, i) => (
+                <div key={i} className={log.type === 'error' ? 'text-red-400' : log.message.includes('---') ? 'text-[#00ffcc]' : 'text-gray-300'}>
+                  {log.message}
+                </div>
+              ))}
+              <div ref={logsEndRef} />
+            </div>
+          </div>
+
+          {/* Database Viewer */}
+          <div className="glass-card p-6 h-[600px] flex flex-col border border-[#333]">
+            <h2 className="text-xl mb-4 font-semibold text-white">Current Database ({jobs.length} jobs)</h2>
+            <div className="flex-1 overflow-y-auto">
+              <table className="w-full text-left text-sm text-gray-400">
+                <thead className="text-xs uppercase bg-[#111] text-gray-500 sticky top-0">
+                  <tr>
+                    <th className="px-4 py-3 rounded-tl-lg">Job Title</th>
+                    <th className="px-4 py-3">Location</th>
+                    <th className="px-4 py-3 rounded-tr-lg">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {jobs.map((job, i) => (
+                    <tr key={i} className="border-b border-[#222] hover:bg-[#111] transition-colors">
+                      <td className="px-4 py-3 font-medium text-white max-w-[200px] truncate" title={job.title}>
+                        {job.title}
+                      </td>
+                      <td className="px-4 py-3">{job.location || 'Remote'}</td>
+                      <td className="px-4 py-3">
+                        <a href={job.applyUrl} target="_blank" rel="noopener noreferrer" className="text-[#00ffcc] hover:underline">
+                          Link
+                        </a>
+                      </td>
+                    </tr>
+                  ))}
+                  {jobs.length === 0 && (
+                    <tr>
+                      <td colSpan={3} className="text-center py-8 text-gray-500">No jobs found in database.</td>
+                    </tr>
+                  )}
+                </tbody>
+              </table>
+            </div>
+          </div>
         </div>
       </div>
     </div>

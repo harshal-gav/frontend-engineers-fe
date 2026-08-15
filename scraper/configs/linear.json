@@ -1,11 +1,11 @@
 {
-  "company": "Vercel",
-  "slug": "vercel",
-  "careersUrl": "https://jobs.ashbyhq.com/vercel",
-  "website": "https://vercel.com",
+  "company": "Linear",
+  "slug": "linear",
+  "careersUrl": "https://jobs.ashbyhq.com/linear",
+  "website": "https://linear.com",
   "industry": "Technology",
   "atsType": "ashby",
-  "boardUrl": "https://jobs.ashbyhq.com/vercel",
+  "boardUrl": "https://jobs.ashbyhq.com/linear",
   "selectors": {
     "jobList": ".job-post",
     "jobTitle": "h3",
