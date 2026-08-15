@@ -1,0 +1,14 @@
+{
+  "company": "Notion",
+  "slug": "notion",
+  "careersUrl": "https://www.notion.so/careers",
+  "website": "https://notion.so",
+  "industry": "Productivity",
+  "atsType": "ashby",
+  "boardUrl": "https://jobs.ashbyhq.com/notion",
+  "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/4/45/Notion_app_logo.png",
+  "crawlIntervalHours": 12,
+  "respectRobotsTxt": true,
+  "requestDelayMs": 1000,
+  "pagination": { "type": "none" }
+}

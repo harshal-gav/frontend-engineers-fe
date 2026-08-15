@@ -1,0 +1,14 @@
+{
+  "company": "Figma",
+  "slug": "figma",
+  "careersUrl": "https://www.figma.com/careers/",
+  "website": "https://figma.com",
+  "industry": "Design",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/figma",
+  "logoUrl": "https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg",
+  "crawlIntervalHours": 12,
+  "respectRobotsTxt": true,
+  "requestDelayMs": 1000,
+  "pagination": { "type": "none" }
+}

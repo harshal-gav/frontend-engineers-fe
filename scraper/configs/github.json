@@ -1,0 +1,24 @@
+{
+  "company": "GitHub",
+  "slug": "github",
+  "careersUrl": "https://github.com/about/careers",
+  "website": "https://github.com",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/github",
+  "logoUrl": "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 12,
+  "respectRobotsTxt": true,
+  "requestDelayMs": 1500,
+  "userAgentRotation": true
+}

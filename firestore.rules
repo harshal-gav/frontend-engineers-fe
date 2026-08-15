@@ -1,0 +1,45 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Allow anyone to submit contact forms (write-only)
+    // Checks that name, email, and message exist and are valid sizes
+    match /contacts/{docId} {
+      allow create: if request.resource.data.keys().hasAll(['name', 'email', 'message'])
+                    && request.resource.data.email is string
+                    && request.resource.data.email.size() > 0
+                    && request.resource.data.message.size() < 5000;
+      allow read, update, delete: if false;
+    }
+
+    // Allow anyone to subscribe to newsletter (write-only)
+    match /newsletter_subscribers/{docId} {
+      allow create: if request.resource.data.keys().hasAll(['email'])
+                    && request.resource.data.email is string
+                    && request.resource.data.email.size() > 0;
+      allow read, update, delete: if false;
+    }
+
+    // ----------------------------------------------------------------------
+    // SUBSCRIPTIONS (Written by LemonSqueezy Webhook API)
+    // ----------------------------------------------------------------------
+    match /users/{uid} {
+      // Users can only read their own profile document
+      allow read: if request.auth != null && request.auth.uid == uid;
+      allow write: if false; // Only written by the backend if needed
+      
+      match /subscriptions/{id} {
+        // Users can only READ their subscriptions (to see if they are active)
+        // Only the Webhook API (which uses Admin SDK) can create/update these
+        allow read: if request.auth != null && request.auth.uid == uid;
+        allow write: if false; 
+      }
+    }
+
+    // Block everything else
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

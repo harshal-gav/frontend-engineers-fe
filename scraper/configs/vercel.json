@@ -1,0 +1,24 @@
+{
+  "company": "Vercel",
+  "slug": "vercel",
+  "careersUrl": "https://vercel.com/careers",
+  "website": "https://vercel.com",
+  "industry": "Technology",
+  "atsType": "ashby",
+  "boardUrl": "https://jobs.ashbyhq.com/vercel",
+  "logoUrl": "https://assets.vercel.com/image/upload/v1588805858/repositories/vercel/logo.png",
+  "selectors": {
+    "jobList": "._container_1ipy8_1, [class*='posting'], a[href*='/jobs/']",
+    "jobTitle": "h3, [class*='title'], [class*='name']",
+    "jobLocation": "[class*='location'], [class*='subtitle']",
+    "jobDepartment": "[class*='department'], [class*='team']",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 12,
+  "respectRobotsTxt": true,
+  "requestDelayMs": 1500,
+  "userAgentRotation": true
+}

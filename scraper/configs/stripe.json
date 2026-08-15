@@ -1,0 +1,26 @@
+{
+  "company": "Stripe",
+  "slug": "stripe",
+  "careersUrl": "https://stripe.com/jobs/search",
+  "website": "https://stripe.com",
+  "industry": "Fintech",
+  "atsType": "custom",
+  "boardUrl": "https://stripe.com/jobs/search",
+  "logoUrl": "https://images.stripeassets.com/fzn2n1nzq965/HTTOloNPhisV9P4hlMPNA/cacf1bb88b9fc492dfad34378d844280/Stripe_icon_-_square.svg",
+  "selectors": {
+    "jobList": ".careers-role-result",
+    "jobTitle": ".careers-role-result__title",
+    "jobLocation": ".careers-role-result__metadata-location",
+    "jobDepartment": ".careers-role-result__metadata-team",
+    "jobLink": ".careers-role-result__title"
+  },
+  "pagination": {
+    "type": "scroll",
+    "maxScrolls": 10,
+    "scrollDelayMs": 1500
+  },
+  "crawlIntervalHours": 12,
+  "respectRobotsTxt": true,
+  "requestDelayMs": 2000,
+  "userAgentRotation": true
+}
