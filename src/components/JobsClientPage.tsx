@@ -159,14 +159,18 @@ export default function JobsClientPage() {
 
     setTotalJobs(filtered.length);
     
-    // Pagination
-    const limit = 20;
-    const paginated = filtered.slice(0, page * limit);
+    // Pagination (10 per page)
+    const limit = 10;
+    const startIndex = (page - 1) * limit;
+    const paginated = filtered.slice(startIndex, startIndex + limit);
     setJobs(paginated);
-    setHasMore(paginated.length < filtered.length);
+    setHasMore(startIndex + limit < filtered.length);
     
     setLoading(false);
   }, [allJobs, filters, page]);
+
+  // Check if user has active filters
+  const hasActiveFilters = filters.q !== "" || filters.location !== "" || filters.remoteType.length > 0 || filters.experienceLevel.length > 0 || filters.employmentType.length > 0 || filters.sortBy !== "newest";
 
   const syncFiltersToUrl = useCallback(
     (f: FilterState) => {
@@ -256,10 +260,11 @@ export default function JobsClientPage() {
           <div className="hero-search flex justify-center w-full max-w-2xl mx-auto mb-6 relative">
             <input
               type="text"
-              placeholder="Search React, Senior, etc..."
+              placeholder={isSubscribed ? "Search React, Senior, etc..." : "Subscribe to unlock search & filters..."}
+              disabled={!isSubscribed}
               value={filters.q}
               onChange={(e) => handleFilterChange({ ...filters, q: e.target.value })}
-              className="w-full bg-[#111] border border-[#333] rounded-full py-4 pl-6 pr-32 text-white outline-none focus:border-[#00ffcc] transition-colors"
+              className="w-full bg-[#111] border border-[#333] rounded-full py-4 pl-6 pr-32 text-white outline-none focus:border-[#00ffcc] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
             />
           </div>
         </form>
@@ -290,11 +295,17 @@ export default function JobsClientPage() {
               <div className="flex flex-col gap-3">
                 {loading && jobs.length === 0
                   ? Array.from({ length: 6 }).map((_, i) => <JobCardSkeleton key={i} />)
-                  : jobs.map((job, i) => (
-                      <div key={job.id || i} className={`relative ${!isSubscribed && i > 2 ? "blur-sm pointer-events-none opacity-50" : ""}`}>
-                        <JobCard job={job} index={i} />
-                      </div>
-                    ))}
+                  : jobs.map((job, i) => {
+                      // Paywall Logic: 
+                      // If not subscribed, they can only see the first 5 jobs on the FIRST page with NO filters.
+                      const isBlurred = !isSubscribed && (hasActiveFilters || page > 1 || i >= 5);
+                      
+                      return (
+                        <div key={job.id || i} className={`relative ${isBlurred ? "blur-sm pointer-events-none opacity-50 select-none" : ""}`}>
+                          <JobCard job={job} index={i} />
+                        </div>
+                      );
+                    })}
               </div>
               
               {!isSubscribed && jobs.length > 3 && (
@@ -320,10 +331,25 @@ export default function JobsClientPage() {
               </div>
             )}
 
-            {isSubscribed && hasMore && !loading && (
-              <div className="text-center mt-8">
-                <button className="btn-secondary text-[#00ffcc] border border-[#00ffcc] px-6 py-2 rounded" onClick={loadMore}>
-                  Load More Jobs
+            {/* Pagination Controls */}
+            {!loading && totalJobs > 0 && (
+              <div className="flex items-center justify-between mt-8 border-t border-[#333] pt-6">
+                <button 
+                  onClick={() => setPage(p => Math.max(1, p - 1))}
+                  disabled={page === 1}
+                  className="btn-secondary px-4 py-2 text-sm disabled:opacity-30 disabled:cursor-not-allowed"
+                >
+                  &larr; Previous Page
+                </button>
+                <span className="text-gray-400 text-sm">
+                  Page <strong className="text-white">{page}</strong> of {Math.ceil(totalJobs / 10)}
+                </span>
+                <button 
+                  onClick={() => setPage(p => p + 1)}
+                  disabled={!hasMore}
+                  className="btn-secondary px-4 py-2 text-sm disabled:opacity-30 disabled:cursor-not-allowed"
+                >
+                  Next Page &rarr;
                 </button>
               </div>
             )}
