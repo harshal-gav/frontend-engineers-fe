@@ -1,5 +1,21 @@
 {
-  "companyName": "Anthropic",
+  "company": "Anthropic",
+  "slug": "anthropic",
   "careersUrl": "https://boards.greenhouse.io/anthropic",
-  "atsType": "greenhouse"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/anthropic",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

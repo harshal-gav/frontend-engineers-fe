@@ -1,5 +1,21 @@
 {
-  "companyName": "Bluebeam",
+  "company": "Bluebeam",
+  "slug": "bluebeam",
   "careersUrl": "https://boards.greenhouse.io/bluebeam",
-  "atsType": "greenhouse"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/bluebeam",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

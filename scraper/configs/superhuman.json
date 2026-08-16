@@ -1,5 +1,21 @@
 {
-  "companyName": "Superhuman",
+  "company": "Superhuman",
+  "slug": "superhuman",
   "careersUrl": "https://boards.greenhouse.io/superhuman",
-  "atsType": "greenhouse"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/superhuman",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

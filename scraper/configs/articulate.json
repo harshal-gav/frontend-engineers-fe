@@ -1,5 +1,21 @@
 {
-  "companyName": "Articulate",
+  "company": "Articulate",
+  "slug": "articulate",
   "careersUrl": "https://jobs.lever.co/articulate",
-  "atsType": "lever"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "lever",
+  "boardUrl": "https://jobs.lever.co/articulate",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

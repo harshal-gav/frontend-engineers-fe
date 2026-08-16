@@ -1,5 +1,21 @@
 {
-  "companyName": "Together AI",
+  "company": "Together AI",
+  "slug": "together",
   "careersUrl": "https://jobs.ashbyhq.com/together",
-  "atsType": "ashby"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "ashby",
+  "boardUrl": "https://jobs.ashbyhq.com/together",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

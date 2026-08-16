@@ -1,5 +1,21 @@
 {
-  "companyName": "Y Combinator",
+  "company": "Y Combinator",
+  "slug": "ycombinator",
   "careersUrl": "https://jobs.ashbyhq.com/ycombinator",
-  "atsType": "ashby"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "ashby",
+  "boardUrl": "https://jobs.ashbyhq.com/ycombinator",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

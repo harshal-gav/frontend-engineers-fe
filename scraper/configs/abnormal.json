@@ -1,5 +1,21 @@
 {
-  "companyName": "Abnormal Security",
+  "company": "Abnormal Security",
+  "slug": "abnormal",
   "careersUrl": "https://boards.greenhouse.io/abnormal",
-  "atsType": "greenhouse"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/abnormal",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

@@ -1,5 +1,21 @@
 {
-  "companyName": "Tome",
+  "company": "Tome",
+  "slug": "tome",
   "careersUrl": "https://jobs.ashbyhq.com/tome",
-  "atsType": "ashby"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "ashby",
+  "boardUrl": "https://jobs.ashbyhq.com/tome",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

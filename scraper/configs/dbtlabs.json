@@ -1,5 +1,21 @@
 {
-  "companyName": "dbt Labs",
+  "company": "dbt Labs",
+  "slug": "dbtlabs",
   "careersUrl": "https://jobs.lever.co/dbtlabs",
-  "atsType": "lever"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "lever",
+  "boardUrl": "https://jobs.lever.co/dbtlabs",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

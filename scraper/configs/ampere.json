@@ -1,5 +1,21 @@
 {
-  "companyName": "Ampere",
+  "company": "Ampere",
+  "slug": "ampere",
   "careersUrl": "https://boards.greenhouse.io/ampere",
-  "atsType": "greenhouse"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "greenhouse",
+  "boardUrl": "https://boards.greenhouse.io/ampere",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

@@ -353,9 +353,25 @@ async function generateConfigs() {
     }
 
     const config = {
-      companyName: company.name,
+      company: company.name,
+      slug: company.id,
       careersUrl,
-      atsType: company.atsType
+      website: '',
+      industry: 'Technology',
+      atsType: company.atsType,
+      boardUrl: careersUrl,
+      selectors: {
+        jobList: '.opening',
+        jobTitle: 'a',
+        jobLocation: '.location',
+        jobDepartment: '.department',
+        jobLink: 'a'
+      },
+      pagination: {
+        type: 'none'
+      },
+      crawlIntervalHours: 24,
+      respectRobotsTxt: true
     };
 
     fs.writeFileSync(configPath, JSON.stringify(config, null, 2));

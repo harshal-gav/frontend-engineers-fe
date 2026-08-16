@@ -1,5 +1,21 @@
 {
-  "companyName": "Midjourney",
+  "company": "Midjourney",
+  "slug": "midjourney",
   "careersUrl": "https://jobs.ashbyhq.com/midjourney",
-  "atsType": "ashby"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "ashby",
+  "boardUrl": "https://jobs.ashbyhq.com/midjourney",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

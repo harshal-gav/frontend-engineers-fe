@@ -1,5 +1,21 @@
 {
-  "companyName": "Resend",
+  "company": "Resend",
+  "slug": "resend",
   "careersUrl": "https://jobs.ashbyhq.com/resend",
-  "atsType": "ashby"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "ashby",
+  "boardUrl": "https://jobs.ashbyhq.com/resend",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

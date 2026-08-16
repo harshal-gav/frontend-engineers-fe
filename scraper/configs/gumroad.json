@@ -1,5 +1,21 @@
 {
-  "companyName": "Gumroad",
+  "company": "Gumroad",
+  "slug": "gumroad",
   "careersUrl": "https://jobs.ashbyhq.com/gumroad",
-  "atsType": "ashby"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "ashby",
+  "boardUrl": "https://jobs.ashbyhq.com/gumroad",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }

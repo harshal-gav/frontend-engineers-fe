@@ -1,5 +1,21 @@
 {
-  "companyName": "Gopuff",
+  "company": "Gopuff",
+  "slug": "gopuff",
   "careersUrl": "https://jobs.ashbyhq.com/gopuff",
-  "atsType": "ashby"
+  "website": "",
+  "industry": "Technology",
+  "atsType": "ashby",
+  "boardUrl": "https://jobs.ashbyhq.com/gopuff",
+  "selectors": {
+    "jobList": ".opening",
+    "jobTitle": "a",
+    "jobLocation": ".location",
+    "jobDepartment": ".department",
+    "jobLink": "a"
+  },
+  "pagination": {
+    "type": "none"
+  },
+  "crawlIntervalHours": 24,
+  "respectRobotsTxt": true
 }
