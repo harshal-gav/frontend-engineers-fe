@@ -35,6 +35,11 @@ export default function TermsPage() {
             <h2 className="text-2xl font-semibold text-white mb-3">5. Changes to Terms</h2>
             <p className="leading-relaxed">We reserve the right to modify or replace these Terms at any time. By continuing to access or use our service after those revisions become effective, you agree to be bound by the revised terms.</p>
           </section>
+          
+          <section>
+            <h2 className="text-2xl font-semibold text-white mb-3">6. Contact Us</h2>
+            <p className="leading-relaxed">If you have any questions about these Terms, please contact us at <a href="mailto:frontendengineersupport@gmail.com" className="text-[#00ffcc] hover:underline">frontendengineersupport@gmail.com</a>.</p>
+          </section>
         </div>
       </div>
     </div>

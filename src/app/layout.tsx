@@ -20,10 +20,10 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://frontendengineers.com"),
   title: {
-    default: "FrontendEngineers.com — Premium Remote Frontend Jobs",
+    default: "Remote Frontend Developer Jobs | Work from Anywhere",
     template: "%s | FrontendEngineers.com"
   },
-  description: "The #1 premium job board for remote frontend developers. Discover hand-curated React, Vue, Angular, and UI/UX engineering jobs at top tech companies.",
+  description: "Find premium remote frontend developer jobs. Discover curated work from anywhere frontend jobs for React, Vue, and Angular engineers at top tech companies.",
   keywords: [
     "frontend jobs",
     "remote frontend jobs",
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "FrontendEngineers.com — Premium Remote Frontend Jobs",
-    description: "The #1 premium job board for remote frontend developers. Discover hand-curated React, Vue, Angular, and UI/UX engineering jobs at top tech companies.",
+    title: "Remote Frontend Developer Jobs | Work from Anywhere",
+    description: "Find premium remote frontend developer jobs. Discover curated work from anywhere frontend jobs for React, Vue, and Angular engineers at top tech companies.",
     url: "https://frontendengineers.com",
     siteName: "FrontendEngineers.com",
     locale: "en_US",
@@ -62,8 +62,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "FrontendEngineers.com — Premium Remote Frontend Jobs",
-    description: "The #1 premium job board for remote frontend developers. Discover hand-curated React, Vue, Angular, and UI/UX engineering jobs at top tech companies.",
+    title: "Remote Frontend Developer Jobs | Work from Anywhere",
+    description: "Find premium remote frontend developer jobs. Discover curated work from anywhere frontend jobs for React, Vue, and Angular engineers at top tech companies.",
   },
   robots: {
     index: true,

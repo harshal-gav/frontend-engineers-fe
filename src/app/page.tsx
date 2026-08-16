@@ -61,9 +61,62 @@ export default async function HomePage() {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       )}
-      <Suspense fallback={<div className="min-h-screen" />}>
+      <Suspense fallback={
+        <div className="min-h-screen bg-[#0a0a0a] flex flex-col">
+          <header className="border-b border-[#333] bg-[#0a0a0a] sticky top-0 z-20">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
+              <div className="flex items-center gap-2 sm:gap-3">
+                <div className="w-9 h-9 rounded-lg flex items-center justify-center text-black font-bold text-sm bg-[#00ffcc]">
+                  FE
+                </div>
+                <span className="text-base sm:text-lg font-bold text-white tracking-tight">
+                  <span className="hidden sm:inline">FrontendEngineers.com</span>
+                  <span className="sm:hidden">FrontendEng</span>
+                </span>
+              </div>
+              <div className="w-24 h-10 skeleton rounded" />
+            </div>
+          </header>
+          <section className="pt-8 sm:pt-12 pb-6 sm:pb-8 px-4 text-center bg-[#0a0a0a]">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-4 leading-tight text-white">
+              Find the Best{" "}
+              <span className="text-[#00ffcc]">Remote Frontend Developer Jobs</span>
+            </h1>
+            <p className="text-sm sm:text-base max-w-xl mx-auto mb-6 sm:mb-8 text-gray-400">
+              Discover curated work from anywhere frontend jobs for React, Vue, Angular, and UI/UX Engineers.
+            </p>
+            <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">
+              <div className="w-full bg-[#111] border border-[#333] rounded-full h-12 sm:h-[54px] skeleton" />
+            </div>
+          </section>
+        </div>
+      }>
         <JobsClientPage />
       </Suspense>
+
+      <section className="bg-[#111] border-t border-[#333] py-16 px-4">
+        <div className="max-w-4xl mx-auto prose prose-invert prose-p:text-gray-400 prose-headings:text-white">
+          <h2 className="text-3xl font-bold mb-6">About FrontendEngineers.com</h2>
+          <p className="mb-4 text-gray-400">
+            Welcome to the premier destination for <strong>remote frontend developer jobs</strong>. Whether you're a junior developer looking for <strong>remote frontend jobs for freshers</strong> or an experienced professional seeking <strong>senior remote frontend developer jobs</strong>, our highly curated job board connects you with top remote tech companies hiring frontend talent globally.
+          </p>
+          <p className="mb-4 text-gray-400">
+            We specialize in providing <strong>fully remote developer jobs</strong> that allow you to <strong>work from anywhere</strong>. We manually vet and verify listings to bring you the best <strong>remote react developer jobs</strong>, <strong>remote vue developer jobs</strong>, and <strong>remote angular developer jobs</strong>. Say goodbye to irrelevant listings and focus exclusively on high-quality <strong>remote UI/UX engineer jobs</strong> and <strong>remote typescript jobs</strong>.
+          </p>
+          <h3 className="text-xl font-semibold mt-8 mb-4 text-white">Why choose our remote tech job board?</h3>
+          <p className="mb-8 text-gray-400">
+            Finding genuine <strong>async remote frontend jobs</strong> and legitimate <strong>remote frontend contract jobs</strong> can be challenging. We save you time by filtering out hybrid roles disguised as remote, so you can focus on what you do best: building amazing user interfaces. If you're wondering <em>how to find remote frontend developer jobs</em> with no hassle, you're in the right place. Start browsing our curated <strong>work from anywhere frontend jobs</strong> today.
+          </p>
+        </div>
+      </section>
+      <footer className="bg-[#0a0a0a] border-t border-[#333] py-8 text-center text-gray-500">
+        <p>Contact us: <a href="mailto:frontendengineersupport@gmail.com" className="text-[#00ffcc] hover:underline">frontendengineersupport@gmail.com</a></p>
+        <div className="flex justify-center gap-4 mt-4 text-sm">
+          <a href="/terms" className="hover:text-[#00ffcc]">Terms of Service</a>
+          <a href="/privacy" className="hover:text-[#00ffcc]">Privacy Policy</a>
+        </div>
+        <p className="mt-4 text-sm">&copy; {new Date().getFullYear()} FrontendEngineers.com. All rights reserved.</p>
+      </footer>
     </>
   );
 }

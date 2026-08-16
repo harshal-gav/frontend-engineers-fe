@@ -33,7 +33,7 @@ export default function PrivacyPage() {
           
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">5. Contact Us</h2>
-            <p className="leading-relaxed">If you have any questions about this Privacy Policy, please contact us at privacy@frontendengineers.com.</p>
+            <p className="leading-relaxed">If you have any questions about this Privacy Policy, please contact us at <a href="mailto:frontendengineersupport@gmail.com" className="text-[#00ffcc] hover:underline">frontendengineersupport@gmail.com</a>.</p>
           </section>
         </div>
       </div>
