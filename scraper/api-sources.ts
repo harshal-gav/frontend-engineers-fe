@@ -14,7 +14,7 @@
  *  6. FindWork        — 500+ companies, free API
  */
 
-import { type NormalizedJob } from './normalizer';
+import { type NormalizedJob, type EmploymentType } from './normalizer';
 import crypto from 'crypto';
 
 function sleep(ms: number): Promise<void> {
@@ -36,7 +36,7 @@ function inferExperienceLevel(title: string): 'ENTRY' | 'MID' | 'SENIOR' | 'LEAD
   return null;
 }
 
-function inferEmploymentType(text: string): string {
+function inferEmploymentType(text: string): EmploymentType {
   if (/\b(intern(ship)?)\b/i.test(text)) return 'INTERNSHIP';
   if (/\b(contract(or)?|freelance)\b/i.test(text)) return 'CONTRACT';
   if (/\b(part[- ]?time)\b/i.test(text)) return 'PART_TIME';
@@ -191,7 +191,7 @@ async function fetchRemotive(log: LogFn): Promise<ApiSourceResult> {
         salaryMax: null,
         currency: 'USD',
         experienceLevel: inferExperienceLevel(title),
-        employmentType: raw.job_type === 'contract' ? 'CONTRACT' : raw.job_type === 'part_time' ? 'PART_TIME' : 'FULL_TIME',
+        employmentType: (raw.job_type === 'contract' ? 'CONTRACT' : raw.job_type === 'part_time' ? 'PART_TIME' : 'FULL_TIME') as EmploymentType,
         department: raw.category || null,
         postedAt: raw.publication_date ? new Date(raw.publication_date) : null,
         sourceHash: hash,
@@ -331,7 +331,7 @@ async function fetchJobicy(log: LogFn): Promise<ApiSourceResult> {
         salaryMax: raw.annualSalaryMax ? parseInt(raw.annualSalaryMax) : null,
         currency: raw.salaryCurrency || 'USD',
         experienceLevel: inferExperienceLevel(title),
-        employmentType: raw.jobType === 'contract' ? 'CONTRACT' : 'FULL_TIME',
+        employmentType: (raw.jobType === 'contract' ? 'CONTRACT' : 'FULL_TIME') as EmploymentType,
         department: null,
         postedAt: raw.pubDate ? new Date(raw.pubDate) : null,
         sourceHash: hash,
@@ -476,7 +476,7 @@ async function fetchFindWork(log: LogFn): Promise<ApiSourceResult> {
             salaryMax: null,
             currency: 'USD',
             experienceLevel: inferExperienceLevel(title),
-            employmentType: raw.employment_type === 'contract' ? 'CONTRACT' : 'FULL_TIME',
+            employmentType: (raw.employment_type === 'contract' ? 'CONTRACT' : 'FULL_TIME') as EmploymentType,
             department: null,
             postedAt: raw.date_posted ? new Date(raw.date_posted) : null,
             sourceHash: hash,

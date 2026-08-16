@@ -15,7 +15,7 @@ interface NormalizedSalary {
 }
 
 type ExperienceLevel = 'ENTRY' | 'MID' | 'SENIOR' | 'LEAD' | null;
-type EmploymentType = 'FULL_TIME' | 'PART_TIME' | 'CONTRACT' | 'INTERNSHIP';
+export type EmploymentType = 'FULL_TIME' | 'PART_TIME' | 'CONTRACT' | 'INTERNSHIP';
 
 // ─── Common city → country mappings for quick lookups ──────────────
 const CITY_COUNTRY_MAP: Record<string, { state?: string; country: string }> = {
