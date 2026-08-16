@@ -22,7 +22,11 @@ export default function AdminPage() {
 
   const fetchJobs = async () => {
     try {
-      const res = await fetch("/data/jobs.json?" + new Date().getTime());
+      const res = await fetch("/api/admin/jobs", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ password: "admin123" }),
+      });
       if (res.ok) {
         const data = await res.json();
         setJobs(data || []);

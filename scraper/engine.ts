@@ -477,7 +477,7 @@ if (require.main === module) {
     }
 
     if (!dryRun) {
-      const outputPath = path.join(process.cwd(), 'public', 'data', 'jobs.json');
+      const outputPath = path.join(process.cwd(), 'data', 'jobs.json');
       let existingJobs: NormalizedJob[] = [];
       try {
         if (fs.existsSync(outputPath)) {

@@ -2,7 +2,7 @@
 
 import { createContext, useContext, useEffect, useState } from "react";
 import { onAuthStateChanged, User } from "firebase/auth";
-import { collection, query, where, onSnapshot } from "firebase/firestore";
+import { doc, onSnapshot } from "firebase/firestore";
 import { auth, db } from "@/lib/firebase";
 
 interface AuthContextType {
@@ -27,23 +27,36 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       setUser(firebaseUser);
       
       if (firebaseUser) {
-        // The Firebase Stripe Extension manages a 'subscriptions' subcollection.
-        // We listen for any subscription that is 'active' or 'trialing'.
-        const subscriptionsRef = collection(db, "users", firebaseUser.uid, "subscriptions");
-        const q = query(
-          subscriptionsRef,
-          where("status", "in", ["trialing", "active"])
-        );
+        // Listen to the top-level user doc for the isPremium flag.
+        // This is a single-document read (fast, cheap) that matches
+        // the dual-write pattern used by the LemonSqueezy webhook.
+        const userDocRef = doc(db, "users", firebaseUser.uid);
 
-        const unsubscribeSub = onSnapshot(q, (snapshot) => {
-          setIsSubscribed(!snapshot.empty);
+        const unsubscribeDoc = onSnapshot(userDocRef, (snapshot) => {
+          if (snapshot.exists()) {
+            const data = snapshot.data();
+            const isPremium = data.isPremium === true;
+            const expiresAt = data.subscriptionExpiresAt;
+
+            // Check if the subscription has expired (belt-and-suspenders
+            // with the webhook's own expiry handling)
+            if (isPremium && expiresAt) {
+              const expiryDate = new Date(expiresAt);
+              setIsSubscribed(expiryDate > new Date());
+            } else {
+              setIsSubscribed(isPremium);
+            }
+          } else {
+            setIsSubscribed(false);
+          }
           setLoading(false);
         }, (error) => {
-          console.error("Error fetching subscriptions:", error);
+          console.error("Error fetching user doc:", error);
+          setIsSubscribed(false);
           setLoading(false);
         });
 
-        return () => unsubscribeSub();
+        return () => unsubscribeDoc();
       } else {
         setIsSubscribed(false);
         setLoading(false);

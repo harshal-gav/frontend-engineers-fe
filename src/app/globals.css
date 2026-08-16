@@ -448,10 +448,52 @@ body {
   font-weight: 700;
 }
 
-/* ─── Responsive ───────────────────────────────── */
-
 @media (max-width: 768px) {
   .filter-sidebar {
     position: static;
   }
 }
+
+/* ─── Filter Sidebar Content ──────────────────── */
+/* Used inside both the desktop sticky sidebar and mobile bottom sheet */
+
+.filter-sidebar-content .filter-section {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-card);
+}
+
+.filter-sidebar-content .filter-section:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.filter-sidebar-content .filter-section h3 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-secondary);
+  margin-bottom: 10px;
+}
+
+/* ─── iOS Safari Quirks ───────────────────────── */
+
+/* Fix 100vh on iOS (uses dvh where supported) */
+@supports (height: 100dvh) {
+  body {
+    min-height: 100dvh;
+  }
+}
+
+/* Disable tap highlight on iOS */
+* {
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Safe area padding for notch devices */
+.safe-area-bottom {
+  padding-bottom: env(safe-area-inset-bottom, 0px);
+}
+

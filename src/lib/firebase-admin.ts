@@ -23,3 +23,8 @@ export function getAdminDb() {
   }
   return admin.firestore();
 }
+
+export function getAdminAuth() {
+  getAdminDb(); // Ensure it's initialized
+  return admin.auth();
+}
