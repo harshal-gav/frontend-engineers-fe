@@ -76,6 +76,8 @@ export default function JobCard({
               src={job.company.logoUrl}
               alt={job.company.name}
               className="w-full h-full object-contain p-1.5"
+              width={48}
+              height={48}
               loading="lazy"
               onError={(e) => {
                 (e.target as HTMLImageElement).style.display = "none";

@@ -3,7 +3,7 @@
 import { useState, useEffect, useCallback, useMemo } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import Fuse, { type IFuseOptions } from "fuse.js";
+import type { IFuseOptions } from "fuse.js";
 import { useAuth } from "@/context/AuthContext";
 import { auth } from "@/lib/firebase";
 import { signOut } from "firebase/auth";
@@ -126,8 +126,17 @@ export default function JobsClientPage() {
     loadData();
   }, [user]);
 
-  // Initialize Fuse.js index
-  const fuse = useMemo(() => new Fuse(allJobs, FUSE_OPTIONS), [allJobs]);
+  // Lazy load Fuse.js index to improve initial page load performance
+  const [fuse, setFuse] = useState<any>(null);
+
+  useEffect(() => {
+    if (allJobs.length > 0 && isSubscribed) {
+      import("fuse.js").then((FuseModule) => {
+        const Fuse = FuseModule.default;
+        setFuse(new Fuse(allJobs, FUSE_OPTIONS));
+      });
+    }
+  }, [allJobs, isSubscribed]);
 
   // Compute facets from all jobs
   const facets = useMemo(() => computeFacets(allJobs), [allJobs]);
@@ -139,8 +148,8 @@ export default function JobsClientPage() {
     let filtered: Job[];
 
     // Use Fuse.js for text search, regular filtering for structured filters
-    if (filters.q && filters.q.length >= 2) {
-      filtered = fuse.search(filters.q).map((result) => result.item);
+    if (filters.q && filters.q.length >= 2 && fuse) {
+      filtered = fuse.search(filters.q).map((result: any) => result.item);
     } else {
       filtered = [...allJobs];
     }

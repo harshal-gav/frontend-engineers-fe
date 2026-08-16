@@ -91,6 +91,14 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
                 src={job.company.logoUrl}
                 alt={job.company.name}
                 className="w-full h-full object-contain p-2"
+                width={64}
+                height={64}
+                loading="lazy"
+                onError={(e) => {
+                  (e.target as HTMLImageElement).style.display = "none";
+                  (e.target as HTMLImageElement).parentElement!.textContent =
+                    (job.company?.name || "?")[0];
+                }}
               />
             ) : (
               (job.company?.name || "?")[0]
