@@ -6,12 +6,18 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "scrape": "npx tsx scraper/run-all.ts",
+    "scrape:dry": "npx tsx scraper/run-all.ts --dry-run",
+    "scrape:fast": "npx tsx scraper/run-all.ts --concurrency=5",
+    "scrape:single": "npx tsx scraper/engine.ts",
+    "scrape:clean": "npx tsx scraper/clean-existing-jobs.ts"
   },
   "dependencies": {
     "@vercel/analytics": "^2.0.1",
     "@vercel/speed-insights": "^2.0.0",
     "crypto-js": "^4.2.0",
+    "dotenv": "^17.4.2",
     "firebase": "^12.17.1",
     "firebase-admin": "^13.10.0",
     "fuse.js": "^7.5.0",

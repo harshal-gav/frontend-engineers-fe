@@ -1,7 +1,9 @@
 import { chromium, Browser, BrowserContext, Page } from 'playwright';
 import * as fs from 'fs';
 import * as path from 'path';
+import * as dotenv from 'dotenv';
 import { normalizeJob, type RawScrapedJob, type NormalizedJob } from './normalizer';
+import { filterJobsWithGemini } from './gemini-filter';
 
 // ─── Types ────────────────────────────────────────────────────────
 
@@ -42,6 +44,8 @@ export interface ScrapeResult {
   jobs: NormalizedJob[];
   errors: string[];
   totalFound: number;
+  totalScraped: number;
+  totalFilteredByGemini: number;
   duration: number;
 }
 
@@ -284,6 +288,7 @@ export async function scrapeCompany(
   companyId: string,
   options?: {
     dryRun?: boolean;
+    geminiApiKey?: string;
     onProgress?: (msg: string) => void;
   }
 ): Promise<ScrapeResult> {
@@ -296,6 +301,8 @@ export async function scrapeCompany(
 
   let browser: Browser | null = null;
   let allJobs: NormalizedJob[] = [];
+
+  let totalFilteredByGemini = 0;
 
   try {
     browser = await chromium.launch({
@@ -350,29 +357,25 @@ export async function scrapeCompany(
 
     log(`   📋 Extracted ${rawJobs.length} raw job listings`);
 
-    // Normalize all jobs
+    // Normalize all jobs (basic normalization first, filter remote only)
     const seen = new Set<string>();
+    const remoteJobs: NormalizedJob[] = [];
+    
     for (const raw of rawJobs) {
       try {
         const normalized = normalizeJob(raw, companyId);
 
         // Deduplicate within this scrape run
-        if (!seen.has(normalized.sourceHash)) {
-          // We broaden the filter slightly so you can see actual jobs coming in!
-          // We look for Frontend, React, Vue, Angular, OR general Software Engineer/Developer
-          const isRelevant = /\b(frontend|front-end|react|vue|angular|ui|ux|web|software|engineer|developer)\b/i.test(normalized.title);
-          
-          if (normalized.remoteType === 'REMOTE' && isRelevant) {
-            seen.add(normalized.sourceHash);
-            normalized.company = {
-              id: companyId,
-              name: config.company,
-              logoUrl: config.logoUrl || null,
-              industry: config.industry,
-              website: config.website
-            };
-            allJobs.push(normalized);
-          }
+        if (!seen.has(normalized.sourceHash) && normalized.remoteType === 'REMOTE') {
+          seen.add(normalized.sourceHash);
+          normalized.company = {
+            id: companyId,
+            name: config.company,
+            logoUrl: config.logoUrl || null,
+            industry: config.industry,
+            website: config.website
+          };
+          remoteJobs.push(normalized);
         }
       } catch (normError) {
         const errMsg = normError instanceof Error ? normError.message : String(normError);
@@ -380,7 +383,43 @@ export async function scrapeCompany(
       }
     }
 
-    log(`   ✅ Normalized ${allJobs.length} unique jobs (${rawJobs.length - allJobs.length} duplicates removed)`);
+    log(`   📋 Found ${remoteJobs.length} remote jobs (from ${rawJobs.length} total)`);
+
+    // Use Gemini AI to filter for frontend/JS/TS jobs
+    if (remoteJobs.length > 0 && options?.geminiApiKey) {
+      const { approvedIndices } = await filterJobsWithGemini(
+        options.geminiApiKey,
+        remoteJobs.map(j => ({
+          title: j.title,
+          description: j.description || undefined,
+          department: j.department || undefined,
+        })),
+        log
+      );
+
+      // Only keep Gemini-approved jobs
+      for (let i = 0; i < remoteJobs.length; i++) {
+        if (approvedIndices.has(i)) {
+          allJobs.push(remoteJobs[i]);
+        }
+      }
+
+      totalFilteredByGemini = remoteJobs.length - allJobs.length;
+      log(`   ✅ Gemini kept ${allJobs.length}/${remoteJobs.length} jobs (filtered ${totalFilteredByGemini} non-frontend roles)`);
+    } else if (remoteJobs.length > 0) {
+      // Fallback: basic regex filter if no Gemini API key
+      log(`   ⚠️ No Gemini API key — using basic regex filter`);
+      for (const job of remoteJobs) {
+        const isRelevant = /\b(frontend|front-end|front end|react|vue|angular|svelte|nextjs|next\.js|nuxt|remix|ui engineer|ui developer|javascript|typescript|js|ts)\b/i.test(job.title);
+        if (isRelevant) {
+          allJobs.push(job);
+        }
+      }
+      totalFilteredByGemini = remoteJobs.length - allJobs.length;
+      log(`   ✅ Regex kept ${allJobs.length}/${remoteJobs.length} jobs`);
+    }
+
+    log(`   ✅ Final: ${allJobs.length} verified frontend/JS/TS jobs`);
 
     await browser.close();
     browser = null;
@@ -407,6 +446,8 @@ export async function scrapeCompany(
     jobs: allJobs,
     errors,
     totalFound: allJobs.length,
+    totalScraped: 0,
+    totalFilteredByGemini,
     duration,
   };
 }
@@ -427,9 +468,17 @@ export function loadAllConfigs(configDir?: string): CompanyConfig[] {
 // ─── CLI Entry Point ──────────────────────────────────────────────
 
 if (require.main === module) {
+  // Load env vars
+  dotenv.config({ path: path.join(process.cwd(), '.env') });
+  
   const args = process.argv.slice(2);
   const companySlug = args.find(a => a.startsWith('--company='))?.split('=')[1];
   const dryRun = args.includes('--dry-run');
+  const geminiApiKey = process.env.GEMINI_API_KEY;
+
+  if (!geminiApiKey) {
+    console.warn('⚠️  GEMINI_API_KEY not found in .env — will use basic regex filter');
+  }
 
   async function main() {
     const configs = loadAllConfigs();
@@ -446,6 +495,7 @@ if (require.main === module) {
 
     console.log(`\n${'═'.repeat(60)}`);
     console.log(`  Job Portal Scraper — ${dryRun ? 'DRY RUN' : 'LIVE'}`);
+    console.log(`  Gemini AI Filter: ${geminiApiKey ? '✅ ENABLED' : '❌ DISABLED (using regex fallback)'}`);
     console.log(`  Targets: ${targets.map(t => t.company).join(', ')}`);
     console.log(`${'═'.repeat(60)}\n`);
 
@@ -454,20 +504,22 @@ if (require.main === module) {
     for (const config of targets) {
       const result = await scrapeCompany(config, config.slug, {
         dryRun,
+        geminiApiKey,
         onProgress: console.log,
       });
 
       allScrapedJobs.push(...result.jobs);
 
       console.log(`\n--- ${config.company} Results ---`);
-      console.log(`Jobs found: ${result.totalFound}`);
+      console.log(`Frontend/JS/TS Jobs found: ${result.totalFound}`);
+      console.log(`Filtered by Gemini: ${result.totalFilteredByGemini}`);
       console.log(`Errors: ${result.errors.length}`);
       console.log(`Duration: ${(result.duration / 1000).toFixed(1)}s`);
 
       if (dryRun && result.jobs.length > 0) {
-        console.log(`\nSample jobs:`);
+        console.log(`\nApproved jobs:`);
         for (const job of result.jobs.slice(0, 5)) {
-          console.log(`  • ${job.title}`);
+          console.log(`  ✅ ${job.title}`);
           console.log(`    Location: ${job.city || 'N/A'}, ${job.country || 'N/A'} (${job.remoteType})`);
           console.log(`    Level: ${job.experienceLevel || 'N/A'} | Type: ${job.employmentType}`);
           console.log(`    URL: ${job.applyUrl}`);
@@ -492,7 +544,7 @@ if (require.main === module) {
       const uniqueJobs = Array.from(new Map(combined.map(j => [j.sourceHash, j])).values());
       
       fs.writeFileSync(outputPath, JSON.stringify(uniqueJobs, null, 2));
-      console.log(`\nSaved ${uniqueJobs.length} total unique remote frontend jobs to ${outputPath}`);
+      console.log(`\n🎉 Saved ${uniqueJobs.length} total unique remote frontend/JS/TS jobs to ${outputPath}`);
     }
   }
 
