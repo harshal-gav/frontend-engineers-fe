@@ -1,20 +1,28 @@
 /**
  * ╔══════════════════════════════════════════════════════════════╗
- * ║  FrontendEngineers.com — Full Scraper Dashboard             ║
- * ║  Scrapes ALL companies, filters with Gemini AI,             ║
- * ║  and saves to jobs.json for deployment.                     ║
+ * ║  FrontendEngineers.com — Master Scraper Dashboard           ║
+ * ║                                                             ║
+ * ║  Phase 1: Fetch from 6 job APIs (10,000+ companies)         ║
+ * ║  Phase 2: Scrape 171 company career pages directly          ║
+ * ║  Phase 3: Gemini AI filters for frontend/JS/TS only         ║
+ * ║  Phase 4: Save to jobs.json → deploy to Vercel              ║
  * ╚══════════════════════════════════════════════════════════════╝
  * 
  * Usage:
- *   npx tsx scraper/run-all.ts                  # Full scrape
- *   npx tsx scraper/run-all.ts --concurrency=5  # 5 at a time
- *   npx tsx scraper/run-all.ts --dry-run        # Don't save
+ *   npm run scrape                    # Full scrape (APIs + companies)
+ *   npm run scrape -- --api-only      # Only API sources (faster)
+ *   npm run scrape -- --companies-only # Only 171 company career pages
+ *   npm run scrape -- --dry-run       # Don't save to file
+ *   npm run scrape -- --concurrency=5 # Parallel company scrapes
+ *   npm run scrape -- --no-gemini     # Skip Gemini (use regex only)
  */
 
 import * as fs from 'fs';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
-import { scrapeCompany, loadAllConfigs, type CompanyConfig, type ScrapeResult } from './engine';
+import { scrapeCompany, loadAllConfigs, type CompanyConfig } from './engine';
+import { filterJobsWithGemini } from './gemini-filter';
+import { fetchAllApiSources } from './api-sources';
 import type { NormalizedJob } from './normalizer';
 
 dotenv.config({ path: path.join(process.cwd(), '.env') });
@@ -31,193 +39,64 @@ const c = {
   magenta: '\x1b[35m',
   white: '\x1b[37m',
   bgGreen: '\x1b[42m',
-  bgRed: '\x1b[41m',
-  bgYellow: '\x1b[43m',
-  bgCyan: '\x1b[46m',
-  bgMagenta: '\x1b[45m',
 };
 
-// ─── Dashboard State ──────────────────────────────────────────
-interface DashboardState {
-  totalCompanies: number;
-  completedCompanies: number;
-  failedCompanies: number;
-  skippedCompanies: number;
-  currentlyProcessing: string[];
-  totalJobsScraped: number;
-  totalRemoteFound: number;
-  totalApproved: number;
-  totalRejected: number;
-  totalErrors: number;
-  startTime: number;
-  companyResults: CompanyResult[];
-  recentLogs: string[];
+function formatDuration(ms: number): string {
+  const s = Math.floor(ms / 1000);
+  const m = Math.floor(s / 60);
+  const h = Math.floor(m / 60);
+  if (h > 0) return `${h}h ${m % 60}m ${s % 60}s`;
+  if (m > 0) return `${m}m ${s % 60}s`;
+  return `${s}s`;
+}
+
+function progressBar(cur: number, total: number, w: number = 30): string {
+  const pct = total > 0 ? cur / total : 0;
+  const filled = Math.round(pct * w);
+  return `[${c.bgGreen}${' '.repeat(filled)}${c.reset}${c.dim}${'░'.repeat(w - filled)}${c.reset}] ${(pct * 100).toFixed(0)}%`;
+}
+
+// ─── State ────────────────────────────────────────────────────
+interface Stats {
+  apiJobsFetched: number;
+  apiJobsPreFiltered: number;
+  companiesTotal: number;
+  companiesCompleted: number;
+  companiesFailed: number;
+  companyJobsScraped: number;
+  companyJobsRemote: number;
+  totalBeforeGemini: number;
+  geminiApproved: number;
+  geminiRejected: number;
   approvedJobs: { title: string; company: string; location: string }[];
-}
-
-interface CompanyResult {
-  name: string;
-  status: 'success' | 'failed' | 'no-jobs' | 'no-frontend';
-  totalScraped: number;
-  remoteFound: number;
-  approved: number;
-  rejected: number;
-  duration: number;
+  companyResults: { name: string; approved: number; status: string }[];
   errors: string[];
+  startTime: number;
 }
 
-const state: DashboardState = {
-  totalCompanies: 0,
-  completedCompanies: 0,
-  failedCompanies: 0,
-  skippedCompanies: 0,
-  currentlyProcessing: [],
-  totalJobsScraped: 0,
-  totalRemoteFound: 0,
-  totalApproved: 0,
-  totalRejected: 0,
-  totalErrors: 0,
-  startTime: Date.now(),
-  companyResults: [],
-  recentLogs: [],
+const stats: Stats = {
+  apiJobsFetched: 0,
+  apiJobsPreFiltered: 0,
+  companiesTotal: 0,
+  companiesCompleted: 0,
+  companiesFailed: 0,
+  companyJobsScraped: 0,
+  companyJobsRemote: 0,
+  totalBeforeGemini: 0,
+  geminiApproved: 0,
+  geminiRejected: 0,
   approvedJobs: [],
+  companyResults: [],
+  errors: [],
+  startTime: Date.now(),
 };
 
-// ─── Logging ──────────────────────────────────────────────────
-function addLog(msg: string) {
-  const timestamp = new Date().toLocaleTimeString();
-  state.recentLogs.push(`${c.dim}[${timestamp}]${c.reset} ${msg}`);
-  // Keep last 200 logs
-  if (state.recentLogs.length > 200) {
-    state.recentLogs.shift();
-  }
-}
-
-function printLog(msg: string) {
-  addLog(msg);
+function log(msg: string) {
   console.log(msg);
 }
 
-// ─── Progress Bar ─────────────────────────────────────────────
-function progressBar(current: number, total: number, width: number = 30): string {
-  const pct = total > 0 ? current / total : 0;
-  const filled = Math.round(pct * width);
-  const empty = width - filled;
-  const bar = `${c.bgGreen}${' '.repeat(filled)}${c.reset}${c.dim}${'░'.repeat(empty)}${c.reset}`;
-  return `[${bar}] ${(pct * 100).toFixed(1)}%`;
-}
-
-function formatDuration(ms: number): string {
-  const seconds = Math.floor(ms / 1000);
-  const minutes = Math.floor(seconds / 60);
-  const hours = Math.floor(minutes / 60);
-  if (hours > 0) return `${hours}h ${minutes % 60}m ${seconds % 60}s`;
-  if (minutes > 0) return `${minutes}m ${seconds % 60}s`;
-  return `${seconds}s`;
-}
-
-// ─── Dashboard Printer ───────────────────────────────────────
-function printDashboard() {
-  const elapsed = Date.now() - state.startTime;
-  const companiesPerSec = state.completedCompanies / (elapsed / 1000) || 0;
-  const remaining = state.totalCompanies - state.completedCompanies - state.failedCompanies;
-  const eta = companiesPerSec > 0 ? remaining / companiesPerSec * 1000 : 0;
-
-  console.log('\n');
-  console.log(`${c.cyan}${c.bold}╔${'═'.repeat(68)}╗${c.reset}`);
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.bold}🚀 FrontendEngineers.com — Scraper Dashboard${c.reset}${' '.repeat(23)}${c.cyan}${c.bold}║${c.reset}`);
-  console.log(`${c.cyan}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-  
-  // Progress
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.bold}Progress:${c.reset} ${progressBar(state.completedCompanies + state.failedCompanies, state.totalCompanies, 25)} ${state.completedCompanies + state.failedCompanies}/${state.totalCompanies} companies`);
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.bold}Elapsed:${c.reset}  ${formatDuration(elapsed)}  ${c.dim}|${c.reset}  ${c.bold}ETA:${c.reset} ${eta > 0 ? formatDuration(eta) : 'calculating...'}  ${c.dim}|${c.reset}  ${c.bold}Speed:${c.reset} ${companiesPerSec.toFixed(1)} co/s`);
-  
-  console.log(`${c.cyan}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-  
-  // Stats
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.bold}📊 STATS${c.reset}`);
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.dim}├──${c.reset} Total Jobs Scraped:     ${c.bold}${state.totalJobsScraped.toLocaleString()}${c.reset}`);
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.dim}├──${c.reset} Remote Jobs Found:      ${c.cyan}${c.bold}${state.totalRemoteFound.toLocaleString()}${c.reset}`);
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.dim}├──${c.reset} ${c.green}✅ Approved (Frontend):${c.reset}  ${c.green}${c.bold}${state.totalApproved.toLocaleString()}${c.reset}`);
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.dim}├──${c.reset} ${c.red}❌ Rejected (Non-FE):${c.reset}   ${c.red}${state.totalRejected.toLocaleString()}${c.reset}`);
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.dim}├──${c.reset} Companies Completed:    ${c.green}${state.completedCompanies}${c.reset}`);
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.dim}├──${c.reset} Companies Failed:       ${state.failedCompanies > 0 ? c.red : ''}${state.failedCompanies}${c.reset}`);
-  console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.dim}└──${c.reset} Errors:                 ${state.totalErrors > 0 ? c.yellow : ''}${state.totalErrors}${c.reset}`);
-  
-  // Currently processing
-  if (state.currentlyProcessing.length > 0) {
-    console.log(`${c.cyan}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-    console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.bold}⏳ Currently Scraping:${c.reset}`);
-    for (const name of state.currentlyProcessing) {
-      console.log(`${c.cyan}${c.bold}║${c.reset}  ${c.dim}   ⟳${c.reset} ${c.yellow}${name}${c.reset}`);
-    }
-  }
-  
-  console.log(`${c.cyan}${c.bold}╚${'═'.repeat(68)}╝${c.reset}`);
-}
-
-// ─── Final Report ─────────────────────────────────────────────
-function printFinalReport() {
-  const elapsed = Date.now() - state.startTime;
-  
-  console.log('\n\n');
-  console.log(`${c.green}${c.bold}╔${'═'.repeat(68)}╗${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}🎉 SCRAPE COMPLETE — Final Report${c.reset}${' '.repeat(35)}${c.green}${c.bold}║${c.reset}`);
-  console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  Duration: ${c.bold}${formatDuration(elapsed)}${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  Companies Scraped: ${c.bold}${state.completedCompanies}${c.reset} / ${state.totalCompanies}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  Companies Failed:  ${state.failedCompanies > 0 ? c.red + c.bold : ''}${state.failedCompanies}${c.reset}`);
-  console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}📊 JOB STATISTICS${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  Total Raw Jobs Scraped:  ${c.bold}${state.totalJobsScraped.toLocaleString()}${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  Remote Jobs Found:       ${c.cyan}${c.bold}${state.totalRemoteFound.toLocaleString()}${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  ${c.green}✅ Frontend/JS/TS Jobs:${c.reset}   ${c.green}${c.bold}${state.totalApproved.toLocaleString()}${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  ${c.red}❌ Non-Frontend Rejected:${c.reset} ${c.red}${state.totalRejected.toLocaleString()}${c.reset}`);
-  console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-  
-  // Top companies by approved jobs
-  const topCompanies = state.companyResults
-    .filter(r => r.approved > 0)
-    .sort((a, b) => b.approved - a.approved)
-    .slice(0, 15);
-  
-  if (topCompanies.length > 0) {
-    console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}🏆 TOP COMPANIES (by approved frontend jobs)${c.reset}`);
-    for (const co of topCompanies) {
-      const bar = '█'.repeat(Math.min(co.approved, 30));
-      console.log(`${c.green}${c.bold}║${c.reset}  ${c.dim}${co.name.padEnd(25)}${c.reset} ${c.green}${bar}${c.reset} ${c.bold}${co.approved}${c.reset}`);
-    }
-    console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-  }
-  
-  // Failed companies
-  const failed = state.companyResults.filter(r => r.status === 'failed');
-  if (failed.length > 0) {
-    console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}⚠️  FAILED COMPANIES (${failed.length})${c.reset}`);
-    for (const co of failed.slice(0, 10)) {
-      console.log(`${c.green}${c.bold}║${c.reset}  ${c.red}  ✗ ${co.name}${c.reset}: ${c.dim}${co.errors[0] || 'Unknown error'}${c.reset}`);
-    }
-    if (failed.length > 10) {
-      console.log(`${c.green}${c.bold}║${c.reset}  ${c.dim}  ... and ${failed.length - 10} more${c.reset}`);
-    }
-    console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-  }
-  
-  // Sample approved jobs
-  if (state.approvedJobs.length > 0) {
-    console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}📋 SAMPLE APPROVED JOBS (showing 20 of ${state.approvedJobs.length})${c.reset}`);
-    for (const job of state.approvedJobs.slice(0, 20)) {
-      console.log(`${c.green}${c.bold}║${c.reset}  ${c.green}  ✅${c.reset} ${job.title}`);
-      console.log(`${c.green}${c.bold}║${c.reset}  ${c.dim}     at ${job.company} · ${job.location || 'Remote'}${c.reset}`);
-    }
-    console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-  }
-  
-  console.log(`${c.green}${c.bold}╚${'═'.repeat(68)}╝${c.reset}`);
-}
-
-// ─── Scrape with concurrency control ──────────────────────────
-async function scrapeWithConcurrency(
+// ─── Phase 2: Company Career Page Scraping ────────────────────
+async function scrapeCompanies(
   configs: CompanyConfig[],
   geminiApiKey: string | undefined,
   concurrency: number,
@@ -225,176 +104,266 @@ async function scrapeWithConcurrency(
 ): Promise<NormalizedJob[]> {
   const allJobs: NormalizedJob[] = [];
   let index = 0;
+  stats.companiesTotal = configs.length;
+  
+  log(`\n${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}`);
+  log(`${c.bold}  📡 PHASE 2: Scraping ${configs.length} company career pages${c.reset}`);
+  log(`${c.bold}  Concurrency: ${concurrency} | Gemini: ${geminiApiKey ? '✅' : '❌ (regex)'}${c.reset}`);
+  log(`${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}\n`);
   
   async function processNext(): Promise<void> {
     while (index < configs.length) {
-      const currentIndex = index++;
-      const config = configs[currentIndex];
-      
-      state.currentlyProcessing.push(config.company);
-      
-      const companyLog = (msg: string) => {
-        printLog(`${c.magenta}[${config.company}]${c.reset} ${msg}`);
-      };
+      const i = index++;
+      const config = configs[i];
       
       try {
-        companyLog(`${c.yellow}Starting scrape...${c.reset}`);
-        
         const result = await scrapeCompany(config, config.slug, {
           dryRun,
           geminiApiKey,
-          onProgress: companyLog,
+          onProgress: (msg) => log(`  ${c.dim}[${config.company}]${c.reset} ${msg}`),
         });
         
-        // Update state
-        state.totalJobsScraped += result.totalFound + result.totalFilteredByGemini;
-        state.totalApproved += result.totalFound;
-        state.totalRejected += result.totalFilteredByGemini;
-        state.totalErrors += result.errors.length;
+        stats.companyJobsScraped += result.totalFound + result.totalFilteredByGemini;
+        allJobs.push(...result.jobs);
         
-        // Track approved jobs for display
         for (const job of result.jobs) {
-          state.approvedJobs.push({
+          stats.approvedJobs.push({
             title: job.title,
             company: job.company?.name || config.company,
             location: job.location || 'Remote',
           });
-          allJobs.push(job);
         }
         
-        const companyResult: CompanyResult = {
+        stats.companyResults.push({
           name: config.company,
-          status: result.errors.length > 0 && result.totalFound === 0 ? 'failed' 
-                 : result.totalFound > 0 ? 'success' 
-                 : 'no-frontend',
-          totalScraped: result.totalFound + result.totalFilteredByGemini,
-          remoteFound: result.totalFound + result.totalFilteredByGemini,
           approved: result.totalFound,
-          rejected: result.totalFilteredByGemini,
-          duration: result.duration,
-          errors: result.errors,
-        };
+          status: result.totalFound > 0 ? 'success' : result.errors.length > 0 ? 'failed' : 'empty',
+        });
         
-        state.companyResults.push(companyResult);
+        if (result.errors.length > 0) {
+          stats.companiesFailed++;
+          stats.errors.push(...result.errors.map(e => `${config.company}: ${e}`));
+        }
+        stats.companiesCompleted++;
         
-        if (result.totalFound > 0) {
-          state.completedCompanies++;
-          companyLog(`${c.green}✅ Done: ${result.totalFound} frontend jobs approved${c.reset}`);
-        } else if (result.errors.length > 0) {
-          state.failedCompanies++;
-          companyLog(`${c.red}❌ Failed: ${result.errors[0]}${c.reset}`);
-        } else {
-          state.completedCompanies++;
-          companyLog(`${c.dim}Done: No frontend/JS/TS jobs found${c.reset}`);
+        // Progress every 10 companies
+        if (stats.companiesCompleted % 10 === 0) {
+          log(`\n  ${progressBar(stats.companiesCompleted, stats.companiesTotal)} ${stats.companiesCompleted}/${stats.companiesTotal} companies | ${c.green}${allJobs.length} frontend jobs found${c.reset}\n`);
         }
         
-      } catch (error) {
-        const errMsg = error instanceof Error ? error.message : String(error);
-        state.failedCompanies++;
-        state.totalErrors++;
-        state.companyResults.push({
-          name: config.company,
-          status: 'failed',
-          totalScraped: 0,
-          remoteFound: 0,
-          approved: 0,
-          rejected: 0,
-          duration: 0,
-          errors: [errMsg],
-        });
-        companyLog(`${c.red}❌ Fatal error: ${errMsg}${c.reset}`);
-      }
-      
-      // Remove from currently processing
-      state.currentlyProcessing = state.currentlyProcessing.filter(n => n !== config.company);
-      
-      // Print mini dashboard every 10 companies
-      if ((state.completedCompanies + state.failedCompanies) % 10 === 0) {
-        printDashboard();
+      } catch (err) {
+        stats.companiesFailed++;
+        stats.companiesCompleted++;
+        const msg = err instanceof Error ? err.message : String(err);
+        stats.errors.push(`${config.company}: ${msg}`);
       }
     }
   }
   
-  // Launch concurrent workers
   const workers = Array.from({ length: concurrency }, () => processNext());
   await Promise.all(workers);
   
+  log(`\n  ${c.green}✅ Company scraping complete: ${allJobs.length} frontend jobs from ${stats.companiesCompleted} companies${c.reset}\n`);
+  
   return allJobs;
+}
+
+// ─── Phase 3: Gemini AI Classification ────────────────────────
+async function geminiClassify(
+  jobs: NormalizedJob[],
+  apiKey: string
+): Promise<NormalizedJob[]> {
+  log(`\n${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}`);
+  log(`${c.bold}  🤖 PHASE 3: Gemini AI Classification (${jobs.length} jobs)${c.reset}`);
+  log(`${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}\n`);
+  
+  stats.totalBeforeGemini = jobs.length;
+  
+  const { approvedIndices } = await filterJobsWithGemini(
+    apiKey,
+    jobs.map(j => ({
+      title: j.title,
+      description: j.description || undefined,
+      department: j.department || undefined,
+    })),
+    log
+  );
+  
+  const approved = jobs.filter((_, i) => approvedIndices.has(i));
+  stats.geminiApproved = approved.length;
+  stats.geminiRejected = jobs.length - approved.length;
+  
+  log(`\n  ${c.green}✅ Gemini approved: ${approved.length}${c.reset} / ${c.red}Rejected: ${jobs.length - approved.length}${c.reset}\n`);
+  
+  return approved;
+}
+
+// ─── Final Report ─────────────────────────────────────────────
+function printFinalReport(totalSaved: number) {
+  const elapsed = Date.now() - stats.startTime;
+  
+  console.log(`\n`);
+  console.log(`${c.green}${c.bold}╔${'═'.repeat(68)}╗${c.reset}`);
+  console.log(`${c.green}${c.bold}║  🎉 SCRAPE COMPLETE — Final Report${' '.repeat(33)}║${c.reset}`);
+  console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}  ⏱️  Total Duration: ${c.bold}${formatDuration(elapsed)}${c.reset}`);
+  console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}📡 API SOURCES (10,000+ companies)${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}     Total fetched:     ${c.bold}${stats.apiJobsFetched.toLocaleString()}${c.reset} jobs`);
+  console.log(`${c.green}${c.bold}║${c.reset}     Pre-filtered:      ${stats.apiJobsPreFiltered.toLocaleString()} potential frontend jobs`);
+  console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}🏢 DIRECT COMPANY SCRAPING${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}     Companies scraped:  ${stats.companiesCompleted} / ${stats.companiesTotal}`);
+  console.log(`${c.green}${c.bold}║${c.reset}     Companies failed:   ${stats.companiesFailed}`);
+  console.log(`${c.green}${c.bold}║${c.reset}     Jobs from companies:${stats.companyJobsScraped.toLocaleString()}`);
+  console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}🤖 GEMINI AI FILTER${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}     Sent to Gemini:     ${stats.totalBeforeGemini.toLocaleString()}`);
+  console.log(`${c.green}${c.bold}║${c.reset}     ${c.green}✅ Approved:${c.reset}        ${c.green}${c.bold}${stats.geminiApproved.toLocaleString()}${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}     ${c.red}❌ Rejected:${c.reset}        ${stats.geminiRejected.toLocaleString()}`);
+  console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}💾 FINAL OUTPUT${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}     ${c.green}${c.bold}${totalSaved.toLocaleString()} unique frontend/JS/TS remote jobs saved${c.reset}`);
+  console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
+  
+  // Top companies
+  const topCompanies = stats.companyResults
+    .filter(r => r.approved > 0)
+    .sort((a, b) => b.approved - a.approved)
+    .slice(0, 10);
+  
+  if (topCompanies.length > 0) {
+    console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}🏆 Top Companies${c.reset}`);
+    for (const co of topCompanies) {
+      console.log(`${c.green}${c.bold}║${c.reset}     ${co.name.padEnd(25)} ${c.green}${'█'.repeat(Math.min(co.approved, 20))}${c.reset} ${co.approved}`);
+    }
+    console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
+  }
+  
+  // Unique companies from API sources
+  const uniqueCompanies = new Set(stats.approvedJobs.map(j => j.company));
+  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}🌍 Companies represented: ${c.cyan}${uniqueCompanies.size}${c.reset}`);
+  
+  // Sample jobs
+  console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}📋 Sample Approved Jobs (20 of ${stats.approvedJobs.length})${c.reset}`);
+  for (const j of stats.approvedJobs.slice(0, 20)) {
+    console.log(`${c.green}${c.bold}║${c.reset}     ${c.green}✅${c.reset} ${j.title}`);
+    console.log(`${c.green}${c.bold}║${c.reset}        ${c.dim}at ${j.company} · ${j.location}${c.reset}`);
+  }
+  
+  console.log(`${c.green}${c.bold}╚${'═'.repeat(68)}╝${c.reset}`);
+  
+  // Next steps
+  console.log(`\n${c.bold}📌 Next Steps:${c.reset}`);
+  console.log(`   ${c.dim}1. Review the jobs above${c.reset}`);
+  console.log(`   ${c.dim}2. Commit: ${c.cyan}git add data/jobs.json && git commit -m "Refresh: ${totalSaved} frontend jobs"${c.reset}`);
+  console.log(`   ${c.dim}3. Deploy: ${c.cyan}git push${c.reset} → Vercel auto-deploys!${c.reset}\n`);
 }
 
 // ─── Main ─────────────────────────────────────────────────────
 async function main() {
   const args = process.argv.slice(2);
   const dryRun = args.includes('--dry-run');
-  const concurrency = parseInt(
-    args.find(a => a.startsWith('--concurrency='))?.split('=')[1] || '3'
-  );
-  const geminiApiKey = process.env.GEMINI_API_KEY;
+  const apiOnly = args.includes('--api-only');
+  const companiesOnly = args.includes('--companies-only');
+  const noGemini = args.includes('--no-gemini');
+  const concurrency = parseInt(args.find(a => a.startsWith('--concurrency='))?.split('=')[1] || '3');
+  const geminiApiKey = noGemini ? undefined : process.env.GEMINI_API_KEY;
   
-  // Load all configs
   const configs = loadAllConfigs();
-  state.totalCompanies = configs.length;
   
-  // Print startup banner
+  // Banner
   console.clear();
   console.log(`${c.cyan}${c.bold}`);
   console.log(`  ╔══════════════════════════════════════════════════════════════╗`);
   console.log(`  ║                                                            ║`);
-  console.log(`  ║   🚀  FrontendEngineers.com — Job Scraper                  ║`);
+  console.log(`  ║   🚀  FrontendEngineers.com — Master Job Scraper           ║`);
   console.log(`  ║                                                            ║`);
   console.log(`  ╠══════════════════════════════════════════════════════════════╣`);
-  console.log(`  ║  Mode:          ${dryRun ? '🔍 DRY RUN (no save)' : '💾 LIVE (will save)'}${' '.repeat(dryRun ? 20 : 18)}║`);
-  console.log(`  ║  Companies:     ${String(configs.length).padEnd(42)}║`);
-  console.log(`  ║  Concurrency:   ${String(concurrency).padEnd(42)}║`);
-  console.log(`  ║  Gemini AI:     ${geminiApiKey ? '✅ ENABLED (smart filtering)' : '❌ DISABLED (regex fallback)'}${' '.repeat(geminiApiKey ? 14 : 12)}║`);
+  console.log(`  ║  Mode:         ${dryRun ? '🔍 DRY RUN' : '💾 LIVE'}${' '.repeat(dryRun ? 35 : 37)}║`);
+  console.log(`  ║  API Sources:  ${apiOnly || !companiesOnly ? '✅ 6 APIs (10K+ companies)' : '❌ Skipped'}${' '.repeat(apiOnly || !companiesOnly ? 18 : 33)}║`);
+  console.log(`  ║  Companies:    ${companiesOnly || !apiOnly ? `✅ ${configs.length} direct career pages` : '❌ Skipped'}${' '.repeat(companiesOnly || !apiOnly ? 16 : 33)}║`);
+  console.log(`  ║  Gemini AI:    ${geminiApiKey ? '✅ Smart filtering' : '❌ Regex fallback'}${' '.repeat(geminiApiKey ? 26 : 27)}║`);
+  console.log(`  ║  Concurrency:  ${concurrency}${' '.repeat(43)}║`);
   console.log(`  ╚══════════════════════════════════════════════════════════════╝`);
   console.log(`${c.reset}`);
   
   if (!geminiApiKey) {
-    console.log(`${c.yellow}⚠️  No GEMINI_API_KEY in .env — using basic regex filter instead of AI${c.reset}\n`);
+    console.log(`${c.yellow}  ⚠️ No GEMINI_API_KEY — using regex filter (less accurate)${c.reset}\n`);
   }
   
-  console.log(`${c.dim}Starting in 2 seconds...${c.reset}\n`);
+  console.log(`${c.dim}  Starting in 2 seconds...${c.reset}\n`);
   await new Promise(r => setTimeout(r, 2000));
   
-  // Run the scraper
-  const allJobs = await scrapeWithConcurrency(configs, geminiApiKey, concurrency, dryRun);
+  let allCandidateJobs: NormalizedJob[] = [];
   
-  // Final dashboard
-  printDashboard();
-  
-  // Save results
-  if (!dryRun && allJobs.length > 0) {
-    const outputPath = path.join(process.cwd(), 'data', 'jobs.json');
+  // Phase 1: API Sources
+  if (!companiesOnly) {
+    log(`${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}`);
+    log(`${c.bold}  📡 PHASE 1: Fetching from 6 Job Aggregator APIs${c.reset}`);
+    log(`${c.bold}  Coverage: RemoteOK · Remotive · Arbeitnow · Jobicy · Himalayas · FindWork${c.reset}`);
+    log(`${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}`);
     
-    // Deduplicate by sourceHash
-    const uniqueJobs = Array.from(
-      new Map(allJobs.map(j => [j.sourceHash, j])).values()
-    );
+    const { allJobs: apiJobs, results } = await fetchAllApiSources(log);
     
-    // Sort by postedAt (newest first)
-    uniqueJobs.sort((a, b) => {
-      const dateA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
-      const dateB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
-      return dateB - dateA;
-    });
+    stats.apiJobsFetched = results.reduce((s, r) => s + r.totalFetched, 0);
+    stats.apiJobsPreFiltered = apiJobs.length;
     
-    fs.writeFileSync(outputPath, JSON.stringify(uniqueJobs, null, 2));
-    
-    console.log(`\n${c.green}${c.bold}💾 Saved ${uniqueJobs.length} unique frontend/JS/TS jobs to data/jobs.json${c.reset}`);
-    console.log(`${c.dim}   File size: ${(fs.statSync(outputPath).size / 1024).toFixed(1)} KB${c.reset}`);
-  } else if (dryRun) {
-    console.log(`\n${c.yellow}${c.bold}🔍 Dry run complete — no files were saved${c.reset}`);
+    allCandidateJobs.push(...apiJobs);
   }
   
-  // Print final report
-  printFinalReport();
+  // Phase 2: Company Career Pages
+  if (!apiOnly) {
+    const companyJobs = await scrapeCompanies(configs, geminiApiKey, concurrency, dryRun);
+    allCandidateJobs.push(...companyJobs);
+  }
   
-  // Next steps
-  console.log(`\n${c.bold}📌 Next Steps:${c.reset}`);
-  console.log(`${c.dim}   1. Review the jobs above${c.reset}`);
-  console.log(`${c.dim}   2. Push to GitHub:  ${c.cyan}git add . && git commit -m "Refresh jobs" && git push${c.reset}`);
-  console.log(`${c.dim}   3. Vercel will auto-deploy with fresh jobs!${c.reset}\n`);
+  // Global deduplication
+  const seen = new Set<string>();
+  const uniqueCandidates = allCandidateJobs.filter(j => {
+    if (seen.has(j.sourceHash)) return false;
+    seen.add(j.sourceHash);
+    return true;
+  });
+  
+  log(`\n${c.bold}📊 Total unique candidate jobs: ${uniqueCandidates.length}${c.reset}\n`);
+  
+  // Phase 3: Gemini AI Classification (for API-sourced jobs that haven't been classified)
+  let finalJobs: NormalizedJob[];
+  
+  if (geminiApiKey && !companiesOnly && uniqueCandidates.length > 0) {
+    finalJobs = await geminiClassify(uniqueCandidates, geminiApiKey);
+  } else {
+    finalJobs = uniqueCandidates;
+    stats.geminiApproved = uniqueCandidates.length;
+  }
+  
+  // Update approved jobs list
+  stats.approvedJobs = finalJobs.map(j => ({
+    title: j.title,
+    company: j.company?.name || 'Unknown',
+    location: j.location || 'Remote',
+  }));
+  
+  // Sort by posted date (newest first)
+  finalJobs.sort((a, b) => {
+    const dateA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
+    const dateB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
+    return dateB - dateA;
+  });
+  
+  // Save
+  if (!dryRun && finalJobs.length > 0) {
+    const outputPath = path.join(process.cwd(), 'data', 'jobs.json');
+    fs.writeFileSync(outputPath, JSON.stringify(finalJobs, null, 2));
+    const fileSize = (fs.statSync(outputPath).size / 1024).toFixed(1);
+    log(`\n${c.green}${c.bold}💾 Saved ${finalJobs.length} jobs to data/jobs.json (${fileSize} KB)${c.reset}`);
+  } else if (dryRun) {
+    log(`\n${c.yellow}${c.bold}🔍 Dry run — no files saved${c.reset}`);
+  }
+  
+  printFinalReport(finalJobs.length);
 }
 
 main().catch(err => {

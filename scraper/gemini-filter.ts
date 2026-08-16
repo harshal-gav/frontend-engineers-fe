@@ -114,9 +114,23 @@ Reply with ONLY a valid JSON array, no markdown, no explanation:
     const data = await response.json();
     const text = data.candidates?.[0]?.content?.parts?.[0]?.text || '';
     
-    // Parse the JSON response
-    const cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
-    const results: FilterResult[] = JSON.parse(cleaned);
+    let results: FilterResult[] = [];
+    try {
+      const cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
+      results = JSON.parse(cleaned);
+    } catch (parseErr) {
+      // Try to extract just the array part if there's extra text
+      const match = text.match(/\[[\s\S]*\]/);
+      if (match) {
+        try {
+          results = JSON.parse(match[0]);
+        } catch (e2) {
+          throw new Error(`JSON parse failed: ${parseErr}. Text: ${text.substring(0, 100)}...`);
+        }
+      } else {
+        throw new Error(`No JSON array found. Text: ${text.substring(0, 100)}...`);
+      }
+    }
     
     return results;
   } catch (error) {
