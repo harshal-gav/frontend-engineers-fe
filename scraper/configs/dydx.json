@@ -2,7 +2,7 @@
   "company": "dYdX",
   "slug": "dydx",
   "careersUrl": "https://jobs.ashbyhq.com/dydx",
-  "website": "",
+  "website": "https://dydx.exchange",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/dydx",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://dydx.exchange/careers"
 }

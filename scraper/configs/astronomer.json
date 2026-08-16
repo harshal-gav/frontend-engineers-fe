@@ -2,7 +2,7 @@
   "company": "Astronomer",
   "slug": "astronomer",
   "careersUrl": "https://boards.greenhouse.io/astronomer",
-  "website": "",
+  "website": "https://astronomer.io",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/astronomer",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://astronomer.io/careers"
 }

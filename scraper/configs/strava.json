@@ -2,7 +2,7 @@
   "company": "Strava",
   "slug": "strava",
   "careersUrl": "https://jobs.lever.co/strava",
-  "website": "",
+  "website": "https://strava.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/strava",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://strava.com/careers"
 }

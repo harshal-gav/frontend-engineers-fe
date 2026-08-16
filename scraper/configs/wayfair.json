@@ -2,7 +2,7 @@
   "company": "Wayfair",
   "slug": "wayfair",
   "careersUrl": "https://boards.greenhouse.io/wayfair",
-  "website": "",
+  "website": "https://wayfair.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/wayfair",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://wayfair.com/careers"
 }

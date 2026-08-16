@@ -2,7 +2,7 @@
   "company": "Andela",
   "slug": "andela",
   "careersUrl": "https://jobs.lever.co/andela",
-  "website": "",
+  "website": "https://andela.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/andela",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://andela.com/careers"
 }

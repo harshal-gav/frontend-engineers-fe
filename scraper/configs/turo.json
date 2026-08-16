@@ -2,7 +2,7 @@
   "company": "Turo",
   "slug": "turo",
   "careersUrl": "https://boards.greenhouse.io/turo",
-  "website": "",
+  "website": "https://turo.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/turo",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://turo.com/careers"
 }

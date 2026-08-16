@@ -2,7 +2,7 @@
   "company": "Hopin",
   "slug": "hopin",
   "careersUrl": "https://boards.greenhouse.io/hopin",
-  "website": "",
+  "website": "https://hopin.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/hopin",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://hopin.com/careers"
 }

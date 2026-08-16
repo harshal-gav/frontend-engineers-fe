@@ -2,7 +2,7 @@
   "company": "Observable",
   "slug": "observable",
   "careersUrl": "https://jobs.ashbyhq.com/observable",
-  "website": "",
+  "website": "https://observablehq.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/observable",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://observablehq.com/careers"
 }

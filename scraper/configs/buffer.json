@@ -2,7 +2,7 @@
   "company": "Buffer",
   "slug": "buffer",
   "careersUrl": "https://boards.greenhouse.io/buffer",
-  "website": "",
+  "website": "https://buffer.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/buffer",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://buffer.com/careers"
 }

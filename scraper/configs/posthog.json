@@ -2,7 +2,7 @@
   "company": "PostHog",
   "slug": "posthog",
   "careersUrl": "https://jobs.ashbyhq.com/posthog",
-  "website": "",
+  "website": "https://posthog.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/posthog",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://posthog.com/careers"
 }

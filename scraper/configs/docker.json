@@ -2,7 +2,7 @@
   "company": "Docker",
   "slug": "docker",
   "careersUrl": "https://boards.greenhouse.io/docker",
-  "website": "",
+  "website": "https://docker.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/docker",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://docker.com/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Auth0",
   "slug": "auth0",
   "careersUrl": "https://boards.greenhouse.io/auth0",
-  "website": "https://auth0.com",
+  "website": "https://authorize.net",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/auth0",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://authorize.net/careers"
 }

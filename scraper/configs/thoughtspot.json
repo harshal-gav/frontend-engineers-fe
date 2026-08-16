@@ -2,7 +2,7 @@
   "company": "ThoughtSpot",
   "slug": "thoughtspot",
   "careersUrl": "https://boards.greenhouse.io/thoughtspot",
-  "website": "",
+  "website": "https://thoughtspot.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/thoughtspot",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://thoughtspot.com/careers"
 }

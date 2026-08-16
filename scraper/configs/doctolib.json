@@ -2,7 +2,7 @@
   "company": "Doctolib",
   "slug": "doctolib",
   "careersUrl": "https://boards.greenhouse.io/doctolib",
-  "website": "https://doctolib.com",
+  "website": "https://doctolib.fr",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/doctolib",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://doctolib.fr/careers"
 }

@@ -2,7 +2,7 @@
   "company": "ZipRecruiter",
   "slug": "ziprecruiter",
   "careersUrl": "https://boards.greenhouse.io/ziprecruiter",
-  "website": "",
+  "website": "https://ziprecruiter.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/ziprecruiter",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://ziprecruiter.com/careers"
 }

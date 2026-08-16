@@ -2,7 +2,7 @@
   "company": "Zeplin",
   "slug": "zeplin",
   "careersUrl": "https://jobs.lever.co/zeplin",
-  "website": "https://zeplin.com",
+  "website": "https://zeplin.io",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/zeplin",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://zeplin.io/careers"
 }

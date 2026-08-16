@@ -2,7 +2,7 @@
   "company": "Neon",
   "slug": "neon",
   "careersUrl": "https://boards.greenhouse.io/neon",
-  "website": "https://neon.com",
+  "website": "https://neonet.org",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/neon",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://neonet.org/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Braze",
   "slug": "braze",
   "careersUrl": "https://boards.greenhouse.io/braze",
-  "website": "",
+  "website": "https://braze.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/braze",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://braze.com/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Appdynamics",
   "slug": "appdynamics",
   "careersUrl": "https://jobs.lever.co/appdynamics",
-  "website": "https://appdynamics.com",
+  "website": "https://digitalwaiter.info",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/appdynamics",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://digitalwaiter.info/careers"
 }

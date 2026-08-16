@@ -2,7 +2,7 @@
   "company": "CircleCI",
   "slug": "circleci",
   "careersUrl": "https://boards.greenhouse.io/circleci",
-  "website": "",
+  "website": "https://circleci.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/circleci",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://circleci.com/careers"
 }

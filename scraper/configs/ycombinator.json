@@ -2,7 +2,7 @@
   "company": "Y Combinator",
   "slug": "ycombinator",
   "careersUrl": "https://jobs.ashbyhq.com/ycombinator",
-  "website": "",
+  "website": "https://ycombinator.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/ycombinator",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://ycombinator.com/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Postscript",
   "slug": "postscript",
   "careersUrl": "https://boards.greenhouse.io/postscript",
-  "website": "",
+  "website": "https://postscript.io",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/postscript",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://postscript.io/careers"
 }

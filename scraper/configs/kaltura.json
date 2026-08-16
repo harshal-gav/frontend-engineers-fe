@@ -2,7 +2,7 @@
   "company": "Kaltura",
   "slug": "kaltura",
   "careersUrl": "https://boards.greenhouse.io/kaltura",
-  "website": "",
+  "website": "https://kaltura.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/kaltura",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://kaltura.com/careers"
 }

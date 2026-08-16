@@ -2,7 +2,7 @@
   "company": "Kinsta",
   "slug": "kinsta",
   "careersUrl": "https://jobs.lever.co/kinsta",
-  "website": "",
+  "website": "https://kinsta.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/kinsta",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://kinsta.com/careers"
 }

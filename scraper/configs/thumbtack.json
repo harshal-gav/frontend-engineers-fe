@@ -2,7 +2,7 @@
   "company": "Thumbtack",
   "slug": "thumbtack",
   "careersUrl": "https://boards.greenhouse.io/thumbtack",
-  "website": "",
+  "website": "https://thumbtack.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/thumbtack",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://thumbtack.com/careers"
 }

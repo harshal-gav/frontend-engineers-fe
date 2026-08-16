@@ -2,7 +2,7 @@
   "company": "Harvey",
   "slug": "harvey",
   "careersUrl": "https://jobs.ashbyhq.com/harvey",
-  "website": "",
+  "website": "https://harveynorman.com.au",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/harvey",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://harveynorman.com.au/careers"
 }

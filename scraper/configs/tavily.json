@@ -2,7 +2,7 @@
   "company": "Tavily",
   "slug": "tavily",
   "careersUrl": "https://jobs.ashbyhq.com/tavily",
-  "website": "",
+  "website": "https://tavily.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/tavily",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://tavily.com/careers"
 }

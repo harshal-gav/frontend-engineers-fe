@@ -2,7 +2,7 @@
   "company": "Culture Amp",
   "slug": "cultureamp",
   "careersUrl": "https://jobs.lever.co/cultureamp",
-  "website": "",
+  "website": "https://cultureamp.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/cultureamp",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://cultureamp.com/careers"
 }

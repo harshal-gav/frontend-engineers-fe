@@ -2,7 +2,7 @@
   "company": "Jasper",
   "slug": "jasper",
   "careersUrl": "https://boards.greenhouse.io/jasper",
-  "website": "",
+  "website": "https://jasper.ai",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/jasper",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://jasper.ai/careers"
 }

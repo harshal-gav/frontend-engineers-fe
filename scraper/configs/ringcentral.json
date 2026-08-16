@@ -2,7 +2,7 @@
   "company": "RingCentral",
   "slug": "ringcentral",
   "careersUrl": "https://boards.greenhouse.io/ringcentral",
-  "website": "",
+  "website": "https://ringcentral.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/ringcentral",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://ringcentral.com/careers"
 }

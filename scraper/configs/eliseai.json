@@ -2,7 +2,7 @@
   "company": "EliseAI",
   "slug": "eliseai",
   "careersUrl": "https://jobs.ashbyhq.com/eliseai",
-  "website": "",
+  "website": "https://meetelise.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/eliseai",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://meetelise.com/careers"
 }

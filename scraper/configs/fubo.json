@@ -2,7 +2,7 @@
   "company": "Fubo",
   "slug": "fubo",
   "careersUrl": "https://jobs.lever.co/fubo",
-  "website": "https://fubo.com",
+  "website": "https://fubo.tv",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/fubo",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://fubo.tv/careers"
 }

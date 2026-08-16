@@ -2,7 +2,7 @@
   "company": "Gumroad",
   "slug": "gumroad",
   "careersUrl": "https://jobs.ashbyhq.com/gumroad",
-  "website": "",
+  "website": "https://gumroad.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/gumroad",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://gumroad.com/careers"
 }

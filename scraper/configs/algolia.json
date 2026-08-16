@@ -2,7 +2,7 @@
   "company": "Algolia",
   "slug": "algolia",
   "careersUrl": "https://boards.greenhouse.io/algolia",
-  "website": "",
+  "website": "https://algolia.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/algolia",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://algolia.com/careers"
 }

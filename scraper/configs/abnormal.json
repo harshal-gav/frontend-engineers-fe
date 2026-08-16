@@ -2,7 +2,7 @@
   "company": "Abnormal Security",
   "slug": "abnormal",
   "careersUrl": "https://boards.greenhouse.io/abnormal",
-  "website": "",
+  "website": "https://abnormalsecurity.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/abnormal",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://abnormalsecurity.com/careers"
 }

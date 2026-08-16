@@ -2,7 +2,7 @@
   "company": "LaunchDarkly",
   "slug": "launchdarkly",
   "careersUrl": "https://boards.greenhouse.io/launchdarkly",
-  "website": "",
+  "website": "https://launchdarkly.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/launchdarkly",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://launchdarkly.com/careers"
 }

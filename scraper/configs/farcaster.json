@@ -2,7 +2,7 @@
   "company": "Farcaster",
   "slug": "farcaster",
   "careersUrl": "https://jobs.ashbyhq.com/farcaster",
-  "website": "",
+  "website": "https://farcaster.xyz",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/farcaster",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://farcaster.xyz/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Mistral AI",
   "slug": "mistral",
   "careersUrl": "https://jobs.ashbyhq.com/mistral",
-  "website": "",
+  "website": "https://mistralair.it",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/mistral",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://mistralair.it/careers"
 }

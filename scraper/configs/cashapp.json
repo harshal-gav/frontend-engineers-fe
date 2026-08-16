@@ -2,7 +2,7 @@
   "company": "Cash App",
   "slug": "cashapp",
   "careersUrl": "https://boards.greenhouse.io/cashapp",
-  "website": "",
+  "website": "https://cash.app",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/cashapp",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://cash.app/careers"
 }

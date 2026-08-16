@@ -2,7 +2,7 @@
   "company": "Lever",
   "slug": "lever",
   "careersUrl": "https://jobs.lever.co/lever",
-  "website": "https://lever.com",
+  "website": "https://lever.co",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/lever",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://lever.co/careers"
 }

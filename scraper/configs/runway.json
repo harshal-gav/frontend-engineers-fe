@@ -2,7 +2,7 @@
   "company": "Runway",
   "slug": "runway",
   "careersUrl": "https://jobs.ashbyhq.com/runway",
-  "website": "",
+  "website": "https://runwayml.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/runway",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://runwayml.com/careers"
 }

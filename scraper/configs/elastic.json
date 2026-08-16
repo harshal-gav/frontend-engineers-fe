@@ -2,7 +2,7 @@
   "company": "Elastic",
   "slug": "elastic",
   "careersUrl": "https://boards.greenhouse.io/elastic",
-  "website": "https://elastic.com",
+  "website": "https://elastic.co",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/elastic",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://elastic.co/careers"
 }

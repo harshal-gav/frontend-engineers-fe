@@ -2,7 +2,7 @@
   "company": "Aviatrix",
   "slug": "aviatrix",
   "careersUrl": "https://boards.greenhouse.io/aviatrix",
-  "website": "",
+  "website": "https://aviatrix.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/aviatrix",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://aviatrix.com/careers"
 }

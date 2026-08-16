@@ -2,7 +2,7 @@
   "company": "Resend",
   "slug": "resend",
   "careersUrl": "https://jobs.ashbyhq.com/resend",
-  "website": "",
+  "website": "https://resende.rj.gov.br",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/resend",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://resende.rj.gov.br/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Faire",
   "slug": "faire",
   "careersUrl": "https://boards.greenhouse.io/faire",
-  "website": "",
+  "website": "https://faire.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/faire",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://faire.com/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Acorns",
   "slug": "acorns",
   "careersUrl": "https://boards.greenhouse.io/acorns",
-  "website": "",
+  "website": "https://acorns.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/acorns",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://acorns.com/careers"
 }

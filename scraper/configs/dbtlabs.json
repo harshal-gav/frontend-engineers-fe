@@ -2,7 +2,7 @@
   "company": "dbt Labs",
   "slug": "dbtlabs",
   "careersUrl": "https://jobs.lever.co/dbtlabs",
-  "website": "",
+  "website": "https://getdbt.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/dbtlabs",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://getdbt.com/careers"
 }

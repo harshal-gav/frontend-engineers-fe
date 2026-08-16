@@ -2,7 +2,7 @@
   "company": "Scale AI",
   "slug": "scale",
   "careersUrl": "https://boards.greenhouse.io/scale",
-  "website": "",
+  "website": "https://scale.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/scale",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://scale.com/careers"
 }

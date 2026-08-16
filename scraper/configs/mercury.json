@@ -2,7 +2,7 @@
   "company": "Mercury",
   "slug": "mercury",
   "careersUrl": "https://jobs.ashbyhq.com/mercury",
-  "website": "",
+  "website": "https://mercurynews.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/mercury",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://mercurynews.com/careers"
 }

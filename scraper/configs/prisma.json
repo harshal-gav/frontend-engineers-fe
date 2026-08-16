@@ -2,7 +2,7 @@
   "company": "Prisma",
   "slug": "prisma",
   "careersUrl": "https://boards.greenhouse.io/prisma",
-  "website": "",
+  "website": "https://prismahealth.org",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/prisma",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://prismahealth.org/careers"
 }

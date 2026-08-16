@@ -2,7 +2,7 @@
   "company": "Replicate",
   "slug": "replicate",
   "careersUrl": "https://jobs.ashbyhq.com/replicate",
-  "website": "",
+  "website": "https://replicate.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/replicate",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://replicate.com/careers"
 }

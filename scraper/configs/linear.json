@@ -2,7 +2,7 @@
   "company": "Linear",
   "slug": "linear",
   "careersUrl": "https://jobs.ashbyhq.com/linear",
-  "website": "https://linear.com",
+  "website": "https://linear.app",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/linear",
@@ -18,5 +18,6 @@
     "maxScrolls": 5
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://linear.app/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Confluent",
   "slug": "confluent",
   "careersUrl": "https://boards.greenhouse.io/confluent",
-  "website": "https://confluent.com",
+  "website": "https://confluent.io",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/confluent",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://confluent.io/careers"
 }

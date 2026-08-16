@@ -2,7 +2,7 @@
   "company": "Flyio",
   "slug": "flyio",
   "careersUrl": "https://boards.greenhouse.io/flyio",
-  "website": "https://flyio.com",
+  "website": "https://fly.io",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/flyio",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://fly.io/careers"
 }

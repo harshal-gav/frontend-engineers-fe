@@ -2,7 +2,7 @@
   "company": "Substack",
   "slug": "substack",
   "careersUrl": "https://boards.greenhouse.io/substack",
-  "website": "",
+  "website": "https://substack.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/substack",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://substack.com/careers"
 }

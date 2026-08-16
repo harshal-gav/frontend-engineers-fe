@@ -2,7 +2,7 @@
   "company": "Canary",
   "slug": "canary",
   "careersUrl": "https://jobs.lever.co/canary",
-  "website": "",
+  "website": "https://canarymedia.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/canary",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://canarymedia.com/careers"
 }

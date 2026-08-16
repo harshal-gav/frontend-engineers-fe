@@ -2,7 +2,7 @@
   "company": "Mapbox",
   "slug": "mapbox",
   "careersUrl": "https://boards.greenhouse.io/mapbox",
-  "website": "",
+  "website": "https://mapbox.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/mapbox",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://mapbox.com/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Sketch",
   "slug": "sketch",
   "careersUrl": "https://jobs.lever.co/sketch",
-  "website": "https://sketch.com",
+  "website": "https://sketchfab.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/sketch",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://sketchfab.com/careers"
 }

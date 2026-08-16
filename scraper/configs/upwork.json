@@ -2,7 +2,7 @@
   "company": "Upwork",
   "slug": "upwork",
   "careersUrl": "https://boards.greenhouse.io/upwork",
-  "website": "",
+  "website": "https://upwork.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/upwork",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://upwork.com/careers"
 }

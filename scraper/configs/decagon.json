@@ -2,7 +2,7 @@
   "company": "Decagon",
   "slug": "decagon",
   "careersUrl": "https://jobs.ashbyhq.com/decagon",
-  "website": "",
+  "website": "https://decagonhq.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/decagon",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://decagonhq.com/careers"
 }

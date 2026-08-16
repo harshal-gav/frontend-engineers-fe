@@ -2,7 +2,7 @@
   "company": "Kiva",
   "slug": "kiva",
   "careersUrl": "https://jobs.lever.co/kiva",
-  "website": "https://kiva.com",
+  "website": "https://kiva.org",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/kiva",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://kiva.org/careers"
 }

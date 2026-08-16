@@ -2,7 +2,7 @@
   "company": "Front",
   "slug": "front",
   "careersUrl": "https://boards.greenhouse.io/front",
-  "website": "https://front.com",
+  "website": "https://flyfrontier.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/front",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://flyfrontier.com/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Twitch",
   "slug": "twitch",
   "careersUrl": "https://jobs.lever.co/twitch",
-  "website": "https://twitch.com",
+  "website": "https://twitch.tv",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/twitch",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://twitch.tv/careers"
 }

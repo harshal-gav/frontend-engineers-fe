@@ -2,7 +2,7 @@
   "company": "Crux",
   "slug": "crux",
   "careersUrl": "https://jobs.ashbyhq.com/crux",
-  "website": "",
+  "website": "https://cruxnow.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/crux",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://cruxnow.com/careers"
 }

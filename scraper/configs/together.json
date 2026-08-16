@@ -2,7 +2,7 @@
   "company": "Together AI",
   "slug": "together",
   "careersUrl": "https://jobs.ashbyhq.com/together",
-  "website": "",
+  "website": "https://togetherai.co",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/together",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://togetherai.co/careers"
 }

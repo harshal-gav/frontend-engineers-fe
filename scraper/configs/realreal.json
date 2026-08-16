@@ -2,7 +2,7 @@
   "company": "Realreal",
   "slug": "realreal",
   "careersUrl": "https://jobs.lever.co/realreal",
-  "website": "https://realreal.com",
+  "website": "https://realreality.org",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/realreal",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://realreality.org/careers"
 }

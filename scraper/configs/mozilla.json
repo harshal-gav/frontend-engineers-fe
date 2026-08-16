@@ -2,7 +2,7 @@
   "company": "Mozilla",
   "slug": "mozilla",
   "careersUrl": "https://boards.greenhouse.io/mozilla",
-  "website": "",
+  "website": "https://mozilla.org",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/mozilla",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://mozilla.org/careers"
 }

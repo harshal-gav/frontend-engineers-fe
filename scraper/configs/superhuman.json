@@ -2,7 +2,7 @@
   "company": "Superhuman",
   "slug": "superhuman",
   "careersUrl": "https://boards.greenhouse.io/superhuman",
-  "website": "",
+  "website": "https://superhuman.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/superhuman",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://superhuman.com/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Coda",
   "slug": "coda",
   "careersUrl": "https://boards.greenhouse.io/coda",
-  "website": "https://coda.com",
+  "website": "https://coda.io",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/coda",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://coda.io/careers"
 }

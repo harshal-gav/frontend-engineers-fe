@@ -2,7 +2,7 @@
   "company": "Notion",
   "slug": "notion",
   "careersUrl": "https://boards.greenhouse.io/notion",
-  "website": "https://notion.com",
+  "website": "https://notion.so",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/notion",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://notion.so/careers"
 }

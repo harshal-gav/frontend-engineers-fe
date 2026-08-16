@@ -2,7 +2,7 @@
   "company": "Cruise",
   "slug": "cruise",
   "careersUrl": "https://boards.greenhouse.io/cruise",
-  "website": "",
+  "website": "https://cruisecritic.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/cruise",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://cruisecritic.com/careers"
 }

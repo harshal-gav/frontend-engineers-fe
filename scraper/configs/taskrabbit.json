@@ -2,7 +2,7 @@
   "company": "TaskRabbit",
   "slug": "taskrabbit",
   "careersUrl": "https://boards.greenhouse.io/taskrabbit",
-  "website": "",
+  "website": "https://taskrabbit.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/taskrabbit",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://taskrabbit.com/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Oscar",
   "slug": "oscar",
   "careersUrl": "https://boards.greenhouse.io/oscar",
-  "website": "https://oscar.com",
+  "website": "https://hioscar.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/oscar",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://hioscar.com/careers"
 }

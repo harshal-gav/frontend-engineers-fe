@@ -2,7 +2,7 @@
   "company": "Gong",
   "slug": "gong",
   "careersUrl": "https://boards.greenhouse.io/gong",
-  "website": "https://gong.com",
+  "website": "https://gong.io",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/gong",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://gong.io/careers"
 }

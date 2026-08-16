@@ -2,7 +2,7 @@
   "company": "Formstack",
   "slug": "formstack",
   "careersUrl": "https://boards.greenhouse.io/formstack",
-  "website": "",
+  "website": "https://formstack.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/formstack",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://formstack.com/careers"
 }

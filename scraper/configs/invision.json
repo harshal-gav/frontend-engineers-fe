@@ -2,7 +2,7 @@
   "company": "Invision",
   "slug": "invision",
   "careersUrl": "https://jobs.lever.co/invision",
-  "website": "https://invision.com",
+  "website": "https://invisionapp.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/invision",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://invisionapp.com/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Raygun",
   "slug": "raygun",
   "careersUrl": "https://jobs.lever.co/raygun",
-  "website": "https://raygun.com",
+  "website": "https://raygunsite.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/raygun",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://raygunsite.com/careers"
 }

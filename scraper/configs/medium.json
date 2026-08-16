@@ -2,7 +2,7 @@
   "company": "Medium",
   "slug": "medium",
   "careersUrl": "https://boards.greenhouse.io/medium",
-  "website": "",
+  "website": "https://medium.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/medium",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://medium.com/careers"
 }

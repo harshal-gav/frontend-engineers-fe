@@ -2,7 +2,7 @@
   "company": "Hugging Face",
   "slug": "huggingface",
   "careersUrl": "https://boards.greenhouse.io/huggingface",
-  "website": "",
+  "website": "https://huggingface.co",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/huggingface",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://huggingface.co/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Bucket",
   "slug": "bucket",
   "careersUrl": "https://boards.greenhouse.io/bucket",
-  "website": "",
+  "website": "https://bucketlisters.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/bucket",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://bucketlisters.com/careers"
 }

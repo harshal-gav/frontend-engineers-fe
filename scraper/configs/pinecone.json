@@ -2,7 +2,7 @@
   "company": "Pinecone",
   "slug": "pinecone",
   "careersUrl": "https://jobs.ashbyhq.com/pinecone",
-  "website": "",
+  "website": "https://pinecone.io",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/pinecone",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://pinecone.io/careers"
 }

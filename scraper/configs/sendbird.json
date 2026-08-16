@@ -2,7 +2,7 @@
   "company": "Sendbird",
   "slug": "sendbird",
   "careersUrl": "https://jobs.lever.co/sendbird",
-  "website": "",
+  "website": "https://sendbird.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/sendbird",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://sendbird.com/careers"
 }

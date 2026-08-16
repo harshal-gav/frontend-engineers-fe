@@ -2,7 +2,7 @@
   "company": "Tubi",
   "slug": "tubi",
   "careersUrl": "https://jobs.lever.co/tubi",
-  "website": "https://tubi.com",
+  "website": "https://tubitv.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/tubi",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://tubitv.com/careers"
 }

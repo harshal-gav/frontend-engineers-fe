@@ -2,7 +2,7 @@
   "company": "OpenSea",
   "slug": "opensea",
   "careersUrl": "https://boards.greenhouse.io/opensea",
-  "website": "",
+  "website": "https://opensea.io",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/opensea",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://opensea.io/careers"
 }

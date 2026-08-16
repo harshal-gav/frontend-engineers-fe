@@ -2,7 +2,7 @@
   "company": "Supaglue",
   "slug": "supaglue",
   "careersUrl": "https://jobs.ashbyhq.com/supaglue",
-  "website": "",
+  "website": "https://supaglue.com",
   "industry": "Technology",
   "atsType": "ashby",
   "boardUrl": "https://jobs.ashbyhq.com/supaglue",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://supaglue.com/careers"
 }

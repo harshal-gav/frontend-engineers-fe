@@ -2,7 +2,7 @@
   "company": "Lattice",
   "slug": "lattice",
   "careersUrl": "https://boards.greenhouse.io/lattice",
-  "website": "",
+  "website": "https://lattice.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/lattice",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://lattice.com/careers"
 }

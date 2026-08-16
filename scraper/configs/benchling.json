@@ -2,7 +2,7 @@
   "company": "Benchling",
   "slug": "benchling",
   "careersUrl": "https://jobs.lever.co/benchling",
-  "website": "",
+  "website": "https://benchling.com",
   "industry": "Technology",
   "atsType": "lever",
   "boardUrl": "https://jobs.lever.co/benchling",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://benchling.com/careers"
 }

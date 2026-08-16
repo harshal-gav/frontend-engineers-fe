@@ -2,7 +2,7 @@
   "company": "AppLovin",
   "slug": "applovin",
   "careersUrl": "https://boards.greenhouse.io/applovin",
-  "website": "",
+  "website": "https://applovin.com",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/applovin",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://applovin.com/careers"
 }

@@ -2,7 +2,7 @@
   "company": "Customer.io",
   "slug": "customerio",
   "careersUrl": "https://boards.greenhouse.io/customerio",
-  "website": "",
+  "website": "https://customer.io",
   "industry": "Technology",
   "atsType": "greenhouse",
   "boardUrl": "https://boards.greenhouse.io/customerio",
@@ -17,5 +17,6 @@
     "type": "none"
   },
   "crawlIntervalHours": 24,
-  "respectRobotsTxt": true
+  "respectRobotsTxt": true,
+  "actualCareersUrl": "https://customer.io/careers"
 }
