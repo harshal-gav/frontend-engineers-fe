@@ -543,26 +543,6 @@ export default function JobsClientPage() {
         />
       </BottomSheet>
 
-      {/* ─── Footer ──────────────────────────── */}
-      <footer className="border-t py-6 sm:py-8 border-[#333] bg-[#0a0a0a]">
-        <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500 gap-4">
-          <p>© 2026 FrontendEngineers.com. All rights reserved.</p>
-          <div className="flex gap-6">
-            <Link
-              href="/privacy"
-              className="hover:text-[#00ffcc] transition-colors"
-            >
-              Privacy Policy
-            </Link>
-            <Link
-              href="/terms"
-              className="hover:text-[#00ffcc] transition-colors"
-            >
-              Terms of Service
-            </Link>
-          </div>
-        </div>
-      </footer>
     </>
   );
 }

@@ -94,24 +94,12 @@ export default async function HomePage() {
         <JobsClientPage />
       </Suspense>
 
-      <section className="bg-[#111] border-t border-[#333] py-16 px-4">
-        <div className="max-w-4xl mx-auto prose prose-invert prose-p:text-gray-400 prose-headings:text-white">
-          <h2 className="text-3xl font-bold mb-6">About FrontendEngineers.com</h2>
-          <p className="mb-4 text-gray-400">
-            Welcome to the premier destination for <strong>remote frontend developer jobs</strong>. Whether you're a junior developer looking for <strong>remote frontend jobs for freshers</strong> or an experienced professional seeking <strong>senior remote frontend developer jobs</strong>, our highly curated job board connects you with top remote tech companies hiring frontend talent globally.
-          </p>
-          <p className="mb-4 text-gray-400">
-            We specialize in providing <strong>fully remote developer jobs</strong> that allow you to <strong>work from anywhere</strong>. We manually vet and verify listings to bring you the best <strong>remote react developer jobs</strong>, <strong>remote vue developer jobs</strong>, and <strong>remote angular developer jobs</strong>. Say goodbye to irrelevant listings and focus exclusively on high-quality <strong>remote UI/UX engineer jobs</strong> and <strong>remote typescript jobs</strong>.
-          </p>
-          <h3 className="text-xl font-semibold mt-8 mb-4 text-white">Why choose our remote tech job board?</h3>
-          <p className="mb-8 text-gray-400">
-            Finding genuine <strong>async remote frontend jobs</strong> and legitimate <strong>remote frontend contract jobs</strong> can be challenging. We save you time by filtering out hybrid roles disguised as remote, so you can focus on what you do best: building amazing user interfaces. If you're wondering <em>how to find remote frontend developer jobs</em> with no hassle, you're in the right place. Start browsing our curated <strong>work from anywhere frontend jobs</strong> today.
-          </p>
-        </div>
-      </section>
+
       <footer className="bg-[#0a0a0a] border-t border-[#333] py-8 text-center text-gray-500">
         <p>Contact us: <a href="mailto:frontendengineersupport@gmail.com" className="text-[#00ffcc] hover:underline">frontendengineersupport@gmail.com</a></p>
         <div className="flex justify-center gap-4 mt-4 text-sm">
+          <a href="/about" className="hover:text-[#00ffcc]">About Us</a>
+          <a href="/sitemap" className="hover:text-[#00ffcc]">Sitemap</a>
           <a href="/terms" className="hover:text-[#00ffcc]">Terms of Service</a>
           <a href="/privacy" className="hover:text-[#00ffcc]">Privacy Policy</a>
         </div>
