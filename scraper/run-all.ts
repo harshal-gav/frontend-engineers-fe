@@ -346,24 +346,70 @@ async function main() {
     location: j.location || 'Remote',
   }));
   
-  // Sort by posted date (newest first)
-  finalJobs.sort((a, b) => {
-    const dateA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
-    const dateB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
-    return dateB - dateA;
-  });
+  // Merge with existing jobs, deduplicate, and sort
+  let finalJobsToSave: NormalizedJob[] = finalJobs;
+  let statsMerged = 0;
+  let statsRemovedOld = 0;
   
-  // Save
-  if (!dryRun && finalJobs.length > 0) {
+  if (!dryRun) {
     const outputPath = path.join(process.cwd(), 'data', 'jobs.json');
-    fs.writeFileSync(outputPath, JSON.stringify(finalJobs, null, 2));
+    let existingJobs: NormalizedJob[] = [];
+    
+    if (fs.existsSync(outputPath)) {
+      try {
+        existingJobs = JSON.parse(fs.readFileSync(outputPath, 'utf-8'));
+      } catch (e) {
+        console.error('Failed to parse existing jobs.json, starting fresh.');
+      }
+    }
+    
+    // 60 days ago threshold
+    const cutoffDate = new Date();
+    cutoffDate.setDate(cutoffDate.getDate() - 60);
+    
+    // Filter out old jobs from existing
+    const validExistingJobs = existingJobs.filter(j => {
+      if (!j.postedAt) return true;
+      return new Date(j.postedAt) >= cutoffDate;
+    });
+    
+    statsRemovedOld = existingJobs.length - validExistingJobs.length;
+    
+    // Merge new and valid existing
+    const combined = [...finalJobs, ...validExistingJobs];
+    
+    // Global deduplication across all jobs
+    const finalSeen = new Set<string>();
+    finalJobsToSave = combined.filter(j => {
+      // Use sourceHash if it exists, otherwise fallback to id
+      const hash = j.sourceHash || j.id;
+      if (finalSeen.has(hash)) return false;
+      finalSeen.add(hash);
+      return true;
+    });
+    
+    // Sort by posted date (newest first)
+    finalJobsToSave.sort((a, b) => {
+      const dateA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
+      const dateB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
+      return dateB - dateA;
+    });
+    
+    statsMerged = validExistingJobs.length;
+    
+    // Save
+    fs.writeFileSync(outputPath, JSON.stringify(finalJobsToSave, null, 2));
     const fileSize = (fs.statSync(outputPath).size / 1024).toFixed(1);
-    log(`\n${c.green}${c.bold}💾 Saved ${finalJobs.length} jobs to data/jobs.json (${fileSize} KB)${c.reset}`);
+    
+    log(`\n${c.green}${c.bold}💾 Saved ${finalJobsToSave.length} total jobs to data/jobs.json (${fileSize} KB)${c.reset}`);
+    if (statsMerged > 0) log(`   ${c.dim}↳ Included ${statsMerged} existing active jobs${c.reset}`);
+    if (statsRemovedOld > 0) log(`   ${c.dim}↳ Removed ${statsRemovedOld} expired jobs (>60 days old)${c.reset}`);
+    
   } else if (dryRun) {
     log(`\n${c.yellow}${c.bold}🔍 Dry run — no files saved${c.reset}`);
   }
   
-  printFinalReport(finalJobs.length);
+  printFinalReport(finalJobsToSave.length);
 }
 
 main().catch(err => {
