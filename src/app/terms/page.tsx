@@ -23,7 +23,7 @@ export default function TermsPage() {
           
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">3. Subscriptions</h2>
-            <p className="leading-relaxed">Some parts of the service are billed on a subscription basis to unlock full access. You will be billed in advance on a recurring and periodic basis. Payment processing is handled securely by Gumroad, our Merchant of Record.</p>
+            <p className="leading-relaxed">Some parts of the service are billed on a subscription basis to unlock full access. You will be billed in advance on a recurring and periodic basis. Payment processing is handled securely by PayPal, our payment gateway partner.</p>
           </section>
           
           <section>
