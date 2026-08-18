@@ -29,7 +29,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
       if (firebaseUser) {
         // Listen to the top-level user doc for the isPremium flag.
         // This is a single-document read (fast, cheap) that matches
-        // the dual-write pattern used by the Razorpay verify-payment handler.
+        // the dual-write pattern used by the Gumroad webhook handler.
         const userDocRef = doc(db, "users", firebaseUser.uid);
 
         const unsubscribeDoc = onSnapshot(userDocRef, (snapshot) => {
