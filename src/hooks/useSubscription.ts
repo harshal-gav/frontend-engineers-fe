@@ -10,8 +10,8 @@ export interface SubscriptionState {
   isPremium: boolean;
   /** ISO 8601 date string when the subscription expires (null if no active sub) */
   expiresAt: string | null;
-  /** LemonSqueezy customer ID for managing the subscription */
-  lemonSqueezyCustomerId: string | null;
+  /** Razorpay payment ID for reference */
+  razorpayCustomerId: string | null;
   /** Whether the subscription data is still loading */
   loading: boolean;
   /** The authenticated Firebase user (null if logged out) */
@@ -24,7 +24,7 @@ export interface SubscriptionState {
  *
  * This hook listens to the top-level `users/{uid}` doc for the
  * `isPremium` and `subscriptionExpiresAt` fields written by the
- * LemonSqueezy webhook handler.
+ * Razorpay verify-payment handler.
  *
  * Usage:
  * ```tsx
@@ -38,7 +38,7 @@ export function useSubscription(): SubscriptionState {
   const [state, setState] = useState<SubscriptionState>({
     isPremium: false,
     expiresAt: null,
-    lemonSqueezyCustomerId: null,
+    razorpayCustomerId: null,
     loading: true,
     user: null,
   });
@@ -73,8 +73,8 @@ export function useSubscription(): SubscriptionState {
               setState({
                 isPremium,
                 expiresAt,
-                lemonSqueezyCustomerId:
-                  data.lemonSqueezyCustomerId || null,
+                razorpayCustomerId:
+                  data.razorpayCustomerId || null,
                 loading: false,
                 user: firebaseUser,
               });
@@ -83,7 +83,7 @@ export function useSubscription(): SubscriptionState {
               setState({
                 isPremium: false,
                 expiresAt: null,
-                lemonSqueezyCustomerId: null,
+                razorpayCustomerId: null,
                 loading: false,
                 user: firebaseUser,
               });
@@ -104,7 +104,7 @@ export function useSubscription(): SubscriptionState {
         setState({
           isPremium: false,
           expiresAt: null,
-          lemonSqueezyCustomerId: null,
+          razorpayCustomerId: null,
           loading: false,
           user: null,
         });

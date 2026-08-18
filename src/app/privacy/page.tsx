@@ -13,7 +13,7 @@ export default function PrivacyPage() {
         <div className="space-y-8">
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">1. Information We Collect</h2>
-            <p className="leading-relaxed">We collect information you provide directly to us when you create an account, subscribe to our premium service, or otherwise communicate with us. This includes your email address, name, and payment information processed by our secure payment provider (LemonSqueezy).</p>
+            <p className="leading-relaxed">We collect information you provide directly to us when you create an account, subscribe to our premium service, or otherwise communicate with us. This includes your email address, name, and payment information processed by our secure payment provider (Razorpay).</p>
           </section>
           
           <section>
@@ -28,7 +28,7 @@ export default function PrivacyPage() {
           
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">4. Third-Party Services</h2>
-            <p className="leading-relaxed">We use trusted third-party services such as Google Firebase for authentication and database management, and LemonSqueezy for payment processing. These services have their own stringent privacy policies regarding the data they collect and process.</p>
+            <p className="leading-relaxed">We use trusted third-party services such as Google Firebase for authentication and database management, and Razorpay for payment processing. These services have their own stringent privacy policies regarding the data they collect and process.</p>
           </section>
           
           <section>
