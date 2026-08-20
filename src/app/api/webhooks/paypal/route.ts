@@ -47,8 +47,8 @@ export async function POST(req: Request) {
         await subscriptionRef.set({
           status: resource.status,
           plan_id: resource.plan_id,
-          created_time: resource.create_time,
-          next_billing_time: nextBillingTime,
+          created_time: resource.create_time || null,
+          next_billing_time: nextBillingTime || null,
           updated_at: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
 
