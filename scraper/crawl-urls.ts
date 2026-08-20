@@ -34,10 +34,10 @@ export async function scrapeDuckDuckGoJobs(log: (msg: string) => void): Promise<
     return { jobs, errors: [], duration: 0 };
   }
 
+  // Make API key optional - skip agentic clicking if not provided
   const apiKey = process.env.GEMINI_API_KEY || '';
   if (!apiKey) {
-    log(`❌ Error: GEMINI_API_KEY is not set in .env! Required for Agentic Crawler.`);
-    return { jobs, errors: ['Missing API key'], duration: 0 };
+    log(`⚠️ GEMINI_API_KEY is not set. Skipping agentic clicking loop.`);
   }
 
   // LIMIT TO 10 FOR TESTING
@@ -50,12 +50,12 @@ export async function scrapeDuckDuckGoJobs(log: (msg: string) => void): Promise<
     const context = await browser.newContext({
       viewport: { width: 1440, height: 900 }
     });
-    const page = await context.newPage();
 
     let count = 0;
     for (const mapping of mappingsToCrawl) {
       count++;
       const { company, url: firstLink } = mapping;
+      const page = await context.newPage();
       
       log(`   🔎 [${count}/${mappingsToCrawl.length}] Crawling ${company} (${firstLink})`);
       
@@ -75,8 +75,8 @@ export async function scrapeDuckDuckGoJobs(log: (msg: string) => void): Promise<
 
         let uniqueJobLinks = [...new Set(jobLinks)].filter(l => l !== firstLink && l.startsWith('http'));
 
-        // AGENTIC LOOP: If no jobs found, ask Gemini what to click!
-        if (uniqueJobLinks.length === 0) {
+        // AGENTIC LOOP: If no jobs found, ask Gemini what to click (only if API key is present)
+        if (uniqueJobLinks.length === 0 && apiKey) {
             log(`   🤖 No jobs visible! Asking Gemini Agent to navigate the SPA...`);
             
             // Extract all clickable elements
@@ -204,6 +204,8 @@ export async function scrapeDuckDuckGoJobs(log: (msg: string) => void): Promise<
         }
       } catch (err) {
         log(`   ❌ Failed on company ${company}: ${err instanceof Error ? err.message : String(err)}`);
+      } finally {
+        await page.close();
       }
       
     }
