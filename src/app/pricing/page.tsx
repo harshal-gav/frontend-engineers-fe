@@ -66,11 +66,22 @@ export default function PricingPage() {
               <PayPalScriptProvider options={initialOptions}>
                 <PayPalButtons
                   style={{ layout: "vertical", shape: "rect", color: "gold" }}
-                  createSubscription={(data, actions) => {
-                    return actions.subscription.create({
-                      plan_id: process.env.NEXT_PUBLIC_PAYPAL_PLAN_ID!,
-                      custom_id: user.uid, // Tie this subscription to our Firebase user
+                  createSubscription={async (data, actions) => {
+                    const response = await fetch("/api/paypal/create-subscription", {
+                      method: "POST",
+                      headers: {
+                        "Content-Type": "application/json",
+                      },
+                      body: JSON.stringify({
+                        plan_id: process.env.NEXT_PUBLIC_PAYPAL_PLAN_ID!,
+                        custom_id: user.uid,
+                      }),
                     });
+                    const result = await response.json();
+                    if (!response.ok || !result.id) {
+                      throw new Error(result.error || "Failed to create subscription");
+                    }
+                    return result.id;
                   }}
                   onApprove={async (data, actions) => {
                     alert("🎉 Subscription created successfully! Your account will be upgraded momentarily.");
