@@ -37,6 +37,13 @@ function sleep(ms: number): Promise<void> {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+export class GeminiRateLimitError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = 'GeminiRateLimitError';
+  }
+}
+
 /**
  * Send a batch of jobs to Gemini for classification.
  * Returns which jobs are approved (true frontend/JS/TS roles).
@@ -65,6 +72,7 @@ APPROVE a job ONLY if ALL of these are true:
    - Web Developer focused on JavaScript frameworks
    - TypeScript Developer
    - JavaScript Developer
+4. The role must be FULLY REMOTE and explicitly open to candidates in the USA, Canada, OR Europe.
 
 REJECT a job if ANY of these are true:
 - It's a backend role in Python, Java, Go, Rust, C#, C++, Ruby, PHP, Scala, Elixir, or Kotlin
@@ -76,12 +84,13 @@ REJECT a job if ANY of these are true:
 - It's a generic "Software Engineer" with no clear JS/TS/frontend indicators
 - It's Security Engineering, Database Administration, or Networking
 - The title mentions Python, Java, Go, Rust, C++, Ruby, PHP, .NET, or similar non-JS languages
+- The job requires the candidate to be onsite/hybrid, or only hires from outside USA/Canada/Europe (e.g. "Asia only", "Latin America only").
 
 Jobs to classify:
 ${jobList}
 
 Reply with ONLY a valid JSON array, no markdown, no explanation:
-[{"index": 0, "approved": true, "reason": "React frontend role"}, ...]`;
+[{"index": 0, "approved": true, "reason": "React frontend role"}]`;
 
   try {
     const response = await fetch(`${GEMINI_API_URL}?key=${apiKey}`, {
@@ -100,12 +109,9 @@ Reply with ONLY a valid JSON array, no markdown, no explanation:
     if (!response.ok) {
       const errorText = await response.text();
       
-      // Rate limit — back off and retry
-      if (response.status === 429 && retryCount < 3) {
-        const waitTime = Math.pow(2, retryCount + 1) * 1000;
-        console.log(`   ⏳ Rate limited, waiting ${waitTime/1000}s before retry...`);
-        await sleep(waitTime);
-        return classifyBatch(apiKey, jobs, retryCount + 1);
+      // Rate limit or Quota exceeded
+      if (response.status === 429) {
+        throw new GeminiRateLimitError(`Gemini API rate limit or quota exceeded (429). Stop execution.`);
       }
       
       throw new Error(`Gemini API error ${response.status}: ${errorText.substring(0, 200)}`);
@@ -119,7 +125,6 @@ Reply with ONLY a valid JSON array, no markdown, no explanation:
       const cleaned = text.replace(/```json\n?/g, '').replace(/```\n?/g, '').trim();
       results = JSON.parse(cleaned);
     } catch (parseErr) {
-      // Try to extract just the array part if there's extra text
       const match = text.match(/\[[\s\S]*\]/);
       if (match) {
         try {
@@ -134,13 +139,16 @@ Reply with ONLY a valid JSON array, no markdown, no explanation:
     
     return results;
   } catch (error) {
+    if (error instanceof GeminiRateLimitError) {
+      throw error; // Bubble up the rate limit error
+    }
+
     if (retryCount < 2) {
       console.log(`   ⚠️ Gemini error, retrying... (${error instanceof Error ? error.message : error})`);
       await sleep(2000);
       return classifyBatch(apiKey, jobs, retryCount + 1);
     }
     
-    // On final failure, reject all jobs in batch (safe default)
     console.error(`   ❌ Gemini classification failed after retries:`, error);
     return jobs.map(j => ({ index: j.index, approved: false, reason: 'Classification failed' }));
   }
@@ -155,10 +163,11 @@ export async function filterJobsWithGemini(
   apiKey: string,
   jobs: { title: string; description?: string; department?: string }[],
   onProgress?: (msg: string) => void
-): Promise<{ approvedIndices: Set<number>; results: FilterResult[] }> {
+): Promise<{ approvedIndices: Set<number>; results: FilterResult[]; hitRateLimit: boolean }> {
   const log = onProgress || console.log;
   const BATCH_SIZE = 15;
   const allResults: FilterResult[] = [];
+  let hitRateLimit = false;
   
   log(`   🤖 Gemini AI: Classifying ${jobs.length} jobs...`);
   
@@ -178,8 +187,18 @@ export async function filterJobsWithGemini(
     
     log(`   🤖 Batch ${batchNum}/${totalBatches} (${batch.length} jobs)...`);
     
-    const results = await classifyBatch(apiKey, batch);
-    allResults.push(...results);
+    try {
+      const results = await classifyBatch(apiKey, batch);
+      allResults.push(...results);
+    } catch (err) {
+      if (err instanceof GeminiRateLimitError) {
+        log(`   ❌ Hit Gemini rate limit/quota. Stopping further classification.`);
+        hitRateLimit = true;
+        break; // Stop processing further batches, but keep allResults from previous batches
+      } else {
+        throw err;
+      }
+    }
     
     // Small delay between batches to respect rate limits
     if (i + BATCH_SIZE < jobsForFilter.length) {
@@ -215,5 +234,5 @@ export async function filterJobsWithGemini(
     }
   }
   
-  return { approvedIndices, results: allResults };
+  return { approvedIndices, results: allResults, hitRateLimit };
 }

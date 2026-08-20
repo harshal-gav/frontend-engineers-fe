@@ -173,8 +173,8 @@ export default function AdminPage() {
               disabled={loading}
               className="bg-black text-white p-2 rounded-lg border border-[#333] outline-none focus:border-[#00ffcc] cursor-pointer disabled:opacity-50"
             >
-              <option value="api-only">Fast Scrape (APIs Only)</option>
-              <option value="full">Deep Scrape (APIs + Companies)</option>
+              <option value="api-only">Fast Scrape (DuckDuckGo Only)</option>
+              <option value="full">Deep Scrape (DuckDuckGo + Companies)</option>
               <option value="dry-run">Dry Run (No Save)</option>
             </select>
             <button 

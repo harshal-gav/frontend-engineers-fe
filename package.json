@@ -11,7 +11,8 @@
     "scrape:dry": "npx tsx scraper/run-all.ts --dry-run",
     "scrape:fast": "npx tsx scraper/run-all.ts --concurrency=5",
     "scrape:single": "npx tsx scraper/engine.ts",
-    "scrape:clean": "npx tsx scraper/clean-existing-jobs.ts"
+    "scrape:clean": "npx tsx scraper/clean-existing-jobs.ts",
+    "discover": "npx tsx scraper/discover-urls.ts"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -26,6 +27,8 @@
     "fuse.js": "^7.5.0",
     "next": "16.3.1",
     "playwright": "^1.62.1",
+    "playwright-extra": "^4.3.6",
+    "puppeteer-extra-plugin-stealth": "^2.11.2",
     "react": "19.2.8",
     "react-dom": "19.2.8",
     "robots-parser": "^3.0.1"

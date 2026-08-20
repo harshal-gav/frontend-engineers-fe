@@ -17,12 +17,10 @@
  *   npm run scrape -- --no-gemini     # Skip Gemini (use regex only)
  */
 
-import * as fs from 'fs';
 import * as path from 'path';
 import * as dotenv from 'dotenv';
-import { scrapeCompany, loadAllConfigs, type CompanyConfig } from './engine';
-import { filterJobsWithGemini } from './gemini-filter';
-import { fetchAllApiSources } from './api-sources';
+import { filterJobsWithGemini, GeminiRateLimitError } from './gemini-filter';
+import { scrapeDuckDuckGoJobs } from './crawl-urls';
 import type { NormalizedJob } from './normalizer';
 
 dotenv.config({ path: path.join(process.cwd(), '.env') });
@@ -58,13 +56,7 @@ function progressBar(cur: number, total: number, w: number = 30): string {
 
 // ─── State ────────────────────────────────────────────────────
 interface Stats {
-  apiJobsFetched: number;
-  apiJobsPreFiltered: number;
-  companiesTotal: number;
-  companiesCompleted: number;
-  companiesFailed: number;
-  companyJobsScraped: number;
-  companyJobsRemote: number;
+  duckDuckGoJobsFound: number;
   totalBeforeGemini: number;
   geminiApproved: number;
   geminiRejected: number;
@@ -75,13 +67,7 @@ interface Stats {
 }
 
 const stats: Stats = {
-  apiJobsFetched: 0,
-  apiJobsPreFiltered: 0,
-  companiesTotal: 0,
-  companiesCompleted: 0,
-  companiesFailed: 0,
-  companyJobsScraped: 0,
-  companyJobsRemote: 0,
+  duckDuckGoJobsFound: 0,
   totalBeforeGemini: 0,
   geminiApproved: 0,
   geminiRejected: 0,
@@ -95,91 +81,19 @@ function log(msg: string) {
   console.log(msg);
 }
 
-// ─── Phase 2: Company Career Page Scraping ────────────────────
-async function scrapeCompanies(
-  configs: CompanyConfig[],
-  geminiApiKey: string | undefined,
-  concurrency: number,
-  dryRun: boolean
-): Promise<NormalizedJob[]> {
-  const allJobs: NormalizedJob[] = [];
-  let index = 0;
-  stats.companiesTotal = configs.length;
-  
-  log(`\n${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}`);
-  log(`${c.bold}  📡 PHASE 2: Scraping ${configs.length} company career pages${c.reset}`);
-  log(`${c.bold}  Concurrency: ${concurrency} | Gemini: ${geminiApiKey ? '✅' : '❌ (regex)'}${c.reset}`);
-  log(`${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}\n`);
-  
-  async function processNext(): Promise<void> {
-    while (index < configs.length) {
-      const i = index++;
-      const config = configs[i];
-      
-      try {
-        const result = await scrapeCompany(config, config.slug, {
-          dryRun,
-          geminiApiKey,
-          onProgress: (msg) => log(`  ${c.dim}[${config.company}]${c.reset} ${msg}`),
-        });
-        
-        stats.companyJobsScraped += result.totalFound + result.totalFilteredByGemini;
-        allJobs.push(...result.jobs);
-        
-        for (const job of result.jobs) {
-          stats.approvedJobs.push({
-            title: job.title,
-            company: job.company?.name || config.company,
-            location: job.location || 'Remote',
-          });
-        }
-        
-        stats.companyResults.push({
-          name: config.company,
-          approved: result.totalFound,
-          status: result.totalFound > 0 ? 'success' : result.errors.length > 0 ? 'failed' : 'empty',
-        });
-        
-        if (result.errors.length > 0) {
-          stats.companiesFailed++;
-          stats.errors.push(...result.errors.map(e => `${config.company}: ${e}`));
-        }
-        stats.companiesCompleted++;
-        
-        // Progress every 10 companies
-        if (stats.companiesCompleted % 10 === 0) {
-          log(`\n  ${progressBar(stats.companiesCompleted, stats.companiesTotal)} ${stats.companiesCompleted}/${stats.companiesTotal} companies | ${c.green}${allJobs.length} frontend jobs found${c.reset}\n`);
-        }
-        
-      } catch (err) {
-        stats.companiesFailed++;
-        stats.companiesCompleted++;
-        const msg = err instanceof Error ? err.message : String(err);
-        stats.errors.push(`${config.company}: ${msg}`);
-      }
-    }
-  }
-  
-  const workers = Array.from({ length: concurrency }, () => processNext());
-  await Promise.all(workers);
-  
-  log(`\n  ${c.green}✅ Company scraping complete: ${allJobs.length} frontend jobs from ${stats.companiesCompleted} companies${c.reset}\n`);
-  
-  return allJobs;
-}
+// (Legacy Phase 2 removed: Scraper is now purely DuckDuckGo ATS driven)
 
-// ─── Phase 3: Gemini AI Classification ────────────────────────
 async function geminiClassify(
   jobs: NormalizedJob[],
   apiKey: string
-): Promise<NormalizedJob[]> {
+): Promise<{ approved: NormalizedJob[]; hitRateLimit: boolean }> {
   log(`\n${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}`);
   log(`${c.bold}  🤖 PHASE 3: Gemini AI Classification (${jobs.length} jobs)${c.reset}`);
   log(`${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}\n`);
   
   stats.totalBeforeGemini = jobs.length;
   
-  const { approvedIndices } = await filterJobsWithGemini(
+  const { approvedIndices, hitRateLimit } = await filterJobsWithGemini(
     apiKey,
     jobs.map(j => ({
       title: j.title,
@@ -193,9 +107,9 @@ async function geminiClassify(
   stats.geminiApproved = approved.length;
   stats.geminiRejected = jobs.length - approved.length;
   
-  log(`\n  ${c.green}✅ Gemini approved: ${approved.length}${c.reset} / ${c.red}Rejected: ${jobs.length - approved.length}${c.reset}\n`);
+  log(`\n  ${c.green}✅ Gemini approved: ${approved.length}${c.reset} / ${c.red}Rejected or unprocessed: ${jobs.length - approved.length}${c.reset}\n`);
   
-  return approved;
+  return { approved, hitRateLimit };
 }
 
 // ─── Final Report ─────────────────────────────────────────────
@@ -208,14 +122,9 @@ function printFinalReport(totalSaved: number) {
   console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
   console.log(`${c.green}${c.bold}║${c.reset}  ⏱️  Total Duration: ${c.bold}${formatDuration(elapsed)}${c.reset}`);
   console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}📡 API SOURCES (10,000+ companies)${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}     Total fetched:     ${c.bold}${stats.apiJobsFetched.toLocaleString()}${c.reset} jobs`);
-  console.log(`${c.green}${c.bold}║${c.reset}     Pre-filtered:      ${stats.apiJobsPreFiltered.toLocaleString()} potential frontend jobs`);
+  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}🔍 DUCKDUCKGO SEARCH (Direct ATS Links)${c.reset}`);
+  console.log(`${c.green}${c.bold}║${c.reset}     Total found:       ${c.bold}${stats.duckDuckGoJobsFound.toLocaleString()}${c.reset} jobs`);
   console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}🏢 DIRECT COMPANY SCRAPING${c.reset}`);
-  console.log(`${c.green}${c.bold}║${c.reset}     Companies scraped:  ${stats.companiesCompleted} / ${stats.companiesTotal}`);
-  console.log(`${c.green}${c.bold}║${c.reset}     Companies failed:   ${stats.companiesFailed}`);
-  console.log(`${c.green}${c.bold}║${c.reset}     Jobs from companies:${stats.companyJobsScraped.toLocaleString()}`);
   console.log(`${c.green}${c.bold}╠${'═'.repeat(68)}╣${c.reset}`);
   console.log(`${c.green}${c.bold}║${c.reset}  ${c.bold}🤖 GEMINI AI FILTER${c.reset}`);
   console.log(`${c.green}${c.bold}║${c.reset}     Sent to Gemini:     ${stats.totalBeforeGemini.toLocaleString()}`);
@@ -271,7 +180,7 @@ async function main() {
   const concurrency = parseInt(args.find(a => a.startsWith('--concurrency='))?.split('=')[1] || '3');
   const geminiApiKey = noGemini ? undefined : process.env.GEMINI_API_KEY;
   
-  const configs = loadAllConfigs();
+  // const configs = loadAllConfigs(); // Removed configs
   
   // Banner
   console.clear();
@@ -282,8 +191,7 @@ async function main() {
   console.log(`  ║                                                            ║`);
   console.log(`  ╠══════════════════════════════════════════════════════════════╣`);
   console.log(`  ║  Mode:         ${dryRun ? '🔍 DRY RUN' : '💾 LIVE'}${' '.repeat(dryRun ? 35 : 37)}║`);
-  console.log(`  ║  API Sources:  ${apiOnly || !companiesOnly ? '✅ 6 APIs (10K+ companies)' : '❌ Skipped'}${' '.repeat(apiOnly || !companiesOnly ? 18 : 33)}║`);
-  console.log(`  ║  Companies:    ${companiesOnly || !apiOnly ? `✅ ${configs.length} direct career pages` : '❌ Skipped'}${' '.repeat(companiesOnly || !apiOnly ? 16 : 33)}║`);
+  console.log(`  ║  DuckDuckGo:   ✅ Playwright Search${' '.repeat(25)}║`);
   console.log(`  ║  Gemini AI:    ${geminiApiKey ? '✅ Smart filtering' : '❌ Regex fallback'}${' '.repeat(geminiApiKey ? 26 : 27)}║`);
   console.log(`  ║  Concurrency:  ${concurrency}${' '.repeat(43)}║`);
   console.log(`  ╚══════════════════════════════════════════════════════════════╝`);
@@ -298,26 +206,17 @@ async function main() {
   
   let allCandidateJobs: NormalizedJob[] = [];
   
-  // Phase 1: API Sources
-  if (!companiesOnly) {
-    log(`${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}`);
-    log(`${c.bold}  📡 PHASE 1: Fetching from 6 Job Aggregator APIs${c.reset}`);
-    log(`${c.bold}  Coverage: RemoteOK · Remotive · Arbeitnow · Jobicy · Himalayas · FindWork${c.reset}`);
-    log(`${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}`);
-    
-    const { allJobs: apiJobs, results } = await fetchAllApiSources(log);
-    
-    stats.apiJobsFetched = results.reduce((s, r) => s + r.totalFetched, 0);
-    stats.apiJobsPreFiltered = apiJobs.length;
-    
-    allCandidateJobs.push(...apiJobs);
-  }
+  // Phase 1: DuckDuckGo Search
+  log(`${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}`);
+  log(`${c.bold}  🔍 PHASE 1: Scraping Jobs via DuckDuckGo Search${c.reset}`);
+  log(`${c.bold}  Coverage: Direct ATS links via Playwright${c.reset}`);
+  log(`${c.cyan}${c.bold}═══════════════════════════════════════════════════════════════${c.reset}`);
   
-  // Phase 2: Company Career Pages
-  if (!apiOnly) {
-    const companyJobs = await scrapeCompanies(configs, geminiApiKey, concurrency, dryRun);
-    allCandidateJobs.push(...companyJobs);
-  }
+  const { jobs: ddgJobs } = await scrapeDuckDuckGoJobs(log);
+  
+  stats.duckDuckGoJobsFound = ddgJobs.length;
+  
+  allCandidateJobs.push(...ddgJobs);
   
   // Global deduplication
   const seen = new Set<string>();
@@ -331,9 +230,15 @@ async function main() {
   
   // Phase 3: Gemini AI Classification (for API-sourced jobs that haven't been classified)
   let finalJobs: NormalizedJob[];
+  let hitRateLimit = false;
   
   if (geminiApiKey && !companiesOnly && uniqueCandidates.length > 0) {
-    finalJobs = await geminiClassify(uniqueCandidates, geminiApiKey);
+    const result = await geminiClassify(uniqueCandidates, geminiApiKey);
+    finalJobs = result.approved;
+    hitRateLimit = result.hitRateLimit;
+    if (hitRateLimit) {
+      log(`\n${c.yellow}${c.bold}⚠️ Rate Limit Exceeded. Saving processed jobs and exiting...${c.reset}\n`);
+    }
   } else {
     finalJobs = uniqueCandidates;
     stats.geminiApproved = uniqueCandidates.length;
