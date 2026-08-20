@@ -200,9 +200,8 @@ export async function filterJobsWithGemini(
       }
     }
     
-    // Small delay between batches to respect rate limits
     if (i + BATCH_SIZE < jobsForFilter.length) {
-      await sleep(1000);
+      await sleep(5000);
     }
   }
   

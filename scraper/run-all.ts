@@ -22,6 +22,7 @@ import * as dotenv from 'dotenv';
 import { filterJobsWithGemini, GeminiRateLimitError } from './gemini-filter';
 import { scrapeDuckDuckGoJobs } from './crawl-urls';
 import type { NormalizedJob } from './normalizer';
+import * as fs from 'fs';
 
 dotenv.config({ path: path.join(process.cwd(), '.env') });
 

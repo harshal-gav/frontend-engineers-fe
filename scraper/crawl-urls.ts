@@ -1,6 +1,7 @@
 import { chromium } from 'playwright-extra';
 import stealth from 'puppeteer-extra-plugin-stealth';
 import { type NormalizedJob, generateSourceHash, inferExperienceLevel, inferEmploymentType } from './normalizer';
+import { askGeminiToClick, ClickableElement } from './agentic-crawler';
 import * as fs from 'fs';
 import * as path from 'path';
 
@@ -33,7 +34,15 @@ export async function scrapeDuckDuckGoJobs(log: (msg: string) => void): Promise<
     return { jobs, errors: [], duration: 0 };
   }
 
-  log(`\n🔍 Starting Generic Crawl for ${mappings.length} discovered company URLs...`);
+  const apiKey = process.env.GEMINI_API_KEY || '';
+  if (!apiKey) {
+    log(`❌ Error: GEMINI_API_KEY is not set in .env! Required for Agentic Crawler.`);
+    return { jobs, errors: ['Missing API key'], duration: 0 };
+  }
+
+  // LIMIT TO 10 FOR TESTING
+  const mappingsToCrawl = mappings.slice(0, 10);
+  log(`\n🔍 Starting Agentic AI Crawl for ${mappingsToCrawl.length} company URLs...`);
 
   let browser;
   try {
@@ -44,17 +53,17 @@ export async function scrapeDuckDuckGoJobs(log: (msg: string) => void): Promise<
     const page = await context.newPage();
 
     let count = 0;
-    for (const mapping of mappings) {
+    for (const mapping of mappingsToCrawl) {
       count++;
       const { company, url: firstLink } = mapping;
       
-      log(`   🔎 [${count}/${mappings.length}] Crawling ${company} (${firstLink})`);
+      log(`   🔎 [${count}/${mappingsToCrawl.length}] Crawling ${company} (${firstLink})`);
       
       try {
         await page.goto(firstLink, { waitUntil: 'domcontentloaded', timeout: 30000 });
         await sleep(3000); // Let SPA load
 
-        // Find all job links on the page (or its immediate subpages if they link to /jobs)
+        // Find all job links on the page
         let jobLinks = await page.evaluate(() => {
           return Array.from(document.querySelectorAll('a'))
             .map(a => a.href)
@@ -65,6 +74,52 @@ export async function scrapeDuckDuckGoJobs(log: (msg: string) => void): Promise<
         });
 
         let uniqueJobLinks = [...new Set(jobLinks)].filter(l => l !== firstLink && l.startsWith('http'));
+
+        // AGENTIC LOOP: If no jobs found, ask Gemini what to click!
+        if (uniqueJobLinks.length === 0) {
+            log(`   🤖 No jobs visible! Asking Gemini Agent to navigate the SPA...`);
+            
+            // Extract all clickable elements
+            const clickableElements = await page.evaluate(() => {
+                const elements = Array.from(document.querySelectorAll('a, button, [role="button"]'));
+                return elements.map((el, i) => ({
+                    index: i,
+                    text: (el.textContent || '').trim().replace(/\s+/g, ' ').substring(0, 50),
+                    tag: el.tagName
+                })).filter(e => e.text.length > 2);
+            });
+
+            if (clickableElements.length > 0) {
+                const indexToClick = await askGeminiToClick(apiKey, clickableElements, company);
+                
+                if (indexToClick !== null && indexToClick >= 0) {
+                    const elText = clickableElements.find(e => e.index === indexToClick)?.text;
+                    log(`   🎯 Gemini decided to click element [${indexToClick}]: "${elText}"`);
+                    
+                    // Execute the click using Playwright evaluate
+                    await page.evaluate((idx) => {
+                        const elements = Array.from(document.querySelectorAll('a, button, [role="button"]'));
+                        const target = elements[idx] as HTMLElement;
+                        if (target) target.click();
+                    }, indexToClick);
+
+                    await sleep(4000); // Wait for the SPA to load the jobs
+
+                    // Re-scan for jobs
+                    const newJobLinks = await page.evaluate(() => {
+                        return Array.from(document.querySelectorAll('a'))
+                            .map(a => a.href)
+                            .filter(href => {
+                                const h = href.toLowerCase();
+                                return h.includes('job') || h.includes('role') || h.includes('position') || h.includes('opening') || h.includes('requisition');
+                            });
+                    });
+                    uniqueJobLinks = [...new Set(newJobLinks)].filter(l => l !== firstLink && l.startsWith('http'));
+                } else {
+                    log(`   🤷 Gemini couldn't find a logical button to click.`);
+                }
+            }
+        }
 
         // If we found a generic /jobs page but no specific job postings, navigate deeper
         if (uniqueJobLinks.length === 1 && uniqueJobLinks[0].includes('job')) {
