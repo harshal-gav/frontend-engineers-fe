@@ -1,38 +1,27 @@
 ---
 name: filter-jobs
-description: Runs the job scraper and uses the agent's AI to filter for Frontend roles.
+description: Reads the company URLs and uses browser subagents to manually extract Frontend jobs.
 ---
 
 # Filter Jobs Skill
 
-You are a Job Scraping and Filtering Assistant. The user wants to scrape job postings from company career pages and filter them so only strictly remote Frontend/JavaScript roles are saved. 
-
-Instead of using an external Gemini API key, **you (the Antigravity agent)** will perform the filtering yourself in this chat.
+You are a Job Scraping and Filtering Assistant. The user wants you to manually scrape job postings from company career pages directly from this chat using your Browser Subagents.
 
 ## Instructions
 
-1. **Run the Scraper**
-   Run the following command to execute the dumb extractor. This will crawl the websites and dump all potential jobs into a JSON file:
-   `npm run scrape`
-   *(Wait for this command to finish before proceeding).*
+1. **Read Career URLs**
+   Read `data/career_urls.json`. This file contains the companies and their career page URLs.
+   Take the first 2-3 companies from the list that haven't been scraped yet.
 
-2. **Read the Raw Jobs**
-   The scraper will have created a file at `data/raw_jobs.json`. Read this file into your context. It contains an array of job objects.
+2. **Spawn Browser Subagents**
+   For each company, use the `browser_subagent` tool to spawn an agent to visit their career URL.
+   Task Description: "Navigate to the careers URL. Find and click on open roles. Look for Software Engineering jobs that are strictly Remote and focus on Frontend, JavaScript, or TypeScript (e.g., Frontend Engineer, React, UI Engineer). If you find any, return their Job Title, Location, and Application URL as JSON. If none, say 0 found."
+   
+   *Note: You can run these subagents concurrently.*
 
-3. **Filter the Jobs**
-   Review every single job in the `data/raw_jobs.json` file. 
-   You must STRICTLY filter the jobs. KEEP a job ONLY if it meets ALL of the following criteria:
-   - It is a software engineering role (not design, PM, QA, or DevOps).
-   - It primarily involves Frontend, JavaScript, or TypeScript (React, Vue, Next.js, etc).
-   - It is explicitly a Remote role.
+3. **Show Results**
+   Once the subagents finish and return their reports, review the jobs they found.
+   If they found valid Remote Frontend roles, output a markdown table in the chat showing the jobs (Title, Company, Location, Apply URL).
 
-   DISCARD the job if it is:
-   - Backend only (Java, Python, Go, Rust, C++).
-   - Data Engineering or ML.
-   - Requires being onsite.
-
-4. **Show Results**
-   Output a markdown table in the chat showing the jobs you approved (Title, Company, Location) so the user can verify them.
-
-5. **Save to Database**
-   Once you have filtered the jobs, read the existing `data/jobs.json` file, append your approved jobs to it, deduplicate by `id`, and write the final array back to `data/jobs.json`.
+4. **Save to Database**
+   Read the existing `data/jobs.json` file. Append any approved jobs to it, deduplicate them if necessary, and write the final array back to `data/jobs.json`.
