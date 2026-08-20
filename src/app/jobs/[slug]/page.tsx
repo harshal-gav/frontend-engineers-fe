@@ -34,7 +34,7 @@ export async function generateMetadata({
       job.description?.substring(0, 155) ||
       `Apply for ${job.title} — remote ${job.employmentType.toLowerCase()} position.`,
     openGraph: {
-      title: `${job.title} — Remote Frontend Job`,
+      title: `${job.title} — Remote Frontend & JavaScript Job`,
       description:
         job.description?.substring(0, 155) ||
         `Apply for ${job.title} — remote position.`,

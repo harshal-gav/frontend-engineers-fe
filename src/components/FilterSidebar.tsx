@@ -177,28 +177,7 @@ export default function FilterSidebar({
         />
       </div>
 
-      {/* Remote Type */}
-      <div className="filter-section">
-        <h3>Work Type</h3>
-        <div className="toggle-group">
-          {REMOTE_OPTIONS.map((opt) => (
-            <button
-              key={opt.value}
-              className={`toggle-pill min-h-[40px] ${
-                filters.remoteType.includes(opt.value) ? "active" : ""
-              }`}
-              onClick={() => toggleArrayFilter("remoteType", opt.value)}
-            >
-              {opt.icon} {opt.label}
-              {facets.remoteType[opt.value] !== undefined && (
-                <span className="ml-1 opacity-60">
-                  ({facets.remoteType[opt.value]})
-                </span>
-              )}
-            </button>
-          ))}
-        </div>
-      </div>
+
 
       {/* Experience Level */}
       <div className="filter-section">

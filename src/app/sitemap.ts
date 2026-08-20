@@ -1,9 +1,6 @@
 import { MetadataRoute } from 'next';
-import { loadJobsFromFile } from '@/lib/jobs.server';
-
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://frontendengineers.com';
-  const jobs = loadJobsFromFile();
 
   const staticPages: MetadataRoute.Sitemap = [
     {
@@ -61,16 +58,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${baseUrl}/?framework=React`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
     { url: `${baseUrl}/?framework=Vue`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
     { url: `${baseUrl}/?framework=Angular`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/?framework=Node.js`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/?q=JavaScript`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/?q=Fullstack`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
     { url: `${baseUrl}/?q=TypeScript`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
     { url: `${baseUrl}/?q=UI/UX`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
   ];
 
-  const jobsPages: MetadataRoute.Sitemap = jobs.map((job) => ({
-    url: `${baseUrl}/jobs/${job.slug}`,
-    lastModified: job.postedAt ? new Date(job.postedAt) : new Date(),
-    changeFrequency: 'daily',
-    priority: 0.8,
-  }));
-
-  return [...staticPages, ...categoryPages, ...jobsPages];
+  return [...staticPages, ...categoryPages];
 }

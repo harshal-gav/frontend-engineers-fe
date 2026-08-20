@@ -23,8 +23,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   const [isSubscribed, setIsSubscribed] = useState(false);
 
   useEffect(() => {
+    let unsubscribeDoc: (() => void) | null = null;
+
     const unsubscribeAuth = onAuthStateChanged(auth, (firebaseUser) => {
       setUser(firebaseUser);
+      
+      // Clean up previous listener if it exists
+      if (unsubscribeDoc) {
+        unsubscribeDoc();
+        unsubscribeDoc = null;
+      }
       
       if (firebaseUser) {
         // Listen to the top-level user doc for the isPremium flag.
@@ -32,7 +40,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         // the dual-write pattern used by the PayPal webhook handler.
         const userDocRef = doc(db, "users", firebaseUser.uid);
 
-        const unsubscribeDoc = onSnapshot(userDocRef, (snapshot) => {
+        unsubscribeDoc = onSnapshot(userDocRef, (snapshot) => {
           if (snapshot.exists()) {
             const data = snapshot.data();
             const isPremium = data.isPremium === true;
@@ -55,15 +63,16 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
           setIsSubscribed(false);
           setLoading(false);
         });
-
-        return () => unsubscribeDoc();
       } else {
         setIsSubscribed(false);
         setLoading(false);
       }
     });
 
-    return () => unsubscribeAuth();
+    return () => {
+      unsubscribeAuth();
+      if (unsubscribeDoc) unsubscribeDoc();
+    };
   }, []);
 
   return (

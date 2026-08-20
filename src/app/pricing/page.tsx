@@ -21,11 +21,11 @@ export default function PricingPage() {
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
           Unlock the Best{" "}
-          <span className="text-[#00ffcc]">Remote Frontend</span> Jobs
+          <span className="text-[#00ffcc]">Frontend & JavaScript</span> Jobs
         </h1>
         <p className="text-xl text-gray-400 mb-12">
           Stop sifting through irrelevant listings. Get curated React, Vue,
-          and Angular jobs sent straight to you.
+          Angular, Node.js, and Fullstack jobs sent straight to you.
         </p>
 
         <div className="glass-card max-w-md mx-auto p-8 border border-[#333] bg-[#111] rounded-2xl">
@@ -42,19 +42,13 @@ export default function PricingPage() {
               <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
-              <span>Unlimited access to all jobs</span>
+              <span>Unlimited access to all premium remote jobs</span>
             </li>
             <li className="flex items-center gap-3">
               <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Direct apply links to company ATS</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Daily job alerts</span>
             </li>
           </ul>
 

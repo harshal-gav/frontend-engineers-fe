@@ -27,7 +27,9 @@ service cloud.firestore {
     match /users/{uid} {
       // Users can only read their own profile document
       allow read: if request.auth != null && request.auth.uid == uid;
-      allow write: if false; // Only written by the backend if needed
+      // Allow users to create their document on signup, but they cannot give themselves premium status
+      allow create: if request.auth != null && request.auth.uid == uid && request.resource.data.isPremium == false;
+      allow update, delete: if false; // Updates (like subscribing) are handled by the backend webhook
       
       match /subscriptions/{id} {
         // Users can only READ their subscriptions (to see if they are active)

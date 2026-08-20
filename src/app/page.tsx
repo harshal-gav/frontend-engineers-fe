@@ -80,10 +80,10 @@ export default async function HomePage() {
           <section className="pt-8 sm:pt-12 pb-6 sm:pb-8 px-4 text-center bg-[#0a0a0a]">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-4 leading-tight text-white">
               Find the Best{" "}
-              <span className="text-[#00ffcc]">Remote Frontend Developer Jobs</span>
+              <span className="text-[#00ffcc]">Frontend & JavaScript Jobs</span>
             </h1>
             <p className="text-sm sm:text-base max-w-xl mx-auto mb-6 sm:mb-8 text-gray-400">
-              Discover curated work from anywhere frontend jobs for React, Vue, Angular, and UI/UX Engineers.
+              Discover curated remote roles for React, Vue, Angular, Node.js, and Fullstack Engineers.
             </p>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">
               <div className="w-full bg-[#111] border border-[#333] rounded-full h-12 sm:h-[54px] skeleton" />

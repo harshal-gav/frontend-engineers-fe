@@ -20,10 +20,10 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://frontendengineers.com"),
   title: {
-    default: "Remote Frontend Developer Jobs | Work from Anywhere",
+    default: "Frontend & JavaScript Developer Jobs | Work from Anywhere",
     template: "%s | FrontendEngineers.com"
   },
-  description: "Find premium remote frontend developer jobs. Discover curated work from anywhere frontend jobs for React, Vue, and Angular engineers at top tech companies.",
+  description: "Find premium remote frontend and fullstack JavaScript jobs. Discover curated remote roles for React, Vue, Angular, Node.js, and Fullstack engineers at top tech companies.",
   keywords: [
     "frontend jobs",
     "remote frontend jobs",
@@ -52,8 +52,8 @@ export const metadata: Metadata = {
     canonical: "/",
   },
   openGraph: {
-    title: "Remote Frontend Developer Jobs | Work from Anywhere",
-    description: "Find premium remote frontend developer jobs. Discover curated work from anywhere frontend jobs for React, Vue, and Angular engineers at top tech companies.",
+    title: "Frontend & JavaScript Developer Jobs | Work from Anywhere",
+    description: "Find premium remote frontend and fullstack JavaScript jobs. Discover curated remote roles for React, Vue, Angular, Node.js, and Fullstack engineers at top tech companies.",
     url: "https://frontendengineers.com",
     siteName: "FrontendEngineers.com",
     locale: "en_US",
@@ -62,8 +62,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Remote Frontend Developer Jobs | Work from Anywhere",
-    description: "Find premium remote frontend developer jobs. Discover curated work from anywhere frontend jobs for React, Vue, and Angular engineers at top tech companies.",
+    title: "Frontend & JavaScript Developer Jobs | Work from Anywhere",
+    description: "Find premium remote frontend and fullstack JavaScript jobs. Discover curated remote roles for React, Vue, Angular, Node.js, and Fullstack engineers at top tech companies.",
   },
   robots: {
     index: true,

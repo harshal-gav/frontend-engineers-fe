@@ -48,14 +48,14 @@ export default function PricingModal({
           </div>
           <p className="text-[var(--text-secondary)] text-sm max-w-sm mx-auto">
             Get instant access to apply links, full job descriptions,
-            advanced filters, and real-time alerts.
+            and advanced filters.
           </p>
         </div>
 
         <ul className="space-y-3 mb-8 text-sm">
           <li className="flex items-center gap-3">
             <span className="text-[#00ffcc] flex-shrink-0">✓</span>
-            Unlimited access to all jobs
+            Unlimited access to all premium remote jobs
           </li>
           <li className="flex items-center gap-3">
             <span className="text-[#00ffcc] flex-shrink-0">✓</span>
@@ -63,15 +63,7 @@ export default function PricingModal({
           </li>
           <li className="flex items-center gap-3">
             <span className="text-[#00ffcc] flex-shrink-0">✓</span>
-            Company names &amp; salary data
-          </li>
-          <li className="flex items-center gap-3">
-            <span className="text-[#00ffcc] flex-shrink-0">✓</span>
-            Daily job alerts via email
-          </li>
-          <li className="flex items-center gap-3">
-            <span className="text-[#00ffcc] flex-shrink-0">✓</span>
-            Saved searches &amp; filters
+            Advanced job filtering
           </li>
         </ul>
 

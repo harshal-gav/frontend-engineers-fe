@@ -214,6 +214,23 @@ export default function JobsClientPage() {
       );
     }
 
+    // Posted Within
+    if (filters.postedWithin) {
+      const now = Date.now();
+      const map: Record<string, number> = {
+        "1d": 24 * 60 * 60 * 1000,
+        "7d": 7 * 24 * 60 * 60 * 1000,
+        "30d": 30 * 24 * 60 * 60 * 1000,
+      };
+      const limitMs = map[filters.postedWithin];
+      if (limitMs) {
+        filtered = filtered.filter((j) => {
+          if (!j.postedAt) return false;
+          return now - new Date(j.postedAt).getTime() <= limitMs;
+        });
+      }
+    }
+
     // Sort
     if (filters.sortBy === "newest") {
       filtered.sort(
@@ -356,13 +373,13 @@ export default function JobsClientPage() {
 
       {/* ─── Hero Section ───────────────────── */}
       <section className="pt-8 sm:pt-12 pb-6 sm:pb-8 px-4 text-center bg-[#0a0a0a]">
-        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-4 leading-tight text-white">
-          Find the Best{" "}
-          <span className="text-[#00ffcc]">Remote Frontend Developer Jobs</span>
-        </h1>
-        <p className="text-sm sm:text-base max-w-xl mx-auto mb-6 sm:mb-8 text-gray-400">
-          Discover curated work from anywhere frontend jobs for React, Vue, Angular, and UI/UX Engineers.
-        </p>
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 sm:mb-6 leading-tight text-white">
+            Find the Best{" "}
+            <span className="text-[#00ffcc]">Frontend & JavaScript Jobs</span>
+          </h1>
+          <p className="text-base sm:text-lg max-w-xl mx-auto mb-6 sm:mb-8 text-gray-400">
+            Discover curated remote roles for React, Vue, Angular, Node.js, and Fullstack Engineers.
+          </p>
 
         {/* Search Bar */}
         <div className="hero-search flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6 relative">
@@ -382,30 +399,7 @@ export default function JobsClientPage() {
           />
         </div>
 
-        {/* Mobile: Filter toggle button */}
-        {isSubscribed && (
-          <button
-            onClick={() => setShowFilters(true)}
-            className="md:hidden btn-secondary inline-flex items-center gap-2 min-h-[44px] px-4 text-sm"
-          >
-            <svg
-              width="18"
-              height="18"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-            >
-              <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
-            </svg>
-            Filters
-            {activeFilterCount > 0 && (
-              <span className="bg-[var(--accent-primary)] text-white text-xs rounded-full w-5 h-5 flex items-center justify-center">
-                {activeFilterCount}
-              </span>
-            )}
-          </button>
-        )}
+
       </section>
 
       {/* ─── Main Content ───────────────────── */}
@@ -439,6 +433,30 @@ export default function JobsClientPage() {
                   </>
                 )}
               </p>
+              {/* Mobile: Filter toggle button */}
+              {isSubscribed && (
+                <button
+                  onClick={() => setShowFilters(true)}
+                  className="md:hidden btn-secondary inline-flex items-center gap-2 min-h-[40px] px-3 text-sm"
+                >
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
+                  </svg>
+                  Filters
+                  {activeFilterCount > 0 && (
+                    <span className="bg-[#00ffcc] text-black text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                      {activeFilterCount}
+                    </span>
+                  )}
+                </button>
+              )}
             </div>
 
             {/* Job Cards — responsive grid */}

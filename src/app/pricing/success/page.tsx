@@ -15,7 +15,7 @@ export default function PricingSuccessPage() {
         </div>
         <h1 className="text-3xl font-bold mb-4">Payment Successful!</h1>
         <p className="text-gray-400 mb-8">
-          Welcome to FrontendEngineers Pro. You now have unlimited access to all remote frontend jobs.
+          Welcome to FrontendEngineers Pro. You now have unlimited access to all remote frontend and JavaScript jobs.
         </p>
         <Link href="/" className="btn-primary py-3 px-8 rounded text-black bg-[#00ffcc] font-bold text-lg inline-block">
           View All Jobs

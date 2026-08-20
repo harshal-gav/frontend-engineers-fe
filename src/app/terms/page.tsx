@@ -18,7 +18,7 @@ export default function TermsPage() {
           
           <section>
             <h2 className="text-2xl font-semibold text-white mb-3">2. Description of Service</h2>
-            <p className="leading-relaxed">FrontendEngineers.com is a job board aggregator that curates remote frontend engineering jobs. The jobs are scraped from public third-party company careers websites and we do not guarantee the availability, accuracy, or outcome of any job application.</p>
+            <p className="leading-relaxed">FrontendEngineers.com is a job board aggregator that curates remote frontend and JavaScript engineering jobs. The jobs are scraped from public third-party company careers websites and we do not guarantee the availability, accuracy, or outcome of any job application.</p>
           </section>
           
           <section>
