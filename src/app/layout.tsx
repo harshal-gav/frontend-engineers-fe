@@ -48,8 +48,8 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  alternates: {
-    canonical: "/",
+  verification: {
+    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "your-google-verification-code-here",
   },
   openGraph: {
     title: "Frontend & JavaScript Developer Jobs | Work from Anywhere",

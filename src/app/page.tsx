@@ -1,7 +1,14 @@
+import type { Metadata } from "next";
 import { Suspense } from "react";
 import fs from 'fs';
 import path from 'path';
 import JobsClientPage from "@/components/JobsClientPage";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default async function HomePage() {
   let jsonLd = null;
@@ -43,11 +50,20 @@ export default async function HomePage() {
         }
       }));
 
-      jsonLd = {
-        "@context": "https://schema.org",
-        "@type": "ItemList",
-        "itemListElement": itemListElements
-      };
+      jsonLd = [
+        {
+          "@context": "https://schema.org",
+          "@type": "WebSite",
+          "name": "FrontendEngineers.com",
+          "url": "https://frontendengineers.com",
+          "description": "Find premium remote frontend and fullstack JavaScript jobs.",
+        },
+        {
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": itemListElements
+        }
+      ];
     }
   } catch (e) {
     console.error("Failed to generate JSON-LD", e);

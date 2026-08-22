@@ -28,17 +28,28 @@ export async function generateMetadata({
     return { title: "Job Not Found" };
   }
 
+  // Dynamically generate keywords based on title
+  const keywords = ["remote", "job", "frontend", "engineer", "developer"];
+  if (job.title.toLowerCase().includes("react")) keywords.push("react", "react.js");
+  if (job.title.toLowerCase().includes("vue")) keywords.push("vue", "vue.js");
+  if (job.title.toLowerCase().includes("node")) keywords.push("node.js", "backend");
+
   return {
     title: `${job.title} at ${job.company?.name || "Company"} — Remote`,
     description:
       job.description?.substring(0, 155) ||
       `Apply for ${job.title} — remote ${job.employmentType.toLowerCase()} position.`,
+    keywords: keywords.join(", "),
+    alternates: {
+      canonical: `https://frontendengineers.com/jobs/${slug}`,
+    },
     openGraph: {
       title: `${job.title} — Remote Frontend & JavaScript Job`,
       description:
         job.description?.substring(0, 155) ||
         `Apply for ${job.title} — remote position.`,
       type: "website",
+      url: `https://frontendengineers.com/jobs/${slug}`,
     },
   };
 }
