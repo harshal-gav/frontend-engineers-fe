@@ -374,11 +374,11 @@ export default function JobsClientPage() {
       {/* ─── Hero Section ───────────────────── */}
       <section className="pt-8 sm:pt-12 pb-6 sm:pb-8 px-4 text-center bg-[#0a0a0a]">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 sm:mb-6 leading-tight text-white">
-            Find the Best{" "}
-            <span className="text-[#00ffcc]">Frontend & JavaScript Jobs</span>
+            The Best{" "}
+            <span className="text-[#00ffcc]">Remote Frontend Jobs</span>
           </h1>
           <p className="text-base sm:text-lg max-w-xl mx-auto mb-6 sm:mb-8 text-gray-400">
-            Discover curated remote roles for React, Vue, Angular, Node.js, and Fullstack Engineers.
+            Discover curated premium 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers.
           </p>
 
         {/* Search Bar */}

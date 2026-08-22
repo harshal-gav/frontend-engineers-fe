@@ -54,9 +54,9 @@ export default async function HomePage() {
         {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "FrontendEngineers.com",
+          "name": "Best Remote Frontend Jobs",
           "url": "https://frontendengineers.com",
-          "description": "Find premium remote frontend and fullstack JavaScript jobs.",
+          "description": "Discover the best remote frontend jobs and fullstack JavaScript & TypeScript roles.",
         },
         {
           "@context": "https://schema.org",
@@ -86,8 +86,8 @@ export default async function HomePage() {
                   FE
                 </div>
                 <span className="text-base sm:text-lg font-bold text-white tracking-tight">
-                  <span className="hidden sm:inline">FrontendEngineers.com</span>
-                  <span className="sm:hidden">FrontendEng</span>
+                  <span className="hidden sm:inline">Best Remote Frontend Jobs</span>
+                  <span className="sm:hidden">Best Frontend Jobs</span>
                 </span>
               </div>
               <div className="w-24 h-10 skeleton rounded" />
@@ -95,11 +95,11 @@ export default async function HomePage() {
           </header>
           <section className="pt-8 sm:pt-12 pb-6 sm:pb-8 px-4 text-center bg-[#0a0a0a]">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-4 leading-tight text-white">
-              Find the Best{" "}
-              <span className="text-[#00ffcc]">Frontend & JavaScript Jobs</span>
+              The Best{" "}
+              <span className="text-[#00ffcc]">Remote Frontend Jobs</span>
             </h1>
             <p className="text-sm sm:text-base max-w-xl mx-auto mb-6 sm:mb-8 text-gray-400">
-              Discover curated remote roles for React, Vue, Angular, Node.js, and Fullstack Engineers.
+              Discover curated premium 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers.
             </p>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">
               <div className="w-full bg-[#111] border border-[#333] rounded-full h-12 sm:h-[54px] skeleton" />
@@ -119,7 +119,7 @@ export default async function HomePage() {
           <a href="/terms" className="hover:text-[#00ffcc]">Terms of Service</a>
           <a href="/privacy" className="hover:text-[#00ffcc]">Privacy Policy</a>
         </div>
-        <p className="mt-4 text-sm">&copy; {new Date().getFullYear()} FrontendEngineers.com. All rights reserved.</p>
+        <p className="mt-4 text-sm">&copy; {new Date().getFullYear()} Best Remote Frontend Jobs. All rights reserved.</p>
       </footer>
     </>
   );

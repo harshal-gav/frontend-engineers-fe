@@ -20,14 +20,15 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://frontendengineers.com"),
   title: {
-    default: "Frontend & JavaScript Developer Jobs | Work from Anywhere",
-    template: "%s | FrontendEngineers.com"
+    default: "Best Remote Frontend Jobs | Premium JavaScript & TypeScript Roles",
+    template: "%s | Best Remote Frontend Jobs"
   },
-  description: "Find premium remote frontend and fullstack JavaScript jobs. Discover curated remote roles for React, Vue, Angular, Node.js, and Fullstack engineers at top tech companies.",
+  description: "Discover the best remote frontend jobs and fullstack JavaScript & TypeScript roles. We curate premium, 100% remote positions for React, Vue, Angular, and Node.js engineers.",
   keywords: [
-    "frontend jobs",
+    "best remote frontend jobs",
     "remote frontend jobs",
-    "react developer jobs",
+    "frontend jobs",
+    "remote react jobs",
     "vue developer jobs",
     "angular developer jobs",
     "ui engineer jobs",
@@ -38,11 +39,12 @@ export const metadata: Metadata = {
     "remote tech jobs",
     "typescript jobs",
     "javascript jobs",
-    "nextjs jobs"
+    "nextjs jobs",
+    "best remote jobs"
   ],
-  authors: [{ name: "FrontendEngineers.com" }],
-  creator: "FrontendEngineers.com",
-  publisher: "FrontendEngineers.com",
+  authors: [{ name: "Best Remote Frontend Jobs" }],
+  creator: "Best Remote Frontend Jobs",
+  publisher: "Best Remote Frontend Jobs",
   formatDetection: {
     email: false,
     address: false,
@@ -52,18 +54,18 @@ export const metadata: Metadata = {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "your-google-verification-code-here",
   },
   openGraph: {
-    title: "Frontend & JavaScript Developer Jobs | Work from Anywhere",
-    description: "Find premium remote frontend and fullstack JavaScript jobs. Discover curated remote roles for React, Vue, Angular, Node.js, and Fullstack engineers at top tech companies.",
+    title: "Best Remote Frontend Jobs | Premium JavaScript & TypeScript Roles",
+    description: "Discover the best remote frontend jobs and fullstack JavaScript & TypeScript roles. We curate premium, 100% remote positions for React, Vue, Angular, and Node.js engineers.",
     url: "https://frontendengineers.com",
-    siteName: "FrontendEngineers.com",
+    siteName: "Best Remote Frontend Jobs",
     locale: "en_US",
     type: "website",
     // images: [{ url: "/og-image.png", width: 1200, height: 630 }], // Note: upload an og-image.png to /public for this to work
   },
   twitter: {
     card: "summary_large_image",
-    title: "Frontend & JavaScript Developer Jobs | Work from Anywhere",
-    description: "Find premium remote frontend and fullstack JavaScript jobs. Discover curated remote roles for React, Vue, Angular, Node.js, and Fullstack engineers at top tech companies.",
+    title: "Best Remote Frontend Jobs | Premium JavaScript & TypeScript Roles",
+    description: "Discover the best remote frontend jobs and fullstack JavaScript & TypeScript roles. We curate premium, 100% remote positions for React, Vue, Angular, and Node.js engineers.",
   },
   robots: {
     index: true,
