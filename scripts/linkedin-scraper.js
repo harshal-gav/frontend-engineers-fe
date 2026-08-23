@@ -135,6 +135,17 @@ function saveJobs(jobs) {
     }
     await sleep(LONG);
 
+    // Check if there are no exact matches
+    const noResults = await page.$('.jobs-search-no-results-banner, h1:has-text("No matching jobs found"), h2:has-text("No matching jobs found")');
+    const noResultsText = await page.evaluate(() => document.body.innerText.includes("No matching jobs found"));
+
+    if (noResults || noResultsText) {
+        console.log(`\n⏭️  No exact matches found for ${country}. Skipping recommended jobs.`);
+        state.completedCountries.push(country);
+        saveState(state);
+        continue;
+    }
+
     let currentPage = 1;
     let hasMorePages = true;
 
@@ -193,6 +204,15 @@ function saveJobs(jobs) {
           const description = descriptionEl ? (await descriptionEl.innerText()).trim() : "";
 
           console.log(`\n   [${i + 1}/${jobCards.length}] ${title} @ ${company}`);
+
+          const titleLower = title.toLowerCase();
+          const isFrontend = titleLower.includes("front") || titleLower.includes("react") || titleLower.includes("vue") || titleLower.includes("angular") || titleLower.includes("web") || titleLower.includes("js") || titleLower.includes("ts");
+          
+          if (!isFrontend) {
+             console.log(`       ⏭️  Skipping non-frontend job: ${title}`);
+             saveState(state);
+             continue;
+          }
 
           const applyButton = await page.$('.jobs-details__main-content button.jobs-apply-button, .job-details-jobs-unified-top-card__container--two-pane button.jobs-apply-button, .jobs-unified-top-card button.jobs-apply-button, .jobs-details button.jobs-apply-button, .job-details-jobs-unified-top-card__content button.jobs-apply-button');
 
