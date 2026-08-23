@@ -528,10 +528,44 @@ export default function JobsClientPage() {
                 >
                   ← Previous
                 </button>
-                <span className="text-gray-400 text-sm order-first sm:order-none">
-                  Page{" "}
-                  <strong className="text-white">{page}</strong>
-                </span>
+                
+                <div className="flex items-center gap-2 order-first sm:order-none">
+                  {(() => {
+                    const limit = 12;
+                    const totalPages = Math.ceil(totalJobs / limit);
+                    
+                    let startPage = Math.max(1, page - 1);
+                    let endPage = Math.min(totalPages, page + 1);
+
+                    // Adjust to always show 3 pages if possible
+                    if (endPage - startPage < 2) {
+                      if (startPage === 1) {
+                        endPage = Math.min(totalPages, 3);
+                      } else if (endPage === totalPages) {
+                        startPage = Math.max(1, totalPages - 2);
+                      }
+                    }
+
+                    const pages = [];
+                    for (let i = startPage; i <= endPage; i++) {
+                      pages.push(
+                        <button
+                          key={i}
+                          onClick={() => setPage(i)}
+                          className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-semibold transition-colors ${
+                            page === i
+                              ? "bg-[#00ffcc] text-black"
+                              : "bg-[#111] text-gray-400 hover:text-white border border-[#333] hover:border-[#555]"
+                          }`}
+                        >
+                          {i}
+                        </button>
+                      );
+                    }
+                    return pages;
+                  })()}
+                </div>
+
                 <button
                   onClick={() => setPage((p) => p + 1)}
                   disabled={!hasMore}
