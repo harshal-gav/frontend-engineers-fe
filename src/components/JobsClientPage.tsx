@@ -468,6 +468,7 @@ export default function JobsClientPage() {
                     ))
                   : jobs.map((job, i) => {
                       // Paywall: non-subscribers see first 100 free, rest are teasers
+                      const startIndex = (page - 1) * 12;
                       const absoluteIndex = startIndex + i;
                       const isTeaser = !isSubscribed && absoluteIndex >= 100;
 
@@ -483,7 +484,7 @@ export default function JobsClientPage() {
               </div>
 
               {/* Paywall overlay */}
-              {!isSubscribed && startIndex + jobs.length > 100 && (
+              {!isSubscribed && ((page - 1) * 12) + jobs.length > 100 && (
                 <div className="absolute inset-x-0 bottom-0 top-[200px] sm:top-[400px] flex items-end sm:items-center justify-center bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/90 to-transparent pb-8 sm:pb-0 z-10">
                   <div className="text-center p-5 sm:p-8 glass-card border border-[#333] bg-[#111]/95 rounded-2xl shadow-2xl mx-4 max-w-lg w-full">
                     <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
