@@ -427,7 +427,7 @@ export default function JobsClientPage() {
                 ) : (
                   <>
                     <span className="font-semibold text-[#00ffcc]">
-                      {totalJobs.toLocaleString()}
+                      1000+
                     </span>{" "}
                     jobs found
                   </>
@@ -491,7 +491,7 @@ export default function JobsClientPage() {
                       Unlock All Jobs
                     </h3>
                     <p className="text-sm sm:text-base text-gray-400 mb-5 sm:mb-6 max-w-md mx-auto">
-                      Get instant access to {totalJobs} remote frontend
+                      Get instant access to 1000+ remote frontend
                       jobs, daily updates, and direct apply links.
                     </p>
                     <Link
@@ -530,8 +530,7 @@ export default function JobsClientPage() {
                 </button>
                 <span className="text-gray-400 text-sm order-first sm:order-none">
                   Page{" "}
-                  <strong className="text-white">{page}</strong> of{" "}
-                  {Math.ceil(totalJobs / 12)}
+                  <strong className="text-white">{page}</strong>
                 </span>
                 <button
                   onClick={() => setPage((p) => p + 1)}

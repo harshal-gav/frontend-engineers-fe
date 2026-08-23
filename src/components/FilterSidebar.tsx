@@ -301,7 +301,7 @@ export default function FilterSidebar({
           >
             Show{" "}
             {totalResults !== undefined
-              ? `${totalResults} result${totalResults !== 1 ? "s" : ""}`
+              ? `1000+ results`
               : "results"}
           </button>
         </div>
