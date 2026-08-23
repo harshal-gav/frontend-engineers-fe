@@ -80,9 +80,24 @@ export default function JobCard({
               height={48}
               loading="lazy"
               onError={(e) => {
-                (e.target as HTMLImageElement).style.display = "none";
-                (e.target as HTMLImageElement).parentElement!.textContent =
-                  (job.company?.name || "?")[0];
+                const img = e.target as HTMLImageElement;
+                if (!img.dataset.fallback) {
+                  img.dataset.fallback = "true";
+                  // Extract domain from website or logoUrl
+                  let domain = "google.com"; // default fallback domain just in case
+                  if (job.company?.website) {
+                    try {
+                      domain = new URL(job.company.website).hostname;
+                    } catch (e) {}
+                  } else if (job.company?.logoUrl && job.company.logoUrl.includes("clearbit.com/")) {
+                    domain = job.company.logoUrl.split("clearbit.com/")[1];
+                  }
+                  img.src = `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+                } else {
+                  img.style.display = "none";
+                  img.parentElement!.textContent =
+                    (job.company?.name || "?")[0];
+                }
               }}
             />
           ) : (
