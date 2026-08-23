@@ -322,6 +322,12 @@ function saveJobs(jobs) {
       }
 
       // Next page
+      if (currentPage >= 15) {
+        console.log(`       ⚠️  Reached maximum page limit (15) for ${country}. Ending pagination to prevent loops.`);
+        hasMorePages = false;
+        continue;
+      }
+
       const nextButton = await page.$(`button[aria-label="Page ${currentPage + 1}"], li[data-test-pagination-page-btn="${currentPage + 1}"] button`);
       if (nextButton) {
         await nextButton.scrollIntoViewIfNeeded();
