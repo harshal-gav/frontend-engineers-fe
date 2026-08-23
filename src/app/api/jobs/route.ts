@@ -41,10 +41,10 @@ export async function GET(request: Request) {
       return NextResponse.json([]);
     }
 
-    // MASKING: non-premium users see first 5 full + rest masked
+    // MASKING: non-premium users see first 100 full + rest masked
     if (!isPremium) {
       const maskedJobs = jobs.map((job, index) => {
-        if (index > 4) {
+        if (index > 99) {
           return maskJobForTeaser(job);
         }
         return job;
