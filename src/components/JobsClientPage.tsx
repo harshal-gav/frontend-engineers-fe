@@ -382,7 +382,7 @@ export default function JobsClientPage() {
           </p>
 
         {/* Search Bar */}
-        <div className="hero-search flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6 relative">
+        <div className="hero-search flex flex-col items-center w-full max-w-2xl mx-auto mb-4 sm:mb-6 relative">
           <input
             type="text"
             placeholder={
@@ -397,6 +397,25 @@ export default function JobsClientPage() {
             }
             className="w-full bg-[#111] border border-[#333] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-white outline-none focus:border-[#00ffcc] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
           />
+          {!isSubscribed && (
+            <div className="mt-5 w-full sm:w-auto px-2 sm:px-0 flex justify-center">
+              <Link
+                href="/pricing"
+                className="group relative inline-flex items-center justify-center w-full sm:w-auto gap-2 sm:gap-3 text-sm sm:text-base font-extrabold text-[#0a0a0a] bg-gradient-to-r from-[#00ffcc] to-[#00ccaa] px-6 sm:px-8 py-3.5 sm:py-4 rounded-full shadow-[0_0_20px_rgba(0,255,204,0.25)] hover:shadow-[0_0_35px_rgba(0,255,204,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+              >
+                <span className="text-lg sm:text-xl">🔓</span>
+                <span>Unlock 1000+ Premium Remote Jobs</span>
+                <svg
+                  className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-200"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </Link>
+            </div>
+          )}
         </div>
 
 
