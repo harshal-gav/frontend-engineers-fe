@@ -3,12 +3,42 @@
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function PricingPage() {
   const router = useRouter();
   const { user } = useAuth();
   const [error, setError] = useState<string | null>(null);
+  const [localPrice, setLocalPrice] = useState<string | null>(null);
+
+  useEffect(() => {
+    async function fetchLocalPrice() {
+      try {
+        const ipRes = await fetch("https://ipapi.co/json/");
+        const ipData = await ipRes.json();
+        const currency = ipData.currency;
+        
+        if (currency && currency !== "USD") {
+          const rateRes = await fetch("https://open.er-api.com/v6/latest/USD");
+          const rateData = await rateRes.json();
+          const rate = rateData.rates[currency];
+          
+          if (rate) {
+            const converted = Math.round(9 * rate); // $9 * rate
+            const formatted = new Intl.NumberFormat(undefined, { 
+              style: 'currency', 
+              currency: currency,
+              maximumFractionDigits: 0 
+            }).format(converted);
+            setLocalPrice(`approx ${formatted}`);
+          }
+        }
+      } catch (e) {
+        console.error("Failed to fetch local currency", e);
+      }
+    }
+    fetchLocalPrice();
+  }, []);
 
   const initialOptions = {
     clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || "test",
@@ -32,9 +62,16 @@ export default function PricingPage() {
           <div className="text-[#00ffcc] font-semibold tracking-wider uppercase mb-2">
             Pro Membership
           </div>
-          <div className="flex items-end justify-center gap-1 mb-6">
-            <span className="text-5xl font-bold">$9</span>
-            <span className="text-gray-400 mb-1">/month</span>
+          <div className="flex flex-col items-center mb-6">
+            <div className="flex items-end justify-center gap-1">
+              <span className="text-5xl font-bold">$9</span>
+              <span className="text-gray-400 mb-1">/month</span>
+            </div>
+            {localPrice && (
+              <div className="text-sm text-[#00ffcc] mt-1 font-medium bg-[#00ffcc]/10 px-3 py-1 rounded-full">
+                {localPrice} /month
+              </div>
+            )}
           </div>
 
           <ul className="text-left space-y-4 mb-8">
