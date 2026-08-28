@@ -288,7 +288,9 @@ body {
   border-radius: var(--radius-lg);
   padding: 24px;
   position: sticky;
-  top: 24px;
+  top: 100px;
+  max-height: calc(100vh - 120px);
+  overflow-y: auto;
 }
 
 .filter-section {
