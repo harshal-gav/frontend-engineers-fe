@@ -43,8 +43,51 @@ export default function PricingPage() {
 
   const initialOptions = {
     clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || "test",
+    currency: "USD",
     intent: "subscription",
     vault: true,
+  };
+
+  const handlePayUSubscription = async () => {
+    try {
+      if (!user) return;
+      const token = await user.getIdToken();
+      
+      const res = await fetch("/api/payu/create-subscription", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Authorization": `Bearer ${token}`
+        }
+      });
+      
+      const data = await res.json();
+      
+      if (!res.ok || data.error) {
+        setError(data.error || "Failed to initialize PayU");
+        return;
+      }
+      
+      // Dynamically create and submit a form to PayU
+      const form = document.createElement("form");
+      form.setAttribute("method", "POST");
+      form.setAttribute("action", data.action);
+      
+      Object.keys(data.params).forEach((key) => {
+        const hiddenField = document.createElement("input");
+        hiddenField.setAttribute("type", "hidden");
+        hiddenField.setAttribute("name", key);
+        hiddenField.setAttribute("value", data.params[key]);
+        form.appendChild(hiddenField);
+      });
+      
+      document.body.appendChild(form);
+      form.submit();
+      
+    } catch (err) {
+      console.error(err);
+      setError("Failed to initiate PayU payment");
+    }
   };
 
   return (
@@ -101,36 +144,53 @@ export default function PricingPage() {
                 Create Account to Subscribe
               </button>
             ) : (
-              <PayPalScriptProvider options={initialOptions}>
-                <PayPalButtons
-                  style={{ layout: "vertical", shape: "rect", color: "gold" }}
-                  createSubscription={async (data, actions) => {
-                    const response = await fetch("/api/paypal/create-subscription", {
-                      method: "POST",
-                      headers: {
-                        "Content-Type": "application/json",
-                      },
-                      body: JSON.stringify({
-                        plan_id: process.env.NEXT_PUBLIC_PAYPAL_PLAN_ID!,
-                        custom_id: user.uid,
-                      }),
-                    });
-                    const result = await response.json();
-                    if (!response.ok || !result.id) {
-                      throw new Error(result.error || "Failed to create subscription");
-                    }
-                    return result.id;
-                  }}
-                  onApprove={async (data, actions) => {
-                    alert("🎉 Subscription created successfully! Your account will be upgraded momentarily.");
-                    router.push("/");
-                  }}
-                  onError={(err) => {
-                    console.error("PayPal Error:", err);
-                    setError("Payment failed or was cancelled. Please try again.");
-                  }}
-                />
-              </PayPalScriptProvider>
+              <div className="flex flex-col gap-4">
+                <div className="w-full">
+                  <PayPalScriptProvider options={initialOptions}>
+                    <PayPalButtons
+                      style={{ layout: "vertical", shape: "rect", color: "gold" }}
+                      createSubscription={async (data, actions) => {
+                        const response = await fetch("/api/paypal/create-subscription", {
+                          method: "POST",
+                          headers: {
+                            "Content-Type": "application/json",
+                          },
+                          body: JSON.stringify({
+                            plan_id: process.env.NEXT_PUBLIC_PAYPAL_PLAN_ID!,
+                            custom_id: user.uid,
+                          }),
+                        });
+                        const result = await response.json();
+                        if (!response.ok || !result.id) {
+                          throw new Error(result.error || "Failed to create subscription");
+                        }
+                        return result.id;
+                      }}
+                      onApprove={async (data, actions) => {
+                        alert("🎉 Subscription created successfully! Your account will be upgraded momentarily.");
+                        router.push("/");
+                      }}
+                      onError={(err) => {
+                        console.error("PayPal Error:", err);
+                        setError("Payment failed or was cancelled. Please try again.");
+                      }}
+                    />
+                  </PayPalScriptProvider>
+                </div>
+                
+                <div className="relative flex py-2 items-center">
+                  <div className="flex-grow border-t border-[#333]"></div>
+                  <span className="flex-shrink-0 mx-4 text-gray-500 text-sm">OR</span>
+                  <div className="flex-grow border-t border-[#333]"></div>
+                </div>
+
+                <button
+                  onClick={handlePayUSubscription}
+                  className="w-full py-3 rounded text-white bg-[#10b981] font-bold text-lg hover:bg-[#059669] transition-colors flex items-center justify-center gap-2"
+                >
+                  Pay with PayU (UPI / Cards)
+                </button>
+              </div>
             )}
             
             {user && (

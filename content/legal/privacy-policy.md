@@ -12,7 +12,7 @@ We collect information you provide directly to us when you create an account or 
 - **Account Data:** Authentication credentials.
 
 ### 1.2 Payment Information
-When you purchase a Pro Membership, your payment information (such as credit card details) is collected and processed directly by our third-party payment processor (PayPal). **We do not store or process complete credit card numbers on our servers.** We only retain subscription status, billing cycle dates, and transactional metadata necessary for account provisioning.
+When you purchase a Pro Membership, your payment information (such as credit card details) is collected and processed directly by our third-party payment processors (PayPal and PayU). **We do not store or process complete credit card numbers on our servers.** We only retain subscription status, billing cycle dates, and transactional metadata necessary for account provisioning.
 
 ### 1.3 Usage Data and Analytics
 We automatically collect usage data when you visit our site, including your IP address, browser type, operating system, and interactions with our platform (such as jobs clicked or searched).
@@ -30,7 +30,7 @@ We use the information we collect to:
 
 We may share your information with third-party vendors that provide services on our behalf:
 - **Authentication & Database:** Google Firebase.
-- **Payment Processing:** PayPal.
+- **Payment Processing:** PayPal and PayU.
 - **Analytics:** Google Analytics and Vercel Analytics.
 
 These third parties have access to your Personal Information only to perform these tasks on our behalf and are obligated not to disclose or use it for any other purpose.

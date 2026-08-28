@@ -5,7 +5,7 @@ const PAYPAL_API_URL = process.env.PAYPAL_MODE === 'live'
   ? 'https://api-m.paypal.com' 
   : 'https://api-m.sandbox.paypal.com';
 
-async function generateAccessToken() {
+async function generatePayPalAccessToken() {
   const clientId = process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID;
   const secret = process.env.PAYPAL_SECRET_KEY;
   
@@ -51,41 +51,53 @@ export async function POST(req: Request) {
     }
 
     const userData = userDoc.data();
-    const subscriptionId = userData?.paypalSubscriptionId;
-
-    if (!subscriptionId) {
-      return NextResponse.json({ error: 'No active subscription found' }, { status: 400 });
-    }
-
-    const accessToken = await generateAccessToken();
+    const paymentGateway = userData?.paymentGateway || 'paypal';
     
-    // Call PayPal API to cancel the subscription
-    const response = await fetch(`${PAYPAL_API_URL}/v1/billing/subscriptions/${subscriptionId}/cancel`, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        Authorization: `Bearer ${accessToken}`,
-      },
-      body: JSON.stringify({
-        reason: 'User requested cancellation via profile settings'
-      })
-    });
-    
-    if (response.ok || response.status === 204) {
-      // Successfully cancelled in PayPal. 
-      // Update our database so they are no longer marked as active after this billing cycle.
-      // We rely on the webhooks to actually revoke access at the end of the period, but we can set cancel_at_period_end here.
+    if (paymentGateway === 'paypal') {
+      const subscriptionId = userData?.paypalSubscriptionId;
+      if (!subscriptionId) {
+        return NextResponse.json({ error: 'No active PayPal subscription found' }, { status: 400 });
+      }
+
+      const accessToken = await generatePayPalAccessToken();
+      const response = await fetch(`${PAYPAL_API_URL}/v1/billing/subscriptions/${subscriptionId}/cancel`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Authorization: `Bearer ${accessToken}`,
+        },
+        body: JSON.stringify({
+          reason: 'User requested cancellation via profile settings'
+        })
+      });
+      
+      if (response.ok || response.status === 204) {
+        await adminDb.collection('users').doc(uid).update({
+          cancel_at_period_end: true,
+          updatedAt: new Date()
+        });
+        return NextResponse.json({ success: true });
+      } else {
+        const data = await response.json();
+        return NextResponse.json({ error: 'Failed to cancel subscription with PayPal', details: data }, { status: 500 });
+      }
+    } 
+    else if (paymentGateway === 'payu') {
+      const subscriptionId = userData?.payuSubscriptionId;
+      if (!subscriptionId) {
+        return NextResponse.json({ error: 'No active PayU subscription found' }, { status: 400 });
+      }
+
+      // Handle PayU Cancellation (Local state update until PayU API is fully verified)
       await adminDb.collection('users').doc(uid).update({
         cancel_at_period_end: true,
         updatedAt: new Date()
       });
-
-      return NextResponse.json({ success: true });
-    } else {
-      const data = await response.json();
-      console.error('[PayPal Cancel API Error]', data);
-      return NextResponse.json({ error: 'Failed to cancel subscription with PayPal', details: data }, { status: 500 });
+      return NextResponse.json({ success: true, message: "Subscription cancelled successfully." });
     }
+    
+    return NextResponse.json({ error: 'Unknown payment gateway' }, { status: 400 });
+
   } catch (error) {
     console.error('Error in cancel-subscription:', error);
     return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });

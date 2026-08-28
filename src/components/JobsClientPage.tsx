@@ -111,7 +111,7 @@ export default function JobsClientPage() {
     setIsCancelling(true);
     try {
       const token = await user?.getIdToken();
-      const res = await fetch("/api/paypal/cancel-subscription", {
+      const res = await fetch("/api/cancel-subscription", {
         method: "POST",
         headers: {
           Authorization: `Bearer ${token}`

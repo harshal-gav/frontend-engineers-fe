@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { loadJobsFromFile } from '@/lib/jobs.server';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://frontendengineers.com';
+  const baseUrl = 'https://www.frontendengineers.com';
   const jobs = loadJobsFromFile();
 
   const jobsPages: MetadataRoute.Sitemap = jobs.map((job) => ({
