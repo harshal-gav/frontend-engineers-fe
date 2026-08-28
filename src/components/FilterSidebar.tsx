@@ -223,74 +223,7 @@ export default function FilterSidebar({
         ))}
       </div>
 
-      {/* Salary Range */}
-      <div className="filter-section">
-        <h3>Salary Range (USD)</h3>
-        <div className="flex gap-2">
-          <input
-            className="input min-h-[44px]"
-            type="number"
-            placeholder="Min"
-            value={filters.salaryMin}
-            onChange={(e) =>
-              onFilterChange({ ...filters, salaryMin: e.target.value })
-            }
-          />
-          <span
-            className="flex items-center"
-            style={{ color: "var(--text-muted)" }}
-          >
-            –
-          </span>
-          <input
-            className="input min-h-[44px]"
-            type="number"
-            placeholder="Max"
-            value={filters.salaryMax}
-            onChange={(e) =>
-              onFilterChange({ ...filters, salaryMax: e.target.value })
-            }
-          />
-        </div>
-      </div>
 
-      {/* Posted Within */}
-      <div className="filter-section">
-        <h3>Posted Within</h3>
-        <div className="toggle-group">
-          {POSTED_OPTIONS.map((opt) => (
-            <button
-              key={opt.value}
-              className={`toggle-pill min-h-[40px] ${
-                filters.postedWithin === opt.value ? "active" : ""
-              }`}
-              onClick={() =>
-                onFilterChange({ ...filters, postedWithin: opt.value })
-              }
-            >
-              {opt.label}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {/* Sort */}
-      <div className="filter-section">
-        <h3>Sort By</h3>
-        <select
-          className="input min-h-[44px]"
-          value={filters.sortBy}
-          onChange={(e) =>
-            onFilterChange({ ...filters, sortBy: e.target.value })
-          }
-        >
-          {SORT_OPTIONS.map((opt) => (
-            <option key={opt.value} value={opt.value}>
-              {opt.label}
-            </option>
-          ))}
-        </select>
-      </div>
 
       {/* Mobile: Show Results button */}
       {onApply && (
