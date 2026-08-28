@@ -102,6 +102,35 @@ export default function JobsClientPage() {
   const [dataLoaded, setDataLoaded] = useState(false);
   const [page, setPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
+  const [showProfileMenu, setShowProfileMenu] = useState(false);
+  const [isCancelling, setIsCancelling] = useState(false);
+
+  const handleCancelSubscription = async () => {
+    if (!confirm("Are you sure you want to cancel your Pro Membership? You will retain access until the end of your billing cycle.")) return;
+    
+    setIsCancelling(true);
+    try {
+      const token = await user?.getIdToken();
+      const res = await fetch("/api/paypal/cancel-subscription", {
+        method: "POST",
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      });
+      const data = await res.json();
+      if (data.success) {
+        alert("Your subscription has been cancelled successfully.");
+        setShowProfileMenu(false);
+      } else {
+        alert(data.error || "Failed to cancel subscription.");
+      }
+    } catch (e) {
+      console.error(e);
+      alert("An error occurred while cancelling your subscription.");
+    } finally {
+      setIsCancelling(false);
+    }
+  };
 
   // Load jobs from secure API
   useEffect(() => {
@@ -326,14 +355,11 @@ export default function JobsClientPage() {
               <span className="sm:hidden">FrontendEng</span>
             </span>
           </div>
-          <div className="flex items-center gap-2 sm:gap-3">
+          <div className="flex items-center gap-2 sm:gap-3 relative">
             {authLoading ? (
               <div className="w-20 h-8 skeleton rounded" />
             ) : user ? (
               <div className="flex items-center gap-2 sm:gap-4">
-                <span className="text-sm font-medium hidden sm:block text-[#00ffcc]">
-                  {isSubscribed ? "Pro Member" : user.email}
-                </span>
                 {!isSubscribed && (
                   <Link
                     href="/pricing"
@@ -343,13 +369,42 @@ export default function JobsClientPage() {
                     <span className="sm:hidden">Pro</span>
                   </Link>
                 )}
-                <button
-                  onClick={handleLogout}
-                  className="btn-secondary text-sm min-h-[44px] px-3 sm:px-4"
-                >
-                  <span className="hidden sm:inline">Log Out</span>
-                  <span className="sm:hidden">Exit</span>
-                </button>
+                
+                {/* Profile Dropdown */}
+                <div className="relative">
+                  <button 
+                    onClick={() => setShowProfileMenu(!showProfileMenu)}
+                    className="w-10 h-10 rounded-full bg-[#1a1a2e] border border-[#333] flex items-center justify-center text-white font-bold hover:border-[#00ffcc] transition-colors"
+                  >
+                    {user.email ? user.email.charAt(0).toUpperCase() : 'U'}
+                  </button>
+                  
+                  {showProfileMenu && (
+                    <div className="absolute right-0 mt-2 w-56 bg-[#111227] border border-[#333] rounded-xl shadow-2xl overflow-hidden z-50">
+                      <div className="p-4 border-b border-[#333]">
+                        <p className="text-sm font-medium text-white truncate" title={user.email || ''}>{user.email}</p>
+                        <p className="text-xs text-[#00ffcc] mt-1">{isSubscribed ? "Pro Member" : "Free Tier"}</p>
+                      </div>
+                      <div className="p-2 flex flex-col gap-1">
+                        {isSubscribed && (
+                          <button
+                            onClick={handleCancelSubscription}
+                            disabled={isCancelling}
+                            className="text-left px-3 py-2 text-sm text-red-400 hover:bg-[#1a1a2e] rounded-lg transition-colors w-full disabled:opacity-50"
+                          >
+                            {isCancelling ? "Cancelling..." : "Cancel Membership"}
+                          </button>
+                        )}
+                        <button
+                          onClick={handleLogout}
+                          className="text-left px-3 py-2 text-sm text-gray-300 hover:bg-[#1a1a2e] hover:text-white rounded-lg transition-colors w-full"
+                        >
+                          Log Out
+                        </button>
+                      </div>
+                    </div>
+                  )}
+                </div>
               </div>
             ) : (
               <>

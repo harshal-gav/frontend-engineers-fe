@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 import { useAuth } from "@/context/AuthContext";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
@@ -130,6 +131,13 @@ export default function PricingPage() {
                   }}
                 />
               </PayPalScriptProvider>
+            )}
+            
+            {user && (
+              <div className="mt-4 text-xs text-gray-500 text-center leading-relaxed">
+                By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#00ffcc] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#00ffcc] hover:underline">Privacy Policy</Link>. 
+                Your subscription renews automatically at $9/month until cancelled.
+              </div>
             )}
 
             <button
