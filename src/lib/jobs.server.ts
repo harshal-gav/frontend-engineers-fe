@@ -35,7 +35,7 @@ const KNOWN_GOOD_LOGO_DOMAINS = new Set([
 /**
  * Check if a Clearbit logo URL points to a real company logo (not a generic globe).
  */
-function hasRealLogo(logoUrl: string | null): boolean {
+export function hasRealLogo(logoUrl: string | null): boolean {
   if (!logoUrl) return false;
   const match = logoUrl.match(/logo\.clearbit\.com\/(.+)/);
   if (!match) return !!logoUrl; // Non-clearbit URL, assume valid
@@ -94,6 +94,42 @@ function spaceOutCompanies(jobsArr: Job[], spacing: number): Job[] {
   return spacedJobs;
 }
 
+const CONSULTANCY_NAMES = new Set([
+  "bairesdev", "yo it consulting", "sme careers", "quik hire staffing",
+  "hire feed", "frontline data solutions", "piper companies",
+  "alignerr", "plan a technologies", "grupo digital", "corecruit (formerly quil)",
+  "lateral group", "lateral benelux", "kreitech", "in all media",
+  "sourcingxpress", "recruitgo careers", "recruitpoolz", "fetchjobs.co",
+  "medinex workforce", "crossing infotech", "argo intern",
+  "sirsonite solutions pvt. ltd.", "eitacies inc.", "hired",
+  "accenture in india", "accenture dach", "sophilabs",
+  "micromart", "microsourcing", "helios & partners",
+  "thinkscoop technologies", "monatta solutions", "data8x",
+  "stack provider", "techblocks", "overt minds",
+  "partner engineering test company", "deel middleware test company",
+  "best job tool", "secret sauce partners",
+  "yatiraj technologies private limited",
+  "zyple software solutions pvt ltd | sap business one partner",
+  "integrated software data services", "hirrobase",
+  "afterquery experts", "athenaprep", "athenax",
+  "walia nexus", "airitos, llc",
+]);
+
+// Check if a company name matches a consultancy
+export function isConsultancy(name: string): boolean {
+  const lower = name.toLowerCase().trim();
+  if (CONSULTANCY_NAMES.has(lower)) return true;
+  // Also catch generic patterns
+  if (/\b(staffing|recruit|consult|outsourc|placement|hire\b)/i.test(lower)) return true;
+  return false;
+}
+
+export function isTopTierJob(job: Job): boolean {
+  const companyName = job.company?.name || "";
+  const realLogo = hasRealLogo(job.company?.logoUrl || null);
+  return realLogo && !isConsultancy(companyName);
+}
+
 /**
  * Read and parse jobs.json from the data directory.
  * Filters to remote + frontend-relevant jobs, enriches with slug, excludes dead jobs.
@@ -143,36 +179,6 @@ export function loadJobsFromFile(): Job[] {
     }));
 
   // 2. Classify jobs into tiers: Product companies first, consultancies last
-  const CONSULTANCY_NAMES = new Set([
-    "bairesdev", "yo it consulting", "sme careers", "quik hire staffing",
-    "hire feed", "frontline data solutions", "piper companies",
-    "alignerr", "plan a technologies", "grupo digital", "corecruit (formerly quil)",
-    "lateral group", "lateral benelux", "kreitech", "in all media",
-    "sourcingxpress", "recruitgo careers", "recruitpoolz", "fetchjobs.co",
-    "medinex workforce", "crossing infotech", "argo intern",
-    "sirsonite solutions pvt. ltd.", "eitacies inc.", "hired",
-    "accenture in india", "accenture dach", "sophilabs",
-    "micromart", "microsourcing", "helios & partners",
-    "thinkscoop technologies", "monatta solutions", "data8x",
-    "stack provider", "techblocks", "overt minds",
-    "partner engineering test company", "deel middleware test company",
-    "best job tool", "secret sauce partners",
-    "yatiraj technologies private limited",
-    "zyple software solutions pvt ltd | sap business one partner",
-    "integrated software data services", "hirrobase",
-    "afterquery experts", "athenaprep", "athenax",
-    "walia nexus", "airitos, llc",
-  ]);
-
-  // Check if a company name matches a consultancy
-  const isConsultancy = (name: string): boolean => {
-    const lower = name.toLowerCase().trim();
-    if (CONSULTANCY_NAMES.has(lower)) return true;
-    // Also catch generic patterns
-    if (/\b(staffing|recruit|consult|outsourc|placement|hire\b)/i.test(lower)) return true;
-    return false;
-  };
-
   // Tier 1: Legit product companies with real logos (front pages)
   // Tier 2: Other companies with real logos OR legit companies without logos (middle)
   // Tier 3: Consultancies / staffing agencies (last pages)
@@ -181,13 +187,10 @@ export function loadJobsFromFile(): Job[] {
   const tier3: Job[] = [];
 
   for (const job of validJobs) {
-    const companyName = job.company?.name || "";
-    const realLogo = hasRealLogo(job.company?.logoUrl || null);
-
-    if (isConsultancy(companyName)) {
-      tier3.push(job);
-    } else if (realLogo) {
+    if (isTopTierJob(job)) {
       tier1.push(job);
+    } else if (isConsultancy(job.company?.name || "")) {
+      tier3.push(job);
     } else {
       tier2.push(job);
     }

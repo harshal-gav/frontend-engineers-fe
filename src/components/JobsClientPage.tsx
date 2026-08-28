@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo } from "react";
+import { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import type { IFuseOptions } from "fuse.js";
@@ -104,6 +104,19 @@ export default function JobsClientPage() {
   const [showFilters, setShowFilters] = useState(false);
   const [showProfileMenu, setShowProfileMenu] = useState(false);
   const [isCancelling, setIsCancelling] = useState(false);
+  const profileMenuRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    function handleClickOutside(event: MouseEvent) {
+      if (profileMenuRef.current && !profileMenuRef.current.contains(event.target as Node)) {
+        setShowProfileMenu(false);
+      }
+    }
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   const handleCancelSubscription = async () => {
     if (!confirm("Are you sure you want to cancel your Pro Membership? You will retain access until the end of your billing cycle.")) return;
@@ -371,7 +384,7 @@ export default function JobsClientPage() {
                 )}
                 
                 {/* Profile Dropdown */}
-                <div className="relative">
+                <div className="relative" ref={profileMenuRef}>
                   <button 
                     onClick={() => setShowProfileMenu(!showProfileMenu)}
                     className="w-10 h-10 rounded-full bg-[#1a1a2e] border border-[#333] flex items-center justify-center text-white font-bold hover:border-[#00ffcc] transition-colors"

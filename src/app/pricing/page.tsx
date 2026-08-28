@@ -116,17 +116,30 @@ export default function PricingPage() {
           Angular, Node.js, and Fullstack jobs sent straight to you.
         </p>
 
-        <div className="glass-card max-w-md mx-auto p-8 border border-[#333] bg-[#111] rounded-2xl">
+        <div className="glass-card max-w-md mx-auto p-8 border border-[#333] bg-[#111] rounded-2xl relative overflow-hidden">
+          {/* Limited Time Badge */}
+          <div className="absolute top-4 right-[-35px] bg-[#f43f5e] text-white text-[10px] font-extrabold px-10 py-1 rotate-45 shadow-lg">
+            80% OFF
+          </div>
+          
           <div className="text-[#00ffcc] font-semibold tracking-wider uppercase mb-2">
             Pro Membership
           </div>
           <div className="flex flex-col items-center mb-6">
-            <div className="flex items-end justify-center gap-1">
-              <span className="text-5xl font-bold">$9</span>
-              <span className="text-gray-400 mb-1">/month</span>
+            <div className="flex flex-col items-center justify-center">
+              <span className="text-gray-500 text-xl font-medium line-through mb-1 decoration-red-500/50">$45/month</span>
+              <div className="flex items-end justify-center gap-1">
+                <span className="text-5xl font-bold text-white">$9</span>
+                <span className="text-gray-400 mb-1">/month</span>
+              </div>
             </div>
+            
+            <div className="text-xs font-bold text-[#f43f5e] uppercase tracking-wider mt-3 bg-[#f43f5e]/10 px-3 py-1.5 rounded-full animate-pulse">
+              🔥 Limited Time Offer
+            </div>
+
             {localPrice && (
-              <div className="text-sm text-[#00ffcc] mt-1 font-medium bg-[#00ffcc]/10 px-3 py-1 rounded-full">
+              <div className="text-sm text-[#00ffcc] mt-3 font-medium bg-[#00ffcc]/10 px-3 py-1 rounded-full">
                 {localPrice} /month
               </div>
             )}

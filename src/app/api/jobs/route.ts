@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { getAdminAuth, getAdminDb } from "@/lib/firebase-admin";
 import { maskJobForTeaser } from "@/lib/jobs";
-import { loadJobsFromFile } from "@/lib/jobs.server";
+import { loadJobsFromFile, isTopTierJob } from "@/lib/jobs.server";
 
 export async function GET(request: Request) {
   try {
@@ -41,13 +41,15 @@ export async function GET(request: Request) {
       return NextResponse.json([]);
     }
 
-    // MASKING: non-premium users see first 100 full + rest masked
+    // MASKING: non-premium users see only up to 100 top product companies, the rest are masked
     if (!isPremium) {
-      const maskedJobs = jobs.map((job, index) => {
-        if (index > 99) {
-          return maskJobForTeaser(job);
+      let unmaskedCount = 0;
+      const maskedJobs = jobs.map((job) => {
+        if (isTopTierJob(job) && unmaskedCount < 100) {
+          unmaskedCount++;
+          return job;
         }
-        return job;
+        return maskJobForTeaser(job);
       });
       return NextResponse.json(maskedJobs);
     }
