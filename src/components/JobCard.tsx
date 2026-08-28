@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { formatSalary, timeAgo, type Job } from "@/lib/jobs";
+import { formatSalary, type Job } from "@/lib/jobs";
 
 // ─── Config ──────────────────────────────────────────────
 
@@ -45,15 +45,12 @@ export default function JobCard({
     ? LEVEL_CONFIG[job.experienceLevel]
     : null;
   const salary = formatSalary(job.salaryMin, job.salaryMax, job.currency);
-  const timeStr = timeAgo(job.postedAt);
   const gradientIndex =
     (job.company?.name || "X").charCodeAt(0) % LOGO_GRADIENTS.length;
 
-  // For teaser cards: use the job detail page (shows paywall).
-  // For premium cards: link directly to the external apply page if available.
+  // Always use the internal href so users can see the job details page
   const slug = job.slug || job.id;
   const internalHref = `/jobs/${slug}`;
-  const isExternalLink = !isTeaser && !!job.applyUrl;
 
   const cardContent = (
     <article
@@ -133,13 +130,6 @@ export default function JobCard({
                 )}
               </p>
             </div>
-            <span
-              suppressHydrationWarning
-              className="text-xs flex-shrink-0 mt-0 sm:mt-1 order-first sm:order-none"
-              style={{ color: "var(--text-muted)" }}
-            >
-              {timeStr}
-            </span>
           </div>
 
           {/* Badges row */}
@@ -222,20 +212,6 @@ export default function JobCard({
       )}
     </article>
   );
-
-  if (isExternalLink) {
-    return (
-      <a
-        href={job.applyUrl}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="block animate-fade-in-up"
-        style={{ animationDelay: `${index * 50}ms` }}
-      >
-        {cardContent}
-      </a>
-    );
-  }
 
   return (
     <Link
