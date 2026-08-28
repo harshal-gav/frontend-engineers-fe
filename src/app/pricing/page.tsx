@@ -6,11 +6,31 @@ import { useAuth } from "@/context/AuthContext";
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
 import { useState, useEffect } from "react";
 
+const initialOptions = {
+  clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || "test",
+  currency: "USD",
+  intent: "subscription",
+  vault: true,
+};
+
 export default function PricingPage() {
   const router = useRouter();
   const { user } = useAuth();
   const [error, setError] = useState<string | null>(null);
   const [localPrice, setLocalPrice] = useState<string | null>(null);
+  const [providerKey, setProviderKey] = useState<number>(Date.now());
+
+  useEffect(() => {
+    // Handle bfcache: if the user navigates back to this page, 
+    // the PayPal zoid components might be destroyed. Force a remount.
+    const onPageShow = (event: PageTransitionEvent) => {
+      if (event.persisted) {
+        setProviderKey(Date.now());
+      }
+    };
+    window.addEventListener("pageshow", onPageShow);
+    return () => window.removeEventListener("pageshow", onPageShow);
+  }, []);
 
   useEffect(() => {
     async function fetchLocalPrice() {
@@ -41,12 +61,6 @@ export default function PricingPage() {
     fetchLocalPrice();
   }, []);
 
-  const initialOptions = {
-    clientId: process.env.NEXT_PUBLIC_PAYPAL_CLIENT_ID || "test",
-    currency: "USD",
-    intent: "subscription",
-    vault: true,
-  };
 
   const handlePayUSubscription = async () => {
     try {
@@ -146,7 +160,7 @@ export default function PricingPage() {
             ) : (
               <div className="flex flex-col gap-4">
                 <div className="w-full">
-                  <PayPalScriptProvider options={initialOptions}>
+                  <PayPalScriptProvider key={providerKey} options={initialOptions}>
                     <PayPalButtons
                       style={{ layout: "vertical", shape: "rect", color: "gold" }}
                       createSubscription={async (data, actions) => {
