@@ -341,22 +341,32 @@ export default function JobsClientPage() {
                   </Link>
                 )}
                 
-                <div className="flex items-center gap-3 bg-[#1a1a2e]/50 border border-[#333] rounded-full pl-3 pr-1 py-1">
-                  <div className="flex items-center gap-2">
-                    {isSubscribed && (
-                      <span className="text-[10px] sm:text-xs bg-[#00ffcc] text-black px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
-                        Pro
-                      </span>
-                    )}
-                    <span className="text-sm font-semibold text-white max-w-[100px] sm:max-w-[150px] truncate" title={user.email || ""}>
-                      {user.email}
+                <div className="flex items-center gap-2 sm:gap-3 bg-transparent sm:bg-[#1a1a2e]/50 sm:border sm:border-[#333] rounded-full sm:pl-3 sm:pr-1 sm:py-1">
+                  {/* Pro Badge */}
+                  {isSubscribed && (
+                    <span className="text-[10px] sm:text-xs bg-[#00ffcc] text-black px-2 sm:px-2 py-1 sm:py-0.5 rounded-md sm:rounded-full font-bold uppercase tracking-wider leading-none">
+                      Pro
                     </span>
+                  )}
+                  
+                  {/* Desktop: Email text */}
+                  <span className="hidden sm:block text-sm font-semibold text-white max-w-[150px] truncate" title={user.email || ""}>
+                    {user.email}
+                  </span>
+
+                  {/* Mobile: User Initial Avatar */}
+                  <div className="sm:hidden w-8 h-8 rounded-full bg-[#111] flex items-center justify-center text-xs font-bold text-[#00ffcc] border border-[#333]">
+                    {user.email ? user.email.charAt(0).toUpperCase() : "U"}
                   </div>
+
+                  {/* Log Out Button */}
                   <button 
                     onClick={handleLogout} 
-                    className="text-xs bg-[#333] text-white hover:bg-[#444] hover:text-[#f43f5e] px-3 py-1.5 rounded-full transition-colors font-medium"
+                    className="text-xs bg-[#111] sm:bg-[#333] text-gray-400 sm:text-white hover:bg-[#222] sm:hover:bg-[#444] hover:text-[#f43f5e] w-8 h-8 sm:w-auto sm:h-auto sm:px-3 sm:py-1.5 rounded-full sm:rounded-full transition-colors font-medium flex items-center justify-center border border-[#333] sm:border-none"
+                    title="Log Out"
                   >
-                    Log Out
+                    <svg className="w-4 h-4 sm:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
+                    <span className="hidden sm:inline">Log Out</span>
                   </button>
                 </div>
               </div>
