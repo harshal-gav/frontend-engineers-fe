@@ -336,8 +336,8 @@ export default function JobsClientPage() {
                     href="/pricing"
                     className="btn-primary text-sm bg-[#00ffcc] text-black font-semibold rounded px-3 sm:px-4 py-1.5 hover:bg-[#00e6b8] flex items-center"
                   >
-                    <span className="hidden sm:inline">Subscribe Now</span>
-                    <span className="sm:hidden">Pro</span>
+                    <span className="hidden sm:inline">Get Pro Membership</span>
+                    <span className="sm:hidden">Get Pro</span>
                   </Link>
                 )}
                 
