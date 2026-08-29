@@ -40,7 +40,19 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
         // the dual-write pattern used by the PayPal webhook handler.
         const userDocRef = doc(db, "users", firebaseUser.uid);
 
-        unsubscribeDoc = onSnapshot(userDocRef, (snapshot) => {
+        unsubscribeDoc = onSnapshot(userDocRef, async (snapshot) => {
+          if (!snapshot.exists()) {
+            // Auto-create missing user document (handles signInWithRedirect cleanly)
+            const { setDoc } = await import("firebase/firestore");
+            await setDoc(userDocRef, {
+              email: firebaseUser.email,
+              isPremium: false,
+              createdAt: new Date().toISOString()
+            });
+            // The local write will instantly trigger this onSnapshot callback again
+            return;
+          }
+
           if (snapshot.exists()) {
             const data = snapshot.data();
             const isPremium = data.isPremium === true;

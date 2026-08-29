@@ -36,26 +36,16 @@ export default function LoginPage() {
     const provider = new GoogleAuthProvider();
     try {
       const userCredential = await signInWithPopup(auth, provider);
-      const user = userCredential.user;
-      
-      const { doc, getDoc, setDoc } = await import("firebase/firestore");
-      const { db } = await import("@/lib/firebase");
-      
-      const userDocRef = doc(db, "users", user.uid);
-      const userDoc = await getDoc(userDocRef);
-
-      if (!userDoc.exists()) {
-        await setDoc(userDocRef, {
-          email: user.email,
-          isPremium: false,
-          createdAt: new Date().toISOString()
-        });
-        router.push("/pricing");
-      } else {
-        router.push("/");
-      }
+      // Let AuthContext handle doc creation natively. Just redirect.
+      router.push("/");
     } catch (err: any) {
-      setError(err.message || "Failed to log in with Google");
+      if (err.code === 'auth/popup-blocked' || err.code === 'auth/popup-closed-by-user') {
+        // Fallback for in-app browsers (like LinkedIn, Instagram) that block popups
+        const { signInWithRedirect } = await import("firebase/auth");
+        signInWithRedirect(auth, provider);
+      } else {
+        setError(err.message || "Failed to log in with Google");
+      }
     } finally {
       setLoading(false);
     }

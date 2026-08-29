@@ -78,7 +78,12 @@ export default function SignupPage() {
         router.push("/"); // Redirect to home for existing users logging in via signup page
       }
     } catch (err: any) {
-      setError(err.message || "Failed to sign up with Google");
+      if (err.code === 'auth/popup-blocked' || err.code === 'auth/popup-closed-by-user') {
+        const { signInWithRedirect } = await import("firebase/auth");
+        signInWithRedirect(auth, provider);
+      } else {
+        setError(err.message || "Failed to sign up with Google");
+      }
     } finally {
       setLoading(false);
     }
