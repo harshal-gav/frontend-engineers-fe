@@ -53,11 +53,15 @@ export async function POST(req: Request) {
         updatedAt: new Date()
       });
 
+      const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+
       // Update user subscription
       await db.collection('users').doc(uid).set({
+        isPremium: true,
         isSubscribed: true,
         payuSubscriptionId: mihpayid, // Using mihpayid as subscription reference
         paymentGateway: 'payu',
+        subscriptionExpiresAt: expiresAt,
         updatedAt: new Date()
       }, { merge: true });
 

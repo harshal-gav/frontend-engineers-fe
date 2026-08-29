@@ -43,12 +43,16 @@ export async function POST(req: Request) {
             updatedAt: new Date()
           });
 
+          // Calculate 30 days from now
+          const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+
           // Upgrade user to Pro
           await db.collection('users').doc(uid).set({
             isPremium: true,
             isSubscribed: true,
             payuSubscriptionId: mihpayid,
             paymentGateway: 'payu',
+            subscriptionExpiresAt: expiresAt,
             updatedAt: new Date()
           }, { merge: true });
         }
