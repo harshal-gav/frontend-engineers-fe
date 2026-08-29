@@ -35,8 +35,25 @@ export default function LoginPage() {
     setError("");
     const provider = new GoogleAuthProvider();
     try {
-      await signInWithPopup(auth, provider);
-      router.push("/");
+      const userCredential = await signInWithPopup(auth, provider);
+      const user = userCredential.user;
+      
+      const { doc, getDoc, setDoc } = await import("firebase/firestore");
+      const { db } = await import("@/lib/firebase");
+      
+      const userDocRef = doc(db, "users", user.uid);
+      const userDoc = await getDoc(userDocRef);
+
+      if (!userDoc.exists()) {
+        await setDoc(userDocRef, {
+          email: user.email,
+          isPremium: false,
+          createdAt: new Date().toISOString()
+        });
+        router.push("/pricing");
+      } else {
+        router.push("/");
+      }
     } catch (err: any) {
       setError(err.message || "Failed to log in with Google");
     } finally {
