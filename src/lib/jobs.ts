@@ -36,30 +36,16 @@ export interface Job {
 
 /**
  * Teaser version of a job — fields that free users can see.
- * Premium-gated fields (company name, applyUrl, salary) are stripped/masked.
+ * The applyUrl and salary fields are securely masked on the server so they cannot be inspected in the network tab.
  */
-export interface TeaserJob {
-  id: string;
-  title: string;
-  description: string | null;
-  location: string | null;
-  remoteType: "REMOTE" | "HYBRID" | "ONSITE";
-  experienceLevel: "ENTRY" | "MID" | "SENIOR" | "LEAD" | null;
-  employmentType: string;
-  slug: string;
-  // Masked fields
-  company: { name: string };
+export type TeaserJob = Omit<Job, "applyUrl" | "salaryMin" | "salaryMax" | "currency"> & {
   applyUrl: null;
   salaryMin: null;
   salaryMax: null;
   currency: null;
-}
+};
 
-/**
- * Generate a URL-friendly slug from a job's title and company name.
- * Format: "senior-react-engineer-at-discord-4665b917"
- *         (title-at-company-first8charsOfId)
- */
+// ... slug generation and format methods ...
 export function generateSlug(job: Job): string {
   const titlePart = job.title
     .toLowerCase()
@@ -82,9 +68,6 @@ export function generateSlug(job: Job): string {
   return `${titlePart}-at-${companyPart}-${idSuffix}`;
 }
 
-/**
- * Format salary range for display.
- */
 export function formatSalary(
   min: number | null,
   max: number | null,
@@ -116,9 +99,6 @@ export function formatSalary(
   return `${sym}${format(min || max!)}`;
 }
 
-/**
- * Human-friendly relative time string.
- */
 export function timeAgo(dateStr: string | null): string {
   if (!dateStr) return "Recently";
   const date = new Date(dateStr);
@@ -136,24 +116,18 @@ export function timeAgo(dateStr: string | null): string {
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
-
 /**
  * Mask a job for non-premium users.
- * Strips company name, apply URL, and salary data.
+ * Securely strips the apply URL and salary data on the backend.
+ * Truncates the description to 300 characters so hackers cannot scrape full descriptions,
+ * while leaving enough text for basic client-side search to function.
  */
 export function maskJobForTeaser(job: Job): TeaserJob {
   return {
-    id: job.id,
-    title: job.title,
+    ...job,
     description: job.description
-      ? job.description.substring(0, 120) + "..."
-      : "Subscribe to Premium to see full job details.",
-    location: job.location,
-    remoteType: job.remoteType,
-    experienceLevel: job.experienceLevel,
-    employmentType: job.employmentType,
-    slug: job.slug || generateSlug(job),
-    company: { name: "Premium Company" },
+      ? job.description.substring(0, 300) + (job.description.length > 300 ? "..." : "")
+      : null,
     applyUrl: null,
     salaryMin: null,
     salaryMax: null,

@@ -26,20 +26,21 @@ const LOGO_GRADIENTS = [
   "linear-gradient(135deg, #f59e0b, #ef4444)",
 ];
 
+import { useAuth } from "@/context/AuthContext";
+
 // ─── Component ───────────────────────────────────────────
 
 interface JobCardProps {
   job: Job;
   index?: number;
-  /** If true, show teaser/blurred state for non-premium users */
-  isTeaser?: boolean;
 }
 
 export default function JobCard({
   job,
   index = 0,
-  isTeaser = false,
 }: JobCardProps) {
+  const { isSubscribed } = useAuth();
+  
   const remote = REMOTE_CONFIG[job.remoteType] || REMOTE_CONFIG.REMOTE;
   const level = job.experienceLevel
     ? LEVEL_CONFIG[job.experienceLevel]
@@ -54,9 +55,7 @@ export default function JobCard({
 
   const cardContent = (
     <article
-      className={`glass-card p-4 sm:p-5 cursor-pointer group hover:bg-[#111] transition-all ${
-        isTeaser ? "relative overflow-hidden" : ""
-      }`}
+      className="glass-card p-4 sm:p-5 cursor-pointer group hover:bg-[#111] transition-all"
     >
       <div className="flex items-start gap-3 sm:gap-4">
         {/* Company Logo */}
@@ -113,20 +112,12 @@ export default function JobCard({
                 className="text-sm mt-1 truncate"
                 style={{ color: "var(--text-secondary)" }}
               >
-                {isTeaser ? (
-                  <span className="blur-[6px] select-none">
-                    Premium Company
+                {job.company?.name || "Company"}
+                {job.company?.industry && (
+                  <span style={{ color: "var(--text-muted)" }}>
+                    {" "}
+                    · {job.company.industry}
                   </span>
-                ) : (
-                  <>
-                    {job.company?.name || "Company"}
-                    {job.company?.industry && (
-                      <span style={{ color: "var(--text-muted)" }}>
-                        {" "}
-                        · {job.company.industry}
-                      </span>
-                    )}
-                  </>
                 )}
               </p>
             </div>
@@ -154,7 +145,7 @@ export default function JobCard({
               </span>
             )}
 
-            {job.location && !isTeaser && (
+            {job.location && (
               <span
                 className="text-xs"
                 style={{ color: "var(--text-muted)" }}
@@ -168,8 +159,8 @@ export default function JobCard({
 
           {/* Salary + Employment type */}
           <div className="flex items-center gap-3 mt-2.5 sm:mt-3">
-            {isTeaser ? (
-              <span className="salary-text text-sm blur-[6px] select-none">
+            {!isSubscribed ? (
+              <span className="salary-text text-sm">
                 $XXK – $XXXK
               </span>
             ) : (
@@ -191,9 +182,7 @@ export default function JobCard({
           {/* Description preview */}
           {job.description && (
             <p
-              className={`text-xs mt-2 line-clamp-2 leading-relaxed ${
-                isTeaser ? "blur-[4px] select-none" : ""
-              }`}
+              className="text-xs mt-2 line-clamp-2 leading-relaxed"
               style={{ color: "var(--text-muted)" }}
             >
               {job.description}
@@ -201,15 +190,6 @@ export default function JobCard({
           )}
         </div>
       </div>
-
-      {/* Teaser overlay */}
-      {isTeaser && (
-        <div className="absolute inset-0 flex items-center justify-center bg-[var(--bg-primary)]/30 backdrop-blur-[2px] rounded-[var(--radius-lg)] opacity-0 group-hover:opacity-100 transition-opacity">
-          <span className="bg-[var(--accent-gradient)] text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">
-            🔒 <span className="hidden sm:inline">Get Pro Membership</span><span className="sm:hidden">Get Pro</span> to unlock
-          </span>
-        </div>
-      )}
     </article>
   );
 

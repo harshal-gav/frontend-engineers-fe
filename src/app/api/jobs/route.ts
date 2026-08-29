@@ -41,16 +41,9 @@ export async function GET(request: Request) {
       return NextResponse.json([]);
     }
 
-    // MASKING: non-premium users see only up to 100 top product companies, the rest are masked
+    // MASKING: non-premium users get ALL jobs, but every single job has its applyUrl removed.
     if (!isPremium) {
-      let unmaskedCount = 0;
-      const maskedJobs = jobs.map((job) => {
-        if (isTopTierJob(job) && unmaskedCount < 100) {
-          unmaskedCount++;
-          return job;
-        }
-        return maskJobForTeaser(job);
-      });
+      const maskedJobs = jobs.map((job) => maskJobForTeaser(job));
       return NextResponse.json(maskedJobs);
     }
 

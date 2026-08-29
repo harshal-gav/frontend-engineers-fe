@@ -110,131 +110,131 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
               {job.title}
             </h1>
             <p className="text-base sm:text-lg text-[var(--text-secondary)]">
-              {canAccess ? (
-                <>
-                  {job.company?.name}
-                  {job.company?.industry && (
-                    <span className="text-[var(--text-muted)]">
-                      {" "}
-                      · {job.company.industry}
-                    </span>
-                  )}
-                </>
-              ) : (
-                <span className="blur-[6px] select-none">
-                  Premium Company · Technology
-                </span>
-              )}
-            </p>
-          </div>
-        </div>
-
-        {/* Badges */}
-        <div className="flex flex-wrap items-center gap-2 mb-6">
-          <span className={`badge ${remote.class}`}>
-            {remote.icon} {remote.label}
-          </span>
-          {level && (
-            <span className={`badge ${level.class}`}>{level.label}</span>
-          )}
-          <span
-            className="badge"
-            style={{
-              background: "var(--bg-secondary)",
-              color: "var(--text-secondary)",
-            }}
-          >
-            {job.employmentType
-              .replace("_", "-")
-              .toLowerCase()
-              .replace(/^\w/, (c) => c.toUpperCase())}
-          </span>
-          {job.location && canAccess && (
-            <span className="text-sm text-[var(--text-muted)]">
-              📍 {job.city || job.location}
-              {job.country ? `, ${job.country}` : ""}
-            </span>
-          )}
-        </div>
-
-        {/* Salary */}
-        {canAccess && salary ? (
-          <div className="glass-card p-4 sm:p-5 mb-6">
-            <div className="text-sm font-medium text-[var(--text-muted)] mb-1">
-              Salary Range
-            </div>
-            <div className="salary-text text-lg sm:text-xl font-bold">
-              {salary}
-            </div>
-          </div>
-        ) : !canAccess ? (
-          <div className="glass-card p-4 sm:p-5 mb-6 relative overflow-hidden">
-            <div className="text-sm font-medium text-[var(--text-muted)] mb-1">
-              Salary Range
-            </div>
-            <div className="salary-text text-lg sm:text-xl font-bold blur-[8px] select-none">
-              $120K – $180K/year
-            </div>
-            <div className="absolute inset-0 flex items-center justify-center bg-[var(--bg-primary)]/50">
-              <span className="text-sm font-medium text-[var(--accent-secondary)]">
-                🔒 Premium only
+            {job.company?.name}
+            {job.company?.industry && (
+              <span className="text-[var(--text-muted)]">
+                {" "}
+                · {job.company.industry}
               </span>
+            )}
+          </p>
+        </div>
+      </div>
+
+      {/* Badges */}
+      <div className="flex flex-wrap items-center gap-2 mb-6">
+        <span className={`badge ${remote.class}`}>
+          {remote.icon} {remote.label}
+        </span>
+        {level && (
+          <span className={`badge ${level.class}`}>{level.label}</span>
+        )}
+        <span
+          className="badge"
+          style={{
+            background: "var(--bg-secondary)",
+            color: "var(--text-secondary)",
+          }}
+        >
+          {job.employmentType
+            .replace("_", "-")
+            .toLowerCase()
+            .replace(/^\w/, (c) => c.toUpperCase())}
+        </span>
+        {job.location && (
+          <span className="text-sm text-[var(--text-muted)]">
+            📍 {job.city || job.location}
+            {job.country ? `, ${job.country}` : ""}
+          </span>
+        )}
+      </div>
+
+      {/* Salary */}
+      {canAccess && salary ? (
+        <div className="glass-card p-4 sm:p-5 mb-6">
+          <div className="text-sm font-medium text-[var(--text-muted)] mb-1">
+            Salary Range
+          </div>
+          <div className="salary-text text-lg sm:text-xl font-bold">
+            {salary}
+          </div>
+        </div>
+      ) : !canAccess ? (
+        <div className="glass-card p-4 sm:p-5 mb-6 relative overflow-hidden">
+          <div className="text-sm font-medium text-[var(--text-muted)] mb-1">
+            Salary Range
+          </div>
+          <div className="salary-text text-lg sm:text-xl font-bold">
+            $XXK – $XXXK/year
+          </div>
+          <div className="absolute inset-0 flex items-center justify-center bg-[var(--bg-primary)]/50">
+            <span className="text-sm font-medium text-[var(--accent-secondary)]">
+              🔒 Premium only
+            </span>
+          </div>
+        </div>
+      ) : null}
+
+      {/* Description */}
+      <div className="mb-8">
+        <h2 className="text-lg font-semibold mb-3">Job Description</h2>
+        {canAccess ? (
+          <div className="prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap">
+            {job.description || "No description available."}
+          </div>
+        ) : (
+          <div className="relative">
+            <div className="text-[var(--text-secondary)] leading-relaxed blur-[6px] select-none whitespace-pre-wrap">
+              {(job.description || "This is a premium job listing with detailed description about the role, responsibilities, and requirements. Subscribe to see the full details and apply directly.").substring(
+                0,
+                300
+              )}
+              ...
+            </div>
+            {/* Paywall overlay */}
+            <div className="mt-6 text-center p-6 sm:p-8 glass-card border border-[var(--border-subtle)] rounded-2xl">
+              <div className="text-3xl mb-3">🔒</div>
+              <h3 className="text-xl font-bold mb-2">
+                Unlock Full Job Details
+              </h3>
+              <p className="text-sm text-[var(--text-secondary)] mb-5 max-w-md mx-auto">
+                Subscribe to see the full description, salary details, and apply directly.
+              </p>
+                <Link
+                  href="/pricing"
+                  className="btn-primary inline-flex items-center justify-center min-h-[48px] px-8 text-base"
+                >
+                  <span className="hidden sm:inline">Get Pro Membership</span>
+                  <span className="sm:hidden">Get Pro</span>
+                </Link>
             </div>
           </div>
-        ) : null}
+        )}
+      </div>
 
-        {/* Description */}
-        <div className="mb-8">
-          <h2 className="text-lg font-semibold mb-3">Job Description</h2>
+      {/* Desktop Apply Button */}
+      {(job.applyUrl || !canAccess) && (
+        <div className="hidden sm:block">
           {canAccess ? (
-            <div className="prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap">
-              {job.description || "No description available."}
-            </div>
-          ) : (
-            <div className="relative">
-              <div className="text-[var(--text-secondary)] leading-relaxed blur-[6px] select-none whitespace-pre-wrap">
-                {(job.description || "This is a premium job listing with detailed description about the role, responsibilities, and requirements. Subscribe to see the full details and apply directly.").substring(
-                  0,
-                  300
-                )}
-                ...
-              </div>
-              {/* Paywall overlay */}
-              <div className="mt-6 text-center p-6 sm:p-8 glass-card border border-[var(--border-subtle)] rounded-2xl">
-                <div className="text-3xl mb-3">🔒</div>
-                <h3 className="text-xl font-bold mb-2">
-                  Unlock Full Job Details
-                </h3>
-                <p className="text-sm text-[var(--text-secondary)] mb-5 max-w-md mx-auto">
-                  Subscribe to see the full description, company name,
-                  salary details, and apply directly.
-                </p>
-                  <Link
-                    href="/pricing"
-                    className="btn-primary inline-flex items-center justify-center min-h-[48px] px-8 text-base"
-                  >
-                    <span className="hidden sm:inline">Get Pro Membership</span>
-                    <span className="sm:hidden">Get Pro</span>
-                  </Link>
-              </div>
-            </div>
-          )}
-        </div>
-
-        {/* Desktop Apply Button */}
-        {canAccess && job.applyUrl && (
-          <div className="hidden sm:block">
             <a
-              href={job.applyUrl}
+              href={job.applyUrl!}
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary inline-flex min-h-[48px] px-8 text-base"
             >
               Apply Now →
             </a>
-          </div>
-        )}
-      </main>
+          ) : (
+            <Link
+              href="/pricing"
+              className="btn-primary inline-flex min-h-[48px] px-8 text-base bg-gradient-to-r from-[#00ffcc] to-[#00ccaa] text-black shadow-[0_0_15px_rgba(0,255,204,0.3)] hover:scale-105 transition-all"
+            >
+              <span className="mr-2">🔒</span> Upgrade to Pro to Apply
+            </Link>
+          )}
+        </div>
+      )}
+    </main>
 
       {/* ─── Mobile Sticky Apply CTA ─────────────── */}
       {canAccess && job.applyUrl && (
@@ -270,9 +270,9 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
           <div className="px-4 py-3">
             <Link
               href="/pricing"
-              className="btn-primary w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center"
+              className="btn-primary w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center bg-gradient-to-r from-[#00ffcc] to-[#00ccaa] text-black shadow-[0_0_15px_rgba(0,255,204,0.3)]"
             >
-              🔒 <span className="ml-1">Get Pro</span>
+              🔒 <span className="ml-1">Upgrade to Pro to Apply</span>
             </Link>
           </div>
         </div>

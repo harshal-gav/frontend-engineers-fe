@@ -126,18 +126,6 @@ export default function JobsClientPage() {
     loadData();
   }, [user]);
 
-  // Lazy load Fuse.js index to improve initial page load performance
-  const [fuse, setFuse] = useState<any>(null);
-
-  useEffect(() => {
-    if (allJobs.length > 0 && isSubscribed) {
-      import("fuse.js").then((FuseModule) => {
-        const Fuse = FuseModule.default;
-        setFuse(new Fuse(allJobs, FUSE_OPTIONS));
-      });
-    }
-  }, [allJobs, isSubscribed]);
-
   // Compute facets from all jobs
   const facets = useMemo(() => computeFacets(allJobs), [allJobs]);
 
@@ -145,13 +133,31 @@ export default function JobsClientPage() {
   const { jobs, totalJobs, hasMore } = useMemo(() => {
     if (!dataLoaded) return { jobs: [], totalJobs: 0, hasMore: false };
 
-    let filtered: Job[];
+    let filtered: Job[] = [...allJobs];
 
-    // Use Fuse.js for text search, regular filtering for structured filters
-    if (filters.q && filters.q.length >= 2 && fuse) {
-      filtered = fuse.search(filters.q).map((result: any) => result.item);
-    } else {
-      filtered = [...allJobs];
+    // Robust substring search replacing Fuse.js
+    if (filters.q && filters.q.length >= 2) {
+      const qTokens = filters.q.toLowerCase().split(/\s+/).filter(t => t.length > 0);
+      
+      filtered = filtered.filter((j) => {
+        const searchableText = [
+          j.title,
+          j.company?.name,
+          j.description,
+          j.location,
+          j.city,
+          j.country,
+          j.experienceLevel,
+          j.employmentType,
+          j.department,
+        ]
+          .filter(Boolean)
+          .join(" ")
+          .toLowerCase();
+          
+        // Ensure ALL typed words are found somewhere in the job
+        return qTokens.every(token => searchableText.includes(token));
+      });
     }
 
     // Framework filter (searches title + description)
@@ -254,7 +260,7 @@ export default function JobsClientPage() {
       totalJobs: total,
       hasMore: startIndex + limit < total,
     };
-  }, [allJobs, fuse, filters, page, dataLoaded]);
+  }, [allJobs, filters, page, dataLoaded]);
 
   // Check if any filters are active (beyond search query)
   const hasActiveFilters =
@@ -404,37 +410,13 @@ export default function JobsClientPage() {
         <div className="hero-search flex flex-col items-center w-full max-w-2xl mx-auto mb-4 sm:mb-6 relative">
           <input
             type="text"
-            placeholder={
-              isSubscribed
-                ? "Search React, Senior, Discord..."
-                : "Subscribe to unlock search & filters..."
-            }
-            disabled={!isSubscribed}
+            placeholder="Search React, Senior, Discord..."
             value={filters.q}
             onChange={(e) =>
               handleFilterChange({ ...filters, q: e.target.value })
             }
-            className="w-full bg-[#111] border border-[#333] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-white outline-none focus:border-[#00ffcc] transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+            className="w-full bg-[#111] border border-[#333] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-white outline-none focus:border-[#00ffcc] transition-colors"
           />
-          {!isSubscribed && (
-            <div className="mt-5 w-full sm:w-auto px-2 sm:px-0 flex justify-center">
-              <Link
-                href="/pricing"
-                className="group relative inline-flex items-center justify-center w-full sm:w-auto gap-2 sm:gap-3 text-sm sm:text-base font-extrabold text-[#0a0a0a] bg-gradient-to-r from-[#00ffcc] to-[#00ccaa] px-6 sm:px-8 py-3.5 sm:py-4 rounded-full shadow-[0_0_20px_rgba(0,255,204,0.25)] hover:shadow-[0_0_35px_rgba(0,255,204,0.45)] hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
-              >
-                <span className="text-lg sm:text-xl">🔓</span>
-                <span>Unlock 1000+ Premium Remote Jobs</span>
-                <svg
-                  className="w-4 h-4 sm:w-5 sm:h-5 group-hover:translate-x-1 transition-transform duration-200"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 7l5 5m0 0l-5 5m5-5H6" />
-                </svg>
-              </Link>
-            </div>
-          )}
         </div>
 
 
@@ -465,7 +447,7 @@ export default function JobsClientPage() {
                 ) : (
                   <>
                     <span className="font-semibold text-[#00ffcc]">
-                      1000+
+                      {hasActiveFilters ? totalJobs : "1000+"}
                     </span>{" "}
                     jobs found
                   </>
@@ -505,42 +487,15 @@ export default function JobsClientPage() {
                       <JobCardSkeleton key={i} />
                     ))
                   : jobs.map((job, i) => {
-                      // Paywall: non-subscribers see first 100 free, rest are teasers
-                      const startIndex = (page - 1) * 12;
-                      const absoluteIndex = startIndex + i;
-                      const isTeaser = !isSubscribed && absoluteIndex >= 100;
-
                       return (
                         <JobCard
                           key={job.id || i}
                           job={job}
                           index={i}
-                          isTeaser={isTeaser}
                         />
                       );
                     })}
               </div>
-
-              {/* Paywall overlay */}
-              {!isSubscribed && ((page - 1) * 12) + jobs.length > 100 && (
-                <div className="absolute inset-x-0 bottom-0 top-[200px] sm:top-[400px] flex items-end sm:items-center justify-center bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/90 to-transparent pb-8 sm:pb-0 z-10">
-                  <div className="text-center p-5 sm:p-8 glass-card border border-[#333] bg-[#111]/95 rounded-2xl shadow-2xl mx-4 max-w-lg w-full">
-                    <h3 className="text-xl sm:text-2xl font-bold text-white mb-2">
-                      Unlock All Jobs
-                    </h3>
-                    <p className="text-sm sm:text-base text-gray-400 mb-5 sm:mb-6 max-w-md mx-auto">
-                      Get instant access to 1000+ remote frontend
-                      jobs, daily updates, and direct apply links.
-                    </p>
-                    <Link
-                      href="/pricing"
-                      className="btn-primary w-full sm:w-auto bg-[#00ffcc] text-black font-bold py-3 px-8 rounded-full text-base sm:text-lg hover:scale-105 transition-transform inline-block min-h-[48px]"
-                    >
-                      Subscribe Now
-                    </Link>
-                  </div>
-                </div>
-              )}
             </div>
 
             {/* Empty state */}
