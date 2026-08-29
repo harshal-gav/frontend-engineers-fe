@@ -59,8 +59,13 @@ export async function POST(req: Request) {
       case "BILLING.SUBSCRIPTION.CANCELLED":
       case "BILLING.SUBSCRIPTION.SUSPENDED":
       case "BILLING.SUBSCRIPTION.EXPIRED": {
+        const userDoc = await userRef.get();
+        const currentData = userDoc.data();
+        
+        // If PayPal sends next_billing_time, use it. Otherwise, fallback to our stored subscriptionExpiresAt.
+        const nextBillingTime = resource.billing_info?.next_billing_time || currentData?.subscriptionExpiresAt;
+        
         // Check if there is still time left in the current billing cycle
-        const nextBillingTime = resource.billing_info?.next_billing_time;
         const stillActive = nextBillingTime && new Date(nextBillingTime) > new Date();
 
         await userRef.set({
