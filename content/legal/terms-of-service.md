@@ -19,7 +19,7 @@ Certain features of the Service are billed on a subscription basis ("Pro Members
 Your Pro Membership subscription will automatically renew at the end of each Billing Cycle under the exact same conditions unless you cancel it or we cancel it.
 
 ### 2.3 Cancellations
-You may cancel your subscription renewal at any time through your online Account page (/account) or directly within your PayPal or PayU account settings. Upon cancellation, you will continue to have access to the Pro features until the end of your current Billing Cycle.
+You may cancel your subscription renewal at any time through the [Cancellation and Refund Policy](/legal/refund-policy) page, or directly within your PayPal or PayU account settings. Upon cancellation, you will continue to have access to the Pro features until the end of your current Billing Cycle.
 
 ### 2.4 Payment Methods
 A valid payment method, including credit card, PayPal, or PayU, is required to process the payment for your subscription. By submitting such payment information, you automatically authorize us to charge all subscription fees incurred through your account to any such payment instruments.

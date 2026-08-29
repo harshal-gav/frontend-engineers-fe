@@ -8,14 +8,12 @@ export const metadata: Metadata = {
   description: "Navigate all pages and job listings on FrontendEngineers.com.",
 };
 
+import { loadJobsFromFile } from "@/lib/jobs.server";
+
 export default function HTMLSitemapPage() {
   let jobs: any[] = [];
   try {
-    const jobsPath = path.join(process.cwd(), "data", "jobs.json");
-    if (fs.existsSync(jobsPath)) {
-      const raw = fs.readFileSync(jobsPath, "utf-8");
-      jobs = JSON.parse(raw);
-    }
+    jobs = loadJobsFromFile();
   } catch (e) {
     console.error("Failed to load jobs for sitemap", e);
   }
@@ -28,7 +26,7 @@ export default function HTMLSitemapPage() {
         </Link>
         <h1 className="text-4xl font-bold text-white mb-8">HTML Sitemap</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div className="flex flex-col gap-12">
           {/* Main Pages */}
           <div>
             <h2 className="text-2xl font-semibold text-white mb-4 border-b border-[#333] pb-2">Main Pages</h2>
@@ -46,18 +44,6 @@ export default function HTMLSitemapPage() {
               <li><Link href="/privacy" className="hover:text-[#00ffcc]">Privacy Policy</Link></li>
             </ul>
           </div>
-
-          {/* Job Categories (Placeholder for SEO) */}
-          <div>
-            <h2 className="text-2xl font-semibold text-white mb-4 border-b border-[#333] pb-2">Browse by Tech Stack</h2>
-            <ul className="space-y-3">
-              <li><Link href="/?framework=React" className="hover:text-[#00ffcc]">Remote React Jobs</Link></li>
-              <li><Link href="/?framework=Vue" className="hover:text-[#00ffcc]">Remote Vue Jobs</Link></li>
-              <li><Link href="/?framework=Angular" className="hover:text-[#00ffcc]">Remote Angular Jobs</Link></li>
-              <li><Link href="/?q=TypeScript" className="hover:text-[#00ffcc]">Remote TypeScript Jobs</Link></li>
-              <li><Link href="/?q=UI/UX" className="hover:text-[#00ffcc]">Remote UI/UX Design Jobs</Link></li>
-            </ul>
-          </div>
         </div>
 
         {/* All Jobs List */}
@@ -66,7 +52,7 @@ export default function HTMLSitemapPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
             {jobs.slice(0, 100).map((job) => (
               <div key={job.id} className="truncate">
-                <Link href={`/jobs/${job.slug}`} className="text-sm hover:text-[#00ffcc]">
+                <Link href={`/jobs/${job.slug || job.id}`} className="text-sm hover:text-[#00ffcc]">
                   {job.title} at {job.company?.name || "Unknown"}
                 </Link>
               </div>

@@ -13,7 +13,7 @@ export default function Footer() {
               Frontend<span className="text-[#00ffcc]">Engineers</span>
             </Link>
             <p className="text-gray-500 mb-6">
-              Curated remote frontend and JavaScript engineering jobs at the world&apos;s best product companies.
+              Curated remote frontend and JavaScript engineering jobs at the world's best product companies.
             </p>
           </div>
 
@@ -36,6 +36,11 @@ export default function Footer() {
                   About Us
                 </Link>
               </li>
+              <li>
+                <Link href="/sitemap" className="hover:text-[#00ffcc] transition-colors">
+                  Sitemap
+                </Link>
+              </li>
             </ul>
           </div>
 
@@ -55,7 +60,7 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/legal/refund-policy" className="hover:text-[#00ffcc] transition-colors">
-                  Refund & Cancellation Policy
+                  Cancellation and Refund Policy
                 </Link>
               </li>
               <li>
@@ -85,7 +90,7 @@ export default function Footer() {
         <div className="border-t border-[#1a1a2e] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {currentYear} Frontend Engineers. All rights reserved.</p>
           <div className="flex gap-6">
-            <span className="text-gray-600 text-xs">Secure payments by PayPal</span>
+            <span className="text-gray-600 text-xs">Secure payments by PayPal & PayU</span>
           </div>
         </div>
       </div>

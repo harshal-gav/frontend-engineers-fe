@@ -111,16 +111,6 @@ export default async function HomePage() {
       </Suspense>
 
 
-      <footer className="bg-[#0a0a0a] border-t border-[#333] py-8 text-center text-gray-500">
-        <p>Contact us: <a href="mailto:frontendengineersupport@gmail.com" className="text-[#00ffcc] hover:underline">frontendengineersupport@gmail.com</a></p>
-        <div className="flex justify-center gap-4 mt-4 text-sm">
-          <a href="/about" className="hover:text-[#00ffcc]">About Us</a>
-          <a href="/sitemap" className="hover:text-[#00ffcc]">Sitemap</a>
-          <a href="/terms" className="hover:text-[#00ffcc]">Terms of Service</a>
-          <a href="/privacy" className="hover:text-[#00ffcc]">Privacy Policy</a>
-        </div>
-        <p className="mt-4 text-sm">&copy; {new Date().getFullYear()} Best Remote Frontend Jobs. All rights reserved.</p>
-      </footer>
     </>
   );
 }

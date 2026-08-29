@@ -102,48 +102,6 @@ export default function JobsClientPage() {
   const [dataLoaded, setDataLoaded] = useState(false);
   const [page, setPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
-  const [showProfileMenu, setShowProfileMenu] = useState(false);
-  const [isCancelling, setIsCancelling] = useState(false);
-  const profileMenuRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    function handleClickOutside(event: MouseEvent) {
-      if (profileMenuRef.current && !profileMenuRef.current.contains(event.target as Node)) {
-        setShowProfileMenu(false);
-      }
-    }
-    document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, []);
-
-  const handleCancelSubscription = async () => {
-    if (!confirm("Are you sure you want to cancel your Pro Membership? You will retain access until the end of your billing cycle.")) return;
-    
-    setIsCancelling(true);
-    try {
-      const token = await user?.getIdToken();
-      const res = await fetch("/api/cancel-subscription", {
-        method: "POST",
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      });
-      const data = await res.json();
-      if (data.success) {
-        alert("Your subscription has been cancelled successfully.");
-        setShowProfileMenu(false);
-      } else {
-        alert(data.error || "Failed to cancel subscription.");
-      }
-    } catch (e) {
-      console.error(e);
-      alert("An error occurred while cancelling your subscription.");
-    } finally {
-      setIsCancelling(false);
-    }
-  };
 
   // Load jobs from secure API
   useEffect(() => {
@@ -372,51 +330,34 @@ export default function JobsClientPage() {
             {authLoading ? (
               <div className="w-20 h-8 skeleton rounded" />
             ) : user ? (
-              <div className="flex items-center gap-2 sm:gap-4">
+              <div className="flex items-center gap-3 sm:gap-4">
                 {!isSubscribed && (
                   <Link
                     href="/pricing"
-                    className="btn-primary text-sm bg-[#00ffcc] text-black font-semibold rounded px-3 sm:px-4 py-2 hover:bg-[#00e6b8] min-h-[44px] flex items-center"
+                    className="btn-primary text-sm bg-[#00ffcc] text-black font-semibold rounded px-3 sm:px-4 py-1.5 hover:bg-[#00e6b8] flex items-center"
                   >
                     <span className="hidden sm:inline">Subscribe Now</span>
                     <span className="sm:hidden">Pro</span>
                   </Link>
                 )}
                 
-                {/* Profile Dropdown */}
-                <div className="relative" ref={profileMenuRef}>
+                <div className="flex items-center gap-3 bg-[#1a1a2e]/50 border border-[#333] rounded-full pl-3 pr-1 py-1">
+                  <div className="flex items-center gap-2">
+                    {isSubscribed && (
+                      <span className="text-[10px] sm:text-xs bg-[#00ffcc] text-black px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                        Pro
+                      </span>
+                    )}
+                    <span className="text-sm font-semibold text-white max-w-[100px] sm:max-w-[150px] truncate" title={user.email || ""}>
+                      {user.email}
+                    </span>
+                  </div>
                   <button 
-                    onClick={() => setShowProfileMenu(!showProfileMenu)}
-                    className="w-10 h-10 rounded-full bg-[#1a1a2e] border border-[#333] flex items-center justify-center text-white font-bold hover:border-[#00ffcc] transition-colors"
+                    onClick={handleLogout} 
+                    className="text-xs bg-[#333] text-white hover:bg-[#444] hover:text-[#f43f5e] px-3 py-1.5 rounded-full transition-colors font-medium"
                   >
-                    {user.email ? user.email.charAt(0).toUpperCase() : 'U'}
+                    Log Out
                   </button>
-                  
-                  {showProfileMenu && (
-                    <div className="absolute right-0 mt-2 w-56 bg-[#111227] border border-[#333] rounded-xl shadow-2xl overflow-hidden z-50">
-                      <div className="p-4 border-b border-[#333]">
-                        <p className="text-sm font-medium text-white truncate" title={user.email || ''}>{user.email}</p>
-                        <p className="text-xs text-[#00ffcc] mt-1">{isSubscribed ? "Pro Member" : "Free Tier"}</p>
-                      </div>
-                      <div className="p-2 flex flex-col gap-1">
-                        {isSubscribed && (
-                          <button
-                            onClick={handleCancelSubscription}
-                            disabled={isCancelling}
-                            className="text-left px-3 py-2 text-sm text-red-400 hover:bg-[#1a1a2e] rounded-lg transition-colors w-full disabled:opacity-50"
-                          >
-                            {isCancelling ? "Cancelling..." : "Cancel Membership"}
-                          </button>
-                        )}
-                        <button
-                          onClick={handleLogout}
-                          className="text-left px-3 py-2 text-sm text-gray-300 hover:bg-[#1a1a2e] hover:text-white rounded-lg transition-colors w-full"
-                        >
-                          Log Out
-                        </button>
-                      </div>
-                    </div>
-                  )}
                 </div>
               </div>
             ) : (

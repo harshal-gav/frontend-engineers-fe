@@ -21,6 +21,8 @@ export async function generateMetadata({ params }: LegalPageProps): Promise<Meta
   };
 }
 
+import CancelMembershipButton from "@/components/CancelMembershipButton";
+
 export default async function LegalPage({ params }: LegalPageProps) {
   const resolvedParams = await params;
   const { slug } = resolvedParams;
@@ -42,6 +44,8 @@ export default async function LegalPage({ params }: LegalPageProps) {
         <div className="prose prose-invert prose-lg max-w-none prose-a:text-[#00ffcc] prose-a:no-underline hover:prose-a:underline">
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
+        
+        {slug === "refund-policy" && <CancelMembershipButton />}
       </div>
     </div>
   );

@@ -1,4 +1,4 @@
-# Refund & Cancellation Policy
+# Cancellation and Refund Policy
 
 **Last Updated:** August 2026
 
@@ -9,9 +9,7 @@ At FrontendEngineers.com, we strive to provide the highest quality curated job l
 You can cancel your Pro Membership subscription at any time. Cancellations are strictly self-serve. 
 
 **How to cancel:**
-1. Log in to your account.
-2. Navigate to your Account Dashboard or Billing Settings.
-3. Click "Cancel Subscription" and follow the prompts.
+If you are logged into your Pro account, you can cancel your subscription directly at the bottom of this very page by clicking the **"Cancel Membership"** button under the "Manage Subscription" section.
 
 Upon cancellation, you will retain full access to all Pro features until the end of your current paid Billing Cycle. Your subscription will not renew at the end of that cycle.
 
