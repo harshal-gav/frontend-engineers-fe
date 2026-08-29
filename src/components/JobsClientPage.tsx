@@ -447,7 +447,7 @@ export default function JobsClientPage() {
                 ) : (
                   <>
                     <span className="font-semibold text-[#00ffcc]">
-                      {hasActiveFilters ? totalJobs : "1000+"}
+                      1000+
                     </span>{" "}
                     jobs found
                   </>
