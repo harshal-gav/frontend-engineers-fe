@@ -44,12 +44,21 @@ export async function POST(req: Request) {
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
 
-        await subscriptionRef.set({
+        const subData = {
           status: resource.status,
           plan_id: resource.plan_id,
           created_time: resource.create_time || null,
           next_billing_time: nextBillingTime || null,
           updated_at: admin.firestore.FieldValue.serverTimestamp(),
+        };
+
+        await subscriptionRef.set(subData, { merge: true });
+
+        // Also log to root-level collection for admin dashboards
+        await adminDb.collection("paypal_transactions").doc(subscriptionId).set({
+          ...subData,
+          uid: userId,
+          event: eventName
         }, { merge: true });
 
         console.log(`[PayPal Webhook] ✅ ${eventName} — User ${userId} is now premium (expires: ${expiresAt})`);
@@ -74,9 +83,18 @@ export async function POST(req: Request) {
           updatedAt: admin.firestore.FieldValue.serverTimestamp(),
         }, { merge: true });
 
-        await subscriptionRef.set({
+        const subData = {
           status: resource.status,
           updated_at: admin.firestore.FieldValue.serverTimestamp(),
+        };
+
+        await subscriptionRef.set(subData, { merge: true });
+        
+        // Also log to root-level collection for admin dashboards (like PayU)
+        await adminDb.collection("paypal_transactions").doc(subscriptionId).set({
+          ...subData,
+          uid: userId,
+          event: eventName
         }, { merge: true });
 
         console.log(`[PayPal Webhook] ⚠️ ${eventName} — User ${userId} (access until: ${nextBillingTime || "immediately revoked"})`);
