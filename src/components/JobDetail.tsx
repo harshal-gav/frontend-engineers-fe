@@ -209,12 +209,13 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
                   Subscribe to see the full description, company name,
                   salary details, and apply directly.
                 </p>
-                <Link
-                  href="/pricing"
-                  className="btn-primary inline-flex min-h-[48px] px-8 text-base"
-                >
-                  Subscribe for $9/mo
-                </Link>
+                  <Link
+                    href="/pricing"
+                    className="btn-primary inline-flex items-center justify-center min-h-[48px] px-8 text-base"
+                  >
+                    <span className="hidden sm:inline">Get Pro Membership</span>
+                    <span className="sm:hidden">Get Pro</span>
+                  </Link>
               </div>
             </div>
           )}
@@ -271,7 +272,7 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
               href="/pricing"
               className="btn-primary w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center"
             >
-              🔒 Subscribe to Apply — $9/mo
+              🔒 <span className="ml-1">Get Pro</span>
             </Link>
           </div>
         </div>

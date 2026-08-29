@@ -168,7 +168,7 @@ export default function PricingPage() {
                 onClick={() => router.push("/auth/signup")}
                 className="w-full btn-primary py-3 rounded text-black bg-[#00ffcc] font-bold text-lg"
               >
-                Create Account to Subscribe
+                <span className="hidden sm:inline">Create Account for Pro Membership</span><span className="sm:hidden">Create Account for Pro</span>
               </button>
             ) : (
               <div className="flex flex-col gap-4">

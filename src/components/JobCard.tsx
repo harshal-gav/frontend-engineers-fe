@@ -206,7 +206,7 @@ export default function JobCard({
       {isTeaser && (
         <div className="absolute inset-0 flex items-center justify-center bg-[var(--bg-primary)]/30 backdrop-blur-[2px] rounded-[var(--radius-lg)] opacity-0 group-hover:opacity-100 transition-opacity">
           <span className="bg-[var(--accent-gradient)] text-white text-sm font-semibold px-4 py-2 rounded-full shadow-lg">
-            🔒 Subscribe to unlock
+            🔒 <span className="hidden sm:inline">Get Pro Membership</span><span className="sm:hidden">Get Pro</span> to unlock
           </span>
         </div>
       )}
