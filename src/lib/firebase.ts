@@ -21,12 +21,18 @@ if (!getApps().length) {
   if (typeof window !== "undefined") {
     // Use localStorage instead of IndexedDB to avoid "Database is closing/hidden" errors
     auth = initializeAuth(app, { persistence: browserLocalPersistence });
+    (window as any)._customFirebaseAuth = auth;
   } else {
     auth = getAuth(app);
   }
 } else {
   app = getApp();
-  auth = getAuth(app);
+  if (typeof window !== "undefined" && (window as any)._customFirebaseAuth) {
+    auth = (window as any)._customFirebaseAuth;
+  } else {
+    // Fallback if somehow not on window
+    auth = getAuth(app);
+  }
 }
 
 const db = getFirestore(app);
