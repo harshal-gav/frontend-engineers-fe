@@ -108,12 +108,12 @@ export default function PricingPage() {
     <div className="min-h-screen bg-[#0a0a0a] text-white py-20 px-4">
       <div className="max-w-3xl mx-auto text-center">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          Unlock the Best{" "}
+          Unlock the Best Remote{" "}
           <span className="text-[#00ffcc]">Frontend & JavaScript</span> Jobs
         </h1>
         <p className="text-xl text-gray-400 mb-12">
-          Stop sifting through irrelevant listings. Get curated React, Vue,
-          Angular, Node.js, and Fullstack jobs sent straight to you.
+          Save hours every week by getting only remote frontend jobs worth applying to. 
+          Stop sifting through irrelevant listings and find your next role today.
         </p>
 
         <div className="glass-card max-w-md mx-auto p-8 border border-[#333] bg-[#111] rounded-2xl relative overflow-hidden">
@@ -145,7 +145,7 @@ export default function PricingPage() {
             )}
           </div>
 
-          <ul className="text-left space-y-4 mb-8">
+          <ul className="mb-8 space-y-4 text-left">
             <li className="flex items-center gap-3">
               <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
@@ -157,6 +157,24 @@ export default function PricingPage() {
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
               </svg>
               <span>Direct apply links to company ATS</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Frontend-only + Remote-only</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Verified + Fresh listings</span>
+            </li>
+            <li className="flex items-center gap-3">
+              <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+              </svg>
+              <span>Useful filters & search</span>
             </li>
           </ul>
 
