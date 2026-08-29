@@ -79,15 +79,8 @@ export default function SignupPage() {
       }
     } catch (err: any) {
       if (err.code === 'auth/popup-blocked' || err.code === 'auth/popup-closed-by-user') {
-        const ua = navigator.userAgent;
-        const isInAppBrowser = /LinkedInApp|Instagram|FBAV|FBAN/i.test(ua);
-        
-        if (isInAppBrowser) {
-          setError("Google Sign-In is blocked inside this app. Please tap the menu (•••) and select 'Open in System Browser' (Safari/Chrome) to sign up.");
-        } else {
-          const { signInWithRedirect } = await import("firebase/auth");
-          signInWithRedirect(auth, provider);
-        }
+        const { signInWithRedirect } = await import("firebase/auth");
+        signInWithRedirect(auth, provider);
       } else {
         setError(err.message || "Failed to sign up with Google");
       }

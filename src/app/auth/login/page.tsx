@@ -40,16 +40,9 @@ export default function LoginPage() {
       router.push("/");
     } catch (err: any) {
       if (err.code === 'auth/popup-blocked' || err.code === 'auth/popup-closed-by-user') {
-        const ua = navigator.userAgent;
-        const isInAppBrowser = /LinkedInApp|Instagram|FBAV|FBAN/i.test(ua);
-        
-        if (isInAppBrowser) {
-          setError("Google Sign-In is blocked inside this app. Please tap the menu (•••) and select 'Open in System Browser' (Safari/Chrome) to log in.");
-        } else {
-          // Fallback for desktop popup blockers
-          const { signInWithRedirect } = await import("firebase/auth");
-          signInWithRedirect(auth, provider);
-        }
+        // Force redirect for in-app browsers
+        const { signInWithRedirect } = await import("firebase/auth");
+        signInWithRedirect(auth, provider);
       } else {
         setError(err.message || "Failed to log in with Google");
       }
