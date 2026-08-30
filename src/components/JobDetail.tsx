@@ -204,8 +204,7 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
                   href="/pricing"
                   className="btn-primary inline-flex items-center justify-center min-h-[48px] px-8 text-base"
                 >
-                  <span className="hidden sm:inline">Get Pro Membership</span>
-                  <span className="sm:hidden">Get Pro</span>
+                  Unlock full listings — $9/mo
                 </Link>
             </div>
           </div>
@@ -229,7 +228,7 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
               href="/pricing"
               className="btn-primary inline-flex min-h-[48px] px-8 text-base bg-gradient-to-r from-[#00ffcc] to-[#00ccaa] text-black shadow-[0_0_15px_rgba(0,255,204,0.3)] hover:scale-105 transition-all"
             >
-              <span className="mr-2">🔒</span> Upgrade to Pro to Apply
+              <span className="mr-2">🔒</span> Unlock full listings — $9/mo
             </Link>
           )}
         </div>
@@ -272,7 +271,7 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
               href="/pricing"
               className="btn-primary w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center bg-gradient-to-r from-[#00ffcc] to-[#00ccaa] text-black shadow-[0_0_15px_rgba(0,255,204,0.3)]"
             >
-              🔒 <span className="ml-1">Upgrade to Pro to Apply</span>
+              🔒 <span className="ml-1">Unlock full listings — $9/mo</span>
             </Link>
           </div>
         </div>

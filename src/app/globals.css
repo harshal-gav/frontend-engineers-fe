@@ -474,6 +474,125 @@ body {
   margin-bottom: 10px;
 }
 
+/* ─── Locked / Gated Fields ───────────────────── */
+
+.locked-field {
+  position: relative;
+  filter: blur(5px);
+  user-select: none;
+  -webkit-user-select: none;
+  pointer-events: none;
+}
+
+.locked-overlay {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: var(--accent-secondary);
+  background: rgba(99, 102, 241, 0.1);
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.locked-overlay:hover {
+  background: rgba(99, 102, 241, 0.2);
+  color: var(--accent-primary);
+}
+
+/* ─── Comparison Table ────────────────────────── */
+
+.comparison-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: 0.875rem;
+}
+
+.comparison-table th,
+.comparison-table td {
+  padding: 12px 16px;
+  text-align: left;
+  border-bottom: 1px solid var(--border-card);
+}
+
+.comparison-table th {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  background: var(--bg-secondary);
+}
+
+.comparison-table th:first-child {
+  border-radius: var(--radius-md) 0 0 0;
+}
+
+.comparison-table th:last-child {
+  border-radius: 0 var(--radius-md) 0 0;
+}
+
+.comparison-table td:first-child {
+  color: var(--text-muted);
+  font-weight: 500;
+}
+
+.comparison-table tr:last-child td {
+  border-bottom: none;
+}
+
+.comparison-table .highlight-cell {
+  color: var(--green);
+  font-weight: 500;
+}
+
+.comparison-table .muted-cell {
+  color: var(--text-muted);
+}
+
+/* ─── Trust Stats ─────────────────────────────── */
+
+.trust-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.trust-stat-number {
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.trust-stat-label {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
+}
+
+/* ─── Tech Stack Tags ─────────────────────────── */
+
+.tech-tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  font-size: 0.65rem;
+  font-weight: 500;
+  border-radius: var(--radius-full);
+  background: var(--bg-tertiary);
+  color: var(--text-secondary);
+  border: 1px solid var(--border-card);
+}
+
 /* ─── iOS Safari Quirks ───────────────────────── */
 
 /* Fix 100vh on iOS (uses dvh where supported) */

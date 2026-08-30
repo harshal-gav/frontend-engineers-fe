@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { formatSalary, type Job } from "@/lib/jobs";
+import { formatSalary, timeAgo, type Job } from "@/lib/jobs";
 
 // ─── Config ──────────────────────────────────────────────
 
@@ -26,6 +26,30 @@ const LOGO_GRADIENTS = [
   "linear-gradient(135deg, #f59e0b, #ef4444)",
 ];
 
+// ─── Tech Stack Extraction ──────────────────────────────
+
+const TECH_KEYWORDS = [
+  "React", "Vue", "Angular", "TypeScript", "JavaScript",
+  "Next.js", "Node.js", "Svelte", "Remix", "GraphQL",
+  "Tailwind", "CSS", "HTML", "Redux", "Python",
+  "AWS", "Docker", "Kubernetes", "Go", "Rust",
+  "Swift", "Flutter", "React Native",
+];
+
+function extractTechStack(title: string, description: string | null): string[] {
+  const text = `${title} ${(description || "").substring(0, 500)}`;
+  const found: string[] = [];
+  for (const keyword of TECH_KEYWORDS) {
+    // Word-boundary aware match (case insensitive)
+    const regex = new RegExp(`\\b${keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
+    if (regex.test(text)) {
+      found.push(keyword);
+    }
+    if (found.length >= 4) break; // Cap at 4 tags to avoid clutter
+  }
+  return found;
+}
+
 import { useAuth } from "@/context/AuthContext";
 
 // ─── Component ───────────────────────────────────────────
@@ -48,6 +72,8 @@ export default function JobCard({
   const salary = formatSalary(job.salaryMin, job.salaryMax, job.currency);
   const gradientIndex =
     (job.company?.name || "X").charCodeAt(0) % LOGO_GRADIENTS.length;
+  const techStack = extractTechStack(job.title, job.description);
+  const postedDate = timeAgo(job.postedAt);
 
   // Always use the internal href so users can see the job details page
   const slug = job.slug || job.id;
@@ -121,6 +147,13 @@ export default function JobCard({
                 )}
               </p>
             </div>
+            {/* Posted date */}
+            <span
+              className="text-xs whitespace-nowrap flex-shrink-0"
+              style={{ color: "var(--text-muted)" }}
+            >
+              {postedDate}
+            </span>
           </div>
 
           {/* Badges row */}
@@ -157,12 +190,32 @@ export default function JobCard({
             )}
           </div>
 
+          {/* Tech stack tags */}
+          {techStack.length > 0 && (
+            <div className="flex flex-wrap gap-1 mt-2">
+              {techStack.map((tech) => (
+                <span key={tech} className="tech-tag">
+                  {tech}
+                </span>
+              ))}
+            </div>
+          )}
+
           {/* Salary + Employment type */}
           <div className="flex items-center gap-3 mt-2.5 sm:mt-3">
             {!isSubscribed ? (
-              <span className="salary-text text-sm">
-                $XXK – $XXXK
-              </span>
+              <div className="flex items-center gap-2">
+                <span
+                  className="locked-field salary-text text-sm"
+                  role="img"
+                  aria-label="Salary range — locked, unlock with Pro membership"
+                >
+                  $120K – $180K
+                </span>
+                <Link href="/pricing" className="locked-overlay">
+                  🔒 Unlock with Pro
+                </Link>
+              </div>
             ) : (
               salary && (
                 <span className="salary-text text-sm">{salary}</span>
@@ -181,12 +234,28 @@ export default function JobCard({
 
           {/* Description preview */}
           {job.description && (
-            <p
-              className="text-xs mt-2 line-clamp-2 leading-relaxed"
-              style={{ color: "var(--text-muted)" }}
-            >
-              {job.description}
-            </p>
+            !isSubscribed ? (
+              <div className="flex items-center gap-2 mt-2">
+                <p
+                  className="locked-field text-xs line-clamp-2 leading-relaxed flex-1"
+                  style={{ color: "var(--text-muted)" }}
+                  role="img"
+                  aria-label="Job description — locked, unlock with Pro membership"
+                >
+                  {job.description.substring(0, 150)}
+                </p>
+                <Link href="/pricing" className="locked-overlay flex-shrink-0">
+                  🔒 Unlock
+                </Link>
+              </div>
+            ) : (
+              <p
+                className="text-xs mt-2 line-clamp-2 leading-relaxed"
+                style={{ color: "var(--text-muted)" }}
+              >
+                {job.description}
+              </p>
+            )
           )}
         </div>
       </div>

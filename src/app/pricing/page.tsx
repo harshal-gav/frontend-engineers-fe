@@ -13,12 +13,21 @@ const initialOptions = {
   vault: true,
 };
 
+// ─── Testimonials data ──────────────────────────────────
+// Add real testimonials here when available.
+// The section will automatically hide if this array is empty.
+const TESTIMONIALS: { name: string; role: string; quote: string; avatar?: string }[] = [
+  // Example:
+  // { name: "Jane D.", role: "Senior Frontend Engineer", quote: "Found my current role here in under a week. The curated listings saved me hours of sifting through irrelevant posts." },
+];
+
 export default function PricingPage() {
   const router = useRouter();
   const { user } = useAuth();
   const [error, setError] = useState<string | null>(null);
   const [localPrice, setLocalPrice] = useState<string | null>(null);
   const [providerKey, setProviderKey] = useState<number>(Date.now());
+  const [stats, setStats] = useState<{ jobCount: number; companyCount: number } | null>(null);
 
   useEffect(() => {
     // Handle bfcache: if the user navigates back to this page, 
@@ -59,6 +68,22 @@ export default function PricingPage() {
       }
     }
     fetchLocalPrice();
+  }, []);
+
+  // Fetch dynamic stats
+  useEffect(() => {
+    async function fetchStats() {
+      try {
+        const res = await fetch("/api/stats");
+        if (res.ok) {
+          const data = await res.json();
+          setStats(data);
+        }
+      } catch (e) {
+        console.error("Failed to fetch stats", e);
+      }
+    }
+    fetchStats();
   }, []);
 
 
@@ -116,26 +141,97 @@ export default function PricingPage() {
           Stop sifting through irrelevant listings and find your next role today.
         </p>
 
-        <div className="glass-card max-w-md mx-auto p-8 border border-[#333] bg-[#111] rounded-2xl relative overflow-hidden">
-          {/* Limited Time Badge */}
-          <div className="absolute top-4 right-[-35px] bg-[#f43f5e] text-white text-[10px] font-extrabold px-10 py-1 rotate-45 shadow-lg">
-            80% OFF
+        {/* ─── Why Pay? Comparison Table ─────────── */}
+        <div className="glass-card max-w-2xl mx-auto mb-10 overflow-hidden">
+          <table className="comparison-table">
+            <thead>
+              <tr>
+                <th></th>
+                <th className="text-center">Free browsing elsewhere</th>
+                <th className="text-center">FrontendEngineers Pro</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Hybrid/onsite noise</td>
+                <td className="muted-cell text-center">Mixed in</td>
+                <td className="highlight-cell text-center">✓ Filtered out — remote only</td>
+              </tr>
+              <tr>
+                <td>Listing freshness</td>
+                <td className="muted-cell text-center">Often stale/expired</td>
+                <td className="highlight-cell text-center">✓ Verified + updated daily</td>
+              </tr>
+              <tr>
+                <td>Salary visibility</td>
+                <td className="muted-cell text-center">Rarely shown</td>
+                <td className="highlight-cell text-center">✓ Shown upfront</td>
+              </tr>
+              <tr>
+                <td>Apply links</td>
+                <td className="muted-cell text-center">Sometimes broken</td>
+                <td className="highlight-cell text-center">✓ Direct, verified links</td>
+              </tr>
+              <tr>
+                <td>Focus</td>
+                <td className="muted-cell text-center">General tech jobs</td>
+                <td className="highlight-cell text-center">✓ Frontend / JS / TS only</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        {/* ─── Trust Stats ────────────────────────── */}
+        {stats && (stats.jobCount > 0 || stats.companyCount > 0) && (
+          <div className="flex justify-center gap-12 sm:gap-16 mb-10">
+            {stats.jobCount > 0 && (
+              <div className="trust-stat">
+                <span className="trust-stat-number">{stats.jobCount}+</span>
+                <span className="trust-stat-label">remote roles curated<br />this month</span>
+              </div>
+            )}
+            {stats.companyCount > 0 && (
+              <div className="trust-stat">
+                <span className="trust-stat-number">{stats.companyCount}+</span>
+                <span className="trust-stat-label">companies<br />sourced</span>
+              </div>
+            )}
           </div>
-          
+        )}
+
+        {/* ─── Testimonials (hidden when empty) ──── */}
+        {TESTIMONIALS.length > 0 && (
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 max-w-2xl mx-auto">
+            {TESTIMONIALS.map((t, i) => (
+              <div key={i} className="glass-card p-5 text-left">
+                <p className="text-sm text-gray-300 mb-3 leading-relaxed">"{t.quote}"</p>
+                <div className="flex items-center gap-2">
+                  {t.avatar ? (
+                    <img src={t.avatar} alt={t.name} className="w-8 h-8 rounded-full object-cover" />
+                  ) : (
+                    <div className="w-8 h-8 rounded-full bg-[#111] flex items-center justify-center text-xs font-bold text-[#00ffcc] border border-[#333]">
+                      {t.name[0]}
+                    </div>
+                  )}
+                  <div>
+                    <div className="text-sm font-semibold text-white">{t.name}</div>
+                    <div className="text-xs text-gray-500">{t.role}</div>
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        )}
+
+        {/* ─── Pricing Card ──────────────────────── */}
+        <div className="glass-card max-w-md mx-auto p-8 border border-[#333] bg-[#111] rounded-2xl">
           <div className="text-[#00ffcc] font-semibold tracking-wider uppercase mb-2">
             Pro Membership
           </div>
-          <div className="flex flex-col items-center mb-6">
-            <div className="flex flex-col items-center justify-center">
-              <span className="text-gray-500 text-xl font-medium line-through mb-1 decoration-red-500/50">$45/month</span>
-              <div className="flex items-end justify-center gap-1">
-                <span className="text-5xl font-bold text-white">$9</span>
-                <span className="text-gray-400 mb-1">/month</span>
-              </div>
-            </div>
-            
-            <div className="text-xs font-bold text-[#f43f5e] uppercase tracking-wider mt-3 bg-[#f43f5e]/10 px-3 py-1.5 rounded-full animate-pulse">
-              🔥 Limited Time Offer
+          <div className="flex flex-col items-center mb-2">
+            <div className="flex items-end justify-center gap-1">
+              <span className="text-5xl font-bold text-white">$9</span>
+              <span className="text-gray-400 mb-1">/month</span>
             </div>
 
             {localPrice && (
@@ -144,6 +240,11 @@ export default function PricingPage() {
               </div>
             )}
           </div>
+
+          {/* Cancel anytime line */}
+          <p className="text-xs text-gray-500 mb-6">
+            Cancel anytime — no commitments.
+          </p>
 
           <ul className="mb-8 space-y-4 text-left">
             <li className="flex items-center gap-3">
@@ -186,7 +287,7 @@ export default function PricingPage() {
                 onClick={() => router.push("/auth/signup")}
                 className="w-full btn-primary py-3 rounded text-black bg-[#00ffcc] font-bold text-lg"
               >
-                <span className="hidden sm:inline">Create Account for Pro Membership</span><span className="sm:hidden">Create Account for Pro</span>
+                Unlock full listings — $9/mo
               </button>
             ) : (
               <div className="flex flex-col gap-4">
@@ -249,7 +350,7 @@ export default function PricingPage() {
               onClick={() => router.push("/")}
               className="w-full text-gray-400 hover:text-white py-3 transition-colors underline mt-4"
             >
-              Continue to portal (Free Preview)
+              See today&apos;s jobs free
             </button>
           </div>
         </div>
