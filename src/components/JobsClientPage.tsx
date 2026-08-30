@@ -239,11 +239,15 @@ export default function JobsClientPage() {
 
     // Sort
     if (filters.sortBy === "newest") {
-      filtered.sort(
-        (a, b) =>
-          new Date(b.postedAt || 0).getTime() -
-          new Date(a.postedAt || 0).getTime()
-      );
+      filtered.sort((a, b) => {
+        const aFrontend = a.title.toLowerCase().includes("frontend");
+        const bFrontend = b.title.toLowerCase().includes("frontend");
+        
+        if (aFrontend && !bFrontend) return -1;
+        if (!aFrontend && bFrontend) return 1;
+        
+        return new Date(b.postedAt || 0).getTime() - new Date(a.postedAt || 0).getTime();
+      });
     } else if (filters.sortBy === "salary_high") {
       filtered.sort((a, b) => (b.salaryMax || 0) - (a.salaryMax || 0));
     } else if (filters.sortBy === "salary_low") {
