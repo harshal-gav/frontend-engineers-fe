@@ -131,228 +131,245 @@ export default function PricingPage() {
 
   return (
     <div className="min-h-screen bg-[#0a0a0a] text-white py-20 px-4">
-      <div className="max-w-3xl mx-auto text-center">
-        <h1 className="text-4xl md:text-5xl font-bold mb-6">
-          Unlock the Best Remote{" "}
-          <span className="text-[#00ffcc]">Frontend & JavaScript</span> Jobs
-        </h1>
-        <p className="text-xl text-gray-400 mb-12">
-          Save hours every week by getting only remote frontend jobs worth applying to. 
-          Stop sifting through irrelevant listings and find your next role today.
-        </p>
-
-        {/* ─── Why Pay? Comparison Table ─────────── */}
-        <div className="glass-card max-w-2xl mx-auto mb-10 overflow-hidden">
-          <table className="comparison-table">
-            <thead>
-              <tr>
-                <th></th>
-                <th className="text-center">Free browsing elsewhere</th>
-                <th className="text-center">FrontendEngineers Pro</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Hybrid/onsite noise</td>
-                <td className="muted-cell text-center">Mixed in</td>
-                <td className="highlight-cell text-center">✓ Filtered out — remote only</td>
-              </tr>
-              <tr>
-                <td>Listing freshness</td>
-                <td className="muted-cell text-center">Often stale/expired</td>
-                <td className="highlight-cell text-center">✓ Verified + updated daily</td>
-              </tr>
-              <tr>
-                <td>Salary visibility</td>
-                <td className="muted-cell text-center">Rarely shown</td>
-                <td className="highlight-cell text-center">✓ Shown upfront</td>
-              </tr>
-              <tr>
-                <td>Apply links</td>
-                <td className="muted-cell text-center">Sometimes broken</td>
-                <td className="highlight-cell text-center">✓ Direct, verified links</td>
-              </tr>
-              <tr>
-                <td>Focus</td>
-                <td className="muted-cell text-center">General tech jobs</td>
-                <td className="highlight-cell text-center">✓ Frontend / JS / TS only</td>
-              </tr>
-            </tbody>
-          </table>
+      <div className="max-w-6xl mx-auto">
+        <div className="max-w-3xl mx-auto text-center mb-12">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+            Unlock the Best Remote{" "}
+            <span className="text-[#00ffcc]">Frontend & JavaScript</span> Jobs
+          </h1>
+          <p className="text-xl text-gray-400">
+            Save hours every week by getting only remote frontend jobs worth applying to. 
+            Stop sifting through irrelevant listings and find your next role today.
+          </p>
         </div>
 
-        {/* ─── Trust Stats ────────────────────────── */}
-        {stats && (stats.jobCount > 0 || stats.companyCount > 0) && (
-          <div className="flex justify-center gap-12 sm:gap-16 mb-10">
-            {stats.jobCount > 0 && (
-              <div className="trust-stat">
-                <span className="trust-stat-number">{stats.jobCount}+</span>
-                <span className="trust-stat-label">remote roles curated<br />this month</span>
+        <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">
+          
+          {/* ─── Left Column (Table, Stats, Testimonials) ─── */}
+          {/* Order 2 on mobile (below pricing), Order 1 on desktop (left side) */}
+          <div className="flex-1 w-full flex flex-col gap-8 order-2 lg:order-1">
+            
+            {/* ─── Why Pay? Comparison Table ─────────── */}
+            <div className="glass-card w-full overflow-hidden">
+              <div className="overflow-x-auto w-full">
+                <table className="comparison-table w-full min-w-[300px]">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th className="text-center">Free browsing elsewhere</th>
+                      <th className="text-center">FrontendEngineers Pro</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Hybrid/onsite noise</td>
+                      <td className="muted-cell text-center">Mixed in</td>
+                      <td className="highlight-cell text-center">✓ Filtered out — remote only</td>
+                    </tr>
+                    <tr>
+                      <td>Listing freshness</td>
+                      <td className="muted-cell text-center">Often stale/expired</td>
+                      <td className="highlight-cell text-center">✓ Verified + updated daily</td>
+                    </tr>
+                    <tr>
+                      <td>Salary visibility</td>
+                      <td className="muted-cell text-center">Rarely shown</td>
+                      <td className="highlight-cell text-center">✓ Shown upfront</td>
+                    </tr>
+                    <tr>
+                      <td>Apply links</td>
+                      <td className="muted-cell text-center">Sometimes broken</td>
+                      <td className="highlight-cell text-center">✓ Direct, verified links</td>
+                    </tr>
+                    <tr>
+                      <td>Focus</td>
+                      <td className="muted-cell text-center">General tech jobs</td>
+                      <td className="highlight-cell text-center">✓ Frontend / JS / TS only</td>
+                    </tr>
+                  </tbody>
+                </table>
               </div>
-            )}
-            {stats.companyCount > 0 && (
-              <div className="trust-stat">
-                <span className="trust-stat-number">{stats.companyCount}+</span>
-                <span className="trust-stat-label">companies<br />sourced</span>
-              </div>
-            )}
-          </div>
-        )}
-
-        {/* ─── Testimonials (hidden when empty) ──── */}
-        {TESTIMONIALS.length > 0 && (
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-10 max-w-2xl mx-auto">
-            {TESTIMONIALS.map((t, i) => (
-              <div key={i} className="glass-card p-5 text-left">
-                <p className="text-sm text-gray-300 mb-3 leading-relaxed">"{t.quote}"</p>
-                <div className="flex items-center gap-2">
-                  {t.avatar ? (
-                    <img src={t.avatar} alt={t.name} className="w-8 h-8 rounded-full object-cover" />
-                  ) : (
-                    <div className="w-8 h-8 rounded-full bg-[#111] flex items-center justify-center text-xs font-bold text-[#00ffcc] border border-[#333]">
-                      {t.name[0]}
-                    </div>
-                  )}
-                  <div>
-                    <div className="text-sm font-semibold text-white">{t.name}</div>
-                    <div className="text-xs text-gray-500">{t.role}</div>
-                  </div>
-                </div>
-              </div>
-            ))}
-          </div>
-        )}
-
-        {/* ─── Pricing Card ──────────────────────── */}
-        <div className="glass-card max-w-md mx-auto p-8 border border-[#333] bg-[#111] rounded-2xl">
-          <div className="text-[#00ffcc] font-semibold tracking-wider uppercase mb-2">
-            Pro Membership
-          </div>
-          <div className="flex flex-col items-center mb-2">
-            <div className="flex items-end justify-center gap-1">
-              <span className="text-5xl font-bold text-white">$9</span>
-              <span className="text-gray-400 mb-1">/month</span>
             </div>
 
-            {localPrice && (
-              <div className="text-sm text-[#00ffcc] mt-3 font-medium bg-[#00ffcc]/10 px-3 py-1 rounded-full">
-                {localPrice} /month
+            {/* ─── Trust Stats ────────────────────────── */}
+            {stats && (stats.jobCount > 0 || stats.companyCount > 0) && (
+              <div className="flex justify-center gap-12 sm:gap-16">
+                {stats.jobCount > 0 && (
+                  <div className="trust-stat">
+                    <span className="trust-stat-number">{stats.jobCount}+</span>
+                    <span className="trust-stat-label">remote roles curated<br />this month</span>
+                  </div>
+                )}
+                {stats.companyCount > 0 && (
+                  <div className="trust-stat">
+                    <span className="trust-stat-number">{stats.companyCount}+</span>
+                    <span className="trust-stat-label">companies<br />sourced</span>
+                  </div>
+                )}
               </div>
             )}
+
+            {/* ─── Testimonials (hidden when empty) ──── */}
+            {TESTIMONIALS.length > 0 && (
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                {TESTIMONIALS.map((t, i) => (
+                  <div key={i} className="glass-card p-5 text-left">
+                    <p className="text-sm text-gray-300 mb-3 leading-relaxed">"{t.quote}"</p>
+                    <div className="flex items-center gap-2">
+                      {t.avatar ? (
+                        <img src={t.avatar} alt={t.name} className="w-8 h-8 rounded-full object-cover" />
+                      ) : (
+                        <div className="w-8 h-8 rounded-full bg-[#111] flex items-center justify-center text-xs font-bold text-[#00ffcc] border border-[#333]">
+                          {t.name[0]}
+                        </div>
+                      )}
+                      <div>
+                        <div className="text-sm font-semibold text-white">{t.name}</div>
+                        <div className="text-xs text-gray-500">{t.role}</div>
+                      </div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            )}
+            
           </div>
 
-          {/* Cancel anytime line */}
-          <p className="text-xs text-gray-500 mb-6">
-            Cancel anytime — no commitments.
-          </p>
-
-          <ul className="mb-8 space-y-4 text-left">
-            <li className="flex items-center gap-3">
-              <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Unlimited access to all premium remote jobs</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Direct apply links to company ATS</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Frontend-only + Remote-only</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Verified + Fresh listings</span>
-            </li>
-            <li className="flex items-center gap-3">
-              <svg className="w-5 h-5 text-[#00ffcc]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
-              </svg>
-              <span>Useful filters & search</span>
-            </li>
-          </ul>
-
-          <div className="flex flex-col gap-3 min-h-[150px]">
-            {error && <div className="text-red-500 mb-2">{error}</div>}
-            
-            {!user ? (
-              <button
-                onClick={() => router.push("/auth/signup")}
-                className="w-full btn-primary py-3 rounded text-black bg-[#00ffcc] font-bold text-lg"
-              >
-                Unlock full listings — $9/mo
-              </button>
-            ) : (
-              <div className="flex flex-col gap-4">
-                <div className="w-full">
-                  <PayPalScriptProvider key={providerKey} options={initialOptions}>
-                    <PayPalButtons
-                      style={{ layout: "vertical", shape: "rect", color: "gold" }}
-                      createSubscription={async (data, actions) => {
-                        const response = await fetch("/api/paypal/create-subscription", {
-                          method: "POST",
-                          headers: {
-                            "Content-Type": "application/json",
-                          },
-                          body: JSON.stringify({
-                            plan_id: process.env.NEXT_PUBLIC_PAYPAL_PLAN_ID!,
-                            custom_id: user.uid,
-                          }),
-                        });
-                        const result = await response.json();
-                        if (!response.ok || !result.id) {
-                          throw new Error(result.error || "Failed to create subscription");
-                        }
-                        return result.id;
-                      }}
-                      onApprove={async (data, actions) => {
-                        alert("🎉 Subscription created successfully! Your account will be upgraded momentarily.");
-                        router.push("/");
-                      }}
-                      onError={(err) => {
-                        console.error("PayPal Error:", err);
-                        setError("Payment failed or was cancelled. Please try again.");
-                      }}
-                    />
-                  </PayPalScriptProvider>
+          {/* ─── Right Column (Pricing Card) ──────────────── */}
+          {/* Order 1 on mobile (top of the page), Order 2 on desktop (right side) */}
+          <div className="w-full lg:w-[420px] shrink-0 order-1 lg:order-2">
+            <div className="glass-card p-8 border border-[#333] bg-[#111] rounded-2xl">
+              <div className="text-[#00ffcc] font-semibold tracking-wider uppercase mb-2 text-center">
+                Pro Membership
+              </div>
+              <div className="flex flex-col items-center mb-2">
+                <div className="flex items-end justify-center gap-1">
+                  <span className="text-5xl font-bold text-white">$9</span>
+                  <span className="text-gray-400 mb-1">/month</span>
                 </div>
+
+                {localPrice && (
+                  <div className="text-sm text-[#00ffcc] mt-3 font-medium bg-[#00ffcc]/10 px-3 py-1 rounded-full">
+                    {localPrice} /month
+                  </div>
+                )}
+              </div>
+
+              {/* Cancel anytime line */}
+              <p className="text-xs text-gray-500 mb-6 text-center">
+                Cancel anytime — no commitments.
+              </p>
+
+              <ul className="mb-8 space-y-4 text-left">
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Unlimited access to all premium remote jobs</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Direct apply links to company ATS</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Frontend-only + Remote-only</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Verified + Fresh listings</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span>Useful filters & search</span>
+                </li>
+              </ul>
+
+              <div className="flex flex-col gap-3 min-h-[150px]">
+                {error && <div className="text-red-500 mb-2 text-center">{error}</div>}
                 
-                <div className="relative flex py-2 items-center">
-                  <div className="flex-grow border-t border-[#333]"></div>
-                  <span className="flex-shrink-0 mx-4 text-gray-500 text-sm">OR</span>
-                  <div className="flex-grow border-t border-[#333]"></div>
-                </div>
+                {!user ? (
+                  <button
+                    onClick={() => router.push("/auth/signup")}
+                    className="w-full btn-primary py-3 rounded text-black bg-[#00ffcc] font-bold text-lg"
+                  >
+                    Unlock full listings — $9/mo
+                  </button>
+                ) : (
+                  <div className="flex flex-col gap-4">
+                    <div className="w-full">
+                      <PayPalScriptProvider key={providerKey} options={initialOptions}>
+                        <PayPalButtons
+                          style={{ layout: "vertical", shape: "rect", color: "gold" }}
+                          createSubscription={async (data, actions) => {
+                            const response = await fetch("/api/paypal/create-subscription", {
+                              method: "POST",
+                              headers: {
+                                "Content-Type": "application/json",
+                              },
+                              body: JSON.stringify({
+                                plan_id: process.env.NEXT_PUBLIC_PAYPAL_PLAN_ID!,
+                                custom_id: user.uid,
+                              }),
+                            });
+                            const result = await response.json();
+                            if (!response.ok || !result.id) {
+                              throw new Error(result.error || "Failed to create subscription");
+                            }
+                            return result.id;
+                          }}
+                          onApprove={async (data, actions) => {
+                            alert("🎉 Subscription created successfully! Your account will be upgraded momentarily.");
+                            router.push("/");
+                          }}
+                          onError={(err) => {
+                            console.error("PayPal Error:", err);
+                            setError("Payment failed or was cancelled. Please try again.");
+                          }}
+                        />
+                      </PayPalScriptProvider>
+                    </div>
+                    
+                    <div className="relative flex py-2 items-center">
+                      <div className="flex-grow border-t border-[#333]"></div>
+                      <span className="flex-shrink-0 mx-4 text-gray-500 text-sm">OR</span>
+                      <div className="flex-grow border-t border-[#333]"></div>
+                    </div>
+
+                    <button
+                      onClick={handlePayUSubscription}
+                      className="w-full py-3 rounded text-white bg-[#10b981] font-bold text-lg hover:bg-[#059669] transition-colors flex items-center justify-center gap-2"
+                    >
+                      Payment for Indian Users (UPI / Cards)
+                    </button>
+                  </div>
+                )}
+                
+                {user && (
+                  <div className="mt-4 text-xs text-gray-500 text-center leading-relaxed">
+                    By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#00ffcc] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#00ffcc] hover:underline">Privacy Policy</Link>. 
+                    Your subscription renews automatically at $9/month until cancelled.
+                  </div>
+                )}
 
                 <button
-                  onClick={handlePayUSubscription}
-                  className="w-full py-3 rounded text-white bg-[#10b981] font-bold text-lg hover:bg-[#059669] transition-colors flex items-center justify-center gap-2"
+                  onClick={() => router.push("/")}
+                  className="w-full text-gray-400 hover:text-white py-3 transition-colors underline mt-4"
                 >
-                  Payment for Indian Users (UPI / Cards)
+                  See today&apos;s jobs free
                 </button>
               </div>
-            )}
-            
-            {user && (
-              <div className="mt-4 text-xs text-gray-500 text-center leading-relaxed">
-                By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#00ffcc] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#00ffcc] hover:underline">Privacy Policy</Link>. 
-                Your subscription renews automatically at $9/month until cancelled.
-              </div>
-            )}
-
-            <button
-              onClick={() => router.push("/")}
-              className="w-full text-gray-400 hover:text-white py-3 transition-colors underline mt-4"
-            >
-              See today&apos;s jobs free
-            </button>
+            </div>
           </div>
+          
         </div>
       </div>
     </div>
