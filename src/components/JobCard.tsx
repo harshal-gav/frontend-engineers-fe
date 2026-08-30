@@ -212,9 +212,9 @@ export default function JobCard({
                 >
                   $120K – $180K
                 </span>
-                <Link href="/pricing" className="locked-overlay">
+                <span className="locked-overlay">
                   🔒 Unlock with Pro
-                </Link>
+                </span>
               </div>
             ) : (
               salary && (
@@ -244,9 +244,9 @@ export default function JobCard({
                 >
                   {job.description.substring(0, 150)}
                 </p>
-                <Link href="/pricing" className="locked-overlay flex-shrink-0">
+                <span className="locked-overlay flex-shrink-0">
                   🔒 Unlock
-                </Link>
+                </span>
               </div>
             ) : (
               <p
