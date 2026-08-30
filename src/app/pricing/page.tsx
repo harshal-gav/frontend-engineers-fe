@@ -233,7 +233,7 @@ export default function PricingPage() {
                   onClick={handlePayUSubscription}
                   className="w-full py-3 rounded text-white bg-[#10b981] font-bold text-lg hover:bg-[#059669] transition-colors flex items-center justify-center gap-2"
                 >
-                  Pay with PayU (UPI / Cards)
+                  Payment for Indian Users (UPI / Cards)
                 </button>
               </div>
             )}
