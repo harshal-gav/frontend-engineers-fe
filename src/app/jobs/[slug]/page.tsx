@@ -1,4 +1,4 @@
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import type { Metadata } from "next";
 import { generateSlug, type Job } from "@/lib/jobs";
 import { loadJobsFromFile } from "@/lib/jobs.server";
@@ -21,11 +21,18 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const jobs = loadJobsFromFile();
+  const jobs = loadJobsFromFile({ includeDead: true });
   const job = jobs.find((j) => j.slug === slug || j.id === slug);
 
   if (!job) {
     return { title: "Job Not Found" };
+  }
+
+  if (job.isDead) {
+    return {
+      title: "Job No Longer Available",
+      robots: { index: false, follow: true }
+    };
   }
 
   // Dynamically generate keywords based on title
@@ -62,11 +69,33 @@ export default async function JobDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const jobs = loadJobsFromFile();
+  const jobs = loadJobsFromFile({ includeDead: true });
   const job = jobs.find((j) => j.slug === slug || j.id === slug);
 
   if (!job) {
+    const match = slug.match(/-([a-f0-9]{8})$/i);
+    if (match) {
+      const idSuffix = match[1];
+      const foundJob = jobs.find((j) => j.id.startsWith(idSuffix));
+      if (foundJob && foundJob.slug && foundJob.slug !== slug) {
+        permanentRedirect(`/jobs/${foundJob.slug}`);
+      }
+    }
     notFound();
+  }
+
+  if (job.isDead) {
+    return (
+      <div className="min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center p-4">
+        <h1 className="text-3xl font-bold text-white mb-4">Job No Longer Available</h1>
+        <p className="text-gray-400 mb-8 max-w-md text-center">
+          This position at {job.company?.name || "the company"} has been filled or is no longer active.
+        </p>
+        <a href="/" className="px-6 py-3 bg-[#00ffcc] text-black font-bold rounded-lg hover:scale-105 transition-transform">
+          Browse Similar Remote Jobs
+        </a>
+      </div>
+    );
   }
 
   // Build JobPosting JSON-LD structured data for SEO
@@ -94,18 +123,15 @@ export default async function JobDetailPage({
       "@type": "Country",
       name: job.country || "Worldwide",
     },
-    ...(job.salaryMin && {
+    ...( (job.salaryMin || job.salaryMax) && {
       baseSalary: {
         "@type": "MonetaryAmount",
         currency: job.currency || "USD",
         value: {
           "@type": "QuantitativeValue",
-          ...(job.salaryMin &&
-            job.salaryMax && {
-              minValue: job.salaryMin,
-              maxValue: job.salaryMax,
-            }),
-          ...(!job.salaryMax && job.salaryMin && { value: job.salaryMin }),
+          ...(job.salaryMin && job.salaryMax && job.salaryMin !== job.salaryMax
+            ? { minValue: job.salaryMin, maxValue: job.salaryMax }
+            : { value: job.salaryMin || job.salaryMax }),
           unitText: "YEAR",
         },
       },

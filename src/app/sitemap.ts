@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.frontendengineers.com';
+  const baseUrl = 'https://frontendengineers.com';
 
   const staticPages: MetadataRoute.Sitemap = [
     {
@@ -62,14 +62,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // High-value SEO category routes
   const categoryPages: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/?framework=React`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/?framework=Vue`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/?framework=Angular`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/?framework=Node.js`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/?q=JavaScript`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/?q=Fullstack`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/?q=TypeScript`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/?q=UI/UX`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/jobs/remote/react`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/jobs/remote/vue`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/jobs/remote/angular`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/jobs/remote/node-js`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/jobs/remote/javascript`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/jobs/remote/fullstack`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/jobs/remote/typescript`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
+    { url: `${baseUrl}/jobs/remote/ui-ux`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
   ];
 
   return [...staticPages, ...categoryPages];

@@ -7,8 +7,22 @@ export const metadata: Metadata = {
 };
 
 export default function AboutPage() {
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Frontend Engineers",
+    "url": "https://frontendengineers.com",
+    "logo": "https://frontendengineers.com/icon.png",
+    "description": "The premier job board for remote frontend and fullstack JavaScript developers."
+  };
+
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-gray-300 py-16 px-4">
+    <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <div className="min-h-screen bg-[#0a0a0a] text-gray-300 py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <Link href="/" className="text-[#00ffcc] hover:underline mb-8 inline-block">
           &larr; Back to Home
@@ -31,5 +45,6 @@ export default function AboutPage() {
         </div>
       </div>
     </div>
+    </>
   );
 }

@@ -136,7 +136,7 @@ export function isTopTierJob(job: Job): boolean {
  * Deduplicates, pushes no-logo jobs to bottom, and spaces out same-company listings.
  * This is a server-side only function.
  */
-export function loadJobsFromFile(): Job[] {
+export function loadJobsFromFile(options?: { includeDead?: boolean }): Job[] {
   const jobsPath = path.join(process.cwd(), "data", "jobs.json");
   if (!fs.existsSync(jobsPath)) return [];
 
@@ -147,7 +147,7 @@ export function loadJobsFromFile(): Job[] {
   const seenDuplicates = new Set<string>();
   const validJobs = rawJobs
     .filter((job) => {
-      if (job.isDead) return false;
+      if (job.isDead && !options?.includeDead) return false;
 
       const isRemote =
         job.remoteType === "REMOTE" ||

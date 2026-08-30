@@ -47,21 +47,25 @@ export type TeaserJob = Omit<Job, "applyUrl" | "salaryMin" | "salaryMax" | "curr
 
 // ... slug generation and format methods ...
 export function generateSlug(job: Job): string {
+  const fillerWords = /\b(the|and|in|a|an|of|for|with)\b/gi;
   const titlePart = job.title
     .toLowerCase()
+    .replace(fillerWords, "")
     .replace(/[^a-z0-9\s-]/g, "")
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-")
+    .replace(/^-+|-+$/g, "")
     .substring(0, 60)
-    .replace(/-$/, "");
+    .replace(/-+$/, "");
 
   const companyPart = (job.company?.name || "company")
     .toLowerCase()
     .replace(/[^a-z0-9\s-]/g, "")
     .replace(/\s+/g, "-")
     .replace(/-+/g, "-")
+    .replace(/^-+|-+$/g, "")
     .substring(0, 20)
-    .replace(/-$/, "");
+    .replace(/-+$/, "");
 
   const idSuffix = job.id.substring(0, 8);
 

@@ -89,7 +89,7 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
             {canAccess && job.company?.logoUrl ? (
               <img
                 src={job.company.logoUrl}
-                alt={job.company.name}
+                alt={`${job.company.name || 'Company'} logo`}
                 className="w-full h-full object-contain p-2"
                 width={64}
                 height={64}

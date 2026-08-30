@@ -38,12 +38,14 @@ export default async function HomePage() {
             "@type": "Country",
             "name": job.country || "Worldwide"
           },
-          "baseSalary": job.salaryMin ? {
+          "baseSalary": (job.salaryMin || job.salaryMax) ? {
             "@type": "MonetaryAmount",
             "currency": job.currency || "USD",
             "value": {
               "@type": "QuantitativeValue",
-              "value": job.salaryMin,
+              ...(job.salaryMin && job.salaryMax && job.salaryMin !== job.salaryMax
+                ? { minValue: job.salaryMin, maxValue: job.salaryMax }
+                : { value: job.salaryMin || job.salaryMax }),
               "unitText": "YEAR"
             }
           } : undefined
@@ -51,6 +53,14 @@ export default async function HomePage() {
       }));
 
       jsonLd = [
+        {
+          "@context": "https://schema.org",
+          "@type": "Organization",
+          "name": "Frontend Engineers",
+          "url": "https://frontendengineers.com",
+          "logo": "https://frontendengineers.com/icon.png", // Assuming icon.png is available based on app/icon.tsx
+          "description": "The premier job board for remote frontend and fullstack JavaScript developers."
+        },
         {
           "@context": "https://schema.org",
           "@type": "WebSite",
