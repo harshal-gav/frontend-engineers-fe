@@ -447,7 +447,7 @@ export default function JobsClientPage() {
                 ) : (
                   <>
                     <span className="font-semibold text-[#00ffcc]">
-                      {totalJobs.toLocaleString()}
+                      10,000
                     </span>{" "}
                     jobs found
                   </>

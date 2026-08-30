@@ -234,7 +234,7 @@ export default function FilterSidebar({
           >
             Show{" "}
             {totalResults !== undefined
-              ? `1000+ results`
+              ? `10,000 results`
               : "results"}
           </button>
         </div>
