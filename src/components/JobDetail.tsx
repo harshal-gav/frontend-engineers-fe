@@ -141,12 +141,19 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
             .toLowerCase()
             .replace(/^\w/, (c) => c.toUpperCase())}
         </span>
-        {job.location && (
+        {!canAccess ? (
+          <span
+            className="locked-field text-sm text-[var(--text-muted)]"
+            aria-label="Location locked"
+          >
+            📍 New York, US
+          </span>
+        ) : job.location ? (
           <span className="text-sm text-[var(--text-muted)]">
             📍 {job.city || job.location}
             {job.country ? `, ${job.country}` : ""}
           </span>
-        )}
+        ) : null}
       </div>
 
       {/* Salary */}

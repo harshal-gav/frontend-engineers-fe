@@ -38,11 +38,15 @@ export interface Job {
  * Teaser version of a job — fields that free users can see.
  * The applyUrl and salary fields are securely masked on the server so they cannot be inspected in the network tab.
  */
-export type TeaserJob = Omit<Job, "applyUrl" | "salaryMin" | "salaryMax" | "currency"> & {
+export type TeaserJob = Omit<Job, "applyUrl" | "salaryMin" | "salaryMax" | "currency" | "location" | "city" | "country" | "state"> & {
   applyUrl: null;
   salaryMin: null;
   salaryMax: null;
   currency: null;
+  location: null;
+  city: null;
+  country: null;
+  state: null;
 };
 
 // ... slug generation and format methods ...
@@ -136,5 +140,9 @@ export function maskJobForTeaser(job: Job): TeaserJob {
     salaryMin: null,
     salaryMax: null,
     currency: null,
+    location: null,
+    city: null,
+    country: null,
+    state: null,
   };
 }
