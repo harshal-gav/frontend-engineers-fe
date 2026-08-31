@@ -179,14 +179,24 @@ export default function JobCard({
             )}
 
             {job.location && (
-              <span
-                className="text-xs"
-                style={{ color: "var(--text-muted)" }}
-              >
-                📍{" "}
-                {job.city || job.location}
-                {job.country ? `, ${job.country}` : ""}
-              </span>
+              !isSubscribed ? (
+                <span
+                  className="locked-field text-xs"
+                  style={{ color: "var(--text-muted)" }}
+                  aria-label="Location locked"
+                >
+                  📍 New York, US
+                </span>
+              ) : (
+                <span
+                  className="text-xs"
+                  style={{ color: "var(--text-muted)" }}
+                >
+                  📍{" "}
+                  {job.city || job.location}
+                  {job.country ? `, ${job.country}` : ""}
+                </span>
+              )
             )}
           </div>
 

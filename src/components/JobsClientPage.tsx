@@ -405,9 +405,12 @@ export default function JobsClientPage() {
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 sm:mb-6 leading-tight text-white">
             The Best{" "}
             <span className="text-[#00ffcc]">Remote Frontend Jobs</span>
+            <span className="block mt-2 sm:mt-3 text-xl sm:text-2xl md:text-3xl text-gray-300 font-bold">
+              Work from anywhere, earn in dollars, and spend in local currency.
+            </span>
           </h1>
-          <p className="text-base sm:text-lg max-w-xl mx-auto mb-6 sm:mb-8 text-gray-400">
-            Discover curated premium 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers.
+          <p className="text-base sm:text-lg max-w-2xl mx-auto mb-6 sm:mb-8 text-gray-400">
+            No other platform gives you this amount of remote frontend jobs at one place. Discover curated premium 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers.
           </p>
 
         {/* Search Bar */}

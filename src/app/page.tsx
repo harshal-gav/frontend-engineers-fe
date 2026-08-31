@@ -107,9 +107,12 @@ export default async function HomePage() {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-4 leading-tight text-white">
               The Best{" "}
               <span className="text-[#00ffcc]">Remote Frontend Jobs</span>
+              <span className="block mt-2 sm:mt-3 text-xl sm:text-2xl md:text-3xl text-gray-300 font-bold">
+                Work from anywhere, earn in dollars, and spend in local currency.
+              </span>
             </h1>
-            <p className="text-sm sm:text-base max-w-xl mx-auto mb-6 sm:mb-8 text-gray-400">
-              Discover curated premium 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers.
+            <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 sm:mb-8 text-gray-400">
+              No other platform gives you this amount of remote frontend jobs at one place. Discover curated premium 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers.
             </p>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">
               <div className="w-full bg-[#111] border border-[#333] rounded-full h-12 sm:h-[54px] skeleton" />
