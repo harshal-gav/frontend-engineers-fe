@@ -298,7 +298,7 @@ export default function PricingPage() {
                 
                 {!user ? (
                   <button
-                    onClick={() => router.push("/auth/signup")}
+                    onClick={() => router.push("/auth/signup?redirect=/pricing")}
                     className="w-full btn-primary py-3 rounded text-black bg-[#00ffcc] font-bold text-lg"
                   >
                     Unlock full listings — $9/mo

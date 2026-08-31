@@ -18,6 +18,10 @@ export default function SignupPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
+  // Safest way to read URL params without Suspense wrapper in Next.js app dir client components
+  const searchParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
+  const redirectUrl = searchParams?.get("redirect") || "/pricing";
+
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -46,7 +50,7 @@ export default function SignupPage() {
         createdAt: new Date().toISOString()
       });
 
-      router.push("/pricing"); // Redirect to pricing so they can subscribe!
+      router.push(redirectUrl);
     } catch (err: any) {
       setError(err.message || "Failed to sign up");
     } finally {
@@ -131,7 +135,7 @@ export default function SignupPage() {
           </form>
 
           <p className="text-gray-400 text-center mt-6 text-sm">
-            Already have an account? <Link href="/auth/login" className="text-[#00ffcc] hover:underline">Log in</Link>
+            Already have an account? <Link href={`/auth/login${redirectUrl ? `?redirect=${encodeURIComponent(redirectUrl)}` : ""}`} className="text-[#00ffcc] hover:underline">Log in</Link>
           </p>
         </div>
       </div>

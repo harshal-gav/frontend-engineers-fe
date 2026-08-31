@@ -15,6 +15,9 @@ export default function LoginPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
+  const searchParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
+  const redirectUrl = searchParams?.get("redirect") || "/";
+
   const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
@@ -22,7 +25,7 @@ export default function LoginPage() {
 
     try {
       await signInWithEmailAndPassword(auth, email, password);
-      router.push("/");
+      router.push(redirectUrl);
     } catch (err: any) {
       setError(err.message || "Failed to log in");
     } finally {
@@ -80,7 +83,7 @@ export default function LoginPage() {
         </form>
 
         <p className="text-gray-400 text-center mt-6">
-          Don't have an account? <Link href="/auth/signup" className="text-[#00ffcc] hover:underline">Sign up</Link>
+          Don't have an account? <Link href={`/auth/signup${redirectUrl !== "/" ? `?redirect=${encodeURIComponent(redirectUrl)}` : ""}`} className="text-[#00ffcc] hover:underline">Sign up</Link>
         </p>
       </div>
     </div>
