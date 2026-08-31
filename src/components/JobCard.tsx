@@ -81,9 +81,9 @@ export default function JobCard({
 
   const cardContent = (
     <article
-      className="glass-card p-4 sm:p-5 cursor-pointer group hover:bg-[#111] transition-all"
+      className="glass-card h-full p-4 sm:p-5 cursor-pointer group hover:bg-[#111] transition-all flex flex-col"
     >
-      <div className="flex items-start gap-3 sm:gap-4">
+      <div className="flex items-start gap-3 sm:gap-4 flex-1">
         {/* Company Logo */}
         <div
           className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-white font-bold text-base sm:text-lg flex-shrink-0 overflow-hidden"
@@ -128,7 +128,7 @@ export default function JobCard({
         </div>
 
         {/* Job Info */}
-        <div className="flex-1 min-w-0">
+        <div className="flex-1 min-w-0 flex flex-col h-full">
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 sm:gap-3">
             <div className="min-w-0">
               <h3 className="font-semibold text-[15px] sm:text-base group-hover:text-[var(--accent-secondary)] transition-colors leading-tight line-clamp-2">
@@ -243,7 +243,7 @@ export default function JobCard({
           {/* Description preview */}
           {job.description && (
             !isSubscribed ? (
-              <div className="flex items-center gap-2 mt-2">
+              <div className="flex items-center gap-2 mt-auto pt-2">
                 <p
                   className="locked-field text-xs line-clamp-2 leading-relaxed flex-1"
                   style={{ color: "var(--text-muted)" }}
@@ -258,7 +258,7 @@ export default function JobCard({
               </div>
             ) : (
               <p
-                className="text-xs mt-2 line-clamp-2 leading-relaxed"
+                className="text-xs mt-auto pt-2 line-clamp-2 leading-relaxed"
                 style={{ color: "var(--text-muted)" }}
               >
                 {job.description}
@@ -273,7 +273,7 @@ export default function JobCard({
   return (
     <Link
       href={internalHref}
-      className="block animate-fade-in-up"
+      className="block h-full animate-fade-in-up"
       style={{ animationDelay: `${index * 50}ms` }}
     >
       {cardContent}

@@ -35,10 +35,10 @@ const FUSE_OPTIONS: IFuseOptions<Job> = {
 
 function JobCardSkeleton() {
   return (
-    <div className="glass-card p-4 sm:p-5">
-      <div className="flex items-start gap-3 sm:gap-4">
+    <div className="glass-card h-full p-4 sm:p-5 flex flex-col">
+      <div className="flex items-start gap-3 sm:gap-4 flex-1">
         <div className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl skeleton flex-shrink-0" />
-        <div className="flex-1">
+        <div className="flex-1 flex flex-col h-full">
           <div className="h-5 w-3/4 skeleton mb-2" />
           <div className="h-4 w-1/3 skeleton mb-3" />
           <div className="flex gap-2">
