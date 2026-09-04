@@ -38,14 +38,15 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const LINKEDIN_ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
 // Posts from your personal LinkedIn profile (uses "Share on LinkedIn" product)
 const LINKEDIN_PERSON_ID = process.env.LINKEDIN_PERSON_ID;
+const LINKEDIN_ORG_ID = process.env.LINKEDIN_ORG_ID;
 
 if (!GEMINI_API_KEY) {
   console.error('❌ Missing GEMINI_API_KEY');
   process.exit(1);
 }
 
-if (!DRY_RUN && (!LINKEDIN_ACCESS_TOKEN || !LINKEDIN_PERSON_ID)) {
-  console.error('❌ Missing LINKEDIN_ACCESS_TOKEN or LINKEDIN_PERSON_ID');
+if (!DRY_RUN && (!LINKEDIN_ACCESS_TOKEN || (!LINKEDIN_PERSON_ID && !LINKEDIN_ORG_ID))) {
+  console.error('❌ Missing LINKEDIN_ACCESS_TOKEN or (LINKEDIN_PERSON_ID / LINKEDIN_ORG_ID)');
   process.exit(1);
 }
 
@@ -291,9 +292,12 @@ async function postToLinkedIn(text) {
   // LinkedIn Posts API requires escaping these reserved characters to prevent silent truncation
   // Reserved characters: | { } @ [ ] ( ) < > \ * _ ~
   const escapedText = text.replace(/([|{}@\[\]()<>\\*_~])/g, '\\$1');
+  const authorUrn = LINKEDIN_ORG_ID 
+    ? `urn:li:organization:${LINKEDIN_ORG_ID}`
+    : `urn:li:person:${LINKEDIN_PERSON_ID}`;
 
   const payload = {
-    author: `urn:li:person:${LINKEDIN_PERSON_ID}`,
+    author: authorUrn,
     commentary: escapedText,
     visibility: 'PUBLIC',
     distribution: {
