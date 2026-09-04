@@ -38,9 +38,7 @@ export async function GET(request: Request) {
     return NextResponse.json({ error: 'LinkedIn credentials not configured' }, { status: 500 });
   }
 
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL 
-    ? `https://${process.env.VERCEL_URL}` 
-    : 'https://www.frontendengineers.com';
+  const baseUrl = 'https://www.frontendengineers.com';
   
   const redirectUri = `${baseUrl}/api/linkedin/callback`;
 
