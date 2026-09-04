@@ -288,9 +288,13 @@ function formatSalary(min, max, currency) {
 // ─── LinkedIn API ────────────────────────────────────────────
 
 async function postToLinkedIn(text) {
+  // LinkedIn Posts API requires escaping these reserved characters to prevent silent truncation
+  // Reserved characters: | { } @ [ ] ( ) < > \ * _ ~
+  const escapedText = text.replace(/([|{}@\[\]()<>\\*_~])/g, '\\$1');
+
   const payload = {
     author: `urn:li:person:${LINKEDIN_PERSON_ID}`,
-    commentary: text,
+    commentary: escapedText,
     visibility: 'PUBLIC',
     distribution: {
       feedDistribution: 'MAIN_FEED',
