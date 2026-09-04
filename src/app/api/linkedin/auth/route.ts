@@ -20,7 +20,7 @@ export async function GET() {
   authUrl.searchParams.set('response_type', 'code');
   authUrl.searchParams.set('client_id', clientId);
   authUrl.searchParams.set('redirect_uri', redirectUri);
-  authUrl.searchParams.set('scope', 'openid profile w_member_social');
+  authUrl.searchParams.set('scope', 'openid profile w_member_social w_organization_social');
   authUrl.searchParams.set('state', state);
 
   return NextResponse.redirect(authUrl.toString());
