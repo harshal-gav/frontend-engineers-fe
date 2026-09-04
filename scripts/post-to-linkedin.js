@@ -295,7 +295,7 @@ async function postToLinkedIn(text) {
       'Authorization': `Bearer ${LINKEDIN_ACCESS_TOKEN}`,
       'Content-Type': 'application/json',
       'X-Restli-Protocol-Version': '2.0.0',
-      'LinkedIn-Version': '202401',
+      'LinkedIn-Version': '202608',
     },
     body: JSON.stringify(payload),
   });
