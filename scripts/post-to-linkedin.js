@@ -288,13 +288,10 @@ function formatSalary(min, max, currency) {
 
 // ─── LinkedIn API ────────────────────────────────────────────
 
-async function postToLinkedIn(text) {
+async function postToLinkedIn(text, authorUrn) {
   // LinkedIn Posts API requires escaping these reserved characters to prevent silent truncation
   // Reserved characters: | { } @ [ ] ( ) < > \ * _ ~
   const escapedText = text.replace(/([|{}@\[\]()<>\\*_~])/g, '\\$1');
-  const authorUrn = LINKEDIN_ORG_ID 
-    ? `urn:li:organization:${LINKEDIN_ORG_ID}`
-    : `urn:li:person:${LINKEDIN_PERSON_ID}`;
 
   const payload = {
     author: authorUrn,
@@ -370,14 +367,30 @@ async function main() {
     console.log(`   Post length: ${postText.length} characters`);
   } else {
     console.log('\n📤 Publishing to LinkedIn...');
+    let successCount = 0;
     try {
-      const result = await postToLinkedIn(postText);
-      console.log(`✅ Posted successfully! Post ID: ${result.postId}`);
+      if (LINKEDIN_PERSON_ID) {
+        console.log('   Posting to Personal Profile...');
+        const resultPerson = await postToLinkedIn(postText, `urn:li:person:${LINKEDIN_PERSON_ID}`);
+        console.log(`   ✅ Posted to Personal Profile! Post ID: ${resultPerson.postId}`);
+        successCount++;
+      }
       
-      // 5. Track the posted job
-      postedIds.push(job.id);
-      savePostedIds(postedIds);
-      console.log(`💾 Updated linkedin-posted.json (${postedIds.length} total)`);
+      if (LINKEDIN_ORG_ID) {
+        console.log('   Posting to Company Page...');
+        const resultOrg = await postToLinkedIn(postText, `urn:li:organization:${LINKEDIN_ORG_ID}`);
+        console.log(`   ✅ Posted to Company Page! Post ID: ${resultOrg.postId}`);
+        successCount++;
+      }
+      
+      if (successCount > 0) {
+        // 5. Track the posted job
+        postedIds.push(job.id);
+        savePostedIds(postedIds);
+        console.log(`\n💾 Updated linkedin-posted.json (${postedIds.length} total)`);
+      } else {
+        console.error('\n❌ No valid LinkedIn IDs configured. Skipping update.');
+      }
     } catch (err) {
       console.error(`\n❌ Failed to post: ${err.message}`);
       process.exit(1);
