@@ -170,40 +170,52 @@ async function generatePostWithGemini(job) {
   const jobUrl = `${SITE_URL}/jobs/${generateSlug(job)}`;
   
   // Build a concise context for Gemini
-  const salary = formatSalary(job.salaryMin, job.salaryMax, job.currency);
-  const descriptionSnippet = job.description 
-    ? job.description.substring(0, 1500) 
-    : 'No description available.';
+  // Explicitly do NOT include salary as per user request
+  const descriptionSnippet = job.description || 'No description available.';
 
   const prompt = `You are a social media manager for FrontendEngineers.com, the premier job board for remote frontend developers. 
 
-Write an engaging LinkedIn post to promote this job listing. The post should feel authentic, helpful, and professional — NOT spammy. Aim for high reach and engagement.
+Write an engaging LinkedIn post to promote this job listing. You MUST follow the exact format of the template below. 
 
 **Job Details:**
 - Title: ${job.title}
 - Company: ${job.company?.name || 'Company'}
-- Industry: ${job.company?.industry || 'Tech'}
 - Location: ${job.location || 'Remote'}
 - Remote Type: ${job.remoteType}
 - Employment: ${job.employmentType}
 - Experience Level: ${job.experienceLevel || 'Not specified'}
-${salary ? `- Salary: ${salary}` : ''}
 - Job URL: ${jobUrl}
 
-**Job Description (excerpt):**
+**Job Description (excerpt for your context):**
 ${descriptionSnippet}
 
-**Rules for the post:**
-1. Keep it between 150-300 words (LinkedIn sweet spot for engagement)
-2. Start with a hook that grabs attention (a question, a bold statement, or an emoji)
-3. Highlight 2-3 key selling points of the role (remote work, salary, tech stack, company)
-4. Include the job URL as a clear CTA: "Apply here 👉 ${jobUrl}"
-5. End with 5-8 relevant hashtags on a new line (e.g., #RemoteJobs #FrontendDeveloper #React #Hiring)
-6. Vary your style — sometimes use bullet points, sometimes narrative, sometimes emojis
-7. Mention "FrontendEngineers.com" naturally as the source
-8. Do NOT use markdown formatting (no bold **, no headers #). LinkedIn doesn't render markdown.
-9. Do NOT include any image URLs or [image] placeholders.
-10. Make it sound human and conversational, not corporate.
+**IMPORTANT RULES:**
+1. DO NOT INCLUDE THE SALARY ANYWHERE IN THE POST.
+2. Follow this exact structure and emoji style:
+
+[Catchy Hook, e.g. 🚨 REMOTE | ATLASSIAN Senior Frontend Software Engineer opportunity at Atlassian — Remote in India 🇮🇳]
+
+[1-2 sentence compelling summary of the role and who should apply]
+
+💼 [Job Title]
+🏢 [Company Name]
+🌍 [Location/Remote]
+⏳ [Experience Level]
+🕐 [Employment Type]
+
+What they’re looking for:
+• [Key requirement 1]
+• [Key requirement 2]
+• [Key requirement 3]
+• [Key requirement 4]
+
+[1 sentence about the impact of the role]
+
+🔗 Apply here: ${jobUrl}
+
+🔥 Want to discover more remote frontend jobs like this? Subscribe to FrontendEngineers.com and stop spending hours searching across multiple job boards. Frontend jobs. Remote only. Worth applying.
+
+[5-8 relevant hashtags like #RemoteJobs #FrontendDeveloper #ReactJS]
 
 Write ONLY the post text, nothing else.`;
 
