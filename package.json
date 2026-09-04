@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "linkedin:auth": "node scripts/linkedin-auth-setup.js",
+    "linkedin:post": "node scripts/post-to-linkedin.js",
+    "linkedin:post:dry": "node scripts/post-to-linkedin.js --dry-run"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
