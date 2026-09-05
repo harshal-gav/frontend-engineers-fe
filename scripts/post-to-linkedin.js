@@ -194,7 +194,7 @@ ${descriptionSnippet}
 2. NEVER mention any specific country or location. Always market the role as 100% remote. Use the exact phrase "work from anywhere" (DO NOT say "in the world").
 3. VARY THE FORMAT: Keep the delivery, hooks, layout, emojis, and hashtags fresh and different for every post so they don't look automated. The title and content structure should change every time.
 4. MUST HAVE ELEMENTS (integrate these naturally into your varied formats):
-   - The VERY FIRST LINE must be a catchy hook that naturally mentions "FrontendEngineers.com"
+   - The VERY FIRST LINE must be a catchy hook that ALWAYS includes the words "remote job" AND the domain "FrontendEngineers.com"
    - The Job Title and Company Name
    - A bulleted list of 3-4 key requirements extracted from the description
    - A link to apply at the bottom: "🔗 Apply here: ${jobUrl}"
