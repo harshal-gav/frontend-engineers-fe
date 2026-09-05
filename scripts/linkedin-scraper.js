@@ -6,7 +6,19 @@ const crypto = require("crypto");
 // ─── Config ───────────────────────────────────────────────────────────
 const SEARCH_QUERY = "frontend engineer";
 const COUNTRIES = [
-  "India"
+  "United States",
+  "United Kingdom",
+  "Canada",
+  "Australia",
+  "Germany",
+  "Netherlands",
+  "India",
+  "Singapore",
+  "Poland",
+  "Brazil",
+  "Mexico",
+  "Spain",
+  "France"
 ];
 
 const DB_FILE = path.join(__dirname, "..", "data", "jobs.json");
