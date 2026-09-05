@@ -491,12 +491,7 @@ function saveJobs(jobs) {
           }
 
           const buttonText = (await applyButton.innerText()).trim();
-          if (buttonText.toLowerCase().includes("easy apply")) {
-            console.log("       ⏭️  Easy Apply — skipping.");
-            saveState(state);
-            continue;
-          }
-
+          
           latestNewPageUrl = null;
           await applyButton.click({ timeout: 5000 }).catch(() => {});
           await sleep(LONG);
@@ -528,8 +523,21 @@ function saveJobs(jobs) {
               if (closeBtn) {
                 await closeBtn.click();
                 await sleep(SLOW);
+                const discardBtn = await page.$('button[data-test-dialog-primary-btn], button[data-control-name="discard_application_confirm_btn"]');
+                if (discardBtn) {
+                  await discardBtn.click();
+                  await sleep(SLOW);
+                }
               }
             }
+          }
+
+          if (cleanUrl && (!cleanUrl.startsWith('http') || cleanUrl.includes('application-settings'))) {
+            cleanUrl = null;
+          }
+
+          if (!cleanUrl) {
+            cleanUrl = `https://www.linkedin.com/jobs/view/${jobId}`;
           }
 
           if (cleanUrl) {
