@@ -474,7 +474,7 @@ function saveJobs(jobs) {
           console.log(`\n   [${i + 1}/${jobCards.length}] ${title} @ ${company}`);
 
           const titleLower = title.toLowerCase();
-          const isFrontend = /front|react|vue|angular|svelte|web|javascript|typescript|\\bjs\\b|\\bts\\b|ui|user interface/i.test(titleLower);
+          const isFrontend = /front|react|vue|angular|svelte|web|javascript|typescript|\bjs\b|\bts\b|ui|user interface/i.test(titleLower);
           
           if (!isFrontend) {
              console.log(`       ⏭️  Skipping non-frontend job: ${title}`);
