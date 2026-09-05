@@ -191,14 +191,13 @@ ${descriptionSnippet}
 
 **IMPORTANT RULES:**
 1. DO NOT INCLUDE THE SALARY ANYWHERE IN THE POST.
-2. NEVER mention any specific country or location. Always market the role as 100% remote and emphasize that you can "work from anywhere" or "work globally".
-3. VARY THE FORMAT: Keep the delivery, hooks, emojis, and hashtags fresh and different for every post so they don't look automated. 
-4. However, you MUST always include the following core elements in whatever creative way you choose:
-   - A catchy hook
+2. NEVER mention any specific country or location. Always market the role as 100% remote. Use the exact phrase "work from anywhere" (DO NOT say "in the world").
+3. VARY THE FORMAT: Keep the delivery, hooks, layout, emojis, and hashtags fresh and different for every post so they don't look automated. The title and content structure should change every time.
+4. MUST HAVE ELEMENTS (integrate these naturally into your varied formats):
+   - The VERY FIRST LINE must be a catchy hook that naturally mentions "FrontendEngineers.com"
    - The Job Title and Company Name
    - A bulleted list of 3-4 key requirements extracted from the description
-   - A link to apply: "🔗 Apply here: ${jobUrl}"
-   - This exact footer call-to-action: "🔥 Want to discover more remote frontend jobs like this? Subscribe to FrontendEngineers.com and stop spending hours searching across multiple job boards. Frontend jobs. Remote only. Worth applying."
+   - A link to apply at the bottom: "🔗 Apply here: ${jobUrl}"
    - 5-8 highly relevant hashtags (vary these based on the specific tech stack and role)
 
 Write ONLY the post text, nothing else.`;
