@@ -412,8 +412,8 @@ function saveJobs(jobs) {
         await sleep(SLOW);
       }
 
-      // Grab cards (strictly the outer list item to ensure 1 element per job)
-      const jobCards = await page.$$('li.jobs-search-results__list-item, div.job-search-card');
+      // Grab cards
+      const jobCards = await page.$$('.job-card-container, .job-search-card, [data-job-id], .job-card-list__title');
 
       console.log(`   Found ${jobCards.length} job cards on this page.`);
 
@@ -422,7 +422,7 @@ function saveJobs(jobs) {
       for (let i = 0; i < jobCards.length; i++) {
         try {
           // Re-query cards
-          const cards = await page.$$('li.jobs-search-results__list-item, div.job-search-card');
+          const cards = await page.$$('.job-card-container, .job-search-card, [data-job-id], .job-card-list__title');
           if (i >= cards.length) break;
 
           const card = cards[i];
@@ -435,7 +435,7 @@ function saveJobs(jobs) {
             if (inner) return inner.getAttribute('data-job-id');
             const innerUrn = el.querySelector('[data-entity-urn]');
             if (innerUrn) return innerUrn.getAttribute('data-entity-urn').split(':').pop();
-            const a = el.querySelector('a[href*="/view/"]');
+            const a = el.matches('a[href*="/view/"]') ? el : el.querySelector('a[href*="/view/"]');
             if (a && a.href.includes('/view/')) return a.href.split('/view/')[1].split('/')[0].split('?')[0];
             return el.innerText.substring(0, 50).replace(/\\s+/g, ''); // Fallback
           });
