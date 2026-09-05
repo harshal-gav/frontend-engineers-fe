@@ -375,6 +375,7 @@ function saveJobs(jobs) {
     jobsUrl.searchParams.set("keywords", SEARCH_QUERY);
     jobsUrl.searchParams.set("location", country);
     jobsUrl.searchParams.set("f_WT", "2"); // Remote
+    jobsUrl.searchParams.set("sortBy", "DD"); // Most recent
     
     try {
       await page.goto(jobsUrl.toString(), { waitUntil: "domcontentloaded", timeout: 30000 });
@@ -411,6 +412,9 @@ function saveJobs(jobs) {
         await listContainer.evaluate((el) => el.scrollTo({ top: 0 }));
         await sleep(SLOW);
       }
+
+      // Wait for jobs to load (LinkedIn is an SPA)
+      await page.waitForSelector('.job-card-container, .job-search-card, [data-job-id]', { timeout: 10000 }).catch(() => {});
 
       // Grab cards
       const jobCards = await page.$$('.job-card-container, .job-search-card, [data-job-id], .job-card-list__title');
