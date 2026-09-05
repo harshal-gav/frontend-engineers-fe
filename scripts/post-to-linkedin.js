@@ -111,21 +111,21 @@ async function generatePostWithGemini() {
 Write an engaging LinkedIn post to promote our website. DO NOT promote a specific job.
 
 **IMPORTANT RULES & INSTRUCTIONS:**
-1. IN THE HEADING: Mention "FrontendEngineers" and "remote jobs for frontend developers" (or variations of it like "remote frontend jobs").
-2. CONTEXT & FORMATTING: Keep the context, format, delivery, and emojis changing for every post so they don't look repetitive or automated.
-3. IN THE BODY:
-   - Mention the domain "FrontendEngineers.com"
+1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown and the literal asterisks will show up. Use plain text, capital letters, and emojis for emphasis instead.
+2. THE HOOK (CRITICAL): The VERY FIRST LINE of the post MUST contain the words "remote frontend jobs" AND the domain "FrontendEngineers.com". Example: "🚀 Looking for remote frontend jobs? FrontendEngineers.com is your ultimate destination!"
+3. CONTEXT & FORMATTING: Keep the context, format, delivery, and emojis changing for every post so they don't look repetitive or automated.
+4. IN THE BODY:
    - Market it for frontend developers to get jobs quickly.
    - Mention that they get "massive access for frontend jobs only".
    - Mention they can "find all world remote jobs of frontend in one place".
    - Mention that "all postings are verified".
-4. PRICING & LINKS (Include these in a creative way):
+5. PRICING & LINKS (Include these in a creative way):
    - Mention getting PRO access or unlocking 1,000+ remote jobs for just $9/month.
    - Include a link to explore jobs: https://www.frontendengineers.com
    - Include a link to get PRO access: https://www.frontendengineers.com/pricing
-5. HASHTAGS: Include 5-8 highly relevant hashtags like #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment #FrontendEngineers.
+6. HASHTAGS: Include 5-8 highly relevant hashtags like #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment #FrontendEngineers.
 
-Write ONLY the post text, nothing else. Make it catchy, formatting it with bullet points, checkmarks, or bold text for readability.`;
+Write ONLY the post text, nothing else. Make it catchy and space it out with newlines for readability.`;
 
   // Retry up to 3 times if the generated post is too short
   for (let attempt = 1; attempt <= 3; attempt++) {
