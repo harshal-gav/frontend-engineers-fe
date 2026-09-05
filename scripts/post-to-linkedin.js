@@ -176,12 +176,11 @@ async function generatePostWithGemini(job) {
 
   const prompt = `You are a social media manager for FrontendEngineers.com, the premier job board for remote frontend developers. 
 
-Write an engaging LinkedIn post to promote this job listing. You MUST follow the exact format of the template below. 
+Write an engaging LinkedIn post to promote this job listing. 
 
 **Job Details:**
 - Title: ${job.title}
 - Company: ${job.company?.name || 'Company'}
-- Location: ${job.location || 'Remote'}
 - Remote Type: ${job.remoteType}
 - Employment: ${job.employmentType}
 - Experience Level: ${job.experienceLevel || 'Not specified'}
@@ -192,31 +191,15 @@ ${descriptionSnippet}
 
 **IMPORTANT RULES:**
 1. DO NOT INCLUDE THE SALARY ANYWHERE IN THE POST.
-2. Follow this exact structure and emoji style:
-
-[Catchy Hook, e.g. 🚨 REMOTE | ATLASSIAN Senior Frontend Software Engineer opportunity at Atlassian — Remote in India 🇮🇳]
-
-[1-2 sentence compelling summary of the role and who should apply]
-
-💼 [Job Title]
-🏢 [Company Name]
-🌍 [Location/Remote]
-⏳ [Experience Level]
-🕐 [Employment Type]
-
-What they’re looking for:
-• [Key requirement 1]
-• [Key requirement 2]
-• [Key requirement 3]
-• [Key requirement 4]
-
-[1 sentence about the impact of the role]
-
-🔗 Apply here: ${jobUrl}
-
-🔥 Want to discover more remote frontend jobs like this? Subscribe to FrontendEngineers.com and stop spending hours searching across multiple job boards. Frontend jobs. Remote only. Worth applying.
-
-[5-8 relevant hashtags like #RemoteJobs #FrontendDeveloper #ReactJS]
+2. NEVER mention any specific country or location. Always market the role as 100% remote and emphasize that you can "work from anywhere" or "work globally".
+3. VARY THE FORMAT: Keep the delivery, hooks, emojis, and hashtags fresh and different for every post so they don't look automated. 
+4. However, you MUST always include the following core elements in whatever creative way you choose:
+   - A catchy hook
+   - The Job Title and Company Name
+   - A bulleted list of 3-4 key requirements extracted from the description
+   - A link to apply: "🔗 Apply here: ${jobUrl}"
+   - This exact footer call-to-action: "🔥 Want to discover more remote frontend jobs like this? Subscribe to FrontendEngineers.com and stop spending hours searching across multiple job boards. Frontend jobs. Remote only. Worth applying."
+   - 5-8 highly relevant hashtags (vary these based on the specific tech stack and role)
 
 Write ONLY the post text, nothing else.`;
 
