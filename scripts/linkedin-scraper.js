@@ -537,7 +537,7 @@ function saveJobs(jobs) {
           }
 
           if (!cleanUrl) {
-            cleanUrl = `https://www.linkedin.com/jobs/view/${jobId}`;
+            console.log(`       ⏭️  No external URL found (Easy Apply or native). Skipping.`);
           }
 
           if (cleanUrl) {
