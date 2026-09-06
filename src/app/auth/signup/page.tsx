@@ -59,7 +59,17 @@ export default function SignupPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center p-4">
+    <div className="min-h-screen bg-[#0a0a0a] flex items-center justify-center p-4 relative">
+      <Link href="/" className="absolute top-6 left-6 flex items-center gap-2 sm:gap-3 hover:opacity-80 transition-opacity">
+        <div className="w-9 h-9 rounded-lg flex items-center justify-center text-black font-bold text-sm bg-[#00ffcc]">
+          FE
+        </div>
+        <span className="text-base sm:text-lg font-bold text-white tracking-tight">
+          <span className="hidden sm:inline">FrontendEngineers.com</span>
+          <span className="sm:hidden">FrontendEng</span>
+        </span>
+      </Link>
+
       {/* Changed layout/style for signup to look different from login */}
       <div className="glass-card max-w-2xl w-full p-8 border-t-4 border-t-[#00ffcc] bg-[#111] rounded-2xl flex flex-col md:flex-row gap-8 items-center">
         
