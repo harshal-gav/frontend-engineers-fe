@@ -454,7 +454,7 @@ export default function JobsClientPage() {
                 ) : (
                   <>
                     <span className="font-semibold text-[#00ffcc]">
-                      10,000
+                      10,000+
                     </span>{" "}
                     jobs found
                   </>
