@@ -176,6 +176,7 @@ export function loadJobsFromFile(options?: { includeDead?: boolean }): Job[] {
     .map((job) => ({
       ...job,
       slug: generateSlug(job),
+      isCareerUrl: (job.applyUrl || "").toLowerCase().includes("career"),
     }));
 
   // Sort by recently added first
@@ -187,7 +188,7 @@ export function loadJobsFromFile(options?: { includeDead?: boolean }): Job[] {
   const otherTier: Job[] = [];
 
   for (const job of validJobs) {
-    if (job.applyUrl && job.applyUrl.toLowerCase().includes("career")) {
+    if (job.isCareerUrl) {
       careerTier.push(job);
     } else {
       otherTier.push(job);

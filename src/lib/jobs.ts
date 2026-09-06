@@ -32,6 +32,7 @@ export interface Job {
   deadAt?: string | null;
   // Computed at read time
   slug?: string;
+  isCareerUrl?: boolean;
 }
 
 /**
