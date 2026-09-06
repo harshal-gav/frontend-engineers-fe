@@ -206,9 +206,9 @@ export function loadJobsFromFile(options?: { includeDead?: boolean }): Job[] {
 
   const finalJobs = spaceOutCompanies([...spacedCareer, ...spacedOther], 6);
   
-  // Make the top 3 jobs free for everyone
+  // Make the top 12 jobs free for everyone
   return finalJobs.map((job, index) => {
-    if (index < 3) {
+    if (index < 12) {
       return { ...job, isFree: true };
     }
     return job;
