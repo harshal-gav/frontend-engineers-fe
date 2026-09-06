@@ -301,7 +301,7 @@ export default function PricingPage() {
                     onClick={() => router.push("/auth/signup?redirect=/pricing")}
                     className="w-full btn-primary py-3 rounded text-black bg-[#00ffcc] font-bold text-lg"
                   >
-                    Unlock full listings — $9/mo
+                    Unlock full listings with $9/mo
                   </button>
                 ) : (
                   <div className="flex flex-col gap-4">
