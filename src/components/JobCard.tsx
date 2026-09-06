@@ -178,7 +178,7 @@ export default function JobCard({
               </span>
             )}
 
-            {!isSubscribed ? (
+            {!isSubscribed && !job.isFree ? (
               <span
                 className="locked-field text-xs"
                 style={{ color: "var(--text-muted)" }}
@@ -211,7 +211,7 @@ export default function JobCard({
 
           {/* Salary + Employment type */}
           <div className="flex items-center gap-3 mt-2.5 sm:mt-3">
-            {!isSubscribed ? (
+            {!isSubscribed && !job.isFree ? (
               <div className="flex items-center gap-2">
                 <span
                   className="locked-field salary-text text-sm"
@@ -242,7 +242,7 @@ export default function JobCard({
 
           {/* Description preview */}
           {job.description && (
-            !isSubscribed ? (
+            !isSubscribed && !job.isFree ? (
               <div className="flex items-center gap-2 mt-auto pt-2">
                 <p
                   className="locked-field text-xs line-clamp-2 leading-relaxed flex-1"

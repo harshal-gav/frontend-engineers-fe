@@ -43,7 +43,10 @@ export async function GET(request: Request) {
 
     // MASKING: non-premium users get ALL jobs, but every single job has its applyUrl removed.
     if (!isPremium) {
-      const maskedJobs = jobs.map((job) => maskJobForTeaser(job));
+      const maskedJobs = jobs.map((job) => {
+        if (job.isFree) return job;
+        return maskJobForTeaser(job);
+      });
       return NextResponse.json(maskedJobs);
     }
 

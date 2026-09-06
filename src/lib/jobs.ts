@@ -33,6 +33,7 @@ export interface Job {
   // Computed at read time
   slug?: string;
   isCareerUrl?: boolean;
+  isFree?: boolean;
 }
 
 /**

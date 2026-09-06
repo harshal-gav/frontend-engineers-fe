@@ -37,8 +37,7 @@ interface JobDetailProps {
 
 export default function JobDetail({ job, isPremium }: JobDetailProps) {
   const { isSubscribed } = useAuth();
-  // Use client-side state if available, fall back to server-rendered prop
-  const canAccess = isSubscribed || isPremium;
+  const canAccess = isSubscribed || isPremium || !!job.isFree;
 
   const remote = REMOTE_CONFIG[job.remoteType] || REMOTE_CONFIG.REMOTE;
   const level = job.experienceLevel

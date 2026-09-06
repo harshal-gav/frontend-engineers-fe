@@ -179,8 +179,14 @@ export function loadJobsFromFile(options?: { includeDead?: boolean }): Job[] {
       isCareerUrl: (job.applyUrl || "").toLowerCase().includes("career"),
     }));
 
-  // Sort by recently added first
+  // Sort by frontend title, then recently added
   validJobs.sort((a, b) => {
+    const aFrontend = a.title.toLowerCase().includes("frontend");
+    const bFrontend = b.title.toLowerCase().includes("frontend");
+    
+    if (aFrontend && !bFrontend) return -1;
+    if (!aFrontend && bFrontend) return 1;
+    
     return new Date(b.postedAt || 0).getTime() - new Date(a.postedAt || 0).getTime();
   });
 
@@ -198,6 +204,14 @@ export function loadJobsFromFile(options?: { includeDead?: boolean }): Job[] {
   const spacedCareer = spaceOutCompanies(careerTier, 6);
   const spacedOther = spaceOutCompanies(otherTier, 6);
 
-  return spaceOutCompanies([...spacedCareer, ...spacedOther], 6);
+  const finalJobs = spaceOutCompanies([...spacedCareer, ...spacedOther], 6);
+  
+  // Make the top 3 jobs free for everyone
+  return finalJobs.map((job, index) => {
+    if (index < 3) {
+      return { ...job, isFree: true };
+    }
+    return job;
+  });
 }
 
