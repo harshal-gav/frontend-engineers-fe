@@ -240,6 +240,12 @@ export default function JobsClientPage() {
     // Sort
     if (filters.sortBy === "newest") {
       filtered.sort((a, b) => {
+        const aCareer = (a.applyUrl || "").toLowerCase().includes("career");
+        const bCareer = (b.applyUrl || "").toLowerCase().includes("career");
+
+        if (aCareer && !bCareer) return -1;
+        if (!aCareer && bCareer) return 1;
+
         const aFrontend = a.title.toLowerCase().includes("frontend");
         const bFrontend = b.title.toLowerCase().includes("frontend");
         

@@ -178,30 +178,25 @@ export function loadJobsFromFile(options?: { includeDead?: boolean }): Job[] {
       slug: generateSlug(job),
     }));
 
-  // 2. Classify jobs into tiers: Product companies first, consultancies last
-  // Tier 1: Legit product companies with real logos (front pages)
-  // Tier 2: Other companies with real logos OR legit companies without logos (middle)
-  // Tier 3: Consultancies / staffing agencies (last pages)
-  const tier1: Job[] = [];
-  const tier2: Job[] = [];
-  const tier3: Job[] = [];
+  // Sort by recently added first
+  validJobs.sort((a, b) => {
+    return new Date(b.postedAt || 0).getTime() - new Date(a.postedAt || 0).getTime();
+  });
+
+  const careerTier: Job[] = [];
+  const otherTier: Job[] = [];
 
   for (const job of validJobs) {
-    if (isTopTierJob(job)) {
-      tier1.push(job);
-    } else if (isConsultancy(job.company?.name || "")) {
-      tier3.push(job);
+    if (job.applyUrl && job.applyUrl.toLowerCase().includes("career")) {
+      careerTier.push(job);
     } else {
-      tier2.push(job);
+      otherTier.push(job);
     }
   }
 
-  // 3. Space out within each tier, then combine
-  const spacedTier1 = spaceOutCompanies(tier1, 6);
-  const spacedTier2 = spaceOutCompanies(tier2, 6);
-  const spacedTier3 = spaceOutCompanies(tier3, 6);
+  const spacedCareer = spaceOutCompanies(careerTier, 6);
+  const spacedOther = spaceOutCompanies(otherTier, 6);
 
-  // 4. Final pass: space out the combined list to handle boundary overlaps
-  return spaceOutCompanies([...spacedTier1, ...spacedTier2, ...spacedTier3], 6);
+  return spaceOutCompanies([...spacedCareer, ...spacedOther], 6);
 }
 
