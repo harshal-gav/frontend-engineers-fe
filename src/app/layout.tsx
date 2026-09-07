@@ -3,6 +3,7 @@ import { Inter, JetBrains_Mono } from "next/font/google";
 import { AuthProvider } from "@/context/AuthContext";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
+import GlobalAdSense from "@/components/GlobalAdSense";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
@@ -91,6 +92,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-full flex flex-col antialiased bg-[#000000] text-white">
         <div className="bg-mesh" aria-hidden="true" />
         <AuthProvider>
+          <GlobalAdSense />
           <div className="relative z-10 flex flex-col min-h-full">
             {children}
           </div>

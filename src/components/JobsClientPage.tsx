@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, useEffect, useCallback, useMemo, useRef } from "react";
+import React, { useState, useEffect, useCallback, useMemo, useRef } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
 import type { IFuseOptions } from "fuse.js";
@@ -13,6 +13,7 @@ import FilterSidebar, {
   type FilterState,
 } from "@/components/FilterSidebar";
 import BottomSheet from "@/components/BottomSheet";
+import AdUnit from "@/components/AdUnit";
 import type { Job } from "@/lib/jobs";
 
 // ─── Fuse.js config ──────────────────────────────────────
@@ -98,7 +99,9 @@ export default function JobsClientPage() {
     createDefaultFilters(searchParams)
   );
   const [allJobs, setAllJobs] = useState<Job[]>([]);
-  const [loading, setLoading] = useState(true);
+  const [mounted, setMounted] = useState(false);
+  
+  const isAdsEnabled = process.env.NEXT_PUBLIC_ADS_ENABLED === "true";
   const [dataLoaded, setDataLoaded] = useState(false);
   const [page, setPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
@@ -308,25 +311,22 @@ export default function JobsClientPage() {
     !!filters.postedWithin,
   ].filter(Boolean).length;
 
-  const isLoading = loading || !dataLoaded;
+  const isLoading = !mounted || !dataLoaded;
 
   return (
     <>
       {/* ─── Header ─────────────────────────── */}
       <header className="border-b border-[#333] bg-[#0a0a0a] sticky top-0 z-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-          <div className="flex items-center gap-2 sm:gap-3">
-            <div className="w-9 h-9 rounded-lg flex items-center justify-center text-black font-bold text-sm bg-[#00ffcc]">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-col sm:flex-row items-center sm:justify-between gap-3 sm:gap-0">
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-black font-bold text-xs sm:text-sm bg-[#00ffcc] shrink-0">
               FE
             </div>
             <span className="text-base sm:text-lg font-bold text-white tracking-tight">
-              <span className="hidden sm:inline">
-                FrontendEngineers.com
-              </span>
-              <span className="sm:hidden">FrontendEng</span>
+              FrontendEngineers.com
             </span>
           </div>
-          <div className="flex items-center gap-2 sm:gap-3 relative">
+          <div className="flex items-center gap-2 sm:gap-3 relative shrink-0">
             {authLoading ? (
               <div className="w-20 h-8 skeleton rounded" />
             ) : user ? (
@@ -334,17 +334,16 @@ export default function JobsClientPage() {
                 {!isSubscribed && (
                   <Link
                     href="/pricing"
-                    className="btn-primary text-sm bg-[#00ffcc] text-black font-semibold rounded px-3 sm:px-4 py-1.5 hover:bg-[#00e6b8] flex items-center"
+                    className="btn-primary text-xs sm:text-sm bg-[#00ffcc] text-black font-semibold rounded px-3 sm:px-4 py-1.5 hover:bg-[#00e6b8] flex items-center shrink-0"
                   >
-                    <span className="hidden sm:inline">⚡ Get Early Access</span>
-                    <span className="sm:hidden">⚡ Early Access</span>
+                    <span>⚡ Get Early Access</span>
                   </Link>
                 )}
                 
-                <div className="flex items-center gap-2 sm:gap-3 bg-transparent sm:bg-[#1a1a2e]/50 sm:border sm:border-[#333] rounded-full sm:pl-3 sm:pr-1 sm:py-1">
+                <div className="flex items-center gap-1.5 sm:gap-3 bg-transparent sm:bg-[#1a1a2e]/50 sm:border sm:border-[#333] rounded-full sm:pl-3 sm:pr-1 sm:py-1">
                   {/* Pro Badge */}
                   {isSubscribed && (
-                    <span className="text-[10px] sm:text-xs bg-[#00ffcc] text-black px-2 sm:px-2 py-1 sm:py-0.5 rounded-md sm:rounded-full font-bold uppercase tracking-wider leading-none">
+                    <span className="text-[10px] sm:text-xs bg-[#00ffcc] text-black px-1.5 sm:px-2 py-0.5 sm:py-0.5 rounded-md sm:rounded-full font-bold uppercase tracking-wider leading-none">
                       Pro
                     </span>
                   )}
@@ -354,15 +353,10 @@ export default function JobsClientPage() {
                     {user.email}
                   </span>
 
-                  {/* Mobile: User Initial Avatar */}
-                  <div className="sm:hidden w-8 h-8 rounded-full bg-[#111] flex items-center justify-center text-xs font-bold text-[#00ffcc] border border-[#333]">
-                    {user.email ? user.email.charAt(0).toUpperCase() : "U"}
-                  </div>
-
                   {/* Log Out Button */}
                   <button 
                     onClick={handleLogout} 
-                    className="text-xs bg-[#111] sm:bg-[#333] text-gray-400 sm:text-white hover:bg-[#222] sm:hover:bg-[#444] hover:text-[#f43f5e] w-8 h-8 sm:w-auto sm:h-auto sm:px-3 sm:py-1.5 rounded-full sm:rounded-full transition-colors font-medium flex items-center justify-center border border-[#333] sm:border-none"
+                    className="text-xs bg-[#111] sm:bg-[#333] text-gray-400 sm:text-white hover:bg-[#222] sm:hover:bg-[#444] hover:text-[#f43f5e] w-8 h-8 sm:w-auto sm:h-auto sm:px-3 sm:py-1.5 rounded-full sm:rounded-full transition-colors font-medium flex items-center justify-center border border-[#333] sm:border-none shrink-0"
                     title="Log Out"
                   >
                     <svg className="w-4 h-4 sm:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
@@ -479,15 +473,23 @@ export default function JobsClientPage() {
                   ? Array.from({ length: 6 }).map((_, i) => (
                       <JobCardSkeleton key={i} />
                     ))
-                  : jobs.map((job, i) => {
-                      return (
+                  : jobs.map((job, index) => (
+                      <React.Fragment key={job.id}>
                         <JobCard
-                          key={job.id || i}
                           job={job}
-                          index={i}
+                          index={index}
                         />
-                      );
-                    })}
+                        {/* Inject an Ad every 5 jobs */}
+                        {(index + 1) % 5 === 0 && isAdsEnabled && !isSubscribed && (
+                          <div className="col-span-1 lg:col-span-2 my-2">
+                            <AdUnit 
+                              slotId={process.env.NEXT_PUBLIC_ADSENSE_FEED_SLOT || "IN_FEED_SLOT_ID"} 
+                              format="fluid" 
+                            />
+                          </div>
+                        )}
+                      </React.Fragment>
+                    ))}
               </div>
             </div>
 
