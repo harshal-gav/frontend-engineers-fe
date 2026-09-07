@@ -42,8 +42,7 @@ export default function LoginPage() {
           FE
         </div>
         <span className="text-base sm:text-lg font-bold text-white tracking-tight">
-          <span className="hidden sm:inline">FrontendEngineers.com</span>
-          <span className="sm:hidden">FrontendEng</span>
+          FrontendEngineers.com
         </span>
       </Link>
 

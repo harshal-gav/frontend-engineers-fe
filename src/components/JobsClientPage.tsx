@@ -318,19 +318,19 @@ export default function JobsClientPage() {
       {/* ─── Header ─────────────────────────── */}
       <header className="border-b border-[#333] bg-[#0a0a0a] sticky top-0 z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-col sm:flex-row items-center sm:justify-between gap-3 sm:gap-0">
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div className="flex items-center justify-center gap-2 sm:gap-3 max-w-full">
             <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-black font-bold text-xs sm:text-sm bg-[#00ffcc] shrink-0">
               FE
             </div>
-            <span className="text-base sm:text-lg font-bold text-white tracking-tight">
+            <span className="text-base sm:text-lg font-bold text-white tracking-tight truncate">
               FrontendEngineers.com
             </span>
           </div>
-          <div className="flex items-center gap-2 sm:gap-3 relative shrink-0">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 relative max-w-full">
             {authLoading ? (
               <div className="w-20 h-8 skeleton rounded" />
             ) : user ? (
-              <div className="flex items-center gap-3 sm:gap-4">
+              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
                 {!isSubscribed && (
                   <Link
                     href="/pricing"
@@ -356,11 +356,10 @@ export default function JobsClientPage() {
                   {/* Log Out Button */}
                   <button 
                     onClick={handleLogout} 
-                    className="text-xs bg-[#111] sm:bg-[#333] text-gray-400 sm:text-white hover:bg-[#222] sm:hover:bg-[#444] hover:text-[#f43f5e] w-8 h-8 sm:w-auto sm:h-auto sm:px-3 sm:py-1.5 rounded-full sm:rounded-full transition-colors font-medium flex items-center justify-center border border-[#333] sm:border-none shrink-0"
+                    className="text-xs bg-[#111] sm:bg-[#333] text-gray-400 sm:text-white hover:bg-[#222] sm:hover:bg-[#444] hover:text-[#f43f5e] px-3 py-1 sm:py-1.5 rounded-full transition-colors font-medium flex items-center justify-center border border-[#333] sm:border-none shrink-0"
                     title="Log Out"
                   >
-                    <svg className="w-4 h-4 sm:hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"></path></svg>
-                    <span className="hidden sm:inline">Log Out</span>
+                    Log Out
                   </button>
                 </div>
               </div>

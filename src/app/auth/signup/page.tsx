@@ -65,8 +65,7 @@ export default function SignupPage() {
           FE
         </div>
         <span className="text-base sm:text-lg font-bold text-white tracking-tight">
-          <span className="hidden sm:inline">FrontendEngineers.com</span>
-          <span className="sm:hidden">FrontendEng</span>
+          FrontendEngineers.com
         </span>
       </Link>
 
@@ -74,7 +73,7 @@ export default function SignupPage() {
       <div className="glass-card max-w-2xl w-full p-8 border-t-4 border-t-[#00ffcc] bg-[#111] rounded-2xl flex flex-col md:flex-row gap-8 items-center">
         
         <div className="flex-1 text-center md:text-left hidden md:block">
-          <h1 className="text-4xl font-extrabold text-white mb-4">Join <span className="text-[#00ffcc]">FrontendEng</span></h1>
+          <h1 className="text-4xl font-extrabold text-white mb-4">Join <span className="text-[#00ffcc]">FrontendEngineers.com</span></h1>
           <p className="text-gray-400">Create an account to unlock premium remote frontend and fullstack JavaScript jobs, and direct ATS links.</p>
         </div>
 
