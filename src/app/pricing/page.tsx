@@ -134,12 +134,13 @@ export default function PricingPage() {
       <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Unlock the Best Remote{" "}
-            <span className="text-[#00ffcc]">Frontend & JavaScript</span> Jobs
+            Get{" "}
+            <span className="text-[#00ffcc]">7-Day Early Access</span>{" "}
+            to New Jobs
           </h1>
           <p className="text-xl text-gray-400">
-            Save hours every week by getting only remote frontend jobs worth applying to. 
-            Stop sifting through irrelevant listings and find your next role today.
+            See new remote frontend jobs before everyone else. Fewer applicants means
+            easier interview calls. Get fresh jobs delivered to your inbox daily.
           </p>
         </div>
 
@@ -156,35 +157,35 @@ export default function PricingPage() {
                   <thead>
                     <tr>
                       <th></th>
-                      <th className="text-center">Free browsing elsewhere</th>
-                      <th className="text-center">FrontendEngineers Pro</th>
+                      <th className="text-center">Free</th>
+                      <th className="text-center">Pro (Early Access)</th>
                     </tr>
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Hybrid/onsite noise</td>
-                      <td className="muted-cell text-center">Mixed in</td>
-                      <td className="highlight-cell text-center">✓ Filtered out — remote only</td>
+                      <td>Job visibility</td>
+                      <td className="muted-cell text-center">After 7 days</td>
+                      <td className="highlight-cell text-center">✓ Immediately when posted</td>
                     </tr>
                     <tr>
-                      <td>Listing freshness</td>
-                      <td className="muted-cell text-center">Often stale/expired</td>
-                      <td className="highlight-cell text-center">✓ Verified + updated daily</td>
+                      <td>Daily email alerts</td>
+                      <td className="muted-cell text-center">❌</td>
+                      <td className="highlight-cell text-center">✓ Fresh jobs in your inbox</td>
                     </tr>
                     <tr>
-                      <td>Salary visibility</td>
-                      <td className="muted-cell text-center">Rarely shown</td>
-                      <td className="highlight-cell text-center">✓ Shown upfront</td>
+                      <td>Applicant competition</td>
+                      <td className="muted-cell text-center">High (100s of applicants)</td>
+                      <td className="highlight-cell text-center">✓ Low — be among the first 10</td>
                     </tr>
                     <tr>
-                      <td>Apply links</td>
-                      <td className="muted-cell text-center">Sometimes broken</td>
-                      <td className="highlight-cell text-center">✓ Direct, verified links</td>
+                      <td>Salary & apply links</td>
+                      <td className="muted-cell text-center">✓ Visible</td>
+                      <td className="highlight-cell text-center">✓ Visible</td>
                     </tr>
                     <tr>
-                      <td>Focus</td>
-                      <td className="muted-cell text-center">General tech jobs</td>
-                      <td className="highlight-cell text-center">✓ Frontend / JS / TS only</td>
+                      <td>Filters & search</td>
+                      <td className="muted-cell text-center">✓ Available</td>
+                      <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                   </tbody>
                 </table>
@@ -265,31 +266,31 @@ export default function PricingPage() {
                   <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Unlimited access to all premium remote jobs</span>
+                  <span>See new jobs <strong>7 days before</strong> everyone else</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Direct apply links to company ATS</span>
+                  <span>Daily email alerts with fresh jobs in your inbox</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Frontend-only + Remote-only</span>
+                  <span>Fewer applicants = easier to get interview calls</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Verified + Fresh listings</span>
+                  <span>Apply before the crowd — be among the first 10</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Useful filters & search</span>
+                  <span>100% remote, frontend-only, curated daily</span>
                 </li>
               </ul>
 
@@ -301,7 +302,7 @@ export default function PricingPage() {
                     onClick={() => router.push("/auth/signup?redirect=/pricing")}
                     className="w-full btn-primary py-3 rounded text-black bg-[#00ffcc] font-bold text-lg"
                   >
-                    Unlock full listings with $9/mo
+                    ⚡ Get Early Access for $9/mo
                   </button>
                 ) : (
                   <div className="flex flex-col gap-4">
@@ -364,7 +365,7 @@ export default function PricingPage() {
                   onClick={() => router.push("/")}
                   className="w-full text-gray-400 hover:text-white py-3 transition-colors underline mt-4"
                 >
-                  See today&apos;s jobs free
+                  Browse free jobs (7-day delay)
                 </button>
               </div>
             </div>

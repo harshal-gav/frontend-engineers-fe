@@ -1,7 +1,6 @@
 "use client";
 
 import Link from "next/link";
-import { useAuth } from "@/context/AuthContext";
 import { formatSalary, type Job } from "@/lib/jobs";
 
 // ─── Config ──────────────────────────────────────────────
@@ -31,14 +30,11 @@ const LOGO_GRADIENTS = [
 
 interface JobDetailProps {
   job: Job;
-  /** Server-rendered premium status — if false, show paywall */
+  /** Server-rendered premium status — used to show early access badge */
   isPremium: boolean;
 }
 
 export default function JobDetail({ job, isPremium }: JobDetailProps) {
-  const { isSubscribed } = useAuth();
-  const canAccess = isSubscribed || isPremium || !!job.isFree;
-
   const remote = REMOTE_CONFIG[job.remoteType] || REMOTE_CONFIG.REMOTE;
   const level = job.experienceLevel
     ? LEVEL_CONFIG[job.experienceLevel]
@@ -85,7 +81,7 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
                 : LOGO_GRADIENTS[gradientIndex],
             }}
           >
-            {canAccess && job.company?.logoUrl ? (
+            {job.company?.logoUrl ? (
               <img
                 src={job.company.logoUrl}
                 alt={`${job.company.name || 'Company'} logo`}
@@ -105,9 +101,16 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
           </div>
 
           <div className="flex-1 min-w-0">
-            <h1 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight mb-1">
-              {job.title}
-            </h1>
+            <div className="flex items-center gap-2 flex-wrap mb-1">
+              <h1 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight">
+                {job.title}
+              </h1>
+              {job.isEarlyAccess && (
+                <span className="text-xs bg-[#00ffcc]/15 text-[#00ffcc] px-2.5 py-1 rounded-full font-semibold border border-[#00ffcc]/30 whitespace-nowrap">
+                  ⚡ Early Access
+                </span>
+              )}
+            </div>
             <p className="text-base sm:text-lg text-[var(--text-secondary)]">
             {job.company?.name}
             {job.company?.industry && (
@@ -140,23 +143,16 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
             .toLowerCase()
             .replace(/^\w/, (c) => c.toUpperCase())}
         </span>
-        {!canAccess ? (
-          <span
-            className="locked-field text-sm text-[var(--text-muted)]"
-            aria-label="Location locked"
-          >
-            📍 New York, US
-          </span>
-        ) : job.location ? (
+        {job.location && (
           <span className="text-sm text-[var(--text-muted)]">
             📍 {job.city || job.location}
             {job.country ? `, ${job.country}` : ""}
           </span>
-        ) : null}
+        )}
       </div>
 
       {/* Salary */}
-      {canAccess && salary ? (
+      {salary && (
         <div className="glass-card p-4 sm:p-5 mb-6">
           <div className="text-sm font-medium text-[var(--text-muted)] mb-1">
             Salary Range
@@ -165,84 +161,33 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
             {salary}
           </div>
         </div>
-      ) : !canAccess ? (
-        <div className="glass-card p-4 sm:p-5 mb-6 relative overflow-hidden">
-          <div className="text-sm font-medium text-[var(--text-muted)] mb-1">
-            Salary Range
-          </div>
-          <div className="salary-text text-lg sm:text-xl font-bold">
-            $XXK – $XXXK/year
-          </div>
-          <div className="absolute inset-0 flex items-center justify-center bg-[var(--bg-primary)]/50">
-            <span className="text-sm font-medium text-[var(--accent-secondary)]">
-              🔒 Premium only
-            </span>
-          </div>
-        </div>
-      ) : null}
+      )}
 
       {/* Description */}
       <div className="mb-8">
         <h2 className="text-lg font-semibold mb-3">Job Description</h2>
-        {canAccess ? (
-          <div className="prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap">
-            {job.description || "No description available."}
-          </div>
-        ) : (
-          <div className="relative">
-            <div className="text-[var(--text-secondary)] leading-relaxed blur-[6px] select-none whitespace-pre-wrap">
-              {(job.description || "This is a premium job listing with detailed description about the role, responsibilities, and requirements. Subscribe to see the full details and apply directly.").substring(
-                0,
-                300
-              )}
-              ...
-            </div>
-            {/* Paywall overlay */}
-            <div className="mt-6 text-center p-6 sm:p-8 glass-card border border-[var(--border-subtle)] rounded-2xl">
-              <div className="text-3xl mb-3">🔒</div>
-              <h3 className="text-xl font-bold mb-2">
-                Unlock Full Job Details
-              </h3>
-              <p className="text-sm text-[var(--text-secondary)] mb-5 max-w-md mx-auto">
-                Subscribe to see the full description, salary details, and apply directly.
-              </p>
-                <Link
-                  href="/pricing"
-                  className="btn-primary inline-flex items-center justify-center min-h-[48px] px-8 text-base"
-                >
-                  Unlock full listings with $9/mo
-                </Link>
-            </div>
-          </div>
-        )}
+        <div className="prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap">
+          {job.description || "No description available."}
+        </div>
       </div>
 
-      {/* Desktop Apply Button */}
-      {(job.applyUrl || !canAccess) && (
+      {/* Apply Button */}
+      {job.applyUrl && (
         <div className="hidden sm:block">
-          {canAccess ? (
-            <a
-              href={job.applyUrl!}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary inline-flex min-h-[48px] px-8 text-base"
-            >
-              Apply Now →
-            </a>
-          ) : (
-            <Link
-              href="/pricing"
-              className="btn-primary inline-flex min-h-[48px] px-8 text-base bg-gradient-to-r from-[#00ffcc] to-[#00ccaa] text-black shadow-[0_0_15px_rgba(0,255,204,0.3)] hover:scale-105 transition-all"
-            >
-              <span className="mr-2">🔒</span> Unlock full listings with $9/mo
-            </Link>
-          )}
+          <a
+            href={job.applyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn-primary inline-flex min-h-[48px] px-8 text-base"
+          >
+            Apply Now →
+          </a>
         </div>
       )}
     </main>
 
       {/* ─── Mobile Sticky Apply CTA ─────────────── */}
-      {canAccess && job.applyUrl && (
+      {job.applyUrl && (
         <div
           className="fixed bottom-0 left-0 right-0 sm:hidden z-30 border-t border-[var(--border-card)]"
           style={{
@@ -259,26 +204,6 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
             >
               Apply Now →
             </a>
-          </div>
-        </div>
-      )}
-
-      {/* Mobile paywall CTA if not premium */}
-      {!canAccess && (
-        <div
-          className="fixed bottom-0 left-0 right-0 sm:hidden z-30 border-t border-[var(--border-card)]"
-          style={{
-            background: "var(--bg-primary)",
-            paddingBottom: "env(safe-area-inset-bottom, 0px)",
-          }}
-        >
-          <div className="px-4 py-3">
-            <Link
-              href="/pricing"
-              className="btn-primary w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center bg-gradient-to-r from-[#00ffcc] to-[#00ccaa] text-black shadow-[0_0_15px_rgba(0,255,204,0.3)]"
-            >
-              🔒 <span className="ml-1">Unlock full listings with $9/mo</span>
-            </Link>
           </div>
         </div>
       )}

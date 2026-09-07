@@ -136,51 +136,27 @@ export function isTopTierJob(job: Job): boolean {
  * Deduplicates, pushes no-logo jobs to bottom, and spaces out same-company listings.
  * This is a server-side only function.
  */
-export function loadJobsFromFile(options?: { includeDead?: boolean }): Job[] {
+export function loadJobsFromFile(): Job[] {
   const jobsPath = path.join(process.cwd(), "data", "jobs.json");
   if (!fs.existsSync(jobsPath)) return [];
 
   const raw = fs.readFileSync(jobsPath, "utf-8");
   const rawJobs: Job[] = JSON.parse(raw);
 
-  // 1. Filter + aggressive deduplication using normalized titles
-  const seenDuplicates = new Set<string>();
+  // Include all jobs, enrich with slug
   const validJobs = rawJobs
-    .filter((job) => {
-      if (job.isDead && !options?.includeDead) return false;
-
-      const isRemote =
-        job.remoteType === "REMOTE" ||
-        (job.location && /remote|anywhere/i.test(job.location));
-
-      const isRelevant =
-        /\b(frontend|front-end|react|vue|angular|ui|ux|web|software|engineer|developer)\b/i.test(
-          job.title
-        ) ||
-        (job.description &&
-          /\b(frontend|front-end|react|vue|angular|software)\b/i.test(
-            job.description
-          ));
-
-      if (!isRemote || !isRelevant) return false;
-
-      // Aggressive duplicate check: normalized title + company
-      const normTitle = normalizeTitle(job.title);
-      const companyName = (job.company?.name || "").toLowerCase().trim();
-      const dupKey = `${normTitle}||${companyName}`;
-      if (seenDuplicates.has(dupKey)) return false;
-      seenDuplicates.add(dupKey);
-
-      return true;
-    })
     .map((job) => ({
       ...job,
       slug: generateSlug(job),
       isCareerUrl: (job.applyUrl || "").toLowerCase().includes("career"),
     }));
 
-  // Sort by frontend title, then recently added
+  // Sort: frontend titles first, then by date, dead jobs at the end
   validJobs.sort((a, b) => {
+    // Dead jobs go to the bottom
+    if (a.isDead && !b.isDead) return 1;
+    if (!a.isDead && b.isDead) return -1;
+
     const aFrontend = a.title.toLowerCase().includes("frontend");
     const bFrontend = b.title.toLowerCase().includes("frontend");
     
@@ -206,12 +182,15 @@ export function loadJobsFromFile(options?: { includeDead?: boolean }): Job[] {
 
   const finalJobs = spaceOutCompanies([...spacedCareer, ...spacedOther], 6);
   
-  // Make the top 12 jobs free for everyone
-  return finalJobs.map((job, index) => {
-    if (index < 12) {
-      return { ...job, isFree: true };
-    }
-    return job;
-  });
+  // Mark jobs posted within the early-access window (7 days)
+  const earlyAccessCutoff = getEarlyAccessCutoff();
+  return finalJobs.map((job) => ({
+    ...job,
+    isEarlyAccess: job.postedAt ? new Date(job.postedAt) > earlyAccessCutoff : false,
+  }));
 }
 
+/** Returns the Date that marks the boundary of the early-access window (7 days ago). */
+export function getEarlyAccessCutoff(): Date {
+  return new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
+}

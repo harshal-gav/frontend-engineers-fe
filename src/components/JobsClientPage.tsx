@@ -336,8 +336,8 @@ export default function JobsClientPage() {
                     href="/pricing"
                     className="btn-primary text-sm bg-[#00ffcc] text-black font-semibold rounded px-3 sm:px-4 py-1.5 hover:bg-[#00e6b8] flex items-center"
                   >
-                    <span className="hidden sm:inline">Get Pro Membership</span>
-                    <span className="sm:hidden">Get Pro</span>
+                    <span className="hidden sm:inline">⚡ Get Early Access</span>
+                    <span className="sm:hidden">⚡ Early Access</span>
                   </Link>
                 )}
                 
@@ -382,7 +382,7 @@ export default function JobsClientPage() {
                   href="/pricing"
                   className="btn-primary text-sm bg-[#00ffcc] text-black font-semibold rounded px-3 sm:px-4 py-2 hover:bg-[#00e6b8] min-h-[44px] flex items-center"
                 >
-                  Get Pro
+                  ⚡ Early Access
                 </Link>
               </>
             )}
@@ -400,7 +400,7 @@ export default function JobsClientPage() {
             </span>
           </h1>
           <p className="text-base sm:text-lg max-w-2xl mx-auto mb-6 sm:mb-8 text-gray-400">
-            No other platform gives you this amount of remote frontend jobs at one place. Discover curated premium 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers.
+            Curated 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers. Pro members get 7-day early access + email alerts — apply before the crowd.
           </p>
 
         {/* Search Bar */}
@@ -423,17 +423,15 @@ export default function JobsClientPage() {
       <main className="max-w-7xl mx-auto px-4 sm:px-6 pb-16 flex-1 bg-[#0a0a0a]">
         <div className="flex gap-6">
           {/* Desktop Sidebar — hidden on mobile */}
-          {isSubscribed && (
-            <aside className="hidden md:block w-72 lg:w-80 flex-shrink-0">
-              <div className="filter-sidebar">
-                <FilterSidebar
-                  filters={filters}
-                  facets={facets}
-                  onFilterChange={handleFilterChange}
-                />
-              </div>
-            </aside>
-          )}
+          <aside className="hidden md:block w-72 lg:w-80 flex-shrink-0">
+            <div className="filter-sidebar">
+              <FilterSidebar
+                filters={filters}
+                facets={facets}
+                onFilterChange={handleFilterChange}
+              />
+            </div>
+          </aside>
 
           {/* Results */}
           <div className="flex-1 min-w-0">
@@ -444,36 +442,34 @@ export default function JobsClientPage() {
                 ) : (
                   <>
                     <span className="font-semibold text-[#00ffcc]">
-                      10,000+
+                      {totalJobs.toLocaleString()}
                     </span>{" "}
                     jobs found
                   </>
                 )}
               </p>
               {/* Mobile: Filter toggle button */}
-              {isSubscribed && (
-                <button
-                  onClick={() => setShowFilters(true)}
-                  className="md:hidden btn-secondary inline-flex items-center gap-2 min-h-[40px] px-3 text-sm"
+              <button
+                onClick={() => setShowFilters(true)}
+                className="md:hidden btn-secondary inline-flex items-center gap-2 min-h-[40px] px-3 text-sm"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                 >
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
-                  </svg>
-                  Filters
-                  {activeFilterCount > 0 && (
-                    <span className="bg-[#00ffcc] text-black text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-                      {activeFilterCount}
-                    </span>
-                  )}
-                </button>
-              )}
+                  <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
+                </svg>
+                Filters
+                {activeFilterCount > 0 && (
+                  <span className="bg-[#00ffcc] text-black text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                    {activeFilterCount}
+                  </span>
+                )}
+              </button>
             </div>
 
             {/* Job Cards — responsive grid */}

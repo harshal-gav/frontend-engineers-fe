@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
 import { getAdminAuth, getAdminDb } from "@/lib/firebase-admin";
-import { maskJobForTeaser } from "@/lib/jobs";
-import { loadJobsFromFile, isTopTierJob } from "@/lib/jobs.server";
+import { loadJobsFromFile } from "@/lib/jobs.server";
 
 export async function GET(request: Request) {
   try {
@@ -41,13 +40,12 @@ export async function GET(request: Request) {
       return NextResponse.json([]);
     }
 
-    // MASKING: non-premium users get ALL jobs, but every single job has its applyUrl removed.
+    // EARLY ACCESS MODEL:
+    // - Premium users see ALL jobs (including fresh ones posted within the last 7 days).
+    // - Free users only see jobs older than 7 days. All jobs are fully visible (no masking).
     if (!isPremium) {
-      const maskedJobs = jobs.map((job) => {
-        if (job.isFree) return job;
-        return maskJobForTeaser(job);
-      });
-      return NextResponse.json(maskedJobs);
+      const publicJobs = jobs.filter((job) => !job.isEarlyAccess);
+      return NextResponse.json(publicJobs);
     }
 
     return NextResponse.json(jobs);

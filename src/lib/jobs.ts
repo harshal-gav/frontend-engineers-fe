@@ -34,6 +34,8 @@ export interface Job {
   slug?: string;
   isCareerUrl?: boolean;
   isFree?: boolean;
+  /** True if this job was posted within the early-access window (7 days) */
+  isEarlyAccess?: boolean;
 }
 
 /**

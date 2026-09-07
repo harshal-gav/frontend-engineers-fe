@@ -50,8 +50,6 @@ function extractTechStack(title: string, description: string | null): string[] {
   return found;
 }
 
-import { useAuth } from "@/context/AuthContext";
-
 // ─── Component ───────────────────────────────────────────
 
 interface JobCardProps {
@@ -63,8 +61,6 @@ export default function JobCard({
   job,
   index = 0,
 }: JobCardProps) {
-  const { isSubscribed } = useAuth();
-  
   const remote = REMOTE_CONFIG[job.remoteType] || REMOTE_CONFIG.REMOTE;
   const level = job.experienceLevel
     ? LEVEL_CONFIG[job.experienceLevel]
@@ -147,13 +143,20 @@ export default function JobCard({
                 )}
               </p>
             </div>
-            {/* Posted date */}
-            <span
-              className="text-xs whitespace-nowrap flex-shrink-0"
-              style={{ color: "var(--text-muted)" }}
-            >
-              {postedDate}
-            </span>
+            {/* Posted date + Early Access badge */}
+            <div className="flex items-center gap-2 flex-shrink-0">
+              {job.isEarlyAccess && (
+                <span className="text-[10px] sm:text-xs bg-[#00ffcc]/15 text-[#00ffcc] px-2 py-0.5 rounded-full font-semibold whitespace-nowrap border border-[#00ffcc]/30">
+                  ⚡ Early Access
+                </span>
+              )}
+              <span
+                className="text-xs whitespace-nowrap"
+                style={{ color: "var(--text-muted)" }}
+              >
+                {postedDate}
+              </span>
+            </div>
           </div>
 
           {/* Badges row */}
@@ -178,15 +181,7 @@ export default function JobCard({
               </span>
             )}
 
-            {!isSubscribed && !job.isFree ? (
-              <span
-                className="locked-field text-xs"
-                style={{ color: "var(--text-muted)" }}
-                aria-label="Location locked"
-              >
-                📍 New York, US
-              </span>
-            ) : job.location ? (
+            {job.location && (
               <span
                 className="text-xs"
                 style={{ color: "var(--text-muted)" }}
@@ -195,7 +190,7 @@ export default function JobCard({
                 {job.city || job.location}
                 {job.country ? `, ${job.country}` : ""}
               </span>
-            ) : null}
+            )}
           </div>
 
           {/* Tech stack tags */}
@@ -211,23 +206,8 @@ export default function JobCard({
 
           {/* Salary + Employment type */}
           <div className="flex items-center gap-3 mt-2.5 sm:mt-3">
-            {!isSubscribed && !job.isFree ? (
-              <div className="flex items-center gap-2">
-                <span
-                  className="locked-field salary-text text-sm"
-                  role="img"
-                  aria-label="Salary range — locked, unlock with Pro membership"
-                >
-                  $120K – $180K
-                </span>
-                <span className="locked-overlay">
-                  🔒 Unlock with Pro
-                </span>
-              </div>
-            ) : (
-              salary && (
-                <span className="salary-text text-sm">{salary}</span>
-              )
+            {salary && (
+              <span className="salary-text text-sm">{salary}</span>
             )}
             <span
               className="text-xs"
@@ -242,28 +222,12 @@ export default function JobCard({
 
           {/* Description preview */}
           {job.description && (
-            !isSubscribed && !job.isFree ? (
-              <div className="flex items-center gap-2 mt-auto pt-2">
-                <p
-                  className="locked-field text-xs line-clamp-2 leading-relaxed flex-1"
-                  style={{ color: "var(--text-muted)" }}
-                  role="img"
-                  aria-label="Job description — locked, unlock with Pro membership"
-                >
-                  {job.description.substring(0, 150)}
-                </p>
-                <span className="locked-overlay flex-shrink-0">
-                  🔒 Unlock
-                </span>
-              </div>
-            ) : (
-              <p
-                className="text-xs mt-auto pt-2 line-clamp-2 leading-relaxed"
-                style={{ color: "var(--text-muted)" }}
-              >
-                {job.description}
-              </p>
-            )
+            <p
+              className="text-xs mt-auto pt-2 line-clamp-2 leading-relaxed"
+              style={{ color: "var(--text-muted)" }}
+            >
+              {job.description}
+            </p>
           )}
         </div>
       </div>
