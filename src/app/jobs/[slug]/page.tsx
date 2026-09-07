@@ -21,7 +21,7 @@ export async function generateMetadata({
   params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
   const { slug } = await params;
-  const jobs = loadJobsFromFile({ includeDead: true });
+  const jobs = loadJobsFromFile();
   const job = jobs.find((j) => j.slug === slug || j.id === slug);
 
   if (!job) {
@@ -69,7 +69,7 @@ export default async function JobDetailPage({
   params: Promise<{ slug: string }>;
 }) {
   const { slug } = await params;
-  const jobs = loadJobsFromFile({ includeDead: true });
+  const jobs = loadJobsFromFile();
   const job = jobs.find((j) => j.slug === slug || j.id === slug);
 
   if (!job) {
