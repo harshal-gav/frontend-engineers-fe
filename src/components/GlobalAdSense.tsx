@@ -1,15 +1,13 @@
 "use client";
 
-import { useAuth } from "@/context/AuthContext";
 import Script from "next/script";
 
 export default function GlobalAdSense() {
-  const { isSubscribed, loading } = useAuth();
   const pubId = process.env.NEXT_PUBLIC_ADSENSE_PUB_ID;
 
-  // Do not render AdSense scripts for Pro members or if Publisher ID is missing
-  // We MUST render this script even if ADS_ENABLED is false so Google can verify the site!
-  if (loading || isSubscribed || !pubId) return null;
+  // We MUST render this script unconditionally so Google's crawler can see it in the raw HTML.
+  // Pro users are protected from ads because the inner AdUnits (in JobsClientPage/JobDetail) are hidden via auth checks.
+  if (!pubId) return null;
 
   return (
     <Script
