@@ -151,26 +151,17 @@ export function loadJobsFromFile(): Job[] {
       isCareerUrl: (job.applyUrl || "").toLowerCase().includes("career"),
     }));
 
-  const TOP_COMPANIES = [
-    "google", "meta", "facebook", "amazon", "apple", "netflix", "microsoft", 
-    "ibm", "spotify", "stripe", "airbnb", "uber", "lyft", "atlassian", 
-    "coinbase", "shopify", "discord", "vercel", "netlify", "cloudflare", 
-    "github", "gitlab", "reddit", "zoom", "canva", "figma", "notion", 
-    "slack", "salesforce", "adobe", "oracle", "cisco", "linkedin", "snap", 
-    "pinterest", "tiktok", "bytedance", "doordash", "instacart", "databricks"
-  ];
-
-  // Sort: Top companies first, then frontend titles, then by date, dead jobs at the end
+  // Sort: Jobs with logos first, then frontend titles, then by date, dead jobs at the end
   validJobs.sort((a, b) => {
     // Dead jobs go to the bottom
     if (a.isDead && !b.isDead) return 1;
     if (!a.isDead && b.isDead) return -1;
 
-    const aTop = TOP_COMPANIES.some(tc => (a.company?.name || "").toLowerCase().includes(tc));
-    const bTop = TOP_COMPANIES.some(tc => (b.company?.name || "").toLowerCase().includes(tc));
+    const aHasLogo = !!a.company?.logoUrl;
+    const bHasLogo = !!b.company?.logoUrl;
 
-    if (aTop && !bTop) return -1;
-    if (!aTop && bTop) return 1;
+    if (aHasLogo && !bHasLogo) return -1;
+    if (!aHasLogo && bHasLogo) return 1;
 
     const aFrontend = a.title.toLowerCase().includes("frontend");
     const bFrontend = b.title.toLowerCase().includes("frontend");
