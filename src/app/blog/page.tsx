@@ -18,20 +18,20 @@ export default function BlogIndex() {
   ];
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-gray-300 py-16 px-4">
+    <div className="min-h-screen bg-white text-gray-600 py-16 px-4">
       <div className="max-w-4xl mx-auto">
-        <h1 className="text-4xl font-bold mb-6 text-white">Frontend Engineering Blog</h1>
-        <p className="mb-12 text-gray-400">Guides, tips, and insights on remote frontend engineering, interviewing, and career growth.</p>
+        <h1 className="text-4xl font-bold mb-6 text-gray-900">Frontend Engineering Blog</h1>
+        <p className="mb-12 text-gray-500">Guides, tips, and insights on remote frontend engineering, interviewing, and career growth.</p>
         
         <div className="space-y-8">
           {posts.map(post => (
-            <article key={post.slug} className="border-b border-[#333] pb-8">
+            <article key={post.slug} className="border-b border-[#e2e2e6] pb-8">
               <Link href={`/blog/${post.slug}`} className="block group">
-                <h2 className="text-2xl font-bold text-white group-hover:text-[#00ffcc] transition-colors mb-2">
+                <h2 className="text-2xl font-bold text-gray-900 group-hover:text-[#2563eb] transition-colors mb-2">
                   {post.title}
                 </h2>
                 <time className="text-sm text-gray-500 mb-3 block">{post.date}</time>
-                <p className="text-gray-400">{post.excerpt}</p>
+                <p className="text-gray-500">{post.excerpt}</p>
               </Link>
             </article>
           ))}

@@ -130,15 +130,14 @@ export default function PricingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-white py-20 px-4">
+    <div className="min-h-screen bg-white text-gray-900 py-20 px-4">
       <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">
-            Get{" "}
-            <span className="text-[#00ffcc]">7-Day Early Access</span>{" "}
-            to New Jobs
+            <span className="text-[#2563eb]">Pro Membership</span>{" "}
+            for New Jobs
           </h1>
-          <p className="text-xl text-gray-400">
+          <p className="text-xl text-gray-500">
             See new remote frontend jobs before everyone else. Fewer applicants means
             easier interview calls. Get fresh jobs delivered to your inbox daily.
           </p>
@@ -158,7 +157,7 @@ export default function PricingPage() {
                     <tr>
                       <th></th>
                       <th className="text-center">Free</th>
-                      <th className="text-center">Pro (Early Access)</th>
+                      <th className="text-center">Pro Membership</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -220,17 +219,17 @@ export default function PricingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {TESTIMONIALS.map((t, i) => (
                   <div key={i} className="glass-card p-5 text-left">
-                    <p className="text-sm text-gray-300 mb-3 leading-relaxed">"{t.quote}"</p>
+                    <p className="text-sm text-gray-600 mb-3 leading-relaxed">"{t.quote}"</p>
                     <div className="flex items-center gap-2">
                       {t.avatar ? (
                         <img src={t.avatar} alt={t.name} className="w-8 h-8 rounded-full object-cover" />
                       ) : (
-                        <div className="w-8 h-8 rounded-full bg-[#111] flex items-center justify-center text-xs font-bold text-[#00ffcc] border border-[#333]">
+                        <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-xs font-bold text-[#2563eb] border border-[#e2e2e6]">
                           {t.name[0]}
                         </div>
                       )}
                       <div>
-                        <div className="text-sm font-semibold text-white">{t.name}</div>
+                        <div className="text-sm font-semibold text-gray-900">{t.name}</div>
                         <div className="text-xs text-gray-500">{t.role}</div>
                       </div>
                     </div>
@@ -243,19 +242,19 @@ export default function PricingPage() {
 
           {/* ─── Right Column (Pricing Card) ──────────────── */}
           {/* Order 1 on mobile (top of the page), Order 2 on desktop (right side) */}
-          <div className="w-full lg:w-[420px] shrink-0 order-1 lg:order-2">
-            <div className="glass-card p-8 border border-[#333] bg-[#111] rounded-2xl">
-              <div className="text-[#00ffcc] font-semibold tracking-wider uppercase mb-2 text-center">
+          <div className="w-full lg:w-[420px] shrink-0 order-1 lg:order-2 lg:sticky lg:top-24">
+            <div className="glass-card p-6 lg:p-7 border border-[#e2e2e6] bg-white rounded-2xl">
+              <div className="text-[#2563eb] font-semibold tracking-wider uppercase mb-2 text-center">
                 Pro Membership
               </div>
               <div className="flex flex-col items-center mb-2">
                 <div className="flex items-end justify-center gap-1">
-                  <span className="text-5xl font-bold text-white">$9</span>
-                  <span className="text-gray-400 mb-1">/month</span>
+                  <span className="text-5xl font-bold text-gray-900">$9</span>
+                  <span className="text-gray-500 mb-1">/month</span>
                 </div>
 
                 {localPrice && (
-                  <div className="text-sm text-[#00ffcc] mt-3 font-medium bg-[#00ffcc]/10 px-3 py-1 rounded-full">
+                  <div className="text-sm text-[#2563eb] mt-3 font-medium bg-[#2563eb]/10 px-3 py-1 rounded-full">
                     {localPrice} /month
                   </div>
                 )}
@@ -266,39 +265,39 @@ export default function PricingPage() {
                 Cancel anytime — no commitments.
               </p>
 
-              <ul className="mb-8 space-y-4 text-left">
+              <ul className="mb-6 space-y-3 text-left text-sm lg:text-base">
                 <li className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <span>See new jobs <strong>7 days before</strong> everyone else</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <span>Daily email alerts with fresh jobs in your inbox</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <span>Fewer applicants = easier to get interview calls</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <span>Apply before the crowd — be among the first 10</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <span>100% remote, frontend-only, curated daily</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <svg className="w-5 h-5 text-[#00ffcc] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
                   <span>100% Ad-free experience</span>
@@ -311,9 +310,9 @@ export default function PricingPage() {
                 {!user ? (
                   <button
                     onClick={() => router.push("/auth/signup?redirect=/pricing")}
-                    className="w-full btn-primary py-3 rounded text-black bg-[#00ffcc] font-bold text-lg"
+                    className="w-full btn-primary py-3 rounded text-white bg-[#2563eb] font-bold text-lg"
                   >
-                    ⚡ Get Early Access for $9/mo
+                    ⭐ Get Pro Membership for $9/mo
                   </button>
                 ) : (
                   <div className="flex flex-col gap-4">
@@ -351,14 +350,14 @@ export default function PricingPage() {
                     </div>
                     
                     <div className="relative flex py-2 items-center">
-                      <div className="flex-grow border-t border-[#333]"></div>
+                      <div className="flex-grow border-t border-[#e2e2e6]"></div>
                       <span className="flex-shrink-0 mx-4 text-gray-500 text-sm">OR</span>
-                      <div className="flex-grow border-t border-[#333]"></div>
+                      <div className="flex-grow border-t border-[#e2e2e6]"></div>
                     </div>
 
                     <button
                       onClick={handlePayUSubscription}
-                      className="w-full py-3 rounded text-white bg-[#10b981] font-bold text-lg hover:bg-[#059669] transition-colors flex items-center justify-center gap-2"
+                      className="w-full py-3 rounded text-gray-900 bg-[#10b981] font-bold text-lg hover:bg-[#059669] transition-colors flex items-center justify-center gap-2"
                     >
                       Payment for Indian Users (UPI / Cards)
                     </button>
@@ -367,14 +366,14 @@ export default function PricingPage() {
                 
                 {user && (
                   <div className="mt-4 text-xs text-gray-500 text-center leading-relaxed">
-                    By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#00ffcc] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#00ffcc] hover:underline">Privacy Policy</Link>. 
+                    By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#2563eb] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#2563eb] hover:underline">Privacy Policy</Link>. 
                     Your subscription renews automatically at $9/month until cancelled.
                   </div>
                 )}
 
                 <button
                   onClick={() => router.push("/")}
-                  className="w-full text-gray-400 hover:text-white py-3 transition-colors underline mt-4"
+                  className="w-full text-gray-500 hover:text-gray-900 py-3 transition-colors underline mt-4"
                 >
                   Browse free jobs (7-day delay)
                 </button>

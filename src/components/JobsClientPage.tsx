@@ -316,13 +316,13 @@ export default function JobsClientPage() {
   return (
     <>
       {/* ─── Header ─────────────────────────── */}
-      <header className="border-b border-[#333] bg-[#0a0a0a] sticky top-0 z-20">
+      <header className="border-b border-[#e2e2e6] bg-white sticky top-0 z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-col sm:flex-row items-center sm:justify-between gap-3 sm:gap-0">
           <div className="flex items-center justify-center gap-2 sm:gap-3 max-w-full">
-            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-black font-bold text-xs sm:text-sm bg-[#00ffcc] shrink-0">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-white font-bold text-xs sm:text-sm bg-[#2563eb] shrink-0">
               FE
             </div>
-            <span className="text-base sm:text-lg font-bold text-white tracking-tight truncate">
+            <span className="text-base sm:text-lg font-bold text-gray-900 tracking-tight truncate">
               FrontendEngineers.com
             </span>
           </div>
@@ -334,29 +334,29 @@ export default function JobsClientPage() {
                 {!isSubscribed && (
                   <Link
                     href="/pricing"
-                    className="btn-primary text-xs sm:text-sm bg-[#00ffcc] text-black font-semibold rounded px-3 sm:px-4 py-1.5 hover:bg-[#00e6b8] flex items-center shrink-0"
+                    className="btn-primary text-xs sm:text-sm bg-[#2563eb] text-white font-semibold rounded px-3 sm:px-4 py-1.5 hover:bg-[#3b82f6] flex items-center shrink-0"
                   >
-                    <span>⚡ Get Early Access</span>
+                    <span>⭐ Get Pro Membership</span>
                   </Link>
                 )}
                 
-                <div className="flex items-center gap-1.5 sm:gap-3 bg-transparent sm:bg-[#1a1a2e]/50 sm:border sm:border-[#333] rounded-full sm:pl-3 sm:pr-1 sm:py-1">
+                <div className="flex items-center gap-1.5 sm:gap-3 bg-transparent sm:bg-white/50 sm:border sm:border-[#e2e2e6] rounded-full sm:pl-3 sm:pr-1 sm:py-1">
                   {/* Pro Badge */}
                   {isSubscribed && (
-                    <span className="text-[10px] sm:text-xs bg-[#00ffcc] text-black px-1.5 sm:px-2 py-0.5 sm:py-0.5 rounded-md sm:rounded-full font-bold uppercase tracking-wider leading-none">
+                    <span className="text-[10px] sm:text-xs bg-[#d97706] text-black px-1.5 sm:px-2 py-0.5 sm:py-0.5 rounded-md sm:rounded-full font-bold uppercase tracking-wider leading-none">
                       Pro
                     </span>
                   )}
                   
                   {/* Desktop: Email text */}
-                  <span className="hidden sm:block text-sm font-semibold text-white max-w-[150px] truncate" title={user.email || ""}>
+                  <span className="hidden sm:block text-sm font-semibold text-gray-900 max-w-[150px] truncate" title={user.email || ""}>
                     {user.email}
                   </span>
 
                   {/* Log Out Button */}
                   <button 
                     onClick={handleLogout} 
-                    className="text-xs bg-[#111] sm:bg-[#333] text-gray-400 sm:text-white hover:bg-[#222] sm:hover:bg-[#444] hover:text-[#f43f5e] px-3 py-1 sm:py-1.5 rounded-full transition-colors font-medium flex items-center justify-center border border-[#333] sm:border-none shrink-0"
+                    className="text-xs bg-white text-gray-500 hover:bg-[#f5f5f7] hover:text-[#e11d48] px-3 py-1 sm:py-1.5 rounded-full transition-colors font-medium flex items-center justify-center border border-[#e2e2e6] shrink-0"
                     title="Log Out"
                   >
                     Log Out
@@ -367,15 +367,15 @@ export default function JobsClientPage() {
               <>
                 <Link
                   href="/auth/login"
-                  className="btn-secondary text-sm px-3 sm:px-4 py-2 hover:text-[#00ffcc] transition-colors min-h-[44px] flex items-center"
+                  className="btn-secondary text-sm px-3 sm:px-4 py-2 hover:text-[#2563eb] transition-colors min-h-[44px] flex items-center"
                 >
                   Log In
                 </Link>
                 <Link
                   href="/pricing"
-                  className="btn-primary text-sm bg-[#00ffcc] text-black font-semibold rounded px-3 sm:px-4 py-2 hover:bg-[#00e6b8] min-h-[44px] flex items-center"
+                  className="btn-primary text-sm bg-[#2563eb] text-white font-semibold rounded px-3 sm:px-4 py-2 hover:bg-[#3b82f6] min-h-[44px] flex items-center"
                 >
-                  ⚡ Early Access
+                  ⭐ Pro Membership
                 </Link>
               </>
             )}
@@ -384,17 +384,29 @@ export default function JobsClientPage() {
       </header>
 
       {/* ─── Hero Section ───────────────────── */}
-      <section className="pt-8 sm:pt-12 pb-6 sm:pb-8 px-4 text-center bg-[#0a0a0a]">
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold mb-4 sm:mb-6 leading-tight text-white">
+      <section className="pt-6 sm:pt-10 pb-6 sm:pb-8 px-4 text-center bg-white">
+          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900">
             The Best{" "}
-            <span className="text-[#00ffcc]">Remote Frontend Jobs</span>
-            <span className="block mt-2 sm:mt-3 text-xl sm:text-2xl md:text-3xl text-gray-300 font-bold">
+            <span className="text-[#2563eb]">Remote Frontend Jobs</span>
+            <span className="block mt-2 text-lg sm:text-xl lg:text-2xl text-gray-600 font-bold">
               Work from anywhere, earn in dollars, and spend in local currency.
             </span>
           </h1>
-          <p className="text-base sm:text-lg max-w-2xl mx-auto mb-6 sm:mb-8 text-gray-400">
-            Curated 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers. Pro members get 7-day early access + email alerts — apply before the crowd.
+          <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 text-gray-500">
+            Curated 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers. Pro members get 7-day early access + email alerts, apply before the crowd.
           </p>
+
+          {!user && (
+            <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
+              <Link 
+                href="/pricing" 
+                className="w-full sm:w-auto btn-primary bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base"
+              >
+                ⭐ Get Pro Membership
+              </Link>
+              <p className="text-xs text-gray-500 font-medium px-4 text-center">Unlock early access, daily email alerts, and an ad-free experience.</p>
+            </div>
+          )}
 
         {/* Search Bar */}
         <div className="hero-search flex flex-col items-center w-full max-w-2xl mx-auto mb-4 sm:mb-6 relative">
@@ -405,7 +417,7 @@ export default function JobsClientPage() {
             onChange={(e) =>
               handleFilterChange({ ...filters, q: e.target.value })
             }
-            className="w-full bg-[#111] border border-[#333] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-white outline-none focus:border-[#00ffcc] transition-colors"
+            className="w-full bg-white border border-[#e2e2e6] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-gray-900 outline-none focus:border-[#2563eb] transition-colors"
           />
         </div>
 
@@ -413,7 +425,7 @@ export default function JobsClientPage() {
       </section>
 
       {/* ─── Main Content ───────────────────── */}
-      <main className="max-w-7xl mx-auto px-4 sm:px-6 pb-16 flex-1 bg-[#0a0a0a]">
+      <main className="max-w-7xl mx-auto px-4 sm:px-6 pb-16 flex-1 bg-white">
         <div className="flex gap-6">
           {/* Desktop Sidebar — hidden on mobile */}
           <aside className="hidden md:block w-72 lg:w-80 flex-shrink-0">
@@ -429,12 +441,12 @@ export default function JobsClientPage() {
           {/* Results */}
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between mb-4">
-              <p className="text-sm text-gray-400">
+              <p className="text-sm text-gray-500">
                 {!dataLoaded ? (
                   <span className="skeleton inline-block h-4 w-32" />
                 ) : (
                   <>
-                    <span className="font-semibold text-[#00ffcc]">
+                    <span className="font-semibold text-[#2563eb]">
                       {totalJobs.toLocaleString()}
                     </span>{" "}
                     jobs found
@@ -458,7 +470,7 @@ export default function JobsClientPage() {
                 </svg>
                 Filters
                 {activeFilterCount > 0 && (
-                  <span className="bg-[#00ffcc] text-black text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                  <span className="bg-[#2563eb] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
                     {activeFilterCount}
                   </span>
                 )}
@@ -494,12 +506,12 @@ export default function JobsClientPage() {
 
             {/* Empty state */}
             {dataLoaded && jobs.length === 0 && (
-              <div className="text-center py-16 sm:py-20 text-white">
+              <div className="text-center py-16 sm:py-20 text-gray-900">
                 <div className="text-5xl mb-4">🔍</div>
                 <h3 className="text-lg font-semibold mb-2">
                   No jobs found
                 </h3>
-                <p className="text-sm text-gray-400">
+                <p className="text-sm text-gray-500">
                   Try adjusting your filters or search terms
                 </p>
               </div>
@@ -507,7 +519,7 @@ export default function JobsClientPage() {
 
             {/* Pagination */}
             {dataLoaded && totalJobs > 0 && (
-              <div className="flex flex-col sm:flex-row items-center justify-between mt-6 sm:mt-8 border-t border-[#333] pt-4 sm:pt-6 gap-3 sm:gap-4">
+              <div className="flex flex-col sm:flex-row items-center justify-between mt-6 sm:mt-8 border-t border-[#e2e2e6] pt-4 sm:pt-6 gap-3 sm:gap-4">
                 <button
                   onClick={() => setPage((p) => Math.max(1, p - 1))}
                   disabled={page === 1}
@@ -541,8 +553,8 @@ export default function JobsClientPage() {
                           onClick={() => setPage(i)}
                           className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-semibold transition-colors ${
                             page === i
-                              ? "bg-[#00ffcc] text-black"
-                              : "bg-[#111] text-gray-400 hover:text-white border border-[#333] hover:border-[#555]"
+                              ? "bg-[#2563eb] text-white"
+                              : "bg-white text-gray-500 hover:text-gray-900 border border-[#e2e2e6] hover:border-[#444]"
                           }`}
                         >
                           {i}

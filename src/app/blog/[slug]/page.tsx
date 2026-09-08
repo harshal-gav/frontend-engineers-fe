@@ -14,12 +14,12 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   
   // Scaffolding for blog post content
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-gray-300 py-16 px-4">
+    <div className="min-h-screen bg-white text-gray-600 py-16 px-4">
       <div className="max-w-3xl mx-auto">
-        <Link href="/blog" className="text-[#00ffcc] hover:underline mb-8 inline-block">
+        <Link href="/blog" className="text-[#2563eb] hover:underline mb-8 inline-block">
           &larr; Back to Blog
         </Link>
-        <article className="prose prose-invert prose-p:text-gray-400 prose-headings:text-white max-w-none">
+        <article className="prose prose-invert prose-p:text-gray-500 prose-headings:text-gray-900 max-w-none">
           <h1 className="text-4xl font-bold mb-4 capitalize">{slug.replace(/-/g, ' ')}</h1>
           <time className="text-sm text-gray-500 block mb-8">Published recently</time>
           <div className="content">

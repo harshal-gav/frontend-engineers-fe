@@ -2,35 +2,35 @@
 @plugin "@tailwindcss/typography";
 
 :root {
-  /* ─── Dark Theme Palette ─────────────────────── */
-  --bg-primary: #0a0b14;
-  --bg-secondary: #111227;
-  --bg-tertiary: #181a35;
-  --bg-card: rgba(24, 26, 53, 0.7);
-  --bg-glass: rgba(24, 26, 53, 0.5);
-  --bg-hover: rgba(99, 102, 241, 0.08);
+  /* ─── Clean Light Theme ───────────────────────── */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f5f5f7;
+  --bg-tertiary: #ebebef;
+  --bg-card: #ffffff;
+  --bg-glass: #ffffff;
+  --bg-hover: rgba(37, 99, 235, 0.05);
 
-  --text-primary: #f0f1f5;
-  --text-secondary: #a1a3b5;
-  --text-muted: #6b6d80;
+  --text-primary: #1a1a1a;
+  --text-secondary: #555555;
+  --text-muted: #888888;
 
-  --accent-primary: #6366f1;
-  --accent-secondary: #818cf8;
-  --accent-glow: rgba(99, 102, 241, 0.3);
-  --accent-gradient: linear-gradient(135deg, #6366f1, #8b5cf6, #a855f7);
+  --accent-primary: #2563eb;
+  --accent-secondary: #3b82f6;
+  --accent-glow: rgba(37, 99, 235, 0.12);
+  --accent-gradient: #2563eb;
 
-  --border-subtle: rgba(99, 102, 241, 0.12);
-  --border-card: rgba(99, 102, 241, 0.08);
+  --border-subtle: #e2e2e6;
+  --border-card: #e8e8ec;
 
   /* Status colors */
-  --green: #10b981;
-  --green-bg: rgba(16, 185, 129, 0.12);
-  --blue: #3b82f6;
-  --blue-bg: rgba(59, 130, 246, 0.12);
-  --amber: #f59e0b;
-  --amber-bg: rgba(245, 158, 11, 0.12);
-  --rose: #f43f5e;
-  --rose-bg: rgba(244, 63, 94, 0.12);
+  --green: #059669;
+  --green-bg: rgba(5, 150, 105, 0.08);
+  --blue: #2563eb;
+  --blue-bg: rgba(37, 99, 235, 0.08);
+  --amber: #d97706;
+  --amber-bg: rgba(217, 119, 6, 0.08);
+  --rose: #e11d48;
+  --rose-bg: rgba(225, 29, 72, 0.08);
 
   --font-sans: "Inter", system-ui, -apple-system, sans-serif;
   --font-mono: "JetBrains Mono", "Fira Code", monospace;
@@ -64,62 +64,19 @@ body {
   overflow-x: hidden;
 }
 
-/* ─── Animated Background ──────────────────────── */
-
-.bg-mesh {
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  overflow: hidden;
-  pointer-events: none;
-}
-
-.bg-mesh::before {
-  content: "";
-  position: absolute;
-  width: 800px;
-  height: 800px;
-  background: radial-gradient(circle, rgba(99, 102, 241, 0.08) 0%, transparent 70%);
-  top: -200px;
-  right: -200px;
-  animation: meshFloat 20s ease-in-out infinite;
-}
-
-.bg-mesh::after {
-  content: "";
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  background: radial-gradient(circle, rgba(168, 85, 247, 0.06) 0%, transparent 70%);
-  bottom: -100px;
-  left: -100px;
-  animation: meshFloat 25s ease-in-out infinite reverse;
-}
-
-@keyframes meshFloat {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  33% { transform: translate(50px, -30px) scale(1.1); }
-  66% { transform: translate(-30px, 50px) scale(0.95); }
-}
-
-/* ─── Glass Card ───────────────────────────────── */
+/* ─── Card ─────────────────────────────────────── */
 
 .glass-card {
   background: var(--bg-card);
-  backdrop-filter: blur(20px);
-  -webkit-backdrop-filter: blur(20px);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-lg);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
 }
 
 .glass-card:hover {
   border-color: var(--border-subtle);
-  background: rgba(24, 26, 53, 0.85);
-  transform: translateY(-2px);
-  box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.3),
-    0 0 0 1px var(--border-subtle);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
 }
 
 /* ─── Buttons ──────────────────────────────────── */
@@ -130,22 +87,22 @@ body {
   justify-content: center;
   gap: 8px;
   padding: 10px 24px;
-  background: var(--accent-gradient);
+  background: var(--accent-primary);
   color: white;
   font-weight: 600;
   font-size: 0.875rem;
   border: none;
   border-radius: var(--radius-full);
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
-  box-shadow: 0 2px 15px var(--accent-glow);
+  transition: all 0.2s ease;
+  box-shadow: none;
   text-decoration: none;
 }
 
 .btn-primary:hover {
+  background: var(--accent-secondary);
   transform: translateY(-1px);
-  box-shadow: 0 4px 25px var(--accent-glow);
-  filter: brightness(1.1);
+  box-shadow: 0 2px 8px rgba(37, 99, 235, 0.25);
 }
 
 .btn-primary:active {
@@ -158,14 +115,14 @@ body {
   justify-content: center;
   gap: 8px;
   padding: 10px 24px;
-  background: var(--bg-tertiary);
+  background: var(--bg-secondary);
   color: var(--text-primary);
   font-weight: 500;
   font-size: 0.875rem;
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-full);
   cursor: pointer;
-  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 0.2s ease;
   text-decoration: none;
 }
 
@@ -202,10 +159,10 @@ body {
   color: var(--amber);
 }
 
-.badge-entry { background: rgba(34, 197, 94, 0.12); color: #22c55e; }
-.badge-mid { background: rgba(59, 130, 246, 0.12); color: #3b82f6; }
-.badge-senior { background: rgba(168, 85, 247, 0.12); color: #a855f7; }
-.badge-lead { background: rgba(244, 63, 94, 0.12); color: #f43f5e; }
+.badge-entry { background: rgba(5, 150, 105, 0.08); color: #059669; }
+.badge-mid { background: rgba(37, 99, 235, 0.08); color: #2563eb; }
+.badge-senior { background: rgba(147, 51, 234, 0.08); color: #9333ea; }
+.badge-lead { background: rgba(225, 29, 72, 0.08); color: #e11d48; }
 
 /* ─── Input ────────────────────────────────────── */
 
@@ -238,13 +195,12 @@ body {
   display: flex;
   align-items: center;
   background: var(--bg-card);
-  backdrop-filter: blur(20px);
   border: 1px solid var(--border-subtle);
   border-radius: var(--radius-xl);
   padding: 6px;
   max-width: 720px;
   margin: 0 auto;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
 }
 
 .hero-search input {
@@ -263,19 +219,19 @@ body {
 
 .hero-search .search-btn {
   padding: 12px 28px;
-  background: var(--accent-gradient);
+  background: var(--accent-primary);
   color: white;
   font-weight: 600;
   font-size: 0.875rem;
   border: none;
   border-radius: var(--radius-lg);
   cursor: pointer;
-  transition: all 0.25s ease;
+  transition: all 0.2s ease;
   white-space: nowrap;
 }
 
 .hero-search .search-btn:hover {
-  filter: brightness(1.1);
+  background: var(--accent-secondary);
   transform: translateY(-1px);
 }
 
@@ -283,7 +239,6 @@ body {
 
 .filter-sidebar {
   background: var(--bg-card);
-  backdrop-filter: blur(20px);
   border: 1px solid var(--border-card);
   border-radius: var(--radius-lg);
   padding: 24px;
@@ -429,18 +384,10 @@ body {
   opacity: 0;
 }
 
-@keyframes pulse-glow {
-  0%, 100% { box-shadow: 0 0 10px var(--accent-glow); }
-  50% { box-shadow: 0 0 25px var(--accent-glow); }
-}
-
 /* ─── Salary Display ──────────────────────────── */
 
 .salary-text {
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent-primary);
   font-weight: 700;
 }
 
@@ -451,7 +398,6 @@ body {
 }
 
 /* ─── Filter Sidebar Content ──────────────────── */
-/* Used inside both the desktop sticky sidebar and mobile bottom sheet */
 
 .filter-sidebar-content .filter-section {
   margin-bottom: 20px;
@@ -490,8 +436,8 @@ body {
   gap: 4px;
   font-size: 0.7rem;
   font-weight: 600;
-  color: var(--accent-secondary);
-  background: rgba(99, 102, 241, 0.1);
+  color: var(--accent-primary);
+  background: rgba(37, 99, 235, 0.08);
   padding: 2px 8px;
   border-radius: var(--radius-full);
   white-space: nowrap;
@@ -500,8 +446,7 @@ body {
 }
 
 .locked-overlay:hover {
-  background: rgba(99, 102, 241, 0.2);
-  color: var(--accent-primary);
+  background: rgba(37, 99, 235, 0.15);
 }
 
 /* ─── Comparison Table ────────────────────────── */
@@ -518,6 +463,13 @@ body {
   padding: 12px 16px;
   text-align: left;
   border-bottom: 1px solid var(--border-card);
+}
+
+@media (min-width: 1024px) {
+  .comparison-table th,
+  .comparison-table td {
+    padding: 18px 20px;
+  }
 }
 
 .comparison-table th {
@@ -538,7 +490,7 @@ body {
 }
 
 .comparison-table td:first-child {
-  color: var(--text-muted);
+  color: var(--text-secondary);
   font-weight: 500;
 }
 
@@ -578,10 +530,7 @@ body {
 .trust-stat-number {
   font-size: 1.75rem;
   font-weight: 800;
-  background: var(--accent-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--accent-primary);
 }
 
 .trust-stat-label {
@@ -599,27 +548,23 @@ body {
   font-size: 0.65rem;
   font-weight: 500;
   border-radius: var(--radius-full);
-  background: var(--bg-tertiary);
+  background: var(--bg-secondary);
   color: var(--text-secondary);
   border: 1px solid var(--border-card);
 }
 
 /* ─── iOS Safari Quirks ───────────────────────── */
 
-/* Fix 100vh on iOS (uses dvh where supported) */
 @supports (height: 100dvh) {
   body {
     min-height: 100dvh;
   }
 }
 
-/* Disable tap highlight on iOS */
 * {
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Safe area padding for notch devices */
 .safe-area-bottom {
   padding-bottom: env(safe-area-inset-bottom, 0px);
 }
-

@@ -4,13 +4,13 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative z-10 bg-[#05050a] border-t border-[#1a1a2e] pt-16 pb-8 text-sm text-gray-400 mt-20">
+    <footer className="relative z-10 bg-[#f5f5f7] border-t border-[#e2e2e6] pt-16 pb-8 text-sm text-gray-500 mt-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
           <div className="md:col-span-1">
-            <Link href="/" className="text-xl font-bold text-white mb-4 block">
-              Frontend<span className="text-[#00ffcc]">Engineers</span>
+            <Link href="/" className="text-xl font-bold text-gray-900 mb-4 block">
+              Frontend<span className="text-[#2563eb]">Engineers</span>
             </Link>
             <p className="text-gray-500 mb-6">
               Curated remote frontend and JavaScript engineering jobs at the world's best product companies.
@@ -19,25 +19,25 @@ export default function Footer() {
 
           {/* Platform Navigation */}
           <div>
-            <h3 className="text-white font-semibold mb-4 uppercase tracking-wider text-xs">Platform</h3>
+            <h3 className="text-gray-900 font-semibold mb-4 uppercase tracking-wider text-xs">Platform</h3>
             <ul className="space-y-3">
               <li>
-                <a href="/" className="hover:text-[#00ffcc] transition-colors">
+                <a href="/" className="hover:text-[#2563eb] transition-colors">
                   Browse Jobs
                 </a>
               </li>
               <li>
-                <Link href="/pricing" className="hover:text-[#00ffcc] transition-colors">
+                <Link href="/pricing" className="hover:text-[#2563eb] transition-colors">
                   Pricing
                 </Link>
               </li>
               <li>
-                <Link href="/about" className="hover:text-[#00ffcc] transition-colors">
+                <Link href="/about" className="hover:text-[#2563eb] transition-colors">
                   About Us
                 </Link>
               </li>
               <li>
-                <Link href="/sitemap" className="hover:text-[#00ffcc] transition-colors">
+                <Link href="/sitemap" className="hover:text-[#2563eb] transition-colors">
                   Sitemap
                 </Link>
               </li>
@@ -46,25 +46,25 @@ export default function Footer() {
 
           {/* Legal & Compliance */}
           <div>
-            <h3 className="text-white font-semibold mb-4 uppercase tracking-wider text-xs">Legal</h3>
+            <h3 className="text-gray-900 font-semibold mb-4 uppercase tracking-wider text-xs">Legal</h3>
             <ul className="space-y-3">
               <li>
-                <Link href="/legal/terms-of-service" className="hover:text-[#00ffcc] transition-colors">
+                <Link href="/legal/terms-of-service" className="hover:text-[#2563eb] transition-colors">
                   Terms of Service
                 </Link>
               </li>
               <li>
-                <Link href="/legal/privacy-policy" className="hover:text-[#00ffcc] transition-colors">
+                <Link href="/legal/privacy-policy" className="hover:text-[#2563eb] transition-colors">
                   Privacy Policy
                 </Link>
               </li>
               <li>
-                <Link href="/legal/refund-policy" className="hover:text-[#00ffcc] transition-colors">
+                <Link href="/legal/refund-policy" className="hover:text-[#2563eb] transition-colors">
                   Cancellation and Refund Policy
                 </Link>
               </li>
               <li>
-                <Link href="/legal/disclaimer" className="hover:text-[#00ffcc] transition-colors">
+                <Link href="/legal/disclaimer" className="hover:text-[#2563eb] transition-colors">
                   Job Board Disclaimer
                 </Link>
               </li>
@@ -73,7 +73,7 @@ export default function Footer() {
 
           {/* Company & Trust */}
           <div>
-            <h3 className="text-white font-semibold mb-4 uppercase tracking-wider text-xs">Company</h3>
+            <h3 className="text-gray-900 font-semibold mb-4 uppercase tracking-wider text-xs">Company</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
                 <svg className="w-4 h-4 text-gray-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
@@ -87,7 +87,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-[#1a1a2e] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+        <div className="border-t border-[#e2e2e6] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {currentYear} Frontend Engineers. All rights reserved.</p>
           <div className="flex gap-6">
             <span className="text-gray-600 text-xs">Secure payments by PayPal & PayU</span>

@@ -34,12 +34,12 @@ export default function FaqSchema({ items, title = "Frequently Asked Questions" 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <h2 className="text-2xl font-bold mb-6 text-white">{title}</h2>
+      <h2 className="text-2xl font-bold mb-6 text-gray-900">{title}</h2>
       <div className="space-y-6">
         {items.map((item, index) => (
-          <div key={index} className="faq-item p-6 rounded-xl border border-[#333] bg-[#111]">
-            <h3 className="text-lg font-semibold text-[#00ffcc] mb-3">{item.question}</h3>
-            <p className="text-gray-300 leading-relaxed">{item.answer}</p>
+          <div key={index} className="faq-item p-6 rounded-xl border border-[#e2e2e6] bg-white">
+            <h3 className="text-lg font-semibold text-[#2563eb] mb-3">{item.question}</h3>
+            <p className="text-gray-600 leading-relaxed">{item.answer}</p>
           </div>
         ))}
       </div>

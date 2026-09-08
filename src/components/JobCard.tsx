@@ -18,12 +18,12 @@ const LEVEL_CONFIG = {
   LEAD: { label: "Lead / Executive", class: "badge-lead" },
 } as const;
 
-const LOGO_GRADIENTS = [
-  "linear-gradient(135deg, #6366f1, #8b5cf6)",
-  "linear-gradient(135deg, #3b82f6, #06b6d4)",
-  "linear-gradient(135deg, #f43f5e, #ec4899)",
-  "linear-gradient(135deg, #10b981, #14b8a6)",
-  "linear-gradient(135deg, #f59e0b, #ef4444)",
+const LOGO_COLORS = [
+  "#3b4a6b",
+  "#4a3b5c",
+  "#3b5c4a",
+  "#5c4a3b",
+  "#3b5c5c",
 ];
 
 // ─── Tech Stack Extraction ──────────────────────────────
@@ -67,7 +67,7 @@ export default function JobCard({
     : null;
   const salary = formatSalary(job.salaryMin, job.salaryMax, job.currency);
   const gradientIndex =
-    (job.company?.name || "X").charCodeAt(0) % LOGO_GRADIENTS.length;
+    (job.company?.name || "X").charCodeAt(0) % LOGO_COLORS.length;
   const techStack = extractTechStack(job.title, job.description);
   const postedDate = timeAgo(job.postedAt);
 
@@ -77,16 +77,16 @@ export default function JobCard({
 
   const cardContent = (
     <article
-      className="glass-card h-full p-4 sm:p-5 cursor-pointer group hover:bg-[#111] transition-all flex flex-col"
+      className="glass-card h-full p-4 sm:p-5 cursor-pointer group hover:bg-[#f5f5f7] transition-all flex flex-col"
     >
       <div className="flex items-start gap-3 sm:gap-4 flex-1">
         {/* Company Logo */}
         <div
-          className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-white font-bold text-base sm:text-lg flex-shrink-0 overflow-hidden"
+          className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-gray-900 font-bold text-base sm:text-lg flex-shrink-0 overflow-hidden"
           style={{
             background: job.company?.logoUrl
               ? "var(--bg-secondary)"
-              : LOGO_GRADIENTS[gradientIndex],
+              : LOGO_COLORS[gradientIndex],
           }}
         >
           {job.company?.logoUrl ? (
@@ -127,7 +127,7 @@ export default function JobCard({
         <div className="flex-1 min-w-0 flex flex-col h-full">
           <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 sm:gap-3">
             <div className="min-w-0">
-              <h3 className="font-semibold text-[15px] sm:text-base group-hover:text-[var(--accent-secondary)] transition-colors leading-tight line-clamp-2">
+              <h3 className="font-semibold text-[15px] sm:text-base group-hover:text-[var(--accent-primary)] transition-colors leading-tight line-clamp-2">
                 {job.title}
               </h3>
               <p
@@ -146,8 +146,8 @@ export default function JobCard({
             {/* Posted date + Early Access badge */}
             <div className="flex items-center gap-2 flex-shrink-0">
               {job.isEarlyAccess && (
-                <span className="text-[10px] sm:text-xs bg-[#00ffcc]/15 text-[#00ffcc] px-2 py-0.5 rounded-full font-semibold whitespace-nowrap border border-[#00ffcc]/30">
-                  ⚡ Early Access
+                <span className="text-[10px] sm:text-xs bg-[#d97706]/15 text-[#d97706] px-2 py-0.5 rounded-full font-semibold whitespace-nowrap border border-[#d97706]/30">
+                  ⭐ Pro Access
                 </span>
               )}
               <span

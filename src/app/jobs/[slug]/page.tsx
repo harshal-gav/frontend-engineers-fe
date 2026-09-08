@@ -86,12 +86,12 @@ export default async function JobDetailPage({
 
   if (job.isDead) {
     return (
-      <div className="min-h-screen bg-[#0a0a0a] flex flex-col items-center justify-center p-4">
-        <h1 className="text-3xl font-bold text-white mb-4">Job No Longer Available</h1>
-        <p className="text-gray-400 mb-8 max-w-md text-center">
+      <div className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
+        <h1 className="text-3xl font-bold text-gray-900 mb-4">Job No Longer Available</h1>
+        <p className="text-gray-500 mb-8 max-w-md text-center">
           This position at {job.company?.name || "the company"} has been filled or is no longer active.
         </p>
-        <a href="/" className="px-6 py-3 bg-[#00ffcc] text-black font-bold rounded-lg hover:scale-105 transition-transform">
+        <a href="/" className="px-6 py-3 bg-[#2563eb] text-white font-bold rounded-lg hover:scale-105 transition-transform">
           Browse Similar Remote Jobs
         </a>
       </div>

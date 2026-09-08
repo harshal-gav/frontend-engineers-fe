@@ -79,7 +79,7 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
         {/* Company + Title */}
         <div className="flex items-start gap-4 mb-6">
           <div
-            className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center text-white font-bold text-xl flex-shrink-0 overflow-hidden"
+            className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center text-gray-900 font-bold text-xl flex-shrink-0 overflow-hidden"
             style={{
               background: job.company?.logoUrl
                 ? "var(--bg-secondary)"
@@ -111,8 +111,8 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
                 {job.title}
               </h1>
               {job.isEarlyAccess && (
-                <span className="text-xs bg-[#00ffcc]/15 text-[#00ffcc] px-2.5 py-1 rounded-full font-semibold border border-[#00ffcc]/30 whitespace-nowrap">
-                  ⚡ Early Access
+                <span className="text-xs bg-[#2563eb]/15 text-[#2563eb] px-2.5 py-1 rounded-full font-semibold border border-[#2563eb]/30 whitespace-nowrap">
+                  ⭐ Pro Access
                 </span>
               )}
             </div>

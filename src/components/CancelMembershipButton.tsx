@@ -41,8 +41,8 @@ export default function CancelMembershipButton() {
 
   return (
     <div className="mt-12 p-6 border border-[#333] bg-[#111227] rounded-xl">
-      <h3 className="text-xl font-bold text-white mb-2">Manage Subscription</h3>
-      <p className="text-gray-400 text-sm mb-4">
+      <h3 className="text-xl font-bold text-gray-900 mb-2">Manage Subscription</h3>
+      <p className="text-gray-500 text-sm mb-4">
         You are currently on the Pro Membership plan. You can cancel your subscription at any time. You will continue to have access to Pro features until the end of your billing cycle.
       </p>
       <button

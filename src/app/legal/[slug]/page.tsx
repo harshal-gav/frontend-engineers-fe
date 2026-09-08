@@ -36,12 +36,12 @@ export default async function LegalPage({ params }: LegalPageProps) {
   const content = fs.readFileSync(contentPath, "utf-8");
 
   return (
-    <div className="min-h-screen bg-[#0a0a0a] text-gray-300 py-16 px-4">
+    <div className="min-h-screen bg-white text-gray-600 py-16 px-4">
       <div className="max-w-3xl mx-auto">
-        <Link href="/" className="text-[#00ffcc] hover:underline mb-8 inline-block">
+        <Link href="/" className="text-[#2563eb] hover:underline mb-8 inline-block">
           &larr; Back to Home
         </Link>
-        <div className="prose prose-invert prose-lg max-w-none prose-a:text-[#00ffcc] prose-a:no-underline hover:prose-a:underline">
+        <div className="prose prose-invert prose-lg max-w-none prose-a:text-[#2563eb] prose-a:no-underline hover:prose-a:underline">
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
         

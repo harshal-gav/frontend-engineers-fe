@@ -87,10 +87,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable} h-full`}
+      className={`${inter.variable} ${jetbrainsMono.variable} h-full overflow-x-hidden`}
     >
-      <body className="min-h-full flex flex-col antialiased bg-[#000000] text-white">
-        <div className="bg-mesh" aria-hidden="true" />
+      <body className="min-h-full flex flex-col antialiased bg-white text-gray-900 overflow-x-hidden w-full max-w-full">
         <AuthProvider>
           <GlobalAdSense />
           <div className="relative z-10 flex flex-col min-h-full">
