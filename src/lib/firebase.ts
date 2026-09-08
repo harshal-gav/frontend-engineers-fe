@@ -1,5 +1,5 @@
 import { initializeApp, getApps, getApp, FirebaseApp } from "firebase/app";
-import { getAuth, initializeAuth, browserLocalPersistence, browserPopupRedirectResolver, Auth } from "firebase/auth";
+import { getAuth, Auth } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 import { getAnalytics, isSupported, Analytics } from "firebase/analytics";
 
@@ -15,29 +15,14 @@ const firebaseConfig = {
 
 // Initialize Firebase
 let app: FirebaseApp;
-let auth: Auth;
 
 if (!getApps().length) {
   app = initializeApp(firebaseConfig);
-  if (typeof window !== "undefined") {
-    // Use localStorage instead of IndexedDB to avoid "Database is closing/hidden" errors
-    auth = initializeAuth(app, { 
-      persistence: browserLocalPersistence,
-      popupRedirectResolver: browserPopupRedirectResolver
-    });
-    (window as any)._customFirebaseAuth = auth;
-  } else {
-    auth = getAuth(app);
-  }
 } else {
   app = getApp();
-  if (typeof window !== "undefined" && (window as any)._customFirebaseAuth) {
-    auth = (window as any)._customFirebaseAuth;
-  } else {
-    // Fallback if somehow not on window
-    auth = getAuth(app);
-  }
 }
+
+const auth = getAuth(app);
 
 const db = getFirestore(app);
 
