@@ -14,14 +14,14 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
   
   // Scaffolding for blog post content
   return (
-    <div className="min-h-screen bg-white text-gray-600 py-16 px-4">
+    <div className="min-h-screen bg-white text-gray-700 py-16 px-4">
       <div className="max-w-3xl mx-auto">
         <Link href="/blog" className="text-[#2563eb] hover:underline mb-8 inline-block">
           &larr; Back to Blog
         </Link>
-        <article className="prose prose-invert prose-p:text-gray-500 prose-headings:text-gray-900 max-w-none">
+        <article className="prose prose-lg max-w-none prose-p:text-gray-700 prose-headings:text-gray-900">
           <h1 className="text-4xl font-bold mb-4 capitalize">{slug.replace(/-/g, ' ')}</h1>
-          <time className="text-sm text-gray-500 block mb-8">Published recently</time>
+          <time className="text-sm text-gray-600 block mb-8">Published recently</time>
           <div className="content">
             <p>This is a scaffolding template for your long-form content. You can write your guide here or fetch it from a CMS.</p>
           </div>

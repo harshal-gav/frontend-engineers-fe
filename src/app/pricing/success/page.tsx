@@ -14,7 +14,7 @@ export default function PricingSuccessPage() {
           </svg>
         </div>
         <h1 className="text-3xl font-bold mb-4">Payment Successful!</h1>
-        <p className="text-gray-500 mb-8">
+        <p className="text-gray-600 mb-8">
           Welcome to FrontendEngineers Pro. You now have unlimited access to all remote frontend and JavaScript jobs.
         </p>
         <Link href="/" className="btn-primary py-3 px-8 rounded text-white bg-[#2563eb] font-bold text-lg inline-block">

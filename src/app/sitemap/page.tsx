@@ -19,7 +19,7 @@ export default function HTMLSitemapPage() {
   }
 
   return (
-    <div className="min-h-screen bg-white text-gray-600 py-16 px-4">
+    <div className="min-h-screen bg-white text-gray-700 py-16 px-4">
       <div className="max-w-4xl mx-auto">
         <Link href="/" className="text-[#2563eb] hover:underline mb-8 inline-block">
           &larr; Back to Home
@@ -59,7 +59,7 @@ export default function HTMLSitemapPage() {
             ))}
           </div>
           {jobs.length > 100 && (
-            <p className="mt-4 text-sm text-gray-500 italic">
+            <p className="mt-4 text-sm text-gray-600 italic">
               Showing the 100 most recent jobs. Please use the search function on the homepage to find more.
             </p>
           )}

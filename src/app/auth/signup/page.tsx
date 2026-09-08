@@ -74,7 +74,7 @@ export default function SignupPage() {
         
         <div className="flex-1 text-center md:text-left hidden md:block">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Join <span className="text-[#2563eb]">FrontendEngineers.com</span></h1>
-          <p className="text-gray-500">Create an account to unlock premium remote frontend and fullstack JavaScript jobs, and direct ATS links.</p>
+          <p className="text-gray-600">Create an account to unlock premium remote frontend and fullstack JavaScript jobs, and direct ATS links.</p>
         </div>
 
         <div className="flex-1 w-full max-w-md">
@@ -84,7 +84,7 @@ export default function SignupPage() {
 
           <form onSubmit={handleSignup} className="flex flex-col gap-4">
             <div>
-              <label className="block text-sm font-medium text-gray-500 mb-1">Email</label>
+              <label className="block text-sm font-medium text-gray-600 mb-1">Email</label>
               <input 
                 type="email" 
                 required
@@ -95,7 +95,7 @@ export default function SignupPage() {
             </div>
             
             <div className="relative">
-              <label className="block text-sm font-medium text-gray-500 mb-1">Password</label>
+              <label className="block text-sm font-medium text-gray-600 mb-1">Password</label>
               <div className="relative">
                 <input 
                   type={showPassword ? "text" : "password"} 
@@ -107,7 +107,7 @@ export default function SignupPage() {
                 <button
                   type="button"
                   onClick={() => setShowPassword(!showPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-900"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600 hover:text-gray-900"
                 >
                   {showPassword ? <EyeSlashIcon className="w-5 h-5" /> : <EyeIcon className="w-5 h-5" />}
                 </button>
@@ -115,7 +115,7 @@ export default function SignupPage() {
             </div>
 
             <div className="relative">
-              <label className="block text-sm font-medium text-gray-500 mb-1">Confirm Password</label>
+              <label className="block text-sm font-medium text-gray-600 mb-1">Confirm Password</label>
               <div className="relative">
                 <input 
                   type={showConfirmPassword ? "text" : "password"} 
@@ -127,7 +127,7 @@ export default function SignupPage() {
                 <button
                   type="button"
                   onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-900"
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600 hover:text-gray-900"
                 >
                   {showConfirmPassword ? <EyeSlashIcon className="w-5 h-5" /> : <EyeIcon className="w-5 h-5" />}
                 </button>
@@ -143,7 +143,7 @@ export default function SignupPage() {
             </button>
           </form>
 
-          <p className="text-gray-500 text-center mt-6 text-sm">
+          <p className="text-gray-600 text-center mt-6 text-sm">
             Already have an account? <Link href={`/auth/login${redirectUrl ? `?redirect=${encodeURIComponent(redirectUrl)}` : ""}`} className="text-[#2563eb] hover:underline">Log in</Link>
           </p>
         </div>

@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative z-10 bg-[#f5f5f7] border-t border-[#e2e2e6] pt-16 pb-8 text-sm text-gray-500 mt-20">
+    <footer className="relative z-10 bg-[#f5f5f7] border-t border-[#e2e2e6] pt-16 pb-8 text-sm text-gray-600 mt-20">
       <div className="max-w-6xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
           {/* Brand Column */}
@@ -12,7 +12,7 @@ export default function Footer() {
             <Link href="/" className="text-xl font-bold text-gray-900 mb-4 block">
               Frontend<span className="text-[#2563eb]">Engineers</span>
             </Link>
-            <p className="text-gray-500 mb-6">
+            <p className="text-gray-600 mb-6">
               Curated remote frontend and JavaScript engineering jobs at the world's best product companies.
             </p>
           </div>
@@ -76,11 +76,11 @@ export default function Footer() {
             <h3 className="text-gray-900 font-semibold mb-4 uppercase tracking-wider text-xs">Company</h3>
             <ul className="space-y-3">
               <li className="flex items-start gap-2">
-                <svg className="w-4 h-4 text-gray-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                <svg className="w-4 h-4 text-gray-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                 <span>frontendengineersupport@gmail.com</span>
               </li>
               <li className="flex items-start gap-2">
-                <svg className="w-4 h-4 text-gray-500 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
+                <svg className="w-4 h-4 text-gray-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
                 <span>Frontend Engineers</span>
               </li>
             </ul>
@@ -90,7 +90,7 @@ export default function Footer() {
         <div className="border-t border-[#e2e2e6] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
           <p>&copy; {currentYear} Frontend Engineers. All rights reserved.</p>
           <div className="flex gap-6">
-            <span className="text-gray-600 text-xs">Secure payments by PayPal & PayU</span>
+            <span className="text-gray-700 text-xs">Secure payments by PayPal & PayU</span>
           </div>
         </div>
       </div>

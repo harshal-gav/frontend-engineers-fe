@@ -356,7 +356,7 @@ export default function JobsClientPage() {
                   {/* Log Out Button */}
                   <button 
                     onClick={handleLogout} 
-                    className="text-xs bg-white text-gray-500 hover:bg-[#f5f5f7] hover:text-[#e11d48] px-3 py-1 sm:py-1.5 rounded-full transition-colors font-medium flex items-center justify-center border border-[#e2e2e6] shrink-0"
+                    className="text-xs bg-white text-gray-600 hover:bg-[#f5f5f7] hover:text-[#e11d48] px-3 py-1 sm:py-1.5 rounded-full transition-colors font-medium flex items-center justify-center border border-[#e2e2e6] shrink-0"
                     title="Log Out"
                   >
                     Log Out
@@ -388,11 +388,11 @@ export default function JobsClientPage() {
           <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900">
             The Best{" "}
             <span className="text-[#2563eb]">Remote Frontend Jobs</span>
-            <span className="block mt-2 text-lg sm:text-xl lg:text-2xl text-gray-600 font-bold">
+            <span className="block mt-2 text-lg sm:text-xl lg:text-2xl text-gray-700 font-bold">
               Work from anywhere, earn in dollars, and spend in local currency.
             </span>
           </h1>
-          <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 text-gray-500">
+          <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 text-gray-600">
             Curated 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers. Pro members get 7-day early access + email alerts, apply before the crowd.
           </p>
 
@@ -404,7 +404,7 @@ export default function JobsClientPage() {
               >
                 ⭐ Get Pro Membership
               </Link>
-              <p className="text-xs text-gray-500 font-medium px-4 text-center">Unlock early access, daily email alerts, and an ad-free experience.</p>
+              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access, daily email alerts, and an ad-free experience.</p>
             </div>
           )}
 
@@ -441,7 +441,7 @@ export default function JobsClientPage() {
           {/* Results */}
           <div className="flex-1 min-w-0">
             <div className="flex items-center justify-between mb-4">
-              <p className="text-sm text-gray-500">
+              <p className="text-sm text-gray-600">
                 {!dataLoaded ? (
                   <span className="skeleton inline-block h-4 w-32" />
                 ) : (
@@ -511,7 +511,7 @@ export default function JobsClientPage() {
                 <h3 className="text-lg font-semibold mb-2">
                   No jobs found
                 </h3>
-                <p className="text-sm text-gray-500">
+                <p className="text-sm text-gray-600">
                   Try adjusting your filters or search terms
                 </p>
               </div>
@@ -554,7 +554,7 @@ export default function JobsClientPage() {
                           className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-semibold transition-colors ${
                             page === i
                               ? "bg-[#2563eb] text-white"
-                              : "bg-white text-gray-500 hover:text-gray-900 border border-[#e2e2e6] hover:border-[#444]"
+                              : "bg-white text-gray-600 hover:text-gray-900 border border-[#e2e2e6] hover:border-[#444]"
                           }`}
                         >
                           {i}

@@ -137,7 +137,7 @@ export default function PricingPage() {
             <span className="text-[#2563eb]">Pro Membership</span>{" "}
             for New Jobs
           </h1>
-          <p className="text-xl text-gray-500">
+          <p className="text-xl text-gray-600">
             See new remote frontend jobs before everyone else. Fewer applicants means
             easier interview calls. Get fresh jobs delivered to your inbox daily.
           </p>
@@ -219,7 +219,7 @@ export default function PricingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {TESTIMONIALS.map((t, i) => (
                   <div key={i} className="glass-card p-5 text-left">
-                    <p className="text-sm text-gray-600 mb-3 leading-relaxed">"{t.quote}"</p>
+                    <p className="text-sm text-gray-700 mb-3 leading-relaxed">"{t.quote}"</p>
                     <div className="flex items-center gap-2">
                       {t.avatar ? (
                         <img src={t.avatar} alt={t.name} className="w-8 h-8 rounded-full object-cover" />
@@ -230,7 +230,7 @@ export default function PricingPage() {
                       )}
                       <div>
                         <div className="text-sm font-semibold text-gray-900">{t.name}</div>
-                        <div className="text-xs text-gray-500">{t.role}</div>
+                        <div className="text-xs text-gray-600">{t.role}</div>
                       </div>
                     </div>
                   </div>
@@ -250,7 +250,7 @@ export default function PricingPage() {
               <div className="flex flex-col items-center mb-2">
                 <div className="flex items-end justify-center gap-1">
                   <span className="text-5xl font-bold text-gray-900">$9</span>
-                  <span className="text-gray-500 mb-1">/month</span>
+                  <span className="text-gray-600 mb-1">/month</span>
                 </div>
 
                 {localPrice && (
@@ -261,7 +261,7 @@ export default function PricingPage() {
               </div>
 
               {/* Cancel anytime line */}
-              <p className="text-xs text-gray-500 mb-6 text-center">
+              <p className="text-xs text-gray-600 mb-6 text-center">
                 Cancel anytime — no commitments.
               </p>
 
@@ -351,7 +351,7 @@ export default function PricingPage() {
                     
                     <div className="relative flex py-2 items-center">
                       <div className="flex-grow border-t border-[#e2e2e6]"></div>
-                      <span className="flex-shrink-0 mx-4 text-gray-500 text-sm">OR</span>
+                      <span className="flex-shrink-0 mx-4 text-gray-600 text-sm">OR</span>
                       <div className="flex-grow border-t border-[#e2e2e6]"></div>
                     </div>
 
@@ -365,7 +365,7 @@ export default function PricingPage() {
                 )}
                 
                 {user && (
-                  <div className="mt-4 text-xs text-gray-500 text-center leading-relaxed">
+                  <div className="mt-4 text-xs text-gray-600 text-center leading-relaxed">
                     By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#2563eb] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#2563eb] hover:underline">Privacy Policy</Link>. 
                     Your subscription renews automatically at $9/month until cancelled.
                   </div>
@@ -373,7 +373,7 @@ export default function PricingPage() {
 
                 <button
                   onClick={() => router.push("/")}
-                  className="w-full text-gray-500 hover:text-gray-900 py-3 transition-colors underline mt-4"
+                  className="w-full text-gray-600 hover:text-gray-900 py-3 transition-colors underline mt-4"
                 >
                   Browse free jobs (7-day delay)
                 </button>

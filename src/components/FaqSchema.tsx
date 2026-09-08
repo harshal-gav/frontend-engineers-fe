@@ -39,7 +39,7 @@ export default function FaqSchema({ items, title = "Frequently Asked Questions" 
         {items.map((item, index) => (
           <div key={index} className="faq-item p-6 rounded-xl border border-[#e2e2e6] bg-white">
             <h3 className="text-lg font-semibold text-[#2563eb] mb-3">{item.question}</h3>
-            <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+            <p className="text-gray-700 leading-relaxed">{item.answer}</p>
           </div>
         ))}
       </div>

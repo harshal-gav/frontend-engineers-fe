@@ -36,7 +36,7 @@ export default function AdUnit({
 
   return (
     <div className={`ad-container ${className}`}>
-      <span className="text-[10px] uppercase text-gray-500 tracking-wider mb-2 block text-center">
+      <span className="text-[10px] uppercase text-gray-600 tracking-wider mb-2 block text-center">
         Advertisement
       </span>
       <ins

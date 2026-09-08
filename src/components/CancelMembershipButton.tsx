@@ -40,15 +40,15 @@ export default function CancelMembershipButton() {
   };
 
   return (
-    <div className="mt-12 p-6 border border-[#333] bg-[#111227] rounded-xl">
+    <div className="mt-12 p-6 border border-[#e2e2e6] bg-[#f9fafb] rounded-xl">
       <h3 className="text-xl font-bold text-gray-900 mb-2">Manage Subscription</h3>
-      <p className="text-gray-500 text-sm mb-4">
+      <p className="text-gray-600 text-sm mb-4">
         You are currently on the Pro Membership plan. You can cancel your subscription at any time. You will continue to have access to Pro features until the end of your billing cycle.
       </p>
       <button
         onClick={handleCancelSubscription}
         disabled={isCancelling}
-        className="px-4 py-2 bg-red-500/10 text-red-400 border border-red-500/20 rounded hover:bg-red-500/20 transition-colors disabled:opacity-50 font-semibold"
+        className="px-4 py-2 bg-red-50 text-red-600 border border-red-200 rounded hover:bg-red-100 transition-colors disabled:opacity-50 font-semibold"
       >
         {isCancelling ? "Cancelling..." : "Cancel Membership"}
       </button>

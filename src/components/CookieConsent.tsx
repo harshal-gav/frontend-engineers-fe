@@ -32,7 +32,7 @@ export default function CookieConsent() {
         
         <div className="flex-1">
           <h3 className="text-gray-900 font-semibold text-lg mb-2">We value your privacy</h3>
-          <p className="text-sm text-gray-500 leading-relaxed">
+          <p className="text-sm text-gray-600 leading-relaxed">
             We use cookies to enhance your browsing experience, serve personalized content, and analyze our traffic. By clicking &quot;Accept All&quot;, you consent to our use of cookies. 
             Read our <Link href="/legal/privacy-policy" className="text-[#2563eb] hover:underline">Privacy Policy</Link> for more information.
           </p>
@@ -41,7 +41,7 @@ export default function CookieConsent() {
         <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto shrink-0">
           <button 
             onClick={handleRejectNonEssential}
-            className="px-5 py-2.5 rounded-lg border border-[#333] text-gray-600 hover:bg-[#1a1a2e] hover:text-gray-900 transition-colors text-sm font-medium"
+            className="px-5 py-2.5 rounded-lg border border-[#333] text-gray-700 hover:bg-[#1a1a2e] hover:text-gray-900 transition-colors text-sm font-medium"
           >
             Reject Non-Essential
           </button>

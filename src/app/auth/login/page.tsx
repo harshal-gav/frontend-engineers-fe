@@ -53,7 +53,7 @@ export default function LoginPage() {
 
         <form onSubmit={handleLogin} className="flex flex-col gap-4">
           <div>
-            <label className="block text-sm font-medium text-gray-500 mb-1">Email</label>
+            <label className="block text-sm font-medium text-gray-600 mb-1">Email</label>
             <input 
               type="email" 
               required
@@ -63,7 +63,7 @@ export default function LoginPage() {
             />
           </div>
           <div className="relative">
-            <label className="block text-sm font-medium text-gray-500 mb-1">Password</label>
+            <label className="block text-sm font-medium text-gray-600 mb-1">Password</label>
             <div className="relative">
               <input 
                 type={showPassword ? "text" : "password"} 
@@ -75,7 +75,7 @@ export default function LoginPage() {
               <button
                 type="button"
                 onClick={() => setShowPassword(!showPassword)}
-                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-500 hover:text-gray-900"
+                className="absolute right-3 top-1/2 -translate-y-1/2 text-gray-600 hover:text-gray-900"
               >
                 {showPassword ? <EyeSlashIcon className="w-5 h-5" /> : <EyeIcon className="w-5 h-5" />}
               </button>
@@ -91,7 +91,7 @@ export default function LoginPage() {
           </button>
         </form>
 
-        <p className="text-gray-500 text-center mt-6">
+        <p className="text-gray-600 text-center mt-6">
           Don't have an account? <Link href={`/auth/signup${redirectUrl !== "/" ? `?redirect=${encodeURIComponent(redirectUrl)}` : ""}`} className="text-[#2563eb] hover:underline">Sign up</Link>
         </p>
       </div>
