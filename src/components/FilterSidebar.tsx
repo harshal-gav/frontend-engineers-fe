@@ -30,6 +30,7 @@ interface FilterSidebarProps {
   /** Called when user taps "Show X results" on mobile */
   onApply?: () => void;
   totalResults?: number;
+  isSubscribed?: boolean;
 }
 
 // ─── Options ─────────────────────────────────────────────
@@ -84,6 +85,7 @@ export default function FilterSidebar({
   onFilterChange,
   onApply,
   totalResults,
+  isSubscribed,
 }: FilterSidebarProps) {
   const toggleArrayFilter = useCallback(
     (
@@ -162,6 +164,25 @@ export default function FilterSidebar({
           ))}
         </div>
       </div>
+
+      {/* Early Access (Pro only) */}
+      {isSubscribed && (
+        <div className="filter-section">
+          <label className="filter-option min-h-[44px]">
+            <input
+              type="checkbox"
+              checked={filters.postedWithin === "7d"}
+              onChange={(e) =>
+                onFilterChange({
+                  ...filters,
+                  postedWithin: e.target.checked ? "7d" : "",
+                })
+              }
+            />
+            <span className="font-semibold" style={{ color: "var(--accent-primary)" }}>⭐ Early Access (Last 7 days)</span>
+          </label>
+        </div>
+      )}
 
       {/* Location */}
       <div className="filter-section">

@@ -259,7 +259,6 @@ export default function JobsClientPage() {
     };
   }, [allJobs, filters, page, dataLoaded]);
 
-  // Check if any filters are active (beyond search query)
   const hasActiveFilters =
     filters.q !== "" ||
     filters.location !== "" ||
@@ -269,7 +268,8 @@ export default function JobsClientPage() {
     filters.framework.length > 0 ||
     filters.salaryMin !== "" ||
     filters.salaryMax !== "" ||
-    filters.sortBy !== "newest";
+    filters.sortBy !== "newest" ||
+    filters.postedWithin !== "";
 
   // URL sync
   const syncFiltersToUrl = useCallback(
@@ -287,6 +287,7 @@ export default function JobsClientPage() {
         params.set("framework", f.framework.join(","));
       if (f.salaryMin) params.set("salaryMin", f.salaryMin);
       if (f.salaryMax) params.set("salaryMax", f.salaryMax);
+      if (f.postedWithin) params.set("postedWithin", f.postedWithin);
       if (f.sortBy !== "newest") params.set("sortBy", f.sortBy);
       const query = params.toString();
       router.replace(query ? `?${query}` : "/", { scroll: false });
@@ -434,6 +435,7 @@ export default function JobsClientPage() {
                 filters={filters}
                 facets={facets}
                 onFilterChange={handleFilterChange}
+                isSubscribed={isSubscribed}
               />
             </div>
           </aside>
@@ -590,6 +592,7 @@ export default function JobsClientPage() {
           onFilterChange={handleFilterChange}
           onApply={() => setShowFilters(false)}
           totalResults={totalJobs}
+          isSubscribed={isSubscribed}
         />
       </BottomSheet>
 
