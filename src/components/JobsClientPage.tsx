@@ -396,7 +396,7 @@ export default function JobsClientPage() {
             Curated 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers. Pro members get 7-day early access + email alerts, apply before the crowd.
           </p>
 
-          {!user && (
+          {!isSubscribed && (
             <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
               <Link 
                 href="/pricing" 
