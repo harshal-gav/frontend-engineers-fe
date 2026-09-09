@@ -386,7 +386,7 @@ function saveJobs(jobs) {
 
     // Check if there are no exact matches
     const noResults = await page.$('.jobs-search-no-results-banner, h1:has-text("No matching jobs found"), h2:has-text("No matching jobs found")');
-    const noResultsText = await page.evaluate(() => document.body.innerText.includes("No matching jobs found"));
+    const noResultsText = await page.evaluate(() => document.body ? document.body.innerText.includes("No matching jobs found") : false);
 
     if (noResults || noResultsText) {
         console.log(`\n⏭️  No exact matches found for ${country}. Skipping recommended jobs.`);
@@ -605,22 +605,27 @@ function saveJobs(jobs) {
         continue;
       }
 
-      const nextButton = await page.$(`button[aria-label="Page ${currentPage + 1}"], li[data-test-pagination-page-btn="${currentPage + 1}"] button`);
-      if (nextButton) {
-        await nextButton.scrollIntoViewIfNeeded();
-        await sleep(SLOW);
-        await nextButton.click();
-        currentPage++;
-        await sleep(LONG);
-      } else {
-        const nextArrow = await page.$('button[aria-label="Next"], button.artdeco-pagination__button--next');
-        if (nextArrow && (await nextArrow.isEnabled())) {
-          await nextArrow.click();
+      try {
+        const nextButton = await page.$(`button[aria-label="Page ${currentPage + 1}"], li[data-test-pagination-page-btn="${currentPage + 1}"] button`);
+        if (nextButton) {
+          await nextButton.scrollIntoViewIfNeeded();
+          await sleep(SLOW);
+          await nextButton.click({ force: true, timeout: 5000 });
           currentPage++;
           await sleep(LONG);
         } else {
-          hasMorePages = false;
+          const nextArrow = await page.$('button[aria-label="Next"], button.artdeco-pagination__button--next');
+          if (nextArrow && (await nextArrow.isEnabled())) {
+            await nextArrow.click({ force: true, timeout: 5000 });
+            currentPage++;
+            await sleep(LONG);
+          } else {
+            hasMorePages = false;
+          }
         }
+      } catch (err) {
+        console.log(`\n       ⚠️ Could not click next page. Error: ${err.message}. Moving to next country.`);
+        hasMorePages = false;
       }
     }
 
