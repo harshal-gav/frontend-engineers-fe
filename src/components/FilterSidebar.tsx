@@ -253,10 +253,7 @@ export default function FilterSidebar({
             onClick={onApply}
             className="btn-primary w-full min-h-[48px] text-base font-bold rounded-xl"
           >
-            Show{" "}
-            {totalResults !== undefined
-              ? `10,000 results`
-              : "results"}
+            Apply
           </button>
         </div>
       )}
