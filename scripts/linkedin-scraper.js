@@ -492,6 +492,12 @@ function saveJobs(jobs) {
 
           const buttonText = (await applyButton.innerText()).trim();
           
+          if (buttonText.toLowerCase().includes("easy apply") || buttonText.toLowerCase().includes("applied")) {
+            console.log(`       ⏭️  Found '${buttonText}' button — skipping.`);
+            saveState(state);
+            continue;
+          }
+
           latestNewPageUrl = null;
           await applyButton.click({ timeout: 5000 }).catch(() => {});
           await sleep(LONG);
