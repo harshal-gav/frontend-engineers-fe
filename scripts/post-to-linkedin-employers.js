@@ -73,7 +73,7 @@ Write ONLY the post text, nothing else. Make it catchy and space it out with new
   // Retry up to 3 times if the generated post is too short
   for (let attempt = 1; attempt <= 3; attempt++) {
     const res = await fetch(
-      \`https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=\${GEMINI_API_KEY}\`,
+      `https://generativelanguage.googleapis.com/v1beta/models/gemini-3.6-flash:generateContent?key=${GEMINI_API_KEY}`,
       {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
@@ -92,11 +92,11 @@ Write ONLY the post text, nothing else. Make it catchy and space it out with new
       // Retry on transient errors (rate limit, overload)
       if ((res.status === 429 || res.status === 503) && attempt < 3) {
         const waitSec = attempt * 10;
-        console.log(\`   ⚠️  Gemini API \${res.status}, retrying in \${waitSec}s (attempt \${attempt + 1}/3)...\`);
+        console.log(`   ⚠️  Gemini API ${res.status}, retrying in ${waitSec}s (attempt ${attempt + 1}/3)...`);
         await new Promise(r => setTimeout(r, waitSec * 1000));
         continue;
       }
-      throw new Error(\`Gemini API error: \${res.status} \${errText}\`);
+      throw new Error(`Gemini API error: ${res.status} ${errText}`);
     }
 
     const data = await res.json();
@@ -110,7 +110,7 @@ Write ONLY the post text, nothing else. Make it catchy and space it out with new
     
     // If the post is too short (< 200 chars), retry
     if (cleaned.length < 200 && attempt < 3) {
-      console.log(\`   ⚠️  Post too short (\${cleaned.length} chars), retrying (attempt \${attempt + 1}/3)...\`);
+      console.log(`   ⚠️  Post too short (${cleaned.length} chars), retrying (attempt ${attempt + 1}/3)...`);
       continue;
     }
 
@@ -125,7 +125,7 @@ Write ONLY the post text, nothing else. Make it catchy and space it out with new
 async function postToLinkedIn(text, authorUrn) {
   // LinkedIn Posts API requires escaping these reserved characters to prevent silent truncation
   // Reserved characters: | { } @ [ ] ( ) < > \ * _ ~
-  const escapedText = text.replace(/([|{}@\[\\]()<>\\\\*_~])/g, '\\\\$1');
+  const escapedText = text.replace(/([|{}@[\]()\\*_~])/g, '\\$1');
 
   const payload = {
     author: authorUrn,
@@ -143,7 +143,7 @@ async function postToLinkedIn(text, authorUrn) {
   const res = await fetch('https://api.linkedin.com/rest/posts', {
     method: 'POST',
     headers: {
-      'Authorization': \`Bearer \${LINKEDIN_ACCESS_TOKEN}\`,
+      'Authorization': `Bearer ${LINKEDIN_ACCESS_TOKEN}`,
       'Content-Type': 'application/json',
       'X-Restli-Protocol-Version': '2.0.0',
       'LinkedIn-Version': '202608',
@@ -157,7 +157,7 @@ async function postToLinkedIn(text, authorUrn) {
   }
 
   const errBody = await res.text();
-  throw new Error(\`LinkedIn API error: \${res.status} \${errBody}\`);
+  throw new Error(`LinkedIn API error: ${res.status} ${errBody}`);
 }
 
 // ─── Main ────────────────────────────────────────────────────
@@ -165,51 +165,51 @@ async function postToLinkedIn(text, authorUrn) {
 async function main() {
   console.log('🚀 LinkedIn Employer Promo Auto-Poster');
   console.log('═'.repeat(50));
-  if (DRY_RUN) console.log('⚠️  DRY RUN MODE — will not post to LinkedIn\\n');
+  if (DRY_RUN) console.log('⚠️  DRY RUN MODE — will not post to LinkedIn\n');
 
   // 1. Generate post with Gemini
-  console.log('\\n🤖 Generating employer promo post with Gemini AI...');
+  console.log('\n🤖 Generating employer promo post with Gemini AI...');
   const postText = await generatePostWithGemini();
   
-  console.log('\\n📄 Generated post:');
+  console.log('\n📄 Generated post:');
   console.log('─'.repeat(50));
   console.log(postText);
   console.log('─'.repeat(50));
 
   // 2. Post to LinkedIn
   if (DRY_RUN) {
-    console.log('\\n⚠️  DRY RUN — Skipping LinkedIn publish');
-    console.log(\`   Post length: \${postText.length} characters\`);
+    console.log('\n⚠️  DRY RUN — Skipping LinkedIn publish');
+    console.log(`   Post length: ${postText.length} characters`);
   } else {
-    console.log('\\n📤 Publishing to LinkedIn...');
+    console.log('\n📤 Publishing to LinkedIn...');
     let successCount = 0;
     try {
       if (LINKEDIN_PERSON_ID) {
         console.log('   Posting to Personal Profile...');
-        const resultPerson = await postToLinkedIn(postText, \`urn:li:person:\${LINKEDIN_PERSON_ID}\`);
-        console.log(\`   ✅ Posted to Personal Profile! Post ID: \${resultPerson.postId}\`);
+        const resultPerson = await postToLinkedIn(postText, `urn:li:person:${LINKEDIN_PERSON_ID}`);
+        console.log(`   ✅ Posted to Personal Profile! Post ID: ${resultPerson.postId}`);
         successCount++;
       }
       
       if (LINKEDIN_ORG_ID) {
         console.log('   Posting to Company Page...');
-        const resultOrg = await postToLinkedIn(postText, \`urn:li:organization:\${LINKEDIN_ORG_ID}\`);
-        console.log(\`   ✅ Posted to Company Page! Post ID: \${resultOrg.postId}\`);
+        const resultOrg = await postToLinkedIn(postText, `urn:li:organization:${LINKEDIN_ORG_ID}`);
+        console.log(`   ✅ Posted to Company Page! Post ID: ${resultOrg.postId}`);
         successCount++;
       }
       
       if (successCount > 0) {
-        console.log(\`\\n✅ Post successful!\`);
+        console.log(`\n✅ Post successful!`);
       } else {
-        console.error('\\n❌ No valid LinkedIn IDs configured. Skipping update.');
+        console.error('\n❌ No valid LinkedIn IDs configured. Skipping update.');
       }
     } catch (err) {
-      console.error(\`\\n❌ Failed to post: \${err.message}\`);
+      console.error(`\n❌ Failed to post: ${err.message}`);
       process.exit(1);
     }
   }
 
-  console.log('\\n✅ Done!');
+  console.log('\n✅ Done!');
 }
 
 main().catch((err) => {
