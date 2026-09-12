@@ -375,7 +375,7 @@ export default function JobsClientPage() {
               <>
                 <Link
                   href="/employers/pricing"
-                  className="text-sm px-3 sm:px-4 py-2 text-gray-600 font-semibold hover:text-[#2563eb] transition-colors min-h-[44px] flex items-center"
+                  className="text-xs sm:text-sm bg-[#2563eb] text-white px-4 py-2 rounded-full font-bold shadow-md hover:bg-[#1d4ed8] hover:shadow-lg transition-all flex items-center shrink-0"
                 >
                   Post a Job
                 </Link>
