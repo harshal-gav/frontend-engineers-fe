@@ -16,6 +16,9 @@ import BottomSheet from "@/components/BottomSheet";
 
 import type { Job } from "@/lib/jobs";
 
+// Global cache for instant back-navigation
+let globalJobsCache: Job[] | null = null;
+
 // ─── Fuse.js config ──────────────────────────────────────
 
 const FUSE_OPTIONS: IFuseOptions<Job> = {
@@ -98,16 +101,20 @@ export default function JobsClientPage() {
   const [filters, setFilters] = useState<FilterState>(() =>
     createDefaultFilters(searchParams)
   );
-  const [allJobs, setAllJobs] = useState<Job[]>([]);
+  const [allJobs, setAllJobs] = useState<Job[]>(globalJobsCache || []);
   const [mounted, setMounted] = useState(false);
   
+  useEffect(() => setMounted(true), []);
 
-  const [dataLoaded, setDataLoaded] = useState(false);
+  const [dataLoaded, setDataLoaded] = useState(!!globalJobsCache);
   const [page, setPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
 
   // Load jobs from secure API
   useEffect(() => {
+    // Don't fetch until auth state is resolved to avoid duplicate double-fetching
+    if (authLoading) return;
+
     const loadData = async () => {
       try {
         const headers: Record<string, string> = {};
@@ -118,7 +125,9 @@ export default function JobsClientPage() {
         const res = await fetch("/api/jobs", { headers });
         if (res.ok) {
           const data = await res.json();
-          setAllJobs(data || []);
+          const jobsData: Job[] = data || [];
+          globalJobsCache = jobsData;
+          setAllJobs(jobsData);
         }
       } catch (e) {
         console.error("Failed to load jobs", e);
@@ -127,7 +136,7 @@ export default function JobsClientPage() {
       }
     };
     loadData();
-  }, [user]);
+  }, [user, authLoading]);
 
   // Compute facets from all jobs
   const facets = useMemo(() => computeFacets(allJobs), [allJobs]);
