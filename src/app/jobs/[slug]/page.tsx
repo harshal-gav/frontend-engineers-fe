@@ -22,7 +22,24 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const jobs = loadJobsFromFile();
-  const job = jobs.find((j) => j.slug === slug || j.id === slug);
+  let job = jobs.find((j) => j.slug === slug || j.id === slug);
+
+  if (!job) {
+    // Check Firestore (employer posted jobs)
+    try {
+      const { getAdminDb } = await import('@/lib/firebase-admin');
+      const db = getAdminDb();
+      // Since we don't know the exact ID (it could be a slug), let's query both
+      // Wait, employer jobs might not have a slug generated if they are just saved in Firestore. 
+      // The API saves them with `id` and no `slug`. The JobCard links to `/jobs/${job.id}`.
+      const doc = await db.collection('jobs').doc(slug).get();
+      if (doc.exists) {
+        job = doc.data() as Job;
+      }
+    } catch (e) {
+      console.error("Firestore lookup error in metadata:", e);
+    }
+  }
 
   if (!job) {
     return { title: "Job Not Found" };
@@ -70,7 +87,21 @@ export default async function JobDetailPage({
 }) {
   const { slug } = await params;
   const jobs = loadJobsFromFile();
-  const job = jobs.find((j) => j.slug === slug || j.id === slug);
+  let job = jobs.find((j) => j.slug === slug || j.id === slug);
+
+  if (!job) {
+    // Check Firestore for employer posted jobs
+    try {
+      const { getAdminDb } = await import('@/lib/firebase-admin');
+      const db = getAdminDb();
+      const doc = await db.collection('jobs').doc(slug).get();
+      if (doc.exists) {
+        job = doc.data() as Job;
+      }
+    } catch (e) {
+      console.error("Firestore lookup error:", e);
+    }
+  }
 
   if (!job) {
     const match = slug.match(/-([a-f0-9]{8})$/i);

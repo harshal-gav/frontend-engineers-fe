@@ -334,7 +334,7 @@ export default function JobsClientPage() {
               <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
                 <Link
                   href={isEmployer ? "/employers/post" : "/employers/pricing"}
-                  className="text-xs sm:text-sm text-gray-600 hover:text-[#2563eb] font-semibold transition-colors flex items-center shrink-0"
+                  className="text-xs sm:text-sm bg-[#2563eb] text-white px-4 py-2 rounded-full font-bold shadow-md hover:bg-[#1d4ed8] hover:shadow-lg transition-all flex items-center shrink-0"
                 >
                   Post a Job
                 </Link>

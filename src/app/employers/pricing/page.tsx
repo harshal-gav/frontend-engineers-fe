@@ -197,14 +197,14 @@ export default function EmployerPricingPage() {
                 {!user ? (
                   <button
                     onClick={() => router.push("/auth/signup?redirect=/employers/pricing")}
-                    className="w-full btn-primary py-4 rounded-xl text-white bg-[#10b981] hover:bg-[#059669] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
+                    className="w-full btn-primary py-4 rounded-xl text-white bg-[#2563eb] hover:bg-[#1d4ed8] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
                   >
                     🚀 Start Hiring for $99/mo
                   </button>
                 ) : user && isEmployer ? (
                   <button
                     onClick={() => router.push("/employers/post")}
-                    className="w-full btn-primary py-4 rounded-xl text-white bg-[#10b981] hover:bg-[#059669] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
+                    className="w-full btn-primary py-4 rounded-xl text-white bg-[#2563eb] hover:bg-[#1d4ed8] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
                   >
                     Go to Job Posting Dashboard →
                   </button>
@@ -261,7 +261,7 @@ export default function EmployerPricingPage() {
                 
                 {user && (
                   <div className="mt-4 text-xs text-gray-500 text-center leading-relaxed">
-                    By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#10b981] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#10b981] hover:underline">Privacy Policy</Link>. 
+                    By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#2563eb] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#2563eb] hover:underline">Privacy Policy</Link>. 
                     Your subscription renews automatically at $99/month until cancelled.
                   </div>
                 )}

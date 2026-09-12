@@ -129,27 +129,27 @@ export default function PostJobPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-gray-700">Job Title <span className="text-red-500">*</span></label>
-                <input required name="title" value={formData.title} onChange={handleChange} placeholder="e.g. Senior React Engineer" className="w-full border border-gray-300 rounded p-2.5 focus:border-[#2563eb] outline-none" />
+                <input required name="title" value={formData.title} onChange={handleChange} placeholder="e.g. Senior React Engineer" className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-gray-700">Company Name <span className="text-red-500">*</span></label>
-                <input required name="companyName" value={formData.companyName} onChange={handleChange} placeholder="e.g. Stripe" className="w-full border border-gray-300 rounded p-2.5 focus:border-[#2563eb] outline-none" />
+                <input required name="companyName" value={formData.companyName} onChange={handleChange} placeholder="e.g. Stripe" className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
               </div>
             </div>
 
             <div className="space-y-2">
               <label className="text-sm font-semibold text-gray-700">Application URL <span className="text-red-500">*</span></label>
-              <input required type="url" name="applyUrl" value={formData.applyUrl} onChange={handleChange} placeholder="https://..." className="w-full border border-gray-300 rounded p-2.5 focus:border-[#2563eb] outline-none" />
+              <input required type="url" name="applyUrl" value={formData.applyUrl} onChange={handleChange} placeholder="https://..." className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-gray-700">Location</label>
-                <input name="location" value={formData.location} onChange={handleChange} placeholder="e.g. Worldwide, US Only" className="w-full border border-gray-300 rounded p-2.5 focus:border-[#2563eb] outline-none" />
+                <input name="location" value={formData.location} onChange={handleChange} placeholder="e.g. Worldwide, US Only" className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-gray-700">Work Setup</label>
-                <select name="remoteType" value={formData.remoteType} onChange={handleChange} className="w-full border border-gray-300 rounded p-2.5 focus:border-[#2563eb] outline-none bg-white">
+                <select name="remoteType" value={formData.remoteType} onChange={handleChange} className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all appearance-none cursor-pointer">
                   <option value="REMOTE">Remote</option>
                   <option value="HYBRID">Hybrid</option>
                   <option value="ONSITE">Onsite</option>
@@ -157,7 +157,7 @@ export default function PostJobPage() {
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-gray-700">Experience</label>
-                <select name="experienceLevel" value={formData.experienceLevel} onChange={handleChange} className="w-full border border-gray-300 rounded p-2.5 focus:border-[#2563eb] outline-none bg-white">
+                <select name="experienceLevel" value={formData.experienceLevel} onChange={handleChange} className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all appearance-none cursor-pointer">
                   <option value="ENTRY">Entry Level</option>
                   <option value="MID">Mid Level</option>
                   <option value="SENIOR">Senior</option>
@@ -169,15 +169,15 @@ export default function PostJobPage() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-gray-700">Min Salary</label>
-                <input type="number" name="salaryMin" value={formData.salaryMin} onChange={handleChange} placeholder="e.g. 100000" className="w-full border border-gray-300 rounded p-2.5 focus:border-[#2563eb] outline-none" />
+                <input type="number" name="salaryMin" value={formData.salaryMin} onChange={handleChange} placeholder="e.g. 100000" className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-gray-700">Max Salary</label>
-                <input type="number" name="salaryMax" value={formData.salaryMax} onChange={handleChange} placeholder="e.g. 150000" className="w-full border border-gray-300 rounded p-2.5 focus:border-[#2563eb] outline-none" />
+                <input type="number" name="salaryMax" value={formData.salaryMax} onChange={handleChange} placeholder="e.g. 150000" className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
               </div>
               <div className="space-y-2">
                 <label className="text-sm font-semibold text-gray-700">Currency</label>
-                <select name="currency" value={formData.currency} onChange={handleChange} className="w-full border border-gray-300 rounded p-2.5 focus:border-[#2563eb] outline-none bg-white">
+                <select name="currency" value={formData.currency} onChange={handleChange} className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all appearance-none cursor-pointer">
                   <option value="USD">USD ($)</option>
                   <option value="EUR">EUR (€)</option>
                   <option value="GBP">GBP (£)</option>
@@ -188,14 +188,14 @@ export default function PostJobPage() {
 
             <div className="space-y-2">
               <label className="text-sm font-semibold text-gray-700">Job Description <span className="text-red-500">*</span></label>
-              <textarea required name="description" value={formData.description} onChange={handleChange} rows={8} placeholder="Describe the role, responsibilities, and requirements..." className="w-full border border-gray-300 rounded p-2.5 focus:border-[#2563eb] outline-none resize-y" />
+              <textarea required name="description" value={formData.description} onChange={handleChange} rows={8} placeholder="Describe the role, responsibilities, and requirements..." className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none resize-y transition-all" />
             </div>
 
-            <div className="pt-4 border-t border-gray-200">
+            <div className="pt-6 border-t border-gray-100">
               <button 
                 type="submit" 
                 disabled={isSubmitting}
-                className="w-full sm:w-auto px-8 py-3 bg-[#10b981] hover:bg-[#059669] text-white font-bold rounded-lg shadow transition-colors disabled:opacity-50"
+                className="w-full sm:w-auto px-8 py-3.5 bg-[#2563eb] hover:bg-[#1d4ed8] text-white font-bold rounded-xl shadow-md hover:shadow-lg transition-all disabled:opacity-50 flex items-center justify-center gap-2"
               >
                 {isSubmitting ? "Posting Job..." : "Post Job Now"}
               </button>
