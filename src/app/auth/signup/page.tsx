@@ -7,8 +7,10 @@ import { auth, db } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
 import { EyeIcon, EyeSlashIcon } from "@heroicons/react/24/outline";
+import { useSearchParams } from "next/navigation";
+import { Suspense } from "react";
 
-export default function SignupPage() {
+function SignupForm() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
@@ -18,9 +20,8 @@ export default function SignupPage() {
   const [loading, setLoading] = useState(false);
   const router = useRouter();
 
-  // Safest way to read URL params without Suspense wrapper in Next.js app dir client components
-  const searchParams = typeof window !== "undefined" ? new URLSearchParams(window.location.search) : null;
-  const redirectUrl = searchParams?.get("redirect") || "/pricing";
+  const searchParams = useSearchParams();
+  const redirectUrl = searchParams.get("redirect") || "/pricing";
 
   const handleSignup = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -149,5 +150,13 @@ export default function SignupPage() {
         </div>
       </div>
     </div>
+  );
+}
+
+export default function SignupPage() {
+  return (
+    <Suspense fallback={<div className="min-h-screen flex items-center justify-center"><div className="w-8 h-8 skeleton rounded-full" /></div>}>
+      <SignupForm />
+    </Suspense>
   );
 }
