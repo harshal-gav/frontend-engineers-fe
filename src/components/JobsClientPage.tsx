@@ -394,7 +394,7 @@ export default function JobsClientPage() {
             </span>
           </h1>
           <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 text-gray-600">
-            Curated 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers. Pro members get 7-day early access + email alerts, apply before the crowd.
+            Curated 100% remote roles for React, Vue, Angular, Svelte, Next.js, UI/UX, and TypeScript Engineers. Pro members get 7-day early access + email alerts, apply before the crowd.
           </p>
 
           {!isSubscribed && (
@@ -405,7 +405,7 @@ export default function JobsClientPage() {
               >
                 ⭐ Get Pro Membership
               </Link>
-              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access and daily email alerts.</p>
+              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access and daily email alerts. Apply before anyone else with Pro.</p>
             </div>
           )}
 

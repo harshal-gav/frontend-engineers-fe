@@ -74,7 +74,7 @@ export default function SignupPage() {
         
         <div className="flex-1 text-center md:text-left hidden md:block">
           <h1 className="text-4xl font-extrabold text-gray-900 mb-4">Join <span className="text-[#2563eb]">FrontendEngineers.com</span></h1>
-          <p className="text-gray-600">Create an account to unlock premium remote frontend and fullstack JavaScript jobs, and direct ATS links.</p>
+          <p className="text-gray-600">Create an account to unlock premium remote frontend, React, and Vue engineering jobs, and direct ATS links.</p>
         </div>
 
         <div className="flex-1 w-full max-w-md">

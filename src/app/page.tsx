@@ -113,7 +113,7 @@ export default async function HomePage() {
               </span>
             </h1>
             <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 text-gray-600">
-              Curated 100% remote roles for React, Vue, Angular, Node.js, TypeScript, and Fullstack Engineers. Pro members get 7-day early access + email alerts, apply before the crowd.
+              Curated 100% remote roles for React, Vue, Angular, Svelte, Next.js, UI/UX, and TypeScript Engineers. Pro members get 7-day early access + email alerts, apply before the crowd.
             </p>
 
             <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
@@ -123,7 +123,7 @@ export default async function HomePage() {
               >
                 ⭐ Get Pro Membership
               </Link>
-              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access and daily email alerts.</p>
+              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access and daily email alerts. Apply before anyone else with Pro.</p>
             </div>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">
               <div className="w-full bg-white border border-[#e2e2e6] rounded-full h-12 sm:h-[54px] skeleton" />
