@@ -108,7 +108,7 @@ export default function EmployerPricingPage() {
       <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Post Unlimited Jobs & Reach <span className="text-[#10b981]">100k+ Users</span>
+            Post Unlimited Jobs & Reach <span className="text-[#10b981]">100k+ Job Seekers</span>
           </h1>
           <p className="text-xl text-gray-600">
             For just $99/month, unlock unlimited job postings. Market your roles directly to our massive talent pool with instant email alerts. No other platform offers this reach at such an unbeatable price.
@@ -138,7 +138,7 @@ export default function EmployerPricingPage() {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Access to 100k+ Monthly Users</h3>
+                    <h3 className="text-xl font-semibold mb-2">Access to 100k+ Monthly Job Seekers</h3>
                     <p className="text-gray-600">Tap into a massive, highly-engaged community of frontend engineers. Get your roles in front of exactly the right audience.</p>
                   </div>
                 </div>
@@ -149,7 +149,7 @@ export default function EmployerPricingPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Direct Email Alerts</h3>
-                    <p className="text-gray-600">Every job you post is blasted directly to our users' inboxes. Immediate visibility means faster hires and better candidates.</p>
+                    <p className="text-gray-600">Every job you post is blasted directly to our job seekers' inboxes. Immediate visibility means faster hires and better candidates.</p>
                   </div>
                 </div>
                 
