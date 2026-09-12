@@ -265,6 +265,11 @@ export default function EmployerPricingPage() {
                     Your subscription renews automatically at $99/month until cancelled.
                   </div>
                 )}
+                
+                <div className="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center leading-relaxed">
+                  For any query related to payment, reach out to us at: <br/>
+                  <a href="mailto:frontendengineersupport@gmail.com" className="text-[#2563eb] hover:underline font-semibold">frontendengineersupport@gmail.com</a>
+                </div>
 
               </div>
             </div>

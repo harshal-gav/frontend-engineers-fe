@@ -364,10 +364,15 @@ export default function PricingPage() {
 
                 <button
                   onClick={() => router.push("/")}
-                  className="w-full text-gray-600 hover:text-gray-900 py-3 transition-colors underline mt-4"
+                  className="w-full text-gray-600 hover:text-gray-900 py-3 transition-colors underline mt-2"
                 >
                   Browse free jobs (7-day delay)
                 </button>
+
+                <div className="mt-4 pt-4 border-t border-[#e2e2e6] text-xs text-gray-500 text-center leading-relaxed">
+                  For any query related to payment, reach out to us at: <br/>
+                  <a href="mailto:frontendengineersupport@gmail.com" className="text-[#2563eb] hover:underline font-semibold">frontendengineersupport@gmail.com</a>
+                </div>
               </div>
             </div>
           </div>
