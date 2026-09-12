@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { formatSalary, type Job } from "@/lib/jobs";
-import AdUnit from "./AdUnit";
+
 import { useAuth } from "@/context/AuthContext";
 
 // ─── Config ──────────────────────────────────────────────
@@ -38,7 +38,7 @@ interface JobDetailProps {
 
 export default function JobDetail({ job, isPremium }: JobDetailProps) {
   const { isSubscribed } = useAuth();
-  const isAdsEnabled = process.env.NEXT_PUBLIC_ADS_ENABLED === "true";
+
 
   const remote = REMOTE_CONFIG[job.remoteType] || REMOTE_CONFIG.REMOTE;
   const level = job.experienceLevel
@@ -176,15 +176,7 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
         </div>
       </div>
 
-      {/* Detail Page Ad Slot */}
-      {isAdsEnabled && !isSubscribed && (
-        <div className="mb-8">
-          <AdUnit 
-            slotId={process.env.NEXT_PUBLIC_ADSENSE_DETAIL_SLOT || "DETAIL_SLOT_ID"}
-            format="auto" 
-          />
-        </div>
-      )}
+
 
       {/* Apply Button */}
       {job.applyUrl && (

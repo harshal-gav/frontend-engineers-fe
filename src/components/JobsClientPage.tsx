@@ -13,7 +13,7 @@ import FilterSidebar, {
   type FilterState,
 } from "@/components/FilterSidebar";
 import BottomSheet from "@/components/BottomSheet";
-import AdUnit from "@/components/AdUnit";
+
 import type { Job } from "@/lib/jobs";
 
 // ─── Fuse.js config ──────────────────────────────────────
@@ -101,7 +101,7 @@ export default function JobsClientPage() {
   const [allJobs, setAllJobs] = useState<Job[]>([]);
   const [mounted, setMounted] = useState(false);
   
-  const isAdsEnabled = process.env.NEXT_PUBLIC_ADS_ENABLED === "true";
+
   const [dataLoaded, setDataLoaded] = useState(false);
   const [page, setPage] = useState(1);
   const [showFilters, setShowFilters] = useState(false);
@@ -405,7 +405,7 @@ export default function JobsClientPage() {
               >
                 ⭐ Get Pro Membership
               </Link>
-              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access, daily email alerts, and an ad-free experience.</p>
+              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access and daily email alerts.</p>
             </div>
           )}
 
@@ -492,15 +492,7 @@ export default function JobsClientPage() {
                           job={job}
                           index={index}
                         />
-                        {/* Inject an Ad every 5 jobs */}
-                        {(index + 1) % 5 === 0 && isAdsEnabled && !isSubscribed && (
-                          <div className="col-span-1 lg:col-span-2 my-2">
-                            <AdUnit 
-                              slotId={process.env.NEXT_PUBLIC_ADSENSE_FEED_SLOT || "IN_FEED_SLOT_ID"} 
-                              format="fluid" 
-                            />
-                          </div>
-                        )}
+
                       </React.Fragment>
                     ))}
               </div>

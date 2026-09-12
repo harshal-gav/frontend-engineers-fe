@@ -123,7 +123,7 @@ export default async function HomePage() {
               >
                 ⭐ Get Pro Membership
               </Link>
-              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access, daily email alerts, and an ad-free experience.</p>
+              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access and daily email alerts.</p>
             </div>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">
               <div className="w-full bg-white border border-[#e2e2e6] rounded-full h-12 sm:h-[54px] skeleton" />
