@@ -46,11 +46,24 @@ export async function POST(req: Request) {
       console.warn("Failed to fetch live exchange rate, using fallback.", e);
     }
 
-    // Calculate exact INR amount equivalent to $9 USD
-    const exactInrAmount = 9 * inrRate;
+    // Parse optional body for plan type
+    let isEmployer = false;
+    try {
+      const bodyText = await req.text();
+      if (bodyText) {
+        const body = JSON.parse(bodyText);
+        isEmployer = body.type === 'employer';
+      }
+    } catch (e) {
+      // ignore JSON parse errors if body is empty or invalid
+    }
+
+    // Calculate exact INR amount equivalent to base USD amount
+    const baseUsdAmount = isEmployer ? 99 : 9;
+    const exactInrAmount = baseUsdAmount * inrRate;
     const amount = exactInrAmount.toFixed(2);
     
-    const productinfo = "Pro Membership";
+    const productinfo = isEmployer ? "Employer Unlimited Jobs" : "Pro Membership";
     const firstname = decodedToken.email?.split('@')[0] || "User";
     const email = decodedToken.email || "";
     const phone = "9999999999"; // Placeholder, PayU often requires a phone number

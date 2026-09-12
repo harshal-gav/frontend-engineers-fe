@@ -34,7 +34,21 @@ export async function GET(request: Request) {
     }
 
     // Use shared utility to load, filter, and enrich jobs
-    const jobs = loadJobsFromFile();
+    let jobs = loadJobsFromFile();
+
+    // Fetch employer-posted jobs from Firestore
+    try {
+      const db = getAdminDb();
+      const firestoreJobsSnapshot = await db.collection("jobs").orderBy("postedAt", "desc").get();
+      const firestoreJobs: any[] = [];
+      firestoreJobsSnapshot.forEach(doc => {
+        firestoreJobs.push(doc.data());
+      });
+      // Prepend Firestore jobs to the top of the list
+      jobs = [...firestoreJobs, ...jobs];
+    } catch (dbError) {
+      console.error("Failed to fetch employer jobs from Firestore", dbError);
+    }
 
     if (jobs.length === 0) {
       return NextResponse.json([]);

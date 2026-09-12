@@ -43,13 +43,16 @@ export async function POST(req: Request) {
             updatedAt: new Date()
           });
 
-          // Calculate 30 days from now
           const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+          
+          const isEmployer = productinfo === "Employer Unlimited Jobs";
 
-          // Upgrade user to Pro
+          // Upgrade user to Pro (and Employer if applicable)
           await db.collection('users').doc(uid).set({
             isPremium: true,
             isSubscribed: true,
+            isEmployer: isEmployer,
+            ...(isEmployer && { role: 'employer' }),
             payuSubscriptionId: mihpayid,
             paymentGateway: 'payu',
             subscriptionExpiresAt: expiresAt,

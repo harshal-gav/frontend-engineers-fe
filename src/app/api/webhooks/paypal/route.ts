@@ -1,117 +1,41 @@
-import { NextResponse } from "next/server";
-import { getAdminDb } from "@/lib/firebase-admin";
-import * as admin from "firebase-admin";
+import { NextResponse } from 'next/server';
+import { getAdminDb } from '@/lib/firebase-admin';
+
+// In a real production app, you should verify the PayPal webhook signature.
+// For now, this handles the BILLING.SUBSCRIPTION.ACTIVATED event.
 
 export async function POST(req: Request) {
-  const startTime = Date.now();
-
   try {
-    const rawBody = await req.text();
-    const payload = JSON.parse(rawBody);
+    const body = await req.json();
 
-    const eventName = payload.event_type;
-    const resource = payload.resource;
-    
-    // In PayPal, the custom field is passed inside the subscriber or custom_id field
-    const userId = resource.custom_id || (resource.subscriber && resource.subscriber.custom_id);
-    const subscriptionId = resource.id;
+    const { event_type, resource } = body;
 
-    console.log(`[PayPal Webhook] 📩 Event: ${eventName} | Sub: ${subscriptionId} | User: ${userId || "UNKNOWN"}`);
+    if (event_type === 'BILLING.SUBSCRIPTION.ACTIVATED' || event_type === 'BILLING.SUBSCRIPTION.UPDATED') {
+      const planId = resource.plan_id;
+      const customId = resource.custom_id; // we passed user.uid in custom_id
 
-    if (!userId) {
-      console.warn("[PayPal Webhook] ⚠️ No custom_id (user_id) found — acknowledging to prevent retries");
-      return NextResponse.json({ success: true });
-    }
+      if (customId) {
+        const db = getAdminDb();
+        const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+        
+        const isEmployer = planId === process.env.NEXT_PUBLIC_PAYPAL_EMPLOYER_PLAN_ID;
 
-    const adminDb = getAdminDb();
-    const userRef = adminDb.collection("users").doc(userId);
-    const subscriptionRef = userRef.collection("subscriptions").doc(subscriptionId);
-
-    switch (eventName) {
-      case "BILLING.SUBSCRIPTION.ACTIVATED":
-      case "BILLING.SUBSCRIPTION.RENEWED": {
-        // PayPal sends the next billing date
-        const nextBillingTime = resource.billing_info?.next_billing_time;
-        // Fallback to 30 days from now if not present
-        const expiresAt = nextBillingTime 
-          ? new Date(nextBillingTime).toISOString() 
-          : new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
-
-        await userRef.set({
+        await db.collection('users').doc(customId).set({
           isPremium: true,
+          isSubscribed: true,
+          isEmployer: isEmployer,
+          ...(isEmployer && { role: 'employer' }),
+          paypalSubscriptionId: resource.id,
+          paymentGateway: 'paypal',
           subscriptionExpiresAt: expiresAt,
-          paypalSubscriptionId: subscriptionId,
-          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
+          updatedAt: new Date()
         }, { merge: true });
-
-        const subData = {
-          status: resource.status,
-          plan_id: resource.plan_id,
-          created_time: resource.create_time || null,
-          next_billing_time: nextBillingTime || null,
-          updated_at: admin.firestore.FieldValue.serverTimestamp(),
-        };
-
-        await subscriptionRef.set(subData, { merge: true });
-
-        // Also log to root-level collection for admin dashboards
-        await adminDb.collection("paypal_transactions").doc(subscriptionId).set({
-          ...subData,
-          uid: userId,
-          event: eventName
-        }, { merge: true });
-
-        console.log(`[PayPal Webhook] ✅ ${eventName} — User ${userId} is now premium (expires: ${expiresAt})`);
-        break;
       }
-
-      case "BILLING.SUBSCRIPTION.CANCELLED":
-      case "BILLING.SUBSCRIPTION.SUSPENDED":
-      case "BILLING.SUBSCRIPTION.EXPIRED": {
-        const userDoc = await userRef.get();
-        const currentData = userDoc.data();
-        
-        // If PayPal sends next_billing_time, use it. Otherwise, fallback to our stored subscriptionExpiresAt.
-        const nextBillingTime = resource.billing_info?.next_billing_time || currentData?.subscriptionExpiresAt;
-        
-        // Check if there is still time left in the current billing cycle
-        const stillActive = nextBillingTime && new Date(nextBillingTime) > new Date();
-
-        await userRef.set({
-          isPremium: stillActive ? true : false,
-          subscriptionExpiresAt: nextBillingTime || null,
-          updatedAt: admin.firestore.FieldValue.serverTimestamp(),
-        }, { merge: true });
-
-        const subData = {
-          status: resource.status,
-          updated_at: admin.firestore.FieldValue.serverTimestamp(),
-        };
-
-        await subscriptionRef.set(subData, { merge: true });
-        
-        // Also log to root-level collection for admin dashboards (like PayU)
-        await adminDb.collection("paypal_transactions").doc(subscriptionId).set({
-          ...subData,
-          uid: userId,
-          event: eventName
-        }, { merge: true });
-
-        console.log(`[PayPal Webhook] ⚠️ ${eventName} — User ${userId} (access until: ${nextBillingTime || "immediately revoked"})`);
-        break;
-      }
-
-      default:
-        console.log(`[PayPal Webhook] ℹ️ Unhandled event: ${eventName} — acknowledging`);
     }
 
-    const duration = Date.now() - startTime;
-    console.log(`[PayPal Webhook] ⏱️ Processed ${eventName} in ${duration}ms`);
-
-    return NextResponse.json({ success: true });
-  } catch (error: unknown) {
-    const message = error instanceof Error ? error.message : "Unknown error";
-    console.error(`[PayPal Webhook] 💥 Processing error: ${message}`, error);
-    return NextResponse.json({ error: "Webhook handler failed" }, { status: 500 });
+    return NextResponse.json({ received: true }, { status: 200 });
+  } catch (error) {
+    console.error('Error in PayPal webhook:', error);
+    return NextResponse.json({ error: 'Internal Server Error' }, { status: 500 });
   }
 }

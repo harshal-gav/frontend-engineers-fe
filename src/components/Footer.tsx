@@ -28,7 +28,12 @@ export default function Footer() {
               </li>
               <li>
                 <Link href="/pricing" className="hover:text-[#2563eb] transition-colors">
-                  Pricing
+                  Pricing (Candidates)
+                </Link>
+              </li>
+              <li>
+                <Link href="/employers/pricing" className="hover:text-[#2563eb] transition-colors font-medium">
+                  Post a Job (Employers)
                 </Link>
               </li>
               <li>

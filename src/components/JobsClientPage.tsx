@@ -84,7 +84,7 @@ export default function JobsClientPage() {
   const searchParams = useSearchParams();
 
   // Auth & Subscription State
-  const { user, loading: authLoading, isSubscribed } = useAuth();
+  const { user, loading: authLoading, isSubscribed, isEmployer } = useAuth();
 
   const handleLogout = async () => {
     try {
@@ -332,6 +332,13 @@ export default function JobsClientPage() {
               <div className="w-20 h-8 skeleton rounded" />
             ) : user ? (
               <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+                <Link
+                  href={isEmployer ? "/employers/post" : "/employers/pricing"}
+                  className="text-xs sm:text-sm text-gray-600 hover:text-[#2563eb] font-semibold transition-colors flex items-center shrink-0"
+                >
+                  Post a Job
+                </Link>
+                
                 {!isSubscribed && (
                   <Link
                     href="/pricing"
@@ -366,6 +373,12 @@ export default function JobsClientPage() {
               </div>
             ) : (
               <>
+                <Link
+                  href="/employers/pricing"
+                  className="text-sm px-3 sm:px-4 py-2 text-gray-600 font-semibold hover:text-[#2563eb] transition-colors min-h-[44px] flex items-center"
+                >
+                  Post a Job
+                </Link>
                 <Link
                   href="/auth/login"
                   className="btn-secondary text-sm px-3 sm:px-4 py-2 hover:text-[#2563eb] transition-colors min-h-[44px] flex items-center"
