@@ -1,22 +1,20 @@
-name: Post Job to LinkedIn
+name: Post Employer Ad to LinkedIn
 
 on:
   schedule:
-    # Run every 2 hours
-    - cron: '0 */2 * * *'
+    # Run every 2 hours on the odd hours (alternating with the candidate post)
+    - cron: '0 1-23/2 * * *'
   workflow_dispatch: {}  # Manual trigger for testing
 
 jobs:
-  post-to-linkedin:
+  post-to-linkedin-employers:
     runs-on: ubuntu-latest
     permissions:
-      contents: write
+      contents: read
     
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
       
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -26,12 +24,10 @@ jobs:
       - name: Install dotenv dependency
         run: npm install dotenv
       
-      - name: Run LinkedIn Poster
+      - name: Run LinkedIn Poster for Employers
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
           LINKEDIN_PERSON_ID: ${{ secrets.LINKEDIN_PERSON_ID }}
           LINKEDIN_ORG_ID: ${{ secrets.LINKEDIN_ORG_ID }}
-        run: node scripts/post-to-linkedin.js
-      
-
+        run: node scripts/post-to-linkedin-employers.js
