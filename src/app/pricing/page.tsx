@@ -174,7 +174,7 @@ export default function PricingPage() {
                     <tr>
                       <td>Applicant competition</td>
                       <td className="muted-cell text-center">High (100s of applicants)</td>
-                      <td className="highlight-cell text-center">✓ Low — be among the first 10</td>
+                      <td className="highlight-cell text-center">✓ Low - be among the first 10</td>
                     </tr>
                     <tr>
                       <td>Salary & apply links</td>
@@ -258,7 +258,7 @@ export default function PricingPage() {
 
               {/* Cancel anytime line */}
               <p className="text-xs text-gray-600 mb-6 text-center">
-                Cancel anytime — no commitments.
+                Cancel anytime - no commitments.
               </p>
 
               <ul className="mb-6 space-y-3 text-left text-sm lg:text-base">
@@ -284,7 +284,7 @@ export default function PricingPage() {
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Apply before the crowd — be among the first 10</span>
+                  <span>Low competition - be among the first 10</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
