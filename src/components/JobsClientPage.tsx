@@ -340,10 +340,10 @@ export default function JobsClientPage() {
             {authLoading ? (
               <div className="w-20 h-8 skeleton rounded" />
             ) : user ? (
-              <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+              <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
                 <Link
                   href={isEmployer ? "/employers/post" : "/employers/pricing"}
-                  className="text-xs sm:text-sm bg-[#2563eb] text-white px-4 py-2 rounded-full font-bold shadow-md hover:bg-[#1d4ed8] hover:shadow-lg transition-all flex items-center shrink-0"
+                  className="text-xs sm:text-sm bg-[#2563eb] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold shadow-md hover:bg-[#1d4ed8] hover:shadow-lg transition-all flex items-center justify-center shrink-0"
                 >
                   Post a Job
                 </Link>
@@ -351,29 +351,29 @@ export default function JobsClientPage() {
                 {!isSubscribed && (
                   <Link
                     href="/pricing"
-                    className="btn-primary text-xs sm:text-sm bg-[#2563eb] text-white font-semibold rounded px-3 sm:px-4 py-1.5 hover:bg-[#3b82f6] flex items-center shrink-0"
+                    className="text-xs sm:text-sm bg-[#d97706] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold shadow-md hover:bg-[#b45309] hover:shadow-lg transition-all flex items-center justify-center shrink-0"
                   >
-                    <span>⭐ Get Pro Membership</span>
+                    ⭐ Get Pro
                   </Link>
                 )}
                 
-                <div className="flex items-center gap-1.5 sm:gap-3 bg-transparent sm:bg-white/50 sm:border sm:border-[#e2e2e6] rounded-full sm:pl-3 sm:pr-1 sm:py-1">
+                <div className="flex items-center gap-2 sm:gap-3 bg-transparent sm:bg-white/50 sm:border sm:border-[#e2e2e6] rounded-full sm:pl-3 sm:pr-1 sm:py-1 h-[32px] sm:h-[40px]">
                   {/* Pro Badge */}
                   {isSubscribed && (
-                    <span className="text-[10px] sm:text-xs bg-[#d97706] text-black px-1.5 sm:px-2 py-0.5 sm:py-0.5 rounded-md sm:rounded-full font-bold uppercase tracking-wider leading-none">
+                    <span className="text-[10px] sm:text-xs bg-[#d97706] text-white px-2 py-0.5 rounded-full font-bold uppercase tracking-wider leading-none">
                       Pro
                     </span>
                   )}
                   
                   {/* Desktop: Email text */}
-                  <span className="hidden sm:block text-sm font-semibold text-gray-900 max-w-[150px] truncate" title={user.email || ""}>
+                  <span className="hidden sm:block text-sm font-semibold text-gray-900 max-w-[120px] truncate" title={user.email || ""}>
                     {user.email}
                   </span>
 
                   {/* Log Out Button */}
                   <button 
                     onClick={handleLogout} 
-                    className="text-xs bg-white text-gray-600 hover:bg-[#f5f5f7] hover:text-[#e11d48] px-3 py-1 sm:py-1.5 rounded-full transition-colors font-medium flex items-center justify-center border border-[#e2e2e6] shrink-0"
+                    className="text-xs sm:text-sm bg-white text-gray-600 hover:bg-[#f5f5f7] hover:text-[#e11d48] px-3 py-1.5 sm:py-1.5 rounded-full transition-colors font-medium flex items-center justify-center border border-[#e2e2e6] sm:border-none shrink-0 h-full"
                     title="Log Out"
                   >
                     Log Out
@@ -381,26 +381,26 @@ export default function JobsClientPage() {
                 </div>
               </div>
             ) : (
-              <>
+              <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3">
                 <Link
                   href="/employers/pricing"
-                  className="text-xs sm:text-sm bg-[#2563eb] text-white px-4 py-2 rounded-full font-bold shadow-md hover:bg-[#1d4ed8] hover:shadow-lg transition-all flex items-center shrink-0"
+                  className="text-xs sm:text-sm bg-[#2563eb] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold shadow-md hover:bg-[#1d4ed8] hover:shadow-lg transition-all flex items-center justify-center shrink-0"
                 >
                   Post a Job
                 </Link>
                 <Link
                   href="/auth/login"
-                  className="btn-secondary text-sm px-3 sm:px-4 py-2 hover:text-[#2563eb] transition-colors min-h-[44px] flex items-center"
+                  className="text-xs sm:text-sm font-medium text-gray-600 hover:text-[#2563eb] transition-colors flex items-center justify-center shrink-0 px-2 sm:px-3"
                 >
                   Log In
                 </Link>
                 <Link
                   href="/pricing"
-                  className="btn-primary text-sm bg-[#2563eb] text-white font-semibold rounded px-3 sm:px-4 py-2 hover:bg-[#3b82f6] min-h-[44px] flex items-center"
+                  className="text-xs sm:text-sm bg-[#d97706] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold shadow-md hover:bg-[#b45309] hover:shadow-lg transition-all flex items-center justify-center shrink-0"
                 >
-                  ⭐ Pro Membership
+                  ⭐ Get Pro
                 </Link>
-              </>
+              </div>
             )}
           </div>
         </div>
@@ -423,7 +423,7 @@ export default function JobsClientPage() {
             <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
               <Link 
                 href="/pricing" 
-                className="w-full sm:w-auto btn-primary bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base"
+                className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
               >
                 ⭐ Get Pro Membership
               </Link>

@@ -119,7 +119,7 @@ export default async function HomePage() {
             <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
               <Link 
                 href="/pricing" 
-                className="w-full sm:w-auto btn-primary bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base"
+                className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
               >
                 ⭐ Get Pro Membership
               </Link>

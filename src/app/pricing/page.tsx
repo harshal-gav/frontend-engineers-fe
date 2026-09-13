@@ -301,7 +301,7 @@ export default function PricingPage() {
                 {!user ? (
                   <button
                     onClick={() => router.push("/auth/signup?redirect=/pricing")}
-                    className="w-full btn-primary py-3 rounded text-white bg-[#2563eb] font-bold text-lg"
+                    className="w-full py-3 rounded-full text-white bg-[#d97706] hover:bg-[#b45309] font-bold text-lg shadow-lg shadow-orange-500/20 transition-colors"
                   >
                     ⭐ Get Pro Membership for $9/mo
                   </button>
