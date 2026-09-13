@@ -51,24 +51,32 @@ if (!DRY_RUN && (!LINKEDIN_ACCESS_TOKEN || (!LINKEDIN_PERSON_ID && !LINKEDIN_ORG
 // ─── Gemini AI ───────────────────────────────────────────────
 
 async function generatePostWithGemini() {
-  const prompt = `You are a B2B marketing manager for FrontendEngineers.com, the premier job board for remote frontend developers.
+  const prompt = `You are an aggressive, highly persuasive B2B marketing manager for FrontendEngineers.com, the premier job board for remote frontend developers.
 
-Write an engaging LinkedIn post to promote our Employer Hiring Plan to recruiters, founders, and hiring managers.
+Write an engaging LinkedIn post to sell our Employer Hiring Plan to tech recruiters, startup founders, and engineering managers.
+
+**CRITICAL RULE: VARIETY & DIVERSITY**
+This script runs every 2 hours. If every post looks the same, our audience will ignore it.
+YOU MUST HEAVILY VARY the style, format, hook, and length of every post.
+- Sometimes tell a short story about how hard hiring is.
+- Sometimes use a bulleted list of raw benefits.
+- Sometimes ask a controversial question about tech recruitment.
+- Sometimes keep it short, punchy, and direct.
+DO NOT use the same opening template. DO NOT use the exact same emojis every time. Mix it up completely!
 
 **IMPORTANT RULES & INSTRUCTIONS:**
-1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown and the literal asterisks will show up. Use plain text, capital letters, and emojis for emphasis instead.
-2. THE HOOK (CRITICAL): The VERY FIRST LINE of the post MUST contain "hiring frontend engineers" AND the domain "FrontendEngineers.com". Example: "🚀 Hiring frontend engineers? FrontendEngineers.com is the only place you need to post!"
-3. CONTEXT & FORMATTING: Keep the context, format, delivery, and emojis changing for every post so they don't look repetitive or automated.
-4. IN THE BODY - HIGHLIGHT THE BENEFITS:
-   - Mention the massive reach: "Access to 100,000+ monthly active frontend developers."
-   - Mention direct email alerts: "Your job gets blasted directly to our users' inboxes the moment it's posted."
-   - Emphasize premium placement: "Your roles appear at the very top of the board."
-5. PRICING & LINKS (Crucial):
-   - Heavily promote the "Unlimited Job Postings for a flat $99/month" pricing. Emphasize that no other platform offers this much reach for such a low, unlimited price.
-   - Include a link to get started: https://www.frontendengineers.com/employers/pricing
-6. HASHTAGS: Include 5-8 highly relevant hashtags like #Hiring #Recruiting #TechRecruitment #FrontendEngineers #HRTech #Startups.
+1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown. Use plain text and capital letters for emphasis instead.
+2. THE HOOK: You must mention "FrontendEngineers.com" and "hiring frontend engineers" somewhere in the first two sentences naturally, but DO NOT use the exact same sentence structure every time.
+3. THE PITCH - AGGRESSIVELY SELL THESE BENEFITS:
+   - "Access 100K+ job seekers specific to this niche (Frontend)." Emphasize that because it's niche, it's HIGH VALUE. No generic noise.
+   - "Direct access to our 5K+ frontend-specific mailing list."
+   - "We will cross-post your job directly to our highly active LinkedIn page!"
+4. PRICING & CALL TO ACTION:
+   - Highlight the unbeatable price: "Just 99 USD per month for UNLIMITED job postings."
+   - Always include this exact link to buy: https://www.frontendengineers.com/employers/pricing
+5. HASHTAGS: Include 3-5 relevant hashtags (e.g., #TechRecruitment #Hiring #FrontendEngineers #Startups).
 
-Write ONLY the post text, nothing else. Make it catchy and space it out with newlines for readability.`;
+Write ONLY the post text, nothing else. Make it compelling and highly readable.`;
 
   // Retry up to 3 times if the generated post is too short
   for (let attempt = 1; attempt <= 3; attempt++) {

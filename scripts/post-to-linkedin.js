@@ -106,26 +106,34 @@ function generateSlug(job) {
 // ─── Gemini AI ───────────────────────────────────────────────
 
 async function generatePostWithGemini() {
-  const prompt = `You are a social media manager for FrontendEngineers.com, the premier job board for remote frontend developers.
+  const prompt = `You are a highly creative social media manager for FrontendEngineers.com, the premier job board for remote frontend developers.
 
-Write an engaging LinkedIn post to promote our website. DO NOT promote a specific job.
+Write an engaging LinkedIn post to promote our website to job seekers. DO NOT promote a specific job.
+
+**CRITICAL RULE: VARIETY & DIVERSITY**
+This script runs every 2 hours. If every post looks the same, our audience will ignore it.
+YOU MUST HEAVILY VARY the style, format, hook, and length of every post.
+- Sometimes write a relatable story about the struggles of applying to 100s of jobs.
+- Sometimes use a bulleted list of raw benefits.
+- Sometimes ask an engaging question about frontend interviews.
+- Sometimes keep it short, punchy, and direct.
+DO NOT use the same opening template. DO NOT use the exact same emojis every time. Mix it up completely!
 
 **IMPORTANT RULES & INSTRUCTIONS:**
-1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown and the literal asterisks will show up. Use plain text, capital letters, and emojis for emphasis instead.
-2. THE HOOK (CRITICAL): The VERY FIRST LINE of the post MUST contain the words "remote frontend jobs" AND the domain "FrontendEngineers.com". Example: "🚀 Looking for remote frontend jobs? FrontendEngineers.com is your ultimate destination!"
-3. CONTEXT & FORMATTING: Keep the context, format, delivery, and emojis changing for every post so they don't look repetitive or automated.
-4. IN THE BODY:
+1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown. Use plain text and capital letters for emphasis instead.
+2. THE HOOK: You must mention "FrontendEngineers.com" and "remote frontend jobs" naturally somewhere in the first two sentences, but DO NOT use the exact same sentence structure every time.
+3. THE PITCH:
    - Market it for frontend developers to get jobs quickly.
-   - Mention that they get "massive access for frontend jobs only".
+   - Emphasize "massive access for frontend jobs only".
    - Mention they can "find all world remote jobs of frontend in one place".
    - Mention that "all postings are verified".
-5. PRICING & LINKS (Include these in a creative way):
-   - Mention getting PRO access or unlocking 1,000+ remote jobs for just $9/month.
-   - Include a link to explore jobs: https://www.frontendengineers.com
-   - Include a link to get PRO access: https://www.frontendengineers.com/pricing
-6. HASHTAGS: Include 5-8 highly relevant hashtags like #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment #FrontendEngineers.
+4. PRICING & LINKS:
+   - Mention unlocking PRO access to 1,000+ remote jobs for just $9/month.
+   - Always include a link to explore: https://www.frontendengineers.com
+   - Always include a link to get PRO: https://www.frontendengineers.com/pricing
+5. HASHTAGS: Include 3-5 relevant hashtags (e.g., #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment).
 
-Write ONLY the post text, nothing else. Make it catchy and space it out with newlines for readability.`;
+Write ONLY the post text, nothing else. Make it catchy and highly readable.`;
 
   // Retry up to 3 times if the generated post is too short
   for (let attempt = 1; attempt <= 3; attempt++) {
