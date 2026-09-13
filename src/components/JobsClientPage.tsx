@@ -254,6 +254,13 @@ export default function JobsClientPage() {
       filtered.sort((a, b) => (b.salaryMax || 0) - (a.salaryMax || 0));
     } else if (filters.sortBy === "salary_low") {
       filtered.sort((a, b) => (a.salaryMin || 999999) - (b.salaryMin || 999999));
+    } else {
+      // Default newest first (latest at top)
+      filtered.sort((a, b) => {
+        const timeA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
+        const timeB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
+        return timeB - timeA;
+      });
     }
 
     const total = filtered.length;
