@@ -37,18 +37,18 @@ export default function EmployerPricingPage() {
         const ipRes = await fetch("https://ipapi.co/json/");
         const ipData = await ipRes.json();
         const currency = ipData.currency;
-        
+
         if (currency && currency !== "USD") {
           const rateRes = await fetch("https://open.er-api.com/v6/latest/USD");
           const rateData = await rateRes.json();
           const rate = rateData.rates[currency];
-          
+
           if (rate) {
             const converted = Math.round(99 * rate); // $99 * rate
-            const formatted = new Intl.NumberFormat(undefined, { 
-              style: 'currency', 
+            const formatted = new Intl.NumberFormat(undefined, {
+              style: 'currency',
               currency: currency,
-              maximumFractionDigits: 0 
+              maximumFractionDigits: 0
             }).format(converted);
             setLocalPrice(`approx ${formatted}`);
           }
@@ -64,7 +64,7 @@ export default function EmployerPricingPage() {
     try {
       if (!user) return;
       const token = await user.getIdToken();
-      
+
       const res = await fetch("/api/payu/create-subscription", {
         method: "POST",
         headers: {
@@ -73,19 +73,19 @@ export default function EmployerPricingPage() {
         },
         body: JSON.stringify({ type: 'employer' }) // tell backend to use employer pricing
       });
-      
+
       const data = await res.json();
-      
+
       if (!res.ok || data.error) {
         setError(data.error || "Failed to initialize PayU");
         return;
       }
-      
+
       // Dynamically create and submit a form to PayU
       const form = document.createElement("form");
       form.setAttribute("method", "POST");
       form.setAttribute("action", data.action);
-      
+
       Object.keys(data.params).forEach((key) => {
         const hiddenField = document.createElement("input");
         hiddenField.setAttribute("type", "hidden");
@@ -93,10 +93,10 @@ export default function EmployerPricingPage() {
         hiddenField.setAttribute("value", data.params[key]);
         form.appendChild(hiddenField);
       });
-      
+
       document.body.appendChild(form);
       form.submit();
-      
+
     } catch (err) {
       console.error(err);
       setError("Failed to initiate PayU payment");
@@ -108,38 +108,28 @@ export default function EmployerPricingPage() {
       <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Post Unlimited Jobs & Reach <span className="text-[#10b981]">100k+ Job Seekers</span>
+            Hire Frontend Developers at Scale <span className="text-[#10b981]">Without Paying Per Job</span>
           </h1>
           <p className="text-xl text-gray-600">
-            For just $99/month, unlock unlimited job postings. Market your roles directly to our massive talent pool with instant email alerts. No other platform offers this reach at such an unbeatable price.
+            Reach our audience of 100K+ frontend developers directly. Post unlimited React, Next.js, Vue, Angular and TypeScript jobs to our highly focused community for $99/month.
           </p>
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">
-          
+
           {/* ─── Left Column (Benefits) ─── */}
           <div className="flex-1 w-full flex flex-col gap-8 order-2 lg:order-1">
             <div className="glass-card w-full overflow-hidden p-8 bg-white shadow-xl rounded-2xl border-t-4 border-[#10b981]">
-              <h2 className="text-2xl font-bold mb-6">Why Post With Us?</h2>
-              
-              <div className="space-y-6">
-                <div className="flex gap-4">
-                  <div className="flex-shrink-0 w-12 h-12 bg-[#10b981]/10 rounded-full flex items-center justify-center text-[#10b981]">
-                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">Appears at the Top</h3>
-                    <p className="text-gray-600">Your job postings get premium placement, ensuring they are seen first by top-tier candidates actively looking for roles.</p>
-                  </div>
-                </div>
+              <h2 className="text-2xl font-bold mb-6">Why Recruiters Choose Us?</h2>
 
+              <div className="space-y-6">
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#10b981]/10 rounded-full flex items-center justify-center text-[#10b981]">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Access to 100k+ Monthly Job Seekers</h3>
-                    <p className="text-gray-600">Tap into a massive, highly-engaged community of frontend engineers. Get your roles in front of exactly the right audience.</p>
+                    <h3 className="text-xl font-semibold mb-2">Frontend-Only Audience</h3>
+                    <p className="text-gray-600">Stop paying for generic job boards. Get your roles in front of exactly the right audience React, Next.js, Vue, Angular, and TypeScript talent.</p>
                   </div>
                 </div>
 
@@ -148,18 +138,28 @@ export default function EmployerPricingPage() {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Direct Email Alerts</h3>
-                    <p className="text-gray-600">Every job you post is blasted directly to our job seekers' inboxes. Immediate visibility means faster hires and better candidates.</p>
+                    <h3 className="text-xl font-semibold mb-2">Direct Reach to 5,000+ Engineers</h3>
+                    <p className="text-gray-600">Every job you post is blasted directly to our 5K+ frontend-specific mailing list. Immediate visibility means faster hires and qualified candidates.</p>
                   </div>
                 </div>
-                
+
                 <div className="flex gap-4">
                   <div className="flex-shrink-0 w-12 h-12 bg-[#10b981]/10 rounded-full flex items-center justify-center text-[#10b981]">
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Unlimited Posts, Unbeatable Value</h3>
-                    <p className="text-gray-600">Post as many roles as you need for a flat $99/mo. No hidden fees. No other platform gives you this level of access at this price.</p>
+                    <h3 className="text-xl font-semibold mb-2">Unlimited Jobs. One Flat Fee.</h3>
+                    <p className="text-gray-600">Posting 10 jobs individually costs thousands on traditional platforms. Post unlimited vacancies for all your clients for just $99/month.</p>
+                  </div>
+                </div>
+
+                <div className="flex gap-4">
+                  <div className="flex-shrink-0 w-12 h-12 bg-[#10b981]/10 rounded-full flex items-center justify-center text-[#10b981]">
+                    <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">Ideal for Growing Teams & Agencies</h3>
+                    <p className="text-gray-600">Whether you're a startup hiring multiple engineers or a recruiter juggling various clients, our Hiring Pass makes scaling easy.</p>
                   </div>
                 </div>
               </div>
@@ -169,15 +169,15 @@ export default function EmployerPricingPage() {
           {/* ─── Right Column (Pricing Card) ──────────────── */}
           <div className="w-full lg:w-[420px] shrink-0 order-1 lg:order-2 lg:sticky lg:top-24">
             <div className="glass-card p-6 lg:p-7 border-2 border-[#10b981] bg-white rounded-2xl shadow-2xl relative">
-              
-              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#10b981] text-white px-4 py-1 rounded-full text-sm font-bold uppercase tracking-wider">
-                Employer Pro
+
+              <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#10b981] text-white px-6 py-1.5 rounded-full text-sm font-bold uppercase tracking-wider whitespace-nowrap shadow-md">
+                🚀 Frontend Hiring Pro
               </div>
 
               <div className="text-gray-900 font-semibold tracking-wider uppercase mb-2 text-center mt-4">
                 Unlimited Hiring Plan
               </div>
-              
+
               <div className="flex flex-col items-center mb-6">
                 <div className="flex items-end justify-center gap-1">
                   <span className="text-6xl font-extrabold text-gray-900">$99</span>
@@ -193,18 +193,18 @@ export default function EmployerPricingPage() {
 
               <div className="flex flex-col gap-3 min-h-[150px]">
                 {error && <div className="text-red-500 mb-2 text-center font-medium bg-red-50 p-2 rounded">{error}</div>}
-                
+
                 {!user ? (
                   <button
                     onClick={() => router.push("/auth/signup?redirect=/employers/pricing")}
-                    className="w-full btn-primary py-4 rounded-xl text-white bg-[#2563eb] hover:bg-[#1d4ed8] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
+                    className="w-full py-4 rounded-xl text-white bg-[#2563eb] hover:bg-[#1d4ed8] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
                   >
-                    🚀 Start Hiring for $99/mo
+                    Hire Frontend Developers → $99/mo
                   </button>
                 ) : user && isEmployer ? (
                   <button
                     onClick={() => router.push("/employers/post")}
-                    className="w-full btn-primary py-4 rounded-xl text-white bg-[#2563eb] hover:bg-[#1d4ed8] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
+                    className="w-full py-4 rounded-xl text-white bg-[#2563eb] hover:bg-[#1d4ed8] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
                   >
                     Go to Job Posting Dashboard →
                   </button>
@@ -243,7 +243,7 @@ export default function EmployerPricingPage() {
                         />
                       </PayPalScriptProvider>
                     </div>
-                    
+
                     <div className="relative flex py-2 items-center">
                       <div className="flex-grow border-t border-gray-200"></div>
                       <span className="flex-shrink-0 mx-4 text-gray-400 text-sm font-semibold uppercase">OR</span>
@@ -258,23 +258,23 @@ export default function EmployerPricingPage() {
                     </button>
                   </div>
                 )}
-                
+
                 {user && (
                   <div className="mt-4 text-xs text-gray-500 text-center leading-relaxed">
-                    By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#2563eb] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#2563eb] hover:underline">Privacy Policy</Link>. 
+                    By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#2563eb] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#2563eb] hover:underline">Privacy Policy</Link>.
                     Your subscription renews automatically at $99/month until cancelled.
                   </div>
                 )}
-                
+
                 <div className="mt-4 pt-4 border-t border-gray-200 text-xs text-gray-500 text-center leading-relaxed">
-                  For any query related to payment, reach out to us at: <br/>
+                  For any query related to payment, reach out to us at: <br />
                   <a href="mailto:frontendengineersupport@gmail.com" className="text-[#2563eb] hover:underline font-semibold">frontendengineersupport@gmail.com</a>
                 </div>
 
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
