@@ -54,12 +54,23 @@ export async function GET(request: Request) {
       return NextResponse.json([]);
     }
 
+    // Optimize bandwidth: Truncate descriptions for the listing API
+    // We only need the first ~500 chars for client-side search and preview.
+    // The full description is available on the individual static /jobs/[slug] page.
+    const lightweightJobs = jobs.map((job) => {
+      const optimized = { ...job };
+      if (optimized.description && optimized.description.length > 500) {
+        optimized.description = optimized.description.substring(0, 500) + "...";
+      }
+      return optimized;
+    });
+
     // EARLY ACCESS MODEL:
     // - Premium users see ALL jobs (including fresh ones posted within the last 7 days).
     // - Free users only see jobs older than 7 days.
     // - SALARY GATING: Salary is hidden for free users for all jobs.
     if (!isPremium) {
-      const publicJobs = jobs
+      const publicJobs = lightweightJobs
         .filter((job) => !job.isEarlyAccess)
         .map((job) => {
           const publicJob = { ...job };
@@ -75,7 +86,7 @@ export async function GET(request: Request) {
       return NextResponse.json(publicJobs);
     }
 
-    return NextResponse.json(jobs);
+    return NextResponse.json(lightweightJobs);
 
   } catch (error) {
     console.error("Jobs API error:", error);

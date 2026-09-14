@@ -241,6 +241,7 @@ export default function JobCard({
   return (
     <Link
       href={internalHref}
+      prefetch={false}
       className="block h-full animate-fade-in-up"
       style={{ animationDelay: `${index * 50}ms` }}
     >

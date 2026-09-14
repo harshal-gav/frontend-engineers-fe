@@ -4,7 +4,6 @@ import { AuthProvider } from "@/context/AuthContext";
 import Footer from "@/components/Footer";
 import CookieConsent from "@/components/CookieConsent";
 
-import { SpeedInsights } from "@vercel/speed-insights/next";
 import { Analytics } from "@vercel/analytics/react";
 import "./globals.css";
 
@@ -98,7 +97,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <Footer />
           <CookieConsent />
         </AuthProvider>
-        <SpeedInsights />
         <Analytics />
       </body>
     </html>
