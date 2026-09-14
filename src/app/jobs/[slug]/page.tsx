@@ -1,4 +1,5 @@
 import { notFound, permanentRedirect } from "next/navigation";
+import { Suspense } from "react";
 import type { Metadata } from "next";
 import { generateSlug, type Job } from "@/lib/jobs";
 import { loadJobsFromFile } from "@/lib/jobs.server";
@@ -173,7 +174,9 @@ export default async function JobDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <JobDetail job={publicJob} isPremium={false} />
+      <Suspense fallback={<div className="min-h-screen bg-[var(--bg-primary)]"></div>}>
+        <JobDetail job={publicJob} isPremium={false} />
+      </Suspense>
     </>
   );
 }
