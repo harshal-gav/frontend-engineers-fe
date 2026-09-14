@@ -8532,60 +8532,6 @@
     "slug": "d-veloppeur-front-end-shopify-h-f-hover-71d96d9b"
   },
   {
-    "id": "45bd71008e7635093511ae83fdd01a6afe0d6ea66a63d763f2324450f7d8f761",
-    "title": "Pioneer Talent Program - Full Stack Engineer (Front-end Oriented)",
-    "applyUrl": "https://jobs.lever.co/binance/990a9661-c72f-4d91-a69d-c0ada1de40b0/apply?source=LinkedIn",
-    "description": "About the job\n\nBinance is a leading global blockchain ecosystem behind the world’s largest cryptocurrency exchange by trading volume and registered users. We are trusted by 300+ million people in 100+ countries for our industry-leading security, user fund transparency, trading engine speed, deep liquidity, and an unmatched portfolio of digital-asset products. Binance offerings range from trading and finance to education, research, payments, institutional services, Web3 features, and more. We leverage the power of digital assets and blockchain to build an inclusive financial ecosystem to advance the freedom of money and improve financial access for people around the world.\n\nAbout The Role\n\nAs AI profoundly transforms how engineering teams work, we are looking for Full Stack Engineers to serve as \"seeds\" across our product teams. You will be among the first dedicated full stack engineers, helping the organization establish a highly autonomous, AI-augmented, end-to-end development model.\n\nResponsibilities\n\n\nOwn end-to-end development of product features spanning frontend and backend \nIntegrate mainstream AI coding tools (e.g., Cursor, Copilot, Claude Code) as a core part of your daily workflow to maximize development efficiency \nTranslate product requirements into working implementations with minimal handoff friction between frontend and backend \nAct as a full stack \"seed\" within your team — champion full stack practices, mentor peers, and help scale AI-augmented development across the organization \nProactively identify efficiency bottlenecks in cross-team collaboration and propose improvements to product, design, and engineering processes \nContribute to the full product lifecycle — from ideation and design to deployment and iteration \n\n\nRequirements\n\n\nBachelor's degree or above; Computer Science or AI-related major preferred \n1–5 years of professional experience \nSolid foundation in at least one backend language: Java or Golang \nProficiency in Node.js and React \nExperience owning end-to-end projects in production — not just personal side projects \nFamiliarity with database design, data modeling, and core backend concepts \nHighly proficient with mainstream AI coding tools (Cursor, Copilot, Claude Code, or similar) \nAbility to clearly articulate requirements and constraints to AI tools; strong enough fundamentals to review, validate, and correct AI-generated code \nSelf-driven and boundaryless — you don't wait for tasks to be assigned; you proactively identify what needs to be done \nProduct and operational mindset — you can turn vague ideas into clear specs \nCurious observer — you pay attention to how other teams work and actively suggest improvements \nStrong logical thinking and communication skills; passionate about learning new technologies \nIf you come from a frontend background, we hope you: \n Strong React engineering depth, with clear judgment on component architecture, reuse boundaries, and state management strategies\n Familiarity with modern frontend engineering infrastructure, including build tooling, TypeScript type engineering, and automated testing\n Solid grasp of rendering strategies and performance systems, including critical path optimization, render frame budgeting, and performance monitoring attribution\nIf you come from a backend background, we hope you: \n Familiar with high-concurrency programming, with a solid understanding of threading models, locking mechanisms, and asynchronous programming\n Experience with message queues (Kafka/RabbitMQ), with an understanding of asynchronous decoupling and eventual consistency\n Understanding of distributed systems fundamentals, including service discovery, circuit breaking, rate limiting, and load balancing\n\n\nNice to Have\n\n\nOpen-source contributions or notable GitHub projects \nCross-platform development experience (iOS/Android/Web) \n\n\nWhy Binance\n\n\n Shape the future with the world’s leading blockchain ecosystem\n Collaborate with world-class talent in a user-centric global organization with a flat structure\n Tackle unique, fast-paced projects with autonomy in an innovative environment\n Thrive in a results-driven workplace with opportunities for career growth and continuous learning\n Competitive salary and company benefits\n Work-from-home arrangement (the arrangement may vary depending on the work nature of the business team)\n\n\nBinance is committed to being an equal opportunity employer. We believe that having a diverse workforce is fundamental to our success.\n\nBy submitting a job application, you confirm that you have read and agree to our  Candidate Privacy Notice .\n\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.",
-    "location": "Remote - Vietnam",
-    "city": "",
-    "state": "",
-    "country": "Vietnam",
-    "remoteType": "REMOTE",
-    "salaryMin": 117000,
-    "salaryMax": 148000,
-    "currency": "USD",
-    "experienceLevel": "MID",
-    "employmentType": "FULL_TIME",
-    "department": "Engineering",
-    "postedAt": "2026-09-05T12:15:34.358Z",
-    "sourceHash": "45bd71008e7635093511ae83fdd01a6afe0d6ea66a63d763f2324450f7d8f761",
-    "company": {
-      "id": "binance",
-      "name": "Binance",
-      "logoUrl": "https://logo.clearbit.com/binance.com",
-      "industry": "Technology",
-      "website": "https://binance.com"
-    },
-    "slug": "pioneer-talent-program-full-stack-engineer-front-end-oriented-binance-45bd7100"
-  },
-  {
-    "id": "c69aff1e4cbd39bc12d2b3beca95b76cfc0bd298e73bfffff7f3d81e55d4e6f7",
-    "title": "Senior Test Automation Engineer (JavaScript)",
-    "applyUrl": "https://careers.epam.com/en/vacancy/blttdkm840b4u233sem_en?country=Viet%20Nam",
-    "description": "About the job\n\nEPAM Vietnam is looking for a highly motivated Senior Test Automation Engineer to join our team. As a key member, you will play a vital role in transitioning our testing services from primarily manual to automated. If you have strong technical expertise, a collaborative mindset and a passion for continuous improvement, you are the perfect fit.\n\nAt EPAM, engineering is in our DNA. So, when you join our team, you will work with top global clients and make significant contributions to the ever-changing technology landscape that keeps us, our communities and our clients moving forward.\n\nApply today and be eligible for a one-month sign-on bonus.*\n\n\nTerms & Conditions apply.\n\n\nResponsibilities\n\n\nDefine effective testing strategies, optimizing resources and introducing automation\nExecute manual test cases across various functionalities, logging all identified defects and bugs in the tracking system \nPerform exploratory testing to uncover issues beyond predefined test cases \nContinuously update and refine test cases to reflect changes in the application’s current version \nPrepare and maintain a comprehensive test data bank to support scenario-based testing across multiple use cases \nParticipate in usability testing sessions to identify user experience issues and recommend improvements \nDocument test execution results thoroughly, including defect logs and regression testing coverage \n\n\nRequirements\n\n\nAt least 5 years of software testing and/or test automation experience, dealing with complex technical issues and tasks \nProficiency in test automation using JavaScript and test automation frameworks in the JS ecosystem \nHands-on experience building automated regression suites for web apps (Cypress/Playwright) and APIs \nExperience in customer-facing roles, with strong communication and collaboration skills \nSolid background in test management and functional testing across various platforms \nGood understanding of test automation approaches and principles \nStrong knowledge of Agile methodology and test automation processes \nProficiency in both spoken and written English (B2) with excellent analytical and problem-solving skills\n\n\nWe offer\n\n\nBy choosing EPAM Vietnam, you're getting a job at a Vietnam Best Workplace™ certified company (2022-23 and 2023-24)\nYou'll work with the latest and most advanced technologies on exciting global projects with a supportive multicultural team where your voice matters\nWe prioritize a healthy work-life balance with a flexible hybrid working model and generous annual leave of up to 19 days\nWe offer a transparent career path and an individual roadmap to engineer your future & accelerate your journey\nAt EPAM, you can find vast opportunities for self-development: access to over 25,000 online courses and libraries from industry leaders, English classes, mentoring programs, partial grants of certification, and experience exchange with colleagues around the world. You will learn, contribute, and grow with us\n\n\nLife at EPAM\n\n\nEPAM Systems, Inc. (EPAM) is a leading digital transformation services and product engineering company. Since 1993, we have used our software engineering expertise to become a leading global provider of digital engineering, cloud and AI-enabled transformation services, and a leading business and experience consulting partner for global enterprises and ambitious startups. We address our clients’ transformation challenges by fusing EPAM Continuum’s integrated strategy, experience and technology consulting with our 30+ years of engineering execution to speed our clients’ time to market and drive greater value from their innovations and digital investments.\nEstablished in 2019, EPAM Vietnam has been constantly expanding our team and capabilities with two offices in Ho Chi Minh City and Hanoi. We offer a multicultural environment where our tech talents can proactively develop world-class solutions directly with international clients. At EPAM Vietnam, we adopt a global growth strategy, thinking and acting like start-ups, working in multi-disciplinary teams, and delivering results. You’ll find interesting challenges typically dealt with at a start-up, yet you’ll be in a highly professional corporate setting.\nLearn more at www.epam.com and follow us on facebook.\n\n\nHow We Hire\n\nHere, we summarize the typical journey to finding a job within EPAM:\n\n\nStep 1: General interview with our talent attraction specialist\nStep 2: Technical interview with our technology experts*\nStep 3: Manager interview with a hiring manager\nStep 4: Client interview**\nAnd you are ready to join the team!\nNot sure if you meet all the requirements? No problem. Let’s talk anyway and find out more!\nIt takes 1 min of application to start the journey with us. Apply now!\nCertain positions may necessitate entry tests tailored to specific client and project requirements.\nA project-specific interview may precede the client interview to assess project fit.",
-    "location": "Remote - Vietnam",
-    "city": "",
-    "state": "",
-    "country": "Vietnam",
-    "remoteType": "REMOTE",
-    "salaryMin": 93000,
-    "salaryMax": 153000,
-    "currency": "USD",
-    "experienceLevel": "MID",
-    "employmentType": "FULL_TIME",
-    "department": "Engineering",
-    "postedAt": "2026-09-05T12:13:34.904Z",
-    "sourceHash": "c69aff1e4cbd39bc12d2b3beca95b76cfc0bd298e73bfffff7f3d81e55d4e6f7",
-    "company": {
-      "id": "epamsystems",
-      "name": "EPAM Systems",
-      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
-      "industry": "Technology",
-      "website": "https://epamsystems.com"
-    },
-    "slug": "senior-test-automation-engineer-javascript-epam-systems-c69aff1e"
-  },
-  {
     "id": "d28819a09301091a3b7a4678910991b7c58dbae3106014cde46e6fa700c9d0d9",
     "title": "Staff Frontend Engineer - Remote Work",
     "applyUrl": "https://applicants.bairesdev.com/job/545/302036/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=Venezuela-20260901&__cf_chl_rt_tk=p0tyCoWg5UBNMcVJ5yc8B1DCDOGJgJe6R9HJQoEN6Dk-1788610379-1.0.1.1-PhygqDOVVw3J0zQV_IqqNJrJyF1mSswENdCcvTIzxwg",
@@ -8908,33 +8854,6 @@
       "website": "https://yoailabs.com"
     },
     "slug": "frontend-developer-remote-yo-ai-labs-d4049097"
-  },
-  {
-    "id": "d1e4982b2f695495e8740179371030c774f81312bde42856e56dd4cce731b328",
-    "title": "Fullstack Engineer - UI",
-    "applyUrl": "https://www.ycombinator.com/companies/pasito/jobs/YOwfhsH-fullstack-engineer-ui?utm_source=syn_li",
-    "description": "About the job\n\nAbout Pasito\n\nPasito is the AI workspace for employee benefits.\n\nWe’re rethinking how group insurance and benefits are underwritten, delivered, used and measured - by the people who design them and the people who depend on them. Instead of static PDFs, disconnected systems, and manual workflows, Pasito brings plan design, payroll and benefits data, claims, and financial context into a single, AI‑native workspace that helps benefits actually work for the 178 million Americans who depend on this system.\n\nWe don’t build for brokers, carriers and employers - we build with them. That collaboration shows up in everything we ship: AI agents that extract and structure plan data, tools that turn complexity into clarity for employees, and workflows that save carriers and consultants hundreds of hours per case.\n\nToday, Pasito supports many of the largest insurance carriers and brokers in the U.S. We’re backed by Y Combinator and Core Innovation Capital, and we’re growing quickly. We ship fast, iterate relentlessly, and care deeply about building systems that are accurate, scalable, and human.\n\nIf you’re excited to work alongside exceptional operators and engineers, and apply AI in a legacy industry where precision and trust matter, Pasito is the place for you.\n\nThe Role\n\nWe’re looking for a UI-heavy, product-focused Fullstack Engineer to help us build the core product experiences that power Pasito’s AI workspace.\n\nWe’re specifically looking for someone whose strength is building sophisticated, state-rich user interfaces, and who can operate across the stack as needed to deliver those experiences end-to-end.\n\nYou’ll work closely with Product and Design, take deep ownership of complex UI systems, and help define how AI-native software should feel in a regulated, high-impact industry.\n\nAs an early member of the engineering team, you’ll have real ownership and influence: shaping UI architecture, setting quality standards, and delivering mission-critical experiences for highly engaged clients.\n\nWhat You’ll Do\n\nOwn complex, state-rich UI systems\n\nDesign and build rich editing and collaboration experiences using ProseMirror / Tiptap and Yjs, with a focus on correctness, performance, and excellent UX.\n\nBuild AI-native Product Experiences\n\nIntegrate AI and LLM-powered workflows directly into the UI - especially within rich-text, data-dense, and collaborative environments.\n\nCollaborate cross-functionally\n\nWork closely with Product, Design, Sales, and Client teams to understand real customer workflows and translate them into durable product solutions.\n\nContinuously improve systems\n\nRefine existing patterns, challenge assumptions, and help define what “great” looks like as the product and team scale.\n\nWho You Are\n\n\nA UI-first, product-driven engineer with 3+ years building complex web applications\nYou care deeply about interaction quality, performance, and building interfaces that feel intuitive and trustworthy\nYou have strong technical judgment and know when to prioritize innovation vs. stability\nYou’re comfortable operating across the stack, with strength in frontend and user-facing systems\nYou enjoy close collaboration with product managers and designers\n\n\nTechnical Experience We’re Excited About\n\n\nDeep expertise building rich UI editors using ProseMirror / Tiptap\nExperience building real-time collaboration and local-first applications using Yjs\nExperienced with TypeScript, Node.js, and modern frameworks like Next.js\nHands-on experience integrating AI / LLM-powered workflows (e.g., ChatGPT or Claude) into user-facing products\nStrong familiarity with frontend testing tools and best practices\n\n\nWhat’s In It For You\n\n\nMeaningful ownership: Build foundational systems used by carriers, brokers, employers, and employees at scale\nReal impact: Your work directly improves how people understand and use their benefits\nGrowth: Join early and grow with the company as we scale product, team, and distribution\nCompetitive compensation: Salary, meaningful equity, and full benefits: medical, dental, vision, 401(k) with match, life insurance, and flexible PTO\nRemote‑first: Work from anywhere in the U.S. with a highly collaborative team\n\n\nStatement of Equal Opportunity\n\nWe are a company that values diversity and appreciates the benefits a diverse workforce produces for our team and clients. We welcome all qualified applicants to apply.",
-    "location": "Remote - United States",
-    "city": "",
-    "state": "",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "salaryMin": 93000,
-    "salaryMax": 172000,
-    "currency": "USD",
-    "experienceLevel": "MID",
-    "employmentType": "FULL_TIME",
-    "department": "Engineering",
-    "postedAt": "2026-09-05T12:07:39.249Z",
-    "sourceHash": "d1e4982b2f695495e8740179371030c774f81312bde42856e56dd4cce731b328",
-    "company": {
-      "id": "pasito",
-      "name": "Pasito",
-      "logoUrl": "https://logo.clearbit.com/pasito.com",
-      "industry": "Technology",
-      "website": "https://pasito.com"
-    },
-    "slug": "fullstack-engineer-ui-pasito-d1e4982b"
   },
   {
     "id": "69ae66f15d462197fa6c78f651f58fde9b6b8188dcb3deb6b5d77e22e26b623d",
