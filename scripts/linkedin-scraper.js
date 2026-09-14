@@ -503,8 +503,6 @@ function saveJobs(jobs) {
 
               const companyDomain = company.toLowerCase().replace(/[^a-z0-9]/g, '') + '.com';
               const jobSlug = generateSlug(title, company, sourceHash);
-              const salaryMin = Math.floor(Math.random() * (130 - 90 + 1) + 90) * 1000;
-              const salaryMax = Math.floor(Math.random() * (190 - 140 + 1) + 140) * 1000;
 
               const newJob = {
                 id: sourceHash,
@@ -512,16 +510,8 @@ function saveJobs(jobs) {
                 applyUrl: cleanUrl,
                 description,
                 location: `Remote - ${country}`,
-                city: "",
-                state: "",
                 country: country,
                 remoteType: "REMOTE",
-                salaryMin,
-                salaryMax,
-                currency: "USD",
-                experienceLevel: "MID",
-                employmentType: "FULL_TIME",
-                department: "Engineering",
                 postedAt: new Date().toISOString(),
                 sourceHash,
                 company: {

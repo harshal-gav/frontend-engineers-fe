@@ -13,16 +13,8 @@ export interface Job {
   title: string;
   description: string | null;
   location: string | null;
-  city: string | null;
-  state: string | null;
   country: string | null;
   remoteType: "REMOTE" | "HYBRID" | "ONSITE";
-  salaryMin: number | null;
-  salaryMax: number | null;
-  currency: string | null;
-  experienceLevel: "ENTRY" | "MID" | "SENIOR" | "LEAD" | null;
-  employmentType: string;
-  department: string | null;
   postedAt: string | null;
   sourceHash: string;
   applyUrl: string;
@@ -43,15 +35,10 @@ export interface Job {
  * Teaser version of a job — fields that free users can see.
  * The applyUrl and salary fields are securely masked on the server so they cannot be inspected in the network tab.
  */
-export type TeaserJob = Omit<Job, "applyUrl" | "salaryMin" | "salaryMax" | "currency" | "location" | "city" | "country" | "state"> & {
+export type TeaserJob = Omit<Job, "applyUrl" | "location" | "country"> & {
   applyUrl: null;
-  salaryMin: null;
-  salaryMax: null;
-  currency: null;
   location: null;
-  city: null;
   country: null;
-  state: null;
 };
 
 // ... slug generation and format methods ...
@@ -81,36 +68,7 @@ export function generateSlug(job: Job): string {
   return `${titlePart}-at-${companyPart}-${idSuffix}`;
 }
 
-export function formatSalary(
-  min: number | null,
-  max: number | null,
-  currency: string | null
-): string {
-  if (!min && !max) return "";
-  const curr = currency || "USD";
-  const symbols: Record<string, string> = {
-    USD: "$",
-    EUR: "€",
-    GBP: "£",
-    INR: "₹",
-    JPY: "¥",
-    CAD: "C$",
-    AUD: "A$",
-    SGD: "S$",
-  };
-  const sym = symbols[curr] || curr + " ";
 
-  const format = (n: number) => {
-    if (n >= 1000000) return `${(n / 1000000).toFixed(1)}M`;
-    if (n >= 1000) return `${Math.round(n / 1000)}K`;
-    return n.toString();
-  };
-
-  if (min && max && min !== max) {
-    return `${sym}${format(min)} – ${sym}${format(max)}`;
-  }
-  return `${sym}${format(min || max!)}`;
-}
 
 export function timeAgo(dateStr: string | null): string {
   if (!dateStr) return "Recently";
@@ -142,12 +100,7 @@ export function maskJobForTeaser(job: Job): TeaserJob {
       ? job.description.substring(0, 300) + (job.description.length > 300 ? "..." : "")
       : null,
     applyUrl: null,
-    salaryMin: null,
-    salaryMax: null,
-    currency: null,
     location: null,
-    city: null,
     country: null,
-    state: null,
   };
 }

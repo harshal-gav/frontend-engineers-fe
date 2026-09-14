@@ -25,12 +25,7 @@ function getDomain(companyName) {
   return map[companyName] || `${companyName.toLowerCase().replace(/\s+/g, '')}.com`;
 }
 
-// Generate realistic salaries based on experience level
-function getSalary(experienceLevel) {
-  if (experienceLevel === 'SENIOR') return { min: 150000, max: 210000 };
-  if (experienceLevel === 'STAFF' || experienceLevel === 'LEAD') return { min: 180000, max: 250000 };
-  return { min: 110000, max: 150000 }; // MID/Default
-}
+
 
 function run() {
   const jobsPath = path.join(__dirname, '..', 'data', 'jobs.json');
@@ -41,13 +36,7 @@ function run() {
 
   // 1. Enrich existing jobs
   jobs = jobs.map(job => {
-    // Add missing salaries
-    if (!job.salaryMin) {
-      const sal = getSalary(job.experienceLevel);
-      job.salaryMin = sal.min;
-      job.salaryMax = sal.max;
-      job.currency = "USD";
-    }
+
     
     // Add Logo
     const domain = getDomain(job.company.name);

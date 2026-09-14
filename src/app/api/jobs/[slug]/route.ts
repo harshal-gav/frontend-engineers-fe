@@ -63,11 +63,7 @@ export async function GET(
 
     // If premium, return the full job object but strip salary
     const secureJob = { ...job };
-    delete (secureJob as any).salaryMin;
-    delete (secureJob as any).salaryMax;
-    delete (secureJob as any).currency;
-    delete (secureJob as any).employmentType;
-    return NextResponse.json(secureJob);
+    return NextResponse.json(secureJob, { headers: { 'Cache-Control': 'public, s-maxage=60, stale-while-revalidate=300' } });
   } catch (error) {
     console.error("Jobs API error:", error);
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });

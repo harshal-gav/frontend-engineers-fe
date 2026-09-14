@@ -28,7 +28,6 @@ export default async function HomePage() {
           "description": job.description || job.title,
           "datePosted": job.postedAt || new Date().toISOString(),
           "validThrough": new Date(new Date().setMonth(new Date().getMonth() + 1)).toISOString(),
-          "employmentType": job.employmentType === 'CONTRACT' ? 'CONTRACTOR' : 'FULL_TIME',
           "hiringOrganization": {
             "@type": "Organization",
             "name": job.company?.name || "Unknown Company",

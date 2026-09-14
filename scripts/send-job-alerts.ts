@@ -36,7 +36,7 @@ if (!RESEND_API_KEY && !isDryRun) {
 
 const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
 
-import { Job, generateSlug, formatSalary } from "../src/lib/jobs";
+import { Job, generateSlug } from "../src/lib/jobs";
 
 async function main() {
   const isDryRun = process.argv.includes("--dry-run");
@@ -94,7 +94,6 @@ async function main() {
   const jobsHtml = newJobs.map((job) => {
     const slug = job.slug || generateSlug(job);
     const jobUrl = `https://frontendengineers.com/jobs/${slug}`;
-    const salaryStr = formatSalary(job.salaryMin, job.salaryMax, job.currency);
     return `
       <div style="margin-bottom: 24px; padding: 16px; border: 1px solid #e2e8f0; border-radius: 8px;">
         <h3 style="margin: 0 0 8px 0; color: #1a202c; font-size: 18px;">
@@ -104,7 +103,7 @@ async function main() {
           <strong>${job.company?.name || "Unknown Company"}</strong>
         </p>
         <p style="margin: 0 0 8px 0; color: #718096; font-size: 14px;">
-          📍 ${job.location || "Remote"} ${salaryStr ? `| 💰 ${salaryStr}` : ""}
+          📍 ${job.location || "Remote"}
         </p>
         <a href="${jobUrl}" style="display: inline-block; background-color: #2563eb; color: #ffffff; padding: 8px 16px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px;">View Job & Apply</a>
       </div>

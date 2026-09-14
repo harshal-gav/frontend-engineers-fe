@@ -27,7 +27,7 @@ const FUSE_OPTIONS: IFuseOptions<Job> = {
     { name: "company.name", weight: 0.25 },
     { name: "description", weight: 0.2 },
     { name: "location", weight: 0.1 },
-    { name: "department", weight: 0.05 },
+
   ],
   threshold: 0.35,
   includeScore: true,
@@ -105,8 +105,21 @@ export default function JobsClientPage() {
   useEffect(() => setMounted(true), []);
 
   const [dataLoaded, setDataLoaded] = useState(!!globalJobsCache);
-  const [page, setPage] = useState(1);
+  const [page, setPage] = useState(() => {
+    const p = searchParams?.get("page");
+    return p ? parseInt(p, 10) || 1 : 1;
+  });
   const [showFilters, setShowFilters] = useState(false);
+
+  // Sync state with URL when searchParams change (e.g. back navigation)
+  useEffect(() => {
+    const p = searchParams?.get("page");
+    const newPage = p ? parseInt(p, 10) || 1 : 1;
+    setPage(newPage);
+    
+    // Also sync filters so that if they had filters and pressed back, they are restored
+    setFilters(createDefaultFilters(searchParams));
+  }, [searchParams]);
 
   // Load jobs from secure API
   useEffect(() => {
@@ -155,11 +168,6 @@ export default function JobsClientPage() {
           j.company?.name,
           j.description,
           j.location,
-          j.city,
-          j.country,
-          j.experienceLevel,
-          j.employmentType,
-          j.department,
         ]
           .filter(Boolean)
           .join(" ")
@@ -187,8 +195,6 @@ export default function JobsClientPage() {
       filtered = filtered.filter(
         (j) =>
           j.location?.toLowerCase().includes(loc) ||
-          j.city?.toLowerCase().includes(loc) ||
-          j.country?.toLowerCase().includes(loc) ||
           j.description?.toLowerCase().includes(loc)
       );
     }
@@ -251,8 +257,42 @@ export default function JobsClientPage() {
       });
     }
 
-    const total = filtered.length;
+    // Reorder to ensure unique companies per page as much as possible
     const limit = 12;
+    const reordered: Job[] = [];
+    let remaining = [...filtered];
+
+    while (remaining.length > 0) {
+      const pageJobs: Job[] = [];
+      const seenCompanies = new Set<string>();
+      let i = 0;
+      
+      while (i < remaining.length && pageJobs.length < limit) {
+        const job = remaining[i];
+        const compName = job.company?.name?.toLowerCase() || job.id;
+        
+        if (!seenCompanies.has(compName)) {
+          pageJobs.push(job);
+          seenCompanies.add(compName);
+          remaining.splice(i, 1);
+        } else {
+          i++;
+        }
+      }
+      
+      // If we couldn't fill the page with unique companies but jobs remain, relax constraint
+      if (pageJobs.length < limit && remaining.length > 0) {
+        const needed = limit - pageJobs.length;
+        const fill = remaining.splice(0, needed);
+        pageJobs.push(...fill);
+      }
+      
+      reordered.push(...pageJobs);
+    }
+    
+    filtered = reordered;
+
+    const total = filtered.length;
     const startIndex = (page - 1) * limit;
     const paginated = filtered.slice(startIndex, startIndex + limit);
 
@@ -273,7 +313,7 @@ export default function JobsClientPage() {
 
   // URL sync
   const syncFiltersToUrl = useCallback(
-    (f: FilterState) => {
+    (f: FilterState, p: number) => {
       const params = new URLSearchParams();
       if (f.q) params.set("q", f.q);
       if (f.location) params.set("location", f.location);
@@ -283,6 +323,7 @@ export default function JobsClientPage() {
         params.set("framework", f.framework.join(","));
       if (f.postedWithin) params.set("postedWithin", f.postedWithin);
       if (f.sortBy !== "newest") params.set("sortBy", f.sortBy);
+      if (p > 1) params.set("page", p.toString());
       const query = params.toString();
       router.replace(query ? `?${query}` : "/", { scroll: false });
     },
@@ -292,7 +333,12 @@ export default function JobsClientPage() {
   const handleFilterChange = (newFilters: FilterState) => {
     setFilters(newFilters);
     setPage(1);
-    syncFiltersToUrl(newFilters);
+    syncFiltersToUrl(newFilters, 1);
+  };
+
+  const handlePageChange = (newPage: number) => {
+    setPage(newPage);
+    syncFiltersToUrl(filters, newPage);
   };
 
   // Active filter count for mobile badge
@@ -508,7 +554,7 @@ export default function JobsClientPage() {
             {dataLoaded && totalJobs > 0 && (
               <div className="flex flex-col sm:flex-row items-center justify-between mt-6 sm:mt-8 border-t border-[#e2e2e6] pt-4 sm:pt-6 gap-3 sm:gap-4">
                 <button
-                  onClick={() => setPage((p) => Math.max(1, p - 1))}
+                  onClick={() => handlePageChange(Math.max(1, page - 1))}
                   disabled={page === 1}
                   className="btn-secondary w-full sm:w-auto px-4 py-2 text-sm disabled:opacity-30 disabled:cursor-not-allowed min-h-[44px]"
                 >
@@ -537,7 +583,7 @@ export default function JobsClientPage() {
                       pages.push(
                         <button
                           key={i}
-                          onClick={() => setPage(i)}
+                          onClick={() => handlePageChange(i)}
                           className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-semibold transition-colors ${
                             page === i
                               ? "bg-[#2563eb] text-white"
@@ -553,7 +599,7 @@ export default function JobsClientPage() {
                 </div>
 
                 <button
-                  onClick={() => setPage((p) => p + 1)}
+                  onClick={() => handlePageChange(page + 1)}
                   disabled={!hasMore}
                   className="btn-secondary w-full sm:w-auto px-4 py-2 text-sm disabled:opacity-30 disabled:cursor-not-allowed min-h-[44px]"
                 >

@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { type Job } from "@/lib/jobs";
 
 import { useState, useEffect } from "react";
@@ -15,12 +16,7 @@ const REMOTE_CONFIG = {
   ONSITE: { label: "On-site", class: "badge-onsite", icon: "📍" },
 } as const;
 
-const LEVEL_CONFIG = {
-  ENTRY: { label: "Entry Level", class: "badge-entry" },
-  MID: { label: "Mid Level", class: "badge-mid" },
-  SENIOR: { label: "Senior", class: "badge-senior" },
-  LEAD: { label: "Lead / Executive", class: "badge-lead" },
-} as const;
+
 
 const LOGO_GRADIENTS = [
   "linear-gradient(135deg, #6366f1, #8b5cf6)",
@@ -40,8 +36,12 @@ interface JobDetailProps {
 
 export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps) {
   const { isSubscribed } = useAuth();
+  const searchParams = useSearchParams();
   const [job, setJob] = useState<Job>(initialJob);
   const [isLoadingSecureData, setIsLoadingSecureData] = useState(false);
+
+  const paramsString = searchParams?.toString();
+  const backHref = paramsString ? `/?${paramsString}` : "/";
 
   useEffect(() => {
     // If user is subscribed and the initial job has hidden salary or missing applyUrl (for early access)
@@ -78,9 +78,6 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
   }, [isSubscribed, initialJob]);
 
   const remote = REMOTE_CONFIG[job.remoteType] || REMOTE_CONFIG.REMOTE;
-  const level = job.experienceLevel
-    ? LEVEL_CONFIG[job.experienceLevel]
-    : null;
 
   const gradientIndex =
     (job.company?.name || "X").charCodeAt(0) % LOGO_GRADIENTS.length;
@@ -91,7 +88,7 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
       <header className="border-b border-[var(--border-card)] bg-[var(--bg-primary)] sticky top-0 z-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center gap-3">
           <Link
-            href="/"
+            href={backHref}
             className="flex items-center gap-2 text-sm font-medium text-[var(--text-secondary)] hover:text-[var(--accent-secondary)] transition-colors min-h-[44px] min-w-[44px] justify-center sm:justify-start"
           >
             <svg
@@ -170,13 +167,10 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
         <span className={`badge ${remote.class}`}>
           {remote.icon} {remote.label}
         </span>
-        {level && (
-          <span className={`badge ${level.class}`}>{level.label}</span>
-        )}
 
         {job.location && (
           <span className="text-sm text-[var(--text-muted)]">
-            📍 {job.city || job.location}
+            📍 {job.location}
             {job.country ? `, ${job.country}` : ""}
           </span>
         )}

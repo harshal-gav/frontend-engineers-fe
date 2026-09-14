@@ -19,11 +19,6 @@ export default function PostJobPage() {
     applyUrl: "",
     location: "Worldwide",
     remoteType: "REMOTE",
-    employmentType: "FULL_TIME",
-    experienceLevel: "MID",
-    salaryMin: "",
-    salaryMax: "",
-    currency: "USD",
     description: "",
   });
 
@@ -49,11 +44,6 @@ export default function PostJobPage() {
         description: formData.description,
         location: formData.location,
         remoteType: formData.remoteType,
-        employmentType: formData.employmentType,
-        experienceLevel: formData.experienceLevel,
-        salaryMin: formData.salaryMin ? parseInt(formData.salaryMin) : null,
-        salaryMax: formData.salaryMax ? parseInt(formData.salaryMax) : null,
-        currency: formData.currency,
         applyUrl: formData.applyUrl,
         company: {
           name: formData.companyName,
@@ -82,8 +72,8 @@ export default function PostJobPage() {
         // Reset form
         setFormData({
           title: "", companyName: "", applyUrl: "", location: "Worldwide",
-          remoteType: "REMOTE", employmentType: "FULL_TIME", experienceLevel: "MID",
-          salaryMin: "", salaryMax: "", currency: "USD", description: ""
+          remoteType: "REMOTE",
+          description: ""
         });
       }
     } catch (err) {
@@ -155,36 +145,9 @@ export default function PostJobPage() {
                   <option value="ONSITE">Onsite</option>
                 </select>
               </div>
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-gray-700">Experience</label>
-                <select name="experienceLevel" value={formData.experienceLevel} onChange={handleChange} className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all appearance-none cursor-pointer">
-                  <option value="ENTRY">Entry Level</option>
-                  <option value="MID">Mid Level</option>
-                  <option value="SENIOR">Senior</option>
-                  <option value="LEAD">Lead / Staff</option>
-                </select>
-              </div>
             </div>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-gray-700">Min Salary</label>
-                <input type="number" name="salaryMin" value={formData.salaryMin} onChange={handleChange} placeholder="e.g. 100000" className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-gray-700">Max Salary</label>
-                <input type="number" name="salaryMax" value={formData.salaryMax} onChange={handleChange} placeholder="e.g. 150000" className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
-              </div>
-              <div className="space-y-2">
-                <label className="text-sm font-semibold text-gray-700">Currency</label>
-                <select name="currency" value={formData.currency} onChange={handleChange} className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all appearance-none cursor-pointer">
-                  <option value="USD">USD ($)</option>
-                  <option value="EUR">EUR (€)</option>
-                  <option value="GBP">GBP (£)</option>
-                  <option value="CAD">CAD (C$)</option>
-                </select>
-              </div>
-            </div>
+
 
             <div className="space-y-2">
               <label className="text-sm font-semibold text-gray-700">Job Description <span className="text-red-500">*</span></label>

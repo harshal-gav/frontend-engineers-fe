@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { useSearchParams } from "next/navigation";
 import { timeAgo, type Job } from "@/lib/jobs";
 
 // ─── Config ──────────────────────────────────────────────
@@ -11,12 +12,7 @@ const REMOTE_CONFIG = {
   ONSITE: { label: "On-site", class: "badge-onsite", icon: "📍" },
 } as const;
 
-const LEVEL_CONFIG = {
-  ENTRY: { label: "Entry Level", class: "badge-entry" },
-  MID: { label: "Mid Level", class: "badge-mid" },
-  SENIOR: { label: "Senior", class: "badge-senior" },
-  LEAD: { label: "Lead / Executive", class: "badge-lead" },
-} as const;
+
 
 const LOGO_COLORS = [
   "#3b4a6b",
@@ -61,10 +57,15 @@ export default function JobCard({
   job,
   index = 0,
 }: JobCardProps) {
+  const searchParams = useSearchParams();
   const remote = REMOTE_CONFIG[job.remoteType] || REMOTE_CONFIG.REMOTE;
-  const level = job.experienceLevel
-    ? LEVEL_CONFIG[job.experienceLevel]
-    : null;
+
+  let displayLocation = job.location || "";
+  if (displayLocation.toLowerCase().startsWith("remote - ")) {
+    displayLocation = displayLocation.substring(9);
+  } else if (displayLocation.toLowerCase() === "remote") {
+    displayLocation = "";
+  }
 
   const gradientIndex =
     (job.company?.name || "X").charCodeAt(0) % LOGO_COLORS.length;
@@ -73,148 +74,112 @@ export default function JobCard({
 
   // Always use the internal href so users can see the job details page
   const slug = job.slug || job.id;
-  const internalHref = `/jobs/${slug}`;
+  const paramsString = searchParams?.toString();
+  const internalHref = paramsString ? `/jobs/${slug}?${paramsString}` : `/jobs/${slug}`;
 
   const cardContent = (
-    <article
-      className="glass-card h-full p-4 sm:p-5 cursor-pointer group hover:bg-[#f5f5f7] transition-all flex flex-col"
-    >
-      <div className="flex items-start gap-3 sm:gap-4 flex-1">
-        {/* Company Logo */}
-        <div
-          className="w-11 h-11 sm:w-12 sm:h-12 rounded-xl flex items-center justify-center text-gray-900 font-bold text-base sm:text-lg flex-shrink-0 overflow-hidden"
-          style={{
-            background: job.company?.logoUrl
-              ? "var(--bg-secondary)"
-              : LOGO_COLORS[gradientIndex],
-          }}
-        >
-          {job.company?.logoUrl ? (
-            <img
-              src={job.company.logoUrl}
-              alt={job.company.name}
-              className="w-full h-full object-contain p-1.5"
-              width={48}
-              height={48}
-              loading="lazy"
-              onError={(e) => {
-                const img = e.target as HTMLImageElement;
-                if (!img.dataset.fallback) {
-                  img.dataset.fallback = "true";
-                  // Extract domain from website or logoUrl
-                  let domain = "google.com"; // default fallback domain just in case
-                  if (job.company?.website) {
-                    try {
-                      domain = new URL(job.company.website).hostname;
-                    } catch (e) {}
-                  } else if (job.company?.logoUrl && job.company.logoUrl.includes("clearbit.com/")) {
-                    domain = job.company.logoUrl.split("clearbit.com/")[1];
-                  }
-                  img.src = `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
-                } else {
-                  img.style.display = "none";
-                  img.parentElement!.textContent =
-                    (job.company?.name || "?")[0];
+    <article className="glass-card relative overflow-hidden bg-white p-5 sm:p-6 cursor-pointer group hover:border-[#2563eb]/40 hover:shadow-xl hover:shadow-[#2563eb]/5 transition-all duration-300 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start rounded-2xl h-full">
+      {/* Company Logo */}
+      <div
+        className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center text-white font-bold text-lg sm:text-xl flex-shrink-0 overflow-hidden border border-gray-100 shadow-sm"
+        style={{
+          background: job.company?.logoUrl
+            ? "#ffffff"
+            : LOGO_COLORS[gradientIndex],
+        }}
+      >
+        {job.company?.logoUrl ? (
+          <img
+            src={job.company.logoUrl}
+            alt={job.company.name}
+            className="w-full h-full object-contain p-2"
+            width={64}
+            height={64}
+            loading="lazy"
+            onError={(e) => {
+              const img = e.target as HTMLImageElement;
+              if (!img.dataset.fallback) {
+                img.dataset.fallback = "true";
+                let domain = "google.com";
+                if (job.company?.website) {
+                  try {
+                    domain = new URL(job.company.website).hostname;
+                  } catch (e) {}
+                } else if (job.company?.logoUrl && job.company.logoUrl.includes("clearbit.com/")) {
+                  domain = job.company.logoUrl.split("clearbit.com/")[1];
                 }
-              }}
-            />
-          ) : (
-            (job.company?.name || "?")[0]
-          )}
+                img.src = `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+              } else {
+                img.style.display = "none";
+                img.parentElement!.textContent =
+                  (job.company?.name || "?")[0];
+                img.parentElement!.style.background = LOGO_COLORS[gradientIndex];
+                img.parentElement!.style.color = "#ffffff";
+              }
+            }}
+          />
+        ) : (
+          (job.company?.name || "?")[0]
+        )}
+      </div>
+
+      {/* Main content */}
+      <div className="flex-1 min-w-0 w-full flex flex-col h-full">
+        {/* Top Row: Title & Meta */}
+        <div className="flex flex-col sm:flex-row justify-between items-start gap-2 mb-1.5">
+          <div className="min-w-0 flex-1 pr-4">
+            <h3 className="text-base sm:text-[1.1rem] font-bold text-gray-900 group-hover:text-[#2563eb] transition-colors leading-snug line-clamp-2">
+              {job.title}
+            </h3>
+            
+            <div className="flex items-center gap-2 mt-1.5 text-sm font-medium text-gray-500 overflow-hidden whitespace-nowrap">
+              <span className="text-gray-700 font-semibold truncate shrink-0 max-w-[60%]">{job.company?.name || "Company"}</span>
+              
+              {job.company?.industry && (
+                <>
+                  <span className="w-1 h-1 rounded-full bg-gray-300 shrink-0" />
+                  <span className="truncate min-w-0">{job.company.industry}</span>
+                </>
+              )}
+            </div>
+          </div>
+          
+          <div className="flex items-center gap-2 flex-shrink-0 sm:flex-col sm:items-end sm:gap-1.5">
+            {job.isEarlyAccess && (
+              <span className="text-[10px] font-extrabold tracking-wide uppercase bg-gradient-to-r from-amber-500 to-orange-500 text-white px-2.5 py-0.5 rounded-md shadow-sm">
+                Pro Access
+              </span>
+            )}
+            <span className="text-xs font-semibold text-gray-400 whitespace-nowrap">
+              {postedDate}
+            </span>
+          </div>
         </div>
 
-        {/* Job Info */}
-        <div className="flex-1 min-w-0 flex flex-col h-full">
-          <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-1 sm:gap-3">
-            <div className="min-w-0">
-              <h3 className="font-semibold text-[15px] sm:text-base group-hover:text-[var(--accent-primary)] transition-colors leading-tight line-clamp-2">
-                {job.title}
-              </h3>
-              <p
-                className="text-sm mt-1 truncate"
-                style={{ color: "var(--text-secondary)" }}
-              >
-                {job.company?.name || "Company"}
-                {job.company?.industry && (
-                  <span style={{ color: "var(--text-muted)" }}>
-                    {" "}
-                    · {job.company.industry}
-                  </span>
-                )}
-              </p>
-            </div>
-            {/* Posted date + Early Access badge */}
-            <div className="flex items-center gap-2 flex-shrink-0">
-              {job.isEarlyAccess && (
-                <span className="text-[10px] sm:text-xs bg-[#d97706]/15 text-[#d97706] px-2 py-0.5 rounded-full font-semibold whitespace-nowrap border border-[#d97706]/30">
-                  ⭐ Pro Access
-                </span>
-              )}
-              <span
-                className="text-xs whitespace-nowrap"
-                style={{ color: "var(--text-muted)" }}
-              >
-                {postedDate}
-              </span>
-            </div>
-          </div>
+        {/* Description Preview */}
+        {job.description && (
+          <p className="text-[13px] sm:text-sm text-gray-500 line-clamp-2 mt-2 mb-4 leading-relaxed pr-2">
+            {job.description}
+          </p>
+        )}
 
-          {/* Badges row */}
-          <div className="flex flex-wrap items-center gap-1.5 sm:gap-2 mt-2.5 sm:mt-3">
-            <span className={`badge ${remote.class}`}>
-              {remote.icon} {remote.label}
+        {/* Bottom Tags & Action */}
+        <div className="mt-auto pt-4 border-t border-gray-100 flex items-center justify-between gap-3">
+          <div className="flex items-center gap-2 min-w-0">
+            <span className={`badge ${remote.class} px-2.5 py-1 text-[11px] font-bold rounded-md shadow-sm flex items-center gap-1 min-w-0`}>
+              <svg className="w-3 h-3 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+              <span className="truncate">
+                {remote.label}
+                {displayLocation ? ` • ${displayLocation}` : ""}
+                {job.country && !displayLocation.includes(job.country) ? `, ${job.country}` : ""}
+              </span>
             </span>
-
-            {level && (
-              <span className={`badge ${level.class}`}>{level.label}</span>
-            )}
-
-            {job.department && (
-              <span
-                className="badge"
-                style={{
-                  background: "var(--bg-secondary)",
-                  color: "var(--text-secondary)",
-                }}
-              >
-                {job.department}
-              </span>
-            )}
-
-            {job.location && (
-              <span
-                className="text-xs"
-                style={{ color: "var(--text-muted)" }}
-              >
-                📍{" "}
-                {job.city || job.location}
-                {job.country ? `, ${job.country}` : ""}
-              </span>
-            )}
           </div>
-
-          {/* Tech stack tags */}
-          {techStack.length > 0 && (
-            <div className="flex flex-wrap gap-1 mt-2">
-              {techStack.map((tech) => (
-                <span key={tech} className="tech-tag">
-                  {tech}
-                </span>
-              ))}
-            </div>
-          )}
-
-
-
-          {/* Description preview */}
-          {job.description && (
-            <p
-              className="text-xs mt-auto pt-2 line-clamp-2 leading-relaxed"
-              style={{ color: "var(--text-muted)" }}
-            >
-              {job.description}
-            </p>
-          )}
+          
+          <div className="hidden sm:flex opacity-0 group-hover:opacity-100 transition-all duration-300 -translate-x-2 group-hover:translate-x-0 items-center gap-1.5 text-sm font-bold text-[#2563eb] shrink-0">
+            Apply Now
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+          </div>
         </div>
       </div>
     </article>

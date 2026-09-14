@@ -62,10 +62,6 @@ export async function GET(request: Request) {
       if (optimized.description && optimized.description.length > 500) {
         optimized.description = optimized.description.substring(0, 500) + "...";
       }
-      delete (optimized as any).salaryMin;
-      delete (optimized as any).salaryMax;
-      delete (optimized as any).currency;
-      delete (optimized as any).employmentType;
       return optimized;
     });
 

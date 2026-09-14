@@ -62,7 +62,7 @@ export async function generateMetadata({
     title: `${job.title} at ${job.company?.name || "Company"} — Remote`,
     description:
       job.description?.substring(0, 155) ||
-      `Apply for ${job.title} — remote ${job.employmentType.toLowerCase()} position.`,
+      `Apply for ${job.title} — remote position.`,
     keywords: keywords.join(", "),
     alternates: {
       canonical: `https://frontendengineers.com/jobs/${slug}`,
@@ -158,10 +158,6 @@ export default async function JobDetailPage({
   // The server renders the initial HTML for all users without knowing their auth status.
   // We explicitly delete sensitive fields so they don't leak in the network tab / view source.
   const publicJob = { ...job };
-  delete (publicJob as any).salaryMin;
-  delete (publicJob as any).salaryMax;
-  delete (publicJob as any).currency;
-  delete (publicJob as any).employmentType;
 
   if (publicJob.isEarlyAccess) {
     delete (publicJob as any).applyUrl;

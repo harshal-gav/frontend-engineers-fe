@@ -75,16 +75,7 @@ function main() {
       applyUrl: applyUrl,
       description: "Discover this role and apply directly on the company's career page.", // We didn't scrape full description
       location: lJob.location || 'Remote - Global',
-      city: '',
-      state: '',
-      country: '',
       remoteType: 'REMOTE',
-      salaryMin: 100000, // Placeholder
-      salaryMax: 150000, // Placeholder
-      currency: 'USD',
-      seniority: extractSeniority(lJob.title),
-      employmentType: 'FULL_TIME',
-      department: 'Engineering',
       postedAt: new Date(lJob.scrapedAt).toISOString(),
       sourceHash: sourceHash,
       company: {
