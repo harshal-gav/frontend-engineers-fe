@@ -56,9 +56,22 @@ export async function GET(request: Request) {
 
     // EARLY ACCESS MODEL:
     // - Premium users see ALL jobs (including fresh ones posted within the last 7 days).
-    // - Free users only see jobs older than 7 days. All jobs are fully visible (no masking).
+    // - Free users only see jobs older than 7 days.
+    // - SALARY GATING: Salary is hidden for free users for all jobs.
     if (!isPremium) {
-      const publicJobs = jobs.filter((job) => !job.isEarlyAccess);
+      const publicJobs = jobs
+        .filter((job) => !job.isEarlyAccess)
+        .map((job) => {
+          const publicJob = { ...job };
+          if (publicJob.salaryMin || publicJob.salaryMax) {
+            publicJob.hasSalaryHidden = true;
+          }
+          // Explicitly delete salary data so it doesn't leak in the network tab
+          delete (publicJob as any).salaryMin;
+          delete (publicJob as any).salaryMax;
+          delete (publicJob as any).currency;
+          return publicJob;
+        });
       return NextResponse.json(publicJobs);
     }
 

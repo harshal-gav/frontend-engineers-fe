@@ -60,21 +60,11 @@ function JobCardSkeleton() {
 function computeFacets(jobs: Job[]) {
   const facets = {
     remoteType: {} as Record<string, number>,
-    experienceLevel: {} as Record<string, number>,
-    employmentType: {} as Record<string, number>,
   };
   for (const job of jobs) {
     if (job.remoteType) {
       facets.remoteType[job.remoteType] =
         (facets.remoteType[job.remoteType] || 0) + 1;
-    }
-    if (job.experienceLevel) {
-      facets.experienceLevel[job.experienceLevel] =
-        (facets.experienceLevel[job.experienceLevel] || 0) + 1;
-    }
-    if (job.employmentType) {
-      facets.employmentType[job.employmentType] =
-        (facets.employmentType[job.employmentType] || 0) + 1;
     }
   }
   return facets;
@@ -202,21 +192,7 @@ export default function JobsClientPage() {
       );
     }
 
-    // Experience level
-    if (filters.experienceLevel.length > 0) {
-      filtered = filtered.filter(
-        (j) =>
-          j.experienceLevel &&
-          filters.experienceLevel.includes(j.experienceLevel)
-      );
-    }
 
-    // Employment type
-    if (filters.employmentType.length > 0) {
-      filtered = filtered.filter((j) =>
-        filters.employmentType.includes(j.employmentType)
-      );
-    }
 
     // Salary range
     if (filters.salaryMin) {
@@ -279,8 +255,6 @@ export default function JobsClientPage() {
     filters.q !== "" ||
     filters.location !== "" ||
     filters.remoteType.length > 0 ||
-    filters.experienceLevel.length > 0 ||
-    filters.employmentType.length > 0 ||
     filters.framework.length > 0 ||
     filters.salaryMin !== "" ||
     filters.salaryMax !== "" ||
@@ -295,10 +269,6 @@ export default function JobsClientPage() {
       if (f.location) params.set("location", f.location);
       if (f.remoteType.length)
         params.set("remoteType", f.remoteType.join(","));
-      if (f.experienceLevel.length)
-        params.set("experienceLevel", f.experienceLevel.join(","));
-      if (f.employmentType.length)
-        params.set("employmentType", f.employmentType.join(","));
       if (f.framework.length)
         params.set("framework", f.framework.join(","));
       if (f.salaryMin) params.set("salaryMin", f.salaryMin);
@@ -320,8 +290,6 @@ export default function JobsClientPage() {
   // Active filter count for mobile badge
   const activeFilterCount = [
     filters.remoteType.length > 0,
-    filters.experienceLevel.length > 0,
-    filters.employmentType.length > 0,
     filters.framework.length > 0,
     !!filters.location,
     !!filters.salaryMin || !!filters.salaryMax,
@@ -457,17 +425,6 @@ export default function JobsClientPage() {
       {/* ─── Main Content ───────────────────── */}
       <main className="max-w-7xl mx-auto px-4 sm:px-6 pb-16 flex-1 bg-white">
         <div className="flex gap-6">
-          {/* Desktop Sidebar — hidden on mobile */}
-          <aside className="hidden md:block w-72 lg:w-80 flex-shrink-0">
-            <div className="filter-sidebar">
-              <FilterSidebar
-                filters={filters}
-                facets={facets}
-                onFilterChange={handleFilterChange}
-                isSubscribed={isSubscribed}
-              />
-            </div>
-          </aside>
 
           {/* Results */}
           <div className="flex-1 min-w-0">
@@ -484,10 +441,10 @@ export default function JobsClientPage() {
                   </>
                 )}
               </p>
-              {/* Mobile: Filter toggle button */}
+              {/* Filter toggle button */}
               <button
                 onClick={() => setShowFilters(true)}
-                className="md:hidden btn-secondary inline-flex items-center gap-2 min-h-[40px] px-3 text-sm"
+                className="btn-secondary inline-flex items-center gap-2 min-h-[40px] px-3 text-sm"
               >
                 <svg
                   width="16"
@@ -510,7 +467,7 @@ export default function JobsClientPage() {
 
             {/* Job Cards — responsive grid */}
             <div className="relative">
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-3">
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {!dataLoaded
                   ? Array.from({ length: 6 }).map((_, i) => (
                       <JobCardSkeleton key={i} />

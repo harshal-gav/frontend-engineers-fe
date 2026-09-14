@@ -3,7 +3,9 @@
 import Link from "next/link";
 import { formatSalary, type Job } from "@/lib/jobs";
 
+import { useState, useEffect } from "react";
 import { useAuth } from "@/context/AuthContext";
+import { getAuth } from "firebase/auth";
 
 // ─── Config ──────────────────────────────────────────────
 
@@ -36,9 +38,44 @@ interface JobDetailProps {
   isPremium: boolean;
 }
 
-export default function JobDetail({ job, isPremium }: JobDetailProps) {
+export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps) {
   const { isSubscribed } = useAuth();
+  const [job, setJob] = useState<Job>(initialJob);
+  const [isLoadingSecureData, setIsLoadingSecureData] = useState(false);
 
+  useEffect(() => {
+    // If user is subscribed and the initial job has hidden salary or missing applyUrl (for early access)
+    // we fetch the full secure job object
+    if (isSubscribed && (initialJob.hasSalaryHidden || (initialJob.isEarlyAccess && !initialJob.applyUrl))) {
+      const fetchSecureData = async () => {
+        setIsLoadingSecureData(true);
+        try {
+          const auth = getAuth();
+          const user = auth.currentUser;
+          if (!user) return;
+          
+          const token = await user.getIdToken();
+          const slug = initialJob.slug || initialJob.id;
+          const res = await fetch(`/api/jobs/${slug}`, {
+            headers: {
+              Authorization: `Bearer ${token}`
+            }
+          });
+          
+          if (res.ok) {
+            const fullJob = await res.json();
+            setJob(fullJob);
+          }
+        } catch (e) {
+          console.error("Failed to fetch secure job data", e);
+        } finally {
+          setIsLoadingSecureData(false);
+        }
+      };
+      
+      fetchSecureData();
+    }
+  }, [isSubscribed, initialJob]);
 
   const remote = REMOTE_CONFIG[job.remoteType] || REMOTE_CONFIG.REMOTE;
   const level = job.experienceLevel
@@ -157,16 +194,26 @@ export default function JobDetail({ job, isPremium }: JobDetailProps) {
       </div>
 
       {/* Salary */}
-      {salary && (
-        <div className="glass-card p-4 sm:p-5 mb-6">
-          <div className="text-sm font-medium text-[var(--text-muted)] mb-1">
-            Salary Range
+      <div className="glass-card p-4 sm:p-5 mb-6">
+        <div className="text-sm font-medium text-[var(--text-muted)] mb-1">
+          Salary Range
+        </div>
+        {job.hasSalaryHidden && !isSubscribed ? (
+          <div className="mt-2">
+            <Link href="/pricing" className="inline-flex items-center gap-1.5 text-xs bg-[#d97706]/15 text-[#d97706] px-3 py-1.5 rounded-full font-semibold border border-[#d97706]/30 hover:bg-[#d97706]/25 transition-colors">
+              🔒 Pro users can also see salary
+            </Link>
           </div>
+        ) : isLoadingSecureData ? (
+          <div className="h-7 w-32 skeleton rounded mt-1"></div>
+        ) : salary ? (
           <div className="salary-text text-lg sm:text-xl font-bold">
             {salary}
           </div>
-        </div>
-      )}
+        ) : (
+          <div className="text-sm text-[var(--text-muted)] mt-1">Not specified</div>
+        )}
+      </div>
 
       {/* Description */}
       <div className="mb-8">

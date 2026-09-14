@@ -206,9 +206,13 @@ export default function JobCard({
 
           {/* Salary + Employment type */}
           <div className="flex items-center gap-3 mt-2.5 sm:mt-3">
-            {salary && (
+            {job.hasSalaryHidden ? (
+              <span className="text-[10px] sm:text-xs bg-[#d97706]/15 text-[#d97706] px-2 py-0.5 rounded-full font-semibold border border-[#d97706]/30">
+                🔒 Pro users can also see salary
+              </span>
+            ) : salary ? (
               <span className="salary-text text-sm">{salary}</span>
-            )}
+            ) : null}
             <span
               className="text-xs"
               style={{ color: "var(--text-muted)" }}

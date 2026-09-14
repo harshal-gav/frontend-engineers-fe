@@ -8,8 +8,6 @@ export interface FilterState {
   q: string;
   location: string;
   remoteType: string[];
-  experienceLevel: string[];
-  employmentType: string[];
   salaryMin: string;
   salaryMax: string;
   postedWithin: string;
@@ -19,8 +17,6 @@ export interface FilterState {
 
 interface Facets {
   remoteType: Record<string, number>;
-  experienceLevel: Record<string, number>;
-  employmentType: Record<string, number>;
 }
 
 interface FilterSidebarProps {
@@ -41,19 +37,7 @@ const REMOTE_OPTIONS = [
   { value: "ONSITE", label: "On-site", icon: "📍" },
 ];
 
-const EXPERIENCE_OPTIONS = [
-  { value: "ENTRY", label: "Entry Level" },
-  { value: "MID", label: "Mid Level" },
-  { value: "SENIOR", label: "Senior" },
-  { value: "LEAD", label: "Lead / Executive" },
-];
 
-const EMPLOYMENT_OPTIONS = [
-  { value: "FULL_TIME", label: "Full-time" },
-  { value: "PART_TIME", label: "Part-time" },
-  { value: "CONTRACT", label: "Contract" },
-  { value: "INTERNSHIP", label: "Internship" },
-];
 
 const FRAMEWORK_OPTIONS = [
   { value: "react", label: "React" },
@@ -89,7 +73,7 @@ export default function FilterSidebar({
 }: FilterSidebarProps) {
   const toggleArrayFilter = useCallback(
     (
-      key: "remoteType" | "experienceLevel" | "employmentType" | "framework",
+      key: "remoteType" | "framework",
       value: string
     ) => {
       const current = filters[key];
@@ -106,8 +90,6 @@ export default function FilterSidebar({
       q: filters.q,
       location: "",
       remoteType: [],
-      experienceLevel: [],
-      employmentType: [],
       framework: [],
       salaryMin: "",
       salaryMax: "",
@@ -119,8 +101,6 @@ export default function FilterSidebar({
   const hasActiveFilters =
     filters.location ||
     filters.remoteType.length > 0 ||
-    filters.experienceLevel.length > 0 ||
-    filters.employmentType.length > 0 ||
     filters.framework.length > 0 ||
     filters.salaryMin ||
     filters.salaryMax ||
@@ -200,49 +180,7 @@ export default function FilterSidebar({
 
 
 
-      {/* Experience Level */}
-      <div className="filter-section">
-        <h3>Seniority</h3>
-        {EXPERIENCE_OPTIONS.map((opt) => (
-          <label key={opt.value} className="filter-option min-h-[44px]">
-            <input
-              type="checkbox"
-              checked={filters.experienceLevel.includes(opt.value)}
-              onChange={() =>
-                toggleArrayFilter("experienceLevel", opt.value)
-              }
-            />
-            <span>{opt.label}</span>
-            {facets.experienceLevel[opt.value] !== undefined && (
-              <span className="filter-count">
-                {facets.experienceLevel[opt.value]}
-              </span>
-            )}
-          </label>
-        ))}
-      </div>
 
-      {/* Employment Type */}
-      <div className="filter-section">
-        <h3>Employment Type</h3>
-        {EMPLOYMENT_OPTIONS.map((opt) => (
-          <label key={opt.value} className="filter-option min-h-[44px]">
-            <input
-              type="checkbox"
-              checked={filters.employmentType.includes(opt.value)}
-              onChange={() =>
-                toggleArrayFilter("employmentType", opt.value)
-              }
-            />
-            <span>{opt.label}</span>
-            {facets.employmentType[opt.value] !== undefined && (
-              <span className="filter-count">
-                {facets.employmentType[opt.value]}
-              </span>
-            )}
-          </label>
-        ))}
-      </div>
 
 
 
@@ -271,14 +209,6 @@ export function createDefaultFilters(
     location: searchParams?.get("location") || "",
     remoteType:
       searchParams?.get("remoteType")?.split(",").filter(Boolean) || [],
-    experienceLevel:
-      searchParams
-        ?.get("experienceLevel")
-        ?.split(",")
-        .filter(Boolean) || [],
-    employmentType:
-      searchParams?.get("employmentType")?.split(",").filter(Boolean) ||
-      [],
     framework:
       searchParams?.get("framework")?.split(",").filter(Boolean) || [],
     salaryMin: searchParams?.get("salaryMin") || "",

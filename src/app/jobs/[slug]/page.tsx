@@ -153,21 +153,23 @@ export default async function JobDetailPage({
     applicantLocationRequirements: {
       "@type": "Country",
       name: job.country || "Worldwide",
-    },
-    ...( (job.salaryMin || job.salaryMax) && {
-      baseSalary: {
-        "@type": "MonetaryAmount",
-        currency: job.currency || "USD",
-        value: {
-          "@type": "QuantitativeValue",
-          ...(job.salaryMin && job.salaryMax && job.salaryMin !== job.salaryMax
-            ? { minValue: job.salaryMin, maxValue: job.salaryMax }
-            : { value: job.salaryMin || job.salaryMax }),
-          unitText: "YEAR",
-        },
-      },
-    }),
+    }
   };
+
+  // STRIP GATED DATA FOR INITIAL HTML PAYLOAD
+  // The server renders the initial HTML for all users without knowing their auth status.
+  // We explicitly delete sensitive fields so they don't leak in the network tab / view source.
+  const publicJob = { ...job };
+  if (publicJob.salaryMin || publicJob.salaryMax) {
+    publicJob.hasSalaryHidden = true;
+  }
+  delete (publicJob as any).salaryMin;
+  delete (publicJob as any).salaryMax;
+  delete (publicJob as any).currency;
+
+  if (publicJob.isEarlyAccess) {
+    delete (publicJob as any).applyUrl;
+  }
 
   // Server-side: we don't know if the user is premium (no auth headers in SSR).
   // We render the page with isPremium=false — the client-side JobDetail
@@ -179,7 +181,7 @@ export default async function JobDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
-      <JobDetail job={job} isPremium={false} />
+      <JobDetail job={publicJob} isPremium={false} />
     </>
   );
 }

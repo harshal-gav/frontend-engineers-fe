@@ -39,17 +39,7 @@ export default async function HomePage() {
             "@type": "Country",
             "name": job.country || "Worldwide"
           },
-          "baseSalary": (job.salaryMin || job.salaryMax) ? {
-            "@type": "MonetaryAmount",
-            "currency": job.currency || "USD",
-            "value": {
-              "@type": "QuantitativeValue",
-              ...(job.salaryMin && job.salaryMax && job.salaryMin !== job.salaryMax
-                ? { minValue: job.salaryMin, maxValue: job.salaryMax }
-                : { value: job.salaryMin || job.salaryMax }),
-              "unitText": "YEAR"
-            }
-          } : undefined
+
         }
       }));
 
