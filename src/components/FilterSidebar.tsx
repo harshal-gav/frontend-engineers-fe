@@ -8,8 +8,6 @@ export interface FilterState {
   q: string;
   location: string;
   remoteType: string[];
-  salaryMin: string;
-  salaryMax: string;
   postedWithin: string;
   sortBy: string;
   framework: string[];
@@ -57,8 +55,6 @@ const POSTED_OPTIONS = [
 
 const SORT_OPTIONS = [
   { value: "newest", label: "Newest first" },
-  { value: "salary_high", label: "Salary: High → Low" },
-  { value: "salary_low", label: "Salary: Low → High" },
 ];
 
 // ─── Component ───────────────────────────────────────────
@@ -91,8 +87,6 @@ export default function FilterSidebar({
       location: "",
       remoteType: [],
       framework: [],
-      salaryMin: "",
-      salaryMax: "",
       postedWithin: "",
       sortBy: "newest",
     });
@@ -102,8 +96,6 @@ export default function FilterSidebar({
     filters.location ||
     filters.remoteType.length > 0 ||
     filters.framework.length > 0 ||
-    filters.salaryMin ||
-    filters.salaryMax ||
     filters.postedWithin;
 
   return (
@@ -211,8 +203,6 @@ export function createDefaultFilters(
       searchParams?.get("remoteType")?.split(",").filter(Boolean) || [],
     framework:
       searchParams?.get("framework")?.split(",").filter(Boolean) || [],
-    salaryMin: searchParams?.get("salaryMin") || "",
-    salaryMax: searchParams?.get("salaryMax") || "",
     postedWithin: searchParams?.get("postedWithin") || "",
     sortBy: searchParams?.get("sortBy") || "newest",
   };

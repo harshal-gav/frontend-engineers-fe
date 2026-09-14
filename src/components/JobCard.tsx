@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { formatSalary, timeAgo, type Job } from "@/lib/jobs";
+import { timeAgo, type Job } from "@/lib/jobs";
 
 // ─── Config ──────────────────────────────────────────────
 
@@ -65,7 +65,7 @@ export default function JobCard({
   const level = job.experienceLevel
     ? LEVEL_CONFIG[job.experienceLevel]
     : null;
-  const salary = formatSalary(job.salaryMin, job.salaryMax, job.currency);
+
   const gradientIndex =
     (job.company?.name || "X").charCodeAt(0) % LOGO_COLORS.length;
   const techStack = extractTechStack(job.title, job.description);
@@ -204,25 +204,7 @@ export default function JobCard({
             </div>
           )}
 
-          {/* Salary + Employment type */}
-          <div className="flex items-center gap-3 mt-2.5 sm:mt-3">
-            {job.hasSalaryHidden ? (
-              <span className="text-[10px] sm:text-xs bg-[#d97706]/15 text-[#d97706] px-2 py-0.5 rounded-full font-semibold border border-[#d97706]/30">
-                🔒 Pro users can also see salary
-              </span>
-            ) : salary ? (
-              <span className="salary-text text-sm">{salary}</span>
-            ) : null}
-            <span
-              className="text-xs"
-              style={{ color: "var(--text-muted)" }}
-            >
-              {job.employmentType
-                .replace("_", "-")
-                .toLowerCase()
-                .replace(/^\w/, (c) => c.toUpperCase())}
-            </span>
-          </div>
+
 
           {/* Description preview */}
           {job.description && (

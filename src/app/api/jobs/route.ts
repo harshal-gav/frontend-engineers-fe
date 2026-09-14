@@ -62,27 +62,19 @@ export async function GET(request: Request) {
       if (optimized.description && optimized.description.length > 500) {
         optimized.description = optimized.description.substring(0, 500) + "...";
       }
+      delete (optimized as any).salaryMin;
+      delete (optimized as any).salaryMax;
+      delete (optimized as any).currency;
+      delete (optimized as any).employmentType;
       return optimized;
     });
 
     // EARLY ACCESS MODEL:
     // - Premium users see ALL jobs (including fresh ones posted within the last 7 days).
     // - Free users only see jobs older than 7 days.
-    // - SALARY GATING: Salary is hidden for free users for all jobs.
     if (!isPremium) {
       const publicJobs = lightweightJobs
-        .filter((job) => !job.isEarlyAccess)
-        .map((job) => {
-          const publicJob = { ...job };
-          if (publicJob.salaryMin || publicJob.salaryMax) {
-            publicJob.hasSalaryHidden = true;
-          }
-          // Explicitly delete salary data so it doesn't leak in the network tab
-          delete (publicJob as any).salaryMin;
-          delete (publicJob as any).salaryMax;
-          delete (publicJob as any).currency;
-          return publicJob;
-        });
+        .filter((job) => !job.isEarlyAccess);
       return NextResponse.json(publicJobs);
     }
 

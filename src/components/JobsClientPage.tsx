@@ -70,6 +70,14 @@ function computeFacets(jobs: Job[]) {
   return facets;
 }
 
+// ─── Sorting Helper ──────────────────────────────────────
+
+function hasCareerLink(url?: string): boolean {
+  if (!url) return false;
+  const lower = url.toLowerCase();
+  return lower.includes("career") || lower.includes("careers");
+}
+
 // ─── Main Component ──────────────────────────────────────
 
 export default function JobsClientPage() {
@@ -194,19 +202,7 @@ export default function JobsClientPage() {
 
 
 
-    // Salary range
-    if (filters.salaryMin) {
-      const min = parseInt(filters.salaryMin);
-      filtered = filtered.filter(
-        (j) => j.salaryMin && j.salaryMin >= min
-      );
-    }
-    if (filters.salaryMax) {
-      const max = parseInt(filters.salaryMax);
-      filtered = filtered.filter(
-        (j) => j.salaryMax && j.salaryMax <= max
-      );
-    }
+
 
     // Posted Within
     if (filters.postedWithin) {
@@ -226,13 +222,29 @@ export default function JobsClientPage() {
     }
 
     // Sort
-    if (filters.sortBy === "salary_high") {
-      filtered.sort((a, b) => (b.salaryMax || 0) - (a.salaryMax || 0));
-    } else if (filters.sortBy === "salary_low") {
-      filtered.sort((a, b) => (a.salaryMin || 999999) - (b.salaryMin || 999999));
+    if (filters.sortBy === "newest") {
+      filtered.sort((a, b) => {
+        const aCareer = hasCareerLink(a.applyUrl) ? 1 : 0;
+        const bCareer = hasCareerLink(b.applyUrl) ? 1 : 0;
+        
+        if (aCareer !== bCareer) {
+          return bCareer - aCareer; // 1 goes before 0
+        }
+
+        const timeA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
+        const timeB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
+        return timeB - timeA;
+      });
     } else {
       // Default newest first (latest at top)
       filtered.sort((a, b) => {
+        const aCareer = hasCareerLink(a.applyUrl) ? 1 : 0;
+        const bCareer = hasCareerLink(b.applyUrl) ? 1 : 0;
+        
+        if (aCareer !== bCareer) {
+          return bCareer - aCareer;
+        }
+
         const timeA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
         const timeB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
         return timeB - timeA;
@@ -256,8 +268,6 @@ export default function JobsClientPage() {
     filters.location !== "" ||
     filters.remoteType.length > 0 ||
     filters.framework.length > 0 ||
-    filters.salaryMin !== "" ||
-    filters.salaryMax !== "" ||
     filters.sortBy !== "newest" ||
     filters.postedWithin !== "";
 
@@ -271,8 +281,6 @@ export default function JobsClientPage() {
         params.set("remoteType", f.remoteType.join(","));
       if (f.framework.length)
         params.set("framework", f.framework.join(","));
-      if (f.salaryMin) params.set("salaryMin", f.salaryMin);
-      if (f.salaryMax) params.set("salaryMax", f.salaryMax);
       if (f.postedWithin) params.set("postedWithin", f.postedWithin);
       if (f.sortBy !== "newest") params.set("sortBy", f.sortBy);
       const query = params.toString();
@@ -292,7 +300,6 @@ export default function JobsClientPage() {
     filters.remoteType.length > 0,
     filters.framework.length > 0,
     !!filters.location,
-    !!filters.salaryMin || !!filters.salaryMax,
     !!filters.postedWithin,
   ].filter(Boolean).length;
 

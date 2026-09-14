@@ -141,8 +141,6 @@ export default async function JobDetailPage({
     validThrough: new Date(
       Date.now() + 30 * 24 * 60 * 60 * 1000
     ).toISOString(),
-    employmentType:
-      job.employmentType === "CONTRACT" ? "CONTRACTOR" : "FULL_TIME",
     hiringOrganization: {
       "@type": "Organization",
       name: job.company?.name || "Company",
@@ -160,12 +158,10 @@ export default async function JobDetailPage({
   // The server renders the initial HTML for all users without knowing their auth status.
   // We explicitly delete sensitive fields so they don't leak in the network tab / view source.
   const publicJob = { ...job };
-  if (publicJob.salaryMin || publicJob.salaryMax) {
-    publicJob.hasSalaryHidden = true;
-  }
   delete (publicJob as any).salaryMin;
   delete (publicJob as any).salaryMax;
   delete (publicJob as any).currency;
+  delete (publicJob as any).employmentType;
 
   if (publicJob.isEarlyAccess) {
     delete (publicJob as any).applyUrl;

@@ -61,8 +61,13 @@ export async function GET(
       return NextResponse.json({ error: "Forbidden. Pro subscription required." }, { status: 403 });
     }
 
-    // If premium, return the full job object (with salary and applyUrl intact)
-    return NextResponse.json(job);
+    // If premium, return the full job object but strip salary
+    const secureJob = { ...job };
+    delete (secureJob as any).salaryMin;
+    delete (secureJob as any).salaryMax;
+    delete (secureJob as any).currency;
+    delete (secureJob as any).employmentType;
+    return NextResponse.json(secureJob);
   } catch (error) {
     console.error("Jobs API error:", error);
     return NextResponse.json({ error: "Internal Server Error" }, { status: 500 });

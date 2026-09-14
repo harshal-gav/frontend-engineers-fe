@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { formatSalary, type Job } from "@/lib/jobs";
+import { type Job } from "@/lib/jobs";
 
 import { useState, useEffect } from "react";
 import { useAuth } from "@/context/AuthContext";
@@ -46,7 +46,7 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
   useEffect(() => {
     // If user is subscribed and the initial job has hidden salary or missing applyUrl (for early access)
     // we fetch the full secure job object
-    if (isSubscribed && (initialJob.hasSalaryHidden || (initialJob.isEarlyAccess && !initialJob.applyUrl))) {
+    if (isSubscribed && (initialJob.isEarlyAccess && !initialJob.applyUrl)) {
       const fetchSecureData = async () => {
         setIsLoadingSecureData(true);
         try {
@@ -81,7 +81,7 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
   const level = job.experienceLevel
     ? LEVEL_CONFIG[job.experienceLevel]
     : null;
-  const salary = formatSalary(job.salaryMin, job.salaryMax, job.currency);
+
   const gradientIndex =
     (job.company?.name || "X").charCodeAt(0) % LOGO_GRADIENTS.length;
 
@@ -173,18 +173,7 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
         {level && (
           <span className={`badge ${level.class}`}>{level.label}</span>
         )}
-        <span
-          className="badge"
-          style={{
-            background: "var(--bg-secondary)",
-            color: "var(--text-secondary)",
-          }}
-        >
-          {job.employmentType
-            .replace("_", "-")
-            .toLowerCase()
-            .replace(/^\w/, (c) => c.toUpperCase())}
-        </span>
+
         {job.location && (
           <span className="text-sm text-[var(--text-muted)]">
             📍 {job.city || job.location}
@@ -193,27 +182,6 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
         )}
       </div>
 
-      {/* Salary */}
-      <div className="glass-card p-4 sm:p-5 mb-6">
-        <div className="text-sm font-medium text-[var(--text-muted)] mb-1">
-          Salary Range
-        </div>
-        {job.hasSalaryHidden && !isSubscribed ? (
-          <div className="mt-2">
-            <Link href="/pricing" className="inline-flex items-center gap-1.5 text-xs bg-[#d97706]/15 text-[#d97706] px-3 py-1.5 rounded-full font-semibold border border-[#d97706]/30 hover:bg-[#d97706]/25 transition-colors">
-              🔒 Pro users can also see salary
-            </Link>
-          </div>
-        ) : isLoadingSecureData ? (
-          <div className="h-7 w-32 skeleton rounded mt-1"></div>
-        ) : salary ? (
-          <div className="salary-text text-lg sm:text-xl font-bold">
-            {salary}
-          </div>
-        ) : (
-          <div className="text-sm text-[var(--text-muted)] mt-1">Not specified</div>
-        )}
-      </div>
 
       {/* Description */}
       <div className="mb-8">
