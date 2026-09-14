@@ -5,17 +5,9 @@ const crypto = require('crypto');
 const JOBS_FILE = path.join(__dirname, '..', 'data', 'jobs.json');
 const LINKEDIN_FILE = path.join(__dirname, '..', 'data', 'linkedin-jobs.json');
 
-// Frontend keywords for filtering
-const FRONTEND_KEYWORDS = [
-  'frontend', 'front end', 'front-end', 
-  'react', 'vue', 'angular', 'svelte',
-  'javascript', 'typescript', 'js', 'ts',
-  'ui ', 'user interface', 'web'
-];
-
+// Strict frontend keyword filtering based on user request
 function isFrontendJob(title) {
-  const lowerTitle = title.toLowerCase();
-  return FRONTEND_KEYWORDS.some(kw => lowerTitle.includes(kw));
+  return /front\s*end/i.test(title);
 }
 
 function generateId(str) {
@@ -56,8 +48,10 @@ function main() {
   let skippedDupCount = 0;
 
   for (const lJob of linkedinJobs) {
-    // We are no longer filtering by isFrontendJob based on user request
-
+    // Strictly filter by frontend
+    if (!isFrontendJob(lJob.title)) {
+      continue;
+    }
     // Clean URL
     const applyUrl = lJob.applyUrl || lJob.linkedinUrl;
     const sourceHash = generateId(applyUrl);
