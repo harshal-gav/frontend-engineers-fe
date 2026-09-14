@@ -101,7 +101,7 @@ export default function JobsClientPage() {
   );
   const [allJobs, setAllJobs] = useState<Job[]>(globalJobsCache || []);
   const [mounted, setMounted] = useState(false);
-  
+
   useEffect(() => setMounted(true), []);
 
   const [dataLoaded, setDataLoaded] = useState(!!globalJobsCache);
@@ -116,7 +116,7 @@ export default function JobsClientPage() {
     const p = searchParams?.get("page");
     const newPage = p ? parseInt(p, 10) || 1 : 1;
     setPage(newPage);
-    
+
     // Also sync filters so that if they had filters and pressed back, they are restored
     setFilters(createDefaultFilters(searchParams));
   }, [searchParams]);
@@ -161,7 +161,7 @@ export default function JobsClientPage() {
     // Robust substring search replacing Fuse.js
     if (filters.q && filters.q.length >= 2) {
       const qTokens = filters.q.toLowerCase().split(/\s+/).filter(t => t.length > 0);
-      
+
       filtered = filtered.filter((j) => {
         const searchableText = [
           j.title,
@@ -172,7 +172,7 @@ export default function JobsClientPage() {
           .filter(Boolean)
           .join(" ")
           .toLowerCase();
-          
+
         // Ensure ALL typed words are found somewhere in the job
         return qTokens.every(token => searchableText.includes(token));
       });
@@ -232,7 +232,7 @@ export default function JobsClientPage() {
       filtered.sort((a, b) => {
         const aCareer = hasCareerLink(a.applyUrl) ? 1 : 0;
         const bCareer = hasCareerLink(b.applyUrl) ? 1 : 0;
-        
+
         if (aCareer !== bCareer) {
           return bCareer - aCareer; // 1 goes before 0
         }
@@ -246,7 +246,7 @@ export default function JobsClientPage() {
       filtered.sort((a, b) => {
         const aCareer = hasCareerLink(a.applyUrl) ? 1 : 0;
         const bCareer = hasCareerLink(b.applyUrl) ? 1 : 0;
-        
+
         if (aCareer !== bCareer) {
           return bCareer - aCareer;
         }
@@ -266,11 +266,11 @@ export default function JobsClientPage() {
       const pageJobs: Job[] = [];
       const seenCompanies = new Set<string>();
       let i = 0;
-      
+
       while (i < remaining.length && pageJobs.length < limit) {
         const job = remaining[i];
         const compName = job.company?.name?.toLowerCase() || job.id;
-        
+
         if (!seenCompanies.has(compName)) {
           pageJobs.push(job);
           seenCompanies.add(compName);
@@ -279,17 +279,17 @@ export default function JobsClientPage() {
           i++;
         }
       }
-      
+
       // If we couldn't fill the page with unique companies but jobs remain, relax constraint
       if (pageJobs.length < limit && remaining.length > 0) {
         const needed = limit - pageJobs.length;
         const fill = remaining.splice(0, needed);
         pageJobs.push(...fill);
       }
-      
+
       reordered.push(...pageJobs);
     }
-    
+
     filtered = reordered;
 
     const total = filtered.length;
@@ -375,7 +375,7 @@ export default function JobsClientPage() {
                 >
                   Post a Job
                 </Link>
-                
+
                 {!isSubscribed && (
                   <Link
                     href="/pricing"
@@ -384,7 +384,7 @@ export default function JobsClientPage() {
                     ⭐ Get Pro
                   </Link>
                 )}
-                
+
                 <div className="flex items-center gap-2 sm:gap-3 bg-transparent sm:bg-white/50 sm:border sm:border-[#e2e2e6] rounded-full sm:pl-3 sm:pr-1 sm:py-1 h-[32px] sm:h-[40px]">
                   {/* Pro Badge */}
                   {isSubscribed && (
@@ -392,15 +392,15 @@ export default function JobsClientPage() {
                       Pro
                     </span>
                   )}
-                  
+
                   {/* Desktop: Email text */}
                   <span className="hidden sm:block text-sm font-semibold text-gray-900 max-w-[120px] truncate" title={user.email || ""}>
                     {user.email}
                   </span>
 
                   {/* Log Out Button */}
-                  <button 
-                    onClick={handleLogout} 
+                  <button
+                    onClick={handleLogout}
                     className="text-xs sm:text-sm bg-white text-gray-600 hover:bg-[#f5f5f7] hover:text-[#e11d48] px-3 py-1.5 sm:py-1.5 rounded-full transition-colors font-medium flex items-center justify-center border border-[#e2e2e6] sm:border-none shrink-0 h-full"
                     title="Log Out"
                   >
@@ -435,29 +435,33 @@ export default function JobsClientPage() {
       </header>
 
       {/* ─── Hero Section ───────────────────── */}
-      <section className="pt-6 sm:pt-10 pb-6 sm:pb-8 px-4 text-center bg-white">
-          <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900">
-            The Best{" "}
-            <span className="text-[#2563eb]">Remote Frontend Jobs</span>
-            <span className="block mt-2 text-lg sm:text-xl lg:text-2xl text-gray-700 font-bold">
-              Work from anywhere, earn in dollars, and spend in local currency.
-            </span>
-          </h1>
-          <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 text-gray-600">
-            Curated 100% remote roles for React, Vue, Angular, Svelte, Next.js, UI/UX, and TypeScript Engineers. Pro members get 7-day early access, apply before the crowd.
-          </p>
+      <section className="pt-6 sm:pt-10 pb-6 sm:pb-8 px-4 text-center bg-white flex flex-col items-center">
+        <div className="inline-flex items-center justify-center gap-1.5 bg-[#f0fdf4] text-[#166534] border border-[#bbf7d0] px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold mb-4 sm:mb-6 shadow-sm uppercase tracking-wider">
+          <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          Aggregated from 100+ job boards & company career pages. Save hours of searching!
+        </div>
+        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900 w-full">
+          The Best{" "}
+          <span className="text-[#2563eb]">Remote Frontend Jobs</span>
+          <span className="block mt-2 text-lg sm:text-xl lg:text-2xl text-gray-700 font-bold">
+            Work from anywhere, earn in dollars, and spend in local currency.
+          </span>
+        </h1>
+        <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 text-gray-600">
+          Curated 100% remote roles for React, Vue, Angular, Svelte, Next.js, UI/UX, and TypeScript Engineers. We aggregate the entire internet so you don't have to. Pro members get 7-day early access to apply before the crowd.
+        </p>
 
-          {!isSubscribed && (
-            <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
-              <Link 
-                href="/pricing" 
-                className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
-              >
-                ⭐ Get Pro Membership
-              </Link>
-              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access and daily new job alerts before the crowd. Apply before anyone else with Pro.</p>
-            </div>
-          )}
+        {!isSubscribed && (
+          <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
+            <Link
+              href="/pricing"
+              className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
+            >
+              ⭐ Get Pro Membership
+            </Link>
+            <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access and daily new job alerts before the crowd. Apply before anyone else with Pro.</p>
+          </div>
+        )}
 
         {/* Search Bar */}
         <div className="hero-search flex flex-col items-center w-full max-w-2xl mx-auto mb-4 sm:mb-6 relative">
@@ -523,17 +527,17 @@ export default function JobsClientPage() {
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {!dataLoaded
                   ? Array.from({ length: 6 }).map((_, i) => (
-                      <JobCardSkeleton key={i} />
-                    ))
+                    <JobCardSkeleton key={i} />
+                  ))
                   : jobs.map((job, index) => (
-                      <React.Fragment key={job.id}>
-                        <JobCard
-                          job={job}
-                          index={index}
-                        />
+                    <React.Fragment key={job.id}>
+                      <JobCard
+                        job={job}
+                        index={index}
+                      />
 
-                      </React.Fragment>
-                    ))}
+                    </React.Fragment>
+                  ))}
               </div>
             </div>
 
@@ -560,12 +564,12 @@ export default function JobsClientPage() {
                 >
                   ← Previous
                 </button>
-                
+
                 <div className="flex items-center gap-2 order-first sm:order-none">
                   {(() => {
                     const limit = 12;
                     const totalPages = Math.ceil(totalJobs / limit);
-                    
+
                     let startPage = Math.max(1, page - 1);
                     let endPage = Math.min(totalPages, page + 1);
 
@@ -584,11 +588,10 @@ export default function JobsClientPage() {
                         <button
                           key={i}
                           onClick={() => handlePageChange(i)}
-                          className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-semibold transition-colors ${
-                            page === i
+                          className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-semibold transition-colors ${page === i
                               ? "bg-[#2563eb] text-white"
                               : "bg-white text-gray-600 hover:text-gray-900 border border-[#e2e2e6] hover:border-[#444]"
-                          }`}
+                            }`}
                         >
                           {i}
                         </button>

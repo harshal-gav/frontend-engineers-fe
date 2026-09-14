@@ -47,18 +47,18 @@ export default function PricingPage() {
         const ipRes = await fetch("https://ipapi.co/json/");
         const ipData = await ipRes.json();
         const currency = ipData.currency;
-        
+
         if (currency && currency !== "USD") {
           const rateRes = await fetch("https://open.er-api.com/v6/latest/USD");
           const rateData = await rateRes.json();
           const rate = rateData.rates[currency];
-          
+
           if (rate) {
             const converted = Math.round(9 * rate); // $9 * rate
-            const formatted = new Intl.NumberFormat(undefined, { 
-              style: 'currency', 
+            const formatted = new Intl.NumberFormat(undefined, {
+              style: 'currency',
               currency: currency,
-              maximumFractionDigits: 0 
+              maximumFractionDigits: 0
             }).format(converted);
             setLocalPrice(`approx ${formatted}`);
           }
@@ -91,7 +91,7 @@ export default function PricingPage() {
     try {
       if (!user) return;
       const token = await user.getIdToken();
-      
+
       const res = await fetch("/api/payu/create-subscription", {
         method: "POST",
         headers: {
@@ -99,19 +99,19 @@ export default function PricingPage() {
           "Authorization": `Bearer ${token}`
         }
       });
-      
+
       const data = await res.json();
-      
+
       if (!res.ok || data.error) {
         setError(data.error || "Failed to initialize PayU");
         return;
       }
-      
+
       // Dynamically create and submit a form to PayU
       const form = document.createElement("form");
       form.setAttribute("method", "POST");
       form.setAttribute("action", data.action);
-      
+
       Object.keys(data.params).forEach((key) => {
         const hiddenField = document.createElement("input");
         hiddenField.setAttribute("type", "hidden");
@@ -119,10 +119,10 @@ export default function PricingPage() {
         hiddenField.setAttribute("value", data.params[key]);
         form.appendChild(hiddenField);
       });
-      
+
       document.body.appendChild(form);
       form.submit();
-      
+
     } catch (err) {
       console.error(err);
       setError("Failed to initiate PayU payment");
@@ -132,8 +132,12 @@ export default function PricingPage() {
   return (
     <div className="min-h-screen bg-white text-gray-900 py-20 px-4">
       <div className="max-w-6xl mx-auto">
-        <div className="max-w-3xl mx-auto text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">
+        <div className="max-w-3xl mx-auto text-center mb-12 flex flex-col items-center">
+          <div className="inline-flex items-center justify-center gap-1.5 bg-[#f0fdf4] text-[#166534] border border-[#bbf7d0] px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold mb-4 sm:mb-6 shadow-sm uppercase tracking-wider">
+            <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            Aggregated from 100+ job boards & company career pages. Save 1000s of hours of searching!
+          </div>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 w-full">
             <span className="text-[#2563eb]">Pro Membership</span>{" "}
             for New Jobs
           </h1>
@@ -144,11 +148,11 @@ export default function PricingPage() {
         </div>
 
         <div className="flex flex-col lg:flex-row gap-8 items-start justify-center">
-          
+
           {/* ─── Left Column (Table, Stats, Testimonials) ─── */}
           {/* Order 2 on mobile (below pricing), Order 1 on desktop (left side) */}
           <div className="flex-1 w-full flex flex-col gap-8 order-2 lg:order-1">
-            
+
             {/* ─── Why Pay? Comparison Table ─────────── */}
             <div className="glass-card w-full overflow-hidden">
               <div className="overflow-x-auto w-full">
@@ -172,9 +176,14 @@ export default function PricingPage() {
                       <td className="highlight-cell text-center">✓ Fresh jobs in your inbox</td>
                     </tr>
                     <tr>
+                      <td>Time spent searching</td>
+                      <td className="muted-cell text-center">Hours across multiple sites</td>
+                      <td className="highlight-cell text-center">✓ None - aggregated from 100+ sources</td>
+                    </tr>
+                    <tr>
                       <td>Applicant competition</td>
                       <td className="muted-cell text-center">High (100s of applicants)</td>
-                      <td className="highlight-cell text-center">✓ Low - be among the first 10</td>
+                      <td className="highlight-cell text-center">✓ Low Competition, High Quality roles</td>
                     </tr>
                     <tr>
                       <td>Salary & apply links</td>
@@ -233,7 +242,7 @@ export default function PricingPage() {
                 ))}
               </div>
             )}
-            
+
           </div>
 
           {/* ─── Right Column (Pricing Card) ──────────────── */}
@@ -284,7 +293,7 @@ export default function PricingPage() {
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Low competition - be among the first 10</span>
+                  <span>Low Competition, High Quality roles</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -297,7 +306,7 @@ export default function PricingPage() {
 
               <div className="flex flex-col gap-3 min-h-[150px]">
                 {error && <div className="text-red-500 mb-2 text-center">{error}</div>}
-                
+
                 {!user ? (
                   <button
                     onClick={() => router.push("/auth/signup?redirect=/pricing")}
@@ -339,7 +348,7 @@ export default function PricingPage() {
                         />
                       </PayPalScriptProvider>
                     </div>
-                    
+
                     <div className="relative flex py-2 items-center">
                       <div className="flex-grow border-t border-[#e2e2e6]"></div>
                       <span className="flex-shrink-0 mx-4 text-gray-600 text-sm">OR</span>
@@ -354,10 +363,10 @@ export default function PricingPage() {
                     </button>
                   </div>
                 )}
-                
+
                 {user && (
                   <div className="mt-4 text-xs text-gray-600 text-center leading-relaxed">
-                    By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#2563eb] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#2563eb] hover:underline">Privacy Policy</Link>. 
+                    By subscribing, you agree to our <Link href="/legal/terms-of-service" className="text-[#2563eb] hover:underline">Terms of Service</Link> and <Link href="/legal/privacy-policy" className="text-[#2563eb] hover:underline">Privacy Policy</Link>.
                     Your subscription renews automatically at $9/month until cancelled.
                   </div>
                 )}
@@ -370,13 +379,13 @@ export default function PricingPage() {
                 </button>
 
                 <div className="mt-4 pt-4 border-t border-[#e2e2e6] text-xs text-gray-500 text-center leading-relaxed">
-                  For any query related to payment, reach out to us at: <br/>
+                  For any query related to payment, reach out to us at: <br />
                   <a href="mailto:frontendengineersupport@gmail.com" className="text-[#2563eb] hover:underline font-semibold">frontendengineersupport@gmail.com</a>
                 </div>
               </div>
             </div>
           </div>
-          
+
         </div>
       </div>
     </div>
