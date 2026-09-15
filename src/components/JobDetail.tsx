@@ -177,19 +177,9 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
       </div>
 
 
-      {/* Description */}
-      <div className="mb-8">
-        <h2 className="text-lg font-semibold mb-3">Job Description</h2>
-        <div className="prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap">
-          {job.description || "No description available."}
-        </div>
-      </div>
-
-
-
-      {/* Apply Button */}
+      {/* Apply Button (Desktop) */}
       {job.applyUrl && (
-        <div className="hidden sm:block">
+        <div className="hidden sm:block mb-8">
           <a
             href={job.applyUrl}
             target="_blank"
@@ -200,6 +190,14 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
           </a>
         </div>
       )}
+
+      {/* Description */}
+      <div className="mb-8">
+        <h2 className="text-lg font-semibold mb-3">Job Description</h2>
+        <div className="prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap">
+          {job.description || "No description available."}
+        </div>
+      </div>
     </main>
 
       {/* ─── Mobile Sticky Apply CTA ─────────────── */}

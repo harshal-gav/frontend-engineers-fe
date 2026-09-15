@@ -441,14 +441,11 @@ export default function JobsClientPage() {
           Aggregated from 100+ job boards & company career pages. Save hours of searching!
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900 w-full">
-          The Best{" "}
-          <span className="text-[#2563eb]">Remote Frontend Jobs</span>
-          <span className="block mt-2 text-lg sm:text-xl lg:text-2xl text-gray-700 font-bold">
-            Work from anywhere, earn in dollars, and spend in local currency.
-          </span>
+          Remote Frontend{" "}
+          <span className="text-[#2563eb]">Developer Jobs</span>
         </h1>
         <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 text-gray-600">
-          Curated 100% remote roles for React, Vue, Angular, Svelte, Next.js, UI/UX, and TypeScript Engineers. We aggregate the entire internet so you don't have to. Pro members get 7-day early access to apply before the crowd.
+          We aggregate the entire internet so you don't have to. Pro members get 7-day early access to apply before the crowd.
         </p>
 
         {!isSubscribed && (

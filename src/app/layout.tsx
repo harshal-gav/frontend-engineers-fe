@@ -22,8 +22,8 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://frontendengineers.com"),
   title: {
-    default: "Best Remote Frontend Jobs | Premium JavaScript & TypeScript Roles",
-    template: "%s | Best Remote Frontend Jobs"
+    default: "Remote Frontend Developer Jobs",
+    template: "%s | Remote Frontend Developer Jobs"
   },
   description: "Discover the best remote frontend jobs and fullstack JavaScript & TypeScript roles. We curate premium, 100% remote positions for React, Vue, Angular, and Node.js engineers.",
   keywords: [
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "your-google-verification-code-here",
   },
   openGraph: {
-    title: "Best Remote Frontend Jobs | Premium JavaScript & TypeScript Roles",
+    title: "Remote Frontend Developer Jobs",
     description: "Discover the best remote frontend jobs and fullstack JavaScript & TypeScript roles. We curate premium, 100% remote positions for React, Vue, Angular, and Node.js engineers.",
     url: "https://frontendengineers.com",
     siteName: "Best Remote Frontend Jobs",
@@ -66,7 +66,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Best Remote Frontend Jobs | Premium JavaScript & TypeScript Roles",
+    title: "Remote Frontend Developer Jobs",
     description: "Discover the best remote frontend jobs and fullstack JavaScript & TypeScript roles. We curate premium, 100% remote positions for React, Vue, Angular, and Node.js engineers.",
   },
   robots: {
