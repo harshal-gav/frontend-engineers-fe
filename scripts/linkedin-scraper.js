@@ -332,8 +332,14 @@ function saveJobs(jobs) {
     await sleep(LONG);
 
     // Check if there are no exact matches
-    const noResults = await page.$('.jobs-search-no-results-banner, h1:has-text("No matching jobs found"), h2:has-text("No matching jobs found")');
-    const noResultsText = await page.evaluate(() => document.body ? document.body.innerText.includes("No matching jobs found") : false);
+    let noResults = null;
+    let noResultsText = false;
+    try {
+      noResults = await page.$('.jobs-search-no-results-banner, h1:has-text("No matching jobs found"), h2:has-text("No matching jobs found")');
+      noResultsText = await page.evaluate(() => document.body ? document.body.innerText.includes("No matching jobs found") : false);
+    } catch (err) {
+      console.log("  ⚠️ Error checking for no results (page may still be loading):", err.message);
+    }
 
     if (noResults || noResultsText) {
         console.log(`\n⏭️  No exact matches found for ${country}. Skipping recommended jobs.`);
