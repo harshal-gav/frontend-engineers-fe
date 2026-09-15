@@ -4,98 +4,48 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative z-10 bg-[#f5f5f7] border-t border-[#e2e2e6] pt-16 pb-8 text-sm text-gray-600 mt-20">
+    <footer className="relative z-10 bg-[#f5f5f7] border-t border-[#e2e2e6] pt-10 pb-6 text-sm text-gray-600 mt-20">
       <div className="max-w-6xl mx-auto px-4">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
-          {/* Brand Column */}
-          <div className="md:col-span-1">
-            <Link href="/" className="text-xl font-bold text-gray-900 mb-4 block">
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+          {/* Brand */}
+          <div>
+            <Link href="/" className="text-lg font-bold text-gray-900 mb-3 block">
               Frontend<span className="text-[#2563eb]">Engineers</span>
             </Link>
-            <p className="text-gray-600 mb-6">
-              Curated remote frontend and JavaScript engineering jobs at the world's best product companies.
+            <p className="text-gray-500 text-xs leading-relaxed">
+              Curated 100% remote frontend developer jobs. React, TypeScript, Vue, Angular &amp; Next.js roles — updated daily.
             </p>
           </div>
 
-          {/* Platform Navigation */}
+          {/* Platform */}
           <div>
-            <h3 className="text-gray-900 font-semibold mb-4 uppercase tracking-wider text-xs">Platform</h3>
-            <ul className="space-y-3">
-              <li>
-                <a href="/" className="hover:text-[#2563eb] transition-colors">
-                  Browse Jobs
-                </a>
-              </li>
-              <li>
-                <Link href="/pricing" className="hover:text-[#2563eb] transition-colors">
-                  Pricing (Candidates)
-                </Link>
-              </li>
-              <li>
-                <Link href="/employers/pricing" className="hover:text-[#2563eb] transition-colors font-medium">
-                  Post a Job (Employers)
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="hover:text-[#2563eb] transition-colors">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/sitemap" className="hover:text-[#2563eb] transition-colors">
-                  Sitemap
-                </Link>
-              </li>
+            <h3 className="text-gray-900 font-semibold mb-3 uppercase tracking-wider text-xs">Platform</h3>
+            <ul className="space-y-2 text-xs">
+              <li><a href="/" className="hover:text-[#2563eb] transition-colors">Browse Jobs</a></li>
+              <li><Link href="/pricing" className="hover:text-[#2563eb] transition-colors">Pro Membership</Link></li>
+              <li><Link href="/employers/pricing" className="hover:text-[#2563eb] transition-colors font-medium">Post a Job</Link></li>
+              <li><Link href="/about" className="hover:text-[#2563eb] transition-colors">About</Link></li>
             </ul>
           </div>
 
-          {/* Legal & Compliance */}
+          {/* Legal */}
           <div>
-            <h3 className="text-gray-900 font-semibold mb-4 uppercase tracking-wider text-xs">Legal</h3>
-            <ul className="space-y-3">
-              <li>
-                <Link href="/legal/terms-of-service" className="hover:text-[#2563eb] transition-colors">
-                  Terms of Service
-                </Link>
-              </li>
-              <li>
-                <Link href="/legal/privacy-policy" className="hover:text-[#2563eb] transition-colors">
-                  Privacy Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/legal/refund-policy" className="hover:text-[#2563eb] transition-colors">
-                  Cancellation and Refund Policy
-                </Link>
-              </li>
-              <li>
-                <Link href="/legal/disclaimer" className="hover:text-[#2563eb] transition-colors">
-                  Job Board Disclaimer
-                </Link>
-              </li>
-            </ul>
-          </div>
-
-          {/* Company & Trust */}
-          <div>
-            <h3 className="text-gray-900 font-semibold mb-4 uppercase tracking-wider text-xs">Company</h3>
-            <ul className="space-y-3">
-              <li className="flex items-start gap-2">
-                <svg className="w-4 h-4 text-gray-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-                <span>frontendengineersupport@gmail.com</span>
-              </li>
-              <li className="flex items-start gap-2">
-                <svg className="w-4 h-4 text-gray-600 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"></path></svg>
-                <span>Frontend Engineers</span>
-              </li>
+            <h3 className="text-gray-900 font-semibold mb-3 uppercase tracking-wider text-xs">Legal</h3>
+            <ul className="space-y-2 text-xs">
+              <li><Link href="/legal/terms-of-service" className="hover:text-[#2563eb] transition-colors">Terms of Service</Link></li>
+              <li><Link href="/legal/privacy-policy" className="hover:text-[#2563eb] transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/legal/refund-policy" className="hover:text-[#2563eb] transition-colors">Refund Policy</Link></li>
+              <li><Link href="/legal/disclaimer" className="hover:text-[#2563eb] transition-colors">Disclaimer</Link></li>
             </ul>
           </div>
         </div>
 
-        <div className="border-t border-[#e2e2e6] pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-          <p>&copy; {currentYear} Frontend Engineers. All rights reserved.</p>
-          <div className="flex gap-6">
-            <span className="text-gray-700 text-xs">Secure payments by PayPal & PayU</span>
+        <div className="border-t border-[#e2e2e6] pt-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
+          <p>&copy; {currentYear} FrontendEngineers.com</p>
+          <div className="flex items-center gap-4">
+            <a href="mailto:frontendengineersupport@gmail.com" className="hover:text-[#2563eb] transition-colors">Contact</a>
+            <a href="https://www.linkedin.com/company/frontend-engineers-fe/" target="_blank" rel="noopener noreferrer" className="hover:text-[#2563eb] transition-colors">LinkedIn</a>
+            <span className="text-gray-400">Payments by PayPal &amp; PayU</span>
           </div>
         </div>
       </div>

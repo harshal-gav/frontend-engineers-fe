@@ -4,6 +4,7 @@ import type { Metadata } from "next";
 import { generateSlug, type Job } from "@/lib/jobs";
 import { loadJobsFromFile } from "@/lib/jobs.server";
 import JobDetail from "@/components/JobDetail";
+import Link from "next/link";
 
 // ─── Static Params (build-time) ──────────────────────────
 
@@ -12,6 +13,38 @@ export async function generateStaticParams() {
   return jobs.map((job) => ({
     slug: job.slug || generateSlug(job),
   }));
+}
+
+// ─── Skills extraction from title for schema enrichment ──
+
+function extractSkills(title: string): string[] {
+  const skills: string[] = [];
+  const titleLower = title.toLowerCase();
+  const skillMap: Record<string, string> = {
+    "react": "React",
+    "vue": "Vue.js",
+    "angular": "Angular",
+    "typescript": "TypeScript",
+    "javascript": "JavaScript",
+    "next.js": "Next.js",
+    "nextjs": "Next.js",
+    "node": "Node.js",
+    "svelte": "Svelte",
+    "css": "CSS",
+    "html": "HTML",
+    "tailwind": "Tailwind CSS",
+    "graphql": "GraphQL",
+    "redux": "Redux",
+    "webpack": "Webpack",
+    "python": "Python",
+    "aws": "AWS",
+  };
+  for (const [keyword, label] of Object.entries(skillMap)) {
+    if (titleLower.includes(keyword) && !skills.includes(label)) {
+      skills.push(label);
+    }
+  }
+  return skills;
 }
 
 // ─── Metadata ────────────────────────────────────────────
@@ -53,30 +86,48 @@ export async function generateMetadata({
     };
   }
 
-  // Dynamically generate keywords based on title
-  const keywords = ["remote", "job", "frontend", "engineer", "developer"];
-  if (job.title.toLowerCase().includes("react")) keywords.push("react", "react.js");
-  if (job.title.toLowerCase().includes("vue")) keywords.push("vue", "vue.js");
-  if (job.title.toLowerCase().includes("node")) keywords.push("node.js", "backend");
+  const companyName = job.company?.name || "Company";
+  const locationStr = job.country ? ` in ${job.country}` : "";
 
   return {
-    title: `${job.title} at ${job.company?.name || "Company"} — Remote`,
+    title: `${job.title} at ${companyName} — Remote${locationStr}`,
     description:
-      job.description?.substring(0, 155) ||
-      `Apply for ${job.title} — remote position.`,
-    keywords: keywords.join(", "),
+      job.description?.substring(0, 155).replace(/\n/g, ' ').trim() ||
+      `Apply for ${job.title} at ${companyName} — remote frontend developer position on FrontendEngineers.com.`,
     alternates: {
-      canonical: `https://frontendengineers.com/jobs/${slug}`,
+      canonical: `/jobs/${slug}`,
     },
     openGraph: {
-      title: `${job.title} — Remote Frontend & JavaScript Job`,
+      title: `${job.title} at ${companyName} — Remote Frontend Job`,
       description:
-        job.description?.substring(0, 155) ||
-        `Apply for ${job.title} — remote position.`,
+        job.description?.substring(0, 155).replace(/\n/g, ' ').trim() ||
+        `Apply for ${job.title} at ${companyName} — remote position.`,
       type: "website",
       url: `https://frontendengineers.com/jobs/${slug}`,
     },
   };
+}
+
+// ─── Breadcrumb Component ────────────────────────────────
+
+function Breadcrumbs({ jobTitle }: { jobTitle: string }) {
+  return (
+    <nav aria-label="Breadcrumb" className="max-w-4xl mx-auto px-4 sm:px-6 pt-3 pb-1">
+      <ol className="flex items-center gap-1.5 text-sm text-gray-500 flex-wrap">
+        <li>
+          <Link href="/" className="hover:text-[#2563eb] transition-colors">Home</Link>
+        </li>
+        <li aria-hidden="true" className="text-gray-400">›</li>
+        <li>
+          <Link href="/" className="hover:text-[#2563eb] transition-colors">Jobs</Link>
+        </li>
+        <li aria-hidden="true" className="text-gray-400">›</li>
+        <li className="text-gray-700 font-medium truncate max-w-[250px] sm:max-w-[400px]" aria-current="page">
+          {jobTitle}
+        </li>
+      </ol>
+    </nav>
+  );
 }
 
 // ─── Page Component ──────────────────────────────────────
@@ -120,12 +171,21 @@ export default async function JobDetailPage({
     return (
       <div className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
         <h1 className="text-3xl font-bold text-gray-900 mb-4">Job No Longer Available</h1>
-        <p className="text-gray-600 mb-8 max-w-md text-center">
+        <p className="text-gray-600 mb-6 max-w-md text-center">
           This position at {job.company?.name || "the company"} has been filled or is no longer active.
         </p>
-        <a href="/" className="px-6 py-3 bg-[#2563eb] text-white font-bold rounded-lg hover:scale-105 transition-transform">
-          Browse Similar Remote Jobs
-        </a>
+        <div className="flex flex-col items-center gap-4">
+          <a href="/" className="px-6 py-3 bg-[#2563eb] text-white font-bold rounded-lg hover:scale-105 transition-transform">
+            Browse Similar Remote Jobs
+          </a>
+          <div className="flex flex-wrap justify-center gap-2 mt-2">
+            <Link href="/jobs/remote/react" className="text-sm text-[#2563eb] hover:underline">React Jobs</Link>
+            <Link href="/jobs/remote/typescript" className="text-sm text-[#2563eb] hover:underline">TypeScript Jobs</Link>
+            <Link href="/jobs/remote/javascript" className="text-sm text-[#2563eb] hover:underline">JavaScript Jobs</Link>
+            <Link href="/jobs/remote/vue" className="text-sm text-[#2563eb] hover:underline">Vue Jobs</Link>
+            <Link href="/jobs/remote/angular" className="text-sm text-[#2563eb] hover:underline">Angular Jobs</Link>
+          </div>
+        </div>
       </div>
     );
   }
@@ -133,6 +193,8 @@ export default async function JobDetailPage({
   // Build JobPosting JSON-LD structured data for SEO
   // Note: we include public info (title, remote type, employment type)
   // but NOT gated info (apply URL, salary) — those are premium.
+  const skills = extractSkills(job.title);
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "JobPosting",
@@ -142,6 +204,7 @@ export default async function JobDetailPage({
     validThrough: new Date(
       Date.now() + 30 * 24 * 60 * 60 * 1000
     ).toISOString(),
+    employmentType: "FULL_TIME",
     hiringOrganization: {
       "@type": "Organization",
       name: job.company?.name || "Company",
@@ -152,7 +215,35 @@ export default async function JobDetailPage({
     applicantLocationRequirements: {
       "@type": "Country",
       name: job.country || "Worldwide",
-    }
+    },
+    ...(skills.length > 0 && { skills: skills }),
+    ...(job.company?.industry && { industry: job.company.industry }),
+  };
+
+  // BreadcrumbList JSON-LD
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://frontendengineers.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Jobs",
+        "item": "https://frontendengineers.com"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": job.title,
+        "item": `https://frontendengineers.com/jobs/${slug}`
+      }
+    ]
   };
 
   // STRIP GATED DATA FOR INITIAL HTML PAYLOAD
@@ -174,6 +265,11 @@ export default async function JobDetailPage({
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
+      />
+      <Breadcrumbs jobTitle={job.title} />
       <Suspense fallback={<div className="min-h-screen bg-[var(--bg-primary)]"></div>}>
         <JobDetail job={publicJob} isPremium={false} />
       </Suspense>

@@ -4,12 +4,41 @@ import Link from "next/link";
 import fs from 'fs';
 import path from 'path';
 import JobsClientPage from "@/components/JobsClientPage";
+import FaqSchema, { type FaqItem } from "@/components/FaqSchema";
 
 export const metadata: Metadata = {
   alternates: {
     canonical: "/",
   },
 };
+
+// ─── Homepage FAQ for AEO ────────────────────────────────
+const HOMEPAGE_FAQ: FaqItem[] = [
+  {
+    question: "Where can I find remote frontend developer jobs?",
+    answer: "FrontendEngineers.com is a specialized job board dedicated exclusively to remote frontend and fullstack JavaScript developer jobs. We curate 100% remote positions for React, Vue, Angular, TypeScript, Next.js, and JavaScript engineers from companies worldwide. Browse our latest listings on the homepage or filter by technology.",
+  },
+  {
+    question: "Does FrontendEngineers.com focus only on frontend jobs?",
+    answer: "Yes. Unlike generic job boards, FrontendEngineers.com specializes exclusively in frontend engineering and fullstack JavaScript roles. Every job listed is relevant to frontend developers, UI/UX engineers, and JavaScript/TypeScript engineers. This specialization means you never have to sift through irrelevant backend-only or non-technical listings.",
+  },
+  {
+    question: "Can I find React, TypeScript, or Vue jobs here?",
+    answer: "Absolutely. FrontendEngineers.com features remote jobs across all major frontend technologies including React, TypeScript, JavaScript, Vue, Angular, Next.js, Svelte, and Node.js. You can filter jobs by technology using the category filters on the homepage.",
+  },
+  {
+    question: "Are all jobs on FrontendEngineers.com remote?",
+    answer: "We focus primarily on 100% remote positions that allow you to work from anywhere. Our listings are curated to include genuine remote opportunities, filtering out hybrid roles disguised as remote. Some positions may specify regional availability requirements.",
+  },
+  {
+    question: "Can companies post jobs on FrontendEngineers.com?",
+    answer: "Yes. Employers, startups, and hiring managers can post frontend developer jobs on FrontendEngineers.com to reach a targeted audience of qualified frontend engineers. Visit our employer pricing page to learn about posting options and reach thousands of specialized frontend developers.",
+  },
+  {
+    question: "How often are new jobs added?",
+    answer: "New remote frontend developer jobs are added daily. We continuously source and curate positions from leading companies, startups, and tech teams worldwide. Pro members get 7-day early access to new listings before they become publicly available.",
+  },
+];
 
 export default async function HomePage() {
   let jsonLd = null;
@@ -28,6 +57,7 @@ export default async function HomePage() {
           "description": job.description || job.title,
           "datePosted": job.postedAt || new Date().toISOString(),
           "validThrough": new Date(new Date().setMonth(new Date().getMonth() + 1)).toISOString(),
+          "employmentType": "FULL_TIME",
           "hiringOrganization": {
             "@type": "Organization",
             "name": job.company?.name || "Unknown Company",
@@ -46,17 +76,34 @@ export default async function HomePage() {
         {
           "@context": "https://schema.org",
           "@type": "Organization",
-          "name": "Frontend Engineers",
+          "name": "FrontendEngineers.com",
           "url": "https://frontendengineers.com",
-          "logo": "https://frontendengineers.com/icon.png", // Assuming icon.png is available based on app/icon.tsx
-          "description": "The premier job board for remote frontend and fullstack JavaScript developers."
+          "logo": "https://frontendengineers.com/icon.png",
+          "description": "FrontendEngineers.com is a specialized job board for remote frontend and fullstack JavaScript developer jobs. We connect frontend engineers with 100% remote opportunities at leading companies worldwide.",
+          "email": "frontendengineersupport@gmail.com",
+          "sameAs": [
+            "https://www.linkedin.com/company/frontend-engineers-fe/"
+          ],
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "email": "frontendengineersupport@gmail.com",
+            "contactType": "customer support"
+          }
         },
         {
           "@context": "https://schema.org",
           "@type": "WebSite",
-          "name": "Best Remote Frontend Jobs",
+          "name": "FrontendEngineers.com",
           "url": "https://frontendengineers.com",
-          "description": "Discover the best remote frontend jobs and fullstack JavaScript & TypeScript roles.",
+          "description": "Find remote frontend developer jobs. FrontendEngineers.com curates 100% remote positions for React, Vue, Angular, TypeScript, and JavaScript engineers.",
+          "potentialAction": {
+            "@type": "SearchAction",
+            "target": {
+              "@type": "EntryPoint",
+              "urlTemplate": "https://frontendengineers.com/?q={search_term_string}"
+            },
+            "query-input": "required name=search_term_string"
+          }
         },
         {
           "@context": "https://schema.org",
@@ -86,8 +133,8 @@ export default async function HomePage() {
                   FE
                 </div>
                 <span className="text-base sm:text-lg font-bold text-gray-900 tracking-tight">
-                  <span className="hidden sm:inline">Best Remote Frontend Jobs</span>
-                  <span className="sm:hidden">Best Frontend Jobs</span>
+                  <span className="hidden sm:inline">FrontendEngineers.com</span>
+                  <span className="sm:hidden">FrontendEngineers</span>
                 </span>
               </div>
               <div className="w-24 h-10 skeleton rounded" />
@@ -123,6 +170,10 @@ export default async function HomePage() {
         <JobsClientPage />
       </Suspense>
 
+      {/* ─── Homepage FAQ for AEO/SEO ─────────────────── */}
+      <section className="max-w-4xl mx-auto px-4 pb-16">
+        <FaqSchema items={HOMEPAGE_FAQ} title="Frequently Asked Questions About FrontendEngineers.com" />
+      </section>
 
     </>
   );

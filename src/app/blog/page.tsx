@@ -2,8 +2,11 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Blog | Remote Frontend & JavaScript Engineering',
-  description: 'Guides, tips, and insights on remote frontend engineering, interviewing, and career growth.',
+  title: 'Frontend Engineering Blog — Career Guides & Remote Job Tips',
+  description: 'Guides, tips, and insights on remote frontend engineering, interviewing, and career growth. Published by FrontendEngineers.com.',
+  alternates: {
+    canonical: '/blog',
+  },
 };
 
 export default function BlogIndex() {
@@ -20,6 +23,15 @@ export default function BlogIndex() {
   return (
     <div className="min-h-screen bg-white text-gray-700 py-16 px-4">
       <div className="max-w-4xl mx-auto">
+        {/* Breadcrumbs */}
+        <nav aria-label="Breadcrumb" className="mb-6">
+          <ol className="flex items-center gap-1.5 text-sm text-gray-500">
+            <li><Link href="/" className="hover:text-[#2563eb] transition-colors">Home</Link></li>
+            <li aria-hidden="true" className="text-gray-400">›</li>
+            <li className="text-gray-700 font-medium" aria-current="page">Blog</li>
+          </ol>
+        </nav>
+
         <h1 className="text-4xl font-bold mb-6 text-gray-900">Frontend Engineering Blog</h1>
         <p className="mb-12 text-gray-600">Guides, tips, and insights on remote frontend engineering, interviewing, and career growth.</p>
         
@@ -30,7 +42,7 @@ export default function BlogIndex() {
                 <h2 className="text-2xl font-bold text-gray-900 group-hover:text-[#2563eb] transition-colors mb-2">
                   {post.title}
                 </h2>
-                <time className="text-sm text-gray-600 mb-3 block">{post.date}</time>
+                <time className="text-sm text-gray-600 mb-3 block" dateTime={post.date}>{post.date}</time>
                 <p className="text-gray-600">{post.excerpt}</p>
               </Link>
             </article>
