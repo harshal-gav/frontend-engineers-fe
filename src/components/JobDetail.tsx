@@ -195,7 +195,7 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
               href={`/auth/login?redirect=${encodeURIComponent(pathname)}`}
               className="btn-primary inline-flex min-h-[48px] px-8 text-base items-center justify-center"
             >
-              Apply Now →
+              Login to Apply →
             </Link>
           )}
         </div>
@@ -234,7 +234,7 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
                 href={`/auth/login?redirect=${encodeURIComponent(pathname)}`}
                 className="btn-primary w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center"
               >
-                Apply Now →
+                Login to Apply →
               </Link>
             )}
           </div>
