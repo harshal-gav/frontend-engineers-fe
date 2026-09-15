@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useSearchParams } from "next/navigation";
+import { useSearchParams, usePathname } from "next/navigation";
 import { type Job } from "@/lib/jobs";
 
 import { useState, useEffect } from "react";
@@ -35,8 +35,9 @@ interface JobDetailProps {
 }
 
 export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps) {
-  const { isSubscribed } = useAuth();
+  const { user, isSubscribed } = useAuth();
   const searchParams = useSearchParams();
+  const pathname = usePathname();
   const [job, setJob] = useState<Job>(initialJob);
   const [isLoadingSecureData, setIsLoadingSecureData] = useState(false);
 
@@ -180,14 +181,23 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
       {/* Apply Button (Desktop) */}
       {job.applyUrl && (
         <div className="hidden sm:block mb-8">
-          <a
-            href={job.applyUrl}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="btn-primary inline-flex min-h-[48px] px-8 text-base"
-          >
-            Apply Now →
-          </a>
+          {user ? (
+            <a
+              href={job.applyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn-primary inline-flex min-h-[48px] px-8 text-base"
+            >
+              Apply Now →
+            </a>
+          ) : (
+            <Link
+              href={`/auth/login?redirect=${encodeURIComponent(pathname)}`}
+              className="btn-primary inline-flex min-h-[48px] px-8 text-base items-center justify-center"
+            >
+              Apply Now →
+            </Link>
+          )}
         </div>
       )}
 
@@ -210,14 +220,23 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
           }}
         >
           <div className="px-4 py-3">
-            <a
-              href={job.applyUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-primary w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center"
-            >
-              Apply Now →
-            </a>
+            {user ? (
+              <a
+                href={job.applyUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn-primary w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center"
+              >
+                Apply Now →
+              </a>
+            ) : (
+              <Link
+                href={`/auth/login?redirect=${encodeURIComponent(pathname)}`}
+                className="btn-primary w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center"
+              >
+                Apply Now →
+              </Link>
+            )}
           </div>
         </div>
       )}
