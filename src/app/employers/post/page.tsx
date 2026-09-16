@@ -16,9 +16,10 @@ export default function PostJobPage() {
   const [formData, setFormData] = useState({
     title: "",
     companyName: "",
+    companyLogoUrl: "",
+    companyWebsite: "",
     applyUrl: "",
     location: "Worldwide",
-    remoteType: "REMOTE",
     description: "",
   });
 
@@ -43,10 +44,12 @@ export default function PostJobPage() {
         title: formData.title,
         description: formData.description,
         location: formData.location,
-        remoteType: formData.remoteType,
+        remoteType: "REMOTE",
         applyUrl: formData.applyUrl,
         company: {
           name: formData.companyName,
+          logoUrl: formData.companyLogoUrl || null,
+          website: formData.companyWebsite || null,
         }
       };
 
@@ -71,9 +74,8 @@ export default function PostJobPage() {
         setSuccess(true);
         // Reset form
         setFormData({
-          title: "", companyName: "", applyUrl: "", location: "Worldwide",
-          remoteType: "REMOTE",
-          description: ""
+          title: "", companyName: "", companyLogoUrl: "", companyWebsite: "",
+          applyUrl: "", location: "Worldwide", description: ""
         });
       }
     } catch (err) {
@@ -134,16 +136,16 @@ export default function PostJobPage() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <div className="space-y-2">
-                <label className="text-sm font-semibold text-gray-700">Location</label>
-                <input name="location" value={formData.location} onChange={handleChange} placeholder="e.g. Worldwide, US Only" className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
+                <label className="text-sm font-semibold text-gray-700">Location (Timezone/Region)</label>
+                <input name="location" value={formData.location} onChange={handleChange} placeholder="e.g. Worldwide, US Only, EST" className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
               </div>
               <div className="space-y-2">
-                <label className="text-sm font-semibold text-gray-700">Work Setup</label>
-                <select name="remoteType" value={formData.remoteType} onChange={handleChange} className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all appearance-none cursor-pointer">
-                  <option value="REMOTE">Remote</option>
-                  <option value="HYBRID">Hybrid</option>
-                  <option value="ONSITE">Onsite</option>
-                </select>
+                <label className="text-sm font-semibold text-gray-700">Company Logo URL (Optional)</label>
+                <input type="url" name="companyLogoUrl" value={formData.companyLogoUrl} onChange={handleChange} placeholder="https://..." className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
+              </div>
+              <div className="space-y-2">
+                <label className="text-sm font-semibold text-gray-700">Company Website (Optional)</label>
+                <input type="url" name="companyWebsite" value={formData.companyWebsite} onChange={handleChange} placeholder="https://..." className="w-full bg-gray-50 border border-gray-200 rounded-lg p-3 text-gray-900 focus:bg-white focus:ring-2 focus:ring-[#2563eb]/20 focus:border-[#2563eb] outline-none transition-all" />
               </div>
             </div>
 
