@@ -227,79 +227,30 @@ export default function JobsClientPage() {
       }
     }
 
-    // Sort
-    if (filters.sortBy === "newest") {
-      filtered.sort((a, b) => {
-        const aCareer = hasCareerLink(a.applyUrl) ? 1 : 0;
-        const bCareer = hasCareerLink(b.applyUrl) ? 1 : 0;
+    // Sort with Career Link Priority Grouping, then by date (newest first)
+    filtered.sort((a, b) => {
+      const aCareer = hasCareerLink(a.applyUrl) ? 1 : 0;
+      const bCareer = hasCareerLink(b.applyUrl) ? 1 : 0;
 
-        if (aCareer !== bCareer) {
-          return bCareer - aCareer; // 1 goes before 0
-        }
-
-        const timeA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
-        const timeB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
-        return timeB - timeA;
-      });
-    } else {
-      // Default newest first (latest at top)
-      filtered.sort((a, b) => {
-        const aCareer = hasCareerLink(a.applyUrl) ? 1 : 0;
-        const bCareer = hasCareerLink(b.applyUrl) ? 1 : 0;
-
-        if (aCareer !== bCareer) {
-          return bCareer - aCareer;
-        }
-
-        const timeA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
-        const timeB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
-        return timeB - timeA;
-      });
-    }
-
-    // Reorder to ensure unique companies per page as much as possible
-    const limit = 12;
-    const reordered: Job[] = [];
-    let remaining = [...filtered];
-
-    while (remaining.length > 0) {
-      const pageJobs: Job[] = [];
-      const seenCompanies = new Set<string>();
-      let i = 0;
-
-      while (i < remaining.length && pageJobs.length < limit) {
-        const job = remaining[i];
-        const compName = job.company?.name?.toLowerCase() || job.id;
-
-        if (!seenCompanies.has(compName)) {
-          pageJobs.push(job);
-          seenCompanies.add(compName);
-          remaining.splice(i, 1);
-        } else {
-          i++;
-        }
+      if (aCareer !== bCareer) {
+        return bCareer - aCareer; // 1 goes before 0
       }
 
-      // If we couldn't fill the page with unique companies but jobs remain, relax constraint
-      if (pageJobs.length < limit && remaining.length > 0) {
-        const needed = limit - pageJobs.length;
-        const fill = remaining.splice(0, needed);
-        pageJobs.push(...fill);
-      }
+      const timeA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
+      const timeB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
+      return timeB - timeA;
+    });
 
-      reordered.push(...pageJobs);
-    }
-
-    filtered = reordered;
-
+    // Removed the "unique companies per page" reordering to strictly sort by date.
+    
     const total = filtered.length;
-    const startIndex = (page - 1) * limit;
-    const paginated = filtered.slice(startIndex, startIndex + limit);
+    const startIndex = (page - 1) * 12; // limit is 12
+    const paginated = filtered.slice(startIndex, startIndex + 12);
 
     return {
       jobs: paginated,
       totalJobs: total,
-      hasMore: startIndex + limit < total,
+      hasMore: startIndex + 12 < total,
     };
   }, [allJobs, filters, page, dataLoaded]);
 
