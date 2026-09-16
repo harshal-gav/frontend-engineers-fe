@@ -263,7 +263,7 @@ export default async function JobDetailPage({
       />
       <Breadcrumbs jobTitle={job.title} />
       <Suspense fallback={<div className="min-h-screen bg-[var(--bg-primary)]"></div>}>
-        <JobDetail job={job} isPremium={false} />
+        <JobDetail job={job} />
       </Suspense>
     </>
   );

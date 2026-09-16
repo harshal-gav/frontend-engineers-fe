@@ -30,53 +30,16 @@ const LOGO_GRADIENTS = [
 
 interface JobDetailProps {
   job: Job;
-  /** Server-rendered premium status — used to show early access badge */
-  isPremium: boolean;
 }
 
-export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps) {
+export default function JobDetail({ job: initialJob }: JobDetailProps) {
   const { user, isSubscribed, loading: authLoading } = useAuth();
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const [job, setJob] = useState<Job>(initialJob);
-  const [isLoadingSecureData, setIsLoadingSecureData] = useState(false);
 
   const paramsString = searchParams?.toString();
   const backHref = paramsString ? `/?${paramsString}` : "/";
-
-  useEffect(() => {
-    // If user is subscribed and the initial job has hidden salary or missing applyUrl (for early access)
-    // we fetch the full secure job object
-    if (isSubscribed && (initialJob.isEarlyAccess && !initialJob.applyUrl)) {
-      const fetchSecureData = async () => {
-        setIsLoadingSecureData(true);
-        try {
-          const auth = getAuth();
-          const user = auth.currentUser;
-          if (!user) return;
-          
-          const token = await user.getIdToken();
-          const slug = initialJob.slug || initialJob.id;
-          const res = await fetch(`/api/jobs/${slug}`, {
-            headers: {
-              Authorization: `Bearer ${token}`
-            }
-          });
-          
-          if (res.ok) {
-            const fullJob = await res.json();
-            setJob(fullJob);
-          }
-        } catch (e) {
-          console.error("Failed to fetch secure job data", e);
-        } finally {
-          setIsLoadingSecureData(false);
-        }
-      };
-      
-      fetchSecureData();
-    }
-  }, [isSubscribed, initialJob]);
 
   const remote = REMOTE_CONFIG[job.remoteType] || REMOTE_CONFIG.REMOTE;
 

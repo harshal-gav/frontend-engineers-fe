@@ -16,7 +16,7 @@ export default function AboutPage() {
     "name": "FrontendEngineers.com",
     "url": "https://frontendengineers.com",
     "logo": "https://frontendengineers.com/icon.png",
-    "description": "FrontendEngineers.com is a specialized job board for remote frontend and fullstack JavaScript developer jobs. We connect frontend engineers with 100% remote opportunities at leading companies worldwide.",
+    "description": "FrontendEngineers.com is a specialized job board for remote frontend developer jobs. We connect frontend engineers with 100% remote opportunities at leading companies worldwide.",
     "email": "frontendengineersupport@gmail.com",
     "sameAs": [
       "https://www.linkedin.com/company/frontend-engineers-fe/"
@@ -51,7 +51,7 @@ export default function AboutPage() {
 
           {/* What we are — Entity SEO */}
           <p className="text-gray-700 leading-relaxed mb-4">
-            FrontendEngineers.com is the ultimate aggregator for remote frontend and fullstack JavaScript developer jobs. We scrape, source, and aggregate jobs from over 100+ different job boards, company career pages, and platforms like LinkedIn, WeWorkRemotely, and AngelList.
+            FrontendEngineers.com is the ultimate aggregator for remote frontend developer jobs. We scrape, source, and aggregate jobs from over 100+ different job boards, company career pages, and platforms like LinkedIn, WeWorkRemotely, and AngelList.
           </p>
           <p className="mb-6 text-gray-600 leading-relaxed">
             Stop wasting hours checking 10 different sites every day. We bring every remote React, Vue, Angular, TypeScript, and Next.js job into one single, searchable platform. Our goal is to save you massive amounts of time in your job hunt.
@@ -133,17 +133,7 @@ export default function AboutPage() {
             </li>
           </ul>
 
-          {/* Internal links for SEO */}
-          <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-900">Browse Remote Frontend Jobs</h2>
-          <div className="flex flex-wrap gap-2 mb-8">
-            <Link href="/jobs/remote/react" className="px-4 py-2 rounded-full border border-[#e2e2e6] text-sm font-medium text-gray-700 hover:border-[#2563eb] hover:text-[#2563eb] transition-colors">React Jobs</Link>
-            <Link href="/jobs/remote/typescript" className="px-4 py-2 rounded-full border border-[#e2e2e6] text-sm font-medium text-gray-700 hover:border-[#2563eb] hover:text-[#2563eb] transition-colors">TypeScript Jobs</Link>
-            <Link href="/jobs/remote/javascript" className="px-4 py-2 rounded-full border border-[#e2e2e6] text-sm font-medium text-gray-700 hover:border-[#2563eb] hover:text-[#2563eb] transition-colors">JavaScript Jobs</Link>
-            <Link href="/jobs/remote/vue" className="px-4 py-2 rounded-full border border-[#e2e2e6] text-sm font-medium text-gray-700 hover:border-[#2563eb] hover:text-[#2563eb] transition-colors">Vue Jobs</Link>
-            <Link href="/jobs/remote/angular" className="px-4 py-2 rounded-full border border-[#e2e2e6] text-sm font-medium text-gray-700 hover:border-[#2563eb] hover:text-[#2563eb] transition-colors">Angular Jobs</Link>
-            <Link href="/jobs/remote/node-js" className="px-4 py-2 rounded-full border border-[#e2e2e6] text-sm font-medium text-gray-700 hover:border-[#2563eb] hover:text-[#2563eb] transition-colors">Node.js Jobs</Link>
-            <Link href="/jobs/remote/fullstack" className="px-4 py-2 rounded-full border border-[#e2e2e6] text-sm font-medium text-gray-700 hover:border-[#2563eb] hover:text-[#2563eb] transition-colors">Fullstack Jobs</Link>
-          </div>
+
         </div>
       </div>
     </div>

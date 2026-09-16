@@ -188,15 +188,7 @@ export function loadJobsFromFile(): Job[] {
 
   const finalJobs = spaceOutCompanies([...spacedCareer, ...spacedOther], 6);
   
-  // Mark jobs posted within the early-access window (7 days)
-  const earlyAccessCutoff = getEarlyAccessCutoff();
-  return finalJobs.map((job) => ({
-    ...job,
-    isEarlyAccess: job.postedAt ? new Date(job.postedAt) > earlyAccessCutoff : false,
-  }));
+  return finalJobs;
 }
 
-/** Returns the Date that marks the boundary of the early-access window (7 days ago). */
-export function getEarlyAccessCutoff(): Date {
-  return new Date(Date.now() - 7 * 24 * 60 * 60 * 1000);
-}
+

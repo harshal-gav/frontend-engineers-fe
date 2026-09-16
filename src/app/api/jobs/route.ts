@@ -58,6 +58,13 @@ export async function GET(request: Request) {
       return NextResponse.json([]);
     }
 
+    // Sort ALL jobs strictly by date (newest first) before processing
+    jobs.sort((a, b) => {
+      const timeA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
+      const timeB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
+      return timeB - timeA;
+    });
+
     // Optimize bandwidth: Truncate descriptions for the listing API
     // We only need the first ~500 chars for client-side search and preview.
     // The full description is available on the individual static /jobs/[slug] page.
@@ -70,8 +77,8 @@ export async function GET(request: Request) {
     });
 
     // NEW BUSINESS MODEL:
-    // - ALL users see ALL jobs (no hiding based on early access).
-    // - Premium users see full job details.
+    // - ALL users see ALL jobs.
+    // - Premium users see full job details for everything.
     // - Free users see only the job title — everything else is stripped/locked.
     if (!isPremium) {
       const lockedJobs = lightweightJobs.map((job) => ({
@@ -80,7 +87,6 @@ export async function GET(request: Request) {
         slug: job.slug,
         postedAt: job.postedAt,
         remoteType: job.remoteType,
-        isEarlyAccess: job.isEarlyAccess,
         isLocked: true,
         // Provide minimal company info for the card layout (just the initial letter)
         company: {

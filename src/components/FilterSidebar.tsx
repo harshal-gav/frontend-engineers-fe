@@ -137,24 +137,22 @@ export default function FilterSidebar({
         </div>
       </div>
 
-      {/* New Jobs Filter (Pro only) */}
-      {isSubscribed && (
-        <div className="filter-section">
-          <label className="filter-option min-h-[44px]">
-            <input
-              type="checkbox"
-              checked={filters.postedWithin === "7d"}
-              onChange={(e) =>
-                onFilterChange({
-                  ...filters,
-                  postedWithin: e.target.checked ? "7d" : "",
-                })
-              }
-            />
-            <span className="font-semibold" style={{ color: "var(--accent-primary)" }}>⭐ New Jobs (Last 7 days)</span>
-          </label>
-        </div>
-      )}
+      {/* New Jobs Filter */}
+      <div className="filter-section">
+        <label className="filter-option min-h-[44px]">
+          <input
+            type="checkbox"
+            checked={filters.postedWithin === "7d"}
+            onChange={(e) =>
+              onFilterChange({
+                ...filters,
+                postedWithin: e.target.checked ? "7d" : "",
+              })
+            }
+          />
+          <span className="font-semibold" style={{ color: "var(--accent-primary)" }}>Posted in last 7 days</span>
+        </label>
+      </div>
 
       {/* Location */}
       <div className="filter-section">
