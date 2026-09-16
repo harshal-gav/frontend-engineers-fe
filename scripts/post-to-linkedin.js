@@ -134,9 +134,10 @@ DO NOT use the same opening template. DO NOT use the exact same emojis every tim
    - You MUST include this exact line: "⭐ Unlock Full Access - $9/mo"
    - You MUST include this exact line: "Pro unlocks company details, descriptions & apply links. Plus, get daily email alerts the second new jobs drop so you can apply before the crowd!"
    - Always format the links EXACTLY like this at the end of the post:
-     Start browsing (https://www.frontendengineers.com/)
-     Get PRO to unlock full descriptions and direct apply links:
-     (https://www.frontendengineers.com/pricing)
+     👉 Explore remote frontend jobs:
+     https://www.frontendengineers.com
+     👉 Get pro access for just $9/month:
+     https://www.frontendengineers.com/pricing
 5. HASHTAGS: Include 3-5 relevant hashtags (e.g., #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment).
 
 Write ONLY the post text, nothing else. Make it catchy and highly readable.`;
