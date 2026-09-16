@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Pro Membership Pricing — Early Access to Remote Frontend Jobs",
-  description: "Get 7-day early access to remote frontend developer jobs on FrontendEngineers.com. Pro members apply before the crowd for React, TypeScript, Vue, and Angular positions.",
+  title: "Pro Membership Pricing — Unlock Full Remote Frontend Job Details",
+  description: "Unlock company names, full descriptions, and direct apply links for remote frontend developer jobs on FrontendEngineers.com. Browse titles free, Pro unlocks everything.",
   alternates: {
     canonical: "/pricing",
   },
   openGraph: {
     title: "Pro Membership — FrontendEngineers.com",
-    description: "Get 7-day early access to remote frontend developer jobs. Apply before the crowd for React, TypeScript, Vue, and Angular positions.",
+    description: "Unlock company names, full descriptions, and direct apply links for remote frontend developer jobs. Browse titles free, unlock everything with Pro.",
     type: "website",
     url: "https://frontendengineers.com/pricing",
   },

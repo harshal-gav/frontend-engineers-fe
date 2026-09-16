@@ -123,12 +123,15 @@ DO NOT use the same opening template. DO NOT use the exact same emojis every tim
 1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown. Use plain text and capital letters for emphasis instead.
 2. THE HOOK: You must mention "FrontendEngineers.com" and "remote frontend jobs" naturally somewhere in the first two sentences, but DO NOT use the exact same sentence structure every time.
 3. THE PITCH:
-   - Market it around "Saving Time" and "Cutting through the noise".
-   - Emphasize that finding remote frontend jobs is exhausting because of fake remote jobs, staffing agencies, and full-stack jobs pretending to be frontend.
-   - Mention that we do the dirty work of curating the top 1% of remote frontend jobs every day so developers don't have to.
-   - Mention that PRO members get 7-day early access to apply before the massive crowds do.
+   - Market it heavily as the ULTIMATE AGGREGATOR.
+   - Core message: "We aggregate from 100+ job boards (LinkedIn, Indeed, AngelList, company pages) so you don't have to check 10 different sites a day."
+   - Focus on MASSIVE TIME SAVINGS. Stop wasting hours searching. We bring EVERY remote frontend job to one place.
+   - Our unique value: You can browse EVERY remote frontend job title for FREE. See what's hiring, which roles are trending.
+   - But to unlock company names, full descriptions, locations, and direct apply links, you need PRO.
+   - Think of it like window shopping: See the job titles, know what's out there, then unlock everything to apply.
+   - PRO members also get daily email alerts with fresh jobs delivered to their inbox.
 4. PRICING & LINKS:
-   - Mention unlocking PRO access to 1,000+ remote jobs for just $9/month.
+   - Mention unlocking full access to 1,000+ remote jobs for just $9/month.
    - Always include a link to explore: https://www.frontendengineers.com
    - Always include a link to get PRO: https://www.frontendengineers.com/pricing
 5. HASHTAGS: Include 3-5 relevant hashtags (e.g., #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment).

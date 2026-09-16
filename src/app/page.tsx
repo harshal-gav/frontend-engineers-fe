@@ -36,7 +36,7 @@ const HOMEPAGE_FAQ: FaqItem[] = [
   },
   {
     question: "How often are new jobs added?",
-    answer: "New remote frontend developer jobs are added daily. We continuously source and curate positions from leading companies, startups, and tech teams worldwide. Pro members get 7-day early access to new listings before they become publicly available.",
+    answer: "New remote frontend developer jobs are added daily. We continuously source and curate positions from leading companies, startups, and tech teams worldwide. Pro members can see full company details, descriptions, and apply links for every job.",
   },
 ];
 
@@ -140,26 +140,27 @@ export default async function HomePage() {
               <div className="w-24 h-10 skeleton rounded" />
             </div>
           </header>
-          <section className="pt-6 sm:pt-10 pb-6 sm:pb-8 px-4 text-center bg-white">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900">
-              The Best{" "}
-              <span className="text-[#2563eb]">Remote Frontend Jobs</span>
-              <span className="block mt-2 text-lg sm:text-xl lg:text-2xl text-gray-700 font-bold">
-                Work from anywhere, earn in dollars, and spend in local currency.
-              </span>
+          <section className="pt-6 sm:pt-10 pb-6 sm:pb-8 px-4 text-center bg-white flex flex-col items-center">
+            <div className="inline-flex items-center justify-center gap-1.5 bg-[#f0fdf4] text-[#166534] border border-[#bbf7d0] px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold mb-4 sm:mb-6 shadow-sm uppercase tracking-wider">
+              <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+              Aggregated from 100+ job boards & company career pages
+            </div>
+            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900 w-full">
+              Every Remote Frontend Job.{" "}
+              <span className="text-[#2563eb]">One Place.</span>
             </h1>
-            <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 text-gray-600">
-              Curated 100% remote roles for React, Vue, Angular, Svelte, Next.js, UI/UX, and TypeScript Engineers. Pro members get 7-day early access, apply before the crowd.
+            <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
+              Stop wasting hours on LinkedIn, Indeed, AngelList, WeWorkRemotely, and 100 other sites. We aggregate every remote frontend job from across the internet - so you don't have to.
             </p>
 
             <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
-              <Link 
-                href="/pricing" 
+              <Link
+                href="/pricing"
                 className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
               >
-                ⭐ Get Pro Membership
+                ⭐ Unlock Full Access — $9/mo
               </Link>
-              <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access and daily new job alerts before the crowd. Apply before anyone else with Pro.</p>
+              <p className="text-xs text-gray-600 font-medium px-4 text-center">Browse every job title free. Pro unlocks company details, descriptions & apply links.</p>
             </div>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">
               <div className="w-full bg-white border border-[#e2e2e6] rounded-full h-12 sm:h-[54px] skeleton" />

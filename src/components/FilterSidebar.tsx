@@ -137,7 +137,7 @@ export default function FilterSidebar({
         </div>
       </div>
 
-      {/* Early Access (Pro only) */}
+      {/* New Jobs Filter (Pro only) */}
       {isSubscribed && (
         <div className="filter-section">
           <label className="filter-option min-h-[44px]">
@@ -151,7 +151,7 @@ export default function FilterSidebar({
                 })
               }
             />
-            <span className="font-semibold" style={{ color: "var(--accent-primary)" }}>⭐ Early Access (Last 7 days)</span>
+            <span className="font-semibold" style={{ color: "var(--accent-primary)" }}>⭐ New Jobs (Last 7 days)</span>
           </label>
         </div>
       )}

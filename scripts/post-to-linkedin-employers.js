@@ -68,9 +68,12 @@ DO NOT use the same opening template. DO NOT use the exact same emojis every tim
 1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown. Use plain text and capital letters for emphasis instead.
 2. THE HOOK: You must mention "FrontendEngineers.com" and "hiring frontend engineers" somewhere in the first two sentences naturally, but DO NOT use the exact same sentence structure every time.
 3. THE PITCH - AGGRESSIVELY SELL THESE BENEFITS:
+   - "FrontendEngineers.com is the ULTIMATE AGGREGATOR for remote frontend jobs. Because we bring every job into one place, we attract ALL the top frontend talent."
+   - "Your job gets MAXIMUM visibility — every frontend developer on our platform sees your job title, whether they're free or Pro users."
    - "Access 100K+ job seekers specific to this niche (Frontend)." Emphasize that because it's niche, it's HIGH VALUE. No generic noise.
    - "Direct access to our 5K+ frontend-specific mailing list."
    - "We will cross-post your job directly to our highly active LinkedIn page!"
+   - "Pro members unlock your full job details and apply directly — these are the most motivated candidates."
 4. PRICING & CALL TO ACTION:
    - Highlight the unbeatable price: "Just 99 USD per month for UNLIMITED job postings."
    - Always include this exact link to buy: https://www.frontendengineers.com/employers/pricing

@@ -51,15 +51,10 @@ export default function AboutPage() {
 
           {/* What we are — Entity SEO */}
           <p className="text-gray-700 leading-relaxed mb-4">
-            FrontendEngineers.com is a specialized job board dedicated exclusively to 
-            remote frontend and fullstack JavaScript developer jobs. We connect top-tier 
-            frontend engineering talent with 100% remote opportunities at leading companies worldwide.
+            FrontendEngineers.com is the ultimate aggregator for remote frontend and fullstack JavaScript developer jobs. We scrape, source, and aggregate jobs from over 100+ different job boards, company career pages, and platforms like LinkedIn, WeWorkRemotely, and AngelList.
           </p>
           <p className="mb-6 text-gray-600 leading-relaxed">
-            Unlike generic job boards that list thousands of unrelated roles, 
-            FrontendEngineers.com focuses 100% on frontend engineering: React, Vue, Angular, 
-            TypeScript, JavaScript, Next.js, Svelte, and Node.js positions. Every listing is 
-            curated to ensure relevance and quality for frontend developers.
+            Stop wasting hours checking 10 different sites every day. We bring every remote React, Vue, Angular, TypeScript, and Next.js job into one single, searchable platform. Our goal is to save you massive amounts of time in your job hunt.
           </p>
 
           {/* Who we serve */}
@@ -68,8 +63,8 @@ export default function AboutPage() {
             <div className="p-6 rounded-xl border border-[#e2e2e6] bg-[#f9fafb]">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">For Frontend Developers</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Browse curated remote frontend jobs, filter by technology (React, TypeScript, Vue, Angular), 
-                and apply directly. Pro members get 7-day early access to new listings before they&apos;re publicly available.
+                Browse every remote frontend job title for free. Filter by technology (React, TypeScript, Vue, Angular) 
+                and see what&apos;s out there. Pro members unlock company names, full descriptions, locations, and direct apply links for every job.
               </p>
             </div>
             <div className="p-6 rounded-xl border border-[#e2e2e6] bg-[#f9fafb]">
@@ -116,8 +111,8 @@ export default function AboutPage() {
             <div className="flex gap-4 items-start">
               <span className="w-8 h-8 rounded-full bg-[#2563eb] text-white flex items-center justify-center flex-shrink-0 text-sm font-bold">3</span>
               <div>
-                <h3 className="font-semibold text-gray-900">Get Pro for Early Access</h3>
-                <p className="text-gray-600 text-sm">Upgrade to Pro membership for 7-day early access to new jobs and daily email alerts.</p>
+                <h3 className="font-semibold text-gray-900">Get Pro to Unlock Everything</h3>
+                <p className="text-gray-600 text-sm">Upgrade to Pro membership to unlock company details, full descriptions, locations, and direct apply links. Plus get daily email alerts with fresh jobs.</p>
               </div>
             </div>
           </div>

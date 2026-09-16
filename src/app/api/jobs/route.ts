@@ -65,13 +65,34 @@ export async function GET(request: Request) {
       return optimized;
     });
 
-    // EARLY ACCESS MODEL:
-    // - Premium users see ALL jobs (including fresh ones posted within the last 7 days).
-    // - Free users only see jobs older than 7 days.
+    // NEW BUSINESS MODEL:
+    // - ALL users see ALL jobs (no hiding based on early access).
+    // - Premium users see full job details.
+    // - Free users see only the job title — everything else is stripped/locked.
     if (!isPremium) {
-      const publicJobs = lightweightJobs
-        .filter((job) => !job.isEarlyAccess);
-      return NextResponse.json(publicJobs);
+      const lockedJobs = lightweightJobs.map((job) => ({
+        id: job.id,
+        title: job.title,
+        slug: job.slug,
+        postedAt: job.postedAt,
+        remoteType: job.remoteType,
+        isEarlyAccess: job.isEarlyAccess,
+        isLocked: true,
+        // Provide minimal company info for the card layout (just the initial letter)
+        company: {
+          id: job.company?.id || "",
+          name: "••••••••",
+          logoUrl: null,
+          industry: null,
+          website: null,
+        },
+        description: null,
+        location: null,
+        country: null,
+        applyUrl: null,
+        sourceHash: job.sourceHash,
+      }));
+      return NextResponse.json(lockedJobs);
     }
 
     return NextResponse.json(lightweightJobs);

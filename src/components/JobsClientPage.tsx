@@ -242,7 +242,7 @@ export default function JobsClientPage() {
     });
 
     // Removed the "unique companies per page" reordering to strictly sort by date.
-    
+
     const total = filtered.length;
     const startIndex = (page - 1) * 12; // limit is 12
     const paginated = filtered.slice(startIndex, startIndex + 12);
@@ -389,15 +389,24 @@ export default function JobsClientPage() {
       <section className="pt-6 sm:pt-10 pb-6 sm:pb-8 px-4 text-center bg-white flex flex-col items-center">
         <div className="inline-flex items-center justify-center gap-1.5 bg-[#f0fdf4] text-[#166534] border border-[#bbf7d0] px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold mb-4 sm:mb-6 shadow-sm uppercase tracking-wider">
           <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-          Aggregated from 100+ job boards & company career pages. Save hours of searching!
+          Aggregated from 100+ job boards & company career pages
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900 w-full">
-          Remote Frontend{" "}
-          <span className="text-[#2563eb]">Developer Jobs</span>
+          Every Remote Frontend Job.{" "}
+          <span className="text-[#2563eb]">One Place.</span>
         </h1>
-        <p className="text-sm sm:text-base max-w-2xl mx-auto mb-6 text-gray-600">
-          We aggregate the entire internet so you don't have to. Pro members get 7-day early access to apply before the crowd.
+        <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
+          Stop wasting hours on LinkedIn, Indeed, AngelList, WeWorkRemotely, and 100 other sites. We aggregate every remote frontend job from across the internet - so you don't have to.
         </p>
+
+        {/* Aggregation trust badges */}
+        <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 mb-6 text-[11px] sm:text-xs font-semibold text-gray-500">
+          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>LinkedIn Jobs</span>
+          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>Company Career Pages</span>
+          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>WeWorkRemotely</span>
+          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>RemoteOK</span>
+          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>100+ more</span>
+        </div>
 
         {!isSubscribed && (
           <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
@@ -405,9 +414,9 @@ export default function JobsClientPage() {
               href="/pricing"
               className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
             >
-              ⭐ Get Pro Membership
+              ⭐ Unlock Full Access — $9/mo
             </Link>
-            <p className="text-xs text-gray-600 font-medium px-4 text-center">Unlock early access and daily new job alerts before the crowd. Apply before anyone else with Pro.</p>
+            <p className="text-xs text-gray-600 font-medium px-4 text-center">Browse every job title free. Pro unlocks company details, descriptions & apply links.</p>
           </div>
         )}
 
@@ -537,8 +546,8 @@ export default function JobsClientPage() {
                           key={i}
                           onClick={() => handlePageChange(i)}
                           className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-semibold transition-colors ${page === i
-                              ? "bg-[#2563eb] text-white"
-                              : "bg-white text-gray-600 hover:text-gray-900 border border-[#e2e2e6] hover:border-[#444]"
+                            ? "bg-[#2563eb] text-white"
+                            : "bg-white text-gray-600 hover:text-gray-900 border border-[#e2e2e6] hover:border-[#444]"
                             }`}
                         >
                           {i}

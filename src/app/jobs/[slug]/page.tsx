@@ -246,19 +246,11 @@ export default async function JobDetailPage({
     ]
   };
 
-  // STRIP GATED DATA FOR INITIAL HTML PAYLOAD
-  // The server renders the initial HTML for all users without knowing their auth status.
-  // We explicitly delete sensitive fields so they don't leak in the network tab / view source.
-  const publicJob = { ...job };
-
-  if (publicJob.isEarlyAccess) {
-    delete (publicJob as any).applyUrl;
-  }
-
-  // Server-side: we don't know if the user is premium (no auth headers in SSR).
-  // We render the page with isPremium=false — the client-side JobDetail
-  // component will hydrate with the real subscription state from useAuth().
-  // This means the initial HTML never contains gated data.
+  // NEW BUSINESS MODEL:
+  // The SSR page renders the FULL job data in the HTML for SEO crawlers.
+  // The client-side JobDetail component handles gating (blur) for non-Pro users.
+  // This means Google indexes the full description, but regular users see it blurred
+  // unless they have Pro.
   return (
     <>
       <script
@@ -271,7 +263,7 @@ export default async function JobDetailPage({
       />
       <Breadcrumbs jobTitle={job.title} />
       <Suspense fallback={<div className="min-h-screen bg-[var(--bg-primary)]"></div>}>
-        <JobDetail job={publicJob} isPremium={false} />
+        <JobDetail job={job} isPremium={false} />
       </Suspense>
     </>
   );
