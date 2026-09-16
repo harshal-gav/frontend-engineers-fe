@@ -416,7 +416,7 @@ export default function JobsClientPage() {
             >
               ⭐ Unlock Full Access - $9/mo
             </Link>
-            <p className="text-xs text-gray-600 font-medium px-4 text-center">Browse every job title free. Pro unlocks company details, descriptions & apply links.</p>
+            <p className="text-xs text-gray-600 font-medium px-4 text-center">Pro unlocks company details, descriptions & apply links. Plus, get daily email alerts the second new jobs drop so you can apply before the crowd!</p>
           </div>
         )}
 

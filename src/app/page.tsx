@@ -160,7 +160,7 @@ export default async function HomePage() {
               >
                 ⭐ Unlock Full Access - $9/mo
               </Link>
-              <p className="text-xs text-gray-600 font-medium px-4 text-center">Browse every job title free. Pro unlocks company details, descriptions & apply links.</p>
+              <p className="text-xs text-gray-600 font-medium px-4 text-center">Pro unlocks company details, descriptions & apply links. Plus, get daily email alerts the second new jobs drop so you can apply before the crowd!</p>
             </div>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">
               <div className="w-full bg-white border border-[#e2e2e6] rounded-full h-12 sm:h-[54px] skeleton" />

@@ -13,7 +13,7 @@ export default function Footer() {
               Frontend<span className="text-[#2563eb]">Engineers</span>
             </Link>
             <p className="text-gray-500 text-xs leading-relaxed">
-              Curated 100% remote frontend developer jobs. React, TypeScript, Vue, Angular &amp; Next.js roles — updated daily.
+              Curated 100% remote frontend developer jobs. React, TypeScript, Vue, Angular &amp; Next.js roles - updated daily.
             </p>
           </div>
 
