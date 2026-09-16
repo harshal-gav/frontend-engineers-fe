@@ -171,7 +171,7 @@ export default function PricingPage() {
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>Company name &amp; logo</td>
+                      <td>Company name</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Full access</td>
                     </tr>
@@ -180,11 +180,7 @@ export default function PricingPage() {
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Full access</td>
                     </tr>
-                    <tr>
-                      <td>Location &amp; details</td>
-                      <td className="muted-cell text-center">🔒 Pro only</td>
-                      <td className="highlight-cell text-center">✓ Full access</td>
-                    </tr>
+
                     <tr>
                       <td>Direct apply links</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
