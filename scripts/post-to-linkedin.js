@@ -116,6 +116,7 @@ YOU MUST HEAVILY VARY the style, format, hook, and length of every post.
 - Sometimes write a relatable story about the struggles of applying to 100s of jobs.
 - Sometimes use a bulleted list of raw benefits.
 - Sometimes ask an engaging question about frontend interviews.
+- Sometimes use a "reality check" angle: remind them they spend more than $9 on a single fast-food meal, while this $9 investment saves them dozens of hours searching multiple job boards.
 - Sometimes keep it short, punchy, and direct.
 DO NOT use the same opening template. DO NOT use the exact same emojis every time. Mix it up completely!
 
