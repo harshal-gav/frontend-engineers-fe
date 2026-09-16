@@ -25,7 +25,7 @@ export const metadata: Metadata = {
     default: "Remote Frontend Developer Jobs | FrontendEngineers.com",
     template: "%s | FrontendEngineers.com"
   },
-  description: "Find the best remote frontend developer jobs. FrontendEngineers.com curates premium, 100% remote positions for React, Vue, Angular, TypeScript, and JavaScript engineers.",
+  description: "Find the best remote frontend developer jobs aggregated from 100+ job boards. We curate premium, 100% remote positions for React, Vue, Angular, and Next.js engineers.",
   keywords: [
     "remote frontend developer jobs",
     "frontend engineer jobs",
@@ -55,7 +55,7 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Remote Frontend Developer Jobs | FrontendEngineers.com",
-    description: "Find the best remote frontend developer jobs. FrontendEngineers.com curates premium, 100% remote positions for React, Vue, Angular, TypeScript, and JavaScript engineers.",
+    description: "Find the best remote frontend developer jobs aggregated from 100+ job boards. We curate premium, 100% remote positions for React, Vue, Angular, and Next.js engineers.",
     url: "https://frontendengineers.com",
     siteName: "FrontendEngineers.com",
     locale: "en_US",
@@ -65,7 +65,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Remote Frontend Developer Jobs | FrontendEngineers.com",
-    description: "Find the best remote frontend developer jobs. FrontendEngineers.com curates premium, 100% remote positions for React, Vue, Angular, TypeScript, and JavaScript engineers.",
+    description: "Find the best remote frontend developer jobs aggregated from 100+ job boards. We curate premium, 100% remote positions for React, Vue, Angular, and Next.js engineers.",
     images: ["/og-image.jpg"],
   },
   robots: {

@@ -42,7 +42,11 @@ export async function GET(request: Request) {
       const firestoreJobsSnapshot = await db.collection("jobs").orderBy("postedAt", "desc").get();
       const firestoreJobs: any[] = [];
       firestoreJobsSnapshot.forEach(doc => {
-        firestoreJobs.push(doc.data());
+        const data = doc.data();
+        if (data.postedAt && data.postedAt.toDate) {
+          data.postedAt = data.postedAt.toDate().toISOString();
+        }
+        firestoreJobs.push(data);
       });
       // Prepend Firestore jobs to the top of the list
       jobs = [...firestoreJobs, ...jobs];

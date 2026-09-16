@@ -158,7 +158,7 @@ export default async function HomePage() {
                 href="/pricing"
                 className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
               >
-                ⭐ Unlock Full Access — $9/mo
+                ⭐ Unlock Full Access - $9/mo
               </Link>
               <p className="text-xs text-gray-600 font-medium px-4 text-center">Browse every job title free. Pro unlocks company details, descriptions & apply links.</p>
             </div>

@@ -227,17 +227,17 @@ export default function JobsClientPage() {
       }
     }
 
-    // Sort with Career Link Priority Grouping, then by date (newest first)
+    // Sort strictly by date (newest first), handling both string dates and Firestore Timestamp objects
     filtered.sort((a, b) => {
-      const aCareer = hasCareerLink(a.applyUrl) ? 1 : 0;
-      const bCareer = hasCareerLink(b.applyUrl) ? 1 : 0;
-
-      if (aCareer !== bCareer) {
-        return bCareer - aCareer; // 1 goes before 0
-      }
-
-      const timeA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
-      const timeB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
+      const getTime = (val: any) => {
+        if (!val) return 0;
+        if (typeof val === "object" && val._seconds) return val._seconds * 1000;
+        if (typeof val === "number") return val;
+        return new Date(val).getTime() || 0;
+      };
+      
+      const timeA = getTime(a.postedAt);
+      const timeB = getTime(b.postedAt);
       return timeB - timeA;
     });
 
@@ -414,7 +414,7 @@ export default function JobsClientPage() {
               href="/pricing"
               className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
             >
-              ⭐ Unlock Full Access — $9/mo
+              ⭐ Unlock Full Access - $9/mo
             </Link>
             <p className="text-xs text-gray-600 font-medium px-4 text-center">Browse every job title free. Pro unlocks company details, descriptions & apply links.</p>
           </div>

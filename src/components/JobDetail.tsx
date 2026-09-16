@@ -152,11 +152,6 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
               <h1 className="text-xl sm:text-2xl md:text-3xl font-bold leading-tight">
                 {job.title}
               </h1>
-              {job.isEarlyAccess && (
-                <span className="text-xs bg-[#2563eb]/15 text-[#2563eb] px-2.5 py-1 rounded-full font-semibold border border-[#2563eb]/30 whitespace-nowrap">
-                  ⭐ Pro Access
-                </span>
-              )}
             </div>
             {/* Company name — blurred for free users */}
             <p className={`text-base sm:text-lg text-[var(--text-secondary)] ${showLocked ? "job-locked-blur" : ""}`}>
@@ -189,7 +184,7 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
               href="/pricing"
               className="inline-flex items-center gap-2 bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-orange-500/20 transition-colors text-base"
             >
-              ⭐ Get Pro — $9/month
+              ⭐ Get Pro - $9/month
             </Link>
             <p className="text-xs text-gray-500">Cancel anytime. Instant access.</p>
           </div>
@@ -287,7 +282,7 @@ export default function JobDetail({ job: initialJob, isPremium }: JobDetailProps
               href="/pricing"
               className="bg-[#d97706] hover:bg-[#b45309] text-white w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center gap-2 transition-colors"
             >
-              🔒 Unlock Full Details — $9/mo
+              🔒 Unlock Full Details - $9/mo
             </Link>
           </div>
         </div>

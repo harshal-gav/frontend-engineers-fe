@@ -152,11 +152,6 @@ export default function JobCard({
           </div>
           
           <div className="flex items-center gap-2 flex-shrink-0 sm:flex-col sm:items-end sm:gap-1.5">
-            {job.isEarlyAccess && (
-              <span className="text-[10px] font-extrabold tracking-wide uppercase bg-gradient-to-r from-amber-500 to-orange-500 text-white px-2.5 py-0.5 rounded-md shadow-sm">
-                Pro Access
-              </span>
-            )}
             <span className="text-xs font-semibold text-gray-400 whitespace-nowrap">
               {postedDate}
             </span>

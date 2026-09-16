@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About FrontendEngineers.com — Remote Frontend Developer Job Board",
-  description: "FrontendEngineers.com is a specialized job board for remote frontend and fullstack JavaScript developer jobs. Learn about our mission, who we serve, and how we connect frontend engineers with remote opportunities.",
+  description: "FrontendEngineers.com is the ultimate aggregator for remote frontend jobs. We scrape and source from 100+ job boards to bring every React, Vue, and Angular role into one place.",
   alternates: {
     canonical: "/about",
   },
