@@ -7,15 +7,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: true },
 };
 
-const CATEGORY_LINKS = [
-  { href: "/jobs/remote/react", label: "React Jobs" },
-  { href: "/jobs/remote/typescript", label: "TypeScript Jobs" },
-  { href: "/jobs/remote/javascript", label: "JavaScript Jobs" },
-  { href: "/jobs/remote/vue", label: "Vue Jobs" },
-  { href: "/jobs/remote/angular", label: "Angular Jobs" },
-  { href: "/jobs/remote/node-js", label: "Node.js Jobs" },
-  { href: "/jobs/remote/fullstack", label: "Fullstack Jobs" },
-];
+
 
 export default function NotFound() {
   return (
@@ -34,22 +26,7 @@ export default function NotFound() {
         Browse All Remote Jobs
       </Link>
 
-      <div className="max-w-lg w-full">
-        <h3 className="text-sm font-semibold text-gray-500 uppercase tracking-wider mb-4 text-center">
-          Browse by Technology
-        </h3>
-        <div className="flex flex-wrap justify-center gap-2">
-          {CATEGORY_LINKS.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              className="px-4 py-2 rounded-full border border-[#e2e2e6] text-sm font-medium text-gray-700 hover:border-[#2563eb] hover:text-[#2563eb] transition-colors"
-            >
-              {link.label}
-            </Link>
-          ))}
-        </div>
-      </div>
+
 
       <div className="mt-10 flex gap-6 text-sm text-gray-500">
         <Link href="/about" className="hover:text-[#2563eb] transition-colors">About Us</Link>
