@@ -169,8 +169,8 @@ export default function JobsClientPage() {
     e.preventDefault();
     e.stopPropagation();
     
-    if (!user) {
-      setUpgradeModalContext("save"); // Redirects them to Pro (or we could send to signup)
+    if (!isSubscribed) {
+      setUpgradeModalContext("save"); // Redirects them to Pro modal
       return;
     }
 
@@ -185,7 +185,8 @@ export default function JobsClientPage() {
     }
     
     try {
-      const token = await user.getIdToken();
+      const token = await user?.getIdToken();
+      if (!token) throw new Error("No token");
       await fetch("/api/user/preferences", {
         method: "POST",
         headers: {
@@ -612,7 +613,7 @@ export default function JobsClientPage() {
             )}
 
             {/* Job Alert Section */}
-            {dataLoaded && (
+            {dataLoaded && isSubscribed && (
               <div className="mt-12 mb-6">
                 <JobAlertForm />
               </div>

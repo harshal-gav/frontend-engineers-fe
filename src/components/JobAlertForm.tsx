@@ -5,7 +5,7 @@ import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
 
-export default function JobAlertForm() {
+export default function JobAlertForm({ onSuccess }: { onSuccess?: () => void }) {
   const { user } = useAuth();
   const router = useRouter();
   
@@ -13,7 +13,6 @@ export default function JobAlertForm() {
   const [success, setSuccess] = useState(false);
   const [alertForm, setAlertForm] = useState({
     query: "",
-    experience: "Any",
     location: "Worldwide",
     frequency: "Daily"
   });
@@ -58,7 +57,11 @@ export default function JobAlertForm() {
       });
       trackEvent("alert_created", alertForm);
       setSuccess(true);
-      setTimeout(() => setSuccess(false), 3000);
+      if (onSuccess) {
+        onSuccess();
+      } else {
+        setTimeout(() => setSuccess(false), 3000);
+      }
     } catch (e) {
       console.error(e);
     } finally {
@@ -87,23 +90,7 @@ export default function JobAlertForm() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
-          <div>
-            <label className="block text-sm font-medium text-gray-700 mb-1">Experience</label>
-            <select 
-              value={alertForm.experience}
-              onChange={(e) => setAlertForm({...alertForm, experience: e.target.value})}
-              className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#2563eb] outline-none bg-white"
-            >
-              <option>Any</option>
-              <option>Entry Level</option>
-              <option>Junior</option>
-              <option>Mid Level</option>
-              <option>Senior</option>
-              <option>Staff / Lead</option>
-            </select>
-          </div>
-
-          <div>
+          <div className="sm:col-span-2">
             <label className="block text-sm font-medium text-gray-700 mb-1">Location</label>
             <select 
               value={alertForm.location}

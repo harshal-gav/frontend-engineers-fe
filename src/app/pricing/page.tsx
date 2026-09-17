@@ -165,42 +165,35 @@ export default function PricingPage() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Browse all job titles</td>
-                      <td className="muted-cell text-center">✓ Available</td>
-                      <td className="highlight-cell text-center">✓ Available</td>
-                    </tr>
-                    <tr>
-                      <td>Company name &amp; logo</td>
-                      <td className="muted-cell text-center">✓ Available</td>
-                      <td className="highlight-cell text-center">✓ Available</td>
-                    </tr>
-                    <tr>
-                      <td>Save jobs &amp; searches</td>
+                      <td>Unlock search & filters to find exactly what you want</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>Job descriptions</td>
+                      <td>Full job descriptions & requirements</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
-                      <td className="highlight-cell text-center">✓ Full access</td>
-                    </tr>
-
-                    <tr>
-                      <td>Direct apply links</td>
-                      <td className="muted-cell text-center">🔒 Pro only</td>
-                      <td className="highlight-cell text-center">✓ Direct apply</td>
+                      <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>Daily email alerts</td>
+                      <td>Direct apply links to company career pages</td>
+                      <td className="muted-cell text-center">🔒 Pro only</td>
+                      <td className="highlight-cell text-center">✓ Available</td>
+                    </tr>
+                    <tr>
+                      <td>Daily email alerts with fresh jobs in your inbox</td>
                       <td className="muted-cell text-center">❌</td>
-                      <td className="highlight-cell text-center">✓ Fresh jobs in your inbox</td>
+                      <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>Filters &amp; search</td>
+                      <td>100% remote, frontend-only, curated daily</td>
+                      <td className="muted-cell text-center">✓ Available</td>
+                      <td className="highlight-cell text-center">✓ Available</td>
+                    </tr>
+                    <tr>
+                      <td>Save jobs and searches</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
-
                   </tbody>
                 </table>
               </div>
@@ -280,19 +273,19 @@ export default function PricingPage() {
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Unlock <strong>search &amp; filters</strong> to find exactly what you want</span>
+                  <span>Unlock search & filters to find exactly what you want</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Full <strong>job descriptions &amp; requirements</strong></span>
+                  <span>Full job descriptions & requirements</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span><strong>Direct apply links</strong> to company career pages</span>
+                  <span>Direct apply links to company career pages</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -310,7 +303,7 @@ export default function PricingPage() {
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span><strong>Save jobs and searches</strong> (coming soon)</span>
+                  <span>Save jobs and searches</span>
                 </li>
               </ul>
 
