@@ -46,7 +46,7 @@ export default function AboutPage() {
           </ol>
         </nav>
 
-        <div className="prose prose-lg max-w-none prose-p:text-gray-700 prose-headings:text-gray-900">
+        <div className="prose prose-base md:prose-lg max-w-none break-words overflow-hidden w-full prose-p:text-gray-700 prose-headings:text-gray-900">
           <h1 className="text-4xl font-bold mb-6">About FrontendEngineers.com</h1>
 
           {/* What we are — Entity SEO */}

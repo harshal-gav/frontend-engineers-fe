@@ -85,7 +85,7 @@ export default function JobCard({
     : paramsString ? `/jobs/${slug}?${paramsString}` : `/jobs/${slug}`;
 
   const cardContent = (
-    <article className={`glass-card relative overflow-hidden bg-white p-5 sm:p-6 cursor-pointer group hover:border-[#2563eb]/40 hover:shadow-xl hover:shadow-[#2563eb]/5 transition-all duration-300 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start rounded-2xl h-full ${isLocked ? "job-card-locked" : ""}`}>
+    <article className={`glass-card relative overflow-hidden bg-white p-5 sm:p-6 cursor-pointer group hover:border-[#2563eb]/40 hover:shadow-xl hover:shadow-[#2563eb]/5 transition-all duration-300 flex flex-row gap-4 sm:gap-6 items-start rounded-2xl h-full ${isLocked ? "job-card-locked" : ""}`}>
       {/* Company Logo */}
       <div
         className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center text-white font-bold text-lg sm:text-xl flex-shrink-0 overflow-hidden border border-gray-100 shadow-sm ${isLocked ? "relative z-10" : ""}`}
@@ -133,11 +133,11 @@ export default function JobCard({
       {/* Main content */}
       <div className="flex-1 min-w-0 w-full flex flex-col h-full">
         {/* Top Row: Title & Meta — always clear and visible */}
-        <div className={`flex flex-col sm:flex-row justify-between items-start gap-2 mb-1.5 ${isLocked ? "relative z-10" : ""}`}>
-          <div className="min-w-0 flex-1 pr-4">
+        <div className={`flex flex-row justify-between items-start gap-2 mb-1.5 ${isLocked ? "relative z-10" : ""}`}>
+          <div className="min-w-0 flex-1 pr-2 sm:pr-4">
             <div className="flex items-start justify-between gap-2">
               {/* Title is ALWAYS visible */}
-              <h3 className="text-base sm:text-[1.1rem] font-bold text-gray-900 group-hover:text-[#2563eb] transition-colors leading-snug line-clamp-2">
+              <h3 className="text-base sm:text-[1.1rem] font-bold text-gray-900 group-hover:text-[#2563eb] transition-colors leading-snug">
                 {job.title}
               </h3>
               {onSave && (

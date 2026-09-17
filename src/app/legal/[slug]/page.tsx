@@ -41,7 +41,7 @@ export default async function LegalPage({ params }: LegalPageProps) {
         <Link href="/" className="text-[#2563eb] hover:underline mb-8 inline-block">
           &larr; Back to Home
         </Link>
-        <div className="prose prose-lg max-w-none prose-p:text-gray-700 prose-headings:text-gray-900 prose-a:text-[#2563eb] prose-a:no-underline hover:prose-a:underline">
+        <div className="prose prose-base md:prose-lg max-w-none break-words overflow-hidden w-full prose-p:text-gray-700 prose-headings:text-gray-900 prose-a:text-[#2563eb] prose-a:no-underline hover:prose-a:underline">
           <ReactMarkdown>{content}</ReactMarkdown>
         </div>
         

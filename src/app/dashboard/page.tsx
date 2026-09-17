@@ -136,7 +136,7 @@ export default function DashboardPage() {
                 <p className="font-bold mb-1">Free Plan</p>
                 <p className="text-sm text-gray-600 mb-3">Unlock the full FrontendEngineers experience.</p>
                 <Link href="/pricing" className="block text-center w-full bg-[#d97706] hover:bg-[#b45309] text-white px-4 py-2 rounded-lg font-bold transition-colors">
-                  Upgrade to Pro - $9/mo
+                  Upgrade to Pro - $9/month
                 </Link>
               </div>
             )}

@@ -315,7 +315,7 @@ export default function PricingPage() {
                     onClick={() => router.push("/auth/signup?redirect=/pricing")}
                     className="w-full py-3 rounded-full text-white bg-[#d97706] hover:bg-[#b45309] font-bold text-lg shadow-lg shadow-orange-500/20 transition-colors"
                   >
-                    ⭐ Get Pro Membership for $9/mo
+                    ⭐ Get Pro Membership for $9/month
                   </button>
                 ) : (
                   <div className="flex flex-col gap-4">

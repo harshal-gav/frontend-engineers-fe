@@ -199,7 +199,7 @@ export default function EmployerPricingPage() {
                     onClick={() => router.push("/auth/signup?redirect=/employers/pricing")}
                     className="w-full py-4 rounded-xl text-white bg-[#2563eb] hover:bg-[#1d4ed8] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
                   >
-                    Hire Frontend Developers → $99/mo
+                    Hire Frontend Developers → $99/month
                   </button>
                 ) : user && isEmployer ? (
                   <button
