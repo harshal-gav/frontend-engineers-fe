@@ -128,12 +128,13 @@ DO NOT use the same opening template. DO NOT use the exact same emojis every tim
      * "Aggregated from 100+ job boards & company career pages"
      * "Every Remote Frontend Job. One Place."
      * "Stop wasting hours on LinkedIn, Indeed, AngelList, WeWorkRemotely, and 100 other sites. We aggregate every remote frontend job from across the internet - so you don't have to."
-   - Our unique value: You can browse EVERY remote frontend job title for FREE. See what's hiring, which roles are trending.
-   - But to unlock company names, full descriptions, locations, and direct apply links, you need PRO.
+   - Our unique value: Every remote frontend job aggregated from across the internet in one place. No more wasting hours on 10+ job boards.
+   - To unlock search, filters, full descriptions, direct apply links, and daily email alerts, you need PRO.
+   - NEVER market company name/logo visibility as a feature - that's bare minimum, not a selling point. Focus on search, filters, descriptions, apply links, and email alerts.
 4. PRICING & LINKS:
    - Mention unlocking full access to 1,000+ remote jobs for just $9/month.
    - You MUST include this exact line: "⭐ Unlock Full Access - $9/mo"
-   - You MUST include this exact line: "Pro unlocks company details, descriptions & apply links. Plus, get daily email alerts the second new jobs drop so you can apply before the crowd!"
+   - You MUST include this exact line: "Pro unlocks search, filters, full descriptions, apply links & daily email alerts - so you apply before the crowd!"
    - Always format the links EXACTLY like this at the end of the post:
      👉 Explore remote frontend jobs:
      https://www.frontendengineers.com

@@ -77,9 +77,9 @@ export async function GET(request: Request) {
     });
 
     // NEW BUSINESS MODEL:
-    // - ALL users see ALL jobs.
-    // - Premium users see full job details for everything.
-    // - Free users see only the job title — everything else is stripped/locked.
+    // - ALL users see ALL jobs with company name & logo visible.
+    // - Premium users see full job details (description, location, apply links).
+    // - Free users see job title + company name/logo only - everything else is locked.
     if (!isPremium) {
       const lockedJobs = lightweightJobs.map((job) => ({
         id: job.id,
@@ -88,12 +88,12 @@ export async function GET(request: Request) {
         postedAt: job.postedAt,
         remoteType: job.remoteType,
         isLocked: true,
-        // Provide minimal company info for the card layout (just the initial letter)
+        // Company name & logo are now visible to free users
         company: {
           id: job.company?.id || "",
-          name: "••••••••",
-          logoUrl: null,
-          industry: null,
+          name: job.company?.name || "Company",
+          logoUrl: job.company?.logoUrl || null,
+          industry: job.company?.industry || null,
           website: null,
         },
         description: null,

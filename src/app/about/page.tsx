@@ -63,8 +63,7 @@ export default function AboutPage() {
             <div className="p-6 rounded-xl border border-[#e2e2e6] bg-[#f9fafb]">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">For Frontend Developers</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Browse every remote frontend job title for free. Filter by technology (React, TypeScript, Vue, Angular) 
-                and see what&apos;s out there. Pro members unlock company names, full descriptions, locations, and direct apply links for every job.
+                Browse every remote frontend job for free. Pro members unlock search, filters, full descriptions, direct apply links, and daily email alerts for every job.
               </p>
             </div>
             <div className="p-6 rounded-xl border border-[#e2e2e6] bg-[#f9fafb]">

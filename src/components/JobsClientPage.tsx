@@ -241,16 +241,43 @@ export default function JobsClientPage() {
       return timeB - timeA;
     });
 
-    // Removed the "unique companies per page" reordering to strictly sort by date.
+    // Space out companies: same company should not appear on 3 consecutive pages (36 slots gap)
+    const PAGE_SIZE = 12;
+    const GAP = PAGE_SIZE * 3; // 3 pages worth of jobs
+    const spaced: Job[] = [];
+    const deferred: Job[] = [];
 
-    const total = filtered.length;
-    const startIndex = (page - 1) * 12; // limit is 12
-    const paginated = filtered.slice(startIndex, startIndex + 12);
+    for (const job of filtered) {
+      const companyId = (job.company?.name || job.company?.id || "unknown").toLowerCase();
+      // Check if this company appeared in the last GAP slots
+      let tooClose = false;
+      const lookback = Math.max(0, spaced.length - GAP);
+      for (let i = spaced.length - 1; i >= lookback; i--) {
+        const prevCompany = (spaced[i].company?.name || spaced[i].company?.id || "unknown").toLowerCase();
+        if (prevCompany === companyId) {
+          tooClose = true;
+          break;
+        }
+      }
+
+      if (tooClose) {
+        deferred.push(job);
+      } else {
+        spaced.push(job);
+      }
+    }
+
+    // Append deferred jobs at the end (they still show, just further down)
+    const finalFiltered = [...spaced, ...deferred];
+
+    const total = finalFiltered.length;
+    const startIndex = (page - 1) * PAGE_SIZE;
+    const paginated = finalFiltered.slice(startIndex, startIndex + PAGE_SIZE);
 
     return {
       jobs: paginated,
       totalJobs: total,
-      hasMore: startIndex + 12 < total,
+      hasMore: startIndex + PAGE_SIZE < total,
     };
   }, [allJobs, filters, page, dataLoaded]);
 
@@ -416,22 +443,31 @@ export default function JobsClientPage() {
             >
               ⭐ Unlock Full Access - $9/mo
             </Link>
-            <p className="text-xs text-gray-600 font-medium px-4 text-center">Pro unlocks company details, descriptions & apply links. Plus, get daily email alerts the second new jobs drop so you can apply before the crowd!</p>
+            <p className="text-xs text-gray-600 font-medium px-4 text-center">Pro unlocks search, filters, full descriptions, apply links & daily email alerts - so you apply before the crowd!</p>
           </div>
         )}
 
         {/* Search Bar */}
-        <div className="hero-search flex flex-col items-center w-full max-w-2xl mx-auto mb-4 sm:mb-6 relative">
-          <input
-            type="text"
-            placeholder="Search React, Senior, Discord..."
-            value={filters.q}
-            onChange={(e) =>
-              handleFilterChange({ ...filters, q: e.target.value })
-            }
-            className="w-full bg-white border border-[#e2e2e6] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-gray-900 outline-none focus:border-[#2563eb] transition-colors"
-          />
-        </div>
+        {isSubscribed ? (
+          <div className="hero-search flex flex-col items-center w-full max-w-2xl mx-auto mb-4 sm:mb-6 relative">
+            <input
+              type="text"
+              placeholder="Search React, Senior, Discord..."
+              value={filters.q}
+              onChange={(e) =>
+                handleFilterChange({ ...filters, q: e.target.value })
+              }
+              className="w-full bg-white border border-[#e2e2e6] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-gray-900 outline-none focus:border-[#2563eb] transition-colors"
+            />
+          </div>
+        ) : (
+          <Link href="/pricing" className="block w-full max-w-2xl mx-auto mb-4 sm:mb-6">
+            <div className="w-full bg-gray-50 border border-[#e2e2e6] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-gray-400 flex items-center gap-2 cursor-pointer hover:border-[#d97706] transition-colors">
+              <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
+              Search & filters are Pro features - Upgrade to unlock
+            </div>
+          </Link>
+        )}
 
 
       </section>
@@ -455,28 +491,30 @@ export default function JobsClientPage() {
                   </>
                 )}
               </p>
-              {/* Filter toggle button */}
-              <button
-                onClick={() => setShowFilters(true)}
-                className="btn-secondary inline-flex items-center gap-2 min-h-[40px] px-3 text-sm"
-              >
-                <svg
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
+              {/* Filter toggle button - Pro only */}
+              {isSubscribed && (
+                <button
+                  onClick={() => setShowFilters(true)}
+                  className="btn-secondary inline-flex items-center gap-2 min-h-[40px] px-3 text-sm"
                 >
-                  <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
-                </svg>
-                Filters
-                {activeFilterCount > 0 && (
-                  <span className="bg-[#2563eb] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-                    {activeFilterCount}
-                  </span>
-                )}
-              </button>
+                  <svg
+                    width="16"
+                    height="16"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                  >
+                    <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
+                  </svg>
+                  Filters
+                  {activeFilterCount > 0 && (
+                    <span className="bg-[#2563eb] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                      {activeFilterCount}
+                    </span>
+                  )}
+                </button>
+              )}
             </div>
 
             {/* Job Cards — responsive grid */}
@@ -571,21 +609,23 @@ export default function JobsClientPage() {
         </div>
       </main>
 
-      {/* ─── Mobile Bottom Sheet for Filters ── */}
-      <BottomSheet
-        isOpen={showFilters}
-        onClose={() => setShowFilters(false)}
-        title="Filters"
-      >
-        <FilterSidebar
-          filters={filters}
-          facets={facets}
-          onFilterChange={handleFilterChange}
-          onApply={() => setShowFilters(false)}
-          totalResults={totalJobs}
-          isSubscribed={isSubscribed}
-        />
-      </BottomSheet>
+      {/* ─── Mobile Bottom Sheet for Filters (Pro only) ── */}
+      {isSubscribed && (
+        <BottomSheet
+          isOpen={showFilters}
+          onClose={() => setShowFilters(false)}
+          title="Filters"
+        >
+          <FilterSidebar
+            filters={filters}
+            facets={facets}
+            onFilterChange={handleFilterChange}
+            onApply={() => setShowFilters(false)}
+            totalResults={totalJobs}
+            isSubscribed={isSubscribed}
+          />
+        </BottomSheet>
+      )}
 
     </>
   );

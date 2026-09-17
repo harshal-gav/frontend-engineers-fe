@@ -84,14 +84,14 @@ export default function JobCard({
     <article className={`glass-card relative overflow-hidden bg-white p-5 sm:p-6 cursor-pointer group hover:border-[#2563eb]/40 hover:shadow-xl hover:shadow-[#2563eb]/5 transition-all duration-300 flex flex-col sm:flex-row gap-4 sm:gap-6 items-start rounded-2xl h-full ${isLocked ? "job-card-locked" : ""}`}>
       {/* Company Logo */}
       <div
-        className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center text-white font-bold text-lg sm:text-xl flex-shrink-0 overflow-hidden border border-gray-100 shadow-sm ${isLocked ? "job-locked-blur" : ""}`}
+        className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center text-white font-bold text-lg sm:text-xl flex-shrink-0 overflow-hidden border border-gray-100 shadow-sm ${isLocked ? "relative z-10" : ""}`}
         style={{
           background: job.company?.logoUrl
             ? "#ffffff"
-            : LOGO_COLORS[isLocked ? 0 : gradientIndex],
+            : LOGO_COLORS[gradientIndex],
         }}
       >
-        {!isLocked && job.company?.logoUrl ? (
+        {job.company?.logoUrl ? (
           <img
             src={job.company.logoUrl}
             alt={job.company.name}
@@ -122,27 +122,25 @@ export default function JobCard({
             }}
           />
         ) : (
-          <span className={isLocked ? "text-white/60" : ""}>
-            {isLocked ? "?" : (job.company?.name || "?")[0]}
-          </span>
+          <span>{(job.company?.name || "?")[0]}</span>
         )}
       </div>
 
       {/* Main content */}
       <div className="flex-1 min-w-0 w-full flex flex-col h-full">
-        {/* Top Row: Title & Meta */}
-        <div className="flex flex-col sm:flex-row justify-between items-start gap-2 mb-1.5">
+        {/* Top Row: Title & Meta — always clear and visible */}
+        <div className={`flex flex-col sm:flex-row justify-between items-start gap-2 mb-1.5 ${isLocked ? "relative z-10" : ""}`}>
           <div className="min-w-0 flex-1 pr-4">
             {/* Title is ALWAYS visible */}
             <h3 className="text-base sm:text-[1.1rem] font-bold text-gray-900 group-hover:text-[#2563eb] transition-colors leading-snug line-clamp-2">
               {job.title}
             </h3>
             
-            {/* Company name — blurred for locked */}
-            <div className={`flex items-center gap-2 mt-1.5 text-sm font-medium text-gray-500 overflow-hidden whitespace-nowrap ${isLocked ? "job-locked-blur" : ""}`}>
-              <span className="text-gray-700 font-semibold truncate shrink-0 max-w-[60%]">{isLocked ? "Company Name" : (job.company?.name || "Company")}</span>
+            {/* Company name — visible to all users */}
+            <div className="flex items-center gap-2 mt-1.5 text-sm font-medium text-gray-500 overflow-hidden whitespace-nowrap">
+              <span className="text-gray-700 font-semibold truncate shrink-0 max-w-[60%]">{job.company?.name || "Company"}</span>
               
-              {!isLocked && job.company?.industry && (
+              {job.company?.industry && (
                 <>
                   <span className="w-1 h-1 rounded-full bg-gray-300 shrink-0" />
                   <span className="truncate min-w-0">{job.company.industry}</span>

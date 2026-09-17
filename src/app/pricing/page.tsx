@@ -171,9 +171,9 @@ export default function PricingPage() {
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>Company name</td>
-                      <td className="muted-cell text-center">🔒 Pro only</td>
-                      <td className="highlight-cell text-center">✓ Full access</td>
+                      <td>Company name &amp; logo</td>
+                      <td className="muted-cell text-center">✓ Available</td>
+                      <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
                       <td>Job descriptions</td>
@@ -193,7 +193,7 @@ export default function PricingPage() {
                     </tr>
                     <tr>
                       <td>Filters &amp; search</td>
-                      <td className="muted-cell text-center">✓ Available</td>
+                      <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
 
@@ -276,7 +276,7 @@ export default function PricingPage() {
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Unlock <strong>company names, logos &amp; websites</strong></span>
+                  <span>Unlock <strong>search &amp; filters</strong> to find exactly what you want</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">

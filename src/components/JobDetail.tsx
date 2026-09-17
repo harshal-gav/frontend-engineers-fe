@@ -81,14 +81,14 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
         {/* Company + Title — Title is always visible */}
         <div className="flex items-start gap-4 mb-6">
           <div
-            className={`w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center text-gray-900 font-bold text-xl flex-shrink-0 overflow-hidden ${showLocked ? "job-locked-blur" : ""}`}
+            className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center text-gray-900 font-bold text-xl flex-shrink-0 overflow-hidden"
             style={{
               background: job.company?.logoUrl
                 ? "var(--bg-secondary)"
                 : LOGO_GRADIENTS[gradientIndex],
             }}
           >
-            {!showLocked && job.company?.logoUrl ? (
+            {job.company?.logoUrl ? (
               <img
                 src={job.company.logoUrl}
                 alt={`${job.company.name || 'Company'} logo`}
@@ -103,9 +103,7 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
                 }}
               />
             ) : (
-              <span className={showLocked ? "text-white/60" : ""}>
-                {showLocked ? "?" : (job.company?.name || "?")[0]}
-              </span>
+              <span>{(job.company?.name || "?")[0]}</span>
             )}
           </div>
 
@@ -116,10 +114,10 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
                 {job.title}
               </h1>
             </div>
-            {/* Company name — blurred for free users */}
-            <p className={`text-base sm:text-lg text-[var(--text-secondary)] ${showLocked ? "job-locked-blur" : ""}`}>
-            {showLocked ? "Company Name" : job.company?.name}
-            {!showLocked && job.company?.industry && (
+            {/* Company name - visible to all users */}
+            <p className="text-base sm:text-lg text-[var(--text-secondary)]">
+            {job.company?.name}
+            {job.company?.industry && (
               <span className="text-[var(--text-muted)]">
                 {" "}
                 · {job.company.industry}
@@ -139,7 +137,7 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
             <div>
               <h3 className="text-lg font-bold text-gray-900 mb-1">Unlock Full Job Details</h3>
               <p className="text-sm text-gray-600 max-w-md mx-auto">
-                See the company name, full description, location, and apply link for this job. 
+                See the full description and apply link for this job. 
                 Pro members get full access to every job + daily email alerts.
               </p>
             </div>
