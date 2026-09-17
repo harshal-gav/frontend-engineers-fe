@@ -132,8 +132,13 @@ DO NOT use the same opening template. DO NOT use the exact same emojis every tim
    - NEVER market company name, logo visibility, or location as a feature - we are all about remote jobs so location doesn't matter, and company visibility is bare minimum. Focus purely on search, filters, descriptions, apply links, and email alerts.
 4. PRICING & LINKS:
    - Mention unlocking full access to 1,000+ remote jobs for just $9/month.
-   - You MUST include this exact line: "⭐ Get Pro - $9/month"
-   - You MUST include this exact line: "Search hundreds of jobs • Advanced filters • Full descriptions • Direct apply links • Daily alerts"
+   - You MUST mention these exact features somewhere in your pitch, either as a bulleted list or a natural sentence:
+     * Unlock search & filters to find exactly what you want
+     * Full job descriptions & requirements
+     * Direct apply links to company career pages
+     * Daily email alerts with fresh jobs in your inbox
+     * 100% remote, frontend-only, curated daily
+     * Save jobs and searches
    - Always format the links EXACTLY like this at the end of the post:
      👉 Explore remote frontend jobs:
      https://www.frontendengineers.com
