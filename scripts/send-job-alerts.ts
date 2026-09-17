@@ -71,7 +71,7 @@ async function main() {
     const snapshot = await db.collection("users").get();
     snapshot.forEach((doc) => {
       const data = doc.data();
-      if (data.email && data.job_alerts) {
+      if (data.email && data.job_alerts && data.isSubscribed) {
         usersToAlert.push(data);
       }
     });
@@ -99,16 +99,6 @@ async function main() {
       if (alert.query && !text.includes(alert.query.toLowerCase())) {
         return false;
       }
-      
-      // Experience match (simplified heuristic)
-      const exp = alert.experience?.toLowerCase() || "any";
-      if (exp !== "any" && !text.includes(exp)) {
-        // Just a basic substring match on the job text for experience levels
-        // E.g., if they asked for 'Senior' and 'senior' isn't in title/desc, we skip.
-        // It's basic, but works for the MVP.
-        return false;
-      }
-
       // Location match
       const loc = alert.location?.toLowerCase() || "worldwide";
       const jobLoc = (job.location || "").toLowerCase();
