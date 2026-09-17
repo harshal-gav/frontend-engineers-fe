@@ -78,7 +78,7 @@ function savePostedIds(ids) {
  */
 function generateSlug(job) {
   if (job.slug) return job.slug;
-  
+
   const fillerWords = /\b(the|and|in|a|an|of|for|with)\b/gi;
   const titlePart = job.title
     .toLowerCase()
@@ -140,7 +140,7 @@ DO NOT use the same opening template. DO NOT use the exact same emojis every tim
      https://www.frontendengineers.com
      👉 Get pro access for just $9/month:
      https://www.frontendengineers.com/pricing
-5. HASHTAGS: Include 3-5 relevant hashtags (e.g., #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment).
+5. HASHTAGS: Include 10-15 relevant hashtags (e.g., #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment).
 
 Write ONLY the post text, nothing else. Make it catchy and highly readable.`;
 
@@ -175,13 +175,13 @@ Write ONLY the post text, nothing else. Make it catchy and highly readable.`;
 
     const data = await res.json();
     const text = data.candidates?.[0]?.content?.parts?.[0]?.text;
-    
+
     if (!text) {
       throw new Error('Gemini returned empty content');
     }
 
     const cleaned = text.trim();
-    
+
     // If the post is too short (< 200 chars), retry
     if (cleaned.length < 200 && attempt < 3) {
       console.log(`   ⚠️  Post too short (${cleaned.length} chars), retrying (attempt ${attempt + 1}/3)...`);
@@ -244,7 +244,7 @@ async function main() {
   // 1. Generate post with Gemini
   console.log('\n🤖 Generating post with Gemini AI...');
   const postText = await generatePostWithGemini();
-  
+
   console.log('\n📄 Generated post:');
   console.log('─'.repeat(50));
   console.log(postText);
@@ -264,14 +264,14 @@ async function main() {
         console.log(`   ✅ Posted to Personal Profile! Post ID: ${resultPerson.postId}`);
         successCount++;
       }
-      
+
       if (LINKEDIN_ORG_ID) {
         console.log('   Posting to Company Page...');
         const resultOrg = await postToLinkedIn(postText, `urn:li:organization:${LINKEDIN_ORG_ID}`);
         console.log(`   ✅ Posted to Company Page! Post ID: ${resultOrg.postId}`);
         successCount++;
       }
-      
+
       if (successCount > 0) {
         // No longer tracking specific job IDs
         console.log(`\n✅ Post successful!`);
