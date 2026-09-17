@@ -108,45 +108,41 @@ function generateSlug(job) {
 async function generatePostWithGemini() {
   const prompt = `You are a highly creative social media manager for FrontendEngineers.com, the premier job board for remote frontend developers.
 
-Write an engaging LinkedIn post to promote our website to job seekers. DO NOT promote a specific job.
+Write an engaging, SHORT, and PUNCHY LinkedIn post to promote our website to job seekers. DO NOT promote a specific job.
+
+**CRITICAL RULE: SHORT & EMOJI-RICH**
+- DO NOT write long paragraphs. Keep sentences short (1-2 lines max).
+- USE EMOJIS liberally to break up text, highlight key points, and make the post visually engaging.
+- Make it highly readable, skimmable, and snappy.
 
 **CRITICAL RULE: VARIETY & DIVERSITY**
 This script runs every 2 hours. If every post looks the same, our audience will ignore it.
-YOU MUST HEAVILY VARY the style, format, hook, and length of every post.
-- Sometimes write a relatable story about the struggles of applying to 100s of jobs.
-- Sometimes use a bulleted list of raw benefits.
+YOU MUST HEAVILY VARY the style, format, and hook of every post.
+- Sometimes write a quick relatable story about the struggles of applying to 100s of jobs.
+- Sometimes use a short bulleted list of raw benefits.
 - Sometimes ask an engaging question about frontend interviews.
-- Sometimes use a "reality check" angle: remind them they spend more than $9 on a single fast-food meal, while this $9 investment saves them dozens of hours searching multiple job boards.
-- Sometimes keep it short, punchy, and direct.
+- Sometimes use a "reality check" angle: remind them they spend more than $9 on a single fast-food meal.
 DO NOT use the same opening template. DO NOT use the exact same emojis every time. Mix it up completely!
 
 **IMPORTANT RULES & INSTRUCTIONS:**
 1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown and will truncate the post. Use plain text and capital letters for emphasis instead. DO NOT use markdown links like [text](url), just output the raw URL or plain text.
-2. THE HOOK: You must mention "FrontendEngineers.com" and "remote frontend jobs" naturally somewhere in the first two sentences, but DO NOT use the exact same sentence structure every time.
+2. THE HOOK: Mention "FrontendEngineers.com" and "remote frontend jobs" naturally in the first couple of short sentences.
 3. THE PITCH:
-   - Market it heavily as the ULTIMATE AGGREGATOR. You MUST include these EXACT phrases in your posts, blending them in naturally:
+   - Market it heavily as the ULTIMATE AGGREGATOR. Include a variation of these ideas:
      * "Aggregated from 100+ job boards & company career pages"
      * "Every Remote Frontend Job. One Place."
-     * "Stop wasting hours searching LinkedIn, Indeed, WeWorkRemotely, company career pages and dozens of other sources. FrontendEngineers brings remote frontend jobs together in one place so you can spend less time searching and more time applying."
-   - Our unique value: Every remote frontend job aggregated from across the internet in one place. No more wasting hours on 10+ job boards.
-   - NEVER market company name, logo visibility, or location as a feature - we are all about remote jobs so location doesn't matter, and company visibility is bare minimum. Focus purely on search, filters, descriptions, apply links, and email alerts.
+   - Our unique value: No more wasting hours on 10+ job boards. We bring them all together.
 4. PRICING & LINKS:
    - Mention unlocking full access to 1,000+ remote jobs for just $9/month.
-   - You MUST mention these exact features somewhere in your pitch, either as a bulleted list or a natural sentence:
-     * Unlock search & filters to find exactly what you want
-     * Full job descriptions & requirements
-     * Direct apply links to company career pages
-     * Daily email alerts with fresh jobs in your inbox
-     * 100% remote, frontend-only, curated daily
-     * Save jobs and searches
+   - Mention 2-3 key features (e.g., direct apply links, daily email alerts, curated daily).
    - Always format the links EXACTLY like this at the end of the post:
      👉 Explore remote frontend jobs:
      https://www.frontendengineers.com
      👉 Get pro access for just $9/month:
      https://www.frontendengineers.com/pricing
-5. HASHTAGS: Include 10-15 relevant hashtags (e.g., #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment).
+5. HASHTAGS: Include 5-8 relevant hashtags (e.g., #FrontendDeveloper #RemoteJobs #ReactJS).
 
-Write ONLY the post text, nothing else. Make it catchy and highly readable.`;
+Write ONLY the post text, nothing else. Make it catchy, short, and highly readable.`;
 
   // Retry up to 3 times if the generated post is too short
   for (let attempt = 1; attempt <= 3; attempt++) {
