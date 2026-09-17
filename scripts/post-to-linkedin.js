@@ -121,7 +121,7 @@ YOU MUST HEAVILY VARY the style, format, hook, and length of every post.
 DO NOT use the same opening template. DO NOT use the exact same emojis every time. Mix it up completely!
 
 **IMPORTANT RULES & INSTRUCTIONS:**
-1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown. Use plain text and capital letters for emphasis instead.
+1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown and will truncate the post. Use plain text and capital letters for emphasis instead. DO NOT use markdown links like [text](url), just output the raw URL or plain text.
 2. THE HOOK: You must mention "FrontendEngineers.com" and "remote frontend jobs" naturally somewhere in the first two sentences, but DO NOT use the exact same sentence structure every time.
 3. THE PITCH:
    - Market it heavily as the ULTIMATE AGGREGATOR. You MUST include these EXACT phrases in your posts, blending them in naturally:
@@ -204,7 +204,9 @@ async function postToLinkedIn(text, authorUrn) {
   // The LinkedIn API is notoriously buggy with Markdown and often silently truncates posts
   // if it encounters unmatched formatting characters, even when escaped.
   // Since we instructed the AI to output plain text, we strictly strip stray formatting chars.
-  const safeText = text.replace(/[*_~<>`]/g, '');
+  // We also remove Markdown links just in case the AI ignored the instruction.
+  let safeText = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1 ($2)');
+  safeText = safeText.replace(/[*_~<>`[\]]/g, '');
 
   const payload = {
     author: authorUrn,
