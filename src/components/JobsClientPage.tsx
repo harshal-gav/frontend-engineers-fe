@@ -14,7 +14,6 @@ import FilterSidebar, {
 } from "@/components/FilterSidebar";
 import BottomSheet from "@/components/BottomSheet";
 import UpgradeModal, { type UpgradeContext } from "@/components/UpgradeModal";
-import JobAlertForm from "@/components/JobAlertForm";
 import { trackEvent } from "@/lib/analytics";
 
 import type { Job } from "@/lib/jobs";
@@ -612,12 +611,7 @@ export default function JobsClientPage() {
               </div>
             )}
 
-            {/* Job Alert Section */}
-            {dataLoaded && isSubscribed && (
-              <div className="mt-12 mb-6">
-                <JobAlertForm />
-              </div>
-            )}
+
 
             {/* Pagination */}
             {dataLoaded && totalJobs > 0 && (
