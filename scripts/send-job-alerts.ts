@@ -39,8 +39,6 @@ const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
 import { Job, generateSlug } from "../src/lib/jobs";
 
 async function main() {
-  const isDryRun = process.argv.includes("--dry-run");
-
   // 1. Load Jobs
   const jobsPath = path.join(process.cwd(), "data", "jobs.json");
   if (!fs.existsSync(jobsPath)) {
@@ -64,18 +62,17 @@ async function main() {
     return;
   }
 
-  console.log(`Found ${newJobs.length} new jobs. Fetching premium users...`);
+  console.log(`Found ${newJobs.length} new jobs. Fetching users with job alerts...`);
 
-  // 3. Fetch Premium Users
-  let premiumEmails: string[] = [];
+  // 3. Fetch Users
+  const db = getAdminDb();
+  let usersToAlert: any[] = [];
   try {
-    const db = getAdminDb();
-    const snapshot = await db.collection("users").where("isPremium", "==", true).get();
-    
+    const snapshot = await db.collection("users").get();
     snapshot.forEach((doc) => {
       const data = doc.data();
-      if (data.email) {
-        premiumEmails.push(data.email);
+      if (data.email && data.job_alerts) {
+        usersToAlert.push(data);
       }
     });
   } catch (error) {
@@ -83,79 +80,119 @@ async function main() {
     process.exit(1);
   }
 
-  if (premiumEmails.length === 0) {
-    console.log("No premium users found to email.");
+  if (usersToAlert.length === 0) {
+    console.log("No users with job alerts found.");
     return;
   }
 
-  console.log(`Found ${premiumEmails.length} premium users. Preparing email...`);
+  console.log(`Found ${usersToAlert.length} users with job alerts.`);
 
-  // 4. Construct Email HTML
-  const jobsHtml = newJobs.map((job) => {
-    const slug = job.slug || generateSlug(job);
-    const jobUrl = `https://frontendengineers.com/jobs/${slug}`;
-    return `
-      <div style="margin-bottom: 24px; padding: 16px; border: 1px solid #e2e8f0; border-radius: 8px;">
-        <h3 style="margin: 0 0 8px 0; color: #1a202c; font-size: 18px;">
-          <a href="${jobUrl}" style="color: #2563eb; text-decoration: none;">${job.title}</a>
-        </h3>
-        <p style="margin: 0 0 4px 0; color: #4a5568;">
-          <strong>${job.company?.name || "Unknown Company"}</strong>
-        </p>
-        <p style="margin: 0 0 8px 0; color: #718096; font-size: 14px;">
-          📍 ${job.location || "Remote"}
-        </p>
-        <a href="${jobUrl}" style="display: inline-block; background-color: #2563eb; color: #ffffff; padding: 8px 16px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px;">View Job & Apply</a>
+  // 4. Construct and Send Individual Emails
+  for (const user of usersToAlert) {
+    const alert = user.job_alerts;
+    
+    // Filter new jobs based on user preferences
+    const matchedJobs = newJobs.filter(job => {
+      const text = `${job.title} ${job.description || ""}`.toLowerCase();
+      
+      // Technology match
+      if (alert.query && !text.includes(alert.query.toLowerCase())) {
+        return false;
+      }
+      
+      // Experience match (simplified heuristic)
+      const exp = alert.experience?.toLowerCase() || "any";
+      if (exp !== "any" && !text.includes(exp)) {
+        // Just a basic substring match on the job text for experience levels
+        // E.g., if they asked for 'Senior' and 'senior' isn't in title/desc, we skip.
+        // It's basic, but works for the MVP.
+        return false;
+      }
+
+      // Location match
+      const loc = alert.location?.toLowerCase() || "worldwide";
+      const jobLoc = (job.location || "").toLowerCase();
+      if (loc === "us only" && !jobLoc.includes("us") && !jobLoc.includes("united states")) {
+        return false;
+      }
+      if (loc === "europe" && !jobLoc.includes("eu") && !jobLoc.includes("europe")) {
+        return false;
+      }
+      if (loc === "asia" && !jobLoc.includes("asia")) {
+        return false;
+      }
+
+      return true;
+    });
+
+    if (matchedJobs.length === 0) {
+      continue;
+    }
+
+    const jobsHtml = matchedJobs.slice(0, 15).map((job) => {
+      const slug = job.slug || generateSlug(job);
+      const jobUrl = `https://frontendengineers.com/jobs/${slug}`;
+      return `
+        <div style="margin-bottom: 24px; padding: 16px; border: 1px solid #e2e8f0; border-radius: 8px;">
+          <h3 style="margin: 0 0 8px 0; color: #1a202c; font-size: 18px;">
+            <a href="${jobUrl}" style="color: #2563eb; text-decoration: none;">${job.title}</a>
+          </h3>
+          <p style="margin: 0 0 4px 0; color: #4a5568;">
+            <strong>${job.company?.name || "Unknown Company"}</strong>
+          </p>
+          <p style="margin: 0 0 8px 0; color: #718096; font-size: 14px;">
+            📍 ${job.location || "Remote"}
+          </p>
+          <a href="${jobUrl}" style="display: inline-block; background-color: #2563eb; color: #ffffff; padding: 8px 16px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px;">View Job & Apply</a>
+        </div>
+      `;
+    }).join("");
+
+    const isPremium = user.isPremium === true && (!user.subscriptionExpiresAt || new Date(user.subscriptionExpiresAt) > new Date());
+
+    const emailHtml = `
+      <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
+        <div style="text-align: center; margin-bottom: 32px;">
+          <h1 style="color: #1a202c;">🔥 Your Remote Frontend Jobs</h1>
+          <p style="color: #4a5568; font-size: 16px;">Here are today's remote frontend jobs matching your preferences.</p>
+        </div>
+        
+        ${jobsHtml}
+        
+        ${!isPremium ? `
+        <div style="margin-top: 40px; padding: 24px; background-color: #fffbeb; border: 1px solid #fef3c7; border-radius: 12px; text-align: center;">
+          <h2 style="color: #d97706; margin-top: 0;">Want the complete job-search experience?</h2>
+          <p style="color: #b45309; font-size: 15px; margin-bottom: 20px;">
+            ⭐ Upgrade to FrontendEngineers Pro for advanced search, filters, full job descriptions, direct apply links and daily job alerts.
+          </p>
+          <a href="https://frontendengineers.com/pricing" style="display: inline-block; background-color: #d97706; color: #ffffff; padding: 12px 24px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 16px;">
+            Get Pro — $9/month
+          </a>
+        </div>
+        ` : ""}
+
+        <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; text-align: center; color: #a0aec0; font-size: 12px;">
+          <p>You received this email because you created a job alert on Frontend Engineers.</p>
+          <p><a href="https://frontendengineers.com/dashboard" style="color: #2563eb;">Edit your alert preferences</a></p>
+        </div>
       </div>
     `;
-  }).join("");
 
-  const emailHtml = `
-    <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
-      <div style="text-align: center; margin-bottom: 32px;">
-        <h1 style="color: #1a202c;">New Remote Frontend Jobs! 🚀</h1>
-        <p style="color: #4a5568; font-size: 16px;">Here are the latest roles added to Frontend Engineers today.</p>
-      </div>
-      
-      ${jobsHtml}
-      
-      <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; text-align: center; color: #a0aec0; font-size: 12px;">
-        <p>You are receiving this email because you are a Pro member of Frontend Engineers.</p>
-        <p><a href="https://frontendengineers.com" style="color: #a0aec0;">frontendengineers.com</a></p>
-      </div>
-    </div>
-  `;
-
-  // 5. Send Emails via Resend
-  if (isDryRun) {
-    console.log("DRY RUN: Would send the following email to:", premiumEmails.join(", "));
-    console.log("Email HTML preview:");
-    console.log(emailHtml);
-    return;
-  }
-
-  try {
-    // Resend allows up to 50 recipients per request. We'll chunk the emails.
-    const CHUNK_SIZE = 50;
-    for (let i = 0; i < premiumEmails.length; i += CHUNK_SIZE) {
-      const chunk = premiumEmails.slice(i, i + CHUNK_SIZE);
-      
-      const { data, error } = await resend!.emails.send({
-        from: "Frontend Engineers <hello@frontendengineers.com>",
-        to: ["hello@frontendengineers.com"], // Required 'to' field
-        bcc: chunk, // Hide recipients from each other
-        subject: `🚀 ${newJobs.length} New Remote Frontend Jobs`,
-        html: emailHtml,
-      });
-
-      if (error) {
-        console.error(`Resend error sending to chunk ${i / CHUNK_SIZE + 1}:`, error);
-      } else {
-        console.log(`Successfully sent batch ${i / CHUNK_SIZE + 1}`, data);
+    if (isDryRun) {
+      console.log(`DRY RUN: Would send to ${user.email} with ${matchedJobs.length} jobs.`);
+    } else {
+      try {
+        await resend!.emails.send({
+          from: "Frontend Engineers <hello@frontendengineers.com>",
+          to: [user.email],
+          subject: `🔥 ${matchedJobs.length} New Remote Frontend Jobs for you`,
+          html: emailHtml,
+        });
+        console.log(`Sent to ${user.email}`);
+      } catch (e) {
+        console.error(`Failed to send to ${user.email}`, e);
       }
     }
-  } catch (error) {
-    console.error("Unexpected error sending emails:", error);
   }
 }
 

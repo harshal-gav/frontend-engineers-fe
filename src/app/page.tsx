@@ -150,17 +150,29 @@ export default async function HomePage() {
               <span className="text-[#2563eb]">One Place.</span>
             </h1>
             <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
-              Stop wasting hours on LinkedIn, Indeed, AngelList, WeWorkRemotely, and 100 other sites. We aggregate every remote frontend job from across the internet - so you don't have to.
+              Stop wasting hours searching LinkedIn, Indeed, WeWorkRemotely, company career pages and dozens of other sources.<br className="hidden sm:block"/>
+              FrontendEngineers brings remote frontend jobs together in one place so you can spend less time searching and more time applying.
             </p>
+
+            {/* Aggregation trust badges */}
+            <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 mb-6 text-[11px] sm:text-xs font-semibold text-gray-500">
+              <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>LinkedIn Jobs</span>
+              <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>Company Career Pages</span>
+              <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>WeWorkRemotely</span>
+              <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>RemoteOK</span>
+              <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>100+ more</span>
+            </div>
 
             <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
               <Link
                 href="/pricing"
                 className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
               >
-                ⭐ Unlock Full Access - $9/mo
+                ⭐ Get Pro - $9/month
               </Link>
-              <p className="text-xs text-gray-600 font-medium px-4 text-center">Pro unlocks search, filters, full descriptions, apply links & daily email alerts - so you apply before the crowd!</p>
+              <p className="text-xs text-gray-600 font-medium px-4 text-center">
+                Search hundreds of jobs • Advanced filters • Full descriptions • Direct apply links • Daily alerts
+              </p>
             </div>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">
               <div className="w-full bg-white border border-[#e2e2e6] rounded-full h-12 sm:h-[54px] skeleton" />

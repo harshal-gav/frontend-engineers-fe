@@ -127,14 +127,13 @@ DO NOT use the same opening template. DO NOT use the exact same emojis every tim
    - Market it heavily as the ULTIMATE AGGREGATOR. You MUST include these EXACT phrases in your posts, blending them in naturally:
      * "Aggregated from 100+ job boards & company career pages"
      * "Every Remote Frontend Job. One Place."
-     * "Stop wasting hours on LinkedIn, Indeed, AngelList, WeWorkRemotely, and 100 other sites. We aggregate every remote frontend job from across the internet - so you don't have to."
+     * "Stop wasting hours searching LinkedIn, Indeed, WeWorkRemotely, company career pages and dozens of other sources. FrontendEngineers brings remote frontend jobs together in one place so you can spend less time searching and more time applying."
    - Our unique value: Every remote frontend job aggregated from across the internet in one place. No more wasting hours on 10+ job boards.
-   - To unlock search, filters, full descriptions, direct apply links, and daily email alerts, you need PRO.
-   - NEVER market company name/logo visibility as a feature - that's bare minimum, not a selling point. Focus on search, filters, descriptions, apply links, and email alerts.
+   - NEVER market company name, logo visibility, or location as a feature - we are all about remote jobs so location doesn't matter, and company visibility is bare minimum. Focus purely on search, filters, descriptions, apply links, and email alerts.
 4. PRICING & LINKS:
    - Mention unlocking full access to 1,000+ remote jobs for just $9/month.
-   - You MUST include this exact line: "⭐ Unlock Full Access - $9/mo"
-   - You MUST include this exact line: "Pro unlocks search, filters, full descriptions, apply links & daily email alerts - so you apply before the crowd!"
+   - You MUST include this exact line: "⭐ Get Pro - $9/month"
+   - You MUST include this exact line: "Search hundreds of jobs • Advanced filters • Full descriptions • Direct apply links • Daily alerts"
    - Always format the links EXACTLY like this at the end of the post:
      👉 Explore remote frontend jobs:
      https://www.frontendengineers.com
@@ -197,13 +196,14 @@ Write ONLY the post text, nothing else. Make it catchy and highly readable.`;
 // ─── LinkedIn API ────────────────────────────────────────────
 
 async function postToLinkedIn(text, authorUrn) {
-  // LinkedIn Posts API requires escaping these reserved characters to prevent silent truncation
-  // Reserved characters: | { } @ [ ] ( ) < > \ * _ ~
-  const escapedText = text.replace(/([|{}@\[\]()<>\\*_~])/g, '\\$1');
+  // The LinkedIn API is notoriously buggy with Markdown and often silently truncates posts
+  // if it encounters unmatched formatting characters, even when escaped.
+  // Since we instructed the AI to output plain text, we strictly strip stray formatting chars.
+  const safeText = text.replace(/[*_~<>`]/g, '');
 
   const payload = {
     author: authorUrn,
-    commentary: escapedText,
+    commentary: safeText,
     visibility: 'PUBLIC',
     distribution: {
       feedDistribution: 'MAIN_FEED',

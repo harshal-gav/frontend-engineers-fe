@@ -13,6 +13,9 @@ import FilterSidebar, {
   type FilterState,
 } from "@/components/FilterSidebar";
 import BottomSheet from "@/components/BottomSheet";
+import UpgradeModal, { type UpgradeContext } from "@/components/UpgradeModal";
+import JobAlertForm from "@/components/JobAlertForm";
+import { trackEvent } from "@/lib/analytics";
 
 import type { Job } from "@/lib/jobs";
 
@@ -110,6 +113,8 @@ export default function JobsClientPage() {
     return p ? parseInt(p, 10) || 1 : 1;
   });
   const [showFilters, setShowFilters] = useState(false);
+  const [upgradeModalContext, setUpgradeModalContext] = useState<UpgradeContext | null>(null);
+  const [savedJobIds, setSavedJobIds] = useState<string[]>([]);
 
   // Sync state with URL when searchParams change (e.g. back navigation)
   useEffect(() => {
@@ -132,6 +137,16 @@ export default function JobsClientPage() {
         if (user) {
           const token = await user.getIdToken();
           headers.Authorization = `Bearer ${token}`;
+          
+          // Fetch user preferences for saved jobs
+          fetch("/api/user/preferences", { headers })
+            .then(res => res.json())
+            .then(prefs => {
+              if (prefs && prefs.saved_jobs) {
+                setSavedJobIds(prefs.saved_jobs);
+              }
+            })
+            .catch(console.error);
         }
         const res = await fetch("/api/jobs", { headers });
         if (res.ok) {
@@ -148,6 +163,43 @@ export default function JobsClientPage() {
     };
     loadData();
   }, [user, authLoading]);
+
+
+  const handleSaveJob = async (jobId: string, e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    
+    if (!user) {
+      setUpgradeModalContext("save"); // Redirects them to Pro (or we could send to signup)
+      return;
+    }
+
+    const isCurrentlySaved = savedJobIds.includes(jobId);
+    const newSavedJobIds = isCurrentlySaved 
+      ? savedJobIds.filter(id => id !== jobId)
+      : [...savedJobIds, jobId];
+      
+    setSavedJobIds(newSavedJobIds);
+    if (!isCurrentlySaved) {
+      trackEvent("job_saved", { jobId });
+    }
+    
+    try {
+      const token = await user.getIdToken();
+      await fetch("/api/user/preferences", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: `Bearer ${token}`
+        },
+        body: JSON.stringify({ saved_jobs: newSavedJobIds })
+      });
+    } catch (e) {
+      console.error("Failed to save job", e);
+      // Revert optimistic update
+      setSavedJobIds(savedJobIds);
+    }
+  };
 
   // Compute facets from all jobs
   const facets = useMemo(() => computeFacets(allJobs), [allJobs]);
@@ -354,6 +406,13 @@ export default function JobsClientPage() {
                   Post a Job
                 </Link>
 
+                <Link
+                  href="/dashboard"
+                  className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold hover:bg-gray-200 transition-colors flex items-center justify-center shrink-0"
+                >
+                  Dashboard
+                </Link>
+
                 {!isSubscribed && (
                   <Link
                     href="/pricing"
@@ -423,7 +482,8 @@ export default function JobsClientPage() {
           <span className="text-[#2563eb]">One Place.</span>
         </h1>
         <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
-          Stop wasting hours on LinkedIn, Indeed, AngelList, WeWorkRemotely, and 100 other sites. We aggregate every remote frontend job from across the internet - so you don't have to.
+          Stop wasting hours searching LinkedIn, Indeed, WeWorkRemotely, company career pages and dozens of other sources.<br className="hidden sm:block"/>
+          FrontendEngineers brings remote frontend jobs together in one place so you can spend less time searching and more time applying.
         </p>
 
         {/* Aggregation trust badges */}
@@ -441,9 +501,11 @@ export default function JobsClientPage() {
               href="/pricing"
               className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
             >
-              ⭐ Unlock Full Access - $9/mo
+              ⭐ Get Pro - $9/month
             </Link>
-            <p className="text-xs text-gray-600 font-medium px-4 text-center">Pro unlocks search, filters, full descriptions, apply links & daily email alerts - so you apply before the crowd!</p>
+            <p className="text-xs text-gray-600 font-medium px-4 text-center">
+              Search hundreds of jobs • Advanced filters • Full descriptions • Direct apply links • Daily alerts
+            </p>
           </div>
         )}
 
@@ -461,12 +523,12 @@ export default function JobsClientPage() {
             />
           </div>
         ) : (
-          <Link href="/pricing" className="block w-full max-w-2xl mx-auto mb-4 sm:mb-6">
+          <div onClick={() => setUpgradeModalContext("search")} className="block w-full max-w-2xl mx-auto mb-4 sm:mb-6">
             <div className="w-full bg-gray-50 border border-[#e2e2e6] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-gray-400 flex items-center gap-2 cursor-pointer hover:border-[#d97706] transition-colors">
               <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
               Search & filters are Pro features - Upgrade to unlock
             </div>
-          </Link>
+          </div>
         )}
 
 
@@ -491,30 +553,28 @@ export default function JobsClientPage() {
                   </>
                 )}
               </p>
-              {/* Filter toggle button - Pro only */}
-              {isSubscribed && (
-                <button
-                  onClick={() => setShowFilters(true)}
-                  className="btn-secondary inline-flex items-center gap-2 min-h-[40px] px-3 text-sm"
+              {/* Filter toggle button */}
+              <button
+                onClick={() => isSubscribed ? setShowFilters(true) : setUpgradeModalContext("filters")}
+                className="btn-secondary inline-flex items-center gap-2 min-h-[40px] px-3 text-sm"
+              >
+                <svg
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
                 >
-                  <svg
-                    width="16"
-                    height="16"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    stroke="currentColor"
-                    strokeWidth="2"
-                  >
-                    <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
-                  </svg>
-                  Filters
-                  {activeFilterCount > 0 && (
-                    <span className="bg-[#2563eb] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
-                      {activeFilterCount}
-                    </span>
-                  )}
-                </button>
-              )}
+                  <path d="M22 3H2l8 9.46V19l4 2v-8.54L22 3z" />
+                </svg>
+                Filters
+                {activeFilterCount > 0 && (
+                  <span className="bg-[#2563eb] text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+                    {activeFilterCount}
+                  </span>
+                )}
+              </button>
             </div>
 
             {/* Job Cards — responsive grid */}
@@ -529,6 +589,8 @@ export default function JobsClientPage() {
                       <JobCard
                         job={job}
                         index={index}
+                        isSaved={savedJobIds.includes(job.id)}
+                        onSave={(e) => handleSaveJob(job.id, e)}
                       />
 
                     </React.Fragment>
@@ -546,6 +608,13 @@ export default function JobsClientPage() {
                 <p className="text-sm text-gray-600">
                   Try adjusting your filters or search terms
                 </p>
+              </div>
+            )}
+
+            {/* Job Alert Section */}
+            {dataLoaded && (
+              <div className="mt-12 mb-6">
+                <JobAlertForm />
               </div>
             )}
 
@@ -626,6 +695,13 @@ export default function JobsClientPage() {
           />
         </BottomSheet>
       )}
+
+      {/* ─── Upgrade Modal ── */}
+      <UpgradeModal 
+        isOpen={upgradeModalContext !== null} 
+        onClose={() => setUpgradeModalContext(null)} 
+        context={upgradeModalContext || "search"} 
+      />
 
     </>
   );

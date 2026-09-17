@@ -134,13 +134,14 @@ Write ONLY the post text, nothing else. Make it compelling and highly readable.`
 // ─── LinkedIn API ────────────────────────────────────────────
 
 async function postToLinkedIn(text, authorUrn) {
-  // LinkedIn Posts API requires escaping these reserved characters to prevent silent truncation
-  // Reserved characters: | { } @ [ ] ( ) < > \ * _ ~
-  const escapedText = text.replace(/([|{}@[\]()\\*_~])/g, '\\$1');
+  // The LinkedIn API is notoriously buggy with Markdown and often silently truncates posts
+  // if it encounters unmatched formatting characters, even when escaped.
+  // Since we instructed the AI to output plain text, we strictly strip stray formatting chars.
+  const safeText = text.replace(/[*_~<>`]/g, '');
 
   const payload = {
     author: authorUrn,
-    commentary: escapedText,
+    commentary: safeText,
     visibility: 'PUBLIC',
     distribution: {
       feedDistribution: 'MAIN_FEED',

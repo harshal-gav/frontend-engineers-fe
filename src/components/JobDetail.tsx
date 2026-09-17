@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useSearchParams, usePathname } from "next/navigation";
 import { type Job } from "@/lib/jobs";
+import UpgradeModal, { type UpgradeContext } from "@/components/UpgradeModal";
 
 import { useState, useEffect } from "react";
 import { useAuth } from "@/context/AuthContext";
@@ -37,6 +38,7 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const [job, setJob] = useState<Job>(initialJob);
+  const [upgradeModalContext, setUpgradeModalContext] = useState<UpgradeContext | null>(null);
 
   const paramsString = searchParams?.toString();
   const backHref = paramsString ? `/?${paramsString}` : "/";
@@ -141,12 +143,12 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
                 Pro members get full access to every job + daily email alerts.
               </p>
             </div>
-            <Link
-              href="/pricing"
+            <button
+              onClick={() => setUpgradeModalContext("details")}
               className="inline-flex items-center gap-2 bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-orange-500/20 transition-colors text-base"
             >
               ⭐ Get Pro - $9/month
-            </Link>
+            </button>
             <p className="text-xs text-gray-500">Cancel anytime. Instant access.</p>
           </div>
         </div>
@@ -239,15 +241,22 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
           }}
         >
           <div className="px-4 py-3">
-            <Link
-              href="/pricing"
+            <button
+              onClick={() => setUpgradeModalContext("details")}
               className="bg-[#d97706] hover:bg-[#b45309] text-white w-full min-h-[48px] text-base font-bold rounded-xl flex items-center justify-center gap-2 transition-colors"
             >
               🔒 Unlock Full Details - $9/mo
-            </Link>
+            </button>
           </div>
         </div>
       )}
+
+      {/* ─── Upgrade Modal ── */}
+      <UpgradeModal 
+        isOpen={upgradeModalContext !== null} 
+        onClose={() => setUpgradeModalContext(null)} 
+        context={upgradeModalContext || "details"} 
+      />
     </div>
   );
 }

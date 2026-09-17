@@ -138,12 +138,11 @@ export default function PricingPage() {
             Aggregated from 100+ job boards &amp; company career pages. Save hours of searching!
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 w-full">
-            <span className="text-[#2563eb]">Pro Membership</span>{" "}
-            - Unlock Full Job Details
+            Find remote frontend jobs <span className="text-[#2563eb]">faster.</span>
           </h1>
           <p className="text-xl text-gray-600">
-            Browse every remote frontend job title for free. Upgrade to Pro to unlock
-            company names, full descriptions, locations, and direct apply links.
+            Browse every remote frontend job for free. Upgrade to Pro to unlock
+            advanced search, full descriptions, direct apply links, and daily alerts.
           </p>
         </div>
 
@@ -173,6 +172,11 @@ export default function PricingPage() {
                     <tr>
                       <td>Company name &amp; logo</td>
                       <td className="muted-cell text-center">✓ Available</td>
+                      <td className="highlight-cell text-center">✓ Available</td>
+                    </tr>
+                    <tr>
+                      <td>Save jobs &amp; searches</td>
+                      <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
@@ -302,7 +306,12 @@ export default function PricingPage() {
                   </svg>
                   <span>100% remote, frontend-only, curated daily</span>
                 </li>
-
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
+                  <span><strong>Save jobs and searches</strong> (coming soon)</span>
+                </li>
               </ul>
 
               <div className="flex flex-col gap-3 min-h-[150px]">
