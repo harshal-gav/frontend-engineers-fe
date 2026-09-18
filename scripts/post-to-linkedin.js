@@ -125,7 +125,7 @@ YOU MUST HEAVILY VARY the style, format, and hook of every post.
 DO NOT use the same opening template. DO NOT use the exact same emojis every time. Mix it up completely!
 
 **IMPORTANT RULES & INSTRUCTIONS:**
-1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown and will truncate the post. Use plain text and capital letters for emphasis instead. DO NOT use markdown links like [text](url), just output the raw URL or plain text.
+1. NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses `()` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead of parentheses. Use plain text and capital letters for emphasis instead. DO NOT use markdown links like [text](url), just output the raw URL or plain text.
 2. THE HOOK: Mention "FrontendEngineers.com" and "remote frontend jobs" naturally in the first couple of short sentences.
 3. THE PITCH:
    - Market it heavily as the ULTIMATE AGGREGATOR. Include a variation of these ideas:
@@ -134,13 +134,13 @@ DO NOT use the same opening template. DO NOT use the exact same emojis every tim
    - Our unique value: No more wasting hours on 10+ job boards. We bring them all together.
 4. PRICING & LINKS:
    - Mention unlocking full access to 1,000+ remote jobs for just $9/month.
-   - Mention 2-3 key features (e.g., direct apply links, daily email alerts, curated daily).
+   - Mention 2-3 key features like direct apply links, daily email alerts, or curated daily.
    - Always format the links EXACTLY like this at the end of the post:
      👉 Explore remote frontend jobs:
      https://www.frontendengineers.com
      👉 Get pro access for just $9/month:
      https://www.frontendengineers.com/pricing
-5. HASHTAGS: Include 5-8 relevant hashtags (e.g., #FrontendDeveloper #RemoteJobs #ReactJS).
+5. HASHTAGS: Include 5-8 relevant hashtags like #FrontendDeveloper #RemoteJobs #ReactJS.
 
 Write ONLY the post text, nothing else. Make it catchy, short, and highly readable.`;
 
@@ -201,8 +201,10 @@ async function postToLinkedIn(text, authorUrn) {
   // if it encounters unmatched formatting characters, even when escaped.
   // Since we instructed the AI to output plain text, we strictly strip stray formatting chars.
   // We also remove Markdown links just in case the AI ignored the instruction.
-  let safeText = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1 ($2)');
-  safeText = safeText.replace(/[*_~<>`[\]]/g, '');
+  // Parentheses are also stripped because LinkedIn API silently truncates at `(`.
+  let safeText = text.replace(/\[([^\]]+)\]\(([^)]+)\)/g, '$1 - $2');
+  safeText = safeText.replace(/[*_~<>`[\]()]/g, '');
+  safeText = safeText.replace(/\r/g, '');
 
   const payload = {
     author: authorUrn,
