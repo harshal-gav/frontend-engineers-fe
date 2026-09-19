@@ -56,7 +56,7 @@ async function generatePostWithGemini() {
 Write an engaging LinkedIn post to sell our Employer Hiring Plan to tech recruiters, startup founders, and engineering managers.
 
 **CRITICAL RULE: VARIETY & DIVERSITY**
-This script runs every 2 hours. If every post looks the same, our audience will ignore it.
+This script runs every 4 hours. If every post looks the same, our audience will ignore it.
 YOU MUST HEAVILY VARY the style, format, hook, and length of every post.
 - Sometimes tell a short story about how hard hiring is.
 - Sometimes use a bulleted list of raw benefits.
@@ -65,7 +65,7 @@ YOU MUST HEAVILY VARY the style, format, hook, and length of every post.
 DO NOT use the same opening template. DO NOT use the exact same emojis every time. Mix it up completely!
 
 **IMPORTANT RULES & INSTRUCTIONS:**
-1. NO MARKDOWN: DO NOT use markdown like **bold** or *italics*. LinkedIn's API does not support markdown and will truncate the post. Use plain text and capital letters for emphasis instead. DO NOT use markdown links like [text](url), just output the raw URL or plain text.
+1. NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead of parentheses. Use plain text and capital letters for emphasis instead. DO NOT use markdown links like [text](url), just output the raw URL or plain text.
 2. THE HOOK: You must mention "FrontendEngineers.com" and "hiring frontend engineers" somewhere in the first two sentences naturally, but DO NOT use the exact same sentence structure every time.
 3. THE PITCH - AGGRESSIVELY SELL THESE BENEFITS:
    - "FrontendEngineers.com is the ULTIMATE AGGREGATOR for remote frontend jobs. Because we bring every job into one place, we attract ALL the top frontend talent."

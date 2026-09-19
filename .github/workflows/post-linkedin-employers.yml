@@ -2,8 +2,8 @@ name: Post Employer Ad to LinkedIn
 
 on:
   schedule:
-    # Run every 2 hours on the odd hours (alternating with the candidate post)
-    - cron: '0 1-23/2 * * *'
+    # Run every 4 hours
+    - cron: '0 */4 * * *'
   workflow_dispatch: {}  # Manual trigger for testing
 
 jobs:

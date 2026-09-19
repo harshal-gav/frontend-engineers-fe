@@ -116,7 +116,7 @@ Write an engaging, SHORT, and PUNCHY LinkedIn post to promote our website to job
 - Make it highly readable, skimmable, and snappy.
 
 **CRITICAL RULE: VARIETY & DIVERSITY**
-This script runs every 2 hours. If every post looks the same, our audience will ignore it.
+This script runs every 1 hour. If every post looks the same, our audience will ignore it.
 YOU MUST HEAVILY VARY the style, format, and hook of every post.
 - Sometimes write a quick relatable story about the struggles of applying to 100s of jobs.
 - Sometimes use a short bulleted list of raw benefits.

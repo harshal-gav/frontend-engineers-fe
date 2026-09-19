@@ -66,13 +66,33 @@ async function main() {
 
   // 3. Fetch Users
   const db = getAdminDb();
-  let usersToAlert: any[] = [];
+  let alertsToSend: any[] = [];
   try {
     const snapshot = await db.collection("users").get();
     snapshot.forEach((doc) => {
       const data = doc.data();
-      if (data.email && data.job_alerts && data.isSubscribed) {
-        usersToAlert.push(data);
+      if (data.email) {
+        const isPremium = data.isPremium === true && (!data.subscriptionExpiresAt || new Date(data.subscriptionExpiresAt) > new Date());
+        
+        // 1. If Premium, they ALWAYS get the default worldwide alert
+        if (isPremium) {
+          alertsToSend.push({
+            email: data.email,
+            alert: { query: "", location: "worldwide" },
+            isPremium: true,
+            isDefault: true
+          });
+        }
+        
+        // 2. If they have a specific alert configured and are subscribed, they get that specific alert (whether they are Premium or Free)
+        if (data.job_alerts && data.isSubscribed) {
+          alertsToSend.push({
+            email: data.email,
+            alert: data.job_alerts,
+            isPremium: isPremium,
+            isDefault: false
+          });
+        }
       }
     });
   } catch (error) {
@@ -80,16 +100,16 @@ async function main() {
     process.exit(1);
   }
 
-  if (usersToAlert.length === 0) {
-    console.log("No users with job alerts found.");
+  if (alertsToSend.length === 0) {
+    console.log("No alerts to send found.");
     return;
   }
 
-  console.log(`Found ${usersToAlert.length} users with job alerts.`);
+  console.log(`Found ${alertsToSend.length} total alerts to send.`);
 
   // 4. Construct and Send Individual Emails
-  for (const user of usersToAlert) {
-    const alert = user.job_alerts;
+  for (const item of alertsToSend) {
+    const { email, alert, isPremium, isDefault } = item;
     
     // Filter new jobs based on user preferences
     const matchedJobs = newJobs.filter(job => {
@@ -138,12 +158,13 @@ async function main() {
       `;
     }).join("");
 
-    const isPremium = user.isPremium === true && (!user.subscriptionExpiresAt || new Date(user.subscriptionExpiresAt) > new Date());
+    const titlePrefix = isDefault ? "All New" : "Your Custom Alert:";
+    const subjectPrefix = isDefault ? "🔥" : "🔔";
 
     const emailHtml = `
       <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="text-align: center; margin-bottom: 32px;">
-          <h1 style="color: #1a202c;">🔥 Your Remote Frontend Jobs</h1>
+          <h1 style="color: #1a202c;">${subjectPrefix} ${titlePrefix} Remote Frontend Jobs</h1>
           <p style="color: #4a5568; font-size: 16px;">Here are today's remote frontend jobs matching your preferences.</p>
         </div>
         
@@ -169,18 +190,18 @@ async function main() {
     `;
 
     if (isDryRun) {
-      console.log(`DRY RUN: Would send to ${user.email} with ${matchedJobs.length} jobs.`);
+      console.log(`DRY RUN: Would send to ${email} with ${matchedJobs.length} jobs (isDefault: ${isDefault}).`);
     } else {
       try {
         await resend!.emails.send({
           from: "Frontend Engineers <hello@frontendengineers.com>",
-          to: [user.email],
-          subject: `🔥 ${matchedJobs.length} New Remote Frontend Jobs for you`,
+          to: [email],
+          subject: `${subjectPrefix} ${matchedJobs.length} New Remote Frontend Jobs for you`,
           html: emailHtml,
         });
-        console.log(`Sent to ${user.email}`);
+        console.log(`Sent to ${email} (isDefault: ${isDefault})`);
       } catch (e) {
-        console.error(`Failed to send to ${user.email}`, e);
+        console.error(`Failed to send to ${email}`, e);
       }
     }
   }
