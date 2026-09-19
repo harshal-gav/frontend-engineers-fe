@@ -4,7 +4,7 @@ const path = require("path");
 const crypto = require("crypto");
 
 // ─── Config ───────────────────────────────────────────────────────────
-const SEARCH_QUERY = "frontend engineer";
+const SEARCH_QUERY = "frontend developer";
 const COUNTRIES = [
   "Afghanistan",
   "Albania",
