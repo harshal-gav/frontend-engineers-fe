@@ -454,6 +454,12 @@ export default function JobsClientPage() {
                   Post a Job
                 </Link>
                 <Link
+                  href="/dashboard"
+                  className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold hover:bg-gray-200 transition-colors flex items-center justify-center shrink-0"
+                >
+                  Dashboard
+                </Link>
+                <Link
                   href="/auth/login"
                   className="text-xs sm:text-sm font-medium text-gray-600 hover:text-[#2563eb] transition-colors flex items-center justify-center shrink-0 px-2 sm:px-3"
                 >

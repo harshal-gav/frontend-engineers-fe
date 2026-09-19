@@ -20,31 +20,32 @@ export default function DashboardPage() {
   const [isLoading, setIsLoading] = useState(true);
   const [showJobAlertForm, setShowJobAlertForm] = useState(false);
 
-  useEffect(() => {
-    if (!loading && !user) {
-      router.push("/auth/login?redirect=/dashboard");
-    }
-  }, [user, loading, router]);
+  // Guest users are now allowed to view the dashboard
 
   useEffect(() => {
     async function loadData() {
-      if (!user) return;
+      if (loading) return;
       trackEvent("dashboard_viewed");
       try {
-        const token = await user.getIdToken();
-        const headers = { Authorization: `Bearer ${token}` };
-        
-        const [prefsRes, jobsRes] = await Promise.all([
-          fetch("/api/user/preferences", { headers }),
-          fetch("/api/jobs", { headers })
-        ]);
+        let prefsRes, jobsRes;
+        if (user) {
+          const token = await user.getIdToken();
+          const headers = { Authorization: `Bearer ${token}` };
+          
+          [prefsRes, jobsRes] = await Promise.all([
+            fetch("/api/user/preferences", { headers }),
+            fetch("/api/jobs", { headers })
+          ]);
+        } else {
+          jobsRes = await fetch("/api/jobs");
+        }
 
-        if (prefsRes.ok) {
+        if (prefsRes?.ok) {
           const p = await prefsRes.json();
           setPrefs(p);
         }
         
-        if (jobsRes.ok) {
+        if (jobsRes?.ok) {
           setAllJobs(await jobsRes.json());
         }
       } catch (e) {
@@ -54,11 +55,15 @@ export default function DashboardPage() {
       }
     }
     loadData();
-  }, [user]);
+  }, [user, loading]);
 
   const handleSaveJob = async (jobId: string, e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
+    if (!user) {
+      router.push("/auth/login?redirect=/dashboard");
+      return;
+    }
     const savedJobIds = prefs?.saved_jobs || [];
     const newSavedJobIds = savedJobIds.includes(jobId)
       ? savedJobIds.filter((id: string) => id !== jobId)
@@ -88,7 +93,7 @@ export default function DashboardPage() {
     }
   };
 
-  if (loading || isLoading || !user) {
+  if (loading || isLoading) {
     return <div className="min-h-screen bg-gray-50 p-8 text-center text-gray-500">Loading your dashboard...</div>;
   }
 
@@ -109,8 +114,12 @@ export default function DashboardPage() {
             ← <span className="hidden sm:inline">Back to Jobs</span><span className="sm:hidden">Back</span>
           </Link>
           <div className="flex items-center gap-3 overflow-hidden">
-            <span className="text-sm font-medium text-gray-600 truncate max-w-[120px] sm:max-w-[200px]">{user.email}</span>
-            <button onClick={handleLogout} className="text-sm font-bold text-red-500 hover:underline shrink-0 bg-red-50 px-3 py-1.5 rounded-md">Sign Out</button>
+            <span className="text-sm font-medium text-gray-600 truncate max-w-[120px] sm:max-w-[200px]">{user?.email || "Guest"}</span>
+            {user ? (
+              <button onClick={handleLogout} className="text-sm font-bold text-red-500 hover:underline shrink-0 bg-red-50 px-3 py-1.5 rounded-md">Sign Out</button>
+            ) : (
+              <Link href="/auth/login?redirect=/dashboard" className="text-sm font-bold text-[#2563eb] hover:underline shrink-0 bg-blue-50 px-3 py-1.5 rounded-md">Sign In</Link>
+            )}
           </div>
         </div>
       </header>
@@ -212,7 +221,7 @@ export default function DashboardPage() {
         <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-50 p-4" onClick={() => {
           setShowJobAlertForm(false);
           // Refresh preferences to show new alert immediately when modal closes
-          user.getIdToken().then(t => fetch("/api/user/preferences", { headers: { Authorization: `Bearer ${t}` } }))
+          user?.getIdToken().then(t => fetch("/api/user/preferences", { headers: { Authorization: `Bearer ${t}` } }))
             .then(r => r.json())
             .then(p => setPrefs(p))
             .catch(console.error);
