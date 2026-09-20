@@ -1,0 +1,49 @@
+name: Scrape LinkedIn Jobs
+
+on:
+  schedule:
+    # Run twice a day (e.g., at 00:00 and 12:00 UTC)
+    - cron: '0 0,12 * * *'
+  workflow_dispatch: {}  # Manual trigger to run it whenever you want
+
+jobs:
+  scrape-and-commit:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+      
+      - name: Hydrate LinkedIn Auth
+        # LinkedIn session is required. We read it from a GitHub Secret and save it.
+        run: |
+          mkdir -p data
+          echo '${{ secrets.LINKEDIN_AUTH_JSON }}' > data/linkedin-auth.json
+      
+      - name: Run Scraper
+        # Run with xvfb since the scraper requires headless: false (headed mode)
+        run: xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" node scripts/run-scraper-loop.sh
+      
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/jobs.json data/scraper-state.json
+          git commit -m "Auto-update scraped jobs" || echo "No changes to commit"
+          git push

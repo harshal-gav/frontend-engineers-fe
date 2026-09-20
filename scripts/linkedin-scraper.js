@@ -585,6 +585,11 @@ function saveJobs(jobs) {
   }
 
   console.log(`\n🎉 Completely Finished parsing all countries!`);
+  
+  // Reset completed countries for the next scheduled run
+  state.completedCountries = [];
+  saveState(state);
+
   await context.storageState({ path: AUTH_FILE });
   await browser.close();
 
