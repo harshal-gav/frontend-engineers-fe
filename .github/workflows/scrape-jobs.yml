@@ -38,7 +38,7 @@ jobs:
       
       - name: Run Scraper
         # Run with xvfb since the scraper requires headless: false (headed mode)
-        run: xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" node scripts/run-scraper-loop.sh
+        run: xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" bash scripts/run-scraper-loop.sh
       
       - name: Commit and push changes
         run: |
