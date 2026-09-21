@@ -1,5 +1,252 @@
 [
   {
+    "id": "0c8ce0f13b711eefb35f987729d554be4447439b4ee8a638f3e2e8dafe04954c",
+    "title": "Frontend Developer - Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/4b3f5acb-6b75-447f-9f43-6d11a4e315ff?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:52:24.396Z",
+    "sourceHash": "0c8ce0f13b711eefb35f987729d554be4447439b4ee8a638f3e2e8dafe04954c",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-developer-remote-yo-ai-labs-0c8ce0f1"
+  },
+  {
+    "id": "f6cba45cd53f0a3e9dd825c3c4fc30287479ae1a5a4d5007f0d60ed34e45ae00",
+    "title": "Frontend Transformer",
+    "applyUrl": "https://techlabeg.com/techlab-careers-join-transformers#apply",
+    "description": "About the job\n\nWe are not looking for people who only finish tasks. We are looking for minds that think deeply, own outcomes, connect details, and help engineer how organizations operate.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:50:45.837Z",
+    "sourceHash": "f6cba45cd53f0a3e9dd825c3c4fc30287479ae1a5a4d5007f0d60ed34e45ae00",
+    "company": {
+      "id": "techlabcompany",
+      "name": "TechLab company",
+      "logoUrl": "https://logo.clearbit.com/techlabcompany.com",
+      "industry": "Technology",
+      "website": "https://techlabcompany.com"
+    },
+    "slug": "frontend-transformer-techlab-company-f6cba45c"
+  },
+  {
+    "id": "303f2ebb333634706d34c67ba48d17283151e4a2ac873ad8bf7a298bbe518523",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://jobs.ashbyhq.com/bjakcareer/943e7184-c8fb-4aab-8f9e-9826ff5456f3/application?utm_source=YmpnOkRB66",
+    "description": "About the job\n\nAbout ActAI\n\nThere are over 5 billion users using basic applications today such email, notes, tasks, calendar and they're not AI-native. Our mission is to build proactive applications for anyone in the world, who are not used to complex prompting. We aim to bring intelligence to conversations, errands, organising and workflows, with minimal to no prompting. Our application focuses on achieving high reliability for long-running workflows, persistent context, and real-world task completion. We believe products will greatly reduce hallucinations\n\nOur objective is to organise anyone's life.\n\nRole\n\nAs a Web Frontend Engineer, you will build the core web experiences, including Chat, Notes, Calendar, Docs and Sheets.\n\nYou will own complex, highly interactive product surfaces from architecture through implementation, working closely with product, design, backend and AI engineers to make AI a native part of how users communicate, write, organise and work.\n\nWhat You'll Own\n\n\nBuild major web experiences across Chat, Notes, Calendar, Docs, and Sheets. \nDevelop complex interactions including real-time messaging, collaborative editing, rich-text editing, scheduling, tables, and spreadsheets. \nBuild reusable frontend architecture and components that work consistently across ActAI applications. \nIntegrate streaming AI responses, proactive actions, and model-driven experiences directly into product workflows. \nOwn frontend performance, responsiveness, reliability and accessibility across browsers and devices. \nWork closely with product and design to take ideas from prototype to production quickly. \n\n\nWhat We're Looking For\n\n\nStrong experience building complex, production web applications using React, TypeScript and modern frontend technologies. \nDeep understanding of frontend architecture, state management, browser APIs, and performance. \nExperience building highly interactive products such as chat, collaboration, productivity, document editing, calendars, or workspaces. \nExperience with real-time systems, WebSockets, streaming APIs, or collaborative interfaces. \nStrong product and UI judgment with attention to interaction details. \nAble to independently own features from technical design through production. \n\n\nOutcomes\n\n\nUsers can communicate, write, organise and collaborate seamlessly across Chat, Notes, Calendar, Docs and Sheets. \nComplex interactions such as group messaging, editing, scheduling and collaboration feel fast and reliable. \nAI capabilities are integrated naturally into product workflows rather than added as separate chatbot experiences. \nFrontend architecture remains fast, maintainable and reusable as ActAI expands into new applications and workflows. \n\n\nTech Stack\n\n\nTypeScript\nReact.js / Next.js\nHTML / CSS\nWebSockets / streaming APIs\nNode.js\nREST / GraphQL APIs\n\n\nHow We Work\n\nThe best products today in the world were built by small, world-class teams. We are a high talent density and hands-on team. We make decisions collectively and move at rapid speed, striking a balance between shipping high-quality work and learning.\n\nJoining our team requires the ability to bring structure, exercise judgment and execute independently. Our goal is to put in the hands of our users a truly magical product.\n\nInterview Process\n\nIf there appears to be a fit, we'll reach out to schedule 3, but no more than 4 interviews.\n\nApplications are evaluated by our technical team members. Interviews will be conducted via virtual meetings and/or onsite.\n\nWe value transparency and efficiency, so expect a prompt decision. If you've demonstrated the exceptional skills and mindset we're looking for, we'll extend an offer to join us and help bring practical AI benefits to billions of users globally.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:50:29.624Z",
+    "sourceHash": "303f2ebb333634706d34c67ba48d17283151e4a2ac873ad8bf7a298bbe518523",
+    "company": {
+      "id": "bjak",
+      "name": "BJAK",
+      "logoUrl": "https://logo.clearbit.com/bjak.com",
+      "industry": "Technology",
+      "website": "https://bjak.com"
+    },
+    "slug": "frontend-engineer-bjak-303f2ebb"
+  },
+  {
+    "id": "26f8cb0e8f415ab1e1e1c432ae735dc014436fd725a16abd9d73bc75f4cb908f",
+    "title": "Software Engineer - Frontend",
+    "applyUrl": "https://www.alignerr.com/jobs/3b5a6fc0-2eed-41df-bec2-8b497127b0a1?referral-source=linkedin-job",
+    "description": "About the job\n\nSoftware Engineer – Frontend (AI Training Contract)\n\nAbout The Role\n\nFrontend developers: your expertise is in demand — not for building products, but for making AI smarter. We're looking for skilled frontend engineers to evaluate and improve AI-generated code as part of a cutting-edge AI training initiative. Your work will directly influence how the next generation of AI models understands and writes JavaScript, HTML, and CSS.\n\nThis is a fully remote, asynchronous contract — work on your schedule, from anywhere.\n\nWhat You'll Do\n\n\nReview and evaluate AI-generated frontend code for correctness, efficiency, accessibility, and clarity\nWrite high-quality solutions to UI and web development problems across varying difficulty levels\nCraft clear, well-reasoned explanations of design decisions, code logic, and problem-solving strategies\nIdentify edge cases, bugs, and ambiguities in problem statements or AI-generated responses\nHelp set the standard for what great frontend code looks like — at scale\n\n\nWho You Are\n\n\nProficient in JavaScript, including async/await, closures, DOM manipulation, ES6+ syntax, and browser APIs\nExperienced with modern frontend frameworks and tools such as React, Vue, or Angular\nStrong written communicator — able to explain technical concepts clearly and concisely in English\nDetail-oriented with a sharp eye for code quality, edge cases, and potential failure points\nSelf-motivated and comfortable working independently in an asynchronous environment\n\n\nNice to Have\n\n\n3–5+ years of professional frontend development experience\nBackground in computer science or a related field\nExperience with data labeling, RLHF, or AI training workflows\nFamiliarity with web performance optimization and accessibility standards\n\n\nWhy Join\n\n\nHigh impact — your code reviews and solutions directly shape AI models used by leading research labs and enterprises\nFull flexibility — fully remote and asynchronous, work when and where it suits you\nClear ownership — well-defined tasks with concrete quality standards, so you always know what success looks like\nGrowth potential — top contributors take on expanded responsibilities and help mentor other subject matter experts\nMeaningful work — help build AI that writes better, safer, more reliable code for developers everywhere",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:50:17.606Z",
+    "sourceHash": "26f8cb0e8f415ab1e1e1c432ae735dc014436fd725a16abd9d73bc75f4cb908f",
+    "company": {
+      "id": "alignerr",
+      "name": "Alignerr",
+      "logoUrl": "https://logo.clearbit.com/alignerr.com",
+      "industry": "Technology",
+      "website": "https://alignerr.com"
+    },
+    "slug": "software-engineer-frontend-alignerr-26f8cb0e"
+  },
+  {
+    "id": "3ed5f7bb17f0b9740455c97f5b93ad709ad34a78cb6851ed76ff5b7dc9eeefd0",
+    "title": "Frontend Engineer Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/4daf31a1-2b38-4bf7-b376-7a353268cda3?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:48:53.114Z",
+    "sourceHash": "3ed5f7bb17f0b9740455c97f5b93ad709ad34a78cb6851ed76ff5b7dc9eeefd0",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-engineer-remote-yo-ai-labs-3ed5f7bb"
+  },
+  {
+    "id": "0ca87cc0f92ddba93ca985257082c09fa72ffa7f6b1658ab95352bb2ce6f8319",
+    "title": "Senior Software Engineer - Frontend Developer Experience",
+    "applyUrl": "https://job-boards.greenhouse.io/mercury/jobs/6116808004",
+    "description": "About the job\n\nAs long as there have been buildings, there has been scaffolding. In the caves of Lascaux, sockets in the cave wall were used to build scaffolds, allowing its Paleolithic inhabitants to craft their majestic cave-paintings, which survive to the modern day. From that time onward, every edifice has had its scaffold— from the bamboo poles that held the craftsmen of the Great Wall of China, to the steel trusses that held aloft the ironworkers who raised the Empire State Building.\n\nMercury is growing rapidly. As our product expands, we’re evolving the frontend foundations that support it. We have strong scaffolding in place today, but the expansion, renovation, and exploration that come next will require us to strengthen and refine it. We’re looking for an engineer to help build the battens and transoms that lift frontend work at Mercury. To put it differently, our job is to make our engineers as excited about the frontend as our customers are about our product.\n\nAs part of this role, you will:\n\n\nStrengthen the frontend foundations every Mercury engineer builds on. Evolve our React, TypeScript, and Vite infrastructure to support teams in shipping ambitious product work with speed and confidence.\nHelp engineers move efficiently with automation. Use static analysis, local tools, and LLM coding tools to help engineers quickly resolve the schlep so they can focus on what matters.\nOptimize our testing platform for fast feedback loops and high confidence. From unit tests to visual snapshots, you’ll provide the QA tools product teams need to move both quickly and safely.\nMake our CI/CD pipelines stable, ergonomic, and fast. Mercury ships fast— dozens of deploys to prod per day, and hundreds more commits on PR branches. You’ll keep the pipeline humming so Mercury’s engineers stay in flow and customers see fixes faster.\nMake our systems and organization observable. Drive decisions by unifying technical metrics from our tools with sentiment metrics from developer surveys. When that data doesn’t exist yet, you’ll build the observability that lets the team move with confidence.\nFoster enthusiasm about frontend work at Mercury by making the good path the easy path, and by representing our work in larger venues.\n\n\nThe ideal candidate:\n\n\nHas 6-8+ years of software development experience, with a strong focus on the frontend and deep experience with React and Typescript.\nHas experience leading complex engineering projects, such as projects that cut across multiple teams and functions, have multi-stage rollouts, or require research and consensus-building before action.\nIs a confident communicator, adept at communicating across organization boundaries, and driving discussions to productive ends.\nHas maintained internal libraries or platform tooling that other engineers depend on.\nPrioritizes being helpful, taking initiative to make other developers' lives easier.\nHas a thorough understanding of modern frontend developer tooling and workflows, including build systems, CI/CD, web hosting, and testing.\nDives into the gnarly side of the web platform— when it matters, happy to dig into Vite internals, upstream a fix, or bring a broken deploy pipeline back to life.\nBalances practicality with ideals, pushing the team to reach an ambitious North Star while charting a course there that matches our reality.\n\n\nIf this role interests you, we invite you to explore our public demo at personal-demo.mercury.com.\n\n*Mercury is a fintech company, not an FDIC-insured bank. Banking services provided through Choice Financial Group and Column N.A., Members FDIC.\n\nMercury values diversity & belonging and is proud to be an Equal Employment Opportunity employer. All individuals seeking employment at Mercury are considered without regard to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, sexual orientation, or any other legally protected characteristic. We are committed to providing reasonable accommodations throughout the recruitment process for applicants with disabilities or special needs. If you need assistance, or an accommodation, please let your recruiter know once you are contacted about a role.\n\nTotal Rewards\n\nThe total rewards package at Mercury includes base salary, equity (stock options/RSUs), and benefits.\n\nOur salary and equity ranges are highly competitive within the SaaS and fintech industry and are updated regularly using the most reliable compensation survey data for our industry. New hire offers are made based on a candidate’s experience, expertise, geographic location, and internal pay equity relative to peers.\n\nOur target new hire base salary ranges for this role are the following:\n\nUS employees (any location):\n\n$200,700—$250,900 USD\n\nCanadian employees (any location):\n\n$189,700—$237,100 CAD",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:48:31.236Z",
+    "sourceHash": "0ca87cc0f92ddba93ca985257082c09fa72ffa7f6b1658ab95352bb2ce6f8319",
+    "company": {
+      "id": "mercury",
+      "name": "Mercury",
+      "logoUrl": "https://logo.clearbit.com/mercury.com",
+      "industry": "Technology",
+      "website": "https://mercury.com"
+    },
+    "slug": "senior-software-engineer-frontend-developer-experience-mercury-0ca87cc0"
+  },
+  {
+    "id": "2ec249a082c3095e6d8fb13ef3989a8e8722538a97b354dd81be8872d5dd79fe",
+    "title": "Frontend Engineer Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/904266c4-470f-4c82-b2db-38793eb71d59?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:48:15.002Z",
+    "sourceHash": "2ec249a082c3095e6d8fb13ef3989a8e8722538a97b354dd81be8872d5dd79fe",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-engineer-remote-yo-ai-labs-2ec249a0"
+  },
+  {
+    "id": "bb055f3d72e98f1e3150129d612bb692e5ed79510d8fc13d57c769dd3bc7b0eb",
+    "title": "Frontend Engineer Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/7ca01686-a683-4e2c-b444-3d8d558b0d0e?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:47:49.841Z",
+    "sourceHash": "bb055f3d72e98f1e3150129d612bb692e5ed79510d8fc13d57c769dd3bc7b0eb",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-engineer-remote-yo-ai-labs-bb055f3d"
+  },
+  {
+    "id": "ca4eb43b4e0f684d59fac69052623ad15db13278b7cbde09ed1914d48cc233e0",
+    "title": "React Frontend Engineer",
+    "applyUrl": "https://trimble.eightfold.ai/careers/job/171843018891?microsite=trimble.com&domain=trimble.com&src=LinkedIN",
+    "description": "About the job\n\nBuild Next-Gen Transportation Logistics Tech: Front-End React Engineer\n\nAre you ready to build high-impact production UIs from scratch using modern React, TypeScript, and AI-augmented tools? Join a modern engineering environment where you will replace a legacy desktop application with a fast, browser-based React experience, shipping functional software directly to energy dispatchers every single week!\n\nAbout Us\n\nTrimble is a global technology company that connects the physical and digital worlds, transforming the ways work gets done. With relentless innovation in precise positioning, modeling and data analytics, Trimble enables essential industries including construction, geospatial and transportation. Whether it's helping customers build and maintain infrastructure, design and construct buildings, optimize global supply chains or map the world, Trimble is at the forefront, driving productivity and progress.\n\nIn the Transportation & Logistics segment, our solutions make it safer, simpler and more efficient to move freight—bringing together a global network of shippers, carriers, brokers and 3PLs.\n\nWhat Makes This Role Interesting\n\nIn this role, you will help build the next-generation TMW Suite Dispatch UI from scratch, directly shaping intuitive React interfaces that fuel dispatchers depend on to run daily bulk fuel and petroleum operations.\n\nYour Key Responsibilities\n\n\nBuild responsive, accessible React screens using TypeScript, Redux Toolkit, and MUI X DataGrid within a collaborative pod model.\nIntegrate frontend interfaces with backend API layers (CloudHub/OData/CHC) to connect real customer SQL database workflows seamlessly.\nShip working, fully tested software on a weekly demo cycle using Playwright and axe-core for end-to-end quality and accessibility.\nCreate intuitive user experiences for complex dispatcher needs, including drag-and-drop planning, real-time map synchronization, and performance-tuned data grids.\nLeverage modern AI tools like Cursor to accelerate development, build test scaffolding, and refine team component libraries.\n\n\nYour Essential Skills & Experience\n\n\nExperience in building production React applications with TypeScript \nStrong component architecture: you think in composable, testable components with clean prop contracts and proper state management\nExperience with data-heavy UIs: grids, tables, filters, server-side pagination, real-time updates\nComfort with REST/OData API integration — you’ve wired up front-ends to real backends and debugged the full request/response chain\nCSS/styling proficiency: responsive layouts, design system integration, consistent cross-browser rendering\nGit workflow fluency: trunk-based development, feature branches, clean commit history, PR reviews\nAbility to work in a tight collaboration with one other developer and an embedded generalist, shipping weekly\n\n\nBonus Points For\n\n\nDrag-and-drop implementation experience (dnd-kit, react-beautiful-dnd, or similar)\nExperience with AI coding assistants Cursor in daily development workflows\nFamiliarity with MUI (Material UI) component library and theming\nPrevious experience modernizing legacy desktop applications into browser-based UIs\nBackground in .NET/C# OData APIs (helpful for debugging the API layer, not required for the role)\nLogistics, transportation, or energy industry domain knowledge you understand what a dispatcher does and why their screen matters\n\n\nLocation: UK, Remote\n\nWhy You'll Enjoy Working With Us\n\n\nAt Trimble, we're not just a company that \"does good\"—we are a team dedicated to making a tangible, positive Real-World Impact.\nWe build innovative solutions designed to solve the world's most critical challenges. From construction sites to transportation hubs, our work tangibly improves how people live, build, move, and grow.\nYou'll work on projects that truly matter: Our purpose-driven culture means you'll be helping to build and deliver solutions that make work faster, safer, and more sustainable for millions of people worldwide. Our impact is tangible, from connected machines that save fuel to data-driven insights that reduce waste.\nCollaborate with like-minded people: Our strong internal culture is a \"hidden gem.\" You will work with a collaborative, supportive team that shares your purpose and fosters a genuine sense of belonging. We're a company of \"visionary pragmatists\" who think boldly and build things that work.\nBe an owner: Trimble thrives on individuals who take initiative and embrace ownership. You'll find an entrepreneurial spirit where success is often \"self-authored,\" empowering proactive \"doers.\"\n\n\nReact, TypeScript, Front-End Engineer, Software Developer, Redux, Material UI, Playwright, Greenfield, Transportation, Logistics\n\nHow to Apply: Please submit an online application for this position by clicking on the ‘Apply Now’ button located in this posting.\n\nJoin a Values-Driven Team: Belong, Grow, Innovate. \n\nAt Trimble, our core values of Belong, Grow, and Innovate aren't just words—they're the foundation of our culture. We foster an environment where you are seen, heard, and valued (Belong); where you have an opportunity to build a career and drive our collective growth (Grow); and where your innovative ideas shape the future (Innovate). We believe in empowering local teams to create impactful strategies, ensuring our global vision resonates with every individual. Become part of a team where your contributions truly matter.\n\nCandidate Privacy Notices by Country\n\nIf you need assistance or would like to request an accommodation in connection with the application process, please contact careers@trimble.com.",
+    "location": "Remote - United Kingdom",
+    "country": "United Kingdom",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:47:08.051Z",
+    "sourceHash": "ca4eb43b4e0f684d59fac69052623ad15db13278b7cbde09ed1914d48cc233e0",
+    "company": {
+      "id": "trimbleinc",
+      "name": "Trimble Inc.",
+      "logoUrl": "https://logo.clearbit.com/trimbleinc.com",
+      "industry": "Technology",
+      "website": "https://trimbleinc.com"
+    },
+    "slug": "react-frontend-engineer-trimble-inc-ca4eb43b"
+  },
+  {
+    "id": "7d796aaf4cbe85d9bb13ad97184a2151cf9504f5358e72c86cdc767e2e1934b5",
+    "title": "Junior Frontend Entwickler/in (m/w/d)",
+    "applyUrl": "https://lewo-media.de/de/jobs/junior-frontend-developer",
+    "description": "About the job\n\nJobbeschreibung\n\nWir suchen einen Junior Frontend Entwickler in Trier. Ob frisch aus dem Studium oder auf der Suche nach einer neuen Herausforderung - werde Teil unseres LEWO Teams! Wir bieten individuelle Unterstützung und teilen unsere Erfahrung mit TypeScript und Svelte.\n\nAlle Jobs Jetzt Bewerben\n\nWer sind wir?\n\nWir bieten ein ruhiges und dynamisches Arbeitsumfeld in einem kreativen und motivierten Team. Mit diversen Fortbildungsmöglichkeiten wie Online -/ Schulungen, Konferenzen und Workshops fördern wir deine Weiterentwicklung. Flexible Arbeitszeiten und Home-Office-Optionen sind ebenfalls möglich.\n\nBewerben\n\nSafeMind Certified\n\nWir sorgen für die mentale Gesundheit unseres Teams und schaffen ein Arbeitsumfeld, das Wohlbefinden und Work-Life-Balance fördert.\n\nPräventionsmaßnahmen Coaching & Support Work-Life-Balance\n\nMehr zu SafeMinds Gefährdungsbeurteilung erfahren\n\nWer bist du?\n\nDu bringst grundlegende Kenntnisse in HTML, CSS und JavaScript mit und hast erste Erfahrungen mit Frontend-Frameworks wie React, Vue.js oder Angular. Ein Verständnis für responsives Design und Cross-Browser-Kompatibilität, Teamfähigkeit, Kommunikationsstärke sowie Lernbereitschaft sind wichtig.\n\nBewerben\n\nHrmony Benefits\n\nMonatlicher Sachbezug über unsere Benefits-App. Wähle aus einer Vielzahl von Kategorien und gestalte deine Benefits individuell nach deinen Bedürfnissen.\n\nFitness & Wellness Mobilität Kulinarisches Shopping\n\nMehr zu Hrmony Benefits erfahren\n\nDeine Aufgaben\n\nDu entwickelst und wartest benutzerfreundliche, responsive Webanwendungen. Du arbeitest mit Designern und Backend-Entwicklern zusammen, sicherst die Code-Qualität, behebst Bugs und optimierst die Performance. Ständiges Lernen und Anwenden neuer Technologien gehören dazu.\n\nBewerben",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:15:29.664Z",
+    "sourceHash": "7d796aaf4cbe85d9bb13ad97184a2151cf9504f5358e72c86cdc767e2e1934b5",
+    "company": {
+      "id": "lewo",
+      "name": "LEWO",
+      "logoUrl": "https://logo.clearbit.com/lewo.com",
+      "industry": "Technology",
+      "website": "https://lewo.com"
+    },
+    "slug": "junior-frontend-entwickler-in-m-w-d-lewo-7d796aaf"
+  },
+  {
+    "id": "d854285a076cf83e15f14c74a180f47c52ce7cc0ec4d0d3c3e2fdc113154068b",
+    "title": "Frontend Fullstack Developer - Angular Java (35715)",
+    "applyUrl": "https://apply.myticas.com/35715/Frontend%20Fullstack%20Developer%20-%20Angular%20%20%20Java/?source=LinkedIn",
+    "description": "About the job\n\nAngular / Java Software Developer\n\nWe are seeking an experienced Angular / Java Software Developer to design, develop, test, and support modern enterprise applications in a fully remote environment. The successful candidate will contribute across both front-end and back-end development using Angular, Java/Spring Boot, REST services, cloud-native platforms, databases, and automated testing frameworks.\n\nResponsibilities\n\n\nDevelop responsive web applications using Angular, JavaScript, and TypeScript.\nBuild scalable backend services and RESTful APIs using Java and Spring Boot.\nDeploy and support applications in Azure AKS and/or OpenShift using Kubernetes and Helm.\nApply object-oriented design principles and common design patterns.\nCollaborate with UX, QA, architecture, product, and engineering teams in an Agile environment.\nUse Git, GitHub Actions, and CI/CD pipelines for automated delivery.\nWork with Oracle and PostgreSQL databases and SQL.\nDevelop unit, integration, and end-to-end tests using JUnit, Playwright, and related tools.\n\n\nQualifications\n\n\nExperience with Angular v17-21, JavaScript, and TypeScript, or a comparable modern front-end framework.\nStrong Java/Spring Boot and REST services experience.\nExperience with Azure AKS and/or OpenShift, Kubernetes, and Helm.\nKnowledge of object-oriented design, UI/UX principles, and Agile methodologies.\nExperience with Git, GitHub Actions, CI/CD, Oracle/PostgreSQL, SQL, JUnit, and Playwright.\n\n\nWork arrangement: Fully remote.\n\n,",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:07:13.345Z",
+    "sourceHash": "d854285a076cf83e15f14c74a180f47c52ce7cc0ec4d0d3c3e2fdc113154068b",
+    "company": {
+      "id": "myticasconsulting",
+      "name": "Myticas Consulting",
+      "logoUrl": "https://logo.clearbit.com/myticasconsulting.com",
+      "industry": "Technology",
+      "website": "https://myticasconsulting.com"
+    },
+    "slug": "frontend-fullstack-developer-angular-java-35715-myticas-consulting-d854285a"
+  },
+  {
+    "id": "c47a85231d636d598b69eb361b0c58611f83489b3cff92ca83e95710f8b101bc",
+    "title": "FrontEnd Engineer - Remote Work | REF#96729",
+    "applyUrl": "https://applicants.bairesdev.com/job/54/96729/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml&__cf_chl_rt_tk=68RgpXZsBfdKybH3MgWFaIjDVsgX.cXm07rdoSxdlLo-1789963517-1.0.1.1-qZHi1puk5OnhxnS6cGq_zoAOPtY_WDhDD7Ni7vsmffA",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\nFrontend Engineer at BairesDev\n\nWe are looking for FrontEnd Engineer to join our Development team and participate in different projects made up of multicultural teams distributed worldwide. We are looking for proactive people, and team players passionate about programming in this language and oriented to provide the best experience to the end user. This is an excellent opportunity for those professionals looking to develop in one of the fastest-growing companies in the industry!\n\nThese developers will face numerous technical challenges, so they must use current technologies, and get involved in the mobile world, web applications, devices, etc.\n\nWhat You Will Do\n\n\n Design, build, and implement data-driven applications that consume service-oriented RESTful APIs to drive functionality and optimize front-end performance.\n Produce prototypes and effectively articulate design decisions.\n Identify and resolve performance and scalability issues, troubleshoot problems, and improve product quality.\n\n\nHere’s What We Are Looking For\n\n\n 5+ years of experience in Front End / Javascript development.\n Experience and complete understanding of the challenges of large-scale CSS code bases and CSS architecture (web application, e-commerce, etc.).\n Expertise in positioning with CSS, inheritance, and specificity.\n Familiarity with the concepts of basic programming, JavaScript and data structures, types of variables, and idiosyncrasies.\n Solid experience with Angular, Backbone, Node, or React.\n Advanced English level.\n\n\nHow We Make Your Work (and Your Life) Easier\n\n\n100% remote work (from anywhere).\nExcellent compensation in USD or your local currency if preferred\nHardware and software setup for you to work from home.\nFlexible hours: create your own schedule.\nPaid parental leaves, vacations, and national holidays.\nInnovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\nSupportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\nJoin a global team where your unique talents can truly thrive!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:05:20.957Z",
+    "sourceHash": "c47a85231d636d598b69eb361b0c58611f83489b3cff92ca83e95710f8b101bc",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "frontend-engineer-remote-work-ref-96729-bairesdev-c47a8523"
+  },
+  {
+    "id": "925add87f67506804cadfa639a17f76d8825aeea1d0fe76187c0cb9346d2a5bd",
+    "title": "Desenvolvedor Front End Pleno",
+    "applyUrl": "https://cadastra.gupy.io/job/eyJqb2JJZCI6MTIzOTUzNTYsInNvdXJjZSI6ImxpbmtlZGluIn0=?jobBoardSource=linkedin",
+    "description": "About the job\n\nQuer fazer a diferença na nova economia e transformar pessoas e negócios para prosperarem? Vem pra Cadastra!\n\nComo Front End Developer você irá desenvolver projetos de lojas virtuais na plataforma VTEX. Contribuindo para o desenvolvimento de aplicações que sejam acessíveis, performáticas e ofereçam uma experiência de usuário consistente em diferentes dispositivos e tamanhos de tela.\n\nResponsabilidades e atribuições\n\nRESPONSABILIDADES E ATRIBUIÇÕES\n\n\nSuporte no Desenvolvimento de Lojas VTEX IO e Faststore;\nParticipação em Projetos de Otimização de Performance;\nDesenvolvimento Responsivo e Otimizado;\nColaboração e Comunicação continua com a equipe;\nDesenvolvimento de componentes utilizando boas práticas da programação;\n\n\n\nRequisitos e qualificações\n\nREQUISITOS E QUALIFICAÇÕES\n\n\nTer experiência em Vtex;\nTer domínio em programação Typescript, HTML, CSS e React, Next.Js;\nOtimização de paginas web;\nDesenvolvimento responsivo;\nConhecimento em Nodejs;\nParticipar das estimativas do projeto;\nDesenvolvimento de componentes generalistas e reutilizáveis;\n\n\n\nInformações adicionais\n\n\n Vale alimentação e refeição no cartão FLASH🥗\nAuxílio Home Office no cartão FLASH 💳\nPlano de saúde de acordo com a sua localidade 🩺\nPlano odontológico de acordo com a sua localidade 🦷\nDay off de aniversário + valor depositado no cartão FLASH🎉\nLicença-maternidade e paternidade estendida 🍼\nParticipação nos lucros (PLR) 💰\nSeguro de vida 🧡\nAuxílio creche 👶\nBônus por indicação 💰\nVale-transporte 🚍\nClude | Plataforma de Saúde 🩺\nTotal Pass 🏋🏽‍♀️",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-21T04:05:04.682Z",
+    "sourceHash": "925add87f67506804cadfa639a17f76d8825aeea1d0fe76187c0cb9346d2a5bd",
+    "company": {
+      "id": "cadastra",
+      "name": "Cadastra",
+      "logoUrl": "https://logo.clearbit.com/cadastra.com",
+      "industry": "Technology",
+      "website": "https://cadastra.com"
+    },
+    "slug": "desenvolvedor-front-end-pleno-cadastra-925add87"
+  },
+  {
     "id": "8b330dc18cb10b5393fdb14cd36dcc4529b9439012f9254f81f0028b74603be5",
     "title": "Frontend Engineer - Marketing & Digital Experience (Contract)",
     "applyUrl": "https://job-boards.greenhouse.io/nex/jobs/5289228008?gh_src=timiql178us",
