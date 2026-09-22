@@ -1,5 +1,195 @@
 [
   {
+    "id": "2bb39e783f58074accec08370381210dbda1299faf16bda72b3e6b9f7b679542",
+    "title": "Frontend Developer - Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/0cb49a1c-b167-40de-87f4-0f5c34a2df57?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-22T04:54:49.145Z",
+    "sourceHash": "2bb39e783f58074accec08370381210dbda1299faf16bda72b3e6b9f7b679542",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-developer-remote-yo-ai-labs-2bb39e78"
+  },
+  {
+    "id": "680cb83351e2b868440febb4abb4bc0aabe3ea7a228ab11e181a6e8d671b55f3",
+    "title": "Frontend / UX Engineers",
+    "applyUrl": "https://careers.nttdata.com/global/en/job/NTT1GLOBAL376274EXTERNALENGLOBAL/Frontend-UX-Engineers?utm_source=linkedin&utm_medium=phenom-feeds",
+    "description": "About the job\n\nReq ID: 376274\n\nNTT DATA strives to hire exceptional, innovative and passionate individuals who want to grow with us. If you want to be part of an inclusive, adaptable, and forward-thinking organization, apply now.\n\nWe are currently seeking a Frontend / UX Engineers to join our team in Bethesda (REMOTE), Maryland (US-MD), United States (US).\n\nJob Summary:\n\nThe Frontend / UX Engineer is responsible for designing, developing, and optimizing user interfaces that deliver a secure, accessible, and intuitive experience for personnel and stakeholders. This role is central to the modernization of client's radiation exposure management, focusing on the implementation of responsive, user-centered web applications that support complex workflows such as dosimeter inventory management, exposure tracking, organizational hierarchy navigation, and role-based access control (RBAC). The engineer collaborates closely with product owners, backend/API engineers, and operational stakeholders to translate business and technical requirements into visually engaging, compliant, and high-performing user interfaces. The Frontend / UX Engineer ensures that all interfaces adhere to accessibility, cybersecurity, and privacy standards, and are optimized for usability across a range of devices and operational environments, including both connected and disconnected scenarios. The position requires expertise in modern frontend frameworks, accessibility best practices, and user experience (UX) research and design. The engineer is responsible for maintaining comprehensive UI documentation, supporting user acceptance testing, and continuously refining the interface based on user feedback and evolving mission needs. This role is essential for enabling client users to efficiently and accurately perform critical tasks, access actionable data, and maintain compliance with operational and regulatory requirements.\n\nJob Duties:\n\n\nDesign, develop, and maintain responsive, accessible, and user-friendly web interfaces for client modules, including inventory, exposure tracking, and RBAC workflows\nCollaborate with product owners, backend/API engineers, and stakeholders to translate requirements into intuitive UI/UX solutions\nConduct user research, usability testing, and workflow analysis to inform interface design and continuous improvement\nEnsure all interfaces comply with DoD accessibility (Section 508), cybersecurity, and privacy standards\nImplement modern frontend frameworks and technologies to deliver high-performance, maintainable, and scalable applications\nDevelop and maintain comprehensive UI documentation, style guides, and component libraries\nSupport user acceptance testing, deployment, and ongoing operations of frontend solutions\nOptimize interfaces for usability across a range of devices and operational environments, including support for disconnected operations\nParticipate in code reviews, security assessments, and compliance audits as required by contract and SOW\nProvide technical support and training for end users and stakeholders as needed\n\n\nBasic Qualifications:\n\n\nBachelor’s Degree\nMinimum 3 years of experience designing digital user interfaces or websites\nAbility to obtain a Secret Clearance\n\n\nPreferred Qualifications:\n\n\nExperience designing and developing web interfaces for cloud-based, IoT-enabled, or regulated federal systems\nProficiency with modern frontend frameworks (e.g., React, Angular, Vue) and UI component libraries\nDemonstrated expertise in accessibility (Section 508), responsive design, and cross-browser compatibility\nExperience conducting user research, usability testing, and workflow analysis in mission-critical environments\nFamiliarity with DoD cybersecurity, privacy, and RMF requirements for user interfaces\nStrong documentation and communication skills, including the ability to produce UI specifications and training materials\nExperience supporting field deployment, troubleshooting, and operational support for distributed web applications\n\n\nNTT DATA provides a reasonable range of compensation for specific roles. The starting pay range for this remote role is $68,076 - $141,826. This range reflects the minimum and maximum target compensation for the position across all US locations. Actual compensation will depend on a number of factors, including the candidate’s actual work location, relevant experience, technical skills, and other qualifications. This position may also be eligible for incentive compensation based on individual and/or company performance. If the position offered in temporary, the position will not be eligible for incentive compensation. This position is eligible for company benefits including medical, dental, and vision insurance with an employer contribution, flexible spending or health savings account, life and AD&D insurance, short and long term disability coverage, paid time off, employee assistance, participation in a 401k program with company match, and additional voluntary or legally-required benefits.\n\nAbout NTT DATA\n\nNTT DATA is a $30 billion business and technology services leader, serving 75% of the Fortune Global 100. We are committed to accelerating client success and positively impacting society through responsible innovation. We are one of the world's leading AI and digital infrastructure providers, with unmatched capabilities in enterprise-scale AI, cloud, security, connectivity, data centers and application services. our consulting and Industry solutions help organizations and society move confidently and sustainably into the digital future. As a Global Top Employer, we have experts in more than 50 countries. We also offer clients access to a robust ecosystem of innovation centers as well as established and start-up partners. NTT DATA is a part of NTT Group, which invests over $3 billion each year in R&D.\n\nWhenever possible, we hire locally to NTT DATA offices or client sites. This ensures we can provide timely and effective support tailored to each client’s needs. While many positions offer remote or hybrid work options, these arrangements are subject to change based on client requirements. For employees near an NTT DATA office or client site, in-office attendance may be required for meetings or events, depending on business needs. At NTT DATA, we are committed to staying flexible and meeting the evolving needs of both our clients and employees. NTT DATA recruiters will never ask for payment or banking information and will only use @nttdata.com, @nttdatafed.com and @talent.nttdataservices.com email addresses. If you are requested to provide payment or disclose banking information, please submit a contact us form, https://us.nttdata.com/en/contact-us.\n\nNTT DATA endeavors to make https://us.nttdata.com accessible to any and all users. If you would like to contact us regarding the accessibility of our website or need assistance completing the application process, please contact us at https://us.nttdata.com/en/contact-us. This contact information is for accommodation requests only and cannot be used to inquire about the status of applications. NTT DATA is an equal opportunity employer. Qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability or protected veteran status. For our EEO Policy Statement, please click here. If you'd like more information on your EEO rights under the law, please click here. For Pay Transparency information, please click here.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-22T04:53:53.148Z",
+    "sourceHash": "680cb83351e2b868440febb4abb4bc0aabe3ea7a228ab11e181a6e8d671b55f3",
+    "company": {
+      "id": "nttdatanorthamerica",
+      "name": "NTT DATA North America",
+      "logoUrl": "https://logo.clearbit.com/nttdatanorthamerica.com",
+      "industry": "Technology",
+      "website": "https://nttdatanorthamerica.com"
+    },
+    "slug": "frontend-ux-engineers-ntt-data-north-america-680cb833"
+  },
+  {
+    "id": "ef986413489f35e17064b3de5f034adfe7dd0eac5d198da983f38575508fc447",
+    "title": "Senior Frontend Software Engineer, Consumer Engineering",
+    "applyUrl": "https://www.theladders.com/linkedin/88930755?src=LinkedIn",
+    "description": "About the job\n\nFor our client, we are seeking a Senior Frontend Software Engineer, Consumer Engineering to join the team of a leader in the Media space.\n\nThis role will focus on building and evolving user-facing experiences that drive engagement and improve the overall consumer product experience. You will partner closely with product, design, and engineering teams to deliver scalable solutions across the full software lifecycle. The ideal candidate brings strong frontend expertise, backend familiarity, and a user-centric mindset to help shape high-quality digital experiences at scale.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $190,800 – $267,100 annually\n\nResponsibilities\n\n\n Collaborate with cross-functional teams to create scalable and efficient technical solutions\n Manage the entire software lifecycle for product initiatives\n Design and run A/B experiments to evaluate user engagement\n Build and maintain scalable APIs and backend services\n Implement engineering best practices and mentor team members\n\n\nQualifications\n\n\n 6+ years of software development experience in front-end programming languages like JavaScript, TypeScript, and ES6\n Familiarity with front-end web frameworks such as LIT, Polymer, React, Vue, or Angular\n Experience with GraphQL, REST, and API design preferred\n Comfortable with modern workflows and AI-assisted engineering tools\n 5+ years of experience in backend development for large-scale distributed systems\n Strong communication skills for cross-functional collaboration\n User-centric mindset emphasizing usability and interaction design\n\n\nBenefits\n\n\n Comprehensive healthcare benefits\n 401(k) with employer match\n Global benefit programs including workspace and professional development support\n Family planning support\n Gender-affirming care\n Mental health and coaching benefits\n Flexible vacation and paid volunteer time off\n Generous paid parental leave\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification—your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nJavaScript, TypeScript, ES6, GraphQL, REST, CSS, LIT, Polymer, React, Vue, Angular, BigQuery, HEX, Firebase, gRPC, API design, AI-assisted engineering tools, Distributed Systems, Cloud Services, Microservices Architecture, High-Concurrency Environments, A/B Testing Frameworks, Observability Tools, Performance Monitoring Tools",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-22T04:53:18.220Z",
+    "sourceHash": "ef986413489f35e17064b3de5f034adfe7dd0eac5d198da983f38575508fc447",
+    "company": {
+      "id": "ladders",
+      "name": "Ladders",
+      "logoUrl": "https://logo.clearbit.com/ladders.com",
+      "industry": "Technology",
+      "website": "https://ladders.com"
+    },
+    "slug": "senior-frontend-software-engineer-consumer-engineering-ladders-ef986413"
+  },
+  {
+    "id": "fbef60fd47b93d5acada0339b017c3b22a53e781322a523d857b1bdbfe7f8812",
+    "title": "Frontend Designer - Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/645dbf63-e5ef-4d24-b758-382920d5e926?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-22T04:51:30.660Z",
+    "sourceHash": "fbef60fd47b93d5acada0339b017c3b22a53e781322a523d857b1bdbfe7f8812",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-designer-remote-yo-ai-labs-fbef60fd"
+  },
+  {
+    "id": "bf56f44cb0bad74a5219ef6d9c081b69996872b87c096f7752c4ebbe9fb23899",
+    "title": "Frontend Developer",
+    "applyUrl": "https://gigfinder.ai/members/job-detail?id=3387122&back=/jobs",
+    "description": "About the job\n\nJob Description\n\nCerebriOS is a software company building B2B SaaS products that help businesses make better decisions, streamline operations, and get more value from their data. Our products combine practical business workflows with intuitive technology designed for everyday use. We bring together technology, data, and business expertise to create solutions that are scalable, reliable, and easy to use.\n\nWe are looking for a Frontend Developer to build responsive, reliable, and accessible web experiences. You will collaborate with designers, product stakeholders, and backend engineers to turn product requirements into polished customer-facing features.\n\nThis position is suited to someone who cares about usability, maintainable code, and the details that make an interface feel intuitive.\n\nWhat You Will Do\n\nDevelop responsive web applications using JavaScript or TypeScript and a modern frontend framework.\n\nTranslate designs and product requirements into reusable UI components.\n\nIntegrate frontend features with APIs and backend services.\n\nImprove page performance, accessibility, and cross-browser compatibility.\n\nWrite unit, integration, and end-to-end tests.\n\nParticipate in code reviews and technical planning.\n\nDiagnose production issues and implement reliable fixes.\n\nCollaborate with design, QA, backend, and product teams.\n\nWhat We Are Looking For\n\n3+ years of professional frontend development experience.\n\nStrong JavaScript or TypeScript, HTML, and CSS skills.\n\nExperience with React, Vue, Angular, or a comparable framework.\n\nUnderstanding of responsive design and web accessibility.\n\nExperience consuming REST or GraphQL APIs.\n\nFamiliarity with Git and collaborative development workflows.\n\nClear written and verbal communication skills.\n\nNICE TO HAVE\n\nExperience with Next.js, automated testing, or component libraries.\n\nFamiliarity with frontend performance monitoring.\n\nExperience working in a startup or fast-moving product team.\n\nCompensation And Benefits\n\n$80,000$110,000 annually, depending on experience and qualifications.\n\nCerebriOS offers a remote-first work environment, opportunities to work with modern web technologies, and a collaborative product-focused culture where engineers work closely with design, product, QA, and backend teams.\n\nHIRING PROCESS\n\nApplication review ? recruiter screen ? technical interview ? final team interview ? offer.\n\nEQUAL OPPORTUNITY\n\nCerebriOS is an equal-opportunity employer. We value diversity and consider qualified candidates without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status, or any other protected characteristic.\n\nJob Overview\n\nLocation: Remote\n\nSalary Range: 80,000 - 110,000 USD (gross, annually)\n\nOriginally posted on Himalayas",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-22T04:51:21.562Z",
+    "sourceHash": "bf56f44cb0bad74a5219ef6d9c081b69996872b87c096f7752c4ebbe9fb23899",
+    "company": {
+      "id": "gigfinderai",
+      "name": "GigFinder.ai",
+      "logoUrl": "https://logo.clearbit.com/gigfinderai.com",
+      "industry": "Technology",
+      "website": "https://gigfinderai.com"
+    },
+    "slug": "frontend-developer-gigfinder-ai-bf56f44c"
+  },
+  {
+    "id": "02d0820170fac04d7ebd8a59d469f974255483dcb1693ec8dae19fd595159dc8",
+    "title": "Frontend Designer - Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/0d10af52-1af3-4c97-88ba-bb02759e95ba?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-22T04:50:59.565Z",
+    "sourceHash": "02d0820170fac04d7ebd8a59d469f974255483dcb1693ec8dae19fd595159dc8",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-designer-remote-yo-ai-labs-02d08201"
+  },
+  {
+    "id": "962a1acf0f7f5dea115437fbafb6d4bdd2a9ea19704d747d07d218973e86df0b",
+    "title": "Frontend Designer - Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/307d1f10-1211-476d-86d6-66488e6e7a28?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-22T04:50:30.517Z",
+    "sourceHash": "962a1acf0f7f5dea115437fbafb6d4bdd2a9ea19704d747d07d218973e86df0b",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-designer-remote-yo-ai-labs-962a1acf"
+  },
+  {
+    "id": "eb366a13098b7e3e35764a3031fd561c4f3d18535fbfe3ae4c915d4f13897e9c",
+    "title": "Sviluppatore Frontend Angular",
+    "applyUrl": "https://onyxtechnology.performahrm.com/risposta-annuncio?ref=linkedin&an_id=432786&code=b13318c2",
+    "description": "About the job\n\nONYX TECHNOLOGY, dinamica società di consulenza in forte crescita sul mercato dell’ Information Technology, ricerca:\n\nSviluppatore Frontend Angular\n\nLa risorsa ha maturato almeno 2 anni di esperienza nel ruolo.\n\nRequisiti essenziali \n\n\nOttima conoscenza di JavaScript, TypeScript e Angular v15+\nOttima padronanza di HTML5 e CSS\n\n\nMansioni Previste\n\n\nProgettazione e sviluppo di applicazioni web con Angular\nSviluppo di funzionalità front-end\nCollaborazione con team di sviluppo, designer e stakeholder per la delivery del prodotto\n\n\nSede: remoto\n\nContratto: Metalmeccanico Industria\n\nRAL: 23.000€ - 28.000€\n\nI cittadini non appartenenti all’Unione Europea devono essere in regola con le norme relative ai visti di ingresso e permesso di soggiorno.\n\nI candidati sono invitati a leggere l'informativa privacy ai sensi degli artt. 13 e 14 del Reg. EU 679/2016 ( https://www.onyxtechnology.it/pages/candidatura-libera.php).\n\nLa ricerca è rivolta a candidati di entrambi i sessi (L. 903/77 - D.Lgs. n.198/2006 - L.125/91, art.4 comma 3), non ci sono limiti di età né di nazionalità.",
+    "location": "Remote - Italy",
+    "country": "Italy",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-22T04:21:27.424Z",
+    "sourceHash": "eb366a13098b7e3e35764a3031fd561c4f3d18535fbfe3ae4c915d4f13897e9c",
+    "company": {
+      "id": "onyxtechnologysrl",
+      "name": "Onyx Technology S.r.l.",
+      "logoUrl": "https://logo.clearbit.com/onyxtechnologysrl.com",
+      "industry": "Technology",
+      "website": "https://onyxtechnologysrl.com"
+    },
+    "slug": "sviluppatore-frontend-angular-onyx-technology-s-r-l-eb366a13"
+  },
+  {
+    "id": "4b45135bb44ccd88d3d6f66c3cc92f831421696120f60e7db2b7d77af1424523",
+    "title": "Frontend Developer",
+    "applyUrl": "https://job-boards.greenhouse.io/bees/jobs/8687792002",
+    "description": "About the job\n\nSobre o BEES\n\nJunte-se a nós para construir o futuro do comércio B2B!\n\nO BEES é uma plataforma B2B da AB InBev. Por meio do nosso ecossistema, comerciantes e varejistas de 29 países abastecem seus negócios de forma rápida, prática e segura.\n\nNo BEES sonhamos grande, lideramos com propósito e desenvolvemos tecnologia que transforma a forma como varejistas e vendedores crescem.\n\nCada linha de código e cada parceria são feitas à serviço de uma única missão: tornar o comércio melhor para varejistas e vendedores em todo o mundo. Aqui, seu trabalho não é apenas importante. Ele faz a diferença!\n\n\n\n\nSobre esta oportunidade\n\nEstamos em busca de uma pessoa Intermediate Frontend Developer para atuar no BEES, com base em Campinas/SP. Essa pessoa fará parte de um time multidisciplinar responsável por desenvolver e evoluir um produto global, contribuindo diretamente para a construção de experiências digitais escaláveis e de alta qualidade.\n\nO papel exige sólidos conhecimentos em desenvolvimento frontend, especialmente React e TypeScript, além de colaboração próxima com Produto, Design e Tecnologia para criar soluções que combinam excelência técnica e uma ótima experiência para os usuários.\n\n\n\n\nO que você fará:\n\n• Desenvolver e manter funcionalidades frontend de um produto global, contribuindo diretamente para sua evolução\n\n• Construir experiências digitais escaláveis e de alta qualidade utilizando React e TypeScript\n\n• Trabalhar em parceria com o time para desenvolver e evoluir ferramentas de testes, automação e processos de release\n\n• Representar a perspectiva da experiência do usuário em discussões com times de Produto, Design e Tecnologia\n\n• Aplicar boas práticas de desenvolvimento e contribuir para a melhoria contínua da arquitetura e dos processos de Engenharia\n\n• Contribuir para a evolução e manutenção de Design Systems, bibliotecas de componentes e padrões de interface\n\n• Desenvolver e integrar soluções utilizando APIs REST, microfrontends e arquiteturas distribuídas\n\n• Garantir a qualidade das aplicações por meio de testes unitários, de integração e automação\n\n• Participar de discussões técnicas, code reviews e iniciativas voltadas à qualidade e escalabilidade das soluções\n\n• Trabalhar em um ambiente ágil, colaborativo e orientado à construção de soluções de alto impacto\n\n\n\n\nO que você precisa ter:\n\n• Formação superior em Ciência da Computação, Engenharia da Computação, Sistemas de Informação ou áreas correlatas, ou experiência profissional equivalente\n\n• Experiência com desenvolvimento frontend e sólidos conhecimentos em React\n\n• Conhecimento em arquitetura frontend, estruturas de dados, algoritmos e resolução de problemas\n\n• Experiência com microfrontends, microserviços e integrações via APIs REST\n\n• Conhecimento do ecossistema React, incluindo React.js, Redux, React Router, React Query ou tecnologias similares\n\n• Conhecimento avançado em TypeScript e suas boas práticas\n\n• Experiência com testes de software, incluindo testabilidade, testes unitários, integração e automação\n\n• Vivência na implementação e manutenção de Design Systems, incluindo bibliotecas de componentes, style guides e design tokens\n\n• Experiência com ferramentas e tecnologias DevOps, como Kubernetes, Docker, Azure ou similares\n\n• Inglês intermediário para comunicação escrita e verbal\n\n• Experiência trabalhando em ambientes ágeis\n\n• Perfil colaborativo, com autonomia e capacidade de identificar prioridades e oportunidades de melhoria\n\n• Conhecimento sólido em Node.js será considerado um diferencial\n\n• Vivência em ambientes que utilizam e promovem cultura DevOps será considerada um diferencial\n\n\n\n\nQuem deve se candidatar?\n\nPessoas apaixonadas por desenvolvimento frontend, qualidade de software e experiência do usuário. Se você gosta de resolver problemas, trabalhar com tecnologias modernas e construir produtos digitais escaláveis que impactam milhões de usuários globalmente, essa vaga é para você.\n\n\n\n\nO que oferecemos\n\n• Bônus baseado em performance*\n\n• Bônus de assiduidade*\n\n• Previdência privada\n\n• Vale-refeição\n\n• Dias de folga*\n\n• Plano de saúde, odontológico e seguro de vida\n\n• Descontos em medicamentos\n\n• Parceria com WellHub\n\n• Auxílio-creche\n\n• Descontos em produtos Ambev*\n\n• Parceria Clube Ben\n\n• Bolsa de estudos*\n\n• Garantia de material escolar\n\n• Plataformas de idiomas e treinamentos\n\n• Vale-transporte\n\nRegras aplicáveis.",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-22T04:03:06.989Z",
+    "sourceHash": "4b45135bb44ccd88d3d6f66c3cc92f831421696120f60e7db2b7d77af1424523",
+    "company": {
+      "id": "beesbrasil",
+      "name": "BEES Brasil",
+      "logoUrl": "https://logo.clearbit.com/beesbrasil.com",
+      "industry": "Technology",
+      "website": "https://beesbrasil.com"
+    },
+    "slug": "frontend-developer-bees-brasil-4b45135b"
+  },
+  {
+    "id": "cef7b1ac025fdb4386fb9b0493da9730d39fe4e0ac904004eed80be046327b96",
+    "title": "Frontend Software Developer (m/w/x)",
+    "applyUrl": "https://jobs.smartrecruiters.com/REXEL1/744000150687259-frontend-software-developer-m-w-x-",
+    "description": "About the job\n\nUnternehmensbeschreibung\n\nUnsere Tochtergesellschaft COMTECH IT-Solutions entwickelt seit über 40 Jahren Softwarelösungen für Handwerksbetriebe in Österreich. Von ihrem Standort in Puch bei Hallein betreuen sie mehrere tausend Anwender und entwickeln Lösungen gemeinsam mit Kunden aus der Praxis kontinuierlich weiter. Das Ziel: Software, die Handwerksbetriebe auf der Baustelle und im Büro spürbar entlastet.\n\nStellenbeschreibung\n\nDu bist leidenschaftlicher Softwareentwickler und vertraust auf deine erworbenen technologischen Kenntnisse\n\nauch im Zeitalter von Vibe-Coding und Loop Development. Dann werde Teil unseres Teams und unterstütze\n\nHandwerksbetriebe mit innovativen Softwarelösungen dabei, ihre Geschäftsprozesse effizient, digital und\n\nzukunftssicher zu gestalten. Nach einer umfassenden Einschulung übernimmst du\n\n\nagile Softwareentwicklung in einem engagierten und wachsenden Team \nEntwicklung von neuen cloudbasierten Softwarelösungen in einem bestehenden und ständig weiterentwickelten Framework für betriebswirtschaftliche Web-Applikationen \nMitarbeit an der Optimierung von Usability und User Experience\n\n\nQualifikationen\n\n\nAbgeschlossene Ausbildung mit dem Schwerpunkt Software-Engineering oder Berufserfahrung in einer vergleichbaren Position\nIdealerweise Erfahrung in Softwareentwicklung von cloudbasierten Webapplikationen, vorzugsweise mit React\nSicherer Umgang mit Webtechnologien wie HTML5, Javascript/Typescript , CSS/SCSS\nVon Vorteil sind Erfahrungen beim Einsatz von KI in der Softwareentwicklung\nTeamgeist, selbständige und genaue Arbeitsweise\nSehr gute Deutschkenntnisse\nGute Englischkenntnisse\n\n\nZusätzliche Informationen\n\nDich erwartet eine sichere und zukunftsorientierte Position in einem dynamischen und nachhaltigen Umfeld, in dem du dich weiterentwickeln kannst. Für diese spannende und herausfordernde Aufgabe bieten wir dir ein attraktives Gehalt, das sich nach deinen individuellen Qualifikationen und Erfahrungen bemisst, jedoch mindestens bei € 47.600,00 brutto pro Jahr liegt. Darüber hinaus bieten wir\n\n\nGute Verkehrsanbindung (S-Bahn, Bus-Station, direkter Autobahnanschluss)\nKostenlose Parkplätze mit E-Ladestation\nKostenloses Sportangebot Boulderwand, Calisthenics-Park, Fahrradraum\nFlexible Arbeitszeiten, Gleitzeit und kurzer Freitag bis 12 Uhr\nFlexible Urlaubsplanung auch stundenweise möglich\nHome-Office Option inkl. Equipment\nGemeinschaftsaktivitäten, Ausflüge & Feiern\nModerne Büros mit ergonomischer Ausstattung\nKindergarten im benachbarten Gebäude\n\n\nAlle Bezeichnungen beziehen sich auf alle Geschlechter in gleicher Weise. Anders gesagt, uns ist Geschlecht, Herkunft, Behinderung, sexuelle Orientierung oder Lebensalter egal. Wir suchen Menschen, die gerne bei uns arbeiten möchten.\n\nMach dir deinen eigenen Eindruck von REXEL Austria GmbH auf https://www.rexel.at/",
+    "location": "Remote - Austria",
+    "country": "Austria",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-22T04:00:35.696Z",
+    "sourceHash": "cef7b1ac025fdb4386fb9b0493da9730d39fe4e0ac904004eed80be046327b96",
+    "company": {
+      "id": "rexelaustriagmbh",
+      "name": "REXEL Austria GmbH",
+      "logoUrl": "https://logo.clearbit.com/rexelaustriagmbh.com",
+      "industry": "Technology",
+      "website": "https://rexelaustriagmbh.com"
+    },
+    "slug": "frontend-software-developer-m-w-x-rexel-austria-gmbh-cef7b1ac"
+  },
+  {
     "id": "c749e5bdd5311e9fd337b6f049df66651b48f8a59c9c4d3a63556cb8fae16805",
     "title": "Senior Frontend Engineer (React / Typescript - Payment Reconciliation) - DC24",
     "applyUrl": "https://codeleapag.orangehrmlive.com/recruitmentApply/195/view",
