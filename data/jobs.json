@@ -1,24 +1,5 @@
 [
   {
-    "id": "2bb39e783f58074accec08370381210dbda1299faf16bda72b3e6b9f7b679542",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/0cb49a1c-b167-40de-87f4-0f5c34a2df57?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-22T04:54:49.145Z",
-    "sourceHash": "2bb39e783f58074accec08370381210dbda1299faf16bda72b3e6b9f7b679542",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-2bb39e78"
-  },
-  {
     "id": "680cb83351e2b868440febb4abb4bc0aabe3ea7a228ab11e181a6e8d671b55f3",
     "title": "Frontend / UX Engineers",
     "applyUrl": "https://careers.nttdata.com/global/en/job/NTT1GLOBAL376274EXTERNALENGLOBAL/Frontend-UX-Engineers?utm_source=linkedin&utm_medium=phenom-feeds",
@@ -57,25 +38,6 @@
     "slug": "senior-frontend-software-engineer-consumer-engineering-ladders-ef986413"
   },
   {
-    "id": "fbef60fd47b93d5acada0339b017c3b22a53e781322a523d857b1bdbfe7f8812",
-    "title": "Frontend Designer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/645dbf63-e5ef-4d24-b758-382920d5e926?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-22T04:51:30.660Z",
-    "sourceHash": "fbef60fd47b93d5acada0339b017c3b22a53e781322a523d857b1bdbfe7f8812",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-designer-remote-yo-ai-labs-fbef60fd"
-  },
-  {
     "id": "bf56f44cb0bad74a5219ef6d9c081b69996872b87c096f7752c4ebbe9fb23899",
     "title": "Frontend Developer",
     "applyUrl": "https://gigfinder.ai/members/job-detail?id=3387122&back=/jobs",
@@ -93,44 +55,6 @@
       "website": "https://gigfinderai.com"
     },
     "slug": "frontend-developer-gigfinder-ai-bf56f44c"
-  },
-  {
-    "id": "02d0820170fac04d7ebd8a59d469f974255483dcb1693ec8dae19fd595159dc8",
-    "title": "Frontend Designer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/0d10af52-1af3-4c97-88ba-bb02759e95ba?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-22T04:50:59.565Z",
-    "sourceHash": "02d0820170fac04d7ebd8a59d469f974255483dcb1693ec8dae19fd595159dc8",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-designer-remote-yo-ai-labs-02d08201"
-  },
-  {
-    "id": "962a1acf0f7f5dea115437fbafb6d4bdd2a9ea19704d747d07d218973e86df0b",
-    "title": "Frontend Designer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/307d1f10-1211-476d-86d6-66488e6e7a28?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-22T04:50:30.517Z",
-    "sourceHash": "962a1acf0f7f5dea115437fbafb6d4bdd2a9ea19704d747d07d218973e86df0b",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-designer-remote-yo-ai-labs-962a1acf"
   },
   {
     "id": "eb366a13098b7e3e35764a3031fd561c4f3d18535fbfe3ae4c915d4f13897e9c",
@@ -342,25 +266,6 @@
     "slug": "senior-frontend-developer-epam-systems-26afea08"
   },
   {
-    "id": "0c8ce0f13b711eefb35f987729d554be4447439b4ee8a638f3e2e8dafe04954c",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/4b3f5acb-6b75-447f-9f43-6d11a4e315ff?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-21T04:52:24.396Z",
-    "sourceHash": "0c8ce0f13b711eefb35f987729d554be4447439b4ee8a638f3e2e8dafe04954c",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-0c8ce0f1"
-  },
-  {
     "id": "f6cba45cd53f0a3e9dd825c3c4fc30287479ae1a5a4d5007f0d60ed34e45ae00",
     "title": "Frontend Transformer",
     "applyUrl": "https://techlabeg.com/techlab-careers-join-transformers#apply",
@@ -418,25 +323,6 @@
     "slug": "software-engineer-frontend-alignerr-26f8cb0e"
   },
   {
-    "id": "3ed5f7bb17f0b9740455c97f5b93ad709ad34a78cb6851ed76ff5b7dc9eeefd0",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/4daf31a1-2b38-4bf7-b376-7a353268cda3?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-21T04:48:53.114Z",
-    "sourceHash": "3ed5f7bb17f0b9740455c97f5b93ad709ad34a78cb6851ed76ff5b7dc9eeefd0",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-3ed5f7bb"
-  },
-  {
     "id": "0ca87cc0f92ddba93ca985257082c09fa72ffa7f6b1658ab95352bb2ce6f8319",
     "title": "Senior Software Engineer - Frontend Developer Experience",
     "applyUrl": "https://job-boards.greenhouse.io/mercury/jobs/6116808004",
@@ -454,44 +340,6 @@
       "website": "https://mercury.com"
     },
     "slug": "senior-software-engineer-frontend-developer-experience-mercury-0ca87cc0"
-  },
-  {
-    "id": "2ec249a082c3095e6d8fb13ef3989a8e8722538a97b354dd81be8872d5dd79fe",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/904266c4-470f-4c82-b2db-38793eb71d59?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-21T04:48:15.002Z",
-    "sourceHash": "2ec249a082c3095e6d8fb13ef3989a8e8722538a97b354dd81be8872d5dd79fe",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-2ec249a0"
-  },
-  {
-    "id": "bb055f3d72e98f1e3150129d612bb692e5ed79510d8fc13d57c769dd3bc7b0eb",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/7ca01686-a683-4e2c-b444-3d8d558b0d0e?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-21T04:47:49.841Z",
-    "sourceHash": "bb055f3d72e98f1e3150129d612bb692e5ed79510d8fc13d57c769dd3bc7b0eb",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-bb055f3d"
   },
   {
     "id": "ca4eb43b4e0f684d59fac69052623ad15db13278b7cbde09ed1914d48cc233e0",
@@ -893,44 +741,6 @@
     "slug": "front-end-developer-intern-entry-level-fresher-html-css-javascript-remote-skillzenloop-92a8815f"
   },
   {
-    "id": "51c3ea138ec729f400b908b71964962155b65e978dd8dc37cc3894c2ad06bc48",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/f877e995-84df-4594-bab7-6946b73ed7af?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-20T08:05:29.850Z",
-    "sourceHash": "51c3ea138ec729f400b908b71964962155b65e978dd8dc37cc3894c2ad06bc48",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-51c3ea13"
-  },
-  {
-    "id": "0b05ed82371eda6ac842bdb0635247619a0c25a55124791a63ac88b527d24a0c",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/4ecae545-f42f-4cc8-b08c-520074cb9668?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-20T08:05:23.635Z",
-    "sourceHash": "0b05ed82371eda6ac842bdb0635247619a0c25a55124791a63ac88b527d24a0c",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-0b05ed82"
-  },
-  {
     "id": "d7b5212996c3d0a61a10f4972c3bcdc4b36f4cc77e509181376b102bc6f3ce03",
     "title": "Sviluppatore front end",
     "applyUrl": "https://k-digitale.com/careers/sviluppatore-front-end",
@@ -1102,101 +912,6 @@
     "slug": "mid-level-frontend-developer-blazor-remote-latin-america-fullstack-55a18dc0"
   },
   {
-    "id": "47021608499b0f628c8f384162e04a61c5bf176f15673dad4d6a93acde678b37",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/502776b2-d065-4cd9-b072-d7895511ea87?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-20T05:59:50.733Z",
-    "sourceHash": "47021608499b0f628c8f384162e04a61c5bf176f15673dad4d6a93acde678b37",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-47021608"
-  },
-  {
-    "id": "82fa373847c56b2858b3eae9c043ab666272affce4e2dd69eb8dae7b2959ca54",
-    "title": "Frontend Designer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/bee4f5c8-32db-4ea9-9591-30bc35eec90f?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-20T05:57:02.966Z",
-    "sourceHash": "82fa373847c56b2858b3eae9c043ab666272affce4e2dd69eb8dae7b2959ca54",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-designer-remote-yo-ai-labs-82fa3738"
-  },
-  {
-    "id": "3e541874b0727800c9b9b180fc6d86e98ea3d20a22c85ff97a4704a6374ceb06",
-    "title": "Frontend Designer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/685b8203-213a-4850-bd27-bcbf0bd35098?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-20T05:56:34.326Z",
-    "sourceHash": "3e541874b0727800c9b9b180fc6d86e98ea3d20a22c85ff97a4704a6374ceb06",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-designer-remote-yo-ai-labs-3e541874"
-  },
-  {
-    "id": "7a8828636956d8e75ff6708d932ae0ed1cbf760870e48817e21f651df65bf46d",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/b9742936-02f8-41ce-8d1e-5c575cd3fd04?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-20T05:56:09.113Z",
-    "sourceHash": "7a8828636956d8e75ff6708d932ae0ed1cbf760870e48817e21f651df65bf46d",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-7a882863"
-  },
-  {
-    "id": "5dd1edd2b002c2be23361f5caf7527e80d9ed1576d32a201124bf7db12690a92",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/7db06104-2cdb-4732-aad4-9e99ed9bda92?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-20T05:55:39.952Z",
-    "sourceHash": "5dd1edd2b002c2be23361f5caf7527e80d9ed1576d32a201124bf7db12690a92",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-5dd1edd2"
-  },
-  {
     "id": "e93e40b1f37b6bc485b429ecaed735d5173fa78cf72396e5e933d886200e2dd6",
     "title": "Frontend Engineer (JS, TypeScript)",
     "applyUrl": "https://www.sundayy.com/job-description/us4970188E57B84B47F1C4AC2EEDB74F59?source=Linkedin",
@@ -1214,44 +929,6 @@
       "website": "https://sundayy.com"
     },
     "slug": "frontend-engineer-js-typescript-sundayy-e93e40b1"
-  },
-  {
-    "id": "c32b571bf400a645368b0d3d14d2362f19bc4599911f71da6e4247cc1edcd086",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/e0221e16-cead-4642-9569-d37844298876?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-20T05:55:07.419Z",
-    "sourceHash": "c32b571bf400a645368b0d3d14d2362f19bc4599911f71da6e4247cc1edcd086",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-c32b571b"
-  },
-  {
-    "id": "7edbcc470a2e8086cc2259a09153844f1d219cbe8a82ba3c7517481acfdb2548",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/ddb33df1-0d4a-43f1-b9f8-136b752568e1?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-20T05:54:34.950Z",
-    "sourceHash": "7edbcc470a2e8086cc2259a09153844f1d219cbe8a82ba3c7517481acfdb2548",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-7edbcc47"
   },
   {
     "id": "2c926e3ac9b8b064cd10629433c6a3ae7414961949712dac28eea7ea40c40670",
@@ -1387,63 +1064,6 @@
     "slug": "frontend-engineer-typescript-javascript-sundayy-7470e6ac"
   },
   {
-    "id": "b5436cec464963c425d8a536cc5e9bb777ebed6ec43ae7999013b57791f17b37",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/887551a2-c34b-497b-866b-61570e3871cf?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:17:16.425Z",
-    "sourceHash": "b5436cec464963c425d8a536cc5e9bb777ebed6ec43ae7999013b57791f17b37",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-b5436cec"
-  },
-  {
-    "id": "3a92795dbaf8280c6cfb55860033f34560abcb368a0c51b9c8a280bd8ede2415",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/ffa769ff-b81e-4b20-9fd3-f1a0ae8a9b70?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:17:09.955Z",
-    "sourceHash": "3a92795dbaf8280c6cfb55860033f34560abcb368a0c51b9c8a280bd8ede2415",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-3a92795d"
-  },
-  {
-    "id": "9d735e7bf9a012fa5105588a70a341c17b95b8b5d80ddfa315498332ae051155",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/4f169457-4457-4a31-b9af-8bc7aec79cf1?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:16:51.533Z",
-    "sourceHash": "9d735e7bf9a012fa5105588a70a341c17b95b8b5d80ddfa315498332ae051155",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-9d735e7b"
-  },
-  {
     "id": "a4c93f95dcdea350f551b1902a600c507c09d5ebfcf89cf572323961118f21c8",
     "title": "Staff Software Engineer, Front End",
     "applyUrl": "https://job-boards.greenhouse.io/scoutmotors/jobs/5240844007?gh_src=9nvpiusu7us",
@@ -1463,101 +1083,6 @@
     "slug": "staff-software-engineer-front-end-scout-motors-inc-a4c93f95"
   },
   {
-    "id": "c11bd070b761749c7173d6f8f8a3d00b1b43251065298f91bebbf577837c1933",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/1f5ec2a0-9fa8-478d-99b5-e0245cdd8e0b?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:16:15.994Z",
-    "sourceHash": "c11bd070b761749c7173d6f8f8a3d00b1b43251065298f91bebbf577837c1933",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-c11bd070"
-  },
-  {
-    "id": "c537f03c7288e65c349d78bb822417e6e6c80b048acd444942247455f98994e0",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/1ec84003-b34a-42e2-a82c-31259e87ce20?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:15:44.657Z",
-    "sourceHash": "c537f03c7288e65c349d78bb822417e6e6c80b048acd444942247455f98994e0",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-c537f03c"
-  },
-  {
-    "id": "3c048bf2cd83ee72035bf8fc7547a9dc89d462b5b0cf936eafa68b8085853316",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/5dea8ddf-1362-428a-883a-ea7b1e555059?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:15:13.100Z",
-    "sourceHash": "3c048bf2cd83ee72035bf8fc7547a9dc89d462b5b0cf936eafa68b8085853316",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-3c048bf2"
-  },
-  {
-    "id": "807f4ba75826cd0793a361a886fda25e67a5736c97b11cd673a4d3363b968728",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/e7fa3a73-b6c3-4733-99ea-12a99ad58f05?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:14:47.584Z",
-    "sourceHash": "807f4ba75826cd0793a361a886fda25e67a5736c97b11cd673a4d3363b968728",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-807f4ba7"
-  },
-  {
-    "id": "f64a5e5e381070a2d72c82549d24621caeddd0a464266a1a4cdb951a722abc0d",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/fe3fc524-0c44-4539-b9ab-c7d7727283ec?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:14:18.323Z",
-    "sourceHash": "f64a5e5e381070a2d72c82549d24621caeddd0a464266a1a4cdb951a722abc0d",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-f64a5e5e"
-  },
-  {
     "id": "cb0f0369bce7c06702f2e706e60b02916e7e865a85679b393ecbf49e25d96710",
     "title": "Frontend Engineer, Jr. (React.js, CSS)",
     "applyUrl": "https://www.sundayy.com/job-description/us2AFE2791A7030F491D22851179E0323F?source=Linkedin",
@@ -1575,25 +1100,6 @@
       "website": "https://sundayy.com"
     },
     "slug": "frontend-engineer-jr-react-js-css-sundayy-cb0f0369"
-  },
-  {
-    "id": "4523a0571e746d18f7efb5b84fe7c116d9852f63feafb647f2f9142ef964d430",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/7af4b7f7-6d33-4398-9174-3fb07e449ee5?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:12:38.180Z",
-    "sourceHash": "4523a0571e746d18f7efb5b84fe7c116d9852f63feafb647f2f9142ef964d430",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-4523a057"
   },
   {
     "id": "5034f9029a691cc2bd0b1dbd1cad6f6b4eb2cbaee7905a306c1b7f4e99ab6363",
@@ -1632,44 +1138,6 @@
       "website": "https://agilegridsolutions.com"
     },
     "slug": "front-end-web-developer-agilegrid-solutions-337ad553"
-  },
-  {
-    "id": "09f6cf8609617450bd5e22b79dd2d952a119fc973a607ab38e280d28817e8296",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/53fecd8f-e0da-46ce-ba90-4aaa8deb05b8?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:11:22.750Z",
-    "sourceHash": "09f6cf8609617450bd5e22b79dd2d952a119fc973a607ab38e280d28817e8296",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-09f6cf86"
-  },
-  {
-    "id": "53c3189897eaf15074e5ebefcde439bd3689f67b28d0ca90d3d068c6eebafe7f",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/19ff2068-5fa3-4485-aee6-26ea119d7fca?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T07:10:50.032Z",
-    "sourceHash": "53c3189897eaf15074e5ebefcde439bd3689f67b28d0ca90d3d068c6eebafe7f",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-53c31898"
   },
   {
     "id": "053cebbcc06d799a34a3a1dc2371bcebe23661f476e452c40c06610600e71e87",
@@ -1879,25 +1347,6 @@
       "website": "https://proxify.com"
     },
     "slug": "senior-frontend-developer-angular-js-react-js-proxify-3e4d14ec"
-  },
-  {
-    "id": "c2630016be0a0692b5dd8e2030d520a006319fab225c59cde741be5126ff8db8",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/ddf9c8cf-1a87-4188-9307-ae206bc971ad?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - San Marino",
-    "country": "San Marino",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-19T06:54:43.802Z",
-    "sourceHash": "c2630016be0a0692b5dd8e2030d520a006319fab225c59cde741be5126ff8db8",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-c2630016"
   },
   {
     "id": "55b0c00681e31efe13aba0ec74085b868c9b7fb315a5f48613a7101a266d3ca1",
@@ -2601,25 +2050,6 @@
       "website": "https://townsq.com"
     },
     "slug": "senior-frontend-engineer-angular-townsq-19a24aac"
-  },
-  {
-    "id": "7105923df9d13c14521b11c48fdf84bb773098b96b441a59c9ab030e06d4db5a",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/c00b5d6e-7b0f-4419-981e-81b2386a578a?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-17T07:59:27.354Z",
-    "sourceHash": "7105923df9d13c14521b11c48fdf84bb773098b96b441a59c9ab030e06d4db5a",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-7105923d"
   },
   {
     "id": "ba1988edd9e5f9b5a1f4387366b83bfe435168c2ee48299bf5c3a775364dad42",
@@ -3648,82 +3078,6 @@
     "slug": "senior-frontend-engineer-medical-imaging-viewer-epam-systems-f241b6e9"
   },
   {
-    "id": "3333ab863f70056a83fd88df8c9b080dd3f96cb978a975a72ae9f3c37444f366",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/cffac8d1-59ba-4177-863d-7097eb748396?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-16T05:12:55.730Z",
-    "sourceHash": "3333ab863f70056a83fd88df8c9b080dd3f96cb978a975a72ae9f3c37444f366",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-3333ab86"
-  },
-  {
-    "id": "e2848311cb5437e36dd08401f869b5e32bf3bc731841db56ba5352ad0c82f16a",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/5c60852a-cd2d-4b51-bd47-eb704fc59aa5?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-16T05:12:49.236Z",
-    "sourceHash": "e2848311cb5437e36dd08401f869b5e32bf3bc731841db56ba5352ad0c82f16a",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-e2848311"
-  },
-  {
-    "id": "1127083b7586384d86f530738c542a4aaf7deae45695a7389de5eb09cd9e2d6b",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/9b15cc58-4cc2-4db2-bde1-18bdd8175524?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-16T05:12:42.632Z",
-    "sourceHash": "1127083b7586384d86f530738c542a4aaf7deae45695a7389de5eb09cd9e2d6b",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-1127083b"
-  },
-  {
-    "id": "20726ffc5868dd97cf10b553342962f72615e7115e6e38ed3ada2b43d96ae8a7",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/a2f476ff-9b24-44bf-89d5-d23d61969336?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-16T05:12:26.045Z",
-    "sourceHash": "20726ffc5868dd97cf10b553342962f72615e7115e6e38ed3ada2b43d96ae8a7",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-20726ffc"
-  },
-  {
     "id": "fa1914cb02449ec2b54e5b5aabfd4c614eade3843960b40d6480eab3d2f02649",
     "title": "Frontend JavaScript Engineer",
     "applyUrl": "https://www.alignerr.com/jobs/14411f2a-1d84-4334-8702-4e7693113889?referral-source=linkedin-job",
@@ -4066,139 +3420,6 @@
     "slug": "senior-frontend-engineer-wego-com-a14a81e5"
   },
   {
-    "id": "adc5cff93744adbd4bdacf82945707008215a07fa8a695f4b3d9b016c5667eac",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/5dfd050d-46df-447f-b561-7bd12e094c67?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:17:40.498Z",
-    "sourceHash": "adc5cff93744adbd4bdacf82945707008215a07fa8a695f4b3d9b016c5667eac",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-adc5cff9"
-  },
-  {
-    "id": "dc4c60321256488fc5e823cc15115cc93a0d005fc758b2b7035d0a56bb1f303d",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/c2e7b947-24c5-4b6a-b06c-fedf0d9b13de?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:17:33.930Z",
-    "sourceHash": "dc4c60321256488fc5e823cc15115cc93a0d005fc758b2b7035d0a56bb1f303d",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-dc4c6032"
-  },
-  {
-    "id": "96e2ff8c1ac91fd7951b2420854246ae9c375b12e911da8a4c864884db36df54",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/a5c4d256-020d-49b2-bc79-639335489d86?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:17:27.190Z",
-    "sourceHash": "96e2ff8c1ac91fd7951b2420854246ae9c375b12e911da8a4c864884db36df54",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-96e2ff8c"
-  },
-  {
-    "id": "3726eb115eab46b428d728f746c19c9532d5457525658eae7515c00d530207fc",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/2d74c125-d36a-47d5-b28d-19a2c7729eb2?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:17:20.584Z",
-    "sourceHash": "3726eb115eab46b428d728f746c19c9532d5457525658eae7515c00d530207fc",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-3726eb11"
-  },
-  {
-    "id": "eeb640b20a2115970b91c43d0d22381b7770685757a9f63239de0b1a2d362394",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/dab167de-0f9b-410f-a3ac-f820f1ab1f3c?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:17:13.913Z",
-    "sourceHash": "eeb640b20a2115970b91c43d0d22381b7770685757a9f63239de0b1a2d362394",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-eeb640b2"
-  },
-  {
-    "id": "4e6344b281c8189591d233100c91c3b2cabfd5bd1c48df45f10f76d78df67f49",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/07936ad4-7020-4f11-b636-700ed1cb6e5a?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:17:07.310Z",
-    "sourceHash": "4e6344b281c8189591d233100c91c3b2cabfd5bd1c48df45f10f76d78df67f49",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-4e6344b2"
-  },
-  {
-    "id": "a89ba312aa366836e7154cd7c7cc127d0869719c7bee5f3c21082661d71f367d",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/84c8c776-4cba-45b4-a5b4-c39232ccbaed?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:16:38.896Z",
-    "sourceHash": "a89ba312aa366836e7154cd7c7cc127d0869719c7bee5f3c21082661d71f367d",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-a89ba312"
-  },
-  {
     "id": "b17c49a3e4039af44850fb35716240226c42a235f58232b15458b381dd6e789f",
     "title": "Frontend Engineer - Marketing & Digital Experience",
     "applyUrl": "https://job-boards.greenhouse.io/nex/jobs/5155205008?gh_src=wbz9eusw8us",
@@ -4216,25 +3437,6 @@
       "website": "https://nex.com"
     },
     "slug": "frontend-engineer-marketing-digital-experience-nex-b17c49a3"
-  },
-  {
-    "id": "0cb9733769bbe5487774720d6b38b7e555b1f7835dc00e31784b3312242077cf",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/18a2da91-872f-40db-98da-3a34cf6c03c2?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:15:53.167Z",
-    "sourceHash": "0cb9733769bbe5487774720d6b38b7e555b1f7835dc00e31784b3312242077cf",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-0cb97337"
   },
   {
     "id": "f3fe08edadc10a55596e860d4ce8d9cfc26d6fa3456ec6b04fb94a2134c75e18",
@@ -4275,44 +3477,6 @@
     "slug": "frontend-web-application-developer-remote-kobotoolbox-1a9a4907"
   },
   {
-    "id": "7ff9a34253405d986a8a0c54369ca04edd2bd23d6d921440e8ffa9f12267cb2c",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/bba891e8-9de5-4d2a-aee4-82c1526388a5?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:14:12.911Z",
-    "sourceHash": "7ff9a34253405d986a8a0c54369ca04edd2bd23d6d921440e8ffa9f12267cb2c",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-7ff9a342"
-  },
-  {
-    "id": "b605cfa27d05a980d5d9170367ed0dd95d239a5bcaf4a24c77623316b3dedcc2",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/7d10d3a3-c74e-4cc7-af4e-9b22df615937?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:13:47.117Z",
-    "sourceHash": "b605cfa27d05a980d5d9170367ed0dd95d239a5bcaf4a24c77623316b3dedcc2",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-b605cfa2"
-  },
-  {
     "id": "cca320cdc1d82f11d976bf5696ba6341c0f9bafec8cf15c02f0d2d3fd79cd53f",
     "title": "Frontend Engineer (Angular)",
     "applyUrl": "https://ats.rippling.com/en-GB/jobboard/jobs/f84d2a04-5245-44e5-97d3-75cc13715417?src=LinkedIn",
@@ -4351,25 +3515,6 @@
     "slug": "eds-lead-front-end-developer-remote-blue-acorn-ici-280282be"
   },
   {
-    "id": "1fd243ea135f18db8e218bc8d96dc7fe462997e121e5d1ff83199db6e9c0cb3f",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/5a867001-cf3b-44b7-884d-efb442c926dc?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:13:01.425Z",
-    "sourceHash": "1fd243ea135f18db8e218bc8d96dc7fe462997e121e5d1ff83199db6e9c0cb3f",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-1fd243ea"
-  },
-  {
     "id": "25c1ae71295e4c82995814b5d38a5c6e8f3d441817bb0ff12a26dceaff082eb3",
     "title": "Sr Software Engineer Frontend",
     "applyUrl": "https://jobs.ascension.org/us/en/job/AHEAHUUS464720EXTERNALENUS/Sr-Software-Engineer-Frontend?phenom_utm_medium=phenom-feeds&utm_source=linkedin&utm_medium=job_board&utm_campaign=USASC_AllJobs&iisn=LinkedIn&iis=Job_Board&iisc=USASC_AllJobs",
@@ -4387,25 +3532,6 @@
       "website": "https://ascension.com"
     },
     "slug": "sr-software-engineer-frontend-ascension-25c1ae71"
-  },
-  {
-    "id": "be32461d745ba60e8f9768f9a84a3d1fff80556454e15859a468770782a2a570",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/a958bbb8-bd47-465f-ab02-d4a26655105e?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:12:26.669Z",
-    "sourceHash": "be32461d745ba60e8f9768f9a84a3d1fff80556454e15859a468770782a2a570",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-be32461d"
   },
   {
     "id": "97378a8e107ee0a6c384b33433308ea03fb533625cd031ad2d2f09a963a17287",
@@ -4427,44 +3553,6 @@
     "slug": "staff-frontend-engineer-compsych-97378a8e"
   },
   {
-    "id": "0b370e9d48b6b946b54dad4f9c6eb1c4998eee23eeaf095b74188253601cb951",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/e77f3706-a524-4974-883d-29b07dbdf71c?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:11:39.475Z",
-    "sourceHash": "0b370e9d48b6b946b54dad4f9c6eb1c4998eee23eeaf095b74188253601cb951",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-0b370e9d"
-  },
-  {
-    "id": "ab588a6acf8e07badc35624f0f32452dee916d4152752e1d05b74339a8379456",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/8c493811-21e3-47df-bc01-ebc29db07a69?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:09:54.599Z",
-    "sourceHash": "ab588a6acf8e07badc35624f0f32452dee916d4152752e1d05b74339a8379456",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-ab588a6a"
-  },
-  {
     "id": "7385c18edb0f2a965b72d7b4a8a7d0ad0657f74a5f7f1b0098bdc205b0f87cd8",
     "title": "Front End Engineer (Typescript, Vue.js)",
     "applyUrl": "https://www.sundayy.com/job-description/usC23A5EC0607687B4B7F551F10C91CB0A?source=Linkedin",
@@ -4482,25 +3570,6 @@
       "website": "https://sundayy.com"
     },
     "slug": "front-end-engineer-typescript-vue-js-sundayy-7385c18e"
-  },
-  {
-    "id": "5fa9679a09cb512e22df4539f20511addec1e9ecf7bd914f8b9979086b9e9539",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/9a0c234d-4cef-4a7d-9fde-3029e0d19c57?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:09:15.718Z",
-    "sourceHash": "5fa9679a09cb512e22df4539f20511addec1e9ecf7bd914f8b9979086b9e9539",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-5fa9679a"
   },
   {
     "id": "1eb62441e4c9ab3cd33ac1140dfe2dd2850894493127e5c59272d5662f11a96e",
@@ -4634,25 +3703,6 @@
       "website": "https://nextio.com"
     },
     "slug": "frontend-developer-mid-senior-nextio-358c3e15"
-  },
-  {
-    "id": "d3a122232c439201709081fd0031cc5c1daef1a5718f3125b1eeec39a9c30e01",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/da50d8ac-d8cb-4857-a4cf-c8c41a8ebfd3?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - San Marino",
-    "country": "San Marino",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T07:00:55.267Z",
-    "sourceHash": "d3a122232c439201709081fd0031cc5c1daef1a5718f3125b1eeec39a9c30e01",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-d3a12223"
   },
   {
     "id": "c299a6314802a184e8be9e164fd3fbd6c4a5077c7834af2d500a88b3b7454303",
@@ -4919,25 +3969,6 @@
       "website": "https://materna.com"
     },
     "slug": "typescript-react-frontend-entwickler-m-w-d-materna-969e663f"
-  },
-  {
-    "id": "1eef8832e878ed866461cf7bb72469e7b95fa042e591d5c90da2c3725d1da3ba",
-    "title": "Frontend Software Engineer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/24dc8362-d212-4485-b703-17f9da101b0f?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nJob Description\n\nRole Title: Frontend Software Engineer\n\nRole Type: Contract\n\nLocation: Remote\n\nScope of Work:\n\n\nCreate high-quality technical documentation and structured examples based on real-world frontend engineering scenarios.\nApply your frontend engineering expertise to evaluate UI implementations, styling decisions, and best practices.\nInterpret component style guides and screenshots to produce accurate technical outputs and documentation.\nInterpret and translate component style guides and interface screenshots into precise, visually consistent UI deliverables.\nImplement pixel-perfect, responsive web components using modern technologies such as Typescript and CSS3.\nEnsure all UI elements adhere to established design systems and accessibility standards.\nCollaborate asynchronously through clear documentation and constructive feedback within a remote-first environment.\nProactively identify, communicate, and resolve inconsistencies or ambiguities in design specifications.\nOptimize UI performance across devices, focusing on fast load times and smooth interactions.\nContribute domain-specific expertise to guide the training and development of advanced AI models.\n\n\n\nPreferred Qualifications:\n\n\nMinimum of 3 years of professional experience delivering high-quality front-end solutions.\nProven proficiency with Typescript, CSS3, and responsive web design principles.\nDemonstrated success in building pixel-perfect interfaces from detailed visual references.\nExperience working with and extending component style guides and design systems.\nStrong English communication skills\nSelf-motivated and capable of delivering autonomously within distributed project environments.\nAdvanced degree (Master's or PhD) in Computer Science or a related technical discipline is a plus.",
-    "location": "Remote - Georgia",
-    "country": "Georgia",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-15T06:29:56.907Z",
-    "sourceHash": "1eef8832e878ed866461cf7bb72469e7b95fa042e591d5c90da2c3725d1da3ba",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-software-engineer-remote-yo-ai-labs-1eef8832"
   },
   {
     "id": "d470ccfd5af8dd3b2d5551aad2da189c20e2a5a438dc442e9dc28aa6feee71d0",
@@ -5662,25 +4693,6 @@
     "slug": "frontend-developer-weboraz-web-solutions-182f04ce"
   },
   {
-    "id": "b6a71249ace42fe879e81cbe11bb55ae5067c5ab80ed77b538f94499ce9ff09e",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/2c109740-a95a-4701-924a-64d926e17935?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-13T16:07:34.609Z",
-    "sourceHash": "b6a71249ace42fe879e81cbe11bb55ae5067c5ab80ed77b538f94499ce9ff09e",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-b6a71249"
-  },
-  {
     "id": "dd96e243d5415ea750486a97c80bc6a8870b38b4466129aa5eb5aee09f469302",
     "title": "Senior Staff Software Engineer, Frontend (Web Infra)",
     "applyUrl": "https://job-boards.greenhouse.io/affirm/jobs/7710976003?gh_src=689c81d53us",
@@ -5755,25 +4767,6 @@
       "website": "https://fetchjobsco.com"
     },
     "slug": "frontend-developer-fetchjobs-co-d40c113f"
-  },
-  {
-    "id": "d5c2099c7b9c5f52f253bbc48cef9a4d9629777270986ed90f17688c6df0188b",
-    "title": "Frontend Designer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/651029a1-8259-4d4b-9493-18292cb9bb72?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-11T16:18:28.938Z",
-    "sourceHash": "d5c2099c7b9c5f52f253bbc48cef9a4d9629777270986ed90f17688c6df0188b",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-designer-remote-yo-ai-labs-d5c2099c"
   },
   {
     "id": "e9d2cbfde25dde8f0f589d4d6452c18137913bc2ffdbbbbf266e8f5e6161103e",
@@ -8949,44 +7942,6 @@
     "slug": "frontend-engineer-react-next-js-remote-work-bairesdev-497c2ac1"
   },
   {
-    "id": "45f79190e35a9a32a0975069c39c10c92cc28e0e20163d5ff162d1328705d920",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/54d45a1d-b87d-4229-a095-e2969bdafda6?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-05T12:10:34.865Z",
-    "sourceHash": "45f79190e35a9a32a0975069c39c10c92cc28e0e20163d5ff162d1328705d920",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-45f79190"
-  },
-  {
-    "id": "7065004502b6919f442a35b17a08edb7855cee2ac62b16b94bceb94d8aa18999",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/3e54936a-3170-47d7-bf9f-17c0e7cd9063?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-05T12:08:58.603Z",
-    "sourceHash": "7065004502b6919f442a35b17a08edb7855cee2ac62b16b94bceb94d8aa18999",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-70650045"
-  },
-  {
     "id": "4b938645c62a30ae673fb981ffe96bc92a361f834e2fc77b789adfb1aae0bbbf",
     "title": "Frontend TypeScript Engineer (AI Training)",
     "applyUrl": "https://www.alignerr.com/jobs/2ee54f4b-4726-4a77-8055-d0327c365a64?referral-source=linkedin-job",
@@ -9023,25 +7978,6 @@
       "website": "https://fearless.com"
     },
     "slug": "front-end-engineer-consultant-engineering-technical-services-fearless-1b417055"
-  },
-  {
-    "id": "d40490972eb8a3e6df3a9a864cf4ca54091305aa52619876d5f3f9fc1b9f6faa",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/752cfc02-8341-4a13-8a1b-5a9ca491dad7?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-05T12:07:54.981Z",
-    "sourceHash": "d40490972eb8a3e6df3a9a864cf4ca54091305aa52619876d5f3f9fc1b9f6faa",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-d4049097"
   },
   {
     "id": "69ae66f15d462197fa6c78f651f58fde9b6b8188dcb3deb6b5d77e22e26b623d",
@@ -9251,25 +8187,6 @@
       "website": "https://virspatialtechnologies.com"
     },
     "slug": "senior-frontend-engineer-virspatial-technologies-86373dea"
-  },
-  {
-    "id": "bb19aa7ac569377e37b8f8e253774254611cbba43de9d2970d4b83de53d654fc",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/cc59c425-d2fa-45a0-a6ef-18b46a06ed44?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - San Marino",
-    "country": "San Marino",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-05T11:45:21.986Z",
-    "sourceHash": "bb19aa7ac569377e37b8f8e253774254611cbba43de9d2970d4b83de53d654fc",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-bb19aa7a"
   },
   {
     "id": "45adaf60a547bb4f1a9c294f5eb7d0d4e43720f1738137f760145df6ae65184a",
@@ -9899,25 +8816,6 @@
     "slug": "frontend-angular-developer-agilegrid-solutions-3b0ec125"
   },
   {
-    "id": "3e58a19acceee9c249fc00603753ccaa8b7d6fec5fc0e3fd2b0638545a125ee3",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/aa74f703-3307-40b1-9eab-b6df42d08948?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - Georgia",
-    "country": "Georgia",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-05T10:41:34.696Z",
-    "sourceHash": "3e58a19acceee9c249fc00603753ccaa8b7d6fec5fc0e3fd2b0638545a125ee3",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-3e58a19a"
-  },
-  {
     "id": "a4e6f894bfc4498b8257de891fcfdf593201b789c0c8d7798a4e3ce49fd541a5",
     "title": "Junior Frontend Developer",
     "applyUrl": "https://atorline.com/careers/junior-frontend-developer/",
@@ -10184,44 +9082,6 @@
     "slug": "senior-frontend-engineer-react-next-js-ai-remote-work-bairesdev-b58bfa88"
   },
   {
-    "id": "3b614dad9f21fe256c485961f5c4176af97c4bbb9477a9434450a30c220c3862",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/969d7542-f8c6-4a56-8561-e4fa58f7ae3d?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - Canada",
-    "country": "Canada",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-05T10:24:47.849Z",
-    "sourceHash": "3b614dad9f21fe256c485961f5c4176af97c4bbb9477a9434450a30c220c3862",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-3b614dad"
-  },
-  {
-    "id": "a342f2291d4cf8faa86e224eb31cc6f5b969786a2eeb6b3d889ecea2d5d9a9a1",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/4b8150a2-7326-4c55-ac3b-8b1b150d95af?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - Canada",
-    "country": "Canada",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-05T10:24:41.517Z",
-    "sourceHash": "a342f2291d4cf8faa86e224eb31cc6f5b969786a2eeb6b3d889ecea2d5d9a9a1",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-a342f229"
-  },
-  {
     "id": "dcbc7812f4ab567a19ff30a73a1903272102d7be7b15b59e7f9869424086586b",
     "title": "Principal Frontend Engineer",
     "applyUrl": "https://jobs.ashbyhq.com/clickup/920cfccb-7979-4aac-b15c-90270b151693/application?utm_source=OrAo48EPGZ",
@@ -10239,63 +9099,6 @@
       "website": "https://clickup.com"
     },
     "slug": "principal-frontend-engineer-clickup-dcbc7812"
-  },
-  {
-    "id": "c7fac406d12c336c2e6ee98e9af188923c53454751ff85227ae4785e87861b85",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/a7f2d30f-63c8-4f0c-81aa-6329fec6e65c?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - Canada",
-    "country": "Canada",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-05T10:24:18.724Z",
-    "sourceHash": "c7fac406d12c336c2e6ee98e9af188923c53454751ff85227ae4785e87861b85",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-c7fac406"
-  },
-  {
-    "id": "c6e484439fbfee5aac8492461e63087af955f286ee0716b02bc6914a5c52c85a",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/140d206a-f60f-485a-95f5-0fc50abb6afd?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - Canada",
-    "country": "Canada",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-05T10:24:12.419Z",
-    "sourceHash": "c6e484439fbfee5aac8492461e63087af955f286ee0716b02bc6914a5c52c85a",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-c6e48443"
-  },
-  {
-    "id": "d7898d02c8fc90261dcdd3c93853b72d2c9f3104b37004253651514198573b77",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/ed27b3dd-031e-4e7f-b48b-a99fb8acad31?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - Canada",
-    "country": "Canada",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-05T10:24:06.119Z",
-    "sourceHash": "d7898d02c8fc90261dcdd3c93853b72d2c9f3104b37004253651514198573b77",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-d7898d02"
   },
   {
     "id": "27d40933f523a5e1363874b20329dcba944092c011406f3759d3b00fbadc8d86",
