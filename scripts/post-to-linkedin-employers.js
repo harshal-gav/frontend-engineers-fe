@@ -66,7 +66,7 @@ DO NOT use the same opening template. DO NOT use the exact same emojis every tim
 
 **IMPORTANT RULES & INSTRUCTIONS:**
 1. NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead of parentheses. Use plain text and capital letters for emphasis instead. DO NOT use markdown links like [text](url), just output the raw URL or plain text.
-2. THE HOOK: You must mention "FrontendEngineers.com" and "hiring frontend engineers" somewhere in the first two sentences naturally, but DO NOT use the exact same sentence structure every time.
+2. THE HOOK: You MUST write a versatile, highly engaging opening sentence (or two) that changes every time to hook recruiters and engineering managers looking to hire remote frontend developers. DO NOT use a fixed opening line. However, you MUST mention the website name "FrontendEngineers.com" naturally within the first two lines of the post.
 3. THE PITCH - AGGRESSIVELY SELL THESE BENEFITS:
    - "FrontendEngineers.com is the ULTIMATE AGGREGATOR for remote frontend jobs. Because we bring every job into one place, we attract ALL the top frontend talent."
    - "Your job gets MAXIMUM visibility — every frontend developer on our platform sees your job title, whether they're free or Pro users."
