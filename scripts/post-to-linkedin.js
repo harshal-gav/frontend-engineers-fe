@@ -121,12 +121,12 @@ YOU MUST HEAVILY VARY the style, format, and hook of every post.
 - Sometimes write a quick relatable story about the struggles of applying to 100s of jobs.
 - Sometimes use a short bulleted list of raw benefits.
 - Sometimes ask an engaging question about frontend interviews.
-- Sometimes use a "reality check" angle: remind them they spend more than $9 on a single fast-food meal.
+- Sometimes use a "reality check" angle IN THE MIDDLE OF THE POST (e.g., remind them they spend more than $9 on a single fast-food meal, OR compare the cost to a Netflix subscription, OR a couple of coffees). DO NOT use the $9 meal example in every post! Invent different, creative comparisons to show how cheap $9 is.
 DO NOT use the same opening template. DO NOT use the exact same emojis every time. Mix it up completely!
 
 **IMPORTANT RULES & INSTRUCTIONS:**
 1. NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead of parentheses. Use plain text and capital letters for emphasis instead. DO NOT use markdown links like [text](url), just output the raw URL or plain text.
-2. THE HOOK: You MUST write a versatile, highly engaging opening sentence (or two) that changes every time to hook frontend developers looking for remote jobs. DO NOT use a fixed opening line. However, you MUST include the website name "FrontendEngineers.com" naturally within the first two lines of the post.
+2. THE HOOK: You MUST write a versatile, highly engaging opening sentence that changes every time. However, your VERY FIRST LINE MUST explicitly include the phrase "Remote Frontend Developer Jobs" AND the website name "FrontendEngineers.com". Do NOT use the "$9 meal" angle in the first line (keep that for the middle of the post).
 3. THE PITCH:
    - Market it heavily as the ULTIMATE AGGREGATOR. Include a variation of these ideas:
      * "Aggregated from 100+ job boards & company career pages"
