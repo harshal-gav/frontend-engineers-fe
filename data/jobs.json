@@ -1,5 +1,119 @@
 [
   {
+    "id": "3f7913e8e232148335bf6bd2afba5247c06c10b58ff82750b2524676683391be",
+    "title": "Staff Software Engineer, Front End Web UI Platform",
+    "applyUrl": "https://githubinc.jibeapply.com/jobs/5695?lang=en-us&iis=Job+Board&iisn=LinkedIn&lever-source=LinkedinPosting",
+    "description": "About the job\n\nAbout GitHub\n\nGitHub is the world’s leading platform for agentic software development — powered by Copilot to build, scale, and deliver secure software. Over 180 million developers, including more than 90% of the Fortune 100 companies, use GitHub to collaborate, and more than 77,000 organisations have adopted GitHub Copilot.\n\nLocations\n\nIn this role you can work from Remote, United States\n\nOverview\n\nGitHub's Core UX organization owns the frontend platform behind GitHub.com: the architecture, tooling, and standards that let hundreds of engineers ship UI that is fast, accessible, consistent, and reliable. We're looking for a Principal Software Engineer to set technical direction across that platform and raise the ceiling on what the frontend can do for millions of developers.\n\nThis is a systems role, not a single-team role. You'll work across the concerns that overlap in frontend at scale: performance, accessibility, UX consistency, and availability. Much of the work is evolving a large, actively developed codebase rather than starting from scratch, so success depends as much on migration strategy and cross-team alignment as on architecture. You'll shape paved paths that many teams adopt, not one-off solutions that rely on heroics.\n\nYou'll partner closely with other Principal and Staff engineers, Engineering Managers, and Product and Design leadership to decide where the platform goes next and to drive that direction to real, shipped outcomes.\n\nResponsibilities\n\n\nOwn the technical direction for GitHub's web UI platform across performance, accessibility, consistency, and availability, balancing long-term architecture with hands-on execution.\nDrive large cross-team initiatives and migrations, sequencing the work so the platform moves forward without disrupting active product development.\nEstablish patterns, standards, and paved paths for frontend development that lower cognitive load and scale across many teams.\nProduce architecture and design proposals, evaluate tradeoffs honestly, and build alignment across engineering, product, and design.\nMentor and raise the bar for engineers at every level through design review, code review, and pairing.\nRepresent frontend platform priorities to leadership, securing the support and resourcing needed to deliver.\n\n\nWhat Success Looks Like In The First 6 Months\n\n\nYou've built a deep working understanding of GitHub's frontend systems, infrastructure, and their backend dependencies, and you're using it to make informed, high-leverage decisions.\nYou're leading at least one platform-wide initiative that measurably improves performance, availability, frontend infrastructure, or developer velocity.\nTeams are adopting the patterns and paved paths you've shaped, with less need for direct hand-holding.\n\n\nQualifications\n\nRequired Qualifications\n\n\n\n\n9+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python\nOR Associate’s Degree in Computer Science, Electrical Engineering, Electronics Engineering, Math, Physics, Computer Engineering, Computer Science, or related field AND 8+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python.\nOR Bachelor's Degree in Computer Science or related field AND 7+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python.\nOR Master's Degree in Computer Science, Electrical Engineering, Electronics Engineering, Math, Physics, Computer Engineering, Computer Science, or related field AND 5+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python.\nOR Doctorate in Computer Science, Electrical Engineering, Electronics Engineering, Math, Physics, Computer Engineering, Computer Science, or related field AND 3+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python.\nOR equivalent experience.\n\nPreferred Qualifications\n\n\nDeep knowledge of React or Angular internals and server-side rendering, with experience modernizing frontend systems in large, multi-team codebases.\nTrack record of improving web performance (Core Web Vitals, interaction latency, bundle size) through systematic, data-driven work.\nExperience leading cross-team frontend migrations and rollouts, managing sequencing, deprecation, and incremental adoption across many engineers.\nStrong command of web platform and accessibility fundamentals (browser APIs, a11y standards, TypeScript, JavaScript, CSS) and how they interact with framework-level abstractions.\nExperience building design systems, shared component libraries, or paved-path tooling that many teams adopt.\n\n\nCompensation Range\n\nThe base salary range for this job is USD $140,400.00 - USD $372,300.00 /Yr.\n\nThese pay ranges are intended to cover roles based across the United States. An individual's base pay depends on various factors including geographical location and review of experience, knowledge, skills, abilities of the applicant. At GitHub certain roles are eligible for benefits and additional rewards, including annual bonus and stock. These rewards are allocated based on individual impact in role. In addition, certain roles also have the opportunity to earn sales incentives based on revenue or utilization, depending on the terms of the plan and the employee's role.\n\nThis position will be open for a minimum of 3 days, with applications accepted on an ongoing basis until the position is filled.\n\nGitHub values\n\n\nCustomer-obsessed\nShip to learn\nGrowth mindset\nOwn the outcome\nBetter together\nDiverse and inclusive\n\n\nManager fundamentals\n\n\nModel\nCoach\nCare\n\n\nLeadership principles\n\n\nCreate clarity\nGenerate energy\nDeliver success\n\n\nWho We Are\n\nGitHub is the world’s leading AI-powered developer platform with 150 million developers and counting. We’re also home to the biggest open-source community on earth (and 99% of the world’s software has open-source code in its DNA). Many of the apps and programs you use every day are built on GitHub.\n\nOur teams are dreamers, doers, and pioneers, leading the way in AI, driving humanitarian efforts around the globe, and even sending open source to Mars (and beyond!). At GitHub, our goal is to create the space you need to do your best work. We’re remote-first and offer competitive pay, generous learning and growth opportunities, and excellent benefits to support you, wherever you are—because we know that people flourish when they can work on their own terms.\n\nJoin us, and let’s change the world, together.\n\nEEO Statement\n\nGitHub is made up of people from a wide variety of backgrounds and lifestyles. We embrace diversity and invite applications from people of all walks of life. We don't discriminate against employees or applicants based on gender identity or expression, sexual orientation, race, religion, age, national origin, citizenship, disability, pregnancy status, veteran status, or any other differences. Also, if you have a disability, please let us know if there's any way we can make the interview process better for you; we're happy to accommodate!",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-25T04:55:58.297Z",
+    "sourceHash": "3f7913e8e232148335bf6bd2afba5247c06c10b58ff82750b2524676683391be",
+    "company": {
+      "id": "github",
+      "name": "GitHub",
+      "logoUrl": "https://logo.clearbit.com/github.com",
+      "industry": "Technology",
+      "website": "https://github.com"
+    },
+    "slug": "staff-software-engineer-front-end-web-ui-platform-github-3f7913e8"
+  },
+  {
+    "id": "3d2301906d92293b4d7df29a11b7a1ee14710430335e7d1f8775e962cfef0b65",
+    "title": "Frontend Developer",
+    "applyUrl": "https://haystack.cv/jobs/c9a65414-a868-41bb-a262-5bca88d06a20?src=4821",
+    "description": "About the job\n\nWe're hiring for a mission-driven organization dedicated to advancing medical education for healthcare professionals worldwide through innovative solutions and educational programs. This employer is committed to providing high-quality, cutting-edge content and fostering a collaborative, culture-first environment.\n\n\n\n\nThe Role\n\n• Migrate priority screens from legacy PHP to a modern React/Next.js stack, ensuring functional parity.\n\n• Make necessary PHP maintenance changes while under an active feature freeze.\n\n• Debug and resolve routing or behavior differences that arise after screen migration.\n\n• Utilize AI-assisted porting techniques to accelerate the migration process.\n\n• Collaborate closely with QA on parity testing for all migrated screens.\n\n• Contribute to building a supportive, culture-first technical organization.\n\n\n\n\nWhat You'll Need\n\n• Strong professional experience with React and Next.js.\n\n• Ability to read and safely modify PHP codebases.\n\n• Experience with AWS deployment pipelines and CloudWatch for debugging.\n\n• Familiarity with using AI coding assistants for code porting and migration.\n\n• A genuine team player with excellent communication and collaboration skills.\n\n• 3+ years of professional frontend engineering experience.\n\n\n\n\nWhat's On Offer\n\n• Competitive annual salary ($150,000 - $190,000) plus potential bonus.\n\n• Comprehensive benefits package including health, dental, vision, and 401K.\n\n• Generous holiday, vacation, and sick time.\n\n• Professional development and learning opportunities.\n\n\n\n\nApply via Haystack today!",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-25T04:55:36.148Z",
+    "sourceHash": "3d2301906d92293b4d7df29a11b7a1ee14710430335e7d1f8775e962cfef0b65",
+    "company": {
+      "id": "haystack",
+      "name": "Haystack",
+      "logoUrl": "https://logo.clearbit.com/haystack.com",
+      "industry": "Technology",
+      "website": "https://haystack.com"
+    },
+    "slug": "frontend-developer-haystack-3d230190"
+  },
+  {
+    "id": "71f5dd53a99fd5528bb6679b87ace6b8233efe99f2a22ed3dad2f061590f0229",
+    "title": "Front End Developer",
+    "applyUrl": "https://haystack.cv/jobs/8e9aff65-3102-417c-9e27-0bdc4cf71a05?src=6739",
+    "description": "About the job\n\nWe are working with a premier technology integrator providing full life cycle services and solutions in technical, engineering, intelligence, and enterprise information technology markets. This organization redefines ingenuity through deep customer and domain knowledge, enabling the delivery of systems engineering and integration offerings for large, complex projects for the U.S. federal government.\n\nThe Role\n\n\n Design, develop, and maintain front-end interfaces and visualization components.\n Collaborate with back-end and full-stack teams to deliver comprehensive solutions.\n Build and optimize CI/CD pipelines for efficient deployment.\n Ensure performance, security, scalability, and reliability across applications.\n Conduct code reviews and uphold engineering best practices.\n Support production systems and resolve technical issues.\n\n\nWhat You'll Need\n\n\n Active or Current TS/SCI clearance is required.\n Willingness and ability to obtain a polygraph.\n 2+ years of web design/development experience.\n Strong knowledge of HTML5, CSS3, TypeScript, and JavaScript.\n Experience with React, Angular, Vue, or similar frameworks.\n Bachelor's degree in Computer Science, GIS, Mathematics, or a STEM field.\n\n\nWhat's On Offer\n\n\n Opportunity to build next-generation visualization tools for critical missions.\n Collaborative environment across diverse teams.\n Impactful work on spatially driven data applications.\n Competitive annual salary between $160,001 and $200,000.\n\n\nApply via Haystack today!",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-25T04:54:59.523Z",
+    "sourceHash": "71f5dd53a99fd5528bb6679b87ace6b8233efe99f2a22ed3dad2f061590f0229",
+    "company": {
+      "id": "haystack",
+      "name": "Haystack",
+      "logoUrl": "https://logo.clearbit.com/haystack.com",
+      "industry": "Technology",
+      "website": "https://haystack.com"
+    },
+    "slug": "front-end-developer-haystack-71f5dd53"
+  },
+  {
+    "id": "8b303227a416b12cf1e170fd7180b99ece123172309ca41a4cc2b7b2775a2fb1",
+    "title": "Senior Frontend Developer - Remote Work | REF#297051",
+    "applyUrl": "https://applicants.bairesdev.com/job/289/297051/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml&__cf_chl_rt_tk=weJlt7kgkTsr9t_et9r.wdvz2aKy4h1BWhF2oS2ZNEo-1790310830-1.0.1.1-KNhCWPt8i7N9H40xkJq3J0xR51kdejY1rep2JL8PxrI",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\nAs a Senior Frontend Developer at BairesDev, you will architect and develop sophisticated web applications using modern JavaScript technologies. You'll lead frontend initiatives, mentor junior developers, and create high-performance, scalable user interfaces that deliver exceptional user experiences.\n\nWhat You'll Do\n\n\n Design and implement advanced, scalable frontend architectures using modern JavaScript frameworks and technologies.\n Lead technical design and architectural decisions for frontend solutions.\n Mentor junior developers and contribute to the team's frontend development best practices.\n Develop complex, high-performance web applications with optimized rendering and state management.\n Implement advanced state management and performance optimization techniques.\n Conduct comprehensive code reviews and ensure high-quality frontend development.\n\n\nWhat We Are Looking For\n\n\n 4+ years of experience with frontend JavaScript development.\n Strong expertise in modern JavaScript ecosystem and advanced frontend architecture.\n Proficiency in modern JavaScript frameworks (React, Vue, Angular) and ES6+ features.\n Experience with state management, performance optimization, and complex UI development.\n Advanced knowledge of web performance and optimization techniques.\n Advanced level of English.\n\n\nHow we do make your work (and your life) easier:\n\n\n 100% remote work (from anywhere).\n Excellent compensation in USD or your local currency if preferred\n Hardware and software setup for you to work from home.\n Flexible hours: create your own schedule.\n Paid parental leaves, vacations, and national holidays.\n Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\nJoin a global team where your unique talents can truly thrive and make a significant impact!\n\nApply now!",
+    "location": "Remote - Mexico",
+    "country": "Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-25T04:33:53.647Z",
+    "sourceHash": "8b303227a416b12cf1e170fd7180b99ece123172309ca41a4cc2b7b2775a2fb1",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "senior-frontend-developer-remote-work-ref-297051-bairesdev-8b303227"
+  },
+  {
+    "id": "c50660721e9ef83d0832130a60ef5e2cb0b6a1b3ddcf2631d21dcb8138ba5128",
+    "title": "Frontend Developer (f/m/d) - Angular 20",
+    "applyUrl": "https://join.com/companies/rhebo/16736355-frontend-developer-f-m-d-angular-20?pid=e65242534431eadcb0c9",
+    "description": "About the job\n\nDu hast Erfahrung im Frontend Development mit Angular und möchtest mehr, als einfach nur Anforderungen abzuarbeiten? Du bringst gerne eigene Ideen ein, diskutierst technische Lösungen im Team und übernimmst Verantwortung für guten Code?\n\n\n\n\nDann werde Teil von Rhebo und entwickle mit uns Lösungen für die Cybersicherheit und Anlagenverfügbarkeit kritischer Infrastrukturen.\n\n\n\n\nDu hast eine klare Haltung zu gutem Frontend Development und scheust Dich nicht, diese im Team zu vertreten. Code Reviews gehören für Dich genauso dazu wie der Austausch darüber, warum eine Lösung technisch sinnvoll ist.\n\n\n\n\nAufgaben\n\n\n\n\n\nDu konzipierst und entwickelst neue Produktfeatures gemeinsam mit dem Development Team und unserem Produktmanagement.\n\n\nDu entwickelst unser Frontend mit unserem aktuellen Stack aus Angular 20, Tailwind CSS und RxJS weiter.\n\n\nDu reviewst Frontend Code und achtest auf saubere, nachvollziehbare und langfristig wartbare Lösungen.\n\n\nDu bringst Deine Ideen zu Frontend Architektur, Standards und Best Practices ein und diskutierst technische Entscheidungen im Team.\n\n\nDu entwickelst interne Tools weiter und gestaltest unsere Entwicklungsprozesse mit.\n\n\n\n\n\n\n\n\n\nQualifikation\n\n\n\n\nUns ist wichtiger, dass Du Dein Handwerk verstehst, als dass Du hinter jede einzelne Technologie einen Haken setzen kannst.\n\n\n\n\n\nDu bringst fundierte praktische Erfahrung mit Angular, idealerweise mit aktuellen Angular Versionen, mit.\n\n\nDu hast Erfahrung mit RxJS und reaktiver Programmierung.\n\n\nDu kennst Dich mit modernen CSS Lösungen aus, idealerweise mit Tailwind CSS.\n\n\nDu hast ein gutes Verständnis für Frontend Architektur, Clean Code und wartbare Software.\n\n\nDu hast Erfahrung mit Code Reviews und Freude am fachlichen Austausch mit anderen Entwicklern.\n\n\nDu kannst technische Entscheidungen erklären, begründen und konstruktiv im Team vertreten.\n\n\nDu verfügst über sehr gute Englischkenntnisse, da die Kommunikation in unserem Development Team überwiegend auf Englisch stattfindet.\n\n\n\n\n\n\n\n\n\nBenefits\n\n\n\n\n\nBewegen statt reden: Bei uns arbeitest Du partnerschaftlich, mit Start-up-Mentalität, viel Eigenverantwortung und offenen Türen – und das von Anfang an.\n\n\nDer Arbeitsplatz, der zu Dir passt: 30 Tage Urlaub, Zuschuss zum Jobticket, betriebliche Altersvorsorge und Kinderbetreuungszuschuss sowie flexibles Arbeiten mit moderner Software und Hardware. Stell Dir Dein Paket so zusammen, wie es zu Dir passt.\n\n\nIndividuelle Entwicklung: Eine umfassende Einarbeitung, regelmäßiges Feedback und Weiterbildungen, die zu Deinen Bedürfnissen passen, inklusive freier Trainingstage – während Deiner gesamten Zeit bei Rhebo.\n\n\n\n\n\n\n\n\n\nKlingt nach Dir?\n\n\n\n\nDann freuen wir uns darauf, Dich kennenzulernen!\n\n\n\n\nSchick uns Deinen Lebenslauf mit Deiner Gehaltsvorstellung und Deinem frühestmöglichen Starttermin.\n\n\n\n\nDu erfüllst nicht jeden Punkt, findest Dich aber in der Rolle wieder? Dann bewirb Dich trotzdem. Für uns zählt nicht die perfekte Checkliste, sondern Deine Erfahrung, Deine fachliche Perspektive und die Lust, Dich bei Rhebo einzubringen.\n\n\n\nDesired Skills and Experience\n\nRxJS Frontend Development TypeScript UI UX Angular 20",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-25T04:18:26.244Z",
+    "sourceHash": "c50660721e9ef83d0832130a60ef5e2cb0b6a1b3ddcf2631d21dcb8138ba5128",
+    "company": {
+      "id": "rhebootiiotsecurity",
+      "name": "Rhebo OT & IIoT Security",
+      "logoUrl": "https://logo.clearbit.com/rhebootiiotsecurity.com",
+      "industry": "Technology",
+      "website": "https://rhebootiiotsecurity.com"
+    },
+    "slug": "frontend-developer-f-m-d-angular-20-rhebo-ot-iiot-security-c5066072"
+  },
+  {
+    "id": "b71fc0acbb7418372cdca98033ef7ece31608f5e801e5bfc41e751d96404a3f2",
+    "title": "Senior Frontend Developer",
+    "applyUrl": "https://ihorizons.applytojob.com/apply/lGW8XJ7s2a/Senior-Frontend-Developer?source=LILI",
+    "description": "About the job\n\nThis is a Full Time Fully Remote Job,\n\nJob Responsibilities\n\n\nDesign and Development\nDefine the structure and design of web pages\nDevelop and implementing user-friendly interfaces using HTML, CSS, and JavaScript for webpages\nDevelop the best UI/UX elements/practices for both desktop and mobile view\nDevelop the light-optimized markups based on UI/UX team output\nOptimize and improve front-end and web performance\nEnsure cross-browser and cross-device compatibility\nFollow SEO best practices in term of HTML and meta tags structure\nFollow accessibility and usability standards while ensuring that Mada requirements are well covered\n\n\nMaintenance\n\n\n Testing and debugging code to identify and fix issues\nAnalyze website performance by tracking key metrics and proactively resolving issues\nOptimize websites and applications for maximum speed and scalability\nMaintain brand consistency throughout the design\nCollaborate with designers to translate visual designs into code\nCollaborate with QA/QC team to fix the reported UI issues\n\n\nCollaborate with Backend developers to represent the data coming from backend API’s and integrate front-end code with server-side logic.\n\nJob Requirements\n\n\nBachelor's degree in Computer Science or a related field\nOverall 1 to 3 years’ experience using JavaScript, CSS and jQuery\nExcellent knowledge of browser troubleshooting and debugging practices and techniques\nStrong knowledge of CSS – Bootstrap\n Excellent English Skills\n\n\nPowered by JazzHR\n\nlGW8XJ7s2a",
+    "location": "Remote - Egypt",
+    "country": "Egypt",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-25T04:15:16.397Z",
+    "sourceHash": "b71fc0acbb7418372cdca98033ef7ece31608f5e801e5bfc41e751d96404a3f2",
+    "company": {
+      "id": "ihorizons",
+      "name": "iHorizons",
+      "logoUrl": "https://logo.clearbit.com/ihorizons.com",
+      "industry": "Technology",
+      "website": "https://ihorizons.com"
+    },
+    "slug": "senior-frontend-developer-ihorizons-b71fc0ac"
+  },
+  {
     "id": "912d51730d0f3d3b759b319efc6ee9f86e3c1f12a8364f6aa2bfe27132f7f4d8",
     "title": "Senior Software Engineer, Frontend (App Experience)",
     "applyUrl": "https://www.theladders.com/linkedin/88489697?src=LinkedIn",
