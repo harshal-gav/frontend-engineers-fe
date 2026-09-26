@@ -1,5 +1,209 @@
 [
   {
+    "id": "4b1dddc306e4e8ce8dd9f04b0f431e81f024e2baa9d44f544b98874f0c1613af",
+    "title": "Frontend Designer - Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/e07d5771-86bc-4fd8-9c93-b62033a301e1?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-26T16:43:07.414Z",
+    "sourceHash": "4b1dddc306e4e8ce8dd9f04b0f431e81f024e2baa9d44f544b98874f0c1613af",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-designer-remote-yo-ai-labs-4b1dddc3",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "figma",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2b97a50935b311a2c1a2947b22b8ee8eb005ed6df6b5661cf983764e7dadd891",
+    "title": "UI/UX & Frontend Developer",
+    "applyUrl": "https://haystack.cv/jobs/21167c37-59c7-4346-b82d-b3eefa2726ba?src=6739",
+    "description": "About the job\n\nA leading technology firm dedicated to delivering innovative solutions for government agencies is seeking a talented professional to enhance digital user experiences. This is an opportunity to contribute to high-impact projects that require an active Top Secret clearance and offer the chance to work on cutting-edge interfaces.\n\nThe Role\n\n\n Develop wireframes, prototypes, and user flows to align functionality with user needs\n Create and maintain style guides, pattern libraries, and reusable design artifacts for consistency\n Conduct user needs research, gather feedback, and refine design decisions to improve user experiences\n Ensure all designs and front-end implementations meet 508 accessibility regulations and FBI design standards\n Build responsive and accessible user interfaces using modern front-end frameworks like JavaScript/TypeScript and React\n Collaborate with backend developers to integrate UI components with API capabilities and system functionality\n\n\nWhat You'll Need\n\n\n 5+ years of professional experience in UI/UX design and frontend development\n Expertise in prototyping tools such as Figma, Adobe XD, or similar\n Proficiency with modern frontend frameworks, including React and JavaScript/TypeScript, HTML5, and CSS3\n Comprehensive understanding of web accessibility standards, 508 compliance, responsive design, and design systems\n Ability to create and maintain scalable and reusable design system components\n Active Top Secret Security Clearance\n\n\nWhat's On Offer\n\n\n Medical, Dental, and Vision Insurance; Wellness Program\n 401(k) Retirement Savings Plan with matching after one year\n Paid Time Off\n\n\nApply via Haystack today!",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-26T16:42:36.606Z",
+    "sourceHash": "2b97a50935b311a2c1a2947b22b8ee8eb005ed6df6b5661cf983764e7dadd891",
+    "company": {
+      "id": "haystack",
+      "name": "Haystack",
+      "logoUrl": "https://logo.clearbit.com/haystack.com",
+      "industry": "Technology",
+      "website": "https://haystack.com"
+    },
+    "slug": "ui-ux-frontend-developer-haystack-2b97a509",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "figma",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f6268d626c0526ec5ba497b7e436dc94679f86ad8d2ec8c22277916af27cff2f",
+    "title": "Frontend Engineer II - Remote",
+    "applyUrl": "https://www.torentify.com/jobs/6ab7d7d38f8eefb2b35d77c7",
+    "description": "About the job\n\n\n\n\nAbout the Company\n\n\n\n\n\n\n\nJob DescriptionGreenlight is a family technology company on a mission to help families raise financially smart kids and navigate life together. Its suite of products — including the Greenlight app, debit card, Safe Family GPS trackers, and Family Hub — brings together financial tools, safety features, and everyday family management in one connected experience. Designed for busy families who want convenience without compromise, Greenlight continues to innovate alongside the evolving needs of modern life. Today, more than 6.5 million family members trust Greenlight to stay in sync.At Greenlight, we're here to make the day-to-day easier and futures brighter, so families can spend less time managing life, and more time living it. That's why we get out of bed every morning.\n\n\n\n\n\n\n\nAbout the Role\n\n\n\n\n\n\n\nWe are looking for a Software Engineer II, Frontend with a background in web development to join our Web Platform and Family Hub team. Our ideal candidate has a background in NextJS web application development, understands application design and development but also wants to participate in the deployment and operational phases of the SDLC. This role reports to the Director, Engineering.\n\n\n\n\n\n\n\nResponsibilities\n\n\n\n\n\n\n\nTechnologies we use:\n\n\n\n\n\n\n\nFrontend: React, Next.js, TypeScript, Tailwind CSS, Modern build tools (Turborepo, etc.), Testing (Cypress, React Testing Library, Jest).\nBackend & Infrastructure: Node.js, Express, TypeScript/Kotlin, REST APIs, AWS\n\n\n\n\n\n\n\nYour day-to-day:\n\n\n\n\n\n\n\nLead the design and implementation of groundbreaking web experiences, translating mobile features to the web with world-class UX.\nDrive technical strategy, define engineering standards/best practices, mentor engineers, and establish the technical vision for the web platform.\nManage technical debt, champion code quality, and lead architectural evolution.\n\n\n\n\n\n\n\nQualifications\n\n\n\n\n\n\n\nBS in Computer Science or equivalent\n\n\n\n\n\n\n\nRequired Skills\n\n\n\n\n\n\n\nWhat you’ll bring to the team:\n\n\n\n\n\n\n\n3+ years of software development experience with a track record of technical leadership\nExpertise in React/Next.js/Remix, experience with modern build tools, testing, and CI/CD.\n\n\n\n\n\n\n\nPreferred Skills\n\n\n\n\n\n\n\nNot sure this one’s for you? Don’t count yourself out. Show us what you’ve got and we’ll reach out if there’s a great fit.\n\n\n\n\n\n\n\nPay range and compensation package\n\n\n\n\n\n\n\nWork perks at Greenlight:\n\n\n\n\n\n\n\nMedical, dental, vision, and HSA match\nPaid life insurance, AD&D, and disability benefits\nTraditional 401k with company match\nUnlimited PTO\nPaid company holidays and pop-up bonus holidays\nProfessional development stipends\nMental health resources\n1:1 financial planners\nFertility healthcare\n100% paid parental and caregiving leave, plus cleaning service and meals during your leave\nFlexible WFH, both remote and in-office opportunities\nFully stocked kitchen, catered lunches, and occasional in-office happy hours\nEmployee resource groups\n\n\n\n\n\n\n\nOur stance on salaries:\n\n\n\n\n\n\n\nGreenlight provides a competitive compensation package with a market-based approach to pay and will vary depending on your location, experience and skill set. The total compensation package for this position will also include a discretionary performance bonus, equity rewards, medical benefits, 401K match, and more. Greenlight conducts continuous compensation evaluations across departments and geographies to ensure we are keeping our pay current and competitive.\n\n\n\n\n\n\n\nThe estimated base pay range for this position in (NY, CA, WA): $122,000- 170,000\nThe estimated base pay range for this position in (CO): $122,000- 145,000\n\n\n\n\n\n\n\nEqual Opportunity Statement\n\n\n\n\n\n\n\nIt takes a talented team to aim for a mission like ours. We're looking for people who ask \"is it bold enough?\" People who bring their real selves to the table and push the people around them to do the same. We win by never hesitating to jump in, offer a hand, or share the credit, because we know we're stronger together than apart. And through all of it, the mission stays the thing we measure ourselves against: are we doing right by the families counting on us? If that sounds like your kind of team, we'd love for you to apply.\n\n\n\n\n\n\n\nGreenlight is an equal opportunity employer and will not discriminate against any employee or applicant based on age, race, color, national origin, gender, gender identity or expression, sexual orientation, religion, physical or mental disability, medical condition (including pregnancy, childbirth, or a medical condition related to pregnancy or childbirth), genetic information, marital status, veteran status, or any other characteristic protected by federal, state or local law.\n\n\n\n\n\n\n\nGreenlight is committed to an inclusive work environment and interview experience. If you require reasonable accommodations to participate in our hiring process, please reach out to your recruiter directly or email [email protected] . We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.\n\n\n\n\n\n\n\nSuggested Jobs\n\n\n\n\n\n\n\nStrategic Tech Content Portfolio Lead Pearson USD",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-26T16:41:44.786Z",
+    "sourceHash": "f6268d626c0526ec5ba497b7e436dc94679f86ad8d2ec8c22277916af27cff2f",
+    "company": {
+      "id": "torentify",
+      "name": "Torentify",
+      "logoUrl": "https://logo.clearbit.com/torentify.com",
+      "industry": "Technology",
+      "website": "https://torentify.com"
+    },
+    "slug": "frontend-engineer-ii-remote-torentify-f6268d62",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "tailwind",
+        "less",
+        "cypress",
+        "jest",
+        "remix"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2ee0aadd0dbdcab4cf22ee2b4ce028281b58ad175220eb02fea5937bcdb6720c",
+    "title": "Staff Frontend Engineer",
+    "applyUrl": "https://jobs.ashbyhq.com/clickup/b6c0a31b-83b6-43f6-8e50-0d91dda7c767/application?utm_source=OrAo48EPGZ",
+    "description": "About the job\n\nAt ClickUp, we're building the future of work: the first truly converged AI workspace unifying tasks, docs, chat, calendar, and enterprise search, all supercharged by context-driven AI. We are an AI-native company. Every team member is expected to leverage AI daily, and we evaluate AI fluency as part of our hiring process. Join us and help redefine what's possible. 🚀\n\nRole Overview\n\nWe’re looking for a Staff Frontend Engineer to lead the design and development of major frontend systems and product initiatives at ClickUp. You’ll work across teams to solve complex technical challenges, improve engineering velocity, and help shape the direction of our frontend architecture. This role is for someone who thrives in fast-paced environments, drives clarity in ambiguity, and can influence both technical decisions and execution across the organization.\n\nWhat You’ll Do\n\n\nLead development of complex product features and frontend systems in Angular and React. \nPartner with backend, integrations, product, design, and QA to deliver high-quality user experiences at speed\nArchitect scalable, reusable frontend patterns that improve product quality and developer velocity\nIdentify and address performance bottlenecks, UI architecture issues, and scalability risks\nDrive engineering best practices across testing, observability, code quality, and maintainability\nHelp teams make strong technical decisions under tight timelines and evolving priorities\nOwn delivery across large initiatives, balancing immediate product needs with long-term technical health\nMentor engineers and elevate frontend craftsmanship across the team\nContribute to improving how frontend engineers work together across domains\n\n\nQualifications\n\n\n7+ years of frontend engineering experience, with deep expertise in Angular and React\nStrong command of TypeScript, RxJS, NgRx, and modern frontend architecture patterns\nExperience building reusable component systems and scalable frontend application structures\nDeep knowledge of performance optimization, debugging, and building for large-scale web applications\nStrong product sense and ability to work cross-functionally in a fast-moving company\nDemonstrated success leading major technical initiatives and influencing across teams\nStrong mentorship skills and a track record of leveling up other engineers\nExcellent communication and execution skills, especially in high-urgency environments\nStrong experience with unit, integration and end 2 end testing using jest, vilest, playwright or related frameworks and ability to come up with testing strategies. \n\n\nEqual Opportunity Employer \n\nClickUp is an Equal Opportunity Employer, and qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, or national origin.\n\nPrivacy Notice\n\nClickUp collects and processes personal data in accordance with applicable data protection laws. You can find further details by viewing our Global Candidate Privacy Notice.\n\nIf you are a Philippine Job Applicant, please also see our Philippine Data Privacy Notice for further details.\n\nVisa Sponsorship\n\nPlease note we are unable to sponsor or take over sponsorship of an employment visa for roles outside of engineering and product at this time. Sponsorship for engineering and product roles is not guaranteed, but is instead based on the business needs for that specific role at that time. Please reach out to the recruiter with any questions.\n\nFraud Alert\n\nClickUp Talent Acquisition will only initiate contact via an @clickup.com email or through our official careers portal on clickup.com. We will never request fees, payments, or sensitive personal information. Please disregard any offers received outside these channels and report them to support@clickup.com.\n\nAI Processing Notice\n\nClickUp may use artificial intelligence and machine learning technologies to help review and screen candidates' employment applications against role-related criteria. These tools support, but do not replace, human decision‑making. If you have questions or need an accommodation in the recruitment process, please contact us at AskPeople@ClickUp.com.\n\nCompensation Range: $200K - $250K",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-26T16:41:25.444Z",
+    "sourceHash": "2ee0aadd0dbdcab4cf22ee2b4ce028281b58ad175220eb02fea5937bcdb6720c",
+    "company": {
+      "id": "clickup",
+      "name": "ClickUp",
+      "logoUrl": "https://logo.clearbit.com/clickup.com",
+      "industry": "Technology",
+      "website": "https://clickup.com"
+    },
+    "slug": "staff-frontend-engineer-clickup-2ee0aadd",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "jest",
+        "playwright"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "fb63a96562e4741d3af3f0f6457cce0f936f18f4a573e1fdb91b5c8076aa5cdb",
+    "title": "Frontend Engineer, Sr. (Remote)",
+    "applyUrl": "https://www.torentify.com/jobs/6ab7d8c68f8eefb2b35d96bb",
+    "description": "About the job\n\n\n\n\nAbout the Company\n\n\n\n\nThis role is remote, with one required visit to your designated home office - 3 days per Quarter Remote option is available for employees located in the following states; AZ, CO, CT, FL, GA, IA, IL, IN, LA, MA, MD, MI, MS, MT, NC, NJ, NV, NY, OH, OR, PA, SC, TX, TN, WA, WV, and Washington D.C. ( States subject to change at any time ) Home Office: Jersey City, NJ Client is leading the pack by delivering products their customers love to use! Client operates sports betting in 18 U.S. jurisdictions and has partnerships with the biggest leagues and media companies in the country including, the NFL, MLB, NBA, NHL, ESPN, and CBS Sports. Marking a major milestone in American sports history, Client opened the first-ever sports betting venue within a professional United States sports facility at the Capital One Arena in Washington D.C. Partnerships like this are positioning Client's business to skyrocket as sports betting continues to expand across the country and our customers get a taste of the action. On the Technology side, Client has built an entire sports betting and iGaming platform from the ground up in less than 3 years. Through continuous improvement and data-informed product development, Client is adding features so that their customers have the best product experience in the market. Client's Product Technology team is comprised of the brightest minds in Tech, and their culture of autonomy and decisiveness gives the team the freedom to deliver without constantly seeking permission to take action. Client is charting their own path and innovate as we create the next generation of products. Client is looking for like-minded superstars that want to work with the best of the best and join the biggest name in sports betting and iGaming as they take over the U.S. market!\n\n\n\n\nAbout the Role\n\n\n\n\nThis role will focus on collaborating with cross-functional teams to build high-performance user interfaces using modern web technologies, turning UI/UX designs into functional components, and contributing to the overall product lifecycle and engineering culture.\n\n\n\n\nResponsibilities\n\n\n\n\nWhat You Will Do:\nCollaborate closely with Product, Design, and QA to iterate on the life-cycle of our product\nTurn flat UI/UX designs and style guides into functional user interfaces\nBuild extremely performance components, while being mindful of cross-browser compatibility and performance issues for both desktop and mobile platforms\nOptimization is a challenge you’ll gladly accept\nUnderstand design patterns and write reusable, modular code\nBe excited about new web technologies/techniques\nParticipate in peer code reviews, we encourage frequent and open feedback\nHave a say by contributing to architectural discussions\nParticipate in daily stand-up, sprint planning, paired programming, unit testing, and retrospectives\nYou will improve the team, company, and culture\n\n\n\n\n\n\n\nQualifications\n\n\n\n\n3+ years of applicable industry experience\n\n\n\n\nRequired Skills\n\n\n\n\nWhat You Will Need:\nThorough understanding of React.js, its core principles, patterns, and best practices\nStrong proficiency in everything JavaScript related (Cordova experience a huge plus)\nAbility to understand business requirements and translate them into technical requirements\nDemonstrate a solid understanding of core engineering principles\nFamiliarity with modern software engineering practices and continuous integration and delivery\nComfortable working in a tech-driven environment with the ability to coordinate across several key stakeholder groups\nExperience leading and owning projects from beginning to end\nEnthusiasm for constant learning and strengthening of your craft\nYou are detailed and results-oriented with excellent problem-solving skills\n\n\n\n\n\n\n\nPreferred Skills\n\n\n\n\nCordova experience a huge plus\n\n\n\n\nPay range and compensation package\n\n\n\n\nNot specified.\n\n\n\n\nEqual Opportunity Statement\n\n\n\n\nNot specified.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-26T16:41:13.409Z",
+    "sourceHash": "fb63a96562e4741d3af3f0f6457cce0f936f18f4a573e1fdb91b5c8076aa5cdb",
+    "company": {
+      "id": "torentify",
+      "name": "Torentify",
+      "logoUrl": "https://logo.clearbit.com/torentify.com",
+      "industry": "Technology",
+      "website": "https://torentify.com"
+    },
+    "slug": "frontend-engineer-sr-remote-torentify-fb63a965",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "less"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4c4de7bd6505c3979f0dfd4b3c3faaca88a9b6e31df5501a7c21f45b22812a48",
+    "title": "Frontend-GUI-Entwickler INTERN m/w/d",
+    "applyUrl": "https://hirly.me/jobs/frontend-gui-entwickler-intern-m-w-d-at-sipas-it-consulting-schwandt-jurgen-schw-7248766d-e2d8-4b93-aeb1-96dfed24211d",
+    "description": "About the job\n\nIm Rahmen einer Direkt-/Personalvermittlung suchen wir für einen Kunden aus dem südlichen Raum Stuttgart einen Senior Frontend-GUI-Entwickler m/w/d zur unbefristeten Festanstellung zum nächstmöglichen Zeitpunkt. Der Kunde ist ein IT-Beratungshaus mit einer über 25-jährigen Tradition – sehr stabil und modern oder kurz: toller Arbeitgeber, tolle Perspektiven - hoher Homeoffice-Anteil.\n\nEs wird intern ein Produkt entwickelt – KEINE externen Projekte/Einsätze!!\n\nWorum geht´s?\n\nDer Kunde entwickelt eine innovative KI-Anwendung im Bildungsbereich (*internes* Projekt des IT-Beratungshauses, keine Kundeneinsätze) und sucht dringend Verstärkung für die visuelle und interaktive Umsetzung. Das Ziel ist es, komplexe KI-Funktionen in eine intuitive, erstklassige Benutzeroberfläche zu gießen – zunächst auf Browser-Ebene (Web-GUI), gefolgt von den mobilen Oberflächen für Android und iOS.\n\n*Aufgaben: *\n\n\nGUI-Entwicklung: Sie gestalten und implementieren die Benutzeroberflächen (Web-UI) für eine neuartige KI-Anwendung direkt auf Browser-Ebene\nInteraktive Features: Sie entwickeln dynamische, reaktive und benutzerfreundliche GUI-Komponenten, die die Interaktion mit der KI (z. B. Prompts, Dashboards, Datenvisualisierungen) flüssig erlebbar machen\nResponsive Design: Sie stellen sicher, dass die Oberflächen plattformübergreifend perfekt aussehen und bereiten das GUI-Konzept für die spätere Übertragung auf Mobile (Android & iOS) vor\nEnge Abstimmung: Sie arbeiten eng mit dem Backend-Team zusammen, um die GUI nahtlos an die bestehende Logik anzubinden\n\n\nSie Bringen Mit\n\n\nGUI-Schwerpunkt mit React: Sie sind Profi in der Erstellung moderner Benutzeroberflächen mit React\nFramework- & Backend-Verständnis: Da das System auf Django (Python) basiert und Schnittstellen zu C# oder PHP nutzt, bringen Sie solide Programmierkenntnisse in diesen Bereichen mit, um die GUI perfekt in diese Umgebungen zu integrieren\nKI-Verständnis: Sie haben ein Gespür dafür, wie KI-Features (z. B. Chat-Interfaces, Streaming-Antworten) visuell ansprechend für den Nutzer aufbereitet werden müssen\nSehr gute Deutsch (B2-C1) und Englischkenntnisse\n\n\nWünschenswert\n\n\nErfahrung im Design von Mobile-UIs oder Kenntnisse in React Native (ideal für die anstehende Android-/iOS-Phase)\nEin gutes Auge für UX/UI-Design und Prototyping.\n\n\nInfo´s\n\n\nSpannende Projekte im Bereich der künstlichen Intelligenz\nSpannende Produktentwicklung mit modernem Tech-Stack und echtem Gestaltungsspielraum\nFlexible Arbeitszeiten und Remote-/ Vor Ort\nAttraktives Gehaltspaket\nWeiterbildungsbudget, Konferenzen und moderne Infrastruktur\nModerne Hardware, flache Hierarchien und ein motiviertes Team\nWeitere Benefits – z. B. Altersvorsorge, Gesundheitsangebote, Team-Events\n\n\nZu weiterführenden Fragen bitte einfach anrufen: 07641 – 93 23 26 oder 0170 – 310 96 83, ich bin (fast) stets erreichbar und würde sehr rasch zurückrufen...\n\nHerzliche Grüße\n\nSIPAS IT-Consulting\n\nJürgen Schwandt\n\nPersonalcoach\n\nWolfsackerstraße 7\n\nD-79276 Reute\n\nTel: 07641 – 93 23 26\n\nMobil: 0170 – 310 96 83\n\nEmail: J.Schwandt@sipas.de\n\nInternet: www.sipas.de",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-26T16:13:49.339Z",
+    "sourceHash": "4c4de7bd6505c3979f0dfd4b3c3faaca88a9b6e31df5501a7c21f45b22812a48",
+    "company": {
+      "id": "hirly",
+      "name": "Hirly",
+      "logoUrl": "https://logo.clearbit.com/hirly.com",
+      "industry": "Technology",
+      "website": "https://hirly.com"
+    },
+    "slug": "frontend-gui-entwickler-intern-m-w-d-hirly-4c4de7bd",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "mid",
+      "employmentType": "internship"
+    }
+  },
+  {
     "id": "6d8c55c10a45ad1ff714f96f47afcdc92aac79c671b4e58cb28f05c58bd4dac8",
     "title": "Frontend Developer | $65/hr Remote",
     "applyUrl": "https://candidateportal.ceipal.com/job-details/jx6Hjn0t-x26LZJPNLE2hPDXAWP-4fU9ekgZ0Edjpqc#.job_boards.LinkedIn",
