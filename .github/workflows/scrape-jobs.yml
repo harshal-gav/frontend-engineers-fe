@@ -40,6 +40,11 @@ jobs:
         # Run with xvfb since the scraper requires headless: false (headed mode)
         run: xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" bash scripts/run-scraper-loop.sh
       
+      - name: Enrich New Jobs with AI
+        run: node scripts/enrich-jobs-ai.js
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      
       - name: Commit and push changes
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"

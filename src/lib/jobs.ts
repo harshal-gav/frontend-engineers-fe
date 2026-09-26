@@ -8,6 +8,14 @@ export interface JobCompany {
   website: string | null;
 }
 
+export interface AiTags {
+  stack: string[];
+  remoteScope: 'GLOBAL' | 'REGION' | 'COUNTRY';
+  eligibleRegions: string[];
+  seniority: 'junior' | 'mid' | 'senior' | 'lead' | 'principal' | 'manager';
+  employmentType: 'fulltime' | 'contract' | 'parttime' | 'b2b' | 'internship';
+}
+
 export interface Job {
   id: string;
   title: string;
@@ -19,6 +27,8 @@ export interface Job {
   sourceHash: string;
   applyUrl: string;
   company: JobCompany;
+  // AI-extracted structured tags for advanced filtering
+  aiTags?: AiTags;
   // Added by dead-job detection (Feature 6)
   isDead?: boolean;
   deadAt?: string | null;

@@ -171,7 +171,7 @@ export default async function HomePage() {
                 ⭐ Get Pro - $9/month
               </Link>
               <p className="text-xs text-gray-600 font-medium px-4 text-center">
-                Search hundreds of jobs • Advanced filters • Full descriptions • Direct apply links • Daily alerts
+                Search hundreds of jobs • AI-Powered Advanced Filters (Tech Stack, Remote, Seniority) • Saved Presets • Daily alerts
               </p>
             </div>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">

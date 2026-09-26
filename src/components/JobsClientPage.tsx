@@ -11,6 +11,7 @@ import JobCard from "@/components/JobCard";
 import FilterSidebar, {
   createDefaultFilters,
   type FilterState,
+  type SavedPreset,
 } from "@/components/FilterSidebar";
 import BottomSheet from "@/components/BottomSheet";
 import UpgradeModal, { type UpgradeContext } from "@/components/UpgradeModal";
@@ -114,6 +115,7 @@ export default function JobsClientPage() {
   const [showFilters, setShowFilters] = useState(false);
   const [upgradeModalContext, setUpgradeModalContext] = useState<UpgradeContext | null>(null);
   const [savedJobIds, setSavedJobIds] = useState<string[]>([]);
+  const [savedPresets, setSavedPresets] = useState<SavedPreset[]>([]);
 
   // Sync state with URL when searchParams change (e.g. back navigation)
   useEffect(() => {
@@ -137,12 +139,15 @@ export default function JobsClientPage() {
           const token = await user.getIdToken();
           headers.Authorization = `Bearer ${token}`;
           
-          // Fetch user preferences for saved jobs
+          // Fetch user preferences for saved jobs and presets
           fetch("/api/user/preferences", { headers })
             .then(res => res.json())
             .then(prefs => {
               if (prefs && prefs.saved_jobs) {
                 setSavedJobIds(prefs.saved_jobs);
+              }
+              if (prefs && prefs.filter_presets) {
+                setSavedPresets(prefs.filter_presets);
               }
             })
             .catch(console.error);
@@ -230,11 +235,16 @@ export default function JobsClientPage() {
       });
     }
 
-    // Framework filter (searches title + description)
+    // Framework filter — use AI tags if available, fallback to text search
     if (filters.framework.length > 0) {
       filtered = filtered.filter((j) => {
-        const text =
-          `${j.title} ${j.description || ""}`.toLowerCase();
+        if (j.aiTags?.stack && j.aiTags.stack.length > 0) {
+          return filters.framework.some((fw) =>
+            j.aiTags!.stack.includes(fw)
+          );
+        }
+        // Fallback: text search
+        const text = `${j.title} ${j.description || ""}`.toLowerCase();
         return filters.framework.some((fw) =>
           text.includes(fw.toLowerCase())
         );
@@ -259,8 +269,49 @@ export default function JobsClientPage() {
     }
 
 
+    // Remote Scope filter (AI-powered)
+    if (filters.remoteScope.length > 0) {
+      filtered = filtered.filter((j) => {
+        if (j.aiTags?.remoteScope) {
+          return filters.remoteScope.includes(j.aiTags.remoteScope);
+        }
+        return true; // Keep jobs without AI tags
+      });
+    }
 
+    // Seniority filter (AI-powered)
+    if (filters.seniority.length > 0) {
+      filtered = filtered.filter((j) => {
+        if (j.aiTags?.seniority) {
+          return filters.seniority.includes(j.aiTags.seniority);
+        }
+        return true; // Keep jobs without AI tags
+      });
+    }
 
+    // Employment Type filter (AI-powered)
+    if (filters.employmentType.length > 0) {
+      filtered = filtered.filter((j) => {
+        if (j.aiTags?.employmentType) {
+          return filters.employmentType.includes(j.aiTags.employmentType);
+        }
+        return true; // Keep jobs without AI tags
+      });
+    }
+
+    // Exclude keywords filter
+    if (filters.excludeKeywords) {
+      const excludeTerms = filters.excludeKeywords
+        .split(",")
+        .map((t) => t.trim().toLowerCase())
+        .filter(Boolean);
+      if (excludeTerms.length > 0) {
+        filtered = filtered.filter((j) => {
+          const searchText = `${j.title} ${j.company?.name || ""} ${j.description || ""}`.toLowerCase();
+          return !excludeTerms.some((term) => searchText.includes(term));
+        });
+      }
+    }
 
     // Posted Within
     if (filters.postedWithin) {
@@ -339,7 +390,11 @@ export default function JobsClientPage() {
     filters.remoteType.length > 0 ||
     filters.framework.length > 0 ||
     filters.sortBy !== "newest" ||
-    filters.postedWithin !== "";
+    filters.postedWithin !== "" ||
+    filters.remoteScope.length > 0 ||
+    filters.seniority.length > 0 ||
+    filters.employmentType.length > 0 ||
+    filters.excludeKeywords !== "";
 
   // URL sync
   const syncFiltersToUrl = useCallback(
@@ -353,6 +408,13 @@ export default function JobsClientPage() {
         params.set("framework", f.framework.join(","));
       if (f.postedWithin) params.set("postedWithin", f.postedWithin);
       if (f.sortBy !== "newest") params.set("sortBy", f.sortBy);
+      if (f.remoteScope.length)
+        params.set("remoteScope", f.remoteScope.join(","));
+      if (f.seniority.length)
+        params.set("seniority", f.seniority.join(","));
+      if (f.employmentType.length)
+        params.set("employmentType", f.employmentType.join(","));
+      if (f.excludeKeywords) params.set("excludeKeywords", f.excludeKeywords);
       if (p > 1) params.set("page", p.toString());
       const query = params.toString();
       router.replace(query ? `?${query}` : "/", { scroll: false });
@@ -371,12 +433,61 @@ export default function JobsClientPage() {
     syncFiltersToUrl(filters, newPage);
   };
 
+  // Saved presets handlers
+  const handleSavePreset = async (name: string) => {
+    const { q, ...filterData } = filters;
+    const newPreset: SavedPreset = {
+      id: Date.now().toString(),
+      name,
+      filters: filterData,
+    };
+    const updated = [...savedPresets, newPreset].slice(0, 5); // Max 5 presets
+    setSavedPresets(updated);
+    try {
+      const token = await user?.getIdToken();
+      if (token) {
+        await fetch("/api/user/preferences", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+          body: JSON.stringify({ filter_presets: updated }),
+        });
+      }
+    } catch (e) { console.error("Failed to save preset", e); }
+  };
+
+  const handleLoadPreset = (preset: SavedPreset) => {
+    const newFilters: FilterState = {
+      ...preset.filters,
+      q: filters.q, // Keep current search query
+    };
+    handleFilterChange(newFilters);
+  };
+
+  const handleDeletePreset = async (presetId: string) => {
+    const updated = savedPresets.filter((p) => p.id !== presetId);
+    setSavedPresets(updated);
+    try {
+      const token = await user?.getIdToken();
+      if (token) {
+        await fetch("/api/user/preferences", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
+          body: JSON.stringify({ filter_presets: updated }),
+        });
+      }
+    } catch (e) { console.error("Failed to delete preset", e); }
+  };
+
   // Active filter count for mobile badge
   const activeFilterCount = [
     filters.remoteType.length > 0,
     filters.framework.length > 0,
     !!filters.location,
     !!filters.postedWithin,
+    filters.remoteScope.length > 0,
+    filters.seniority.length > 0,
+    filters.employmentType.length > 0,
+    !!filters.excludeKeywords,
   ].filter(Boolean).length;
 
   const isLoading = !mounted || !dataLoaded;
@@ -693,6 +804,11 @@ export default function JobsClientPage() {
             onApply={() => setShowFilters(false)}
             totalResults={totalJobs}
             isSubscribed={isSubscribed}
+            savedPresets={savedPresets}
+            onSavePreset={handleSavePreset}
+            onLoadPreset={handleLoadPreset}
+            onDeletePreset={handleDeletePreset}
+            onUpgradeClick={() => setUpgradeModalContext("filters")}
           />
         </BottomSheet>
       )}

@@ -165,7 +165,7 @@ export default function PricingPage() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td>Unlock search & filters to find exactly what you want</td>
+                      <td>AI-Powered Filters (Tech Stack, Global Remote, Seniority)</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
@@ -190,7 +190,7 @@ export default function PricingPage() {
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>Save jobs and searches</td>
+                      <td>Save your searches as 1-click Filter Presets</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
@@ -273,7 +273,7 @@ export default function PricingPage() {
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Unlock search & filters to find exactly what you want</span>
+                  <span>AI-Powered Search & Filters (Tech Stack, Remote Scope)</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -303,7 +303,7 @@ export default function PricingPage() {
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Save jobs and searches</span>
+                  <span>Save your custom 1-click Filter Presets</span>
                 </li>
               </ul>
 
