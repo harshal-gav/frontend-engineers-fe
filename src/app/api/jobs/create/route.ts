@@ -2,6 +2,8 @@ import { NextResponse } from 'next/server';
 import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 import crypto from 'crypto';
 
+import { autoTagJob } from '@/lib/job-tagger';
+
 export async function POST(req: Request) {
   try {
     const authHeader = req.headers.get('Authorization');
@@ -28,6 +30,14 @@ export async function POST(req: Request) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
     }
 
+    // Auto-generate tags using rule-based extraction
+    const tags = autoTagJob({
+      title: body.title,
+      description: body.description,
+      location: body.location,
+      country: body.country
+    });
+
     // Build the job object
     const newJob = {
       id: crypto.randomUUID(), // we can let Firestore generate an ID or use crypto
@@ -48,6 +58,7 @@ export async function POST(req: Request) {
       },
       employerId: uid, // Track who posted it
       isFeatured: true, // "markets here like the job that posted they will get appered at the top"
+      aiTags: tags
     };
 
     // Use Firestore auto-id if we don't want to enforce our own, but using crypto is fine
