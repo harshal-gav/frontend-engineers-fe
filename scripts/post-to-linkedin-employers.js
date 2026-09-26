@@ -55,29 +55,26 @@ async function generatePostWithGemini() {
 
 Write an engaging LinkedIn post to sell our Employer Hiring Plan to tech recruiters, startup founders, and engineering managers.
 
-**CRITICAL RULE: VARIETY & DIVERSITY**
-This script runs every 4 hours. If every post looks the same, our audience will ignore it.
-YOU MUST HEAVILY VARY the style, format, hook, and length of every post.
-- Sometimes tell a short story about how hard hiring is.
-- Sometimes use a bulleted list of raw benefits.
-- Sometimes ask a controversial question about tech recruitment.
-- Sometimes keep it short, punchy, and direct.
-DO NOT use the same opening template. DO NOT use the exact same emojis every time. Mix it up completely!
+**CRITICAL RULE: USE THE PROVEN HIGH-CONVERTING STRUCTURE**
+This script runs every 4 hours. You must strictly follow this exact structure to maximize engagement. Vary the exact wording, but KEEP THIS EXACT FLOW:
+
+1. THE HOOK (First Line): Must ask a question about hiring frontend engineers and include the website name "FrontendEngineers.com". (e.g., "🔥 Are you hiring frontend engineers? FrontendEngineers.com is the smartest way to scale your dev team this year.")
+2. THE PAIN POINT: 1-2 short sentences acknowledging the frustration of finding qualified React/Vue/TypeScript talent and burning money on recruiters or generic job boards.
+3. THE PITCH (4 Bullet Points with Emojis): Use exactly these selling points, formulated in short bullet points:
+   - 🎯 MASSIVE TARGETED REACH (Access 100,000+ monthly active frontend developers looking for remote roles)
+   - 📩 INSTANT INBOX DELIVERY (Your job gets blasted directly to our users' inboxes the moment it is posted)
+   - ⭐ VIP VISIBILITY (Your roles appear at the very top of the board)
+   - 💰 UNBEATABLE VALUE (Get Unlimited Job Postings for a flat 99 USD/month! No per-post fees, no hidden costs)
+4. CTA: Add a strong call to action to scale their engineering team faster without blowing their budget.
+5. LINKS: Format exactly like this:
+   👇 Lock in your plan here:
+   https://www.frontendengineers.com/employers/pricing
+6. HASHTAGS: Include 5-8 relevant hashtags like #Hiring #TechRecruitment #FrontendEngineers #Startups.
 
 **IMPORTANT RULES & INSTRUCTIONS:**
-1. NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead of parentheses. Use plain text and capital letters for emphasis instead. DO NOT use markdown links like [text](url), just output the raw URL or plain text.
-2. THE HOOK: You MUST write a versatile, highly engaging opening sentence (or two) that changes every time to hook recruiters and engineering managers looking to hire remote frontend developers. DO NOT use a fixed opening line. However, you MUST mention the website name "FrontendEngineers.com" naturally within the first two lines of the post.
-3. THE PITCH - AGGRESSIVELY SELL THESE BENEFITS:
-   - "FrontendEngineers.com is the ULTIMATE AGGREGATOR for remote frontend jobs. Because we bring every job into one place, we attract ALL the top frontend talent."
-   - "Your job gets MAXIMUM visibility — every frontend developer on our platform sees your job title, whether they're free or Pro users."
-   - "Access 100K+ job seekers specific to this niche (Frontend)." Emphasize that because it's niche, it's HIGH VALUE. No generic noise.
-   - "Direct access to our 5K+ frontend-specific mailing list."
-   - "We will cross-post your job directly to our highly active LinkedIn page!"
-   - "Pro members unlock your full job details and apply directly — these are the most motivated candidates."
-4. PRICING & CALL TO ACTION:
-   - Highlight the unbeatable price: "Just 99 USD per month for UNLIMITED job postings."
-   - Always include this exact link to buy: https://www.frontendengineers.com/employers/pricing
-5. HASHTAGS: Include 3-5 relevant hashtags (e.g., #TechRecruitment #Hiring #FrontendEngineers #Startups).
+- NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead. DO NOT use markdown links like [text](url).
+- Vary the exact words you use to introduce the bullet points (e.g., "Here is why top companies are making the switch:", "Here is what you get when you hire through us:").
+- Keep sentences short and punchy.
 
 Write ONLY the post text, nothing else. Make it compelling and highly readable.`;
 

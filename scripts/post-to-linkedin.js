@@ -115,32 +115,27 @@ Write an engaging, SHORT, and PUNCHY LinkedIn post to promote our website to job
 - USE EMOJIS liberally to break up text, highlight key points, and make the post visually engaging.
 - Make it highly readable, skimmable, and snappy.
 
-**CRITICAL RULE: VARIETY & DIVERSITY**
-This script runs every 1 hour. If every post looks the same, our audience will ignore it.
-YOU MUST HEAVILY VARY the style, format, and hook of every post.
-- Sometimes write a quick relatable story about the struggles of applying to 100s of jobs.
-- Sometimes use a short bulleted list of raw benefits.
-- Sometimes ask an engaging question about frontend interviews.
-- Sometimes use a "reality check" angle IN THE MIDDLE OF THE POST (e.g., remind them they spend more than $9 on a single fast-food meal, OR compare the cost to a Netflix subscription, OR a couple of coffees). DO NOT use the $9 meal example in every post! Invent different, creative comparisons to show how cheap $9 is.
-DO NOT use the same opening template. DO NOT use the exact same emojis every time. Mix it up completely!
+**CRITICAL RULE: USE THE PROVEN HIGH-CONVERTING STRUCTURE**
+This script runs every 1 hour. You must strictly follow this exact structure to maximize engagement. Vary the exact wording, but KEEP THIS EXACT FLOW:
+
+1. THE HOOK (First Line): Must contain the exact phrase "remote frontend developer jobs" (or a very close variation) and the website name "FrontendEngineers.com". (e.g., "Finding high-paying remote frontend jobs is easier than ever with FrontendEngineers.com!")
+2. THE PAIN POINT: 1-2 short sentences acknowledging the frustration of generic job boards (e.g., "Tired of wasting hours scrolling through generic job boards filled with irrelevant roles?")
+3. THE PITCH (3 Bullet Points with Emojis): Use exactly these three selling points, formulated in short bullet points:
+   - ⚡ MASSIVE ACCESS FOR FRONTEND JOBS ONLY (Filter out backend noise, pure UI/React/Vue roles)
+   - 🌍 GLOBAL OPPORTUNITIES (Find all world remote frontend jobs in one place)
+   - 🛡️ SAFE & VERIFIED (No spam, no ghost postings, verified roles)
+4. CTA & PRICING: Explain that upgrading their career shouldn't cost a fortune. Mention unlocking 1,000+ remote jobs with PRO access for just $9/month.
+5. LINKS: Format exactly like this:
+   🔍 Explore current job listings:
+   https://www.frontendengineers.com
+   ⚡ Upgrade to PRO access here:
+   https://www.frontendengineers.com/pricing
+6. HASHTAGS: Include 5-8 relevant hashtags like #FrontendDeveloper #RemoteJobs #ReactJS.
 
 **IMPORTANT RULES & INSTRUCTIONS:**
-1. NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead of parentheses. Use plain text and capital letters for emphasis instead. DO NOT use markdown links like [text](url), just output the raw URL or plain text.
-2. THE HOOK: You MUST write a versatile, highly engaging opening sentence that changes every time. However, your VERY FIRST LINE MUST explicitly include the phrase "Remote Frontend Developer Jobs" AND the website name "FrontendEngineers.com". Do NOT use the "$9 meal" angle in the first line (keep that for the middle of the post).
-3. THE PITCH:
-   - Market it heavily as the ULTIMATE AGGREGATOR. Include a variation of these ideas:
-     * "Aggregated from 100+ job boards & company career pages"
-     * "Every Remote Frontend Job. One Place."
-   - Our unique value: No more wasting hours on 10+ job boards. We bring them all together.
-4. PRICING & LINKS:
-   - Mention unlocking full access to 1,000+ remote jobs for just $9/month.
-   - Mention 2-3 key features like direct apply links, daily email alerts, or curated daily.
-   - Always format the links EXACTLY like this at the end of the post:
-     👉 Explore remote frontend jobs:
-     https://www.frontendengineers.com
-     👉 Get pro access for just $9/month:
-     https://www.frontendengineers.com/pricing
-5. HASHTAGS: Include 5-8 relevant hashtags like #FrontendDeveloper #RemoteJobs #ReactJS.
+- NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead. DO NOT use markdown links like [text](url).
+- Vary the exact words you use to introduce the bullet points (e.g., "Here is why developers trust us:", "Here is why developers love us:").
+- Keep sentences short and punchy.
 
 Write ONLY the post text, nothing else. Make it catchy, short, and highly readable.`;
 
