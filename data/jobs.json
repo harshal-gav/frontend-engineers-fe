@@ -95,25 +95,6 @@
     "slug": "frontend-developer-net-blazor-remote-latin-america-fullstack-1bd8f824"
   },
   {
-    "id": "892b60fb7e385083ad2c827acd5f4d002950ba2dfe3022de2af180cda2e52587",
-    "title": "Frontend Developer (Flutter; DeFi)",
-    "applyUrl": "https://careers.kast.xyz/postings/5cc5d6b9-47d7-415d-a951-4d3b76329816/applications/new?utm_medium=job_board&utm_source=linkedIn",
-    "description": "About the job\n\nDepartment: Engineering\n\nLocation: New York\n\n\n\nDescription\n\nWe're looking for a mid-level to senior Flutter engineer who understands DeFi — not just how to build a beautiful mobile app, but how DeFi products (lending, staking, swaps, savings, and self-custody wallets) actually work on-chain. You'll build consumer-facing DeFi products end to end, translating complex on-chain flows into interfaces that are clear, trustworthy, and delightful.\nYou'll collaborate closely with backend, product, and design to ship money-movement features that are secure and reliable.\n\nLocation: remote from the US.\n\nWhat You’ll Be Doing\n\n\nBuild and own consumer-facing DeFi features in the KAST mobile app, end to end.\nTranslate DeFi concepts (lending, swap, borrowing) into clear, trustworthy mobile UX.\nIntegrate with backend services and handle secure, multi-step money-movement and transaction authorization flows.\nHandle wallet, signing, and transaction states — pending, submitted, confirmed, failed — with robust error handling and user feedback.\nContribute to a clean, well-tested mobile architecture and shared component patterns.\nWrite testable, maintainable code and participate in code review and release quality.\nCollaborate with product and design to shape requirements into shipped features.\n\n\nWhat You'll Bring\n\n\n2+ years of production mobile development with Flutter, or 3+ years with ownership of shipped consumer apps.\nHands-on DeFi experience is required — you have built, integrated, or worked closely with on-chain protocols (lending/borrowing, staking, swaps, or wallets) and understand concepts like collateral, LTV, health factor, and gas/network fees.\nStrong command of Flutter fundamentals: state management, navigation, clean architecture, and dependency injection.\nExperience consuming REST APIs, handling auth tokens, and managing complex asynchronous and multi-step transaction flows.\nSolid understanding of mobile security best practices (secure storage, sensitive data handling, MFA flows).\nComfortable with Git-based workflows, code review, and shipping to the App Store / Play Store.\n\n\nNice to have\n\n\nExperience integrating with DeFi lending, staking, or swap protocols on any major chain.\nFamiliarity with embedded/MPC wallet providers or self-custody / key import-export flows.\nExperience in fintech, neobanking, or regulated financial products.\nExposure to mobile analytics/observability and CI/CD.\nContributions to shared Flutter packages or a modular multi-app codebase.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-26T05:13:11.881Z",
-    "sourceHash": "892b60fb7e385083ad2c827acd5f4d002950ba2dfe3022de2af180cda2e52587",
-    "company": {
-      "id": "kast",
-      "name": "KAST",
-      "logoUrl": "https://logo.clearbit.com/kast.com",
-      "industry": "Technology",
-      "website": "https://kast.com"
-    },
-    "slug": "frontend-developer-flutter-defi-kast-892b60fb"
-  },
-  {
     "id": "6d8c55c10a45ad1ff714f96f47afcdc92aac79c671b4e58cb28f05c58bd4dac8",
     "title": "Frontend Developer | $65/hr Remote",
     "applyUrl": "https://candidateportal.ceipal.com/job-details/jx6Hjn0t-x26LZJPNLE2hPDXAWP-4fU9ekgZ0Edjpqc#.job_boards.LinkedIn",
