@@ -1,5 +1,144 @@
 [
   {
+    "id": "d02c0fcc4326aa2373c0c9e18355105391fc60e21d0381a51b1eb1dbc4694c3d",
+    "title": "Frontend Engineer Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/a875dfdd-9690-4e54-9f4b-e9f70094a60e?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-27T17:30:31.513Z",
+    "sourceHash": "d02c0fcc4326aa2373c0c9e18355105391fc60e21d0381a51b1eb1dbc4694c3d",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-engineer-remote-yo-ai-labs-d02c0fcc",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e0eb3a9b7a1b0170ddb8d2f2ffb4ab6af6d1ac7b996d7299b561f5db264b4e97",
+    "title": "Staff Software Engineer, Front End",
+    "applyUrl": "https://job-boards.greenhouse.io/tebra?error=true",
+    "description": "About the job\n\nTebra only initiates contact with candidates via email from an official Tebra email address (@tebra.com, @patientpop.com, or @kareo.com) or through our applicant tracking system, Greenhouse. We will only ask you to provide sensitive personal information through our official application portal — not via social media or text message. We do not conduct interviews via instant messaging.\n\nAbout The Role\n\nAs a Staff Software Engineer, Front End, you will take on a critical technical leadership role, tackling meaningful, real-world challenges for healthcare providers. Your primary mission is to lead the architectural direction for our most ambitious, large-scale UI initiatives. We are counting on your expertise to guide this technical transformation, championing a customer-first mindset while making the thoughtful, pragmatic decisions that ensure long-term technical health. Concurrently, you will be a key pioneer in integrating AI into our products, shaping and building the new, intelligent user experiences that will define our next chapter.\n\nYour Area of Focus\n\n\nOwn a product end-to-end from defining the problem we should solve to meet our OKRs to designing, building, shipping, and operating the solution.\nAct as a key technical partner for Product Management, co-owning the roadmap, identifying key risks, and surfacing new engineering-led opportunities.\nRapidly form hypotheses based on data and iterate quickly to find tactics that deliver the biggest impact. Rinse and repeat.\nFocus on what’s right, not who. Solicit feedback, learn, teach, and give candid feedback to grow and improve together. Continuously.\nArchitect & code frameworks that can be leveraged by the team.\nInvest in technical foundations to accelerate our shipping rhythm. Ship products worthy of recognition.\nChampion the integration of AI tools (like coding assistants) into our daily development lifecycle to boost team velocity, improve code quality, and streamline testing.\n\n\nYour Professional Qualifications\n\n\n8+ years of software development experience including building production-grade web applications using React, Vue, Angular, or Material UI.\nMastery in utilizing REST/GraphQL APIs efficiently, influencing the shape of APIs where necessary.\nIn-depth knowledge of JavaScript/TypeScript, CSS, NodeJS, and the tooling ecosystem (NPM, Yarn, Babel, Jest, Cypress) to the extent you can describe its limitations and tradeoffs.\nDeep understanding of the tradeoffs between static generation, server-side rendering, and client-side rendering.\nExceptional level of engineering fundamentals including a strong grasp of data structures, caching strategies, and asynchronous programming (promises, futures, callbacks).\nUnderstanding and experience with monorepo environments and microfrontend architecture.\nLed and shipped large-scale projects from conception to production including post-launch support involving multiple teams.\nHave development experience working with LLMs, AI-driven UX, or agentic workflows.\nDesire to blaze the trail on less-glorious engineering tasks that are important to the business.\nConstructively dissatisfied with the status quo.\nComfortable working on problems that do not have well defined requirements.\nExperience building and mentoring software engineering teams.\nCan drive difficult engineering discussions with the team and present a menu of options to management.\nAble to communicate effectively with both technical and non-technical audiences.\nAbility to partner with product management to develop requirements.\nWell versed at recognizing project risks and opportunities.\nAble to make build vs. buy software decisions.\nAble to look beyond software best practices to make tough technical decisions that are tailored to business needs.\nFamiliarity with query and analytical tools such as SQL, Google Analytics and FullStory.\n\n\n (For Recruiter use only) \n\nIn compliance with California's pay transparency laws, the compensation range for this position will be provided and may include an hourly rate, annual salary, or On-Target Earnings (OTE), depending on the nature of the role. The specific compensation structure and detailed range will be discussed with qualified candidates during the initial talent screen.\n\nRemote Pay Range: $169,500 USD - $189,750 USD\n\nAbout Tebra\n\nTebra is the only all-in-one EHR+ platform built exclusively for independent healthcare practices. Designed to replace the clunky, fragmented tools built for corporate systems, Tebra connects EHR software, billing, automation, telehealth solution, and marketing — so providers can spend less time on admin and more time with patients. More than 42,000 private practices trust Tebra to streamline operations, increase revenue, and reduce burnout — helping clinicians leave work on time and rediscover their purpose. Learn more at www.tebra.com.\n\nOur ValuesStart with the Customer \n\nWe get to know our customers - and their patients - and look at the world through their lens.\n\nKeep It Simple\n\nHealthcare is too complex. We aim to simplify it for everyone.\n\nStay Entrepreneurial \n\nWe reject the status quo and solve problems with creativity, perseverance, and a bias to action.\n\nBetter Together\n\nWe are diverse, humble, and collaborative. We put the team first and win together.\n\nCelebrate Success\n\nLife is short and joy is underrated. We take time to have fun and celebrate success.\n\nPerks & Benefits\n\nUnited States: In addition to our healthcare benefits, we also offer amazing perks! Need work from home basics? We offer a discount through Dell! We also offer a number of resources to help you keep your mind and body healthy. Check out Gympass for a great workout, or TelusEmployee Assistance Program to find mental health resources, along with other resources for everyday occurrences.\n\nCosta Rica: To assist with all of life’s needs, Tebra also offers a wellness and childcare subsidy and a University/Education discount! We also offer a number of resources to help you keep your mind and body healthy. Check out Gympass for access to health and fitness apps, or Telus Employee Assistance Program to find mental health resources, along with other resources for everyday occurrences.\n\nCompliance & Privacy Disclosures\n\nNOTE: Tebra is an equal opportunity employer. All applicants will be considered for employment without attention to age, race, color, religion, sex, sexual orientation, gender identity, national origin, veteran or disability status.\n\nCalifornia residents who apply or are recruited for a job with us: please carefully review our California-specific Privacy Notice under the California Consumer Protection Act here: https://www.tebra.com/privacy-policy/california-supplemental-notice/\n\nIf you would like to report a fraudulent Tebra job posting, please contact us at talentacquisition@tebra.com and consider reporting your experience to the FBI's Internet Crime Complaint Center or the Better Business Bureau to help keep others safe online, too.\n\nAs part of our commitment to a fair and efficient hiring process, Tebra utilizes BrightHire, an interview intelligence platform, for our phone and video screenings. This technology records and transcribes interviews to help us ensure consistency, reduce bias, and make more informed hiring decisions. By applying for this position, you acknowledge that your interview may be recorded.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-27T17:30:12.252Z",
+    "sourceHash": "e0eb3a9b7a1b0170ddb8d2f2ffb4ab6af6d1ac7b996d7299b561f5db264b4e97",
+    "company": {
+      "id": "tebra",
+      "name": "Tebra",
+      "logoUrl": "https://logo.clearbit.com/tebra.com",
+      "industry": "Technology",
+      "website": "https://tebra.com"
+    },
+    "slug": "staff-software-engineer-front-end-tebra-e0eb3a9b",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "less",
+        "graphql",
+        "cypress",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "df6184940217784c5d12f6bffc3ddaa414ffea29257e89ea8ea5ec89b0d6526d",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8826920002?lever-origin=applied&lever-source=LINKEDIN",
+    "description": "About the job\n\nGitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster.\n\nThe same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software.\n\n\nFortune 500® is a registered trademark of Fortune Media IP Limited, used under license. Claim based on GitLab data. Fortune 100 refers to the top 20% ranked companies in the 2025 Fortune 500 list, published in June 2025. Fortune and Fortune Media IP Limited are not affiliated with, and do not endorse products or services of GitLab.\n\n\nSenior Frontend Engineer\n\nAn overview of this role\n\nAs a Senior Frontend Engineer, you'll solve high-scope frontend problems and influence your team's technical and product direction. You'll ship moderately sized features with minimal guidance, improve quality and performance, mentor other engineers, and help establish standards for a high-scale web environment. You'll partner across product, design, backend, and frontend to make sound trade-offs, communicate clearly, and improve how the team delivers software.\n\nThis is an opportunity to shape product experiences and frontend architecture for a global platform while helping define how modern frontend teams use agentic artificial intelligence. You'll apply artificial intelligence-assisted engineering workflows thoughtfully and help create trustworthy user experiences that incorporate artificial intelligence responsibly in a remote-first, asynchronous organization.\n\nWhat you’ll do\n\n\nDesign and ship moderately sized frontend features and improvements with minimal guidance, making pragmatic architectural choices.\nTurn ambiguous customer and product needs into clear technical plans and intuitive, accessible experiences.\nAdvocate for product quality, security, accessibility, performance, maintainability, and operational readiness throughout the development lifecycle.\nEstablish and improve practices for frontend architecture, styling, component design, testing, observability, maintainable code, and thoughtful use of artificial intelligence and agentic tools in production engineering work.\nMentor Associate and Intermediate Engineers, share knowledge, remove technical blockers, and improve team delivery practices.\nDiagnose and prevent frontend performance and reliability issues at scale using observability and production signals, and participate in incident response or on-call responsibilities under your team's ownership model.\nDesign or review independently buildable frontend surfaces and explicit contracts for data, events, authorization, feature flags, error handling, testing, and performance expectations.\nCollaborate with product, design, backend, quality, security, and other teams to deliver cohesive customer outcomes.\n\n\nWhat you’ll bring\n\n\nExperience applying frontend architecture, browser behavior, testing, accessibility, performance, and maintainability practices in a complex product or platform environment.\nExperience designing or evolving modular frontend boundaries, independently buildable surfaces, component systems, or migration-safe architectures.\nExperience making pragmatic trade-offs with product and design partners and turning complex requirements into clear user experiences.\nThe ability to lead through technical judgment, collaboration, and clear written communication rather than formal authority.\nExperience mentoring engineers and improving team practices through code review, design review, documentation, or hands-on collaboration.\nThe ability to work effectively in a remote, asynchronous organization by managing priorities, creating clarity, and communicating decisions in writing.\nPractical experience integrating artificial intelligence into a feature, workflow, or engineering process, or evaluating its reliability, security, privacy, and appropriate human oversight.\nHelpful, but not required: experience with Vue, React, Angular, TypeScript, or JavaScript; PostgreSQL, Redis, or object storage; representational state transfer or GraphQL; Kubernetes, Google Kubernetes Engine, Docker, or Google Cloud Platform; Prometheus or Sentry; and Git, GitLab Runner, or GitLab continuous integration and continuous delivery.\n\n\nAbout The Team\n\nWe own core repository capabilities, from Git command-line operations to web-based code exploration. Our roadmap includes feature and platform development, improvements to existing capabilities, maintainability, accessibility, performance, and workflows for teams using AI-assisted development tools.\n\nHow GitLab Supports Full-Time Employees\n\n\nBenefits to support your health, finances, and well-being\nFlexible Paid Time Off \nTeam Member Resource Groups\nEquity Compensation & Employee Stock Purchase Plan\nGrowth and Development Fund\nParental Leave \n\n\nPlease note that we welcome interest from candidates with varying levels of experience; many successful candidates do not meet every single requirement. Additionally, studies have shown that people from underrepresented groups are less likely to apply to a job unless they meet every single qualification. If you're excited about this role, please apply and allow our recruiters to assess your application.\n\nCountry Hiring Guidelines: GitLab hires new team members in countries around the world. All of our roles are remote, however some roles may carry specific location-based eligibility requirements. Our Talent Acquisition team can help answer any questions about location after starting the recruiting process.\n\nPrivacy Policy: Please review our Recruitment Privacy Policy. Your privacy is important to us.\n\nGitLab is proud to be an equal opportunity workplace and is an affirmative action employer. GitLab’s policies and practices relating to recruitment, employment, career development and advancement, promotion, and retirement are based solely on merit, regardless of race, color, religion, ancestry, sex (including pregnancy, lactation, sexual orientation, gender identity, or gender expression), national origin, age, citizenship, marital status, mental or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartime or campaign badge veterans, and Armed Forces service medal veterans), or any other basis protected by law. GitLab will not tolerate discrimination or harassment based on any of these characteristics. See also GitLab’s EEO Policy and EEO is the Law. If you have a disability or special need that requires accommodation, please let us know during the recruiting process.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-27T16:58:00.686Z",
+    "sourceHash": "df6184940217784c5d12f6bffc3ddaa414ffea29257e89ea8ea5ec89b0d6526d",
+    "company": {
+      "id": "gitlab",
+      "name": "GitLab",
+      "logoUrl": "https://logo.clearbit.com/gitlab.com",
+      "industry": "Technology",
+      "website": "https://gitlab.com"
+    },
+    "slug": "senior-frontend-engineer-gitlab-df618494",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "typescript",
+        "javascript",
+        "less",
+        "graphql",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "c7fac406d12c336c2e6ee98e9af188923c53454751ff85227ae4785e87861b85",
+    "title": "Frontend Developer - Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/a7f2d30f-63c8-4f0c-81aa-6329fec6e65c?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-27T16:44:44.469Z",
+    "sourceHash": "c7fac406d12c336c2e6ee98e9af188923c53454751ff85227ae4785e87861b85",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-developer-remote-yo-ai-labs-c7fac406",
+    "aiTags": {
+      "stack": [
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "47273dc5544a74fdd5edf3a6dd5748bd5053dd542ea1b11529be6d73e90ee9b4",
     "title": "Frontend Developer - Remote",
     "applyUrl": "https://www.executiveplacements.com/JF/Frontend-Developer---Remote-jobs-in-Seattle-f144048b1.asp?sid=linkedin",
