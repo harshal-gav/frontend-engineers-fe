@@ -107,11 +107,25 @@ async function main() {
 
   console.log(`Found ${alertsToSend.length} total alerts to send.`);
 
-  // 4. Construct and Send Individual Emails
+  // Group alerts by identical criteria to batch send via BCC
+  const alertGroups: { [key: string]: { alert: any, isPremium: boolean, isDefault: boolean, emails: string[] } } = {};
+  
   for (const item of alertsToSend) {
-    const { email, alert, isPremium, isDefault } = item;
+    const key = `${item.alert.query || ''}|${item.alert.location || 'worldwide'}|${item.isPremium}|${item.isDefault}`;
+    if (!alertGroups[key]) {
+      alertGroups[key] = { alert: item.alert, isPremium: item.isPremium, isDefault: item.isDefault, emails: [] };
+    }
+    alertGroups[key].emails.push(item.email);
+  }
+
+  console.log(`Grouped into ${Object.keys(alertGroups).length} unique alert types.`);
+
+  // 4. Construct and Send Batched Emails
+  for (const key of Object.keys(alertGroups)) {
+    const group = alertGroups[key];
+    const { alert, isPremium, isDefault, emails } = group;
     
-    // Filter new jobs based on user preferences
+    // Filter new jobs based on group preferences
     const matchedJobs = newJobs.filter(job => {
       const text = `${job.title} ${job.description || ""}`.toLowerCase();
       
@@ -190,18 +204,25 @@ async function main() {
     `;
 
     if (isDryRun) {
-      console.log(`DRY RUN: Would send to ${email} with ${matchedJobs.length} jobs (isDefault: ${isDefault}).`);
+      console.log(`DRY RUN: Would send to ${emails.length} users with ${matchedJobs.length} jobs (isDefault: ${isDefault}).`);
     } else {
-      try {
-        await resend!.emails.send({
-          from: "Frontend Engineers <hello@frontendengineers.com>",
-          to: [email],
-          subject: `${subjectPrefix} ${matchedJobs.length} New Remote Frontend Jobs for you`,
-          html: emailHtml,
-        });
-        console.log(`Sent to ${email} (isDefault: ${isDefault})`);
-      } catch (e) {
-        console.error(`Failed to send to ${email}`, e);
+      // Chunk emails into batches of 49 for Resend limits
+      for (let i = 0; i < emails.length; i += 49) {
+        const bccBatch = emails.slice(i, i + 49);
+        try {
+          await resend!.emails.send({
+            from: "Frontend Engineers <hello@frontendengineers.com>",
+            to: ["hello@frontendengineers.com"], // Self address in To
+            bcc: bccBatch,
+            subject: `${subjectPrefix} ${matchedJobs.length} New Remote Frontend Jobs for you`,
+            html: emailHtml,
+          });
+          console.log(`Sent alert batch to ${bccBatch.length} users for alert type: ${key}`);
+          // Delay to respect rate limits
+          await new Promise(resolve => setTimeout(resolve, 1000));
+        } catch (err) {
+          console.error(`Failed to send alert batch to ${bccBatch.length} users:`, err);
+        }
       }
     }
   }
