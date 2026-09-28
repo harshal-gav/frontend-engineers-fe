@@ -1,5 +1,351 @@
 [
   {
+    "id": "cacf8f91ce310028a06c9b9057991a85da91d2310642b216b7aebaa7e2f12563",
+    "title": "Staff Frontend Engineer",
+    "applyUrl": "https://www.theladders.com/linkedin/88791016?src=LinkedIn",
+    "description": "About the job\n\nFor our client, we are seeking a Staff Frontend Engineer to join the team of a leader in the Healthcare space.\n\nThis role will shape the architecture and technical direction of a broad frontend ecosystem that supports product teams across the organization. You will help define standards that improve scalability, performance, accessibility, and long-term maintainability while enabling faster delivery. The position also requires close partnership with other engineers and technical leaders to create leverage through shared platforms, tools, and clear engineering practices. In addition, you will contribute to AI-native development approaches that improve quality and support responsible production workflows.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $175,000 – $225,000 annually\n\nResponsibilities\n\n\n Set frontend architecture strategy to optimize product leverage and flexibility.\n Lead the design system as an engineering platform, shaping its technical direction and adoption.\n Own frontend quality and production health, integrating performance and accessibility into design decisions.\n Create APIs, tools, and documentation to simplify excellent frontend engineering for all engineers.\n Establish AI-native engineering practices, ensuring human oversight of review and production.\n Raise engineering standards, guiding Senior engineers toward broader ownership and alignment across teams.\n\n\nQualifications\n\n\n Deep frontend architecture expertise across substantial Angular, React, or comparable applications.\n Technical depth to lead an Angular + TypeScript platform, including understanding core concepts across frameworks.\n Experience building frontend platforms that other teams successfully depend on.\n Ability to set quality, performance, security, privacy, and accessibility standards across teams.\n Competency in reasoning about production systems beyond the browser with API and service boundaries.\n Skill in creating technical leverage and building alignment across teams without relying solely on authority.\n Experience working at organizational scale with AI-first engineering patterns.\n\n\nBenefits\n\n\n Full benefits package including medical, dental, and vision care.\n Paid Time Off (PTO) to promote work-life balance.\n 401(k) plan with matching contributions.\n Robust Employee Assistance Program (EAP) and wellness program.\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification—your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nAngular, TypeScript, Frontend Architecture, Testing, Performance, Security, Accessibility, React, Component Libraries, Design Systems, APIs, Tooling, Build and Bundling Tools, Version Control Systems, CI/CD Pipelines, Performance Monitoring Tools, Observability Tools, API Management Tools",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-28T20:36:10.422Z",
+    "sourceHash": "cacf8f91ce310028a06c9b9057991a85da91d2310642b216b7aebaa7e2f12563",
+    "company": {
+      "id": "ladders",
+      "name": "Ladders",
+      "logoUrl": "https://logo.clearbit.com/ladders.com",
+      "industry": "Technology",
+      "website": "https://ladders.com"
+    },
+    "slug": "staff-frontend-engineer-ladders-cacf8f91",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "26e20a5ef93e4bc23cb43f42fe123ef7a35e3265d165614d6b0eabb8a6b89672",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.fetchjobs.co/job-description-usb/3BCC554A995C8D3DEF73E0A72EFC672E?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nKforce is a leading professional staffing services firm that specializes in providing strategic solutions across various industries, including technology, finance, healthcare, and government. With a strong reputation for delivering exceptional talent and innovative workforce solutions, Kforce is committed to helping organizations achieve their business objectives through customized staffing and consulting services. The company values integrity, collaboration, and excellence, fostering a dynamic work environment that encourages growth and development for its employees and clients alike.\n\nAbout The Role\n\nWe are seeking a highly motivated and experienced professional to join our team in the role of [Job Title]. This position offers an exciting opportunity to work within a fast-paced environment, supporting our clients' strategic initiatives and contributing to the overall success of the organization. The ideal candidate will possess a strong background in [industry or field], demonstrating excellent communication, problem-solving, and project management skills. As part of our team, you will collaborate with various departments and stakeholders to deliver innovative solutions and ensure client satisfaction. This role requires a proactive approach, attention to detail, and a commitment to continuous improvement to meet and exceed organizational goals.\n\nQualifications\n\nThe successful candidate will possess a relevant educational background, typically a bachelor’s degree in [related field], with additional certifications being a plus. Proven experience in [specific skills or industry], along with a track record of successful project execution, is essential. Strong analytical and technical skills, coupled with excellent interpersonal and communication abilities, are required to excel in this role. Candidates should demonstrate adaptability, a collaborative mindset, and the ability to manage multiple priorities effectively. Prior experience working in a fast-paced or client-facing environment will be considered advantageous.\n\nResponsibilities\n\nIn this role, you will be responsible for managing and executing various projects aligned with client needs and organizational objectives. Key responsibilities include analyzing client requirements, developing tailored solutions, and coordinating with cross-functional teams to ensure timely delivery. You will serve as a primary point of contact for clients, providing ongoing support and fostering strong professional relationships. Additionally, you will be involved in preparing detailed reports, tracking project progress, and identifying areas for process improvement. Ensuring compliance with company policies and industry standards is vital, along with maintaining accurate documentation and facilitating effective communication among all stakeholders. Your proactive approach will help identify potential risks and develop mitigation strategies to prevent project delays or issues.\n\nBenefits\n\nKforce offers a comprehensive benefits package designed to support the health, well-being, and professional growth of its employees. Benefits include competitive salaries, health insurance options, retirement plans, and paid time off. The company also provides opportunities for ongoing training and development, encouraging employees to expand their skill sets and advance their careers. Additionally, Kforce fosters a collaborative and inclusive work environment, promoting work-life balance and recognizing employee achievements. Employees have access to various resources and support systems aimed at enhancing their overall job satisfaction and personal development.\n\nEqual Opportunity\n\nKforce is an equal opportunity employer committed to fostering an inclusive and diverse workplace. We do not discriminate based on race, color, religion, gender, sexual orientation, gender identity, national origin, age, disability, or any other protected status under applicable law. We believe that a diverse workforce enhances our ability to serve our clients effectively and create a positive work environment for all employees. We are dedicated to providing equal employment opportunities and ensuring that all candidates and employees are treated with fairness and respect throughout the employment process and beyond.\n\n\n\n\n\nDesired Skills and Experience\n\nProject Management, Client Relationship Management, Communication Skills, Problem Solving, Stakeholder Engagement, Process Improvement",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-28T20:35:02.041Z",
+    "sourceHash": "26e20a5ef93e4bc23cb43f42fe123ef7a35e3265d165614d6b0eabb8a6b89672",
+    "company": {
+      "id": "taskverse",
+      "name": "TaskVerse",
+      "logoUrl": "https://logo.clearbit.com/taskverse.com",
+      "industry": "Technology",
+      "website": "https://taskverse.com"
+    },
+    "slug": "frontend-developer-taskverse-26e20a5e",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "781bec64a77e4d2c13f84b5de05aef0f8a9d8626bf42ae398d08ed004c8d6be6",
+    "title": "Front End Software Engineer (React, TypeScript)",
+    "applyUrl": "https://www.sundayy.com/job-description/usDC9D9D87CC21FECC475A9AE9BFA9531A?source=Linkedin",
+    "description": "About the job\n\nAbout The Company\n\nReddit is a vibrant online community platform that fosters shared interests, passion, and trust among its users. As one of the largest social media platforms globally, Reddit hosts over 100,000 active communities, known as subreddits, covering a vast array of topics. With approximately 130 million daily active visitors, Reddit serves as a primary source of information, entertainment, and discussion on the internet. The platform's open and authentic environment encourages meaningful conversations and user-generated content, making it a unique space for diverse voices and perspectives. Reddit is committed to building an inclusive workforce that reflects the communities it serves and offers a range of benefits to support its employees’ well-being and professional growth.\n\nAbout The Role\n\nReddit is seeking a talented Front End Software Engineer specializing in media player development to join our remote team in the United States. In this role, you will be instrumental in shaping the next generation of Reddit’s media web experience. Your primary focus will be on developing and optimizing our web media player and the APIs that support it, ensuring seamless, low-latency video and audio playback for millions of users worldwide. You will collaborate closely with cross-functional teams—including product managers, designers, and other engineers—to deliver innovative features that enhance user engagement and content delivery. Your expertise will contribute to designing scalable, maintainable, and high-performance full-stack solutions, drawing inspiration from industry-leading streaming platforms. This role offers an exciting opportunity to influence how multimedia content is experienced across Reddit’s platform, ensuring a high-quality, interactive, and globally accessible media experience.\n\nQualifications\n\n\nBS degree in Computer Science, Software Engineering, or a related technical field, or equivalent practical experience.\nMinimum of 3 years of software development experience in one or more general-purpose programming languages such as Go, Python, Rust, or Ruby.\nProficiency with frontend technologies including React and TypeScript for UI development.\nExperience designing and implementing APIs using GraphQL, REST, HTTP, gRPC, or Thrift.\nStrong organizational skills with the ability to prioritize tasks and deliver projects on schedule.\nExcellent communication skills, capable of collaborating effectively in a fully remote environment and discussing complex technical topics with both technical and non-technical audiences.\nKnowledge of multimedia streaming patterns, low-latency playback, and interactive media tools is a plus.\n\n\nResponsibilities\n\n\nCollaborate cross-functionally with product, design, and engineering teams to develop features aligned with Reddit’s product and business strategies.\nParticipate in the full development lifecycle, including technical design, coding, testing, experimentation, analysis, and deployment.\nDesign and implement end-to-end full-stack solutions, focusing on optimizing web UI components for the media player and backend APIs that support them.\nEnsure high-quality releases by balancing rapid development with rigorous testing to avoid bugs and performance issues.\nReview code and design documentation, providing constructive feedback to improve overall code quality and product specifications.\nWork with client and platform engineers to improve media performance and content delivery globally.\nContribute to engineering standards, best practices, and workflows to enhance team productivity and code maintainability.\nMentor junior engineers, sharing knowledge and fostering technical growth within the team.\n\n\nBenefits\n\n\nComprehensive healthcare coverage including medical, dental, and vision insurance.\nIncome replacement programs and mental health & coaching benefits.\n401(k) plan with employer matching contributions.\nGlobal benefit programs supporting work-life balance, professional development, caregiving, and family planning.\nGenerous paid time off, parental leave, and flexible work arrangements.\nEquity in the form of restricted stock units (RSUs) and potential eligibility for commissions depending on the role.\nOpportunities for remote work and flexible scheduling.\n\n\nEqual Opportunity\n\nReddit is an equal opportunity employer committed to fostering a diverse and inclusive workforce. We value the unique perspectives and experiences of all employees and are dedicated to providing reasonable accommodations for individuals with disabilities and disabled veterans during the application and interview process. We encourage applicants from all backgrounds to apply and self-identify across various diversity dimensions. Our goal is to build a team that reflects the communities we serve and to create an environment where everyone can thrive. For more information, please review our equal employment policies and statements on our website.\n\n\n\nDesired Skills and Experience\n\nInformation Technology",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-28T20:34:25.587Z",
+    "sourceHash": "781bec64a77e4d2c13f84b5de05aef0f8a9d8626bf42ae398d08ed004c8d6be6",
+    "company": {
+      "id": "wiraa",
+      "name": "Wiraa",
+      "logoUrl": "https://logo.clearbit.com/wiraa.com",
+      "industry": "Technology",
+      "website": "https://wiraa.com"
+    },
+    "slug": "front-end-software-engineer-react-typescript-wiraa-781bec64",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "graphql"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7e0a3e3dd4edd962c2b947050735e1f504f614c4df350d53b64932c9ef984a3c",
+    "title": "Front End Developer",
+    "applyUrl": "https://www.bestjobtool.com/job-description-usb/966A3F181A7152DAB92D820850410FDD?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nBuild to something to be proud of. Captivation has established a strong reputation for delivering precise and timely solutions to its customers. Our commitment to excellence is reflected in our innovative approach and dedication to supporting national security missions. We pride ourselves on fostering a collaborative environment where engineering excellence and continuous improvement are at the forefront. Captivation's mission is to develop cutting-edge technology that safeguards our country, and we are seeking talented professionals who share this vision to join our team.\n\nAbout The Role\n\nCaptivation Software is seeking a dedicated Front-End Developer with specialized expertise in Section 508 accessibility compliance. This role involves designing, developing, and maintaining accessible user interfaces that meet strict federal standards, ensuring usability for individuals with disabilities. The successful candidate will work closely with a cross-functional Agile team, including software developers, system engineers, and product owners, to deliver high-quality, compliant, and user-friendly interfaces. Your work will directly contribute to national security efforts by creating accessible digital solutions that are both functional and compliant with federal accessibility regulations.\n\nQualifications\n\n\nMust currently hold a Top Secret/SCI U.S. Government security clearance with a favorable Polygraph. All candidates must be U.S. citizens.\nBachelor's degree from an accredited college or university; a Master’s degree can substitute for two years of experience.\nProven experience developing front-end applications using modern JavaScript frameworks, with a preference for Vue.js.\nHands-on experience testing with JAWS and familiarity with other assistive technologies.\nDeep understanding of Section 508 standards, WCAG 2.1/2.2 (Levels A/AA), and ARIA practices.\nProficiency in semantic HTML, accessible form design, keyboard navigation, and focus management.\nExperience with accessibility testing and auditing tools such as axe DevTools, WAVE, Pa11y, and Lighthouse.\nFamiliarity with version control systems like Git and Agile collaboration tools such as Jira and Confluence.\n\n\nResponsibilities\n\n\nDesign, develop, and maintain front-end components that adhere to Section 508 and WCAG 2.1/2.2 AA standards, ensuring accessibility for users with disabilities.\nPerform comprehensive accessibility testing using JAWS and other assistive technologies, identifying and remediating issues related to keyboard navigation, focus management, ARIA implementation, color contrast, and semantic HTML.\nConduct manual and automated accessibility audits, document findings, and prepare detailed test reports to support compliance requirements.\nCollaborate with UX/UI designers, developers, and product owners early in the development process to integrate accessibility into the design from the outset, rather than retrofitting solutions later.\nWork with QA and DevOps teams to incorporate automated accessibility testing tools such as axe-core, Pa11y, and Lighthouse into the CI/CD pipeline, enabling continuous compliance monitoring.\nParticipate actively in Agile ceremonies, including sprint planning, reviews, and demos, effectively communicating accessibility requirements, constraints, and tradeoffs to both technical and non-technical stakeholders.\n\n\nBenefits\n\n\nAnnual salary ranging from $130,000 to $270,000, commensurate with experience.\nUp to 20% 401(k) contribution, vested from Day 1, with no matching requirement.\nCompetitive hourly rates above market standards.\n$3,600 HSA contribution to support healthcare needs.\nSix weeks of paid time off to promote work-life balance.\nCompany-paid comprehensive medical, dental, and vision insurance plans, along with life insurance, short-term and long-term disability, and AD&D coverage.\n\n\nEqual Opportunity\n\nCaptivation is an equal opportunity employer committed to fostering an inclusive environment for all employees. We do not discriminate based on race, color, religion, sex, national origin, age, disability, veteran status, or any other protected class under applicable law. We believe in creating a diverse workforce that reflects the communities we serve and encourages innovation, collaboration, and mutual respect.\n\n\n\n\n\nDesired Skills and Experience\n\nFront-End Development, Web Accessibility, JavaScript, UI/UX Design, Accessibility Testing, Agile",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-28T20:34:19.357Z",
+    "sourceHash": "7e0a3e3dd4edd962c2b947050735e1f504f614c4df350d53b64932c9ef984a3c",
+    "company": {
+      "id": "agilegridsolutions",
+      "name": "AgileGrid Solutions",
+      "logoUrl": "https://logo.clearbit.com/agilegridsolutions.com",
+      "industry": "Technology",
+      "website": "https://agilegridsolutions.com"
+    },
+    "slug": "front-end-developer-agilegrid-solutions-7e0a3e3d",
+    "aiTags": {
+      "stack": [
+        "vue",
+        "javascript",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "fe986c1a392c86365f7f957d645b20b6868f38d4e50a41c8838db1dd5037ec01",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.bestjobtool.com/job-description-usb/F0684B1178D9EE67DD1A01A83D352869?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nCogent Info is a leading technology solutions provider dedicated to delivering innovative and reliable software development services to clients across various industries. With a focus on cutting-edge technologies and best practices, Cogent Info strives to empower organizations through tailored digital solutions that enhance operational efficiency and user experience. Our team comprises highly skilled professionals committed to excellence, collaboration, and continuous improvement, ensuring that we stay at the forefront of technological advancements.\n\nAbout The Role\n\nWe are seeking a highly skilled and motivated Front End Developer with strong expertise in Angular to join our dynamic team. In this role, you will be responsible for developing and maintaining sophisticated web applications, ensuring seamless integration with backend services, and optimizing overall application performance, security, and accessibility. You will play a key role in modernizing legacy codebases by implementing current Angular features such as standalone components and Signals, thereby reducing technical debt and improving maintainability. The ideal candidate will have a passion for crafting high-performance, scalable, and user-centric interfaces that meet modern standards and best practices.\n\nQualifications\n\n\n3-6 years of professional software development experience with a focus on the Angular ecosystem.\nExpert-level understanding of Angular, including framework lifecycle, dependency injection, and routing.\nProficiency in TypeScript, including advanced types, generics, and decorators.\nStrong experience with RxJS, creating and managing complex observable streams for real-time data handling.\nHands-on experience with NgRx, Angular Signals, or Elf for state management.\nProficiency with modern CSS frameworks such as Tailwind CSS and SCSS.\nExperience with Angular Material or similar UI component libraries.\nKnowledge of testing frameworks like VITest, Jest, or Cypress.\nStrong understanding of SOLID principles and clean code practices.\nExperience with Git version control and collaborative development workflows.\nExcellent debugging and troubleshooting skills using Chrome DevTools and Angular DevTools.\nAbility to communicate complex technical concepts clearly to non-technical stakeholders.\n\n\nResponsibilities\n\n\nLead the modernization of legacy Angular codebases by implementing standalone components, Signals, and utilizing the latest Angular framework features to reduce technical debt and improve code quality.\nDesign and develop scalable, high-performance user interfaces from scratch, ensuring architectural alignment with product goals and user needs.\nConduct performance profiling to identify rendering bottlenecks and optimize application responsiveness through advanced lazy loading, tree shaking, and change detection strategies.\nRefactor complex components to enhance maintainability, reusability, and scalability across projects.\nDevelop and maintain state management architectures using NgRx, Angular Signals, or Elf to ensure consistent application state handling.\nCreate complex asynchronous data streams utilizing advanced RxJS patterns for real-time data processing.\nBuild responsive, accessible, and visually appealing interfaces using Tailwind CSS and SCSS, adhering to WCAG 2.1 AA and Section 508 standards.\nExtend and customize component libraries such as Angular Material to meet specific usability and functionality requirements.\nMentor junior developers through detailed code reviews, pair programming, and knowledge sharing sessions.\nTranslate complex technical challenges into clear, actionable explanations for non-technical stakeholders and document architectural decisions and best practices for frontend development.\n\n\nBenefits\n\nAt Cogent Info, we value our employees and offer a comprehensive benefits package designed to support your professional and personal growth. Our benefits include competitive salary packages aligned with industry standards, health insurance coverage, retirement plans, and paid time off. We foster a collaborative and inclusive work environment that encourages continuous learning through training programs, workshops, and certifications. Additionally, our flexible hybrid work model provides the balance needed to thrive both professionally and personally. Join us to work on innovative projects with a talented team committed to excellence and technological advancement.\n\nEqual Opportunity\n\nCogent Info is an equal opportunity employer. We are committed to fostering an inclusive workplace where diversity is valued and all employees are treated with respect and fairness. Employment decisions are made without regard to race, color, religion, gender, sexual orientation, gender identity, age, disability, or any other characteristic protected by applicable law. We believe that a diverse team enhances our creativity, innovation, and overall success.\n\n\n\n\n\nDesired Skills and Experience\n\nAngular, TypeScript, RxJS, UI Development, State Management, Web Performance",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-28T20:33:48.233Z",
+    "sourceHash": "fe986c1a392c86365f7f957d645b20b6868f38d4e50a41c8838db1dd5037ec01",
+    "company": {
+      "id": "agilegridsolutions",
+      "name": "AgileGrid Solutions",
+      "logoUrl": "https://logo.clearbit.com/agilegridsolutions.com",
+      "industry": "Technology",
+      "website": "https://agilegridsolutions.com"
+    },
+    "slug": "frontend-developer-agilegrid-solutions-fe986c1a",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "css",
+        "tailwind",
+        "sass",
+        "cypress",
+        "jest",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d9687fd60f9479a32a1562229c812682821eb9680e1b384d6e53723609d2ee44",
+    "title": "Senior Front End Software Engineer",
+    "applyUrl": "https://www.talenthop.com/apply-with-ai/b01fc6c3-2ab3-409f-80b2-cdf4400f31b5?utm_medium=job_posting&utm_source=linkedin&utm_campaign=front_end_software_engineer&utm_category=software_engineer&utm_term=senior_front_end_software_engineer",
+    "description": "About the job\n\nThis is a Fully Remote Job\n\n\n\n\n1. About Our Client:\n\nThe organization operates within the software and entertainment industry, focusing on developing front-end web applications. It addresses challenges related to delivering high-quality, performant, and user-centered web experiences through a fully remote engineering team.\n\n\n\n\n2. About the Opportunity:\n\nThe Senior Front End Software Engineer is responsible for building and maintaining front-end web applications using React.js. This role contributes by delivering efficient, secure, and reliable features that enhance user experience across devices. The position is integral to the engineering team, coordinating with product managers and designers to meet customer needs and improve development processes.\n\n\n\n\n3. Responsibilities:\n\nEnsure quality through design, processes, and tools in a CI/CD environment\nCollaborate with designers, product managers, and engineers to develop new features and improvements\nDeliver features quickly and iteratively\nDesign, build, and maintain efficient, secure, reusable, and reliable code\nAnalyze application performance and recommend improvements\nConduct code reviews, testing, and debugging\nProvide front-end technical guidance to other engineers\nContribute to technical documentation for Product and Engineering teams\nAttend and participate in scheduled meetings\n\n\n\n\n4. Requirements:\n\n7+ years of experience as a Software Engineer\n5+ years of experience building front-end web applications\n3+ years of experience using React.js within the last 5 years\nProficiency in English (speaking, reading, writing); additional languages are a plus\nPreferred: expertise in unit testing, experience with Tailwind, GraphQL, next.js, full-stack development, familiarity with AI\nAbility to work remotely with a private and quiet workspace\nAuthorized to work in the United States\n\n\n\n\n5. Pay Range and Compensation Package:\n\nThe pay range and compensation package for this role will be determined based on the candidate’s experience, skills, and other relevant factors.\n\n\n\n\nEqual Opportunity Statement:\n\nEqual Opportunity Statement: Our client is an equal opportunity employer. They celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, or national origin.\n\n\n\n\nNote:\n\nTalentHop is a recruitment partner of this role. Please note that all employment decisions, including candidate assessment, interviews, hiring, compensation, and employment terms, are made exclusively by the hiring employer.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-28T20:33:39.100Z",
+    "sourceHash": "d9687fd60f9479a32a1562229c812682821eb9680e1b384d6e53723609d2ee44",
+    "company": {
+      "id": "talenthop",
+      "name": "TalentHop",
+      "logoUrl": "https://logo.clearbit.com/talenthop.com",
+      "industry": "Technology",
+      "website": "https://talenthop.com"
+    },
+    "slug": "senior-front-end-software-engineer-talenthop-d9687fd6",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "tailwind",
+        "graphql"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7ad8890c1fbd1fcf1a7e6759bdb57642d8bcccee8578effe6ca75efe9d4c129d",
+    "title": "Frontend Engineer (React + TypeScript + Node.js)",
+    "applyUrl": "https://knowmadmood.teamtailor.com/jobs/8462915-frontend-engineer-react-typescript-node-js",
+    "description": "About the job\n\nWe are knowmad mood!\n\nSomos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Nacimos para provocar un cambio real a través de la innovación y el desarrollo sostenible, con la misión de aportar valor a los clientes e impulsar nuestro talento.\n\nFormado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto.\n\nLos valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza.\n\n¿Qué es lo que valoramos?\n\nExperiencia de al menos 5 años como Frontend Engineer, Full Stack Engineer o Consultor Técnico de Desarrollo Web, participando en productos digitales de gran escala.\n\n\n Experiencia en el desarrollo de aplicaciones web modernas utilizando ReactJS, TypeScript y JavaScript (ES2022+).\n Experiencia en arquitecturas SSR (Server Side Rendering), SPA (Single Page Applications) y patrones Backend for Frontend (BFF).\n Conocimientos sólidos en Node.js y Express para el desarrollo e integración de servicios.\n Experiencia en desarrollo frontend basado en React Hooks y buenas prácticas de arquitectura de componentes.\n Experiencia trabajando con testing automatizado mediante Jest, React Testing Library, Mocha y Chai.\n Conocimientos de herramientas modernas del ecosistema frontend como Rsbuild, pnpm Workspaces, Turborepo y Biome.\n Experiencia en integración con APIs y construcción de interfaces escalables, mantenibles y orientadas a negocio.\n Interés y conocimientos en Inteligencia Artificial Generativa, desarrollo con agentes IA y nuevas herramientas de productividad basadas en IA.\n Capacidad para trabajar en entornos Agile/Scrum y colaborar con equipos multidisciplinares.\n Muy buena actitud, curiosidad tecnológica, capacidad de aprendizaje y predisposición para trabajar de forma colaborativa con equipos experimentados.\n\n\n¿Cuáles serían tus funciones?\n\n\n Análisis Funcional: Participar en el análisis de los requisitos y funcionalidades definidas por el equipo de producto.\n Diseño de Soluciones Técnicas: Proponer soluciones técnicas, realizar estimaciones de esfuerzo y colaborar en la definición de la arquitectura de las aplicaciones.\n Desarrollo Frontend: Implementar nuevas funcionalidades utilizando React, TypeScript y las tecnologías del ecosistema frontend corporativo.\n Integración con Backend: Desarrollar e integrar aplicaciones con APIs y servicios backend garantizando escalabilidad y rendimiento.\n Arquitectura Web Moderna: Participar en el diseño y evolución de aplicaciones basadas en SSR, BFF y SPA.\n Testing y Calidad: Desarrollar pruebas unitarias y garantizar entregas de código de alta calidad, bien estructurado y mantenible.\n Gestión de Código y Despliegues: Gestionar ramas, revisiones de código, despliegues y monitorización de las soluciones desarrolladas.\n Mantenimiento Evolutivo: Asegurar la correcta evolución y mantenimiento de los componentes necesarios para el correcto funcionamiento de la plataforma.\n Innovación e IA: Participar en la adopción de nuevas capacidades relacionadas con IA Generativa, asistentes de desarrollo y agentes inteligentes.\n\n\nAdemás, valoraremos muy positivamente si tienes experiencia y/o conocimientos en:\n\n\n React 19, Server Components y arquitecturas frontend modernas.\n Micro-frontends y diseño de aplicaciones distribuidas.\n Herramientas de experimentación y feature flags como GrowthBook.\n Arquitectura de la información y diseño de experiencias digitales escalables.\n Integración de soluciones de IA en productos digitales.\n Herramientas y frameworks relacionados con agentes IA y automatización inteligente.\n Buenas prácticas de rendimiento, accesibilidad y observabilidad frontend.\n Metodologías Agile/Scrum y cultura DevOps.\n Capacidad para equilibrar proactividad, autonomía y alineación con las decisiones técnicas del equipo.\n\n\nY con nosotros podrás disfrutar de:\n\n✅Contrato Indefinido\n\n✅ 100% REMOTO\n\n✅Formación interna y acceso a certificaciones ♻Consulta nuestro calendario aquí:\n\nhttps://www.knowmadmood.com/es/talento/formacion\n\n✅Plan de retribución flexible (seguro médico, transporte, tickets guardería, tickets restaurante)\n\n✅Embajador de nuestra marca, a través de nuestro plan amigo\n\n¡Recomienda a tus amigos y llévate un extra!\n\n✅¡Eventos, meetups, techdays, charlas...y mucho más!\n\n✅ 26 días de descanso (22 días vacaciones, 2 días de libre disposición y 24 y 31 diciembre festivos por defecto)\n\n✅ Horario: 8.30 a 18h ( flexible) L-J y V 8 a 15h e Intensiva de Verano Julio y Agosto de 8 a 15h\n\nPara estar al corriente de nuestras novedades síguenos aquí -> knowmad mood\n\nEn knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-28T20:23:41.290Z",
+    "sourceHash": "7ad8890c1fbd1fcf1a7e6759bdb57642d8bcccee8578effe6ca75efe9d4c129d",
+    "company": {
+      "id": "knowmadmood",
+      "name": "knowmad mood",
+      "logoUrl": "https://logo.clearbit.com/knowmadmood.com",
+      "industry": "Technology",
+      "website": "https://knowmadmood.com"
+    },
+    "slug": "frontend-engineer-react-typescript-node-js-knowmad-mood-7ad8890c",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "28d007e250bf3206cf8b96eafe1bd9cc25e32f3c7c296978e11187347aa19030",
+    "title": "Senior Frontend Developer (React, Redux & Microfrontends)",
+    "applyUrl": "https://knowmadmood.teamtailor.com/jobs/8463195-senior-frontend-developer-react-redux-microfrontends",
+    "description": "About the job\n\nWe are knowmad mood!\n\nSomos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Nacimos para provocar un cambio real a través de la innovación y el desarrollo sostenible, con la misión de aportar valor a los clientes e impulsar nuestro talento.\n\nFormado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto.\n\nLos valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza.\n\n¿Qué es lo que valoramos?\n\nExperiencia de al menos 3-4 años como Desarrollador/a Frontend o Consultor/a Técnico en:\n\n\n Experiencia sólida con JavaScript ES6, React y Redux en entornos empresariales.\n Conocimientos avanzados de HTML5, CSS3 y desarrollo de aplicaciones web modernas.\n Experiencia en consumo e integración de APIs REST.\n Conocimientos de Clean Code, principios SOLID y buenas prácticas de desarrollo de software.\n Experiencia en desarrollo y mantenimiento de tests unitarios y conocimientos de estrategias de testing.\n Conocimientos y experiencia trabajando con Git.\n Experiencia con herramientas de testing end-to-end como Cypress.\n Conocimiento y experiencia en arquitecturas basadas en Shell + Microfrontends.\n Experiencia aplicando buenas prácticas dentro del ciclo de vida del desarrollo de software (SDLC), incluyendo calidad, rendimiento, seguridad y mantenibilidad.\n Capacidad de trabajo en equipo y excelentes habilidades de comunicación, colaborando con equipos multidisciplinares.\n\n\n¿Cuáles serían tus funciones?\n\n\n Desarrollo Frontend: Diseñar, desarrollar y evolucionar aplicaciones web utilizando JavaScript ES6, React y Redux, garantizando una experiencia de usuario moderna, eficiente y escalable.\n Arquitectura y Evolución Técnica: Participar en la definición e implementación de arquitecturas basadas en Shell y Microfrontends, asegurando la escalabilidad y mantenibilidad de las soluciones.\n Integración de Servicios: Desarrollar e integrar aplicaciones mediante APIs REST, garantizando una correcta comunicación entre sistemas y servicios.\n Calidad y Testing: Diseñar e implementar pruebas unitarias y pruebas end-to-end con Cypress, contribuyendo a la calidad y estabilidad de las aplicaciones.\n Buenas Prácticas de Desarrollo: Aplicar principios de Clean Code, SOLID y estándares de ingeniería para mantener un código limpio, eficiente y fácilmente mantenible.\n Ingeniería de Software y SDLC: Cumplir con las mejores prácticas durante todo el ciclo de desarrollo, incluyendo aspectos relacionados con calidad, seguridad, rendimiento y pruebas.\n Colaboración Multidisciplinaria: Trabajar conjuntamente con equipos de negocio, producto y tecnología para identificar necesidades y aportar soluciones innovadoras alineadas con los objetivos del proyecto.\n\n\nAdemás, valoraremos muy positivamente si tienes experiencia y/o conocimientos en:\n\n\n Arquitecturas frontend escalables basadas en Microfrontends.\n Herramientas de testing automatizado y calidad del software.\n Desarrollo en entornos ágiles utilizando metodologías como Scrum o Kanban.\n Prácticas de integración continua y despliegue continuo (CI/CD).\n Optimización del rendimiento y seguridad en aplicaciones web.\n Experiencia participando en proyectos de gran volumen o con múltiples equipos de desarrollo.\n Capacidad para aportar mejoras técnicas, fomentar buenas prácticas y contribuir a la evolución tecnológica de los equipos.\n\n\nY con nosotros podrás disfrutar de:\n\n✅Contrato Indefinido\n\n✅ 100% REMOTO\n\n✅Formación interna y acceso a certificaciones ♻Consulta nuestro calendario aquí:\n\nhttps://www.knowmadmood.com/es/talento/formacion\n\n✅Plan de retribución flexible (seguro médico, transporte, tickets guardería, tickets restaurante)\n\n✅Embajador de nuestra marca, a través de nuestro plan amigo\n\n¡Recomienda a tus amigos y llévate un extra!\n\n✅¡Eventos, meetups, techdays, charlas...y mucho más!\n\n✅ 26 días de descanso (22 días vacaciones, 2 días de libre disposición y 24 y 31 diciembre festivos por defecto)\n\n✅ Horario: 8.30 a 18h ( flexible) L-J y V 8 a 15h e Intensiva de Verano Julio y Agosto de 8 a 15h\n\nPara estar al corriente de nuestras novedades síguenos aquí -> knowmad mood\n\nEn knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-28T20:22:13.401Z",
+    "sourceHash": "28d007e250bf3206cf8b96eafe1bd9cc25e32f3c7c296978e11187347aa19030",
+    "company": {
+      "id": "knowmadmood",
+      "name": "knowmad mood",
+      "logoUrl": "https://logo.clearbit.com/knowmadmood.com",
+      "industry": "Technology",
+      "website": "https://knowmadmood.com"
+    },
+    "slug": "senior-frontend-developer-react-redux-microfrontends-knowmad-mood-28d007e2",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "redux",
+        "cypress",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "193caacf4808632c1d98b20d4833c16d70bedbcfecc15021570b103dce46f76b",
+    "title": "Staff Frontend Engineer (m/f/d)",
+    "applyUrl": "https://jobs.smartrecruiters.com/ABOUTYOUGmbH/744000150636049-staff-frontend-engineer-m-f-d-?trid=2d92f286-613b-4daf-9dfa-6340ffbecf73",
+    "description": "About the job\n\nUnternehmensbeschreibung\n\nSCAYLE ist eine der am schnellsten wachsenden Enterprise-Commerce-Plattformen der Welt und ermöglicht es Marken und Einzelhändlern, ihre D2C-Ambitionen zu verwirklichen. SCAYLE steht für Innovation, internationale Zusammenarbeit und einen starken Fokus auf Daten. Wir sind überzeugt, dass es uns sowohl fachlich als auch persönlich weiterbringt, wenn wir unsere Komfortzone verlassen und mutige Entscheidungen treffen. Probleme sehen wir nicht als Hindernisse, sondern als Chancen, bessere Lösungen zu finden. Wir arbeiten in einem Umfeld, das Flexibilität, Kreativität und kontinuierliche Weiterentwicklung fördert. Uns treibt die gemeinsame Motivation an, etwas zu bewegen und die Zukunft des E-Commerce aktiv mitzugestalten.\n\nStellenbeschreibung\n\nWir suchen ab sofort eine:n Staff Frontend Developer, um unser dynamisches Engineering-Team zu verstärken. In dieser Rolle übernimmst du die Verantwortung für reichweitenstarke Enterprise-E-Commerce-Plattformen, triffst gemeinsam mit unserem Tech Lead architektonische Entscheidungen und treibst die moderne Frontend-Entwicklung kontinuierlich voran.\n\nAufgaben\n\n\nEntwicklung hochfrequentierter Benutzeroberflächen für Enterprise-E-Commerce-Plattformen auf Basis von JavaScript, TypeScript, Vue 3 und Nuxt 3.\nUmsetzung wirkungsvoller Frontend-Features zur Optimierung von User Experience und Konversionsraten.\nZusammenarbeit mit Entwickler:innen, Produktmanager:innen, QA-Engineers und Designer:innen zur Bereitstellung moderner Design-Systeme und Features.\nErarbeitung architektonischer Entscheidungen gemeinsam mit dem Tech Lead sowie Evaluierung neuer Webtechnologien.\nSicherstellung einer hohen Code-Qualität durch Code Reviews, automatisiertes Testen und aktive Mitgestaltung in Team-Retrospektiven.\nWeiterentwicklung von Shop-Features und Designs in einem agilen Scrum-Umfeld, primär mit Nuxt 3 und Tailwind CSS.\nGewährleistung einer durchgängigen Qualitätssicherung und pixelgenauen Design-Umsetzung mithilfe von Testing-Frameworks wie Vitest und Playwright.\nAktiver Wissenstransfer und Austausch innerhalb unserer internen Tech-Community.\n\n\nQualifikationen\n\n\nMindestens 7 Jahre Berufserfahrung und fundiertes Fachwissen in der Frontend-Entwicklung.\nPraxiserfahrung mit TypeScript sowie modernen Frameworks wie Vue 3, Nuxt 3 oder Node.js (oder fundierte ReactJS-Kenntnisse mit der Bereitschaft, zu Vue zu wechseln).\nSichere Beherrschung der grundlegenden Webtechnologien (HTML, JavaScript und CSS).\nPraktische Erfahrung mit Tailwind CSS sowie ein geschulter Blick für eine präzise UI-Design-Umsetzung.\nHintergrund im B2C-E-Commerce oder Erfahrung aus einem dynamischen Boutique-Agenturumfeld.\nExzellente Kommunikationsfähigkeiten (auf Englisch) und ausgeprägte Empathie für die Perspektive anderer.\nPraktische Kenntnisse automatisierter Testing-Tools wie Playwright, Jest oder Vitest.\nErste Erfahrung mit Vue Storefront oder Scayle ist von Vorteil.\nErfahrung mit Redis ist ein Plus.\nLeidenschaft für Web-Barrierefreiheit ist ein weiteres Plus.\n\n\nZusätzliche Informationen\n\nDeine Vorteile bei uns auf einen Blick: Besuche unsere Benefits-Seite.\n\nBewirb dich einfach online über unsere Karriereseite - wir melden uns schnellstmöglich mit einem Feedback bei dir!\n\nEin Ort, an dem Du Du sein kannst.\n\nWir sehen es als unsere Verantwortung, ein Umfeld zu schaffen, in dem sich alle so willkommen fühlen können, wie sie sind.\n\nUnterschiedliche Hintergründe und Perspektiven machen uns stärker und prägen unsere Kultur.\n\nWofür wir intern stehen, dafür stehen wir auch als Marke: Akzeptanz, Inklusion und Fairness.\n\nDeine Vorteile bei uns auf einen Blick: Besuche unsere Benefits-Seite.\n\nBewirb dich einfach online über unsere Karriereseite - wir melden uns schnellstmöglich mit einem Feedback bei dir!\n\nEin Ort, an dem Du Du sein kannst.\n\nWir sehen es als unsere Verantwortung, ein Umfeld zu schaffen, in dem sich alle so willkommen fühlen können, wie sie sind.\n\nUnterschiedliche Hintergründe und Perspektiven machen uns stärker und prägen unsere Kultur.\n\nWofür wir intern stehen, dafür stehen wir auch als Marke: Akzeptanz, Inklusion und Fairness.",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-28T19:42:11.166Z",
+    "sourceHash": "193caacf4808632c1d98b20d4833c16d70bedbcfecc15021570b103dce46f76b",
+    "company": {
+      "id": "aboutyou",
+      "name": "ABOUT YOU",
+      "logoUrl": "https://logo.clearbit.com/aboutyou.com",
+      "industry": "Technology",
+      "website": "https://aboutyou.com"
+    },
+    "slug": "staff-frontend-engineer-m-f-d-about-you-193caacf",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "nuxtjs",
+        "typescript",
+        "javascript",
+        "css",
+        "tailwind",
+        "jest",
+        "playwright",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "principal",
+      "employmentType": "internship"
+    }
+  },
+  {
+    "id": "3fc2c50d284db337ecbe6964c0bef7559d93313553c53ad544bccccd20bb408d",
+    "title": "Frontend Web Developer",
+    "applyUrl": "https://jobs.ashbyhq.com/airapps/32a494cc-f1a7-4c2c-b6df-4a3970ba13a1/application?utm_source=LinkedInPaid",
+    "description": "About the job\n\nAbout Air Apps\n\nAt Air Apps, we believe in thinking bigger—and moving faster. We’re a family-founded company on a mission to create the world’s first AI-powered Personal & Entrepreneurial Resource Planner (PRP), and we need your passion and ambition to help us change how people plan, work, and live. Born in Lisbon, Portugal, in 2018—and now with offices in both Lisbon and San Francisco—we’ve remained self-funded while reaching over 100 million downloads worldwide.\n\nOur long-term focus drives us to challenge the status quo every day, pushing the boundaries of AI-driven solutions that truly make a difference. Here, you’ll be a creative force, shaping products that empower people across the globe.\n\nJoin us on this journey to redefine resource management—and change lives along the way.\n\nThe Role\n\nAs a Front-End Web Developer at Air Apps, you will be responsible for crafting seamless, high-performance, and visually engaging web experiences. You will work closely with designers, product managers, and back-end developers to build and optimize user interfaces using modern web technologies. Your work will directly impact millions of users, ensuring intuitive and efficient interactions with our AI-powered platform.\n\n\nThis is a fully onsite position, based at our office in Lisbon, where you will collaborate closely with cross-functional teams in person and contribute to a dynamic and fast-paced environment. We are open to support with relocation efforts.\n\n\nResponsibilities\n\n\nDevelop and maintain responsive, user-friendly web applications using HTML, CSS, and JavaScript frameworks such as React, Vue, or Angular.\nCollaborate with UI/UX designers to translate design concepts into interactive and accessible web interfaces.\nOptimize applications for performance, scalability, and cross-browser compatibility.\nImplement reusable components and maintainable front-end architectures.\nWork closely with back-end developers to integrate APIs and ensure seamless data flow.\nStay up-to-date with emerging front-end technologies, trends, and best practices.\nDebug and resolve front-end issues to ensure a smooth user experience.\n\n\nRequirements\n\n\nAround 3+ years of experience in front-end web development.\nProficiency in HTML, CSS, JavaScript, and modern frameworks such as React, Vue, or Angular.\nExperience with state management libraries (e.g., Redux, Vuex, or Zustand).\nStrong understanding of responsive design, accessibility, and cross-browser compatibility.\nKnowledge of CSS pre-processors (SASS, LESS) and front-end build tools (Webpack, Vite).\nFamiliarity with RESTful APIs, GraphQL, and front-end performance optimization techniques.\nExperience with version control systems like Git.\nStrong problem-solving skills and attention to detail.\nAbility to work in an agile environment and collaborate effectively with cross-functional teams.\n\n\nWhat benefits do we offer?\n\n\nApple hardware ecosystem for work.\nAnnual Bonus\nTop-tier Health and Life Insurance for peace of mind.\nTransportation Budget to support your commute needs.\nCoverflex benefits package for meal allowances, well-being, and more.\nChildcare support.\nAir Conference - an opportunity to meet the team, collaborate, and grow together.\nPension Fund to support your long-term financial planning.\nUrban Sports Club membership to keep you active.\nMeals 100% free at the hub.\n\n\nDiversity & Inclusion\n\nAt Air Apps, we are committed to fostering a diverse, inclusive, and equitable workplace. We enthusiastically welcome applicants from all backgrounds, experiences, and perspectives. We celebrate diversity in all its forms and believe that varied voices and experiences make us stronger.\n\nApplication Disclaimer\n\nAt Air Apps, we value transparency and integrity in our hiring process. Applicants must submit their own work without any AI-generated assistance. Any use of AI in application materials, assessments, or interviews will result in disqualification.\n\nCompensation Range: €47K - €58K",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-28T19:42:01.904Z",
+    "sourceHash": "3fc2c50d284db337ecbe6964c0bef7559d93313553c53ad544bccccd20bb408d",
+    "company": {
+      "id": "airapps",
+      "name": "Air Apps",
+      "logoUrl": "https://logo.clearbit.com/airapps.com",
+      "industry": "Technology",
+      "website": "https://airapps.com"
+    },
+    "slug": "frontend-web-developer-air-apps-3fc2c50d",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "css",
+        "sass",
+        "less",
+        "webpack",
+        "vite",
+        "redux",
+        "zustand",
+        "graphql",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "96e2ff8c1ac91fd7951b2420854246ae9c375b12e911da8a4c864884db36df54",
     "title": "Frontend Developer - Remote",
     "applyUrl": "https://yoailabs.careers-page.com/jobs/a5c4d256-020d-49b2-bc79-639335489d86?utm_medium=free_job_board&utm_source=linkedin",
