@@ -43,10 +43,8 @@ if (!GEMINI_API_KEY) {
   process.exit(1);
 }
 
-if (!DRY_RUN && (!LINKEDIN_ACCESS_TOKEN || (!LINKEDIN_PERSON_ID && !LINKEDIN_ORG_ID))) {
-  console.error('❌ Missing LINKEDIN_ACCESS_TOKEN or (LINKEDIN_PERSON_ID / LINKEDIN_ORG_ID)');
-  process.exit(1);
-}
+// We will validate LinkedIn credentials during execution loop
+
 
 // ─── Gemini AI ───────────────────────────────────────────────
 
@@ -130,7 +128,7 @@ Write ONLY the post text, nothing else. Make it compelling and highly readable.`
 
 // ─── LinkedIn API ────────────────────────────────────────────
 
-async function postToLinkedIn(text, authorUrn) {
+async function postToLinkedIn(text, authorUrn, accessToken) {
   // The LinkedIn API is notoriously buggy with Markdown and often silently truncates posts
   // if it encounters unmatched formatting characters, even when escaped.
   // Since we instructed the AI to output plain text, we strictly strip stray formatting chars.
@@ -154,7 +152,7 @@ async function postToLinkedIn(text, authorUrn) {
   const res = await fetch('https://api.linkedin.com/rest/posts', {
     method: 'POST',
     headers: {
-      'Authorization': `Bearer ${LINKEDIN_ACCESS_TOKEN}`,
+      'Authorization': `Bearer ${accessToken}`,
       'Content-Type': 'application/json',
       'X-Restli-Protocol-Version': '2.0.0',
       'LinkedIn-Version': '202608',
@@ -193,29 +191,68 @@ async function main() {
     console.log(`   Post length: ${postText.length} characters`);
   } else {
     console.log('\n📤 Publishing to LinkedIn...');
+    
+    // Gather all configured LinkedIn accounts
+    const accounts = [];
+    
+    // Base Account
+    if (LINKEDIN_ACCESS_TOKEN && (LINKEDIN_PERSON_ID || LINKEDIN_ORG_ID)) {
+      accounts.push({
+        token: LINKEDIN_ACCESS_TOKEN,
+        personId: LINKEDIN_PERSON_ID,
+        orgId: LINKEDIN_ORG_ID,
+        name: 'Primary Account'
+      });
+    }
+
+    // Additional Accounts (e.g., LINKEDIN_ACCESS_TOKEN_2, _3, etc.)
+    let idx = 2;
+    while (process.env[`LINKEDIN_ACCESS_TOKEN_${idx}`]) {
+      const pId = process.env[`LINKEDIN_PERSON_ID_${idx}`];
+      const oId = process.env[`LINKEDIN_ORG_ID_${idx}`];
+      if (pId || oId) {
+        accounts.push({
+          token: process.env[`LINKEDIN_ACCESS_TOKEN_${idx}`],
+          personId: pId,
+          orgId: oId,
+          name: `Account ${idx}`
+        });
+      }
+      idx++;
+    }
+
+    if (accounts.length === 0) {
+      console.error('❌ Missing LINKEDIN_ACCESS_TOKEN or (LINKEDIN_PERSON_ID / LINKEDIN_ORG_ID) in environment variables.');
+      process.exit(1);
+    }
+
     let successCount = 0;
-    try {
-      if (LINKEDIN_PERSON_ID) {
-        console.log('   Posting to Personal Profile...');
-        const resultPerson = await postToLinkedIn(postText, `urn:li:person:${LINKEDIN_PERSON_ID}`);
-        console.log(`   ✅ Posted to Personal Profile! Post ID: ${resultPerson.postId}`);
-        successCount++;
+    
+    for (const acc of accounts) {
+      console.log(`\n➡️  Target: ${acc.name}`);
+      try {
+        if (acc.personId) {
+          console.log(`   Posting to Personal Profile (${acc.personId})...`);
+          const resultPerson = await postToLinkedIn(postText, `urn:li:person:${acc.personId}`, acc.token);
+          console.log(`   ✅ Posted to Personal Profile! Post ID: ${resultPerson.postId}`);
+          successCount++;
+        }
+        
+        if (acc.orgId) {
+          console.log(`   Posting to Company Page (${acc.orgId})...`);
+          const resultOrg = await postToLinkedIn(postText, `urn:li:organization:${acc.orgId}`, acc.token);
+          console.log(`   ✅ Posted to Company Page! Post ID: ${resultOrg.postId}`);
+          successCount++;
+        }
+      } catch (err) {
+        console.error(`\n❌ Failed to post to ${acc.name}: ${err.message}`);
       }
-      
-      if (LINKEDIN_ORG_ID) {
-        console.log('   Posting to Company Page...');
-        const resultOrg = await postToLinkedIn(postText, `urn:li:organization:${LINKEDIN_ORG_ID}`);
-        console.log(`   ✅ Posted to Company Page! Post ID: ${resultOrg.postId}`);
-        successCount++;
-      }
-      
-      if (successCount > 0) {
-        console.log(`\n✅ Post successful!`);
-      } else {
-        console.error('\n❌ No valid LinkedIn IDs configured. Skipping update.');
-      }
-    } catch (err) {
-      console.error(`\n❌ Failed to post: ${err.message}`);
+    }
+    
+    if (successCount > 0) {
+      console.log(`\n✅ Post successfully published to ${successCount} targets!`);
+    } else {
+      console.error('\n❌ No valid posts were made.');
       process.exit(1);
     }
   }

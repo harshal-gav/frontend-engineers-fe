@@ -32,6 +32,12 @@ jobs:
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
           LINKEDIN_PERSON_ID: ${{ secrets.LINKEDIN_PERSON_ID }}
           LINKEDIN_ORG_ID: ${{ secrets.LINKEDIN_ORG_ID }}
+          LINKEDIN_ACCESS_TOKEN_2: ${{ secrets.LINKEDIN_ACCESS_TOKEN_2 }}
+          LINKEDIN_PERSON_ID_2: ${{ secrets.LINKEDIN_PERSON_ID_2 }}
+          LINKEDIN_ORG_ID_2: ${{ secrets.LINKEDIN_ORG_ID_2 }}
+          LINKEDIN_ACCESS_TOKEN_3: ${{ secrets.LINKEDIN_ACCESS_TOKEN_3 }}
+          LINKEDIN_PERSON_ID_3: ${{ secrets.LINKEDIN_PERSON_ID_3 }}
+          LINKEDIN_ORG_ID_3: ${{ secrets.LINKEDIN_ORG_ID_3 }}
         run: node scripts/post-to-linkedin.js
       
 
