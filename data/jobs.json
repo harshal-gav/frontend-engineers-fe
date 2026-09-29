@@ -1,5 +1,297 @@
 [
   {
+    "id": "b0e906a86cf54ba89d10ea27a7ef529883f5db976941906817c3b967560e9536",
+    "title": "Sr. Software Engineer (Frontend) - Extensions Team",
+    "applyUrl": "https://ats.rippling.com/cerby/jobs/abd15dc5-39d6-4a2c-bc43-cafe55765312?src=LinkedIn",
+    "description": "About the job\n\nAbout Cerby\n\nAt Cerby, security is everyone's business.\n\nCerby extends your security perimeter to include your disconnected applications, providing identity automation and eliminating manual processes. It's one of the biggest blind spots in enterprise security, and we're the team closing it. If you want to work alongside the team solving one of the hardest, most overlooked problems in security, you're in the right place.\n\nFounded in 2020, Cerby is backed by leading investors and trusted by enterprises across the globe.\n\nAbout The Role\n\nAt Cerby, software engineers are at the heart of driving technology and product innovation. As a Senior Software Engineer on the Extension team, you will own and scale the browser extension at the core of Cerby's platform — the surface where users manage application passwords, autofill and inject credentials across the sites they use every day, and authenticate through passkeys and federated identity providers. The extension is a cross-browser Manifest V3 product shipping to Chrome, Edge, Firefox, and Safari, backed by service-worker-driven background synchronization, secure session lifecycle management.\n\nIn this role you will own the quality, performance, and security of the extension end-to-end, help lead a security-first engineering culture, and sharpen a product experience that our users' most sensitive credential interactions depend on. Because the extension injects UI into pages we don't control and brokers our users' most sensitive data, security is not a phase of the work — it is the work. You are also expected to embrace AI as a core part of how we build, actively exploring and incorporating AI-assisted tools and practices into your daily development workflow to improve team efficiency and accelerate impact.\n\nKey Responsibilities\n\n\nDesign and Develop: Build scalable, high-performance software solutions that align with business goals and user needs, leveraging AI-assisted tools and techniques as part of your engineering practice.\nCollaborate: Work closely with product managers, engineering managers, UX designers, and other engineers to deliver high-quality features and functionality.\nCode Excellence: Write clean, maintainable, and efficient code, adhering to best practices and coding standards. Help define and promote best practices across the engineering org, including how AI tools can be responsibly and effectively integrated into development workflows.\nContinuous Improvement: Participate in code reviews, share knowledge with team members, and continuously improve development processes.\nInnovation and Curiosity: Champion new technologies, frameworks, and methodologies that drive innovation and product evolution, while continuously exploring ways to leverage AI in your day-to-day work to boost personal efficiency and empower those around you to do the same.\nSecurity Mindset: Actively contribute to our security-first approach by proactively identifying vulnerabilities and implementing robust solutions, including treating the frontend dependency ecosystem as a security surface: owning PNPM workspace governance, auditing packages for CVEs, enforcing patching SLAs, and managing supply-chain risk across transitive dependencies. Applies the same critical lens to how AI tools are adopted in development workflows, evaluating their security implications and ensuring they don’t introduce new vectors for risk.\nRemote Collaboration: Collaborate effectively in a remote-first environment, ensuring seamless communication and teamwork across time zones.\nCulture: Demonstrates leadership and lives Cerby’s core values to achieve positive outcomes. Help cultivate an environment where experimenting with AI is encouraged, learnings are shared openly, and the team grows together.\nProblem-Solving: Strong analytical and problem-solving skills with a focus on delivering high-quality solutions.\nCommunication Skills: Ability to communicate complex technical concepts clearly and concisely both in written and verbal form\nTeam Collaboration: Collaborate and thrive in agile teams, actively mentoring engineers, sharing knowledge across the org, and leveraging AI to accelerate documentation (runbooks, ADRs, onboarding guides, post-mortems) to free more time for the deep technical conversations that actually transfer expertise.\n\n\nExperience\n\nQualifications & Required Skills\n\n\n5+ years of professional software engineering experience, with a focus on building and scaling SaaS applications.\nPrior experience developing and maintaining Distributed Applications\nPrevious experience mentoring junior developers and conducting security-first code reviews\n\n\nTechnical Expertise\n\n\nManifest V3 service-worker model: ephemeral execution and state persistence across termination (chrome.alarms, keep-alive), plus the distributed-system concerns that come with it — cross-tab coordination, background sync, and token-refresh/session races.\nContent scripts and injection into untrusted pages: isolated-world vs MAIN-world execution, Shadow DOM isolation, and MutationObserver-based DOM resilience.\nMessage passing across content scripts, service worker, popup/side panel, and offscreen documents, with sender/origin validation as a security boundary.\nCross-browser delivery to Chrome, Edge, Firefox, and Safari: API divergence (chrome.* vs browser.*), MV2/MV3 differences, Safari packaging, and per-store review/release (staged rollout, rollback, remote-code ban).\nNative messaging with native host applications, plus extension-specific performance (service-worker cold-start, bundle size, content-script efficiency).\n\n\nProficiency In\n\n\nStrong React + TypeScript with utility-first CSS (e.g., TailwindCSS), building UI across extension surfaces (popup, options, side panel, in-page) that is responsive, accessible (WCAG/ARIA), and reusable via a design system.\nCore frontend and browser fundamentals: browser API, client-side storage (localStorage, IndexedDB, chrome.storage), networking (fetch/XHR), and performance optimization.\nDesigning, consuming, and optimizing REST APIs with efficient data-fetching and caching (e.g., TanStack Query).\nFront-end security: mitigating XSS, CSRF, and CORS, and applying CSP, including the extension's own CSP model.\nModern authentication and identity: OAuth 2.0 / OIDC, SAML, SCIM, and WebAuthn / FIDO2 / passkeys; prior IAM or security experience.\nTesting (unit, integration, component) and observability (metrics, traces, logs; OpenTelemetry/Datadog a plus), owning delivery end-to-end from design to production in an Agile/CI-CD environment.\n\n\nNice To Have\n\n\nExperience working with security compliance frameworks (SOC 2, GDPR, HIPPA, etc.)\nFamiliarity with encryption processes and key management. \nPrior experience in a venture-funded high-growth SaaS startup preferred.\n\n\nDesired Qualities\n\n\nResourceful Achiever: Self-motivated, proactive, and adaptable in solving complex technical challenges.\nProduct Minded: Strong ability to understand customer value, to translate customer needs into software products that deliver tangible customer value.\nPrecision Executor: Focused on optimizing performance, scalability, and reliability in software delivery.\nTeam Player: Strong interpersonal skills, fostering a culture of collaboration and shared success. Actively mentor other engineers.\nLifelong Learner: A continuous curiosity to learn and explore emerging technologies and industry trends.\nInnovative Thinker: Open to creative solutions and comfortable navigating ambiguity.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T19:17:48.445Z",
+    "sourceHash": "b0e906a86cf54ba89d10ea27a7ef529883f5db976941906817c3b967560e9536",
+    "company": {
+      "id": "cerby",
+      "name": "Cerby",
+      "logoUrl": "https://logo.clearbit.com/cerby.com",
+      "industry": "Technology",
+      "website": "https://cerby.com"
+    },
+    "slug": "sr-software-engineer-frontend-extensions-team-cerby-b0e906a8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "tailwind",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "08543f011f53d13307252b50a6cfb16d7f0aa5b5ce071a27e4fc927d573eafb0",
+    "title": "Senior Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/bltqqch0xnul45b80pm_en?country=Mexico&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are looking for a Senior Frontend Engineer to build and evolve a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. You will collaborate with engineering, product, and design to solve complex UI and API-adjacent problems.\n\nResponsibilities\n\n\nDesign core functionality for a web-based medical imaging viewer\nBuild user interfaces using TypeScript and ReactJS\nMaintain existing frontend features and improve performance and reliability\nCollaborate with engineers to analyze problems and implement solutions\nCoordinate with product and design to deliver intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\n3+ years of professional frontend development experience\nStrong TypeScript and ReactJS experience\nProven DICOM Medical Viewers experience, including OHIF/DICOM\nStrong API and integration skills across client/server boundaries\nSolid frontend architecture knowledge, including state management and component design\nExcellent written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience with regulated environments or healthcare/clinical trial software\nExperience with Python or Go for backend collaboration\nExperience building CI/CD pipelines, with GitLab CI exposure\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Mexico",
+    "country": "Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T18:39:42.523Z",
+    "sourceHash": "08543f011f53d13307252b50a6cfb16d7f0aa5b5ce071a27e4fc927d573eafb0",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "senior-frontend-engineer-medical-imaging-viewer-epam-systems-08543f01",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mexico"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "670ec2a561d426d2d2756085f9280eb8ead6f0eed83a6d13ccec90b57764320e",
+    "title": "Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/bltf2bisuru3zbhc7o0_en?country=Mexico&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Mexico",
+    "country": "Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T18:39:20.375Z",
+    "sourceHash": "670ec2a561d426d2d2756085f9280eb8ead6f0eed83a6d13ccec90b57764320e",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-670ec2a5",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mexico"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "06979e51badb676424c31eab8d5362584e47a193cbbaf43d516ec5c072cf22ac",
+    "title": "Frontend Engineer (Next.js)",
+    "applyUrl": "https://namolabs.in/careers/apply?role=Frontend%20Engineer%20(Next.js)",
+    "description": "About the job\n\nBack to Careers\n\nApplying for\n\nFrontend Engineer (Next.js)\n\nCraft premium web experiences using Next.js and Tailwind CSS.\n\nDepartment Engineering\n\nFocus Frontend + Web Engineering\n\nLocation Remote\n\nOpen for Full-Time\n\n\n Internship\n\n\nRole details\n\nPreferred Skills\n\nTypeScriptReact / Next.jsTailwind CSSAccessibility (WCAG)Performance optimisationFigma-to-code\n\nResponsibilities\n\n\n Build and maintain Next.js web applications\n Translate Figma designs into pixel-perfect UIs\n Implement accessibility and performance best practices\n Collaborate with designers and backend engineers",
+    "location": "Remote - Indonesia",
+    "country": "Indonesia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T18:28:29.359Z",
+    "sourceHash": "06979e51badb676424c31eab8d5362584e47a193cbbaf43d516ec5c072cf22ac",
+    "company": {
+      "id": "namolabs",
+      "name": "Namo Labs",
+      "logoUrl": "https://logo.clearbit.com/namolabs.com",
+      "industry": "Technology",
+      "website": "https://namolabs.com"
+    },
+    "slug": "frontend-engineer-next-js-namo-labs-06979e51",
+    "aiTags": {
+      "stack": [
+        "nextjs",
+        "css",
+        "tailwind",
+        "figma",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Indonesia"
+      ],
+      "seniority": "mid",
+      "employmentType": "internship"
+    }
+  },
+  {
+    "id": "8342fb259980538e3b8eafb6804cb5f24999d08ceea4e7ab07367cab88558573",
+    "title": "Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/bltf2bisuru3zbhc7o0_en?country=Colombia&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Colombia",
+    "country": "Colombia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T18:12:16.764Z",
+    "sourceHash": "8342fb259980538e3b8eafb6804cb5f24999d08ceea4e7ab07367cab88558573",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-8342fb25",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Colombia"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "09e7890644bca2df44e93eb14e56c43e417060fede1742142c26a6ce41a63e42",
+    "title": "Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/bltf2bisuru3zbhc7o0_en?country=Chile&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Chile",
+    "country": "Chile",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T18:10:34.866Z",
+    "sourceHash": "09e7890644bca2df44e93eb14e56c43e417060fede1742142c26a6ce41a63e42",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-09e78906",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Chile"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "11218309b95df82bbcf95af16dd3c9f05b269bd41d4e33536ab6167b99b2ce42",
+    "title": "Desenvolvedor de Software Frontend - Trabalho Remoto",
+    "applyUrl": "https://applicants.bairesdev.com/job/54/285618/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=Fortaleza,Cear%C3%A1,Brazil-20260928&__cf_chl_rt_tk=8Kv2PTfurbdyBMxvw3uBdNS0JI0JPHS3AARsweFl82U-1790705181-1.0.1.1-betComKXvX4g0stl6DbEEii4TAAnzvSVT1sEiuAtCZk",
+    "description": "About the job\n\nHá mais de 15 anos, a BairesDev® é líder em projetos tecnológicos. Entregamos soluções inovadoras para gigantes como Google e Rolls-Royce e as startups mais inovadoras do Vale do Silício.\n\n\n\n\nTemos uma equipe diversa de mais de 4.000 profissionais formada pelo Top 1% dos talentos de tecnologia do mundo, trabalhando remotamente em cargos de impacto global.\n\n\n\n\nAo se candidatar para este cargo, você está dando o primeiro passo em um processo que vai além do comum. Nosso objetivo é alinhar suas paixões, habilidades, e expectativas às nossas vagas, colocando você no caminho para desenvolver uma carreira de sucesso excepcional.\n\n\n\n\nDesenvolvedor de Software Frontend na BairesDev\n\n\n\n\nComo Desenvolvedor de Software Frontend na BairesDev, você projetará e implementará aplicações web dinâmicas usando tecnologias e frameworks frontend modernos. Você aplicará sua expertise para criar interfaces de usuário responsivas, otimizar o desempenho de aplicações e colaborar com equipes multifuncionais para entregar soluções de software robustas que proporcionem experiências excepcionais aos usuários e atendam a diversos requisitos de negócio.\n\n\n\n\nO que você fará:\n\n\n\n\n- Projetar, desenvolver e manter aplicações frontend complexas demonstrando habilidades avançadas de resolução de problemas e proficiência em codificação.\n\n- Criar interfaces de usuário responsivas e interativas usando frameworks e bibliotecas JavaScript modernos.\n\n- Colaborar com designers, desenvolvedores backend e equipes de produto para implementar soluções coesas.\n\n- Otimizar aplicações para máxima velocidade, escalabilidade e compatibilidade entre navegadores.\n\n- Implementar e manter bibliotecas de componentes e sistemas de design para consistência entre projetos.\n\n- Participar em revisões de código e discussões técnicas para aprimorar os padrões gerais de desenvolvimento.\n\n\n\n\n\n\n\nO que estamos procurando:\n\n\n\n\n- 3+ anos de experiência em desenvolvimento de software frontend.\n\n- Forte conhecimento de JavaScript, HTML, CSS e frameworks frontend modernos.\n\n- Experiência com princípios de design responsivo e desenvolvimento cross-browser.\n\n- Compreensão do ciclo de vida de desenvolvimento de software e sistemas de controle de versão.\n\n- Familiaridade com ferramentas de build, frameworks de teste e processos de deployment.\n\n- Capacidade de trabalhar com APIs e integrar aplicações frontend com serviços backend.\n\n- Inglês avançado.\n\n\n\n\n\n\n\nComo tornamos seu trabalho (e sua vida) mais fácil:\n\n\n\n\n- Modalidade 100% remota - trabalhe de qualquer lugar.\n\n- Excelente remuneração em USD ou na sua moeda local, como preferir.\n\n- Hardware para você trabalhar de casa.\n\n- Horários flexíveis - faça seu próprio horário.\n\n- Licença parental remunerada, férias, e feriados nacionais.\n\n- Ambiente de trabalho inovador e multicultural.\n\n- Colabore e aprenda com o Top 1% global dos talentos de cada área.\n\n- Ambiente de apoio com mentoria, promoções, desenvolvimento de habilidades, e diversas oportunidades de crescimento.\n\n\n\n\nJunte-se a uma equipe global onde seus talentos excepcionais podem se destacar!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T18:06:24.354Z",
+    "sourceHash": "11218309b95df82bbcf95af16dd3c9f05b269bd41d4e33536ab6167b99b2ce42",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "desenvolvedor-de-software-frontend-trabalho-remoto-bairesdev-11218309",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7ba6d585578afbef1db0c12626b909e31c37a9e1a3523b13fe04169b020566ed",
+    "title": "Desenvolvedor de Software Frontend - Trabalho Remoto",
+    "applyUrl": "https://applicants.bairesdev.com/job/54/285618/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=GreaterCuritiba-20260928&__cf_chl_rt_tk=efpQKnWbKyqQ8lZXaDo1iemZD75gVCesk6b.IJv0440-1790705143-1.0.1.1-X.NqUPKGqXJPsnJl1kacO3LZKRXFT2vj9rlG9XPPQac",
+    "description": "About the job\n\nHá mais de 15 anos, a BairesDev® é líder em projetos tecnológicos. Entregamos soluções inovadoras para gigantes como Google e Rolls-Royce e as startups mais inovadoras do Vale do Silício.\n\n\n\n\nTemos uma equipe diversa de mais de 4.000 profissionais formada pelo Top 1% dos talentos de tecnologia do mundo, trabalhando remotamente em cargos de impacto global.\n\n\n\n\nAo se candidatar para este cargo, você está dando o primeiro passo em um processo que vai além do comum. Nosso objetivo é alinhar suas paixões, habilidades, e expectativas às nossas vagas, colocando você no caminho para desenvolver uma carreira de sucesso excepcional.\n\n\n\n\nDesenvolvedor de Software Frontend na BairesDev\n\n\n\n\nComo Desenvolvedor de Software Frontend na BairesDev, você projetará e implementará aplicações web dinâmicas usando tecnologias e frameworks frontend modernos. Você aplicará sua expertise para criar interfaces de usuário responsivas, otimizar o desempenho de aplicações e colaborar com equipes multifuncionais para entregar soluções de software robustas que proporcionem experiências excepcionais aos usuários e atendam a diversos requisitos de negócio.\n\n\n\n\nO que você fará:\n\n\n\n\n- Projetar, desenvolver e manter aplicações frontend complexas demonstrando habilidades avançadas de resolução de problemas e proficiência em codificação.\n\n- Criar interfaces de usuário responsivas e interativas usando frameworks e bibliotecas JavaScript modernos.\n\n- Colaborar com designers, desenvolvedores backend e equipes de produto para implementar soluções coesas.\n\n- Otimizar aplicações para máxima velocidade, escalabilidade e compatibilidade entre navegadores.\n\n- Implementar e manter bibliotecas de componentes e sistemas de design para consistência entre projetos.\n\n- Participar em revisões de código e discussões técnicas para aprimorar os padrões gerais de desenvolvimento.\n\n\n\n\n\n\n\nO que estamos procurando:\n\n\n\n\n- 3+ anos de experiência em desenvolvimento de software frontend.\n\n- Forte conhecimento de JavaScript, HTML, CSS e frameworks frontend modernos.\n\n- Experiência com princípios de design responsivo e desenvolvimento cross-browser.\n\n- Compreensão do ciclo de vida de desenvolvimento de software e sistemas de controle de versão.\n\n- Familiaridade com ferramentas de build, frameworks de teste e processos de deployment.\n\n- Capacidade de trabalhar com APIs e integrar aplicações frontend com serviços backend.\n\n- Inglês avançado.\n\n\n\n\n\n\n\nComo tornamos seu trabalho (e sua vida) mais fácil:\n\n\n\n\n- Modalidade 100% remota - trabalhe de qualquer lugar.\n\n- Excelente remuneração em USD ou na sua moeda local, como preferir.\n\n- Hardware para você trabalhar de casa.\n\n- Horários flexíveis - faça seu próprio horário.\n\n- Licença parental remunerada, férias, e feriados nacionais.\n\n- Ambiente de trabalho inovador e multicultural.\n\n- Colabore e aprenda com o Top 1% global dos talentos de cada área.\n\n- Ambiente de apoio com mentoria, promoções, desenvolvimento de habilidades, e diversas oportunidades de crescimento.\n\n\n\n\nJunte-se a uma equipe global onde seus talentos excepcionais podem se destacar!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T18:05:46.394Z",
+    "sourceHash": "7ba6d585578afbef1db0c12626b909e31c37a9e1a3523b13fe04169b020566ed",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "desenvolvedor-de-software-frontend-trabalho-remoto-bairesdev-7ba6d585",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "74ddd3d3ebcbd6abacce50ad7a6736905bcfbe953225caaeb6a16879a2813ce0",
+    "title": "Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/bltf2bisuru3zbhc7o0_en?country=Argentina&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn",
+    "location": "Remote - Argentina",
+    "country": "Argentina",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T17:54:21.094Z",
+    "sourceHash": "74ddd3d3ebcbd6abacce50ad7a6736905bcfbe953225caaeb6a16879a2813ce0",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-74ddd3d3",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Argentina"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "f91bd8e03c3597d1456a11c0e03c2ff47e171912ce7b06b4baf0a3a4c5f2f7fb",
     "title": "Frontend Developer - Remote",
     "applyUrl": "https://www.executiveplacements.com/JF/Frontend-Developer---Remote-jobs-in-Seattle-f144048b.asp?sid=linkedin",
