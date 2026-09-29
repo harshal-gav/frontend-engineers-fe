@@ -1,5 +1,518 @@
 [
   {
+    "id": "f91bd8e03c3597d1456a11c0e03c2ff47e171912ce7b06b4baf0a3a4c5f2f7fb",
+    "title": "Frontend Developer - Remote",
+    "applyUrl": "https://www.executiveplacements.com/JF/Frontend-Developer---Remote-jobs-in-Seattle-f144048b.asp?sid=linkedin",
+    "description": "About the job\n\nJob Description\n\nJob Description\n\nSenior Software Engineer\n\nJob Type: Contractor (~15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (~30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24-48 hours of completing onboarding.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T05:48:51.241Z",
+    "sourceHash": "f91bd8e03c3597d1456a11c0e03c2ff47e171912ce7b06b4baf0a3a4c5f2f7fb",
+    "company": {
+      "id": "executiveplacementscom",
+      "name": "ExecutivePlacements.com",
+      "logoUrl": "https://logo.clearbit.com/executiveplacementscom.com",
+      "industry": "Technology",
+      "website": "https://executiveplacementscom.com"
+    },
+    "slug": "frontend-developer-remote-executiveplacements-com-f91bd8e0",
+    "aiTags": {
+      "stack": [
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f4702af06f158317a783e714d71ac6d494db945d5a73164a4412fafa4b1aa57c",
+    "title": "Frontend Engineer Remote",
+    "applyUrl": "https://www.executiveplacements.com/JF/Frontend-Engineer-Remote-jobs-in-Seattle-fbf7f302.asp?sid=linkedin",
+    "description": "About the job\n\nJob Description\n\nJob Description\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T05:48:13.082Z",
+    "sourceHash": "f4702af06f158317a783e714d71ac6d494db945d5a73164a4412fafa4b1aa57c",
+    "company": {
+      "id": "executiveplacementscom",
+      "name": "ExecutivePlacements.com",
+      "logoUrl": "https://logo.clearbit.com/executiveplacementscom.com",
+      "industry": "Technology",
+      "website": "https://executiveplacementscom.com"
+    },
+    "slug": "frontend-engineer-remote-executiveplacements-com-f4702af0",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7d0037f439c876da10156c788b2206a075f54a8541af5386df64113bf29e1522",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.retable.io/careers/frontend-developer",
+    "description": "About the job\n\nAbout Retable\n\nRetable is a SaaS company that works on no-code collaborative data management solutions where anyone can create customized applications to suit their needs, create faster business solutions, provide smart data management, and collaborate in real time, even without technical training.\n\nFounded in 2021 and headquartered in London, Retable serves more than 13,000 users worldwide. Retable, which received investment from a well-established software company in Turkey in its last investment round, continues its global growth.\n\n\nCheck out our solutions‍\nRetable on LinkedIn\n\n\nFor details on Retable's collection and use of personal information, please check our Privacy Policy.\n\nJob Description\n\nAs a Retable Frontend Developer, you will work with our software development team to produce high-quality software and products. Our SaaS product is the core of our work and you will be responsible to make it better and better every day with your team. You will have the opportunity to work with the latest technologies and are expected to learn new things.\n\nMore importantly, we want you to take pride in the success of Retable, as it is under the ownership and responsibility of the entire team and that includes you!\n\nKey Responsibilities & Tasks\n\n\nYou will be responsible for designing, improving and developing Retable's frontend needs in line with product planning and optimizing them for performance, reliability and long-term maintenance.\nYou will be responsible for the creation, provisioning and maintenance of Retable frontend developments.\nYou will share responsibility for frontend services such as design, development, deployment, monitoring, debugging, and overall reliability with your teammates.\n\n\nRequired Qualifications\n\n\nBachelor's degree in Computer Engineering.\n+4 years of experience in related jobs.\nBeing an expert on React, Javascript, HTML, CSS.\nWorking experience with related technologies.\nHave experience developing Frontend web applications in a professional setting.\nExperience writing unit tests and creating testable code in a collaborative team environment.\nEnjoys sharing new ideas and learning from others.\nKnowledge about Bootstrap libraries.\nFamilarity with cloud-based application design.\nKeeping up-to-date on technical issues by following the innovations in the field.\nWriting clean, high-quality, high-performance, maintainable codes.\nDevelop and support software, including applications, database integration, interfaces, and new functionality enhancements.\nCoordinate cross-functionally to ensure the project meets business objectives and compliance standards.\nSupport test and deployment of new products and features.\nParticipate in code reviews.\nStrong analytical and problem-solving skills.\n\n\nBonus Qualifications\n\n\nFamiliarity with collaborative online spreadsheet tools.\nExperience with software development tools such as Git, JIRA\nPrior experience with SCRUM/Agile methodologies\nContributions to OpenSource projects\n\n\nBenefits\n\n\n🍕 Monthly meal card\n🩺 Comprehensive private health insurance\n🏡 Fully remote work with the option to work from physical offices in İstanbul\n🏆 A career in Turkey’s biggest IT company\n📚 Various education opportunities\n🎉 Annual leave\n💥 Company happy hours & events (team dinners, outdoor activities, team holidays, team camps and much more)\n🎯 Gym membership card\n🚀 Education support\n\n\nQuıck Apply\n\n‍\n\nApply for this job",
+    "location": "Remote - United Kingdom",
+    "country": "United Kingdom",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T05:47:43.054Z",
+    "sourceHash": "7d0037f439c876da10156c788b2206a075f54a8541af5386df64113bf29e1522",
+    "company": {
+      "id": "retable",
+      "name": "Retable",
+      "logoUrl": "https://logo.clearbit.com/retable.com",
+      "industry": "Technology",
+      "website": "https://retable.com"
+    },
+    "slug": "frontend-developer-retable-7d0037f4",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United Kingdom"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "60a9688e83e2f9986411be2a2e0c5b2bf84d5b91445ec5de5ea4a8102af25c42",
+    "title": "Desarrollador/a Frontend SmartTV – React Native",
+    "applyUrl": "https://knowmadmood.teamtailor.com/jobs/8467793-desarrollador-a-frontend-smarttv-react-native",
+    "description": "About the job\n\nWe are knowmad mood!\n\nSomos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Nacimos para provocar un cambio real a través de la innovación y el desarrollo sostenible, con la misión de aportar valor a los clientes e impulsar nuestro talento.\n\nFormado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto.\n\nLos valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza.\n\n¿Qué es lo que valoramos?\n\nExperiencia de al menos 3 años como Desarrollador SmartTV:\n\n\n Experiencia como desarrollador frontend con JavaScript, creando aplicaciones funcionales y fiables en múltiples pantallas.\n Experiencia trabajando con React Native para el desarrollo de aplicaciones.\n Nivel alto de inglés.\n Experiencia en la creación de soluciones de entretenimiento, tanto en aplicaciones con gran volumen de usuarios como en herramientas internas para optimizar el desarrollo.\n Capacidad de trabajo en equipo y comunicación efectiva con clientes y equipos multidisciplinarios.\n\n\n¿Cuáles serían tus funciones?\n\n\n Desarrollo de aplicaciones SmartTV: Diseñar, desarrollar y optimizar aplicaciones para entornos SmartTV, asegurando experiencias fluidas y de alta calidad en diferentes dispositivos.\n Desarrollo Frontend: Crear interfaces modernas y eficientes utilizando JavaScript y tecnologías asociadas, garantizando rendimiento y escalabilidad.\n Desarrollo con React Native: Implementar y mantener aplicaciones utilizando React Native, adaptando funcionalidades a múltiples plataformas y pantallas.\n Optimización de experiencia de usuario: Construir soluciones de entretenimiento robustas, ya sea para aplicaciones con millones de usuarios o para herramientas internas que mejoren la productividad del equipo.\n Colaboración Multidisciplinaria: Trabajar estrechamente con equipos de producto, diseño y desarrollo para ofrecer soluciones innovadoras y alineadas con las necesidades del negocio.\n Colaborar en el desarrollo de Soluciones Low-Code/No-Code: Crear y gestionar soluciones innovadoras utilizando la PowerPlatform (Power Apps, Power Automate, Power BI, Dataverse), adaptadas a las necesidades de nuestros clientes.\n\n\nNos encantaría si además te manejases bien con Inglés.\n\nAdemás, valoraremos muy positivamente si tienes experiencia y/o conocimientos en:\n\n\n Desarrollo para plataformas de SmartTV como Samsung, LG o Android TV.\n Experiencia trabajando con Shaka Player u otros reproductores de vídeo en JavaScript.\n Conocimientos en optimización de streaming y reproducción multimedia.\n Experiencia en entornos ágiles de desarrollo.\n Experiencia en el desarrollo de aplicaciones de alto rendimiento y escalabilidad.\n\n\nY con nosotros podrás disfrutar de:\n\n✅Contrato Indefinido\n\n✅ 100% REMOTO\n\n✅Formación interna y acceso a certificaciones ♻Consulta nuestro calendario aquí:\n\nhttps://www.knowmadmood.com/es/talento/formacion\n\n✅Plan de retribución flexible (seguro médico, transporte, tickets guardería, tickets restaurante)\n\n✅Embajador de nuestra marca, a través de nuestro plan amigo\n\n¡Recomienda a tus amigos y llévate un extra!\n\n✅¡Eventos, meetups, techdays, charlas...y mucho más!\n\n✅ 26 días de descanso (22 días vacaciones, 2 días de libre disposición y 24 y 31 diciembre festivos por defecto)\n\n✅ Horario: 8.30 a 18h ( flexible) L-J y V 8 a 15h e Intensiva de Verano Julio y Agosto de 8 a 15h\n\nPara estar al corriente de nuestras novedades síguenos aquí -> knowmad mood\n\nEn knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T05:39:48.736Z",
+    "sourceHash": "60a9688e83e2f9986411be2a2e0c5b2bf84d5b91445ec5de5ea4a8102af25c42",
+    "company": {
+      "id": "knowmadmood",
+      "name": "knowmad mood",
+      "logoUrl": "https://logo.clearbit.com/knowmadmood.com",
+      "industry": "Technology",
+      "website": "https://knowmadmood.com"
+    },
+    "slug": "desarrollador-a-frontend-smarttv-react-native-knowmad-mood-60a9688e",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e4fc7bb2e144bcbce9ac2216b64a604d234aaf1a598f9729e7de23c3dc218870",
+    "title": "Freelance Front End Developer",
+    "applyUrl": "https://commercialcareers.syneoshealth.com/jobs/17356623-freelance-front-end-developer?tm_job=13931&tm_event=view&tm_company=575&bid=56&__cf_chl_rt_tk=qiS71k9MhkCRo4HqGTl6jkJKZ8mkbAiV_AmrUg73xkI-1790660247-1.0.1.1-Q647jPUprIg3ko4RxVqnMuxGv6MjwRMJh65ZH7OF6f8",
+    "description": "About the job\n\nDescription\n\nYou are a puzzle-solver, a debugger, an innovator.\n\nIn this role, you will focus on all areas of front-end development technologies. As such, this role will require a solid working knowledge and ability to execute on modern web frameworks such as Bootstrap, Foundation and Boilerplate. In addition to that, having expertise in leveraging build scripts, and working in Git repositories are an absolute must. A broad experience in different technologies and a natural inclination toward ongoing learning is necessary.\n\nYou will:\n\n\nWork as an integral part of a cross-functional engineering team that is part of a broader creative studio\nCreate mobile first, responsive, scalable, flexible, accessible, and interactive digital experiences\nMaintain and support existing websites \nParticipate in code reviews and other techniques to improve code quality\nInvestigate and resolve support issues\nAssist with QA/QC when necessary\nEnsure automated builds and continuous integration are always working\nContribute to the continual improvement of the product and development processes\nParticipate in software development process following Agile/Scrum methodology\n\n\nEssential Requirements\n\n\nLanguage Requirements – Read/Write in English (ability to communicate via email/phone/IM/Marked up direction)\n3-5 Years of HTML5 / CSS3 / JavaScript / jQuery experience\nExperience with LESS / SASS\nExperience with one or more of the following JavaScript frameworks: React, Next.js, Vue.js\nFamiliar with npm, Gulp, Webpack\nWorking knowledge of PHP\nExperience with Foundation, Bootstrap, and Tailwind CSS frameworks\nExperience consuming / interacting with REST APIs\nExperience working with WordPress\nExperience in modern UI/UX design styles and technologies\nIn-depth understanding of the entire web development process (requirements, design, development, QA, deployment, and maintenance)\n\n\nAt Syneos Health Communications, we are dedicated to building a diverse, inclusive and authentic workplace. If your past experience doesn’t align perfectly, we encourage you to apply anyway. At times, we will consider transferable skills from previous roles. We also encourage you to join our Talent Network to stay connected to additional career opportunities.\n\nBoldsky Creative Studio supports more than 12+ Syneos Health marketing and communication agencies as well as direct-to-customer engagements. We function as the agencies' creative execution and production arm, implementing their creative vision. As part of Syneos Health, our agencies — consisting of leading brands and experts in advertising, branding, public relations, managed markets and medical communications — are engaged in every point of influence in health, providing real-world insight into markets and audiences in ways that no other partner could.\n\nWork Here Matters Everywhere | How are you inspired to change lives?\n\nSyneos Health companies are affirmative action/equal opportunity employers (Minorities/Females/Veterans/Disabled)",
+    "location": "Remote - Serbia",
+    "country": "Serbia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T05:37:30.313Z",
+    "sourceHash": "e4fc7bb2e144bcbce9ac2216b64a604d234aaf1a598f9729e7de23c3dc218870",
+    "company": {
+      "id": "syneoshealthcommunications",
+      "name": "Syneos Health Communications",
+      "logoUrl": "https://logo.clearbit.com/syneoshealthcommunications.com",
+      "industry": "Technology",
+      "website": "https://syneoshealthcommunications.com"
+    },
+    "slug": "freelance-front-end-developer-syneos-health-communications-e4fc7bb2",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "nextjs",
+        "javascript",
+        "css",
+        "tailwind",
+        "sass",
+        "less",
+        "webpack",
+        "jquery",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Serbia"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "c7778f6e412d55d3e7f183efe9d5bc4b1b063e2b4e620023cb87edd02190ce6f",
+    "title": "Freelance Front End Developer",
+    "applyUrl": "https://apply.talemetry.com/init-apply/3d0c65f7-5965-4a9c-8ddb-f760b952dc20/job?external_job_id=",
+    "description": "About the job\n\nDescription\n\nYou are a puzzle-solver, a debugger, an innovator.\n\nIn this role, you will focus on all areas of front-end development technologies. As such, this role will require a solid working knowledge and ability to execute on modern web frameworks such as Bootstrap, Foundation and Boilerplate. In addition to that, having expertise in leveraging build scripts, and working in Git repositories are an absolute must. A broad experience in different technologies and a natural inclination toward ongoing learning is necessary.\n\nYou will:\n\n\nWork as an integral part of a cross-functional engineering team that is part of a broader creative studio\nCreate mobile first, responsive, scalable, flexible, accessible, and interactive digital experiences\nMaintain and support existing websites \nParticipate in code reviews and other techniques to improve code quality\nInvestigate and resolve support issues\nAssist with QA/QC when necessary\nEnsure automated builds and continuous integration are always working\nContribute to the continual improvement of the product and development processes\nParticipate in software development process following Agile/Scrum methodology\n\n\nEssential Requirements\n\n\nLanguage Requirements – Read/Write in English (ability to communicate via email/phone/IM/Marked up direction)\n3-5 Years of HTML5 / CSS3 / JavaScript / jQuery experience\nExperience with LESS / SASS\nExperience with one or more of the following JavaScript frameworks: React, Next.js, Vue.js\nFamiliar with npm, Gulp, Webpack\nWorking knowledge of PHP\nExperience with Foundation, Bootstrap, and Tailwind CSS frameworks\nExperience consuming / interacting with REST APIs\nExperience working with WordPress\nExperience in modern UI/UX design styles and technologies\nIn-depth understanding of the entire web development process (requirements, design, development, QA, deployment, and maintenance)\n\n\nAt Syneos Health Communications, we are dedicated to building a diverse, inclusive and authentic workplace. If your past experience doesn’t align perfectly, we encourage you to apply anyway. At times, we will consider transferable skills from previous roles. We also encourage you to join our Talent Network to stay connected to additional career opportunities.\n\nBoldsky Creative Studio supports more than 12+ Syneos Health marketing and communication agencies as well as direct-to-customer engagements. We function as the agencies' creative execution and production arm, implementing their creative vision. As part of Syneos Health, our agencies — consisting of leading brands and experts in advertising, branding, public relations, managed markets and medical communications — are engaged in every point of influence in health, providing real-world insight into markets and audiences in ways that no other partner could.\n\nWork Here Matters Everywhere | How are you inspired to change lives?\n\nSyneos Health companies are affirmative action/equal opportunity employers (Minorities/Females/Veterans/Disabled)",
+    "location": "Remote - Serbia",
+    "country": "Serbia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T05:37:23.900Z",
+    "sourceHash": "c7778f6e412d55d3e7f183efe9d5bc4b1b063e2b4e620023cb87edd02190ce6f",
+    "company": {
+      "id": "syneoshealthcommercialsolutions",
+      "name": "Syneos Health Commercial Solutions",
+      "logoUrl": "https://logo.clearbit.com/syneoshealthcommercialsolutions.com",
+      "industry": "Technology",
+      "website": "https://syneoshealthcommercialsolutions.com"
+    },
+    "slug": "freelance-front-end-developer-syneos-health-commercial-solutions-c7778f6e",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "nextjs",
+        "javascript",
+        "css",
+        "tailwind",
+        "sass",
+        "less",
+        "webpack",
+        "jquery",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Serbia"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "e2d67e6ae05f489843ec62bddc7d7fe56875fc677a1b35b943f6a237bcaaf844",
+    "title": "Frontend Developer",
+    "applyUrl": "https://forms.gle/9HJpaunuknS7UUuq5",
+    "description": "About the job\n\nThinknova is hiring for Frontend Developer Intern\n\nDuration: 3 months\n\nStipend: Up to ₹10,000 (performance-based)\n\nType: Paid, remote internship\n\nAbout the Company\n\nThinknova is offering a structured remote internship for freshers who want to begin a career in frontend development. The internship provides practical exposure to building responsive user interfaces, implementing interactive features, and improving the user experience of web applications.\n\nResponsibilities\n\nDevelop responsive and user-friendly web interfaces using HTML, CSS, and JavaScript.\nConvert design layouts into functional web pages and reusable components.\nImplement interactive features using relevant frontend libraries or frameworks.\nIntegrate APIs to display and manage data within user interfaces.\nTest interfaces across browsers and devices to ensure consistent functionality and appearance.\nIdentify and fix layout issues, bugs, and accessibility concerns.\nDocument code, technical changes, and development progress clearly.\nWork collaboratively with remote team members and complete assigned deliverables on time.\n\nRequirements\n\nSuitable for freshers with an interest in frontend development, web development, or a related area.\nStrong logical reasoning, problem-solving ability, attention to detail, and willingness to learn.\nBasic understanding of HTML, CSS, and JavaScript.\nFamiliarity with responsive design; knowledge of React, Angular, or Vue.js is beneficial.\nBasic knowledge of Git, browser developer tools, and API integration is beneficial.\nGood written and verbal communication skills.\nAbility to work independently in a remote environment while managing deadlines responsibly.\n\nThis is a paid, remote internship with a duration of 3 months and a performance-based stipend of up to ₹10,000.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T05:10:38.022Z",
+    "sourceHash": "e2d67e6ae05f489843ec62bddc7d7fe56875fc677a1b35b943f6a237bcaaf844",
+    "company": {
+      "id": "thinknovaa",
+      "name": "ThinkNovaa",
+      "logoUrl": "https://logo.clearbit.com/thinknovaa.com",
+      "industry": "Technology",
+      "website": "https://thinknovaa.com"
+    },
+    "slug": "frontend-developer-thinknovaa-e2d67e6a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "mid",
+      "employmentType": "internship"
+    }
+  },
+  {
+    "id": "88f521a4adcb4ebf5b74e4a226ab6f48d4d726315141bd0944012509696bd335",
+    "title": "Desenvolvedor Frontend - TypeScript - Trabalho Remoto",
+    "applyUrl": "https://applicants.bairesdev.com/job/341/284641/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=GreaterCuritiba-20260928&__cf_chl_rt_tk=eF0o..7AGKOshPMxURzTVCy0VlLIVYsRwkn7kcWcUDY-1790657972-1.0.1.1-pWmwhMFbpab_jmP9cuY7cmtPIUEzKRdab_EFb_VsXCw",
+    "description": "About the job\n\nHá mais de 15 anos, a BairesDev® é líder em projetos tecnológicos. Entregamos soluções inovadoras para gigantes como Google e Rolls-Royce e as startups mais inovadoras do Vale do Silício.\n\n\n\n\nTemos uma equipe diversa de mais de 4.000 profissionais formada pelo Top 1% dos talentos de tecnologia do mundo, trabalhando remotamente em cargos de impacto global.\n\n\n\n\nAo se candidatar para este cargo, você está dando o primeiro passo em um processo que vai além do comum. Nosso objetivo é alinhar suas paixões, habilidades, e expectativas às nossas vagas, colocando você no caminho para desenvolver uma carreira de sucesso excepcional.\n\n\n\n\nDesenvolvedor Frontend - TypeScript na BairesDev\n\n\n\n\nComo Desenvolvedor Frontend - TypeScript, você irá projetar e construir aplicações web modernas usando TypeScript e tecnologias frontend complementares. Você aplicará sua experiência para criar interfaces de usuário responsivas, implementar recursos complexos de frontend e colaborar com equipes multifuncionais para entregar software de alta qualidade que proporcione experiências excepcionais aos usuários.\n\n\n\n\nO que você fará:\n\n\n\n\n- Desenvolver aplicações web responsivas e interativas usando TypeScript e frameworks frontend modernos.\n\n- Criar componentes reutilizáveis e implementar recursos complexos de UI seguindo as melhores práticas.\n\n- Colaborar com designers e desenvolvedores backend para implementar soluções coesas e eficazes.\n\n- Otimizar aplicações para máxima velocidade, escalabilidade e compatibilidade entre navegadores.\n\n- Escrever código limpo, sustentável e bem documentado seguindo padrões estabelecidos.\n\n- Participar em revisões de código e discussões técnicas para melhorar a qualidade geral do código.\n\n\n\n\n\n\n\nO que estamos procurando:\n\n\n\n\n- 3+ anos de experiência com desenvolvimento frontend.\n\n- Forte conhecimento de TypeScript e fundamentos de JavaScript.\n\n- Experiência com frameworks frontend modernos (React, Angular, Vue, etc.).\n\n- Compreensão de princípios de design responsivo e compatibilidade entre navegadores.\n\n- Familiaridade com APIs RESTful e tratamento de requisições assíncronas.\n\n- Conhecimento de ferramentas e workflows de build frontend.\n\n- Inglês avançado.\n\n\n\n\n\n\n\nComo tornamos seu trabalho (e sua vida) mais fácil:\n\n\n\n\n- Modalidade 100% remota - trabalhe de qualquer lugar.\n\n- Excelente remuneração em USD ou na sua moeda local, como preferir.\n\n- Hardware para você trabalhar de casa.\n\n- Horários flexíveis - faça seu próprio horário.\n\n- Licença parental remunerada, férias, e feriados nacionais.\n\n- Ambiente de trabalho inovador e multicultural.\n\n- Colabore e aprenda com o Top 1% global dos talentos de cada área.\n\n- Ambiente de apoio com mentoria, promoções, desenvolvimento de habilidades, e diversas oportunidades de crescimento.\n\n\n\n\nJunte-se a uma equipe global onde seus talentos excepcionais podem se destacar!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T04:59:35.744Z",
+    "sourceHash": "88f521a4adcb4ebf5b74e4a226ab6f48d4d726315141bd0944012509696bd335",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "desenvolvedor-frontend-typescript-trabalho-remoto-bairesdev-88f521a4",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "typescript",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7be88909c8b1f449eea5e83bcc183e2045f330679179199a0c96c27006e84085",
+    "title": "Desenvolvedor Frontend - TypeScript - Trabalho Remoto",
+    "applyUrl": "https://applicants.bairesdev.com/job/341/284641/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=GreaterRecife-20260928&__cf_chl_rt_tk=9YjoYbMRPRvTsJYudBRM5n_PC8GhZKlW8_k8qCoCY38-1790657966-1.0.1.1-bqVaYFwuu8po7w5OWSU93pt_MMD3zYsmcZqcu2iZ1Is",
+    "description": "About the job\n\nHá mais de 15 anos, a BairesDev® é líder em projetos tecnológicos. Entregamos soluções inovadoras para gigantes como Google e Rolls-Royce e as startups mais inovadoras do Vale do Silício.\n\n\n\n\nTemos uma equipe diversa de mais de 4.000 profissionais formada pelo Top 1% dos talentos de tecnologia do mundo, trabalhando remotamente em cargos de impacto global.\n\n\n\n\nAo se candidatar para este cargo, você está dando o primeiro passo em um processo que vai além do comum. Nosso objetivo é alinhar suas paixões, habilidades, e expectativas às nossas vagas, colocando você no caminho para desenvolver uma carreira de sucesso excepcional.\n\n\n\n\nDesenvolvedor Frontend - TypeScript na BairesDev\n\n\n\n\nComo Desenvolvedor Frontend - TypeScript, você irá projetar e construir aplicações web modernas usando TypeScript e tecnologias frontend complementares. Você aplicará sua experiência para criar interfaces de usuário responsivas, implementar recursos complexos de frontend e colaborar com equipes multifuncionais para entregar software de alta qualidade que proporcione experiências excepcionais aos usuários.\n\n\n\n\nO que você fará:\n\n\n\n\n- Desenvolver aplicações web responsivas e interativas usando TypeScript e frameworks frontend modernos.\n\n- Criar componentes reutilizáveis e implementar recursos complexos de UI seguindo as melhores práticas.\n\n- Colaborar com designers e desenvolvedores backend para implementar soluções coesas e eficazes.\n\n- Otimizar aplicações para máxima velocidade, escalabilidade e compatibilidade entre navegadores.\n\n- Escrever código limpo, sustentável e bem documentado seguindo padrões estabelecidos.\n\n- Participar em revisões de código e discussões técnicas para melhorar a qualidade geral do código.\n\n\n\n\n\n\n\nO que estamos procurando:\n\n\n\n\n- 3+ anos de experiência com desenvolvimento frontend.\n\n- Forte conhecimento de TypeScript e fundamentos de JavaScript.\n\n- Experiência com frameworks frontend modernos (React, Angular, Vue, etc.).\n\n- Compreensão de princípios de design responsivo e compatibilidade entre navegadores.\n\n- Familiaridade com APIs RESTful e tratamento de requisições assíncronas.\n\n- Conhecimento de ferramentas e workflows de build frontend.\n\n- Inglês avançado.\n\n\n\n\n\n\n\nComo tornamos seu trabalho (e sua vida) mais fácil:\n\n\n\n\n- Modalidade 100% remota - trabalhe de qualquer lugar.\n\n- Excelente remuneração em USD ou na sua moeda local, como preferir.\n\n- Hardware para você trabalhar de casa.\n\n- Horários flexíveis - faça seu próprio horário.\n\n- Licença parental remunerada, férias, e feriados nacionais.\n\n- Ambiente de trabalho inovador e multicultural.\n\n- Colabore e aprenda com o Top 1% global dos talentos de cada área.\n\n- Ambiente de apoio com mentoria, promoções, desenvolvimento de habilidades, e diversas oportunidades de crescimento.\n\n\n\n\nJunte-se a uma equipe global onde seus talentos excepcionais podem se destacar!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T04:59:29.466Z",
+    "sourceHash": "7be88909c8b1f449eea5e83bcc183e2045f330679179199a0c96c27006e84085",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "desenvolvedor-frontend-typescript-trabalho-remoto-bairesdev-7be88909",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "typescript",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "92eaed2959a511b86c3b57513bf259b74b51e8847d2f9da6d7f632688632bd8b",
+    "title": "Frontend Developer - Vue.js - Remote Work",
+    "applyUrl": "https://applicants.bairesdev.com/job/255/285614/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=Brazil-20260928&__cf_chl_rt_tk=bXB4Z3t9V5UBd._hj3Ka81cL3yRBZYmCBZh1DecvmVw-1790657959-1.0.1.1-X9hPry3vkKYYHi52i.5SO8p.IHYlzdz8aVjd0T9sHsY",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\n\n\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\n\n\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\n\n\n\nFrontend Developer - Vue.js at BairesDev\n\n\n\n\nAs a Frontend Developer - Vue.js at BairesDev, you will design and implement web applications using Vue.js and modern frontend technologies. You'll leverage your experience to create responsive user interfaces, optimize application performance, and collaborate with cross-functional teams to deliver high-quality software that provides exceptional user experiences and meets complex business requirements.\n\n\n\n\nWhat You'll Do:\n\n\n\n\n- Design, develop, and maintain Vue.js applications with problem-solving skills and coding proficiency.\n\n- Create reusable components and implement sophisticated UI features following Vue.js best practices.\n\n- Collaborate with designers and backend developers to integrate frontend elements with server-side logic.\n\n- Optimize applications for maximum speed, scalability, and cross-browser compatibility.\n\n- Troubleshoot and debug complex frontend issues to improve application performance and user experience.\n\n- Participate in code reviews and technical discussions to enhance overall code quality.\n\n\n\n\nWhat We Are Looking For:\n\n\n\n\n- 3+ years of experience with Vue.js development.\n\n- Strong knowledge of JavaScript, HTML, CSS, and the Vue.js ecosystem.\n\n- Experience with state management solutions and Vue.js component architecture.\n\n- Understanding of responsive design principles and modern frontend build tools.\n\n- Familiarity with RESTful APIs and asynchronous request handling.\n\n- Knowledge of testing frameworks and development best practices.\n\n- Advanced level of English.\n\n\n\n\nHow we do make your work (and your life) easier:\n\n\n\n\n- 100% remote work (from anywhere).\n\n- Excellent compensation in USD or your local currency if preferred\n\n- Hardware and software setup for you to work from home.\n\n- Flexible hours: create your own schedule.\n\n- Paid parental leaves, vacations, and holidays.\n\n- Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n\n- Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\n\n\nApply now and become part of a global team where your unique talents can truly thrive!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T04:59:23.181Z",
+    "sourceHash": "92eaed2959a511b86c3b57513bf259b74b51e8847d2f9da6d7f632688632bd8b",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "frontend-developer-vue-js-remote-work-bairesdev-92eaed29",
+    "aiTags": {
+      "stack": [
+        "vue",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "701e85b91cb8d300f976e8d255622b92699893ad9e2bc3af98ffe68471e3456c",
+    "title": "Frontend Developer - Vue.js - Remote Work",
+    "applyUrl": "https://applicants.bairesdev.com/job/255/285614/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=Curitiba,Paran%C3%A1,Brazil-20260928&__cf_chl_rt_tk=Oba2KDxXXBDYU3ca__PMTIU14I6vHAaH4e8bCraGf28-1790657953-1.0.1.1-YjloBfk9F2ARG7hszv16iZIaj7NVLEMF49SkNvnNt7c",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\n\n\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\n\n\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\n\n\n\nFrontend Developer - Vue.js at BairesDev\n\n\n\n\nAs a Frontend Developer - Vue.js at BairesDev, you will design and implement web applications using Vue.js and modern frontend technologies. You'll leverage your experience to create responsive user interfaces, optimize application performance, and collaborate with cross-functional teams to deliver high-quality software that provides exceptional user experiences and meets complex business requirements.\n\n\n\n\nWhat You'll Do:\n\n\n\n\n- Design, develop, and maintain Vue.js applications with problem-solving skills and coding proficiency.\n\n- Create reusable components and implement sophisticated UI features following Vue.js best practices.\n\n- Collaborate with designers and backend developers to integrate frontend elements with server-side logic.\n\n- Optimize applications for maximum speed, scalability, and cross-browser compatibility.\n\n- Troubleshoot and debug complex frontend issues to improve application performance and user experience.\n\n- Participate in code reviews and technical discussions to enhance overall code quality.\n\n\n\n\nWhat We Are Looking For:\n\n\n\n\n- 3+ years of experience with Vue.js development.\n\n- Strong knowledge of JavaScript, HTML, CSS, and the Vue.js ecosystem.\n\n- Experience with state management solutions and Vue.js component architecture.\n\n- Understanding of responsive design principles and modern frontend build tools.\n\n- Familiarity with RESTful APIs and asynchronous request handling.\n\n- Knowledge of testing frameworks and development best practices.\n\n- Advanced level of English.\n\n\n\n\nHow we do make your work (and your life) easier:\n\n\n\n\n- 100% remote work (from anywhere).\n\n- Excellent compensation in USD or your local currency if preferred\n\n- Hardware and software setup for you to work from home.\n\n- Flexible hours: create your own schedule.\n\n- Paid parental leaves, vacations, and holidays.\n\n- Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n\n- Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\n\n\nApply now and become part of a global team where your unique talents can truly thrive!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T04:59:16.896Z",
+    "sourceHash": "701e85b91cb8d300f976e8d255622b92699893ad9e2bc3af98ffe68471e3456c",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "frontend-developer-vue-js-remote-work-bairesdev-701e85b9",
+    "aiTags": {
+      "stack": [
+        "vue",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e904561bd15727815730fce5ed25015ef2573e13b16ad3e189ebd64f9be1b374",
+    "title": "Senior Frontend Developer (Angular.js/React.js)",
+    "applyUrl": "https://talent.proxify.io/apply?utm_source=linkedin&utm_medium=job_posting&utm_campaign=corporate_senior_frontend_br",
+    "description": "About the job\n\nAbout us:\n\n\n\n\nTalent has no borders. Proxify's mission is to connect top developers around the world with opportunities they deserve. So, it doesn't matter where you are; we are here to help you fast-track your independent career in the right direction. 🙂\n\n\n\n\nSince our launch, Proxify's developers have successfully worked with 1200+ happy clients to build their products and growth features. 5000+ talented developers trust Proxify and its network to fulfill their dreams and objectives.\n\n\n\n\nProxify is shaped by a global network of supportive, talented developers interested in remote full-time jobs. Our Glassdoor (4.5/5) and Trustpilot (4.8/5) ratings reflect the trust developers place in us and our commitment to our members' success.\n\n\n\n\nThe Role:\n\n\n\n\nWe are looking for a Senior Frontend Developer (Angular.js/React.js) for one of our clients. You are a perfect candidate if you are growth-oriented, you love what you do, and you enjoy working on new ideas to develop exciting products.\n\n\n\n\nWhat we are looking for:\n\n\n\n\n+5 years of experience with React.js / Angular.js.\nYou follow the best practices and conventions.\nRelevant experience in CI/CD and related tools.\nAbility to work with minimal supervision.\nIntermediate-advanced English level.\nAbility to communicate well with both technical and non-technical clients.\n\n\n\n\nNice-to-have:\n\n\n\n\nBasic backend knowledge for minor backend jobs.\n\n\n\n\nResponsibilities:\n\n\n\n\nAbility to build libraries and frameworks of reusable efficient code.\nCompetence in designing and implementing low-latency, stable and performing applications.\nCapacity to effectively collaborate with other team members and stakeholders remotely.\nAbility to implement data protection systems.\nCompetence in data storage solutions.\n\n\n\n\nWhat we offer:\n\n\n\n\nGet paid, not played\n\nNo more unreliable clients. Enjoy on-time monthly payments with flexible withdrawal options.\n\n\n\n\nPredictable project hours\n\nEnjoy a harmonious work-life balance with consistent 8-hour working days with clients.\n\n\n\n\nFlex days, so you can recharge\n\nEnjoy up to 24 flex days off per year without losing pay, for full-time positions found through Proxify.\n\n\n\n\nCareer-accelerating positions at cutting-edge companies\n\nDiscover exclusive long-term remote positions at the world's most exciting companies.\n\n\n\n\nHand-picked opportunities, just for you\n\nSkip the typical recruitment roadblocks and biases with personally matched positions.\n\n\n\n\nOne seamless process, multiple opportunities\n\nA one-time contracting process for endless opportunities, with no extra assessments.\n\n\n\n\nCompensation\n\nEnjoy the same pay, every month with positions landed through Proxify.",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T04:59:00.645Z",
+    "sourceHash": "e904561bd15727815730fce5ed25015ef2573e13b16ad3e189ebd64f9be1b374",
+    "company": {
+      "id": "proxify",
+      "name": "Proxify",
+      "logoUrl": "https://logo.clearbit.com/proxify.com",
+      "industry": "Technology",
+      "website": "https://proxify.com"
+    },
+    "slug": "senior-frontend-developer-angular-js-react-js-proxify-e904561b",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8a74b9ab751186cb580c7c259092ce48cb3d48c06614df14f8e7197eac4720a7",
+    "title": "Desenvolvedor Frontend - Vue.js - Trabalho Remoto",
+    "applyUrl": "https://applicants.bairesdev.com/job/255/285615/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=Brazil-20260928&__cf_chl_rt_tk=e.6H5LUELv.gUwDdJunrxeLDr8jhHiEPj9AMSXuTfUY-1790657928-1.0.1.1-kr4B9pKjpWBIDB6gzgCRtvw9PYhHwcjysLPTuDm7wN0",
+    "description": "About the job\n\nHá mais de 15 anos, a BairesDev® é líder em projetos tecnológicos. Entregamos soluções inovadoras para gigantes como Google e Rolls-Royce e as startups mais inovadoras do Vale do Silício.\n\n\n\n\nTemos uma equipe diversa de mais de 4.000 profissionais formada pelo Top 1% dos talentos de tecnologia do mundo, trabalhando remotamente em cargos de impacto global.\n\n\n\n\nAo se candidatar para este cargo, você está dando o primeiro passo em um processo que vai além do comum. Nosso objetivo é alinhar suas paixões, habilidades, e expectativas às nossas vagas, colocando você no caminho para desenvolver uma carreira de sucesso excepcional.\n\n\n\n\nDesenvolvedor Frontend - Vue.js na BairesDev\n\n\n\n\nComo Desenvolvedor Frontend - Vue.js na BairesDev, você projetará e implementará aplicações web usando Vue.js e tecnologias frontend modernas. Você aplicará sua experiência para criar interfaces de usuário responsivas, otimizar o desempenho de aplicações e colaborar com equipes multifuncionais para entregar software de alta qualidade que proporcione experiências excepcionais aos usuários e atenda a requisitos de negócio.\n\n\n\n\nO que você fará:\n\n\n\n\n- Projetar, desenvolver e manter aplicações Vue.js com habilidades de resolução de problemas e proficiência em programação.\n\n- Criar componentes reutilizáveis e implementar recursos sofisticados de UI seguindo as melhores práticas do Vue.js.\n\n- Colaborar com designers e desenvolvedores backend para integrar elementos de frontend com lógica do lado do servidor.\n\n- Otimizar aplicações para máxima velocidade, escalabilidade e compatibilidade entre navegadores.\n\n- Solucionar problemas de frontend para melhorar o desempenho da aplicação e a experiência do usuário.\n\n- Participar em revisões de código e discussões técnicas para melhorar a qualidade geral do software.\n\n\n\n\n\n\n\nO que estamos procurando:\n\n\n\n\n- 3+ anos de experiência com desenvolvimento Vue.js.\n\n- Forte conhecimento de JavaScript, HTML, CSS e ecossistema Vue.js.\n\n- Experiência com soluções de gerenciamento de estado e arquitetura de componentes Vue.js.\n\n- Compreensão de princípios de design responsivo e ferramentas modernas de build frontend.\n\n- Familiaridade com APIs RESTful e tratamento de requisições assíncronas.\n\n- Conhecimento de frameworks de teste e melhores práticas de desenvolvimento.\n\n- Inglês avançado.\n\n\n\n\n\n\n\nComo tornamos seu trabalho (e sua vida) mais fácil:\n\n\n\n\n- Modalidade 100% remota - trabalhe de qualquer lugar.\n\n- Excelente remuneração em USD ou na sua moeda local, como preferir.\n\n- Hardware para você trabalhar de casa.\n\n- Horários flexíveis - faça seu próprio horário.\n\n- Licença parental remunerada, férias, e feriados nacionais.\n\n- Ambiente de trabalho inovador e multicultural.\n\n- Colabore e aprenda com o Top 1% global dos talentos de cada área.\n\n- Ambiente de apoio com mentoria, promoções, desenvolvimento de habilidades, e diversas oportunidades de crescimento.\n\n\n\n\nJunte-se a uma equipe global onde seus talentos excepcionais podem se destacar!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T04:58:51.401Z",
+    "sourceHash": "8a74b9ab751186cb580c7c259092ce48cb3d48c06614df14f8e7197eac4720a7",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "desenvolvedor-frontend-vue-js-trabalho-remoto-bairesdev-8a74b9ab",
+    "aiTags": {
+      "stack": [
+        "vue",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e394ed2422a97466ff68ee94040ecd6dfa6bf44922a90bb311fda21c38ddb1b8",
+    "title": "Frontend Engineer (React/Next.js) - Remote Work",
+    "applyUrl": "https://applicants.bairesdev.com/job/169/302044/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=Brazil-20260928&__cf_chl_rt_tk=2hSfK0Y26KbqNaqoq7_cJZ2HqIjlqx1e6957FzVLkbo-1790657911-1.0.1.1-P9asZBIAGVkoG9PpxJATuzrWDc6WiiJFGQqkDheYx0E",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\n\n\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\n\n\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\n\n\n\nFrontend Engineer (React/Next.js) at BairesDev\n\n\n\n\nIn this role, you'll contribute to frontend experiences on a chat product expanding into analytics views. You'll work within an established design system, bringing frontend skills and AI familiarity to a product where precision matters.\n\n\n\n\nWhat You'll Do:\n\n\n\n\n- Contribute to frontend experiences for a chat application expanding into analytics views.\n\n- Help develop reusable components within an established design system.\n\n- Support validation of AI-driven experiences using evaluation sets.\n\n- Help extend backend services in Python when needed.\n\n- Help identify and raise experience issues along the way.\n\n\n\n\nWhat we are looking for:\n\n\n\n\n- Experience with React and Next.js using TypeScript.\n\n- Familiarity with AI/ML-driven applications, including LLM integrations.\n\n- Familiarity with Python.\n\n- Experience with AWS or similar cloud platforms.\n\n- Attention to detail in UI implementation and design fidelity.\n\n- Advanced level of English.\n\n\n\n\nNice to have:\n\n\n\n\n- Experience with analytics and charting UI using tools such as D3 or Recharts.\n\n- Familiarity with generative UI or AI-driven interfaces.\n\n- Experience working inside an established design system.\n\n- Understanding of accessibility (a11y) and responsive web app practices.\n\n- Familiarity with state management and caching using Redux, Zustand, or similar tools.\n\n- Familiarity with React Native.\n\n\n\n\nHow we do make your work (and your life) easier:\n\n\n\n\n- 100% remote work (from anywhere).\n\n- Excellent compensation in USD or your local currency if preferred\n\n- Hardware and software setup for you to work from home.\n\n- Flexible hours: create your own schedule.\n\n- Paid parental leaves, vacations, and holidays.\n\n- Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n\n- Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\n\n\nApply now and become part of a global team where your unique talents can truly thrive!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T04:58:35.038Z",
+    "sourceHash": "e394ed2422a97466ff68ee94040ecd6dfa6bf44922a90bb311fda21c38ddb1b8",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "frontend-engineer-react-next-js-remote-work-bairesdev-e394ed24",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "redux",
+        "zustand",
+        "accessibility",
+        "d3"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a807b1d765bde5ee3051db430fc7329faeb0d1833f8518ef1f20d44e10690a3e",
+    "title": "Frontend Engineer (React/Next.js) - Remote Work",
+    "applyUrl": "https://applicants.bairesdev.com/job/169/302044/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=S%C3%A3oPaulo,Brazil-20260928&__cf_chl_rt_tk=QVNoRuIRhXanvDmnjGo11V06V7F1Z1PJoigJ6N0S5Sc-1790657892-1.0.1.1-xWCTWn3ZnHHV2sQR65NOo5xw8p7fNMcPnlxHU6SnkaQ",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\n\n\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\n\n\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\n\n\n\nFrontend Engineer (React/Next.js) at BairesDev\n\n\n\n\nIn this role, you'll contribute to frontend experiences on a chat product expanding into analytics views. You'll work within an established design system, bringing frontend skills and AI familiarity to a product where precision matters.\n\n\n\n\nWhat You'll Do:\n\n\n\n\n- Contribute to frontend experiences for a chat application expanding into analytics views.\n\n- Help develop reusable components within an established design system.\n\n- Support validation of AI-driven experiences using evaluation sets.\n\n- Help extend backend services in Python when needed.\n\n- Help identify and raise experience issues along the way.\n\n\n\n\nWhat we are looking for:\n\n\n\n\n- Experience with React and Next.js using TypeScript.\n\n- Familiarity with AI/ML-driven applications, including LLM integrations.\n\n- Familiarity with Python.\n\n- Experience with AWS or similar cloud platforms.\n\n- Attention to detail in UI implementation and design fidelity.\n\n- Advanced level of English.\n\n\n\n\nNice to have:\n\n\n\n\n- Experience with analytics and charting UI using tools such as D3 or Recharts.\n\n- Familiarity with generative UI or AI-driven interfaces.\n\n- Experience working inside an established design system.\n\n- Understanding of accessibility (a11y) and responsive web app practices.\n\n- Familiarity with state management and caching using Redux, Zustand, or similar tools.\n\n- Familiarity with React Native.\n\n\n\n\nHow we do make your work (and your life) easier:\n\n\n\n\n- 100% remote work (from anywhere).\n\n- Excellent compensation in USD or your local currency if preferred\n\n- Hardware and software setup for you to work from home.\n\n- Flexible hours: create your own schedule.\n\n- Paid parental leaves, vacations, and holidays.\n\n- Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n\n- Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\n\n\nApply now and become part of a global team where your unique talents can truly thrive!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-29T04:58:15.735Z",
+    "sourceHash": "a807b1d765bde5ee3051db430fc7329faeb0d1833f8518ef1f20d44e10690a3e",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "frontend-engineer-react-next-js-remote-work-bairesdev-a807b1d7",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "redux",
+        "zustand",
+        "accessibility",
+        "d3"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "cacf8f91ce310028a06c9b9057991a85da91d2310642b216b7aebaa7e2f12563",
     "title": "Staff Frontend Engineer",
     "applyUrl": "https://www.theladders.com/linkedin/88791016?src=LinkedIn",
