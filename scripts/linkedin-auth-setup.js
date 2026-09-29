@@ -20,8 +20,8 @@ import readline from 'readline';
 
 const CLIENT_ID = process.env.LINKEDIN_CLIENT_ID;
 const CLIENT_SECRET = process.env.LINKEDIN_CLIENT_SECRET;
-// Use their actual production redirect URI so it doesn't fail LinkedIn validation
-const REDIRECT_URI = 'https://www.frontendengineers.com/callback';
+// Use the exact redirect URI registered in the app
+const REDIRECT_URI = 'https://www.frontendengineers.com/api/linkedin/callback';
 // Uses "Share on LinkedIn" product (w_member_social) — posts from personal profile
 // openid + profile needed to fetch your member URN
 const SCOPES = 'openid profile w_member_social';
