@@ -1,5 +1,248 @@
 [
   {
+    "id": "77ce53b8637f4dfe9cac2135f511529a9a2d9068bb73b735e7e764168499acf1",
+    "title": "Frontend Developer - UI/UX",
+    "applyUrl": "https://www.sundayy.com/job-description/usF726C4799128753DA685FC1800C4EFC6?source=Linkedin",
+    "description": "About the job\n\nAbout The Company\n\nVetsEZ is a leading provider of healthcare technology solutions dedicated to improving patient outcomes and streamlining healthcare delivery through innovative software development. With a strong focus on federal healthcare programs, VetsEZ partners with government agencies to develop cutting-edge applications that enhance clinical workflows, support decision-making, and ensure compliance with healthcare standards. The company values diversity, inclusion, and continuous learning, fostering a collaborative environment where talented professionals can thrive and contribute to meaningful healthcare advancements.\n\nAbout The Role\n\nWe are seeking a skilled Front-End (UI/UX) Developer to join our dynamic, remote team supporting a large federal government healthcare modernization project. In this role, you will be instrumental in developing an AI-powered Patient Health Data Summarization capability within the Joint Longitudinal Viewer (JLV). Your primary responsibility will be to create intuitive, accessible, and responsive user interfaces that facilitate clinical decision-making by providing clinicians with AI-generated insights derived from complex clinical documentation and health records. Working within an Agile environment, you will collaborate closely with multidisciplinary teams, including product owners, UX designers, clinical subject matter experts, architects, and engineers, to deliver seamless healthcare applications integrated into clinician workflows. This position requires a deep understanding of modern front-end technologies, healthcare standards, and accessibility compliance, all while supporting transparency, traceability, and usability of AI-generated clinical information.\n\nQualifications\n\n\nBachelor's degree in Computer Science, Human-Computer Interaction, Information Systems, or a related field, or equivalent professional experience\nMinimum of 5+ years of professional front-end development experience\nProficiency with HTML5, CSS3, JavaScript, and TypeScript\nExperience developing responsive, component-based web applications using frameworks such as React, Angular, or Vue\nStrong knowledge of accessibility standards including WCAG and ARIA\nExperience creating complex, data-intensive user interfaces and visualizations\nUnderstanding of healthcare interoperability standards like FHIR, C-CDA, CDS Hooks, SMART on FHIR\nExcellent analytical, problem-solving, and communication skills\nAbility to work effectively within Agile, multidisciplinary teams\n\n\nResponsibilities\n\n\nDesign and develop responsive, accessible, and user-friendly healthcare application interfaces, including reusable UI components\nCreate data-driven visualizations and workflows that simplify complex clinical information and support clinician decision-making\nImplement user interfaces supporting Clinical Decision Support workflows, including CDS cards, notifications, and patient-context-aware experiences\nIntegrate front-end applications with backend services and clinical data sources, ensuring transparency and traceability of AI-generated summaries\nDevelop and maintain automated unit, integration, and UI tests to ensure high-quality deliverables\nParticipate in code reviews, contribute to technical documentation, and adhere to application quality standards\nCollaborate within an Agile team on sprint planning, backlog refinement, demonstrations, testing, and releases\nSupport additional tasks as required to meet project objectives and improve application usability and performance\n\n\nBenefits\n\n\nMedical, Dental, and Vision Insurance\n401(k) plan with Employer Match\nPaid Time Off (PTO) and Federal Holidays\nCompany-provided Laptop and necessary hardware\nTraining and professional development opportunities\nRemote work flexibility\nSupportive and inclusive work environment\n\n\nEqual Opportunity\n\nVetsEZ is an equal opportunity employer. We are committed to creating a diverse and inclusive workplace where all qualified applicants receive consideration for employment without regard to race, color, religion, sex, national origin, sexual orientation, gender identity, disability, or protected veteran status. We do not sponsor employment visas at this time. All candidates must successfully complete a background check and be eligible to obtain and maintain a government or public trust clearance as required.\n\n\n\nDesired Skills and Experience\n\nInformation Technology",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T05:36:16.996Z",
+    "sourceHash": "77ce53b8637f4dfe9cac2135f511529a9a2d9068bb73b735e7e764168499acf1",
+    "company": {
+      "id": "wiraa",
+      "name": "Wiraa",
+      "logoUrl": "https://logo.clearbit.com/wiraa.com",
+      "industry": "Technology",
+      "website": "https://wiraa.com"
+    },
+    "slug": "frontend-developer-ui-ux-wiraa-77ce53b8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "20cd5053e489c7c909f706edb70d6e7888e8cf18dde2d1015a804451f8d368ca",
+    "title": "Senior Frontend Developer (React, Redux & Microfrontends)",
+    "applyUrl": "https://knowmadmood.teamtailor.com/jobs/8474519-senior-frontend-developer-react-redux-microfrontends",
+    "description": "About the job\n\nWe are knowmad mood!\n\nSomos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Nacimos para provocar un cambio real a través de la innovación y el desarrollo sostenible, con la misión de aportar valor a los clientes e impulsar nuestro talento.\n\nFormado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto.\n\nLos valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza.\n\n¿Qué es lo que valoramos?\n\nExperiencia de al menos 3-4 años como Desarrollador/a Frontend o Consultor/a Técnico en:\n\n\n Experiencia sólida con JavaScript ES6, React y Redux en entornos empresariales.\n Conocimientos avanzados de HTML5, CSS3 y desarrollo de aplicaciones web modernas.\n Experiencia en consumo e integración de APIs REST.\n Conocimientos de Clean Code, principios SOLID y buenas prácticas de desarrollo de software.\n Experiencia en desarrollo y mantenimiento de tests unitarios y conocimientos de estrategias de testing.\n Conocimientos y experiencia trabajando con Git.\n Experiencia con herramientas de testing end-to-end como Cypress.\n Conocimiento y experiencia en arquitecturas basadas en Shell + Microfrontends.\n Experiencia aplicando buenas prácticas dentro del ciclo de vida del desarrollo de software (SDLC), incluyendo calidad, rendimiento, seguridad y mantenibilidad.\n Capacidad de trabajo en equipo y excelentes habilidades de comunicación, colaborando con equipos multidisciplinares.\n\n\n¿Cuáles serían tus funciones?\n\n\n Desarrollo Frontend: Diseñar, desarrollar y evolucionar aplicaciones web utilizando JavaScript ES6, React y Redux, garantizando una experiencia de usuario moderna, eficiente y escalable.\n Arquitectura y Evolución Técnica: Participar en la definición e implementación de arquitecturas basadas en Shell y Microfrontends, asegurando la escalabilidad y mantenibilidad de las soluciones.\n Integración de Servicios: Desarrollar e integrar aplicaciones mediante APIs REST, garantizando una correcta comunicación entre sistemas y servicios.\n Calidad y Testing: Diseñar e implementar pruebas unitarias y pruebas end-to-end con Cypress, contribuyendo a la calidad y estabilidad de las aplicaciones.\n Buenas Prácticas de Desarrollo: Aplicar principios de Clean Code, SOLID y estándares de ingeniería para mantener un código limpio, eficiente y fácilmente mantenible.\n Ingeniería de Software y SDLC: Cumplir con las mejores prácticas durante todo el ciclo de desarrollo, incluyendo aspectos relacionados con calidad, seguridad, rendimiento y pruebas.\n Colaboración Multidisciplinaria: Trabajar conjuntamente con equipos de negocio, producto y tecnología para identificar necesidades y aportar soluciones innovadoras alineadas con los objetivos del proyecto.\n\n\nAdemás, valoraremos muy positivamente si tienes experiencia y/o conocimientos en:\n\n\n Arquitecturas frontend escalables basadas en Microfrontends.\n Herramientas de testing automatizado y calidad del software.\n Desarrollo en entornos ágiles utilizando metodologías como Scrum o Kanban.\n Prácticas de integración continua y despliegue continuo (CI/CD).\n Optimización del rendimiento y seguridad en aplicaciones web.\n Experiencia participando en proyectos de gran volumen o con múltiples equipos de desarrollo.\n Capacidad para aportar mejoras técnicas, fomentar buenas prácticas y contribuir a la evolución tecnológica de los equipos.\n\n\nY con nosotros podrás disfrutar de:\n\n✅Contrato Indefinido\n\n✅ 100% REMOTO\n\n✅Formación interna y acceso a certificaciones ♻Consulta nuestro calendario aquí:\n\nhttps://www.knowmadmood.com/es/talento/formacion\n\n✅Plan de retribución flexible (seguro médico, transporte, tickets guardería, tickets restaurante)\n\n✅Embajador de nuestra marca, a través de nuestro plan amigo\n\n¡Recomienda a tus amigos y llévate un extra!\n\n✅¡Eventos, meetups, techdays, charlas...y mucho más!\n\n✅ 26 días de descanso (22 días vacaciones, 2 días de libre disposición y 24 y 31 diciembre festivos por defecto)\n\n✅ Horario: 8.30 a 18h ( flexible) L-J y V 8 a 15h e Intensiva de Verano Julio y Agosto de 8 a 15h\n\nPara estar al corriente de nuestras novedades síguenos aquí -> knowmad mood\n\nEn knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T05:28:25.102Z",
+    "sourceHash": "20cd5053e489c7c909f706edb70d6e7888e8cf18dde2d1015a804451f8d368ca",
+    "company": {
+      "id": "knowmadmood",
+      "name": "knowmad mood",
+      "logoUrl": "https://logo.clearbit.com/knowmadmood.com",
+      "industry": "Technology",
+      "website": "https://knowmadmood.com"
+    },
+    "slug": "senior-frontend-developer-react-redux-microfrontends-knowmad-mood-20cd5053",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "redux",
+        "cypress",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "15b8d5e6bad1d82f68e5d22f3d90da4ccc1d5267a12bada587dca55adfd74c25",
+    "title": "Lead Front End Engineer",
+    "applyUrl": "https://www.undelucram.ro/en/jobs/lead-front-end-engineer/100760?utm_source=linkedin&utm_medium=social&utm_campaign=linkedin_xml_jobs",
+    "description": "About the job\n\nUndelucram.ro on behalf of:\n\nSoftServe\n\nAbout The Role\n\nAs a Lead Frontend Engineer, you will design and build the user interfaces of complex, modular web applications for our Client, a European public sector organization. You will own the front end of what you deliver — its architecture, performance, accessibility, and security — and act as the technical reference point for the team, from component design and state management through to release via the established CI/CD pipelines. The role requires security clearance, so eligibility to obtain it is part of the selection.\n\nResponsibilities\n\n\nDesign, develop, and maintain complex, modular client-side applications using Angular, TypeScript, and modern build tooling\nOwn the quality of the front end you deliver, including responsive and adaptive behavior, accessibility, SEO, and application performance\nProvide technical leadership to the team through code review and knowledge sharing, and work with backend engineers, designers, and stakeholders to turn requirements into working interfaces\nBuild reusable components and implement state management patterns that scale across applications\nIntegrate front ends with REST APIs and verify those integrations with web services testing tools\nImplement web security practices, including authentication and authorization flows based on OAuth and OpenID Connect\nWrite and maintain unit and integration tests, and integrate front-end builds into CI/CD pipelines\nMonitor client-side performance using real user monitoring tooling and optimize asset delivery, including through content delivery networks\n\n\nRequirements\n\n\nA university degree at master's level (or 5 years of higher education) with a minimum of 15 years of IT professional experience\nThe candidate must be security clearable or already hold EU-27 security clearance\nMinimum 2 years of experience with HTML and CSS3, with proficiency in HTML5, JavaScript, ES6, CSS3, and SASS\nMinimum 3.5 years of experience with Angular (v14+), including build tooling (Angular CLI, Webpack, Vite), and minimum 3.5 years with TypeScript, together with Bootstrap\nMinimum 2 years of experience with RxJS and minimum 1.5 years with React, with good knowledge of building complex, modular client-side applications using modern frameworks, Web Components, and state management patterns. Experience in Redux architecture is a plus\nMinimum 1.5 years of experience in web security and authentication and authorization protocols (OAuth, OpenID Connect)\nMinimum 2 years of experience with development and DevSecOps tooling, including version control (Git), issue tracking (JIRA), collaboration (Confluence), and CI/CD pipelines (Jenkins, Bamboo), and minimum 1.5 years with REST APIs and with tools for web services testing (Postman, ReadyAPI)\nExperience with responsive and adaptive design, client-side monitoring tools such as Dynatrace Real User Monitoring and Azure Application Insights, Content Delivery Networks such as Cloudflare or AWS CloudFront for optimizing asset delivery, and front-end testing frameworks and tools (e.g. Jest, Karma, Cypress) for unit and integration testing, together with an understanding of key design principles, SEO principles, and accessibility standards\nGood knowledge of English, both spoken and written, corresponding to Level C1 or higher (CEFR)\n\n\nSoftServe is an equal opportunity employer. Qualified applicants will receive consideration regardless of race, color, ancestry, ethnicity, national origin, religion, sex, sexual orientation, gender identity or expression, age, citizenship, disability, health condition, marital or family status, veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Romania",
+    "country": "Romania",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T05:23:23.658Z",
+    "sourceHash": "15b8d5e6bad1d82f68e5d22f3d90da4ccc1d5267a12bada587dca55adfd74c25",
+    "company": {
+      "id": "undelucramro",
+      "name": "Undelucram.ro",
+      "logoUrl": "https://logo.clearbit.com/undelucramro.com",
+      "industry": "Technology",
+      "website": "https://undelucramro.com"
+    },
+    "slug": "lead-front-end-engineer-undelucram-ro-15b8d5e6",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "sass",
+        "webpack",
+        "vite",
+        "redux",
+        "cypress",
+        "jest",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Romania"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "238e2ec6cce4c98d059788e8fc0184185a73b41a328c5578ec10eac0276a7d65",
+    "title": "Frontend / React Developer (Fresher)",
+    "applyUrl": "https://mailermen.com/jobs/frontend-react-developer-fresher-remote-india-504",
+    "description": "About the job\n\nWhat this role pays, in context\n\nThis listing pays 54% below the median for React Developer roles in India, which sits at ₹6L a year.\n\n25th pct ₹5.1L75th pct ₹6L\n\nMedian of 15 other live React Developer listings in India on this board that state pay. Roles that do not disclose a salary are excluded rather than counted as zero.\n\nMailerMen is hiring a Frontend / React Developer for our Surat team. You will build modern, responsive user interfaces with React, focusing on performance, accessibility and clean component design. Freshers with strong fundamentals and hands-on project or internship experience are encouraged to apply. The role is fully remote, with the Surat team as your home base for occasional meetups.\n\nDepartment: Engineering - Frontend Working hours: 10:00 AM–7:00 PM IST, Monday–Friday\n\nResponsibilities\n\n\nFollow accessibility, responsive design and coding best practices.\nConvert UI designs into reusable frontend components.\nImplement accessible components following WCAG basics.\nWrite component tests and visual regression checks.\nParticipate in code reviews and team discussions.\nBuild responsive user interfaces using React.\nLearn and contribute to modern frontend development practices.\nLearn team tools, coding standards and delivery processes with mentor support.\n\n\nRequirements\n\n\nBachelor's degree, diploma or equivalent practical training in Computer Science/IT preferred.\nGood to have: Figma, Storybook, Framer Motion, Next.js, Redux, TypeScript\n\n\nSkills\n\nCSSHTMLJavaScriptReact.jsREST APIs\n\nBenefits\n\n\nFully remote role\nModern hardware\nPerformance bonuses\nCertification support\nFlexible leave policy\n\n\nRelated searches\n\nReact Developer Remote Jobs in IndiaAll React Developer jobsJobs in India",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T05:00:17.720Z",
+    "sourceHash": "238e2ec6cce4c98d059788e8fc0184185a73b41a328c5578ec10eac0276a7d65",
+    "company": {
+      "id": "mailermen",
+      "name": "MailerMen",
+      "logoUrl": "https://logo.clearbit.com/mailermen.com",
+      "industry": "Technology",
+      "website": "https://mailermen.com"
+    },
+    "slug": "frontend-react-developer-fresher-mailermen-238e2ec6",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "redux",
+        "storybook",
+        "figma",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "mid",
+      "employmentType": "internship"
+    }
+  },
+  {
+    "id": "b4a806aa60086154281fdf960072240ece384080da3ec460a6f9078bf74f4a13",
+    "title": "Ingénieur(e) développement logiciel frontend",
+    "applyUrl": "https://truckonline.pro/truckonline/recrutement/#formulaire",
+    "description": "About the job\n\nResponsabilités\n\nVos Missions\n\nCustomer Success Manager, c’est un poste clé chez Truckonline.\n\nNous nous sommes donné pour mission d’avoir un accompagnement et une qualité de service irréprochables.\n\nEn tant que CSM, vous êtes l’interlocuteur principal de nos clients et le garant de la réussite de notre mission. Vous menez le déploiement de notre solution, l’optimisation de son utilisation, vous décelez les opportunités de ventes additionnelles et favorisez l’adoption de nouveaux services par les clients. Vous aidez les clients à obtenir le meilleur retour sur investissement avec notre solution.\n\nVous évoluez dans un environnement à forte technicité (boîtiers IoT, données techniques véhicules, réglementation sociale européenne du transport, réglementation française, etc.) qui satisfera votre envie d’apprendre.\n\nCe Que Vous Faites Chez Truckonline\n\n\nGestion et Suivi des Déploiements\n\n\nPlanifier avec le client les différentes étapes du déploiement de la solution.\n\nPrendre en charge le déploiement de la solution: installation boîtiers, études des besoins client et paramétrage adéquat de la solution, suivi de l’adoption et des bonnes pratiques, formation, conseils d’utilisations, etc.\n\nExpliquer et démystifier les sujets techniques complexes auprès du client : récupération des données techniques véhicules (FMS), problématiques chronotachygraphes, limites et prérequis, etc.\n\nAssurer un suivi rigoureux des jalons, anticiper les risques de blocage et sécuriser une satisfaction utilisateur maximale.\n\n\nFidélisation et croissance\n\n\nMaintenir et développer des relations avec les personnes clés chez nos clients.\n\nAider le client à obtenir le meilleur ROI possible de notre solution pour la gestion de son activité en comprenant son utilisation et ses besoins métiers.\n\nIdentifier les opportunités de ventes additionnelles afin d’atteindre les objectifs de croissance.\n\nMener des revues périodiques personnalisées avec vos clients pour s’assurer de la meilleure utilisation possible de la solution.\n\nIdentifier au plus tôt les signaux faibles d’attrition et mettre en place un plan d’action pour y remédier (attrition cible de moins de 2%).\n\nGarantir la bonne fin de toutes les actions concernant vos clients (demande d’évolution, support, etc.)\n\n\nMentorat & Synergie Interne\n\n\nRemonter à l’équipe Produit des informations utiles pour l’amélioration de la solution dans une optique de création de valeur.\n\nAccompagner l’équipe CSM dans sa montée en compétences en partageant vos méthodologies et vos bonnes pratiques.\n\nCollaborer en continu avec le pôle Support pour fluidifier le traitement des dossiers complexes et résoudre les incidents escaladés.\n\n\nRéglementation & Reporting\nPratiquer une veille métier et réglementaire\nPiloter l’activité via un reporting régulier des indicateurs clés du climat client.\n\nCompétences requises\n\nVous avez l’habitude des structures logicielles solides, mais vous recherchez l’impact direct et la convivialité d’une PME de 26 personnes, avec la structure financière d’un groupe de 100 personnes.\n\n\nVous avez une expérience solide au sein d’un éditeur de logiciels d’envergure en tant que CSM\nVous savez définir et exécuter des plans de déploiement et d’accompagnement client\nVous disposez de très bonnes aptitudes relationnelles\nVous savez vous organiser, prioriser.\nVous savez comprendre une réglementation complexe et son application.\nVous êtes capable de maîtriser les tenants et aboutissants d’un logiciel\nSoft Skills : Leadership bienveillant, pédagogie, dynamisme et un fort esprit d’équipe.\nVous parlez anglais dans un cadre professionnel.\n\n\nVous n’avez pas besoin de cocher toutes les cases. Nous vous encourageons à postuler si vous pensez pouvoir exceller dans ce poste.\n\nFormation\n\nDiplôme de niveau Bac+5 (Ingénieur, École de Commerce ou Master en Informatique ou Gestion de Projet)\n\nCe que nous vous offrons \n\nDans un cadre de travail au pied des montagnes à Voiron, vous trouverez chez nous:\n\n\nEntre 40 et 50k€ brut annuel de base (fixé selon votre profil et votre expérience).\nPrime d’Intéressement plus autre prime possible en fonction des résultats.\n1 jour de télétravail par semaine.\nUn environnement axé sur l’innovation, l’intégration des nouvelles technologies (IA) et la cohésion d’équipe.\n\n\nProcessus de recrutement\n\nUn appel de 30 minutes pour valider la cohérence de votre candidature avec notre offre.\n\nUn entretien avec le directeur des opérations.\n\nUn entretien avec le dirigeant.\n\nJe postule",
+    "location": "Remote - France",
+    "country": "France",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T04:54:11.080Z",
+    "sourceHash": "b4a806aa60086154281fdf960072240ece384080da3ec460a6f9078bf74f4a13",
+    "company": {
+      "id": "truckonline",
+      "name": "TRUCKONLINE",
+      "logoUrl": "https://logo.clearbit.com/truckonline.com",
+      "industry": "Technology",
+      "website": "https://truckonline.com"
+    },
+    "slug": "ing-nieur-e-d-veloppement-logiciel-frontend-truckonline-b4a806aa",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "France"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "82961713394af11145091af0e0e97fa7ad1ae22fc4d884289f55a74a66b662ad",
+    "title": "Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/bltf2bisuru3zbhc7o0_en?country=Brazil&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T04:45:19.215Z",
+    "sourceHash": "82961713394af11145091af0e0e97fa7ad1ae22fc4d884289f55a74a66b662ad",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-82961713",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "730606495adedfd18ffe52de407ce827569ba53672b1ce04bdcb1f86e828bf9d",
+    "title": "Front End Developer",
+    "applyUrl": "https://atracaodetalentos.totvs.app/ihmstefanini/168/front-end-developer?applicationSource=0",
+    "description": "About the job\n\nDescrição\n\nEstamos em busca de um(a) Front End Developer para integrar nosso time de Tecnologia da Informação Industrial e ajudar a construir soluções que fazem diferença no dia a dia da fábrica. Se você é apaixonado(a) por tecnologia, gosta de transformar processos complexos em interfaces claras e está pronto(a) para encarar desafios, essa vaga é para você.\n\nEsta posição está aberta a profissionais de diferentes níveis de senioridade (Júnior, Pleno e Sênior). Avaliaremos cada candidatura considerando sua experiência, sua trajetória e o seu potencial de crescimento.\n\nResponsabilidades e atribuições\n\n\nDesenvolver e implementar interfaces para sistemas MES (Manufacturing Execution System) com a plataforma Proficy PlantApps e o ROB-EX Scheduler.\nConstruir telas e componentes em React, JavaScript, TypeScript e HTML pensados para o uso em ambientes industriais, onde clareza, agilidade e confiabilidade são essenciais.\nIntegrar o front-end a microserviços e a soluções em nuvem.\nTraduzir as necessidades de operadores, supervisores e planejadores da produção em experiências de uso simples e eficientes.\nParticipar de revisões de código, testes e da evolução das boas práticas do time.\nColaborar com times multidisciplinares (back-end, engenharia, operações e áreas de negócio), em contexto internacional.\n\n\nRequisitos e qualificações\n\nRequisitos Obrigatórios\n\n\nExperiência com React, JavaScript, TypeScript, HTML e Python.\nConhecimento em bancos de dados relacionais (PostgreSQL) e mensageria.\nExperiência com Docker.\nConhecimento em arquitetura de microsserviços orientada a eventos.\nExperiência prévia com software para ambientes industriais e de manufatura.\nInglês fluente.\n\n\nO Que Esperamos, Conforme o Seu Nível\n\n\nJúnior: base técnica sólida, boa capacidade de aprendizado e disposição para evoluir com o apoio do time.\nPleno: autonomia para entregar funcionalidades de ponta a ponta no front-end, com boa qualidade e comunicação clara.\nSênior: liderança técnica, influência em decisões de arquitetura e apoio ao desenvolvimento de colegas.\n\n\nBenefícios\n\n‍ Desconto em cursos, universidades e instituições de idiomas;\n\nLinkedIn Learning - cursos online, gratuitos, atualizados e com certificado;\n\nMentoring;\n\nTelemedicina gratuita para consultas com mais de 30 especialidades médicas, psicólogos e nutricionistas;\n\nClube de vantagens e descontos nos melhores estabelecimentos;\n\nClube de viagens;\n\nConvênio para Pet;\n\ne muito mais...",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T04:45:05.712Z",
+    "sourceHash": "730606495adedfd18ffe52de407ce827569ba53672b1ce04bdcb1f86e828bf9d",
+    "company": {
+      "id": "stefaniniihm",
+      "name": "Stefanini IHM",
+      "logoUrl": "https://logo.clearbit.com/stefaniniihm.com",
+      "industry": "Technology",
+      "website": "https://stefaniniihm.com"
+    },
+    "slug": "front-end-developer-stefanini-ihm-73060649",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "b0e906a86cf54ba89d10ea27a7ef529883f5db976941906817c3b967560e9536",
     "title": "Sr. Software Engineer (Frontend) - Extensions Team",
     "applyUrl": "https://ats.rippling.com/cerby/jobs/abd15dc5-39d6-4a2c-bc43-cafe55765312?src=LinkedIn",
