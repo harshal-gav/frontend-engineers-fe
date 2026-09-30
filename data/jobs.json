@@ -1,5 +1,267 @@
 [
   {
+    "id": "e8c43279606e3903d647d0a6aef4bd47092fe72935ef4de3c1e84cfaf8aad011",
+    "title": "Member of Technical Staff, Front End",
+    "applyUrl": "https://jobs.ashbyhq.com/Abridge",
+    "description": "About the job\n\nAbout Abridge\n\nAbridge was founded in 2018 with the mission of powering deeper understanding in healthcare. Our AI-powered platform was purpose-built for medical conversations, improving clinical documentation efficiencies while enabling clinicians to focus on what matters most—their patients.\n\nOur enterprise-grade technology transforms patient-clinician conversations into structured clinical notes in real-time, with deep EMR integrations. Powered by Linked Evidence and our purpose-built, auditable AI, we are the only company that maps AI-generated summaries to ground truth, helping providers quickly trust and verify the output. As pioneers in generative AI for healthcare, we are setting the industry standards for the responsible deployment of AI across health systems.\n\nWe are a growing team of practicing MDs, AI scientists, PhDs, creatives, technologists, and engineers working together to empower people and make care make more sense. We have offices located in the Mission District in San Francisco, the SoHo neighborhood of New York, and East Liberty in Pittsburgh.\n\nThe Role\n\nAbridge is looking for experienced Front End Engineers to join our growing team! You’ll play a key role in our technology decisions and implementation, and you’ll see firsthand the impact that we’re making on healthcare. You’ll build and support functionality primarily in React but also across our APIs and other TypeScript codebases. As a growing startup at the edge of this wave of AI, you’ll have opportunities to work across our stack and help develop best practices as our industry continues to shift.\n\nWhat You’ll Do\n\n\nScale up our business by designing, building, and supporting easy-to-use React/Typescript applications\nSet standards for accessibility and design system use\nMake and implement technology decisions that support business needs without compromising security, privacy, or quality\nEnhance existing systems to add new functionality, and to improve performance, stability, quality, and security\nAdvocate for high standards; make quality-of-life improvements to the codebase; and help limit the growth of technical debt\nBuild deep user empathy and maintain a user-centric mindset\nCommunicate regularly and effectively within and on behalf of our cross-functional product delivery teams. You’ll work with other disciplines including design, product, machine learning, and infrastructure, and will have opportunities to learn from and contribute to projects across the company\nMentor and learn from other engineers\n\n\nWhat You’ll Bring\n\n\n7+ years’ experience building, shipping, and supporting web applications, including 5+ years of experience with React. You’ve seen what works, and what didn’t. \nHave independently worked and delivered a small web app or entire feature in a larger web app\nExcitement about working in our mobile tech stack, which includes React, Typescript, and potentially Electron\nAbility to act with autonomy & self-direction while working well in a team environment\nWillingness to pitch in wherever needed - as a fast-moving startup we need to do good work, quickly\nAre comfortable with working across domains and languages with a curiosity to experiment & learn new things\nDeep expertise in using AI tools to accelerate engineering workflows. We’re looking for candidates who have been deep in this for the last couple years. \nBonus points if you have experience with any of the following on web: audio playback, audio recording, file encryption, or online vs. offline mode support\n\n\nWhy Work at Abridge?\n\nAt Abridge, we’re transforming healthcare delivery experiences with generative AI, enabling clinicians and patients to connect in deeper, more meaningful ways. Our mission is clear: to power deeper understanding in healthcare. We’re driving real, lasting change, with millions of medical conversations processed each month.\n\nJoining Abridge means stepping into a fast-paced, high-growth startup where your contributions truly make a difference. Our culture requires extreme ownership—every employee has the ability to (and is expected to) make an impact on our customers and our business.\n\nBeyond individual impact, you will have the opportunity to work alongside a team of curious, high-achieving people in a supportive environment where success is shared, growth is constant, and feedback fuels progress. At Abridge, it’s not just what we do—it’s how we do it. Every decision is rooted in empathy, always prioritizing the needs of clinicians and patients.\n\nWe’re committed to supporting your growth, both professionally and personally. Whether it's flexible work hours, an inclusive culture, or ongoing learning opportunities, we are here to help you thrive and do the best work of your life.\n\nIf you are ready to make a meaningful impact alongside passionate people who care deeply about what they do, Abridge is the place for you.\n\nHow we take care of Abridgers:\n\n\nGenerous Time Off: 14 paid holidays, flexible PTO for salaried employees, and accrued time off for hourly employees\nComprehensive Health Plans: Medical, Dental, and Vision coverage for all full-time employees and their families. \nGenerous HSA Contribution: If you choose a High Deductible Health Plan, Abridge makes monthly contributions to your HSA. \nPaid Parental Leave: Generous paid parental leave for all full-time employees. \nFamily Forming Benefits: Resources and financial support to help you build your family. \n401(k) Matching: Contribution matching to help invest in your future. \nPersonal Device Allowance: Tax free funds for personal device usage. \nPre-tax Benefits: Access to Flexible Spending Accounts (FSA) and Commuter Benefits. \nLifestyle Wallet: Monthly contributions for fitness, professional development, coworking, and more. \nMental Health Support: Dedicated access to therapy and coaching to help you reach your goals. \nSabbatical Leave: Paid Sabbatical Leave after 5 years of employment. \nCompensation and Equity: Competitive compensation and equity grants for full time employees. \n... and much more!\n\n\nEqual Opportunity Employer\n\nAbridge is an equal opportunity employer and considers all qualified applicants equally without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, veteran status, or disability.\n\nWe're committed to providing reasonable accommodations throughout the interview process. Once you submit your application, we'll follow up with details on how to request an accommodation for interviewing, completing any assessments, or otherwise participating in the selection process.\n\nStaying safe - Protect yourself from recruitment fraud\n\nWe are aware of individuals and entities fraudulently representing themselves as Abridge recruiters and/or hiring managers. Abridge will never ask for financial information or payment, or for personal information such as bank account number or social security number during the job application or interview process. Any emails from the Abridge recruiting team will come from an @abridge.com email address. You can learn more about how to protect yourself from these types of fraud by referring to this article. Please exercise caution and cease communications if something feels suspicious about your interactions.\n\nCompensation Range: $218K - $250K",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T19:09:08.415Z",
+    "sourceHash": "e8c43279606e3903d647d0a6aef4bd47092fe72935ef4de3c1e84cfaf8aad011",
+    "company": {
+      "id": "abridge",
+      "name": "Abridge",
+      "logoUrl": "https://logo.clearbit.com/abridge.com",
+      "industry": "Technology",
+      "website": "https://abridge.com"
+    },
+    "slug": "member-of-technical-staff-front-end-abridge-e8c43279",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "6412ea7a0e14fcfdd130be81a0e42430412b721b7bef25614f4e0acfc5b3e6c7",
+    "title": "Software Engineer II, Frontend-leaning",
+    "applyUrl": "https://jobs.ashbyhq.com/turquoise-health/1fbc3cd7-fc6a-4b8a-8e73-d2c14f737826/application?utm_source=43A0Q3KXo2",
+    "description": "About the job\n\nThis is a fully remote role within the United States.\n\nWe're looking for a frontend-leaning Software Engineer II who loves building intuitive, data-rich user experiences and wants their work to matter. At Turquoise Health, we're making healthcare pricing transparent and understandable, and the interfaces you build will be how hospitals, insurers, and everyday people actually make sense of that data.\n\nYou’ll be a key member of a small, highly skilled engineering team, collaborating closely with the product team to shape the user experience from the component level up to the product decisions that influence them. While this is a full stack role and you'll touch backend systems, your primary impact will be in crafting the UI layer: turning complex healthcare pricing data into clean, interactive, and performant web experiences.\n\nWe're a fast moving startup, so you'll move fast too, taking on varied problems, shipping real features, and collaborating directly with the people who use what you build.\n\nResponsibilities\n\n\nDevelopment of Django-based websites using Python, Postgresql, etc. \nBuild frontend data visualization components that enable users to explore and interpret complex healthcare pricing data\nWrite effective, scalable code. \nTest and debug programs\nImprove functionality of existing systems\nAssess and prioritize feature requests\nCoordinate with other team members to understand user requirements and provide technical solutions\n\n\nWhat you'll bring to the role\n\n\n3+ years work experience in Python, or strong experience in another programming language and some exposure to Python\nProficiency in front-end technologies such as React, TypeScript and Vue.js\nExpertise in at least one popular Python web framework (preferably Django) or a similar popular web framework in another language (like Ruby or Rails)\nGood understanding of SQL and how to efficiently use databases to solve problems\nAbility to work effectively in a remote environment\nGood problem-solving skills\nGood communication skills\nDesire to learn new technologies\nBS in Computer Science, Engineering or equivalent experience/knowledge. We are happy to work with strong candidates with non-traditional educational backgrounds\n\n\nBonus\n\n\nExperience working on open-source projects\nExperience using with git and GitHub\nStrong writing skills\n\n\nBenefits\n\n\nCompetitive pay with equity options\nStellar health care plan options (Medical, Dental & Vision), with FSA, DCFSA, & HSA options\nCompany-sponsored disability & life insurance\nUnlimited PTO\n401(k) + 4% Matching\nFully remote work + flexible working hours\n$750 work-from-home setup budget\nPaid biannual in-person company summits\nQuarterly $150 co-hanging stipend to meet up with coworkers\nMonthly $100 health and wellness benefit\nGenerous paid family leave\nAnnual $1,200 learning & development stipend\n\n\nAbout Turquoise Health\n\nTurquoise Health is a Series C price transparency platform for finance leaders across healthcare. Backed by a16z, Oak HC/FT, Adams Street, Yosemite, Bessemer Venture Partners, and others, we power price transparency for 300+ enterprise organizations and are building the infrastructure for a more open, efficient healthcare marketplace. We're a remote-first, US-based team that values transparency, empathy, inclusivity, creativity, and ownership.\n\nWe operate on US business hours and work with clients entirely based in the US. For this role, we are seeking US-based candidates.\n\nWe strongly encourage BIPOC, people with disabilities, and LGBTQIA+ folks to apply for any open roles of interest. Healthcare affects all people differently, but it significantly affects those in underserved communities. With a robust, diverse team, we are stronger and better equipped to change the future of healthcare for all.\n\nWork Authorization\n\nThis role requires current authorization to work in the United States. Turquoise does not sponsor employment visas (H-1B, PERM, etc.) or assume sponsorship of existing visas for this position.\n\nDisability Accommodation Email\n\nTurquoise is committed to providing reasonable accommodations to applicants and employees with disabilities. Please tell us if you require a reasonable accommodation to apply for a job or to perform your job. Examples of reasonable accommodation include making a change to the application process or work procedures, providing documents in an alternate format, using a sign language interpreter, or using specialized equipment. If you require assistance or an accommodation with the hiring process, please contact recruiting@turquoise.health\n\nCompensation Range: $153K - $170K",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T19:06:25.233Z",
+    "sourceHash": "6412ea7a0e14fcfdd130be81a0e42430412b721b7bef25614f4e0acfc5b3e6c7",
+    "company": {
+      "id": "turquoise",
+      "name": "Turquoise",
+      "logoUrl": "https://logo.clearbit.com/turquoise.com",
+      "industry": "Technology",
+      "website": "https://turquoise.com"
+    },
+    "slug": "software-engineer-ii-frontend-leaning-turquoise-6412ea7a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "808141ebb069212474453627a2791c4d23c265d3c41b2c8c165474e3a4b8c62d",
+    "title": "Associate Engineer (Front End)",
+    "applyUrl": "https://www.theladders.com/linkedin/89023515?src=LinkedIn",
+    "description": "About the job\n\nFor our client, we are seeking a Associate Engineer (Front End) to join the team of a leader in the Enterprise Technology space.\n\nThis role will focus on building and refining user-facing web experiences that support reliable product delivery and strong customer outcomes. You will work closely with senior engineers and cross-functional partners to ship clean, maintainable front-end solutions in a collaborative technology environment. The position emphasizes quality, testing, and thoughtful UI execution while contributing to a culture of continuous improvement.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $109,100 – $136,400 annually\n\nResponsibilities\n\n\n Write clean, reliable code to develop features that support product outcomes\n Collaborate with senior engineers to troubleshoot technical challenges\n Design and implement tests to ensure software quality\n Debug code using logs and dashboards to maintain system integrity\n Share knowledge proactively and contribute to a supportive team environment\n Engage in pair programming and continuous improvement practices\n\n\nQualifications\n\n\n 5-7 years of experience in web application development using modern JavaScript, HTML, and CSS\n Proficiency in React and understanding of REST API integration\n Familiarity with Git for version control and pull request reviews\n Strong attention to UI/UX details and quality standards\n Interest in using AI tools to enhance workflows\n Bonus: experience with TypeScript, testing frameworks, and web accessibility principles\n\n\nBenefits\n\n\n Flexible working model supporting a balance between professional and personal life\n Opportunity for hybrid work combining remote and office collaboration\n Encouragement of open communication and cross-functional teamwork\n Focus on continuous learning for professional growth\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification—your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nHTML, CSS, JavaScript, React, REST APIs, Git, TypeScript, Jest, Cypress, UI/UX principles, component libraries, AI tools, Agile methodologies, Testing frameworks, Cloud platforms",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T19:04:49.439Z",
+    "sourceHash": "808141ebb069212474453627a2791c4d23c265d3c41b2c8c165474e3a4b8c62d",
+    "company": {
+      "id": "ladders",
+      "name": "Ladders",
+      "logoUrl": "https://logo.clearbit.com/ladders.com",
+      "industry": "Technology",
+      "website": "https://ladders.com"
+    },
+    "slug": "associate-engineer-front-end-ladders-808141eb",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "cypress",
+        "jest",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "fb3e4d191440c85d84def0cd546046c79cae1b88fde168be3a58bd3a24750b3e",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.fetchjobs.co/job-description-usb/9D6E919EBB82AF1733432319D5D6BE63?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nCynet Systems is a leading provider of innovative technology solutions and professional staffing services. With a commitment to excellence and a focus on client satisfaction, Cynet Systems has established itself as a trusted partner for organizations across various industries. The company specializes in delivering tailored IT solutions, consulting, and staffing services that help businesses optimize their operations, enhance productivity, and achieve their strategic goals. Cynet Systems prides itself on its talented team of professionals, cutting-edge technology, and a customer-centric approach that drives sustainable growth and success for its clients.\n\nAbout The Role\n\nWe are seeking a highly skilled and motivated [Job Title] to join our dynamic team at Cynet Systems. This role requires a proactive individual with a strong background in [relevant field or industry], capable of managing complex projects and collaborating effectively with cross-functional teams. The ideal candidate will play a crucial role in supporting our clients' initiatives, ensuring the delivery of high-quality solutions, and contributing to the continuous improvement of our services. This position offers an exciting opportunity to work in a fast-paced environment, leverage your expertise, and make a tangible impact on our clients' success.\n\nQualifications\n\nThe successful candidate will possess a combination of education, experience, and skills, including but not limited to:\n\n\nBachelor’s degree in Computer Science, Information Technology, or a related field; a master’s degree is a plus.\nProven experience in [specific area or technology relevant to the role], with a strong understanding of industry best practices.\nExceptional problem-solving and analytical skills, with the ability to troubleshoot and resolve issues efficiently.\nExcellent communication and interpersonal skills to effectively collaborate with clients and team members.\nAbility to manage multiple priorities and work under tight deadlines.\nRelevant certifications such as [list relevant certifications] are preferred.\n\n\nResponsibilities\n\nThe primary responsibilities of this role include, but are not limited to:\n\n\nDesign, develop, and implement solutions that meet client requirements and industry standards.\nCollaborate with cross-functional teams to ensure seamless project execution and delivery.\nProvide technical guidance and support to clients and internal teams.\nParticipate in project planning, status updates, and reporting to stakeholders.\nConduct system analysis and recommend improvements to enhance performance and security.\nMaintain comprehensive documentation of processes, configurations, and solutions.\nStay updated with the latest industry trends and emerging technologies to ensure the company remains competitive.\nAssist in training and mentoring junior team members as needed.\n\n\nBenefits\n\nCynet Systems offers a comprehensive benefits package designed to support our employees' well-being and professional growth. Benefits include competitive salary packages, health insurance, retirement plans, paid time off, and opportunities for career advancement. The company also promotes a positive work environment that encourages innovation, teamwork, and continuous learning. Employees have access to training programs, professional development resources, and a collaborative culture that values diversity and inclusion. Cynet Systems is dedicated to recognizing and rewarding talent, ensuring our team members feel valued and motivated.\n\nEqual Opportunity\n\nCynet Systems is an equal opportunity employer. We are committed to creating an inclusive environment where all employees and applicants are treated with fairness and respect, regardless of race, color, religion, gender, sexual orientation, gender identity or expression, age, national origin, disability, or any other protected characteristic. We believe diversity fosters innovation and drives success, and we welcome candidates from all backgrounds to apply and join our team.\n\n\n\n\n\nDesired Skills and Experience\n\nProject Management, Solution Design, Technical Support, Team Collaboration, System Analysis, Troubleshooting",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T19:00:57.962Z",
+    "sourceHash": "fb3e4d191440c85d84def0cd546046c79cae1b88fde168be3a58bd3a24750b3e",
+    "company": {
+      "id": "taskverse",
+      "name": "TaskVerse",
+      "logoUrl": "https://logo.clearbit.com/taskverse.com",
+      "industry": "Technology",
+      "website": "https://taskverse.com"
+    },
+    "slug": "frontend-developer-taskverse-fb3e4d19",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0cb4c1c946a1af3d3114cd7b8cfad0027aefe774712b9d6c44e812ead257b2cd",
+    "title": "Senior Software Engineer - Front End/Back End (Library of Congress)",
+    "applyUrl": "https://adhoc.hrmdirect.com/employment/job-opening.php?req=3830463&req_loc=1494979&cust_sort1=245588%2Femployment%2Fjob-openings.php%3Fsearch%3Dtrue&source=LinkedIn",
+    "description": "About the job\n\nSenior Software Engineer - Front End/Back End\n\nJob Number: 973\n\nThis is a remote position.\n\nAd Hoc is a technology company that empowers organizations to deliver scalable, impactful digital services. Using modern, agile methods, our team creates products that meet people’s needs and transform their experience of government.\n\nWork on things that matter\n\nOur collaborations have shaped some of the defining moments in public-sector service delivery. We’ve helped build products that connect Veterans to tailored services, help millions access affordable health care, and support important programs like Head Start. As we work with agencies to deliver critical services, we’re also changing how the government approaches technology.\n\nBuilt for a remote life\n\nOur culture, communications, and tools are built for remote work, enabling us to bring together top talent nationwide. At Ad Hoc, remote life empowers our teams to design work environments that fit their lives and that foster flexibility and collaboration to achieve positive outcomes for our customers.\n\nCommitted to high expectations and a welcoming culture\n\nAd Hoc values acceptance, accountability, and humility. We aren’t heroes. We learn from our mistakes and improve the process for the next time. We build small, inclusive teams to collaborate closely with our partners to solve the right problems and deliver software that works.\n\nThe Federal Civilian business unit supports many customers spanning the federal, commercial, and nonprofit space. Our customers include NASA, the General Services Administration, Office of Personnel Management, the Library of Congress, Health & Human Services, and the FDIC. We partner with these agencies to build new capabilities, deliver products, establish data as a strategic asset for informed decision-making, modernize legacy systems, and build the digital service infrastructure necessary to scale their mission impact.\n\nPrimary Responsibilities\n\nSenior Software Engineer - Front End/ Back End serves as an experienced individual contributor within a team, with the expectation that you will further develop your leadership, guidance and mentoring skills. With minimal oversight from leadership, you will be responsible for supporting the goal of meeting scope, schedule and delivery requirements. A Senior Software Engineer - Front End/ Back End impacts the long-term goals of the program, while contributing to the implementation of the program’s development strategy. You may serve as the discipline's primary lead when working with stakeholders and utilize strong influential skills to drive improvements in software engineering processes and practices. Primary expectations of a Senior Software Engineer - Front End/ Back End include:\n\n\nDemonstrate technical expertise, accountability, and ownership of contributions to the application codebase.\nMaintain a strong understanding of adjacent technical areas, systems, and ecosystems to effectively coordinate integrations and dependencies.\nDesign, develop, test, maintain, and improve high-quality software solutions across front-end and/or back-end systems.\nDiagnose and resolve complex technical issues within owned systems, using incidents and lessons learned to identify opportunities for system and process improvements.\nMentor and support junior and mid-level engineers in developing their technical and problem-solving skills.\nClearly communicate technical concepts, issues, risks, and developments to team members, clients, and stakeholders.\nParticipate in technical interviews and help evaluate engineering candidates.\nUse strong technical judgment and influencing skills to propose, evaluate, and recommend approaches to technical and process challenges.\nProvide technical guidance and mentorship to engineers within the team.\nLead small projects, technical initiatives, or temporary team structures as needed.\nDevelop and present design documents, system diagrams, technical recommendations, and other engineering artifacts to clients, stakeholders, partners, and fellow engineers.\n\n\nBasic Qualifications\n\n\nBachelor’s degree and 7+ years of professional software engineering experience.\nRelevant professional experience may be substituted for education where permitted.\nDemonstrated expert-level knowledge in at least one technical discipline, including front-end, back-end, full-stack, or infrastructure engineering.\nExperience designing, developing, testing, and maintaining production software applications.\nExperience troubleshooting complex technical issues and contributing to scalable, maintainable software solutions.\nDemonstrated ability to communicate technical concepts effectively to both technical and non-technical audiences.\nExperience providing technical guidance, mentorship, or peer support to other engineers.\nMust meet any applicable contractual or labor category requirements related to education and professional experience.\n\n\nPreferred Qualifications\n\n\nExperience working across both front-end and back-end technologies in a full-stack environment.\nExperience designing, building, and maintaining modern web applications and APIs.\nExperience with modern JavaScript frameworks such as React, Angular, or Vue.\nExperience with back-end technologies such as Java, Python, Node.js, or similar languages and frameworks.\nExperience working with relational and/or NoSQL databases.\nFamiliarity with cloud platforms such as AWS, Azure, or Google Cloud.\nExperience with CI/CD pipelines, automated testing, and modern software development practices.\nExperience working in Agile or iterative development environments.\nExperience mentoring engineers or providing technical guidance within a development team.\nExperience collaborating directly with clients, product teams, designers, and other technical stakeholders.\nExperience supporting government or federal programs.\nFamiliarity with accessibility, security, performance, and scalable application design practices.\n\n\nTo learn more about working at Ad Hoc, please visit: https://adhocteam.us/join\n\nBenefits\n\n\nCompany-subsidized health, dental, and vision insurance\nFlexible PTO\n401K with employer match\nPaid parental leave after one year of service\nEmployee Assistance Program\n\n\nAd Hoc LLC is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, national origin, ancestry, sex, sexual orientation, gender identity or expression, religion, age, pregnancy, disability, work-related injury, covered veteran status, political ideology, marital status, or any other factor that the law protects from employment discrimination.\n\nWe value the unique skills gained through military service and encourage veterans and transitioning service members to apply.\n\nIn support of various state and city equal pay transparency laws, Ad Hoc job descriptions feature the starting range we reasonably expect to pay to candidates who would join our team with little to no need for training on the responsibilities we've outlined above. Actual compensation is influenced by a wide range of factors including but not limited to skill set, level of experience, and responsibility. The range of starting pay for this role is $115,000-$135,000. Our recruiters will be happy to answer any questions you may have, and we look forward to learning more about your salary requirements.\n\nJob Reference\n\nhttps://adhoc.team/",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T19:00:35.959Z",
+    "sourceHash": "0cb4c1c946a1af3d3114cd7b8cfad0027aefe774712b9d6c44e812ead257b2cd",
+    "company": {
+      "id": "adhocllc",
+      "name": "Ad Hoc LLC",
+      "logoUrl": "https://logo.clearbit.com/adhocllc.com",
+      "industry": "Technology",
+      "website": "https://adhocllc.com"
+    },
+    "slug": "senior-software-engineer-front-end-back-end-library-of-congress-ad-hoc-llc-0cb4c1c9",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e101be34c8508f4d9c0884c43a421889ae753080b84a2bfa671d532ba6bcd3e8",
+    "title": "Frontend Developer",
+    "applyUrl": "https://haystack.cv/jobs/782a41df-ed98-4e98-b64a-cbe8d4b1423e?src=6739",
+    "description": "About the job\n\nWe're working with one of the UK's leading business services providers, renowned for its innovative solutions and commitment to employee development. This organisation fosters a dynamic and inclusive work environment where continuous learning and professional growth are highly encouraged.\n\nThe Role\n\n\n Develop marketing websites to drive lead generation\n Investigate complex problems and articulate clear solutions\n Deliver proposed plans with confidence, ensuring high quality\n Write unit tests and understand TDD/BDD/E2E principles\n Proactively suggest system improvements, new tools, and efficient ways of working\n Collaborate closely with Product Owners, Business Analysts, developers, and stakeholders to agree on technological solutions\n\n\nWhat You'll Need\n\n\n At least 2 years of Frontend Development experience\n Understanding of CI/CD pipelines\n Knowledge of agile methodologies\n Strong communication and stakeholder management skills\n Ability to troubleshoot, analyse, and problem-solve effectively\n A passion for providing excellent service and being a team player\n\n\nWhat's On Offer\n\n\n A supportive environment that encourages professional growth and continuous learning\n Opportunities for career progression within Software Delivery\n An inclusive, collaborative culture\n A competitive salary and benefits package\n\n\nApply via Haystack today!",
+    "location": "Remote - United Kingdom",
+    "country": "United Kingdom",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T18:58:14.985Z",
+    "sourceHash": "e101be34c8508f4d9c0884c43a421889ae753080b84a2bfa671d532ba6bcd3e8",
+    "company": {
+      "id": "haystack",
+      "name": "Haystack",
+      "logoUrl": "https://logo.clearbit.com/haystack.com",
+      "industry": "Technology",
+      "website": "https://haystack.com"
+    },
+    "slug": "frontend-developer-haystack-e101be34",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United Kingdom"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "54e99d4962e35a7a76fc91732071c8a3bf889000063a7de3354ac60e564acf5a",
+    "title": "Frontend / React Developer",
+    "applyUrl": "https://mailermen.com/jobs/frontend-react-developer-remote-india-528",
+    "description": "About the job\n\nWhat this role pays, in context\n\nThis listing pays 12% below the median for React Developer roles in India, which sits at ₹6L a year.\n\n25th pct ₹4L75th pct ₹6L\n\nMedian of 15 other live React Developer listings in India on this board that state pay. Roles that do not disclose a salary are excluded rather than counted as zero.\n\nMailerMen is hiring a Frontend / React Developer for our Gurugram team. You will build modern, responsive user interfaces with React, focusing on performance, accessibility and clean component design. This role suits an engineer with about two years of experience who can own features end to end. The role is fully remote, with the Gurugram team as your home base for occasional meetups.\n\nDepartment: Engineering - Frontend Working hours: 10:00 AM–7:00 PM IST, Monday–Friday\n\nResponsibilities\n\n\nImprove Core Web Vitals and page-load performance.\nLearn and contribute to modern frontend development practices.\nWork with REST APIs and application state.\nWrite component tests and visual regression checks.\nFix UI bugs and improve frontend performance.\nConvert UI designs into reusable frontend components.\nFollow accessibility, responsive design and coding best practices.\n\n\nRequirements\n\n\nBachelor's degree, diploma or equivalent practical training in Computer Science/IT preferred.\nGood to have: Zustand, Framer Motion, Storybook, Figma, TypeScript, Redux\n\n\nSkills\n\nJavaScriptReact.jsHTMLCSSGitREST APIs\n\nBenefits\n\n\nFully remote role\nTeam outings and events\nMentorship program\nInternal mobility opportunities\nCertification support\n\n\nRelated searches\n\nReact Developer Remote Jobs in IndiaAll React Developer jobsJobs in India",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T18:16:52.685Z",
+    "sourceHash": "54e99d4962e35a7a76fc91732071c8a3bf889000063a7de3354ac60e564acf5a",
+    "company": {
+      "id": "mailermen",
+      "name": "MailerMen",
+      "logoUrl": "https://logo.clearbit.com/mailermen.com",
+      "industry": "Technology",
+      "website": "https://mailermen.com"
+    },
+    "slug": "frontend-react-developer-mailermen-54e99d49",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "redux",
+        "zustand",
+        "storybook",
+        "figma",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "06f32ed2f7f3840419696aae57b075a97deb4f6b244670945ccca1e8c27090e1",
+    "title": "Software Engineer 3-Frontend",
+    "applyUrl": "https://jobs.ashbyhq.com/bidgely-inc/364a0c99-7fbe-41af-a135-12dedb287733/application?utm_source=9d67XkrmQn&jobposting=linkedin",
+    "description": "About the job\n\nBidgely is looking for extraordinary and dynamic Software Engineers in Frontend to be part of its core team in Bangalore. You must have delivered exceptionally high-quality robust products dealing with large data, APIs/Framework integrations and a responsive User Interface. You have a highly analytical mind to figure out the cost-effective means to accomplish the module development and integration. Be part of a highly energetic and innovative team that believes nothing is impossible with some creativity and hard work.\n\nResponsibilities\n\n\nDesign and deliver scalable web and mobile user interfaces. Understand requirements and UI wireframes, suggest changes to UI design to provide superior user experience, develop reusable code using UI design patterns and component architecture and write unit test cases.\nCollaborate with product management, User Interface designers and engineering teams to elicit & understand their requirements & challenges and develop potential solutions\nStay current with the latest tools, technology ideas and methodologies; share knowledge by clearly articulating results and ideas to key decision-makers.\n\n\nRequirements\n\n\n4-8 years of strong experience in web user interface and responsive design.\n\n\nBS/BE/BTech/MS in Computer Science or equivalent\n\n\nExpert level knowledge in Generative AI, Agentic AI, and production LLM-based applications.\nStrong experience in Object-Oriented Design, Web and UI design patterns, Component architecture and developing highly scalable applications. Fluency in HTML5 / CSS3 / Javascript Frameworks(React/Angular/Vue) Familiarity in working with different browsers and mobile applications with UI development frameworks & packages.\nAbility to deliver code quickly from a wire-frame model in a fast-paced start-up environment.\nAttention to detail. Strong communication and collaboration skills.",
+    "location": "Remote - East Timor",
+    "country": "East Timor",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-09-30T18:05:00.149Z",
+    "sourceHash": "06f32ed2f7f3840419696aae57b075a97deb4f6b244670945ccca1e8c27090e1",
+    "company": {
+      "id": "bidgely",
+      "name": "Bidgely",
+      "logoUrl": "https://logo.clearbit.com/bidgely.com",
+      "industry": "Technology",
+      "website": "https://bidgely.com"
+    },
+    "slug": "software-engineer-3-frontend-bidgely-06f32ed2",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "East Timor"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "77ce53b8637f4dfe9cac2135f511529a9a2d9068bb73b735e7e764168499acf1",
     "title": "Frontend Developer - UI/UX",
     "applyUrl": "https://www.sundayy.com/job-description/usF726C4799128753DA685FC1800C4EFC6?source=Linkedin",
