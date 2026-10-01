@@ -1,5 +1,486 @@
 [
   {
+    "id": "c5d7c10f7099dc57c626d282a51710de80ff2648545706541b70a763b2b923eb",
+    "title": "Frontend Engineer (React/Next.js) - Remote Work | REF#302944",
+    "applyUrl": "https://applicants.bairesdev.com/job/169/302944/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml&__cf_chl_rt_tk=8BqD4I9gjzdK3CtdQiA_xiahnhMvM7Icse.V6pLSvwo-1790881961-1.0.1.1-hdh2fBfFmBoVSCcDvGjldCUOQyNxdY53Yk8DJjyiD2E",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\nFrontend Engineer (React/Next.js) at BairesDev\n\nIn this role, you'll contribute to frontend experiences on a chat product expanding into analytics views. You'll work within an established design system, bringing frontend skills and AI familiarity to a product where precision matters.\n\nWhat You'll Do\n\n\n Contribute to frontend experiences for a chat application expanding into analytics views.\n Help develop reusable components within an established design system.\n Support validation of AI-driven experiences using evaluation sets.\n Help extend backend services in Python when needed.\n Help identify and raise experience issues along the way.\n\n\nWhat We Are Looking For\n\n\n Experience with React and Next.js using TypeScript.\n Familiarity with AI/ML-driven applications, including LLM integrations.\n Familiarity with Python.\n Experience with AWS or similar cloud platforms.\n Attention to detail in UI implementation and design fidelity.\n Advanced level of English.\n\n\nNice To Have\n\n\n Experience with analytics and charting UI using tools such as D3 or Recharts.\n Familiarity with generative UI or AI-driven interfaces.\n Experience working inside an established design system.\n Understanding of accessibility (a11y) and responsive web app practices.\n Familiarity with state management and caching using Redux, Zustand, or similar tools.\n Familiarity with React Native.\n\n\nHow we do make your work (and your life) easier:\n\n\n 100% remote work (from anywhere).\n Excellent compensation in USD or your local currency if preferred\n Hardware and software setup for you to work from home.\n Flexible hours: create your own schedule.\n Paid parental leaves, vacations, and national holidays.\n Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\nJoin a global team where your unique talents can truly thrive and make a significant impact!\n\nApply now!",
+    "location": "Remote - Uruguay",
+    "country": "Uruguay",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T19:12:44.281Z",
+    "sourceHash": "c5d7c10f7099dc57c626d282a51710de80ff2648545706541b70a763b2b923eb",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "frontend-engineer-react-next-js-remote-work-ref-302944-bairesdev-c5d7c10f",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "redux",
+        "zustand",
+        "accessibility",
+        "d3"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Uruguay"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "78aefc213c40d8038b2fb51df21d4190d59087593ff5a6d52347a9a130c7fc06",
+    "title": "Sr Software Engineer II - Ads Manager (Front End)",
+    "applyUrl": "https://www.theladders.com/linkedin/89098370?src=LinkedIn",
+    "description": "About the job\n\nFor our client, we are seeking a Sr Software Engineer II - Ads Manager (Front End) to join the team of a leader in the Consumer Technology space.\n\nThis role will own the architecture and technical direction for a web-based campaign management experience, with a strong focus on building scalable front-end systems. You will partner closely with backend engineers and cross-functional stakeholders to deliver reliable, high-performing user interfaces that support business growth. The work will also include driving modernization, reducing technical debt, and improving engineering practices across the frontend stack.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $196,000 – $207,000 annually\n\nResponsibilities\n\n\n Lead the technical roadmap and architecture for the web applications supporting campaign management\n Design, build, and maintain high-quality React user interfaces\n Define and evolve shared components to improve maintainability and extensibility\n Collaborate with backend teams on robust API and data contracts\n Champion performance and reliability metrics for the web experience\n Drive modernization efforts and address technical debt within the frontend architecture\n Mentor engineers, improve onboarding practices, and resolve execution issues across teams\n\n\nQualifications\n\n\n 8+ years of experience building modern web applications with ownership of complex products\n Deep expertise in Node.js and React, including state management and performance tuning\n Strong frontend architecture skills, including routing and error handling\n Experience designing and integrating with REST and/or GraphQL APIs\n Proven track record of leading large, cross-stakeholder projects from design to rollout\n Demonstrated improvements in team productivity and code quality through tooling and CI enhancements\n Experience with web app monitoring and observability tools\n\n\nBenefits\n\n\n Remote work flexibility under the Flex First policy\n Eligible for new hire equity grants and annual refresh grants\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification—your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nReact, Node.js, REST APIs, GraphQL, JavaScript, HTML, CSS, Performance Tuning, Selenium, Cypress, Playwright, Figma, Monitoring tools (Datadog or similar), Data-heavy UIs, Frontend performance tools, TypeScript, Webpack, Mobile-first design practices, Accessibility standards (WCAG), CI/CD tools (Jenkins, CircleCI), State management libraries (Redux, MobX), Security tools (OWASP guidelines), Observability frameworks (OpenTelemetry)",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T19:01:46.944Z",
+    "sourceHash": "78aefc213c40d8038b2fb51df21d4190d59087593ff5a6d52347a9a130c7fc06",
+    "company": {
+      "id": "ladders",
+      "name": "Ladders",
+      "logoUrl": "https://logo.clearbit.com/ladders.com",
+      "industry": "Technology",
+      "website": "https://ladders.com"
+    },
+    "slug": "sr-software-engineer-ii-ads-manager-front-end-ladders-78aefc21",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "webpack",
+        "redux",
+        "mobx",
+        "graphql",
+        "figma",
+        "cypress",
+        "playwright",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "668dcd2945ed7036b696878de76c416d589bcfd521ea9822a3d4dd4f9c201f72",
+    "title": "Front End Engineer Lead",
+    "applyUrl": "https://www.ycombinator.com/companies/explorex/jobs/du157uJ-front-end-engineer-lead?utm_source=syn_li",
+    "description": "About the job\n\nAt Explorex, we are on a mission to revolutionise the restaurant industry in India with our revolutionary Full-Stack OS. Unlike existing solutions, Explorex goes beyond the value adds of a software solution and leverages it's powerful platform to help restaurants of today evolve into data-backed tech companies and understand their business as well as their customer better with deeper insight through strong analytical and actionable data points.\n\nWe are looking for a passionate person to make our system more consistent, reliable and scalable across all our tech verticals and taking ownership of this mission and helping Explorex empower the restaurant industry with it's powerful OS.\n\nOur Stack : Java Spring Framework, Postgresql, MongoDB, AWS, Angular\n\nJob Description Development experience and thorough understanding of Angular 2+ (MANDATORY), HTML, JS, CSS. Experience working with OOP design, RESTful APIs, JSON, MVC framework, TS, SCSS, Angular Materials, Node JS etc. Understanding of Google’s Material design language Great problem-solving skills and propensity to learn and mentor others Excel at working in small, dynamic, and fast-paced groups. Preferred Qualifications Excellent verbal and written communication skills Brownie points for skills in Flutter, ReactJS, Angular JS",
+    "location": "Remote - Paraguay",
+    "country": "Paraguay",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:42:36.184Z",
+    "sourceHash": "668dcd2945ed7036b696878de76c416d589bcfd521ea9822a3d4dd4f9c201f72",
+    "company": {
+      "id": "explorextechnologiesincycs20",
+      "name": "Explorex Technologies, Inc. (YC S20)",
+      "logoUrl": "https://logo.clearbit.com/explorextechnologiesincycs20.com",
+      "industry": "Technology",
+      "website": "https://explorextechnologiesincycs20.com"
+    },
+    "slug": "front-end-engineer-lead-explorex-technologies-inc-yc-s20-668dcd29",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "sass",
+        "flutter",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Paraguay"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b8a7fb6d9c6cb7fc9ea219ff73e8a5718d97b32cecc9f072e0202089300ca495",
+    "title": "Staff Frontend Engineer - Remote Work | REF#302937",
+    "applyUrl": "https://applicants.bairesdev.com/job/697/302937/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml&__cf_chl_rt_tk=qwrp8In3ss0BMO1XkxnrsHpJeeCiLfwWtql6YDin.nE-1790880143-1.0.1.1-gdn8NCpXiC9eZc5CTBVCC7V9otFT8Stptxzdc.nhpXg",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\nStaff Frontend Engineer at BairesDev\n\nIn this role, you'll shape the frontend of a product at the leading edge of AI-powered experiences, expanding from streaming chat into rich analytics interfaces. You'll partner closely with Design to explore what generative UI can look like, then bring those ideas to life quickly and with genuine craft. This is your opportunity to set the bar for quality and accessibility on a fast-moving product, working with real autonomy and influence over how the experience evolves.\n\nWhat You'll Do\n\n\n Lead the frontend surface of a streaming chat application expanding into analytics experiences.\n Build pixel-accurate, polished UI that faithfully matches design specifications.\n Collaborate closely with Design on generative UI discovery and rapid prototyping.\n Champion accessibility and inclusive UX across all internal-facing experiences.\n Proactively surface experience issues rather than waiting for feedback cycles.\n\n\nWhat We Are Looking For\n\n\n 8+ years of experience with React and Next.js using TypeScript.\n 4+ years of backend experience with Python.\n Proven experience building, maintaining, and evolving production LLM systems, not just zero-to-one projects.\n Experience with LLM evaluation and tracing, including LangSmith, LLM-as-judge, and golden datasets.\n High attention to detail in UI, including pixel accuracy, proactive polish, and design spec fidelity.\n Experience with analytics and charting UI, including funnels, bar and time series charts, using D3, Recharts, Visx, or similar.\n Experience with design systems such as Odyssey, Material, or Carbon.\n Experience with streaming chat interfaces, including LangGraph API, WebSockets, and token streaming.\n Experience with rapid prototyping alongside design teams.\n Strong accessibility (a11y) and inclusive UX practices for web applications.\n Advanced proficiency in English.\n\n\nNice To Have\n\n\n Experience with React Native.\n Familiarity with generative UI and AI-generated experiences, including model-driven components.\n Experience with UX patterns for AI output such as prompt inputs, citations, and summaries.\n Experience with state management and caching at scale using Redux, Zustand, or TanStack Query.\n BI or sales analytics domain exposure.\n Security mindset, including AuthN/AuthZ and secure frontend practices.\n Experience with CI/CD and frontend observability on AWS.\n\n\nHow we do make your work (and your life) easier:\n\n\n 100% remote work (from anywhere).\n Excellent compensation in USD or your local currency if preferred\n Hardware and software setup for you to work from home.\n Flexible hours: create your own schedule.\n Paid parental leaves, vacations, and national holidays.\n Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\nJoin a global team where your unique talents can truly thrive and make a significant impact!\n\nApply now!",
+    "location": "Remote - Paraguay",
+    "country": "Paraguay",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:42:27.086Z",
+    "sourceHash": "b8a7fb6d9c6cb7fc9ea219ff73e8a5718d97b32cecc9f072e0202089300ca495",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "staff-frontend-engineer-remote-work-ref-302937-bairesdev-b8a7fb6d",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "redux",
+        "zustand",
+        "accessibility",
+        "d3"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Paraguay"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "762d8aae8a5e9c5e4a8fd37f6ddb98dafc816b417ccc13040452fd90b25cb2d7",
+    "title": "React Frontend Engineer (Redux) - Remote Work | REF#302848",
+    "applyUrl": "https://applicants.bairesdev.com/job/169/302848/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml&__cf_chl_rt_tk=R3_.Z5jK3NnlLAmPPQ8zl4gbmwZcdXlIDf0NvDWfmxY-1790879913-1.0.1.1-fZMI8G7xRO9aRtiBCb5LdP3KapFnnB3AtbGjJZkxNyM",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\nReact Frontend Engineer (Redux) at BairesDev\n\nAs a React Frontend Engineer (Redux), you will design and implement high-performance, responsive user interfaces that deliver exceptional user experiences. You will translate visual designs into clean, modular, and maintainable client-side code, ensuring seamless data flow and robust application behavior.\n\nReact Frontend Engineer (Redux) - EN\n\nWhat We Are Looking For\n\n\n 5+ years of experience in Frontend Engineering or Web Development.\n Proven expertise in building user interfaces using React.\n Strong proficiency in state management using Redux.\n Deep understanding of HTML, CSS, and modern JavaScript.\n Advanced proficiency in English.\n\n\nHow we do make your work (and your life) easier:\n\n\n 100% remote work (from anywhere).\n Excellent compensation in USD or your local currency if preferred\n Hardware and software setup for you to work from home.\n Flexible hours: create your own schedule.\n Paid parental leaves, vacations, and national holidays.\n Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\nJoin a global team where your unique talents can truly thrive and make a significant impact!\n\nApply now!",
+    "location": "Remote - Mexico",
+    "country": "Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:38:36.463Z",
+    "sourceHash": "762d8aae8a5e9c5e4a8fd37f6ddb98dafc816b417ccc13040452fd90b25cb2d7",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "react-frontend-engineer-redux-remote-work-ref-302848-bairesdev-762d8aae",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "redux",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mexico"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a4a5e980cc253f84d76867e9ba2d9524f62671b5e0fc86c6a5712e211cad3de1",
+    "title": "Senior Frontend Developer",
+    "applyUrl": "https://www.sourcingxpress.com/jobs/uDLRkvUagxbxpT?utm_source=linkedin&utm_medium=job_board&utm_campaign=careers_2026",
+    "description": "About the job\n\nCompany: People impact\n\nWebsite: Visit Website\n\nLinkedIn: Visit LinkedIn\n\nBusiness Type: Startup\n\nCompany Type: Service\n\nBusiness Model: B2B\n\nFunding Stage: Pre-seed\n\nIndustry: Information Technology and Services\n\nSalary Range: ₹ 30-41 Lacs PA\n\nJob Description\n\nROLE SUMMARY:\n\n\nAs a Senior UI/UX Frontend Engineer, you will design and build high-quality, scalable, and user-centric frontend applications and web experiences for digital products, including AI-enabled and workflow-oriented applications. This is a hands-on frontend engineering role, not a design-only role. You will be expected to bring deep expertise in React, Node.js, JavaScript / TypeScript, component architecture, API integration, state management, frontend performance, and responsive enterprise application development.\nYou will work closely with product managers, backend engineers, AI engineers, Team Leads, and architects to turn user and product requirements into high-quality application experiences that are intuitive, performant, and production-ready. You should have strong awareness of user experience principles, but your primary value comes from building robust frontends, integrating them with APIs and services, and ensuring they perform well in enterprise environments.\nThis role is ideal for a senior frontend engineer who can own major UI modules, work across the full frontend lifecycle, contribute to design systems and reusable components, and raise engineering quality in the web layer of the product.\n\n\nKey Responsibilities\n\n\nDesign, develop, test, and maintain modern frontend applications using React, TypeScript / JavaScript, Node.js, and related web technologies\nBuild responsive, scalable, and maintainable user interfaces for enterprise applications, workflow tools, dashboards, and AI-enabled experiences\nImplement reusable UI components, frontend architecture patterns, and shared libraries that improve delivery speed and consistency across products\nWork closely with backend, integration, and AI engineering teams to integrate frontends with REST APIs, event-driven services, authentication layers, and AI-enabled backend capabilities\nDevelop frontend experiences that support AI-assisted workflows, conversational interfaces, confidence displays, agent / workflow transparency, and human-in-the-loop interactions where needed\nContribute to server-side or API-adjacent development using Node.js where frontend and backend coordination is required\nOptimize application performance, accessibility, state management, routing, rendering efficiency, and browser responsiveness\nParticipate in design discussions, but primarily from the standpoint of frontend feasibility, interaction quality, implementation patterns, and maintainable component engineering\nImplement robust frontend testing practices including component testing, unit testing, integration testing, and release validation\nWork with DevOps and platform teams on frontend build pipelines, deployment models, environment configurations, and runtime diagnostics\nTroubleshoot production UI issues, improve reliability, and continuously enhance frontend performance and usability\nMentor junior frontend engineers, contribute to code reviews, and promote strong engineering discipline in frontend development\n\n\nRequired Qualification\n\n\n6+ years of experience in frontend engineering, full-stack web development, or modern application development, with strong hands-on ownership of frontend implementation\nDeep expertise in React, modern JavaScript / TypeScript, component-based application development, hooks, routing, and frontend state management\nStrong practical experience with Node.js, including backend-for-frontend patterns, API integration support, server-side utilities, or broader full-stack application delivery\nProven experience building and shipping production-grade web applications, including maintainable enterprise\n\n\nfrontends, not just prototypes or visual mockups\n\n\nStrong understanding of frontend architecture, reusable component design, application structure, performance optimization, rendering efficiency, and maintainability\nPractical experience with tools and technologies such as React, Node.js, TypeScript, Next.js, Redux / Context API, HTML5, CSS3, REST APIs, or equivalent modern web engineering platforms as well as experience in Git, GitHub and Azure DevOps/Jira\nExperience integrating frontend applications with REST APIs, authentication / authorization mechanisms, enterprise backend services, workflow systems, and API-driven application architectures\nStrong experience with frontend testing approaches and tools such as React Testing Library, Cypress, Playwright, Jest or equivalent testing frameworks\nExperience with authentication and enterprise frontend patterns involving OAuth2, SSO, token handling, role-based access, and secure UI integration\nFamiliarity with frontend deployment patterns, build pipelines, CI/CD, runtime diagnostics, telemetry, and production support for modern web applications\nStrong understanding of responsive implementation, accessibility expectations, browser compatibility, and enterprise-grade UX quality from an engineering standpoint\nAbility to translate product requirements and UX intent into scalable frontend implementations with strong attention to usability, performance, and reliability\nStrong collaboration skills, with the ability to work effectively with backend engineers, AI engineers, product owners, architects, and Team Leads\nStrong SDLC ownership mindset, including design participation, implementation, testing, release support, troubleshooting, and continuous enhancement of frontend experiences\n\n\nPreferred Qualifications\n\n\nExperience building frontend experiences for AI-enabled applications, workflow-heavy enterprise products, dashboards, portals, or conversational / assistive interfaces\nFamiliarity with Node.js-based backend integration patterns, backend-for-frontend architectures, and API composition for complex UIs\nExperience implementing interfaces that expose workflow transparency, system status, confidence indicators, human-in-the-loop controls, or agent activity\nFamiliarity with Azure Static Web Apps, Azure App Service, Azure Functions, Azure Front Door, or equivalent frontend hosting and integration platforms\nExperience working with design systems and collaborating with UX / product teams, while remaining primarily an engineering-focused frontend developer\nExperience contributing reusable frontend component libraries, platform frameworks, engineering standards, or internal developer accelerators\nWorking knowledge of accessibility standards and enterprise-grade UI quality expectations\nExperience working in a build-own-operate product environment where long-term supportability, release quality, and continuous enhancement matter as much as initial development.\nFamiliarity with observability and performance tooling such as Application Insights, Azure Monitor, browser telemetry, New Relic, Datadog RUM, or equivalent (desired on mandatory)\n\n\n\nDesired Skills and Experience\n\nHTML, CSS, JavaScript, Redux, Azure, Application Programming Interfaces (API), Cypress, Typescript, React.js, Playwright",
+    "location": "Remote - Israel",
+    "country": "Israel",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:34:08.650Z",
+    "sourceHash": "a4a5e980cc253f84d76867e9ba2d9524f62671b5e0fc86c6a5712e211cad3de1",
+    "company": {
+      "id": "sourcingxpress",
+      "name": "SourcingXPress",
+      "logoUrl": "https://logo.clearbit.com/sourcingxpress.com",
+      "industry": "Technology",
+      "website": "https://sourcingxpress.com"
+    },
+    "slug": "senior-frontend-developer-sourcingxpress-a4a5e980",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "javascript",
+        "css",
+        "redux",
+        "cypress",
+        "jest",
+        "playwright",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Israel"
+      ],
+      "seniority": "senior",
+      "employmentType": "b2b"
+    }
+  },
+  {
+    "id": "2a3566eaf257733e556a229bfdbad9c7207b68b4e795d141863aa33618ac4f49",
+    "title": "Senior Frontend Software Engineer",
+    "applyUrl": "https://globalcareers-atlassian.icims.com/jobs/25698/senior-frontend-software-engineer/job?iis=LinkedIn&iisn=LinkedIn_Job_Ad",
+    "description": "About the job\n\nOverview\n\nWorking at Atlassian\n\nAtlassians can choose where they work – whether in an office, from home, or a combination of the two. That way, Atlassians have more control over supporting their family, personal goals, and other priorities. We can hire people in any country where we have a legal entity.\n\nAtlassian is looking for a Senior Frontend Software Engineer to maintain our web frontend systems and tools in order to deliver great experiences to our users.\n\nYour future team\n\nTo become a 100-year company, we need a world-class engineering organisation made up of empowered teams who have the tools and infrastructure to do the best work of their careers.\n\nAs part of a unified R&D team, Engineering is prioritising key initiatives which support our customers in moving to cloud while simultaneously continuing to bring the most value to our customers through investments across our core product suite – including Jira, Confluence, Trello, and Bitbucket.\n\nWe're looking for people who want to write the future and who believe that we can accomplish so much more together.\n\nResponsibilities\n\nIn this role, you will:\n\n\nBuild high-performing client code that is fast, testable, scalable, and high quality\nDrive strong collaboration with other engineers, designers and managers to understand user pain points and iterate on great solutions\nContribute to code reviews and documentation, and take on complex bug fixes\nLead projects, from the technical design, implementation, and launch to operation\nOnboard and mentor junior engineers\n\n\n\nCompensation\n\nAt Atlassian, we strive to design equitable, explainable, and competitive compensation programs. We follow consistent hiring practices and account for each candidate's skills, knowledge, and experience when setting base pay within the range.\n\nThis role may also be eligible for benefits, bonuses, commissions, and equity.\n\nQualifications\n\nYour background:\n\n\n5+ years experience with Javascript (ES6), HTML5, CSS and experience with modern Javascript frameworks (e.g., React, AngularJS, Vue)\nBachelor's or Master's degree (preferably a Computer Science degree or equivalent experience)\nUnderstanding of modern frontend ecosystem, including but not limited to bundling, linting, testing and releasing\nExperience with modern testing frameworks (e.g., Jest, Cypress, Mocha, Chai)\nFamiliarity of the JavaScript language and ecosystem\nExperience building frontend applications at scale\nExperience in Agile software development methodologies\nYou strive to write code that lasts for years, not months\nExperience engineering software systems of medium-to-large scope and complexity\nExperience mentoring more junior engineers\n\n\n\nBenefits & Perks\n\nAtlassian offers a wide range of perks and benefits designed to support you, your family and to help you engage with your local community. Our offerings include health and wellbeing resources, paid volunteer days, and so much more. To learn more, visit go.atlassian.com/perksandbenefits .\n\nAbout Atlassian\n\nAt Atlassian, we're motivated by a common goal: to unleash the potential of every team. Our software products help teams all over the planet and our solutions are designed for all types of work. Team collaboration through our tools makes what may be impossible alone, possible together.\n\nWe believe that the unique contributions of all Atlassians create our success. To ensure that our products and culture continue to incorporate everyone's perspectives and experience, we never discriminate based on race, religion, national origin, gender identity or expression, sexual orientation, age, or marital, veteran, or disability status. All your information will be kept confidential according to EEO guidelines.\n\nTo provide you the best experience, we can support with accommodations or adjustments at any stage of the recruitment process. Simply inform our Recruitment team during your conversation with them.\n\nTo learn more about our culture and hiring process, visit go.atlassian.com/crh .\n\nIn line with local law, identity verification (which may include use of biometric data) is a condition of employment with Atlassian for employment fraud purposes.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:32:20.005Z",
+    "sourceHash": "2a3566eaf257733e556a229bfdbad9c7207b68b4e795d141863aa33618ac4f49",
+    "company": {
+      "id": "atlassian",
+      "name": "Atlassian",
+      "logoUrl": "https://logo.clearbit.com/atlassian.com",
+      "industry": "Technology",
+      "website": "https://atlassian.com"
+    },
+    "slug": "senior-frontend-software-engineer-atlassian-2a3566ea",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "css",
+        "cypress",
+        "jest",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7543a11171f60a5ead322c71ccf504fce4b5909a4b28a67d32d3fb6d21e91b0d",
+    "title": "Frontend Software Engineer, II",
+    "applyUrl": "https://globalcareers-atlassian.icims.com/jobs/25697/frontend-software-engineer,-ii/job?iis=LinkedIn&iisn=LinkedIn_Job_Ad",
+    "description": "About the job\n\nOverview\n\nWorking at Atlassian\n\nAtlassians can choose where they work – whether in an office, from home, or a combination of the two. That way, Atlassians have more control over supporting their family, personal goals, and other priorities. We can hire people in any country where we have a legal entity.\n\nTo help our teams work together effectively, this role is fully remote, but requires you to be located in India.\n\nAtlassian is looking for a Frontend Software Engineer to maintain our web frontend systems and tools in order to deliver great experiences to our users.\n\nYour future team\n\nTo become a 100-year company, we need a world-class engineering organisation made up of empowered teams who have the tools and infrastructure to do the best work of their careers.\n\nAs part of a unified R&D team, Engineering is prioritising key initiatives which support our customers in moving to cloud while simultaneously continuing to bring the most value to our customers through investments across our core product suite – including Jira, Confluence, Trello, and Bitbucket.\n\nWe're looking for people who want to write the future and who believe that we can accomplish so much more together.\n\nResponsibilities\n\nIn this role, you will:\n\n\nBuild high-performing client code that is fast, testable, scalable, and high quality\nDrive strong collaboration with other engineers, designers and managers to understand user pain points and iterate on great solutions\nContribute to code reviews and documentation, and take on complex bug fixes\nLead projects, from the technical design, implementation and launch to operation\nOnboard and mentor junior engineers\n\n\n\nCompensation\n\nAt Atlassian, we strive to design equitable, explainable, and competitive compensation programs. We follow consistent hiring practices and account for each candidate's skills, knowledge, and experience when setting base pay within the range.\n\nThis role may also be eligible for benefits, bonuses, commissions, and equity.\n\nQualifications\n\nYour background:\n\n\n4+ years experience with Javascript (ES6), HTML5, and CSS, as well as experience with modern Javascript frameworks (e.g., React, AngularJS, Vue).\nBachelor's or Master's degree (preferably a Computer Science degree or equivalent experience).\nUnderstanding of modern frontend ecosystem, including but not limited to bundling, linting, testing and releasing.\nExperience with modern testing frameworks (e.g., Jest, Cypress, Mocha, Chai).\nFamiliarity with the JavaScript language and ecosystem.\nExperience building frontend applications at scale. - Experience in Agile software development methodologies.\nYou strive to write code that lasts for years, not months.\nExperience engineering software systems of medium-to-large scope and complexity.\n\n\n\nBenefits & Perks\n\nAtlassian offers a wide range of perks and benefits designed to support you, your family and to help you engage with your local community. Our offerings include health and wellbeing resources, paid volunteer days, and so much more. To learn more, visit go.atlassian.com/perksandbenefits .\n\nAbout Atlassian\n\nAt Atlassian, we're motivated by a common goal: to unleash the potential of every team. Our software products help teams all over the planet and our solutions are designed for all types of work. Team collaboration through our tools makes what may be impossible alone, possible together.\n\nWe believe that the unique contributions of all Atlassians create our success. To ensure that our products and culture continue to incorporate everyone's perspectives and experience, we never discriminate based on race, religion, national origin, gender identity or expression, sexual orientation, age, or marital, veteran, or disability status. All your information will be kept confidential according to EEO guidelines.\n\nTo provide you the best experience, we can support with accommodations or adjustments at any stage of the recruitment process. Simply inform our Recruitment team during your conversation with them.\n\nTo learn more about our culture and hiring process, visit go.atlassian.com/crh .\n\nIn line with local law, identity verification (which may include use of biometric data) is a condition of employment with Atlassian for employment fraud purposes.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:30:41.650Z",
+    "sourceHash": "7543a11171f60a5ead322c71ccf504fce4b5909a4b28a67d32d3fb6d21e91b0d",
+    "company": {
+      "id": "atlassian",
+      "name": "Atlassian",
+      "logoUrl": "https://logo.clearbit.com/atlassian.com",
+      "industry": "Technology",
+      "website": "https://atlassian.com"
+    },
+    "slug": "frontend-software-engineer-ii-atlassian-7543a111",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "css",
+        "cypress",
+        "jest",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b2e9c5320a60e312344ca0287bdd856af9cdea30802f2e56cd53e43c0b42e7df",
+    "title": "Frontend-Entwickler mit Schwerpunkt UI/ UX (m/w/d)",
+    "applyUrl": "https://karriere.avendis.com/de/jobs/158/frontend-entwickler-mit-schwerpunkt-ui-ux-mwd",
+    "description": "About the job\n\nSTANDORT\n\nBerlin, Bremen, Cottbus, Düsseldorf, Fulda, Greven, Home Office, Mannheim, München, Westerstede\n\nIhre Aufgaben\n\n\nKonzeption und Umsetzung von UX/UI für unsere eigene KI-Plattform – vom Wireframe über den klickbaren Prototyp bis zur produktiven Oberfläche\nEntwicklung moderner, performanter und responsiver Frontends mit Blick auf Ladezeiten, Barrierefreiheit und Dark/Light Mode\nGestaltung KI-typischer Interaktionsmuster: Chat- und Streaming-Oberflächen, Quellenangaben und Zitate, Dokumenten- und Prompt-Workflows, Feedback- und Vertrauenselemente\nAufbau und Pflege eines konsistenten Design Systems bzw. einer wiederverwendbaren Komponentenbibliothek\nFortlaufende Weiterentwicklung der bestehenden Anwendung im Hinblick auf Usability – auf Basis von Nutzerfeedback, Usability-Tests und Nutzungsdaten\nEnge Zusammenarbeit mit Backend- und Plattform-Team, inklusive Mitgestaltung der API-Schnittstellen aus Sicht des Frontends\nAktive Mitgestaltung der Produktstrategie: Sie beobachten Marktentwicklungen rund um KI, UX/UI und moderne Webanwendungen und bringen daraus konkrete Ideen ein\n\n\nIhr ProfilAusgeprägtes Gespür für intuitive Benutzeroberflächen und eine durchdachte User Experience\n\n\nAbgeschlossene Ausbildung zum Fachinformatiker Anwendungsentwicklung (m/w/d), ein vergleichbares Studium oder entsprechende praktische Berufserfahrung\nMehrjährige Erfahrung in der Frontend-Entwicklung mit UX/ UI-Schwerpunkt\nSicherer Umgang mit HTML, modernem CSS und JavaScript/ TypeScript sowie mindestens einem aktuellen Framework (z. B. React, Vue oder Svelte)\nErfahrung im Prototyping und in der Arbeit mit Design-Tools wie Figma\nGrundkenntnisse in PHP, da Teile unserer Anwendungen PHP-basiert sind\nWünschenswert sind\nErfahrung mit LLM-basierten Anwendungen, RAG-Systemen oder Chat-Interfaces\nKI-gestützte Entwicklung im Alltag (z. B. Claude Code, Copilot, Cursor)\nKenntnisse in Accessibility (WCAG), Design Tokens oder Komponentenbibliotheken\nSicherer Umgang mit Git und CI/CD-Prozessen\nVerhandlungssichere Deutsch- und gute Englischkenntnisse\n\nWir bieten\n\n\nEin Produkt, das Sie von Anfang an mitprägen – kurze Wege, echte Gestaltungsfreiheit statt Ticket-Abarbeitung, sowie ein technisch anspruchsvolles Umfeld mit eigener GPU-Infrastruktur und modernem Stack\nFlexibles Arbeitszeitmodell für eine gute Work-Life-Balance\nVielseitige Fort- und Weiterbildungsmöglichkeiten in einem stetig wachsenden Unternehmen\nPlanbare, verlässliche Perspektiven und ein stabiles Arbeitsumfeld\nWir ermöglichen mobiles Arbeiten und stellen die Ausstattung bereit, die Sie dafür benötigen \nUnter Führungsverständnis basiert auf Vertrauen, Klarheit und Entwicklung - wir bieten ein inspirierendes und gesundes Arbeitsumfeld\nEinarbeitung durch einen Mentor (m/w/d) in unsere Tools und Prozesse\nDuz-Kultur und Firmenevents fördern unser Wir-Gefühl\nFirmenfitness über Hansefit und die Möglichkeit auf (E-)Bike-Leasing, Nutzung der Corporate Benefits \n\n\nZurück Bewerben",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:25:51.532Z",
+    "sourceHash": "b2e9c5320a60e312344ca0287bdd856af9cdea30802f2e56cd53e43c0b42e7df",
+    "company": {
+      "id": "avendisgmbh",
+      "name": "AVENDIS GmbH",
+      "logoUrl": "https://logo.clearbit.com/avendisgmbh.com",
+      "industry": "Technology",
+      "website": "https://avendisgmbh.com"
+    },
+    "slug": "frontend-entwickler-mit-schwerpunkt-ui-ux-m-w-d-avendis-gmbh-b2e9c532",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "svelte",
+        "typescript",
+        "javascript",
+        "css",
+        "figma",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "28c42cc322485f450b52db4b0542866ae5181d2fdcbe3967359ccfee4c506092",
+    "title": "Studentische Mitarbeit in der Frontendentwicklung (w/m/d)",
+    "applyUrl": "https://www.engine-productions.de/karriere/studentische-mitarbeit-als-frontend-entwickler-d/w/m.html",
+    "description": "About the job\n\nStudentische Mitarbeit als Frontend Entwickler (d/w/m)\n\nAls Frontend Entwickler (d/w/m) bist Du verantwortlich für die Umsetzung von Internetprojekten aus verschiedensten Branchen. Dabei arbeitest Du selbständig oder im Team. Zu Deinem Aufgabenfeld gehören die Programmierung ansprechender und innovativer User Interfaces mit JavaScript, jQuery, CSS3 und HTML5.\n\nWir bieten\n\n\n Flexible Arbeitszeiten\n spannende Projekte aus allen Branchen\n kreative Beteiligung an Planung und Ausführung von Projekten\n lockere Arbeitsatmosphäre, flache Hierarchie\n nette Kollegen\n Arbeitsplatz im Herzen von Köln oder Remote\n\n\nDu bringst mit\n\n\n Profikenntnisse in aktuellen Programmiersprachen für browserbasierte Systeme\n Sicherer Umgang mit moderner Frontendentwicklung\n Projekterfahrung mit HTML5, CSS3, JavaScript-Frameworks und Gridsystemen\n Erfahrung mit Anforderungen an Barrierefreiheit, Suchmaschinenoptimierung und resposives Verhalten von Frontends\n von Vorteil ist Berufserfahrung in oben genannten Bereichen sowie Kenntnisse populärer Content Management Systeme\n Motivation, Freude und Spaß daran, neue Aufgaben zu bewältigen\n Teamwork, Engagement, Eigeninitiative\n\n\nBitte sende Deine Bewerbung per Mail an !\n\nWer arbeitet bei engine-productions?\n\nWir sind zurzeit ein Team aus 14 Personen, welches sich aus vierzehn EntwicklerInnen, zwei Azubis, vier Projektmanagern und zwei Geschäftsführern zusammensetzt. Es gibt also keine großartigen Hirarchien, hier wird das Prinzip der flachen Hirarchie gelebt. Wir bezeichnen uns auch gerne als Tekkibude, da die Teammitglieder auch ausserhalb der Arbeitszeit interessiert an technischen Entwicklungen sind, die z.B. auch in den gemeinsamen TechTalks in großer Runde vorgestellt und diskutiert werden.\n\nWomit arbeiten wir bei engine-productions?\n\nEgal ob PC, MAC oder Linux, hier kann jeder Mitarbeiter in seiner gewohnten Arbeitsumgebung bleiben. Für das Projektmanagement und das Deployment werden gängige Tools eingesetzt um die Projektabwicklung so effizient und sicher wie möglich zu gestalten. Die internen Prozesse werden in Teams gemeinsam weiter entwickelt, so ist z.B 2017 im Rahmen der neuen, internen Development-Umgebung eine One-Click-Lösung zur lauffähigen Erstellung einer Projektarbeitskopie entstanden. Wir scheuen uns übrigens trotzdem nicht, vom Kunden vorgegebene Strukturen zu übernehmen und diese in unsere Prozesse einzubinden.\n\nUnsere Tools: NetBeans, Sublime, GIT, Codebase, Deploy HQ, Jenkins, Composer, Jira, Bitbucket, Confluence, Trello, Browserstack, TYPO3, Wordpress, Magento, jQuery, React, Angular, Docker, Vagrant, ...\n\nWarum arbeiten wir bei engine-productions?\n\nWeil wir es können. Hier ist man Teil eines Teams, das gemeinsam auf Augenhöhe Projekte plant, umsetzt, erweitert und überwacht. Die Redensart von der flachen Hirarchie wird hier tatsächlich gelebt und jeder Mitarbeiter kann sich selbst voll und ganz einbringen. Für das leibliche Wohl ist gesorgt: es gibt immer leckeren Kaffee, verschiedenste Tees für alle Geschmäcker und kühles Quellwasser solange der Wasserspender voll ist (kann mal jemand wieder nachbestellen?). Saisonale Snacks und frisches Obst runden das Verwöhnpaket ab. Die monatlichen gemeinsamen Frühstücke sind ebenso fester Bestandteil des Teamlebens wie die geselligen TechTalks und die gemeinsamen Events, die mehrmals im Jahr stattfinden. Wir freuen uns immer auf neue Gesichter im Team - schau doch mal rein!\n\nJetzt bewerben!",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:25:22.002Z",
+    "sourceHash": "28c42cc322485f450b52db4b0542866ae5181d2fdcbe3967359ccfee4c506092",
+    "company": {
+      "id": "engineproductionsgmbh",
+      "name": "engine-productions GmbH",
+      "logoUrl": "https://logo.clearbit.com/engineproductionsgmbh.com",
+      "industry": "Technology",
+      "website": "https://engineproductionsgmbh.com"
+    },
+    "slug": "studentische-mitarbeit-in-der-frontendentwicklung-w-m-d-engine-productions-gmbh-28c42cc3",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "javascript",
+        "css",
+        "jquery",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7db6b57aed1899ec8176f95c1ce8c19b46ce8eb64bad1abd2fa6f67155326177",
+    "title": "Frontend Engineer - Remote Work | REF#302938",
+    "applyUrl": "https://applicants.bairesdev.com/job/697/302938/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml&__cf_chl_rt_tk=pa7IIIIJ44hh6qgzJcPiIJQ1VuqC5DVAxNAJu1dSBiA-1790878804-1.0.1.1-8LNWEeBqJY5HVBsweJb6FC6Q4KBW5bmnhsojTLEA9Zk",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\nFrontend Engineer at BairesDev\n\nIn this role, you'll contribute to the frontend of a product built around AI-powered experiences. You'll work closely with Design to help bring new interface ideas to life, contributing to a fast-moving product with a focus on quality and accessibility.\n\nWhat You'll Do\n\n\n Contribute to the frontend of a chat application expanding into analytics experiences.\n Build polished UI that follows design specifications.\n Collaborate with Design on prototyping and new interface ideas.\n Support accessibility and inclusive UX practices.\n Help identify and raise experience issues along the way.\n\n\nWhat We Are Looking For\n\n\n Experience with React and Next.js using TypeScript.\n Familiarity with backend development in Python.\n Attention to detail in UI implementation and design fidelity.\n Experience with analytics or charting UI using tools such as D3, Recharts, or similar.\n Familiarity with design systems.\n Understanding of accessibility (a11y) and inclusive UX practices for web applications.\n Advanced level of English.\n\n\nNice To Have\n\n\n Experience with React Native.\n Familiarity with generative UI or AI-driven interfaces.\n Experience with state management and caching using Redux, Zustand, or similar tools.\n Security mindset for frontend practices.\n\n\nHow we do make your work (and your life) easier:\n\n\n 100% remote work (from anywhere).\n Excellent compensation in USD or your local currency if preferred\n Hardware and software setup for you to work from home.\n Flexible hours: create your own schedule.\n Paid parental leaves, vacations, and national holidays.\n Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\nJoin a global team where your unique talents can truly thrive and make a significant impact!\n\nApply now!",
+    "location": "Remote - Costa Rica",
+    "country": "Costa Rica",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:20:07.490Z",
+    "sourceHash": "7db6b57aed1899ec8176f95c1ce8c19b46ce8eb64bad1abd2fa6f67155326177",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "frontend-engineer-remote-work-ref-302938-bairesdev-7db6b57a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "redux",
+        "zustand",
+        "accessibility",
+        "d3"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Costa Rica"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f9dac69f3ae000e115aef456accd85f740987c9c10f1016cc15631f3e6a7ffc3",
+    "title": "Desenvolvedor Frontend React Pleno",
+    "applyUrl": "https://deliverit.gupy.io/job/eyJqb2JJZCI6MTI2NDk2MzgsInNvdXJjZSI6ImxpbmtlZGluIn0=?jobBoardSource=linkedin",
+    "description": "About the job\n\nVocê se considera uma pessoa que tem sede por aprendizado, gosta de trabalhar em equipe e curte compartilhar conhecimento? Então essa oportunidade é para você!\n\nBuscamos um(a) Desenvolvedor(a) Front-end Pleno com experiência em React, JavaScript e TypeScript para atuar na construção de interfaces responsivas, escaláveis e com foco na experiência do usuário. É importante ter conhecimento sólido em gerenciamento de estado, estilização com abordagens modernas, Design Systems e integração com APIs REST, além de experiência com testes automatizados utilizando Jest e React Testing Library. Esperamos também domínio de Git e familiaridade com práticas colaborativas, como Code Reviews e resolução de conflitos. Procuramos um profissional com autonomia para conduzir suas demandas, capacidade de resolução de problemas e boa comunicação para atuar em parceria com os times de Design, Product e Backend, contribuindo para a qualidade das entregas e evolução contínua da equipe. .\n\nResponsabilidades e atribuições\n\nNa sua rotina de trabalho, você vai se deparar com as seguintes atividades:\n\n\nDesenvolver e manter interfaces web responsivas, escaláveis e com foco na experiência do usuário; \n Atuar no desenvolvimento de aplicações utilizando React, JavaScript e TypeScript; \n Implementar e evoluir componentes reutilizáveis, seguindo Design Systems e boas práticas de desenvolvimento; \n Trabalhar com gerenciamento de estado local, global e assíncrono, utilizando soluções como Context API, Redux ou React Query; \n Realizar integração e consumo de APIs REST, incluindo tratamento de erros, cache e demais necessidades de comunicação com o Backend; \n Implementar estilização utilizando tecnologias e abordagens modernas, como Tailwind CSS, Styled-Components ou CSS Modules; \n Desenvolver e manter testes unitários e de integração, utilizando ferramentas como Jest e React Testing Library; \n Utilizar Git no desenvolvimento colaborativo, participando de branches, resolução de conflitos e Code Reviews; \n Analisar problemas técnicos, propor soluções e conduzir suas demandas desde o desenvolvimento até a entrega; \n Trabalhar em conjunto com profissionais de Design, Product e Backend, contribuindo para o alinhamento das soluções; \n Participar de Code Reviews, contribuindo para a qualidade, padronização e evolução do código; \n Apoiar a melhoria contínua das práticas, processos e soluções técnicas do time.\n\n\n\nRequisitos e qualificações\n\nConfere abaixo o que você vai precisar saber pra se dar bem nessa oportunidade!\n\nCONHECIMENTOS EXIGIDOS \n\n\nDomínio de HTML5, CSS3, JavaScript e React (construção de interfaces altamente responsivas, escaláveis e com foco em experiência do usuário);\nConhecimento sólido de TypeScript (uso consistente de interfaces, types, generics e boas práticas de tipagem no ecossistema React);\nExperiência sólida em gerenciamento de estado (local, global e/ou assíncrono, ex: React Query, Redux ou Context API);\nUso de abordagens e bibliotecas modernas de estilização (ex: Tailwind CSS, Styled-Components, CSS Modules) e consumo de Design Systems;\nExperiência consistente no consumo e integração de APIs REST (tratamento de erros, interceptores, cache de dados);\nConhecimento sólido em testes automatizados (testes unitários e de integração com Jest, React Testing Library);\nDomínio de Git e fluxo colaborativo avançado (Gitflow/Feature Branch, resolução de conflitos complexos, padronização de commits e participação ativa/crítica em Code Reviews);\nAutonomia técnica e resolução de problemas (capacidade de assumir demandas de negócio e conduzir entregas do início ao fim);\nBoa comunicação e colaboração com times multidisciplinares (Design/Product/Backend), apoiando o alinhamento técnico e a evolução contínua da equipe.\n\n\n\nInformações adicionais\n\nA Deliver IT vai deixar a digital nesse projeto e quer convidar você para fazer parte dessa construção! 🙆‍♀️\n\nTemos uma cultura leve, descontraída, colaborativa e diversa, além de um ambiente enriquecedor, com muitos colegas feras em diversos segmentos e muitos desafios. Aqui você vai encontrar projetos inovadores, conexão e muita troca de conhecimento! 😊\n\n⭐Fomos eleitos pela GPTW a 5° Melhor empresa para se trabalhar no RS. 🤩\n\nTodas as nossas posições seguem o modelo de contrato CLT em 44h/semanais.\n\nCONFIRA NOSSOS BENEFÍCIOS\n\n\nModalidade: 100% Remoto;\nVA e/ou VR;\nPrograma Bem-Estar: apoio psicológico, apoio jurídico, apoio social, apoio financeiro;\nPlano de Saúde Médico e Plano Odontológico;\nSeguro de Vida;\nWellhub (Gympass);\nDescontos em cursos da Assespro-RS e Seprorgs-RS;\nPremiação de Aniversário de Empresa;\nIndicação Premiada;\nAuxílio Creche.",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:17:07.290Z",
+    "sourceHash": "f9dac69f3ae000e115aef456accd85f740987c9c10f1016cc15631f3e6a7ffc3",
+    "company": {
+      "id": "deliveritserviosdetecnologia",
+      "name": "Deliver IT Serviços de Tecnologia",
+      "logoUrl": "https://logo.clearbit.com/deliveritserviosdetecnologia.com",
+      "industry": "Technology",
+      "website": "https://deliveritserviosdetecnologia.com"
+    },
+    "slug": "desenvolvedor-frontend-react-pleno-deliver-it-servi-os-de-tecnologia-f9dac69f",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "tailwind",
+        "redux",
+        "jest",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "9a0dafb1065de3c50c5b5619873effc1fd16d05dffac7f22b5c6bc708fb452ba",
+    "title": "Frontend Developer (React) - Remote Work | REF#290579",
+    "applyUrl": "https://applicants.bairesdev.com/job/169/290579/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml&__cf_chl_rt_tk=atcSl0tqtZjY2.tPE.LMzVddXJBXVk82djYSqJlKjAw-1790878617-1.0.1.1-T7lXjXkCZEXqMXM4v8_nTvUf9aPKX8o51SCuPhIpCiU",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\nAs a Frontend Developer specializing in React, you will build and maintain production-grade web applications using TypeScript and modern hooks. You will be responsible for creating high-performance user interfaces, ensuring a seamless connection between complex business logic and intuitive component-driven design.\n\nWhat You'll Do\n\n\n Develop and maintain scalable frontend applications using React and TypeScript.\n Implement responsive and modular UI components using Tailwind or styled-components.\n Manage complex application state using Redux, Zustand, or Context API.\n Integrate frontend interfaces with backend services via REST or GraphQL APIs.\n Ensure code quality and system reliability by writing unit and integration tests with Jest or Vitest.\n Optimize application performance and ensure cross-browser compatibility across diverse environments.\n\n\nWhat We Are Looking For\n\n\n 4+ years of experience in Frontend Development with a focus on React.\n Proven expertise in building production-grade applications using React and TypeScript.\n Proficiency with modern hooks and state management tools like Redux, Zustand, or Context API.\n Hands-on experience with component-driven architecture and styling tools like Tailwind or styled-components.\n Strong understanding of testing frameworks such as Jest or Vitest and integrating REST/GraphQL APIs.\n Advanced proficiency in English.\n\n\nHow we do make your work (and your life) easier:\n\n\n 100% remote work (from anywhere).\n Excellent compensation in USD or your local currency if preferred\n Hardware and software setup for you to work from home.\n Flexible hours: create your own schedule.\n Paid parental leaves, vacations, and national holidays.\n Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\nJoin a global team where your unique talents can truly thrive and make a significant impact!\n\nApply now!",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T18:17:01.085Z",
+    "sourceHash": "9a0dafb1065de3c50c5b5619873effc1fd16d05dffac7f22b5c6bc708fb452ba",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "frontend-developer-react-remote-work-ref-290579-bairesdev-9a0dafb1",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "tailwind",
+        "redux",
+        "zustand",
+        "graphql",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "c4ed038ac55ddf983f894d8c97e7c68ea9c7c54bb3262403538b34feb3b6a3e5",
     "title": "UI/UX & Frontend Developer",
     "applyUrl": "https://haystack.cv/jobs/5d28f539-f324-49d9-8b71-0ba59756652f?src=6739",
