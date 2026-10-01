@@ -1,5 +1,339 @@
 [
   {
+    "id": "c4ed038ac55ddf983f894d8c97e7c68ea9c7c54bb3262403538b34feb3b6a3e5",
+    "title": "UI/UX & Frontend Developer",
+    "applyUrl": "https://haystack.cv/jobs/5d28f539-f324-49d9-8b71-0ba59756652f?src=6739",
+    "description": "About the job\n\nWe are working with a leading technology solutions provider specializing in federal government contracts, dedicated to delivering innovative and secure digital experiences for critical missions.\n\nThe Role\n\n\n Combine user experience research, wireframing, prototyping, and responsive design to create seamless digital experiences\n Translate wireframes and prototypes into robust, maintainable UI components using modern frontend frameworks\n Develop wireframes, prototypes, and user flows to ensure functionality aligns with user needs\n Create and maintain style guides, pattern libraries, and reusable design artifacts\n Conduct user research, collect feedback, and refine design decisions to improve user experiences\n Ensure all designs and front-end implementations adhere to 508 accessibility regulations and FBI design standards\n\n\nWhat You'll Need\n\n\n At least 5+ years of professional experience in UI/UX design and frontend development\n Demonstrated expertise in prototyping tools such as Figma or Adobe XD\n Strong proficiency with modern frontend frameworks, including React and JavaScript/TypeScript, and web technologies like HTML5 and CSS3\n Comprehensive understanding of web accessibility standards, 508 compliance, responsive design, and design systems\n Ability to create and maintain scalable and reusable design system components\n Active Top Secret Security Clearance is required\n\n\nWhat's On Offer\n\n\n Comprehensive health, dental, and vision insurance\n 401(k) retirement savings plan with company match\n Paid time off and flexible spending accounts\n Opportunities for professional development and growth within a dynamic team\n\n\nApply via Haystack today!",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T05:42:57.678Z",
+    "sourceHash": "c4ed038ac55ddf983f894d8c97e7c68ea9c7c54bb3262403538b34feb3b6a3e5",
+    "company": {
+      "id": "haystack",
+      "name": "Haystack",
+      "logoUrl": "https://logo.clearbit.com/haystack.com",
+      "industry": "Technology",
+      "website": "https://haystack.com"
+    },
+    "slug": "ui-ux-frontend-developer-haystack-c4ed038a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "figma",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "9e8c5bdf79952446d653e8116d9e49658a0402d3712275bbb4db46e0cc4537e1",
+    "title": "Software Engineer - Frontend",
+    "applyUrl": "https://www.alignerr.com/jobs/7d248aa6-c02b-420b-b907-08aa314275d6?referral-source=linkedin-job",
+    "description": "About the job\n\nSoftware Engineer – Frontend (AI Training Contract)\n\nAbout The Role\n\nFrontend developers: your skills are in high demand — not just for building products, but for shaping the AI models that millions of developers will rely on. We're looking for experienced frontend engineers to review, write, and refine high-quality UI coding problems and solutions used to train and evaluate cutting-edge AI systems.\n\nThis is a fully remote, flexible contract role where your technical judgment directly influences how AI understands and generates frontend code. If you love clean code, sharp UI logic, and want your expertise to have real impact beyond any single product, this is for you.\n\nWhat You'll Do\n\n\nReview and evaluate AI-generated frontend code (JavaScript, HTML, CSS) for correctness, efficiency, accessibility, and clarity\nWrite high-quality solutions to UI and web development problems across a range of difficulty levels\nCraft clear, thorough explanations for design decisions, code logic, and problem-solving approaches\nIdentify edge cases, ambiguities, and weaknesses in problem statements or AI-generated responses\nHelp set the quality bar for what great frontend code looks like — at scale\n\n\nWho You Are\n\n\nFluent in English with strong written communication skills — you can explain complex frontend concepts clearly\nDeep expertise in JavaScript: async/await, closures, DOM manipulation, ES6+ syntax, browser APIs\nExperienced with modern frontend frameworks and tooling such as React, Vue, or Angular\nDetail-oriented, with a strong instinct for catching subtle bugs and edge cases\nSelf-motivated and comfortable working independently in an asynchronous environment\n\n\nNice to Have\n\n\n3–5+ years of professional frontend development experience\nBachelor's, Master's, or PhD in Computer Science or a related field\nPrior experience with data labeling, RLHF, or AI training workflows\nFamiliarity with web accessibility standards and performance optimization techniques\n\n\nWhy This Role\n\n\nHigh impact — your code reviews and solutions directly improve AI models used by leading research labs and enterprise teams worldwide\nFull flexibility — work fully remote and asynchronously, on a schedule that fits your life\nClear ownership — task-based work with defined success criteria so you always know where you stand\nGrowth potential — top contributors take on expanded responsibilities, lead new programs, and mentor incoming experts\nMeaningful work — help define what quality frontend engineering looks like inside the AI systems shaping the industry",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T05:42:51.341Z",
+    "sourceHash": "9e8c5bdf79952446d653e8116d9e49658a0402d3712275bbb4db46e0cc4537e1",
+    "company": {
+      "id": "alignerr",
+      "name": "Alignerr",
+      "logoUrl": "https://logo.clearbit.com/alignerr.com",
+      "industry": "Technology",
+      "website": "https://alignerr.com"
+    },
+    "slug": "software-engineer-frontend-alignerr-9e8c5bdf",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "d6e20f179fb7e3752e55261ed8a28d7436635327bf36b499a4a65f67023c3ca4",
+    "title": "Staff/Lead Fullstack Engineer (Frontend-focused)",
+    "applyUrl": "https://www.mimica.ai/careers?ashby_jid=c50cc802-b399-472a-8ef6-1a56d0e51d8f&utm_source=eolrVK7Qnw",
+    "description": "About the job\n\nWhat We Are Building\n\nMimica is an AI-powered process intelligence platform enabling enterprises and individuals to reclaim their most precious resource: time. We've all seen repetitive tasks and redundant processes quietly drain productivity and creativity. Not because companies don’t want to become more efficient, but because they don’t know where to start.\n\nMimica automatically analyzes your team’s work, then generates the AI agents to execute it. Our software turns everyday work into data-backed decisions, helping companies remove process bottlenecks, automate the right tasks, and upskill teams with precision and confidence.\n\nWe’ve raised $26 million in Series B financing and are scaling fast. Backed by investors including Khosla Ventures and Paladin Capital, our proprietary AI technology is trusted by Fortune 500 companies to accelerate transformation. Mimica is recognized as a Top 100 AI Start-up by Accel and an industry Leader by the Everest Group.\n\nOur team\n\nBehind our platform is a team of exceptionally talented people, remote-first and globally distributed across 16+ countries. We're looking for curious, collaborative people excited to solve complex problems. You'll join a fast-paced environment built on high ownership, bottom-up thinking, and transparent, open communication – helping some of the world's leading organizations transform the way work gets done with AI.\n\nWhere we are in our scale-up journey\n\nWe’ve achieved strong product-market fit and are now scaling with intention. You’ll join a 60-person team of Senior+ engineers and Product leaders who prioritise product impact over mere headcount. We have 8 cross-functional teams, including a dedicated Platform team focused on infra & developer experience. We started building proprietary ML before the LLM boom, so we don't just consume models - we train them from the ground up.\n\nOur approach to engineering\n\n\nWe prioritize customer needs first \nWe work in small, cross-functional, feature-oriented teams\nWe have flexibility in terms of the problems we work on\nWe own the full lifecycle of our projects\nWe avoid silos and encourage taking up tasks in new areas\nWe balance quality and velocity\nWe have a shared responsibility for our production code\nWe each set our own routine to maximize our productivity\n\n\nYour mission\n\nYou will join our Mapper Team, whose goal is to produce and service the Process Maps that are at the core of Mimica's product.\n\nWe found good product-market fit, which means two things: building new features and making architectural decisions that will enable exponential growth in usage.\n\nYou will take ownership of projects end-to-end, build new features, release improvements to existing components, and take operational responsibility for what you build.\n\nWe have a bottom-up culture where Engineers identify pain points, experiment with and iterate on their solutions, and leverage tight feedback loops.\n\nAs such, you‘ll have the opportunity to shape the technical direction, processes and culture of the Engineering org, Chapter and Team.\n\nPart of your day-to-day\n\n\nDeveloping data-visualisation applications and new features around displaying significant large data properties (e.g., insights regarding processes, workflows and metrics) in effective ways, with scalability & reliability in mind. \nBuilding interfaces and real-time frontend services that enable multiple users to edit graph data and re-train AI models through their input. \nOwning projects end-to-end as part of small teams, collaborating with our TLs and Product Managers. \nParticipating in architectural decisions, collaborating across teams to identify and implement product improvements and producing documentation for your implementations. \nParticipate in and improve the Team's and Chapter's internal processes and rituals so that we're more effective. \nProviding feedback to peers through RFCs, code reviews and helping those around you to level up. \nParticipating in hiring and onboarding new team members. \n\n\nWho You Are\n\n\nYou have at least 8+ years of experience as a Software Engineer and high engineering standards. \nStrong experience and understanding of React, state management, front-end architecture & concepts. \nKnowledge of advanced system design principles, data structures, algorithms, and the core concepts underlying data-intensive applications. \nDeep understanding of advanced performance optimisation techniques. \nPrevious experience working in the backend. \nCommitted to upholding high engineering standards, delivering clean, testable, reusable, modular, and well-documented code. \nExperience owning projects from start to finish, including speccing, design, development, testing, deployment, release and observability. \nDrive to develop your skills, improve team processes and reduce debt. \nFluency in English, with effective communication skills – articulating complex ideas, concepts and trade-offs clearly. \n\n\nBonus\n\n\nBackground working in fast-paced, successful scale-up environments or as a founding engineer, with a track record of delivering value quickly and iteratively alongside building processes. \nGraph or Canvas-based Rendering, or graph/geometry editing. (FE-focused). \n\n\nLocation\n\nThis is a fully remote position. To ensure effective collaboration with our team, we are only considering candidates in the following regions:\n\n\nEurope & Africa: Locations within European timezones (typically UTC-1 to UTC+3). \nThe Americas: Locations in the Eastern Time Zone (e.g., US East Coast, Toronto) or UTC-3 (e.g., Brazil, Argentina)\n\n\nRecruitment Stages\n\n\nStage 1 | Recruiter Screen with Technical Recruiter \nStage 2 | Take-home Challenge (async) + Follow-up (Live) - with colleagues in an equivalent role\nStage 3 | System Design (Live) - with the Chapter Leader + colleagues\nStage 4 | Founders/Behavioural Interview - with Chapter Leader + Co-founder/CTO\n\n\nWhat we offer\n\n💰 Generous compensation + stock options - aligned with our internal framework, market data, and individual skills.\n\n🏢 Distributed work: Work from anywhere - fully remote, in our hubs, or a mix.\n\n💻 Company-issued laptop, remote setup stipend, and co-working budget\n\n📍 Flexible schedules and location\n\n☀️ Ample paid time off, in addition to local public holidays\n\n🍼 Enhanced parental leave\n\n🧘‍♀️ Health & retirement benefits\n\n📖 Annual learning & development budget\n\n🌴 Annual workaways and regular virtual & in-person socials\n\n🌍 Opportunity to contribute to groundbreaking projects that shape the future of work\n\nNote: Some benefits may vary depending on location and role\n\n⚠️ Mimica will only contact candidates from an @mimica.ai email address. We do not request banking or sensitive personal information during the recruiting process.",
+    "location": "Remote - Sweden",
+    "country": "Sweden",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T05:34:53.883Z",
+    "sourceHash": "d6e20f179fb7e3752e55261ed8a28d7436635327bf36b499a4a65f67023c3ca4",
+    "company": {
+      "id": "mimica",
+      "name": "Mimica",
+      "logoUrl": "https://logo.clearbit.com/mimica.com",
+      "industry": "Technology",
+      "website": "https://mimica.com"
+    },
+    "slug": "staff-lead-fullstack-engineer-frontend-focused-mimica-d6e20f17",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Sweden"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e7da2ab807bccc877bd022a49e595114203bd0db5197e930590c4e5498fbb272",
+    "title": "Frontend developer",
+    "applyUrl": "https://svetet.com/en/careers/frontend",
+    "description": "About the job\n\nHome/\nCareers/\nFrontend developer\n\n\nEngineering\n\nFrontend developer\n\n\nRequired experience: 1–3 years\nFull-time\nRemote\nfrom $1,500 to $3,000 / mo\n\n\nShip interfaces where conversion is the product — not a mockup that never reaches production.\n\nApply now\n\nAll roles\n\nAbout The Company And The Role\n\nSVETET is a website studio for business: we create, redesign, and refine sites that bring inquiries. CRM, automation, SEO/ads, and harder IT work sit around that core when they strengthen results — not instead of it.\n\nThe team works remotely. We respect the right to work from anywhere; timezone overlap is agreed with the lead, not a fake corporate 9-to-6.\n\nWe are looking for people who share a simple bar: ship real commercial work, speak plainly, and care about the lead path — not slide decks.\n\nWe need a frontend developer for Next.js / React / TypeScript storefronts, product sites, and conversion landings — catalogs, forms, and UI wired to CRM and analytics.\n\nWhat we expect\n\n1–3 years of commercial frontend experience (or strong shipped portfolio).\n\nConfident TypeScript and React; Next.js in production is a plus.\n\nYou can read Figma and implement without pixel-guessing every spacer.\n\nYou care about Core Web Vitals, accessibility basics, and forms that submit.\n\nGit hygiene: small commits, honest PR descriptions.\n\nEnglish or Russian enough to discuss a brief.\n\nWhat we offer\n\nOfficial contract / B2B or employment — whatever is legal and sane for both sides.\n\nRemote full-time; start time agreed with the lead.\n\nPaid trial instead of unpaid homework.\n\nReal commercial inventory: shops, education, product sites — not toy tasks.\n\nRate review after the first shipped milestone — only up, or we part ways clearly.\n\nDirect loop with design and backend; no 40-slide process to start.\n\nWhat you’ll do\n\nDevelop, optimize, and maintain web projects on Next.js / React / TypeScript.\n\nBuild catalog, filters, cart, forms, and landing blocks that stay fast on mobile.\n\nConnect frontends to CRM, messengers, and analytics without breaking the lead path.\n\nImplement Figma into production UI with clear type, spacing, and states.\n\nCover critical flows with Playwright when the path is money (checkout, quiz, contact).\n\nWork with design and backend in small mergeable PRs.\n\nWhat you’ll work on\n\n01\n\nStorefronts & catalogs\n\nFilters, product cards, cart, search — sites that have to sell.\n\n02\n\nConversion landings\n\nHero, proof, quiz, CTA. Structure first; polish second.\n\n03\n\nIntegrations UI\n\nForms and cabinets wired to analytics and CRM fields that survive.\n\n04\n\nQuality bar\n\nCore Web Vitals, states, Playwright on money paths when it matters.\n\nStack and skills\n\nTypeScript\n\nReact\n\nNext.js\n\nHTML\n\nCSS\n\nGit\n\nFigma\n\nPlaywright\n\nHow hiring works\n\n\n01\n\n\nApplication form\n\nSubmit the form on this page: contacts, a short pitch, and either a CV link or a PDF.\n\n\n02\n\n\nReview\n\nWe read links first. If it’s a fit, we reply the same business day when we can and schedule a call.\n\n\n03\n\n\nCall + paid trial\n\n30–40 minutes about how you work — then a scoped paid ticket on a real or staging surface.\n\n\n04\n\n\nOffer\n\nRate, format (B2B / employment), and timezone overlap — in writing.\n\nApplication\n\nReady to apply?\n\nSame structure you’d see at a product company: contact, short pitch, and either a public CV link or a PDF résumé.\n\nFill the form below — we’ll review links first, then reply the same business day when we can.\n\n\n1. Contact\n2. Profile & links\n3. Pitch\n\n\nOr email jobs@svetet.com\n\nOther open roles\n\n\nEngineering\n 1–3 years\n Full-time\n\n\nBackend developer\n\nfrom $1,500 to $3,000 / mo\n\nView role → \n\n\nGrowth & ops\n 1–3 years\n Full-time\n\n\nWeb analyst\n\nfrom $1,200 to $2,200 / mo\n\nView role → \n\n\nEngineering\n 1–3 years\n Full-time\n\n\nQA engineer\n\nfrom $1,200 to $2,200 / mo\n\nView role → \n\n\nDesign\n 1–3 years\n Full-time\n\n\nWeb / product designer\n\nfrom $1,300 to $2,500 / mo\n\nView role → \n\n\nEngineering\n 1–3 years\n Full-time\n\n\nBitrix developer\n\nfrom $1,400 to $2,800 / mo\n\nView role → \n\n\nEngineering\n 3–6 years\n Full-time\n\n\n1C developer\n\nfrom $1,800 to $3,500 / mo\n\nView role → \n\n\nProduct & delivery\n 1–3 years\n Full-time\n\n\nSystems analyst\n\nfrom $1,300 to $2,500 / mo\n\nView role → \n\nApply now",
+    "location": "Remote - Indonesia",
+    "country": "Indonesia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T05:11:16.829Z",
+    "sourceHash": "e7da2ab807bccc877bd022a49e595114203bd0db5197e930590c4e5498fbb272",
+    "company": {
+      "id": "svetet",
+      "name": "SVETET",
+      "logoUrl": "https://logo.clearbit.com/svetet.com",
+      "industry": "Technology",
+      "website": "https://svetet.com"
+    },
+    "slug": "frontend-developer-svetet-e7da2ab8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "figma",
+        "playwright",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Indonesia"
+      ],
+      "seniority": "mid",
+      "employmentType": "b2b"
+    }
+  },
+  {
+    "id": "bbbf925c266c70b59931606c233621b82dc64e18692707525e722058c2ec55c0",
+    "title": "Senior Frontend Engineer (React) (Remote - India)",
+    "applyUrl": "https://jobs.hellorecruiter.ai/assetintel/job/f57e07d1a0c740dd993e55a9de39b3d4",
+    "description": "About the job\n\n*** THIS JOB IS ONLY AVAILABLE TO INDIVIDUALS LIVING IN INDIA. NO RECRUITERS OR AGENCIES, PLEASE.***\n\nAbout AssetIntel\n\nAssetIntel is a software company that develops asset management software products for the transportation infrastructure industry. Our clients include state transportation agencies, city governments, toll authorities, transit agencies, the Federal Highway Administration (FHWA), and civil engineering firms. For more information, visit our website.\n\nJob Description\n\nWe are looking for a passionate and experienced Frontend Engineer who wants to work in a fast-paced, agile startup to build a portfolio of SaaS products. At AssetIntel, we believe that every developer is responsible for code ownership. As a Frontend Developer, you will work on one or more React-based applications. You will have the opportunity to:\n\nTackle complex challenges daily.\nDesign and develop excellent user experiences using React.\nCollaborate with other engineers to ensure our codebase is scalable, maintainable, and easily readable.\nLearn to balance technical debt management with business requirements.\nBreak down complex problems into smaller, modular solutions.\nRequirements\nBachelor's or Master's degree in Computer Science or a related field, or equivalent professional experience.\n4+ years of professional experience as a Front-End, UI, or Full-Stack Engineer. Applications with less than 4 years of experience will not be considered.\nStrong expertise in data structures and algorithms (highly important).\nStrong proficiency in HTML, CSS, and JavaScript.\n3+ years of professional experience developing applications with React.\nStrong communication skills and ability to work in a fast-paced, evolving startup environment.\nWork closely with teams in both India and the US.\nBenefits and Perks\nWork remotely - anywhere from India.\nMarket-competitive total compensation package and performance-based bonus.\nGenerous vacation policy.\nCompany-paid medical coverage.\nFully equipped home office setup, including a high-spec computer, dual monitors, desk, and chair.\nPlenty of growth opportunities, working alongside some of the brightest minds in the industry.\nInterview Process\n\nOur hiring process includes multiple rounds of AI-led interviews conducted online, so you can complete them on your own schedule. These may include an AI screening interview about your experience and fit for the role, and a take-home assessment completed with the AI that tests your problem-solving, data structures and algorithms, and React skills. Candidates who do well in the AI rounds move on to final conversations with the AssetIntel team.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T05:07:56.644Z",
+    "sourceHash": "bbbf925c266c70b59931606c233621b82dc64e18692707525e722058c2ec55c0",
+    "company": {
+      "id": "hellorecruiter",
+      "name": "Hello Recruiter®",
+      "logoUrl": "https://logo.clearbit.com/hellorecruiter.com",
+      "industry": "Technology",
+      "website": "https://hellorecruiter.com"
+    },
+    "slug": "senior-frontend-engineer-react-remote-india-hello-recruiter-bbbf925c",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "less",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d3f565d81cb75ddd1ca440b18156e8fcd49083041ad400f3e0a94783a5e1bb0d",
+    "title": "Senior Frontend Engineer - Remote",
+    "applyUrl": "https://www.plentific.com/careers/?ashby_jid=81e89479-f326-4b12-bf99-e0b05a0e5a7f&utm_source=LMboJoKJZJ",
+    "description": "About the job\n\nAbout Us\n\nPlentific is a property technology platform used by housing providers, local authorities, housing associations, asset managers, and contractors across the UK and Germany to coordinate repairs, maintenance, and contractor workflows at scale. The platform combines a marketplace, workflow automation, and operational analytics, and is built to handle the volume and compliance demands of social housing, local authority property portfolios, and large-scale residential operations.\n\nWe are headquartered in London and our team works across Europe.\n\nWe are growing the team to expand the platform's coverage across Europe and to integrate AI throughout the product and operating model. If you are interested in working on hard, real-world problems in a sector that has long been under-served by good software, we would like to hear from you.\n\nThe Role\n\nWe are hiring a Senior Frontend Engineer to build the product surfaces that housing providers, contractors, and residents use every day. This is a fully remote position; we currently have remote engineers based in the UK, Germany, Turkey, Poland, Italy, Spain, and Portugal. You will report to a Team Lead, a hands-on engineer who still writes code and has a small number of engineers reporting to them and work alongside product managers, designers, backend engineers, and data analysts.\n\nOur frontend is built on TypeScript, React, React Router, TanStack Query, MaterialUI and BaseUI, against an increasingly service-oriented backend built in Django REST Framework and PostgreSQL. The codebase is large but clean, because we put real weight on design patterns, readability, testability, maintainability, and extendability.\n\nThe engineering team sits at the centre of what Plentific does, and the problems are genuinely difficult: online payments, quoting, invoicing, booking, search and scoring algorithms, in-app messaging, real-time notifications, and fraud prevention. Much of it is high-volume and messy legacy integrations, complex permissions, strict compliance requirements, and users who need software to fit how work actually happens on the ground. We expect you to apply engineering judgement to these problems rather than only writing the code in front of you, and to treat agentic, spec-driven development as a normal part of how you work rather than an experiment.\n\nSuccess in this role means shipping interfaces that are fast, accessible, and well-tested, raising the standard of the frontend codebase around you, and leaving the engineers you work with better than you found them.\n\nKey Responsibilities\n\nFrontend Engineering\n\n\nBuild and maintain product interfaces in TypeScript, React, TanStack Query, React Router, MaterialUI and BaseUI across our web applications. \nTranslate product requirements and design concepts into technical documents that set out scope, system behaviour, edge cases, and high-level technical analysis. \nDesign component APIs, state management, and data-fetching patterns that stay readable and extendable as the codebase grows. \nIntegrate against REST APIs in a service-oriented architecture, shaping the contracts with backend engineers rather than accepting whatever is offered. \nReview, refactor, and retire existing code so it meets the requirements of improved or new features. \n\n\nPerformance, Quality, and Reliability\n\n\nDiagnose and resolve page load, rendering, and other frontend performance problems. \nWrite unit, integration, and end-to-end tests that give the team confidence to ship frequently. \nInstrument frontend observability with tools such as Sentry, Grafana Logs or New Relic, and act on what they show. \nDebug and fix production issues across our applications, including the integration points where frontend and backend behaviour diverge. \nDesign against common frontend security risks, including XSS and CSRF. \n\n\nAgentic and Spec-Driven Development\n\n\nTurn ambiguous product ideas into implementation-ready specs, including user flows, component behaviour, edge cases, acceptance criteria, and test expectations. \nPrototype interfaces and interaction quickly, using working software to test feasibility and product value before committing to larger delivery. \nUse agentic coding tools such as Codex, Claude Code, Cursor, or equivalent to generate, refactor, test, and review code within clear technical constraints. \nEvaluate AI-generated code critically for correctness, maintainability, security, performance, accessibility, and fit with Plentific's architecture. \nImprove the team's spec-driven development practice through reusable prompt patterns, review checklists, examples, and lightweight documentation. \n\n\nCollaboration and Craft\n\n\nPartner with product managers, designers, and backend engineers from problem framing through release, applying engineering judgement to improve the user experience before implementation starts. \nCollaborate with other engineers through code review and pair programming. \nDefine and communicate frontend standards and best practice, and hold the team to them in review. \nWrite concise technical documentation covering components, algorithms, APIs, and operational handover. \nArticulate technical trade-offs in plain English to technical and non-technical colleagues, including when scope, quality, or delivery timing needs to change. \n\n\nRequirements\n\n\nExpert-level TypeScript and modern JavaScript, with deep command of React and the patterns around it, including data fetching, routing, and component libraries. \nStrong software engineering fundamentals, including design patterns, testing, debugging, and code that stays readable and extendable at scale. \nSound grasp of UI, UX and accessibility considerations, with the judgement to improve a design before building it rather than implement it exactly as drawn. \nDemonstrable experience diagnosing and fixing page load, rendering, and other frontend performance problems. \nWorking knowledge of frontend observability with Sentry, Grafana logs, or New Relic, and of CI/CD pipelines such as GitHub Actions or ArgoCD. \nPractical awareness of common frontend security risks, including XSS and CSRF, and how to design against them. \nStrong working fluency with agentic coding tools and spec-driven development workflows, including specification writing, code generation, test generation, and critical review. \nClear communication, with the ability to articulate technical concepts and trade-offs in plain English. \nHigh ambition and a strong sense of urgency, with the drive to deliver an ambitious product roadmap at pace using AI, and a positive, can-do attitude. \n\n\nExperience And Qualifications\n\n\n6+ years of professional software engineering experience, including 5+ years of commercial React and TypeScript. \nExperience shipping and operating production frontends for customer-facing SaaS products, including monitoring, incident response, and performance improvement. \nExperience working in a large, long-lived codebase where design patterns, testability, and maintainability genuinely matter. \nExperience consuming and shaping REST APIs in a service-oriented architecture, ideally backed by Django REST Framework or an equivalent. \nExperience working in cross-functional teams with product managers and designers on shared customer outcomes, not only technical delivery. \nExperience using AI coding tools in a professional software delivery workflow, ideally within a spec-driven development framework. \nBased in a country where we currently employ or engage remote engineers — the UK, Germany, Turkey, Poland, Italy, Spain, or Portugal — with the right to work there. \nAvailability to work with substantial overlap with UK working hours.",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T05:04:37.726Z",
+    "sourceHash": "d3f565d81cb75ddd1ca440b18156e8fcd49083041ad400f3e0a94783a5e1bb0d",
+    "company": {
+      "id": "plentific",
+      "name": "Plentific",
+      "logoUrl": "https://logo.clearbit.com/plentific.com",
+      "industry": "Technology",
+      "website": "https://plentific.com"
+    },
+    "slug": "senior-frontend-engineer-remote-plentific-d3f565d8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e9b6f0bf9b5a899c671d8fc088b34696b1e6edd18bb5c387aced4abc56934760",
+    "title": "Senior Frontend Engineer ID91467",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StBgKqYtdoD.9x9PqUw3EtJc-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nAgileEngine is an Inc. 5000 company that creates award-winning software for Fortune 500 brands and trailblazing startups across 17+ industries. We rank among the leaders in areas like application development and AI/ML, and our people-first culture has earned us multiple Best Place to Work awards.\n\nWHY JOIN US\nIf you're looking for a place to grow, make an impact, and work with people who care, we'd love to meet you!\n\nABOUT THE ROLE\nWe are looking for a Senior Frontend Engineer to build and maintain features in a large, modern Angular application, with opportunities to contribute to backend work.\n\nWHAT YOU WILL DO\n- Build and maintain features in a large modern Angular application.\n- Contribute to frontend architecture and technical decisions.\n- Work with UX and product teams to turn requirements into well-designed, accessible features.\n- Contribute to build, bundling, and frontend development workflows.\n- Follow accessibility best practices and participate in accessibility reviews.\n- Contribute to backend work when needed, working with the existing engineering team.\n- Participate in code reviews and AI-assisted development workflows.\n- Work with AI development tools, primarily Claude.\n- Collaborate with engineers across multiple product initiatives.\n\nMUST HAVES\n- 5+ years of professional software engineering experience.\n- Strong Angular experience, specifically modern Angular rather than AngularJS.\n- Strong frontend engineering skills and experience working on production web applications.\n- Solid understanding of frontend architecture and maintainable code.\n- Basic, practical understanding of web accessibility.\n- Experience working effectively in a collaborative engineering team.\n- Comfortable using AI-assisted development tools.\n- Strong English communication skills.\n- Ability to work with significant overlap with US time zones.\n\nNICE TO HAVES\n- Strong hands-on accessibility experience, including accessibility testing and remediation.\n- Experience with Angular Material or similar UI component libraries.\n- Experience with frontend build, bundling, or related tooling.\n- Experience with PHP/Laravel or Python.\n- Experience working with GCP.\n- Experience with AI-native / agentic software development workflows.\n- SaaS or EdTech experience.\n\nPERKS AND BENEFITS\n- Professional growth: Accelerate your professional journey with mentorship, TechTalks, and personalized growth roadmaps.\n- Competitive compensation: We match your ever-growing skills, talent, and contributions with competitive USD-based compensation and budgets for education, fitness, and team activities.\n- A selection of exciting projects: Join projects with modern solutions development and top-tier clients that include Fortune 500 enterprises and leading product brands.\n- Flextime: Tailor your schedule for an optimal work-life balance, by having the options of working from home and going to the office – whatever makes you the happiest and most productive.\n\n\n\n\n\n\nDesired Skills and Experience\n\n5+ years of professional software engineering experience. Strong Angular experience, specifically modern Angular rather than AngularJS. Strong frontend engineering skills and experience working on production web applications. Solid understanding of frontend architecture and maintainable code. Basic, practical understanding of web accessibility. Experience working effectively in a collaborative engineering team. Comfortable using AI-assisted development tools. Strong English communication skills.",
+    "location": "Remote - Colombia",
+    "country": "Colombia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T04:59:41.357Z",
+    "sourceHash": "e9b6f0bf9b5a899c671d8fc088b34696b1e6edd18bb5c387aced4abc56934760",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id91467-agileengine-e9b6f0bf",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Colombia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8554e2c113fb53cd6d59b3937c9ebdcab89b32464ed0ed4a875ae9fa2238fdd5",
+    "title": "Senior Frontend Engineer ID91467",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StMahSsRtgtQhuS0%406VvZ.8Q-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nAgileEngine is an Inc. 5000 company that creates award-winning software for Fortune 500 brands and trailblazing startups across 17+ industries. We rank among the leaders in areas like application development and AI/ML, and our people-first culture has earned us multiple Best Place to Work awards.\n\nWHY JOIN US\nIf you're looking for a place to grow, make an impact, and work with people who care, we'd love to meet you!\n\nABOUT THE ROLE\nWe are looking for a Senior Frontend Engineer to build and maintain features in a large, modern Angular application, with opportunities to contribute to backend work.\n\nWHAT YOU WILL DO\n- Build and maintain features in a large modern Angular application.\n- Contribute to frontend architecture and technical decisions.\n- Work with UX and product teams to turn requirements into well-designed, accessible features.\n- Contribute to build, bundling, and frontend development workflows.\n- Follow accessibility best practices and participate in accessibility reviews.\n- Contribute to backend work when needed, working with the existing engineering team.\n- Participate in code reviews and AI-assisted development workflows.\n- Work with AI development tools, primarily Claude.\n- Collaborate with engineers across multiple product initiatives.\n\nMUST HAVES\n- 5+ years of professional software engineering experience.\n- Strong Angular experience, specifically modern Angular rather than AngularJS.\n- Strong frontend engineering skills and experience working on production web applications.\n- Solid understanding of frontend architecture and maintainable code.\n- Basic, practical understanding of web accessibility.\n- Experience working effectively in a collaborative engineering team.\n- Comfortable using AI-assisted development tools.\n- Strong English communication skills.\n- Ability to work with significant overlap with US time zones.\n\nNICE TO HAVES\n- Strong hands-on accessibility experience, including accessibility testing and remediation.\n- Experience with Angular Material or similar UI component libraries.\n- Experience with frontend build, bundling, or related tooling.\n- Experience with PHP/Laravel or Python.\n- Experience working with GCP.\n- Experience with AI-native / agentic software development workflows.\n- SaaS or EdTech experience.\n\nPERKS AND BENEFITS\n- Professional growth: Accelerate your professional journey with mentorship, TechTalks, and personalized growth roadmaps.\n- Competitive compensation: We match your ever-growing skills, talent, and contributions with competitive USD-based compensation and budgets for education, fitness, and team activities.\n- A selection of exciting projects: Join projects with modern solutions development and top-tier clients that include Fortune 500 enterprises and leading product brands.\n- Flextime: Tailor your schedule for an optimal work-life balance, by having the options of working from home and going to the office – whatever makes you the happiest and most productive.\n\n\n\n\n\n\nDesired Skills and Experience\n\n5+ years of professional software engineering experience. Strong Angular experience, specifically modern Angular rather than AngularJS. Strong frontend engineering skills and experience working on production web applications. Solid understanding of frontend architecture and maintainable code. Basic, practical understanding of web accessibility. Experience working effectively in a collaborative engineering team. Comfortable using AI-assisted development tools. Strong English communication skills.",
+    "location": "Remote - Colombia",
+    "country": "Colombia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T04:59:19.442Z",
+    "sourceHash": "8554e2c113fb53cd6d59b3937c9ebdcab89b32464ed0ed4a875ae9fa2238fdd5",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id91467-agileengine-8554e2c1",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Colombia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "bfcfc892da08d98619978eb9214b8a66e672ce62b0f12c5c6687c04544c64959",
+    "title": "Senior Frontend Engineer ID91467",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StPVP9KYjn.h9YdwnC26ha6w-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nAgileEngine is an Inc. 5000 company that creates award-winning software for Fortune 500 brands and trailblazing startups across 17+ industries. We rank among the leaders in areas like application development and AI/ML, and our people-first culture has earned us multiple Best Place to Work awards.\n\nWHY JOIN US\nIf you're looking for a place to grow, make an impact, and work with people who care, we'd love to meet you!\n\nABOUT THE ROLE\nWe are looking for a Senior Frontend Engineer to build and maintain features in a large, modern Angular application, with opportunities to contribute to backend work.\n\nWHAT YOU WILL DO\n- Build and maintain features in a large modern Angular application.\n- Contribute to frontend architecture and technical decisions.\n- Work with UX and product teams to turn requirements into well-designed, accessible features.\n- Contribute to build, bundling, and frontend development workflows.\n- Follow accessibility best practices and participate in accessibility reviews.\n- Contribute to backend work when needed, working with the existing engineering team.\n- Participate in code reviews and AI-assisted development workflows.\n- Work with AI development tools, primarily Claude.\n- Collaborate with engineers across multiple product initiatives.\n\nMUST HAVES\n- 5+ years of professional software engineering experience.\n- Strong Angular experience, specifically modern Angular rather than AngularJS.\n- Strong frontend engineering skills and experience working on production web applications.\n- Solid understanding of frontend architecture and maintainable code.\n- Basic, practical understanding of web accessibility.\n- Experience working effectively in a collaborative engineering team.\n- Comfortable using AI-assisted development tools.\n- Strong English communication skills.\n- Ability to work with significant overlap with US time zones.\n\nNICE TO HAVES\n- Strong hands-on accessibility experience, including accessibility testing and remediation.\n- Experience with Angular Material or similar UI component libraries.\n- Experience with frontend build, bundling, or related tooling.\n- Experience with PHP/Laravel or Python.\n- Experience working with GCP.\n- Experience with AI-native / agentic software development workflows.\n- SaaS or EdTech experience.\n\nPERKS AND BENEFITS\n- Professional growth: Accelerate your professional journey with mentorship, TechTalks, and personalized growth roadmaps.\n- Competitive compensation: We match your ever-growing skills, talent, and contributions with competitive USD-based compensation and budgets for education, fitness, and team activities.\n- A selection of exciting projects: Join projects with modern solutions development and top-tier clients that include Fortune 500 enterprises and leading product brands.\n- Flextime: Tailor your schedule for an optimal work-life balance, by having the options of working from home and going to the office – whatever makes you the happiest and most productive.\n\n\n\n\n\n\nDesired Skills and Experience\n\n5+ years of professional software engineering experience. Strong Angular experience, specifically modern Angular rather than AngularJS. Strong frontend engineering skills and experience working on production web applications. Solid understanding of frontend architecture and maintainable code. Basic, practical understanding of web accessibility. Experience working effectively in a collaborative engineering team. Comfortable using AI-assisted development tools. Strong English communication skills.",
+    "location": "Remote - Colombia",
+    "country": "Colombia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T04:58:51.654Z",
+    "sourceHash": "bfcfc892da08d98619978eb9214b8a66e672ce62b0f12c5c6687c04544c64959",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id91467-agileengine-bfcfc892",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Colombia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "214b1b784f6be6f52cb9f6dd096f20e0a5ed56a06c25fe4441c8080d1bb0aef5",
+    "title": "Senior Frontend Software Engineer - Next.js",
+    "applyUrl": "https://jobs.ashbyhq.com/makai-labs/62696e5d-9abc-4dd3-a23c-6241e43f0c98/application?utm_source=WELgbZnvZO",
+    "description": "About the job\n\nAbout Makai\n\nMakai uses best-in-class Al and data to solve real-world operational and strategic challenges at scale. Our Makai Automation Platform consists of a library of pre-built components and modules to facilitate enterprise automation via a unified human-machine teaming interface. Until now, people have had to learn and adapt to software. Makai creates solutions that adapt to people because technology will never be 100% accurate. People are essential for all of our human-machine teaming solutions, as they serve as the final firewall for accuracy and quality.\n\nAbout The Role\n\nThis is a full-time remote role for a Senior Frontend Software Engineer at Makai Labs. The Senior Frontend Software Engineer will be responsible for front-end web development. They will collaborate with cross-functional teams to design and implement innovative solutions that enhance user experiences and drive business outcomes.\n\nQualifications:\n\n\n 5+ years of experience in web development, with at least 3 years using Next.js. \n Solid experience working from a fully remote position. \n Proficient understanding of web markup, including HTML5 and CSS3. \n Relevant experience with using Tailwind/Material Ul/Joy UI\n Familiarity with RESTful APls and modern authorization mechanisms. \n Experience with state management libraries (e.g., Redux, MobX). \n Familiarity with modern front-end build pipelines and tools. \n Excellent troubleshooting and communication skills. \nStrong written and verbal communication in English, especially in remote and asynchronous environments\nHigh degree of autonomy, accountability, and follow-through\nExperience using AI-assisted development tools effectively is a plus\n\n\nResponsibilities:\n\n\n Develop new user-facing features\n Optimize applications for maximum speed and scalability. \n Ensure the technical feasibility of UI/UX designs. \n Collaborate with back-end developers and web designers to improve usability. \n Write robust, clean, and documented code. \n Maintain and enhance existing web applications. \n Conduct performance tests and ensure responsiveness and stability across all platforms. \n\n\nIndustry:\n\n\n Software Development\n\n\nCore values for Makai employees\n\n\n Have a strong work ethic. As a member of a fully remote team, it is very important that you can self-manage and drive your own work towards consistent excellence in a timely manner. \nBe self-sufficient and self-driven with an ownership mentality, no matter your role\nBe a flexible thinker\n Be congenial and a team player\n Always be of service to each other and our clients, partners, and neighbors\n\n\nEmployment Type Full Time\n\nFully remote role",
+    "location": "Remote - Argentina",
+    "country": "Argentina",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-01T04:52:47.618Z",
+    "sourceHash": "214b1b784f6be6f52cb9f6dd096f20e0a5ed56a06c25fe4441c8080d1bb0aef5",
+    "company": {
+      "id": "makailabs",
+      "name": "Makai Labs",
+      "logoUrl": "https://logo.clearbit.com/makailabs.com",
+      "industry": "Technology",
+      "website": "https://makailabs.com"
+    },
+    "slug": "senior-frontend-software-engineer-next-js-makai-labs-214b1b78",
+    "aiTags": {
+      "stack": [
+        "nextjs",
+        "css",
+        "tailwind",
+        "redux",
+        "mobx",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Argentina"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "e8c43279606e3903d647d0a6aef4bd47092fe72935ef4de3c1e84cfaf8aad011",
     "title": "Member of Technical Staff, Front End",
     "applyUrl": "https://jobs.ashbyhq.com/Abridge",
