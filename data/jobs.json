@@ -1,5 +1,265 @@
 [
   {
+    "id": "06bac2fa448cfb7f5d70e9f487c6aff70c691a81493d634d9959c9f11034dfc9",
+    "title": "Lead Staff Front End Engineer (Remote)",
+    "applyUrl": "https://chamberlain.wd1.myworkdayjobs.com/Chamberlain_Group/job/Remote---California/Staff-Engineer--Remote-_JR31626?source=LinkedIn",
+    "description": "About the job\n\nChamberlain Group (CG) is a global leader in intelligent access and Blackstone portfolio company. Powered by our myQ technology, we make access simple and secure for millions of homeowners, businesses, and communities worldwide. Our flagship brands, LiftMaster®  and Chamberlain® , are found in 51+ million homes, and 14 million+ people rely on the myQ®  app daily.\n\nThis role is responsible for developing and maintaining multiple development platforms for the Chamberlain MyQ program. This includes, but is not limited to, residential and commercial front end iOS/Android apps, or web applications. To accomplish this the incumbent will work with other developers in addition to interfacing with other parts of the business such as Engineering, Product Ownership, Marketing, Quality Assurance, Operations, and Customer Service in order to understand and translate product requirements into technical requirements, verify development matches product owner expectations, as well as maintain a high-quality code base.\n\nJob Responsibilities\n\n\nServe as primary point person across multiple scrum teams for interactions with product owner, front end, middleware, DevOps, and firmware functional teams to implement mobile app new features\nParticipate in technical assessment, scoping and management of changes to the code-based on new business requirements, product enhancements and other change requests across multiple scrum teams\nAnalyze requirements, collaborate with architects and senior engineers to produce thoughtful software designs of large scope and high complexity\nDevelop software using Agile methodologies, such as Scrum\nLead and contribute to technical discussions in community of practice, design review, pull request, or other technical meeting forums\nInterface with marketing and product owners to deploy production releases\nStay current on modern technologies and innovations which can further enhance and improve the commercial success of the MyQ connectivity solution\nMaintain platform specific software knowledge of key software application features, frameworks, and components\nProvide mentoring and coaching to junior and senior engineers to increase software capability of the development team\nCollaborate with other Chamberlain domain experts, such as Infrastructure, Database, and Middleware, as the team develops features and platform enhancements\n Lead offshore teams to design and develop features\nEnforce process standards for internal development processes to provide consistent development practices among developers\nResponsible for complying with the security requirements set forth by the Information Security team and the established ISO 27001 Security Roles, Responsibilities, and Authorities Document found in the ISMS Document Library\nComply with health and safety guidelines and rules; managers should also ensure compliance across their teams.\nProtect Chamberlain Group’s reputation by keeping information confidential.\nMaintain professional and technical knowledge by attending educational workshops, reading professional publications, establishing personal networks, and participating in professional societies.\nContribute to the team effort by accomplishing related results and participating on projects as needed.\n\n\nJob Requirements\n\n\nBachelor’s degree in computer science, a related technical field, or equivalent practical experience.\nAn advanced degree in directly applicable area of study may substitute for up to two (2) years of experience.\niOS engineer must have native experience in Swift (7+ years)\nAndroid engineers must have native experience with Kotlin (7+ years)\nExperience writing unit tests\nExperience working in larger team environment\nExperience working with Git for source control\nExperience leading architectural and process changes\nExperience in creating technical documentation\nDeep understanding of Agile methodologies and Scrum\nExperience performing technical interviews\nExpertise of UI patterns such as model-view-controller (MVC) and model-view-view model (MVVM) is required\nExpertise in RESTful services and the JSON file format.\nAbility to work on multiple projects in a fast-paced work environment.\nAbility to work independently as well as part of a team.\nAbility to lead junior and senior engineers on projects of high complexity.\nAbility to recognize issues in existing software and put together improvement plans.\nStrong analytical and problem-solving skills.\nExcellent communication skills and the ability to work cross functionally with back end and quality engineers.\nStrong ability to interface with Product Owners and Scrum Masters for ticket/issue management.\nStrong ability to estimate work, support project plan creation, and report out progress to functional management at a platform level.\nUnderstanding of CI/CD (continuous integration/continuous delivery) tools, frameworks and deployment processes.\nExperience defining process improvements and implementing change\n\n\nPreferred Job Requirements:\n\n\nMobile development bootcamp, organized training, or certifications.\nAbility to lead changes on a mobile platform that is not their expertise (e.g. experience is iOS, but could help lead Android devs).\n\n\nThe pay range for this position is $126,198.00 - $215,291.00; base pay offered may vary depending on a number of factors including, but not limited to, the position offered, location, education, training, and/or experience. In addition to base pay, also offered is a comprehensive benefits package and 401k contribution (all benefits are subject to eligibility requirements). This position is eligible for participation in a short-term incentive plan subject to the terms of the applicable plans and policies.\n\nChamberlain Group wants all of its employees to succeed and encourages people of all backgrounds to apply. We’re proud to be an Equal Opportunity Employer, and you’ll be considered for this role regardless of race, color, religion, sex, national origin, age, sexual orientation, ancestry; marital, disabled or veteran status. We’re committed to fostering an environment where people of all lived experiences feel welcome.\n\nPersons with disabilities who anticipate needing accommodations for any part of the application process may contact, in confidence Recruiting@Chamberlain.com.\n\nNOTE: Staffing agencies, headhunters, recruiters, and/or placement agencies, please do not contact our hiring managers directly.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T05:31:07.291Z",
+    "sourceHash": "06bac2fa448cfb7f5d70e9f487c6aff70c691a81493d634d9959c9f11034dfc9",
+    "company": {
+      "id": "chamberlaingroup",
+      "name": "Chamberlain Group",
+      "logoUrl": "https://logo.clearbit.com/chamberlaingroup.com",
+      "industry": "Technology",
+      "website": "https://chamberlaingroup.com"
+    },
+    "slug": "lead-staff-front-end-engineer-remote-chamberlain-group-06bac2fa",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4347a0ffa6c3965d7a55c53150cd52663a0ea2e4c250f994266afd5b5cb33925",
+    "title": "Senior Software Engineer, Frontend",
+    "applyUrl": "https://careers.circle.com/us/en/job/CIICIRUSJR101099EXTERNALENUS/Senior-Software-Engineer-Frontend?utm_source=linkedin&utm_medium=phenom-feeds&src=LinkedIn",
+    "description": "About the job\n\nCircle (NYSE: CRCL) is one of the world’s leading internet financial platform companies, building the foundation of a more open, global economy through digital assets, payment applications, and programmable blockchain infrastructure. Circle’s platform includes the world’s largest regulated stablecoin network anchored by USDC, Circle Payments Network for global money movement, and Arc, an enterprise-grade blockchain designed to become the Economic OS for the internet. Enterprises, financial institutions, and developers use Circle to power trusted, internet-scale financial innovation. Learn more at circle.com.\n\nWhat You’ll Be Part Of\n\nCircle is committed to visibility and stability in everything we do. As we grow as an organization, we're expanding into some of the world's strongest jurisdictions. Speed and efficiency are motivators for our success and our employees live by our company values: High Integrity, Future Forward, Multistakeholder, Mindful, and Driven by Excellence. We have built a flexible work environment where new ideas are encouraged and everyone is a stakeholder.\n\nWhat you’ll be responsible for\n\nYou will build world-class Web3 consumer applications, web SDKs, and developer tools that make it easier for developers to integrate with Circle’s existing and future product offerings. You will also create internal tools that enable our Customer Success teams to deliver exceptional support. As a member of a dedicated engineering team, you will contribute to Circle’s broader frontend ecosystem by participating in code reviews, promoting consistent engineering practices, and maintaining a high standard for quality. You will collaborate closely with Product, Design, and Engineering partners to translate requirements into intuitive, reliable, and scalable experiences for developers and end users.\n\nWhat you’ll work on\n\n\nBuild and maintain responsive Web3 applications using modern frontend technologies.\nDevelop web SDKs and tools that simplify integration with Circle products and services.\nDesign reusable, accessible, and scalable frontend components for shared use across products.\nPartner with Product and Design to translate user needs into intuitive, high-quality features.\nBuild internal tools that help Customer Success teams resolve customer needs efficiently.\nParticipate in code and design reviews to improve quality, consistency, and maintainability.\nUse automated testing, continuous delivery practices, and AI-assisted development tools to improve engineering velocity.\n\n\nWhat you’ll bring to Circle\n\nCore requirements\n\n\n4+ years of experience building user interfaces for complex web applications.\nStrong proficiency in HTML, CSS, TypeScript, and JavaScript.\nExperience building responsive, component-based applications with React.\nExperience using AI-assisted development tools such as Claude, Codex, Cursor, or similar platforms.\nExperience writing well-tested, maintainable code and contributing to strong coding standards.\nStrong product judgment and the ability to identify opportunities to improve usability and quality.\nExperience collaborating with product managers, designers, and distributed engineering teams.\nExcellent written and verbal communication skills, with the ability to clearly present technical concepts.\n\n\nPreferred Requirements\n\n\nExperience with Node.js, developer platforms, SDKs, Web3 products, or blockchain technologies.\n\n\nCircle is on a mission to create an inclusive financial future, with transparency at our core. We consider a wide variety of elements when crafting our compensation ranges and total compensation packages.\n\nStarting pay is determined by various factors, including but not limited to: relevant experience, skill set, qualifications, and other business and organizational needs. Please note that compensation ranges may differ for candidates in other locations.\n\nBase Pay Range: $152,500 - $205,000\n\nWe are an equal opportunity employer. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status, or any other protected status required by the laws in the locations where we hire. Additionally, Circle participates in the E-Verify Program in certain locations, as required by law.\n\nShould you require accommodations or assistance in our interview process because of a disability, please reach out to accommodations@circle.com for support. We respect your privacy and will connect with you separately from our interview process to accommodate your needs.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T05:30:44.743Z",
+    "sourceHash": "4347a0ffa6c3965d7a55c53150cd52663a0ea2e4c250f994266afd5b5cb33925",
+    "company": {
+      "id": "circle",
+      "name": "Circle",
+      "logoUrl": "https://logo.clearbit.com/circle.com",
+      "industry": "Technology",
+      "website": "https://circle.com"
+    },
+    "slug": "senior-software-engineer-frontend-circle-4347a0ff",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2752f1f460fdc7977acfdd4ad374adce7b9a9ac301dd1519dfca1135a02c0062",
+    "title": "Senior Front End Engineer",
+    "applyUrl": "https://www.theladders.com/linkedin/89048757?src=LinkedIn",
+    "description": "About the job\n\nFor our client, we are seeking a Senior Front End Engineer to join the team of a leader in the Enterprise Technology space.\n\nThis role will shape the user experience for a modern web platform, translating product goals into polished, performant interfaces that support enterprise customers. The ideal candidate will partner closely with product, design, and engineering stakeholders to build scalable frontend solutions that are intuitive, responsive, and built for long-term growth. This is a hands-on engineering role with meaningful influence over architecture, feature delivery, and the overall quality of the customer experience.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $120,000 – $145,000 annually\n\nResponsibilities\n\n\n Own features from conception to launch\n Write performant and readable code\n Make architectural decisions to enhance product scalability\n Contribute ideas for projects, norms, and priorities\n Maximize customer value through technology choices\n\n\nQualifications\n\n\n 5+ years of industry experience\n Proficient in Typescript and React\n Experienced in building modern user-facing web applications\n Comfortable with design tools like Figma, Sketch, or Illustrator\n Detail-oriented with a passion for user experience\n Interest in startup culture and innovation\n\n\nBenefits\n\n\n Remote-first work approach\n Equity plan\n Comprehensive insurance for you and your family\n Generous PTO and sick leave\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification—your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nTypescript, React, Figma, Sketch, Illustrator, Web application frameworks, Performance optimization tools, UI/UX design methodologies, JavaScript, Version control systems (e.g., Git), RESTful APIs, Frontend testing frameworks (e.g., Jest, Cypress)",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T05:22:17.931Z",
+    "sourceHash": "2752f1f460fdc7977acfdd4ad374adce7b9a9ac301dd1519dfca1135a02c0062",
+    "company": {
+      "id": "ladders",
+      "name": "Ladders",
+      "logoUrl": "https://logo.clearbit.com/ladders.com",
+      "industry": "Technology",
+      "website": "https://ladders.com"
+    },
+    "slug": "senior-front-end-engineer-ladders-2752f1f4",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "figma",
+        "cypress",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "25983671c1ec9b431d4197c84d7aab5a25b951650237cd47343b1b43aefa74db",
+    "title": "Senior Software Engineer - Front End/ Back End",
+    "applyUrl": "https://adhoc.hrmdirect.com/employment/job-opening.php?req=3830034&req_loc=1495929&cust_sort1=245588%2Femployment%2Fjob-openings.php%3Fsearch%3Dtrue&source=LinkedIn",
+    "description": "About the job\n\nThis is a remote position.\n\nJOB ID # 972\n\nAd Hoc is a technology company that empowers organizations to deliver scalable, impactful digital services. Using modern, agile methods, our team creates products that meet people’s needs and transform their experience of government.\n\nWork on things that matter\n\nOur collaborations have shaped some of the defining moments in public-sector service delivery. We’ve helped build products that connect Veterans to tailored services, help millions access affordable health care, and support important programs like Head Start. As we work with agencies to deliver critical services, we’re also changing how the government approaches technology.\n\nBuilt for a remote life\n\nOur culture, communications, and tools are built for remote work, enabling us to bring together top talent nationwide. At Ad Hoc, remote life empowers our teams to design work environments that fit their lives and that foster flexibility and collaboration to achieve positive outcomes for our customers.\n\nCommitted to high expectations and a welcoming culture\n\nAd Hoc values acceptance, accountability, and humility. We aren’t heroes. We learn from our mistakes and improve the process for the next time. We build small, inclusive teams to collaborate closely with our partners to solve the right problems and deliver software that works.\n\nThe Federal Civilian business unit supports many customers spanning the federal, commercial, and nonprofit space. Our customers include NASA, the General Services Administration, Office of Personnel Management, the Library of Congress, Health & Human Services, and the FDIC. We partner with these agencies to build new capabilities, deliver products, establish data as a strategic asset for informed decision-making, modernize legacy systems, and build the digital service infrastructure necessary to scale their mission impact.\n\nPrimary Responsibilities\n\nSenior Software Engineer - Front End/ Back End serves as an experienced individual contributor within a team, with the expectation that you will further develop your leadership, guidance and mentoring skills. With minimal oversight from leadership, you will be responsible for supporting the goal of meeting scope, schedule and delivery requirements. A Senior Software Engineer - Front End/ Back End impacts the long-term goals of the program, while contributing to the implementation of the program’s development strategy. You may serve as the discipline's primary lead when working with stakeholders and utilize strong influential skills to drive improvements in software engineering processes and practices. Primary expectations of a Senior Software Engineer - Front End/ Back End include:\n\n\nDemonstrates expertise, accountability, and ownership of their contributions to an application code base \nMaintains a high-level understanding of adjacent technical areas and ecosystems to effectively coordinate integration with those systems \nDiagnoses and effectively resolves issues with the systems they own, using incidents to inform educational opportunities and system improvements \nActively mentors and assists more junior engineers in the development of their skills \nEffectively communicates technical issues and developments with team members and clients \nParticipates in technical interviews with new candidates \nStrong influential skills to propose and evaluate multiple approaches to technical and process problems \nMay serve as a mentor to individuals within the team \nMay leads small, less critical, or temporary team structures and projects \nPresents design documents, system diagrams, etc. to clients, stakeholders, partners, and other engineers \n\n\nBasic Qualifications \n\n\nBachelor’s degree and 7+ years of engineering experience\nRelevant years of experience may be substituted for education \nDemonstrates expert-level knowledge in at least one technical area (including but not limited to frontend, backend, or infrastructure engineering) \n\n\nPreferred Qualifications\n\n\nN/A\n\n\nTo learn more about working at Ad Hoc, please visit: https://adhocteam.us/join\n\nBenefits\n\n\nCompany-subsidized health, dental, and vision insurance\nFlexible PTO\n401K with employer match\nPaid parental leave after one year of service\nEmployee Assistance Program\n\n\nAd Hoc LLC is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, national origin, ancestry, sex, sexual orientation, gender identity or expression, religion, age, pregnancy, disability, work-related injury, covered veteran status, political ideology, marital status, or any other factor that the law protects from employment discrimination.\n\nWe value the unique skills gained through military service and encourage veterans and transitioning service members to apply.\n\nIn support of various state and city equal pay transparency laws, Ad Hoc job descriptions feature the starting range we reasonably expect to pay to candidates who would join our team with little to no need for training on the responsibilities we've outlined above. Actual compensation is influenced by a wide range of factors including but not limited to skill set, level of experience, and responsibility. The range of starting pay for this role is $30hr - $53hr. Our recruiters will be happy to answer any questions you may have, and we look forward to learning more about your salary requirements.\n\nJob Reference\n\nhttps://adhoc.team/",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T05:17:53.104Z",
+    "sourceHash": "25983671c1ec9b431d4197c84d7aab5a25b951650237cd47343b1b43aefa74db",
+    "company": {
+      "id": "adhocllc",
+      "name": "Ad Hoc LLC",
+      "logoUrl": "https://logo.clearbit.com/adhocllc.com",
+      "industry": "Technology",
+      "website": "https://adhocllc.com"
+    },
+    "slug": "senior-software-engineer-front-end-back-end-ad-hoc-llc-25983671",
+    "aiTags": {
+      "stack": [
+        "less"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "be5f30838c98c5d482c45483e9f8f5b93d3906f89d1d97e08518fa6d56862c47",
+    "title": "Senior Frontend Developer (Angular)",
+    "applyUrl": "https://jobs.kairosds.com/senior-frontend-developer-angular-zZ3HrE1lFNYv/?utm_source=linkedin&utm_medium=job_board",
+    "description": "About the job\n\n¿Quiénes somos?\n\nSomos Kairós, una empresa de tecnología diferente. Sí, ayudamos a nuestros clientes con sus retos de transformación digital y metodológica, pero lo que realmente nos define es cómo lo hacemos: poniendo a las personas en el centro.\n\nHemos sido reconocidos como Empresa Great Place To Work desde 2019 por sexto año consecutivo, ocupando el 5º lugar en 2024. Nuestros valores de valentía, empatía, innovación y alegría son la forma en que trabajamos cada día. Somos más de 850 personas (desarrolladores, ingenieros de datos, estrategas...) y ahora buscamos a alguien que se sume a este equipo brillante y diverso.\n\nEn Kairós no eres un número más. Te conocemos por tu nombre, nos importa tu equilibrio personal y queremos que crezcas con nosotros.\n\nTu misión en Kairós\n\nBuscamos un/a Senior Frontend Developer apasionado/a que se una a nuestro equipo para diseñar, desarrollar y mantener aplicaciones web complejas con Angular.\n\nAquí no solo picarás código; definirás la arquitectura frontend, garantizarás la máxima calidad técnica y contribuirás al éxito de productos digitales de gran alcance. Y lo mejor: lo harás junto a un equipo que te respalda en cada paso.\n\n\nDesarrollo y Arquitectura Angular: Diseñarás, desarrollarás y mantendrás aplicaciones web complejas utilizando versiones modernas de Angular (v16 a v22), trabajando sobre arquitecturas avanzadas basadas en microfrontends para asegurar modularidad, escalabilidad y mantenibilidad.\nCalidad y Buenas Prácticas: Definirás e implementarás buenas prácticas de desarrollo frontend, creando componentes reutilizables, accesibles y alineados con sistemas de diseño mediante Angular Material y librerías de componentes.\nEstrategia de Testing y Calidad de Código: Garantizarás una alta cobertura de testing implementando pruebas unitarias con Jasmine y Karma, participando activamente en revisiones de código y análisis continuos con SonarQube.\nIntegración y Ecosistema Cloud: Integrarás interfaces frontend con APIs REST y servicios backend, colaborando estrechamente en entornos cloud (AWS) y pipelines de CI/CD con Jenkins (builds, análisis de calidad y despliegues automatizados).\nOptimización y Metodología: Optimizarás el rendimiento, la seguridad, la accesibilidad y la experiencia de usuario trabajando bajo metodologías ágiles como Scrum.\nGuardias: Disponibilidad para realizar guardias tras finalizar el proceso de onboarding.\n\n\nQué te hará tener éxito\n\nFormación y Experiencia\n\n\nExperiencia demostrable de al menos 7 años trabajando como Frontend Developer.\nTrayectoria consolidada trabajando en proyectos complejos con metodologías ágiles (Scrum).\n\n\nDominio Técnico (Must-have)\n\n\nDominio avanzado de Angular (versiones v16 a v22) y TypeScript/JavaScript.\nExperiencia contrastada trabajando con arquitecturas de microfrontends.\nConocimiento profundo de HTML5, CSS3 y SCSS.\nExperiencia con Angular Material y diseño/creación de componentes reutilizables y accesibles.\nExperiencia sólida en testing frontend con Jasmine, Karma o herramientas similares.\nUso de herramientas de análisis y calidad de código como SonarQube.\nDominio de control de versiones con Git y procesos de revisión de código (peer review).\nExperiencia integrando y consumiendo APIs REST.\n\n\nConocimientos deseables (Nice-to-have)\n\n\nFamiliaridad y experiencia con pipelines de CI/CD (especialmente con Jenkins).\nConocimientos de despliegue, integración o arquitecturas en AWS.\nCapacidad estratégica para traducir requisitos de negocio en soluciones técnicas sólidas.\n\n\nBeneficios que marcan la diferencia\n\nCrecimiento profesional que vale la pena\n\n\nFormación continua corporativa.\nClases de inglés gratuitas en grupos reducidos.\nMentoring y acompañamiento personal constante.\nParticipación en conferencias, eventos y comunidades de tecnología.\n\n\nEquilibrio y Flexibilidad Real\n\n\n23 días de vacaciones + 24 y 31 de diciembre libres.\n1 día para eventos profesionales y 3 días de libre conciliación.\nJornada intensiva en agosoto y todos los viernes del año.\nTeletrabajo 100%: Trabajarás en remoto, y con cierta flexibilidad para adaptar tus horarios, aunque dependerá del proyecto en el que estés.\n\n\nBeneficios y Cuidado Personal\n\n\nRetribución flexible (Cobee) para restaurante, transporte, formación y guardería.\nSeguro médico con Cigna, Adeslas o Sanitas.\nPrograma Wellness de bienestar emocional y psicológico.\n\n\n#TRY #THINK #FEEL #ENJOY\n\nEn Kairós creemos firmemente en la importancia de la igualdad y la diversidad en el lugar de trabajo. Estamos comprometidos a crear un entorno inclusivo y respetuoso donde todos los empleados se sientan valorados y tengan la oportunidad de alcanzar su máximo potencial, independientemente de su raza, color, religión, género, identidad o expresión de género, orientación sexual, origen nacional, genética, discapacidad, edad o cualquier otra característica protegida por la ley.\n\n¡Inscríbete a la oferta y únete al equipo de Kairoseros y Kairoseras!",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T05:13:46.132Z",
+    "sourceHash": "be5f30838c98c5d482c45483e9f8f5b93d3906f89d1d97e08518fa6d56862c47",
+    "company": {
+      "id": "kairosdigitalsolutions",
+      "name": "KAIROS DIGITAL SOLUTIONS",
+      "logoUrl": "https://logo.clearbit.com/kairosdigitalsolutions.com",
+      "industry": "Technology",
+      "website": "https://kairosdigitalsolutions.com"
+    },
+    "slug": "senior-frontend-developer-angular-kairos-digital-solutions-be5f3083",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "sass",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8128b9d4fd1130d3701aa9503a5f987ca46720c3738b5a0880fa73073aa01bd1",
+    "title": "Desarrollador/a Frontend – React Native",
+    "applyUrl": "https://knowmadmood.teamtailor.com/jobs/8487300-desarrollador-a-frontend-react-native",
+    "description": "About the job\n\nWe are knowmad mood!\n\nSomos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Nacimos para provocar un cambio real a través de la innovación y el desarrollo sostenible, con la misión de aportar valor a los clientes e impulsar nuestro talento.\n\nFormado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto.\n\nLos valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza.\n\n¿Qué es lo que valoramos?\n\nExperiencia de al menos 3 años como Desarrollador Front End con React Native:\n\n\n Experiencia como desarrollador frontend con JavaScript, creando aplicaciones funcionales y fiables en múltiples pantallas.\n Experiencia trabajando con React Native para el desarrollo de aplicaciones.\n Nivel alto de inglés.\n Experiencia en la creación de soluciones de entretenimiento, tanto en aplicaciones con gran volumen de usuarios como en herramientas internas para optimizar el desarrollo.\n Capacidad de trabajo en equipo y comunicación efectiva con clientes y equipos multidisciplinarios.\n\n\n¿Cuáles serían tus funciones?\n\n\n Desarrollo de aplicaciones SmartTV: Diseñar, desarrollar y optimizar aplicaciones para entornos SmartTV, asegurando experiencias fluidas y de alta calidad en diferentes dispositivos.\n Desarrollo Frontend: Crear interfaces modernas y eficientes utilizando JavaScript y tecnologías asociadas, garantizando rendimiento y escalabilidad.\n Desarrollo con React Native: Implementar y mantener aplicaciones utilizando React Native, adaptando funcionalidades a múltiples plataformas y pantallas.\n Optimización de experiencia de usuario: Construir soluciones de entretenimiento robustas, ya sea para aplicaciones con millones de usuarios o para herramientas internas que mejoren la productividad del equipo.\n Colaboración Multidisciplinaria: Trabajar estrechamente con equipos de producto, diseño y desarrollo para ofrecer soluciones innovadoras y alineadas con las necesidades del negocio.\n Colaborar en el desarrollo de Soluciones Low-Code/No-Code: Crear y gestionar soluciones innovadoras utilizando la PowerPlatform (Power Apps, Power Automate, Power BI, Dataverse), adaptadas a las necesidades de nuestros clientes.\n\n\nNos encantaría si además te manejases bien con Inglés.\n\nAdemás, valoraremos muy positivamente si tienes experiencia y/o conocimientos en:\n\n\n Desarrollo para plataformas de SmartTV como Samsung, LG o Android TV.\n Experiencia trabajando con Shaka Player u otros reproductores de vídeo en JavaScript.\n Conocimientos en optimización de streaming y reproducción multimedia.\n Experiencia en entornos ágiles de desarrollo.\n Experiencia en el desarrollo de aplicaciones de alto rendimiento y escalabilidad.\n\n\nY con nosotros podrás disfrutar de:\n\n✅Contrato Indefinido\n\n✅ 100% REMOTO\n\n✅Formación interna y acceso a certificaciones ♻Consulta nuestro calendario aquí:\n\nhttps://www.knowmadmood.com/es/talento/formacion\n\n✅Plan de retribución flexible (seguro médico, transporte, tickets guardería, tickets restaurante)\n\n✅Embajador de nuestra marca, a través de nuestro plan amigo\n\n¡Recomienda a tus amigos y llévate un extra!\n\n✅¡Eventos, meetups, techdays, charlas...y mucho más!\n\n✅ 26 días de descanso (22 días vacaciones, 2 días de libre disposición y 24 y 31 diciembre festivos por defecto)\n\n✅ Horario: 8.30 a 18h ( flexible) L-J y V 8 a 15h e Intensiva de Verano Julio y Agosto de 8 a 15h\n\nPara estar al corriente de nuestras novedades síguenos aquí -> knowmad mood\n\nEn knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T05:13:39.847Z",
+    "sourceHash": "8128b9d4fd1130d3701aa9503a5f987ca46720c3738b5a0880fa73073aa01bd1",
+    "company": {
+      "id": "knowmadmood",
+      "name": "knowmad mood",
+      "logoUrl": "https://logo.clearbit.com/knowmadmood.com",
+      "industry": "Technology",
+      "website": "https://knowmadmood.com"
+    },
+    "slug": "desarrollador-a-frontend-react-native-knowmad-mood-8128b9d4",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0d6b80d4788ed4843a9cb91491a393d57dd96569d68efad4028ff0a8c29d093d",
+    "title": "Front End Developer Internship",
+    "applyUrl": "http://unstop.com/internships/front-end-developer-internship-remote-springer-capital-investments-llc-usa-1763724",
+    "description": "About the job\n\nSpringer Capital Investments LLC (USA) is actively hiring for the role of Front End Developer Internship!\n\nAbout The Organization\n\nSpringer Capital Investments LLC (USA) offers an opportunity for aspiring front-end developers to gain practical experience through a structured remote internship. The role provides an environment focused on hands-on contribution, professional development, and exposure to real-world project workflows. Interns can build their experience while working flexibly and receiving support through meaningful feedback and professional recognition.\n\nRoles And Responsibilities\n\n\nAssist in developing and maintaining user-facing web interfaces for assigned projects.\nTranslate design concepts and project requirements into functional front-end components.\nSupport the implementation of responsive and accessible page layouts across different screen sizes.\nCollaborate with team members to understand project objectives and deliver front-end updates.\nReview implemented interfaces to identify visual, functional, and usability issues.\nInvestigate front-end problems and contribute to practical solutions under guidance.\nParticipate in project discussions, progress updates, and feedback sessions.\nMaintain clear documentation of assigned work, updates, and implementation details.\nIncorporate feedback to improve the quality and usability of front-end deliverables.\nContinue learning through hands-on tasks and exposure to professional development practices.\n\n\nJob Summary\n\nThis 3-month remote internship with Springer Capital Investments LLC (USA) is an opportunity to gain practical experience as a Front End Developer while contributing to real-world web projects from a flexible work environment. With flexible hours, interns can manage their schedules while developing valuable professional experience and receiving guidance through their work. Successful completion includes a Certificate of Completion, and the opportunity also offers a Letter of Recommendation and potential consideration for a Job Offer, making it a meaningful step toward launching a career in front-end development.\n\n\n\nDesired Skills and Experience\n\nJavaScript, HTML, CSS, UI/UX Design, Web Accessibility (WCAG)",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T04:57:11.728Z",
+    "sourceHash": "0d6b80d4788ed4843a9cb91491a393d57dd96569d68efad4028ff0a8c29d093d",
+    "company": {
+      "id": "springercapital",
+      "name": "Springer Capital",
+      "logoUrl": "https://logo.clearbit.com/springercapital.com",
+      "industry": "Technology",
+      "website": "https://springercapital.com"
+    },
+    "slug": "front-end-developer-internship-springer-capital-0d6b80d4",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "mid",
+      "employmentType": "internship"
+    }
+  },
+  {
+    "id": "c0e8bb2a0e88ea16f5977230cc8aa60db30954ac9be9e24e7cefc004da19563c",
+    "title": "Senior Software Engineer (React/Front End)",
+    "applyUrl": "https://bellwoodlabs.applytojob.com/apply/mYmOujyz1i/Senior-Software-Engineer-ReactFront-End?source=LILI",
+    "description": "About the job\n\nCompany Description\n\nBellwood is a dynamic Product Development Consultancy. We're a team of developers, designers, marketers and entrepreneurs that companies turn to when they want to take a software product from conception to creation.\n\nAbout The Job\n\nWe are seeking a Senior Software Engineer with deep React and front-end engineering experience to join our team. The ideal candidate will have experience that closely aligns with our current tech stack, particularly React, Redux, TypeScript, Vitest, Playwright, and GitHub Actions.\n\nThis is a unique opportunity to work alongside an experienced team that excels at building quality client products at scale. You'll own features end-to-end, raise the bar on engineering practices like testing, CI/CD, code review, and secure delivery, and help client teams build patterns that keep their products maintainable as they grow. This position reports to an Engineering Team Lead.\n\nKey Responsibilities Include:\n\n\nOwning feature development end-to-end in React applications, from application design through implementation and release\nEstablishing and improving automated quality gates, including unit, integration, and end-to-end testing\nLeading code reviews to raise code quality, consistency, and maintainability across client codebases\nAuthoring and maintaining GitHub Actions CI/CD pipelines for build, test, lint, and security checks\nAdministering GitHub repositories, including dependency management, permissions, branch protection, and overall repo hygiene\nPartnering with client teams to harden security and quality posture through dependency updates, vulnerability remediation, and static analysis\nBuilding reusable patterns and foundations, such as shared components and design system integrations, so products stay scalable and safe to evolve\nMentoring and pairing with engineers, including client and distributed teams, on modern React and front-end practices\nCommunicating technical concepts clearly to both technical and non-technical stakeholders\nLearning and adapting quickly across a variety of technologies, tools, and client platforms, including enterprise systems you may not have worked with before\nPerforming other duties as assigned\n\n\nQualifications\n\n\n5+ years of software development experience\nDeep experience with React and Redux (or comparable state management), including application design\nStrong TypeScript experience, including integrating front ends with REST APIs and backend platforms\nExperience with React unit and integration testing, and with end-to-end testing\nDemonstrated code review leadership on React codebases\nExperience authoring and maintaining GitHub Actions workflows and administering GitHub repositories\nExperience building accessible, responsive UIs, ideally within a shared design system\nStrong communication, collaboration, and mentoring skills\nAbility to work effectively across multiple projects and technologies\n\n\nExperience with Vitest, Playwright, Snyk, SonarQube, Cursor or other AI-assisted development tools, Next.js, AWS or other cloud platforms, or enterprise platforms such as IBM TRIRIGA is highly valued.\n\nAs a senior engineer, you'll often be the technical face of Bellwood to our clients. You should be comfortable leading technical conversations with client stakeholders, translating business needs into clear technical plans, setting expectations and pushing back when needed, and building the trust that turns engagements into long-term partnerships.\n\nCompensation & Benefits\n\nCompensation at Bellwood is determined by several factors, including job scope, title, and relevant experience. We offer competitive, market-aligned pay supported by comprehensive benefits and opportunities for professional growth.\n\nThe estimated annual salary range for this role is $105,000 – $125,000\n\nBenefits Include\n\n\nRemote work environment\nGenerous PTO\nSubsidized medical, dental, and vision insurance\nShort- and long-term disability coverage\n401(k) plan\nReferral bonuses\nCompany retreats\n\n\nTravel Requirements\n\nThis position requires travel to attend two company-wide events annually. These events are an important part of Bellwood's culture and collaboration practices. Bellwood will arrange and cover all travel and accommodation expenses.\n\nIn addition, this role includes four on-site visits per year to our client's headquarters in Atlanta, GA. Additional travel related to client or team needs may occasionally be required.\n\n\nCandidates in the Atlanta area will be given priority consideration\n\n\nJoin our tight-knit team of sharp technologists to leverage your talents, expand your skills, and help build exceptional software products. We look forward to meeting you!\n\nPowered by JazzHR\n\nmYmOujyz1i",
+    "location": "Remote - Georgia",
+    "country": "Georgia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T04:52:00.365Z",
+    "sourceHash": "c0e8bb2a0e88ea16f5977230cc8aa60db30954ac9be9e24e7cefc004da19563c",
+    "company": {
+      "id": "bellwood",
+      "name": "Bellwood",
+      "logoUrl": "https://logo.clearbit.com/bellwood.com",
+      "industry": "Technology",
+      "website": "https://bellwood.com"
+    },
+    "slug": "senior-software-engineer-react-front-end-bellwood-c0e8bb2a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "redux",
+        "playwright"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Georgia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "c5d7c10f7099dc57c626d282a51710de80ff2648545706541b70a763b2b923eb",
     "title": "Frontend Engineer (React/Next.js) - Remote Work | REF#302944",
     "applyUrl": "https://applicants.bairesdev.com/job/169/302944/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml&__cf_chl_rt_tk=8BqD4I9gjzdK3CtdQiA_xiahnhMvM7Icse.V6pLSvwo-1790881961-1.0.1.1-hdh2fBfFmBoVSCcDvGjldCUOQyNxdY53Yk8DJjyiD2E",
