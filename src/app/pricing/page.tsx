@@ -135,14 +135,14 @@ export default function PricingPage() {
         <div className="max-w-3xl mx-auto text-center mb-12 flex flex-col items-center">
           <div className="inline-flex items-center justify-center gap-1.5 bg-[#f0fdf4] text-[#166534] border border-[#bbf7d0] px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold mb-4 sm:mb-6 shadow-sm uppercase tracking-wider">
             <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-            Aggregated from 100+ job boards &amp; company career pages. Save hours of searching!
+            2,400+ jobs from 100+ sources - updated every 24 hours
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 w-full">
-            Find remote frontend jobs <span className="text-[#2563eb]">faster.</span>
+            You spend 20+ hours a week <span className="text-[#2563eb]">searching for jobs.</span>
           </h1>
           <p className="text-xl text-gray-600">
-            Browse every remote frontend job for free. Upgrade to Pro to unlock
-            advanced search, full descriptions, direct apply links, and daily alerts.
+            We already found 2,400+ of them for you. Unlock full descriptions,
+            1-click apply links, and daily alerts for $9/mo.
           </p>
         </div>
 
@@ -165,7 +165,7 @@ export default function PricingPage() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td>AI-Powered Filters (Tech Stack, Global Remote, Seniority)</td>
+                      <td>AI-Powered Filters (Tech Stack, Remote Scope, Seniority)</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
@@ -175,12 +175,12 @@ export default function PricingPage() {
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>Direct apply links to company career pages</td>
+                      <td>1-click direct apply links to company career pages</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>Daily email alerts with fresh jobs in your inbox</td>
+                      <td>10+ fresh jobs delivered to your inbox daily</td>
                       <td className="muted-cell text-center">❌</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
@@ -273,31 +273,31 @@ export default function PricingPage() {
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>AI-Powered Search & Filters (Tech Stack, Remote Scope)</span>
+                  <span>AI-Powered Search & Filters (Tech Stack, Remote Scope, Seniority)</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Full job descriptions & requirements</span>
+                  <span>Full job descriptions, requirements & salary info</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Direct apply links to company career pages</span>
+                  <span>1-click apply links direct to company career pages</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>Daily email alerts with fresh jobs in your inbox</span>
+                  <span>10+ fresh jobs delivered to your inbox every morning</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
-                  <span>100% remote, frontend-only, curated daily</span>
+                  <span>100% remote. 100% frontend. Updated every 24 hours.</span>
                 </li>
                 <li className="flex items-center gap-3">
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -315,7 +315,7 @@ export default function PricingPage() {
                     onClick={() => router.push("/auth/signup?redirect=/pricing")}
                     className="w-full py-3 rounded-full text-white bg-[#d97706] hover:bg-[#b45309] font-bold text-lg shadow-lg shadow-orange-500/20 transition-colors"
                   >
-                    ⭐ Get Pro Membership for $9/month
+                    ⭐ Unlock 2,400+ Jobs - $9/mo
                   </button>
                 ) : (
                   <div className="flex flex-col gap-4">
@@ -378,7 +378,7 @@ export default function PricingPage() {
                   onClick={() => router.push("/")}
                   className="w-full text-gray-600 hover:text-gray-900 py-3 transition-colors underline mt-2"
                 >
-                  Browse job titles (free)
+                  Browse 2,400+ Job Titles (Free)
                 </button>
 
                 <div className="mt-4 pt-4 border-t border-[#e2e2e6] text-xs text-gray-500 text-center leading-relaxed">

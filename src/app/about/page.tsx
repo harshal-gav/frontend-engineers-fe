@@ -51,10 +51,10 @@ export default function AboutPage() {
 
           {/* What we are — Entity SEO */}
           <p className="text-gray-700 leading-relaxed mb-4">
-            FrontendEngineers.com is the ultimate aggregator for remote frontend developer jobs. We scrape, source, and aggregate jobs from over 100+ different job boards, company career pages, and platforms like LinkedIn, WeWorkRemotely, and AngelList.
+            FrontendEngineers.com aggregates 2,400+ remote frontend developer jobs from 100+ sources - including LinkedIn, WeWorkRemotely, AngelList, and direct company career pages - into one searchable platform. Updated every 24 hours.
           </p>
           <p className="mb-6 text-gray-600 leading-relaxed">
-            Stop wasting hours checking 10 different sites every day. We bring every remote React, Vue, Angular, TypeScript, and Next.js job into one single, searchable platform. Our goal is to save you massive amounts of time in your job hunt.
+            You spend 20+ hours a week checking 10 different job boards. We check 100+ sources for you, every single day. One search. Every remote React, Vue, Angular, TypeScript, and Next.js job in one place.
           </p>
 
           {/* Who we serve */}
@@ -63,14 +63,14 @@ export default function AboutPage() {
             <div className="p-6 rounded-xl border border-[#e2e2e6] bg-[#f9fafb]">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">For Frontend Developers</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Browse every remote frontend job for free. Pro members unlock search, filters, full descriptions, direct apply links, and daily email alerts for every job.
+                Browse 2,400+ remote frontend jobs for free. Pro members unlock search, filters, full descriptions, 1-click apply links, and 10+ fresh jobs in their inbox every morning.
               </p>
             </div>
             <div className="p-6 rounded-xl border border-[#e2e2e6] bg-[#f9fafb]">
               <h3 className="text-lg font-semibold text-gray-900 mb-2">For Employers &amp; Hiring Managers</h3>
               <p className="text-gray-600 text-sm leading-relaxed">
-                Reach a targeted audience of qualified frontend engineers. Post your remote frontend developer 
-                jobs and connect with React, TypeScript, and JavaScript specialists who are actively looking.
+                Reach 5,000+ frontend engineers directly. Post your remote frontend developer 
+                jobs and connect with React, TypeScript, and JavaScript specialists who are actively looking. Unlimited posts for $99/mo.
               </p>
             </div>
           </div>
@@ -78,16 +78,15 @@ export default function AboutPage() {
           {/* What problem we solve */}
           <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-900">Why a Specialized Frontend Job Board?</h2>
           <p className="mb-4 text-gray-600 leading-relaxed">
-            Generic job boards are noisy. Frontend developers waste hours sifting through irrelevant 
+            Generic job boards are noisy. Frontend developers waste 20+ hours a week sifting through irrelevant 
             backend, DevOps, and non-technical listings. Employers compete with thousands of unrelated 
-            postings for developer attention. FrontendEngineers.com solves this by providing a focused, 
-            curated marketplace where every job is relevant to frontend engineering.
+            postings for developer attention. FrontendEngineers.com solves this: every job listed is a remote frontend role. Nothing else.
           </p>
           <p className="mb-8 text-gray-600 leading-relaxed">
-            We manually vet listings to filter out hybrid roles disguised as remote, ensuring you find 
+            We vet listings to filter out hybrid roles disguised as remote, ensuring you find 
             genuine <strong>work-from-anywhere frontend developer jobs</strong>. Whether you&apos;re looking for 
-            <strong> remote React jobs</strong>, <strong>remote TypeScript jobs</strong>, or <strong>remote 
-            Vue jobs</strong>, our curated listings save you time and connect you with quality opportunities.
+            <strong>remote React jobs</strong>, <strong>remote TypeScript jobs</strong>, or <strong>remote 
+            Vue jobs</strong>, our 2,400+ curated listings save you 20+ hours a week.
           </p>
 
           {/* How it works */}
@@ -97,21 +96,21 @@ export default function AboutPage() {
               <span className="w-8 h-8 rounded-full bg-[#2563eb] text-white flex items-center justify-center flex-shrink-0 text-sm font-bold">1</span>
               <div>
                 <h3 className="font-semibold text-gray-900">Browse or Search</h3>
-                <p className="text-gray-600 text-sm">Find remote frontend jobs by technology, company, or keyword. Filter by React, TypeScript, Vue, Angular, and more.</p>
+                <p className="text-gray-600 text-sm">Find remote frontend jobs by technology, company, or keyword. Filter by React, TypeScript, Vue, Angular, seniority, and 15+ other criteria.</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="w-8 h-8 rounded-full bg-[#2563eb] text-white flex items-center justify-center flex-shrink-0 text-sm font-bold">2</span>
               <div>
                 <h3 className="font-semibold text-gray-900">Review &amp; Apply</h3>
-                <p className="text-gray-600 text-sm">Read detailed job descriptions and apply directly through the company&apos;s career page.</p>
+                <p className="text-gray-600 text-sm">Read full job descriptions, requirements, and salary info. Apply directly through the company&apos;s career page with 1-click links.</p>
               </div>
             </div>
             <div className="flex gap-4 items-start">
               <span className="w-8 h-8 rounded-full bg-[#2563eb] text-white flex items-center justify-center flex-shrink-0 text-sm font-bold">3</span>
               <div>
                 <h3 className="font-semibold text-gray-900">Get Pro to Unlock Everything</h3>
-                <p className="text-gray-600 text-sm">Upgrade to Pro membership to unlock company details, full descriptions, locations, and direct apply links. Plus get daily email alerts with fresh jobs.</p>
+                <p className="text-gray-600 text-sm">Upgrade to Pro for $9/mo to unlock full descriptions, 1-click apply links, and 10+ fresh jobs delivered to your inbox every morning.</p>
               </div>
             </div>
           </div>

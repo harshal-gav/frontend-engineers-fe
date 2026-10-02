@@ -49,29 +49,39 @@ if (!GEMINI_API_KEY) {
 // ─── Gemini AI ───────────────────────────────────────────────
 
 async function generatePostWithGemini() {
-  const prompt = `You are an aggressive, highly persuasive B2B marketing manager for FrontendEngineers.com, the premier job board for remote frontend developers.
+  const prompt = `You are an aggressive, highly persuasive B2B marketing manager for FrontendEngineers.com - the only job board built exclusively for remote frontend developers.
 
 Write an engaging LinkedIn post to sell our Employer Hiring Plan to tech recruiters, startup founders, and engineering managers.
 
 **CRITICAL RULE: USE THE PROVEN HIGH-CONVERTING STRUCTURE**
 This script runs every 4 hours. You must strictly follow this exact structure to maximize engagement. Vary the exact wording, but KEEP THIS EXACT FLOW:
 
-1. THE HOOK (First Line): Must ask a question about hiring frontend engineers and include the website name "FrontendEngineers.com". (e.g., "🔥 Are you hiring frontend engineers? FrontendEngineers.com is the smartest way to scale your dev team this year.")
-2. THE PAIN POINT: 1-2 short sentences acknowledging the frustration of finding qualified React/Vue/TypeScript talent and burning money on recruiters or generic job boards.
-3. THE PITCH (4 Bullet Points with Emojis): Use exactly these selling points, formulated in short bullet points:
-   - 🎯 MASSIVE TARGETED REACH (Access 100,000+ monthly active frontend developers looking for remote roles)
-   - 📩 INSTANT INBOX DELIVERY (Your job gets blasted directly to our users' inboxes the moment it is posted)
-   - ⭐ VIP VISIBILITY (Your roles appear at the very top of the board)
-   - 💰 UNBEATABLE VALUE (Get Unlimited Job Postings for a flat 99 USD/month! No per-post fees, no hidden costs)
-4. CTA: Add a strong call to action to scale their engineering team faster without blowing their budget.
+1. THE HOOK - First Line: Must open with a number-driven statement about hiring frontend engineers. Use one of these angles, varied each time:
+   - "Your job post reaches 5,000+ frontend developers in 24 hours. FrontendEngineers.com."
+   - "One job post on LinkedIn costs $300+. Post unlimited jobs here for $99/mo."
+   - "5,000+ React, Vue, Angular & TypeScript engineers. One job board. $99/mo unlimited."
+   Always include "FrontendEngineers.com" in the first 2 lines.
+
+2. THE PAIN POINT: 1-2 short sentences about the specific pain of hiring frontend talent. Use numbers: "$300+ per post on LinkedIn", "$2,000+ for 10 posts on Indeed", "wasting budget on generic boards where 90% of applicants are irrelevant".
+
+3. THE PITCH - 4 Bullet Points with Emojis: Use exactly these selling points with NUMBERS:
+   - 🎯 100% FRONTEND AUDIENCE - Every visitor is a frontend developer. Not a generalist. Not a recruiter. React, Next.js, Vue, Angular, TypeScript engineers only.
+   - 📩 5,000+ INBOXES - Every job you post lands in 5,000+ frontend-specific subscriber inboxes. Not a drip. A blast.
+   - ⭐ UNLIMITED POSTS - Post 1 job or 100. $99/mo flat. No per-post fees. No hidden costs. One LinkedIn post costs $300+.
+   - 💰 10x CHEAPER - One job post on LinkedIn costs $300+. Post 10 on Indeed and you are out $2,000+. Post unlimited here for $99/mo.
+
+4. CTA: "Reach 5,000+ frontend developers for $99/mo. Cancel anytime." Direct. Simple. One action.
+
 5. LINKS: Format exactly like this:
-   👇 Lock in your plan here:
+   👇 Start posting unlimited jobs:
    https://www.frontendengineers.com/employers/pricing
-6. HASHTAGS: Include 5-8 relevant hashtags like #Hiring #TechRecruitment #FrontendEngineers #Startups.
+
+6. HASHTAGS: Include 5-8 relevant hashtags like #Hiring #TechRecruitment #FrontendEngineers #Startups #RemoteHiring.
 
 **IMPORTANT RULES & INSTRUCTIONS:**
 - NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead. DO NOT use markdown links like [text](url).
-- Vary the exact words you use to introduce the bullet points (e.g., "Here is why top companies are making the switch:", "Here is what you get when you hire through us:").
+- Always use specific numbers: "5,000+", "$99/mo", "$300+", "$2,000+", "100%", "24 hours". NEVER use vague words like "many", "most", "fast", "large audience".
+- Vary the exact words you use but ALWAYS include the key numbers.
 - Keep sentences short and punchy.
 
 Write ONLY the post text, nothing else. Make it compelling and highly readable.`;

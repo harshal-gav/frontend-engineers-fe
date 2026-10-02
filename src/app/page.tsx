@@ -150,8 +150,8 @@ export default async function HomePage() {
               <span className="text-[#2563eb]">One Place.</span>
             </h1>
             <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
-              Stop wasting hours searching LinkedIn, Indeed, WeWorkRemotely, company career pages and dozens of other sources.<br className="hidden sm:block"/>
-              FrontendEngineers brings remote frontend jobs together in one place so you can spend less time searching and more time applying.
+              You spend 20+ hours a week checking LinkedIn, Indeed, WeWorkRemotely, and company career pages.<br className="hidden sm:block" />
+              We check 100+ sources for you - every single day. 2,400+ remote frontend jobs, one search.
             </p>
 
             {/* Aggregation trust badges */}
@@ -168,10 +168,10 @@ export default async function HomePage() {
                 href="/pricing"
                 className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
               >
-                ⭐ Get Pro - $9/month
+                ⭐ Unlock All Jobs - $9/mo
               </Link>
               <p className="text-xs text-gray-600 font-medium px-4 text-center">
-                Search hundreds of jobs • AI-Powered Advanced Filters (Tech Stack, Remote, Seniority) • Saved Presets • Daily alerts
+                2,400+ jobs • 100+ sources • Full descriptions • 1-click apply links • Daily email alerts
               </p>
             </div>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">

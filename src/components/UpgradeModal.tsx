@@ -33,28 +33,28 @@ export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalP
 
   const contentMap: Record<UpgradeContext, { title: string; desc: string }> = {
     search: {
-      title: "Unlock advanced search",
-      desc: "Unlock advanced search to find the exact remote frontend roles you're looking for.",
+      title: "Search 2,400+ remote frontend jobs",
+      desc: "Find the exact React, Vue, or TypeScript role you want in seconds - not hours.",
     },
     filters: {
-      title: "Find exactly the jobs you want",
-      desc: "Unlock advanced filters to narrow down by technology, experience, and remote type.",
+      title: "Filter by stack, seniority & remote scope",
+      desc: "Stop scrolling through irrelevant listings. See only jobs that match your skills.",
     },
     details: {
-      title: "Unlock full job details",
-      desc: "Get complete job descriptions and requirements with Pro.",
+      title: "See full job descriptions instantly",
+      desc: "Read requirements, salary info, and tech stacks before you apply. No guessing.",
     },
     apply: {
-      title: "Unlock direct application access",
-      desc: "Get direct links to company career pages and apply faster.",
+      title: "Apply directly on company career pages",
+      desc: "Get 1-click links to apply on the company's own site. Skip the middleman.",
     },
     alerts: {
-      title: "Get matching jobs delivered to you",
-      desc: "We'll send daily emails with fresh jobs that match your preferences.",
+      title: "Get 10+ matching jobs in your inbox daily",
+      desc: "Wake up to fresh remote frontend jobs every morning. Never miss a new listing.",
     },
     save: {
-      title: "Save jobs for later",
-      desc: "Keep track of jobs you want to apply to with Pro.",
+      title: "Save jobs and come back later",
+      desc: "Bookmark roles you want. Review and apply when you're ready.",
     },
   };
 
@@ -100,27 +100,27 @@ export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalP
             <ul className="space-y-3 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                <span>Unlock search & filters to find exactly what you want</span>
+                <span>Search & filter 2,400+ jobs by stack, seniority & scope</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                <span>Full job descriptions & requirements</span>
+                <span>Full job descriptions, requirements & salary info</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                <span>Direct apply links to company career pages</span>
+                <span>1-click apply links direct to company career pages</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                <span>Daily email alerts with fresh jobs in your inbox</span>
+                <span>10+ fresh jobs delivered to your inbox every morning</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                <span>100% remote, frontend-only, curated daily</span>
+                <span>100% remote. 100% frontend. Updated every 24 hours.</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                <span>Save jobs and searches</span>
+                <span>Save jobs & filter presets for later</span>
               </li>
             </ul>
           </div>
@@ -132,7 +132,7 @@ export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalP
             }}
             className="w-full bg-[#d97706] hover:bg-[#b45309] text-white px-6 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 transition-all flex items-center justify-center gap-2"
           >
-            ⭐ Get Pro - $9/month
+            ⭐ Unlock All Jobs - $9/mo
           </button>
           
           <p className="mt-4 text-xs text-gray-500">

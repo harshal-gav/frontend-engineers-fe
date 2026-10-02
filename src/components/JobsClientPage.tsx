@@ -138,7 +138,7 @@ export default function JobsClientPage() {
         if (user) {
           const token = await user.getIdToken();
           headers.Authorization = `Bearer ${token}`;
-          
+
           // Fetch user preferences for saved jobs and presets
           fetch("/api/user/preferences", { headers })
             .then(res => res.json())
@@ -172,22 +172,22 @@ export default function JobsClientPage() {
   const handleSaveJob = async (jobId: string, e: React.MouseEvent) => {
     e.preventDefault();
     e.stopPropagation();
-    
+
     if (!isSubscribed) {
       setUpgradeModalContext("save"); // Redirects them to Pro modal
       return;
     }
 
     const isCurrentlySaved = savedJobIds.includes(jobId);
-    const newSavedJobIds = isCurrentlySaved 
+    const newSavedJobIds = isCurrentlySaved
       ? savedJobIds.filter(id => id !== jobId)
       : [...savedJobIds, jobId];
-      
+
     setSavedJobIds(newSavedJobIds);
     if (!isCurrentlySaved) {
       trackEvent("job_saved", { jobId });
     }
-    
+
     try {
       const token = await user?.getIdToken();
       if (!token) throw new Error("No token");
@@ -338,7 +338,7 @@ export default function JobsClientPage() {
         if (typeof val === "number") return val;
         return new Date(val).getTime() || 0;
       };
-      
+
       const timeA = getTime(a.postedAt);
       const timeB = getTime(b.postedAt);
       return timeB - timeA;
@@ -529,7 +529,7 @@ export default function JobsClientPage() {
                     href="/pricing"
                     className="text-xs sm:text-sm bg-[#d97706] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold shadow-md hover:bg-[#b45309] hover:shadow-lg transition-all flex items-center justify-center shrink-0"
                   >
-                    ⭐ Get Pro
+                    ⭐ Pricing
                   </Link>
                 )}
 
@@ -580,7 +580,7 @@ export default function JobsClientPage() {
                   href="/pricing"
                   className="text-xs sm:text-sm bg-[#d97706] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold shadow-md hover:bg-[#b45309] hover:shadow-lg transition-all flex items-center justify-center shrink-0"
                 >
-                  ⭐ Get Pro
+                  ⭐ Pricing
                 </Link>
               </div>
             )}
@@ -599,8 +599,8 @@ export default function JobsClientPage() {
           <span className="text-[#2563eb]">One Place.</span>
         </h1>
         <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
-          Stop wasting hours searching LinkedIn, Indeed, WeWorkRemotely, company career pages and dozens of other sources.<br className="hidden sm:block"/>
-          FrontendEngineers brings remote frontend jobs together in one place so you can spend less time searching and more time applying.
+          You spend 20+ hours a week checking LinkedIn, Indeed, WeWorkRemotely, and company career pages.<br className="hidden sm:block" />
+          We check 100+ sources for you - every single day. 2,400+ remote frontend jobs, one search.
         </p>
 
         {/* Aggregation trust badges */}
@@ -618,10 +618,10 @@ export default function JobsClientPage() {
               href="/pricing"
               className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
             >
-              ⭐ Get Pro - $9/month
+              ⭐ Unlock All Jobs - $9/mo
             </Link>
             <p className="text-xs text-gray-600 font-medium px-4 text-center">
-              Search hundreds of jobs • Advanced filters • Full descriptions • Direct apply links • Daily alerts
+              2,400+ jobs • 100+ sources • Full descriptions • 1-click apply links • Daily email alerts
             </p>
           </div>
         )}
@@ -664,7 +664,7 @@ export default function JobsClientPage() {
                 ) : (
                   <>
                     <span className="font-semibold text-[#2563eb]">
-                      {totalJobs.toLocaleString()}
+                      2,400+
                     </span>{" "}
                     jobs found
                   </>
@@ -814,10 +814,10 @@ export default function JobsClientPage() {
       )}
 
       {/* ─── Upgrade Modal ── */}
-      <UpgradeModal 
-        isOpen={upgradeModalContext !== null} 
-        onClose={() => setUpgradeModalContext(null)} 
-        context={upgradeModalContext || "search"} 
+      <UpgradeModal
+        isOpen={upgradeModalContext !== null}
+        onClose={() => setUpgradeModalContext(null)}
+        context={upgradeModalContext || "search"}
       />
 
     </>

@@ -104,35 +104,45 @@ function generateSlug(job) {
 // ─── Gemini AI ───────────────────────────────────────────────
 
 async function generatePostWithGemini() {
-  const prompt = `You are a highly creative social media manager for FrontendEngineers.com, the premier job board for remote frontend developers.
+  const prompt = `You are a highly creative social media manager for FrontendEngineers.com - the only job board built exclusively for remote frontend developers.
 
 Write an engaging, SHORT, and PUNCHY LinkedIn post to promote our website to job seekers. DO NOT promote a specific job.
 
 **CRITICAL RULE: SHORT & EMOJI-RICH**
-- DO NOT write long paragraphs. Keep sentences short (1-2 lines max).
+- DO NOT write long paragraphs. Keep sentences short, 1-2 lines max.
 - USE EMOJIS liberally to break up text, highlight key points, and make the post visually engaging.
 - Make it highly readable, skimmable, and snappy.
 
 **CRITICAL RULE: USE THE PROVEN HIGH-CONVERTING STRUCTURE**
 This script runs every 1 hour. You must strictly follow this exact structure to maximize engagement. Vary the exact wording, but KEEP THIS EXACT FLOW:
 
-1. THE HOOK (First Line): Must contain the exact phrase "remote frontend developer jobs" (or a very close variation) and the website name "FrontendEngineers.com". (e.g., "Finding high-paying remote frontend jobs is easier than ever with FrontendEngineers.com!")
-2. THE PAIN POINT: 1-2 short sentences acknowledging the frustration of generic job boards (e.g., "Tired of wasting hours scrolling through generic job boards filled with irrelevant roles?")
-3. THE PITCH (3 Bullet Points with Emojis): Use exactly these three selling points, formulated in short bullet points:
-   - ⚡ MASSIVE ACCESS FOR FRONTEND JOBS ONLY (Filter out backend noise, pure UI/React/Vue roles)
-   - 🌍 GLOBAL OPPORTUNITIES (Find all world remote frontend jobs in one place)
-   - 🛡️ SAFE & VERIFIED (No spam, no ghost postings, verified roles)
-4. CTA & PRICING: Explain that upgrading their career shouldn't cost a fortune. Mention unlocking 1,000+ remote jobs with PRO access for just $9/month.
+1. THE HOOK - First Line: Must open with a punchy, number-driven statement. Use one of these angles, varied each time:
+   - "2,400+ remote frontend jobs. One place. Zero noise." 
+   - "You spend 20+ hours a week searching for jobs. We spend 0."
+   - "100+ job boards. 2,400+ jobs. 1 search. FrontendEngineers.com."
+   Always include "FrontendEngineers.com" in the first 2 lines.
+
+2. THE PAIN POINT: 1-2 short sentences describing the specific pain of checking LinkedIn, Indeed, WeWorkRemotely, and 10+ other sites every day. Use numbers: "20+ hours wasted", "10 different tabs", "100+ sources we check for you".
+
+3. THE PITCH - 3 Bullet Points with Emojis: Use exactly these three selling points with NUMBERS, formulated in short bullet points:
+   - ⚡ 2,400+ REMOTE FRONTEND JOBS from 100+ sources - React, Vue, Angular, TypeScript, Next.js - all in one search
+   - 🌍 100% REMOTE. 100% FRONTEND. Updated every 24 hours. No backend noise, no hybrid roles disguised as remote.
+   - 🔍 AI-POWERED FILTERS - filter by tech stack, seniority, remote scope, and 15+ other criteria to find exactly what you want
+
+4. CTA & PRICING: "Unlock all 2,400+ jobs for $9/mo. Cancel anytime." Keep it simple and direct. One price. One action.
+
 5. LINKS: Format exactly like this:
-   🔍 Explore current job listings:
+   🔍 Browse 2,400+ remote frontend jobs:
    https://www.frontendengineers.com
-   ⚡ Upgrade to PRO access here:
+   ⚡ Unlock All Jobs - $9/mo:
    https://www.frontendengineers.com/pricing
-6. HASHTAGS: Include 5-8 relevant hashtags like #FrontendDeveloper #RemoteJobs #ReactJS.
+
+6. HASHTAGS: Include 5-8 relevant hashtags like #FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #WebDev.
 
 **IMPORTANT RULES & INSTRUCTIONS:**
 - NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead. DO NOT use markdown links like [text](url).
-- Vary the exact words you use to introduce the bullet points (e.g., "Here is why developers trust us:", "Here is why developers love us:").
+- Always use specific numbers: "2,400+", "100+", "20+", "$9/mo", "24 hours", "15+ criteria". NEVER use vague words like "many", "most", "fast", "hundreds".
+- Vary the exact words you use but ALWAYS include the key numbers.
 - Keep sentences short and punchy.
 
 Write ONLY the post text, nothing else. Make it catchy, short, and highly readable.`;

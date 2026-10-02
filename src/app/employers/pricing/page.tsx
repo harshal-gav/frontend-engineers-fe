@@ -108,10 +108,10 @@ export default function EmployerPricingPage() {
       <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Hire Frontend Developers at Scale <span className="text-[#10b981]">Without Paying Per Job</span>
+            Your job post reaches 5,000+ frontend developers <span className="text-[#10b981]">in 24 hours</span>
           </h1>
           <p className="text-xl text-gray-600">
-            Reach our audience of 100K+ frontend developers directly. Post unlimited React, Next.js, Vue, Angular and TypeScript jobs to our highly focused community for $99/month.
+            Not backend. Not DevOps. Not data scientists. Just React, Next.js, Vue, Angular, and TypeScript engineers actively looking for remote work. Post unlimited jobs for $99/mo.
           </p>
         </div>
 
@@ -128,8 +128,8 @@ export default function EmployerPricingPage() {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Frontend-Only Audience</h3>
-                    <p className="text-gray-600">Stop paying for generic job boards. Get your roles in front of exactly the right audience React, Next.js, Vue, Angular, and TypeScript talent.</p>
+                    <h3 className="text-xl font-semibold mb-2">100% Frontend Audience</h3>
+                    <p className="text-gray-600">Every visitor is a frontend developer. Not a generalist. Not a recruiter. Your React, Next.js, Vue, Angular, and TypeScript roles get seen by exactly the right people.</p>
                   </div>
                 </div>
 
@@ -139,7 +139,7 @@ export default function EmployerPricingPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Direct Reach to 5,000+ Engineers</h3>
-                    <p className="text-gray-600">Every job you post is blasted directly to our 5K+ frontend-specific mailing list. Immediate visibility means faster hires and qualified candidates.</p>
+                    <p className="text-gray-600">Every job you post lands in 5,000+ inboxes of frontend-specific subscribers. Not a drip. A blast. Immediate visibility means faster hires.</p>
                   </div>
                 </div>
 
@@ -148,8 +148,8 @@ export default function EmployerPricingPage() {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Unlimited Jobs. One Flat Fee.</h3>
-                    <p className="text-gray-600">Posting 10 jobs individually costs thousands on traditional platforms. Post unlimited vacancies for all your clients for just $99/month.</p>
+                    <h3 className="text-xl font-semibold mb-2">Unlimited Jobs. $99/mo. No Per-Post Fees.</h3>
+                    <p className="text-gray-600">One job post on LinkedIn costs $300+. Post 10 on Indeed and you're out $2,000+. Post unlimited jobs here for a flat $99/mo.</p>
                   </div>
                 </div>
 
@@ -158,8 +158,8 @@ export default function EmployerPricingPage() {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Ideal for Growing Teams & Agencies</h3>
-                    <p className="text-gray-600">Whether you're a startup hiring multiple engineers or a recruiter juggling various clients, our Hiring Pass makes scaling easy.</p>
+                    <h3 className="text-xl font-semibold mb-2">Built for Growing Teams & Agencies</h3>
+                    <p className="text-gray-600">Hiring 3 engineers or 30? Recruiting for 1 client or 10? One subscription covers every role. No per-post limits. No hidden fees.</p>
                   </div>
                 </div>
               </div>
@@ -199,7 +199,7 @@ export default function EmployerPricingPage() {
                     onClick={() => router.push("/auth/signup?redirect=/employers/pricing")}
                     className="w-full py-4 rounded-xl text-white bg-[#2563eb] hover:bg-[#1d4ed8] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
                   >
-                    Hire Frontend Developers → $99/month
+                    Reach 5,000+ Frontend Developers → $99/mo
                   </button>
                 ) : user && isEmployer ? (
                   <button

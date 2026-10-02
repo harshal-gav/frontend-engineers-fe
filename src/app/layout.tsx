@@ -22,10 +22,10 @@ const jetbrainsMono = JetBrains_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://frontendengineers.com"),
   title: {
-    default: "Remote Frontend Developer Jobs | FrontendEngineers.com",
+    default: "2,400+ Remote Frontend Jobs in One Place | FrontendEngineers.com",
     template: "%s | FrontendEngineers.com"
   },
-  description: "Find the best remote frontend developer jobs aggregated from 100+ job boards. We curate premium, 100% remote positions for React, Vue, Angular, and Next.js engineers.",
+  description: "2,400+ remote frontend jobs from 100+ sources in one place. React, Vue, Angular, TypeScript & Next.js - updated daily. Stop wasting 20+ hours a week searching.",
   keywords: [
     "remote frontend developer jobs",
     "frontend engineer jobs",
@@ -54,18 +54,18 @@ export const metadata: Metadata = {
     google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "your-google-verification-code-here",
   },
   openGraph: {
-    title: "Remote Frontend Developer Jobs | FrontendEngineers.com",
-    description: "Find the best remote frontend developer jobs aggregated from 100+ job boards. We curate premium, 100% remote positions for React, Vue, Angular, and Next.js engineers.",
+    title: "2,400+ Remote Frontend Jobs. One Place. | FrontendEngineers.com",
+    description: "Stop checking 10 different job boards. We aggregate 2,400+ remote React, Vue, Angular & TypeScript jobs from 100+ sources - updated daily.",
     url: "https://frontendengineers.com",
     siteName: "FrontendEngineers.com",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1456, height: 816, alt: "FrontendEngineers.com — Remote Frontend Developer Jobs" }],
+    images: [{ url: "/og-image.jpg", width: 1456, height: 816, alt: "2,400+ Remote Frontend Jobs in One Place - FrontendEngineers.com" }],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Remote Frontend Developer Jobs | FrontendEngineers.com",
-    description: "Find the best remote frontend developer jobs aggregated from 100+ job boards. We curate premium, 100% remote positions for React, Vue, Angular, and Next.js engineers.",
+    title: "2,400+ Remote Frontend Jobs. One Place. | FrontendEngineers.com",
+    description: "Stop checking 10 different job boards. We aggregate 2,400+ remote React, Vue, Angular & TypeScript jobs from 100+ sources - updated daily.",
     images: ["/og-image.jpg"],
   },
   robots: {
