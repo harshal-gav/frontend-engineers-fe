@@ -1,5 +1,105 @@
 [
   {
+    "id": "abf90651fc7f09b69d6839e3bb4645a87147770a5274e950d39f6c04e8f9c787",
+    "title": "Senior Frontend React Engineer",
+    "applyUrl": "https://www.talenthop.com/apply-with-ai/1df85eba-a481-4786-880d-a2596c43f74a?utm_medium=job_posting&utm_source=linkedin&utm_campaign=software_engineer&utm_category=software_engineer&utm_term=senior_frontend_react_engineer",
+    "description": "About the job\n\nThis is a Fully Remote Job\n\n\n\n\nAbout Our Client:\n\nModern Family Law is a national law firm specializing in family law. The organization addresses challenges in family legal services by developing technology products that enhance user experience for both clients and attorneys. Their approach integrates enterprise systems, payments, data, and AI capabilities to support complex legal workflows at scale.\n\n\n\n\nAbout the Opportunity:\n\nThe SENIOR FRONTEND REACT ENGINEER role is responsible for designing and implementing the frontend architecture of a new technology product tailored to family law workflows. This position ensures that the user experience is reliable, secure, and scalable, contributing directly to the program's ability to deliver effective legal services through advanced technology.\n\n\n\n\nResponsibilities:\n\nOwn frontend architecture and implementation in React and TypeScript.\nTranslate product designs into production-ready user experiences.\nDevelop frontend patterns for complex multi-step workflows with validation and error handling.\nCollaborate with backend engineers to define API contracts and data structures.\nEstablish component architecture, state management, routing, and form strategies.\nBuild secure, role-aware interfaces that accurately reflect permissions and workflow states.\nIntegrate AI-powered features into product workflows.\nEnsure frontend performance, accessibility, responsiveness, and browser compatibility.\nImplement testing practices covering components and workflows.\nReview code, set frontend standards, and guide other frontend developers.\n\n\n\n\nRequirements:\n\nExperience building React and TypeScript applications with complex workflows.\nProven ability to establish frontend architecture integrating backend services.\nStrong skills in component architecture, state management, forms, routing, and maintainable patterns.\nExperience with multi-step workflow applications including validation and error states.\nUnderstanding of frontend authentication and role-aware interfaces.\nAbility to partner with backend teams on API design.\nKnowledge of accessibility, responsive design, browser compatibility, and frontend performance.\nExperience with automated frontend testing.\nCapability to provide technical guidance and set frontend standards.\nAbility to work independently on greenfield projects and make architectural decisions.\n\n\n\n\nPreferred Qualifications:\n\nExperience with AI-enabled frontend workflows.\nBackground in payment systems, client intake, or state-sensitive workflows.\nExperience handling sensitive client data or working in regulated environments.\nCollaboration experience with product and design teams.\nLegal or legal technology industry experience.\n\n\n\n\nPay Range and Compensation Package:\n\nThe pay range and compensation package for this role will be determined based on the candidate's experience, skills, and other relevant factors.\n\n\n\n\nEqual Opportunity Statement: Our client is an equal opportunity employer. They celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, or national origin.\n\n\n\n\nNote:\n\nTalentHop is a recruitment partner of this role. Please note that all employment decisions, including candidate assessment, interviews, hiring, compensation, and employment terms, are made exclusively by the hiring employer.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T18:17:46.190Z",
+    "sourceHash": "abf90651fc7f09b69d6839e3bb4645a87147770a5274e950d39f6c04e8f9c787",
+    "company": {
+      "id": "talenthop",
+      "name": "TalentHop",
+      "logoUrl": "https://logo.clearbit.com/talenthop.com",
+      "industry": "Technology",
+      "website": "https://talenthop.com"
+    },
+    "slug": "senior-frontend-react-engineer-talenthop-abf90651",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "1a6b02ebb7b5f289e8ada12318879a79e50faecd644943aff7b24a1dc4c6e3f0",
+    "title": "Senior Frontend Developer (all genders)(EN)",
+    "applyUrl": "https://contabo.jobs.personio.de/job/2785889?language=en&display=en&src=LinkedIn",
+    "description": "About the job\n\nYOUR CREATIVE FIELD\n\nWe are looking for two full-time, permanent Senior Frontend Developer (all genders) to start as soon as possible. We live remote-first within Germany, but you have the freedom to choose whether you want to work hybrid or completely on-site due to your proximity to one of our locations.\n\nYou’ll become an integral part of a new team which is going to be responsible for the creation and maintenance of Contabo's new product line. You’ll be part of a new team in a green field scenario making design, code and infrastructure decisions based on our product strategy and time-to-market.\n\nWe’re looking for brave, pragmatic risk takers who find a balance between speed and perfectionism, who participate in on-call but also proactively work with the team on improving the redundancy and up-time of our systems.\n\nYour main focus is going to be on everything our customers can touch or use to interact with our platform – mainly GUI but also other cloud-native open source tools like terraform or CLIs etc, making sure we develop in the open with an active presence. You’ll be building on-top of an API teams and working closely with UX designers to build the best customer experience possible.\n\nSince the product is new you’ll have the chance to develop from the ground up, develop fast, fix fast and bring learnings back into the team. Standardise API’s but also join in on shaping the design of the product with integration to design frameworks.\n\nWHAT CONVINCES US\n\nYour personality, paired with:\n\n\nTypeScript 5.9 – strong production experience, you use the type system to actually prevent bugs\nSvelte 5 including client-side routing (svelte5-router); deep prior Svelte experience is not required if you're strong in TypeScript and a comparable modern reactive framework\nREST APIs – building and consuming them; comfortable with APIs that are still evolving\nDocker, Webpack 5, PostCSS – containerized builds and frontend tooling are not foreign territory\nSvelte Material UI (SMUI) or comparable component library experience\nE2E testing with Playwright and/or Cypress\nKeycloak.js or comparable SSO/OAuth implementation experience \nFluent English skills are a must have and German language skills are a plus\n\n\nWe know that you may not currently meet all the requirements. But if you come to us with the right amount of commitment and enthusiasm, we can take off together and make a big difference.\n\nAWESOME PROSPECTS\n\nAt Contabo, we are constantly evolving. Our growth creates space for new ideas, ownership, and real impact for people who want to make a difference.\n\nWhat defines us is trust, direct communication, and an open feedback culture. We believe the best solutions are built together and that everyone has the opportunity to contribute, grow, and leave their own footprint.\n\nAdditionally, we offer:\n\n\nWork the way that fits your life – Remote or hybrid with flexible hours for a healthy work-life balance and the same technical equipment at home as in the office\nExperience real freedom – Workation across the EU and in our summer office in Mallorca\nStay active and healthy – Access to EGYM Wellpass and thousands of fitness and wellness facilities\nEnjoy exclusive perks – Attractive discounts on many products and services through our corporate benefits program\nRecharge your energy – 30 days of vacation plus additional days off on Christmas Eve and New Year’s Eve\nGive back – An extra day off to get involved in social activities through our Volunteer Day\nMake an impact – Take ownership and bring your ideas to life with real creative freedom\nKeep growing – Individual professional and personal development opportunities in an innovative tech environment\nFeel comfortable where you work – Modern, conveniently located offices across our European locations\nBe part of a diverse team – Work in an international environment shaped by diversity\nCreate lasting memories – Company events and team activities you won’t forget\n\n\nHOW TO REACH US\n\nIf you have any questions, you can reach out to Alina by phone +49 89 2441067714\n\nABOUT US\n\nContabo - High-quality Cloud Hosting Made in Germany!\n\nAs a leading infrastructure service provider in the field of cloud instances and dedicated servers, we have stood for first-class quality, reliability and favorable prices since our foundation in Munich in 2003. Meanwhile, more than 300,000 customers in over 190 countries trust our services.\n\nWe specialize in providing German quality to users worldwide, focusing on the stability and security of our data centers, the optimization of internal processes, and excellent customer support.\n\nBecome a part of our future-oriented company, which plays a significant role in the development of digital cloud hosting, and support us with your ideas and commitment.",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T17:49:16.807Z",
+    "sourceHash": "1a6b02ebb7b5f289e8ada12318879a79e50faecd644943aff7b24a1dc4c6e3f0",
+    "company": {
+      "id": "contabo",
+      "name": "Contabo",
+      "logoUrl": "https://logo.clearbit.com/contabo.com",
+      "industry": "Technology",
+      "website": "https://contabo.com"
+    },
+    "slug": "senior-frontend-developer-all-genders-en-contabo-1a6b02eb",
+    "aiTags": {
+      "stack": [
+        "svelte",
+        "typescript",
+        "webpack",
+        "cypress",
+        "playwright"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a1df0917b22fa718cbc2490af8a2f845a369ddb8f492e29f2fd7bbd45dd78497",
+    "title": "Frontend Developer",
+    "applyUrl": "https://cutshort.io/job/Frontend-Developer-Hyderabad-Interface-Matters-irCYC5NE?utm_source=linkedin-feed&utm_medium=xml&utm_content=job-posting&applicationsource=linkedin-feed",
+    "description": "About the job\nThis job is sourced from a job board. Learn More\n\nSkill Set Required - \n\n\nMust have - Javascript, React JS, React Native, Typescript\nGood to have - Andriod/iOS, Express.JS, Angular, VUE, Team Lead experience/Scrum Master, Design Experience\nWorking Experience on building Dashboards, UI Prototypes, Internal Tools\nProfile - Independent, Self-Organised, Problem Solver\n\n\nSkills:- React.js, Javascript, React Native, TypeScript, Angular (2+), Vue.js, Team Management, Agile/Scrum and User Interface (UI) Design",
+    "location": "Remote - Brunei",
+    "country": "Brunei",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-02T17:43:21.193Z",
+    "sourceHash": "a1df0917b22fa718cbc2490af8a2f845a369ddb8f492e29f2fd7bbd45dd78497",
+    "company": {
+      "id": "interfacematters",
+      "name": "Interface Matters",
+      "logoUrl": "https://logo.clearbit.com/interfacematters.com",
+      "industry": "Technology",
+      "website": "https://interfacematters.com"
+    },
+    "slug": "frontend-developer-interface-matters-a1df0917",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "typescript",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brunei"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "06bac2fa448cfb7f5d70e9f487c6aff70c691a81493d634d9959c9f11034dfc9",
     "title": "Lead Staff Front End Engineer (Remote)",
     "applyUrl": "https://chamberlain.wd1.myworkdayjobs.com/Chamberlain_Group/job/Remote---California/Staff-Engineer--Remote-_JR31626?source=LinkedIn",
