@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Post a Frontend Developer Job | Hire Frontend Engineers",
-  description: "Post your remote frontend developer job on FrontendEngineers.com and reach a targeted audience of qualified React, TypeScript, Vue, Angular, and JavaScript engineers. Start hiring today.",
+  description: "Post your remote frontend developer job on FrontendEngineers.com and reach a highly targeted, exclusive audience of React, Vue, Angular, and Next.js engineers.",
   alternates: {
     canonical: "/employers/pricing",
   },
   openGraph: {
     title: "Post a Frontend Developer Job | FrontendEngineers.com",
-    description: "Post your remote frontend developer job and reach thousands of qualified frontend engineers. React, TypeScript, Vue, Angular, and JavaScript specialists.",
+    description: "Post your remote frontend developer job on FrontendEngineers.com and reach a highly targeted, exclusive audience of React, Vue, Angular, and Next.js engineers.",
     type: "website",
     url: "https://www.frontendengineers.com/employers/pricing",
   },

@@ -592,24 +592,22 @@ export default function JobsClientPage() {
       <section className="pt-6 sm:pt-10 pb-6 sm:pb-8 px-4 text-center bg-white flex flex-col items-center">
         <div className="inline-flex items-center justify-center gap-1.5 bg-[#f0fdf4] text-[#166534] border border-[#bbf7d0] px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold mb-4 sm:mb-6 shadow-sm uppercase tracking-wider">
           <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-          Aggregated from 100+ job boards & company career pages
+          Get Hired Faster. Less Competition.
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900 w-full">
-          Every Remote Frontend Job.{" "}
-          <span className="text-[#2563eb]">One Place.</span>
+          Exclusive Remote{" "}
+          <span className="text-[#2563eb]">Frontend Jobs.</span>
         </h1>
         <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
-          Save 20+ hours a week checking LinkedIn, Indeed, WeWorkRemotely, and company career pages.<br className="hidden sm:block" />
-          We check 100+ sources for you - every single day. 2,400+ remote frontend jobs, one search.
+          Skip the noise of generic job boards. We handpick remote roles so you can stand out and get hired for React, Vue, and Angular jobs.
         </p>
 
-        {/* Aggregation trust badges */}
+        {/* Value badges */}
         <div className="flex flex-wrap items-center justify-center gap-3 sm:gap-5 mb-6 text-[11px] sm:text-xs font-semibold text-gray-500">
-          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>LinkedIn Jobs</span>
-          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>Company Career Pages</span>
-          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>WeWorkRemotely</span>
-          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>RemoteOK</span>
-          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>100+ more</span>
+          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>Less Competition</span>
+          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>Remote Only</span>
+          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>Frontend Focused</span>
+          <span className="flex items-center gap-1.5"><span className="w-2 h-2 rounded-full bg-green-500"></span>Easier to Get Hired</span>
         </div>
 
         {!isSubscribed && (
@@ -621,7 +619,7 @@ export default function JobsClientPage() {
               ⭐ Unlock All Jobs - $9/mo
             </Link>
             <p className="text-xs text-gray-600 font-medium px-4 text-center">
-              2,400+ jobs • 100+ sources • Full descriptions • 1-click apply links • Daily email alerts
+              Unlock full descriptions &amp; 1-click apply links
             </p>
           </div>
         )}

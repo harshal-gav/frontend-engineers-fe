@@ -8,7 +8,7 @@ By accessing or using the Service, you agree to be bound by these Terms. If you 
 
 ## 1. Description of Service
 
-FrontendEngineers.com is a curated job board aggregator specializing in remote frontend and JavaScript engineering roles. We aggregate publicly available job postings sourced **exclusively and directly from company career pages**. We provide a searchable, filterable database of these direct listings.
+FrontendEngineers.com is a specialized job portal curating remote frontend and JavaScript engineering roles. We provide exclusive, publicly available job postings sourced **exclusively and directly from company career pages**. We provide a searchable, filterable database of these direct listings with significantly less competition.
 
 ## 2. Subscription and Billing
 

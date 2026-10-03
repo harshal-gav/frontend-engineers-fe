@@ -2,8 +2,8 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About FrontendEngineers.com — Remote Frontend Developer Job Board",
-  description: "FrontendEngineers.com is the ultimate aggregator for remote frontend jobs. We scrape and source from 100+ job boards to bring every React, Vue, and Angular role into one place.",
+  title: "About FrontendEngineers.com — Get Hired Faster",
+  description: "FrontendEngineers.com is an exclusive job portal for remote frontend jobs. With less competition, it's much easier to stand out and get hired for React, Vue, and Angular roles.",
   alternates: {
     canonical: "/about",
   },
@@ -16,7 +16,7 @@ export default function AboutPage() {
     "name": "FrontendEngineers.com",
     "url": "https://www.frontendengineers.com",
     "logo": "https://www.frontendengineers.com/icon.png",
-    "description": "FrontendEngineers.com is a specialized job board for remote frontend developer jobs. We connect frontend engineers with 100% remote opportunities at leading companies worldwide.",
+    "description": "Get hired faster with less competition. FrontendEngineers.com is an exclusive job portal featuring 100% remote positions for React, Vue, Angular, and Next.js engineers.",
     "email": "frontendengineersupport@gmail.com",
     "sameAs": [
       "https://www.linkedin.com/company/frontend-engineers-fe/"
@@ -51,10 +51,10 @@ export default function AboutPage() {
 
           {/* What we are — Entity SEO */}
           <p className="text-gray-700 leading-relaxed mb-4">
-            FrontendEngineers.com aggregates 2,400+ remote frontend developer jobs from 100+ sources - including LinkedIn, WeWorkRemotely, AngelList, and direct company career pages - into one searchable platform. Updated every 24 hours.
+            FrontendEngineers.com is a specialized job portal focused exclusively on remote frontend developer jobs. By narrowing our focus, we provide a platform with significantly less competition, making it much easier for you to land your next role.
           </p>
           <p className="mb-6 text-gray-600 leading-relaxed">
-            Save 20+ hours a week checking 10 different job boards. We check 100+ sources for you, every single day. One search. Every remote React, Vue, Angular, TypeScript, and Next.js job in one place.
+            Forget competing with thousands of applicants on generic job boards. We bring you high-quality, remote React, Vue, Angular, TypeScript, and Next.js jobs in one place, giving you the best chance to get hired.
           </p>
 
           {/* Who we serve */}
@@ -76,17 +76,15 @@ export default function AboutPage() {
           </div>
 
           {/* What problem we solve */}
-          <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-900">Why a Specialized Frontend Job Board?</h2>
+          <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-900">Why a Specialized Frontend Job Portal?</h2>
           <p className="mb-4 text-gray-600 leading-relaxed">
-            Generic job boards are noisy. Frontend developers save 20+ hours a week by avoiding irrelevant 
-            backend, DevOps, and non-technical listings. Employers compete with thousands of unrelated 
-            postings for developer attention. FrontendEngineers.com solves this: every job listed is a remote frontend role. Nothing else.
+            Generic job boards are too noisy and overly competitive. Frontend developers often get lost in a sea of applicants. FrontendEngineers.com solves this: every job listed is a remote frontend role on a platform designed to give you an edge with far less competition.
           </p>
           <p className="mb-8 text-gray-600 leading-relaxed">
             We vet listings to filter out hybrid roles disguised as remote, ensuring you find 
             genuine <strong>work-from-anywhere frontend developer jobs</strong>. Whether you&apos;re looking for 
             <strong>remote React jobs</strong>, <strong>remote TypeScript jobs</strong>, or <strong>remote 
-            Vue jobs</strong>, our 2,400+ curated listings save you 20+ hours a week.
+            Vue jobs</strong>, our platform is designed to make getting hired much easier.
           </p>
 
           {/* How it works */}

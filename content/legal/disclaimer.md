@@ -4,7 +4,7 @@
 
 ## 1. Aggregation and Third-Party Links
 
-FrontendEngineers.com operates as a job aggregator and curation platform. We collect, organize, and display remote frontend engineering job postings sourced from third-party websites, company career pages, and public applicant tracking systems (ATS). 
+FrontendEngineers.com operates as a specialized job portal and curation platform. We organize and display exclusive remote frontend engineering job postings sourced directly from company career pages and public applicant tracking systems (ATS). 
 
 We are **not** an employment agency, recruiter, or the hiring entity for any of the roles listed on our platform. 
 

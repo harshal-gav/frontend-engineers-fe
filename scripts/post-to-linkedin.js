@@ -104,48 +104,54 @@ function generateSlug(job) {
 // ─── Gemini AI ───────────────────────────────────────────────
 
 async function generatePostWithGemini() {
-  const prompt = `You are a highly creative social media manager for FrontendEngineers.com - the only job board built exclusively for remote frontend developers.
+  const prompt = `You are a highly creative social media manager for FrontendEngineers.com - an exclusive job portal built exclusively for remote frontend developers.
 
-Write an engaging, SHORT, and PUNCHY LinkedIn post to promote our website to job seekers. DO NOT promote a specific job.
+Write a LONG, engaging, and highly varied LinkedIn post to promote our specialized job portal to job seekers. DO NOT promote a specific job.
 
-**CRITICAL RULE: SHORT & EMOJI-RICH**
-- DO NOT write long paragraphs. Keep sentences short, 1-2 lines max.
+**CRITICAL RULE: LONG, VARIED, & EMOJI-RICH**
+- Make the post long and detailed, utilizing up to 2500 characters. DO NOT exceed 2900 characters under any circumstances (LinkedIn limit is 3000).
 - USE EMOJIS liberally to break up text, highlight key points, and make the post visually engaging.
-- Make it highly readable, skimmable, and snappy.
+- Make it highly readable and skimmable, but provide rich context, storytelling, or deep dives into the frontend job market.
+- EVERY POST MUST BE UNIQUE. Do not use the same formula every time. Tell a different story, focus on a different angle (e.g., the pain of generic job boards, the importance of exclusivity, the rise of React/Vue/Angular, the struggle of fake remote jobs).
 
-**CRITICAL RULE: USE THE PROVEN HIGH-CONVERTING STRUCTURE**
-This script runs every 1 hour. You must strictly follow this exact structure to maximize engagement. Vary the exact wording, but KEEP THIS EXACT FLOW:
+**CRITICAL RULE: OUR MARKETING ANGLE**
+We are NOT an aggregator. We are an EXCLUSIVE, highly curated job portal.
+Our main selling points:
+- LESS COMPETITION: You aren't competing with thousands of applicants like on generic boards.
+- EASIER TO GET HIRED: Specialized focus means higher quality matches.
+- 100% REMOTE & FRONTEND ONLY: No backend noise. No hybrid roles disguised as remote.
 
-1. THE HOOK - First Line: Must open with a punchy, number-driven statement. Use one of these angles, varied each time:
-   - "2,400+ remote frontend jobs. One place. Zero noise." 
-   - "Save 20+ hours a week searching for jobs. We spend 0."
-   - "100+ job boards. 2,400+ jobs. 1 search. FrontendEngineers.com."
-   Always include "FrontendEngineers.com" in the first 2 lines.
+**SUGGESTED STRUCTURE (Vary this wildly between posts):**
 
-2. THE PAIN POINT: 1-2 short sentences describing the specific pain of checking LinkedIn, Indeed, WeWorkRemotely, and 10+ other sites every day. Use numbers: "20+ hours wasted", "10 different tabs", "100+ sources we check for you".
+1. THE HOOK - First Line: Must open with a compelling, scroll-stopping statement. Example angles:
+   - "Tired of competing with 3,000 other applicants for one React role? We fixed that." 
+   - "Generic job boards are broken. Here is why you aren't getting interviews."
+   Always include "FrontendEngineers.com" in the first 2-3 lines.
 
-3. THE PITCH - 3 Bullet Points with Emojis: Use exactly these three selling points with NUMBERS, formulated in short bullet points:
-   - ⚡ 2,400+ REMOTE FRONTEND JOBS from 100+ sources - React, Vue, Angular, TypeScript, Next.js - all in one search
-   - 🌍 100% REMOTE. 100% FRONTEND. Updated every 24 hours. No backend noise, no hybrid roles disguised as remote.
-   - 🔍 AI-POWERED FILTERS - filter by tech stack, seniority, remote scope, and 15+ other criteria to find exactly what you want
+2. THE STORY / PAIN POINT: Write a detailed section describing the specific pain of the modern job search. Talk about fake remote jobs, getting ghosted, the noise of generic boards, or the overwhelming competition. 
 
-4. CTA & PRICING: "Unlock all 2,400+ jobs for $9/mo. Cancel anytime." Keep it simple and direct. One price. One action.
+3. THE SOLUTION / PITCH: Explain why FrontendEngineers.com is different.
+   - ⚡ EXCLUSIVE REMOTE FRONTEND JOBS - React, Vue, Angular, TypeScript, Next.js.
+   - 🌍 100% REMOTE. 100% FRONTEND. Updated every 24 hours.
+   - 🎯 LESS COMPETITION - A specialized portal means you stand out and get hired faster.
 
-5. LINKS: Format exactly like this:
-   🔍 Browse 2,400+ remote frontend jobs:
+4. CTA & PRICING: "Unlock exclusive jobs for $9/mo. Cancel anytime." Keep the pricing clear.
+
+5. LINKS: Format exactly like this at the end:
+   🔍 Find your dream remote frontend job:
    https://www.frontendengineers.com
    ⚡ Unlock All Jobs - $9/mo:
    https://www.frontendengineers.com/pricing
 
-6. HASHTAGS: Include 5-8 relevant hashtags like #FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #WebDev.
+6. HASHTAGS: Include 15-20 highly relevant hashtags. Examples: #FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #WebDev #VueJS #Angular #NextJS #FrontendEngineering #Hiring #TechJobs #RemoteWork #WorkFromHome #SoftwareEngineering #CareerGrowth
 
 **IMPORTANT RULES & INSTRUCTIONS:**
 - NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead. DO NOT use markdown links like [text](url).
-- Always use specific numbers: "2,400+", "100+", "20+", "$9/mo", "24 hours", "15+ criteria". NEVER use vague words like "many", "most", "fast", "hundreds".
-- Vary the exact words you use but ALWAYS include the key numbers.
-- Keep sentences short and punchy.
+- Vary the exact words, angles, and stories you use in every single generation.
+- Ensure the post is LONG (around 1500-2500 characters) but strictly UNDER 2900 characters.
+- DO NOT use the word "aggregator" or "100+ sources". Focus on "Exclusive", "Less Competition", "Specialized".
 
-Write ONLY the post text, nothing else. Make it catchy, short, and highly readable.`;
+Write ONLY the post text, nothing else. Make it compelling and highly readable.`;
 
   // Retry up to 3 times if the generated post is too short
   for (let attempt = 1; attempt <= 3; attempt++) {

@@ -18,7 +18,7 @@ export default function Footer() {
             <span className="text-[#60a5fa]">Zero noise.</span>
           </p>
           <p className="text-gray-400 text-base max-w-lg mx-auto mb-8">
-            Every React, Vue, Angular &amp; TypeScript role from 100+ sources - in one place. Updated every 24 hours.
+            Exclusive remote React, Vue, Angular &amp; TypeScript roles with less competition. Updated every 24 hours.
           </p>
 
           {/* Share buttons */}
@@ -52,7 +52,7 @@ export default function Footer() {
               Frontend<span className="text-[#60a5fa]">Engineers</span>
             </Link>
             <p className="text-gray-500 text-xs leading-relaxed">
-              The only job board built for frontend developers. 2,400+ remote React, TypeScript, Vue, Angular &amp; Next.js roles - updated daily.
+              The only job portal built exclusively for frontend developers. 2,400+ remote React, TypeScript, Vue, Angular &amp; Next.js roles - updated daily.
             </p>
           </div>
 

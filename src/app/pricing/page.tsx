@@ -135,13 +135,13 @@ export default function PricingPage() {
         <div className="max-w-3xl mx-auto text-center mb-12 flex flex-col items-center">
           <div className="inline-flex items-center justify-center gap-1.5 bg-[#f0fdf4] text-[#166534] border border-[#bbf7d0] px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold mb-4 sm:mb-6 shadow-sm uppercase tracking-wider">
             <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-            2,400+ jobs from 100+ sources - updated every 24 hours
+            Exclusive Remote Frontend Jobs - Updated every 24 hours
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 w-full">
-            Save 20+ hours a week <span className="text-[#2563eb]">searching for jobs.</span>
+            Get Hired Faster with <span className="text-[#2563eb]">Less Competition.</span>
           </h1>
           <p className="text-xl text-gray-600">
-            We already found 2,400+ of them for you. Unlock full descriptions,
+            Stand out by applying to exclusive remote frontend jobs. Unlock full descriptions,
             1-click apply links, and daily alerts for $9/mo.
           </p>
         </div>
