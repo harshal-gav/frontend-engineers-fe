@@ -80,6 +80,10 @@ export async function GET(request: Request) {
     // - ALL users see ALL jobs with company name & logo visible.
     // - Premium users see full job details (description, location, apply links).
     // - Free users see job title + company name/logo only - everything else is locked.
+    const responseHeaders = new Headers();
+    // Vary by Authorization so the CDN knows to cache authenticated vs unauthenticated separately
+    responseHeaders.set("Vary", "Authorization");
+
     if (!isPremium) {
       const lockedJobs = lightweightJobs.map((job) => ({
         id: job.id,
@@ -88,7 +92,6 @@ export async function GET(request: Request) {
         postedAt: job.postedAt,
         remoteType: job.remoteType,
         isLocked: true,
-        // Company name & logo are now visible to free users
         company: {
           id: job.company?.id || "",
           name: job.company?.name || "Company",
@@ -102,10 +105,18 @@ export async function GET(request: Request) {
         applyUrl: null,
         sourceHash: job.sourceHash,
       }));
-      return NextResponse.json(lockedJobs);
+
+      // Cache heavily at the Edge for non-authenticated (public) visitors to save Fast Origin Transfer & CPU
+      if (!authHeader) {
+        responseHeaders.set("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
+      } else {
+        responseHeaders.set("Cache-Control", "private, max-age=60");
+      }
+      return NextResponse.json(lockedJobs, { headers: responseHeaders });
     }
 
-    return NextResponse.json(lightweightJobs);
+    responseHeaders.set("Cache-Control", "private, max-age=60");
+    return NextResponse.json(lightweightJobs, { headers: responseHeaders });
 
   } catch (error) {
     console.error("Jobs API error:", error);
