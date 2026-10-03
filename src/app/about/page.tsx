@@ -3,7 +3,7 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "About FrontendEngineers.com — Get Hired Faster",
-  description: "FrontendEngineers.com is an exclusive job portal for remote frontend jobs. With less competition, it's much easier to stand out and get hired for React, Vue, and Angular roles.",
+  description: "FrontendEngineers.com is a job portal for Remote Frontend Developer jobs. With less competition, it's much easier to stand out and get hired for React, Vue, and Angular roles.",
   alternates: {
     canonical: "/about",
   },
