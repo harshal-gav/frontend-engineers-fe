@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     title: "Pro Membership — FrontendEngineers.com",
     description: "Unlock company names, full descriptions, and direct apply links for remote frontend developer jobs. Browse titles free, unlock everything with Pro.",
     type: "website",
-    url: "https://frontendengineers.com/pricing",
+    url: "https://www.frontendengineers.com/pricing",
   },
 };
 

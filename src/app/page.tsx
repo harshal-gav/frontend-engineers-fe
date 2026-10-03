@@ -61,7 +61,7 @@ export default async function HomePage() {
           "hiringOrganization": {
             "@type": "Organization",
             "name": job.company?.name || "Unknown Company",
-            "logo": job.company?.logoUrl || "https://frontendengineers.com/logo.png"
+            "logo": job.company?.logoUrl || "https://www.frontendengineers.com/logo.png"
           },
           "jobLocationType": "TELECOMMUTE",
           "applicantLocationRequirements": {
@@ -77,8 +77,8 @@ export default async function HomePage() {
           "@context": "https://schema.org",
           "@type": "Organization",
           "name": "FrontendEngineers.com",
-          "url": "https://frontendengineers.com",
-          "logo": "https://frontendengineers.com/icon.png",
+          "url": "https://www.frontendengineers.com",
+          "logo": "https://www.frontendengineers.com/icon.png",
           "description": "FrontendEngineers.com is a specialized job board for remote frontend and fullstack JavaScript developer jobs. We connect frontend engineers with 100% remote opportunities at leading companies worldwide.",
           "email": "frontendengineersupport@gmail.com",
           "sameAs": [
@@ -94,13 +94,13 @@ export default async function HomePage() {
           "@context": "https://schema.org",
           "@type": "WebSite",
           "name": "FrontendEngineers.com",
-          "url": "https://frontendengineers.com",
+          "url": "https://www.frontendengineers.com",
           "description": "Find remote frontend developer jobs. FrontendEngineers.com curates 100% remote positions for React, Vue, Angular, TypeScript, and JavaScript engineers.",
           "potentialAction": {
             "@type": "SearchAction",
             "target": {
               "@type": "EntryPoint",
-              "urlTemplate": "https://frontendengineers.com/?q={search_term_string}"
+              "urlTemplate": "https://www.frontendengineers.com/?q={search_term_string}"
             },
             "query-input": "required name=search_term_string"
           }

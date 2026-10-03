@@ -20,7 +20,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://frontendengineers.com"),
+  metadataBase: new URL("https://www.frontendengineers.com"),
   title: {
     default: "Remote Frontend Developer Jobs | FrontendEngineers.com",
     template: "%s | FrontendEngineers.com"
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Remote Frontend Developer Jobs | FrontendEngineers.com",
     description: "Find the best remote frontend developer jobs. FrontendEngineers.com curates premium, 100% remote positions for React, Vue, Angular, TypeScript, and JavaScript engineers.",
-    url: "https://frontendengineers.com",
+    url: "https://www.frontendengineers.com",
     siteName: "FrontendEngineers.com",
     locale: "en_US",
     type: "website",

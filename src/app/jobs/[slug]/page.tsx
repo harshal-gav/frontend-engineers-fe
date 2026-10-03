@@ -103,7 +103,7 @@ export async function generateMetadata({
         job.description?.substring(0, 155).replace(/\n/g, ' ').trim() ||
         `Apply for ${job.title} at ${companyName} — remote position.`,
       type: "website",
-      url: `https://frontendengineers.com/jobs/${slug}`,
+      url: `https://www.frontendengineers.com/jobs/${slug}`,
     },
   };
 }
@@ -229,19 +229,19 @@ export default async function JobDetailPage({
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://frontendengineers.com"
+        "item": "https://www.frontendengineers.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Jobs",
-        "item": "https://frontendengineers.com"
+        "item": "https://www.frontendengineers.com"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": job.title,
-        "item": `https://frontendengineers.com/jobs/${slug}`
+        "item": `https://www.frontendengineers.com/jobs/${slug}`
       }
     ]
   };

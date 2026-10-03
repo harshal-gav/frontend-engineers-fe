@@ -6,7 +6,7 @@ export default function Footer() {
   const shareText = encodeURIComponent(
     "I found 2,400+ remote frontend jobs in one place. No LinkedIn noise. No irrelevant listings. Just React, Vue, Angular & TypeScript roles → frontendengineers.com"
   );
-  const shareUrl = encodeURIComponent("https://frontendengineers.com");
+  const shareUrl = encodeURIComponent("https://www.frontendengineers.com");
 
   return (
     <footer className="relative z-10 bg-[#0f172a] pt-16 pb-8 text-sm mt-20">

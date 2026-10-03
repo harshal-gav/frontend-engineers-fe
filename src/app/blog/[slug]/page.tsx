@@ -31,19 +31,19 @@ export default async function BlogPostPage({ params }: { params: Promise<{ slug:
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://frontendengineers.com"
+        "item": "https://www.frontendengineers.com"
       },
       {
         "@type": "ListItem",
         "position": 2,
         "name": "Blog",
-        "item": "https://frontendengineers.com/blog"
+        "item": "https://www.frontendengineers.com/blog"
       },
       {
         "@type": "ListItem",
         "position": 3,
         "name": title,
-        "item": `https://frontendengineers.com/blog/${slug}`
+        "item": `https://www.frontendengineers.com/blog/${slug}`
       }
     ]
   };

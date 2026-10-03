@@ -14,8 +14,8 @@ export default function robots(): MetadataRoute.Robots {
       ],
     },
     sitemap: [
-      'https://frontendengineers.com/sitemap.xml',
-      'https://frontendengineers.com/sitemap-jobs/sitemap.xml'
+      'https://www.frontendengineers.com/sitemap.xml',
+      'https://www.frontendengineers.com/sitemap-jobs/sitemap.xml'
     ],
   };
 }

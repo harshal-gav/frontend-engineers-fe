@@ -14,8 +14,8 @@ export default function AboutPage() {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "FrontendEngineers.com",
-    "url": "https://frontendengineers.com",
-    "logo": "https://frontendengineers.com/icon.png",
+    "url": "https://www.frontendengineers.com",
+    "logo": "https://www.frontendengineers.com/icon.png",
     "description": "FrontendEngineers.com is a specialized job board for remote frontend developer jobs. We connect frontend engineers with 100% remote opportunities at leading companies worldwide.",
     "email": "frontendengineersupport@gmail.com",
     "sameAs": [
