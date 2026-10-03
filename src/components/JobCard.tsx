@@ -111,7 +111,7 @@ export default function JobCard({
                 if (job.company?.website) {
                   try {
                     domain = new URL(job.company.website).hostname;
-                  } catch (e) {}
+                  } catch (e) { }
                 } else if (job.company?.logoUrl && job.company.logoUrl.includes("clearbit.com/")) {
                   domain = job.company.logoUrl.split("clearbit.com/")[1];
                 }
@@ -141,7 +141,7 @@ export default function JobCard({
                 {job.title}
               </h3>
               {onSave && (
-                <button 
+                <button
                   onClick={(e) => {
                     e.preventDefault();
                     e.stopPropagation();
@@ -156,11 +156,11 @@ export default function JobCard({
                 </button>
               )}
             </div>
-            
+
             {/* Company name — visible to all users */}
             <div className="flex items-center gap-2 mt-1.5 text-sm font-medium text-gray-500 overflow-hidden whitespace-nowrap">
               <span className="text-gray-700 font-semibold truncate shrink-0 max-w-[60%]">{job.company?.name || "Company"}</span>
-              
+
               {job.company?.industry && (
                 <>
                   <span className="w-1 h-1 rounded-full bg-gray-300 shrink-0" />
@@ -169,13 +169,20 @@ export default function JobCard({
               )}
             </div>
           </div>
-          
+
           <div className="flex items-center gap-2 flex-shrink-0 sm:flex-col sm:items-end sm:gap-1.5">
             <span className="text-xs font-semibold text-gray-400 whitespace-nowrap">
               {postedDate}
             </span>
           </div>
         </div>
+
+        {/* Urgency Tag */}
+        {(postedDate.includes("h ago") || postedDate.includes("m ago")) && (
+          <div className={`text-[11px] font-semibold text-red-600 bg-red-50 border border-red-100 px-2 py-1.5 rounded-md w-fit mb-2 ${isLocked ? "relative z-10" : ""}`}>
+            🔥 Posted {postedDate.toLowerCase()} - Be one of the first to apply
+          </div>
+        )}
 
         {/* Description Preview — blurred for locked */}
         {isLocked ? (

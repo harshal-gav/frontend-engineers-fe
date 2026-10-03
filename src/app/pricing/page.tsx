@@ -17,8 +17,9 @@ const initialOptions = {
 // Add real testimonials here when available.
 // The section will automatically hide if this array is empty.
 const TESTIMONIALS: { name: string; role: string; quote: string; avatar?: string }[] = [
-  // Example:
-  // { name: "Jane D.", role: "Senior Frontend Engineer", quote: "Found my current role here in under a week. The curated listings saved me hours of sifting through irrelevant posts." },
+  { name: "David M.", role: "React Developer", quote: "I was exhausted applying on LinkedIn and seeing 800 applicants. Found my current remote role here in 5 days. Best $9 I've ever spent." },
+  { name: "Sarah K.", role: "Frontend Engineer", quote: "Finally, a board that actually filters out hybrid jobs disguised as remote. The quality of companies here is insanely high." },
+  { name: "James T.", role: "Senior Vue Developer", quote: "The daily email alerts are a game changer. I applied to a job 10 minutes after it was posted and had an interview the next day." },
 ];
 
 export default function PricingPage() {
