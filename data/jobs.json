@@ -1,5 +1,366 @@
 [
   {
+    "id": "75801718dc40fadf9377e5691688a1da19708da0e81bc8b08d7054559a3ec1f0",
+    "title": "Frontend / AI Engineer",
+    "applyUrl": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4500949?src=LinkedIn",
+    "description": "About the job\n\nJob Type\n\nFull-time\n\nDescription\n\nFrontend / AI Engineer\n\nRemote, Continental United States\n\nAbout Expertvoice\n\nWe work with hundreds of the world’s most respected consumer brands – companies like Garmin, Carhartt, Ariat, TaylorMade, Brooks, and more, as well as retailers – to engage influential everyday experts, and to build, track and reward their helpful expertise.\n\nAt ExpertVoice, we are proud to have cultivated a community of individuals who embody our core values. ExpertVoice employees are authentic, driven, bold and give a damn. We believe that our people are the heart and soul of our organization and their commitment to these values are what drives our success. When you join ExpertVoice, you become part of a team that is united by a shared passion for excellence and a desire to make an impact.\n\nSummary\n\nWe’re looking for a curious and creative Frontend / AI Engineer to help build next-generation AI-powered product experiences. You’ll work closely with our product and engineering teams to turn large language models (LLMs) into real, user-facing features. This role blends front-end development, API integration, and rapid prototyping—perfect for someone eager to explore how AI can transform modern applications.\n\nKey Responsibilities\n\nYou don’t need a deep AI or machine learning background — just a strong engineering foundation, a maker’s mindset, and a passion for experimenting with new tools and technologies.\n\n\nBuild AI-driven product features that integrate LLMs (like GPT, Claude, or Gemini) via APIs\nPrototype quickly and iterate fast, turning rough concepts into working interfaces and tools\nDevelop front-end experiences in React that make complex AI outputs intuitive and delightful\nCollaborate with backend engineers to design APIs and data pipelines that support AI interactions\nWork across the stack when needed — from front-end interfaces to backend service integration in Python\nExperiment with new LLM capabilities, libraries, and prompt engineering approaches\nContribute to internal tools for data cleaning, model evaluation, and content generation workflows\n\n\n\nQualifications\n\n\nA full-stack or front-end-focused engineer with a strong grasp of modern web development, including strong custom CSS skills\nProficient with JavaScript or TypeScript and experienced in React\nComfortable working with APIs, JSON, and asynchronous workflows\nPreferably experienced with Python or Java and backend frameworks such as FastAPI, Flask, Spring Boot, etc\nHave used LLM APIs (OpenAI, Anthropic, Gemini, etc.) in projects or prototypes\nCurious about AI and eager to stay current with emerging tools and model capabilities\nThrive in fast-moving environments\n\n\n\nThe Benefits Of Being On The ExpertVoice Team\n\n\nCompensation: Enjoy competitive pay, plus the chance to earn bonuses through our Company performance plan and annual merit increases.\nComprehensive Benefits Package: We offer medical, dental, and vision insurance for employees, with coverage extended to eligible dependents. Additionally, our benefits include flexible spending accounts (FSA), health savings accounts (HSA), life insurance, and both short- and long-term disability.\nGenerous Parental Leave: Welcome your new addition with up to 15 weeks of paid parental leave for full-time employees.\n401(k) with Employer Match: Invest in your future with our 401(k) plan and employer match.\nWork-life Flexibility: Freedom to work from anywhere in the Continental USA! This position offers the flexibility of being fully remote, with the expectation that team members can follow our standard work hours schedule from 10:00am-3:00pm MT Monday-Friday (unless otherwise communicated). The remaining work hours must be aligned with and approved by the manager, allowing for flexibility while supporting team collaboration and business needs.\nExclusive Employee Incentives: clients often extend exclusive incentive purchase programs to EV employees.\n\n\n\nThe approximate compensation range for this role is a base of $110,000 to $140,000 annually. Final compensation for this role will be determined by various factors such as a candidate’s relevant work experience, skills, certifications and geographic location.\n\nExpertVoice is proud to be an equal-opportunity workplace and is an affirmative action employer. We are committed to equal employment opportunities regardless of race, color, ancestry, religion, sex, national origin, sexual orientation, age, marital status, disability, gender identity, or Veteran status.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:58:04.575Z",
+    "sourceHash": "75801718dc40fadf9377e5691688a1da19708da0e81bc8b08d7054559a3ec1f0",
+    "company": {
+      "id": "expertvoice",
+      "name": "ExpertVoice",
+      "logoUrl": "https://logo.clearbit.com/expertvoice.com",
+      "industry": "Technology",
+      "website": "https://expertvoice.com"
+    },
+    "slug": "frontend-ai-engineer-expertvoice-75801718",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "eb06e76d801ca05bfb22a6cab40fbf014738c2d1fa7ef9ec79c5744a63a78faa",
+    "title": "Senior Front End Engineer",
+    "applyUrl": "https://www.prizepicks.com/position?gh_jid=7826742003&gh_src=351367c33us",
+    "description": "About the job\n\nAt PrizePicks, we are the fastest-growing sports company in North America, as recognized by Inc. 5000. As the leading platform for Daily Fantasy Sports, we cover a diverse range of sports leagues, including the NFL, NBA, and Esports titles like League of Legends and Counter-Strike. Our team of over 550 employees thrives in an inclusive culture that values individuals from diverse backgrounds, regardless of their level of sports fandom. Ready to reimagine the DFS industry together?\n\nOverview\n\nAt PrizePicks, we are changing the game in daily fantasy sports. We are a passionate team of innovators dedicated to creating a best-in-class experience for our members. Our engineering team builds and scales the platform that powers our explosive growth — from our consumer-facing mobile app to the services that handle millions of daily transactions. We are looking for a Senior Software Engineer to join our Checkout & Gameplay team and help us continue to build the future of fantasy sports.\n\nJob Summary\n\nWe are seeking an experienced Senior Software Engineer with deep expertise in TypeScript and React Native to join our Checkout & Gameplay team. In this role, you will design, build, and own critical features within PrizePicks’ React Native mobile application. You will tackle high-scope, complex technical problems, define the technical path from product idea to production, and mentor engineers across your team and the organization. This is a role for someone who thrives on crafting exceptional mobile experiences and wants to have a direct impact on a product used by millions.\n\nWhat You’ll Do\n\n\nDesign and build mobile features: Architect and implement complex features and interaction flows in our React Native app that are performant, accessible, and deliver exceptional user experiences.\nOwn technical delivery: Lead the technical design and implementation of complex features end-to-end — from product requirements through deployment and monitoring.\nDrive app performance: Diagnose and resolve performance bottlenecks, optimize rendering, reduce bundle size, and improve the overall responsiveness of the mobile app.\nDefine technical direction: Propose and drive architectural decisions for your team’s mobile features, evaluating tradeoffs and communicating recommendations clearly.\nMentor and elevate: Provide hands-on mentorship to Software Engineers I, II, and III on your team and in the organization through code reviews, pairing, and technical guidance.\nImprove engineering practices: Define, advocate for, and improve best practices around component architecture, testing, accessibility, and mobile deployment for your team.\nCollaborate cross-functionally: Work closely with Product Managers, Designers, QA, and other engineering teams to translate product goals into well-scoped technical solutions.\nParticipate in on-call rotation: Share responsibility for production incidents, contributing to root cause analysis and long-term reliability improvements.\n\n\n\nWhat You Have\n\nExperience:\n\n\n5–8 years of professional software engineering experience, with significant time building production React Native applications\nProven track record of owning and delivering complex, multi-component mobile features in a team environment\nExperience with the full mobile development lifecycle — from development through app store submission and post-release monitoring\nExperience building mobile applications backed by large-scale, high-throughput distributed systems serving millions of users\n\n\n\nTechnical Skills:\n\n\nExpert-level TypeScript proficiency — you write clean, type-safe, well-tested production code\nDeep React Native expertise — performance optimization, native module integration, complex animations, and platform-specific considerations\nStrong experience with Expo and its ecosystem\nProficiency with monorepo tooling (Yarn workspaces or similar)\nSolid understanding of mobile testing strategies — Jest for unit/component testing, experience with Maestro for E2E testing\nExperience with CI/CD for mobile and Expo/EAS workflows — build pipelines, OTA updates, app store deployment\nUnderstanding of observability in mobile — crash reporting, performance monitoring, analytics integration\n\n\n\nWorking Style:\n\n\nComfortable working autonomously with minimal direction on ambiguous problems\nEffective communicator who can articulate technical decisions to both engineers and non-technical stakeholders\nExperience working in a fully remote engineering organization\nAble to context-switch between deep technical work and collaborative planning\n\n\n\nWhat Makes You Stand Out\n\n\nExperience leveraging AI-assisted development tools across the development lifecycle — coding, planning, scoping, and code review\nExperience integrating AI tooling into engineering workflows to accelerate team productivity\n\n\n\nAdditional items to be completed by the hiring manager based on team-specific needs.\n\nWhere You’ll Live\n\nWhile we prefer candidates based in Atlanta, we are open to qualified applicants from anywhere in the U.S. and are willing to consider remote candidates.\n\nWorking at PrizePicks\n\nThe typical salary range for this position is $175,000 to $185,000. At PrizePicks, we consider your role, level, and where you’ll be working when determining our salary ranges. The compensation info you see on our job postings gives you an idea of the starting pay range for the position. Your actual pay within that range will depend on your specific work location, as well as your skills, experience, and education. Your recruiter will be happy to chat more about the specific pay range for your location and how we arrived at it during the hiring process.\n\nThis application period will remain open for 30 days. We’re committed to finding the best candidate, so this date may be adjusted, and any changes will be reflected in this posting.\n\nDate Posted: 9/11/26\n\nFirst Extension: 10/11/26\n\nSecond Extension: 11/11/26\n\nBenefits you’ll receive:\n\nIn addition to your great compensation package, full-time employees will be eligible for the following perks:\n\n\nCompany-subsidized medical, dental, & vision plans \n401(k) plan with company match\nAnnual bonus\nFlexible PTO to encourage a healthy work/life balance (2 weeks STRONGLY encouraged!)\nGenerous paid leave programs, including 16-week paid parental leave and disability benefits\nWorkplace flexibility and modern work schedules focused on getting the job done, not hours clocked\nCompany-wide in-person events and team outings\nLifestyle enhancement program\nCompany equipment provided (Windows & Mac options)\nAnnual performance reviews with opportunities for growth and career development\n\n\n\nYou must be authorized to work for any employer in the U.S. We are unable to sponsor or take over sponsorship of an employment Visa at this time. \n\nPrizePicks is an Equal Opportunity Employer. All applicants will be considered for employment without attention to race, color, religion, sex, sexual orientation, gender identity, national origin, veteran or disability status.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:57:24.887Z",
+    "sourceHash": "eb06e76d801ca05bfb22a6cab40fbf014738c2d1fa7ef9ec79c5744a63a78faa",
+    "company": {
+      "id": "prizepicks",
+      "name": "PrizePicks",
+      "logoUrl": "https://logo.clearbit.com/prizepicks.com",
+      "industry": "Technology",
+      "website": "https://prizepicks.com"
+    },
+    "slug": "senior-front-end-engineer-prizepicks-eb06e76d",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "jest",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e7a5d6deb9069e2dd3f73c781ee81967b527e3cc8ed11facac4c34714400a2ed",
+    "title": "Frontend Software Engineer (Js, CSS)",
+    "applyUrl": "https://www.sundayy.com/job-description2/WJUE3D981363BEF3479D5902D3F36C1DAD9?source=Linkedin",
+    "description": "About the job\n\nAbout The Company\n\nRamp is revolutionizing the financial infrastructure landscape by building intelligent systems that seamlessly integrate into the transaction flow of every dollar a business spends. Serving over 70,000 companies, Ramp automates critical financial processes such as payment authorization, risk detection, spend categorization, and bookkeeping, managing over $200 billion in annualized transactions. The company is committed to high-stakes, data-dense problem-solving, emphasizing ownership, high agency, and urgency among its team members. Ramp’s innovative approach has demonstrated significant impact, with median customers saving 5% and increasing revenue by 16% within their first year of using Ramp's platform. The organization fosters a culture of builders who are empowered to make consequential decisions, shaping the future of financial technology. Ramp believes that every ambitious company deserves access to systems that optimize their financial operations, and it is dedicated to creating solutions that directly influence how companies move and manage billions of dollars.\n\nAbout The Role\n\nWe are seeking a highly skilled Frontend Engineer to lead the implementation of complex projects that establish Ramp.com as the premier destination for brand and product marketing. In this role, you will collaborate closely with designers and engineers to maintain and enhance Ramp's brand design system and component library, ensuring visual and functional consistency across the website. You will partner with the creative team to craft interactive experiences that increase site engagement and drive lead generation. When design resources are limited, you will proactively design and unblock yourself to ensure project momentum. Additionally, you will work with paid ads and growth teams to conduct A/B testing on landing pages, optimizing for multi-channel lead acquisition. This position offers an exciting opportunity to influence Ramp’s digital presence, employing cutting-edge technologies and innovative design practices to deliver a seamless, responsive, and engaging user experience.\n\nQualifications\n\n\nMinimum 5 years of experience as a front-end or design engineer, preferably working on marketing websites\nStrong proficiency in React, CSS, and modern frameworks such as Next.js and Tailwind CSS\nPortfolio demonstrating previous work in front-end development and design\nDeep understanding of responsive design principles and design-to-code workflows\nExperience maintaining and developing reusable component libraries with attention to detail\nExcellent communication skills, with a proven ability to collaborate effectively with cross-functional teams\nPassion for working in fast-paced environments and continuous skill growth\nDesire to master front-end development and contribute to innovative projects\nOptional but preferred: Knowledge of SEO principles, web animations (GSAP, Motion), 3D libraries, interactive storytelling, and experience working with CMS platforms like Sanity\n\n\nResponsibilities\n\n\nLead the implementation of complex projects to enhance Ramp’s website and brand presence\nCollaborate with designers and engineers to maintain and improve the brand design system and component library\nCreate interactive and engaging web experiences that increase user engagement and site performance\nDesign solutions independently when design resources are constrained, ensuring project timelines are met\nPartner with growth and marketing teams to develop and execute A/B testing strategies on landing pages\nEnsure responsive, accessible, and high-quality code that aligns with company standards\nMaintain and improve code reusability and scalability within the component library\nStay up-to-date with industry trends and incorporate best practices into development workflows\n\n\nBenefits\n\n\nFlexible paid time off (PTO) policy\nHome-office equipment ordering support\nHealth and wellness stipends\nTravel budget for intra-office visits\nWeekly coffee stipend and in-office perks such as lunch, snacks, and drinks\nComprehensive health insurance coverage, including medical, dental, and vision (varies by location)\nRetirement plans with employer matching contributions\nParental leave policies offering up to 16 weeks at full pay\nPet insurance and fertility benefits\nRelocation assistance for candidates moving to NYC or SF\nAdditional perks such as life and disability insurance, employee assistance programs, and virtual healthcare options\n\n\nEqual Opportunity\n\nRamp is an equal opportunity employer committed to fostering an inclusive environment for all employees. We welcome applicants regardless of race, color, religion, gender identity, sexual orientation, national origin, age, disability, or any other protected status. We believe diversity enhances our team and drives innovation. Pursuant to the San Francisco Fair Chance Ordinance, we will consider qualified applicants with arrest and conviction records.\n\n\n\nDesired Skills and Experience\n\nInformation Technology",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:56:10.292Z",
+    "sourceHash": "e7a5d6deb9069e2dd3f73c781ee81967b527e3cc8ed11facac4c34714400a2ed",
+    "company": {
+      "id": "wiraa",
+      "name": "Wiraa",
+      "logoUrl": "https://logo.clearbit.com/wiraa.com",
+      "industry": "Technology",
+      "website": "https://wiraa.com"
+    },
+    "slug": "frontend-software-engineer-js-css-wiraa-e7a5d6de",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "css",
+        "tailwind"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4bd219bb512c3115f5224b980dca33bb500e8a60f4a1aeecaf7e05f7c5be3b40",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.fetchjobs.co/job-description-usb/03E64BA3BB7FE5B589A95AD8EC509F61?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nBeyond Sports is a leading innovator in the sports technology industry, dedicated to transforming the way athletes, coaches, and sports organizations analyze and improve performance. With a strong focus on cutting-edge data analytics, wearable technology, and immersive experiences, Beyond Sports strives to push the boundaries of what is possible in sports science. Our mission is to empower athletes at all levels to reach their full potential through advanced technological solutions and personalized insights. As a company committed to excellence, integrity, and innovation, Beyond Sports collaborates with top-tier sports teams, academic institutions, and technology partners worldwide to deliver impactful results and drive industry standards forward.\n\nAbout The Role\n\nWe are seeking a highly motivated and detail-oriented Data Analyst to join our dynamic team at Beyond Sports. In this role, you will be responsible for collecting, analyzing, and interpreting complex data sets related to athletic performance, training regimes, and sports outcomes. Your insights will directly influence product development, strategic decision-making, and client solutions. The ideal candidate will have a strong background in data analytics, a passion for sports, and the ability to communicate findings effectively to both technical and non-technical stakeholders. This position offers an exciting opportunity to work at the intersection of sports science and technology, contributing to innovative projects that enhance athletic performance and sports management strategies.\n\nQualifications\n\n\nBachelor’s degree in Data Science, Statistics, Computer Science, Sports Management, or a related field. A master’s degree is preferred.\nProven experience in data analysis, preferably within the sports technology or related industry.\nStrong proficiency in data analysis tools and programming languages such as Python, R, SQL, and Excel.\nExperience with data visualization tools like Tableau, Power BI, or similar platforms.\nExcellent analytical skills with the ability to interpret complex data and generate actionable insights.\nStrong communication skills to effectively present findings to diverse audiences.\nKnowledge of sports performance metrics, biomechanics, and sports science is highly desirable.\nAbility to work collaboratively in a fast-paced, innovative environment.\n\n\nResponsibilities\n\n\nCollect, clean, and analyze large datasets related to athlete performance, training sessions, and game outcomes.\nDevelop and maintain dashboards and reports to monitor key performance indicators (KPIs) for clients and internal teams.\nCollaborate with product development teams to identify data-driven features and enhancements.\nInterpret data trends and provide actionable insights to coaches, athletes, and management.\nDesign experiments and conduct statistical analyses to evaluate the effectiveness of training programs and technological interventions.\nAssist in the development of predictive models to forecast athlete performance and injury risks.\nEnsure data integrity and security in accordance with company policies and industry standards.\nStay updated on emerging trends and technologies in sports analytics and data science to continuously improve analytical capabilities.\n\n\nBenefits\n\nBeyond Sports offers a comprehensive benefits package designed to support our employees' well-being and professional growth. This includes competitive salary packages, health insurance coverage, and wellness programs. Employees have access to ongoing training and development opportunities, including workshops, certifications, and conferences to enhance their skills. We promote a collaborative and inclusive workplace culture that encourages innovation and creativity. Additionally, our team members enjoy flexible working arrangements and a supportive environment that values diversity and inclusion. Joining Beyond Sports means becoming part of a forward-thinking organization committed to making a meaningful impact in the world of sports technology.\n\nEqual Opportunity\n\nBeyond Sports is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate based on race, ethnicity, gender, age, sexual orientation, disability, religion, or any other protected characteristic. We believe that a diverse workforce fosters innovation, creativity, and a richer workplace culture. We are dedicated to providing equal employment opportunities and ensuring that all candidates and employees are treated with fairness and respect throughout their employment journey.\n\n\n\n\n\nDesired Skills and Experience\n\nData Analysis, Data Visualization, Sports Analytics, Statistical Analysis, Machine Learning, Data Management",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:56:04.068Z",
+    "sourceHash": "4bd219bb512c3115f5224b980dca33bb500e8a60f4a1aeecaf7e05f7c5be3b40",
+    "company": {
+      "id": "taskverse",
+      "name": "TaskVerse",
+      "logoUrl": "https://logo.clearbit.com/taskverse.com",
+      "industry": "Technology",
+      "website": "https://taskverse.com"
+    },
+    "slug": "frontend-developer-taskverse-4bd219bb",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8b5e22a4c391f7f0a0f61744e8a900a26d39f0d3cb371c0e5cc351e9196e3607",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://www.bestjobtool.com/job-description/3188564751?src=LinkedIn",
+    "description": "About the job\n\nAbout Us\n\nAt LangChain, our mission is to make intelligent agents ubiquitous. We build the foundation for agent engineering in the real world, helping developers move from prototypes to production-ready AI agents that teams can rely on. We began as widely adopted open-source tools and have grown to also offer a platform for building, evaluating, deploying, and operating agents at scale.\n\nWith $125M raised at Series B from IVP, Sequoia, Benchmark, CapitalG, and Sapphire Ventures, we're at a stage where we're continuing to develop new products, growth is accelerating, and all team members have meaningful impact on what we build and how we work together. LangChain is a place where your contributions can shape how this technology shows up in the real world.\n\nToday, our platform includes LangSmith (Observability, Evaluation, Deployment, Fleet, and Sandboxes), our open source frameworks (LangChain, LangGraph, and Deep Agents), and the newly launched LangSmith Engine for autonomous agent improvement. We have 100M+ monthly open source downloads, 6,000+ active LangSmith customers, and the use of LangSmith in production by 5 of the Fortune 10 companies (+ 35% of the Fortune 500 overall), including teams at Klarna, Clay, Coinbase, Workday, Lyft, Cloudflare, Harvey, Rippling, Vanta, LinkedIn, Nvidia, and Bridgewater.\n\nAbout The Team\n\nThe LangSmith team owns and builds LangChain's core platform for observability, evaluation, and production reliability of AI systems. From tracing and annotation to run rules, evaluations, and beyond, this team owns LangSmith end-to-end. If you want to define what great AI observability looks like at production scale, this is where that work gets done.\n\nAbout The Role\n\n(Onsite in Boston)\n\nWe are seeking an experienced frontend engineer to join our team and play a pivotal role in developing and enhancing features on LangSmith, our enterprise platform product designed for LLM application observability, testing, and debugging. This role offers an exciting opportunity to contribute to a cutting-edge platform that is shaping the future of AI system management and reliability. As a key member of the team, you will collaborate closely with cross-functional teams to deliver high-quality, scalable, and user-friendly interfaces that meet the evolving needs of our customers.\n\nResponsibilities\n\n\nDevelop new user-facing features using React and TypeScript, ensuring a seamless and engaging user experience.\nBuild reusable components and front-end libraries to streamline development and promote consistency across the platform.\nTranslate designs and wireframes into high-quality, efficient code that aligns with best practices.\nOptimize components for maximum performance across a wide range of devices and browsers.\nCollaborate with full-stack and backend developers, as well as UX/UI designers, to enhance usability and functionality.\nParticipate in code reviews, testing, and documentation to maintain high standards of quality and maintainability.\nContribute to the continuous improvement of development processes and team workflows.\n\n\nQualifications\n\n\nExtensive experience in front-end engineering with a strong proficiency in React, JavaScript, and TypeScript.\nHands-on experience with front-end development tools such as Babel, Vite, Webpack, NPM, and Yarn.\nFamiliarity with REST APIs and a history of working closely with full-stack and backend engineers.\nKnowledge of modern authorization mechanisms, including JWTs.\nA passion for user experience, design, and building clean, engaging, and intuitive interfaces.\nStrong written and oral communication skills, with the ability to clearly explain technical concepts to both technical and non-technical stakeholders.\nThe ability to thrive in a fast-paced startup environment, viewing unstructured situations as opportunities to identify impactful work and influence the company's future success.\nAn ownership mindset, being self-driven and proactive in seeking opportunities to make a meaningful impact.\nSolid computer science fundamentals, ideally supported by a degree in computer science or a related field.\n\n\nBenefits\n\nOur benefits package includes comprehensive medical, dental, and vision coverage, flexible vacation policies, a 401(k) plan, and meals on in-office days in the US. We also offer opportunities for professional development, a collaborative work environment, and a culture that values innovation and impact. Our goal is to support our team members both professionally and personally, fostering a healthy work-life balance and providing resources to help you thrive.\n\nEqual Opportunity\n\nLangChain Inc. is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate based on race, color, religion, gender, gender identity or expression, sexual orientation, national origin, age, disability, or any other status protected by applicable law. We believe that a diverse team fosters innovation and drives our success, and we are dedicated to providing a workplace where everyone can succeed and grow.\n\n\n\n\n\nDesired Skills and Experience\n\nReact, TypeScript, Front-End Development, UI/UX Design, Web Performance Optimization, API Integration",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:55:57.757Z",
+    "sourceHash": "8b5e22a4c391f7f0a0f61744e8a900a26d39f0d3cb371c0e5cc351e9196e3607",
+    "company": {
+      "id": "netrolynxai",
+      "name": "Netrolynx AI",
+      "logoUrl": "https://logo.clearbit.com/netrolynxai.com",
+      "industry": "Technology",
+      "website": "https://netrolynxai.com"
+    },
+    "slug": "senior-frontend-engineer-netrolynx-ai-8b5e22a4",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "webpack",
+        "vite"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "da2b2d020e7df5607df3be079f6eb7122936841725e2612e28262cefdd89c991",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.sourcingxpress.com/jobs/ukcZnYPpF4pODB?utm_source=linkedin&utm_medium=job_board&utm_campaign=careers_2026",
+    "description": "About the job\n\nCompany: GoodScore\n\nWebsite: Visit Website\n\nBusiness Type: Startup\n\nCompany Type: Product\n\nBusiness Model: B2B\n\nFunding Stage: Pre-seed\n\nIndustry: Fintech\n\nSalary Range: ₹ 30-100 Lacs PA\n\nJob Description\n\nGoodScore is a leading credit score management app that empowers over 5 million Indians to build their credit score to 750+. We are one of the youngest apps in the top 20 finance apps in India.\n\nPowered by RBI-authorized credit bureaus Experian and CRIF High Mark, GoodScore provides comprehensive credit monitoring and improvement solutions.\n\nOur app delivers personalized credit insights through detailed video analysis and step-by-step improvement plans. Users can regularly check their credit scores, access detailed reports, and receive expert guidance on managing their credit health. A strong credit score through GoodScore opens doors to loan and credit card opportunities from India's top financial institutions.\n\nRole Description\n\nThis is a full-time role for a Frontend Developer at our Bengaluru office. As a Frontend Developer, you will be responsible for the day-to-day tasks of developing user-friendly interfaces, implementing designs, and ensuring the seamless integration of backend services. You will collaborate with the design and development teams to optimize the user experience and ensure high-quality code.\n\nQualifications\n\n\nB.Tech in Computer Science or related field.\nCandidates with 4-9 years of experience\nFront-End Development, Responsive Web Design, and Web Development skills\nStrong knowledge of HTML, CSS, and JavaScript\nExperience with JavaScript frameworks like React JS\nExperience with React Native is an added advantage\nFamiliarity with version control systems like Git\nExperience in building responsive and mobile-friendly applications\nUnderstanding of web performance optimization techniques\nExcellent problem-solving and communication skills\nAbility to work collaboratively in a team environment\n\n\nWhy Join GoodScore?\n\nJoining GoodScore means being part of a fast-growing Bengaluru-based fintech startup that’s on a mission to simplify credit health and financial wellbeing for millions of people across India using AI-driven insights and personalised guidance. With strong product traction — millions of users tracking and improving their credit scores — and backed by a recent $13 M Series A funding round, GoodScore offers the opportunity to build impactful, user-centric financial tools, innovate in credit tech, and grow your career in a purpose-led team shaping the future of financial inclusion and digital credit management.\n\n\n\nDesired Skills and Experience\n\nHTML, JavaScript, React Native, Material UI, Redux, Webpack, Typescript, Tailwind CSS, React.js, API Integrations",
+    "location": "Remote - Kazakhstan",
+    "country": "Kazakhstan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:25:59.486Z",
+    "sourceHash": "da2b2d020e7df5607df3be079f6eb7122936841725e2612e28262cefdd89c991",
+    "company": {
+      "id": "sourcingxpress",
+      "name": "SourcingXPress",
+      "logoUrl": "https://logo.clearbit.com/sourcingxpress.com",
+      "industry": "Technology",
+      "website": "https://sourcingxpress.com"
+    },
+    "slug": "frontend-developer-sourcingxpress-da2b2d02",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "tailwind",
+        "webpack",
+        "redux",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Kazakhstan"
+      ],
+      "seniority": "senior",
+      "employmentType": "b2b"
+    }
+  },
+  {
+    "id": "378802040cb778fd1d275fa6ba6f661ca2a40ffcfd0d1c87410044132d818b90",
+    "title": "Front End Developer Lead",
+    "applyUrl": "https://movadogroup.wd1.myworkdayjobs.com/Careers/job/Bangalore-India/Front-End-Developer-Lead_JR00002571?source=LinkedIn",
+    "description": "About the job\n\nWe are seeking a seasoned Frontend Lead with deep Shopify platform expertise to spearhead our eCommerce storefront strategy across our multi-brand portfolio. In this role, you will own the end-to-end frontend architecture on Shopify Plus, lead a team of developers, and set the technical direction for building high-performance, scalable digital commerce experiences. You will work closely with eCommerce, merchandising, marketing, and operations leadership to translate business objectives into exceptional customer-facing solutions that drive conversion, revenue, and brand equity.\n\nKey Responsibilities\n\nTeam Leadership & Management\n\n\nLead, mentor, and manage a team of 3–4 frontend and Shopify developers, fostering a culture of technical excellence, ownership, and continuous learning.\nDrive agile ceremonies — sprint planning, standups, retrospectives — and ensure predictable, high-quality delivery.\nEstablish and enforce coding standards, PR review processes, and documentation practices across the team.\nServe as a technical escalation point, unblocking engineers on complex architecture and integration challenges.\n\n\nShopify Platform Architecture & Development\n\n\nArchitect and oversee the development of Shopify Plus storefronts across multiple brands, optimizing for performance, scalability, and UX best practices.\nLead the design and implementation of Shopify themes using Liquid, HTML5, CSS3, and JavaScript (ES6+), including custom sections and dynamic content blocks.\nDrive adoption of headless/composable commerce approaches where applicable, leveraging Shopify Storefront API with React.js / Next.js / TypeScript frontends.\nBuild and govern custom Shopify Apps using Node.js to extend platform capabilities across the brand portfolio.\nEvaluate and guide technology selection for frontend tooling, frameworks, and third-party integrations.\n\n\nShopify APIs, GraphQL & Integrations\n\n\nLead development of robust integrations using Shopify Admin API (REST and GraphQL) for catalog, orders, customers, inventory, and fulfillment operations.\nArchitect Shopify Webhook-based event-driven integration patterns for real-time data flows with downstream systems.\nDesign and manage product data pipelines between ERP/OMS and Shopify, including automated catalog, pricing, and inventory feeds in CSV, XML, and JSON formats.\nEnsure API integrations adhere to rate limiting, versioning, and error handling best practices.\n\n\nOrder Management & POS\n\n\nOwn the technical integration between Shopify and Order Management Systems (OMS) — including order lifecycle workflows, fulfillment routing, returns, and exchanges.\nLead implementation and optimization of Shopify POS across physical retail touchpoints, ensuring unified commerce across online and in-store channels.\nCollaborate with operations teams to support click-and-collect, ship-from-store, and inventory visibility features.\nManage checkout customization using Shopify Functions, Checkout Extensions, and Checkout Scripts for promotions, discounts, and custom logic.\n\n\nPayments & Checkout\n\n\nOversee configuration and optimization of Shopify Payments, Shop Pay, and third-party payment gateway integrations.\nEnsure PCI-DSS compliance and security best practices across all payment workflows and checkout touchpoints.\nLead integration with Buy Now Pay Later (BNPL) providers and gifting/loyalty platforms as needed.\n\n\nAnalytics, SEO & Tag Management\n\n\nOwn the implementation and governance of Google Analytics 4 (GA4), Google Tag Manager (GTM), and multi-channel conversion tracking.\nEnforce technical SEO standards including structured data (JSON-LD), canonical tags, page speed optimization, and Core Web Vitals.\nDesign and maintain GTM data layers, custom triggers, and attribution models in collaboration with the marketing analytics team.\n\n\nPerformance, Quality & DevOps\n\n\nChampion web performance engineering — Core Web Vitals, CDN configuration, image optimization, lazy loading, and caching strategies.\nDefine and maintain CI/CD pipelines for Shopify theme and app deployments using Shopify CLI and GitHub Actions.\nOversee QA processes for frontend — writing test plans, coordinating with QA engineers, and enforcing regression testing coverage.\nMonitor frontend reliability using APM/observability tools; drive RCA and remediation for production incidents.\n\n\nMarketing & Social Commerce Integrations\n\n\nLead technical integrations with email and SMS marketing platforms including Listrak, Klaviyo, and similar tools.\nOversee social commerce integrations: TikTok Shop, Instagram Shopping, Facebook Catalog, and Pinterest Catalogs.\nIntegrate and maintain tax automation platforms (e.g., Avalara, TaxJar, Vertex) with Shopify.\n\n\nExperience\n\nRequired Qualifications\n\n\n8+ years of hands-on frontend development experience with at least 5 years specializing in Shopify / Shopify Plus.\nProven experience leading and managing a team of engineers in a direct or tech-lead capacity.\nDeep eCommerce domain expertise: order lifecycle, promotions, catalog management, checkout flows, customer accounts, and fulfillment.\nDemonstrated track record of delivering complex Shopify projects end-to-end in a multi-brand or enterprise environment.\nExperience working in an agile / scrum delivery model with cross-functional teams.\n\n\nTechnical Skills\n\n\nExpert proficiency in Liquid templating, HTML5, CSS3, and JavaScript (ES6+).\nStrong hands-on experience with React.js, Next.js, and TypeScript for headless / composable Shopify builds.\nDeep expertise with Shopify APIs: Admin REST API, GraphQL Admin API, Storefront API, and Webhooks.\nHands-on experience with Shopify POS configuration, integrations, and unified commerce workflows.\nSolid experience with OMS integration patterns — order creation, fulfillment, returns, and inventory sync via Shopify APIs.\nExperience with Shopify Functions, Checkout Extensions, and Checkout Scripts for custom checkout logic.\nWorking knowledge of Google Analytics 4, Google Tag Manager, and technical SEO fundamentals.\nExperience with social commerce integrations: TikTok, Instagram, Facebook, and Pinterest.\nSolid understanding of CI/CD, DevOps practices, and cloud hosting (AWS / GCP / Azure).\nStrong command of web performance optimization including Core Web Vitals and CDN configuration.\nUnderstanding of eCommerce security, PCI-DSS compliance, and GDPR / privacy requirements.\nProficiency with version control (Git), code review practices, and branching strategies.\n\n\nNice to Have\n\n\nExperience with headless commerce frameworks (Hydrogen, Remix, or custom React SSR/SSG).\nExperience with OMS platforms such as Manhattan Associates, Fluent Commerce, IBM Sterling, or Salesforce OMS.\nFamiliarity with A/B testing tools (Optimizely, VWO) and conversion rate optimization (CRO) strategies.\nShopify Partner Certification or Shopify Plus Certification.\nExperience with Boomi, MuleSoft, or similar middleware/integration platforms for ERP connectivity.\nBackground in luxury retail or multi-brand eCommerce portfolio management.\n\n\nLeadership & Soft Skills\n\n\nProven ability to lead, inspire, and grow a team of frontend engineers — balancing technical depth with people leadership.\nStrong stakeholder management skills with the ability to translate business requirements into technical architecture and delivery plans.\nExcellent verbal and written communication; able to present technical concepts clearly to non-technical audiences including marketing, merchandising, and executive stakeholders.\nSelf-driven, detail-oriented, and comfortable driving clarity in ambiguous, fast-paced environments.\nCollaborative mindset with a track record of cross-functional partnership across product, design, marketing, and operations.\n\n\nPassion for eCommerce technology and staying current with Shopify platform evolution, emerging frontend frameworks, and industry trends.\n\nMovado Group, Inc. is an equal opportunity employer. It prohibits discrimination based on age, color, disability, marital or parental status, national origin, race, religion, sex, sexual orientation, gender identity, veteran status or any other legally protected status in accordance with applicable federal, state and local laws.",
+    "location": "Remote - Israel",
+    "country": "Israel",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:22:54.638Z",
+    "sourceHash": "378802040cb778fd1d275fa6ba6f661ca2a40ffcfd0d1c87410044132d818b90",
+    "company": {
+      "id": "movadogroupinc",
+      "name": "Movado Group, Inc",
+      "logoUrl": "https://logo.clearbit.com/movadogroupinc.com",
+      "industry": "Technology",
+      "website": "https://movadogroupinc.com"
+    },
+    "slug": "front-end-developer-lead-movado-group-inc-37880204",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "javascript",
+        "css",
+        "graphql",
+        "html",
+        "remix"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Israel"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f560aaa77b1212d65988fd0e56dee52bc8c5d007729c69f1cdb97e592eabbc4a",
+    "title": "Senior Frontend Engineer (m/f/d)",
+    "applyUrl": "https://journaway-gmbh.jobs.personio.com/job/2772688?display=en&language=en&pid=e9ee2e0d-83aa-4f88-b65b-17b9f87dd7af&it=kOqKje3nlM3M3uFypFLWIQ&_ghcid=71e67ea4-f328-4404-ad0c-95e7b0e31743#apply",
+    "description": "About the job\n\nRole\n\nEverything our users see runs on Next.js and React, and we'd like to hand it to you: the design system it's built from, how fast it loads, and whether everyone can actually use it.\n\nYou'll work closely with our software architects, product owners, and fellow developers: code reviews, pair programming, and the technical decisions that stick around.\n\nYour mission\n\n\nYou build and maintain our design system in React and Tailwind, so features stay consistent instead of being rebuilt from scratch each time.\nYou own frontend performance in Next.js 16 — rendering strategy, bundle size, and what people actually experience on a mediocre connection.\nYou treat accessibility as a default, not as cleanup at the end of the sprint.\nYou develop the Node.js layer (Express.js, Nest.js) between the UI and our backend services, with Redis where caching helps.\nYou push for clean code and automated testing, and you share what you know instead of sitting on it.\nYou use coding agents as part of your daily workflow — directing their work, reviewing their output, and fixing what doesn't hold up. Writing code matters; knowing what good code looks like matters more.\n\n\nYour profile\n\n\nYou've spent several years building production frontends with React, Next.js, and TypeScript.\nYou know Tailwind CSS well and you've managed client-side state with Zustand.\nYou test what you build — unit and component tests with Vitest, end-to-end tests with Playwright.\nYou're comfortable in Node.js with Express.js or Nest.js, and working against APIs from a microservices backend.\nYou work well in agile teams (Scrum/Kanban), you write clearly, and you're comfortable in English.\nYou have a degree in Computer Science, Software Engineering, or a related field — or the experience that makes one unnecessary.\n\n\nNice to have\n\n\nYou've worked with AWS, Azure, or Google Cloud Platform. We're not in the cloud yet, so this is a plus, not a requirement.\n\n\nHow You Think\n\nWe care as much about how you approach a problem as about which frameworks you know. You look past the edges of your own ticket: you notice when a fix really belongs in a different service, you question a process once it has stopped making sense, and you judge your work by whether the whole system got better — not by whether your part shipped. \"Not my code\" isn't a sentence we use much around here.\n\nWhy us?\n\nYou're joining at a point where the engineering foundations themselves are being rebuilt around AI-native workflows — not retrofitted onto legacy decisions, but designed now, while the architecture is still being shaped. That means you don't inherit someone else's five-year-old choices: you help make the calls on how services are split, where AI agents fit into the workflow, and what \"good\" looks like technically around here. Few Senior roles hand you this much real influence over the foundation rather than the features on top of it.\n\nOn the practical side: 30 days of vacation, up to 50 workation days a year, a sabbatical option, Hansefit, pension contributions and an employee loan program, plus a range of travel-industry discounts on your own trips. Fully remote with no relocation required, a hiring process that's three steps end to end, and no bureaucratic layers slowing down a \"yes.\" We're rated 4.7/5 on Trustpilot — what you build ships to real people, not into the void.\n\nHow We Work\n\nWe're fully remote, so you work from wherever you do your best thinking. Agentic coding is part of our day-to-day, not a side experiment: we work with Claude Code across the team, and we'd want you to have an opinion about where it helps, where it doesn't, and how to review what it produces. If that's already your workflow, you'll feel at home. If it isn't yet, you'll pick it up here.\n\nHiring process\n\nThree steps, no surprises:\n\n\nOnline interview with HR\nOnline interview with our Head of Engineering\nOn-site interview with the team\n\n\nCodeword: Travel\n\nAbout Us\n\njournaway is not a typical travel tech company. We’re the Anti-Holiday platform. We want our users to design and experience their bucket list dreams, to travel in a sustainable and social way, to get to know and fall in love with our beautiful world and its many hidden gems. To achieve this, we aim to revolutionize how people plan and book their trips. By seamlessly combining flights, hotels, excursions, rental cars, and more, we empower travelers to build customized travel experiences with ease. Our technology removes complexity to allow the user to focus on what truly matters - the journey itself.",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:16:04.580Z",
+    "sourceHash": "f560aaa77b1212d65988fd0e56dee52bc8c5d007729c69f1cdb97e592eabbc4a",
+    "company": {
+      "id": "journaway",
+      "name": "journaway",
+      "logoUrl": "https://logo.clearbit.com/journaway.com",
+      "industry": "Technology",
+      "website": "https://journaway.com"
+    },
+    "slug": "senior-frontend-engineer-m-f-d-journaway-f560aaa7",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "tailwind",
+        "zustand",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2c8fd755086780df61a0bf3a3f616595ef979bf0ae3e3c51e7565652b13d5929",
+    "title": "Senior SAP Frontend Entwickler (m/w/d)",
+    "applyUrl": "https://cpro-karriere.com/de/jobs/10643/senior-sap-frontend-entwickler-mwd",
+    "description": "About the job\n\nWir sind Cpro conlog\n\nDie Cpro Gruppe ist ein führendes Beratungshaus für SAP-gestützte Unternehmenslösungen. Mit umfassender Expertise in Digitalisierung, Prozessoptimierung und SAP-Technologien unterstützen wir unsere Kunden bei der effizienten Umsetzung zukunftsfähiger End-to-End-Prozesse: praxisnah, skalierbar und nachhaltig.\n\n\n\n\nAufgaben\n\nTechnische Konzeption und Umsetzung von UI/UX-Lösungen im SAP-Umfeld (z. B. SAP Fiori, SAPUI5)\nIntegration von Frontend-Komponenten in bestehende SAP-Backend-Systeme und OData-Services\nZusammenarbeit mit SAP Backend-Entwicklern, Architekten, Beratern und Fachbereichen\nAnalyse komplexer Anforderungen und eigenständige Entwicklung technischer Lösungskonzepte\nSicherstellung von Code-Qualität, Performance, Wartbarkeit und Best Practices\nMitgestaltung der Weiterentwicklung und Modernisierung unserer SAP-Systemlandschaft\nMentoring und fachliche Unterstützung von Entwicklern\n\n\n\n\nAngebot\n\nBleib gesund und fit: Wir unterstützen deine Gesundheit mit sportlichen Angeboten wie Urban Sports oder Hansefit. Zudem bezuschussen wir dein Bike-Leasing, damit du Ausgleich, Bewegung und Wohlbefinden optimal in deinen Alltag integrieren kannst.\nFinde deine Work-Life-Balance: Bei uns gibt es keine Office-Pflicht. Entscheide selbst, ob du beim Kunden, in einer unserer Geschäftsstellen oder deutschlandweit remote arbeiten möchtest. Gestalte so deine persönliche Work-Life-Balance.\nLernen und wachsen: Wir fördern deine kontinuierliche Weiterentwicklung ohne Begrenzung mit Trainings für deine Hard- und Softskills sowie SAP-Zertifizierungen. Im Trainingskalender kannst du passende Angebote auswählen und dich eigenständig anmelden, ganz nach deinem individuellen Bedarf.\nOnboarding & Karriere: Dein Onboarding startet ab Vertragsunterzeichnung. Wir zeigen dir transparente Karrierepfade und Entwicklungsmöglichkeiten, damit du weißt, welche Wege dir offenstehen.\nTeam und Vernetzung: Dich erwarten regelmäßige Meet-Einander, Teamevents und Networking-Möglichkeiten, bei denen du andere Mitarbeitende kennenlernen und dich auch abseits vom Business austauschen kannst. Das jährliche Highlight ist ein gemeinsames Event, bei dem alle Mitarbeitenden zusammenkommen und feiern.\nSicher in die Zukunft: Unser externer Berater unterstützt dich mit individuellen Lösungen und Zuschüssen für deine Altersvorsorge.\nEngagement, das belohnt wird: Monatlich ungedeckelte Boni honorieren deine Leistung. Für Mitarbeiterempfehlungen winken attraktive Prämien und über unser Corporate-Benefits-Portal profitierst du zusätzlich von zahlreichen Vorteilen\n\n\n\n\nProfil\n\nMehrjährige Erfahrung in der Frontend-Entwicklung im SAP-Umfeld, insbesondere SAP Fiori / SAPUI5\nErfahrung mit SAP Business Technology Platform (BTP) von Vorteil\nErfahrung in technischer Konzeption, Architektur und Performance-Optimierung\nEigenverantwortliche, analytische und lösungsorientierte Arbeitsweise\nTeamfähigkeit sowie gute Deutsch- und Englischkenntnisse\n\n\n\n\nKontakt\n\n📧 Bei Interesse senden Sie Ihre Bewerbung gerne an:\n\nMelek Güden\n\nTalent Acquisition Managerin | HR\n\nmelek.gueden@cpro-ips.com",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:14:45.447Z",
+    "sourceHash": "2c8fd755086780df61a0bf3a3f616595ef979bf0ae3e3c51e7565652b13d5929",
+    "company": {
+      "id": "cproconloggmbh",
+      "name": "Cpro conlog GmbH",
+      "logoUrl": "https://logo.clearbit.com/cproconloggmbh.com",
+      "industry": "Technology",
+      "website": "https://cproconloggmbh.com"
+    },
+    "slug": "senior-sap-frontend-entwickler-m-w-d-cpro-conlog-gmbh-2c8fd755",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "31b64379000df0d350d8b274febdb03b1ae4aabc322a2344ac41b086d242b8fe",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://join-staging.com/companies/p4pcompany/306686-new-job-posting-2?utm_source=linkedin.com",
+    "description": "About the job\n\nOfficia vita tamen adduco aegrotatio sperno patrocinor perferendis tempora. Uberrime pariatur cunae speciosus repellendus audio arto. Ipsa commodo delibero clarus terra delicate. Tasks Antea vado cum. Hic nostrum aegrus comprehendo quae volaticus deporto conturbo curiositas. Clementia urbanus callide adversus. Requirements Supra alienus carpo. Sodalitas nesciunt demergo. Suggero territo utilis thermae succurro sono basium vae adfectus crinis. Benefits rtyrt Armarium repellendus tibi dolor deleniti laboriosam. Stipes quibusdam derelinquo caries turpis verbum substantia. Vulpes campana sunt adflicto caste.",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:14:39.058Z",
+    "sourceHash": "31b64379000df0d350d8b274febdb03b1ae4aabc322a2344ac41b086d242b8fe",
+    "company": {
+      "id": "joinmiddlewaretestcompany",
+      "name": "JOIN Middleware Test Company",
+      "logoUrl": "https://logo.clearbit.com/joinmiddlewaretestcompany.com",
+      "industry": "Technology",
+      "website": "https://joinmiddlewaretestcompany.com"
+    },
+    "slug": "frontend-engineer-join-middleware-test-company-31b64379",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d63f15831cf91be20de03647268b51f5f4e1a69968c9c8a2bb1ebd85e7d0fc1a",
+    "title": "Senior Software Engineer (Frontend), Remote (EU)",
+    "applyUrl": "https://emp.jobylon.com/applications/jobs/386650/create/?utm_source=linkedin&utm_medium=feed",
+    "description": "About the job\n\nWe are Europe’s leading provider of employee benefits technology.\n\nMillions of employers and staff use Epassi’s digital and mobile solutions to seamlessly redeem employee benefits across our unrivalled merchant network.\n\nEpassi - Wellbeing that works!\n\nDo you want to build the products that help millions of people enjoy the benefits their employers provide?\n\nAt Epassi, we make it easy for employees across Europe to use their workplace benefits — whether that's lunch, sports, commuting, culture, or wellbeing. Every day, hundreds of thousands of people open our products to get something good out of their workday. That's what you'd be building.\n\nWe're a fast-growing Finnish fintech company expanding across the Nordics and broader Europe. Our stack is modern, our teams are small and autonomous, and we move fast without losing quality. We're looking for a Senior Software Engineer who lives and breathes React and TypeScript — someone who takes ownership of features end-to-end, cares deeply about the user experience, and isn't afraid to venture into the backend when it helps the team ship better.\n\nThe Role\n\nYou own frontend development of our consumer-facing web products, from architecture and design decisions through to production delivery. You're accountable for building maintainable, scalable React/TypeScript applications that handle real financial transactions. You work across the stack — mentoring the team on frontend patterns, occasionally contributing backend code when it unblocks the team, and partnering with Product and Design to ship features users actually care about.\n\nYour Responsibilities Will Be\n\nFrontend Architecture & Delivery\n\n\nShip impactful features every week, unblocking Product and Design to move fast without accumulating tech debt\nOwn and continuously improve the architecture and performance of our products — from code structure to app speed to service reliability\nMonitor production systems closely and lead swift, thoughtful responses when issues arise\n\n\nTechnical Leadership & Standards\n\n\nModel the technical practices, code quality, and ownership mindset you expect from the team — your code is your teaching\nRaise the bar across the team and beyond — in code reviews, architectural conversations, and collaboration with other squads\nDrive cross-team technical collaboration, ensuring Frontend, Backend, and Platform teams align on standards and share solutions\n\n\nFull-Stack Collaboration\n\n\nUnblock the team by understanding and occasionally contributing to Backend code — you bridge Frontend and Backend, reading Java when needed and writing it when it helps ship faster\nPartner closely with Backend engineers on API design, data flow, and performance — you come with opinions rooted in user experience\nCollaborate with Product and Design from discovery through delivery, respectfully challenging assumptions when needed to keep shipping simple, impactful features\n\n\nQuality & Observability\n\n\nSet and maintain high standards for testing — unit, integration, and end-to-end — so the team ships with confidence\nEstablish monitoring and observability practices that let us catch and fix issues fast, not after users notice them\nOwn performance budgets and optimization — you ensure the app stays fast and reliable for real users, including on slower networks\n\n\nYou'll Be Successful In This Role If\n\n\nYou have 5+ years of experience building production React/TypeScript web applications\nYou take genuine ownership — you don't wait to be told what to do, you find problems and fix them\nYou're comfortable working across the stack: you might be a frontend-first engineer, but you're not afraid of a Java codebase when the situation calls for it\nYou write code that others can understand, extend, and be proud of\nYou have experience with modern React patterns — state management (Redux, Zustand, or similar), performance optimisation, testing, and component architecture\nYou've worked in a product team before and understand what it means to balance feature velocity with technical quality\nYou communicate clearly — in code reviews, in design discussions, and in a cross-functional team where not everyone speaks the same technical language\n\n\nNice to Have\n\n\nExperience with React Native — teams we collaborate with includes mobile, and engineers who can move between web and mobile are particularly valuable\nHands-on backend experience (Node.js, Java/Spring) — especially if you've owned an API layer or a BFF\nFintech, payments, or regulated product experience — you understand what it means to build software where errors have financial consequences\nExperience with micro-frontend architectures, CI/CD pipelines, or design systems\nFamiliarity with AI-assisted development workflows\n\n\nYour Language Profile\n\n\nEnglish: Professional working proficiency (required)\n\n\nWhy Epassi\n\n\nMeaningful product: You're not building another ad tech tool. You're helping people access lunch, sports, and wellbeing benefits — things that actually improve daily life.\nReal ownership: Senior engineers here set the direction. You'll have room to propose architecture, push back on bad ideas, and influence how the product evolves.\nGrowing company, stable foundation: We've been profitable and growing for over 15 years, with serious expansion momentum across Europe. Fast-paced but not chaotic.\nFlexible and remote-friendly: We have offices in Helsinki but support remote work across the EU.\nStrong team: Small squads, experienced engineers, and a culture that values learning and craftsmanship.\nCompetitive compensation including Epassi's own employee benefit package (naturally).\n\n\nA Few Things We Value as a Team\n\n\nShipping working software over perfect software — and fixing it fast when something breaks\nDirect, honest feedback — in code reviews and in planning\nCuriosity — engineers who read, experiment, and bring ideas from outside the building\nPragmatism — we use the right tool for the job, not the trendiest one",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T16:12:59.516Z",
+    "sourceHash": "d63f15831cf91be20de03647268b51f5f4e1a69968c9c8a2bb1ebd85e7d0fc1a",
+    "company": {
+      "id": "epassi",
+      "name": "Epassi",
+      "logoUrl": "https://logo.clearbit.com/epassi.com",
+      "industry": "Technology",
+      "website": "https://epassi.com"
+    },
+    "slug": "senior-software-engineer-frontend-remote-eu-epassi-d63f1583",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "redux",
+        "zustand"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "6ec5f24184dff03f65f985bfd0bd6dca0b21e36704b83c1d2bea319b98464621",
     "title": "Front End Engineer - Mid Level",
     "applyUrl": "https://www.sundayy.com/job-description/usDA9610BEB051AF656E16B642984A9E39?source=Linkedin",
