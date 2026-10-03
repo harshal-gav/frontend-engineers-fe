@@ -1,5 +1,275 @@
 [
   {
+    "id": "6ec5f24184dff03f65f985bfd0bd6dca0b21e36704b83c1d2bea319b98464621",
+    "title": "Front End Engineer - Mid Level",
+    "applyUrl": "https://www.sundayy.com/job-description/usDA9610BEB051AF656E16B642984A9E39?source=Linkedin",
+    "description": "About the job\n\nAbout The Company\n\nCedar is dedicated to transforming the homeownership landscape by addressing the pressing issue of home affordability. Our innovative approach leverages technology and data-driven models to simplify and democratize access to home financing. With a proven track record of closing deals and scaling operations, Cedar is committed to making the dream of owning a home attainable for millions of families. Our mission is to create a seamless, transparent, and empowering experience for our customers, supported by a team of passionate professionals who are driven by impact and innovation.\n\nAbout The Role\n\nAs a Mid-Level Front-End Engineer at Cedar, you will play a crucial role in developing and maintaining our consumer-facing web application. Your work will directly influence the user experience, helping families understand and navigate their homeownership options. You will own the development of key features, collaborate closely with product and design teams, and utilize cutting-edge AI tooling to accelerate development and improve product outcomes. This position offers an excellent opportunity for growth, ownership, and impact within a dynamic, technology-driven environment.\n\nQualifications\n\n\nApproximately 3+ years of experience building production web applications with React and TypeScript\nProficiency in HTML and CSS, with a strong focus on responsive design for mobile and desktop\nExperience working with APIs, including REST and GraphQL\nFamiliarity with testing methodologies and tools integrated into development workflows\nInterest in and enthusiasm for AI tooling and its application in software development\nAbility to work independently and collaboratively within a cross-functional team\nStrong problem-solving skills and attention to detail\nExcellent communication skills and a proactive attitude\n\n\nBonus qualifications include experience with Figma, accessibility standards (WCAG), and a good eye for design aesthetics.\n\nResponsibilities\n\n\nBuild and own the consumer-facing web application utilizing React, TypeScript, and Next.js\nLeverage AI tooling to facilitate rapid development and contribute to its ongoing improvement\nValidate assumptions through rigorous testing and outcome-based judgment of work\nTranslate complex financial logic into clear, trustworthy, and user-friendly UI screens\nCollaborate closely with design and product teams from initial concept through to deployment\nTake ownership of features from development to release, monitor usage, and iterate for enhancement\nMaintain high standards for code quality, conduct thorough code reviews, and troubleshoot bugs at their root cause\nParticipate in daily stand-ups, planning, and review sessions to ensure alignment and continuous improvement\n\n\nBenefits\n\n\nComprehensive medical, dental, and vision insurance plans\n401(k) retirement savings plan\nPaid time off and parental leave policies\nStipend for home office setup to create a productive work environment\nCompetitive salary with a discretionary bonus\nSignificant equity ownership, allowing you to share in the company's success\nFlexible, remote-first work environment supporting work-life balance\n\n\nEqual Opportunity\n\nCedar is an equal-opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees and applicants. We do not discriminate based on race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status, or any other protected characteristic. If you require an accommodation during any stage of the hiring process, please let us know, and we will gladly assist.\n\n\n\nDesired Skills and Experience\n\nInformation Technology",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T06:18:43.519Z",
+    "sourceHash": "6ec5f24184dff03f65f985bfd0bd6dca0b21e36704b83c1d2bea319b98464621",
+    "company": {
+      "id": "wiraa",
+      "name": "Wiraa",
+      "logoUrl": "https://logo.clearbit.com/wiraa.com",
+      "industry": "Technology",
+      "website": "https://wiraa.com"
+    },
+    "slug": "front-end-engineer-mid-level-wiraa-6ec5f241",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "graphql",
+        "figma",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f056082b268bcbc5eccebf50ba4bda424fb88205efea0c161e612d47c8c6db5c",
+    "title": "AEM Cloud Front End Developer",
+    "applyUrl": "https://www1.jobdiva.com/portal/?a=1zjdnwmtd2sucfnvihd8ikgy20037z08916f7t4ybtbv06620instb5vc66z248q&SearchString=&StatesString=&source=linkedin.com&id=32475365&compid=-1",
+    "description": "About the job\n\nPosition: AEM Cloud Front End Developer \n\n Location: Remote \n\n Job Type: Contract \n\nSenior Front End AEM Developer (CSS, JS & HTML)\n\n Job Description:  We are looking for a highly skilled and experienced Senior front end AEM Developer to join our dynamic team. The ideal candidate will have a deep understanding of Adobe Experience Manager (AEM) and a proven track record of developing and implementing complex AEM solutions. As a Senior AEM Developer, you will be responsible for leading the design, development, and deployment of AEM-based web applications. You will work closely with cross-functional teams, including designers, content creators, and other developers, to deliver high-quality digital experiences.\n\nRoles And Responsibilities\n\n\" Conception and implementation of enterprise content management solutions based on AEM\n\n\" Analysis of customer requirements and the creation of implementation concepts\n\n\" Independent development and implementation of innovative ideas\n\n\" Support with the transfer of the AEM into the development and operating environment of the EPD (AEM architecture and staging)\n\n\" Java-based development of release-capable AEM software components\n\n\" Implementation of the supplied web front end HTML templates in AEM JSP templates\n\n\" Integration of Adobe Marketing Cloud systems such as Adobe Analytics, Adobe Target, or Adobe Tag Manager\n\n\" Support of the product owner in the assessment of requirements with regard to AEM architecture, technologies, internal interfaces, or connections to third-party systems\n\nRequired\n\n Required Technical and Professional Expertise \n\n\" Experience with AEM Developer tools such as:\n\n\nApache Felix\nApache Sling\nJackrabbit\nCRXDE\n\n\n\" Familiarity with the Java Content Repository API\n\n\" Knowledge of OSGi and its Declarative Services\n\n\" Familiarity with building tools, including Maven\n\n\" Experience working in Agile model\n\n\" Knowledge of version control tools, especially Git\n\n\" Knowledge of Patterns and Good Practices to design and develop quality and clean code\n\n\" Knowledge of HTML, CSS, JavaScript, and jQuery, HTL, AEM sightly\n\n\" Experience in pair programming and code reviews\n\n\" Experience with testing at all levels: unit, integration, functional, and performance\n\n\" Familiarity with task management, bug tracking, and wiki-based documentation tools like Rally\n\n\n\nDesired Skills and Experience\n\nFRONT END DEVELOPER, AEM DEVELOPER, AEM",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T06:15:35.461Z",
+    "sourceHash": "f056082b268bcbc5eccebf50ba4bda424fb88205efea0c161e612d47c8c6db5c",
+    "company": {
+      "id": "applabsystemsinc",
+      "name": "AppLab Systems, Inc",
+      "logoUrl": "https://logo.clearbit.com/applabsystemsinc.com",
+      "industry": "Technology",
+      "website": "https://applabsystemsinc.com"
+    },
+    "slug": "aem-cloud-front-end-developer-applab-systems-inc-f056082b",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "jquery",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "80de946f927623c2fec2d78968e34789c5b2accb7a01098b1c81c539f28b172a",
+    "title": "Frontend Developer (React)",
+    "applyUrl": "https://altech.es/oferta_de_trabajo/frontend-developer-react/",
+    "description": "About the job\n\nDescripción de la oferta\n\nALTECH Solutions and Consulting SL es una ingeniería especializada en el diseño, desarrollo e integración de sistemas y soluciones en el ámbito de las Tecnologías de la Información y la Comunicación (TIC).\n\nLa compañía nace con el objetivo de construir soluciones innovadoras que aporten valor para sus clientes, en el ámbito del transporte, la movilidad, las emergencias, la seguridad y los entornos urbanos.\n\nUbicada en el distrito tecnológico 22@ de Barcelona, ha realizado con éxito numerosos proyectos, identificándose como una empresa de referencia para sus clientes, entre los cuales se encuentran organizaciones tanto del ámbito público como privado.\n\nY… ¡Altech está creciendo! Buscamos incorporar una persona para nuestro departamento de desarrollo, donde tendrá la oportunidad de trabajar con un equipo senior con un gran ambiente de trabajo.\n\nFunciones\n\n– Trabajar en proyectos de desarrollo de Software y participar en las fases de: estimación, análisis, planificación, desarrollo y puesta en marcha.\n\n– Realizar pruebas unitarias y de integración para garantizar la calidad del código.\n\n– Participar en revisiones de código y proporcionar feedback constructivo a los compañeros de equipo.\n\n– Optimizar el rendimiento de las aplicaciones.\n\n– Crear y mantener documentación técnica clara y completa.\n\nRequisitos\n\n– Estudios relacionados con Ingeniería Informática, Telecomunicaciones o Grado Superior DAM / DAW\n\n– Experiencia previa trabajando con React JS\n\n– Valorable Conocimientos En\n\n\n.NET (.NET Framework y .NET Core)\nAndroid /iOS\nReact Native\nOpenAPI\nRest\nDocker y Kubernetes\n\n\n– Nice to have: haber trabajado previamente con metodología Agile (SCRUM)\n\nBeneficios\n\n– Paquete retributivo atractivo acorde con la experiencia\n\n– Horario flexible\n\n– Posibilidad de teletrabajo\n\n– Retribución flexible (tickets restaurant, transporte y guardería)\n\n– Seguro médico a partir del primer año\n\n– Café y fruta FREE",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T06:10:34.017Z",
+    "sourceHash": "80de946f927623c2fec2d78968e34789c5b2accb7a01098b1c81c539f28b172a",
+    "company": {
+      "id": "altech",
+      "name": "ALTECH",
+      "logoUrl": "https://logo.clearbit.com/altech.com",
+      "industry": "Technology",
+      "website": "https://altech.com"
+    },
+    "slug": "frontend-developer-react-altech-80de946f",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a7f44c8d7450691ffb7b5002930c39a1d6d0e3dfe5279b16d09341b524a3be81",
+    "title": "Senior Frontend Developer (Angular)",
+    "applyUrl": "https://ness.recruitify.ai/job/c5c312c1-1200-41b2-9695-ea8d62b3a667?sourceId=1756&igbTracker=963791401",
+    "description": "About the job\n\nDołącz do zespołu rozwijającego nowoczesne, bezpieczne i wydajne aplikacje frontendowe!\n\n\n\n\nPoszukujemy Frontend Developera, który będzie odpowiedzialny za projektowanie i rozwój nowoczesnych aplikacji webowych opartych o Angular i TypeScript.\n\nNa tym stanowisku będziesz współpracować z zespołami projektowymi, backendowymi i produktowymi, rozwijać nowe funkcjonalności, dbać o jakość oraz wydajność aplikacji, a także uczestniczyć w podejmowaniu decyzji technicznych i code review.\n\nJeśli masz doświadczenie w pracy z Angular, TypeScript, RxJS, NgRx i SignalStore, znasz dobre praktyki tworzenia aplikacji frontendowych i potrafisz tworzyć skalowalny kod — ta oferta jest dla Ciebie.\n\n\n\n\nZakres obowiązków:\n\nProjektowanie i rozwój nowoczesnych, responsywnych, bezpiecznych i wydajnych aplikacji frontendowych.\nTworzenie klarownego i skalowalnego kodu w TypeScript z wykorzystaniem frameworka Angular.\nImplementacja i rozwój zarządzania stanem aplikacji z wykorzystaniem NgRx oraz SignalStore.\nTworzenie i utrzymywanie testów jednostkowych, integracyjnych oraz E2E.\nWspółpraca z zespołami projektowymi, backendowymi i produktowymi w zakresie realizacji wymagań funkcjonalnych i wizualnych.\nIntegracja aplikacji frontendowych z backendem poprzez REST API oraz implementacja mechanizmów autoryzacji użytkowników.\nWsparcie w tworzeniu i utrzymywaniu backlogu produktu.\nAnaliza i optymalizacja wydajności aplikacji Angular.\nDbanie o bezpieczeństwo aplikacji webowych oraz stosowanie odpowiednich praktyk bezpieczeństwa.\nTworzenie i utrzymywanie dokumentacji projektowej i technicznej.\nWykonywanie code review oraz dbanie o standardy i jakość kodu.\nPraca zgodnie z metodykami Agile.\n\n\n\n\n\n\nWymagania:\n\nMinimum 5 lat doświadczenia w programowaniu z wykorzystaniem Angular.\nBardzo dobra znajomość Angular, w tym jego zaawansowanych funkcji i mechanizmów.\nPraktyczna znajomość zarządzania stanem aplikacji z wykorzystaniem NgRx i SignalStore.\nBardzo dobra znajomość TypeScript oraz umiejętność tworzenia klarownego i skalowalnego kodu.\nDobra znajomość RxJS oraz programowania reaktywnego.\nDoświadczenie w testowaniu aplikacji Angular – testy jednostkowe i E2E.\nZnajomość technik optymalizacji wydajności aplikacji Angular.\nZnajomość zasad bezpieczeństwa aplikacji webowych i umiejętność ich implementacji w kontekście Angular.\nDoświadczenie w integracji z backendem poprzez REST API oraz znajomość mechanizmów autoryzacji użytkowników.\nPraktyczna znajomość narzędzi deweloperskich, takich jak Docker, Webpack i Git.\nZnajomość dobrych praktyk programistycznych i wzorców projektowych w kontekście Angular.\nUmiejętność szybkiego uczenia się i adaptacji do zmieniających się technologii oraz potrzeb projektowych.\nDoświadczenie w pracy zespołowej zgodnie z metodykami Agile (Scrum/Kanban).\nZnajomość języka angielskiego na poziomie minimum B2, pozwalająca na swobodne korzystanie z dokumentacji technicznej.\nBardzo dobre umiejętności komunikacyjne i umiejętność współpracy z zespołami technicznymi, projektowymi oraz klientami.\n\n\n\n\n\n\nMile widziane:\n\nWykształcenie wyższe techniczne, np. informatyka, automatyka i robotyka, elektronika, teleinformatyka lub kierunki pokrewne.\n\n\n\n\n\n\nOferujemy:\n\nUdział w rozwoju nowoczesnych aplikacji frontendowych dla dużej organizacji z sektora infrastruktury lotniczej.\nMożliwość pracy przy rozwiązaniach o wysokich wymaganiach dotyczących wydajności, bezpieczeństwa i niezawodności.\nWpływ na rozwój funkcjonalności oraz jakość i standardy tworzonego oprogramowania.\nMożliwość rozwoju kompetencji technicznych oraz pracy przy złożonych rozwiązaniach webowych.\nMożliwość skorzystania z pakietów Luxmed i Multisport na preferencyjnych warunkach.\nPracę zdalną.\n\n\n\n\n\n\nMasz doświadczenie w tworzeniu aplikacji Angular i chcesz pracować przy nowoczesnych rozwiązaniach frontendowych? Dołącz do projektu, w którym będziesz mieć realny wpływ na rozwój aplikacji, jakość kodu i stosowane rozwiązania techniczne. Aplikuj i porozmawiajmy o szczegółach!",
+    "location": "Remote - Poland",
+    "country": "Poland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T06:05:23.776Z",
+    "sourceHash": "a7f44c8d7450691ffb7b5002930c39a1d6d0e3dfe5279b16d09341b524a3be81",
+    "company": {
+      "id": "nesssolution",
+      "name": "Ness Solution",
+      "logoUrl": "https://logo.clearbit.com/nesssolution.com",
+      "industry": "Technology",
+      "website": "https://nesssolution.com"
+    },
+    "slug": "senior-frontend-developer-angular-ness-solution-a7f44c8d",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "webpack",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Poland"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8d637bb09a9766e10fa29371feb14e7a34c7813de7310cabbcc73631412e0957",
+    "title": "Frontend Developer",
+    "applyUrl": "https://system.erecruiter.pl/FormTemplates/RecruitmentForm.aspx?WebID=fae7776bb1e64d1686cee83e9dd12622",
+    "description": "About the job\n\nDołączysz do zespołu rozwijającego aplikację wspierającą obsługę kredytów dla klientów korporacyjnych jednego z czołowych banków. System jest rozwijany od kilku lat i obejmuje zarówno procesy biznesowe, jak i integracje z usługami oraz systemami bankowymi.\n\nW projekcie wykorzystywane są m.in. Angular, Java, Oracle i MongoDB. Zespół pracuje w metodyce Agile, dbając o jakość, bezpieczeństwo oraz zgodność rozwiązań ze standardami SSDLC.\n\n\n\n\nTwoja rola w zespole\n\nrozwój i utrzymanie warstwy front-endowej aplikacji,\nimplementacja nowych funkcjonalności w Angular,\nintegracja z usługami REST API,\nudział w projektowaniu rozwiązań i doborze wzorców projektowych,\ntworzenie i utrzymanie testów jednostkowych,\ndbanie o jakość, bezpieczeństwo i zgodność kodu ze standardami SSDLC,\nudział w procesach wdrożeniowych,\nwspółpraca z wykorzystaniem GitLab, Jira, Confluence i SonarQube,\nkorzystanie z narzędzi AI wspierających tworzenie oprogramowania, w tym GitHub Copilot.\n\n\n\n\nCzego oczekujemy\n\nminimum 5 lat doświadczenia w roli Front-end Developera,\nbardzo dobrej znajomości:\nAngular 19–21,\nJavaScript i TypeScript,\nRxJS,\nNode.js,\nREST API,\nNx,\nHTML i CSS,\ndoświadczenia w pracy z Oracle,\nznajomości Git, Jira oraz praktyk CI/CD,\ndoświadczenia w zespołach pracujących w metodyce Agile,\nznajomości standardów jakości kodu, wzorców projektowych i procesów wdrożeniowych,\npraktycznej znajomości testów jednostkowych,\nwykształcenia wyższego w obszarze STEM,\nznajomości języka angielskiego na poziomie minimum B2.\n\n\n\n\nMile widziane\n\nznajomość Java,\ndoświadczenie z React,\nznajomość obszaru DevOps,\ndoświadczenie w projektach dla sektora bankowego lub finansowego.\n\n\n\n\nCo zyskujesz, współpracując z BlueSoft?\n\n👨 💻 Współpracę w zespole interdyscyplinarnych ekspertów – entuzjastów technologii, ceniących bezpośredniość i partnerskie relacje.\n\n 📈 Długoterminowe zaangażowanie projektowe w firmie, która nieprzerwanie od ponad 20 lat rozwija się na rynku IT.\n\n 🚀 Udział w różnorodnych projektach IT realizowanych dla rozpoznawalnych klientów – liderów w swoich branżach.\n\n 🥇 Dostęp do najnowszych technologii i środowisko oparte na najwyższych standardach inżynieryjnych.\n\n ⌚️ Elastyczne warunki realizacji usług – hybrydowo lub w pełni zdalnie, dopasowane do charakteru współpracy.\n\n ☁ Ekosystem wymiany wiedzy i rozwoju: szkolenia wewnętrzne, gildie tematyczne oraz szkolenia i certyfikacje Cloud w ramach partnerstw technologicznych z czterema dostawcami chmury.\n\n 📣 Dostęp do nauki języka angielskiego lub niemieckiego online oraz grupowych zajęć językowych.\n\n 🏋️ ♂️ Możliwość przystąpienia do Multisport i prywatnej opieki medycznej na preferencyjnych warunkach wynegocjowanych przez BlueSoft.\n\n ⛵️ Morskie przygody – rejsy po Morzu Karaibskim, Śródziemnym i Północnym z dofinansowaniem ze strony BlueSoft.\n\n\n\n\nInformacje dodatkowe\n\nmodel współpracy: B2B,\ntryb: w pełni zdalny,\nlokalizacja: Polska,\noczekiwana obecność w biurze w Warszawie około raz w miesiącu,\ndomena: bankowość korporacyjna i obsługa kredytów,\npoziom: Senior.\nznajomość Java,\ndoświadczenie z React,\nznajomość obszaru DevOps,\ndoświadczenie w projektach dla sektora bankowego lub finansowego.",
+    "location": "Remote - Poland",
+    "country": "Poland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T06:05:14.533Z",
+    "sourceHash": "8d637bb09a9766e10fa29371feb14e7a34c7813de7310cabbcc73631412e0957",
+    "company": {
+      "id": "bluesoft",
+      "name": "BlueSoft",
+      "logoUrl": "https://logo.clearbit.com/bluesoft.com",
+      "industry": "Technology",
+      "website": "https://bluesoft.com"
+    },
+    "slug": "frontend-developer-bluesoft-8d637bb0",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "jest",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Poland"
+      ],
+      "seniority": "mid",
+      "employmentType": "b2b"
+    }
+  },
+  {
+    "id": "7715800f54a5eb26917ae334ed8e208aed75cd89c5518a182e690273edfd71f6",
+    "title": "Senior Angular Frontend Developer (m/w/d)",
+    "applyUrl": "https://jobs.smartrecruiters.com/SopraSteria1/744000143849059-senior-angular-frontend-developer-m-w-d-?trid=2d92f286-613b-4daf-9dfa-6340ffbecf73",
+    "description": "About the job\n\nUnternehmensbeschreibung\n\nWir sind als eine der führenden europäischen Management- und Technologieberatungen ein echter Tech-Player. Wir sehen uns als Vordenker*innen, handeln und denken strategisch, entwickeln mit unseren Kunden maßgeschneiderte Lösungen, sowie präzise Prozesse und implementieren innovative Technologien. Weltweit sind wir über 50.000 tech-affine und kluge Köpfe – gemeinsam gestalten wir die Zukunft unserer Kunden und die der Gesellschaft.\n\nNutze deine Expertise in unseren Projekten für verschiedene Branchen und entwickle dich weiter. Diese Position bietet dir die Möglichkeit, Teil der gesamten Sopra Steria Group zu werden – sei es bei Sopra Steria SE, Sopra Steria Next, ISS Software GmbH oder Sopra Steria Custom Software Solutions GmbH.\n\nBist du bereit, das digitale Europa mitzugestalten?\n\nStellenbeschreibung\n\n\nIm agilen Team entwickelst du stabile Software, konzipierst neue Funktionalitäten, implementierst Schnittstellen und betreust die Datenbank\nDu übernimmst Verantwortung für technische Lösungen basierend auf modernen Frontend-Technologien und Frameworks wie Angular\nIn deinen spannenden Projekten arbeitest du mit MySQL, JSON, REST, SOAP, XML, BiPro und Menschen, die Herausforderungen lieben und einen Kopf voller Ideen haben\nDu bist erste Kontaktperson wenn es um Fehleranalysen geht und setzt in Abstimmung branchenspezifische Features um\nMit Weitblick und der Fähigkeit über den Tellerrand hinauszuschauen, verlierst du es nie aus dem Blick innovative Software für Menschen zu entwickeln\nBeratung heißt Flexibilität: Dein Projekteinsatz richtet sich nach unseren Kunden und deiner Projektsituation – du arbeitest deutschlandweit in unseren Offices, beim Kunden vor Ort und von zu Hause\n\n\nQualifikationen\n\n\nNach deinem IT-Studium hast du bereits tiefgreifende Erfahrungen in der Softwareentwicklung von Web Applikationen mit HTML, CSS und JavaScript / TypeScript gesammelt \nAngular 6+ beherrschst du auf sehr gutem Niveau\nEin hohes Qualitätsbewusstsein, du weißt aber auch, wann gut besser als perfekt ist\nDu leitest Teams fachlich an und hebst sie auf das nächste Level\nGute Deutschkenntnisse (ab C1 Niveau) sowie Englischkenntnisse runden dein Profil ab\n\n\nZusätzliche Informationen\n\n\nWeiterbildung: umfangreiche fachliche und methodische Trainings inkl. Zertifizierungen sowie vielfältige Entwicklungsperspektiven innerhalb des Unternehmens\nWork-Life-Balance: hybrides Arbeiten innerhalb von Deutschland und für einen begrenzten Zeitraum in definierten EU-Ländern, Familienservice, Firmenfitness sowie die Möglichkeit zu einem Sabbatical\nFlexible Urlaubsgestaltung: 30 Tage Urlaub und die Möglichkeit zur individuellen Erhöhung oder Verringerung des jährlichen Urlaubs um bis zu 5 Tage\nSpenditCard: Monatlich stehen dir zusätzlich zum Gehalt 50 Euro steuerfreies Guthaben zur Verfügung, die du flexibel für Shops in deiner Nähe nutzen kannst\nIT-Equipment: Wir unterstützen dich bei der Ausstattung von benötigtem Zusatz-Equipment für ein optimales ortsflexibles Arbeiten\nMobilität: Firmenwagen und Dienstfahrrad per Gehaltsumwandlung sowie Bezuschussung des Deutschlandtickets\nUnser Mindset: Teamspirit, offene Türen, Duzkultur, gelebte Vielfalt \n\n\nVielfalt ist eine wichtige Grundlage unserer Unternehmenskultur. Wir möchten ein inklusives Umfeld schaffen, das die Diversität all unserer 2.700 Mitarbeitenden in Deutschland und Österreich berücksichtigt und in dem du dich bestmöglich entfalten kannst. Denn wir bei Sopra Steria sind davon überzeugt, dass deine Individualität der Schlüssel zu einem nachhaltigen Unternehmenserfolg ist. \n\nWir setzen uns für eine nachhaltige Zukunft ein: Ob mit konzernweiten Stipendien- und Corporate Volunteering-Programmen oder mit Projekten zur Förderung von Bildung, Chancengleichheit und digitale Inklusion – wir übernehmen Verantwortung für die Gesellschaft. Wir glauben fest daran, dass digitale Innovationen ein Schlüssel zu Gleichberechtigung, Inklusion und Klimaschutz sind.\n\nImpressum",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T05:46:44.669Z",
+    "sourceHash": "7715800f54a5eb26917ae334ed8e208aed75cd89c5518a182e690273edfd71f6",
+    "company": {
+      "id": "soprasteriacustomsoftwaresolutions",
+      "name": "Sopra Steria Custom Software Solutions",
+      "logoUrl": "https://logo.clearbit.com/soprasteriacustomsoftwaresolutions.com",
+      "industry": "Technology",
+      "website": "https://soprasteriacustomsoftwaresolutions.com"
+    },
+    "slug": "senior-angular-frontend-developer-m-w-d-sopra-steria-custom-software-solutions-7715800f",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "cb7d28a6061bdafdd476197bc8e3cab776646770ec5b437436da6cf476a409e6",
+    "title": "Frontend Engineer, Product UI",
+    "applyUrl": "https://micromart.applytojobs.ca/engineering/46655?source=Linkedin",
+    "description": "About the job\n\nThis is a frontend focused role, with opportunities to contribute across the stack as part of building end to end product experiences.\n\nAbout Micromart\n\nMicromart is building the platform for unattended retail. We empower entrepreneurs to turn any location into a retail opportunity, from offices and condos to gyms, hotels, and other shared spaces. Our focus is on giving entrepreneurs powerful tools that are simple to use, while delivering a fast, intuitive shopping experience for shoppers.\n\nOften described as Shopify for physical commerce, Micromart provides the infrastructure that powers unattended retail in the real world.\n\nOur Team\n\nMicromart launched just over a year ago and is now used in thousands of locations across North America. We’re a small and growing team working closely across product, frontend, backend, and smart store systems, from design through production.\n\nWork here is end to end. That means starting from real customer problems, making pragmatic tradeoffs, shipping code, and improving the product over time. As we scale, there’s real ownership, real impact, and room to grow.\n\nCheck out our product updates page to see what our software team has been working on lately.\n\nHow You Can Help\n\nAs a Senior Frontend Engineer, you’ll help shape the primary product surfaces entrepreneurs use to run their businesses.\n\nYou’ll work across our operator platform (web), in-store POS (React Native), mobile experiences, customer touchpoints, and supporting internal tools. You’ll collaborate closely with product and backend engineers to design and build intuitive, reliable workflows.\n\nYour focus will be on solving real customer problems and making complex operational tools feel simple, fast, and trustworthy as the platform continues to scale.\n\nAt Micromart, you will\n\n\nBuild and evolve core product experiences across our operator platform (web), in-store POS (React Native), mobile apps, customer touchpoints, and supporting internal tools\nOwn frontend features end to end, from implementation through production and iteration\nWork closely with product and backend engineers to shape workflows and APIs\nBuild interfaces that balance power and simplicity for real operational use cases\nBuild and evolve data-rich, real-time frontend experiences for operational and in-store use cases\nImprove frontend architecture, performance, and maintainability over time\nMake pragmatic tradeoffs that prioritize clarity, usability, and long-term quality\nBuild with a high quality bar, catching edge cases through careful implementation, testing, and iteration\n\n\nWhat You Bring To The Team\n\n\nStrong experience building and owning production frontend applications\nStrong fundamentals in frontend architecture, state management, browser behavior, and API integration\nComfort debugging complex frontend issues, including performance, memory, and production bugs\nExperience with modern frontend technologies such as React, React Native, and TypeScript\nExperience building complex React-based products, including admin-style dashboards or operational interfaces\nComfort working with real production data and complex workflows\nStrong product instincts and attention to UX details\nA bias toward simplicity, quality, and continuous improvement\n\n\nNice to have\n\n\nExperience working on data-heavy or real-time applications\nExperience building mobile applications\nFamiliarity with tools like TanStack / React Query, MUI, or similar\nFamiliarity with design systems or frontend platform work\nExperience with frontend test automation (e.g., Cypress)\nExperience working with operational workflows or systems that support real-world processes\nStrong product and UX sensibilities, with the ability to collaborate effectively with design\nBackground in startups or small teams where ownership mattered more than process\n\n\nOur Values\n\nWe’re driven by ambitious, mission-focused thinking and a deep commitment to earning customer trust. We value craftsmanship, simplicity, and quality, and we’re intentional about how we build, the tradeoffs we make, and the problems we choose to solve.\n\nWe believe in getting things done thoughtfully, improving continuously, and working closely together to build a great product.\n\nWhy Micromart\n\nYou’ll work on tools that real entrepreneurs and shoppers depend on every day. You’ll help shape product experiences used across thousands of locations, from operator tools to in-store and mobile experiences. You’ll join a small team where frontend is central to the product and your work has clear, visible impact.\n\nWe believe software should empower people to build real businesses in the physical world. Micromart exists to give entrepreneurs practical, durable tools to create opportunity where people live and work, and your work will directly support that.\n\nThis year marks a major growth phase for Micromart. We’ve achieved a lot with a very small team, built the core smart store product and the platform that powers it, and are now focused on scaling, shipping new product capabilities, and raising the bar on product quality and our technical stack. If you enjoy owning real systems and pushing them to the next level, there’s a lot to dig into.\n\nWhat We Offer\n\n\nCompetitive salary and equity\nHealth, dental, and vision benefits for employees and dependents\nMonthly fitness or wellness stipend\nHybrid work environment, with access to our Toronto office\nMeals provided when working from the office\nCentrally located downtown office near Union Station\n\n\nMicromart is an equal opportunity employer and welcomes applicants from all backgrounds.",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T05:41:49.186Z",
+    "sourceHash": "cb7d28a6061bdafdd476197bc8e3cab776646770ec5b437436da6cf476a409e6",
+    "company": {
+      "id": "micromart",
+      "name": "Micromart",
+      "logoUrl": "https://logo.clearbit.com/micromart.com",
+      "industry": "Technology",
+      "website": "https://micromart.com"
+    },
+    "slug": "frontend-engineer-product-ui-micromart-cb7d28a6",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "cypress"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "c147d6f8dfb4d78bc9817c37a872bf631efbd51e64c46a176def1690241aa233",
+    "title": "Desenvolvedor Front End",
+    "applyUrl": "https://betaonline.inhire.app/vagas/ca0c4665-37b3-44b4-834a-3f5f775acb1c/desenvolvedor-front-end?source=linkedin",
+    "description": "About the job\n\nRESPONSABILIDADES E ATRIBUIÇÕES\n\nSua missão será:\n\nDesenvolver e evoluir funcionalidades de Front-end, garantindo qualidade, performance e boa experiência do usuário;\n\nDesenvolver aplicações utilizando React.js, Next.js e TypeScript;\n\nIntegrar aplicações Front-end a APIs e serviços, garantindo qualidade e eficiência nas integrações;\n\nPlanejar, organizar e acompanhar as atividades de desenvolvimento, assegurando o cumprimento dos prazos e a qualidade das entregas;\n\nIncorporar ferramentas e recursos de Inteligência Artificial ao processo de desenvolvimento, utilizando-os para otimização, geração, revisão e aprimoramento de código;\n\nDesenvolver e integrar funcionalidades baseadas em IA generativa e APIs de Inteligência Artificial, de acordo com as necessidades dos produtos;\n\nRealizar manutenção, correção, refatoração e evolução das aplicações existentes.\n\nREQUISITOS E QUALIFICAÇÕES\n\n Para embarcar nesse desafio você precisa ter:\n\nExperiência prática em desenvolvimento Front-end com React.js, Next.js e TypeScript;\n\nConhecimento em Node.js, HTML5, CSS3, Git e Docker;\n\nExperiência prática no uso de Inteligência Artificial aplicada ao desenvolvimento de software, incluindo ferramentas de IA para geração, revisão, refatoração e otimização de código;\n\nConhecimento de IA generativa, LLMs e integração com APIs de Inteligência Artificial.\n\nMais informações: \n\n100% Home office\n\nContrato: PJ\n\nDisponibilidade de início: Imediata",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-03T05:39:31.316Z",
+    "sourceHash": "c147d6f8dfb4d78bc9817c37a872bf631efbd51e64c46a176def1690241aa233",
+    "company": {
+      "id": "betaonline",
+      "name": "Beta Online",
+      "logoUrl": "https://logo.clearbit.com/betaonline.com",
+      "industry": "Technology",
+      "website": "https://betaonline.com"
+    },
+    "slug": "desenvolvedor-front-end-beta-online-c147d6f8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "abf90651fc7f09b69d6839e3bb4645a87147770a5274e950d39f6c04e8f9c787",
     "title": "Senior Frontend React Engineer",
     "applyUrl": "https://www.talenthop.com/apply-with-ai/1df85eba-a481-4786-880d-a2596c43f74a?utm_medium=job_posting&utm_source=linkedin&utm_campaign=software_engineer&utm_category=software_engineer&utm_term=senior_frontend_react_engineer",
