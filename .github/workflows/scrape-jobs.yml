@@ -51,4 +51,5 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add data/jobs.json data/scraper-state.json
           git commit -m "Auto-update scraped jobs" || echo "No changes to commit"
+          git pull --rebase origin main
           git push
