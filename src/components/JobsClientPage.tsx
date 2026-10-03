@@ -599,7 +599,7 @@ export default function JobsClientPage() {
           <span className="text-[#2563eb]">One Place.</span>
         </h1>
         <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
-          You spend 20+ hours a week checking LinkedIn, Indeed, WeWorkRemotely, and company career pages.<br className="hidden sm:block" />
+          Save 20+ hours a week checking LinkedIn, Indeed, WeWorkRemotely, and company career pages.<br className="hidden sm:block" />
           We check 100+ sources for you - every single day. 2,400+ remote frontend jobs, one search.
         </p>
 

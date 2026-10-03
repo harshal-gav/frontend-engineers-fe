@@ -54,7 +54,7 @@ export default function AboutPage() {
             FrontendEngineers.com aggregates 2,400+ remote frontend developer jobs from 100+ sources - including LinkedIn, WeWorkRemotely, AngelList, and direct company career pages - into one searchable platform. Updated every 24 hours.
           </p>
           <p className="mb-6 text-gray-600 leading-relaxed">
-            You spend 20+ hours a week checking 10 different job boards. We check 100+ sources for you, every single day. One search. Every remote React, Vue, Angular, TypeScript, and Next.js job in one place.
+            Save 20+ hours a week checking 10 different job boards. We check 100+ sources for you, every single day. One search. Every remote React, Vue, Angular, TypeScript, and Next.js job in one place.
           </p>
 
           {/* Who we serve */}
@@ -78,7 +78,7 @@ export default function AboutPage() {
           {/* What problem we solve */}
           <h2 className="text-2xl font-semibold mt-10 mb-4 text-gray-900">Why a Specialized Frontend Job Board?</h2>
           <p className="mb-4 text-gray-600 leading-relaxed">
-            Generic job boards are noisy. Frontend developers waste 20+ hours a week sifting through irrelevant 
+            Generic job boards are noisy. Frontend developers save 20+ hours a week by avoiding irrelevant 
             backend, DevOps, and non-technical listings. Employers compete with thousands of unrelated 
             postings for developer attention. FrontendEngineers.com solves this: every job listed is a remote frontend role. Nothing else.
           </p>

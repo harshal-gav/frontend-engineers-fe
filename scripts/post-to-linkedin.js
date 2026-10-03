@@ -118,7 +118,7 @@ This script runs every 1 hour. You must strictly follow this exact structure to 
 
 1. THE HOOK - First Line: Must open with a punchy, number-driven statement. Use one of these angles, varied each time:
    - "2,400+ remote frontend jobs. One place. Zero noise." 
-   - "You spend 20+ hours a week searching for jobs. We spend 0."
+   - "Save 20+ hours a week searching for jobs. We spend 0."
    - "100+ job boards. 2,400+ jobs. 1 search. FrontendEngineers.com."
    Always include "FrontendEngineers.com" in the first 2 lines.
 

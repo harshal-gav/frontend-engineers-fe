@@ -138,7 +138,7 @@ export default function PricingPage() {
             2,400+ jobs from 100+ sources - updated every 24 hours
           </div>
           <h1 className="text-4xl md:text-5xl font-bold mb-6 w-full">
-            You spend 20+ hours a week <span className="text-[#2563eb]">searching for jobs.</span>
+            Save 20+ hours a week <span className="text-[#2563eb]">searching for jobs.</span>
           </h1>
           <p className="text-xl text-gray-600">
             We already found 2,400+ of them for you. Unlock full descriptions,
