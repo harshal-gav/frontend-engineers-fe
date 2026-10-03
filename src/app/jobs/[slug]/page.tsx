@@ -179,11 +179,11 @@ export default async function JobDetailPage({
             Browse Similar Remote Jobs
           </a>
           <div className="flex flex-wrap justify-center gap-2 mt-2">
-            <Link href="/jobs/remote/react" className="text-sm text-[#2563eb] hover:underline">React Jobs</Link>
-            <Link href="/jobs/remote/typescript" className="text-sm text-[#2563eb] hover:underline">TypeScript Jobs</Link>
-            <Link href="/jobs/remote/javascript" className="text-sm text-[#2563eb] hover:underline">JavaScript Jobs</Link>
-            <Link href="/jobs/remote/vue" className="text-sm text-[#2563eb] hover:underline">Vue Jobs</Link>
-            <Link href="/jobs/remote/angular" className="text-sm text-[#2563eb] hover:underline">Angular Jobs</Link>
+            <Link href="/" className="text-sm text-[#2563eb] hover:underline">React Jobs</Link>
+            <Link href="/" className="text-sm text-[#2563eb] hover:underline">TypeScript Jobs</Link>
+            <Link href="/" className="text-sm text-[#2563eb] hover:underline">JavaScript Jobs</Link>
+            <Link href="/" className="text-sm text-[#2563eb] hover:underline">Vue Jobs</Link>
+            <Link href="/" className="text-sm text-[#2563eb] hover:underline">Angular Jobs</Link>
           </div>
         </div>
       </div>

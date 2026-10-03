@@ -1,13 +1,13 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://www.frontendengineers.com';
+  const baseUrl = 'https://frontendengineers.com';
 
   const staticPages: MetadataRoute.Sitemap = [
     {
       url: baseUrl,
       lastModified: new Date(),
-      changeFrequency: 'always',
+      changeFrequency: 'daily',
       priority: 1,
     },
     {
@@ -66,17 +66,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // High-value SEO category routes
-  const categoryPages: MetadataRoute.Sitemap = [
-    { url: `${baseUrl}/jobs/remote/react`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/jobs/remote/vue`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/jobs/remote/angular`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/jobs/remote/node-js`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/jobs/remote/javascript`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/jobs/remote/fullstack`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/jobs/remote/typescript`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-    { url: `${baseUrl}/jobs/remote/ui-ux`, lastModified: new Date(), changeFrequency: 'daily', priority: 0.9 },
-  ];
-
-  return [...staticPages, ...categoryPages];
+  return staticPages;
 }

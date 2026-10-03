@@ -11,16 +11,7 @@ export const metadata: Metadata = {
   },
 };
 
-const CATEGORY_LINKS = [
-  { href: "/jobs/remote/react", label: "Remote React Jobs" },
-  { href: "/jobs/remote/typescript", label: "Remote TypeScript Jobs" },
-  { href: "/jobs/remote/javascript", label: "Remote JavaScript Jobs" },
-  { href: "/jobs/remote/vue", label: "Remote Vue Jobs" },
-  { href: "/jobs/remote/angular", label: "Remote Angular Jobs" },
-  { href: "/jobs/remote/node-js", label: "Remote Node.js Jobs" },
-  { href: "/jobs/remote/fullstack", label: "Remote Fullstack Jobs" },
-  { href: "/jobs/remote/ui-ux", label: "Remote UI/UX Jobs" },
-];
+
 
 export default function HTMLSitemapPage() {
   let jobs: any[] = [];
@@ -57,17 +48,7 @@ export default function HTMLSitemapPage() {
             </ul>
           </div>
 
-          {/* Technology Categories */}
-          <div>
-            <h2 className="text-2xl font-semibold text-gray-900 mb-4 border-b border-[#e2e2e6] pb-2">Browse by Technology</h2>
-            <ul className="space-y-3">
-              {CATEGORY_LINKS.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="hover:text-[#2563eb]">{link.label}</Link>
-                </li>
-              ))}
-            </ul>
-          </div>
+
 
           {/* Legal */}
           <div>
