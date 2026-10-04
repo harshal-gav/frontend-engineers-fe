@@ -1,5 +1,177 @@
 [
   {
+    "id": "fc0b9263515b985ea3abd871542135bf8ecdf6a12f543f2b044b5b09a282922c",
+    "title": "Frontend Designer - Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/ab85f047-707f-4ec0-b077-79063b486783?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-04T05:41:41.636Z",
+    "sourceHash": "fc0b9263515b985ea3abd871542135bf8ecdf6a12f543f2b044b5b09a282922c",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-designer-remote-yo-ai-labs-fc0b9263",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "figma",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b53297dc3eda29b4232bddd0227602cd860676a2a6300295b670544a0fd5c31c",
+    "title": "Frontend Engineer Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/46e01844-78e4-4a25-83f8-454564b69617?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-04T05:41:03.999Z",
+    "sourceHash": "b53297dc3eda29b4232bddd0227602cd860676a2a6300295b670544a0fd5c31c",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-engineer-remote-yo-ai-labs-b53297dc",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "67b656e6ff85b43030b885d85876129ec404a48c9e263d6723282e06de6576a3",
+    "title": "Frontend Engineer Remote",
+    "applyUrl": "https://yoailabs.careers-page.com/jobs/2d90ec8c-2624-4d78-b97e-8046c0b9458c?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "About the job\n\nFrontend Engineer — Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
+    "location": "Remote - Georgia",
+    "country": "Georgia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-04T05:09:08.585Z",
+    "sourceHash": "67b656e6ff85b43030b885d85876129ec404a48c9e263d6723282e06de6576a3",
+    "company": {
+      "id": "yoailabs",
+      "name": "YO AI Labs",
+      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
+      "industry": "Technology",
+      "website": "https://yoailabs.com"
+    },
+    "slug": "frontend-engineer-remote-yo-ai-labs-67b656e6",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Georgia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "91f80fd0020974282ef137ca32c5ddf8de62e7177b4688539244d07e2b59d74d",
+    "title": "Senior Frontend Engineer ID91778",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StDdUTEpTi15LReIhzF.eBBw-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nAgileEngine is an Inc. 5000 company that creates award-winning software for Fortune 500 brands and trailblazing startups across 17+ industries. We rank among the leaders in areas like application development and AI/ML, and our people-first culture has earned us multiple Best Place to Work awards.\n\nWHY JOIN US\nIf you're looking for a place to grow, make an impact, and work with people who care, we'd love to meet you!\n\nABOUT THE ROLE\nWe are looking for a Senior Frontend Engineer to lead front-end architecture and build user interfaces for a cloud workload and data mobility SaaS platform.\n\nMUST HAVES\n- 5+ years hands-on with front-end web technologies, with a deep understanding of HTML, CSS, JavaScript and the HTTP request-response cycle.\n- Extensive experience with React, including setting and enforcing code structure and organization methods.\n- Experience implementing and consuming REST APIs.\n- Best practices in unit testing for JavaScript and front-end frameworks.\n- Working knowledge of the software product development lifecycle, including design and feedback iterations with Figma, wireframes and mockups.\n- Strong programming and troubleshooting skills.\n- Exceptional teamwork skills: knows when to lead and when to follow.\n- Excellent organizational skills; able to handle and prioritize multiple tasks.\n- Clear verbal and written communication with internal employees and external customers.\n- A passion for explaining technical concepts to customers in understandable language.\n- Upper-intermediate English level.\n\nNICE TO HAVES\n- Front-end architecture experience and ability to guide junior/mid-level engineers.\n- Solid software design fundamentals beyond React (e.g., model-presenter patterns).\n- Awareness of web request overhead and API design trade-offs (e.g., aggregated vs. granular endpoints).\n- Linux/Windows installation and configuration, including networking and storage setup.\n- Practical experience as a software developer with AWS, Azure, GCP, OpenShift and/or VMware vSphere.\n- Experience evaluating and implementing new tools and libraries that improve customer experience and developer productivity.\n- PostgreSQL.\n- Consuming REST APIs from Spring Framework.\n- Jira, GitHub and Gerrit.\n\nWHAT YOU WILL DO\n- Iterate on front-end improvements.\n- Work with the UI/UX team and product management to design new features and improve existing ones.\n- Turn mockups and designs into front-end code.\n- Integrate the user interface with REST APIs, both internal and 3rd party.\n- Participate in code reviews.\n- Work with quality engineering and take part in the entire software development lifecycle (SDLC).\n- Work directly with product management, product engineers, quality engineers and DevOps engineers on scalable, enterprise-class SaaS applications for the cloud.\n\nPERKS AND BENEFITS\n- Professional growth: Mentorship, TechTalks, and personalized growth roadmaps.\n- Competitive compensation: USD-based pay with education, fitness, and team activity budgets.\n- Exciting projects: Modern solutions with Fortune 500 and top product companies.\n- Flextime: Flexible schedule with remote and office options.\n\n\n\n\n\n\nDesired Skills and Experience\n\n5+ years hands-on with front-end web technologies, with a deep understanding of HTML, CSS, JavaScript and the HTTP request-response cycle Extensive experience with React, including setting and enforcing code structure and organization methods Experience implementing and consuming REST APIs Best practices in unit testing for JavaScript and front-end frameworks Working knowledge of the software product development lifecycle, including design and feedback iterations with Figma, wireframes and mockups Strong programming and troubleshooting skills Exceptional teamwork skills: knows when to lead and when to follow Excellent organizational skills; able to handle and prioritize multiple tasks Clear verbal and written communication with internal employees and external customers A passion for explaining technical concepts to customers in understandable language",
+    "location": "Remote - Colombia",
+    "country": "Colombia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-04T05:03:49.526Z",
+    "sourceHash": "91f80fd0020974282ef137ca32c5ddf8de62e7177b4688539244d07e2b59d74d",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id91778-agileengine-91f80fd0",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "figma",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Colombia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "60a0d6750988a8bc8ce88034db9dd86cf3ff3dedf2bd601b0a652e94ed31687a",
+    "title": "React Frontend Engineer",
+    "applyUrl": "https://basirait.com/en/career/react-frontend-engineer",
+    "description": "About the job\n\nHome Careers\n\nReact Frontend Engineer\n\nJoin the Engineering team at Basira IT in Dhaka.\n\n\n Opening soon\n Engineering\n Dhaka, Bangladesh (Remote)\n Full-time\n\n\nAll Positions\n\nLocationDhaka, Bangladesh (Remote)\n\nJob typeFull-time\n\nExperienceMid Level\n\nTeam5 people\n\nAbout This Role\n\nJoin our frontend team to build beautiful, performant interfaces for our ERP and e-commerce products. You will own features from pixel-perfect implementation to state management and API integration.\n\nWhat You'll Do\n\n\n Build responsive, accessible UIs using React 19, TypeScript, and Tailwind CSS\n Implement complex state management with Redux Toolkit and RTK Query\n Integrate with REST and WebSocket APIs\n Write unit and integration tests for frontend components\n Optimize performance — lazy loading, code splitting, and rendering\n Collaborate with designers to translate Figma mockups into production code\n\n\nRequirements\n\n\n 3+ years of experience building production React applications\n Strong TypeScript and CSS/Tailwind skills\n Experience with state management (Redux, Zustand, or Jotai)\n Familiarity with React Router, form libraries (React Hook Form), and validation (Zod)\n Understanding of web performance metrics and optimization techniques\n Comfort with Git workflows and code review processes\n\n\nNice to Have\n\n\n Experience with animation libraries (Framer Motion, GSAP)\n Knowledge of server-side rendering (Next.js or Remix)\n Familiarity with design systems and component libraries\n\n\nWhat We Offer\n\n\n Competitive salary with annual reviews\n Fully remote with flexible hours\n Health insurance\n Annual learning and conference budget\n Latest hardware of your choice\n Paid time off\n\n\nMonthly Salary\n\n৳25,000 – ৳45,000 / month\n\n\n Deadline: Opening soon\n\n\nApplications for this role aren't open yet. Follow us on LinkedIn to get notified when they open.\n\nFollow on LinkedIn\n\nOther roles at Basira IT\n\nEngineeringSenior Full-Stack Engineer Dhaka, Bangladesh (Hybrid)৳50,000 – ৳80,000 / month InfrastructureDevOps Engineer Dhaka, Bangladesh (Hybrid)৳35,000 – ৳60,000 / month DesignProduct Designer Dhaka, Bangladesh (Remote)৳25,000 – ৳40,000 / month",
+    "location": "Remote - Bangladesh",
+    "country": "Bangladesh",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-04T04:58:33.888Z",
+    "sourceHash": "60a0d6750988a8bc8ce88034db9dd86cf3ff3dedf2bd601b0a652e94ed31687a",
+    "company": {
+      "id": "basirait",
+      "name": "Basira IT",
+      "logoUrl": "https://logo.clearbit.com/basirait.com",
+      "industry": "Technology",
+      "website": "https://basirait.com"
+    },
+    "slug": "react-frontend-engineer-basira-it-60a0d675",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "tailwind",
+        "redux",
+        "zustand",
+        "figma",
+        "remix"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bangladesh"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "75801718dc40fadf9377e5691688a1da19708da0e81bc8b08d7054559a3ec1f0",
     "title": "Frontend / AI Engineer",
     "applyUrl": "https://recruiting.paylocity.com/Recruiting/Jobs/Details/4500949?src=LinkedIn",
