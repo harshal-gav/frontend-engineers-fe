@@ -106,27 +106,28 @@ function generateSlug(job) {
 async function generatePostWithGemini() {
   const prompt = `You are a highly creative social media manager for FrontendEngineers.com - an exclusive job portal built exclusively for remote frontend developers.
 
-Write a SHORT, SIMPLE, and engaging LinkedIn post to promote our specialized job portal. DO NOT promote a specific job.
+Write a comprehensive and engaging LinkedIn post to promote our specialized job portal. DO NOT promote a specific job. The post should be a normal, longer length for LinkedIn to get maximum reach and engagement (around 1200-2000 characters).
 
 **CRITICAL RULES:**
-- KEEP IT SHORT AND SIMPLE. Do not exceed 500-800 characters. Get straight to the point.
-- CORE MESSAGE: Emphasize that you will get a remote frontend developer job from this website.
-- EVERY POST MUST BE UNIQUE. Do not use the exact same wording every time. Vary the hook and the angle.
-- USE LOTS OF EMOJIS! 🚀✨ Make the post highly visual, vibrant, and engaging by generously adding relevant emojis throughout to make it look good and stand out. 🔥💻
+- POSITIVE TONE ONLY: Do NOT use negative hooks like "Tired of scrolling..." or "Sick of filtering...". Always keep the tone positive, inspiring, and uplifting.
+- FIRST LINE REQUIREMENT: You MUST explicitly mention the exact phrase "Remote Frontend Developer Job" and the website "FrontendEngineers.com" in the VERY FIRST line of the post. Example: "Find your dream Remote Frontend Developer Job today at FrontendEngineers.com! 🚀"
+- CORE MESSAGE: Emphasize that you will get an amazing remote frontend developer job from this website.
+- EVERY POST MUST BE UNIQUE. Do not use the exact same wording every time. Vary the angle but keep it positive.
+- USE LOTS OF EMOJIS! 🚀✨ Make the post highly visual, vibrant, and engaging by generously adding relevant emojis throughout to make it stand out. 🔥💻
 
 **SUGGESTED STRUCTURE (Vary this between posts):**
 
-1. THE HOOK: A short, punchy opening statement.
-2. THE PITCH: Tell them they will get a remote frontend developer job at FrontendEngineers.com. 
-   - We focus exclusively on 100% remote frontend roles.
-   - Less competition, higher quality matches.
+1. THE HOOK: A positive opening statement explicitly mentioning "Remote Frontend Developer Job" and "FrontendEngineers.com".
+2. THE STORY / THE PITCH: Tell them about the incredible opportunities waiting for them. 
+   - Expand on the benefits of remote work, mastering frontend tech (React, Next.js, Vue), and growing their career. Make the post longer, value-driven, and highly engaging.
+   - Mention we focus exclusively on 100% remote frontend roles with less competition and higher quality matches.
 3. LINKS & CTA:
    🔍 Find your remote frontend job:
    https://www.frontendengineers.com
    ⚡ Unlock All Jobs - $9/mo:
    https://www.frontendengineers.com/pricing
-4. ENGAGEMENT: Add a strong call to action asking them to comment and repost. Example: "Comment below and repost for better reach!" (vary this phrasing).
-5. HASHTAGS: Include 40-50 highly optimized SEO hashtags for maximum reach. Examples: #FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #WebDev #WorkFromHome #TechJobs #Hiring #SoftwareEngineering #FrontendJobs #RemoteWork #Coding
+4. ENGAGEMENT: Add a strong call to action asking them to comment and repost. Example: "Comment below and repost to help your network!" (vary this phrasing).
+5. HASHTAGS: Include 30-40 highly optimized SEO hashtags for maximum reach. Examples: #FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #WebDev #WorkFromHome #TechJobs #Hiring #SoftwareEngineering #FrontendJobs #RemoteWork #Coding
 
 **IMPORTANT RULES & INSTRUCTIONS:**
 - NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead. DO NOT use markdown links like [text](url).
@@ -170,8 +171,8 @@ Write a SHORT, SIMPLE, and engaging LinkedIn post to promote our specialized job
 
     const cleaned = text.trim();
 
-    // If the post is too short (< 100 chars), retry
-    if (cleaned.length < 100 && attempt < 2) {
+    // If the post is too short (< 500 chars), retry
+    if (cleaned.length < 500 && attempt < 2) {
       console.log(`   ⚠️  Post too short (${cleaned.length} chars), retrying (attempt ${attempt + 1}/3)...`);
       continue;
     }
