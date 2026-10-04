@@ -106,52 +106,31 @@ function generateSlug(job) {
 async function generatePostWithGemini() {
   const prompt = `You are a highly creative social media manager for FrontendEngineers.com - an exclusive job portal built exclusively for remote frontend developers.
 
-Write a LONG, engaging, and highly varied LinkedIn post to promote our specialized job portal to job seekers. DO NOT promote a specific job.
+Write a SHORT, SIMPLE, and engaging LinkedIn post to promote our specialized job portal. DO NOT promote a specific job.
 
-**CRITICAL RULE: LONG, VARIED, & EMOJI-RICH**
-- Make the post long and detailed, utilizing up to 2500 characters. DO NOT exceed 2900 characters under any circumstances (LinkedIn limit is 3000).
-- USE EMOJIS liberally to break up text, highlight key points, and make the post visually engaging.
-- Make it highly readable and skimmable, but provide rich context, storytelling, or deep dives into the frontend job market.
-- EVERY POST MUST BE UNIQUE. Do not use the same formula every time. Tell a different story, focus on a different angle (e.g., the pain of generic job boards, the importance of exclusivity, the rise of React/Vue/Angular, the struggle of fake remote jobs).
+**CRITICAL RULES:**
+- KEEP IT SHORT AND SIMPLE. Do not exceed 500-800 characters. Get straight to the point.
+- CORE MESSAGE: Emphasize that you will get a remote frontend developer job from this website.
+- EVERY POST MUST BE UNIQUE. Do not use the exact same wording every time. Vary the hook and the angle.
+- USE LOTS OF EMOJIS! 🚀✨ Make the post highly visual, vibrant, and engaging by generously adding relevant emojis throughout to make it look good and stand out. 🔥💻
 
-**CRITICAL RULE: OUR MARKETING ANGLE**
-We are NOT an aggregator. We are an EXCLUSIVE, highly curated job portal.
-Our main selling points:
-- LESS COMPETITION: You aren't competing with thousands of applicants like on generic boards.
-- EASIER TO GET HIRED: Specialized focus means higher quality matches.
-- 100% REMOTE & FRONTEND ONLY: No backend noise. No hybrid roles disguised as remote.
+**SUGGESTED STRUCTURE (Vary this between posts):**
 
-**SUGGESTED STRUCTURE (Vary this wildly between posts):**
-
-1. THE HOOK - First Line: Must open with a compelling, scroll-stopping statement. Example angles:
-   - "Tired of competing with 3,000 other applicants for one React role? We fixed that." 
-   - "Generic job boards are broken. Here is why you aren't getting interviews."
-   Always include "FrontendEngineers.com" in the first 2-3 lines.
-
-2. THE STORY / PAIN POINT: Write a detailed section describing the specific pain of the modern job search. Talk about fake remote jobs, getting ghosted, the noise of generic boards, or the overwhelming competition. 
-
-3. THE SOLUTION / PITCH: Explain why FrontendEngineers.com is different.
-   - ⚡ EXCLUSIVE REMOTE FRONTEND JOBS - React, Vue, Angular, TypeScript, Next.js.
-   - 🌍 100% REMOTE. 100% FRONTEND. Updated every 24 hours.
-   - 🎯 LESS COMPETITION - A specialized portal means you stand out and get hired faster.
-
-4. CTA & PRICING: "Unlock exclusive jobs for $9/mo. Cancel anytime." Keep the pricing clear.
-
-5. LINKS: Format exactly like this at the end:
-   🔍 Find your dream remote frontend job:
+1. THE HOOK: A short, punchy opening statement.
+2. THE PITCH: Tell them they will get a remote frontend developer job at FrontendEngineers.com. 
+   - We focus exclusively on 100% remote frontend roles.
+   - Less competition, higher quality matches.
+3. LINKS & CTA:
+   🔍 Find your remote frontend job:
    https://www.frontendengineers.com
    ⚡ Unlock All Jobs - $9/mo:
    https://www.frontendengineers.com/pricing
-
-6. HASHTAGS: Include 15-20 highly relevant hashtags. Examples: #FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #WebDev #VueJS #Angular #NextJS #FrontendEngineering #Hiring #TechJobs #RemoteWork #WorkFromHome #SoftwareEngineering #CareerGrowth
+4. ENGAGEMENT: Add a strong call to action asking them to comment and repost. Example: "Comment below and repost for better reach!" (vary this phrasing).
+5. HASHTAGS: Include 40-50 highly optimized SEO hashtags for maximum reach. Examples: #FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #WebDev #WorkFromHome #TechJobs #Hiring #SoftwareEngineering #FrontendJobs #RemoteWork #Coding
 
 **IMPORTANT RULES & INSTRUCTIONS:**
 - NO MARKDOWN OR PARENTHESES: DO NOT use markdown like **bold** or *italics*. DO NOT use parentheses \`()\` anywhere in the text. LinkedIn's API does not support them and will truncate the post. Use commas or dashes instead. DO NOT use markdown links like [text](url).
-- Vary the exact words, angles, and stories you use in every single generation.
-- Ensure the post is LONG (around 1500-2500 characters) but strictly UNDER 2900 characters.
-- DO NOT use the word "aggregator" or "100+ sources". Focus on "Exclusive", "Less Competition", "Specialized".
-
-Write ONLY the post text, nothing else. Make it compelling and highly readable.`;
+- Write ONLY the post text, nothing else. Make it compelling and highly readable.`;
 
   // Retry up to 3 times if the generated post is too short
   for (let attempt = 1; attempt <= 3; attempt++) {
@@ -191,8 +170,8 @@ Write ONLY the post text, nothing else. Make it compelling and highly readable.`
 
     const cleaned = text.trim();
 
-    // If the post is too short (< 200 chars), retry
-    if (cleaned.length < 200 && attempt < 3) {
+    // If the post is too short (< 100 chars), retry
+    if (cleaned.length < 100 && attempt < 2) {
       console.log(`   ⚠️  Post too short (${cleaned.length} chars), retrying (attempt ${attempt + 1}/3)...`);
       continue;
     }
@@ -270,10 +249,10 @@ async function main() {
     console.log(`   Post length: ${postText.length} characters`);
   } else {
     console.log('\n📤 Publishing to LinkedIn...');
-    
+
     // Gather all configured LinkedIn accounts
     const accounts = [];
-    
+
     // Base Account
     if (LINKEDIN_ACCESS_TOKEN && (LINKEDIN_PERSON_ID || LINKEDIN_ORG_ID)) {
       accounts.push({
@@ -306,7 +285,7 @@ async function main() {
     }
 
     let successCount = 0;
-    
+
     for (const acc of accounts) {
       console.log(`\n➡️  Target: ${acc.name}`);
       try {
