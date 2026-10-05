@@ -31,6 +31,28 @@ export async function POST(req: Request) {
           updatedAt: new Date()
         }, { merge: true });
       }
+    } else if (event_type === 'PAYMENT.SALE.COMPLETED') {
+      // This event fires when a recurring payment is successfully charged
+      const subscriptionId = resource.billing_agreement_id;
+      
+      if (subscriptionId) {
+        const db = getAdminDb();
+        // Find the user with this subscription ID
+        const usersSnapshot = await db.collection('users').where('paypalSubscriptionId', '==', subscriptionId).get();
+        
+        if (!usersSnapshot.empty) {
+          const userDoc = usersSnapshot.docs[0];
+          // Extend the subscription by 30 days from now
+          const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
+          
+          await userDoc.ref.set({
+            isPremium: true,
+            isSubscribed: true,
+            subscriptionExpiresAt: expiresAt,
+            updatedAt: new Date()
+          }, { merge: true });
+        }
+      }
     }
 
     return NextResponse.json({ received: true }, { status: 200 });
