@@ -141,9 +141,8 @@ export default function PricingPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-6 w-full">
             Get Hired Faster with <span className="text-[#2563eb]">Less Competition.</span>
           </h1>
-          <p className="text-xl text-gray-600">
-            Stand out by applying to exclusive remote frontend jobs. Unlock full descriptions,
-            1-click apply links, and daily alerts for $9/mo.
+          <p className="text-xl text-gray-600 mt-2 max-w-2xl mx-auto text-center">
+            Skip the noise. We aggregate React, Vue, and Angular roles from 100+ sources so you never miss a remote opportunity. Unlock full descriptions, 1-click apply links, and daily alerts for $9/mo.
           </p>
         </div>
 

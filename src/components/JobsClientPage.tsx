@@ -599,7 +599,7 @@ export default function JobsClientPage() {
           <span className="text-[#2563eb]">Developer jobs</span>
         </h1>
         <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
-          Skip the noise of generic job boards. We handpick remote roles so you can stand out and get hired for React, Vue, and Angular jobs.
+          Skip the noise. We aggregate React, Vue, and Angular roles from 100+ sources so you never miss a remote opportunity.
         </p>
 
 
