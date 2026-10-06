@@ -93,9 +93,9 @@ export async function POST(req: Request) {
       createdAt: new Date(),
     });
 
-    // Generate Hash
-    // Standard sequence: key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5||||||SALT
-    const hashString = `${PAYU_MERCHANT_KEY}|${txnid}|${amount}|${productinfo}|${firstname}|${email}|||||||||||${PAYU_MERCHANT_SALT}`;
+    // Generate Hash for SI
+    // Sequence: key|txnid|amount|productinfo|firstname|email|udf1|udf2|udf3|udf4|udf5||||||si_details|SALT
+    const hashString = `${PAYU_MERCHANT_KEY}|${txnid}|${amount}|${productinfo}|${firstname}|${email}|||||||||||${si_details}|${PAYU_MERCHANT_SALT}`;
     const hash = crypto.createHash('sha512').update(hashString).digest('hex');
 
     return NextResponse.json({
@@ -111,6 +111,7 @@ export async function POST(req: Request) {
         surl,
         furl,
         hash,
+        api_version: 7, // Required for SI subscriptions
         si,
         si_details
       }
