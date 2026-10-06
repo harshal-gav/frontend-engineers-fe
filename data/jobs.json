@@ -1,5 +1,180 @@
 [
   {
+    "id": "6727abf8db7d1f532116833e53d1e99effbc9b4c9bd37b5a4acc675303b3315d",
+    "title": "UI/UX Front End Engineer",
+    "applyUrl": "https://careers-lynker.icims.com/jobs/1666/ui-ux-front-end-engineer/job?mode=job&iis=Job+Posting&iisn=LinkedIn",
+    "description": "About the job\n\nLynker is seeking a detail-oriented UI/UX Front-End Engineer to support a long term contract with the Space Weather Prediction Center (SWPC) at the National Centers for Environmental Prediction (NCEP). SWPC operates 24/7, monitoring space weather conditions that impact national security, satellite operations, aviation, power grids, and emergency management. \n\nIn this role, you will build and refine the front-end user interfaces, accessible designs, and visual features for both the primary operational site (spaceweather.gov) and the experimental testbed site (testbed.spaceweather.gov). Working alongside web application scientific developers, you will translate complex scientific data into clean, responsive, and intuitive web interfaces built on Drupal 10. \n\nThis position plays a critical role in the research-to-operations (R2O) process by enabling the integration of new models, data sources, and processing workflows into operational test environments. The Ideal Web Developer selected will be located in the Boulder, CO, however the role could operate remotely for the right candidate. \n\nDuties of the UI/UX Front End Engineer selected will include the following\n\n\nUI/UX & Drupal Engineering Build, theme, and maintain scalable front-end components within Drupal 10, ensuring high-fidelity visual translation from design comps to responsive web environments. \nScientific Developer Collaboration Partner closely with backend scientific developers to integrate UI components, interactive dashboards, and visual tools with underlying data streams and web services. \nDesign System & Component Architecture Develop clean, modern, and reusable front-end assets using modern web standards (HTML5, CSS3/SASS, JavaScript/TypeScript) and Drupal theme frameworks. \nUser Experience & Accessibility Craft accessible, mobile-first user flows for complex space weather maps, charts, and forecasts in alignment with federal Section 508 / WCAG standards. \nCross-Browser & Responsive Optimization Test and optimize front-end interfaces across major browsers, devices, and viewports to ensure seamless visual consistency and performance. \n\n\n\nThe UI/UX Front End Engineer selected should have the following\n\n\nA Bachelor's Degree in Computer Science, Web Engineering, Interactive Design, or a related technical field (or equivalent experience) \nExperience 5+ years of dedicated web development and UI/UX front-end engineering experience. \nCMS Expertise Demonstrated experience custom-theming and building front-end components in Drupal 10 (Twig, custom layouts, Drupal render API). \nCore Tech Stack Mastery High proficiency in HTML5, CSS3/SASS, JavaScript (ES6+), and modern CSS layouts (Flexbox, CSS Grid). \nHigh Design Fidelity Strong eye for visual detail and commitment to producing polished, high-quality user interfaces. \nVersion Control Proficiency with Git and standard collaborative development workflows. \n\n\n\nThe Ideal Web Developer will have the following\n\n\nExperience engineering data visualizations or mapping interfaces for scientific, meteorological, or geospatial applications (e.g., Leaflet, OpenLayers, Chart.js, or D3.js). \nHands-on experience with Federal Section 508 web accessibility compliance and testing tools. \nFamiliarity with containerized local development workflows (e.g., Docker, DDEV, or Lando). \nExperience collaborating with scientific, engineering, or research teams in an Agile environment. \n\n\n\nAbout Lynker\n\nLynker is a growing, employee owned, small business, specializing in professional, scientific and technical services. Our continually expanding team combines scientific expertise with mature, results-driven processes and tools to achieve technically sound, cost effective solutions in hydrology/water sciences, geospatial analysis, information technology, resource management, conservation, and management and business process improvement.\n\nWe focus on putting the right people in the right place to be effective. And having the right people is critical for success. Our streamlined organization enables and empowers our talented professionals to tackle our customers' scientific and technical priorities - creatively and effectively.\n\nLynker offers a team-oriented work environment, and the opportunity to work in a culture of exceptionally skilled professionals who embrace sound science and creative solutions. Lynker's benefits include the following\n\n\nComprehensive healthcare for the employee at no monthly cost\nHealthcare benefit covers medical, prescription drug, dental, and vision\nPersonal Time Off (PTO) Policy plus paid holidays\nHighly competitive compensation plan regularly calibrated against industry and location benchmarks\n401(k) retirement plan with company-matching\nEmployee Stock Ownership Plan (ESOP) - we're all company owners!\nFlexible spending accounts\nEmployee assistance program (EAP)\nShort- and long-term disability insurance\nLife and accident insurance\nTuition assistance/Training/Workforce improvement reimbursement per year\nSpot bonuses for exceptional performance\nAnnual Employee Recognition Awards with bonuses\nEmployee Referral Program\nFree centralized, self-directed Learning Management System to learn at your own pace\nPersonalized career growth plans for every employee\n\n\n\nLynker is an E-Verify employer.\n\nLynker is an equal opportunity employer and makes all employment decisions based on merit, qualifications, and business needs. We do not discriminate on the basis of race, color, religion, sex (including pregnancy, sexual orientation, or gender identity), national origin, age, disability, genetic information, marital status, veteran status, or any other legally protected status under federal, state, or local laws.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-06T06:33:05.026Z",
+    "sourceHash": "6727abf8db7d1f532116833e53d1e99effbc9b4c9bd37b5a4acc675303b3315d",
+    "company": {
+      "id": "lynker",
+      "name": "Lynker",
+      "logoUrl": "https://logo.clearbit.com/lynker.com",
+      "industry": "Technology",
+      "website": "https://lynker.com"
+    },
+    "slug": "ui-ux-front-end-engineer-lynker-6727abf8",
+    "aiTags": {
+      "stack": [
+        "typescript",
+        "javascript",
+        "css",
+        "sass",
+        "html",
+        "accessibility",
+        "d3"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "6ee27078a531a2eb37d05bb29ec188e88ded7346656f00f80b77903c9080c874",
+    "title": "Frontend Developer - Remote",
+    "applyUrl": "https://yohrconsultancy.hiresome.ai/apply_form/frontend-developer-remote-6a8d8241b41cdaab0ae62d13?utm_source=linkedin",
+    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (~15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks. \nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization. \nBuild deterministic verification systems and golden reference solutions. \nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively. \nDevelop realistic, reproducible software engineering scenarios. \nEnsure tasks accurately measure coding ability, problem-solving, and tool usage. \nDocument solutions and provide clear technical feedback. \n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript. \nStrong understanding of algorithms and data structures. \nExperience with bug fixing and debugging complex software issues. \nProven experience in feature implementation and codebase refactoring. \nStrong knowledge of performance optimization and tuning. \nExcellent written and verbal communication. \nStrong attention to detail. \n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases. \nFamiliarity with AI/ML systems is a plus but not required. \nExperience with rigorous code reviews and software engineering best practices. \nExperience working effectively in remote or cross-functional teams. \n\n\nHiring Process\n\n\nSubmit an application and screening questions. \nComplete an AI interview (~30 minutes). \nComplete a technical assessment, if required. \nHiring Manager review. \n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24-48 hours of completing onboarding.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-06T06:32:58.703Z",
+    "sourceHash": "6ee27078a531a2eb37d05bb29ec188e88ded7346656f00f80b77903c9080c874",
+    "company": {
+      "id": "yoitconsulting",
+      "name": "YO IT Consulting",
+      "logoUrl": "https://logo.clearbit.com/yoitconsulting.com",
+      "industry": "Technology",
+      "website": "https://yoitconsulting.com"
+    },
+    "slug": "frontend-developer-remote-yo-it-consulting-6ee27078",
+    "aiTags": {
+      "stack": [
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "28c0736a8ab6608839f02adc06aab6571c87029e07f7b83e94698c90137cd9a6",
+    "title": "Geospatial Frontend Engineer",
+    "applyUrl": "https://parsons.wd5.myworkdayjobs.com/Search/job/US---Remote-Any-Location/Geospatial-Frontend-Engineer_R186970/apply?source=LinkedIn",
+    "description": "About the job\n\nIn a world of possibilities, pursue one with endless opportunities. Imagine Next!\n\nAt Parsons, you can imagine a career where you thrive, work with exceptional people, and be yourself. Guided by our leadership vision of valuing people, embracing agility, and fostering growth, we cultivate an innovative culture that empowers you to achieve your full potential. Unleash your talent and redefine what’s possible.\n\nJob Description\n\nParsons is seeking a talented Geospatial Frontend Engineer to help develop next-generation, mission-critical applications for defense and national security missions. In this role, you will design and build responsive, intuitive user interfaces that help operators and decision-makers understand complex operational environments. You will work with large geospatial datasets, interactive two-dimensional and three-dimensional maps, real-time data streams, and situational awareness tools.\n\nThis is an opportunity to solve challenging frontend engineering problems while contributing to technology that supports critical missions.\n\nWhat You'll Be Doing\n\n\nDesign frontend architecture: Help define and evolve the architecture of complex geospatial applications using React, TypeScript, and modern state management patterns.\nBuild geospatial visualizations: Develop high-performance mapping and visualization components using technologies such as OpenLayers, CesiumJS, WebGL, or related frameworks.\nWork with large datasets: Create interfaces capable of displaying and interacting with substantial geospatial datasets, real-time feeds, and map layers.\nOptimize application performance: Profile and improve rendering performance, memory usage, network activity, and interaction latency, including on hardware-constrained systems.\nDevelop data-intensive workflows: Use asynchronous programming, web workers, and efficient data-processing techniques to support demanding visualization and analysis workflows.\nIntegrate secure services: Partner with backend and DevOps engineers to integrate APIs, cloud-native services, authentication mechanisms, and secure data pipelines.\nCollaborate across disciplines: Work closely with UX and UI designers, product owners, systems engineers, and end users to create effective and intuitive mission-focused experiences.\nMaintain engineering quality: Write maintainable, well-tested code; participate in design discussions and code reviews; and contribute to frontend standards and best practices.\nSupport team growth: Mentor junior and mid-level engineers and help establish development practices that improve quality, consistency, and delivery.\nContribute to technical direction: Evaluate tools and technologies, identify opportunities for improvement, and help guide the evolution of the application platform.\n\n\n\nWhat Required Skills You'll Bring\n\n\nMust be a U.S. Citizen.\nBachelor's Degree Computer Science, Computer Engineering or related field and 5+ years of professional software engineering experience with a heavy emphasis on React and modern frontend ecosystem tools. Additional years of experience may be considered in lieu of a degree. \nSignificant professional experience developing frontend applications with React and TypeScript.\nStrong knowledge of modern JavaScript, including ES6 and later, asynchronous programming, and contemporary frontend development practices.\nExperience designing and implementing reusable, maintainable user interface components.\nExperience working with geospatial data or mapping technologies, including one or more of the following:GeoJSONKMLRaster or vector tilesCoordinate reference systemsGeospatial APIsOpenLayers, CesiumJS, MapLibre, Mapbox, or comparable libraries\nExperience diagnosing and improving browser performance, including rendering, memory usage, network activity, and application responsiveness.\nExperience creating automated tests using tools such as Jest, Cypress, Playwright, or comparable frameworks.\nStrong communication and collaboration skills.\nAbility to work effectively in a mission-focused, highly collaborative engineering environment.\n\n\n\nWhat Desired Skills You'll Bring\n\n\nActive security clearance at the level required for the applicable program.\nExperience working on defense, intelligence, aerospace, or other national security applications.\nExperience deploying applications in secure or regulated cloud environments, including AWS GovCloud.\nFamiliarity with Docker, Kubernetes, and cloud-native application deployment.\nExperience developing applications that support DoD cybersecurity or compliance requirements, including applicable Impact Level requirements.\nExperience with three-dimensional geospatial visualization using CesiumJS, Three.js, WebGL, or related technologies.\nExperience developing custom WebGL shaders or optimizing GPU-accelerated visualizations.\nExperience processing real-time or streaming data.\nExperience working with geospatial databases, spatial analysis tools, or geospatial web services.\nExperience mentoring engineers or leading frontend technical initiatives.\n\n\n\nSecurity Clearance Requirement\n\nNone\n\nThis position is part of our Federal Solutions team.\n\nThe Federal Solutions segment delivers resources to our US government customers that ensure the success of missions around the globe. Our intelligent employees drive the state of the art as they provide services and solutions in the areas of defense, security, intelligence, infrastructure, and environmental. We promote a culture of excellence and close-knit teams that take pride in delivering, protecting, and sustaining our nation's most critical assets, from Earth to cyberspace. Throughout the company, our people are anticipating what’s next to deliver the solutions our customers need now.\n\nSalary Range: $103,500.00 - $181,100.00\n\nWe value our employees and want our employees to take care of their overall wellbeing, which is why we offer best-in-class benefits such as medical, dental, vision, paid time off, 401(k), life insurance, flexible work schedules, and holidays to fit your busy lifestyle!\n\nThis position will be posted for a minimum of 3 days and will continue to be posted for an average of 30 days until a qualified applicant is selected or the position has been cancelled.\n\nParsons is an equal opportunity employer, and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability, veteran status or any other protected status.\n\nWe truly invest and care about our employee’s wellbeing and provide endless growth opportunities as the sky is the limit, so aim for the stars! Imagine next and join the Parsons quest—APPLY TODAY!\n\nParsons is aware of fraudulent recruitment practices. To learn more about recruitment fraud and how to report it, please refer to https://www.parsons.com/fraudulent-recruitment/.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-06T06:28:44.229Z",
+    "sourceHash": "28c0736a8ab6608839f02adc06aab6571c87029e07f7b83e94698c90137cd9a6",
+    "company": {
+      "id": "parsonscorporation",
+      "name": "Parsons Corporation",
+      "logoUrl": "https://logo.clearbit.com/parsonscorporation.com",
+      "industry": "Technology",
+      "website": "https://parsonscorporation.com"
+    },
+    "slug": "geospatial-frontend-engineer-parsons-corporation-28c0736a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "cypress",
+        "jest",
+        "playwright",
+        "webgl",
+        "threejs"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d77c6330e0c3ff82541836494642c388d6fafd76919e728ca2563e7feb337064",
+    "title": "Geospatial Frontend Engineer",
+    "applyUrl": "https://parsons.wd5.myworkdayjobs.com/Search/job/US---Remote-Any-Location/Geospatial-Frontend-Engineer_R186961/apply?source=LinkedIn",
+    "description": "About the job\n\nIn a world of possibilities, pursue one with endless opportunities. Imagine Next!\n\nAt Parsons, you can imagine a career where you thrive, work with exceptional people, and be yourself. Guided by our leadership vision of valuing people, embracing agility, and fostering growth, we cultivate an innovative culture that empowers you to achieve your full potential. Unleash your talent and redefine what’s possible.\n\nJob Description\n\nParsons is seeking a talented Geospatial Frontend Engineer to help develop next-generation, mission-critical applications for defense and national security missions. In this role, you will design and build responsive, intuitive user interfaces that help operators and decision-makers understand complex operational environments. You will work with large geospatial datasets, interactive two-dimensional and three-dimensional maps, real-time data streams, and situational awareness tools.\n\nThis is an opportunity to solve challenging frontend engineering problems while contributing to technology that supports critical missions.\n\nWhat You'll Be Doing\n\n\nDesign frontend architecture: Help define and evolve the architecture of complex geospatial applications using React, TypeScript, and modern state management patterns.\nBuild geospatial visualizations: Develop high-performance mapping and visualization components using technologies such as OpenLayers, CesiumJS, WebGL, or related frameworks.\nWork with large datasets: Create interfaces capable of displaying and interacting with substantial geospatial datasets, real-time feeds, and map layers.\nOptimize application performance: Profile and improve rendering performance, memory usage, network activity, and interaction latency, including on hardware-constrained systems.\nDevelop data-intensive workflows: Use asynchronous programming, web workers, and efficient data-processing techniques to support demanding visualization and analysis workflows.\nIntegrate secure services: Partner with backend and DevOps engineers to integrate APIs, cloud-native services, authentication mechanisms, and secure data pipelines.\nCollaborate across disciplines: Work closely with UX and UI designers, product owners, systems engineers, and end users to create effective and intuitive mission-focused experiences.\nMaintain engineering quality: Write maintainable, well-tested code; participate in design discussions and code reviews; and contribute to frontend standards and best practices.\nSupport team growth: Mentor junior and mid-level engineers and help establish development practices that improve quality, consistency, and delivery.\nContribute to technical direction: Evaluate tools and technologies, identify opportunities for improvement, and help guide the evolution of the application platform.\n\n\n\nWhat Required Skills You'll Bring\n\n\nMust be a U.S. Citizen.\nBachelor's Degree Computer Science, Computer Engineering or related field and 5+ years of professional software engineering experience with a heavy emphasis on React and modern frontend ecosystem tools. Additional years of experience may be considered in lieu of a degree. \nSignificant professional experience developing frontend applications with React and TypeScript.\nStrong knowledge of modern JavaScript, including ES6 and later, asynchronous programming, and contemporary frontend development practices.\nExperience designing and implementing reusable, maintainable user interface components.\nExperience working with geospatial data or mapping technologies, including one or more of the following:GeoJSONKMLRaster or vector tilesCoordinate reference systemsGeospatial APIsOpenLayers, CesiumJS, MapLibre, Mapbox, or comparable libraries\nExperience diagnosing and improving browser performance, including rendering, memory usage, network activity, and application responsiveness.\nExperience creating automated tests using tools such as Jest, Cypress, Playwright, or comparable frameworks.\nStrong communication and collaboration skills.\nAbility to work effectively in a mission-focused, highly collaborative engineering environment.\n\n\n\nWhat Desired Skills You'll Bring\n\n\nActive security clearance at the level required for the applicable program.\nExperience working on defense, intelligence, aerospace, or other national security applications.\nExperience deploying applications in secure or regulated cloud environments, including AWS GovCloud.\nFamiliarity with Docker, Kubernetes, and cloud-native application deployment.\nExperience developing applications that support DoD cybersecurity or compliance requirements, including applicable Impact Level requirements.\nExperience with three-dimensional geospatial visualization using CesiumJS, Three.js, WebGL, or related technologies.\nExperience developing custom WebGL shaders or optimizing GPU-accelerated visualizations.\nExperience processing real-time or streaming data.\nExperience working with geospatial databases, spatial analysis tools, or geospatial web services.\nExperience mentoring engineers or leading frontend technical initiatives.\n\n\n\nSecurity Clearance Requirement\n\nNone\n\nThis position is part of our Federal Solutions team.\n\nThe Federal Solutions segment delivers resources to our US government customers that ensure the success of missions around the globe. Our intelligent employees drive the state of the art as they provide services and solutions in the areas of defense, security, intelligence, infrastructure, and environmental. We promote a culture of excellence and close-knit teams that take pride in delivering, protecting, and sustaining our nation's most critical assets, from Earth to cyberspace. Throughout the company, our people are anticipating what’s next to deliver the solutions our customers need now.\n\nSalary Range: $103,500.00 - $181,100.00\n\nWe value our employees and want our employees to take care of their overall wellbeing, which is why we offer best-in-class benefits such as medical, dental, vision, paid time off, 401(k), life insurance, flexible work schedules, and holidays to fit your busy lifestyle!\n\nThis position will be posted for a minimum of 3 days and will continue to be posted for an average of 30 days until a qualified applicant is selected or the position has been cancelled.\n\nParsons is an equal opportunity employer, and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, disability, veteran status or any other protected status.\n\nWe truly invest and care about our employee’s wellbeing and provide endless growth opportunities as the sky is the limit, so aim for the stars! Imagine next and join the Parsons quest—APPLY TODAY!\n\nParsons is aware of fraudulent recruitment practices. To learn more about recruitment fraud and how to report it, please refer to https://www.parsons.com/fraudulent-recruitment/.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-06T06:28:00.374Z",
+    "sourceHash": "d77c6330e0c3ff82541836494642c388d6fafd76919e728ca2563e7feb337064",
+    "company": {
+      "id": "parsonscorporation",
+      "name": "Parsons Corporation",
+      "logoUrl": "https://logo.clearbit.com/parsonscorporation.com",
+      "industry": "Technology",
+      "website": "https://parsonscorporation.com"
+    },
+    "slug": "geospatial-frontend-engineer-parsons-corporation-d77c6330",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "cypress",
+        "jest",
+        "playwright",
+        "webgl",
+        "threejs"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8feaf20f93decc2be2abeb203827e637d4c13ff86d7e88de04116e59b04add77",
+    "title": "Frontend Developer / Developer (Angular)",
+    "applyUrl": "https://natek.eu/jobs/frontend-developer-developer-angular",
+    "description": "About the job\n\nJob Description\n\nPoszukujemy Frontend Developera do zespołu rozwijającego aplikację CLP - workflow kredytowy dla klientów korporacyjnych jednego z dużych banków. System wspiera proces kredytowy end-to-end – od weryfikacji klienta i ustalenia limitu, przez wnioskowanie o produkt i przygotowanie umowy kredytowej, aż po uruchomienie kredytu.\n\nAplikacja jest rozwijana od kilku lat i wspiera obsługę większości produktów oferowanych klientom korporacyjnym przez Bank oraz spółki leasingową i faktoringową. Frontend aplikacji jest obecnie monolitem, a w ramach dalszego rozwoju planowane jest wdrażanie architektury mikrofrontendowej.\n\nProjekt realizowany jest w metodyce Agile, w mieszanych zespołach biznesowo technicznych.\n\nYour Responsibilities\n\n\n\n Rozwój i utrzymanie aplikacji frontendowej w technologii Angular\n Tworzenie nowych funkcjonalności wspierających proces kredytowy dla klientów korporacyjnych\n Praca z programowaniem reaktywnym z wykorzystaniem RxJS i Nx\n Integracja frontendu z backendem poprzez REST API oraz WebSocket\n Tworzenie i utrzymywanie testów jednostkowych\n Dbanie o jakość, czytelność i zgodność kodu z przyjętymi standardami\n Udział w code review oraz ustalaniu i egzekwowaniu standardów jakości kodu i testów\n Współpraca przy dalszym rozwoju architektury aplikacji, w tym planowanym przejściu w kierunku mikrofrontendów\n Mentoring i wsparcie mniej doświadczonych członków zespołu\n Praca z procesami CI/CD i SSDLC\n Wykorzystywanie narzędzi AI, w tym GitHub Copilot, w procesie wytwarzania oprogramowania\n\n\n\nOur Requirements\n\n\n\n Minimum 5 lat doświadczenia jako Frontend Developer (m/f), w tym duże praktyczne doświadczenie z Angular i jego nowymi wersjami (Angular 19–21)\n Bardzo dobra znajomość TypeScript, JavaScript, RxJS, Nx, REST API oraz HTML/CSS\n Doświadczenie w pracy nad dużymi, złożonymi aplikacjami\n Doświadczenie w tworzeniu testów jednostkowych oraz dbaniu o jakość kodu, w tym code review\n Znajomość CI/CD, Git oraz standardów i dobrych praktyk wytwarzania oprogramowania\n Podstawowa praktyczna znajomość SQL\n Doświadczenie w pracy w środowisku Agile\n Ukończone studia inżynierskie lub magisterskie w obszarze IT\n\n\n\nBenefits\n\n▪ Długofalowa współpraca oparta o nasze wartości: edukacja, partnerstwo i odpowiedzialność\n\n▪ Internal Mobility Program – ciesz się wieloma możliwościami rozwoju kariery, rotacją stanowisk, różnorodnością projektów i technologii\n\n▪ Program Poleceń – współpracuj ze swoimi znajomymi i zyskaj bonus!\n\n▪ 5/10 Years NATEK Club – oferujemy długoterminową współpracę, a każdą piątą rocznicę współpracy świętujemy nagrodamI\n\n▪ NATEK CSR Events oraz integracje\n\n▪ Kafeteria\n\n▪ Opieka medyczna (Medicover)\n\n▪ Multisport\n\n▪ Szkolenia techniczne i personalne\n\n▪ Kursy językowe\n\n▪ Dla kontraktorów - uprawnienie do 23 dodatkowych dni świadczenia usług w roku\n\nDodatkowo tylko dla UOP:\n\n▪ Ubezpieczenie na życie\n\n▪ Personal Event Bonus\n\n▪ Dzień wolny na wolontariat",
+    "location": "Remote - Poland",
+    "country": "Poland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-06T06:09:09.664Z",
+    "sourceHash": "8feaf20f93decc2be2abeb203827e637d4c13ff86d7e88de04116e59b04add77",
+    "company": {
+      "id": "natek",
+      "name": "NATEK",
+      "logoUrl": "https://logo.clearbit.com/natek.com",
+      "industry": "Technology",
+      "website": "https://natek.com"
+    },
+    "slug": "frontend-developer-developer-angular-natek-8feaf20f",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "jest",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Poland"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "45b665baf0998b6e52d4047e9bdc0ad49108f2cae7c441ab3966d4e39ae0c6ef",
     "title": "Software Engineer III - Front End/Back End",
     "applyUrl": "https://adhoc.hrmdirect.com/employment/job-opening.php?req=3828909&req_loc=1492637&cust_sort1=245588%2Femployment%2Fjob-openings.php%3Fsearch%3Dtrue&source=LinkedIn",
