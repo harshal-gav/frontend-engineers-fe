@@ -13,23 +13,27 @@ const db = admin.firestore();
 async function main() {
   try {
     const snapshot = await db.collection('users').where('isPremium', '==', true).get();
-    console.log(`Found ${snapshot.size} pro users.\n`);
+    const now = new Date();
     
+    let expiredCount = 0;
+
     for (const doc of snapshot.docs) {
       const data = doc.data();
-      let email = data.email;
-      if (!email) {
-        try {
-          const user = await admin.auth().getUser(doc.id);
-          email = user.email;
-        } catch(e) {
-          email = '<no-email>';
+      if (data.subscriptionExpiresAt) {
+        const expiresAt = new Date(data.subscriptionExpiresAt);
+        
+        if (expiresAt < now) {
+          console.log(`User ${doc.id} expired on ${expiresAt.toISOString()}. Revoking premium status.`);
+          await db.collection('users').doc(doc.id).set({
+            isPremium: false,
+            isSubscribed: false
+          }, { merge: true });
+          expiredCount++;
         }
       }
-      
-      const expiresAt = data.subscriptionExpiresAt || 'No expiration date found';
-      console.log(`UID: ${doc.id} | Email: ${email} | Expiration: ${expiresAt}`);
     }
+    
+    console.log(`\nSuccessfully revoked premium access for ${expiredCount} expired users.`);
   } catch (err) {
     console.error(err);
   }
