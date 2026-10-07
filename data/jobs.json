@@ -1,5 +1,922 @@
 [
   {
+    "id": "d43a9e3565874d5cad91b005c78e72cbfcbf69c67eb465a522e2d2d1beeb2461",
+    "title": "Mid Frontend Engineer (Angular, React, TS) REQ_29",
+    "applyUrl": "https://3pillar.darwinbox.com/ms/candidatev2/main/careers/jobDetails/6a8f1bc90e22b?source=LinkedIn",
+    "description": "About the job\n\n3Pillar is an AI transformation partner on a mission to help enterprises build the AI-native products and intelligent agents that will define the next era of business. With teams across North America, Europe, Latin America, and Asia, we work with the most ambitious companies in financial services, healthcare, media, and technology — helping them move faster, modernize boldly, and compete on their own terms. Our HelixAI platform and Helix Pods delivery model put our engineers at the center of real agentic transformation — doing work that is open, portable, and built to last. We are building the future of enterprise AI.\n\nEmbark on an exciting journey into the realm of software development with 3Pillar! We extend an invitation for you to join our team and gear up for a thrilling adventure. At 3Pillar, our focus is on crafting cutting-edge technologies that revolutionize industries. As a Software Engineer, you'll play a vital role in our dynamic team, contributing to exciting projects that redefine urban living, establish new media channels for enterprise companies, or drive innovation in healthcare. This opportunity goes beyond code – it's about creating epic solutions that leave a lasting impression in the market. If your passion for programming fuels your drive to make a real-world impact, consider this your pass to the captivating world of Product Development! 🚀💻\n\nKey Responsibilities\n\n\n Craft client code that is not just efficient but also performant, testable, scalable, secure, and of the highest quality. \n Provide accurate status tracking, reporting, and estimation using project methods and tools. \n Gather requirements, validate their understanding amongst the team, and create and maintain relevant documentation. \n Execute activities within the current methodology and uphold the highest quality standards. \n Foster collaboration with fellow engineers, designers, and managers to comprehend user pain points and iterate on solutions that drive client success. \n Take ownership of projects, from technical design to a successful launch. \n\n\nMinimum Qualifications\n\n\n Demonstrated expertise with at least 2+ years of experience in one specified technology. \n Beginner to intermediate level design proficiency following UML / C4 / ArchiMate. \n Experience in engineering software systems of medium-to-large scope and complexity. \n Familiarity with Agile software development methodologies. \n Proficiency with relational databases and SQL. \n Experience in building frontend/backend applications at scale. \n Proficiency in the English language. \n\n\nAdditional Experience Desired\n\n\n Knowledge of source control tools. \n Understanding of Software Development Life Cycle (SDLC). \n Proficiency in Object-Oriented Programming (inheritance, polymorphism, classes, instances, properties). \n Knowledge of protocols like HTTP, and serialization formats like JSON and XML. \n Knowledge of document databases. \n Experience with Unit testing. \n Experience - 1-2 years as Fullstack Developer.\n Angular 20 \n Node \n Express \n Postgresql \n Staying up-to-date with the latest industry trends and technologies Troubleshooting and debugging issues to ensure smooth user experiences \n Participating in code reviews to maintain code quality and consistency \n\nWhat is it like working for 3Pillar Global?\n\nAt 3Pillar, We Offer a World Of Opportunity\n\n\n Imagine a flexible work environment – whether it's the office, your home, or a blend of both. From interviews to onboarding, we embody a remote-first approach. \n You will be part of a global team , learning from top talent around the world and across cultures, speaking English everyday. Our global workforce enables our team to leverage global resources to accomplish our work in efficient and effective teams. \n We’re big on your well-being – as a company, we spend a whole trimester in our annual cycle focused on wellbeing. Whether it is taking advantage of fitness offerings, mental health plans (country-dependent), or simply leveraging generous time off, we want all of our team members operating at their best. \n Our professional services model enables us to accelerate career growth and development opportunities - across projects, offerings, and industries. \n We are an equal opportunity employer. It goes without saying that we live by values like Intrinsic Dignity and Open Collaboration to create cutting-edge technology AND reinforce our commitment to diversity - globally and locally. \n\n\nJoin us and be a part of a global tech community! 🌍💼 Check out our Linkedin site and Careers page to learn more about what it’s like to be part of our #oneteam!",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:49:25.078Z",
+    "sourceHash": "d43a9e3565874d5cad91b005c78e72cbfcbf69c67eb465a522e2d2d1beeb2461",
+    "company": {
+      "id": "3pillar",
+      "name": "3Pillar",
+      "logoUrl": "https://logo.clearbit.com/3pillar.com",
+      "industry": "Technology",
+      "website": "https://3pillar.com"
+    },
+    "slug": "mid-frontend-engineer-angular-react-ts-req-29-3pillar-d43a9e35",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "cad31bf016a99ee5609d4c9e5666b72486f99ccedd68201d39cf9904bea93aa8",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://careers-compsych.icims.com/jobs/2242/senior-frontend-engineer/job?mode=apply&iis=LinkedIn",
+    "description": "About the job\n\nComPsych Ⓡ is the worldwide leader in organizational mental health, well-being, and absence management, dedicated to igniting human potential in workplaces across the globe. For over 40 years, we have combined the best in technology with unmatched human expertise to help individuals and their organizations thrive. Our GuidanceResources Ⓡ and AbsenceResources Ⓡ solutions deliver end-to-end mental health, well-being, work-life, health navigation, and absence support to more than 75,000 customers worldwide, touching more than 160 million lives across 200 countries. Visit compsych.com to find out why 40% of the Fortune 500 choose ComPsych for their mental health and absence management needs.\n\nAbout The Role\n\nWe're modernizing how ComPsych builds technology — new customer-facing web and mobile experiences, a unified design system, and AI-powered capabilities across our products. That means raising the engineering bar for how we design, build, and operate software, with Engineering, Product, and Design working together end to end.\n\nWe're looking for a Senior Frontend Engineer who already works this way and wants to own significant parts of our frontend foundation. This is a high-leverage role: you'll spend more time on domain-level architecture, technical direction, and production ownership than on writing every line of code yourself. Frontend Engineers are software engineers first, held to the same bar for design, testing, performance, security, and production quality as everyone else — with added depth in the browser, component architecture, accessibility, and design systems. We build in Angular + TypeScript, but strong React or comparable frontend experience is directly relevant.\n\nWhat You'll Do\n\nAI changes what your time goes toward. You're still accountable for the full frontend lifecycle within your domain — architecture, implementation, testing, review, production — but your hands-on role in each shifts.\n\n\n Own a frontend domain end to end, as your core contribution. Take responsibility for its architecture, quality, evolution, and production behavior, including the shared capabilities other engineers and teams depend on. \n Set technical direction within the frontend platform, directing implementation rather than owning every line yourself. Design patterns that solve real product needs, establish clear boundaries, and delegate meaningful build work to AI agents — dropping into the code yourself when debugging or complexity demands it. \n Solve difficult frontend problems in production, and keep review and judgment human. Lead diagnosis when behavior, performance, or reliability breaks down, make deliberate browser-support tradeoffs, and stay accountable for what ships and what an incident teaches you, regardless of who or what wrote the code. \n Partner with Product, Design, QA, and full-stack engineers to shape solutions. Bring frontend architecture, browser behavior, accessibility, and platform constraints into decisions early enough to change the solution. \n Set the quality bar for your domain. Define how accessibility and testing should work, make changes verifiable before release, and ensure consuming teams can evolve safely as the platform changes. \n Raise the engineering bar around you, mentoring other engineers, reviewing consequential changes, and making strong engineering decisions repeatable without depending on your review. \n\n\nWhat We're Looking For\n\n\n You have deep TypeScript and modern frontend engineering experience. You've built substantial applications with Angular, React, or a comparable framework and understand component architecture, state and reactive data flows, routing, rendering, APIs, asynchronous behavior, and the tradeoffs behind the patterns you choose. \n You have strong browser and web-platform fundamentals. You understand semantic HTML, CSS, the DOM and event model, rendering behavior, browser APIs, progressive enhancement, and cross-browser behavior, and can diagnose difficult issues using profiling and developer tooling. \n You've designed reusable frontend systems other engineers depend on. You understand component API design, composition, tokens, theming, package and version management, migrations, and backward compatibility — and know where abstractions should stop. \n You can design and own a frontend testing strategy. You know what belongs at the unit, component, interaction, visual-regression, and end-to-end levels. Experience with Jest, Testing Library, Playwright, Storybook, or similar tooling is preferred. \n You can set the bar for frontend accessibility and performance. You can define accessible interaction patterns, validate them with assistive technology, and diagnose rendering, network, and browser performance using instrumentation and evidence. \n You understand frontend security and privacy deeply enough to design for them. You can reason about XSS, authentication and session handling, browser storage, sensitive data in logs, analytics and URLs, third-party scripts, and other browser-specific risks. \n You operate as a technical leader. You turn ambiguous problems into sound technical decisions, explain the tradeoffs, mentor other engineers, and have carried meaningful production and incident responsibility. \n You already work AI-first. Agentic tools are a primary development surface for planning, implementation, testing, and review. You delegate well-scoped work, catch plausible-but-wrong APIs and browser behavior, and remain accountable for what ships. \n\n\nBonus: hands-on Angular expertise, experience with Storybook or visual-regression tooling, or contributions to a shared component library.\n\nCompensation And Benefits\n\n\nFull benefits package, including Paid Time Off (PTO), medical, dental, vision, 401(k) with match, robust EAP, wellness program, and much more\n The salary range for this position is $150,000 - $200,000 (USD). The base salary range represents the anticipated low end and high end of the range for this position. The actual compensation will be influenced by a wide range of factors including, but not limited to previous experience, education, pay market/geography, and scheduled hours. \n\n\nEEO\n\nComPsych is an equal opportunity employer. All applicants will be considered for employment regardless of race, color, age, genetics, religion, gender, sexual orientation, gender identity, national origin, disability or protected veteran status and any other characteristic protected by federal, state or local laws. ComPsych Corporation maintains a drug free workplace.\n\nComPsych Corporation and its affiliates is committed to the responsible and transparent handling of your personal data. Information collected during the recruitment process will be used to assess your application and, where applicable, to prepare and administer an offer of employment. Your personal data will be processed in accordance with the privacy laws applicable in your country or jurisdiction of residence, which may include the California Consumer Privacy Act (CCPA), the EU General Data Protection Regulation (GDPR), Canada's Personal Information Protection and Electronic Documents Act (PIPEDA) and applicable provincial privacy legislation, and other applicable national or local privacy laws. For full details on what personal data we collect, how we use it, your rights as an Applicant, and how to contact us with privacy-related questions, please review the relevant Applicant Data Privacy Notices: US Applicant Data Privacy Notice & Canada Data Privacy Notice .\n\nComPsych Applicant Privacy Notice",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:49:18.833Z",
+    "sourceHash": "cad31bf016a99ee5609d4c9e5666b72486f99ccedd68201d39cf9904bea93aa8",
+    "company": {
+      "id": "compsych",
+      "name": "ComPsych",
+      "logoUrl": "https://logo.clearbit.com/compsych.com",
+      "industry": "Technology",
+      "website": "https://compsych.com"
+    },
+    "slug": "senior-frontend-engineer-compsych-cad31bf0",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "css",
+        "storybook",
+        "jest",
+        "playwright",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e9691ea17e98de01967a16c012f223fe33a46e1e9f2759d090f9f6523a25cfa9",
+    "title": "Frontend Engineer, Ads",
+    "applyUrl": "https://job-boards.greenhouse.io/reddit/jobs/8194576?gh_src=40f6dvnu1us",
+    "description": "About the job\n\nReddit is a community of communities. It's built on shared interests, passion, and trust, and is home to the most open and authentic conversations on the internet. Every day, Reddit users submit, vote, and comment on the topics they care most about. With 100,000+ active communities and approximately 130 million daily active unique visitors, Reddit is one of the internet's largest sources of information. For more information, visit www.redditinc.com.\n\nTeam Description\n\nThe Brand Ad Formats team drives the development of ad formats that help advertisers maximize reach and brand impact. They focus on high-visibility, awareness-driven solutions that create memorable experiences for Reddit users. By delivering guaranteed placements and engaging ad interactions, they support major brand initiatives and help advertisers achieve measurable outcomes. The team is building fully customizable interactive formats and AI-driven ads that incorporate User-Generated Content (UGC). Moving forward, we will be doubling down on Video Ads, with the goal of turning Reddit into an industry leader and a 'must buy' for advertisers to promote video content.\n\nRole Description\n\nThe Brand Ad Formats team is seeking a skilled Frontend engineer with a product-focused mindset to join the team.\n\nResponsibilities:\n\n\nBuild Ad experiences and create patterns for Reddit's web app that enhance our ads' performance and functionality.\nCollaborate across product, design, and engineering teams to innovate and implement sophisticated solutions for complex challenges.\nEngage in the full development cycle: design, develop, QA, experiment, analyze, and deploy.\n\n\nRequired Qualifications:\n\n\n3+ years of experience in Web Engineering\nProficient in Typescript and Javascript\nA willingness to tackle the challenges of creating data-intensive, highly responsive, and fault-tolerant apps\nExperience with automated testing best practices, code quality / design patterns, observability, etc.\nSkilled at performing insightful code reviews, and receiving feedback themself\nExperience leveraging GenAI tools to increase software engineering productivity\nExcellent communication skills: able to collaborate with teams in a fully remote environment, and discuss complex topics with technical and non-technical audiences\n\n\nPreferred Qualifications:\n\n\nExperience working on ad tech\nExperience working on consumer facing sites (high production value at scale)\n\n\nTechnologies used on the team include:\n\n\nLanguages: Typescript, HTML, CSS, Go\nFrameworks: React, Thrift, gRPC\nTools: Kubernetes, Docker, Codex, Cursor\n\n\nPay Transparency:\n\nThis job posting may span more than one career level.\n\nIn addition to base salary, this job is eligible to receive equity in the form of restricted stock units, and depending on the position offered, it may also be eligible to receive a commission. Additionally, Reddit offers a wide range of benefits to U.S.-based employees, including medical, dental, and vision insurance, 401(k) program with employer match, generous time off for vacation, and parental leave. To learn more, please visit https://www.redditinc.com/careers/.\n\nTo provide greater transparency to candidates, we share base salary ranges for all US-based job postings regardless of state. We set standard base pay ranges for all roles based on function, level, and country location, benchmarked against similar stage growth companies. Final offer amounts are determined by multiple factors including, skills, depth of work experience and relevant licenses/credentials, and may vary from the amounts listed below.\n\nThe base salary range for this position is:\n\n$164,200—$229,900 USD\n\nIn select roles and locations, the interviews will be recorded, transcribed and summarized by artificial intelligence (AI). You will have the opportunity to opt out of recording, transcription and summarization prior to any scheduled interviews.\n\nDuring the interview, we will collect the following categories of personal information: Identifiers, Professional and Employment-Related Information, Sensory Information (audio/video recording), and any other categories of personal information you choose to share with us. We will use this information to evaluate your application for employment or an independent contractor role, as applicable. We will not sell your personal information or disclose it to any third party for their marketing purposes. We will delete any recording of your interview promptly after making a hiring decision. For more information about how we will handle your personal information, including our retention of it, please refer to our Candidate Privacy Policy for Potential Employees and Contractors.\n\nReddit is proud to be an equal opportunity employer, and is committed to building a workforce representative of the diverse communities we serve. Reddit is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If, due to a disability, you need an accommodation during the interview process, please let your recruiter know.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:49:12.587Z",
+    "sourceHash": "e9691ea17e98de01967a16c012f223fe33a46e1e9f2759d090f9f6523a25cfa9",
+    "company": {
+      "id": "redditinc",
+      "name": "Reddit, Inc.",
+      "logoUrl": "https://logo.clearbit.com/redditinc.com",
+      "industry": "Technology",
+      "website": "https://redditinc.com"
+    },
+    "slug": "frontend-engineer-ads-reddit-inc-e9691ea1",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4e7e90e9e6dd5250b72e7a990d21fba155cf2d8d0665bba928a7db9db1b32149",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.fetchjobs.co/job-description-usb/F36A0B871E0E4378A2733D1B592EF9FA?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nBeta Online is a leading organization in the digital solutions industry, committed to delivering innovative and efficient services to clients across various sectors. With a focus on technology-driven strategies, Beta Online has established a reputation for excellence, reliability, and customer-centric solutions. Our team comprises talented professionals dedicated to transforming ideas into impactful digital products, ensuring our clients stay ahead in a competitive marketplace. We foster a collaborative environment that encourages continuous learning, creativity, and growth, making us a preferred partner for businesses seeking to leverage the power of digital transformation.\n\nAbout The Role\n\nWe are seeking a dynamic and detail-oriented Digital Marketing Specialist to join our team at Beta Online. In this role, you will be responsible for developing, implementing, and managing comprehensive digital marketing campaigns that enhance our online presence and drive engagement. The ideal candidate will possess a strong understanding of current digital marketing trends, tools, and platforms. You will work closely with cross-functional teams to create strategies that align with our business goals, optimize our digital outreach, and generate measurable results. This position offers an exciting opportunity to influence our brand visibility and contribute to the company's growth through innovative marketing initiatives.\n\nQualifications\n\nCandidates should have a bachelor’s degree in Marketing, Communications, Business Administration, or a related field. Proven experience of at least 3 years in digital marketing or similar roles is required. Strong knowledge of SEO, SEM, social media marketing, email marketing, and content creation is essential. Familiarity with analytics tools such as Google Analytics, Google Ads, and social media insights is necessary to measure and optimize campaign performance. Excellent communication skills, creativity, and the ability to work independently and as part of a team are vital. A proactive attitude and adaptability to changing digital trends are highly valued.\n\nResponsibilities\n\nDevelop and execute comprehensive digital marketing strategies to increase brand awareness and online engagement. Manage and optimize digital advertising campaigns across platforms such as Google Ads, Facebook, LinkedIn, and others. Create compelling content tailored for various digital channels, including blogs, social media posts, email newsletters, and landing pages. Monitor, analyze, and report on campaign performance using analytics tools, making data-driven adjustments to improve results. Collaborate with the creative team to produce visually appealing and effective marketing materials. Maintain and update the company’s website to ensure content relevance and SEO best practices. Stay updated with industry trends and emerging technologies to incorporate innovative marketing techniques. Engage with online communities and respond to customer inquiries to foster positive brand interactions. Coordinate with sales and product teams to align marketing efforts with overall business objectives. Manage budgets for digital campaigns, ensuring cost-effective use of resources.\n\nBenefits\n\nBeta Online offers competitive compensation packages along with a comprehensive benefits program. Employees enjoy health insurance coverage, including medical, dental, and vision plans. We provide opportunities for professional development through training programs, workshops, and industry conferences. Our flexible work arrangements support work-life balance, and we promote a positive, inclusive workplace culture. Additionally, employees have access to performance-based incentives and recognition programs. We believe in nurturing talent and encouraging innovation, making Beta Online a rewarding environment for career growth and personal development.\n\nEqual Opportunity\n\nBeta Online is an equal opportunity employer. We are committed to fostering an inclusive environment where all employees and applicants are treated with respect and fairness, regardless of race, gender, age, religion, sexual orientation, disability, or any other protected characteristic. We believe diversity enhances our creativity and drives our success, and we actively promote a culture of inclusion and equity in all our practices.\n\n\n\n\n\nDesired Skills and Experience\n\nDigital Marketing, SEO, SEM, Social Media Marketing, Content Marketing, Analytics",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:48:49.970Z",
+    "sourceHash": "4e7e90e9e6dd5250b72e7a990d21fba155cf2d8d0665bba928a7db9db1b32149",
+    "company": {
+      "id": "taskverse",
+      "name": "TaskVerse",
+      "logoUrl": "https://logo.clearbit.com/taskverse.com",
+      "industry": "Technology",
+      "website": "https://taskverse.com"
+    },
+    "slug": "frontend-developer-taskverse-4e7e90e9",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "dbbc30e1e8ab2dcc33f01f2e23831f5bb1c6cab39d2630948afac24ece2f8f4a",
+    "title": "Senior Frontend Developer",
+    "applyUrl": "https://www.adzuna.com/details/5917123813?v=8D5F74DCEF8F242B6CB26728E99B8F87106360D4&ccd=b2f77111d429501c48f64e9bf1f58d1d&r=22737503&frd=d3b379cb8d0c2f7979ff00b841ef35ba&utm_source=linkedin7&utm_medium=organic&chnlid=1931&title=Senior%20Frontend%20Developer&a=e",
+    "description": "About the job\nThis job is sourced from a job board. Learn More\n\nMEDvidi is an AI-powered mental healthcare platform setting a new standard for safe, effective, and scalable psychiatric care in the United States. We combine licensed providers with proprietary AI tools to deliver consistent, outcomes-driven treatment for conditions like ADHD, anxiety, depression, and more. MEDvidi's technology automates charting, follow-ups, and treatment planning, freeing providers to focus on patient care while improving efficiency and clinical quality.\n\nAs a product-focused Senior Frontend Developer on our AI track, you'll own frontend delivery end-to-end for products that directly affect how patients access mental health care and how our clinicians and staff work day-to-day. Your work sits at the intersection of a large, actively evolving Angular codebase and our AI-first product surface - patient-facing applications, internal tools for doctors and administrators, and the frontend for AI-powered features like our AI clinical assistant and AI receptionist. You'll work in a small cross-functional product team, taking features from requirement refinement through production release.\n\n Why This Role\n\n\nReal product ownership in autonomous cross-functional team, you shape what gets built, not just how.\nDeep hands-on work on AI-powered clinical and administrative products, with AI-assisted development as a first-class part of the engineering culture (Claude Code, Cursor, and beyond).\nModern Angular at scale: an actively evolving monorepo on the latest Angular versions, not a legacy graveyard.\n\n\nResponsibilities\n\n\nDesign, develop, and maintain product features end-to-end within a cross-functional team, from requirement refinement to production release.\nTake ownership of existing Angular codebase areas after the departing engineer: understand, stabilize, and improve them without slowing down the roadmap.\nWrite clean, maintainable, well-tested code: code reviews, unit tests (Vitest), and lightweight design documentation as part of the daily routine.\nContribute to frontend architecture decisions and platform health: performance, framework upgrades, NX monorepo structure, CI/CD improvements.\nDrive AI adoption on both fronts: building frontend for AI-powered product features, and integrating AI tooling into the development workflow itself.\nActively contribute to the continuous improvement of engineering processes and tooling across the community.\n\n\n This Role Is Not For You If\n\n\nYou're waiting for someone else to define what to build, we expect you to come up with ideas, take them through discovery and development, ship them, and own the results after launch.\nYou need a fully-specced ticket queue and a PM/BA translating everything for you\nYou see AI coding agents as a novelty rather than a core part of how modern frontend work gets done.\n\n\nWhat We Offer\n\n\nHigh-impact environment: A chance to contribute to a product-driven company in the medical tech space.\nGrowth & compensation: Clear growth opportunities and a competitive compensation package.\nRemote-first: Fully remote long-term collaboration under a B2B model.\nHealth & wellness: Health insurance after the probation period, plus sports & wellness compensation.\nCareer development: Clear growth opportunities, including personalized English lessons via Preply.\nTime off: 19 paid vacation days annually, 4 additional wellness days each year, and paid sick leave for the first 5 working days.\nCulture: Thoughtful gifts for key life events and offline corporate events.\n\n\n Ready to make an impact? Send us your profile, let's build something meaningful together.\n\n MEDvidi is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees and contractors. All qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.\n\n\n3+ years of commercial experience with Angular(latest versions preferred).\nExperience owning a product end-to-end, including analysing the metrics that tell you whether it actually worked.\nStrong product and UX judgment, you can recognize when an interaction doesn't feel right and propose a better solution.\nFluency in modern Angular: standalone components, signals, current change detection and DI patterns, not experience from several years ago followed by a switch to another framework.\nAdvanced RxJS and TypeScript in real production scenarios: confident design and debugging of complex reactive flows (stream composition, cancellation, race conditions, error handling) and fluency in a strictly typed codebase.\nProven expertise in designing and implementing complex Angular application architectures at scale, module and component boundaries, decisions that hold up as the codebase grows.\nHands-on experience with unit testing (Vitest preferred, Jest acceptable) as a regular part of the daily routine, not an afterthought.\nHands-on experience with agentic AI development. For us this is a must, not a bonus: active daily use of coding agents (Claude Code, Cursor, or similar), the ability to write effective skills, prompts, and instructions for them, understanding of the principles behind how agents operate (context, tools, feedback loops), and structuring code and documentation so agents can work with the codebase effectively.\nComfort working across the backend boundary: writing or fixing a SQL query, adjusting endpoint validation, or tracing an issue through the API layer. You don't need to be a backend engineer, but stopping at the frontend border isn't an option.\nIntermediate English (B1+) and fluent Russian.\nFull overlap with CET working hours.\n\n\nWould Be a Plus\n\n\nExperience building UI for AI/LLM-powered features.\nDeep understanding of responsive design, our patients access the platform primarily from mobile devices, and interfaces must be flawless across screen sizes.\nProficiency in optimizing web application performance across different surfaces: patient-facing product and internal tools for doctors, managers, and admins (data-heavy interfaces, large tables and lists, real-time updates).",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:48:36.179Z",
+    "sourceHash": "dbbc30e1e8ab2dcc33f01f2e23831f5bb1c6cab39d2630948afac24ece2f8f4a",
+    "company": {
+      "id": "medvidi",
+      "name": "MEDvidi",
+      "logoUrl": "https://logo.clearbit.com/medvidi.com",
+      "industry": "Technology",
+      "website": "https://medvidi.com"
+    },
+    "slug": "senior-frontend-developer-medvidi-dbbc30e1",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "b2b"
+    }
+  },
+  {
+    "id": "5dbdbdcf90d52dbc186ccbb8e9dd056317a98c549d35ec79d2b87715710390fb",
+    "title": "Desarrollador Frontend/WordPress - Remoto (España)",
+    "applyUrl": "https://careers.twtspain.com/jobs/8509709-desarrollador-frontend-wordpress-remoto-espana",
+    "description": "About the job\n\nEn The Whiteam Consulting buscamos un/a Desarrollador/a Frontend con experiencia sólida en WordPress para incorporarse a nuestro equipo y participar en un proyecto tecnológico para cliente.\n\nBuscamos un perfil con experiencia demostrable en desarrollo y mantenimiento de WordPress, con conocimientos sólidos de PHP, HTML5, CSS3/SASS y JavaScript, y capacidad para analizar y modificar código, realizar debugging e identificar y corregir vulnerabilidades.\n\nPrincipales tareas\n\n\nIdentificación y análisis de vulnerabilidades en código WordPress.\nRemediación y corrección de las vulnerabilidades detectadas.\nRevisión y análisis de código, plugins y desarrollos personalizados para identificar el origen de incidencias o vulnerabilidades.\nAplicación de las correcciones necesarias y validación posterior para comprobar que la vulnerabilidad ha quedado resuelta sin afectar al funcionamiento de la web.\n\n\nRequisitos\n\nImprescindibles\n\n\nExperiencia demostrable en desarrollo y mantenimiento de WordPress.\nBuen conocimiento de PHP, especialmente para revisar, comprender y modificar código WordPress.\nExperiencia en desarrollo Frontend con HTML5, CSS3/SASS y JavaScript.\nCapacidad para analizar código y realizar debugging, más allá de la configuración o administración de WordPress.\nExperiencia con Git y sistemas de control de versiones.\nCapacidad para trabajar dentro de un equipo técnico.\n\n\nSe valorará especialmente\n\n\nExperiencia previa en seguridad WordPress.\nExperiencia en identificación y remediación de vulnerabilidades.\nConocimientos o experiencia en hardening de WordPress.\nExperiencia con herramientas de análisis de seguridad como WPScan, Patchstack, PHPStan o Psalm.\n\n\nValoramos especialmente\n\nLa experiencia práctica revisando código WordPress/PHP y la participación previa en tareas de identificación y corrección de vulnerabilidades, ya que serán aspectos fundamentales en la valoración de los perfiles.\n\nQué ofrecemos\n\n\nTrabajo 100% Remoto.\nSalario: 28.000 euros SBA.\n40 horas semanales.\nIncorporación a un proyecto tecnológico con un fuerte componente de desarrollo y seguridad.\nOportunidad de continuar desarrollando tu trayectoria profesional en el ámbito tecnológico.\nIntegración en un entorno orientado al aprendizaje, colaboración y crecimiento profesional.\nParticipación en un equipo técnico y en proyectos de desarrollo para cliente.\n\n\nCompañía\n\nFormar parte de THEWHITEAM es colaborar con una empresa formada por profesionales con una dilatada experiencia en consultoría tecnológica.\n\nCreemos firmemente que las empresas y clientes marcan el camino a seguir en el sector, pero éste lo construyen las personas. Consideramos de vital importancia que nuestra organización se fundamente en nuestro mejor activo y marca de valor añadido que es nuestro equipo humano.\n\nBeneficios\n\nPor otra parte, te dejo también un pequeño resumen de políticas de la compañía para que nos vayas conociendo un poco mejor:\n\n\n Nuestro convenio es el de Consultoras y estudios de mercado\n Tenemos 23 días de vacaciones al año\n Tenemos 14 pagas, 12 mensuales y dos extras (junio y diciembre)\n Como retribución flexible podemos pedir ticket guardería y también seguro médico + dental.",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:42:20.636Z",
+    "sourceHash": "5dbdbdcf90d52dbc186ccbb8e9dd056317a98c549d35ec79d2b87715710390fb",
+    "company": {
+      "id": "thewhiteam",
+      "name": "TheWhiteam",
+      "logoUrl": "https://logo.clearbit.com/thewhiteam.com",
+      "industry": "Technology",
+      "website": "https://thewhiteam.com"
+    },
+    "slug": "desarrollador-frontend-wordpress-remoto-espa-a-thewhiteam-5dbdbdcf",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "sass",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "94bf9cebbd9966726a0453c70a617c6d35570aad6c10d182b310b435e82808fa",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://jobs.lever.co/xsolla/f3891fee-e260-4eb2-819a-a391df000712/apply?source=LinkedIn",
+    "description": "About the job\n\nAbout Us\n\nXsolla is a global commerce company with robust tools and services to help developers solve the inherent challenges of the video game industry. From indie to AAA, companies partner with Xsolla to help them fund, distribute, market, and monetize their games. Grounded in the belief in the future of video games, Xsolla is resolute in the mission to bring opportunities together, and continually make new resources available to creators. Headquartered and incorporated in Los Angeles, California, Xsolla operates as the merchant of record and has helped over 1,500+ game developers to reach more players and grow their businesses around the world. With more paths to profits and ways to win, developers have all the things needed to enjoy the game.\n\nFor more information, visit xsolla.com .\n\nAbout You\n\nWe are looking for a Senior Backend Engineer who is passionate about building reliable, scalable, and secure backend systems to join one of our product engineering teams. The best candidate will be someone who thrives in a fast-paced, highly collaborative, and dynamic setting and is excited to design, build, and operate services that serve millions of users.\n\nStrong backend engineering fundamentals are essential, along with experience in designing distributed systems, working with databases, and owning services in production. The ability to make sound architectural decisions, mentor teammates, and deliver high-quality code will be key to your success in this role.\n\nIf you enjoy solving hard engineering problems at scale and want to have a real impact on products used around the world, we would love to hear from you!\n\nResponsibilities\n\n\nDesign, develop, and maintain backend services and APIs \nParticipate in architecture and design discussions; write and review technical design documents \nWrite clean, maintainable, well-tested code with comprehensive unit and integration test coverage \nOptimize database schemas and queries; ensure performance and reliability under load \nBuild event-driven and asynchronous workflows using message brokers \nMonitor, troubleshoot, and improve production systems; take part in incident response and post-mortems \nContribute to CI/CD pipelines, infrastructure-as-code, and engineering best practices \nPerform code reviews and mentor Middle and Junior engineers \nCollaborate with Product, Design, Frontend, QA, and DevOps to deliver features end to end \nMaintain clear API and technical documentation\n\n\n\nAbout The Team\n\nYou will join a product engineering team of backend, frontend, QA, and DevOps engineers working closely with Product and Design. The team owns its services end to end: from design and implementation to deployment, monitoring, and on-call support.\n\nTypical Tech Stack:\n\n\nLanguage: Go \nDatabases: PostgreSQL, MySQL, Redis \nMessaging: Kafka, RabbitMQ, or NATS \nAPIs: REST, gRPC, OpenAPI (Swagger) \nAuthentication & Authorization: OAuth 2.0 / OIDC \nInfrastructure: Docker, Kubernetes, CI/CD (GitLab CI or similar) \nObservability: Metrics, centralized logging, distributed tracing, alerting \n\n\n\nNice to have\n\nRequired:\n\n\n5+ years of commercial backend development experience \nStrong proficiency in Go: idiomatic code, concurrency patterns, performance profiling \nSolid understanding of relational databases (PostgreSQL or MySQL): schema design, indexing, query optimization, migrations \nExperience with Redis or similar caching solutions \nExperience designing and implementing REST APIs (gRPC is a plus) and documenting them with OpenAPI/Swagger \nUnderstanding of microservices architecture and distributed systems trade-offs (consistency, availability, failure modes) \nExperience with message brokers (Kafka, RabbitMQ, NATS, or similar) and event-driven design \nExperience with Docker and a good understanding of Kubernetes basics \nProficiency with Git and CI/CD practices \nSolid experience with automated testing (unit, integration) \nUnderstanding of application security fundamentals (OWASP Top 10, secure handling of secrets and user data, authentication and authorization basics) \nGood written and spoken English \n\n\n\nPreferred:\n\n\nExperience with observability tooling (Prometheus, Grafana, ELK/Graylog, OpenTelemetry) \nExperience with high-load systems and performance profiling \nExperience with cloud platforms (GCP, AWS, or Azure) and infrastructure-as-code \nExperience with NoSQL databases (MongoDB or similar) \nExperience leading technical initiatives or mentoring engineers \nExperience in gaming, e-commerce, fintech, or payments domains \nPractical, up-to-date experience with modern AI tools (e.g. Claude, Copilot, Cursor) for code generation, review, and accelerating day-to-day engineering work \n\n\n\nBenefits\n\nWe are passionate about fostering a supportive environment for our team, so we prioritize the physical, mental, and emotional well-being of our employees and their families through a comprehensive Benefits Program. This includes medical, dental, and vision, PTO, and a personalized career roadmap for each employee. By investing in professional development through training and educational opportunities, we ensure that our team thrives both personally and professionally. Together, we’re not just building a business; we’re cultivating a community that values creativity, collaboration, and the transformative power of play.\n\nEMPLOYMENT DETAILS\n\n\nLocation: Remote (worldwide) \nEmployment Type: Full-time \nSchedule: 10:00–19:00 (flexible) \nContract: Employment agreement (entity or EOR arranged per candidate location) \n\n\n\nEQUAL EMPLOYMENT STATEMENT\n\nXsolla is dedicated to creating a diverse environment and is proud to be an equal-opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, language, sexual orientation, national origin, genetics, political beliefs, disability, age, marital status, social background or other characteristics.\n\nWe are committed to compliance with all fair employment practices regarding citizenship and immigration status.\n\nCONTACT\n\nIf you have questions regarding our hiring practices, please contact [email protected] .\n\nFor more vacancies, visit: xsolla.com/careers\n\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.",
+    "location": "Remote - Russia",
+    "country": "Russia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:38:11.208Z",
+    "sourceHash": "94bf9cebbd9966726a0453c70a617c6d35570aad6c10d182b310b435e82808fa",
+    "company": {
+      "id": "xsolla",
+      "name": "Xsolla",
+      "logoUrl": "https://logo.clearbit.com/xsolla.com",
+      "industry": "Technology",
+      "website": "https://xsolla.com"
+    },
+    "slug": "senior-frontend-engineer-xsolla-94bf9ceb",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Russia"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "fbfbd8f29265dfb309ddc5f10ac9eca650fdd51b103e346dcc8369d59c249a99",
+    "title": "Senior Frontend Engineer – React/Next.js + AI - Remote Work | REF#302943",
+    "applyUrl": "https://applicants.bairesdev.com/job/169/302943/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml&__cf_chl_rt_tk=wPgu_NBqjyc5YVPILJO0MmrYjRMDMiqZXHhSeufOgCU-1791401616-1.0.1.1-Q0DNDyVgiClj0PDvDQ0soZmKT0td7wJB4el1Ccj4Rzk",
+    "description": "About the job\n\nAt BairesDev®, we've been leading the way in technology projects for over 15 years. We deliver cutting-edge solutions to giants like Google and the most innovative startups in Silicon Valley.\n\nOur diverse 4,000+ team, composed of the world's Top 1% of tech talent, works remotely on roles that drive significant impact worldwide.\n\nWhen you apply for this position, you're taking the first step in a process that goes beyond the ordinary. We aim to align your passions and skills with our vacancies, setting you on a path to exceptional career development and success.\n\nSenior Frontend Engineer – React/Next.js + AI at BairesDev\n\nIn this role, you'll own frontend experiences on a streaming chat product that's expanding into analytics views where accuracy directly shapes customer conversations. You'll build within an established design system, crafting reusable components and validating AI-driven experiences with real rigor rather than by inspection. This is your opportunity to bring both frontend craft and AI fluency to a product where precision genuinely matters, extending backend services when the frontend needs them and raising experience issues before anyone has to ask.\n\nWhat You'll Do\n\n\n Build and own frontend experiences for a streaming chat application expanding into analytics views.\n Develop reusable components and hooks within an established design system.\n Validate AI-driven experiences against evaluation sets rather than manual inspection.\n Extend Python services where frontend functionality requires backend support.\n Proactively surface experience issues rather than waiting for feedback.\n\n\nWhat We Are Looking For\n\n\n 5+ years of experience with React and Next.js using TypeScript.\n 2+ years of experience with AI/ML-driven applications, including LLM integrations.\n Experience with LLM evaluation, including LangSmith, LLM-as-judge, offline evals, or golden datasets.\n 2+ years of experience with Python.\n Experience with AWS.\n High attention to detail in UI, including pixel accuracy, proactive polish, and design spec fidelity.\n Advanced proficiency in English.\n\n\nNice To Have\n\n\n Experience with analytics and charting UI, including funnels, bar and time series charts, using D3, Recharts, or Visx.\n Familiarity with generative UI and AI-generated experiences, including model-driven components.\n Experience working inside an established design system such as Odyssey, Material, or Carbon.\n Strong accessibility (a11y) and responsive web app practices.\n Experience with streaming chat interfaces, including LangGraph API, WebSockets, and token streaming.\n\n\nHow we do make your work (and your life) easier:\n\n\n 100% remote work (from anywhere).\n Excellent compensation in USD or your local currency if preferred\n Hardware and software setup for you to work from home.\n Flexible hours: create your own schedule.\n Paid parental leaves, vacations, and national holidays.\n Innovative and multicultural work environment: collaborate and learn from the global Top 1% of talent.\n Supportive environment with mentorship, promotions, skill development, and diverse growth opportunities.\n\n\nJoin a global team where your unique talents can truly thrive and make a significant impact!\n\nApply now!",
+    "location": "Remote - Panama",
+    "country": "Panama",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:33:39.866Z",
+    "sourceHash": "fbfbd8f29265dfb309ddc5f10ac9eca650fdd51b103e346dcc8369d59c249a99",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "senior-frontend-engineer-react-next-js-ai-remote-work-ref-302943-bairesdev-fbfbd8f2",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "accessibility",
+        "d3"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Panama"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "6375f37aa18c26d495557792d4b6e160856b8df53415affcb143ea9145f1f6a8",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StPgatTy3gCMTZ.b61mD2WnA-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:15:38.203Z",
+    "sourceHash": "6375f37aa18c26d495557792d4b6e160856b8df53415affcb143ea9145f1f6a8",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-6375f37a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ab694df590275b20501d2734fa7db7a09e1fc3634b28ea1f9ee0213309c62387",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StIc9ULu9XepiSG1gLnmgkgE-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:15:15.959Z",
+    "sourceHash": "ab694df590275b20501d2734fa7db7a09e1fc3634b28ea1f9ee0213309c62387",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-ab694df5",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "6e6a5eb9c1fdd4fa5a942cac567d3e038ff120a935138a6c4c97691602a9821b",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StLfzJvgf4gDZmJN%40.I481xs-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:14:52.993Z",
+    "sourceHash": "6e6a5eb9c1fdd4fa5a942cac567d3e038ff120a935138a6c4c97691602a9821b",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-6e6a5eb9",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2046553d8ec67d234c2eac4ed020607f802caf6b2a11a2d23a72b1133f84c84e",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StDm6a4Ht3N3q5pdiQ9ZocRw-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:14:24.727Z",
+    "sourceHash": "2046553d8ec67d234c2eac4ed020607f802caf6b2a11a2d23a72b1133f84c84e",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-2046553d",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d3198cc05a167cfc718ee9f942a0fdb9ba6a4a714c30f5948866f76901d477f1",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StMbQF0Ecvophd4yK2OMZy.Y-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:14:01.951Z",
+    "sourceHash": "d3198cc05a167cfc718ee9f942a0fdb9ba6a4a714c30f5948866f76901d477f1",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-d3198cc0",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "912cf26546a299fadd8e66e5b0c1de9e482ba5b773f62c477b03e441b68ff6ec",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StPR124Tcddmik25FeRBS1Y8-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:13:36.222Z",
+    "sourceHash": "912cf26546a299fadd8e66e5b0c1de9e482ba5b773f62c477b03e441b68ff6ec",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-912cf265",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a907e4959d03eee41c2933e0886a4f5de16f89513ba5011f078922b1cc4d1aaf",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StEg4h6u9ylZmMKlcGccE7p8-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:13:13.850Z",
+    "sourceHash": "a907e4959d03eee41c2933e0886a4f5de16f89513ba5011f078922b1cc4d1aaf",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-a907e495",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "903c01f9098be76eca88a690880aaa33ef93cad9a42c80e1296b97ca6f984a23",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StJHHlRas3CwLvAp98phMlRg-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:12:42.360Z",
+    "sourceHash": "903c01f9098be76eca88a690880aaa33ef93cad9a42c80e1296b97ca6f984a23",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-903c01f9",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2604d9d3602e3dc3e2e48b63663f76459b59bee365c3ad2791634b16a7a55014",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StD7nWLhkHONrMbifdibCV0w-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:12:17.166Z",
+    "sourceHash": "2604d9d3602e3dc3e2e48b63663f76459b59bee365c3ad2791634b16a7a55014",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-2604d9d3",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "82cf8998c941e23f8aaa1eb3acf9a3ec5455d2d449ca0f55de23a2d94ba9c7d8",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StAuXVOiuGOJOnhEo40aXIU4-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:11:54.676Z",
+    "sourceHash": "82cf8998c941e23f8aaa1eb3acf9a3ec5455d2d449ca0f55de23a2d94ba9c7d8",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-82cf8998",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "94a553b83e2cd1ea795e2641dd752a600bd6aa36c9a739f50f0e9252aa40552a",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StFYDAoOhHj.So1Njfa20lNA-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:11:29.498Z",
+    "sourceHash": "94a553b83e2cd1ea795e2641dd752a600bd6aa36c9a739f50f0e9252aa40552a",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-94a553b8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "aab46d9e62ebcb9a51eec6f618284531fe4c88a3efafe98b84acebb4965bdbad",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StEY3S.Ppbka47Wsh9RVIJHM-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:11:07.272Z",
+    "sourceHash": "aab46d9e62ebcb9a51eec6f618284531fe4c88a3efafe98b84acebb4965bdbad",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-aab46d9e",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0fee0f29ad6daf41739227486ccbfb4e3a4763772f68d427e9dd5b2d24b4b7ff",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StKseRqyexmbMEIdU5GctL6Q-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:10:42.192Z",
+    "sourceHash": "0fee0f29ad6daf41739227486ccbfb4e3a4763772f68d427e9dd5b2d24b4b7ff",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-0fee0f29",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "639af7657ff5105de51a39fab54ce249aca68529b4e19a0bd4256f84a86c7cad",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StHaRWSenvqZN3USEMRNnJew-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:10:13.747Z",
+    "sourceHash": "639af7657ff5105de51a39fab54ce249aca68529b4e19a0bd4256f84a86c7cad",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-639af765",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2e0e53aaeb2c75dfa7f449e9003aa2c7fe3f56000a63f6ebd4d5d0269d3734c8",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StBmLgx21r1M.LKeCGyaaRpw-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:09:37.213Z",
+    "sourceHash": "2e0e53aaeb2c75dfa7f449e9003aa2c7fe3f56000a63f6ebd4d5d0269d3734c8",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-2e0e53aa",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "edf818617a0677e9bc98e936e8f5e915cbfa3bab205fe0220156336fb1c0dd41",
+    "title": "Frontend Developer",
+    "applyUrl": "https://neuralgo.keka.com/careers/jobdetails/137211?source=linkedin",
+    "description": "About the job\n\nAt GoML, we design and build cutting-edge Generative AI, AI/ML, and Data Engineering solutions that help businesses unlock the full potential of their data, drive intelligent automation, and create transformative AI-powered experiences. Our mission is to bridge the gap between state-of-the-art AI research and real-world enterprise applications – helping organizations innovate faster, make smarter decisions, and scale AI solutions seamlessly.\n\nWe’re looking for a Frontend (UI/React.js) Developer with strong experience in building scalable, high-performing web applications using React.js and the MERN stack. In this role, you’ll design and implement intuitive user interfaces, build robust client-side architectures, and collaborate closely with cross-functional teams to deliver seamless, user-centric experiences. If you love crafting clean UIs, reusable components, and enterprise-grade frontends — we’d love to hear from you!\n\nWhy You? Why Now?\n\nAs enterprises adopt AI-driven platforms, intuitive and performant user interfaces are becoming critical for product adoption and user satisfaction. This role is perfect for someone who loves blending great UI/UX with solid engineering practices, building reusable systems, and shaping the visual layer of next-gen AI products.\n\nWhat You’ll Do (Key Responsibilities)\n\nFirst 30 Days: Foundation & Orientation\n\n\nDeep dive into GoML’s products, frontend architecture, and design workflows\nUnderstand existing UI frameworks, coding standards, and deployment pipelines\nGet familiar with backend APIs, GraphQL endpoints, and data flows\nCollaborate with design, backend, and product teams to align on user experience goals\n\n\nFirst 60 Days: Execution & Impact\n\n\nBuild new user-facing features using React.js and modern JS libraries \nCreate reusable UI components and front-end libraries for scalability\nIntegrate with backend APIs (REST & GraphQL) and optimize data flows\nEnsure UI/UX feasibility and performance across browsers and devices\nParticipate in code reviews and improve code quality and consistency\n\n\nFirst 180 Days: Ownership & Transformation\n\n\nOwn major UI modules and take responsibility for end-to-end delivery\nContribute to performance optimization, bundle size reduction, and SSR where applicable\nMentor junior developers and improve frontend engineering standards\nStrengthen MERN-stack capabilities by contributing to full-stack development\nInfluence the UI architecture, component libraries, and UX design patterns\n\n\nWhat You Bring (Qualifications & Skills)\n\nMust-Have\n\n\n3+ years of experience in frontend development \nStrong expertise in JavaScript, React.js, and modern ES6+ concepts \nHands-on experience with the MERN stack (MongoDB, Express.js, React, Node.js) \nProficiency in HTML5, CSS3, responsive design & modern UI patterns \nExperience with Redux / MobX or similar state-management libraries \nFamiliarity with RESTful APIs and exposure to GraphQL \nKnowledge of JWT-based authorization and authentication flows \nExperience with frontend tooling (Webpack, Babel, npm, etc.)\nAbility to troubleshoot, debug, and optimize UI performance\nStrong communication & collaboration skills\n\n\nNice-to-Have\n\n\nExperience with server-side rendering (SSR) and Node.js \nFamiliarity with testing tools (Jest, React Testing Library, Enzyme, etc.)\nVersion control experience (Git) \nUnderstanding of performance tuning and browser optimization\n\n\nWhy Work With Us?\n\n\nRemote-first culture with office in Coimbatore for collaboration\nWork on cutting-edge AI/ML & GenAI platforms solving real-world problems \nHigh ownership across product, architecture, and user experience\nCompetitive compensation, career growth opportunities, and ESOPs down the line",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T19:08:01.567Z",
+    "sourceHash": "edf818617a0677e9bc98e936e8f5e915cbfa3bab205fe0220156336fb1c0dd41",
+    "company": {
+      "id": "goml",
+      "name": "GoML",
+      "logoUrl": "https://logo.clearbit.com/goml.com",
+      "industry": "Technology",
+      "website": "https://goml.com"
+    },
+    "slug": "frontend-developer-goml-edf81861",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "webpack",
+        "redux",
+        "mobx",
+        "graphql",
+        "jest",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "1271938c35dfd7df5d5f6c0c2a59744f08e6c855bb8ef79d73d7c1067110f523",
+    "title": "Frontend Developer, Intermediate (Remote Canada)",
+    "applyUrl": "https://jobs.lever.co/smiledigitalhealth/a3849d66-bf5a-42d0-87da-99529847a149/apply?lever-source=LinkedIn&source=LinkedIn&lever-source=LinkedInJobs&lever-origin=applied&lever-source%255B%255D=LinkedIn&_pc=193155&lever-source=LinkedInJobs",
+    "description": "About the job\n\nWorking for a company like Smile Digital Health means supporting our mandate for #BetterGlobalHealth. We strive towards this goal every day, and the results can be seen in the impact of our innovative health data platform and data management solutions, which are used in over 20 countries. We were #19 on Deloitte's Technology Fast 50 Ranking for 2024!\n\nSmile Digital Health makes it easy for healthcare stakeholders to collect and exchange data with our leading FHIR-based data liberation platform.\n\nAt its heart, the Smile platform enables people and organizations to better manage healthcare data. We help generate and liberate structured healthcare data to ensure effective delivery across care teams and health systems bringing #BetterGlobalHealth to patients everyday!\n\nApply today and find plenty of reasons to SMILE!\nThe Intermediate Front End Developer is a technical role that supports building and maintaining the user-facing aspects of Smile Digital Health’s Clinical Intelligence platform. This role enables a seamless user experience by translating design concepts into functional technical roadmaps and developing a functional, interactive and intuitive user interface. This role will collaborate closely with cross-functional teams to gather requirements, design and implement applications and test components of the system.\n\nResponsibilities:\n\nSupport in shaping the approach, scope, milestones, and solution design of a responsive, performant and scalable user interface for assigned modules and features. \nWork closely with the development team(s) to implement solutions by writing code, creating components and modules that meet development requirements. \nWrite comprehensive and manageable code and unit tests as well as develop and maintain relevant documentation for front-end components. Participate in rigorous testing cycles and defect resolution. \nDevelop and maintain a deep understanding of the functionality being developed to provide support to the team. \nLead architectural design discussions with regards to Angular front-end designs and help mentor/coach other developers in learning these best practices. \nContribute and adhere to team/department coding standards to ensure consistency. \nAttend and participate in client meetings, as required. \nLead and engage in detailed and in-person code reviews, pair-programming and collaborative problem analysis with teammates. \nParticipate in monthly Technology meetings to help guide corporate technical processes, architecture, and strategy. \n\n\n\nRequirements:\n\n5+ years of software development experience with Angular, JavaScript/Typescript, HTML, CSS and Git. \nExperience in the healthcare and/or technology industry preferred. \nBachelor’s degree in computer science, engineering, or equivalent and/or equivalent work experience. \nDemonstrated experience with building apps using Angular and having an in-depth understanding of core concepts including, but not limited to, state management/ observables/interceptors/routing, etc. \nFamiliar with agile and scrum processes. \nExcellent written and verbal communication that ensures effective collaboration and clear documentation. \nExperience with Slack, Google technologies, Figma, Jira, GitLab, Postman, Microsoft Azure, Jasmine/Karma, Cordova/Ionic, REST APIs, Bootstrap, preferred. \nExperience with CI/CD pipelines, Docker containers and networking, preferred. \nKnowledge or experience in healthcare, HL7/ FHIR is an asset but not required. \n\n\n\nSmile discloses that artificial intelligence (AI) may be used in portions of the recruitment and selection process, such as resume screening or application assessment. All hiring decisions are ultimately made by qualified human decision-makers, and AI tools are used to support — not replace — fair and equitable hiring practices.\n\nThis position is a replacement role, created to support Smile’s continued growth and commitment to operational excellence.\n\nSome of the benefits we offer:\n\n Remote Work Environment\n Flexible Time Away From Work Policy including PTO, Personal and Sick Days\n Competitive Salary and Health/Medical Benefits\n RRSP/TFSA/401K Employee Contribution\n Life and Disability\n Employee Assistance Program\n FHIR Study Program and Skillsoft Learning\n Super HAPI Fun Club\n\n\n\nSmile's core values include respect, inclusion, embracing our differences, and celebrating shared values because our people are the foundation of our success. We are big on creating a sense of belonging and empowering each other to bring our authentic selves to work. We are dedicated to fostering a workplace that values diversity, equity, and inclusion.\n\nWe welcome and encourage candidates of all backgrounds to apply. Candidates are encouraged to inform us if they wish to discuss or require accommodations during interviews or while working at Smile.\n\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-07T18:50:33.325Z",
+    "sourceHash": "1271938c35dfd7df5d5f6c0c2a59744f08e6c855bb8ef79d73d7c1067110f523",
+    "company": {
+      "id": "smiledigitalhealth",
+      "name": "Smile Digital Health",
+      "logoUrl": "https://logo.clearbit.com/smiledigitalhealth.com",
+      "industry": "Technology",
+      "website": "https://smiledigitalhealth.com"
+    },
+    "slug": "frontend-developer-intermediate-remote-canada-smile-digital-health-1271938c",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "figma",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "dc36477578683c2dd0361aa8699980c9cdb352b9f63c55eef3828463efc452b3",
     "title": "Frontend Designer - Remote",
     "applyUrl": "https://yoailabs.careers-page.com/jobs/5e460543-4d19-4860-9384-b4297b427bc2?utm_medium=free_job_board&utm_source=linkedin",
