@@ -1,42 +1,5 @@
 [
   {
-    "id": "441c8ef8352cd3e7a51bfc4a9c8c4c8ac1aeb822154b14b60cac166ce732e886",
-    "title": "Frontend / Full Stack Developer (React / Next.js / TypeScript)",
-    "applyUrl": "https://azka-it.viterbit.site/frontend-full-stack-developer-react-next-js-typescript-xm7ziEi57pzj/?utm_source=linkedin&utm_medium=job_board",
-    "description": "About the job\n\nAZKAIT es una empresa Mexicana que busca y conecta el mejor talento IT con empresas Latinoamericanas y de Estados Unidos.\n\nEstamos en la búsqueda de tu talento como Frontend / Full Stack Developer (React / Next.js / TypeScript)\n\nRequisitos:\n\nExperiencia: 2+ años de experiencia comprobable en desarrollo web con React, Next.js y TypeScript.\n\nLocation: Remoto - LATAM\n\nWork Modality / Modalidad: Remoto (100%)\n\nHorario: L-V horario laboral estándar corporativo Zona COSTA RICA\n\nDescription / Descripción Del Puesto\n\nBuscamos un Frontend / Full Stack Developer con un mínimo de 2 años de experiencia comprobable para incorporarse a un proyecto de alto impacto para nuestro cliente final, Grupo PRides. El profesional será responsable del desarrollo de interfaces web modernas, dinámicas y de alto rendimiento utilizando React, Next.js y TypeScript, colaborando estrechamente bajo la metodología ágil e integrándose a flujos de trabajo en Azure DevOps.\n\nFunciones y Responsabilidades\n\n\nDesarrollo Frontend & SSR/SSG: Diseñar, construir y mantener aplicaciones web escalables utilizando React, Next.js y TypeScript, aplicando las mejores prácticas de arquitectura de código. \nIntegración de APIs & Backend Services: Consumir e integrar servicios web RESTful / GraphQL, garantizando una óptima gestión del estado de la aplicación, manejo de errores y rendimiento fluido. \nOperación y Gestión CI/CD: Utilizar Azure DevOps para la gestión del ciclo de vida del desarrollo (gestión de repositorios, historias de usuario, pipelines de CI/CD y despliegues). \nCalidad de Código & Colaboración: Participar activamente en revisiones de código (code reviews), diseño de componentes reutilizables, pruebas unitarias y trabajo colaborativo cross-functional con el equipo del cliente final. \n\n\nRequirement / Requisitos\n\nObligatorios:\n\n\nExperiencia: Mínimo 2 años de experiencia comprobable como Desarrollador Frontend o Full Stack. \nEcosistema JS/TS: Sólido dominio práctico e indispensable de React, Next.js y TypeScript. \nDevOps & Herramientas: Experiencia demostrable trabajando con Azure DevOps (Repos, Boards, Pipelines). \nProcesos Web: Manejo de HTML5, CSS3/Tailwind, consumo de APIs REST/JSON y control de versiones con Git. \nDisponibilidad: Disponibilidad inmediata o a corto plazo para incorporación (fechas objetivo: 14 de octubre, 30 de octubre o 15 de noviembre). \n\n\nDeseables:\n\n\nExperiencia previa en integración con servicios backend (Node.js, C#/.NET o Java). \nManejo de prácticas de CI/CD e infraestructura ágil. \n\n\nSoft Skills:\n\n\nExcelentes habilidades de comunicación oral y escrita. \nAlta capacidad de trabajo en equipo, proactividad y autonomía. \n\n\nStack Técnico\n\nResumen:\n\n\nCore Frontend & Languages: React, Next.js, TypeScript, JavaScript (ES6+), HTML5, CSS3 / Tailwind \nDevOps & Methodologies: Azure DevOps (Boards, Repos, Pipelines), Git, Agile / Scrum \nIntegrations: REST APIs, JSON, GraphQL",
-    "location": "Remote - Venezuela",
-    "country": "Venezuela",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-07T06:08:00.973Z",
-    "sourceHash": "441c8ef8352cd3e7a51bfc4a9c8c4c8ac1aeb822154b14b60cac166ce732e886",
-    "company": {
-      "id": "azkait",
-      "name": "Azkait",
-      "logoUrl": "https://logo.clearbit.com/azkait.com",
-      "industry": "Technology",
-      "website": "https://azkait.com"
-    },
-    "slug": "frontend-full-stack-developer-react-next-js-typescript-azkait-441c8ef8",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "javascript",
-        "css",
-        "tailwind",
-        "graphql",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Venezuela"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
     "id": "dc36477578683c2dd0361aa8699980c9cdb352b9f63c55eef3828463efc452b3",
     "title": "Frontend Designer - Remote",
     "applyUrl": "https://yoailabs.careers-page.com/jobs/5e460543-4d19-4860-9384-b4297b427bc2?utm_medium=free_job_board&utm_source=linkedin",
