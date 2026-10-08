@@ -7,7 +7,7 @@
     "location": "Remote - Venezuela",
     "country": "Venezuela",
     "remoteType": "REMOTE",
-    "postedAt": "2026-10-08T06:09:56.287Z",
+    "postedAt": "2000-01-01T00:00:00.000Z",
     "sourceHash": "441c8ef8352cd3e7a51bfc4a9c8c4c8ac1aeb822154b14b60cac166ce732e886",
     "company": {
       "id": "azkait",
@@ -79,7 +79,7 @@
     "location": "Remote - United States",
     "country": "United States",
     "remoteType": "REMOTE",
-    "postedAt": "2026-10-08T06:08:37.394Z",
+    "postedAt": "2000-01-01T00:00:00.000Z",
     "sourceHash": "9e4dc89c3a3714ca0b8e627feff5e58bd6024ba96fc152679123591f84d9dbc8",
     "company": {
       "id": "eitaciesinc",
