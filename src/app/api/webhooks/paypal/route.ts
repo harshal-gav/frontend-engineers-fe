@@ -20,6 +20,7 @@ export async function POST(req: Request) {
         
         const isEmployer = planId === process.env.NEXT_PUBLIC_PAYPAL_EMPLOYER_PLAN_ID;
 
+        // 1. Update the user document
         await db.collection('users').doc(customId).set({
           isPremium: true,
           isSubscribed: true,
@@ -29,6 +30,18 @@ export async function POST(req: Request) {
           paymentGateway: 'paypal',
           subscriptionExpiresAt: expiresAt,
           updatedAt: new Date()
+        }, { merge: true });
+
+        // 2. Save the transaction record for analytics/accounting
+        await db.collection('paypal_transactions').doc(resource.id).set({
+          uid: customId,
+          status: 'activated',
+          planId: planId,
+          subscriptionId: resource.id,
+          amount: isEmployer ? "99.00" : "9.00",
+          currency: "USD",
+          createdAt: new Date(),
+          eventType: event_type
         }, { merge: true });
       }
     } else if (event_type === 'PAYMENT.SALE.COMPLETED') {
@@ -50,6 +63,18 @@ export async function POST(req: Request) {
             isSubscribed: true,
             subscriptionExpiresAt: expiresAt,
             updatedAt: new Date()
+          }, { merge: true });
+
+          // Log the recurring payment transaction
+          await db.collection('paypal_transactions').doc(resource.id).set({
+            uid: userDoc.id,
+            status: 'sale_completed',
+            subscriptionId: subscriptionId,
+            transactionId: resource.id,
+            amount: resource.amount?.total || "0.00",
+            currency: resource.amount?.currency || "USD",
+            createdAt: new Date(),
+            eventType: event_type
           }, { merge: true });
         }
       }
