@@ -1,5 +1,163 @@
 [
   {
+    "id": "32dd0d85a1856faba8140d7b913f0ad10bb74898e784b37854834024fe4b441c",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.fetchjobs.co/job-description-usb/D6BEC9EF5B22373EA1F914626B29CB6E?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nQuik Hire Staffing is a leading recruitment agency dedicated to connecting top-tier talent with innovative organizations across various industries. With a commitment to excellence and a client-centric approach, we specialize in providing comprehensive staffing solutions that meet the unique needs of each client. Our team of experienced professionals leverages industry insights and a vast network to deliver timely and effective staffing services, ensuring our clients can focus on their core business operations while we handle their talent acquisition needs.\n\nAbout The Role\n\nWe are seeking a highly motivated and detail-oriented Recruitment Specialist to join our dynamic team at Quik Hire Staffing. This role is pivotal in driving our mission to connect qualified candidates with the right opportunities. The Recruitment Specialist will be responsible for managing the end-to-end recruitment process, including sourcing, screening, interviewing, and onboarding candidates. The ideal candidate will have a strong understanding of various recruitment strategies, excellent communication skills, and the ability to build lasting relationships with both clients and candidates. This position offers an exciting opportunity to work in a fast-paced environment, contribute to the growth of our organization, and make a meaningful impact on our clients’ success.\n\nQualifications\n\nThe ideal candidate should possess a bachelor’s degree in Human Resources, Business Administration, or a related field. Prior experience in recruitment or staffing is preferred, with a proven track record of successfully placing candidates across different industries. Strong interpersonal and communication skills are essential, along with the ability to work independently and as part of a team. Familiarity with applicant tracking systems and other recruitment tools is highly desirable. The candidate should demonstrate excellent organizational skills, attention to detail, and the ability to manage multiple priorities effectively. A proactive attitude, adaptability, and a passion for talent acquisition are key attributes for success in this role.\n\nResponsibilities\n\nAs a Recruitment Specialist, your primary responsibilities will include sourcing candidates through various channels such as job boards, social media, and professional networks. You will review resumes, conduct initial screenings, and coordinate interviews to ensure a seamless candidate experience. Building and maintaining relationships with clients to understand their staffing needs and providing tailored recruitment solutions will be a core aspect of your role. You will also be responsible for managing candidate databases, maintaining accurate records, and preparing reports on recruitment activities. Additionally, you will stay updated on industry trends and best practices to continuously improve recruitment strategies. Ensuring compliance with employment laws and company policies during all stages of the hiring process is essential. You will collaborate with team members and contribute to the development of innovative staffing initiatives that enhance our service delivery.\n\nBenefits\n\nQuik Hire Staffing offers a competitive benefits package designed to support our employees’ well-being and professional growth. Benefits include health insurance coverage, paid time off, and opportunities for ongoing training and development. We foster a collaborative and inclusive work environment that encourages innovation and continuous learning. Employees also have access to performance-based incentives and career advancement opportunities within the organization. Our flexible work arrangements aim to promote work-life balance, ensuring our team members are motivated and engaged in their roles. We are committed to recognizing and rewarding outstanding performance, making Quik Hire Staffing a rewarding place to build your career.\n\nEqual Opportunity\n\nQuik Hire Staffing is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate based on race, religion, gender, sexual orientation, age, disability, or any other protected characteristic. Our recruitment practices are designed to promote fairness and equal access to employment opportunities. We believe that a diverse workforce enhances our ability to serve our clients effectively and fosters a culture of innovation and respect. We encourage candidates from all backgrounds to apply and join our team.\n\n\n\n\n\nDesired Skills and Experience\n\nRecruitment, Talent Acquisition, Candidate Sourcing, Interviewing, Applicant Tracking Systems, Relationship Management",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-09T05:58:03.724Z",
+    "sourceHash": "32dd0d85a1856faba8140d7b913f0ad10bb74898e784b37854834024fe4b441c",
+    "company": {
+      "id": "taskverse",
+      "name": "TaskVerse",
+      "logoUrl": "https://logo.clearbit.com/taskverse.com",
+      "industry": "Technology",
+      "website": "https://taskverse.com"
+    },
+    "slug": "frontend-developer-taskverse-32dd0d85",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "acfbd1371b7596937afb07c08e7b0339cedae925a02ec8ae05c0b77599d72062",
+    "title": "Designer + Frontend Developer",
+    "applyUrl": "https://www.onti.global/careers/designer-frontend-developer",
+    "description": "About the job\n\n← Volver a carreras\n\nProducto y Tecnología\n\n\n Remoto\n Tiempo completo\n 2 a 3 años de experiencia\n\n\nDesigner + Frontend Developer\n\nEn Onti trabajamos el despertar de la consciencia — ayudar a alguien a recordar quién ya es, no a fabricarle una versión mejorada. Así construimos el producto también: con calma, sin prisas artificiales. Buscamos a alguien con buen ojo para la experiencia y la interfaz, que además sepa programar lo que diseña. Que la app se sienta como lo que enseñamos: clara, tranquila, sin ruido. Trabajarás de cerca con Andy, nuestro CTO.\n\nResponsabilidades\n\n\nDiseño de producto — flujos, pantallas y prototipos en Figma, desde la idea hasta el detalle final.\nLa app — React Native con Expo. Llevar el diseño a código: cursos, meditaciones, animaciones y microinteracciones.\nLanding y admin — nuestra página en Next.js y el panel interno que usa el equipo, con Tailwind.\nSistema de diseño — cuidar y hacer crecer los componentes, tipografía y color de Onti para que todo se sienta de la misma casa.\n\n\nRequisitos\n\n\nEspañol nativo o con dominio profesional — es requisito indispensable.\nBuen ojo para UX y UI: jerarquía, ritmo, tipografía, espacio. Sabes explicar por qué una pantalla funciona o no.\nDominas Figma: componentes, auto layout, prototipos que se pueden probar con gente real.\nEscribes React y TypeScript con soltura, y has llevado diseños tuyos a producción.\nExperiencia con React Native / Expo, Next.js y Tailwind; si sabes de animación (Reanimated, Framer Motion), mucho mejor.\nTe importan la accesibilidad y el detalle: estados vacíos, errores, cargas, modo oscuro.\nVienes de startups o equipos chicos y multidisciplinarios, donde las prioridades cambian seguido.\n\n\nStack\n\nDiseño Figma, sistema de diseño, prototipado\n\nFrontend React, Next.js, React Native / Expo, TypeScript\n\nEstilos y motion Tailwind, Reanimated, Framer Motion\n\nFlujo GitHub, Vercel, desarrollo estructurado con IA\n\nProceso de seleccion\n\n\n1.\n\n\nPortafolio, cover letter y CV\n\nMándanos tu portafolio, tu CV y unas líneas sobre por qué te late este puesto en particular.\n\n\n2.\n\n\nRevisión de portafolio\n\nNos cuentas un par de proyectos: qué problema había, qué decidiste y por qué.\n\n\n3.\n\n\nPrueba de diseño y código\n\nUn ejercicio corto: diseñar una pantalla y llevarla a código, parecido a algo que harías aquí de verdad.\n\n\n4.\n\n\nEntrevista con el equipo tech\n\nRevisamos juntos tu prueba y profundizamos en cómo trabajas.\n\n\n5.\n\n\nCulture fit\n\nÚltima plática, ahora con los founders, para conocernos y ver si encajamos.\n\nPostularme a esta vacante",
+    "location": "Remote - United Kingdom",
+    "country": "United Kingdom",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-09T05:57:26.246Z",
+    "sourceHash": "acfbd1371b7596937afb07c08e7b0339cedae925a02ec8ae05c0b77599d72062",
+    "company": {
+      "id": "onti",
+      "name": "Onti",
+      "logoUrl": "https://logo.clearbit.com/onti.com",
+      "industry": "Technology",
+      "website": "https://onti.com"
+    },
+    "slug": "designer-frontend-developer-onti-acfbd137",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "tailwind",
+        "figma"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United Kingdom"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "cb6317b6fe2c828e04dbbe6793bf05f11d4890fa877d21952f0db2f4d9c654cf",
+    "title": "Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/bltoqjs6a1hiqx4s4ym_en?country=Mexico&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Mexico",
+    "country": "Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-09T05:41:23.499Z",
+    "sourceHash": "cb6317b6fe2c828e04dbbe6793bf05f11d4890fa877d21952f0db2f4d9c654cf",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-cb6317b6",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mexico"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0dc3b37a6ffb67365d53b3c8917fb3fb1a456371c56d88e1f24c4e37969ab80d",
+    "title": "Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/bltoqjs6a1hiqx4s4ym_en?country=Chile&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Chile",
+    "country": "Chile",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-09T05:19:25.630Z",
+    "sourceHash": "0dc3b37a6ffb67365d53b3c8917fb3fb1a456371c56d88e1f24c4e37969ab80d",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-0dc3b37a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Chile"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "794592fad6e61abb9ae1145d7cc25147664ccd53baa07f8130b131a74fb3b78c",
+    "title": "Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/bltoqjs6a1hiqx4s4ym_en?country=Brazil&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-09T05:17:32.110Z",
+    "sourceHash": "794592fad6e61abb9ae1145d7cc25147664ccd53baa07f8130b131a74fb3b78c",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-794592fa",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "8bb10b424336591d2b7b06f6e3e9d8d6f8e1184419863b85a38aa21776842b2c",
     "title": "Frontend / UX Engineers - REMOTE",
     "applyUrl": "https://careers.nttdata.com/global/en/job/NTT1GLOBAL392986EXTERNALENGLOBAL/Frontend-UX-Engineers-REMOTE?utm_source=linkedin&utm_medium=phenom-feeds",
