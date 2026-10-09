@@ -87,6 +87,34 @@ export default function PricingPage() {
     fetchStats();
   }, []);
 
+  const handleDodoPayment = async () => {
+    try {
+      if (!user) return;
+      const token = await user.getIdToken();
+
+      const res = await fetch("/api/dodo/create-checkout", {
+        method: "POST",
+        headers: {
+          "Authorization": `Bearer ${token}`
+        }
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || data.error) {
+        setError(data.error || "Failed to initialize Dodo Payments");
+        return;
+      }
+
+      if (data.checkout_url) {
+        window.location.href = data.checkout_url;
+      }
+    } catch (err) {
+      console.error(err);
+      setError("Failed to initiate payment");
+    }
+  };
+
 
   const handlePayUSubscription = async () => {
     try {
@@ -319,6 +347,7 @@ export default function PricingPage() {
                   </button>
                 ) : (
                   <div className="flex flex-col gap-4">
+
                     <div className="w-full">
                       <PayPalScriptProvider key={providerKey} options={initialOptions}>
                         <PayPalButtons
@@ -351,6 +380,19 @@ export default function PricingPage() {
                         />
                       </PayPalScriptProvider>
                     </div>
+
+                    <div className="relative flex py-2 items-center">
+                      <div className="flex-grow border-t border-[#e2e2e6]"></div>
+                      <span className="flex-shrink-0 mx-4 text-gray-600 text-sm">OR</span>
+                      <div className="flex-grow border-t border-[#e2e2e6]"></div>
+                    </div>
+
+                    <button
+                      onClick={handleDodoPayment}
+                      className="w-full py-3 rounded-full text-white bg-black font-bold text-lg hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 shadow-lg"
+                    >
+                      Pay with Dodo (Cards, Apple Pay, UPI)
+                    </button>
 
                     <div className="relative flex py-2 items-center">
                       <div className="flex-grow border-t border-[#e2e2e6]"></div>
