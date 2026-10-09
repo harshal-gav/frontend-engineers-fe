@@ -10,10 +10,22 @@ export const POST = Webhooks({
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const payloadData = payload.data as any;
       const metadata = payloadData?.metadata || {};
-      const uid = metadata.uid;
+      let uid = metadata.uid;
+
+      if (!uid && payloadData?.customer?.email) {
+        const { getAdminAuth } = await import('@/lib/firebase-admin');
+        const auth = getAdminAuth();
+        try {
+          const userRecord = await auth.getUserByEmail(payloadData.customer.email);
+          uid = userRecord.uid;
+          console.log(`Found UID ${uid} by email ${payloadData.customer.email}`);
+        } catch (err) {
+          console.warn(`Could not find Firebase user by email: ${payloadData.customer.email}`);
+        }
+      }
 
       if (!uid) {
-        console.warn("Dodo Webhook received, but no UID found in metadata", payload);
+        console.warn("Dodo Webhook received, but no UID found in metadata or customer", payloadData);
         return;
       }
 
@@ -22,6 +34,15 @@ export const POST = Webhooks({
       switch (payload.type) {
         case "payment.succeeded":
           console.log("Payment succeeded:", payload.data);
+          // Update user access just in case this was a one-time payment product
+          await db.collection('users').doc(uid).set({
+            isPremium: true,
+            isSubscribed: true,
+            paymentGateway: 'dodo',
+            subscriptionExpiresAt: expiresAt,
+            updatedAt: new Date()
+          }, { merge: true });
+
           // Log the transaction
           await db.collection('dodo_transactions').doc(payloadData.payment_id || "unknown").set({
             uid,
@@ -35,7 +56,8 @@ export const POST = Webhooks({
 
         case "subscription.active":
         case "subscription.updated":
-          console.log("Subscription active/updated:", payload.data);
+        case "subscription.renewed":
+          console.log(`Subscription ${payload.type}:`, payload.data);
           // Update the user document to Premium
           await db.collection('users').doc(uid).set({
             isPremium: true,
