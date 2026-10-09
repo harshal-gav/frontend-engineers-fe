@@ -2,13 +2,13 @@ import { NextResponse } from 'next/server';
 import DodoPayments from 'dodopayments';
 import { getAdminAuth } from '@/lib/firebase-admin';
 
-const client = new DodoPayments({
-  bearerToken: process.env.DODO_PAYMENTS_API_KEY,
-  environment: 'live_mode',
-});
-
 export async function POST(req: Request) {
   try {
+    const client = new DodoPayments({
+      bearerToken: process.env.DODO_PAYMENTS_API_KEY,
+      environment: 'live_mode',
+    });
+
     const authHeader = req.headers.get('Authorization');
     if (!authHeader?.startsWith('Bearer ')) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });

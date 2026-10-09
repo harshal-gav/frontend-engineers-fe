@@ -2,7 +2,7 @@ import { Webhooks } from "@dodopayments/nextjs";
 import { getAdminDb } from '@/lib/firebase-admin';
 
 export const POST = Webhooks({
-  webhookKey: process.env.DODO_PAYMENTS_WEBHOOK_SECRET!,
+  webhookKey: process.env.DODO_PAYMENTS_WEBHOOK_SECRET || "dummy_key_for_build",
   onPayload: async (payload) => {
     try {
       const db = getAdminDb();
