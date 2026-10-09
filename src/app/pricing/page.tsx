@@ -381,6 +381,18 @@ export default function PricingPage() {
                       </PayPalScriptProvider>
                     </div>
 
+                    <div className="relative flex py-2 items-center">
+                      <div className="flex-grow border-t border-[#e2e2e6]"></div>
+                      <span className="flex-shrink-0 mx-4 text-gray-600 text-sm">OR</span>
+                      <div className="flex-grow border-t border-[#e2e2e6]"></div>
+                    </div>
+
+                    <button
+                      onClick={handleDodoPayment}
+                      className="w-full py-3 rounded-full text-white bg-black font-bold text-lg hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 shadow-lg"
+                    >
+                      Pay with (Cards, Apple Pay, UPI)
+                    </button>
 
                     <div className="relative flex py-2 items-center">
                       <div className="flex-grow border-t border-[#e2e2e6]"></div>
