@@ -31,6 +31,8 @@ export const POST = Webhooks({
 
       const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
 
+      const isEmployer = metadata.type === 'employer';
+
       switch (payload.type) {
         case "payment.succeeded":
           console.log("Payment succeeded:", payload.data);
@@ -38,6 +40,8 @@ export const POST = Webhooks({
           await db.collection('users').doc(uid).set({
             isPremium: true,
             isSubscribed: true,
+            isEmployer: isEmployer,
+            ...(isEmployer && { role: 'employer' }),
             paymentGateway: 'dodo',
             subscriptionExpiresAt: expiresAt,
             updatedAt: new Date()
@@ -62,6 +66,8 @@ export const POST = Webhooks({
           await db.collection('users').doc(uid).set({
             isPremium: true,
             isSubscribed: true,
+            isEmployer: isEmployer,
+            ...(isEmployer && { role: 'employer' }),
             dodoSubscriptionId: payloadData.subscription_id,
             paymentGateway: 'dodo',
             subscriptionExpiresAt: expiresAt,

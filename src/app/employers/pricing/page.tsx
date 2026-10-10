@@ -60,46 +60,33 @@ export default function EmployerPricingPage() {
     fetchLocalPrice();
   }, []);
 
-  const handlePayUSubscription = async () => {
+  const handleDodoPayment = async () => {
     try {
       if (!user) return;
       const token = await user.getIdToken();
 
-      const res = await fetch("/api/payu/create-subscription", {
+      const res = await fetch("/api/dodo/create-checkout", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
           "Authorization": `Bearer ${token}`
         },
-        body: JSON.stringify({ type: 'employer' }) // tell backend to use employer pricing
+        body: JSON.stringify({ type: 'employer' })
       });
 
       const data = await res.json();
 
       if (!res.ok || data.error) {
-        setError(data.error || "Failed to initialize PayU");
+        setError(data.error || "Failed to initialize Dodo Payments");
         return;
       }
 
-      // Dynamically create and submit a form to PayU
-      const form = document.createElement("form");
-      form.setAttribute("method", "POST");
-      form.setAttribute("action", data.action);
-
-      Object.keys(data.params).forEach((key) => {
-        const hiddenField = document.createElement("input");
-        hiddenField.setAttribute("type", "hidden");
-        hiddenField.setAttribute("name", key);
-        hiddenField.setAttribute("value", data.params[key]);
-        form.appendChild(hiddenField);
-      });
-
-      document.body.appendChild(form);
-      form.submit();
-
+      if (data.checkout_url) {
+        window.location.href = data.checkout_url;
+      }
     } catch (err) {
       console.error(err);
-      setError("Failed to initiate PayU payment");
+      setError("Failed to initiate payment");
     }
   };
 
@@ -210,6 +197,19 @@ export default function EmployerPricingPage() {
                   </button>
                 ) : (
                   <div className="flex flex-col gap-4">
+                    <button
+                      onClick={handleDodoPayment}
+                      className="w-full py-4 rounded-xl text-white bg-black hover:bg-gray-800 font-bold text-lg shadow-md transition-all hover:scale-[1.02] flex items-center justify-center gap-2"
+                    >
+                      Pay with (Cards, Apple Pay, UPI)
+                    </button>
+
+                    <div className="relative flex py-2 items-center">
+                      <div className="flex-grow border-t border-gray-200"></div>
+                      <span className="flex-shrink-0 mx-4 text-gray-400 text-sm font-semibold uppercase">OR</span>
+                      <div className="flex-grow border-t border-gray-200"></div>
+                    </div>
+
                     <div className="w-full">
                       <PayPalScriptProvider key={providerKey} options={initialOptions}>
                         <PayPalButtons
@@ -243,19 +243,6 @@ export default function EmployerPricingPage() {
                         />
                       </PayPalScriptProvider>
                     </div>
-
-                    <div className="relative flex py-2 items-center">
-                      <div className="flex-grow border-t border-gray-200"></div>
-                      <span className="flex-shrink-0 mx-4 text-gray-400 text-sm font-semibold uppercase">OR</span>
-                      <div className="flex-grow border-t border-gray-200"></div>
-                    </div>
-
-                    <button
-                      onClick={handlePayUSubscription}
-                      className="w-full py-4 rounded-xl text-gray-900 bg-[#fde047] hover:bg-[#facc15] font-bold text-lg shadow-md transition-all hover:scale-[1.02] flex items-center justify-center gap-2"
-                    >
-                      Pay via UPI / Indian Cards
-                    </button>
                   </div>
                 )}
 
