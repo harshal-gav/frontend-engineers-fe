@@ -26,7 +26,9 @@ async function main() {
           console.log(`User ${doc.id} expired on ${expiresAt.toISOString()}. Revoking premium status.`);
           await db.collection('users').doc(doc.id).set({
             isPremium: false,
-            isSubscribed: false
+            isSubscribed: false,
+            isEmployer: false,
+            role: 'user'
           }, { merge: true });
           expiredCount++;
         }

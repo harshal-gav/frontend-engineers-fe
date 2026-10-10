@@ -51,7 +51,7 @@ export async function POST(req: Request) {
         uid: uid,
         type: isEmployer ? 'employer' : 'user'
       },
-      return_url: `${baseUrl}/${isEmployer ? 'employers/pricing/success' : 'pricing/success'}?gateway=dodo`,
+      return_url: `${baseUrl}/`,
       cancel_url: `${baseUrl}/${isEmployer ? 'employers/pricing' : 'pricing'}`,
     });
 
