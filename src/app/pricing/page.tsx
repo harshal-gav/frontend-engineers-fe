@@ -142,7 +142,7 @@ export default function PricingPage() {
             Get Hired Faster with <span className="text-[#2563eb]">Less Competition.</span>
           </h1>
           <p className="text-xl text-gray-600 mt-2 max-w-2xl mx-auto text-center">
-            Skip the noise. We aggregate React, Vue, and Angular roles from 100+ sources so you never miss a remote opportunity. Unlock full descriptions, 1-click apply links, and daily alerts for $9/mo.
+            Skip the noise. We aggregate Remote Frontend Developer roles from 100+ sources so you never miss a remote opportunity. Unlock full descriptions, 1-click apply links, and daily alerts for $9/mo.
           </p>
         </div>
 
