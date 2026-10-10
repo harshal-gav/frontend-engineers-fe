@@ -101,6 +101,14 @@ export const POST = Webhooks({
                 updatedAt: new Date()
              }, { merge: true });
           }
+          
+          await db.collection('dodo_transactions').doc(`${payloadData.subscription_id}_${payload.type}`).set({
+            uid,
+            status: payload.type.split('.')[1],
+            subscriptionId: payloadData.subscription_id,
+            createdAt: new Date(),
+            eventType: payload.type
+          }, { merge: true });
           break;
 
         default:

@@ -90,7 +90,7 @@ export async function POST(req: Request) {
 
       const dodoClient = new DodoPayments({
         bearerToken: process.env.DODO_PAYMENTS_API_KEY,
-        environment: process.env.NODE_ENV === 'production' ? 'live_mode' : 'test_mode',
+        environment: 'live_mode',
       });
 
       // Call Dodo Payments API to cancel the subscription at the end of the billing period
