@@ -1,5 +1,73 @@
 [
   {
+    "id": "a0d6f0432b3e83d9fd60c5433c8890934e8d82a2401039e74418ce1058598c70",
+    "title": "Frontend Developer",
+    "applyUrl": "https://forms.gle/wGe1wkUPkNBtwXwp7",
+    "description": "About the job\n\nThinknova is hiring for Frontend Developer Intern\n\n\n\n\nDuration: 3 months\n\nStipend: Up to ₹10,000 (performance-based)\n\nType: Paid, remote internship\n\n\n\n\nAbout the Company\n\n\n\n\nThinknova is offering a structured remote internship for freshers who want to begin a career in frontend development. The internship provides practical exposure to building responsive user interfaces, implementing interactive features, and improving the user experience of web applications.\n\n\n\n\nResponsibilities\n\n\n\n\n- Develop responsive and user-friendly web interfaces using HTML, CSS, and JavaScript.\n\n- Convert design layouts into functional web pages and reusable components.\n\n- Implement interactive features using relevant frontend libraries or frameworks.\n\n- Integrate APIs to display and manage data within user interfaces.\n\n- Test interfaces across browsers and devices to ensure consistent functionality and appearance.\n\n- Identify and fix layout issues, bugs, and accessibility concerns.\n\n- Document code, technical changes, and development progress clearly.\n\n- Work collaboratively with remote team members and complete assigned deliverables on time.\n\n\n\n\nRequirements\n\n\n\n\n- Suitable for freshers with an interest in frontend development, web development, or a related area.\n\n- Strong logical reasoning, problem-solving ability, attention to detail, and willingness to learn.\n\n- Basic understanding of HTML, CSS, and JavaScript.\n\n- Familiarity with responsive design; knowledge of React, Angular, or Vue.js is beneficial.\n\n- Basic knowledge of Git, browser developer tools, and API integration is beneficial.\n\n- Good written and verbal communication skills.\n\n- Ability to work independently in a remote environment while managing deadlines responsibly.\n\n\n\n\nThis is a paid, remote internship with a duration of 3 months and a performance-based stipend of up to ₹10,000.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T17:25:07.577Z",
+    "sourceHash": "a0d6f0432b3e83d9fd60c5433c8890934e8d82a2401039e74418ce1058598c70",
+    "company": {
+      "id": "thinknovaa",
+      "name": "ThinkNovaa",
+      "logoUrl": "https://logo.clearbit.com/thinknovaa.com",
+      "industry": "Technology",
+      "website": "https://thinknovaa.com"
+    },
+    "slug": "frontend-developer-thinknovaa-a0d6f043",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "mid",
+      "employmentType": "internship"
+    }
+  },
+  {
+    "id": "2041229ca6606ef543f3ba19a965241cb1a9d267166b4257c0bd002684981618",
+    "title": "Senior Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/blt01l2qnaoqxo476xi_en?country=Argentina&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and evolve a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. You will collaborate with engineering, product, and design to solve complex UI and API-adjacent problems.\n\nResponsibilities\n\n\nDesign core functionality for a web-based medical imaging viewer\nBuild user interfaces using TypeScript and ReactJS\nMaintain existing frontend features and improve performance and reliability\nCollaborate with engineers to analyze problems and implement solutions\nCoordinate with product and design to deliver intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\n3+ years of professional frontend development experience\nStrong TypeScript and ReactJS experience\nProven DICOM Medical Viewers experience, including OHIF/DICOM\nStrong API and integration skills across client/server boundaries\nSolid frontend architecture knowledge, including state management and component design\nExcellent written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience with regulated environments or healthcare/clinical trial software\nExperience with Python or Go for backend collaboration\nExperience building CI/CD pipelines, with GitLab CI exposure\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn",
+    "location": "Remote - Argentina",
+    "country": "Argentina",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T17:09:08.430Z",
+    "sourceHash": "2041229ca6606ef543f3ba19a965241cb1a9d267166b4257c0bd002684981618",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "senior-frontend-engineer-medical-imaging-viewer-epam-systems-2041229c",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Argentina"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "94485cc838cda72a408543515200d27ded71ea3e4838c7ad8c9afbfdf008245f",
     "title": "Front End Developer (Mid-level)",
     "applyUrl": "https://www.sundayy.com/job-description/usE1DD2B8DF7C08F3F8C9BDF66C7580629?source=Linkedin",
