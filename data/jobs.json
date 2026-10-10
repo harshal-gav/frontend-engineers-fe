@@ -1,5 +1,327 @@
 [
   {
+    "id": "b6e38d1a15cceec176eaed098a17e44bc754f1fed9dcdba64a51977a44ecea58",
+    "title": "Fullstack Engineer (Frontend Leaning) - Studio",
+    "applyUrl": "https://jobs.ashbyhq.com/elevenlabs/e6924f60-c8cc-42b3-9d05-2442ec30e12d?utm_source=linkedin",
+    "description": "About the job\n\nAbout ElevenLabs\n\nElevenLabs is an AI research and product company transforming how we interact with technology.\n\nWe launched in January 2023 with the first human-like AI voice model. Today, we serve millions of users and thousands of businesses - from fast-growing startups to large enterprises like Deutsche Telekom and Meta. Our investors are some of the world's most prominent, including Andreessen Horowitz, ICONIQ Growth and Sequoia. We've raised $781M in funding and our last valuation was $22B - multiples of 11, always.\n\nWe Have Expanded From Voice Into Three Main Platforms\n\n\nElevenAgents enables businesses to deliver seamless and intelligent customer experiences, with the integrations, testing, monitoring, and reliability necessary to deploy voice and chat agents at scale.\nElevenCreative empowers creators and marketers to generate and edit speech, music, image, and video across 70+ languages.\nElevenAPI gives developers access to our leading AI audio foundational models.\n\n\nEverything we do is the result of the creativity and commitment of our team - builders doing the best work of their lives. We are researchers, engineers, and operators. IOI medalists and ex-founders. If you want to work hard and create lasting positive impact, we want to hear from you.\n\nHow we work\n\n\nHigh-velocity: Rapid experimentation, lean autonomous teams, and minimal bureaucracy.\nImpact not job titles: We don’t have job titles. Instead, it’s about the impact you have. No task is above or beneath you.\nAI first: We use AI to move faster with higher-quality results. We do this across the whole company—from engineering to growth to operations.\nExcellence everywhere: Everything we do should match the quality of our AI models.\nGlobal team: We prioritize your talent, not your location.\n\n\nWhat we offer\n\n\nInnovative culture: You’ll be part of a generational opportunity to define the trajectory of AI, surrounded by a team pushing the boundaries of what’s possible.\nGrowth paths: Joining ElevenLabs means joining a dynamic team with countless opportunities to drive impact - beyond your immediate role and responsibilities.\nLearning & development: ElevenLabs proactively supports professional development through an annual discretionary stipend.\nSocial travel: We also provide an annual discretionary stipend to meet up with colleagues each year, however you choose.\nAnnual company offsite: Each year, we bring the entire team together in a new location - past offsites have included Croatia and Italy.\nCo-working: If you’re not located near one of our main hubs, we offer a monthly co-working stipend.\n\n\nAbout The Role\n\nYou’ll build the tools that make Studio a video editor people want to live in. These include transitions, color grading and elements libraries all built on top of our in-house engine. You’ll also build presets, so a user can get the effect they want without tweaking 20 individual controls.\n\nThe work mixes greenfield features with polish on the existing editor. An example of the polish is letting editors coming from Premiere Pro or Final Cut Pro rebind their keyboard shortcuts in one step. You’ll write proposals, get fast feedback, and own features through launch, including the marketing moment.\n\nYou’re a product-minded, frontend-leaning full-stack engineer. Deep backend skills aren’t required.\n\nRequirements\n\n\nStrong frontend engineer who has built complex, interactive UIs.\nEnough full-stack ability to work across the stack, but deep backend expertise isn’t needed.\nEvidence of product responsibility: side projects, open source, or product-facing work.\nThrives in a fast-moving, startup-style environment, and takes ownership with minimal hand-holding.\n\n\nWe are an equal opportunity employer and do not discriminate on the basis of race, religion, national origin, gender, sexual orientation, age, veteran status, disability or other legally protected statuses.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T05:53:55.694Z",
+    "sourceHash": "b6e38d1a15cceec176eaed098a17e44bc754f1fed9dcdba64a51977a44ecea58",
+    "company": {
+      "id": "elevenlabs",
+      "name": "ElevenLabs",
+      "logoUrl": "https://logo.clearbit.com/elevenlabs.com",
+      "industry": "Technology",
+      "website": "https://elevenlabs.com"
+    },
+    "slug": "fullstack-engineer-frontend-leaning-studio-elevenlabs-b6e38d1a",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "94485cc838cda72a408543515200d27ded71ea3e4838c7ad8c9afbfdf008245f",
+    "title": "Front End Developer (Mid-level)",
+    "applyUrl": "https://www.sundayy.com/job-description/usE1DD2B8DF7C08F3F8C9BDF66C7580629?source=Linkedin",
+    "description": "About the job\n\nAbout The Company\n\nMaximus is a leading provider of government services and technology solutions dedicated to improving the efficiency and effectiveness of public programs. With a strong commitment to innovation and excellence, Maximus offers comprehensive services across various sectors, including healthcare, human services, and public safety. The company's mission is to help government agencies deliver better outcomes for the communities they serve by leveraging advanced technology, strategic consulting, and operational expertise. Maximus fosters a collaborative and inclusive work environment that values integrity, accountability, and continuous improvement, making it an ideal place for professionals seeking growth and impactful work.\n\nAbout The Role\n\nMaximus is seeking a Mid-level Front End Developer to join our dynamic team. This role is pivotal in designing, developing, and enhancing user-facing features of our applications, ensuring a seamless and engaging user experience. The successful candidate will be responsible for translating UI/UX design wireframes into functional code, optimizing system navigation, and implementing modifications to Graphic User Interfaces (GUIs). This position requires a strong technical background in front-end development, including experience with modern frameworks such as Angular or React, and familiarity with cloud and containerized environments like Kubernetes or Docker. The role involves working closely with cross-functional teams, including project managers and stakeholders, to deliver high-quality software solutions that meet rigorous security and compliance standards. This is a remote position requiring an active Secret clearance, offering an excellent opportunity to contribute to impactful government projects while enjoying flexible work arrangements.\n\nQualifications\n\n\nSecret clearance or higher required\nBachelor’s degree in a related field; a master’s degree may substitute for 2 years of experience\nMinimum of 7 years of software development experience in object-oriented and scripted languages\nExperience with DevSecOps tool suites, microservices, and containerization\nProven ability to prepare, conduct, and document system tests to verify operability and compliance\nAt least 3 years of experience with bug tracking software such as Jira\n3 years of experience testing web-based applications\n3 years of participation in software development programs or projects\n3 years of experience utilizing TypeScript in Angular or React frameworks\nHands-on experience developing in cloud environments and containerized platforms like Kubernetes or Docker\nExperience with integrating data across unclassified and classified application deployments\n5 years of experience with Jenkins and GitLab\nProficiency with at least five of the following tools: NPM, Cypress.io, esbuild, Bun, Apache Tomcat, Maven EXP, SonarQube\nRecent and relevant experience in front-end web design and development\nStrong understanding of agile, user-centric application design and UI/UX standards\nExperience generating system wireframes and mockups considering multiple user personas\nProficiency with UX design tools such as Sketch and InVision\n\n\nResponsibilities\n\n\nPerform engineering tasks related to front-end design and development, including creating technical design drawings, mockups, and wireframes for stakeholder review\nPlan and implement modifications to GUIs to enhance usability and system navigation\nDevelop and optimize various UI elements to ensure operator ease of use for user-facing features\nCollaborate with cross-functional teams to translate requirements into functional front-end components\nConduct system testing, document results, and ensure compliance with project standards and security protocols\nIntegrate data across unclassified and classified application environments\nUtilize version control and CI/CD tools such as Jenkins and GitLab to automate deployment and testing processes\nEngage in agile development practices, including sprint planning, stand-ups, and retrospectives\nGenerate wireframes, mockups, and prototypes to support user-centric design approaches\nMaintain up-to-date knowledge of emerging front-end technologies and best practices to continuously improve development processes\n\n\nBenefits\n\n\nCompetitive salary range from $110,000 to $150,000\nFlexible remote work environment\nComprehensive health, dental, and vision insurance plans\nPaid time off and holidays\nProfessional development opportunities and training programs\nRetirement plan options\nCollaborative and inclusive workplace culture\n\n\nEqual Opportunity\n\nMaximus is an equal opportunity employer. We evaluate qualified applicants without regard to race, color, religion, sex, age, national origin, disability, veteran status, genetic information, or other legally protected characteristics. We are committed to fostering an inclusive environment where all employees can thrive and contribute to our mission of improving government services.\n\n\n\nDesired Skills and Experience\n\nInformation Technology",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T05:50:37.043Z",
+    "sourceHash": "94485cc838cda72a408543515200d27ded71ea3e4838c7ad8c9afbfdf008245f",
+    "company": {
+      "id": "wiraa",
+      "name": "Wiraa",
+      "logoUrl": "https://logo.clearbit.com/wiraa.com",
+      "industry": "Technology",
+      "website": "https://wiraa.com"
+    },
+    "slug": "front-end-developer-mid-level-wiraa-94485cc8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "cypress"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "392e2da8151c68259d812900aeb99142a2ef72d6fbbd02c1bec8e49ed46b584f",
+    "title": "Senior Software Engineer (Frontend), Search",
+    "applyUrl": "https://jobs.ashbyhq.com/scribdinc/da6685ad-93cc-4f08-a098-f82b194b364b?source=linkedin",
+    "description": "About the job\n\nScribd, Inc. is on a mission to advance human understanding. Our four products — Scribd®, Slideshare®, Everand™, and Fable — help billions of people across the globe move beyond access and into insight, application, and expertise.\n\nCulture at Scribd, Inc.\n\nWe support a culture where our employees can be real and be bold; where we debate and commit as we embrace plot twists; and where every employee is empowered to take action as we prioritize the customer.\n\nWe believe the best work happens when individual flexibility is balanced with meaningful community connection. Scribd Flex empowers employees to choose the workstyle and location that support their best performance, while committing to intentional in-person moments that strengthen collaboration and culture. Occasional in-person attendance is required for all Scribd, Inc. employees, regardless of location.\n\nSo what are we looking for in new team members? At Scribd, Inc., we hire for “GRIT.” Traditionally defined as the intersection of passion and perseverance toward long-term goals, GRIT reflects the mindset we expect from every employee. For us, it also serves as a practical framework for how we work: setting and achieving Goals, delivering Results within your role, contributing Innovative ideas and solutions, and strengthening the broader Team through collaboration and attitude.\n\nThis posting reflects an approved, open position within the organization.\n\nAbout The Team\n\nDiscovery Applications is the face of Scribd’s Machine Learning and Discovery Engineering Division. It is dedicated to building the customer-facing web experiences that power our cutting-edge search, recommendations, and generative AI features. This full stack team builds and owns the end-to-end discovery experience across Scribd and Everand, turning machine learning capabilities into intuitive, customer-facing features.\n\nJoining this team means you will play a key role in delivering the user value of the pioneering machine learning work, creating tangible impacts through exceptional user experiences.\n\nAbout The Role\n\nOur cross-functional squads often involve deep collaboration with other engineering teams, designers, and product managers. Your excellent communication, both in meetings and asynchronously via slack will be a key tool in driving success.\n\nThis role predominantly focuses on the frontend but comfort and knowledge of the full tech stack is a must as this role works closely with backend and ML engineers to build our complete product. You will build the user-facing experiences that are powered by Machine Learning and Generative AI.\n\nFull-cycle software development will be your primary function, but we'll expect you to contribute in a number of ways, including advising on others' technical design, reviewing code, participating in interviews, and mentoring less experienced engineers.\n\nWhen you are building software, you'll be doing more than just coding a ticket that is handed to you. You'll contribute to the code strategy, architecture, implementation, delivery, and operation of systems, end-to-end. You'll consider testability, upgradeability, scalability, and observability throughout the development process.\n\nWhat You’ll Bring\n\nKey Attributes\n\n\nStrong ownership mindset, taking responsibility for frontend systems from design through long-term evolution\nStrong systems thinking, with the ability to reason about frontend architecture at scale\nPragmatic approach to modernization, balancing ideal solutions with incremental, low-risk progress\nStrong collaboration skills and comfort working closely with both product and platform teams.\nLong-term perspective on maintainability, extensibility, and developer experience\n\n\nExperience We Value\n\n\n6+ years of professional frontend software engineering experience\nDeep experience with JavaScript/TypeScript and React\nHands-on experience with Next.js or similar modern web frameworks\nFamiliarity with Microfrontend architectures, monorepos, or shared frontend platforms\nStrong understanding of web performance, bundling, and optimization techniques\nExperience collaborating with backend and platform teams to define clean integration patterns\nComfort operating in environments with high traffic, high visibility, and real user impact\nComfortable working in a codebase with shared patterns (monorepos, shared UI libraries, or platform constraints) and collaborating across teams\nExcellent written and verbal communication; thrives in a remote, documentation-driven culture\nHighly collaborative: partners closely with product, design, and backend to deliver end-to-end features\n\n\nNice to have\n\n\nExperience working with or migrating large, complex, or legacy frontend codebases\nYou’ve helped modernize frontend systems in production, not just greenfield projects\nYou think about frontend architecture as a product for other engineers, not just a delivery mechanism\nYou consider performance, accessibility, SEO, quality, and observability as first-class concerns\nYou invest in testing and quality practices that make large-scale migrations safe and repeatable\nYou enjoy untangling complexity and leaving systems better than you found them\nYou care deeply about how technical decisions affect both developers and end users\n\n\nAt Scribd, Inc., your base pay is one part of your total compensation package and is determined within a range. Our pay ranges are based on the local cost of labor benchmarks for each specific role, level, and geographic location. San Francisco is our highest geographic market in the United States.\n\nIn the state of California, the reasonably expected salary range is between $151,000 [minimum salary in our lowest geographic market within California] to $226,000 [maximum salary in our highest geographic market within California].\n\nIn the United States, outside of California, the reasonably expected salary range is between $124,000 [minimum salary in our lowest US geographic market outside of California] to $214,000 [maximum salary in our highest US geographic market outside of California].\n\nIn Canada, the reasonably expected salary range is between $157,000 CAD[minimum salary in our lowest geographic market] to $201,000 CAD[maximum salary in our highest geographic market].\n\nWe carefully consider a wide range of factors when determining compensation, including but not limited to experience; job-related skill sets; relevant education or training; and other business and organizational needs. The salary range listed is for the level at which this job has been scoped. In the event that you are considered for a different level, a higher or lower pay range would apply. This position is also eligible for a competitive equity ownership, and a comprehensive and generous benefits package.\n\nWorking at Scribd, Inc.\n\nAre you currently based in a location where Scribd, Inc. can employ you? \n\nEmployees must have their primary residence in or near one of the following cities. This includes surrounding metro areas or locations within a typical commuting distance:\n\nUnited States\n\nAtlanta | Austin | Boston | Dallas | Denver | Chicago | Houston | Jacksonville | Los Angeles | Miami | New York City | Phoenix | Portland | Sacramento | Salt Lake City | San Diego | San Francisco | Seattle | Washington D.C.\n\nCanada\n\nOttawa | Toronto | Vancouver\n\nMexico\n\nMexico City\n\nBenefits At Scribd, Inc.\n\n\nScribd Flex (flexible work model)\nComprehensive health, dental, and vision coverage\nMental health support and disability coverage\nGenerous paid time off, including vacation, sick time, holidays, winter break, volunteer time, and sabbaticals\nPaid parental leave and family support benefits\nRetirement matching and employee equity\nLearning and development programs and professional growth opportunities\nWellness and home office stipends\nComplimentary access to the Scribd, Inc. suite of products\nEnterprise access to leading AI tools\n\n\nGet to Know Scribd, Inc.\n\nAbout Scribd, Inc.\n\nLife at Scribd, Inc.\n\nWe want our interview process to be accessible to everyone. You can inform us of any reasonable adjustments we can make to better accommodate your needs by emailing accommodations@scribd.com about the need for adjustments at any point in the interview process.\n\nIf you apply for a job with Scribd, Inc. or otherwise engage with us in connection with employment (including as an employee, contractor, or other personnel), the personal information we process in that context is subject to our Employee and Applicant Privacy Policy, which is available here.\n\nScribd, Inc. is committed to equal employment opportunity regardless of race, color, religion, national origin, gender, sexual orientation, age, marital status, veteran status, disability status, or any other characteristic protected by law. We encourage people of all backgrounds to apply, and believe that a diversity of perspectives and experiences create a foundation for the best ideas. Come join us in building something meaningful.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T05:48:58.578Z",
+    "sourceHash": "392e2da8151c68259d812900aeb99142a2ef72d6fbbd02c1bec8e49ed46b584f",
+    "company": {
+      "id": "scribdinc",
+      "name": "Scribd, Inc.",
+      "logoUrl": "https://logo.clearbit.com/scribdinc.com",
+      "industry": "Technology",
+      "website": "https://scribdinc.com"
+    },
+    "slug": "senior-software-engineer-frontend-search-scribd-inc-392e2da8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "javascript",
+        "less",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ed047584b179e76dc86263a0618d0ee689570080812e311aac267acd812e702e",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.fetchjobs.co/job-description-usb/CCE481A03D6731B82B6AA7E3D844E43D?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nTalent Journey is a leading organization dedicated to transforming the talent acquisition landscape through innovative solutions and strategic consulting. With a focus on delivering exceptional value to our clients, we specialize in talent sourcing, employer branding, and workforce development. Our commitment to excellence and continuous improvement has established us as a trusted partner for businesses seeking to attract, retain, and develop top talent across various industries. At Talent Journey, we foster a collaborative and inclusive environment that encourages professional growth, creativity, and a passion for excellence.\n\nAbout The Role\n\nWe are seeking a highly motivated and experienced Talent Acquisition Specialist to join our dynamic team. In this role, you will be responsible for managing the end-to-end recruitment process, developing effective sourcing strategies, and building strong relationships with both clients and candidates. The ideal candidate will possess a deep understanding of current recruitment trends, excellent communication skills, and a proactive approach to talent sourcing. This position offers an exciting opportunity to contribute to the growth of Talent Journey by identifying and attracting high-caliber professionals who align with our clients' needs and organizational culture.\n\nQualifications\n\n\nBachelor’s degree in Human Resources, Business Administration, or a related field.\nProven experience of at least 3 years in talent acquisition or recruitment roles.\nStrong understanding of sourcing techniques, applicant tracking systems, and recruitment tools.\nExcellent interpersonal and communication skills, with the ability to engage effectively with diverse stakeholders.\nAbility to work independently and as part of a team in a fast-paced environment.\nDemonstrated ability to manage multiple priorities and meet tight deadlines.\nKnowledge of employment laws and best practices in recruitment and selection.\n\n\nResponsibilities\n\n\nManage the full recruitment cycle from job posting to onboarding, ensuring a smooth and efficient process.\nDevelop and implement innovative sourcing strategies to attract a diverse pool of qualified candidates.\nScreen resumes, conduct interviews, and evaluate candidate suitability based on role requirements and organizational fit.\nCollaborate with hiring managers to understand their staffing needs and provide consultative support throughout the hiring process.\nMaintain and update the applicant tracking system, ensuring accurate and timely data management.\nBuild and nurture relationships with potential candidates, industry contacts, and recruitment agencies.\nParticipate in employer branding initiatives to promote Talent Journey as an employer of choice.\nStay informed about industry trends and best practices to continuously improve recruitment strategies.\n\n\nBenefits\n\nTalent Journey offers a comprehensive benefits package designed to support our employees' well-being and professional development. Employees enjoy competitive salary packages, health insurance coverage, and paid time off. We also provide opportunities for ongoing training and career advancement, fostering a culture of continuous learning. Our flexible work arrangements and supportive team environment promote work-life balance, enabling employees to thrive both personally and professionally. Additionally, we recognize and reward outstanding performance through various incentive programs and recognition initiatives.\n\nEqual Opportunity\n\nTalent Journey is an equal opportunity employer committed to fostering an inclusive and diverse workplace. We do not discriminate based on race, religion, gender, age, sexual orientation, disability, or any other protected characteristic. We believe that diverse perspectives and experiences drive innovation and excellence, and we are dedicated to creating an environment where all employees can succeed and grow. We encourage applications from candidates of all backgrounds and experiences who are passionate about making a positive impact in the talent acquisition industry.\n\n\n\n\n\nDesired Skills and Experience\n\nTalent Acquisition, Recruitment, Sourcing, Employer Branding, Candidate Screening, Applicant Tracking System",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T05:48:30.698Z",
+    "sourceHash": "ed047584b179e76dc86263a0618d0ee689570080812e311aac267acd812e702e",
+    "company": {
+      "id": "taskverse",
+      "name": "TaskVerse",
+      "logoUrl": "https://logo.clearbit.com/taskverse.com",
+      "industry": "Technology",
+      "website": "https://taskverse.com"
+    },
+    "slug": "frontend-developer-taskverse-ed047584",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b4a64f115d2bbbd6ada722dfde7bbb3ebfbc39a8e45b62f9d3c823ddcf45f505",
+    "title": "Senior Frontend Engineer I - eCommerce",
+    "applyUrl": "https://app.careerpuck.com/job-board/prenuvo/job/4742430005?gh_jid=4742430005&gh_src=p1tvrac05us",
+    "description": "About the job\n\nAbout Us\n\nAt Prenuvo, we are on a mission to flip the paradigm from reactive \"sick-care\" to proactive health care. Our award-winning whole body scan is fast (under 1 hour), safe (MRI has no ionizing radiation), and non-invasive (no contrast). Our unique integrated stack of optimized hardware, software, and increasingly AI, coupled with the patient-centric experience across our domestic and global clinics, have allowed us to lead the change against \"we caught it too late again\".\n\nWe're looking for a Senior Frontend Engineer I to join our eCommerce team, building the online booking experience patients use to choose a scan, find a clinic, pay, and schedule their appointment. You'll lead complex features in a Next.js and TypeScript application that serves customers in multiple countries, on flows where every screen directly affects conversion, revenue, and patient trust: product selection, checkout and payments, appointment scheduling across timezones, and our sales-assisted and partner booking paths. This is a high-impact role for someone who cares about the craft of the UI and about whether it actually works in production for every customer. If you enjoy solving ambiguous problems and owning outcomes rather than tickets, we'd love to hear from you.\n\nThis role does not provide visa sponsorship. Applicants must be legally authorized to work in the United States at the time of hire and must not require employer sponsorship for a work visa (current or future). \n\nHelp reshape the world through proactive healthcare while working with cutting-edge technology and high performing teams with deep expertise - join us to make a difference in people's lives!\n\nWhat You'll Do\n\n\nOwn features and components within an area of the booking experience, such as checkout and payments, scheduling, or the sales-assisted and partner flows, growing toward owning the area end to end.\nWork with Product and Marketing on growth: ship experiments on the booking funnel, then read the results honestly, including sample size, guardrail metrics, and whether a change is a real win or just noise.\nBuild fast, accessible, customer-facing features with React, Next.js (App Router), and TypeScript.\nContribute to frontend architecture and design, writing proposals you review with senior engineers: sensible server and client component boundaries, server state with TanStack Query, client state with Zustand, and type-safe forms with React Hook Form and Zod.\nIntegrate the booking experience with our commerce APIs and third-party services, including Stripe, Affirm, commercetools, Voucherify, Salesforce, Auth0, and Google Maps.\nInstrument what you ship: Datadog RUM for errors and performance, PostHog for product analytics, feature flags, and experiments, and Google Tag Manager for marketing measurement, all respecting each customer's consent choices.\nImprove Core Web Vitals, bundle size, and rendering performance on a high-traffic, revenue-critical funnel.\nMake accessibility a default: semantic markup, keyboard and screen reader support, and automated accessibility checks in CI.\nWrite automated tests at the right level: Vitest and Testing Library for components, MSW for API mocking, and Playwright for end-to-end booking flows.\nOwn outcomes in production: ship behind feature flags, watch the dashboards after release, and follow through when something breaks. You are accountable for whether a feature works for customers, not just whether it merged.\nPartner closely with Product, Design, Marketing, and Backend engineers, contributing to our shared component library and agreeing the API contracts the frontend depends on.\nProvide technical guidance through design discussions and high-quality code review, and mentor junior engineers.\nUse AI-assisted development tools thoughtfully as part of a structured build, review, and test workflow.\n\n\nWhat You'll Bring\n\n\nTypically 4+ years of professional frontend engineering experience, including at least 3 years building production applications with React and TypeScript.\nStrong experience with Next.js or a comparable React framework, including server-side rendering, routing, and the tradeoffs between server and client rendering.\nDeep understanding of browser fundamentals: semantic HTML, modern CSS and responsive layout, the event loop, network and caching behavior, and the rendering pipeline.\nExperience with modern data-fetching and state management patterns (TanStack Query, Zustand, Redux, or similar) and with complex, validated, multi-step forms.\nStrong testing practices across unit, component, and end-to-end layers, using tools such as Vitest or Jest, Testing Library, and Playwright or Cypress.\nExperience building checkout, payment, or other transactional flows where correctness and reliability matter.\nWorking knowledge of web accessibility (WCAG 2.1 AA) and web performance (Core Web Vitals).\nExperience with frontend observability and product analytics tools such as Datadog RUM, Sentry, PostHog, or Google Analytics.\nHands-on experience with modern CI/CD practices and cloud hosting (for example GitHub Actions and AWS).\nA track record of leading complex features from design through production.\nA startup mindset: comfortable taking on ambiguous work, knowing when to pull in a second opinion on an approach, and able to balance speed with quality.\nExcellent communication skills and the ability to collaborate across engineering, design, and business teams.\n\n\nNice to Have\n\n\nExperience with Stripe.js and payment method integrations, including buy now, pay later providers such as Affirm.\nExperience with headless commerce platforms such as commercetools, or promotion engines such as Voucherify.\nExperience with Tailwind CSS and building on top of a design system or component library.\nExperience with consent management platforms (such as OneTrust), Google Tag Manager, and privacy-aware analytics.\nExperience with multi-region products: multiple currencies and locales, and correct date, time, and timezone handling.\nGrowth engineering experience: working on a team that owns acquisition, activation, or conversion metrics, and shipping many small experiments quickly.\nExperience with funnel analytics and marketing attribution: event tracking plans, UTM and referral attribution, and conversion tracking into ad platforms such as Google Ads and Meta.\nExperience building growth surfaces such as landing pages, email capture, referral programs, promo codes, and abandoned-cart recovery.\nExperience with authentication and identity providers such as Auth0.\nExperience with scheduling, booking, or consumer healthcare applications, or working in highly regulated industries.\n\n\nOur Values\n\nFirst: we are Pioneers\n\n\nTransforming healthcare requires divergent thinking, bias for action, disciplined experimentation, and consistent grit and determination to maintain momentum. This journey is as challenging as it is rewarding.\n\n\nSecond: we are Platform-Builders\n\n\nWe're always building foundations that allow us to achieve tomorrow more than we did today. We never lose sight of what's ahead – in a mindset of ownership and duty to our mission.\n\n\nAbove all: we are Patients\n\n\nWe could all be the next person who walks through our very doors, seeking clarity or peace of mind. We are proud of our impact on our patients' lives, and we won't stop till everyone can benefit from our work.\n\n\nWhat We Offer\n\n\nAn avenue to make a positive impact on people's lives and their health\nWe believe in preventative healthcare for everyone, including our team - Prenuvo provides free, whole-body scans to each team member \nGrowth opportunities are at the heart of our people journey, we're doing big things with bright minds - there is no single path to success, it can be shaped along the way\nBuilding strong relationships is at the core of everything we do - our team gets together each week to connect, share, and socialize \nRecognizing time away to restore is vital to our wellbeing - we have a flexible vacation policy and we will encourage you to use it\nWe now offer the Prenuvo's Commuter Benefits Plan to help cover your transit and parking costs. Whether you ride, drive, or park, we've got you covered—making your commute easier and more affordable! \nPrenuvo offers a 401(k) retirement savings plan to eligible employees, allowing team members to make pre-tax contributions toward their retirement. While Prenuvo facilitates access to the plan, the company does not currently offer matching contributions.\nWe offer a comprehensive benefits package including health, dental, vision, including Mental Health coverage, to support you and your family\nThe base salary for this role is $145,000 to $170,000 in local currency, depending on experience and geographic location\n\n\nWe are an equal-opportunity employer and value diversity at our company. We do not discriminate on the basis of race, religion, color, national origin, gender, sexual orientation, age, marital status, veteran status, or disability status.\n\nAs part of the hiring process, successful candidates will undergo a background check in compliance to applicable federal, provincial, and state rules.\n\nPlease be advised that official communication from our recruitment team will only come from our authorized domain [prenuvo.com]. If you are contacted by a recruiter, please ensure their email address ends with @prenuvo.com. We do not use third-party recruitment services or any other email domains for hiring purposes. If you receive communication that you believe to be fraudulent, please report it immediately to jobs@prenuvo.com.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T05:47:58.644Z",
+    "sourceHash": "b4a64f115d2bbbd6ada722dfde7bbb3ebfbc39a8e45b62f9d3c823ddcf45f505",
+    "company": {
+      "id": "prenuvo",
+      "name": "Prenuvo",
+      "logoUrl": "https://logo.clearbit.com/prenuvo.com",
+      "industry": "Technology",
+      "website": "https://prenuvo.com"
+    },
+    "slug": "senior-frontend-engineer-i-ecommerce-prenuvo-b4a64f11",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "tailwind",
+        "redux",
+        "zustand",
+        "cypress",
+        "jest",
+        "playwright",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3d0264d8f5cfd3dd5b5433404932f0b31551832e44fe4974712db433eff0a07c",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://www.univenter.me/careers/senior-frontend-engineer",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to shape the interfaces our partners and students use every day. You will own complex product surfaces end to end, from architecture to the last pixel.\n\nWhat you will do\n\n\nBuild and own product features across our partner and student portals\nTurn ambiguous problems into clean, accessible, fast interfaces\nCollaborate closely with design, product and backend engineers\nRaise the bar on performance, testing and code quality\n\n\nWhat we are looking for\n\n\n5+ years building production web apps with React\nStrong eye for UI detail, motion and accessibility\nComfortable with TypeScript, modern tooling and server-side rendering\nClear communicator who can work across time zones\n\n\nWhat we offer\n\n\nRemote-first work with flexible hours\nAnnual learning budget and conference support\nPrivate health insurance and wellbeing days\nEquity and a transparent salary band",
+    "location": "Remote - United Kingdom",
+    "country": "United Kingdom",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T05:46:51.379Z",
+    "sourceHash": "3d0264d8f5cfd3dd5b5433404932f0b31551832e44fe4974712db433eff0a07c",
+    "company": {
+      "id": "univenter",
+      "name": "Univenter",
+      "logoUrl": "https://logo.clearbit.com/univenter.com",
+      "industry": "Technology",
+      "website": "https://univenter.com"
+    },
+    "slug": "senior-frontend-engineer-univenter-3d0264d8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United Kingdom"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "40ffe1903a210a3e08cf012d8c7f43fcd9c13df23e3d542309841e575308e403",
+    "title": "IT Software Engineer Frontend (Hypo Vorarlberg Bank AG)",
+    "applyUrl": "https://python.ph/jobs/job/934/",
+    "description": "About the job\n\nIT Software Engineer Frontend (Hypo Vorarlberg Bank AG) \n\nAustrian Business Agency (ABA) Visit company website ↗\n\n Hypo-Passage 1, 6900 Bregenz, Austria python Apply Now Apply by Email \n\nJob Description\n\n \n\nJob description\n- Independent development, maintenance, and support of new and existing software applications\n- Ensuring the continuous operation of applications\n- Support in requirements analysis and the formulation of user stories\n- Documentation and testing of code and applications\n- Collaboration on the design, concept, and implementation of improvements to software architectures (e.g., migration of legacy technology, design of new technology stacks)\n- Participation in cross-cutting IT projects (e.g., secure software development and Linux)\n\n \n\nRequirements\n- Relevant IT training as a software developer\n- Experience in UI/UX and sound knowledge of web development (including React, TypeScript, Vite, Mantine or a comparable tool stack)\n- Eagerness to take on responsibility and engage in constructive dialogue\n- High standards of quality, pragmatism and a solution-oriented approach\n- Agile mindset and experience with agile methodologies\n\n \n\nFurther information\n- Home office\n- Flexible working hours\n- Mobility allowance\n- Meal allowance\n\n \n\nHypo Vorarlberg Bank AG\nSince our founding in 1897 by the Vorarlberg State Parliament, we have developed into a successful universal bank. Throughout this time, we have proven ourselves – even in challenging times – to be a reliable and committed financial partner for the people and businesses of Vorarlberg and beyond. We have always pursued a down-to-earth and prudent business model focused on stability and sustainability. We consciously refrain from high-risk trading and speculative transactions. This fundamental principle is a key factor in our bank's quality; it provides our customers, business partners, and employees with clear guidance and security. Our bank's headquarters are in Bregenz, the capital of Vorarlberg. Over 120 years ago, we found the ideal location and setting here to become what we are today – a strong and successful regional bank with excellent creditworthiness. The Vorarlberg region is our home market, and we maintain a carefully planned branch network here, ensuring we are close to our customers. A piece of Vorarlberg beyond Austria's borders: With branches in Vienna, Graz, and Wels, Hypo Vorarlberg is represented in key economic centers of Austria. The branch in St. Gallen has established itself in German-speaking Switzerland as an alternative to the major and cantonal banks and is active in real estate financing as well as corporate and private banking. The German market is served from Bregenz, Kleinwalsertal, and Wels.\n\n \n\nYour contact person:\nBeatrice Pitsch",
+    "location": "Remote - Philippines",
+    "country": "Philippines",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T05:34:14.381Z",
+    "sourceHash": "40ffe1903a210a3e08cf012d8c7f43fcd9c13df23e3d542309841e575308e403",
+    "company": {
+      "id": "pythonph",
+      "name": "Pythonph",
+      "logoUrl": "https://logo.clearbit.com/pythonph.com",
+      "industry": "Technology",
+      "website": "https://pythonph.com"
+    },
+    "slug": "it-software-engineer-frontend-hypo-vorarlberg-bank-ag-pythonph-40ffe190",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "vite"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Philippines"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "5cec5230baf1c35296bcddd07e70546fdafcd28936e14ac5c0a547c21c7872f5",
+    "title": "Software Engineer: Frontend",
+    "applyUrl": "https://www.thatstartupjob.com/job/6ac8e06530cac7b29115c45c/Software-Engineer-Frontend",
+    "description": "About the job\n\nThatStartupJob\n\nsvg]:text-[20px] text-charcoal-50 mr-2\">\n\nSearch all of ThatStartupJob\n\nsvg]:text-[20px] text-charcoal-50 mr-2\">\n\nSub\n\nSearch in this sub\n\nHome\n\nEXPLOREAll JobsRemote JobsSearch by Title\n\nAREAMassachusettsNew YorkTexasWashington D.C.View all\n\nSUBWeb 3.0 JobsiOS Developer JobsFront End Developer Remote Jobs\n\nWHO ARE WEAbout UsContact UsBlogCreditsCareersPrivacyCookie Policy\n\nAll Jobs Software Engineer: Frontend\n\nSoftware Engineer: Frontend\n\nCompanyWhippy\n\nLocationWorldwide\n\nTypeRemote\n\nh3]:text-[17px] [&>h3]:font-bold [&>p]:mb-5 [&>ul]:list-disc [&>ul>li]:ml-8\"> Whippy is leading the way in AI-powered business communication, transforming how companies engage with customers using intelligent AI Agents. From customer support to marketing to sales, businesses rely on Whippy’s Voice AI and Chat AI to eliminate manual workflows—responding to inquiries, nurturing leads, screening job applicants, and automating high-value interactions at scale. By combining AI-driven messaging with omni-channel automation, Whippy replaces outdated tools with a single, powerful platform that helps businesses work smarter, faster, and more efficiently.\n\n⚡About the Role\n\nAs a Frontend Engineer At Whippy, You Will\n\nLearn Engineering\n\n\nCraft intuitive interfaces that allow our users to interact with powerful communication paradigms.\nWrite Engineering Requirement Documents to take something from idea, through defined tasks, to implementation, roll out, and evaluation of its success.\nBuild unit and end-to-end test suites that help us effectively maintain product performance and reliability, and integrate product analytics to measure the success of the features you launch.\n\n\nSome Frontend Engineers Have Built\n\nHire Lawyers\n\n\nOur React Native mobile app from the ground up on their own.\nA SQL-style data filtering GUI that interfaces with our flexible backend APIs.\nA spreadsheet-style data grid for real-time marketing analytics.\nA design system built with Radix UI and Stitches.\n\n\n🎯About you\n\n\nA strong understanding of frontend architecture to build interactivity-rich systems for fetching, mutating, and rendering data effectively.\nA desire to be a part of the entire project development process. From research gathering and planning, to implementation and monitoring.\nGreat written and verbal communication skills for expressing ideas, designs, and potential solutions in a mostly-asynchronous manner.\n\n\nBrowse Careers\n\n🙌 What we offer?\n\n\nCompensation is $60K-$80K/year based on experience\nOpportunity to take on significant responsibility and ownership in a highly disruptive product.\nWorking hands-on with serial entrepreneurs who have created $100M+ valued companies.\n\n\nWhat to know?\n\nTo provide transparency, here are some important points to note about the position:\n\n\nWe are a startup, and our team dynamics differ from those of companies of different sizes and stages. Our team is distributed across the globe, and this distributed nature will continue to grow. This means that there is always something happening, so effective time management in a remote and asynchronous engineering environment is essential.\nWhile English is the second language for many engineers on the team, fluency in written English is a requirement. While fluency in spoken English is also a plus, if you are not confident in your written English ability, please do not apply.\nWe do not ask applicants to complete take-home assignments or participate in “leetcode” style interviews. However, we do require a two-week full-time or four-week part-time fully paid “work trial” of “mutual assessment.” More details about this mutual assessment period are outlined below. If you are unable to commit to this, please do not apply.\nWe hire globally regardless of timezone, but we have team meetings on Mondays and Fridays at 2:30 pm GMT. If you are unable to be online during these hours, please do not apply.\nPay is determined by role, level, location, and alignment with market data. Individual pay will be determined on a case-by-case basis and may vary based on the following considerations: interviews and an assessment of several factors that are unique to each candidate, job-related skills, relevant education and experience, certifications, and abilities of the candidate.\n\n\nOpen Biz Account\n\nWhat’s the process?\n\n\nSubmit your Resume or CV\nVideo call to talk about your experience and the role.\n2-week full-time paid work trial.\nMeet the team and review work.\nFull Time Position Offer extended.\n\n\nHow does the paid assessment period work?\n\nBefore the trial, we’ll discuss some options for a two-week project. We’ll agree on the scope of the project before you start.You’ll work independently, however, you’ll have access to the team to ask questions and get support on anything you might need to complete the task efficiently.At the end of the trial, if we both enjoyed working together, we’ll offer you a full-time position.We’re aware that there are pros and cons to this process, but we believe this is the best possible way for both parties to be excited about working together.\n\nHire Lawyers\n\nIf you are asking questions like “I’m applying for multiple jobs what happens if I get one can we speed up the trial?” Then you’re probably not going to be the right fit and you should take another role.Compensation Range: $60K - $80K\n\nLife at Whippy\n\nView more\n\nYour tracker settings\n\nWe use cookies and similar methods to recognize visitors and remember their preferences. We also use them to measure ad campaign effectiveness, target ads and analyze site traffic. To learn more about these methods, including how to disable them, view our Cookie Policy or Privacy Policy.\n\nBy tapping `Accept`, you consent to the use of these methods by us and third parties. You can always change your tracker preferences by visiting our Cookie Policy.\n\nThatStartupJob\n\nDiscover the best startup and their job positions, all in one place.\n\nTrain Managers\n\nQuick SearchSearch JobsSearch Remote Jobs hiring WorldwideSearch Remote Jobs in the USSearch Jobs in IndiaSearch Remote Jobs in UKSearch by Title\n\nAreaCaliforniaMassachusettsNew YorkTexasVirginiaWashington D.C.View all\n\nPopular SubRemote JobsWeb3 JobsiOS Developer JobsFront End Developer Remote JobsComputational Geometry JobsCannabis CareersView all\n\nCompanyAbout UsContact UsBlogCreditsCareersPrivacy PolicyCookie Policy\n\nCopyright © 2025\n\nStudy Journalism",
+    "location": "Remote - Liberia",
+    "country": "Liberia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T05:25:04.578Z",
+    "sourceHash": "5cec5230baf1c35296bcddd07e70546fdafcd28936e14ac5c0a547c21c7872f5",
+    "company": {
+      "id": "thatstartupjob",
+      "name": "That Startup Job",
+      "logoUrl": "https://logo.clearbit.com/thatstartupjob.com",
+      "industry": "Technology",
+      "website": "https://thatstartupjob.com"
+    },
+    "slug": "software-engineer-frontend-that-startup-job-5cec5230",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Liberia"
+      ],
+      "seniority": "mid",
+      "employmentType": "parttime"
+    }
+  },
+  {
+    "id": "0f919af2366972047819211ccae8baa45d44dc3a5d3e1e5c6ab55e82d07c1ffd",
+    "title": "Front End Developer",
+    "applyUrl": "https://www.cyberoptik.net/career/front-end-developer/",
+    "description": "About the job\n\nJob Description\n\nAs a Front-End Developer at CyberOptik, you’ll be responsible for inputting client-provided content into selected designs, carrying out general data entry tasks for website builds, and performing front-end design/development work. While development experience is not a strict requirement, a keen eye for design is essential to ensure that the end product is aligned with both our quality standards and client expectations.\n\nResponsibilities\n\n\nPopulate selected web design templates with content provided by clients, ensuring the layout and design meet project specifications.\nAdapt color schemes/font usage on our template sites to match the client’s overall branding and aesthetic. The Creative Director will lead any specific brand usages, but the Front-End Developer will also ensure that the brand is used correctly and consistently throughout the site.\nPerform data entry tasks to build out client websites, including text, images, and other multimedia elements.\nCollaborate with other team members, including designers and project managers, to ensure timely and accurate delivery of projects.\nMake minor adjustments to website templates, including modifying CSS and HTML elements, to better align with client brand guidelines.\nConduct quality assurance checks to verify that websites function as intended across multiple browsers and devices.\nConduct page speed and general website function tests to ensure your work on the site is not causing it to slow down, or cripple the functionality of the site.\nSuggest improvements to the overall site structure or functionality as you’re working on it. Such as arranging photos, content, etc.\n\n\nQualifications\n\n\nBasic understanding of front-end languages such as HTML and CSS is required.\nStrong attention to detail, particularly in aligning with design specifications and quality assurance.\nGood sense of design and understanding of design principles, including layout, typography, and color theory.\nFamiliarity with WordPress is required for this role.\nBasic familiarity with front-end web tools such as Elementor is a must.\nExcellent communication skills, primarily written. Asking questions in a timely manner is incredibly important in this role.\nAbility to work efficiently in a fast-paced environment and manage multiple projects simultaneously.\nStrong problem-solving skills and a proactive approach to identifying and resolving issues.\nPrevious experience in a similar role is beneficial but not essential.\n\n\nBenefits\n\n\nFlexible schedule.\nOpportunity to grow within a dynamic and expanding company.\nRemote work environment.\nSupportive team culture.\n\n\nAvailability\n\nWe are looking for candidates who can commit to either part-time or full-time availability.\n\nAbout Us\n\nCyberOptik is a growing WordPress web design agency dedicated to providing top-notch web solutions. We specialize in crafting unique, engaging, and optimized websites for various industries. As we continue to grow, we’re looking for a talented and motivated Front End Developer to join our team.\n\nHow To Apply\n\nIf you are passionate about web design and eager to contribute to a growing company, we’d love to hear from you. Please submit your resume detailing your relevant experience and why you are a great fit for this role.\n\nJoin us at CyberOptik and help shape the future of web design with your expertise!\n\nApply Today\n\nResponsibilities\n\n\nPopulate selected web design templates with content provided by clients, ensuring the layout and design meet project specifications.\nAdapt color schemes/font usage on our template sites to match the client’s overall branding and aesthetic. The Creative Director will lead any specific brand usages, but the Front-End Developer will also ensure that the brand is used correctly and consistently throughout the site.\nPerform data entry tasks to build out client websites, including text, images, and other multimedia elements.\nCollaborate with other team members, including designers and project managers, to ensure timely and accurate delivery of projects.\nMake minor adjustments to website templates, including modifying CSS and HTML elements, to better align with client brand guidelines.\nConduct quality assurance checks to verify that websites function as intended across multiple browsers and devices.\nConduct page speed and general website function tests to ensure your work on the site is not causing it to slow down, or cripple the functionality of the site.\nSuggest improvements to the overall site structure or functionality as you’re working on it. Such as arranging photos, content, etc.\n\n\nQualifications\n\n\nBasic understanding of front-end languages such as HTML and CSS is required.\nStrong attention to detail, particularly in aligning with design specifications and quality assurance.\nGood sense of design and understanding of design principles, including layout, typography, and color theory.\nFamiliarity with WordPress is required for this role.\nBasic familiarity with front-end web tools such as Elementor is a must.\nExcellent communication skills, primarily written. Asking questions in a timely manner is incredibly important in this role.\nAbility to work efficiently in a fast-paced environment and manage multiple projects simultaneously.\nStrong problem-solving skills and a proactive approach to identifying and resolving issues.\nPrevious experience in a similar role is beneficial but not essential.\n\n\nBenefits\n\n\nFlexible schedule.\nOpportunity to grow within a dynamic and expanding company.\nRemote work environment.\nSupportive team culture.\n\n\nAvailability\n\nWe are looking for candidates who can commit to either part-time or full-time availability.\n\nAbout Us\n\nCyberOptik is a growing WordPress web design agency dedicated to providing top-notch web solutions. We specialize in crafting unique, engaging, and optimized websites for various industries. As we continue to grow, we’re looking for a talented and motivated Front End Developer to join our team.\n\nHow To Apply\n\nIf you are passionate about web design and eager to contribute to a growing company, we’d love to hear from you. Please submit your resume detailing your relevant experience and why you are a great fit for this role.\n\nJoin us at CyberOptik and help shape the future of web design with your expertise!\n\nApply Today",
+    "location": "Remote - Italy",
+    "country": "Italy",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T05:22:26.976Z",
+    "sourceHash": "0f919af2366972047819211ccae8baa45d44dc3a5d3e1e5c6ab55e82d07c1ffd",
+    "company": {
+      "id": "cyberoptik",
+      "name": "CyberOptik",
+      "logoUrl": "https://logo.clearbit.com/cyberoptik.com",
+      "industry": "Technology",
+      "website": "https://cyberoptik.com"
+    },
+    "slug": "front-end-developer-cyberoptik-0f919af2",
+    "aiTags": {
+      "stack": [
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Italy"
+      ],
+      "seniority": "mid",
+      "employmentType": "parttime"
+    }
+  },
+  {
+    "id": "bb6f763dcc8d414ec3a0cbcafd6b3cd0c45472e8eefb3e19fb28d6744c8fac29",
+    "title": "Senior Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/blt01l2qnaoqxo476xi_en?country=Colombia&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are looking for a Senior Frontend Engineer to build and evolve a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. You will collaborate with engineering, product, and design to solve complex UI and API-adjacent problems.\n\nResponsibilities\n\n\nDesign core functionality for a web-based medical imaging viewer\nBuild user interfaces using TypeScript and ReactJS\nMaintain existing frontend features and improve performance and reliability\nCollaborate with engineers to analyze problems and implement solutions\nCoordinate with product and design to deliver intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\n3+ years of professional frontend development experience\nStrong TypeScript and ReactJS experience\nProven DICOM Medical Viewers experience, including OHIF/DICOM\nStrong API and integration skills across client/server boundaries\nSolid frontend architecture knowledge, including state management and component design\nExcellent written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience with regulated environments or healthcare/clinical trial software\nExperience with Python or Go for backend collaboration\nExperience building CI/CD pipelines, with GitLab CI exposure\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Colombia",
+    "country": "Colombia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-10T05:07:07.239Z",
+    "sourceHash": "bb6f763dcc8d414ec3a0cbcafd6b3cd0c45472e8eefb3e19fb28d6744c8fac29",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "senior-frontend-engineer-medical-imaging-viewer-epam-systems-bb6f763d",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Colombia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "fc181b8733abc2c6e4bd09f9c1ea4d19c60cfd7c7db5567af4fb7af9cbf879a6",
     "title": "Frontend Engineer, Underwriting",
     "applyUrl": "https://www.theladders.com/linkedin/88902896?src=LinkedIn",
