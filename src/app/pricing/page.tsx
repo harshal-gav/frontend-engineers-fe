@@ -26,7 +26,6 @@ export default function PricingPage() {
   const router = useRouter();
   const { user } = useAuth();
   const [error, setError] = useState<string | null>(null);
-  const [localPrice, setLocalPrice] = useState<string | null>(null);
   const [providerKey, setProviderKey] = useState<number>(Date.now());
   const [stats, setStats] = useState<{ jobCount: number; companyCount: number } | null>(null);
 
@@ -42,34 +41,7 @@ export default function PricingPage() {
     return () => window.removeEventListener("pageshow", onPageShow);
   }, []);
 
-  useEffect(() => {
-    async function fetchLocalPrice() {
-      try {
-        const ipRes = await fetch("https://ipapi.co/json/");
-        const ipData = await ipRes.json();
-        const currency = ipData.currency;
 
-        if (currency && currency !== "USD") {
-          const rateRes = await fetch("https://open.er-api.com/v6/latest/USD");
-          const rateData = await rateRes.json();
-          const rate = rateData.rates[currency];
-
-          if (rate) {
-            const converted = Math.round(9 * rate); // $9 * rate
-            const formatted = new Intl.NumberFormat(undefined, {
-              style: 'currency',
-              currency: currency,
-              maximumFractionDigits: 0
-            }).format(converted);
-            setLocalPrice(`approx ${formatted}`);
-          }
-        }
-      } catch (e) {
-        console.error("Failed to fetch local currency", e);
-      }
-    }
-    fetchLocalPrice();
-  }, []);
 
   // Fetch dynamic stats
   useEffect(() => {
@@ -284,11 +256,6 @@ export default function PricingPage() {
                   <span className="text-gray-600 mb-1">/month</span>
                 </div>
 
-                {localPrice && (
-                  <div className="text-sm text-[#2563eb] mt-3 font-medium bg-[#2563eb]/10 px-3 py-1 rounded-full">
-                    {localPrice} /month
-                  </div>
-                )}
               </div>
 
               {/* Cancel anytime line */}
@@ -350,7 +317,7 @@ export default function PricingPage() {
 
                     <button
                       onClick={handleDodoPayment}
-                      className="w-full py-3 rounded-full text-white bg-black font-bold text-lg hover:bg-gray-800 transition-colors flex items-center justify-center gap-2 shadow-lg"
+                      className="w-full py-3 rounded-full text-white bg-[#d97706] hover:bg-[#b45309] font-bold text-lg transition-colors flex items-center justify-center gap-2 shadow-lg shadow-orange-500/20"
                     >
                       Pay with (Cards, Apple Pay, UPI)
                     </button>

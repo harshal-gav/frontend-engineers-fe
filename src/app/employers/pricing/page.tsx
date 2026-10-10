@@ -17,7 +17,6 @@ export default function EmployerPricingPage() {
   const router = useRouter();
   const { user, isEmployer } = useAuth();
   const [error, setError] = useState<string | null>(null);
-  const [localPrice, setLocalPrice] = useState<string | null>(null);
   const [providerKey, setProviderKey] = useState<number>(Date.now());
 
   useEffect(() => {
@@ -31,34 +30,7 @@ export default function EmployerPricingPage() {
     return () => window.removeEventListener("pageshow", onPageShow);
   }, []);
 
-  useEffect(() => {
-    async function fetchLocalPrice() {
-      try {
-        const ipRes = await fetch("https://ipapi.co/json/");
-        const ipData = await ipRes.json();
-        const currency = ipData.currency;
 
-        if (currency && currency !== "USD") {
-          const rateRes = await fetch("https://open.er-api.com/v6/latest/USD");
-          const rateData = await rateRes.json();
-          const rate = rateData.rates[currency];
-
-          if (rate) {
-            const converted = Math.round(99 * rate); // $99 * rate
-            const formatted = new Intl.NumberFormat(undefined, {
-              style: 'currency',
-              currency: currency,
-              maximumFractionDigits: 0
-            }).format(converted);
-            setLocalPrice(`approx ${formatted}`);
-          }
-        }
-      } catch (e) {
-        console.error("Failed to fetch local currency", e);
-      }
-    }
-    fetchLocalPrice();
-  }, []);
 
   const handleDodoPayment = async () => {
     try {
@@ -171,11 +143,6 @@ export default function EmployerPricingPage() {
                   <span className="text-gray-500 mb-2 font-medium">/month</span>
                 </div>
 
-                {localPrice && (
-                  <div className="text-sm text-[#10b981] mt-3 font-medium bg-[#10b981]/10 px-3 py-1 rounded-full">
-                    {localPrice} /month
-                  </div>
-                )}
               </div>
 
               <div className="flex flex-col gap-3 min-h-[150px]">
@@ -199,7 +166,7 @@ export default function EmployerPricingPage() {
                   <div className="flex flex-col gap-4">
                     <button
                       onClick={handleDodoPayment}
-                      className="w-full py-4 rounded-xl text-white bg-black hover:bg-gray-800 font-bold text-lg shadow-md transition-all hover:scale-[1.02] flex items-center justify-center gap-2"
+                      className="w-full py-4 rounded-xl text-white bg-[#d97706] hover:bg-[#b45309] font-bold text-lg transition-colors flex items-center justify-center gap-2 shadow-lg shadow-orange-500/20"
                     >
                       Pay with (Cards, Apple Pay, UPI)
                     </button>

@@ -82,19 +82,6 @@ export async function POST(req: Request) {
         const data = await response.json();
         return NextResponse.json({ error: 'Failed to cancel subscription with PayPal', details: data }, { status: 500 });
       }
-    } 
-    else if (paymentGateway === 'payu') {
-      const subscriptionId = userData?.payuSubscriptionId;
-      if (!subscriptionId) {
-        return NextResponse.json({ error: 'No active PayU subscription found' }, { status: 400 });
-      }
-
-      // Handle PayU Cancellation (Local state update until PayU API is fully verified)
-      await adminDb.collection('users').doc(uid).update({
-        cancel_at_period_end: true,
-        updatedAt: new Date()
-      });
-      return NextResponse.json({ success: true, message: "Subscription cancelled successfully." });
     } else if (paymentGateway === 'dodo') {
       const subscriptionId = userData?.dodoSubscriptionId;
       if (!subscriptionId) {
@@ -106,13 +93,16 @@ export async function POST(req: Request) {
         environment: process.env.NODE_ENV === 'production' ? 'live_mode' : 'test_mode',
       });
 
-      // Update the subscription (there's no direct .cancel() method, but setting cancel_at_period_end via update or local cancellation)
-      // Since SDK versions might differ, we'll optimistically update the local DB.
-      // Or we can try dodoClient.subscriptions.update(subscriptionId, { ... }) if supported.
-      // Dodo Payments recommends handling this via Customer Portal.
-      // We will just mark it as cancelled_at_period_end locally, and let customer portal handle actual billing updates.
-      // For a robust backend, use the Dodo API directly when possible.
-      
+      // Call Dodo Payments API to cancel the subscription at the end of the billing period
+      try {
+        await dodoClient.subscriptions.update(subscriptionId, {
+          cancel_at_next_billing_date: true
+        });
+      } catch (err) {
+        console.error("Failed to cancel Dodo subscription upstream:", err);
+        return NextResponse.json({ error: 'Failed to cancel subscription with Dodo Payments' }, { status: 500 });
+      }
+
       await adminDb.collection('users').doc(uid).update({
         cancel_at_period_end: true,
         updatedAt: new Date()
