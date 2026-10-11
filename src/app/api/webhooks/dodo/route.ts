@@ -289,6 +289,147 @@ export const POST = Webhooks({
           break;
         }
 
+        case "subscription.on_hold":
+        case "subscription.paused":
+        case "subscription.past_due": {
+          const subState = payload.type.split('.')[1];
+          console.log(`Subscription ${subState}:`, payload.data);
+
+          await db.collection('dodo_transactions').doc(`${payloadData.subscription_id}_${payload.type}`).set({
+            uid,
+            status: subState,
+            subscriptionId: payloadData.subscription_id,
+            createdAt: new Date(),
+            eventType: payload.type
+          }, { merge: true });
+
+          const userDoc = await db.collection('users').doc(uid).get();
+          const userData = userDoc.data();
+
+          if (userData?.dodoSubscriptionId === payloadData.subscription_id) {
+            const now = new Date();
+            const hasValidExpiry = userData?.subscriptionExpiresAt && new Date(userData.subscriptionExpiresAt) > now;
+
+            // If subscription is paused or past due without valid prepaid time:
+            if (!hasValidExpiry || subState === 'paused') {
+              await db.collection('users').doc(uid).set({
+                isPremium: false,
+                isSubscribed: false,
+                subscriptionPaymentStatus: subState,
+                updatedAt: new Date()
+              }, { merge: true });
+            } else {
+              await db.collection('users').doc(uid).set({
+                subscriptionPaymentStatus: subState,
+                updatedAt: new Date()
+              }, { merge: true });
+            }
+          }
+          break;
+        }
+
+        case "subscription.unpaused":
+        case "subscription.plan_changed": {
+          console.log(`Subscription ${payload.type}:`, payload.data);
+
+          await db.collection('dodo_transactions').doc(`${payloadData.subscription_id}_${payload.type}`).set({
+            uid,
+            status: payload.type.split('.')[1],
+            subscriptionId: payloadData.subscription_id,
+            createdAt: new Date(),
+            eventType: payload.type
+          }, { merge: true });
+
+          if (payloadData.status === 'active') {
+            await db.collection('users').doc(uid).set({
+              isPremium: true,
+              isSubscribed: true,
+              isEmployer: isEmployer,
+              ...(isEmployer && { role: 'employer' }),
+              dodoSubscriptionId: payloadData.subscription_id,
+              paymentGateway: 'dodo',
+              subscriptionPaymentStatus: 'active',
+              subscriptionExpiresAt: computeExpiresAt(),
+              cancel_at_period_end: false,
+              updatedAt: new Date()
+            }, { merge: true });
+          }
+          break;
+        }
+
+        case "refund.succeeded": {
+          console.log("Refund succeeded:", payload.data);
+
+          await db.collection('dodo_transactions').doc(payloadData.refund_id || `ref_${Date.now()}`).set({
+            uid,
+            status: 'refunded',
+            amount: payloadData.amount,
+            currency: payloadData.currency,
+            paymentId: payloadData.payment_id,
+            reason: payloadData.reason || null,
+            isPartial: payloadData.is_partial || false,
+            createdAt: new Date(),
+            eventType: payload.type
+          }, { merge: true });
+
+          // If a full refund was issued, revoke Pro access immediately
+          if (!payloadData.is_partial) {
+            console.log(`Revoking Pro access for user ${uid} due to full refund.`);
+            await db.collection('users').doc(uid).set({
+              isPremium: false,
+              isSubscribed: false,
+              subscriptionExpiresAt: null,
+              subscriptionPaymentStatus: 'refunded',
+              updatedAt: new Date()
+            }, { merge: true });
+          }
+          break;
+        }
+
+        case "dispute.opened":
+        case "dispute.lost":
+        case "dispute.accepted": {
+          console.log(`Dispute event (${payload.type}):`, payload.data);
+
+          await db.collection('dodo_transactions').doc(payloadData.dispute_id || `disp_${Date.now()}`).set({
+            uid,
+            status: payload.type.split('.')[1],
+            amount: payloadData.amount,
+            currency: payloadData.currency,
+            paymentId: payloadData.payment_id,
+            remarks: payloadData.remarks || null,
+            createdAt: new Date(),
+            eventType: payload.type
+          }, { merge: true });
+
+          // Revoke access on dispute / chargeback
+          console.log(`Revoking Pro access for user ${uid} due to ${payload.type}`);
+          await db.collection('users').doc(uid).set({
+            isPremium: false,
+            isSubscribed: false,
+            subscriptionExpiresAt: null,
+            subscriptionPaymentStatus: 'disputed',
+            updatedAt: new Date()
+          }, { merge: true });
+          break;
+        }
+
+        case "payment.processing":
+        case "abandoned_checkout.detected":
+        case "abandoned_checkout.recovered":
+        case "dunning.started":
+        case "dunning.recovered": {
+          console.log(`Audit event (${payload.type}):`, payload.data);
+          const entityId = payloadData.payment_id || payloadData.subscription_id || payloadData.checkout_session_id || `audit_${Date.now()}`;
+          await db.collection('dodo_transactions').doc(`${entityId}_${payload.type}`).set({
+            uid,
+            status: payload.type.split('.')[1] || payload.type,
+            eventType: payload.type,
+            createdAt: new Date()
+          }, { merge: true });
+          break;
+        }
+
         default:
           console.log(`Unhandled event type: ${payload.type}`);
       }
