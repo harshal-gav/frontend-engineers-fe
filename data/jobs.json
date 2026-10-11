@@ -1,5 +1,180 @@
 [
   {
+    "id": "eefc2802d9cc428466229e81c0f4c55195e842ab3db3c826d137af7ad0b3ee09",
+    "title": "Senior Software Engineer (Frontend) ›",
+    "applyUrl": "https://www.filevine.com/jobs/0679e9c6-2033-43ac-bd3c-d50f0c76439e/",
+    "description": "About the job\n\n‹ Back to careers\n\nSenior Software Engineer (Frontend)\n\nFilevine is a Legal AI company delivering Legal Operating Intelligence for the future of legal work. Grounded in a singular system of truth, Filevine brings together data, documents, workflows, and teams into one unified platform—where modern legal work happens with clarity and consistency.\n\nPowered by LOIS, the Legal Operating Intelligence System, Filevine connects context across every matter to transform legal operations from reactive to proactive. LOIS reads, understands, and reasons across your data to surface insight, automate complexity, and give professionals the clarity and confidence to see more, know more, and do more. Fueled by a team of exceptional collaborators and innovators, Filevine’s rapid growth has earned AI awards and recognition from Deloitte and Inc. as one of the most innovative and fastest-growing technology companies in the country.\n\nRole Summary\n\nWe’re looking for a senior or staff-level frontend engineer to own core product surfaces across Word and the web app. You’ll set the bar for UI quality, drive architectural decisions, and collaborate closely with design, backend, and AI engineering. You’ll shape the workflows that thousands of legal teams use every day.\n\nThis is a role for someone who wants real ownership, fast iteration cycles, and broad influence inside Filevine’s most technical and user-facing product area.\n\nResponsibilities\n\n\nLead development of complex, high-impact product areas across the web app and Word add-in\nDefine and evolve the frontend architecture, component patterns, and design system\nOwn the UX for core workflows like redlining, clause comparison, and playbook creation\nWork closely with design to set interaction patterns, reduce cognitive load, and ship polished interfaces for non-technical users\nCollaborate with backend and AI teams to integrate LLM features with predictable, stable UX\nRaise the engineering bar across performance, accessibility, reliability, and code quality\nMentor other engineers and help shape the engineering culture as the team scales\nPartner with product and founders on roadmap strategy, scoping, and delivery\n\n\nQualifications\n\n\n6+ years of frontend engineering experience with deep expertise in React and TypeScript \nStrong architectural instincts and experience building complex, data-heavy, user-facing products \nAbility to break down ambiguous problems and drive from concept to shipped solution \nTrack record of owning large product surfaces end-to-end \nHigh standards for UI polish, edge-case behavior, and accessibility \nComfort working closely with design and product leadership \nBonus: experience with Microsoft Office add-ins, LLM-powered products, or legal tech\n\n\nApply Now\n\nCompensation Information: $150,000 - 250,000 base\n\nThe base salary range represents the low and high end of the salary range for this position. The total compensation package for this position will be determined by each individual’s location, qualifications, education, work experience, skills and performance. We believe in the importance of pay equity - the range listed is just one component of Filevine’s total compensation package for employees. This position is also eligible for a paid time off policy, as well as a comprehensive benefits package.\n\nWork Location Expectation: Remote or option to be hybrid/in-office in one the following locations: San Francisco, New York, Chicago, or Salt Lake City\n\nCool Company Benefits\n\n\n A dynamic, rapidly growing company, focused on helping organizations thrive \n Medical, Dental, & Vision Insurance (for full-time employees)\n Competitive & Fair Pay\n Maternity & paternity leave (for full-time employees)\n Short & long-term disability\n Opportunity to learn from a dedicated leadership team\n Top-of-the-line company swag\n\n\nPrivacy Policy Notice\n\nFilevine will handle your personal information according to what’s outlined in our Privacy Policy.\n\nCommunication about this opportunity, or any open role at Filevine, will only come from representatives with email addresses using \"filevine.com\". Other addresses reaching out are not affiliated with Filevine and should not be responded to.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-11T05:27:42.887Z",
+    "sourceHash": "eefc2802d9cc428466229e81c0f4c55195e842ab3db3c826d137af7ad0b3ee09",
+    "company": {
+      "id": "filevineeu",
+      "name": "Filevine EU",
+      "logoUrl": "https://logo.clearbit.com/filevineeu.com",
+      "industry": "Technology",
+      "website": "https://filevineeu.com"
+    },
+    "slug": "senior-software-engineer-frontend-filevine-eu-eefc2802",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7d39e6aea38ac6858ad0c322ca4a81e89f9f6399daafed3e72ce264bbbaf89ac",
+    "title": "Frontend Engineer (React.js, CSS)",
+    "applyUrl": "https://www.sundayy.com/job-description/usB0E4804CB98BAAFBFC5250A4A29E45E5?source=Linkedin",
+    "description": "About the job\n\nAbout The Company\n\nLenovo is a global technology leader with a revenue of US$83 billion, ranked #153 on the Fortune Global 500 list. Serving millions of customers across 180 markets worldwide, Lenovo is committed to delivering innovative and smarter technology solutions for all. The company has established itself as the world's largest PC manufacturer and has expanded its portfolio to include AI-enabled, AI-ready, and AI-optimized devices such as PCs, workstations, smartphones, and tablets. Additionally, Lenovo offers comprehensive infrastructure solutions, including servers, storage, edge computing, high-performance computing, and software-defined infrastructure, alongside software, solutions, and services. Listed on the Hong Kong Stock Exchange under Lenovo Group Limited (HKSE: 992) and ADR: LNVGY, Lenovo continues to invest in groundbreaking innovations aimed at creating a more equitable, trustworthy, and smarter future for everyone, everywhere. For more information, visit www.lenovo.com and stay updated with the latest news on our StoryHub platform.\n\nAbout The Role\n\nLenovo is seeking a talented Lead Frontend Engineer to join our AI Platform and User Experience team. This remote position, open to candidates anywhere in the U.S., will focus on developing and optimizing the user interface for our enterprise AI services platform. The platform is designed to manage and optimize token spending, model orchestration, cost controls, security governance, usage analytics, and API management. As a key contributor, you will collaborate closely with product teams, UI/UX designers, and back-end developers to create seamless, efficient, and innovative user experiences. You will leverage your expertise in front-end development, performance optimization, and AI-powered user interactions to build scalable, secure, and user-friendly interfaces that enable organizations to adopt AI solutions confidently and effectively.\n\nQualifications\n\nBachelor's degree or higher in Computer Science, Software Engineering, or a related field\nProficiency in at least one modern front-end framework (React, Vue.js, or Angular)\n10+ years of experience working with high-scale distributed systems and cloud-native development\nStrong knowledge of HTML5, CSS3, and responsive design principles\nExperience with front-end performance optimization tools and techniques\nFamiliarity with build tools such as Webpack and package management systems\n\nResponsibilities\n\nCollaborate with product teams and UI/UX designers to develop engaging and intuitive user experiences\nCreate effective workflows and user interaction models to enhance usability and accessibility\nImplement responsive design principles ensuring compatibility across various browsers and devices\nTroubleshoot and resolve front-end issues in coordination with back-end developers\nAnalyze error logs, browser console messages, and code logic to identify root causes and implement fixes\nOptimize front-end performance through techniques like code splitting, lazy loading, and resource compression\nMonitor performance metrics and continuously improve the responsiveness and speed of the platform\nIntegrate AI-powered features such as chat interfaces, conversational AI, and LLM-driven workflows into the front-end\nConsume AI/ML APIs and stream inference responses to deliver real-time AI experiences\nLeverage AI-assisted development tools and modern engineering productivity platforms when applicable\nBuild and maintain real-time dashboards, operational monitoring platforms, and data visualization interfaces\n\nBenefits\n\nCompetitive salary based on experience and skills\nComprehensive health, dental, and vision insurance plans\nFlexible work arrangements and remote work opportunities\nGenerous paid time off and holiday leave\nRetirement savings plans with company match\nProfessional development programs and continuous learning opportunities\nAccess to cutting-edge technology and innovative projects\nEmployee wellness programs and support resources\n\nEqual Opportunity\n\nLenovo is an Equal Opportunity Employer. We do not discriminate against any employee or applicant for employment based on race, color, religion, sex, age, sexual orientation, gender identity, national origin, veteran status, disability, or any other protected class under federal, state, or local laws.\n\n\n\nDesired Skills and Experience\n\nInformation Technology",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-11T05:26:55.178Z",
+    "sourceHash": "7d39e6aea38ac6858ad0c322ca4a81e89f9f6399daafed3e72ce264bbbaf89ac",
+    "company": {
+      "id": "wiraa",
+      "name": "Wiraa",
+      "logoUrl": "https://logo.clearbit.com/wiraa.com",
+      "industry": "Technology",
+      "website": "https://wiraa.com"
+    },
+    "slug": "frontend-engineer-react-js-css-wiraa-7d39e6ae",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "css",
+        "webpack",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8ac4e854b453813cd7acfd9c32ad537b03684da8b28b8495112d5206bf3d5123",
+    "title": "Frontend Engineer (SDE 3)",
+    "applyUrl": "https://kainest.com/jobs/frontend-engineer-sde-3-ahmedabad-hybrid",
+    "description": "About the job\n\nAbout The Role\n\nWe’re looking for a Front-End Engineer (SDE 3) with strong expertise in React, Next, HTML, CSS, and JavaScript, and proven experience owning complex frontend features end to end. You will design and build high-quality user interfaces, optimize performance and take the lead in contributing to frontend architecture. This role requires someone who can work independently, take ownership of entire modules, and contribute towards High-Level and Low-Level Designs while collaborating closely with designers and backend teams. If you’re comfortable architecting new projects, decompose complex UI/UX flows, and elevate the frontend quality across the team, this position is for you.\n\nIt is Important that you also understanding Caching/ Throttling/ Security and such Advance concepts to make sure going to production is not a bottleneck but a foregone conclusion.\n\nAlso note that you might have to come to Ahmedabad initially for a couple of months or 3 months before we can provide remote work.\n\nKey Responsibilities\n\n\nArchitect, build, and own end-to-end frontend features using React, Next, HTML, CSS, and JavaScript.\nInvolved in providing valuable insights for UI/UX workflows.\nTranslate complex Figma designs and UX workflows into high-quality, production-ready interfaces. \nBuild custom interactive components, editors, visual tools, or other advanced UI elements as needed.\nContribute to and maintain internal UI libraries, reusable components, and shared tooling.\nWork with REST APIs, implement advanced state management, and optimize data fetching strategies.\nDBMS understanding (Mostly RDBMS) like postgres or mysql.\nOptimize applications for rendering performance, bundle size, load time, and smooth interactions.\nEnsure accessibility standards, semantic HTML, and cross-browser responsiveness.\nConduct code reviews, improve engineering standards, and guide best practices across the frontend team.\nTroubleshoot complex UI bugs, diagnose production issues, and drive long-term fixes.\nExperience in backend technologies (Golang, Node.js, Python, etc.)\nKnowledge of CI/CD pipelines and deployment workflows.\nMentor junior engineers on design patterns, coding best practices, and frontend architecture.\nUnderstanding of SSR/SSG, caching strategies, and advanced Next.js features.\nGood QA skills.\n\n\nRequired Skills And Qualifications\n\n\n5+ years of hands-on experience in frontend development.\nStrong proficiency in React and Next, including routing, rendering patterns, and performance tuning.\nAbility to own full features or modules from design to deployment with minimal oversight.\nExperience building complex or custom interactive UI components beyond basic forms and pages.\nSolid understanding of state management, asynchronous data flows, and UI data handling.\nStrong understanding of browser internals, rendering behavior, performance bottlenecks, and debugging strategies.\nExperience with Testing Library (Jest, React Testing Library) for writing unit and integration tests.\nExperience with Git-based workflows and collaborative development.\nAbility to make technical decisions backed by solid LLD and HLD fundamentals.\nStrong communication and willingness to support and mentor peers.\nAn Open Mind! This should be part of your message when applying and I will know you read the JD.\n\n\nNice to Have \n\n\nExperience with Golang.\nIn Depth understanding of tools such as Vite, Webpack, or Turbopack.\nExposure to internal tooling, custom library development, or design system contributions.\nUnderstanding or Experience with Golang.\nExposure to micro-frontends, modular architectures, or large-scale frontend systems.\n\n\nNote: Please don't provide AI answers for any questions or you will potentially be disqualified.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-11T05:01:52.595Z",
+    "sourceHash": "8ac4e854b453813cd7acfd9c32ad537b03684da8b28b8495112d5206bf3d5123",
+    "company": {
+      "id": "kainest",
+      "name": "KAI Nest",
+      "logoUrl": "https://logo.clearbit.com/kainest.com",
+      "industry": "Technology",
+      "website": "https://kainest.com"
+    },
+    "slug": "frontend-engineer-sde-3-kai-nest-8ac4e854",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "javascript",
+        "css",
+        "webpack",
+        "vite",
+        "figma",
+        "jest",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "765297173a7386d2d4ad624b1da390c38ebfa7a3e8c9e5fab5a5f32cd21a46f4",
+    "title": "Frontend Code Evaluation Specialist",
+    "applyUrl": "https://work.mercor.com/login?utm_medium=free_job_board&utm_source=linkedin&utm_term=636835RR&utm_content=manatal_deflect_apps_disabled&listingId=list_AAABoAPp1LEAbgpoCqdGza4o",
+    "description": "About the job\n\nAbout The Job\n\nMercor connects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.\n\nPosition: Frontend Engineer\n\nType: Contract\n\nCompensation: $90/hour\n\nLocation: Remote\n\nRole Responsibilities\n\n\nRender a reference page and two candidate replications at 1920×1080. Judge which is the closer reproduction, state by state.\nDiff visual fidelity in detail: box model and spacing, typography (family, size, weight, line-height, letter-spacing), color and border treatment, image and asset handling, z-order, and overflow.\nRead the source of both attempts and grade construction quality. Distinguish a replication that is genuinely correct from one that merely looks correct at one viewport.\nTest responsiveness. Identify defects such as a nav bar that looks right at 1920px but collapses at 1400px.\nWrite specific, evidence-cited justifications for every preference. Provide detailed explanations like \"B nests the article body in a single absolutely-positioned div, so the text overlaps the footer below 1600px, while A uses normal document flow.\"\nUse the \"this task is broken\" escape hatch with judgment. Distinguish a task that genuinely cannot be completed from one that is merely hard.\n\n\n\nQualifications\n\nMust-Have\n\n\n3–8 years of professional web development experience in frontend or full-stack work.\nFluency across web eras, including legacy layouts like used for layout.\nCommand of hand-written HTML and CSS: semantic markup, flexbox, grid, media queries, and legacy float- and table-based layouts.\nBrowser DevTools as muscle memory.\nCommand-line comfort: unzipping an archive, standing up a static local server, and untangling a broken image reference.\nEnough JavaScript to read a page's scripts and understand their DOM impact.\nProfessional written English for task justification.\n\n\n\nPreferred\n\n\nPrior RLHF, preference-labeling, model-evaluation, or structured code-review work.\nPixel-perfect design-to-code experience.\nAccessibility expertise (ARIA, semantic landmarks, heading hierarchy).\nFamiliarity with how LLMs fail at code generation.\nWeb scraping, archiving, or DOM-parsing background.\nMore than one completed Mercor project and availability in contiguous multi-hour blocks.\n\n\n\nApplication Process (Takes 20–30 mins to complete)\n\n\nUpload resume\nAI interview based on your resume\nSubmit form\n\n\n\nResources & Support\n\n\nFor details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome\nFor any help or support, reach out to: support@mercor.com\n\n\n\nPS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-11T05:00:52.818Z",
+    "sourceHash": "765297173a7386d2d4ad624b1da390c38ebfa7a3e8c9e5fab5a5f32cd21a46f4",
+    "company": {
+      "id": "mercor",
+      "name": "Mercor",
+      "logoUrl": "https://logo.clearbit.com/mercor.com",
+      "industry": "Technology",
+      "website": "https://mercor.com"
+    },
+    "slug": "frontend-code-evaluation-specialist-mercor-76529717",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "1861685262b4a05cc19bf2868e3328feb3da4b76e7b1fcdb7305fdebfc95855c",
+    "title": "Développeur Front end H/F",
+    "applyUrl": "https://onrecrute.enaveyron.fr/fr/fiche/emplois/12033/developpeur-front-end-hf_TFOOffers20259/",
+    "description": "About the job\nThis job is sourced from a job board. Learn More\n\nMerci de saisir votre adresse mail afin que nous puissions vous envoyer des rappels réguliers par email pour postuler à cettre offre\n\nVotre adresse e-mail(Nécessaire)\n\nLe recruteur DOXALLIA\n\nFiliale du Crédit Agricole, DOXALLIA partage avec ses clients, partenaires et collaborateurs une grande ambition : être le référent français d’excellence sur l’ensemble des maillons de la chaîne documentaire, de l’édition papier au 100 % digital.\n\nC’est une entreprise humaine, digitale et créative, disposant de 9 sites en(…)\n\nFiliale du Crédit Agricole, DOXALLIA partage avec ses clients, partenaires et collaborateurs une grande ambition : être le référent français d’excellence sur l’ensemble des maillons de la chaîne documentaire, de l’édition papier au 100 % digital.\n\nC’est une entreprise humaine, digitale et créative, disposant de 9 sites en France et dont le siège social se situe à Rodez (12). Le Business Plan ambitieux, projette à 5 ans une multiplication du chiffre d’affaires par trois et un doublement des effectifs.\n\nPour accompagner son fort développement, DOXALLIA recrute de nouveaux talents : production, IT, commerce, fonctions supports.\n\nEn savoir + sur les avantages de Doxallia\n\nVos missions\n\nEnvie de créer des solutions performantes et de contribuer à la digitalisation des processus métiers de nos clients en mode agile ?🚀\n\nParticipez à la conception et à l’évolution de solutions au cœur des enjeux techniques et stratégiques de nos projets. Notre Squad vous attend !\n\n🎯 Intégré(e) à La Squad Communication Éditique, Vous Participez Activement à La Conception, L’évolution Et La Performance De Nos Plateformes. Vos Missions Principales Seront\n\n\nDévelopper, assurer le maintien en condition opérationnelle, procéder aux évolutions fonctionnelles et structurelles des Interfaces WEB en liens avec les utilisateurs métiers (clients et Interne) ;\nGarantir une bonne ergonomie et une navigation optimale de l’IHM (En lien avec l’UX/UI Designer) ;\nGarantir l’adéquation entre les besoins expérimentés par les utilisateurs et les fonctionnalités mises en service ;\nContribuer aux corrections nécessaires aux dernières évolutions technologiques ;\nRespecter les normes et standards appliqués.\n\n\nVotre profil\n\n🧩 Vos Compétences\n\n\nLanguages du Web : React, Nodejs, NEXT.JS HTML5, CSS3, Typescript \nOutils de CI/CD : Git, Azure Devops, Sonarqube,… \nSystèmes de gestion de base de données : SQL Server \nConcepts et techniques de base de gestion des API \nCompétences complémentaires : API Rest, Docker \nAnglais technique.\n\n\n👤 Votre Profil\n\nIssu(e) d’une formation BAC+2 à BAC+4 dans le domaine du développement informatique (ou justifiant d’une expérience équivalente). Vous disposez d’une expérience significative d’au moins 5 ans dans un poste similaire.\n\n🌟 Vous Êtes Reconnu (e) Pour\n\n\nVotre curiosité ;\nVotre esprit d’équipe ;\nVotre esprit d’analyse ;\nVotre capacité d’apprentissage et de résolution de problèmes.\n\n\n📞Envoyez-nous votre candidature : l’équipe recrutement vous recontactera pour un premier échange en visioconférence.\n\nPour en savoir plus sur Doxallia, rendez-vous sur notre page Qui sommes-nous ? – DOXALLIA.\n\nNos autres offres d’emploi ? Cliquez sur notre page talent Nous rejoindre – DOXALLIA.\n\nAu sein de Doxallia, nous sommes engagés pour lutter contre toute forme de discrimination. Tous nos postes sont ouverts aux personnes en situation de handicap.\n\nNiveau d’étude requis : Bac +2, Bac +4\n\nExpérience exigée : 5 ans minimum an(s)\n\nInformations complémentaires\n\nSalaire : Selon l’expérience\n\n\nAccord télétravail : 2 jours / semaine ;\nProcess d’intégration dès la prise de poste ;\nEnvironnement agile ;\nAccords primes participation et intéressement ;\nParcours de formation au plus près des besoins.\n\n\nCadre de vie / Cadre de travail\n\nLocalisation de l’offre\n\n+−\n\nLeaflet | Map data © OpenStreetMap contributors",
+    "location": "Remote - France",
+    "country": "France",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-11T04:56:10.457Z",
+    "sourceHash": "1861685262b4a05cc19bf2868e3328feb3da4b76e7b1fcdb7305fdebfc95855c",
+    "company": {
+      "id": "onrecruteenaveyron",
+      "name": "On recrute en Aveyron",
+      "logoUrl": "https://logo.clearbit.com/onrecruteenaveyron.com",
+      "industry": "Technology",
+      "website": "https://onrecruteenaveyron.com"
+    },
+    "slug": "d-veloppeur-front-end-h-f-on-recrute-en-aveyron-18616852",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "France"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "a0d6f0432b3e83d9fd60c5433c8890934e8d82a2401039e74418ce1058598c70",
     "title": "Frontend Developer",
     "applyUrl": "https://forms.gle/wGe1wkUPkNBtwXwp7",
