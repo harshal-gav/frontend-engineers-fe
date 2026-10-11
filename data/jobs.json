@@ -1,5 +1,131 @@
 [
   {
+    "id": "c5d108a6583a3810c59823123b12dcbc7527ed7f666adb7eedcdbb1bbda3680f",
+    "title": "Frontend Engineer (WFH)",
+    "applyUrl": "https://www.torentify.com/jobs/6ac8d0d905fc7b607e336846",
+    "description": "About the job\n\nAbout the Company\n\n\n\n\nFE.Oi is a technology-driven organization focused on building modern web applications with an emphasis on user experience, clean design, reliable performance, and maintainable code. The team values collaboration, knowledge sharing, and continuous improvement, using contemporary tools and frameworks to develop digital experiences that can scale with evolving product needs.\n\n\n\n\nThe company supports remote work and encourages engineers to contribute directly to product development while maintaining high standards of quality and usability.\n\n\n\n\nAbout the Role\n\n\n\n\nFE.Oi is looking for a Frontend Engineer to build and maintain user interfaces for its web applications. In this remote, full-time role, you will work closely with designers and backend engineers to deliver responsive, accessible, and reliable web experiences.\n\n\n\n\nYour responsibilities will include developing frontend components, integrating them with backend services, improving application performance, and ensuring compatibility across browsers and devices. You will also participate in code reviews, troubleshoot technical issues, help clarify requirements, and contribute to ongoing improvements in the user experience.\n\n\n\n\nThis position is suited to someone with a strong foundation in frontend development, an understanding of end-to-end web application development, and the ability to work independently while collaborating effectively with a distributed team.\n\n\n\n\nKey Responsibilities\n\n\n\n\n• Build and maintain user interfaces for web applications using modern JavaScript frameworks \n\n and libraries.\n\n\n\n\n• Develop responsive layouts that provide a consistent experience across different devices \n\nand screen sizes.\n\n\n\n\n• Integrate frontend components with backend services to support application functionality.\n\n\n\n\n• Optimize frontend performance and ensure cross-browser compatibility.\n\n\n\n\n• Collaborate with designers and backend engineers to develop and refine product features.\n\n\n\n\n• Participate in code reviews and follow practices that support clean, maintainable, and \n\n reliable code.\n\n\n\n\n• Maintain accessibility standards across user interfaces.\n\n\n\n\n• Help clarify requirements, troubleshoot issues, and identify opportunities to improve the \n\n overall user experience.\n\n\n\n\n• Contribute to team collaboration, knowledge sharing, and continuous improvement \n\n of development practices.\n\n\n\n\nRequired Qualifications\n\n\n\n\n• Strong frontend development skills, including experience with modern JavaScript \n\n frameworks and libraries.\n\n\n\n\n•Knowledge of web development and responsive web design, with the ability to build accessible, mobile-friendly interfaces.\n\n\n\n\n• Understanding of software development and backend web development sufficient to \n\n collaborate on end-to-end features.\n\n\n\n\n• Familiarity with version control systems such as Git, testing practices, and modern build tools.\n\n\n\n\n• Strong problem-solving skills and the ability to troubleshoot technical issues.\n\n\n\n\n• Clear communication skills and the ability to work independently in a remote environment.\n\n\n\n\nPreferred Qualifications\n\n\n\n\n• A bachelor's degree in Computer Science, Engineering, or a related field, or equivalent \n\n practical experience.\n\n\n\n\nWork Arrangement\n\n\n\n\nThis is a full-time, remote position with FE.Oi. The role involves collaborating with designers and backend engineers to develop, maintain, and improve web applications while contributing to a culture of code quality, accessibility, and continuous learning.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-11T18:21:36.804Z",
+    "sourceHash": "c5d108a6583a3810c59823123b12dcbc7527ed7f666adb7eedcdbb1bbda3680f",
+    "company": {
+      "id": "torentify",
+      "name": "Torentify",
+      "logoUrl": "https://logo.clearbit.com/torentify.com",
+      "industry": "Technology",
+      "website": "https://torentify.com"
+    },
+    "slug": "frontend-engineer-wfh-torentify-c5d108a6",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e6849711d5c30ab8247ff37a92bde8e3dad44bc16b903fab4aab3c167d7fa1a3",
+    "title": "Front End Developer",
+    "applyUrl": "https://haystack.cv/jobs/823014b7-7c75-40a5-86fe-9f668222fa0a?src=6739",
+    "description": "About the job\n\nAn employer is seeking a Front-End Developer to support UI enhancements, accessibility compliance, formatting corrections, and content-related code updates for a large federal and DoD-aligned mission environment. This role is central to ensuring that digital properties remain user-friendly, visually consistent, accessible, and aligned with enterprise design and content standards.\n\nThe Front-End Developer works closely with designers, content managers, UX specialists, and backend engineers to implement interface changes, optimize user experience, and contribute to structured, maintainable front-end code.\n\nThe Role\n\n\n Implement UI updates, CSS adjustments, and formatting refinements to improve user experience and consistency.\n Apply accessibility (508/WCAG) fixes including semantic markup, alt-text, keyboard navigation, and structural updates.\n Support content-driven code changes including template adjustments, layout updates, and component enhancements.\n Collaborate with UX, design, and content teams to translate requirements into responsive, standards-compliant front-end code.\n Perform code reviews and adhere to secure coding, documentation, and version control practices.\n\n\nWhat You'll Need\n\n\n Minimum 5 years of experience in front-end development.\n Bachelor's degree in Computer Science, Information Technology, Web Development, or a related technical field.\n Proficiency in HTML5, CSS3, JavaScript, and responsive design.\n Candidate must possess a Tier 2 Moderate Risk Public Trust (from any federal agency) or an active Secret clearance or higher.\n\n\nWhat's On Offer\n\n\n Fully remote position.\n Opportunity to work on mission-critical federal and DoD projects.\n Collaborative team environment with UX, design, content, and backend engineers.\n\n\nApply via Haystack today!",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-11T18:20:09.824Z",
+    "sourceHash": "e6849711d5c30ab8247ff37a92bde8e3dad44bc16b903fab4aab3c167d7fa1a3",
+    "company": {
+      "id": "haystack",
+      "name": "Haystack",
+      "logoUrl": "https://logo.clearbit.com/haystack.com",
+      "industry": "Technology",
+      "website": "https://haystack.com"
+    },
+    "slug": "front-end-developer-haystack-e6849711",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4a994913771becbe571b7ff269af7dfa5f738778c295bd7e6b3afffa5e43432e",
+    "title": "Frontend Engineer Design Systems",
+    "applyUrl": "https://natton.ai/company/careers/frontend-engineer-design-systems",
+    "description": "About the job\n\nOpen · Full-time Frontend Engineer Design Systems\n\nWe're hiring a Frontend Engineer Design Systems to help us build the next generation of the Natton platform. You'll work directly with our research + engineering leads on production systems that ship to frontier AI labs and enterprises in healthcare, finance and the public sector.\n\nWhat you'll do\n\nOwn a meaningful part of a production AI system.\nWork cross-functionally with research, design and operations.\nShip to real customers within weeks of joining.\nMentor + recruit teammates as we scale.\n\nWhat we're looking for\n\n4+ years of relevant production experience.\nStrong fundamentals in your craft + curiosity for what's adjacent.\nDirect, kind, action-oriented communication.\nComfort with ambiguity + writing things down.\n\nCompensation + benefits\n\nCompetitive salary + meaningful equity.\nRemote-first with quarterly team gatherings.\n$2k/yr learning budget + 5 conference days.\nHealth insurance for you + dependents.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-11T17:49:55.410Z",
+    "sourceHash": "4a994913771becbe571b7ff269af7dfa5f738778c295bd7e6b3afffa5e43432e",
+    "company": {
+      "id": "nattonai",
+      "name": "Natton AI",
+      "logoUrl": "https://logo.clearbit.com/nattonai.com",
+      "industry": "Technology",
+      "website": "https://nattonai.com"
+    },
+    "slug": "frontend-engineer-design-systems-natton-ai-4a994913",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0bc8c82de1adde41e6aadd91d3c7787b8d506488da77b03f609973f2467bbcf3",
+    "title": "(SENIOR) FULLSTACK ENTWICKLER:IN MIT SCHWERPUNKT FRONTEND",
+    "applyUrl": "https://rausgegangen.jobs.personio.de/job/2831679",
+    "description": "About the job\n\nWir suchen dich!\n\nWir bauen die großartigste unabhängige Eventplattform der Welt. Und wir glauben, dass (R)ausgehen uns zu besseren Menschen macht.\n\nUnser Ziel ist es, dass jede:r Nutzer:in in seiner/ihrer Stadt täglich spannende Veranstaltungen findet, die inspirieren und zeigen, wie viele besondere Erlebnisse da draußen warten. Und dass Veranstaltende eine Plattform haben, auf der sie die richtigen Menschen erreichen und eine eigene Community aufbauen können.\n\nWir suchen ab sofort eine:n (Senior) Fullstack Entwickler:in mit Schwerpunkt Frontend, der/die Lust hat, uns bei dieser Vision zu unterstützen und gemeinsam mit uns die besten Events der Stadt zu entdecken.\n\nOb vor Ort in Köln oder remote - bei uns ist jedes Modell denkbar.\n\nDeine Aufgaben\n\n\nIn unserer Inspiration Crew gestaltest du, wie sich Nutzer:innen auf Rausgegangen orientieren und inspirieren lassen – von Suche und personalisierten Empfehlungen über die Präsentation von Events und Seiten bis zur Qualitätssicherung unserer Inhalte. Zusätzlich entwickelst du die internen Tools weiter, mit denen wir Feed-Inhalte und Blogartikel planen und veröffentlichen\nDein Schwerpunkt liegt auf der Entwicklung hochwertiger, barrierefreier Frontends. Gleichzeitig konzipierst und implementierst du die dafür benötigten APIs und Backend-Funktionen und entwickelst bestehende Systeme weiter\nDu arbeitest eng mit unserem Tech-Team und den Designer:innen zusammen, um Prototypen aus Figma oder Claude Design in visuell ansprechenden, performanten und technisch zuverlässigen Code zu überführen und Features über den gesamten Entwicklungsprozess hinweg zu begleiten\nDu steuerst Coding-Agenten, übernimmst die Verantwortung für den generierten Code und sicherst dessen Qualität durch sorgfältige Code Reviews\nDu bringst aktive neue Feature-Ideen ein, um die User Experience unserer Plattform weiter zu verbessern\n\n\nUNSER TECH STACK:\n\n\nDjango / Python\nReact / React Native\nHTML / Tailwind CSS\nGitHub\nPostgreSQL\n\n\nDein Profil\n\n\nDu verfügst über mehrjährige praktische Erfahrung in der Fullstack-Entwicklung und hast einen klaren Schwerpunkt in der Frontend Webentwicklung\nDu verstehst das Zusammenspiel von Frontend, APIs, Datenbanken und Backend-Systemen und setzt Schnittstellen effektiv und zuverlässig um\nDu nutzt KI-Tools bereits zur Unterstützung der Softwareentwicklung und Qualitätssicherung und hast Lust, agentische Workflows aktiv mitzugestalten\nIdealerweise bringst du Erfahrung mit Themen wie personalisierten Empfehlungsalgorithmen, Suchtechnologien oder Embeddings mit – oder hast Lust, dich darin einzuarbeiten\nGit beherrschst du im Schlaf\nBei uns stehen deine Leidenschaft und dein Engagement im Vordergrund, nicht die Seiten deiner Zeugnisse\nMit deiner verantwortungsvollen, zuverlässigen und selbstständigen Arbeitsweise arbeitest du dich schnell in neue Aufgaben und Systeme ein\nDu kommunizierst – auch bei technischen Themen – sicher auf Deutsch und Englisch\nDu hinterfragst Bestehendes und bist motiviert, sowohl deine eigenen Fähigkeiten als auch unser Unternehmen mit neuen Technologien voranzutreiben\nDu brennst für gute Erlebnisse und gehst gerne raus\n\n\nDas bieten wir\n\n\nDu bist Teil eines dynamischen Teams, das sich für innovative Technologien, benutzerzentriertes Design und natürlich für Events begeistert\nDu hast einen direkten Impact auf eine Plattform, die monatlich Hunderttausende Menschen erreichen und inspirieren\nDeine Perspektiven und Ideen sind uns wichtig und tragen maßgeblich zu Entscheidungen in der Projektumsetzung bei\nAll deine Aufgaben werden unterstützt von super Technologie und einem großartigen Team\nFlache Hierarchien und ein einmaliger Einblick in die Kulturszene\nFlexible Gestaltung von Arbeitsort und -zeiten, plus Möglichkeit auf Workation \nDir steht die Mental-Health Plattform “Open Up” mit Zugang zu 1on1 Gesprächen mit Psycholog:innen, Online-Kursen und Artikeln zur Verfügung\nDu hast die Wahl zwischen monatlichem Probonio Wunschgutschein (ASOS, Rewe, Lidl, IKEA, uvm.) oder Zuschuss zum Deutschlandticket\nJobrad-Fahrradleasing\nWenn gewünscht, unterstützen wir selbstverständlich deine betriebliche Altersvorsorge\nDu kannst dich auf regelmäßige Teamevents und Company-Partys freuen\n\n\nInteressiert?\n\nLade Bitte Folgende Unterlagen Hoch\n\n\nAnschreiben \nLebenslauf\nArbeitsproben/Zeugnisse\nDein Top-Grund, warum du bei Rausgegangen arbeiten möchtest\n\n\nÜber uns\n\nRausgegangen ist der digitaler Guide für kulturelle Events in der Großstadt. Wir wollen es euch so leicht wie möglich machen das Sofa zu verlassen und euch von neuen Künstler*innen und Orten inspirieren zu lassen. Deutschlandweit empfehlen wir die besten Events. Wir bauen zudem mit unserer Eventzentrale, den Marketing und Ticketing Möglichkeiten das technische Rückgrat der Eventbranche.\n\nWir glauben daran, dass die besten Ideen in einem Umfeld entstehen, das Vielfalt und Inklusion nicht nur fördert, sondern feiert. Wir setzen uns aktiv dafür ein, dass alle, unabhängig von Alter, Herkunft, Geschlecht, sexueller Identität, kulturellem Hintergrund sowie körperlichen und psychischen Fähigkeiten, bei uns willkommen sind und sich entfalten können.\n\nDabei ist es uns ein besonderes Anliegen, unterschiedliche Lebensrealitäten und Perspektiven einzubeziehen. Deshalb laden wir insbesondere Personen ein, die queer, inter*, trans* oder BIPOC sind, sich bei uns zu bewerben.\n\nDarüber hinaus möchten wir Barrieren abbauen und einen sicheren, unterstützenden Raum für Menschen mit Schwerbehinderung schaffen. Wir möchten schwerbehinderte Bewerber:innen ermutigen, sich bei uns zu bewerben, denn ihre Perspektiven, Erfahrungen und Bedürfnisse sehen wir als wertvolle Bereicherung für unser Team.\n\nGemeinsam schaffen wir einen Raum, in dem jede:r gehört wird und sich wohlfühlt.",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-11T17:46:47.709Z",
+    "sourceHash": "0bc8c82de1adde41e6aadd91d3c7787b8d506488da77b03f609973f2467bbcf3",
+    "company": {
+      "id": "onedaychoircollective",
+      "name": "One-Day Choir Collective",
+      "logoUrl": "https://logo.clearbit.com/onedaychoircollective.com",
+      "industry": "Technology",
+      "website": "https://onedaychoircollective.com"
+    },
+    "slug": "senior-fullstack-entwickler-in-mit-schwerpunkt-frontend-one-day-choir-collective-0bc8c82d",
+    "aiTags": {
+      "stack": [
+        "react",
+        "css",
+        "tailwind",
+        "figma",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "eefc2802d9cc428466229e81c0f4c55195e842ab3db3c826d137af7ad0b3ee09",
     "title": "Senior Software Engineer (Frontend) ›",
     "applyUrl": "https://www.filevine.com/jobs/0679e9c6-2033-43ac-bd3c-d50f0c76439e/",
