@@ -24,13 +24,27 @@ export const POST = Webhooks({
         }
       }
 
+      if (!uid && payloadData?.subscription_id) {
+        try {
+          const userQuery = await db.collection('users').where('dodoSubscriptionId', '==', payloadData.subscription_id).limit(1).get();
+          if (!userQuery.empty) {
+            uid = userQuery.docs[0].id;
+            console.log(`Found UID ${uid} by dodoSubscriptionId ${payloadData.subscription_id}`);
+          }
+        } catch (err) {
+          console.warn(`Could not find Firebase user by dodoSubscriptionId: ${payloadData.subscription_id}`);
+        }
+      }
+
       if (!uid) {
-        console.warn("Dodo Webhook received, but no UID found in metadata or customer", payloadData);
+        console.warn("Dodo Webhook received, but no UID found in metadata, customer email, or subscriptionId", payloadData);
         return;
       }
 
       const defaultExpiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
-      const isEmployer = metadata.type === 'employer';
+      const existingUserDoc = await db.collection('users').doc(uid).get();
+      const existingUserData = existingUserDoc.data();
+      const isEmployer = metadata.type === 'employer' || existingUserData?.isEmployer === true || existingUserData?.role === 'employer';
 
       const computeExpiresAt = () => {
         if (payloadData?.next_billing_date) {
