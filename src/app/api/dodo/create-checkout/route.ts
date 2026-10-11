@@ -19,7 +19,7 @@ export async function POST(req: Request) {
     const decodedToken = await auth.verifyIdToken(token);
 
     const email = decodedToken.email || "";
-    const name = decodedToken.email?.split('@')[0] || "User";
+    const name = decodedToken.name || decodedToken.email?.split('@')[0] || "User";
     const uid = decodedToken.uid;
 
     let reqBody: any = {};
@@ -51,6 +51,12 @@ export async function POST(req: Request) {
         uid: uid,
         type: isEmployer ? 'employer' : 'user'
       },
+      feature_flags: {
+        allow_customer_editing_name: false,
+        allow_customer_editing_email: false,
+        allow_phone_number_collection: false,
+      },
+      minimal_address: true,
       return_url: `${baseUrl}/`,
       cancel_url: `${baseUrl}/${isEmployer ? 'employers/pricing' : 'pricing'}`,
     });
