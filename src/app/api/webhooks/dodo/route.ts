@@ -85,23 +85,10 @@ export const POST = Webhooks({
 
         case "subscription.cancelled":
         case "subscription.failed":
-        case "subscription.expired":
+        case "subscription.expired": {
           console.log(`Subscription ${payload.type}:`, payload.data);
-          // Do not immediately revoke access if it's just cancelled, wait for expiry.
-          if (payload.type === 'subscription.cancelled') {
-             await db.collection('users').doc(uid).set({
-                cancel_at_period_end: true,
-                updatedAt: new Date()
-             }, { merge: true });
-          } else {
-             // For failed or expired
-             await db.collection('users').doc(uid).set({
-                isPremium: false,
-                isSubscribed: false,
-                updatedAt: new Date()
-             }, { merge: true });
-          }
           
+          // Log the transaction attempt regardless
           await db.collection('dodo_transactions').doc(`${payloadData.subscription_id}_${payload.type}`).set({
             uid,
             status: payload.type.split('.')[1],
@@ -109,7 +96,56 @@ export const POST = Webhooks({
             createdAt: new Date(),
             eventType: payload.type
           }, { merge: true });
+
+          // Fetch current user document to verify ownership and active status
+          const userDoc = await db.collection('users').doc(uid).get();
+          const userData = userDoc.data();
+
+          // Only proceed if this webhook event matches the user's active Dodo subscription!
+          // If a user with existing Pro access attempts a test checkout and cancels,
+          // the failed checkout subscription_id will NOT match their current active subscription.
+          const isCurrentActiveSubscription = userData?.dodoSubscriptionId && userData.dodoSubscriptionId === payloadData.subscription_id;
+
+          if (!isCurrentActiveSubscription) {
+            console.log(`Ignoring ${payload.type} for subscription ${payloadData.subscription_id} as it is not user ${uid}'s active subscription.`);
+            break;
+          }
+
+          const now = new Date();
+          const hasValidExpiry = userData?.subscriptionExpiresAt && new Date(userData.subscriptionExpiresAt) > now;
+
+          if (payload.type === 'subscription.cancelled') {
+             // User cancelled renewal, keep access until the current billing period expires
+             await db.collection('users').doc(uid).set({
+                cancel_at_period_end: true,
+                updatedAt: new Date()
+             }, { merge: true });
+          } else if (payload.type === 'subscription.expired') {
+             // Only revoke if their expiration date has actually passed
+             if (!hasValidExpiry) {
+               await db.collection('users').doc(uid).set({
+                  isPremium: false,
+                  isSubscribed: false,
+                  updatedAt: new Date()
+               }, { merge: true });
+             }
+          } else if (payload.type === 'subscription.failed') {
+             // Renewal payment failed - do NOT revoke immediately if they still have prepaid time left
+             if (!hasValidExpiry) {
+               await db.collection('users').doc(uid).set({
+                  isPremium: false,
+                  isSubscribed: false,
+                  updatedAt: new Date()
+               }, { merge: true });
+             } else {
+               await db.collection('users').doc(uid).set({
+                  subscriptionPaymentStatus: 'failed',
+                  updatedAt: new Date()
+               }, { merge: true });
+             }
+          }
           break;
+        }
 
         default:
           console.log(`Unhandled event type: ${payload.type}`);
