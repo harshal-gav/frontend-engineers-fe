@@ -29,66 +29,209 @@ export const POST = Webhooks({
         return;
       }
 
-      const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
-
+      const defaultExpiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
       const isEmployer = metadata.type === 'employer';
 
+      const computeExpiresAt = () => {
+        if (payloadData?.next_billing_date) {
+          const nextDate = new Date(payloadData.next_billing_date);
+          if (nextDate > new Date()) {
+            return nextDate.toISOString();
+          }
+        }
+        return defaultExpiresAt;
+      };
+
       switch (payload.type) {
-        case "payment.succeeded":
+        case "payment.succeeded": {
           console.log("Payment succeeded:", payload.data);
-          // Update user access just in case this was a one-time payment product
+          // Update user access for successful payment
           await db.collection('users').doc(uid).set({
             isPremium: true,
             isSubscribed: true,
             isEmployer: isEmployer,
             ...(isEmployer && { role: 'employer' }),
+            ...(payloadData.subscription_id && { dodoSubscriptionId: payloadData.subscription_id }),
             paymentGateway: 'dodo',
-            subscriptionExpiresAt: expiresAt,
+            subscriptionPaymentStatus: 'succeeded',
+            subscriptionExpiresAt: computeExpiresAt(),
+            cancel_at_period_end: false,
             updatedAt: new Date()
           }, { merge: true });
 
           // Log the transaction
-          await db.collection('dodo_transactions').doc(payloadData.payment_id || "unknown").set({
+          await db.collection('dodo_transactions').doc(payloadData.payment_id || `pmt_${Date.now()}`).set({
             uid,
             status: 'succeeded',
             amount: payloadData.total_amount,
             currency: payloadData.currency,
+            subscriptionId: payloadData.subscription_id || null,
             createdAt: new Date(),
             eventType: payload.type
           }, { merge: true });
           break;
+        }
+
+        case "payment.failed":
+        case "payment.cancelled": {
+          const pmtStatus = payload.type.split('.')[1]; // 'failed' or 'cancelled'
+          console.log(`Payment ${pmtStatus}:`, payload.data);
+
+          // Log the failed transaction
+          await db.collection('dodo_transactions').doc(payloadData.payment_id || `pmt_${pmtStatus}_${Date.now()}`).set({
+            uid,
+            status: pmtStatus,
+            amount: payloadData.total_amount,
+            currency: payloadData.currency,
+            subscriptionId: payloadData.subscription_id || null,
+            errorCode: payloadData.error_code || null,
+            errorMessage: payloadData.error_message || null,
+            createdAt: new Date(),
+            eventType: payload.type
+          }, { merge: true });
+
+          const userDoc = await db.collection('users').doc(uid).get();
+          const userData = userDoc.data();
+
+          const matchesCurrentSub = payloadData.subscription_id && userData?.dodoSubscriptionId === payloadData.subscription_id;
+
+          // If this payment is associated with the user's active Dodo subscription or they have no active subscription:
+          if (matchesCurrentSub || (!userData?.dodoSubscriptionId && !userData?.paypalSubscriptionId && !userData?.payuSubscriptionId)) {
+            const now = new Date();
+            const hasValidExpiry = userData?.subscriptionExpiresAt && new Date(userData.subscriptionExpiresAt) > now;
+
+            if (!hasValidExpiry || userData?.subscriptionPaymentStatus === 'failed') {
+              console.log(`Revoking Pro access for user ${uid} due to ${payload.type}`);
+              await db.collection('users').doc(uid).set({
+                isPremium: false,
+                isSubscribed: false,
+                subscriptionExpiresAt: null,
+                subscriptionPaymentStatus: pmtStatus,
+                updatedAt: new Date()
+              }, { merge: true });
+            } else {
+              await db.collection('users').doc(uid).set({
+                subscriptionPaymentStatus: 'failed',
+                updatedAt: new Date()
+              }, { merge: true });
+            }
+          }
+          break;
+        }
 
         case "subscription.active":
-        case "subscription.updated":
-        case "subscription.renewed":
+        case "subscription.renewed": {
           console.log(`Subscription ${payload.type}:`, payload.data);
-          // Update the user document to Premium
-          await db.collection('users').doc(uid).set({
-            isPremium: true,
-            isSubscribed: true,
-            isEmployer: isEmployer,
-            ...(isEmployer && { role: 'employer' }),
-            dodoSubscriptionId: payloadData.subscription_id,
-            paymentGateway: 'dodo',
-            subscriptionExpiresAt: expiresAt,
-            updatedAt: new Date()
-          }, { merge: true });
-          
-          await db.collection('dodo_transactions').doc(payloadData.subscription_id).set({
+
+          // CRITICAL: ONLY grant Pro access if subscription status is actually 'active'
+          if (payloadData.status === 'active') {
+            await db.collection('users').doc(uid).set({
+              isPremium: true,
+              isSubscribed: true,
+              isEmployer: isEmployer,
+              ...(isEmployer && { role: 'employer' }),
+              dodoSubscriptionId: payloadData.subscription_id,
+              paymentGateway: 'dodo',
+              subscriptionPaymentStatus: 'active',
+              subscriptionExpiresAt: computeExpiresAt(),
+              cancel_at_period_end: false,
+              updatedAt: new Date()
+            }, { merge: true });
+            
+            await db.collection('dodo_transactions').doc(payloadData.subscription_id).set({
+              uid,
+              status: 'active',
+              subscriptionId: payloadData.subscription_id,
+              createdAt: new Date(),
+              eventType: payload.type
+            }, { merge: true });
+          } else {
+            console.warn(`Ignoring ${payload.type} for ${payloadData.subscription_id} because status is '${payloadData.status}' (not 'active')`);
+          }
+          break;
+        }
+
+        case "subscription.updated": {
+          const subStatus = payloadData.status;
+          console.log(`Subscription updated (status: ${subStatus}):`, payload.data);
+
+          await db.collection('dodo_transactions').doc(`${payloadData.subscription_id}_updated_${Date.now()}`).set({
             uid,
-            status: 'active',
+            status: subStatus || 'updated',
             subscriptionId: payloadData.subscription_id,
             createdAt: new Date(),
             eventType: payload.type
           }, { merge: true });
+
+          const userDoc = await db.collection('users').doc(uid).get();
+          const userData = userDoc.data();
+
+          if (subStatus === 'active') {
+            // ONLY grant or maintain access when status is explicitly active
+            await db.collection('users').doc(uid).set({
+              isPremium: true,
+              isSubscribed: true,
+              isEmployer: isEmployer,
+              ...(isEmployer && { role: 'employer' }),
+              dodoSubscriptionId: payloadData.subscription_id,
+              paymentGateway: 'dodo',
+              subscriptionPaymentStatus: 'active',
+              subscriptionExpiresAt: computeExpiresAt(),
+              cancel_at_period_end: false,
+              updatedAt: new Date()
+            }, { merge: true });
+          } else if (subStatus === 'failed') {
+            // If subscription failed, never keep Pro access!
+            const isCurrentSub = !userData?.dodoSubscriptionId || userData.dodoSubscriptionId === payloadData.subscription_id;
+            if (isCurrentSub) {
+              console.log(`Revoking Pro access for user ${uid} because subscription ${payloadData.subscription_id} updated to failed`);
+              await db.collection('users').doc(uid).set({
+                isPremium: false,
+                isSubscribed: false,
+                subscriptionExpiresAt: null,
+                subscriptionPaymentStatus: 'failed',
+                updatedAt: new Date()
+              }, { merge: true });
+            }
+          } else if (subStatus === 'expired') {
+            const isCurrentSub = !userData?.dodoSubscriptionId || userData.dodoSubscriptionId === payloadData.subscription_id;
+            if (isCurrentSub) {
+              await db.collection('users').doc(uid).set({
+                isPremium: false,
+                isSubscribed: false,
+                subscriptionExpiresAt: null,
+                subscriptionPaymentStatus: 'expired',
+                updatedAt: new Date()
+              }, { merge: true });
+            }
+          } else if (subStatus === 'cancelled') {
+            if (userData?.dodoSubscriptionId === payloadData.subscription_id) {
+              const now = new Date();
+              const hasValidExpiry = userData?.subscriptionExpiresAt && new Date(userData.subscriptionExpiresAt) > now;
+              if (hasValidExpiry && payloadData.cancel_at_next_billing_date) {
+                await db.collection('users').doc(uid).set({
+                  cancel_at_period_end: true,
+                  updatedAt: new Date()
+                }, { merge: true });
+              } else {
+                await db.collection('users').doc(uid).set({
+                  isPremium: false,
+                  isSubscribed: false,
+                  cancel_at_period_end: false,
+                  subscriptionExpiresAt: null,
+                  updatedAt: new Date()
+                }, { merge: true });
+              }
+            }
+          }
           break;
+        }
 
         case "subscription.cancelled":
         case "subscription.failed":
         case "subscription.expired": {
           console.log(`Subscription ${payload.type}:`, payload.data);
           
-          // Log the transaction attempt regardless
           await db.collection('dodo_transactions').doc(`${payloadData.subscription_id}_${payload.type}`).set({
             uid,
             status: payload.type.split('.')[1],
@@ -97,17 +240,12 @@ export const POST = Webhooks({
             eventType: payload.type
           }, { merge: true });
 
-          // Fetch current user document to verify ownership and active status
           const userDoc = await db.collection('users').doc(uid).get();
           const userData = userDoc.data();
 
-          // Only proceed if this webhook event matches the user's active Dodo subscription!
-          // If a user with existing Pro access attempts a test checkout and cancels,
-          // the failed checkout subscription_id will NOT match their current active subscription.
-          const isCurrentActiveSubscription = userData?.dodoSubscriptionId && userData.dodoSubscriptionId === payloadData.subscription_id;
-
-          if (!isCurrentActiveSubscription) {
-            console.log(`Ignoring ${payload.type} for subscription ${payloadData.subscription_id} as it is not user ${uid}'s active subscription.`);
+          // Only ignore if the user currently has a different active Dodo subscription
+          if (userData?.dodoSubscriptionId && userData.dodoSubscriptionId !== payloadData.subscription_id) {
+            console.log(`Ignoring ${payload.type} for subscription ${payloadData.subscription_id} as it is not user ${uid}'s active subscription (${userData.dodoSubscriptionId}).`);
             break;
           }
 
@@ -115,34 +253,38 @@ export const POST = Webhooks({
           const hasValidExpiry = userData?.subscriptionExpiresAt && new Date(userData.subscriptionExpiresAt) > now;
 
           if (payload.type === 'subscription.cancelled') {
-             // User cancelled renewal, keep access until the current billing period expires
-             await db.collection('users').doc(uid).set({
-                cancel_at_period_end: true,
-                updatedAt: new Date()
-             }, { merge: true });
-          } else if (payload.type === 'subscription.expired') {
-             // Only revoke if their expiration date has actually passed
-             if (!hasValidExpiry) {
+             if (hasValidExpiry && payloadData.cancel_at_next_billing_date) {
                await db.collection('users').doc(uid).set({
-                  isPremium: false,
-                  isSubscribed: false,
-                  updatedAt: new Date()
-               }, { merge: true });
-             }
-          } else if (payload.type === 'subscription.failed') {
-             // Renewal payment failed - do NOT revoke immediately if they still have prepaid time left
-             if (!hasValidExpiry) {
-               await db.collection('users').doc(uid).set({
-                  isPremium: false,
-                  isSubscribed: false,
+                  cancel_at_period_end: true,
                   updatedAt: new Date()
                }, { merge: true });
              } else {
                await db.collection('users').doc(uid).set({
-                  subscriptionPaymentStatus: 'failed',
+                  isPremium: false,
+                  isSubscribed: false,
+                  cancel_at_period_end: false,
+                  subscriptionExpiresAt: null,
                   updatedAt: new Date()
                }, { merge: true });
              }
+          } else if (payload.type === 'subscription.expired') {
+             await db.collection('users').doc(uid).set({
+                isPremium: false,
+                isSubscribed: false,
+                subscriptionExpiresAt: null,
+                subscriptionPaymentStatus: 'expired',
+                updatedAt: new Date()
+             }, { merge: true });
+          } else if (payload.type === 'subscription.failed') {
+             // Payment for subscription failed! The user must NEVER receive or keep Pro access.
+             console.log(`Revoking Pro access for user ${uid} due to subscription.failed`);
+             await db.collection('users').doc(uid).set({
+                isPremium: false,
+                isSubscribed: false,
+                subscriptionExpiresAt: null,
+                subscriptionPaymentStatus: 'failed',
+                updatedAt: new Date()
+             }, { merge: true });
           }
           break;
         }
