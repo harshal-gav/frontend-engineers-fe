@@ -1,5 +1,456 @@
 [
   {
+    "id": "28a5e597a9e782a34bf83f5070aa14cca3384f5eb60d85594620b214bb8aa1b5",
+    "title": "Frontend / AI Engineer",
+    "applyUrl": "https://www.sundayy.com/job-description/usA82430ED0543AC4C794D728212AFD93D?source=Linkedin",
+    "description": "About the job\n\nAbout The Company\n\nExpertVoice is a leading organization that collaborates with some of the most respected consumer brands and retailers worldwide. Our partnerships include renowned companies such as Garmin, Carhartt, Ariat, TaylorMade, Brooks, and others. We specialize in engaging influential everyday experts to build, track, and reward their helpful expertise, fostering a community that values authenticity, innovation, and impact. At ExpertVoice, we pride ourselves on cultivating a culture driven by core values of being genuine, ambitious, bold, and caring. Our team members are the heart of our success, and we believe that their dedication and passion are what propel us forward. We are committed to creating an inclusive environment where every individual can thrive and contribute to our mission of transforming how brands connect with their audiences.\n\nAbout The Role\n\nWe are seeking a curious and creative Frontend / AI Engineer to join our dynamic team remotely within the Continental United States. This role is instrumental in developing next-generation AI-powered product experiences by transforming large language models (LLMs) into user-facing features. The ideal candidate will work closely with product managers and engineering teams to prototype, develop, and refine AI-driven interfaces that enhance user engagement and functionality. This position offers an exciting opportunity to blend front-end development, API integration, and rapid prototyping, making it perfect for someone passionate about exploring how artificial intelligence can revolutionize modern applications. The role requires a strong engineering foundation, a maker’s mindset, and a desire to experiment with emerging AI tools and technologies.\n\nQualifications\n\n\nProven experience as a full-stack or front-end engineer with strong web development skills\nExpertise in modern web technologies, including React, HTML, CSS, and JavaScript\nComfortable working with APIs, JSON, and asynchronous workflows\nExperience with backend frameworks such as Python (FastAPI, Flask), Java (Spring Boot), or similar\nHands-on experience with LLM APIs (OpenAI, Anthropic, Gemini, etc.) in projects or prototypes\nStrong understanding of API integration and data pipelines\nCuriosity about AI and eagerness to stay current with emerging tools and model capabilities\nAbility to thrive in fast-paced, dynamic environments\nExcellent problem-solving and collaboration skills\n\n\nResponsibilities\n\n\nBuild AI-driven product features that integrate large language models via APIs\nPrototype quickly and iterate fast, transforming rough concepts into functional interfaces and tools\nDevelop intuitive front-end experiences in React that simplify complex AI outputs\nCollaborate with backend engineers to design APIs and data pipelines supporting AI interactions\nWork across the full technology stack from front-end interfaces to backend service integration in Python or other languages\nExperiment with new LLM capabilities, libraries, and prompt engineering techniques\nContribute to the development of internal tools for data cleaning, model evaluation, and content generation workflows\nStay updated on emerging AI technologies and incorporate innovative solutions into product development\n\n\nBenefits\n\n\nCompetitive compensation with annual merit increases and performance bonuses\nComprehensive medical, dental, and vision insurance coverage for employees and eligible dependents\nFlexible spending accounts (FSA) and health savings accounts (HSA)\nLife insurance and short- and long-term disability coverage\nUp to 15 weeks of paid parental leave for full-time employees\n401(k) plan with employer matching contributions\nWork-from-anywhere flexibility within the Continental United States\nStandard work hours from 10:00 am to 3:00 pm MT, with flexible scheduling options\nExclusive employee incentive programs and purchase discounts through client partnerships\n\n\nEqual Opportunity\n\nExpertVoice is committed to fostering an inclusive and diverse workplace. We are proud to be an equal-opportunity employer and do not discriminate based on race, color, religion, sex, sexual orientation, gender identity, national origin, age, disability, veteran status, or any other protected characteristic. We believe that a diverse team enhances our ability to innovate and serve our community effectively.\n\n\n\nDesired Skills and Experience\n\nInformation Technology",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T22:15:49.940Z",
+    "sourceHash": "28a5e597a9e782a34bf83f5070aa14cca3384f5eb60d85594620b214bb8aa1b5",
+    "company": {
+      "id": "wiraa",
+      "name": "Wiraa",
+      "logoUrl": "https://logo.clearbit.com/wiraa.com",
+      "industry": "Technology",
+      "website": "https://wiraa.com"
+    },
+    "slug": "frontend-ai-engineer-wiraa-28a5e597",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "762110157fc7ff2d06a257ad9c2aa48a8f8b46966abff032bef962a8d15b3286",
+    "title": "Sr. Staff Engineer (Fullstack/Frontend)",
+    "applyUrl": "https://jobs.ashbyhq.com/hims-and-hers/cfced3cb-2367-4d50-8bf1-54f74e56ce6b?utm_source=linkedinpremium",
+    "description": "About the job\n\nHims & Hers is the leading health and wellness platform, on a mission to help the world feel great through the power of better health. We are redefining healthcare by putting the customer first and delivering access to care that is affordable, accessible, and personal, from diagnosis to treatment to delivery. No two people are the same, so we provide access to personalized care designed for results. By normalizing health & wellness challenges and innovating on their solutions, we’re making better health outcomes easier to achieve.\n\nHims & Hers is a public company, traded on the NYSE under the ticker symbol “HIMS.” To learn more about the brand and offerings, you can visit hims.com/about and hims.com/how-it-works . For information on the company’s outstanding benefits, culture, and its talent-first flexible/remote work approach, see below and visit www.hims.com/careers-professionals.\n\nAbout The Role\n\nWe are seeking a visionary and technically exceptional Sr. Staff Engineer to lead architectural innovation and strategic technical direction. This individual will operate at the organizational level, shaping the long-term technical landscape, enabling cross-functional execution at scale, and aligning engineering efforts with product and business outcomes.\n\nKey Responsibilities\n\n\nArchitectural Vision & Strategy\n\n\nDefine and evolve the architectural vision for customer-facing frontend systems in alignment with business strategy. Lead cross-org initiatives that address long-term scale, system boundaries, and foundational UI capabilities — from design systems to rendering architecture.\n\n\nFrontend Excellence & Performance\n\n\nDrive front-end excellence across engineering, ensuring the creation of fast, accessible, and visually polished experiences that reflect the Hims & Hers brand. Champion UI performance, accessibility, and responsiveness.\n\n\nTechnical Leadership & Governance\n\n\nEstablish patterns and frameworks that ensure quality, resilience, and operational excellence across the organization. Serve as the authority on frontend design decisions and foster alignment across teams. Raise the bar for code quality and engineering standards, ensuring all solutions are robust, testable, observable, maintainable, secure, and scalable.\n\n\nOrg-Wide Enablement & Collaboration\n\n\nCollaborate with engineering and product leadership to shape product direction and ensure our architecture supports strategic goals. Create and promote shared architectural patterns, tools, and infrastructure that improve engineering efficiency and velocity across teams. Drive org-wide adoption of scalable frontend practices, tools, and development norms.\n\n\nMentorship & Talent Growth\n\n\nMentor senior technical leaders and engineers, elevating engineering capabilities across the organization. Champion initiatives that foster talent density, engineering rigor, and a culture of continuous learning. Participate in product discovery sessions to assess feasibility, explore user needs, define product features, and validate ideas with prototypes and experiments.\n\n\nAmbiguity Navigation & Execution Acceleration\n\n\nLead through complexity and ambiguity, clarifying direction where ownership is unclear. Remove organizational blockers, simplify decision-making, and accelerate delivery of strategic initiatives. Lead cross-team initiatives from inception through execution, coordinating stakeholders, managing risk, and ensuring delivery on key success metrics.\n\n\nCustomer-Centric Engineering\n\n\nTranslate customer needs and product goals into scalable technical solutions. Analyze performance metrics and user feedback to inform technical direction and product enhancements, ensuring a seamless user experience. Define principles and patterns that embed customer obsession into our platform’s architecture.\n\n\nSustainability & Scalability\n\n\nDesign systems and team boundaries to support sustainable growth. Drive investment in non-functional priorities (e.g., observability, migrations, reliability) early in the design process. Proactively identify systemic risks and lead the design and implementation of resilient, observable, and scalable solutions.\n\nWhat You Bring\n\n\n12+ years of professional software engineering experience, with a strong record of group-level technical leadership.\nProficiency in modern frontend frameworks and libraries (React, Next.js, GraphQL) with production-grade experience delivering high-performance web experiences at scale.\nFull-stack capability with backend proficiency in Node.js and Python, enabling end-to-end ownership of features and systems.\nDeep expertise in UI performance, web accessibility, and responsive design.\nExperience introducing and scaling shared frontend infrastructure, component libraries, or design systems across multiple teams.\nDemonstrated ability to drive architectural clarity and strategic technical alignment across functions.\nExperience translating customer and product needs into reliable, maintainable, and high-impact technical solutions.\nA track record of driving meaningful improvements in developer experience, team velocity, and system sustainability.\nExceptional communication and leadership skills, with the ability to influence across a broad range of stakeholders.\nComfortable navigating high ambiguity and enabling teams to execute effectively in evolving or uncertain environments.\n\n\nYou’ll Thrive Here If You\n\n\nCreate alignment and momentum in ambiguous or complex technical spaces.\nBalance short-term deliverables with long-term scalability, system health, and customer experience.\nLead with curiosity, adaptability, and principled decision-making.\nTake initiative to address cross-squad blockers, scale constraints, or misaligned priorities before they escalate.\nDrive consistent, action-oriented execution even without perfect clarity.\nMentor senior engineering talent and reinforce a culture of growth, feedback, and high technical standards.\nInspire confidence through transparency, humility, and deep technical credibility.\nAdvocate for customers through scalable, resilient design that anticipates future scale and evolving user needs.\n\n\nOur Benefits (there are more but here are some highlights):\n\n\nCompetitive salary & equity compensation for full-time roles\nUnlimited PTO, company holidays, and quarterly mental health days\nComprehensive health benefits including medical, dental & vision, and parental leave\nEmployee Stock Purchase Program (ESPP)\n401k benefits with employer matching contribution\nOffsite team retreats\n\n\nWe are committed to building a workforce that reflects diverse perspectives and prioritizes ethics, wellness, and a strong sense of belonging. If you're excited about this role, we encourage you to apply—even if you're not sure if your background or experience is a perfect match.\n\nHims considers all qualified applicants for employment, including applicants with arrest or conviction records, in accordance with the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance, the California Fair Chance Act, and any similar state or local fair chance laws.\n\nIt is unlawful in Massachusetts to require or administer a lie detector test as a condition of employment or continued employment. An employer who violates this law shall be subject to criminal penalties and civil liability.\n\nHims & Hers is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, please contact us at accommodations@forhims.com and describe the needed accommodation. Your privacy is important to us, and any information you share will only be used for the legitimate purpose of considering your request for accommodation. Hims & Hers gives consideration to all qualified applicants without regard to any protected status, including disability. Please do not send resumes to this email address.\n\nTo learn more about how we collect, use, retain, and disclose Personal Information, please visit our Global Candidate Privacy Statement.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T22:15:13.839Z",
+    "sourceHash": "762110157fc7ff2d06a257ad9c2aa48a8f8b46966abff032bef962a8d15b3286",
+    "company": {
+      "id": "himshers",
+      "name": "hims & hers",
+      "logoUrl": "https://logo.clearbit.com/himshers.com",
+      "industry": "Technology",
+      "website": "https://himshers.com"
+    },
+    "slug": "sr-staff-engineer-fullstack-frontend-hims-hers-76211015",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "graphql",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "df0c1dcb1487411f125c2132aa30299e5599b15890ecb395520397923a985e4c",
+    "title": "Software Engineer I, Frontend (Upfunnel)",
+    "applyUrl": "https://www.theladders.com/linkedin/88837535?src=LinkedIn",
+    "description": "About the job\n\nFor our client, we are seeking a Software Engineer I, Frontend (Upfunnel) to join the team of a leader in the Finance & Insurance space.\n\nThis role focuses on building and improving customer-facing web experiences that support a high-volume financial services environment. You will partner closely with cross-functional teammates to deliver reliable, scalable frontend solutions while balancing speed, quality, and business impact. The work will involve navigating a sizable codebase, using modern debugging and monitoring practices, and contributing to a collaborative team culture.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $101,000 – $151,000 annually\n\nResponsibilities\n\n\n Build and enhance high-traffic frontend experiences across the company's web applications\n Collaborate with team members and stakeholders, ensuring clear communication of risks and trade-offs\n Balance speed and quality to achieve business goals while minimizing system downtime\n Utilize debugging and monitoring tools to maintain cross-browser reliability\n Engage in team growth activities to foster a supportive community\n\n\nQualifications\n\n\n 1-2 years of experience shipping web applications with frameworks like React or Vue\n Working knowledge of JavaScript and TypeScript\n Ability to translate simple problems into scalable solutions\n Experience navigating large codebases and conducting code reviews\n Demonstrated ownership of personal growth and proactivity in seeking feedback\n Strong verbal and written communication skills for effective team collaboration\n\n\nBenefits\n\n\n 100% premium coverage for medical insurance for employees and their dependents\n Monthly stipends for health and wellness and tech spending\n Flexible time off and generous holiday policies\n Employee stock purchase plan to buy company stock at a discount\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification—your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nReact, Vue, JavaScript, TypeScript, Affirm.js, frontend tooling, cross-browser testing tools, browser debugging tools, Performance monitoring tools, Version control systems (e.g. Git), Automated testing frameworks (e.g. Jest or Mocha), CI/CD pipelines, Cloud service platforms (e.g. AWS, Azure)",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T22:11:33.592Z",
+    "sourceHash": "df0c1dcb1487411f125c2132aa30299e5599b15890ecb395520397923a985e4c",
+    "company": {
+      "id": "ladders",
+      "name": "Ladders",
+      "logoUrl": "https://logo.clearbit.com/ladders.com",
+      "industry": "Technology",
+      "website": "https://ladders.com"
+    },
+    "slug": "software-engineer-i-frontend-upfunnel-ladders-df0c1dcb",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "typescript",
+        "javascript",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0125fa99a46a883941f21eaa424dc1d028a385f74f1589115e6da76bf75fa5b1",
+    "title": "Lead Front End Architect/Engineer",
+    "applyUrl": "https://www.theladders.com/linkedin/89101715?src=LinkedIn",
+    "description": "About the job\n\nFor our client, we are seeking a Lead Front End Architect/Engineer to join the team of a leader in the Pharmaceuticals & Biotech space.\n\nThis role will shape the front-end technical direction for user-facing digital products, taking concepts from prototype through production in a complex, data-rich environment. You will partner closely with product, design, and back-end engineering to create scalable solutions that support evolving business needs and deliver a cohesive user experience. The work will also include guiding responsible AI-assisted development practices and helping translate ambiguous product challenges into clear technical plans.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $175,000 – $200,000 annually\n\nResponsibilities\n\n\n Lead front-end architecture and develop user-facing products from prototypes to production\n Manage a complex journey-builder canvas as it evolves in scale and data volume\n Establish API contracts with back-end engineering to ensure cohesive system evolution\n Oversee the design-to-code workflow and the coding side of the design system\n Guide the implementation of AI-driven functionality in a responsible manner\n Recruit and mentor a front-end engineering team, with a strong focus on code quality\n Collaborate with product and design teams from project inception through execution\n\n\nQualifications\n\n\n 8+ years of front-end or full-stack engineering experience, including 2+ years in a leadership role\n Experience with front-end architecture for B2B or enterprise products, especially complex UIs\n Proven track record in hiring and developing engineering talent\n Ability to oversee agentic or AI-assisted coding practices\n Experience defining and managing API contracts across teams\n Skilled in transforming unclear product challenges into clear technical plans\n Experience in pharma or regulated marketing environments is a plus\n\n\nBenefits\n\n\n Comprehensive benefits program including medical, dental, and vision options\n Generous holiday and paid time off policies\n Mental wellness coaching and support services\n Access to over 13,000 online learning classes via LinkedIn Learning\n Office perks such as free snacks and flexible work arrangements\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification—your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nJavaScript, React, Node.js, HTML, CSS, RESTful APIs, GraphQL, TypeScript, Redux, Jest, Agile methodologies, AWS or Cloud Services, Continuous Integration/Continuous Deployment (CI/CD) tools, Data visualization tools (e.g., D3.js, Chart.js), Version control systems (e.g., Git), UX Design principles, Data analytics tools, Artificial Intelligence frameworks and tools",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T22:11:00.096Z",
+    "sourceHash": "0125fa99a46a883941f21eaa424dc1d028a385f74f1589115e6da76bf75fa5b1",
+    "company": {
+      "id": "ladders",
+      "name": "Ladders",
+      "logoUrl": "https://logo.clearbit.com/ladders.com",
+      "industry": "Technology",
+      "website": "https://ladders.com"
+    },
+    "slug": "lead-front-end-architect-engineer-ladders-0125fa99",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "redux",
+        "graphql",
+        "jest",
+        "html",
+        "d3"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "principal",
+      "employmentType": "b2b"
+    }
+  },
+  {
+    "id": "300fb9a4933b5d5b1b50a513faf7a55651306673d0111f38bc0008b45bc5ed25",
+    "title": "Sr. Software Engineer, (Fullstack/Frontend)",
+    "applyUrl": "https://jobs.ashbyhq.com/hims-and-hers/45bdb7e5-14a8-494f-8fcb-30e42f0be67a?utm_source=linkedinpremium",
+    "description": "About the job\n\nHims & Hers is the leading health and wellness platform, on a mission to help the world feel great through the power of better health. We are redefining healthcare by putting the customer first and delivering access to care that is affordable, accessible, and personal, from diagnosis to treatment to delivery. No two people are the same, so we provide access to personalized care designed for results. By normalizing health & wellness challenges and innovating on their solutions, we’re making better health outcomes easier to achieve.\n\nHims & Hers is a public company, traded on the NYSE under the ticker symbol “HIMS.” To learn more about the brand and offerings, you can visit hims.com/about and hims.com/how-it-works . For information on the company’s outstanding benefits, culture, and its talent-first flexible/remote work approach, see below and visit www.hims.com/careers-professionals.\n\nAbout The Role\n\nHims & Hers is on a mission to empower people to live healthier lives. Our engineering teams play a critical role in achieving this by building the end to end product experience that helps patients understand and manage their health.\n\nAs a Senior Engineer, you will be a hands on technical leader responsible for building and optimizing the patient facing experiences and back end services that power our platform. You will design, build, and iterate across the full stack, from modern, performant front end interfaces to reliable back end services and integrations with external partners, ensuring every feature is accurate, dependable, and delivers measurable impact for patients.\n\nIn this role, you will collaborate closely with product, design, operations, data, and other engineering teams to launch new features and workflows, improve the user experience, and refine the patient journey. By combining strong technical execution with a product minded, data informed approach, you will help more patients get meaningful value from our platform while improving the overall quality, reliability, and performance of the systems you own.\n\nYou Will\n\n\nLead the design and architecture of scalable, performant full stack solutions that meet product requirements and enhance the patient experience.\nProvide technical guidance and mentorship to engineers on best practices, design patterns, and coding standards.\nAdvocate for your team's technical priorities and ensure alignment within the broader engineering organization.\nParticipate in product discovery sessions to assess feasibility, explore patient needs, and validate ideas through prototypes and experiments.\nCollaborate with UX/UI designers to create intuitive, engaging interfaces that help patients understand and act on their information, improving completion and engagement.\nBuild and maintain reliable, well monitored integrations with external partners and internal systems, with strong attention to data accuracy, privacy, and compliance.\nWork closely with other engineering teams to ensure seamless integration and communication across systems and services.\nContribute to the team's technical vision by identifying strategic technologies and investments that improve scalability, reliability, and performance.\nBreak down complex projects into clear, actionable tasks and lead execution to successful outcomes.\nElevate engineering standards by improving workflows, processes, and tools to increase development velocity and quality.\nAnalyze product, operational, and patient feedback metrics to identify optimization opportunities and drive continuous improvement.\nCreate and maintain technical documentation for architecture, integrations, experiments, and development processes.\nConduct code reviews and contribute to knowledge sharing initiatives across the team.\nModel a culture of open communication, feedback, and continuous learning by coaching and supporting teammates at all levels.\n\n\nYou Have\n\n\n5+ years of professional experience building production web products with strong full stack skills in React/Next.js and Node/TypeScript (or similar).\nProven experience delivering scalable, high quality web applications and services in a modern cloud environment.\nExperience building and operating third party integrations and asynchronous, event driven workflows (queues, webhooks, retries, idempotency) where correctness and reliability matter.\nProficiency in front end technologies (HTML, CSS, JavaScript, React, Next.js, GraphQL) and back end technologies (Node.js, Nest.js, PostgresDB, Redis, Amazon SQS).\nTrack record of shipping experiment driven features that improved conversion, activation, or retention; comfortable with feature flag systems and experimentation platforms such as GrowthBook, Optimizely, or LaunchDarkly.\nFluency in web performance optimization, accessibility, and modern UI engineering, with an eye for presenting complex information clearly and responsibly.\nStrong analytical and data skills, including event instrumentation, debugging analytics, and writing basic SQL or partnering with Analytics to define success metrics and guardrails.\nDeep product mindset: cares equally about UX, copy, and pacing as about architecture and APIs; approaches problems with iterative, testable solutions.\nExperience with Agile development methodologies and CI/CD pipelines, including automated unit and integration testing.\nExcellent problem solving abilities and sound judgment in balancing speed, quality, and impact.\nStrong communication and collaboration skills with the ability to align partners, make tradeoffs explicit, and drive initiatives from idea to execution.\nHighly organized, self directed, and capable of prioritizing multiple projects to meet goals with minimal oversight.\nBonus: experience in healthcare or another regulated domain (HIPAA, PHI handling), or with third party partner integrations and industry data standards.\n\n\nOur Benefits (there are more but here are some highlights):\n\n\nCompetitive salary & equity compensation for full-time roles\nUnlimited PTO, company holidays, and quarterly mental health days\nComprehensive health benefits including medical, dental & vision, and parental leave\nEmployee Stock Purchase Program (ESPP)\n401k benefits with employer matching contribution\nOffsite team retreats\n\n\nWe are committed to building a workforce that reflects diverse perspectives and prioritizes ethics, wellness, and a strong sense of belonging. If you're excited about this role, we encourage you to apply—even if you're not sure if your background or experience is a perfect match.\n\nHims considers all qualified applicants for employment, including applicants with arrest or conviction records, in accordance with the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance, the California Fair Chance Act, and any similar state or local fair chance laws.\n\nIt is unlawful in Massachusetts to require or administer a lie detector test as a condition of employment or continued employment. An employer who violates this law shall be subject to criminal penalties and civil liability.\n\nHims & Hers is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, please contact us at accommodations@forhims.com and describe the needed accommodation. Your privacy is important to us, and any information you share will only be used for the legitimate purpose of considering your request for accommodation. Hims & Hers gives consideration to all qualified applicants without regard to any protected status, including disability. Please do not send resumes to this email address.\n\nTo learn more about how we collect, use, retain, and disclose Personal Information, please visit our Global Candidate Privacy Statement.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T22:10:07.523Z",
+    "sourceHash": "300fb9a4933b5d5b1b50a513faf7a55651306673d0111f38bc0008b45bc5ed25",
+    "company": {
+      "id": "himshers",
+      "name": "hims & hers",
+      "logoUrl": "https://logo.clearbit.com/himshers.com",
+      "industry": "Technology",
+      "website": "https://himshers.com"
+    },
+    "slug": "sr-software-engineer-fullstack-frontend-hims-hers-300fb9a4",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "javascript",
+        "css",
+        "graphql",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f1baac3017cdf697b414b87c0e5453e4feb83482d83982eb636554c52d63e5f0",
+    "title": "Frontend Engineer, Underwriting",
+    "applyUrl": "https://www.theladders.com/linkedin/88902222?src=LinkedIn",
+    "description": "About the job\n\nFor our client, we are seeking a Frontend Engineer, Underwriting to join the team of a leader in the Information Technology space.\n\nThis role will focus on building intuitive, high-performing web interfaces that support underwriting workflows and data-heavy decision-making. You will partner closely with Product Management, Design, backend engineering, and end users to improve the quality and usability of a mission-critical application. The position also involves shaping AI-assisted experiences and strengthening the overall technical reliability of the frontend.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $115,600 – $160,600 annually\n\nResponsibilities\n\n\n Build and enhance the underwriting workbench experience for internal users.\n Maintain the performance and reliability of a data-heavy application.\n Create user-friendly interfaces for AI-assisted workflows.\n Collaborate with Product Management and Design to address user needs.\n Engage directly with underwriters to inform product improvements.\n Improve technical quality through code reviews and testing.\n\n\nQualifications\n\n\n 2+ years of software development experience, ideally with a Computer Science degree or equivalent experience.\n Proficiency in building web UIs using TypeScript, React, HTML, and CSS.\n Experience working with REST APIs and collaborating with backend teams.\n Ability to manage complex frontend states such as tables and filters.\n Skilled in diagnosing performance issues using tools like Chrome DevTools or Sentry.\n Strong product judgment and comfort in ambiguous environments.\n Familiarity with Git and agile development processes.\n\n\nBenefits\n\n\n 100% coverage for medical, dental, and vision insurance.\n Flexible paid time off (PTO) policies.\n Annual stipend for home office setup and co-working access.\n Programs for mental and physical wellness, including resources like Headspace.\n Competitive compensation with opportunities for growth.\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification—your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nTypeScript, React, HTML, CSS, REST APIs, Git, Chrome DevTools, Sentry, Datadog, Python, relational databases, SQL, Next.js, Material UI, rich-text editors, virtualized tables, real-time collaborative interfaces, cybersecurity, insurtech, state management libraries (e.g., Redux), component testing frameworks (e.g., Jest, React Testing Library), Agile methodologies (Scrum, Kanban), cloud platforms (e.g., AWS, Azure), DevOps tools (e.g., Docker, Kubernetes)",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T22:08:20.311Z",
+    "sourceHash": "f1baac3017cdf697b414b87c0e5453e4feb83482d83982eb636554c52d63e5f0",
+    "company": {
+      "id": "ladders",
+      "name": "Ladders",
+      "logoUrl": "https://logo.clearbit.com/ladders.com",
+      "industry": "Technology",
+      "website": "https://ladders.com"
+    },
+    "slug": "frontend-engineer-underwriting-ladders-f1baac30",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "redux",
+        "jest",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e2ee09b4dc2869643fade7e9d6f5ad7d3ddcf3092c18db11c477bb05088da5ae",
+    "title": "Frontend Engineer, Ads",
+    "applyUrl": "https://www.talenthop.com/apply-with-ai/8c6161fd-6cb2-428c-9cc9-a0ace6a8a339?utm_medium=job_posting&utm_source=linkedin&utm_campaign=software_engineer&utm_category=software_engineer&utm_term=frontend_engineer_ads",
+    "description": "About the job\n\nThis is a Fully Remote Job\n\n\n\n\nAbout Our Client:\n\nReddit operates as a vast network of communities centered around shared interests and authentic conversations. It addresses the challenge of providing an open platform for diverse discussions, hosting over 100,000 active communities and attracting approximately 130 million daily active unique visitors, making it one of the internet's largest information sources.\n\n\n\n\nAbout the Opportunity:\n\nThe FRONTEND ENGINEER, ADS will contribute to the development of innovative ad experiences that enhance performance and functionality within the web application. This role supports the Brand Ad Formats team by creating high-impact, interactive advertising solutions that help advertisers maximize reach and brand impact, thereby playing a key role in advancing the program's position in video advertising and user engagement.\n\n\n\n\nResponsibilities:\n\nDevelop ad experiences and reusable design patterns for the web application to improve ad functionality and effectiveness.\nCollaborate with product, design, and engineering teams to deliver complex, innovative solutions.\nParticipate in all stages of the software development lifecycle including design, development, quality assurance, experimentation, analysis, and deployment.\n\n\n\n\nRequirements:\n\nMinimum of 3 years experience in web engineering.\nProficiency in Typescript and Javascript.\nAbility to build data-intensive, highly responsive, and fault-tolerant applications.\nExperience with automated testing, code quality, design patterns, and observability.\nSkilled in conducting and receiving constructive code reviews.\nExperience using GenAI tools to enhance software engineering productivity.\nStrong communication skills for effective collaboration in a fully remote environment across technical and non-technical teams.\n\n\n\n\nPreferred Qualifications:\n\nExperience in advertising technology.\nExperience working on high-production-value consumer-facing websites at scale.\n\n\n\n\nPay Range and Compensation Package:\n\nBase salary range: $164,200 to $229,900 USD.\nEligible for equity in the form of restricted stock units and possible commission depending on position.\nAdditional benefits available for U.S.-based employees including medical, dental, vision insurance, 401(k) with employer match, vacation time, and parental leave.\n\n\n\n\nBenefits & Perks:\n\nMedical insurance\nDental insurance\nVision insurance\n401(k) program with employer match\nPaid parental leave\n\n\n\n\nEqual Opportunity Statement: Our client is an equal opportunity employer. They celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, or national origin.\n\n\n\n\nNote:\n\nTalentHop is a recruitment partner of this role. Please note that all employment decisions, including candidate assessment, interviews, hiring, compensation, and employment terms, are made exclusively by the hiring employer.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T22:07:02.197Z",
+    "sourceHash": "e2ee09b4dc2869643fade7e9d6f5ad7d3ddcf3092c18db11c477bb05088da5ae",
+    "company": {
+      "id": "talenthop",
+      "name": "TalentHop",
+      "logoUrl": "https://logo.clearbit.com/talenthop.com",
+      "industry": "Technology",
+      "website": "https://talenthop.com"
+    },
+    "slug": "frontend-engineer-ads-talenthop-e2ee09b4",
+    "aiTags": {
+      "stack": [
+        "typescript",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "1928a098f008953e569d5e45f670e883ab0e9f1d3d4077089961a8d1d7f9bac7",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://www.fetchjobs.co/job-description-usb/A7F72BE247EBC8985027C79C63592810?src=LinkedIn",
+    "description": "About the job\n\n```html\n\nAbout The Company\n\nOpenkrill is a forward-thinking technology company dedicated to delivering innovative digital solutions that empower businesses across various industries. With a focus on excellence and customer satisfaction, Openkrill leverages cutting-edge technologies to create scalable, efficient, and secure platforms. Our team of passionate professionals is committed to fostering a collaborative and dynamic work environment where creativity and technical expertise thrive. As a leader in the digital transformation space, Openkrill continuously seeks to push the boundaries of innovation to meet the evolving needs of our clients worldwide.\n\nAbout The Role\n\nWe are seeking a highly motivated and detail-oriented Software Engineer to join our dynamic development team at Openkrill. In this role, you will be responsible for designing, developing, and maintaining high-quality software solutions that align with our company’s strategic goals. You will collaborate closely with cross-functional teams including product managers, designers, and other developers to build robust applications that deliver exceptional user experiences. This position offers an exciting opportunity to work on innovative projects, utilize the latest technologies, and contribute to the growth and success of our organization.\n\nQualifications\n\nThe ideal candidate will possess a strong educational background in Computer Science, Software Engineering, or related fields. Proven experience in software development, particularly in languages such as Java, Python, or JavaScript, is essential. Familiarity with modern development frameworks, version control systems, and agile methodologies is required. Candidates should demonstrate excellent problem-solving skills, attention to detail, and the ability to work effectively in a team environment. A proactive mindset and a passion for learning new technologies are highly valued.\n\nResponsibilities\n\nAs a Software Engineer at Openkrill, your key responsibilities will include:\n\n\nDesigning, coding, testing, and deploying scalable software solutions that meet project requirements.\nCollaborating with product managers and designers to understand user needs and translate them into technical specifications.\nParticipating in code reviews to ensure code quality, maintainability, and adherence to best practices.\nImplementing new features and optimizing existing functionalities for improved performance.\nMaintaining comprehensive documentation of software processes and systems.\nIdentifying and resolving technical issues promptly to ensure system stability and security.\nStaying updated on industry trends and emerging technologies to continuously enhance skills and contribute innovative ideas.\n\n\nBenefits\n\nOpenkrill offers a comprehensive benefits package designed to support our employees' well-being and professional growth. This includes competitive salary packages, flexible working hours, and opportunities for remote work. Employees also have access to health insurance plans, paid time off, and wellness programs. We promote a culture of continuous learning through training sessions, workshops, and support for certifications. Additionally, our collaborative work environment encourages innovation, recognition, and career advancement, providing a fulfilling and motivating workplace for all team members.\n\nEqual Opportunity\n\nOpenkrill is committed to fostering an inclusive and diverse workplace. We believe that a variety of perspectives and experiences enrich our organization and drive innovation. We provide equal employment opportunities to all qualified applicants without regard to race, color, religion, gender, gender identity, sexual orientation, national origin, age, disability, or any other protected status. We are dedicated to creating a respectful and supportive environment where everyone can thrive and succeed.\n\n```\n\n\n\n\n\nDesired Skills and Experience\n\nSoftware Development, Java, Python, Cloud Computing, Agile Methodologies, Microservices",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T22:05:51.631Z",
+    "sourceHash": "1928a098f008953e569d5e45f670e883ab0e9f1d3d4077089961a8d1d7f9bac7",
+    "company": {
+      "id": "taskverse",
+      "name": "TaskVerse",
+      "logoUrl": "https://logo.clearbit.com/taskverse.com",
+      "industry": "Technology",
+      "website": "https://taskverse.com"
+    },
+    "slug": "frontend-engineer-taskverse-1928a098",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "6125db6300f426e560c145fe304183deedbc9938610ac2b795f48e3335a6ae19",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://nexusmods.careers.hibob.com/jobs/3e81ca77-e3f8-4a23-a106-9323ef574133/apply?utm_medium=3e81ca77-e3f8-4a23-a106-9323ef574133&vq_campaign=00083694-18a7-5951-a529-7a40d94e8fe7&vq_source=ead41a77-4d9f-44f5-933f-3a12c4157d16&igbTracker=967599149&utm_source=linkedin",
+    "description": "About the job\n\nRole Description\n\nSalary range: £65,000-£75,000\n\nLocation: Remote, but within the UK\n\nPlease note: We are unable to sponsor international visas at this time.\n\nAbout Nexus Mods\n\nEstablished in 2001, Nexus Mods is the largest video game modding platform on the internet - a household name in the PC gaming ecosystem.\n\n\n78M+ registered members\n900K+ mods for 5,000+ games\n25B+ mod downloads\n\n\nWe’re currently focused on product modernisation, driving growth and building infrastructure for the next 10 years of community-powered modding.\n\nOur Role \n\nWe’re looking for a Senior Frontend Engineer to join our team, building interfaces behind our new products and ecosystems. You will play a key role in shaping the experiences used by millions of gamers and creators every day across web and desktop platforms.\n\nIn this role, you’ll not only deliver high quality frontend features, but also take ownership of significant frontend applications and features, influence technical direction, and help define engineering standards. You will collaborate closely with Designers, Product Managers, and Backend Engineers to create intuitive, performant, and accessible experiences at scale.\n\nThis is a highly collaborative and impact driven role where you’ll work cross functionally to experiment, iterate, and deliver features that meaningfully affect both users and the business.\n\nRole Responsibilities\n\n\nOwn significant frontend applications or features across Nexus Mods’ network of sites and applications. \nDesign scalable, secure, and maintainable frontend systems that support long term product growth. \nBreak down complex product requirements into clear technical plans and actionable engineering work. \nLead delivery of multi-sprint initiatives, ensuring high quality execution from design through to production. \nBuild and maintain frontend features and reusable component systems. \nCollaborate with Design, Product, and Backend Engineers within your pod to deliver end to end features. \nImplement responsive, accessible UI that works seamlessly across a wide range of devices and browsers. \nIntegrate frontend applications with backend APIs and design efficient, reliable data flows. \nImprove observability, monitoring, and reliability standards across frontend systems. \nDrive best practices in performance optimisation, rendering efficiency, and data fetching strategies. \nEnsure the frontend is performant, reliable, secure and well-tested. \nContribute to security and data protection standards across frontend architecture. \nSupport cross team integration and collaboration, helping align engineering efforts across pods. \nParticipate in product delivery by providing technical input, contributing to prototypes, and evaluating trade-offs. \nFollow and help evolve frontend best practices around testing, documentation, code quality, and CI/CD workflows. \nHelp mentor other engineers and continue to share engineering standards across pods. \n\n\nRequirements\n\nRole Requirements\n\n\nProven working experience in a similar role. \nStrong experience with modern JavaScript frameworks (e.g. React, Vue, or similar). \nDeep understanding of JavaScript, CSS, and HTML.\nExperience working in agile, cross functional teams. \nAbility to translate product requirements into robust technical solutions. \nStrong communication skills and ability to collaborate effectively across disciplines. \nDemonstrated ability to take ownership of complex frontend systems. \n\n\nBonus Skills \n\n\nExperience with large scale web applications, content platforms, or high traffic systems. \nFamiliarity with gaming ecosystems, UGC platforms, or modding communities. \nExperience working on performance-critical frontend systems at scale. \nPassion for gaming, modding, or creator ecosystems.\n\n\nBenefits\n\nBenefits of Working at Nexus Mods\n\n\nWe work a 4-day week of 32 hours, with no reduction in pay.\nAn allowance of £25 each month to spend on video games.\nEmployee Assistance Programme.\nPrivate BUPA healthcare for you and your family.\nA very flexible training budget.\nRegular social events throughout the year. Participation is optional!\n\n\nDiversity and Inclusion\n\nWe celebrate diversity and want you to bring your whole self to work.\n\nSupporting an incredible community of tens of millions of users, we thrive on engaging as many views as possible to improve our platform. We see no reason why our culture should be any different.\n\nSalary\n\n65000 - 75000 GBP (yearly)",
+    "location": "Remote - United Kingdom",
+    "country": "United Kingdom",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T21:59:54.137Z",
+    "sourceHash": "6125db6300f426e560c145fe304183deedbc9938610ac2b795f48e3335a6ae19",
+    "company": {
+      "id": "nexusmods",
+      "name": "Nexus Mods",
+      "logoUrl": "https://logo.clearbit.com/nexusmods.com",
+      "industry": "Technology",
+      "website": "https://nexusmods.com"
+    },
+    "slug": "senior-frontend-engineer-nexus-mods-6125db63",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United Kingdom"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "91e1c77adbd9a466cfcde88a25233c1fc6fdbe6a211c747785691089961c585a",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://squad.tech/careers?gh_jid=8273872&gh_src=2err94wx1us",
+    "description": "About the job\n\nTeam Summary\n\nOur team builds a modern web platform for ML data annotation. We specialize in high-performance frontend interfaces, interactive canvas tooling, and efficient data workflows. We operate as a small, tight-knit team with strong written conventions, strict linting and type checks, a dedicated component book for every UI element, and an architecture doc as our single source of truth. We embrace AI-assisted development as a standard part of our daily workflow, focusing on quality, small reviewed PRs, and modern practices.\n\nJob Summary\n\nWe are looking for an experienced Frontend Engineer who enjoys taking full ownership of features end-to-end — from API integration and state management to complex UI interactions. In this role, you will work on both greenfield features in a cutting-edge stack (Svelte) and support legacy projects. You will have a real impact on our architecture, conventions, and canvas-based interaction tooling, working beyond standard CRUD applications.\n\nQualifications And Skills\n\n\n5+ years of commercial software development experience\nStrong proficiency in TypeScript and solid background with modern reactive frameworks like Svelte, React, or Vue\nProven track record in SPA architecture, complex state management, and REST API integration\nStrong knowledge of modern CSS and Tailwind CSS\nHands-on experience with unit and browser testing methodologies\nProficiency with Git and standard developer workflows\nExcellent written communication: reading and understanding context before writing code, asking clarifying scope questions, and taking review feedback constructively\nStrong sense of ownership and accountability\nGood written and spoken English\n\n\nNice to have\n\n\nExperience with Canvas APIs, WebGL, or Konva\nPractical knowledge of OAuth2, accessibility (a11y), and NodeJS\nFamiliarity with Vite, Bun, and AWS\nHands-on experience with AI coding assistants and data-dense UI/UX\n\n\nWe offer multiple benefits that include\n\n\nThe environment of equal opportunities, transparent and value-based corporate culture and an individual approach to each team member\nCompetitive compensation and perks\nOpportunity to receive a Performance Bonus for your individual achievements and a Loyalty Bonus recognizing your dedication to the company\nGig-contract\n21 paid vacation days per year, paid public holidays according to the Ukrainian legislation\nDevelopment opportunities like corporate courses, knowledge hubs, and free English classes as well as educational leaves\nMedical insurance is provided from day one. Sick leaves and medical leaves are available\nRemote working mode is available within Ukraine only\nFree meals, fruits, and snacks when working in the office.",
+    "location": "Remote - Ukraine",
+    "country": "Ukraine",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T21:59:23.724Z",
+    "sourceHash": "91e1c77adbd9a466cfcde88a25233c1fc6fdbe6a211c747785691089961c585a",
+    "company": {
+      "id": "squad",
+      "name": "SQUAD",
+      "logoUrl": "https://logo.clearbit.com/squad.com",
+      "industry": "Technology",
+      "website": "https://squad.com"
+    },
+    "slug": "frontend-engineer-squad-91e1c77a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "svelte",
+        "typescript",
+        "css",
+        "tailwind",
+        "vite",
+        "accessibility",
+        "webgl"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Ukraine"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "2e3f53f49381e08368d282049aeffb1c75819e521312b8f5ad1460bc6bcc6cfc",
+    "title": "Senior Frontend Developer",
+    "applyUrl": "https://medvidi.com/careers/co/serbia/DC.17A-83.600/senior-frontend-developer/all?coref=1.11.p09_8C1E",
+    "description": "About the job\n\nMEDvidi is an AI-powered mental healthcare platform setting a new standard for safe, effective, and scalable psychiatric care in the United States. We combine licensed providers with proprietary AI tools to deliver consistent, outcomes-driven treatment for conditions like ADHD, anxiety, depression, and more. MEDvidi's technology automates charting, follow-ups, and treatment planning, freeing providers to focus on patient care while improving efficiency and clinical quality.\n\nAs a product-focused Senior Frontend Developer on our AI track, you'll own frontend delivery end-to-end for products that directly affect how patients access mental health care and how our clinicians and staff work day-to-day. Your work sits at the intersection of a large, actively evolving Angular codebase and our AI-first product surface - patient-facing applications, internal tools for doctors and administrators, and the frontend for AI-powered features like our AI clinical assistant and AI receptionist. You'll work in a small cross-functional product team, taking features from requirement refinement through production release.\n\n Why this role:\n\n\nReal product ownership in autonomous cross-functional team, you shape what gets built, not just how.\nDeep hands-on work on AI-powered clinical and administrative products, with AI-assisted development as a first-class part of the engineering culture (Claude Code, Cursor, and beyond).\nModern Angular at scale: an actively evolving monorepo on the latest Angular versions, not a legacy graveyard.\n\n\nResponsibilities:\n\n\nDesign, develop, and maintain product features end-to-end within a cross-functional team, from requirement refinement to production release.\nTake ownership of existing Angular codebase areas after the departing engineer: understand, stabilize, and improve them without slowing down the roadmap.\nWrite clean, maintainable, well-tested code: code reviews, unit tests (Vitest), and lightweight design documentation as part of the daily routine.\nContribute to frontend architecture decisions and platform health: performance, framework upgrades, NX monorepo structure, CI/CD improvements.\nDrive AI adoption on both fronts: building frontend for AI-powered product features, and integrating AI tooling into the development workflow itself.\nActively contribute to the continuous improvement of engineering processes and tooling across the community.\n\n\n This role is not for you if:\n\n\nYou're waiting for someone else to define what to build, we expect you to come up with ideas, take them through discovery and development, ship them, and own the results after launch.\nYou need a fully-specced ticket queue and a PM/BA translating everything for you\nYou see AI coding agents as a novelty rather than a core part of how modern frontend work gets done.\n\n\nRequirements:\n\n\n3+ years of commercial experience with Angular(latest versions preferred).\nExperience owning a product end-to-end, including analysing the metrics that tell you whether it actually worked.\nStrong product and UX judgment, you can recognize when an interaction doesn't feel right and propose a better solution.\nFluency in modern Angular: standalone components, signals, current change detection and DI patterns, not experience from several years ago followed by a switch to another framework.\nAdvanced RxJS and TypeScript in real production scenarios: confident design and debugging of complex reactive flows (stream composition, cancellation, race conditions, error handling) and fluency in a strictly typed codebase.\nProven expertise in designing and implementing complex Angular application architectures at scale, module and component boundaries, decisions that hold up as the codebase grows.\nHands-on experience with unit testing (Vitest preferred, Jest acceptable) as a regular part of the daily routine, not an afterthought.\nHands-on experience with agentic AI development. For us this is a must, not a bonus: active daily use of coding agents (Claude Code, Cursor, or similar), the ability to write effective skills, prompts, and instructions for them, understanding of the principles behind how agents operate (context, tools, feedback loops), and structuring code and documentation so agents can work with the codebase effectively.\nComfort working across the backend boundary: writing or fixing a SQL query, adjusting endpoint validation, or tracing an issue through the API layer. You don't need to be a backend engineer, but stopping at the frontend border isn't an option.\nIntermediate English (B1+) and fluent Russian.\nFull overlap with CET working hours.\n\n\nWould be a plus:\n\n\nExperience building UI for AI/LLM-powered features.\nDeep understanding of responsive design, our patients access the platform primarily from mobile devices, and interfaces must be flawless across screen sizes.\nProficiency in optimizing web application performance across different surfaces: patient-facing product and internal tools for doctors, managers, and admins (data-heavy interfaces, large tables and lists, real-time updates).\n\n\nWhat we offer:\n\n\nHigh-impact environment: A chance to contribute to a product-driven company in the medical tech space.\nGrowth & compensation: Clear growth opportunities and a competitive compensation package.\nRemote-first: Fully remote long-term collaboration under a B2B model.\nHealth & wellness: Health insurance after the probation period, plus sports & wellness compensation.\nCareer development: Clear growth opportunities, including personalized English lessons via Preply.\nTime off: 19 paid vacation days annually, 4 additional wellness days each year, and paid sick leave for the first 5 working days.\nCulture: Thoughtful gifts for key life events and offline corporate events.\n\n\n Ready to make an impact? Send us your profile, let's build something meaningful together.\n\n MEDvidi is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees and contractors. All qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.",
+    "location": "Remote - Serbia",
+    "country": "Serbia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T21:52:11.809Z",
+    "sourceHash": "2e3f53f49381e08368d282049aeffb1c75819e521312b8f5ad1460bc6bcc6cfc",
+    "company": {
+      "id": "medvidi",
+      "name": "MEDvidi",
+      "logoUrl": "https://logo.clearbit.com/medvidi.com",
+      "industry": "Technology",
+      "website": "https://medvidi.com"
+    },
+    "slug": "senior-frontend-developer-medvidi-2e3f53f4",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Serbia"
+      ],
+      "seniority": "senior",
+      "employmentType": "b2b"
+    }
+  },
+  {
+    "id": "0592ef22228b9b30429cfd8a620f98943215583e8d49ff36c6352fd40efedf32",
+    "title": "Frontend Developer (React)",
+    "applyUrl": "https://codekeeper.applytojob.com/apply/99lF5W74ZY/Frontend-Developer-React?source=LILI",
+    "description": "About the job\n\nAre you a skilled Front End Developer who loves turning ideas into elegant, high-performing web applications? Do you get energized by fast-paced environments where your code ships quickly and makes a real, visible impact? Are you the kind of engineer who cares just as much about clean architecture and thoughtful user experience as you do about hitting deadlines?\n\nCodekeeper is looking for an experienced Front End Engineer with deep React expertise to join our growing, ambitious team. In this role, you won't just be writing code - you'll be helping to design, build, and continuously improve products that thousands of people rely on. You will collaborate closely with designers, product managers, and fellow engineers who are passionate about their craft and committed to raising the bar every single day.\n\nReady to take the next step in your career and help us build something meaningful? We'd love to hear from you.\n\nAbout The Role\n\nAs part of the development team, the Front End Developer shall focus on developing user interface components for our web application and ensuring that these components are robust and easy to maintain. The current tech stack for this position requires proficiency in JavaScript/TypeScript, CSS, and React, with the potential to expand as new technologies become available to the industry. The responsibilities of this position shall require close collaboration with the Design team and the other members of the Product team.\n\nIn addition to core frontend skills, expertise in Cypress, Playwright, Storybook, Chromatic, or similar visual regression tools is essential, with a strong focus on testing and quality assurance. This position is designed for someone with substantial experience in both frontend development and testing.\n\nWhat You’ll Be Doing\n\n\nUI/UX Development: Develop new user-facing features, build reusable components and libraries for future use\nCode Quality: Will ensure UI/UX designs' technical feasibility, optimize applications for speed and scalability, and maintain coding standards\nCollaboration: Will collaborate closely with design and backend teams for web application enhancement, participating in code reviews to uphold code quality\nTech Stack: Will address performance and scalability issues and convert complex Figma designs into CSS/JS code, primarily using JavaScript libraries like React, ensuring seamless backend integration\nMaintenance & Optimization: Will maintain and improve existing codebases, ensuring standard adherence through peer code reviews\nAutomated Testing: Take charge of automated testing processes, including writing and maintaining test scripts using tools like Cypress, Playwright, and Storybook, ensuring consistent quality and reliability\n\n\nWhy Codekeeper?\n\nCodekeeper was founded by tech industry professionals to revolutionize software escrow for the cloud era. We offer state-of-the-art disaster recovery solutions that mitigate third-party risks in business operations. As a remote-first company with a central office in The Hague, we prioritize a healthy, resilient organization to support the development of our robust app.\n\n🌐 codekeeper.co/\n\nWhat You Can Expect\n\n\nPassionate and fun-loving colleagues\nStartup mindset with ample opportunities for growth\nRegular team activities and gatherings\nComprehensive onboarding process with a dedicated ramp-up period\nA supportive team that values open communication and direct feedback\nA chance to excel in your career and make a difference\n\n\nAbout You\n\n\n5+ years of hands-on experience in JavaScript and core concepts\n5+ years of hands-on experience in TypeScript\n5+ experience with React and Single-Page Applications (SPA)\n3+ years of hands-on experience in HTML5, CSS3\n3+ years of hands-on experience in GraphQL and Apollo\n2+ years of experience with modern CSS/SCSS/Less/CSS-in-JS development\nStrong experience with visual regression tools such as Cypress, Playwright, Storybook, Chromatic, or similar\nExperience with Ant Design or TailwindCSS\nExcellent communication skills, team player, and service-oriented mindset\nPassionate about software development\nAble to take responsibility of the project\nRegion: Europe - CET (+1/-1)\n\n\nNice to Have\n\n\nExperience with data visualization frameworks such as Chart.js, Google Charts, etc\nExperience with AWS technologies\nReact Native\n\n\nHow To Apply\n\nPlease send an application that speaks directly to how you would like to fill this position. There are no right answers or expectations. Show us your role in our company’s future and our role in yours. Address some of the work we do. Introduce yourself as a colleague. Feel free to respond in either Dutch or English.\n\nPowered by JazzHR\n\n99lF5W74ZY",
+    "location": "Remote - Romania",
+    "country": "Romania",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T21:49:19.198Z",
+    "sourceHash": "0592ef22228b9b30429cfd8a620f98943215583e8d49ff36c6352fd40efedf32",
+    "company": {
+      "id": "codekeeper",
+      "name": "Codekeeper",
+      "logoUrl": "https://logo.clearbit.com/codekeeper.com",
+      "industry": "Technology",
+      "website": "https://codekeeper.com"
+    },
+    "slug": "frontend-developer-react-codekeeper-0592ef22",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "tailwind",
+        "sass",
+        "less",
+        "graphql",
+        "storybook",
+        "figma",
+        "cypress",
+        "playwright",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Romania"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "16b0cb97e61042334b9aa7621b306acade6a9f60d1f7e7a2100e0b3aeb56672a",
+    "title": "Senior Frontend Developer",
+    "applyUrl": "https://medvidi.com/careers/co/portugal/DC.17A-05.602/senior-frontend-developer/all?coref=1.11.p09_8C1F",
+    "description": "About the job\n\nMEDvidi is an AI-powered mental healthcare platform setting a new standard for safe, effective, and scalable psychiatric care in the United States. We combine licensed providers with proprietary AI tools to deliver consistent, outcomes-driven treatment for conditions like ADHD, anxiety, depression, and more. MEDvidi's technology automates charting, follow-ups, and treatment planning, freeing providers to focus on patient care while improving efficiency and clinical quality.\n\nAs a product-focused Senior Frontend Developer on our AI track, you'll own frontend delivery end-to-end for products that directly affect how patients access mental health care and how our clinicians and staff work day-to-day. Your work sits at the intersection of a large, actively evolving Angular codebase and our AI-first product surface - patient-facing applications, internal tools for doctors and administrators, and the frontend for AI-powered features like our AI clinical assistant and AI receptionist. You'll work in a small cross-functional product team, taking features from requirement refinement through production release.\n\n Why this role:\n\n\nReal product ownership in autonomous cross-functional team, you shape what gets built, not just how.\nDeep hands-on work on AI-powered clinical and administrative products, with AI-assisted development as a first-class part of the engineering culture (Claude Code, Cursor, and beyond).\nModern Angular at scale: an actively evolving monorepo on the latest Angular versions, not a legacy graveyard.\n\n\nResponsibilities:\n\n\nDesign, develop, and maintain product features end-to-end within a cross-functional team, from requirement refinement to production release.\nTake ownership of existing Angular codebase areas after the departing engineer: understand, stabilize, and improve them without slowing down the roadmap.\nWrite clean, maintainable, well-tested code: code reviews, unit tests (Vitest), and lightweight design documentation as part of the daily routine.\nContribute to frontend architecture decisions and platform health: performance, framework upgrades, NX monorepo structure, CI/CD improvements.\nDrive AI adoption on both fronts: building frontend for AI-powered product features, and integrating AI tooling into the development workflow itself.\nActively contribute to the continuous improvement of engineering processes and tooling across the community.\n\n\n This role is not for you if:\n\n\nYou're waiting for someone else to define what to build, we expect you to come up with ideas, take them through discovery and development, ship them, and own the results after launch.\nYou need a fully-specced ticket queue and a PM/BA translating everything for you\nYou see AI coding agents as a novelty rather than a core part of how modern frontend work gets done.\n\n\nRequirements:\n\n\n3+ years of commercial experience with Angular(latest versions preferred).\nExperience owning a product end-to-end, including analysing the metrics that tell you whether it actually worked.\nStrong product and UX judgment, you can recognize when an interaction doesn't feel right and propose a better solution.\nFluency in modern Angular: standalone components, signals, current change detection and DI patterns, not experience from several years ago followed by a switch to another framework.\nAdvanced RxJS and TypeScript in real production scenarios: confident design and debugging of complex reactive flows (stream composition, cancellation, race conditions, error handling) and fluency in a strictly typed codebase.\nProven expertise in designing and implementing complex Angular application architectures at scale, module and component boundaries, decisions that hold up as the codebase grows.\nHands-on experience with unit testing (Vitest preferred, Jest acceptable) as a regular part of the daily routine, not an afterthought.\nHands-on experience with agentic AI development. For us this is a must, not a bonus: active daily use of coding agents (Claude Code, Cursor, or similar), the ability to write effective skills, prompts, and instructions for them, understanding of the principles behind how agents operate (context, tools, feedback loops), and structuring code and documentation so agents can work with the codebase effectively.\nComfort working across the backend boundary: writing or fixing a SQL query, adjusting endpoint validation, or tracing an issue through the API layer. You don't need to be a backend engineer, but stopping at the frontend border isn't an option.\nIntermediate English (B1+) and fluent Russian.\nFull overlap with CET working hours.\n\n\nWould be a plus:\n\n\nExperience building UI for AI/LLM-powered features.\nDeep understanding of responsive design, our patients access the platform primarily from mobile devices, and interfaces must be flawless across screen sizes.\nProficiency in optimizing web application performance across different surfaces: patient-facing product and internal tools for doctors, managers, and admins (data-heavy interfaces, large tables and lists, real-time updates).\n\n\nWhat we offer:\n\n\nHigh-impact environment: A chance to contribute to a product-driven company in the medical tech space.\nGrowth & compensation: Clear growth opportunities and a competitive compensation package.\nRemote-first: Fully remote long-term collaboration under a B2B model.\nHealth & wellness: Health insurance after the probation period, plus sports & wellness compensation.\nCareer development: Clear growth opportunities, including personalized English lessons via Preply.\nTime off: 19 paid vacation days annually, 4 additional wellness days each year, and paid sick leave for the first 5 working days.\nCulture: Thoughtful gifts for key life events and offline corporate events.\n\n\n Ready to make an impact? Send us your profile, let's build something meaningful together.\n\n MEDvidi is an Equal Opportunity Employer. We celebrate diversity and are committed to creating an inclusive environment for all employees and contractors. All qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, or veteran status.",
+    "location": "Remote - Portugal",
+    "country": "Portugal",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T21:47:34.052Z",
+    "sourceHash": "16b0cb97e61042334b9aa7621b306acade6a9f60d1f7e7a2100e0b3aeb56672a",
+    "company": {
+      "id": "medvidi",
+      "name": "MEDvidi",
+      "logoUrl": "https://logo.clearbit.com/medvidi.com",
+      "industry": "Technology",
+      "website": "https://medvidi.com"
+    },
+    "slug": "senior-frontend-developer-medvidi-16b0cb97",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Portugal"
+      ],
+      "seniority": "senior",
+      "employmentType": "b2b"
+    }
+  },
+  {
     "id": "2dc267059084f321633beb95c3c854d2952ea69ac80100090316c3ab31103b37",
     "title": "Frontend Developer",
     "applyUrl": "https://www.bestjobtool.com/job-description/3193681878?src=LinkedIn",
@@ -257,7 +708,6 @@
       "employmentType": "fulltime"
     }
   },
-
   {
     "id": "eefc2802d9cc428466229e81c0f4c55195e842ab3db3c826d137af7ad0b3ee09",
     "title": "Senior Software Engineer (Frontend) ›",
