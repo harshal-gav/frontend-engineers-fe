@@ -69,30 +69,51 @@ async function main() {
   let alertsToSend: any[] = [];
   try {
     const snapshot = await db.collection("users").get();
+    const seenEmails = new Set<string>();
+
     snapshot.forEach((doc) => {
       const data = doc.data();
-      if (data.email) {
-        const isPremium = data.isPremium === true && (!data.subscriptionExpiresAt || new Date(data.subscriptionExpiresAt) > new Date());
-        
-        // 1. If Premium, they ALWAYS get the default worldwide alert
-        if (isPremium) {
-          alertsToSend.push({
-            email: data.email,
-            alert: { query: "", location: "worldwide" },
-            isPremium: true,
-            isDefault: true
-          });
-        }
-        
-        // 2. If they have a specific alert configured and are subscribed, they get that specific alert (whether they are Premium or Free)
-        if (data.job_alerts && data.isSubscribed) {
-          alertsToSend.push({
-            email: data.email,
-            alert: data.job_alerts,
-            isPremium: isPremium,
-            isDefault: false
-          });
-        }
+      if (!data.email) return;
+
+      const email = data.email.toLowerCase().trim();
+      if (seenEmails.has(email)) return;
+      seenEmails.add(email);
+
+      const isPremium = (data.isPremium === true || data.isSubscribed === true) && 
+        (!data.subscriptionExpiresAt || new Date(data.subscriptionExpiresAt) > new Date());
+
+      const alertPref = data.job_alerts;
+      const hasSpecificAlert = Boolean(
+        alertPref && (
+          (typeof alertPref.query === "string" && alertPref.query.trim().length > 0) ||
+          (typeof alertPref.location === "string" && 
+           alertPref.location.trim().toLowerCase() !== "worldwide" && 
+           alertPref.location.trim().toLowerCase() !== "any remote" &&
+           alertPref.location.trim().toLowerCase() !== "all")
+        )
+      );
+
+      // If user selected a specific alert (e.g. React js, specific location):
+      // Send ONLY their specific alert — do NOT also send the default daily alert!
+      if (hasSpecificAlert) {
+        alertsToSend.push({
+          email: data.email,
+          alert: {
+            query: (alertPref.query || "").trim(),
+            location: (alertPref.location || "worldwide").trim()
+          },
+          isPremium,
+          isDefault: false
+        });
+      } else if (isPremium) {
+        // Pro user who did not configure a specific alert filter:
+        // Send the default worldwide daily alert
+        alertsToSend.push({
+          email: data.email,
+          alert: { query: "", location: "worldwide" },
+          isPremium: true,
+          isDefault: true
+        });
       }
     });
   } catch (error) {
@@ -111,7 +132,9 @@ async function main() {
   const alertGroups: { [key: string]: { alert: any, isPremium: boolean, isDefault: boolean, emails: string[] } } = {};
   
   for (const item of alertsToSend) {
-    const key = `${item.alert.query || ''}|${item.alert.location || 'worldwide'}|${item.isPremium}|${item.isDefault}`;
+    const normQuery = (item.alert.query || '').toLowerCase().trim();
+    const normLoc = (item.alert.location || 'worldwide').toLowerCase().trim();
+    const key = `${normQuery}|${normLoc}|${item.isPremium}|${item.isDefault}`;
     if (!alertGroups[key]) {
       alertGroups[key] = { alert: item.alert, isPremium: item.isPremium, isDefault: item.isDefault, emails: [] };
     }
@@ -120,36 +143,102 @@ async function main() {
 
   console.log(`Grouped into ${Object.keys(alertGroups).length} unique alert types.`);
 
+  // Helper function to check if a job matches an alert
+  function jobMatchesAlert(job: Job, alert: { query?: string; location?: string }): boolean {
+    // 1. Technology / Keyword match
+    if (alert.query && alert.query.trim()) {
+      const rawQuery = alert.query.trim().toLowerCase();
+      const title = (job.title || "").toLowerCase();
+      const desc = (job.description || "").toLowerCase();
+      const company = (job.company?.name || "").toLowerCase();
+      const stack = (job.aiTags?.stack || []).map(s => s.toLowerCase());
+      const fullText = `${title} ${desc} ${company}`;
+
+      // Normalize common tech names (e.g. "react js" -> "react", "vue js" -> "vue", "next js" -> "next")
+      const cleanTech = rawQuery
+        .replace(/\b(\.?js|\.?ts)\b/gi, "")
+        .replace(/[\s\-_]+/g, "")
+        .trim();
+
+      let matched = false;
+
+      // Direct substring match
+      if (fullText.includes(rawQuery) || stack.includes(rawQuery)) {
+        matched = true;
+      }
+      // Normalized tech check in stack or as word boundary in text
+      else if (cleanTech && cleanTech.length >= 2 && (
+        stack.includes(cleanTech) ||
+        stack.some(s => s.includes(cleanTech) || cleanTech.includes(s)) ||
+        new RegExp(`\\b${cleanTech}\\b`, "i").test(fullText)
+      )) {
+        matched = true;
+      }
+      // Token-based matching for multi-word queries (e.g. "Senior React")
+      else {
+        const tokens = rawQuery.split(/\s+/).filter(Boolean);
+        if (tokens.length > 1) {
+          matched = tokens.every(tok => {
+            const tokClean = tok.replace(/\b(\.?js|\.?ts)\b/gi, "").trim();
+            if (fullText.includes(tok) || stack.includes(tok)) return true;
+            if (tokClean && tokClean.length >= 2 && (
+              stack.includes(tokClean) || 
+              new RegExp(`\\b${tokClean}\\b`, "i").test(fullText)
+            )) return true;
+            return false;
+          });
+        }
+      }
+
+      if (!matched) return false;
+    }
+
+    // 2. Location match
+    const loc = (alert.location || "worldwide").trim().toLowerCase();
+    if (loc !== "worldwide" && loc !== "any" && loc !== "any remote" && loc !== "all") {
+      const jobLoc = [
+        job.location || "",
+        job.country || "",
+        ...(job.aiTags?.eligibleRegions || [])
+      ].join(" ").toLowerCase();
+
+      const isGlobal = job.aiTags?.remoteScope === "GLOBAL" || 
+        jobLoc.includes("worldwide") || 
+        jobLoc.includes("anywhere") || 
+        jobLoc.includes("global");
+
+      if (loc === "us only" || loc === "united states" || loc === "us") {
+        if (!jobLoc.includes("us") && !jobLoc.includes("united states") && !isGlobal) {
+          return false;
+        }
+      } else if (loc === "europe" || loc === "eu") {
+        if (!jobLoc.includes("europe") && !jobLoc.includes("eu") && !jobLoc.includes("uk") && !jobLoc.includes("united kingdom") && !isGlobal) {
+          return false;
+        }
+      } else if (loc === "asia") {
+        if (!jobLoc.includes("asia") && !jobLoc.includes("india") && !jobLoc.includes("singapore") && !jobLoc.includes("japan") && !isGlobal) {
+          return false;
+        }
+      } else if (!jobLoc.includes(loc) && !isGlobal) {
+        return false;
+      }
+    }
+
+    return true;
+  }
+
   // 4. Construct and Send Batched Emails
   for (const key of Object.keys(alertGroups)) {
     const group = alertGroups[key];
     const { alert, isPremium, isDefault, emails } = group;
     
     // Filter new jobs based on group preferences
-    const matchedJobs = newJobs.filter(job => {
-      const text = `${job.title} ${job.description || ""}`.toLowerCase();
-      
-      // Technology match
-      if (alert.query && !text.includes(alert.query.toLowerCase())) {
-        return false;
-      }
-      // Location match
-      const loc = alert.location?.toLowerCase() || "worldwide";
-      const jobLoc = (job.location || "").toLowerCase();
-      if (loc === "us only" && !jobLoc.includes("us") && !jobLoc.includes("united states")) {
-        return false;
-      }
-      if (loc === "europe" && !jobLoc.includes("eu") && !jobLoc.includes("europe")) {
-        return false;
-      }
-      if (loc === "asia" && !jobLoc.includes("asia")) {
-        return false;
-      }
-
-      return true;
-    });
+    const matchedJobs = newJobs.filter(job => jobMatchesAlert(job, alert));
 
     if (matchedJobs.length === 0) {
+      if (isDryRun) {
+        console.log(`DRY RUN: 0 matching jobs for alert type "${key}" (${emails.length} users). Skipping.`);
+      }
       continue;
     }
 
@@ -172,14 +261,33 @@ async function main() {
       `;
     }).join("");
 
-    const titlePrefix = isDefault ? "All New" : "Your Custom Alert:";
-    const subjectPrefix = isDefault ? "🔥" : "🔔";
+    const hasQuery = Boolean(alert.query && alert.query.trim());
+    const hasLocation = Boolean(alert.location && !["worldwide", "any", "any remote", "all"].includes(alert.location.trim().toLowerCase()));
+
+    let titleText: string;
+    let subjectText: string;
+    let descriptionText: string;
+
+    if (!isDefault && (hasQuery || hasLocation)) {
+      const criteriaParts: string[] = [];
+      if (hasQuery) criteriaParts.push(alert.query.trim());
+      if (hasLocation) criteriaParts.push(alert.location.trim());
+      const criteriaStr = criteriaParts.join(" • ");
+
+      titleText = `🔔 Your ${criteriaStr} Job Alert`;
+      subjectText = `🔔 ${matchedJobs.length} New Remote Jobs matching "${criteriaStr}" for you`;
+      descriptionText = `Here are today's remote jobs matching your preferences: <strong>${criteriaStr}</strong>.`;
+    } else {
+      titleText = "🔥 All New Remote Frontend Jobs";
+      subjectText = `🔥 ${matchedJobs.length} New Remote Frontend Jobs for you`;
+      descriptionText = "Here are today's remote frontend jobs matching your preferences.";
+    }
 
     const emailHtml = `
       <div style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; max-width: 600px; margin: 0 auto; padding: 20px;">
         <div style="text-align: center; margin-bottom: 32px;">
-          <h1 style="color: #1a202c;">${subjectPrefix} ${titlePrefix} Remote Frontend Jobs</h1>
-          <p style="color: #4a5568; font-size: 16px;">Here are today's remote frontend jobs matching your preferences.</p>
+          <h1 style="color: #1a202c; font-size: 24px;">${titleText}</h1>
+          <p style="color: #4a5568; font-size: 16px;">${descriptionText}</p>
         </div>
         
         ${jobsHtml}
@@ -204,7 +312,7 @@ async function main() {
     `;
 
     if (isDryRun) {
-      console.log(`DRY RUN: Would send to ${emails.length} users with ${matchedJobs.length} jobs (isDefault: ${isDefault}).`);
+      console.log(`DRY RUN: Would send to ${emails.length} users with ${matchedJobs.length} jobs (Subject: "${subjectText}").`);
     } else {
       // Chunk emails into batches of 49 for Resend limits
       for (let i = 0; i < emails.length; i += 49) {
@@ -214,7 +322,7 @@ async function main() {
             from: "Frontend Engineers <hello@frontendengineers.com>",
             to: ["hello@frontendengineers.com"], // Self address in To
             bcc: bccBatch,
-            subject: `${subjectPrefix} ${matchedJobs.length} New Remote Frontend Jobs for you`,
+            subject: subjectText,
             html: emailHtml,
           });
           console.log(`Sent alert batch to ${bccBatch.length} users for alert type: ${key}`);

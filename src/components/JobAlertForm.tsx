@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
 
 export default function JobAlertForm({ onSuccess }: { onSuccess?: () => void }) {
-  const { user } = useAuth();
+  const { user, isSubscribed } = useAuth();
   const router = useRouter();
   
   const [loading, setLoading] = useState(false);
@@ -87,6 +87,7 @@ export default function JobAlertForm({ onSuccess }: { onSuccess?: () => void }) 
             onChange={(e) => setAlertForm({...alertForm, query: e.target.value})}
             className="w-full border border-gray-300 rounded-lg px-4 py-2.5 text-sm focus:border-[#2563eb] focus:ring-1 focus:ring-[#2563eb] outline-none"
           />
+          <p className="text-xs text-gray-500 mt-1">Leave blank to receive all new remote frontend jobs.</p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
@@ -110,7 +111,7 @@ export default function JobAlertForm({ onSuccess }: { onSuccess?: () => void }) 
           disabled={loading}
           className="w-full bg-[#2563eb] hover:bg-blue-700 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors disabled:opacity-70"
         >
-          {loading ? "Saving..." : success ? "✅ Alert Saved!" : "🔔 Create Free Job Alert"}
+          {loading ? "Saving..." : success ? "✅ Alert Saved!" : isSubscribed ? "🔔 Save Pro Job Alert" : "🔔 Save Job Alert"}
         </button>
       </form>
     </div>
