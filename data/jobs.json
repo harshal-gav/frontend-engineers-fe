@@ -1,5 +1,171 @@
 [
   {
+    "id": "2dc267059084f321633beb95c3c854d2952ea69ac80100090316c3ab31103b37",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.bestjobtool.com/job-description/3193681878?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nBNY, a leading global financial services organization, plays a pivotal role in shaping the future of finance by leveraging innovative technologies and strategic insights. With a rich history of delivering exceptional financial solutions, BNY manages nearly 20% of the world's investible assets, underscoring its influence and leadership in the industry. The company fosters a culture of innovation, collaboration, and continuous growth, empowering its employees to thrive and contribute to transformative projects. Recognized as a top destination for forward-thinking professionals, BNY is committed to harnessing cutting-edge AI, breakthrough technologies, and sustainable practices to redefine industry standards and create value for clients worldwide.\n\nAbout The Role\n\nWe are seeking a highly experienced Senior Front-End Developer to join BNY's dynamic team, focusing on the development and evolution of our design system. In this role, you will be instrumental in building scalable, reusable, and maintainable web components that serve as the foundation for our digital products. Your expertise will ensure consistency, quality, and efficiency across all applications, enabling our product teams to deliver exceptional user experiences. Collaborating closely with designers, product managers, and fellow developers, you will translate design principles into technical solutions that align with our strategic vision. This position offers an exciting opportunity to influence the core of our digital ecosystem, working with a modern tech stack and contributing to innovative projects that impact millions of users globally.\n\nQualifications\n\nThe ideal candidate will possess over 8 years of experience as a Front-End Developer, with a strong focus on design system development. You should demonstrate expert-level proficiency in JavaScript and TypeScript, along with deep expertise in modern front-end frameworks such as Angular and React. A comprehensive understanding of CSS, including pre-processors, CSS variables, variable stacking, and advanced styling techniques, is essential. Experience working with Web Components in large-scale systems and managing complex theming architectures is highly desirable. Additionally, candidates should have a solid grasp of version control, library dependency management, and packaged asset versioning. Excellent communication skills, a keen eye for design aesthetics, and the ability to collaborate effectively with cross-functional teams are critical to success in this role. A passion for documentation, creating working code demonstrations, and mentoring junior developers will set you apart.\n\nResponsibilities\n\n\nLead the development and ongoing evolution of BNY's design system, ensuring it remains scalable, reusable, and maintainable.\nArchitect and implement web components that serve as the building blocks for user interfaces across various applications.\nDrive advanced theming solutions to accommodate different brand identities and user preferences, utilizing CSS variables, variable stacking, and sophisticated color systems.\nManage the full lifecycle of design system components, including development, deployment, versioning, and continuous maintenance.\nOversee library and package dependency management, ensuring a stable and efficient development environment.\nCollaborate with design, product, and engineering teams to translate visual and interaction designs into functional, technical solutions.\nChampion best practices in front-end development, focusing on performance, accessibility, and responsiveness.\nMentor and guide other developers on design system principles, implementation strategies, and coding standards.\nDevelop and maintain comprehensive documentation and guidelines to facilitate seamless collaboration between designers and developers.\nCreate working code demonstrations to showcase component capabilities and usage scenarios.\n\n\nBenefits\n\nBNY offers a competitive compensation package aligned with market standards, with a base salary ranging between $95,000 and $209,000 annually, depending on experience and location. The total compensation package may include performance-based bonuses, discretionary incentives, long-term incentives, and comprehensive benefits programs. The company values work-life balance and provides a range of employee benefits, including health insurance, retirement plans, professional development opportunities, and wellness programs. BNY fosters a collaborative and inclusive work environment that encourages innovation, continuous learning, and career growth. Employees are empowered to make meaningful contributions to impactful projects, with ample opportunities for advancement and skill development. The organization also emphasizes a culture of recognition and support, ensuring that every team member's efforts are acknowledged and valued.\n\nEqual Opportunity\n\nBNY is an equal opportunity employer committed to fostering an inclusive workplace. We celebrate diversity and are dedicated to creating an environment where all employees can thrive regardless of race, gender, sexual orientation, age, disability, or background. We believe that diverse perspectives drive innovation and contribute to our success. All employment decisions are made based on qualifications, merit, and business needs. We encourage qualified candidates from all backgrounds to apply and join our team in shaping the future of finance.\n\n\n\n\n\nDesired Skills and Experience\n\nFront-End Development, Web Components, JavaScript, TypeScript, CSS, Design Systems",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T05:51:24.848Z",
+    "sourceHash": "2dc267059084f321633beb95c3c854d2952ea69ac80100090316c3ab31103b37",
+    "company": {
+      "id": "netrolynxai",
+      "name": "Netrolynx AI",
+      "logoUrl": "https://logo.clearbit.com/netrolynxai.com",
+      "industry": "Technology",
+      "website": "https://netrolynxai.com"
+    },
+    "slug": "frontend-developer-netrolynx-ai-2dc26705",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "5875e5be14eccb6320ba05808d6dacad11b20ffb6ddfb311f4bc1c6efb30a949",
+    "title": "Frontend Code Evaluation Specialist",
+    "applyUrl": "https://work.mercor.com/login?utm_medium=free_job_board&utm_source=linkedin&utm_term=V687Y5WR&utm_content=manatal_deflect_apps_disabled&listingId=list_AAABoAPp1LEAbgpoCqdGza4o",
+    "description": "About the job\n\nAbout The Job\n\nMercor connects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.\n\nPosition: Frontend Engineer\n\nType: Contract\n\nCompensation: $90/hour\n\nLocation: Remote\n\nRole Responsibilities\n\n\nRender a reference page and two candidate replications at 1920×1080. Judge which is the closer reproduction, state by state.\nDiff visual fidelity in detail: box model and spacing, typography (family, size, weight, line-height, letter-spacing), color and border treatment, image and asset handling, z-order, and overflow.\nRead the source of both attempts and grade construction quality. Distinguish a replication that is genuinely correct from one that merely looks correct at one viewport.\nTest responsiveness. Identify defects such as a nav bar that looks right at 1920px but collapses at 1400px.\nWrite specific, evidence-cited justifications for every preference. Provide detailed explanations like \"B nests the article body in a single absolutely-positioned div, so the text overlaps the footer below 1600px, while A uses normal document flow.\"\nUse the \"this task is broken\" escape hatch with judgment. Distinguish a task that genuinely cannot be completed from one that is merely hard.\n\n\n\nQualifications\n\nMust-Have\n\n\n3–8 years of professional web development experience in frontend or full-stack work.\nFluency across web eras, including legacy layouts like used for layout.\nCommand of hand-written HTML and CSS: semantic markup, flexbox, grid, media queries, and legacy float- and table-based layouts.\nBrowser DevTools as muscle memory.\nCommand-line comfort: unzipping an archive, standing up a static local server, and untangling a broken image reference.\nEnough JavaScript to read a page's scripts and understand their DOM impact.\nProfessional written English for task justification.\n\n\n\nPreferred\n\n\nPrior RLHF, preference-labeling, model-evaluation, or structured code-review work.\nPixel-perfect design-to-code experience.\nAccessibility expertise (ARIA, semantic landmarks, heading hierarchy).\nFamiliarity with how LLMs fail at code generation.\nWeb scraping, archiving, or DOM-parsing background.\nMore than one completed Mercor project and availability in contiguous multi-hour blocks.\n\n\n\nApplication Process (Takes 20–30 mins to complete)\n\n\nUpload resume\nAI interview based on your resume\nSubmit form\n\n\n\nResources & Support\n\n\nFor details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome\nFor any help or support, reach out to: support@mercor.com\n\n\n\nPS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.",
+    "location": "Remote - United Kingdom",
+    "country": "United Kingdom",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T05:46:01.877Z",
+    "sourceHash": "5875e5be14eccb6320ba05808d6dacad11b20ffb6ddfb311f4bc1c6efb30a949",
+    "company": {
+      "id": "mercor",
+      "name": "Mercor",
+      "logoUrl": "https://logo.clearbit.com/mercor.com",
+      "industry": "Technology",
+      "website": "https://mercor.com"
+    },
+    "slug": "frontend-code-evaluation-specialist-mercor-5875e5be",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United Kingdom"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "916ccadcde50fa0f3f8c84f21df1fdb2e645428cf3dcc00203edc79977dafbc2",
+    "title": "Frontend Code Evaluation Specialist",
+    "applyUrl": "https://work.mercor.com/login?utm_medium=free_job_board&utm_source=linkedin&utm_term=6366V6Y5&utm_content=manatal_deflect_no_mapping",
+    "description": "About the job\n\nAbout The Job\n\nMercor connects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.\n\nPosition: Frontend Engineer\n\nType: Contract\n\nCompensation: $90/hour\n\nLocation: Remote\n\nRole Responsibilities\n\n\nRender a reference page and two candidate replications at 1920×1080. Judge which is the closer reproduction, state by state.\nDiff visual fidelity in detail: box model and spacing, typography (family, size, weight, line-height, letter-spacing), color and border treatment, image and asset handling, z-order, and overflow.\nRead the source of both attempts and grade construction quality. Distinguish a replication that is genuinely correct from one that merely looks correct at one viewport.\nTest responsiveness. Identify defects such as a nav bar that looks right at 1920px but collapses at 1400px.\nWrite specific, evidence-cited justifications for every preference. Provide detailed explanations like \"B nests the article body in a single absolutely-positioned div, so the text overlaps the footer below 1600px, while A uses normal document flow.\"\nUse the \"this task is broken\" escape hatch with judgment. Distinguish a task that genuinely cannot be completed from one that is merely hard.\n\n\n\nQualifications\n\nMust-Have\n\n\n3–8 years of professional web development experience in frontend or full-stack work.\nFluency across web eras, including legacy layouts like used for layout.\nCommand of hand-written HTML and CSS: semantic markup, flexbox, grid, media queries, and legacy float- and table-based layouts.\nBrowser DevTools as muscle memory.\nCommand-line comfort: unzipping an archive, standing up a static local server, and untangling a broken image reference.\nEnough JavaScript to read a page's scripts and understand their DOM impact.\nProfessional written English for task justification.\n\n\n\nPreferred\n\n\nPrior RLHF, preference-labeling, model-evaluation, or structured code-review work.\nPixel-perfect design-to-code experience.\nAccessibility expertise (ARIA, semantic landmarks, heading hierarchy).\nFamiliarity with how LLMs fail at code generation.\nWeb scraping, archiving, or DOM-parsing background.\nMore than one completed Mercor project and availability in contiguous multi-hour blocks.\n\n\n\nApplication Process (Takes 20–30 mins to complete)\n\n\nUpload resume\nAI interview based on your resume\nSubmit form\n\n\n\nResources & Support\n\n\nFor details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome\nFor any help or support, reach out to: support@mercor.com\n\n\n\nPS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.",
+    "location": "Remote - Estonia",
+    "country": "Estonia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T05:11:18.794Z",
+    "sourceHash": "916ccadcde50fa0f3f8c84f21df1fdb2e645428cf3dcc00203edc79977dafbc2",
+    "company": {
+      "id": "mercor",
+      "name": "Mercor",
+      "logoUrl": "https://logo.clearbit.com/mercor.com",
+      "industry": "Technology",
+      "website": "https://mercor.com"
+    },
+    "slug": "frontend-code-evaluation-specialist-mercor-916ccadc",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Estonia"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "c60103b4ab54cce618540d9bfdba32db115ddfb238e9410c268986f4c9aa6cd2",
+    "title": "Frontend Engineer (Medical Imaging Viewer)",
+    "applyUrl": "https://careers.epam.com/en/vacancy/bltoqjs6a1hiqx4s4ym_en?country=Colombia&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
+    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
+    "location": "Remote - Colombia",
+    "country": "Colombia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T05:08:01.549Z",
+    "sourceHash": "c60103b4ab54cce618540d9bfdba32db115ddfb238e9410c268986f4c9aa6cd2",
+    "company": {
+      "id": "epamsystems",
+      "name": "EPAM Systems",
+      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
+      "industry": "Technology",
+      "website": "https://epamsystems.com"
+    },
+    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-c60103b4",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Colombia"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d88c4fac2ec2987840b133a53146fb0cb9dd0e9843bdfc5c7b9c4af4cc589034",
+    "title": "Frontend Code Evaluation Specialist",
+    "applyUrl": "https://work.mercor.com/login?utm_medium=free_job_board&utm_source=linkedin&utm_term=3W8776YV&utm_content=manatal_deflect_apps_disabled&listingId=list_AAABoAPp1LEAbgpoCqdGza4o",
+    "description": "About the job\n\nAbout The Job\n\nMercor connects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.\n\nPosition: Frontend Engineer\n\nType: Contract\n\nCompensation: $90/hour\n\nLocation: Remote\n\nRole Responsibilities\n\n\nRender a reference page and two candidate replications at 1920×1080. Judge which is the closer reproduction, state by state.\nDiff visual fidelity in detail: box model and spacing, typography (family, size, weight, line-height, letter-spacing), color and border treatment, image and asset handling, z-order, and overflow.\nRead the source of both attempts and grade construction quality. Distinguish a replication that is genuinely correct from one that merely looks correct at one viewport.\nTest responsiveness. Identify defects such as a nav bar that looks right at 1920px but collapses at 1400px.\nWrite specific, evidence-cited justifications for every preference. Provide detailed explanations like \"B nests the article body in a single absolutely-positioned div, so the text overlaps the footer below 1600px, while A uses normal document flow.\"\nUse the \"this task is broken\" escape hatch with judgment. Distinguish a task that genuinely cannot be completed from one that is merely hard.\n\n\n\nQualifications\n\nMust-Have\n\n\n3–8 years of professional web development experience in frontend or full-stack work.\nFluency across web eras, including legacy layouts like used for layout.\nCommand of hand-written HTML and CSS: semantic markup, flexbox, grid, media queries, and legacy float- and table-based layouts.\nBrowser DevTools as muscle memory.\nCommand-line comfort: unzipping an archive, standing up a static local server, and untangling a broken image reference.\nEnough JavaScript to read a page's scripts and understand their DOM impact.\nProfessional written English for task justification.\n\n\n\nPreferred\n\n\nPrior RLHF, preference-labeling, model-evaluation, or structured code-review work.\nPixel-perfect design-to-code experience.\nAccessibility expertise (ARIA, semantic landmarks, heading hierarchy).\nFamiliarity with how LLMs fail at code generation.\nWeb scraping, archiving, or DOM-parsing background.\nMore than one completed Mercor project and availability in contiguous multi-hour blocks.\n\n\n\nApplication Process (Takes 20–30 mins to complete)\n\n\nUpload resume\nAI interview based on your resume\nSubmit form\n\n\n\nResources & Support\n\n\nFor details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome\nFor any help or support, reach out to: support@mercor.com\n\n\n\nPS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.",
+    "location": "Remote - Austria",
+    "country": "Austria",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-12T05:03:21.530Z",
+    "sourceHash": "d88c4fac2ec2987840b133a53146fb0cb9dd0e9843bdfc5c7b9c4af4cc589034",
+    "company": {
+      "id": "mercor",
+      "name": "Mercor",
+      "logoUrl": "https://logo.clearbit.com/mercor.com",
+      "industry": "Technology",
+      "website": "https://mercor.com"
+    },
+    "slug": "frontend-code-evaluation-specialist-mercor-d88c4fac",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Austria"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
     "id": "c5d108a6583a3810c59823123b12dcbc7527ed7f666adb7eedcdbb1bbda3680f",
     "title": "Frontend Engineer (WFH)",
     "applyUrl": "https://www.torentify.com/jobs/6ac8d0d905fc7b607e336846",
