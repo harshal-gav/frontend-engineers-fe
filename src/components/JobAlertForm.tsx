@@ -111,7 +111,7 @@ export default function JobAlertForm({ onSuccess }: { onSuccess?: () => void }) 
           disabled={loading}
           className="w-full bg-[#2563eb] hover:bg-blue-700 text-white font-bold py-3 rounded-lg flex items-center justify-center gap-2 transition-colors disabled:opacity-70"
         >
-          {loading ? "Saving..." : success ? "✅ Alert Saved!" : isSubscribed ? "🔔 Save Pro Job Alert" : "🔔 Save Job Alert"}
+          {loading ? "Saving..." : success ? "✅ Alert Saved!" : "🔔 Create Job Alert"}
         </button>
       </form>
     </div>
