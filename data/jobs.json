@@ -1,5 +1,107 @@
 [
   {
+    "id": "0ea929134e2ed3bf8cff77262987efe0cd8d548687adaade5dee4ff5ac62142e",
+    "title": "Frontend Engineer - Top Secret",
+    "applyUrl": "https://www.theladders.com/linkedin/89257578?src=LinkedIn",
+    "description": "About the job\n\nFor our client, we are seeking a Frontend Engineer - Top Secret to join the team of a leader in the Manufacturing & Automotive space.\n\nThis role will focus on building sophisticated frontend experiences that support real-time data analysis, visualization, and geospatial workflows. You will help shape the architecture of complex web applications, creating responsive interfaces that turn large, data-rich inputs into clear and usable tools. The position also involves close collaboration with backend engineers to integrate secure services and deliver high-performance applications for demanding operational environments.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $103,500 – $181,100 annually\n\nResponsibilities\n\n\n Shape the frontend architecture of complex applications using React and TypeScript\n Build intuitive, reusable UI components for real-time data analysis and visualization\n Develop high-performance 2D and 3D mapping tools using OpenLayers or CesiumJS\n Create interfaces for rendering large geospatial datasets and real-time feeds\n Optimize application performance by resolving rendering and network inefficiencies\n Support data-intensive workflows with asynchronous programming and efficient data processing\n Collaborate with backend engineers to integrate secure APIs and services\n\n\nQualifications\n\n\n U.S. Citizenship and an active Top Secret Clearance are required\n Bachelor's degree in Computer Science, Computer Engineering, or a related field, plus 5+ years of software engineering experience, particularly in React\n Significant experience with React and TypeScript for frontend applications\n Strong knowledge of modern JavaScript (ES6+) and asynchronous programming\n Experience with geospatial data and mapping technologies such as GeoJSON, OpenLayers, or CesiumJS\n Proficient in diagnosing and improving browser performance\n Experience with automated testing frameworks such as Jest or Cypress\n\n\nBenefits\n\n\n Comprehensive medical, dental, and vision insurance\n Generous paid time off and flexible work schedules\n 401(k) retirement plan with company contributions\n Life insurance and additional wellness programs\n Holidays that accommodate a busy lifestyle\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification—your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nReact, TypeScript, JavaScript (ES6+), OpenLayers, CesiumJS, GeoJSON, KML, Raster tiles, Vector tiles, Geospatial APIs, Jest, Cypress, Playwright, AWS GovCloud, Docker, Kubernetes, Three.js, WebGL, Geospatial databases, Spatial analysis tools, Geospatial web services, Asynchronous programming, Web workers, Cloud-native services, APIs, Secure data pipelines, Performance optimization techniques, Real-time data processing, Mission-focused engineering practices",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T07:02:56.375Z",
+    "sourceHash": "0ea929134e2ed3bf8cff77262987efe0cd8d548687adaade5dee4ff5ac62142e",
+    "company": {
+      "id": "ladders",
+      "name": "Ladders",
+      "logoUrl": "https://logo.clearbit.com/ladders.com",
+      "industry": "Technology",
+      "website": "https://ladders.com"
+    },
+    "slug": "frontend-engineer-top-secret-ladders-0ea92913",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "cypress",
+        "jest",
+        "playwright",
+        "webgl",
+        "threejs"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b47610b2b94fddfcda5bbd9c991acf584c807216e1a01fd596797e51b0fb4584",
+    "title": "Frontend Developer II - Remote",
+    "applyUrl": "https://www.torentify.com/jobs/6acd1ae705fc7b607e38a30a",
+    "description": "About the job\n\nAbout the Company\n\n\n\n\nThe company is a fast-growing, highly profitable fintech business building a premium financial product for a sophisticated customer base. Its focus is on delivering a high-quality customer-facing experience, with an emphasis on product quality, thoughtful design, and reliable engineering.\n\n\n\n\nAbout the Role\n\n\n\n\nThe company is looking for a Senior Frontend Engineer to help improve and expand its customer-facing product. This role is suited to an experienced engineer who cares about frontend development, user experience, and the details that make a product intuitive and polished.\n\n\n\n\nYou will work closely with product and design teams to build new experiences using React and TypeScript while helping shape frontend architecture, development patterns, and engineering standards. You will also own meaningful areas of the product and contribute to technical decisions as the engineering team grows. The position offers the opportunity to influence both how the product works and how customers experience it.\n\n\n\n\nKey Responsibilities\n\n\n\n\nBuild polished, high-quality customer-facing interfaces using React and TypeScript.\n\n\n\n\nCollaborate with product managers and designers to develop and deliver new product experiences.\n\n\n\n\nHelp define frontend architecture, reusable development patterns, and engineering standards.\n\n\n\n\nTake ownership of significant product areas, from implementation through ongoing improvement.\n\n\n\n\nContribute to technical direction and frontend engineering decisions as the team scales.\n\n\n\n\nDevelop production-grade applications with attention to UI/UX, performance, scalability, and maintainability.\n\n\n\n\nMaintain high standards for product quality and ensure frontend implementations reflect the intended design and user experience.\n\n\n\n\nWork at the intersection of engineering and product to deliver features that meet customer needs.\n\n\n\n\nRequired Qualifications\n\n\n\n\nAt least five years of software engineering experience.\n\n\n\n\nStrong hands-on experience with React and TypeScript.\n\n\n\n\nA strong eye for UI/UX, visual consistency, and overall design quality.\n\n\n\n\nExperience building and maintaining production-grade customer-facing applications.\n\n\n\n\nAbility to make sound architectural decisions with consideration for scalability and long-term maintainability.\n\n\n\n\nA product-focused approach to engineering, with attention to user experience and implementation details.\n\n\n\n\nPreferred Qualifications\n\n\n\n\nExperience working at a startup or a big technology company is preferred.\n\n\n\n\nExperience with Redux, Python, Django, or PostgreSQL is an advantage.\n\n\n\n\nExperience in financial services or fintech is also beneficial.\n\n\n\n\nSalary and Benefits\n\n\n\n\nCompensation is offered up to $230,000, plus equity. The original listing does not specify additional benefits or further details about the equity package.\n\n\n\n\nLocation and Work Arrangement\n\n\n\n\nWork Arrangement: Fully remote.\n\n\n\n\nPosition: Senior Frontend Engineer.\n\n\n\n\nIndustry: Financial Technology (Fintech).\n\n\n\n\nEmployment type: Not specified in the original listing.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T07:01:51.301Z",
+    "sourceHash": "b47610b2b94fddfcda5bbd9c991acf584c807216e1a01fd596797e51b0fb4584",
+    "company": {
+      "id": "torentify",
+      "name": "Torentify",
+      "logoUrl": "https://logo.clearbit.com/torentify.com",
+      "industry": "Technology",
+      "website": "https://torentify.com"
+    },
+    "slug": "frontend-developer-ii-remote-torentify-b47610b2",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "redux"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "c0d3d7e20728c316cbeaceef4bad16fb547441eb85bebf0dbf75e7457be1a6eb",
+    "title": "Front End Developer (JavaScript, CSS)",
+    "applyUrl": "https://www.sundayy.com/job-description/usB020BC4E4BEA104ADACEB7157D373BD7?source=Linkedin",
+    "description": "About the job\n\nAbout The Company\n\nGlanbia Performance Nutrition (GPN) is a renowned global leader dedicated to creating better-for-you products that support active, healthy lifestyles. The company boasts a diverse brand portfolio including Optimum Nutrition, BSN, Isopure, Think!, Amazing Grass, and more. GPN’s mission is to empower individuals—from athletes to remote workers—to achieve their health and wellness goals through high-quality, innovative nutritional products. With a commitment to excellence, sustainability, and consumer satisfaction, GPN continues to expand its reach across markets worldwide, delivering products that promote muscle building, performance enhancement, weight management, and overall well-being.\n\nAbout The Role\n\nWe are seeking a talented and motivated Front End Developer to join our dynamic team. In this role, you will be instrumental in bringing our brands to life through engaging and responsive online experiences. You will collaborate closely with marketing, creative, and business stakeholders to develop compelling web and email content that highlights our products and strengthens brand presence. This position requires a versatile individual capable of managing multiple projects across various CMS platforms and eCommerce websites, ensuring seamless content management, optimal user experience, and alignment with business priorities. Your expertise will help enhance our digital footprint, improve website functionality, and drive customer engagement and conversion.\n\nQualifications\n\n\nBachelor’s degree from a four-year university or college\nMinimum of 2+ years of professional experience in front end development or related roles\nExtensive experience with web technologies and modern cross-platform software development\nProficiency in JavaScript, HTML, and CSS\nExperience debugging DOM objects in Chrome or similar environments\nStrong familiarity with web frameworks such as React.js or Knockout.js\nAt least 1 year of experience working with REST APIs\nKnowledge of SEO best practices and website analytics tools like Google Analytics\nAbility to manage content across multiple CMS platforms including WordPress, Shopify, Emarsys, and Klaviyo\nExcellent collaboration, communication, and project management skills\n\n\nResponsibilities\n\n\nOversee the management and execution of tasks across multiple direct-to-consumer (DTC) websites for various brands, each on different platforms and development stages\nDeploy and QA digital content, promotions, and updates across multiple brands using CMS platforms such as WordPress, Shopify, Emarsys, and Klaviyo\nEnhance the front-end interface to improve navigation, layout, usability, and overall user experience, increasing customer satisfaction and engagement\nManage and update product catalogs, including adding new products, updating existing information, and optimizing listings for search and discovery\nImplement and adhere to on-page and technical SEO best practices to improve website visibility and organic search rankings\nCollaborate with designers, product managers, content creators, QA engineers, and release teams throughout the development lifecycle\nLeverage technology and brand positioning insights to suggest product and UX improvements that maximize ROI\nUtilize analytics tools like Google Analytics to analyze user behavior and recommend enhancements for better user engagement and conversion rates\nEnsure pricing, product, and promotional offers are current and fully functional across all sites\nMonitor website performance metrics, identify areas for improvement, and implement solutions to optimize speed, responsiveness, and overall performance\nEnsure websites are fully optimized for mobile devices, delivering a seamless shopping experience for mobile users\nDevelop strategies to improve conversion rates, including optimizing product pages, streamlining checkout processes, and integrating persuasive call-to-action elements\n\n\nBenefits\n\n\nOpportunity to develop your career on a global stage\nContinuous learning through an on-demand learning platform\nCompetitive compensation package including staff discounts, health & dental plans, and a 401K retirement plan\nGenerous family leave policy\nAnnual salary range of $95,000 - $115,000 plus an annual bonus, depending on skills and experience\n\n\nEqual Opportunity\n\nGlanbia is committed to fostering an inclusive and diverse work environment. We celebrate individuality and believe that our differences make us stronger. We welcome applications from candidates of all backgrounds and do not discriminate based on race, color, religion, sex, sexual orientation, gender identity or expression, national origin, age, marital status, veteran status, or disability. Our goal is to create a workplace where everyone feels valued, respected, and empowered to contribute to our shared success.\n\n\n\nDesired Skills and Experience\n\nInformation Technology",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T07:01:07.315Z",
+    "sourceHash": "c0d3d7e20728c316cbeaceef4bad16fb547441eb85bebf0dbf75e7457be1a6eb",
+    "company": {
+      "id": "wiraa",
+      "name": "Wiraa",
+      "logoUrl": "https://logo.clearbit.com/wiraa.com",
+      "industry": "Technology",
+      "website": "https://wiraa.com"
+    },
+    "slug": "front-end-developer-javascript-css-wiraa-c0d3d7e2",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "28a5e597a9e782a34bf83f5070aa14cca3384f5eb60d85594620b214bb8aa1b5",
     "title": "Frontend / AI Engineer",
     "applyUrl": "https://www.sundayy.com/job-description/usA82430ED0543AC4C794D728212AFD93D?source=Linkedin",
