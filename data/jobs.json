@@ -1,5 +1,275 @@
 [
   {
+    "id": "18a59b04d8a53c471c87a2fa403866aca7e0e7d0de6ec381daeb851ae8de96ea",
+    "title": "Freelance Software Engineer, Frontend",
+    "applyUrl": "https://careers-leftfieldlabs.icims.com/jobs/8876/freelance-software-engineer%2c-frontend/job?mode=job&iis=Job+Posting&iisn=LinkedIn",
+    "description": "About the job\n\nWho We Are\n\nLeft Field Labs is the creative technology agency that builds what’s next. We partner with the world’s most ambitious brands to transform breakthrough technology into extraordinary human experiences. Since 2008, we’ve delivered end-to-end digital transformation services—from strategy to platform development to immersive experiences—for the biggest companies in the world, including Google, Amazon, and Meta.\n\nWhat We Do\n\n\nDigital Experience We architect seamless digital ecosystems that simplify complexity and drive measurable impact. Whether launching new platforms or evolving legacy systems, we strike the perfect balance between innovation and pragmatism\nProduct Innovation We build scalable platforms and products in lockstep with organizations, identifying and seizing new technology opportunities.\nImmersive We create immersive, cross-media experiences that move beyond omnichannel thinking, blending digital, social, AI, and physical spaces to engage and delight.\nApplied AI We transform AI from a tech tool to the infrastructure for business evolution—enhancing decision-making, unlocking new efficiencies, and expanding human capacity Our AI solutions power predictive intelligence, sharper decision-making, and game-changing innovation.\n\n\n\nWho We Are Seeking\n\nWe are seeking a Mid-Level Freelance Frontend Software Engineer to join our remote team. You will work alongside a group of dedicated, multi-disciplined technologists and designers to bring high-quality, scalable solutions to market.\n\nWe count on our developers to write elegant, maintainable, and well-documented code with a strict eye toward separation of concerns. Our developers are creatives at heart—we expect an eye for polished design, active collaboration on micro-interactions, and a deep understanding of the overall user experience when building our software.\n\nWhat You’ll Do\n\n\nDevelop, maintain, and optimize production-grade frontend code across a portfolio of enterprise websites for our clients, utilizing modern web technologies\nActive participation in peer code reviews, adhering to best practices, maintaining high standards for code maintainability, and authoring comprehensive technical documentation\nCollaborate closely within an agile, multi-disciplinary team comprising developers, UI/UX \n4+ years of professional web development experience writing clean, production-ready HTML, CSS, and TypeScript or JavaScript\nStrong, hands-on experience with at least one modern Javascript framework (React, Angular, etc) building structured, maintainable, and scalable web experiences\nWorking knowledge of WCAG 2.2 AA accessibility rules and optimization\nExperience building smooth, performant animation with CSS, GSAP, Framer Motion or similar\nExperience shipping for external clients on fixed deadlines, ideally at an agency\nAbility to work independently in a remote environment while demonstrating proactive communication, creative problem-solving, and team-first collaboration.\nBachelor’s degree in Computer Science, Design, or equivalent practical work experience.\nBonus points for experience with backend code (Python, Typescript, Go) and integrating AI into experiences\n\n\n\nLeft Field Labs is an equal opportunity employer and committed to providing equal employment opportunity to all applicants and team members regardless of race, color, religion, sex, sexual orientation, gender identity or expression, national origin, age, handicap, veteran status, marital status, criminal history, or any other category protected by applicable federal and state law, including the City of Los Angeles’ Fair Chance Initiative for Hiring Ordinance relating to an applicant's criminal history (LAMC 189.00). Left Field Labs makes reasonable accommodations for handicapped and disabled team members.\n\nLeft Field Labs is an E-Verify employer. E-Verify is an Internet based system operated by the Department of Homeland Security (DHS) in partnership with the Social Security Administration (SSA) that allows participating employers to electronically verify the employment eligibility of their newly hired employees in the United States.\n\nThe hourly rate for this role is $60.00-$100.00. This range is only applicable for jobs to be performed in Culver City, California. This is the lowest to highest salary we reasonably and in good faith believe we would pay for this role at the time of this posting. We may ultimately pay more or less than the posted range, and the range may be modified in the future. An employee’s pay position within the salary range will be based on several factors including, but not limited to, relevant education, qualifications, certifications, experience, skills, geographic location, performance, and business or organizational needs.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T20:27:02.287Z",
+    "sourceHash": "18a59b04d8a53c471c87a2fa403866aca7e0e7d0de6ec381daeb851ae8de96ea",
+    "company": {
+      "id": "leftfieldlabs",
+      "name": "Left Field Labs",
+      "logoUrl": "https://logo.clearbit.com/leftfieldlabs.com",
+      "industry": "Technology",
+      "website": "https://leftfieldlabs.com"
+    },
+    "slug": "freelance-software-engineer-frontend-left-field-labs-18a59b04",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "less",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "3cb3eec332964c0f92fa84fcb8464fa9b9e69d6a35335262e1b446426f2d3ce7",
+    "title": "Senior Frontend Software Engineer",
+    "applyUrl": "https://www.remotehunter.com/apply-with-ai/fed6dbe0-43f5-42df-9b69-1b48418bc401?utm_medium=job_posting&utm_source=linkedin&utm_campaign=software_engineer&utm_category=software_engineer&utm_term=senior_frontend_software_engineer",
+    "description": "About the job\n\nAbout Our Client:\n\nThis organization is a start-up focusing on episodes of care benefit plans within the healthcare sector. It addresses the challenge of transparency and efficiency in healthcare pricing and analytics by providing expertise in episode pricing. The company aims to deliver high-quality, affordable healthcare access through innovative benefit plans.\n\n\n\n\nAbout the Opportunity:\n\nThe SENIOR FRONTEND SOFTWARE ENGINEER will lead the creation and delivery of high-performance web and mobile user experiences across multiple portals used by members and advisors. This role is crucial in shaping how users engage with healthcare options, cost estimation, plan management, and communication, ultimately enhancing user confidence and clarity in healthcare decisions.\n\n\n\n\nResponsibilities:\n\nBuild and launch user interfaces for web and mobile platforms that enable healthcare planning and management.\nTake full ownership of features from requirements to production monitoring.\nDevelop responsive, accessible React-based applications using TypeScript integrated with GraphQL and REST APIs.\nCollaborate with backend teams to design clean API interfaces.\nWrite comprehensive unit, integration, and end-to-end tests to ensure robust automation coverage.\nOptimize application performance, load times, and relevant web vitals.\nDevelop reusable UI components and maintain frontend infrastructure following best practices.\nTroubleshoot production issues and manage monitoring dashboards to ensure reliability.\nMentor and recruit engineers, influence engineering culture, and maintain high standards.\nParticipate in design reviews and contribute to product roadmap planning.\n\n\n\n\nRequirements:\n\nOver 5 years of experience with production web and mobile applications, preferably in consumer or healthcare domains.\nExpertise in React/React Native, TypeScript, UI design patterns, state management, and component architecture.\nStrong knowledge of GraphQL, REST APIs, caching, CDNs, and databases.\nProven ability to deliver user-centered products end-to-end.\nExperience with performance tuning, accessibility compliance, responsive and cross-device design.\nSkilled in testing frameworks such as Jest, React Testing Library, Cypress, or Playwright.\nExperience managing production systems including logging, monitoring, and error tracking.\nEffective cross-disciplinary collaboration and clear technical communication skills.\nCommitment to building products that empower users, particularly in health and wellness.\n\n\n\n\nPay Range and Compensation Package:\n\nThe pay range and compensation package for this role will be determined based on the candidate's experience, skills, and other relevant factors.\n\n\n\n\nEqual Opportunity Statement: Our client is an equal opportunity employer. They celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, or national origin.\n\n\n\n\nNote:\n\nRemoteHunter is a recruitment partner of this role. Please note that all employment decisions, including candidate assessment, interviews, hiring, compensation, and employment terms, are made exclusively by the hiring employer.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T20:18:26.142Z",
+    "sourceHash": "3cb3eec332964c0f92fa84fcb8464fa9b9e69d6a35335262e1b446426f2d3ce7",
+    "company": {
+      "id": "remotehunter",
+      "name": "RemoteHunter",
+      "logoUrl": "https://logo.clearbit.com/remotehunter.com",
+      "industry": "Technology",
+      "website": "https://remotehunter.com"
+    },
+    "slug": "senior-frontend-software-engineer-remotehunter-3cb3eec3",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "936f46757816ecffd53c9fd38e2020d911f64c7b2c9c209048d6faf802883cde",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.fetchjobs.co/job-description-usb/61B8C2179A67AC7B3A9615BAF79C7832?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nBask Health is a forward-thinking healthcare organization committed to transforming the way healthcare services are delivered and experienced. With a focus on innovation, quality, and patient-centric solutions, Bask Health leverages cutting-edge technology and a dedicated team of professionals to improve health outcomes and enhance the overall patient journey. Our mission is to make healthcare more accessible, affordable, and effective for diverse populations, fostering a culture of continuous improvement and excellence in service delivery.\n\nAbout The Role\n\nWe are seeking a highly motivated and detail-oriented Healthcare Data Analyst to join our dynamic team at Bask Health. In this role, you will be responsible for analyzing large datasets related to patient care, operational efficiency, and clinical outcomes. Your insights will support strategic decision-making, improve clinical workflows, and enhance patient satisfaction. The ideal candidate will have a strong analytical background, excellent communication skills, and a passion for leveraging data to drive meaningful healthcare improvements. This position offers an exciting opportunity to contribute to innovative healthcare solutions and work alongside a talented team dedicated to making a difference in the healthcare industry.\n\nQualifications\n\nCandidates should possess a bachelor’s degree in Health Informatics, Data Science, Statistics, or a related field. A master’s degree is preferred. Proven experience in healthcare data analysis, including familiarity with electronic health records (EHR), data visualization tools, and statistical software such as SQL, R, or Python, is essential. Strong analytical skills, attention to detail, and the ability to interpret complex data sets are required. Excellent communication skills and the ability to work collaboratively within multidisciplinary teams are also important. Knowledge of healthcare regulations, privacy standards, and familiarity with healthcare industry trends will be considered advantageous.\n\nResponsibilities\n\n\nCollect, process, and analyze healthcare data from various sources to identify trends, patterns, and insights.\nDevelop and maintain dashboards and reports that provide actionable insights to clinical and administrative teams.\nCollaborate with healthcare professionals to understand data needs and translate them into technical solutions.\nSupport quality improvement initiatives by providing data-driven recommendations.\nEnsure data accuracy, integrity, and security in compliance with healthcare regulations and privacy standards.\nParticipate in the design and implementation of data collection systems and workflows.\nStay updated with the latest advancements in healthcare analytics and incorporate best practices into ongoing projects.\nAssist in training staff on data management tools and techniques to promote data literacy across the organization.\n\n\nBenefits\n\nBask Health offers a comprehensive benefits package designed to support the well-being and professional growth of our employees. This includes competitive salary packages, health insurance coverage, paid time off, and retirement plans. We also provide opportunities for continuous learning through training programs, workshops, and conferences. Our inclusive work environment fosters collaboration, innovation, and work-life balance. Additionally, employees have access to wellness programs and other resources aimed at promoting a healthy and engaging workplace.\n\nEqual Opportunity\n\nBask Health is an equal opportunity employer. We are committed to creating a diverse and inclusive workplace where all employees are valued and respected. We do not discriminate based on race, color, religion, gender, sexual orientation, age, disability, or any other protected characteristic. We believe that a diverse team fosters innovation and drives better healthcare solutions, and we welcome applicants from all backgrounds to join our mission of transforming healthcare.\n\n\n\n\n\nDesired Skills and Experience\n\nData Analysis, Healthcare Analytics, Data Visualization, SQL, EHR, Data Management",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T20:16:13.030Z",
+    "sourceHash": "936f46757816ecffd53c9fd38e2020d911f64c7b2c9c209048d6faf802883cde",
+    "company": {
+      "id": "taskverse",
+      "name": "TaskVerse",
+      "logoUrl": "https://logo.clearbit.com/taskverse.com",
+      "industry": "Technology",
+      "website": "https://taskverse.com"
+    },
+    "slug": "frontend-developer-taskverse-936f4675",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "1c49a0960eca562a09691e7cc68fc5c87fbe237f67f420372f3cc1eb4013ddc9",
+    "title": "Senior FrontEnd Engineer (Angular). Inglés.",
+    "applyUrl": "https://jobs.experienceis.com/jobs/senior-frontend-engineer-angular-ingles?displayed_form=true&utm_source=Linkedin+Listing",
+    "description": "About the job\n\nEn eXperience IT Solutions seguimos creciendo y buscamos incorporar un/a Senior FrontEnd Engineer especializado/a en Angular para participar en un proyecto internacional de gran relevancia para uno de nuestros clientes, en modalidad 100% remota.\n\nBuscamos un perfil con amplia experiencia técnica en desarrollo Frontend, capaz de definir arquitecturas escalables, impulsar buenas prácticas de desarrollo y garantizar la calidad, reutilización y evolución de aplicaciones basadas en Angular. Para una baja de paternidad.\n\nFunciones principales\n\n\nDiseñar y desarrollar nuevas funcionalidades utilizando Angular, participando en todo el ciclo de desarrollo End-to-End.\nDefinir y evolucionar la arquitectura Frontend para garantizar soluciones escalables, mantenibles y de alta calidad.\nLiderar las migraciones continuas entre versiones de Angular, asegurando la estabilidad y compatibilidad de las aplicaciones.\nDiseñar y mantener librerías de componentes reutilizables para optimizar el desarrollo y la consistencia entre proyectos.\nDefinir y evolucionar Design Systems que permitan unificar la experiencia de usuario y los estándares visuales.\nEstablecer buenas prácticas para arquitecturas CSS escalables, garantizando la mantenibilidad de los estilos.\nDiseñar e impulsar estrategias de calidad basadas en testing automatizado y cobertura de pruebas.\nColaborar con equipos multidisciplinares y participar en la definición de estándares técnicos y buenas prácticas de desarrollo.\nGarantizar la mantenibilidad, reutilización y evolución continua de componentes, estilos y pruebas automatizadas.\n\n\n¿Qué ofrecemos?\n\n\nIncorporación a un proyecto internacional de primer nivel.\nSustitución baja paternal.\nContrato indefinido.\nModalidad 100% remoto.\nRetribución competitiva acorde a la experiencia aportada.\nRetribución flexible.\nDesarrollo profesional continuo y acceso a proyectos con tecnologías punteras.\nExcelente ambiente de trabajo, colaboración y crecimiento profesional.\n\n\nRequisitos mínimos\n\nExperiencia En\n\n\nMás de 5 años de experiencia como Senior FrontEnd Engineer o posiciones similares.\nAmplia experiencia en arquitectura Frontend y desarrollo End-to-End con Angular.\nExperiencia realizando migraciones continuas entre versiones de Angular.\nExperiencia en diseño y desarrollo de librerías de componentes reutilizables.\nExperiencia definiendo e implantando Design Systems.\nConocimientos sólidos en arquitecturas CSS escalables y organización de estilos.\nExperiencia implementando estrategias de calidad mediante testing automatizado y cobertura de pruebas.\nCapacidad para trabajar de forma autónoma y colaborar con equipos técnicos internacionales.\nNivel alto de inglés (imprescindible).\n\n\nSi cumples los requisitos, no dudes en inscribirte. ¡Te estamos esperando!\n\nNuestro compromiso es promover ambientes de trabajo en los que se trate con respeto y dignidad a las personas, procurando siempre el desarrollo profesional de toda la plantilla. Garantizamos la igualdad de oportunidades en los procesos de selección, formación y promoción, ofreciendo un entorno laboral libre de cualquier tipo de discriminación por razón de género, edad, discapacidad, orientación sexual, identidad o expresión de género, estado civil o circunstancias personales o sociales.\n\nEsta oferta está dirigida a todas las personas que cumplan con los requisitos del puesto. Se valorará especialmente que el/la candidata/a cuente con un certificado de discapacidad igual o superior al 33%, conforme a la Ley General de los Derechos de las Personas con Discapacidad (LGD).",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T20:09:37.370Z",
+    "sourceHash": "1c49a0960eca562a09691e7cc68fc5c87fbe237f67f420372f3cc1eb4013ddc9",
+    "company": {
+      "id": "experienceitsolutions",
+      "name": "eXperience IT Solutions",
+      "logoUrl": "https://logo.clearbit.com/experienceitsolutions.com",
+      "industry": "Technology",
+      "website": "https://experienceitsolutions.com"
+    },
+    "slug": "senior-frontend-engineer-angular-ingl-s-experience-it-solutions-1c49a096",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "css"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d32ccedb126c67e2e140726367058315a0f9fd2a413ce96683b71e8c7054d058",
+    "title": "Frontend Engineer (React + TypeScript + Node.js)",
+    "applyUrl": "https://knowmadmood.teamtailor.com/jobs/8537685-frontend-engineer-react-typescript-node-js",
+    "description": "About the job\n\nWe are knowmad mood!\n\nSomos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Nacimos para provocar un cambio real a través de la innovación y el desarrollo sostenible, con la misión de aportar valor a los clientes e impulsar nuestro talento.\n\nFormado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto.\n\nLos valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza.\n\n¿Qué es lo que valoramos?\n\nExperiencia de al menos 5 años como Frontend Engineer, Full Stack Engineer o Consultor Técnico de Desarrollo Web, participando en productos digitales de gran escala.\n\n\n Experiencia en el desarrollo de aplicaciones web modernas utilizando ReactJS, TypeScript y JavaScript (ES2022+).\n Experiencia en arquitecturas SSR (Server Side Rendering), SPA (Single Page Applications) y patrones Backend for Frontend (BFF).\n Conocimientos sólidos en Node.js y Express para el desarrollo e integración de servicios.\n Experiencia en desarrollo frontend basado en React Hooks y buenas prácticas de arquitectura de componentes.\n Experiencia trabajando con testing automatizado mediante Jest, React Testing Library, Mocha y Chai.\n Conocimientos de herramientas modernas del ecosistema frontend como Rsbuild, pnpm Workspaces, Turborepo y Biome.\n Experiencia en integración con APIs y construcción de interfaces escalables, mantenibles y orientadas a negocio.\n Interés y conocimientos en Inteligencia Artificial Generativa, desarrollo con agentes IA y nuevas herramientas de productividad basadas en IA.\n Capacidad para trabajar en entornos Agile/Scrum y colaborar con equipos multidisciplinares.\n Muy buena actitud, curiosidad tecnológica, capacidad de aprendizaje y predisposición para trabajar de forma colaborativa con equipos experimentados.\n\n\n¿Cuáles serían tus funciones?\n\n\n Análisis Funcional: Participar en el análisis de los requisitos y funcionalidades definidas por el equipo de producto.\n Diseño de Soluciones Técnicas: Proponer soluciones técnicas, realizar estimaciones de esfuerzo y colaborar en la definición de la arquitectura de las aplicaciones.\n Desarrollo Frontend: Implementar nuevas funcionalidades utilizando React, TypeScript y las tecnologías del ecosistema frontend corporativo.\n Integración con Backend: Desarrollar e integrar aplicaciones con APIs y servicios backend garantizando escalabilidad y rendimiento.\n Arquitectura Web Moderna: Participar en el diseño y evolución de aplicaciones basadas en SSR, BFF y SPA.\n Testing y Calidad: Desarrollar pruebas unitarias y garantizar entregas de código de alta calidad, bien estructurado y mantenible.\n Gestión de Código y Despliegues: Gestionar ramas, revisiones de código, despliegues y monitorización de las soluciones desarrolladas.\n Mantenimiento Evolutivo: Asegurar la correcta evolución y mantenimiento de los componentes necesarios para el correcto funcionamiento de la plataforma.\n Innovación e IA: Participar en la adopción de nuevas capacidades relacionadas con IA Generativa, asistentes de desarrollo y agentes inteligentes.\n\n\nAdemás, valoraremos muy positivamente si tienes experiencia y/o conocimientos en:\n\n\n React 19, Server Components y arquitecturas frontend modernas.\n Micro-frontends y diseño de aplicaciones distribuidas.\n Herramientas de experimentación y feature flags como GrowthBook.\n Arquitectura de la información y diseño de experiencias digitales escalables.\n Integración de soluciones de IA en productos digitales.\n Herramientas y frameworks relacionados con agentes IA y automatización inteligente.\n Buenas prácticas de rendimiento, accesibilidad y observabilidad frontend.\n Metodologías Agile/Scrum y cultura DevOps.\n Capacidad para equilibrar proactividad, autonomía y alineación con las decisiones técnicas del equipo.\n\n\nY con nosotros podrás disfrutar de:\n\n✅Contrato Indefinido\n\n✅ 100% REMOTO\n\n✅Formación interna y acceso a certificaciones ♻Consulta nuestro calendario aquí:\n\nhttps://www.knowmadmood.com/es/talento/formacion\n\n✅Plan de retribución flexible (seguro médico, transporte, tickets guardería, tickets restaurante)\n\n✅Embajador de nuestra marca, a través de nuestro plan amigo\n\n¡Recomienda a tus amigos y llévate un extra!\n\n✅¡Eventos, meetups, techdays, charlas...y mucho más!\n\n✅ 26 días de descanso (22 días vacaciones, 2 días de libre disposición y 24 y 31 diciembre festivos por defecto)\n\n✅ Horario: 8.30 a 18h ( flexible) L-J y V 8 a 15h e Intensiva de Verano Julio y Agosto de 8 a 15h\n\nPara estar al corriente de nuestras novedades síguenos aquí -> knowmad mood\n\nEn knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T20:08:23.619Z",
+    "sourceHash": "d32ccedb126c67e2e140726367058315a0f9fd2a413ce96683b71e8c7054d058",
+    "company": {
+      "id": "knowmadmood",
+      "name": "knowmad mood",
+      "logoUrl": "https://logo.clearbit.com/knowmadmood.com",
+      "industry": "Technology",
+      "website": "https://knowmadmood.com"
+    },
+    "slug": "frontend-engineer-react-typescript-node-js-knowmad-mood-d32ccedb",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f58c1c9da82ceb5411686c039ee626bee51f570e1db75df20cc17b4241ff448f",
+    "title": "Software development Frontend Developer",
+    "applyUrl": "https://www.defdone.com/careers-job-post/frontend-developer",
+    "description": "About the job\n\nSoftware development\n\nBack\n\nFrontend Developer\n\nYou’ll work with international team on development and maintenance of the apps. We built most of our stuff using React + Redux and Node.js + Express. We prefer to use TypeScript when possible, but we believe if you’re good JavaScript developer there is nothing better than learn on the real project. We provide you time and materials to learn.\n\nSalary and seniority\n\nJunior\n\n\n 1+ years of experience\n 10-15k PLN NET\n\n\n‍Middle\n\n\n 3+ years of experience\n 15-25k PLN NET\n\n\n‍Senior\n\n\n 5+ years of experience\n 25-35k PLN NET\n\n\nConditions\n\n\n Contract (permanent): B2B\n Client: 100% remote software house\n Work mode: Flexible working hours\n Size of the company: > 30\n\n\nRequests (⭐–⭐⭐⭐)\n\n\n frontend development (React.js) (⭐⭐⭐)\n redux or other state management lib (⭐⭐)\n docker (not necessary) (⭐)\n e2e testing (not necessary) (⭐)\n\n\nEasy Apply",
+    "location": "Remote - Poland",
+    "country": "Poland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T19:58:29.233Z",
+    "sourceHash": "f58c1c9da82ceb5411686c039ee626bee51f570e1db75df20cc17b4241ff448f",
+    "company": {
+      "id": "defdone",
+      "name": "defdone",
+      "logoUrl": "https://logo.clearbit.com/defdone.com",
+      "industry": "Technology",
+      "website": "https://defdone.com"
+    },
+    "slug": "software-development-frontend-developer-defdone-f58c1c9d",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "redux"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Poland"
+      ],
+      "seniority": "junior",
+      "employmentType": "b2b"
+    }
+  },
+  {
+    "id": "d6dfd863cf2a80321bd9b4ccded12f471f9ef2edca3cadf7c96237bb24b0eab3",
+    "title": "Frontend Software Engineer",
+    "applyUrl": "https://jobs.smartrecruiters.com/CDPROJEKTRED/744000154653787-frontend-software-engineer",
+    "description": "About the job\n\nCompany Description\n\nTo create revolutionary, story-driven RPGs which go straight to the hearts of gamers — this is our mission. Want to dive deeper into our company’s culture? Explore our social media and check out our YouTube channel and Beyond the Game Blog where we share behind-the-scenes insights and stories direct from our team members!\n\nJob Description\n\nWe are looking for a Software Engineer to join the Online Services Team who will help build and evolve web applications and services used across the company. You will work with modern web technologies, independently owning features from implementation through delivery, while collaborating with engineers, cross-functional teams, and external partners. The role offers the opportunity to contribute not only to product development, but also to code quality, performance, technical improvements, and the long-term maintainability of our shared web solutions.\n\nDaily Responsibilities\n\n\nImplementing and maintaining high-quality web applications, services, and supporting systems,\nIndependently delivering features and technical tasks using established architectures, patterns, and engineering practices,\nTaking ownership of assigned features and technical tasks from implementation through testing and delivery,\nCollaborating with engineers and cross-functional teams across the company, as well as external partners and vendors when required,\nParticipating in code reviews, technical discussions, troubleshooting, and knowledge sharing within the team,\nIdentifying and implementing improvements to code quality, maintainability, performance, and existing development workflows,\nUnderstanding business and user requirements and translating them into appropriate technical implementations,\nApplying established technologies, frameworks, and engineering practices while developing knowledge of the team's systems and architecture,\nContributing to reducing technical debt and improving existing components, services, and shared solutions. \n\n\nQualifications\n\n\n3 years of professional experience on a similar position in web development. \n\n\nAnd practical knowledge of:\n\n\nFront-end programming language: JavaScript/TypeScript,\nFront-end application frameworks: React/Next.js,\nHTML5, CSS3/SCSS, and browser fundamentals,\nCommon design patterns and application architecture principles,\nHTTP, REST APIs, and OpenAPI,\nAutomated testing using Jest, Cypress, or similar,\nGit, Docker, and CI/CD workflows,\nDependency and build tooling such as npm/yarn,\nAuthentication and authorization technologies such as OAuth 2.0, OpenID Connect and JWT,\nWeb application security and privacy principles,\nSEO, accessibility and web performance fundamentals. \n\n\nNice to have\n\nFamiliarity with:\n\n\nBack-end programming language: PHP or Go,\nBack-end application frameworks such as Symfony or similar,\nSQL and relational databases such as MySQL/PostgreSQL,\nCloud and container orchestration concepts,\nSearch, messaging, and data technologies such as Elasticsearch/OpenSearch, RabbitMQ, and NoSQL databases. \n\n\nAdditional Information\n\nWork mode: \n\n\nRemote-first with one day per week working from Warsaw office. \n\n\nHealth & Well-Being\n\n\nPrivate medical healthcare — a selection of medical plans with dental care and unlimited rehabilitation to choose from, which are also accessible for your partner and relatives or annual budget for medical expenses (for those working outside Poland). \nLife insurance — comprehensive pension and insurance plans to protect you and your loved ones. \nPsychological and psychiatrist care — free mental health support and various well-being initiatives. \nPaid Leave — from 20 to 26 days of holiday per year, and paid sick leave. \nSports card — gain access to a wide number of sporting and fitness facilities across the city. \nMenstrual leave — employees who menstruate can take one extra day off when experiencing period pain. \nRED Parents Network — support for working parents, including childcare benefits, and family-friendly events. \nRED Summer Camp for Kids — a fun summer program for children aged 5–12, majoritively paid by the company. \nAnnual screenings for cancer prevention covered by the company (accessible in our offices in Poland). \n\n\nPerks & Professional Growth\n\n\nA welcome pack filled with goodies — to help you feel right at home once you join the team. \nTrainings, lectures, and courses — workshops and trainings for each employee, knowledge-sharing initiatives, online tutorials, and e-learning classes are all available. There’s always something to learn!\nREDs have access to the cafeteria platform through which they can receive subscription benefits, additional medical packages or vouchers and codes to shops, cinemas, and public transport reimbursement. \nGifts for newborn rebels and regular chances to nab some cool swag!\n\n\nSocial Activities & Life in the Office\n\n\nDog-friendly office — dog owner? Bring your pooch with you and look after them while working! There’s always a furry friend or two to meet at the studio. \nSocial events — we host regular gatherings at the studio where we can all unwind, play games, and just have some fun together. \nHealthy selections — canteens. \nTruly international working environment — a chance to meet and work with a diverse selection of people from all around the world. \nSustainability is an ongoing commitment for us, and our campus has electric car charging points, green zones, and much more. Read all about it on our Beyond the Game Blog. \nA designated space for your bicycle, as well as bicycle repair equipment and showers available whenever you need them. \nAn onsite, well-equipped gym with a climbing wall, daily Gym Assistant support, and yoga and boxing classes. \nNo dress-code — we like to keep it casual. \n\n\nEstimated pay range for this position: 10 700 – 19 000 PLN gross monthly.\n\nFinal offers are dependent on job-related factors like experience and qualifications.\n\nType of contract: Employment Contract (\"Umowa o pracę\").\n\nIf you've observed any irregularities (i.e. legal or ethical violations) in our recruitment process, please click here to report them anonymously.",
+    "location": "Remote - Poland",
+    "country": "Poland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T19:51:04.008Z",
+    "sourceHash": "d6dfd863cf2a80321bd9b4ccded12f471f9ef2edca3cadf7c96237bb24b0eab3",
+    "company": {
+      "id": "cdprojektred",
+      "name": "CD PROJEKT RED",
+      "logoUrl": "https://logo.clearbit.com/cdprojektred.com",
+      "industry": "Technology",
+      "website": "https://cdprojektred.com"
+    },
+    "slug": "frontend-software-engineer-cd-projekt-red-d6dfd863",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "javascript",
+        "css",
+        "sass",
+        "cypress",
+        "jest",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Poland"
+      ],
+      "seniority": "mid",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "72d30444c8628f278550c27d38aa2830056c2d564a0a47a02b4c53bf4bbfb2f5",
+    "title": "SVILUPPATORE FRONTEND (REACT / REACT NATIVE)",
+    "applyUrl": "https://reteinformaticalavoro.it/lavoro/61674/sviluppatore-frontend-react-react-native?ref=linkedin",
+    "description": "About the job\nThis job is sourced from a job board. Learn More\n\nPer attività di consulenza presso i propri Clienti, SICIS seleziona Programmatori Freelance con esperienza di sviluppo Frontend (React/React Native). Le attività saranno svolte in modalità ibrida presso la sede di un Cliente a Roma.\n\nCompetenze Richieste\n\n\nEsperienza nello sviluppo frontend (web e mobile)\nEsperienza significativa e recente con React e React Native\nOttima conoscenza di React, JavaScript e TypeScript\nEsperienza con state management, preferibilmente Redux o soluzioni equivalenti\nConoscenza delle principali strategie di navigazione mobile\nEsperienza nell’integrazione di API REST e nella gestione asincrona dei dati\nFamiliarità con moduli nativi, permessi, notifiche, biometria, fotocamera, geolocalizzazione e deep linking\nConoscenza di Git, pipeline CI/CD e processi di distribuzione sugli store\n\n\nOffriamo\n\n\ncontratto di collaborazione a Partita Iva\nretribuzione commisurata all’esperienza maturata\n\n\nInvia la tua candidatura esprimendo il consenso al trattamento dei dati personali:\n\nAutorizzo il trattamento dei miei dati personali ai sensi dell’art. 13 d. lgs. 30 giugno 2006 n°196 – “Codice in materia di protezione dei dati personali” e dell’art. 13 GDPR 679/16 – “Regolamento europeo sulla protezione dei dati personali”.\n\ne Indicando i Seguenti Dettagli\n\n\ntariffa giornaliera richiesta (contratto a Partita Iva)\ndisponibilità/periodo di preavviso\neventuale disponibilità ad attività in sede e zone lavorative di interesse",
+    "location": "Remote - Italy",
+    "country": "Italy",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-13T19:31:09.372Z",
+    "sourceHash": "72d30444c8628f278550c27d38aa2830056c2d564a0a47a02b4c53bf4bbfb2f5",
+    "company": {
+      "id": "sicis",
+      "name": "SICIS",
+      "logoUrl": "https://logo.clearbit.com/sicis.com",
+      "industry": "Technology",
+      "website": "https://sicis.com"
+    },
+    "slug": "sviluppatore-frontend-react-react-native-sicis-72d30444",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "redux"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Italy"
+      ],
+      "seniority": "mid",
+      "employmentType": "contract"
+    }
+  },
+  {
     "id": "0ea929134e2ed3bf8cff77262987efe0cd8d548687adaade5dee4ff5ac62142e",
     "title": "Frontend Engineer - Top Secret",
     "applyUrl": "https://www.theladders.com/linkedin/89257578?src=LinkedIn",
