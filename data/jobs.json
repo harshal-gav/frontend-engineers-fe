@@ -1,5 +1,260 @@
 [
   {
+    "id": "d53a7bdfe39d06536c65b7ebd13699c1dc6547cfeac81e82fbfe998a56d2b4d7",
+    "title": "Senior Frontend Software Engineer",
+    "applyUrl": "https://www.talenthop.com/apply-with-ai/de8c79f8-7703-49ab-906d-c968985a8c03?utm_medium=job_posting&utm_source=linkedin&utm_campaign=software_engineer&utm_category=software_engineer&utm_term=senior_frontend_software_engineer",
+    "description": "About the job\n\nThis is a Fully Remote Job\n\n\n\n\nAbout Our Client:\n\nThe organization operates in the healthcare technology sector, focusing on improving health outcomes by connecting individuals with care, pharmacy benefits, and data. It addresses challenges in health equity and accessibility on a global scale by leveraging technology to support healthier lives and advance equitable care.\n\n\n\n\nAbout the Opportunity:\n\nThe SENIOR FRONTEND SOFTWARE ENGINEER will design, develop, and maintain user interface components and applications for member-facing and agent-facing healthcare solutions. This role contributes by creating high-performing web and mobile experiences, using React, React Native, and cloud technologies, to solve complex healthcare technology challenges and enhance user interactions.\n\n\n\n\nResponsibilities:\n\nDesign and maintain portable UI packages and components for healthcare applications\nArchitect scalable component structures suited to complex solutions\nConvert product designs into responsive React web and React Native mobile components\nImplement multi-theme design systems using modern styling frameworks\nManage application state using Redux or Context API\nIntegrate front-end applications with backend services via REST and GraphQL APIs\nOptimize application performance and compatibility across platforms\nDevelop automated tests to ensure software quality and reliability\nManage deployment and publishing processes for app stores and platforms\nUtilize development tools and automation to streamline workflows\n\n\n\n\nRequirements:\n\nMinimum 5 years of professional experience in frontend web and mobile software engineering\nAt least 3 years of experience with React for web and React Native for mobile\n3+ years working with JavaScript and TypeScript (ES6+)\nExperience with HTML5, CSS3, and UI frameworks like MUI or Tailwind\nProficient in state management and API integration\nExperience with automated testing frameworks such as Jest, Detox, or Playwright\nFamiliarity with Git and modern build tools like Webpack, Vite, Babel, or NPM\n\n\n\n\nPay Range and Compensation Package:\n\nSalary range from $91,700 to $163,700 annually based on full-time employment\n\n\n\n\nBenefits & Perks:\n\n401(k) contribution\n\n\n\n\nEqual Opportunity Statement: Our client is an equal opportunity employer. They celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, or national origin.\n\n\n\n\nNote:\n\nTalentHop is a recruitment partner of this role. Please note that all employment decisions, including candidate assessment, interviews, hiring, compensation, and employment terms, are made exclusively by the hiring employer.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-14T04:58:41.447Z",
+    "sourceHash": "d53a7bdfe39d06536c65b7ebd13699c1dc6547cfeac81e82fbfe998a56d2b4d7",
+    "company": {
+      "id": "talenthop",
+      "name": "TalentHop",
+      "logoUrl": "https://logo.clearbit.com/talenthop.com",
+      "industry": "Technology",
+      "website": "https://talenthop.com"
+    },
+    "slug": "senior-frontend-software-engineer-talenthop-d53a7bdf",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "tailwind",
+        "webpack",
+        "vite",
+        "redux",
+        "graphql",
+        "jest",
+        "playwright",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7fda152563fe8c5540d926f699fcf91be9ef7ab4182dbe0fc80074e9c440dfd4",
+    "title": "Staff Front End Software Engineer",
+    "applyUrl": "https://wd1.myworkdaysite.com/recruiting/ssctech/SSCTechnologies/job/San-Francisco-CA---221-Main-Street/Staff-Front-End-Software-Engineer_R46338?source=LinkedIn",
+    "description": "About the job\n\nSS&C is a leading provider of mission-critical, AI-powered technology and services empowering financial services and healthcare organizations to work smarter, faster, and securely. Founded in 1986, SS&C is headquartered in Windsor, Connecticut, and has offices worldwide. More than 23,000 financial services and healthcare organizations, from the world's largest companies to small and mid-market firms, rely on SS&C for expertise, scale, and technology.\n\nJob Description\n\nJob Title: Staff Front End Software Engineer\n\nLocation: San Francisco, CA, Jacksonville, FL, New York, NY\n\nAbout The Role\n\nThe Geneva Web Development team is modernizing SS&C Advent's award-winning Geneva portfolio management and accounting platform with enterprise-scale React and TypeScript applications. We work closely with UX, Business Analyst, and QA teams to build reusable components, design systems, and high-performance user experiences for investment professionals worldwide.\n\nWhy Join SS&C \n\nSS&C combines proprietary technology with deep industry expertise to support complex financial and health care operations. Our teams design, implement, and operate solutions that help clients manage data, automate processes, and scale their businesses with confidence.\n\nYou will work with industry experts, modern platforms, and evolving technologies, gaining exposure to real-world operational challenges and large-scale enterprise environments.\n\nHow You Will Make An Impact\n\n\nDevelop modular and scalable code for front-end applications \nWork in all phases of software development lifecycle including design, research, development, code reviews, deployment, and testing. \nProvide a great user experience for our end users. \nWork effectively with User Experience, Business Analyst and QA teams. \nContribute to presentation-layer standards and best practices. \n\n\nRequired Experience\n\n\n10+ years of professional Web UI / frontend development experience. \nProven experience designing and evolving large-scale enterprise Single Page Application (SPA) architectures \nStrong hands-on expertise in React, TypeScript, JavaScript, HTML, and CSS. \nStrong understanding of frontend architecture patterns, component design, state management, routing, API integration, performance, accessibility, testing, and web security. \nExperience with modern UI frameworks, reusable component libraries, and design systems. \nDemonstrated Staff-level technical leadership, including architecture decisions, technical standards, design reviews, code reviews, and mentoring. \nExperience defining and evolving frontend technical architecture and technology roadmaps across multiple teams. \nExperience integrating SPAs with REST or gRPC. \nStrong understanding of browser internals, rendering performance, memory management, and frontend performance optimization. \nExperience designing and maintaining shared frontend platforms, libraries, and reusable application frameworks. \nExperience with frontend observability, including client-side logging, metrics, tracing, error monitoring, and performance diagnostics. \nExperience establishing frontend testing strategies across unit, component, integration, and end-to-end testing. \nExperience with frontend build systems, dependency management, and application delivery optimization, including code splitting, lazy loading, bundle optimization, and dependency governance. \nExperience collaborating closely with UX/design teams and translating design systems into reusable engineering components. \n\n\nWhat Sets You Apart ( Qualifications)\n\n\nExperience with monorepo, micro-frontend, or modular frontend architectures, including tooling such as Nx, Turborepo, or pnpm workspaces. \nExperience with advanced state and data-management libraries such as Redux Toolkit or TanStack Query. \nExperience evaluating and working with alternative frontend frameworks and API integration technologies, such as Angular, Vue, GraphQL, WebSockets, or similar technologies. \nExperience using AI-assisted software development tools and workflows. \nExperience with modern authentication and authorization frameworks such as OAuth 2.0 and OpenID Connect (OIDC). \nExperience with Docker, Kubernetes, or other containerized application environments. \nWorking with Front End build, packaging, and deployment tools such as GitHub Actions, Webpack, NPM Scripts. \nExperience in Agile development methodologies, Scrum preferred. \nExperience in wealth management or financial services \n\n\nJoin SS&C, where innovation meets global opportunities. Click here to apply.\n\n#CA-MG\n\nUnless explicitly requested or approached by SS&C Technologies, Inc. or any of its affiliated companies, the company will not accept unsolicited resumes from headhunters, recruitment agencies, or fee-based recruitment services.\n\nSS&C Technologies offers a comprehensive total rewards package designed to support your wellbeing, growth, and future. Our benefits include medical, dental, and vision coverage; a 401(k) plan with company match; paid time off, holidays, and parental leave; and professional development reimbursement opportunity.\n\nActual base salary will vary based on several factors, including but not limited to relevant skills, prior experience, education, demonstrated performance, and geographic location.\n\nNew York: The expected base salary for the position is between 150,000 USD to 175,000 USD. California: The expected base salary for the position is between 150,000 USD to 175,000 USD. Other States expected base salary for the position is between 150,000 USD to 175,000 USD.\n\nIn addition, employees in this role may be eligible for consideration on an annual basis for a discretionary bonus and/or equity awards, such as restricted stock units or stock options, based upon individual and business performance at the company’s discretion.\n\nApplications will be accepted on an ongoing basis until the position is filled.\n\nSS&C Technologies is an Equal Employment Opportunity employer and does not discriminate against any applicant for employment or employee on the basis of race, color, religious creed, gender, age, marital status, sexual orientation, national origin, disability, veteran status or any other classification protected by applicable discrimination laws.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-14T04:57:11.362Z",
+    "sourceHash": "7fda152563fe8c5540d926f699fcf91be9ef7ab4182dbe0fc80074e9c440dfd4",
+    "company": {
+      "id": "ssctechnologies",
+      "name": "SS&C Technologies",
+      "logoUrl": "https://logo.clearbit.com/ssctechnologies.com",
+      "industry": "Technology",
+      "website": "https://ssctechnologies.com"
+    },
+    "slug": "staff-front-end-software-engineer-ss-c-technologies-7fda1525",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "webpack",
+        "redux",
+        "graphql",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "98df3531711baf9a6530dc16ad12299bc3177de7b9e11deeb1482ac6a04fcba7",
+    "title": "Frontend Code Evaluation Specialist",
+    "applyUrl": "https://work.mercor.com/login?utm_medium=free_job_board&utm_source=linkedin&utm_term=4R47X8RV&utm_content=manatal_deflect_apps_disabled&listingId=list_AAABoAPp1LEAbgpoCqdGza4o",
+    "description": "About the job\n\nAbout The Job\n\nMercor connects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.\n\nPosition: Frontend Engineer\n\nType: Contract\n\nCompensation: $90/hour\n\nLocation: Remote\n\nRole Responsibilities\n\n\nRender a reference page and two candidate replications at 1920×1080. Judge which is the closer reproduction, state by state.\nDiff visual fidelity in detail: box model and spacing, typography (family, size, weight, line-height, letter-spacing), color and border treatment, image and asset handling, z-order, and overflow.\nRead the source of both attempts and grade construction quality. Distinguish a replication that is genuinely correct from one that merely looks correct at one viewport.\nTest responsiveness. Identify defects such as a nav bar that looks right at 1920px but collapses at 1400px.\nWrite specific, evidence-cited justifications for every preference. Provide detailed explanations like \"B nests the article body in a single absolutely-positioned div, so the text overlaps the footer below 1600px, while A uses normal document flow.\"\nUse the \"this task is broken\" escape hatch with judgment. Distinguish a task that genuinely cannot be completed from one that is merely hard.\n\n\n\nQualifications\n\nMust-Have\n\n\n3–8 years of professional web development experience in frontend or full-stack work.\nFluency across web eras, including legacy layouts like used for layout.\nCommand of hand-written HTML and CSS: semantic markup, flexbox, grid, media queries, and legacy float- and table-based layouts.\nBrowser DevTools as muscle memory.\nCommand-line comfort: unzipping an archive, standing up a static local server, and untangling a broken image reference.\nEnough JavaScript to read a page's scripts and understand their DOM impact.\nProfessional written English for task justification.\n\n\n\nPreferred\n\n\nPrior RLHF, preference-labeling, model-evaluation, or structured code-review work.\nPixel-perfect design-to-code experience.\nAccessibility expertise (ARIA, semantic landmarks, heading hierarchy).\nFamiliarity with how LLMs fail at code generation.\nWeb scraping, archiving, or DOM-parsing background.\nMore than one completed Mercor project and availability in contiguous multi-hour blocks.\n\n\n\nApplication Process (Takes 20–30 mins to complete)\n\n\nUpload resume\nAI interview based on your resume\nSubmit form\n\n\n\nResources & Support\n\n\nFor details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome\nFor any help or support, reach out to: support@mercor.com\n\n\n\nPS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.",
+    "location": "Remote - Slovenia",
+    "country": "Slovenia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-14T04:50:41.474Z",
+    "sourceHash": "98df3531711baf9a6530dc16ad12299bc3177de7b9e11deeb1482ac6a04fcba7",
+    "company": {
+      "id": "mercor",
+      "name": "Mercor",
+      "logoUrl": "https://logo.clearbit.com/mercor.com",
+      "industry": "Technology",
+      "website": "https://mercor.com"
+    },
+    "slug": "frontend-code-evaluation-specialist-mercor-98df3531",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Slovenia"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "43c82e2a8153c6fd80f62f52832c61907a789c784a269418be0f2e0b7e54eeff",
+    "title": "Frontend Code Evaluation Specialist",
+    "applyUrl": "https://work.mercor.com/login?utm_medium=free_job_board&utm_source=linkedin&utm_term=9377WYRY&utm_content=manatal_deflect_no_mapping",
+    "description": "About the job\n\nAbout The Job\n\nMercor connects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.\n\nPosition: Frontend Engineer\n\nType: Contract\n\nCompensation: $90/hour\n\nLocation: Remote\n\nRole Responsibilities\n\n\nRender a reference page and two candidate replications at 1920×1080. Judge which is the closer reproduction, state by state.\nDiff visual fidelity in detail: box model and spacing, typography (family, size, weight, line-height, letter-spacing), color and border treatment, image and asset handling, z-order, and overflow.\nRead the source of both attempts and grade construction quality. Distinguish a replication that is genuinely correct from one that merely looks correct at one viewport.\nTest responsiveness. Identify defects such as a nav bar that looks right at 1920px but collapses at 1400px.\nWrite specific, evidence-cited justifications for every preference. Provide detailed explanations like \"B nests the article body in a single absolutely-positioned div, so the text overlaps the footer below 1600px, while A uses normal document flow.\"\nUse the \"this task is broken\" escape hatch with judgment. Distinguish a task that genuinely cannot be completed from one that is merely hard.\n\n\n\nQualifications\n\nMust-Have\n\n\n3–8 years of professional web development experience in frontend or full-stack work.\nFluency across web eras, including legacy layouts like used for layout.\nCommand of hand-written HTML and CSS: semantic markup, flexbox, grid, media queries, and legacy float- and table-based layouts.\nBrowser DevTools as muscle memory.\nCommand-line comfort: unzipping an archive, standing up a static local server, and untangling a broken image reference.\nEnough JavaScript to read a page's scripts and understand their DOM impact.\nProfessional written English for task justification.\n\n\n\nPreferred\n\n\nPrior RLHF, preference-labeling, model-evaluation, or structured code-review work.\nPixel-perfect design-to-code experience.\nAccessibility expertise (ARIA, semantic landmarks, heading hierarchy).\nFamiliarity with how LLMs fail at code generation.\nWeb scraping, archiving, or DOM-parsing background.\nMore than one completed Mercor project and availability in contiguous multi-hour blocks.\n\n\n\nApplication Process (Takes 20–30 mins to complete)\n\n\nUpload resume\nAI interview based on your resume\nSubmit form\n\n\n\nResources & Support\n\n\nFor details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome\nFor any help or support, reach out to: support@mercor.com\n\n\n\nPS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.",
+    "location": "Remote - Mexico",
+    "country": "Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-14T04:35:55.085Z",
+    "sourceHash": "43c82e2a8153c6fd80f62f52832c61907a789c784a269418be0f2e0b7e54eeff",
+    "company": {
+      "id": "mercor",
+      "name": "Mercor",
+      "logoUrl": "https://logo.clearbit.com/mercor.com",
+      "industry": "Technology",
+      "website": "https://mercor.com"
+    },
+    "slug": "frontend-code-evaluation-specialist-mercor-43c82e2a",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mexico"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "8cf1285c8fba17b6faac6a1052aaaa56868ff40a1cf55bfb290c3756f1d4ff1b",
+    "title": "Senior Frontend Engineer ID93613",
+    "applyUrl": "https://agileengine.zohorecruit.com/recruit/ViewJob.na?digest=l%40t.6K4ByLHs8JAwAM6StKOfe7FDGUFueH32o4bZ3hk-&embedsource=LinkedIn%2BLimited%2BListings",
+    "description": "About the job\n\nWe are looking for a Senior Frontend Engineer to build and maintain React micro-frontend applications for a high-scale payments platform.\n\nThe mandatory requirements are 4+ years of experience, Webpack Module Federation, Apollo Client, and an upper-intermediate English level.\n\nRECRUITMENT PROCESS\n1. Application — Share a few details about your experience and background.\n\n2. Coding Challenge — If applicable, complete it in the coding language you are most comfortable with.\n\n3. Video Interview — Record a short video introduction in English.\n\n4. Technical Interview or Hiring Manager Interview — Discuss your experience and fit for the role.\n\n5. Offer — If it’s a match, you’ll receive an offer.\n\nWHAT YOU’LL GAIN\n• Remote work — Work from where you feel most productive.\n\n• Local presence in India — Work in a structured and compliant environment aligned with Indian regulations.\n\n• Competitive compensation in INR — Receive compensation in INR, plus support for learning, education, and wellness.\n\n• Exciting projects — Work with modern technologies for global clients and fast-growing companies.\n\nMUST HAVES\n• BS or MS in Computer Science (or equivalent).\n\n• 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment.\n\n• TypeScript and React, including functional components, hooks, context, and custom hooks.\n\n• Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components.\n\n• Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures.\n\n• Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling.\n\n• Solid experience with React Router for client-side navigation and for building and validating complex forms.\n\n• Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues.\n\n• Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows.\n\n• Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools.\n\n• Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests.\n\n• Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness.\n\n• Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.\n\n• Upper-intermediate English level.\n\nNICE TO HAVES\n• Prior experience in the Billing or Payments domain.\n\n• Experience with high-scale, mission-critical frontend systems where UX quality, state-management correctness, accessibility, and performance are paramount.\n\n• Ability to reason clearly about client-side architecture, including micro-frontends, module federation, and caching strategies.\n\n• Strong collaboration with backend partners on API contracts.\n\nWHAT YOU WILL DO\n• Develop and maintain React micro-frontend solutions and web applications that power the Payments platform.\n\n• Add new payment methods to the existing Payments platform capabilities.\n\n• Contribute to feature development, bug fixes, and reliability improvements across these services.\n\n• Deliver production-ready feature work and bug fixes through automated CI/CD pipelines (GitLab CI) with strong test coverage.\n\n• Write comprehensive unit, integration, and end-to-end test suites to ensure high test coverage and service reliability.\n\n\n\n\n\n\nDesired Skills and Experience\n\nBS or MS in Computer Science (or equivalent). 4+ years of hands-on experience, with demonstrated ownership of production services in a distributed systems environment. TypeScript and React, including functional components, hooks, context, and custom hooks. Proficiency with Webpack (bundling, code splitting) and component styling using SCSS/CSS Modules and Styled Components. Building and maintaining micro-frontend applications using Webpack Module Federation or similar platform-integrated remote module architectures. Strong working knowledge of GraphQL — writing queries and mutations, consuming them via Apollo Client (caching, reactive variables), and generating type-safe hooks with GraphQL Code Generator or similar tooling. Solid experience with React Router for client-side navigation and for building and validating complex forms. Strong production engineering mindset, including frontend telemetry, error logging, feature flags, gradual rollouts, and debugging user-facing production issues. Building accessible (a11y-compliant) and internationalized user interfaces using shared design systems, reusable component libraries, and localization workflows. Proficiency testing at all levels — unit and integration testing with Jest and React Testing Library, end-to-end testing with TestCafe, Cypress, or Playwright, and familiarity with automated accessibility testing tools. Comfort working in CI/CD pipelines (GitLab CI or equivalent) with strong command of ESLint, Prettier, and collaborative Git workflows, including branching, code reviews, and merge requests. Comfortable using modern coding assistants responsibly to accelerate code comprehension, implementation, refactoring, and test creation while maintaining ownership of quality, security, and correctness. Deep backend and distributed-systems experience, including exposure to async messaging and multi-datastore consistency challenges.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-14T04:26:10.342Z",
+    "sourceHash": "8cf1285c8fba17b6faac6a1052aaaa56868ff40a1cf55bfb290c3756f1d4ff1b",
+    "company": {
+      "id": "agileengine",
+      "name": "AgileEngine",
+      "logoUrl": "https://logo.clearbit.com/agileengine.com",
+      "industry": "Technology",
+      "website": "https://agileengine.com"
+    },
+    "slug": "senior-frontend-engineer-id93613-agileengine-8cf1285c",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "css",
+        "sass",
+        "webpack",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "172fa2525fa9d29dfe237383350b8f36ffb4906639537859bae16e6c63c86346",
+    "title": "Frontend Code Evaluation Specialist",
+    "applyUrl": "https://work.mercor.com/login?utm_medium=free_job_board&utm_source=linkedin&utm_term=V6889RXR&utm_content=manatal_deflect_no_mapping",
+    "description": "About the job\n\nAbout The Job\n\nMercor connects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.\n\nPosition: Frontend Engineer\n\nType: Contract\n\nCompensation: $90/hour\n\nLocation: Remote\n\nRole Responsibilities\n\n\nRender a reference page and two candidate replications at 1920×1080. Judge which is the closer reproduction, state by state.\nDiff visual fidelity in detail: box model and spacing, typography (family, size, weight, line-height, letter-spacing), color and border treatment, image and asset handling, z-order, and overflow.\nRead the source of both attempts and grade construction quality. Distinguish a replication that is genuinely correct from one that merely looks correct at one viewport.\nTest responsiveness. Identify defects such as a nav bar that looks right at 1920px but collapses at 1400px.\nWrite specific, evidence-cited justifications for every preference. Provide detailed explanations like \"B nests the article body in a single absolutely-positioned div, so the text overlaps the footer below 1600px, while A uses normal document flow.\"\nUse the \"this task is broken\" escape hatch with judgment. Distinguish a task that genuinely cannot be completed from one that is merely hard.\n\n\n\nQualifications\n\nMust-Have\n\n\n3–8 years of professional web development experience in frontend or full-stack work.\nFluency across web eras, including legacy layouts like used for layout.\nCommand of hand-written HTML and CSS: semantic markup, flexbox, grid, media queries, and legacy float- and table-based layouts.\nBrowser DevTools as muscle memory.\nCommand-line comfort: unzipping an archive, standing up a static local server, and untangling a broken image reference.\nEnough JavaScript to read a page's scripts and understand their DOM impact.\nProfessional written English for task justification.\n\n\n\nPreferred\n\n\nPrior RLHF, preference-labeling, model-evaluation, or structured code-review work.\nPixel-perfect design-to-code experience.\nAccessibility expertise (ARIA, semantic landmarks, heading hierarchy).\nFamiliarity with how LLMs fail at code generation.\nWeb scraping, archiving, or DOM-parsing background.\nMore than one completed Mercor project and availability in contiguous multi-hour blocks.\n\n\n\nApplication Process (Takes 20–30 mins to complete)\n\n\nUpload resume\nAI interview based on your resume\nSubmit form\n\n\n\nResources & Support\n\n\nFor details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome\nFor any help or support, reach out to: support@mercor.com\n\n\n\nPS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.",
+    "location": "Remote - Estonia",
+    "country": "Estonia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-14T04:16:56.408Z",
+    "sourceHash": "172fa2525fa9d29dfe237383350b8f36ffb4906639537859bae16e6c63c86346",
+    "company": {
+      "id": "mercor",
+      "name": "Mercor",
+      "logoUrl": "https://logo.clearbit.com/mercor.com",
+      "industry": "Technology",
+      "website": "https://mercor.com"
+    },
+    "slug": "frontend-code-evaluation-specialist-mercor-172fa252",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Estonia"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "d639e9f50eee9ecdea0a03f6c655272e95abf5954934d734adf1cff3cb0c4145",
+    "title": "Frontend Engineer - Marketing & Digital Experience",
+    "applyUrl": "https://job-boards.greenhouse.io/nex/jobs/5451314008?gh_src=6nwze7hy8us",
+    "description": "About the job\n\nNex is on a mission to help families rediscover the joy of movement. Created by parents for parents, Nex combines technology and play to deliver fun, social, and interactive experiences powered by natural body motion, encouraging kids and adults to move more, play more, and have fun together. Nex Playground, the company’s award-winning active play system, is purpose-built to get families moving year-round, with safety and privacy as core considerations in its intentional design. It is certified kidSAFE+ COPPA compliant and built to support healthy, active play for all ages and abilities.\n\nNex Playground features a growing library of 50+ experiences, including motion and dance games, fitness and educational experiences, and Nex Originals. Content includes collaborations with partners like Hasbro, Sesame Workshop, and NBCUniversal. Nex has been recognized by Fast Company’s Most Innovative Companies, TIME’s Best Inventions, and Parents’ Best Entertainment System for Families, and has earned Red Dot, IDEA, and Core77 international design awards. We encourage you to explore Have Fun and Is Motion Gaming Back?, as they offer a deeper look into our culture, values, and explain how our approach to motion gaming differs from previous generations.\n\nImportant Notice: ⚠️ To protect yourself from recruitment scams, please note that Nex communicates through official company emails ending in @nex.inc. If you receive a suspicious email or message, please do not respond and report it immediately to us.\n\nLocation: Canada - Vancouver, Toronto, or Montreal\n\nWork Arrangement: Remote within Canada\n\nWork Location: Candidates must be based in one of the listed locations and authorized to work in Canada.\n\nAnnual salary: CA$135k - CA$165k (Final base salary within this range will be determined based on job-related factors, including the candidate’s experience, skills, qualifications, and geographic location)\n\nType: Full-Time\n\nReports to: Engineering Manager\n\nThe Role\n\nJoin a small, ambitious team where your work shapes how customers first discover and fall in love with our product. You'll be a frontend-first engineer who owns and evolves our marketing site — the CMS powering our pages, the component library keeping our UI consistent, the performance and the polish that makes every visit feel intentional. This is a role for someone who takes genuine pride in a well-maintained, well-crafted web presence; who notices when something's a pixel off, when a page loads a tad too slow, or when the content publishing workflow could be half as painful with a smarter setup.\n\nWhat makes this role special is the ownership and the visibility. You'll work directly with designers, marketers, and leadership — close enough to understand the why behind every build, and trusted enough to run with it. You'll be the person who keeps the lights on beautifully — iterating on the design system, improving the content publishing pipeline, and making sure our public-facing web experience is always in great shape. Your work will be live, visible, and experienced by millions of visitors. If you care deeply about frontend craft, love the intersection of design and code, and want to be the person a whole team relies on to make things look and work brilliantly — let's talk.\n\nWhat You'll Do\n\n\nOwn and evolve our marketing site — the CMS, the component library, the frontend architecture, and the analytics integrations that tell us how it's all performing. This is yours to steward and improve.\nCollaborate with Design and Marketing to build and maintain customer-facing web experiences — landing pages, campaign builds, and commerce integrations — that are polished, performant, and on-brand.\nPartner with Design, Marketing, and Publishing to keep our content publishing pipeline smooth — so the team can move fast without depending on engineering for every update.\nBuild and maintain lightweight integrations and tooling — connecting third-party services, CX tools, and external APIs — that make the broader team more productive.\nObsess over performance and user experience — from Core Web Vitals to CMS workflows — so that every interaction feels fast, polished, and intentional.\nDevelop and maintain our Web Design System and component libraries, keeping the foundation consistent and scalable as the brand and team grow.\n\n\nAbout You\n\n\nYou've built and maintained a performant, production marketing site that real teams depend on — and you know what it takes to keep it fast, stable, and easy to update. We'd love to hear about it.\nYou've set up or significantly evolved a CMS for a non-technical team — you've thought about content modelling, editor experience, and how to make publishing fast without breaking things.\nYou care about code quality and reliability — you write tests, sweat the edge cases, and don't consider something shipped until you're confident it holds up in the real world.\nYou've diagnosed and fixed real performance bottlenecks on a public-facing site — you know what kills LCP, how to audit a slow page, and how to make the fix stick.\nYou’re ready to take charge end-to-end — from scoping and building to deployment and smoke testing in production.\nYou've worked closely with non-engineering teams before — marketers, designers, stakeholders — and you know how to translate between creative vision and technical reality.\nYou have a DIY mindset and genuine obsession with code quality, user experience, and craft — always asking how things could be better, and doing something about it.\nYou embrace AI-assisted tools like Claude Code — and you know when to trust them and when to push back.\nYou are proficient in TypeScript and have experience in a modern full-stack JS frameworks (we use SvelteKit, but Next.js or similar is great!) — bonus points if you've already shipped something in Svelte.\n\n\nBonus If You\n\n\nHave a good eye for design and are comfortable giving and receiving feedback in design tools like Figma — you don't just implement designs, you help make them better.\nHave worked with Sanity CMS — it's what we use day-to-day, and hitting the ground running here would be a genuine advantage.\nHave experience with international localization tools and architecture — big plus given where we're headed.\nHave implemented privacy compliance (e.g. GDPR) and managed cookie consent flows.\nHave maintained software libraries or written technical documentation others actually want to read.\n\n\nWe Offer\n\n\nCompetitive compensation package.\nFlexible working hours and vacation policy.\nProduct-driven culture that treasures talents and individual growth.\nFront-row seat and hands-on experience with cutting edge technologies in the evolving gaming field\n\n\nNex is located in San Jose, California, USA and Hong Kong. Learn more about us at https://www.nexplayground.com/about.\n\nWe encourage applications even if you don’t meet more than 50% of the requirements — we believe that experience comes in many forms!\n\nNex is an equal opportunity employer and does not discriminate on the basis of race, color, religion, sex (including pregnancy, childbirth, gender identity, and sexual orientation), national origin, ancestry, age, physical or mental disability, medical condition, genetic information, marital status, military or veteran status, or any other characteristic protected by applicable law. This policy applies to all individuals at every stage of the employment relationship, including all current and prospective employees, and covers all employment decisions including recruitment, hiring, job assignment, promotion, compensation, benefits, training, discipline and termination.\n\nWe are committed to providing a workplace free from discrimination and harassment and to fostering an inclusive environment for all employees.",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-14T04:10:18.452Z",
+    "sourceHash": "d639e9f50eee9ecdea0a03f6c655272e95abf5954934d734adf1cff3cb0c4145",
+    "company": {
+      "id": "nex",
+      "name": "Nex",
+      "logoUrl": "https://logo.clearbit.com/nex.com",
+      "industry": "Technology",
+      "website": "https://nex.com"
+    },
+    "slug": "frontend-engineer-marketing-digital-experience-nex-d639e9f5",
+    "aiTags": {
+      "stack": [
+        "nextjs",
+        "svelte",
+        "sveltekit",
+        "typescript",
+        "javascript",
+        "figma"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "18a59b04d8a53c471c87a2fa403866aca7e0e7d0de6ec381daeb851ae8de96ea",
     "title": "Freelance Software Engineer, Frontend",
     "applyUrl": "https://careers-leftfieldlabs.icims.com/jobs/8876/freelance-software-engineer%2c-frontend/job?mode=job&iis=Job+Posting&iisn=LinkedIn",
