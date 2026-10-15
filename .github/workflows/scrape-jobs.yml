@@ -44,10 +44,8 @@ jobs:
           MAX_PAGES: "2"
         run: xvfb-run --auto-servernum --server-args="-screen 0 1440x900x24" node scripts/linkedin-scraper.js
       
-      - name: Enrich New Jobs with AI
+      - name: Enrich New Jobs with Regex
         run: node scripts/enrich-jobs-ai.js
-        env:
-          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
       
       - name: Commit and push changes
         run: |
