@@ -38,8 +38,10 @@ jobs:
           mkdir -p data
           node -e 'fs.writeFileSync("data/linkedin-auth.json", process.env.LINKEDIN_AUTH_DATA)'
       
-      - name: Run Scraper
-        run: node scripts/linkedin-scraper.js
+      - name: Run Scraper (Headed Mode via Xvfb)
+        env:
+          HEADED: "true"
+        run: xvfb-run --auto-servernum --server-args="-screen 0 1440x900x24" node scripts/linkedin-scraper.js
       
       - name: Enrich New Jobs with AI
         run: node scripts/enrich-jobs-ai.js
