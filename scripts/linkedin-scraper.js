@@ -5,7 +5,7 @@ const crypto = require("crypto");
 
 // ─── Config ───────────────────────────────────────────────────────────
 const SEARCH_QUERY = "frontend developer";
-const COUNTRIES = [
+const COUNTRIES = (process.env.COUNTRY || process.argv[2]) ? [process.env.COUNTRY || process.argv[2]] : [
   "Afghanistan",
   "Albania",
   "Algeria",
@@ -267,11 +267,14 @@ function saveJobs(jobs) {
 
   console.log("🔑 Loading saved LinkedIn session...");
 
-  // Headed mode enabled for human-like interaction
+  // Headless mode enabled for CI and automated scraping (set HEADED=true for local headed mode)
+  const isHeadless = process.env.HEADED !== "true";
   const browser = await chromium.launch({
-    headless: false,
-    slowMo: 200,
-    args: ["--start-maximized"],
+    headless: isHeadless,
+    slowMo: isHeadless ? 50 : 200,
+    args: isHeadless
+      ? ["--no-sandbox", "--disable-setuid-sandbox", "--disable-dev-shm-usage"]
+      : ["--start-maximized"],
   });
 
   const context = await browser.newContext({
@@ -319,7 +322,7 @@ function saveJobs(jobs) {
     console.log(`\n🌍 Discovering jobs in ${country}...`);
     
     const jobsUrl = new URL("https://www.linkedin.com/jobs/search/");
-    jobsUrl.searchParams.set("keywords", SEARCH_QUERY);
+    jobsUrl.searchParams.set("keywords", `${SEARCH_QUERY} ${country}`);
     jobsUrl.searchParams.set("location", country);
     jobsUrl.searchParams.set("f_WT", "2"); // Remote
     jobsUrl.searchParams.set("sortBy", "DD"); // Most recent
@@ -366,11 +369,12 @@ function saveJobs(jobs) {
         await sleep(SLOW);
       }
 
-      // Wait for jobs to load (LinkedIn is an SPA)
-      await page.waitForSelector('.job-card-container, .job-search-card, [data-job-id]', { timeout: 10000 }).catch(() => {});
+      // Wait for jobs to load (support both new AI UI and classic UI)
+      const cardSelector = '[componentkey^="job-card-component-ref-"][role="button"], .job-card-container, .job-search-card, [data-job-id], .job-card-list__title';
+      await page.waitForSelector(cardSelector, { timeout: 10000 }).catch(() => {});
 
       // Grab cards
-      const jobCards = await page.$$('.job-card-container, .job-search-card, [data-job-id], .job-card-list__title');
+      const jobCards = await page.$$(cardSelector);
 
       console.log(`   Found ${jobCards.length} job cards on this page.`);
 
@@ -379,13 +383,15 @@ function saveJobs(jobs) {
       for (let i = 0; i < jobCards.length; i++) {
         try {
           // Re-query cards
-          const cards = await page.$$('.job-card-container, .job-search-card, [data-job-id], .job-card-list__title');
+          const cards = await page.$$(cardSelector);
           if (i >= cards.length) break;
 
           const card = cards[i];
           
           // Robustly extract job ID
           let jobId = await card.evaluate((el) => {
+            const key = el.getAttribute('componentkey');
+            if (key && key.startsWith('job-card-component-ref-')) return key.replace('job-card-component-ref-', '');
             if (el.getAttribute('data-job-id')) return el.getAttribute('data-job-id');
             if (el.getAttribute('data-entity-urn')) return el.getAttribute('data-entity-urn').split(':').pop();
             const inner = el.querySelector('[data-job-id]');
@@ -394,7 +400,7 @@ function saveJobs(jobs) {
             if (innerUrn) return innerUrn.getAttribute('data-entity-urn').split(':').pop();
             const a = el.matches('a[href*="/view/"]') ? el : el.querySelector('a[href*="/view/"]');
             if (a && a.href.includes('/view/')) return a.href.split('/view/')[1].split('/')[0].split('?')[0];
-            return el.innerText.substring(0, 50).replace(/\\s+/g, ''); // Fallback
+            return null;
           });
 
           if (jobId && state.processedJobIds.includes(jobId)) {
@@ -413,21 +419,21 @@ function saveJobs(jobs) {
             state.processedJobIds.push(jobId);
           }
 
-          // Extract details
-          const titleEl = await page.$(".job-details-jobs-unified-top-card__job-title, .jobs-unified-top-card__job-title, h1.t-24");
-          const companyEl = await page.$(".job-details-jobs-unified-top-card__company-name, .jobs-unified-top-card__company-name");
+          // Extract details (supports both new AI UI and classic UI)
+          const titleEl = await page.$("a[href*='/jobs/view/'], .job-details-jobs-unified-top-card__job-title, .jobs-unified-top-card__job-title, h1.t-24, h1");
+          const companyEl = await page.$("a[href*='/company/'], .job-details-jobs-unified-top-card__company-name, .jobs-unified-top-card__company-name");
           const locationEl = await page.$(".job-details-jobs-unified-top-card__bullet, .jobs-unified-top-card__bullet");
           const descriptionEl = await page.$(".jobs-description__container, #job-details");
 
           const title = titleEl ? (await titleEl.innerText()).trim() : "Unknown Title";
-          const company = companyEl ? (await companyEl.innerText()).trim() : "Unknown Company";
+          const company = companyEl ? (await companyEl.innerText()).trim().split('\n')[0].trim() : "Unknown Company";
           const location = locationEl ? (await locationEl.innerText()).trim() : country;
           const description = descriptionEl ? (await descriptionEl.innerText()).trim() : "";
 
           console.log(`\n   [${i + 1}/${jobCards.length}] ${title} @ ${company}`);
 
           const titleLower = title.toLowerCase();
-          const isFrontend = /front\s*end/i.test(titleLower);
+          const isFrontend = /front\s*end|react|vue|angular|javascript|typescript|web\s*developer/i.test(titleLower);
           
           if (!isFrontend) {
              console.log(`       ⏭️  Skipping non-frontend job: ${title}`);
@@ -435,57 +441,71 @@ function saveJobs(jobs) {
              continue;
           }
 
-          const applyButton = await page.$('.jobs-details__main-content button.jobs-apply-button, .job-details-jobs-unified-top-card__container--two-pane button.jobs-apply-button, .jobs-unified-top-card button.jobs-apply-button, .jobs-details button.jobs-apply-button, .job-details-jobs-unified-top-card__content button.jobs-apply-button');
-
-          if (!applyButton) {
-            console.log("       ⏭️  No Apply button found (might be Easy Apply only) — skipping.");
-            saveState(state);
-            continue;
-          }
-
-          const buttonText = (await applyButton.innerText()).trim();
-          
-          if (buttonText.toLowerCase().includes("easy apply") || buttonText.toLowerCase().includes("applied")) {
-            console.log(`       ⏭️  Found '${buttonText}' button — skipping.`);
-            saveState(state);
-            continue;
-          }
-
-          latestNewPageUrl = null;
-          await applyButton.click({ timeout: 5000 }).catch(() => {});
-          await sleep(LONG);
-
+          // Check direct offsite career page link (present in new AI layout)
           let cleanUrl = null;
-
-          if (latestNewPageUrl) {
-            cleanUrl = latestNewPageUrl;
+          const directApplyLink = await page.$('a[href*="safety/go/?url="]');
+          if (directApplyLink) {
+            const rawHref = await directApplyLink.getAttribute("href");
             try {
-              const parsed = new URL(cleanUrl);
-              if (parsed.hostname.includes("linkedin.com")) {
-                const dest = parsed.searchParams.get("url") || parsed.searchParams.get("dest") || parsed.searchParams.get("redirectUrl");
-                if (dest) cleanUrl = decodeURIComponent(dest);
-              }
-            } catch (_) {}
-          } else {
-            const currentUrl = page.url();
-            if (!currentUrl.includes("linkedin.com/jobs")) {
-              cleanUrl = currentUrl;
-              await page.goBack();
-              await sleep(MEDIUM);
+              const u = new URL(rawHref);
+              cleanUrl = u.searchParams.get("url") || rawHref;
+            } catch (_) {
+              cleanUrl = rawHref;
+            }
+          }
+
+          const applyButton = await page.$('.jobs-details__main-content button.jobs-apply-button, .job-details-jobs-unified-top-card__container--two-pane button.jobs-apply-button, .jobs-unified-top-card button.jobs-apply-button, .jobs-details button.jobs-apply-button, .job-details-jobs-unified-top-card__content button.jobs-apply-button, button:has-text("Apply"), a:has-text("Apply")');
+
+          if (!cleanUrl && !applyButton) {
+            cleanUrl = jobId ? `https://www.linkedin.com/jobs/view/${jobId}/` : null;
+          }
+
+          if (!cleanUrl && applyButton) {
+            const buttonText = (await applyButton.innerText()).trim();
+
+            if (buttonText.toLowerCase().includes("easy apply")) {
+              cleanUrl = jobId ? `https://www.linkedin.com/jobs/view/${jobId}/` : null;
+              console.log(`       ℹ️  Easy Apply job - using public LinkedIn URL: ${cleanUrl}`);
+            } else if (buttonText.toLowerCase().includes("applied")) {
+              console.log(`       ⏭️  Found '${buttonText}' button — skipping.`);
+              saveState(state);
+              continue;
             } else {
-              const modalLink = await page.$('.jobs-apply-button__redirect-url, a[href*="apply"], .artdeco-modal a[target="_blank"]');
-              if (modalLink) {
-                const href = await modalLink.getAttribute("href");
-                if (href) cleanUrl = href;
-              }
-              const closeBtn = await page.$('button[aria-label="Dismiss"], .artdeco-modal__dismiss');
-              if (closeBtn) {
-                await closeBtn.click();
-                await sleep(SLOW);
-                const discardBtn = await page.$('button[data-test-dialog-primary-btn], button[data-control-name="discard_application_confirm_btn"]');
-                if (discardBtn) {
-                  await discardBtn.click();
-                  await sleep(SLOW);
+              latestNewPageUrl = null;
+              await applyButton.click({ timeout: 5000 }).catch(() => {});
+              await sleep(LONG);
+
+              if (latestNewPageUrl) {
+                cleanUrl = latestNewPageUrl;
+                try {
+                  const parsed = new URL(cleanUrl);
+                  if (parsed.hostname.includes("linkedin.com")) {
+                    const dest = parsed.searchParams.get("url") || parsed.searchParams.get("dest") || parsed.searchParams.get("redirectUrl");
+                    if (dest) cleanUrl = decodeURIComponent(dest);
+                  }
+                } catch (_) {}
+              } else {
+                const currentUrl = page.url();
+                if (!currentUrl.includes("linkedin.com/jobs")) {
+                  cleanUrl = currentUrl;
+                  await page.goBack();
+                  await sleep(MEDIUM);
+                } else {
+                  const modalLink = await page.$('.jobs-apply-button__redirect-url, a[href*="apply"], .artdeco-modal a[target="_blank"]');
+                  if (modalLink) {
+                    const href = await modalLink.getAttribute("href");
+                    if (href) cleanUrl = href;
+                  }
+                  const closeBtn = await page.$('button[aria-label="Dismiss"], .artdeco-modal__dismiss');
+                  if (closeBtn) {
+                    await closeBtn.click();
+                    await sleep(SLOW);
+                    const discardBtn = await page.$('button[data-test-dialog-primary-btn], button[data-control-name="discard_application_confirm_btn"]');
+                    if (discardBtn) {
+                      await discardBtn.click();
+                      await sleep(SLOW);
+                    }
+                  }
                 }
               }
             }
@@ -496,7 +516,7 @@ function saveJobs(jobs) {
           }
 
           if (!cleanUrl) {
-            console.log(`       ⏭️  No external URL found (Easy Apply or native). Skipping.`);
+            console.log(`       ⏭️  No valid URL found. Skipping.`);
           }
 
           if (cleanUrl) {

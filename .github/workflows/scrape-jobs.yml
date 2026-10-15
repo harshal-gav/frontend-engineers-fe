@@ -31,14 +31,15 @@ jobs:
         run: npx playwright install --with-deps chromium
       
       - name: Hydrate LinkedIn Auth
-        # LinkedIn session is required. We read it from a GitHub Secret and save it.
+        # LinkedIn session is required. We read it from a GitHub Secret and save it safely without bash syntax errors.
+        env:
+          LINKEDIN_AUTH_DATA: ${{ secrets.LINKEDIN_AUTH_JSON }}
         run: |
           mkdir -p data
-          echo '${{ secrets.LINKEDIN_AUTH_JSON }}' > data/linkedin-auth.json
+          node -e 'fs.writeFileSync("data/linkedin-auth.json", process.env.LINKEDIN_AUTH_DATA)'
       
       - name: Run Scraper
-        # Run with xvfb since the scraper requires headless: false (headed mode)
-        run: xvfb-run --auto-servernum --server-args="-screen 0 1280x960x24" bash scripts/run-scraper-loop.sh
+        run: node scripts/linkedin-scraper.js
       
       - name: Enrich New Jobs with AI
         run: node scripts/enrich-jobs-ai.js
