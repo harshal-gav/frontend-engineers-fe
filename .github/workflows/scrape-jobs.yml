@@ -41,6 +41,7 @@ jobs:
       - name: Run Scraper (Headed Mode via Xvfb)
         env:
           HEADED: "true"
+          MAX_PAGES: "2"
         run: xvfb-run --auto-servernum --server-args="-screen 0 1440x900x24" node scripts/linkedin-scraper.js
       
       - name: Enrich New Jobs with AI

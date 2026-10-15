@@ -207,6 +207,7 @@ const COUNTRIES = (process.env.COUNTRY || process.argv[2]) ? [process.env.COUNTR
 const DB_FILE = path.join(__dirname, "..", "data", "jobs.json");
 const STATE_FILE = path.join(__dirname, "..", "data", "scraper-state.json");
 const AUTH_FILE = path.join(__dirname, "..", "data", "linkedin-auth.json");
+const MAX_PAGES_PER_COUNTRY = parseInt(process.env.MAX_PAGES || "2", 10);
 
 // Wait times (ms) - keep it human-like
 const SLOW = 800;
@@ -566,10 +567,14 @@ function saveJobs(jobs) {
         }
       }
 
-      // Next page limit removed, will rely on UI next button logic
-
       if (newJobsFoundOnPage === 0) {
         console.log(`\n       ⏭️  0 new jobs found on this page. Reached the end of results. Moving to next country.`);
+        hasMorePages = false;
+        continue;
+      }
+
+      if (currentPage >= MAX_PAGES_PER_COUNTRY) {
+        console.log(`\n       🏁 Reached maximum page limit (${MAX_PAGES_PER_COUNTRY}) for ${country}. Moving to next country.`);
         hasMorePages = false;
         continue;
       }
