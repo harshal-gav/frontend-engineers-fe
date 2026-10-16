@@ -1,4 +1,4 @@
-name: Scrape LinkedIn Jobs
+name: Scrape Remote Jobs
 
 on:
   schedule:
@@ -27,9 +27,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run Scraper (LinkedIn Guest & Free APIs)
-        env:
-          MAX_PAGES: "2"
+      - name: Run Scraper (Remote APIs)
         run: node scripts/linkedin-scraper.js
 
       - name: Enrich New Jobs with Regex

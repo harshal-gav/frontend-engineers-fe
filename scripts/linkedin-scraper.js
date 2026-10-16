@@ -1,17 +1,16 @@
 #!/usr/bin/env node
 /**
- * Remote Frontend Developer Job Scraper (Pure HTTP / No Playwright)
+ * Multi-Source Remote Frontend Developer Job Scraper
+ * (LinkedIn Scraper Removed - Strictly Remote Job APIs Only)
  * 
- * Sources & Exact Filters:
- * 1. LinkedIn Guest API: Strictly Remote (f_WT=2), DD sort, extracts full HTML descriptions,
- *    queries Global/Worldwide + ALL 205 countries with state-tracking & 429 backoff.
- * 2. Remotive: ?category=software-dev&search=front%20end & ?search=frontend
- * 3. Remote OK: ?tag=react, ?tag=frontend & base /api
- * 4. Himalayas: https://himalayas.app/jobs/api with client-side filtering on title & categories
- * 5. Jobicy: ?tag=react, ?tag=frontend, & ?industry=dev
- * 6. Arbeitnow: https://www.arbeitnow.com/api/job-board-api with client-side filtering on remote=true & title
+ * Verified Remote APIs:
+ * 1. RemoteFirstJobs API: ?query=frontend
+ * 2. Remote OK API: ?tag=react, ?tag=frontend, & base /api
+ * 3. Jobicy API: ?tag=react, ?tag=frontend, & ?industry=dev
+ * 4. Remotive API: ?category=software-dev&search=front%20end & ?search=frontend
+ * 5. Himalayas API: https://himalayas.app/jobs/api (client-side title & category filter)
+ * 6. Arbeitnow API: https://www.arbeitnow.com/api/job-board-api (client-side remote=true & title filter)
  * 7. We Work Remotely: Front-End programming category RSS feed
- * 8. RemoteFirstJobs: ?query=frontend
  * 
  * Strict Frontend Filtering:
  * - Title MUST match frontend (/front[\s-]*end/i)
@@ -31,8 +30,6 @@ const { extractTags } = require('./enrich-jobs-ai.js');
 const DB_FILE = path.join(__dirname, '..', 'data', 'jobs.json');
 const STATE_FILE = path.join(__dirname, '..', 'data', 'scraper-state.json');
 
-const MAX_PAGES = parseInt(process.env.MAX_PAGES || '2', 10);
-const SLEEP_MS = 400;
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
 
 // Targeted job IDs / slugs to strictly permanently exclude
@@ -42,35 +39,6 @@ const BLOCKED_TARGETS = [
   '1d9d3706'
 ];
 
-// All 205 countries in the world + Global/Worldwide
-const ALL_COUNTRIES = [
-  '', // Global / All
-  'Afghanistan', 'Albania', 'Algeria', 'Andorra', 'Angola', 'Antigua and Barbuda', 'Argentina', 'Armenia', 'Australia', 'Austria',
-  'Azerbaijan', 'Bahamas', 'Bahrain', 'Bangladesh', 'Barbados', 'Belarus', 'Belgium', 'Belize', 'Benin', 'Bhutan',
-  'Bolivia', 'Bosnia and Herzegovina', 'Botswana', 'Brazil', 'Brunei', 'Bulgaria', 'Burkina Faso', 'Burundi', 'Cabo Verde', 'Cambodia',
-  'Cameroon', 'Canada', 'Central African Republic', 'Chad', 'Chile', 'China', 'Colombia', 'Comoros', 'Congo', 'Costa Rica',
-  'Croatia', 'Cuba', 'Cyprus', 'Czech Republic', 'Denmark', 'Djibouti', 'Dominica', 'Dominican Republic', 'East Timor', 'Ecuador',
-  'Egypt', 'El Salvador', 'Equatorial Guinea', 'Eritrea', 'Estonia', 'Eswatini', 'Ethiopia', 'Fiji', 'Finland', 'France',
-  'Gabon', 'Gambia', 'Georgia', 'Germany', 'Ghana', 'Greece', 'Grenada', 'Guatemala', 'Guinea', 'Guinea-Bissau',
-  'Guyana', 'Haiti', 'Honduras', 'Hungary', 'Iceland', 'India', 'Indonesia', 'Iran', 'Iraq', 'Ireland',
-  'Israel', 'Italy', 'Ivory Coast', 'Jamaica', 'Japan', 'Jordan', 'Kazakhstan', 'Kenya', 'Kiribati', 'Kosovo',
-  'Kuwait', 'Kyrgyzstan', 'Laos', 'Latvia', 'Lebanon', 'Lesotho', 'Liberia', 'Libya', 'Liechtenstein', 'Lithuania',
-  'Luxembourg', 'Madagascar', 'Malawi', 'Malaysia', 'Maldives', 'Mali', 'Malta', 'Marshall Islands', 'Mauritania', 'Mauritius',
-  'Mexico', 'Micronesia', 'Moldova', 'Monaco', 'Mongolia', 'Montenegro', 'Morocco', 'Mozambique', 'Myanmar', 'Namibia',
-  'Nauru', 'Nepal', 'Netherlands', 'New Zealand', 'Nicaragua', 'Niger', 'Nigeria', 'North Korea', 'North Macedonia', 'Norway',
-  'Oman', 'Pakistan', 'Palau', 'Palestine', 'Panama', 'Papua New Guinea', 'Paraguay', 'Peru', 'Philippines', 'Poland',
-  'Portugal', 'Qatar', 'Romania', 'Russia', 'Rwanda', 'Saint Kitts and Nevis', 'Saint Lucia', 'Saint Vincent and the Grenadines', 'Samoa', 'San Marino',
-  'Sao Tome and Principe', 'Saudi Arabia', 'Senegal', 'Serbia', 'Seychelles', 'Sierra Leone', 'Singapore', 'Slovakia', 'Slovenia', 'Solomon Islands',
-  'Somalia', 'South Africa', 'South Korea', 'South Sudan', 'Spain', 'Sri Lanka', 'Sudan', 'Suriname', 'Sweden', 'Switzerland',
-  'Syria', 'Taiwan', 'Tajikistan', 'Tanzania', 'Thailand', 'Togo', 'Tonga', 'Trinidad and Tobago', 'Tunisia', 'Turkey',
-  'Turkmenistan', 'Tuvalu', 'Uganda', 'Ukraine', 'United Arab Emirates', 'United Kingdom', 'United States', 'Uruguay', 'Uzbekistan', 'Vanuatu',
-  'Vatican City', 'Venezuela', 'Vietnam', 'Yemen', 'Zambia', 'Zimbabwe'
-];
-
-const TARGET_LOCATIONS = (process.env.COUNTRY || process.argv[2])
-  ? [process.env.COUNTRY || process.argv[2]]
-  : ALL_COUNTRIES;
-
 const HEADERS = {
   'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
   'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8',
@@ -78,10 +46,6 @@ const HEADERS = {
 };
 
 // ─── Helpers ──────────────────────────────────────────────────────────
-function sleep(ms) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
-}
-
 function generateId(url) {
   return crypto.createHash('sha256').update(url).digest('hex');
 }
@@ -162,12 +126,11 @@ function loadState() {
     try {
       const data = JSON.parse(fs.readFileSync(STATE_FILE, 'utf8'));
       return {
-        processedJobIds: Array.isArray(data.processedJobIds) ? data.processedJobIds : [],
-        completedCountries: Array.isArray(data.completedCountries) ? data.completedCountries : []
+        processedJobIds: Array.isArray(data.processedJobIds) ? data.processedJobIds : []
       };
     } catch (_) {}
   }
-  return { processedJobIds: [], completedCountries: [] };
+  return { processedJobIds: [] };
 }
 
 function saveState(state) {
@@ -268,9 +231,6 @@ async function fetchSafeText(url, options = {}) {
       headers: { ...HEADERS, ...(options.headers || {}) },
       signal: AbortSignal.timeout(15000)
     });
-    if (res.status === 429) {
-      return { status: 429, text: '' };
-    }
     if (!res.ok) return { status: res.status, text: '' };
     const text = await res.text();
     return { status: 200, text };
@@ -292,179 +252,49 @@ async function fetchSafeJson(url, options = {}) {
   }
 }
 
-// ─── Source 1: LinkedIn Guest API (All Countries) ─────────────────────
-async function scrapeLinkedIn(jobs, existingApplyUrls, existingHashes, state) {
-  console.log(`\n💼 [1/8] Scraping LinkedIn Guest API across ${TARGET_LOCATIONS.length} locations (Strict Remote Frontend)...`);
+// ─── Source 1: RemoteFirstJobs API ────────────────────────────────────
+async function scrapeRemoteFirstJobs(jobs, existingApplyUrls, existingHashes, state) {
+  console.log('\n🌐 [1/7] Scraping RemoteFirstJobs API (?query=frontend)...');
   let added = 0;
+  try {
+    const data = await fetchSafeJson('https://remotefirstjobs.com/api/search-jobs?query=frontend');
+    if (!data || !Array.isArray(data.jobs)) return 0;
 
-  for (let i = 0; i < TARGET_LOCATIONS.length; i++) {
-    const loc = TARGET_LOCATIONS[i];
-    const locName = loc || 'Global (Worldwide)';
+    for (const job of data.jobs) {
+      const title = job.title || '';
+      const company = job.company_name || '';
+      const applyUrl = job.url || '';
+      const description = job.description || job.body || '';
+      const location = Array.isArray(job.locations) && job.locations.length > 0 ? job.locations.join(', ') : 'Global';
+      const logo = job.company_logo || '';
+      const publishedAt = job.published_at || '';
 
-    // Skip already completed countries in state
-    if (state.completedCountries && state.completedCountries.includes(loc)) {
-      continue;
-    }
+      const saved = buildAndSaveJob({
+        title,
+        companyName: company,
+        applyUrl,
+        description,
+        location,
+        country: location,
+        logoUrl: logo,
+        postedAt: publishedAt
+      }, jobs, existingApplyUrls, existingHashes, state);
 
-    console.log(`\n  🔎 [${i + 1}/${TARGET_LOCATIONS.length}] LinkedIn Search: "${locName}"`);
-
-    for (let page = 0; page < MAX_PAGES; page++) {
-      const start = page * 10;
-      const searchUrl = new URL('https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search');
-      searchUrl.searchParams.set('keywords', 'frontend developer');
-      if (loc) searchUrl.searchParams.set('location', loc);
-      searchUrl.searchParams.set('f_WT', '2'); // Remote strictly
-      searchUrl.searchParams.set('sortBy', 'DD'); // Most recent
-      searchUrl.searchParams.set('start', start.toString());
-
-      let res = await fetchSafeText(searchUrl.toString());
-
-      // If 429 rate limit hit, backoff and retry once
-      if (res.status === 429) {
-        console.log(`    ⏳ Rate limited (429) on "${locName}". Backing off for 3.5s...`);
-        await sleep(3500);
-        res = await fetchSafeText(searchUrl.toString());
-      }
-
-      const html = res.text;
-      if (!html || html.length < 500) break;
-
-      const jobIds = [...html.matchAll(/data-entity-urn="urn:li:jobPosting:(\d+)"/g)].map(m => m[1]);
-      if (jobIds.length === 0) break;
-
-      console.log(`    📄 Page ${page + 1}: Found ${jobIds.length} job cards`);
-
-      for (const id of jobIds) {
-        if (state.processedJobIds.includes(id)) continue;
-
-        await sleep(SLEEP_MS);
-        const detailUrl = `https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/${id}`;
-        let detailRes = await fetchSafeText(detailUrl);
-
-        if (detailRes.status === 429) {
-          await sleep(3000);
-          detailRes = await fetchSafeText(detailUrl);
-        }
-
-        const detailHtml = detailRes.text;
-        if (!detailHtml) {
-          state.processedJobIds.push(id);
-          continue;
-        }
-
-        const titleMatch = detailHtml.match(/<h2[^>]*class="[^"]*topcard__title[^"]*"[^>]*>([\s\S]*?)<\/h2>/i) ||
-                           detailHtml.match(/<h1[^>]*>([\s\S]*?)<\/h1>/i);
-        const companyMatch = detailHtml.match(/<a[^>]*data-tracking-control-name="public_jobs_topcard-org-name"[^>]*>([\s\S]*?)<\/a>/i) ||
-                             detailHtml.match(/<a[^>]*class="[^"]*topcard__org-name-link[^"]*"[^>]*>([\s\S]*?)<\/a>/i);
-        const locMatch = detailHtml.match(/<span[^>]*class="[^"]*topcard__flavor--bullet[^"]*"[^>]*>([\s\S]*?)<\/span>/i);
-        const logoMatch = detailHtml.match(/<img[^>]*class="[^"]*artdeco-entity-image[^"]*"[^>]*data-delayed-url="([^"]+)"/i) ||
-                          detailHtml.match(/<img[^>]*class="[^"]*artdeco-entity-image[^"]*"[^>]*src="([^"]+)"/i);
-        const descMatch = detailHtml.match(/<div class="show-more-less-html__markup[^"]*"[^>]*>([\s\S]*?)<\/div>/i);
-
-        const title = titleMatch ? titleMatch[1].replace(/<[^>]+>/g, '').trim() : '';
-        const company = companyMatch ? companyMatch[1].replace(/<[^>]+>/g, '').trim() : '';
-        const location = locMatch ? locMatch[1].replace(/<[^>]+>/g, '').trim() : (loc || 'Remote');
-        const logo = logoMatch ? logoMatch[1].replace(/&amp;/g, '&') : '';
-        const description = descMatch ? descMatch[1] : '';
-
-        // Avoid on-site/hybrid
-        const topcard = (detailHtml.match(/<section class="top-card-layout[\s\S]*?<\/section>/i) || [])[0] || '';
-        if (/\b(on-site|onsite|hybrid)\b/i.test(topcard) && !/\bremote\b/i.test(topcard)) {
-          state.processedJobIds.push(id);
-          continue;
-        }
-
-        const applyUrl = `https://www.linkedin.com/jobs/view/${id}/`;
-
-        const saved = buildAndSaveJob({
-          title,
-          companyName: company,
-          applyUrl,
-          description,
-          location,
-          country: loc || 'Global',
-          logoUrl: logo,
-          postedAt: new Date().toISOString()
-        }, jobs, existingApplyUrls, existingHashes, state, id);
-
-        if (saved) {
-          added++;
-          console.log(`      ✅ Saved: ${title} @ ${company} (${location})`);
-        } else {
-          state.processedJobIds.push(id);
-        }
+      if (saved) {
+        added++;
+        console.log(`  ✅ Saved: ${title} @ ${company}`);
       }
     }
-
-    // Mark country completed
-    if (state.completedCountries) {
-      state.completedCountries.push(loc);
-      saveState(state);
-    }
-
-    await sleep(250);
+  } catch (err) {
+    console.log(`  ⚠️ RemoteFirstJobs error: ${err.message}`);
   }
-
-  // If all completed, reset for next scheduled run
-  if (state.completedCountries && state.completedCountries.length >= TARGET_LOCATIONS.length) {
-    state.completedCountries = [];
-    saveState(state);
-  }
-
-  console.log(`  ✨ LinkedIn Guest completed. Added ${added} new jobs.`);
+  console.log(`  ✨ RemoteFirstJobs completed. Added ${added} new jobs.`);
   return added;
 }
 
-// ─── Source 2: Remotive API ───────────────────────────────────────────
-async function scrapeRemotive(jobs, existingApplyUrls, existingHashes, state) {
-  console.log('\n🌐 [2/8] Scraping Remotive API (?category=software-dev&search=front%20end)...');
-  let added = 0;
-  const endpoints = [
-    'https://remotive.com/api/remote-jobs?category=software-dev&search=front%20end',
-    'https://remotive.com/api/remote-jobs?search=frontend'
-  ];
-
-  for (const url of endpoints) {
-    try {
-      const data = await fetchSafeJson(url);
-      if (!data || !Array.isArray(data.jobs)) continue;
-
-      for (const job of data.jobs) {
-        const title = job.title || '';
-        const company = job.company_name || '';
-        const applyUrl = job.url || '';
-        const description = job.description || '';
-        const location = job.candidate_required_location || 'Worldwide';
-        const logo = job.company_logo || '';
-        const publishedAt = job.publication_date || '';
-
-        const saved = buildAndSaveJob({
-          title,
-          companyName: company,
-          applyUrl,
-          description,
-          location,
-          country: location,
-          logoUrl: logo,
-          postedAt: publishedAt
-        }, jobs, existingApplyUrls, existingHashes, state);
-
-        if (saved) {
-          added++;
-          console.log(`  ✅ Saved: ${title} @ ${company}`);
-        }
-      }
-    } catch (err) {
-      console.log(`  ⚠️ Remotive error for ${url}: ${err.message}`);
-    }
-  }
-  console.log(`  ✨ Remotive completed. Added ${added} new jobs.`);
-  return added;
-}
-
-// ─── Source 3: Remote OK API ──────────────────────────────────────────
+// ─── Source 2: Remote OK API ──────────────────────────────────────────
 async function scrapeRemoteOK(jobs, existingApplyUrls, existingHashes, state) {
-  console.log('\n🌐 [3/8] Scraping Remote OK API (?tag=react, ?tag=frontend, & base /api)...');
+  console.log('\n🌐 [2/7] Scraping Remote OK API (?tag=react, ?tag=frontend, & base /api)...');
   let added = 0;
   const endpoints = [
     'https://remoteok.com/api?tag=react',
@@ -511,9 +341,104 @@ async function scrapeRemoteOK(jobs, existingApplyUrls, existingHashes, state) {
   return added;
 }
 
-// ─── Source 4: Himalayas API ──────────────────────────────────────────
+// ─── Source 3: Jobicy API ─────────────────────────────────────────────
+async function scrapeJobicy(jobs, existingApplyUrls, existingHashes, state) {
+  console.log('\n🌐 [3/7] Scraping Jobicy API (?tag=react, ?tag=frontend, & ?industry=dev)...');
+  let added = 0;
+  const endpoints = [
+    'https://jobicy.com/api/v2/remote-jobs?count=50&tag=frontend',
+    'https://jobicy.com/api/v2/remote-jobs?count=50&tag=react',
+    'https://jobicy.com/api/v2/remote-jobs?count=50&industry=dev'
+  ];
+
+  for (const url of endpoints) {
+    try {
+      const data = await fetchSafeJson(url);
+      if (!data || !Array.isArray(data.jobs)) continue;
+
+      for (const job of data.jobs) {
+        const title = job.jobTitle || '';
+        const company = job.companyName || '';
+        const applyUrl = job.url || '';
+        const description = job.jobDescription || '';
+        const location = job.jobGeo || 'Global';
+        const logo = job.companyLogo || '';
+        const publishedAt = job.pubDate || '';
+
+        const saved = buildAndSaveJob({
+          title,
+          companyName: company,
+          applyUrl,
+          description,
+          location,
+          country: location,
+          logoUrl: logo,
+          postedAt: publishedAt
+        }, jobs, existingApplyUrls, existingHashes, state);
+
+        if (saved) {
+          added++;
+          console.log(`  ✅ Saved: ${title} @ ${company}`);
+        }
+      }
+    } catch (err) {
+      console.log(`  ⚠️ Jobicy error for ${url}: ${err.message}`);
+    }
+  }
+  console.log(`  ✨ Jobicy completed. Added ${added} new jobs.`);
+  return added;
+}
+
+// ─── Source 4: Remotive API ───────────────────────────────────────────
+async function scrapeRemotive(jobs, existingApplyUrls, existingHashes, state) {
+  console.log('\n🌐 [4/7] Scraping Remotive API (?category=software-dev&search=front%20end)...');
+  let added = 0;
+  const endpoints = [
+    'https://remotive.com/api/remote-jobs?category=software-dev&search=front%20end',
+    'https://remotive.com/api/remote-jobs?search=frontend'
+  ];
+
+  for (const url of endpoints) {
+    try {
+      const data = await fetchSafeJson(url);
+      if (!data || !Array.isArray(data.jobs)) continue;
+
+      for (const job of data.jobs) {
+        const title = job.title || '';
+        const company = job.company_name || '';
+        const applyUrl = job.url || '';
+        const description = job.description || '';
+        const location = job.candidate_required_location || 'Worldwide';
+        const logo = job.company_logo || '';
+        const publishedAt = job.publication_date || '';
+
+        const saved = buildAndSaveJob({
+          title,
+          companyName: company,
+          applyUrl,
+          description,
+          location,
+          country: location,
+          logoUrl: logo,
+          postedAt: publishedAt
+        }, jobs, existingApplyUrls, existingHashes, state);
+
+        if (saved) {
+          added++;
+          console.log(`  ✅ Saved: ${title} @ ${company}`);
+        }
+      }
+    } catch (err) {
+      console.log(`  ⚠️ Remotive error for ${url}: ${err.message}`);
+    }
+  }
+  console.log(`  ✨ Remotive completed. Added ${added} new jobs.`);
+  return added;
+}
+
+// ─── Source 5: Himalayas API ──────────────────────────────────────────
 async function scrapeHimalayas(jobs, existingApplyUrls, existingHashes, state) {
-  console.log('\n🌐 [4/8] Scraping Himalayas API (Client-side title & category filter)...');
+  console.log('\n🌐 [5/7] Scraping Himalayas API (Client-side title & category filter)...');
   let added = 0;
   try {
     let cursor = '';
@@ -563,57 +488,9 @@ async function scrapeHimalayas(jobs, existingApplyUrls, existingHashes, state) {
   return added;
 }
 
-// ─── Source 5: Jobicy API ─────────────────────────────────────────────
-async function scrapeJobicy(jobs, existingApplyUrls, existingHashes, state) {
-  console.log('\n🌐 [5/8] Scraping Jobicy API (?tag=react, ?tag=frontend, & ?industry=dev)...');
-  let added = 0;
-  const endpoints = [
-    'https://jobicy.com/api/v2/remote-jobs?count=50&tag=frontend',
-    'https://jobicy.com/api/v2/remote-jobs?count=50&tag=react',
-    'https://jobicy.com/api/v2/remote-jobs?count=50&industry=dev'
-  ];
-
-  for (const url of endpoints) {
-    try {
-      const data = await fetchSafeJson(url);
-      if (!data || !Array.isArray(data.jobs)) continue;
-
-      for (const job of data.jobs) {
-        const title = job.jobTitle || '';
-        const company = job.companyName || '';
-        const applyUrl = job.url || '';
-        const description = job.jobDescription || '';
-        const location = job.jobGeo || 'Global';
-        const logo = job.companyLogo || '';
-        const publishedAt = job.pubDate || '';
-
-        const saved = buildAndSaveJob({
-          title,
-          companyName: company,
-          applyUrl,
-          description,
-          location,
-          country: location,
-          logoUrl: logo,
-          postedAt: publishedAt
-        }, jobs, existingApplyUrls, existingHashes, state);
-
-        if (saved) {
-          added++;
-          console.log(`  ✅ Saved: ${title} @ ${company}`);
-        }
-      }
-    } catch (err) {
-      console.log(`  ⚠️ Jobicy error for ${url}: ${err.message}`);
-    }
-  }
-  console.log(`  ✨ Jobicy completed. Added ${added} new jobs.`);
-  return added;
-}
-
 // ─── Source 6: Arbeitnow API ──────────────────────────────────────────
 async function scrapeArbeitnow(jobs, existingApplyUrls, existingHashes, state) {
-  console.log('\n🌐 [6/8] Scraping Arbeitnow API (Client-side remote=true & title filter)...');
+  console.log('\n🌐 [6/7] Scraping Arbeitnow API (Client-side remote=true & title filter)...');
   let added = 0;
   try {
     const data = await fetchSafeJson('https://www.arbeitnow.com/api/job-board-api');
@@ -654,7 +531,7 @@ async function scrapeArbeitnow(jobs, existingApplyUrls, existingHashes, state) {
 
 // ─── Source 7: WeWorkRemotely RSS ─────────────────────────────────────
 async function scrapeWeWorkRemotely(jobs, existingApplyUrls, existingHashes, state) {
-  console.log('\n🌐 [7/8] Scraping WeWorkRemotely RSS Feed (Front-end category)...');
+  console.log('\n🌐 [7/7] Scraping WeWorkRemotely RSS Feed (Front-end category)...');
   let added = 0;
   try {
     const res = await fetchSafeText('https://weworkremotely.com/categories/remote-front-end-programming-jobs.rss');
@@ -701,51 +578,11 @@ async function scrapeWeWorkRemotely(jobs, existingApplyUrls, existingHashes, sta
   return added;
 }
 
-// ─── Source 8: RemoteFirstJobs API ────────────────────────────────────
-async function scrapeRemoteFirstJobs(jobs, existingApplyUrls, existingHashes, state) {
-  console.log('\n🌐 [8/8] Scraping RemoteFirstJobs API (?query=frontend)...');
-  let added = 0;
-  try {
-    const data = await fetchSafeJson('https://remotefirstjobs.com/api/search-jobs?query=frontend');
-    if (!data || !Array.isArray(data.jobs)) return 0;
-
-    for (const job of data.jobs) {
-      const title = job.title || '';
-      const company = job.company_name || '';
-      const applyUrl = job.url || '';
-      const description = job.description || job.body || '';
-      const location = Array.isArray(job.locations) && job.locations.length > 0 ? job.locations.join(', ') : 'Global';
-      const logo = job.company_logo || '';
-      const publishedAt = job.published_at || '';
-
-      const saved = buildAndSaveJob({
-        title,
-        companyName: company,
-        applyUrl,
-        description,
-        location,
-        country: location,
-        logoUrl: logo,
-        postedAt: publishedAt
-      }, jobs, existingApplyUrls, existingHashes, state);
-
-      if (saved) {
-        added++;
-        console.log(`  ✅ Saved: ${title} @ ${company}`);
-      }
-    }
-  } catch (err) {
-    console.log(`  ⚠️ RemoteFirstJobs error: ${err.message}`);
-  }
-  console.log(`  ✨ RemoteFirstJobs completed. Added ${added} new jobs.`);
-  return added;
-}
-
 // ─── Main Orchestrator ────────────────────────────────────────────────
 async function main() {
   const startTime = Date.now();
   console.log('🚀 Starting Multi-Source Remote Frontend Job Scraper');
-  console.log(`⚙️  Config: MAX_PAGES=${MAX_PAGES}, LinkedIn scanning all ${TARGET_LOCATIONS.length} countries, 8 total sources`);
+  console.log('⚙️  LinkedIn scraper removed. Querying 7 verified remote APIs.');
   console.log('═'.repeat(60));
 
   const state = loadState();
@@ -757,15 +594,14 @@ async function main() {
   const existingApplyUrls = new Set(jobs.map((j) => j.applyUrl));
   const existingHashes = new Set(jobs.map((j) => j.sourceHash));
 
-  // Run all 8 sources sequentially
-  await scrapeLinkedIn(jobs, existingApplyUrls, existingHashes, state);
-  await scrapeRemotive(jobs, existingApplyUrls, existingHashes, state);
+  // Run all 7 remote API sources sequentially
+  await scrapeRemoteFirstJobs(jobs, existingApplyUrls, existingHashes, state);
   await scrapeRemoteOK(jobs, existingApplyUrls, existingHashes, state);
-  await scrapeHimalayas(jobs, existingApplyUrls, existingHashes, state);
   await scrapeJobicy(jobs, existingApplyUrls, existingHashes, state);
+  await scrapeRemotive(jobs, existingApplyUrls, existingHashes, state);
+  await scrapeHimalayas(jobs, existingApplyUrls, existingHashes, state);
   await scrapeArbeitnow(jobs, existingApplyUrls, existingHashes, state);
   await scrapeWeWorkRemotely(jobs, existingApplyUrls, existingHashes, state);
-  await scrapeRemoteFirstJobs(jobs, existingApplyUrls, existingHashes, state);
 
   // Persist fresh jobs & state
   saveJobs(jobs);
