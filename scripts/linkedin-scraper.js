@@ -241,15 +241,27 @@ function saveState(state) {
   fs.writeFileSync(STATE_FILE, JSON.stringify(state, null, 2));
 }
 
+const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;
+
 function loadJobs() {
   if (fs.existsSync(DB_FILE)) {
-    return JSON.parse(fs.readFileSync(DB_FILE, "utf8"));
+    const raw = JSON.parse(fs.readFileSync(DB_FILE, "utf8"));
+    const now = Date.now();
+    return raw.filter((j) => {
+      const t = new Date(j.postedAt).getTime();
+      return !isNaN(t) && (now - t) <= THIRTY_DAYS_MS;
+    });
   }
   return [];
 }
 
 function saveJobs(jobs) {
-  fs.writeFileSync(DB_FILE, JSON.stringify(jobs, null, 2));
+  const now = Date.now();
+  const fresh = jobs.filter((j) => {
+    const t = new Date(j.postedAt).getTime();
+    return !isNaN(t) && (now - t) <= THIRTY_DAYS_MS;
+  });
+  fs.writeFileSync(DB_FILE, JSON.stringify(fresh, null, 2));
 }
 
 // ─── Main ─────────────────────────────────────────────────────────────
