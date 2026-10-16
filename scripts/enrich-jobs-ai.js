@@ -159,4 +159,8 @@ function main() {
   console.log(`✅ Done! Enriched ${count} jobs via fast regex in ${elapsedSec}s`);
 }
 
-main();
+if (require.main === module) {
+  main();
+}
+
+module.exports = { extractTags };
