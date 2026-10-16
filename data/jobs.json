@@ -1,5 +1,5349 @@
 [
   {
+    "id": "d24c6e4f671ba43478edada54630b0d7410fcc8bb5d1a4ff63ca54b76699e396",
+    "title": "IT Analyst II (C# + Angular)",
+    "applyUrl": "https://www.universia.net/br/emprego/14b1bb4b-f9f9-5e18-9e48-91a2da661de7/it-analyst-ii-c-angular-hybrid.html?referer=6543260b-6e45-427e-b0ed-53ff5ec1fc13&entityid=6543260b-6e45-427e-b0ed-53ff5ec1fc13&src=lkdnslotBR",
+    "description": "",
+    "location": "Remote - Venezuela",
+    "country": "Venezuela",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:27:26.324Z",
+    "sourceHash": "d24c6e4f671ba43478edada54630b0d7410fcc8bb5d1a4ff63ca54b76699e396",
+    "company": {
+      "id": "universiabrasil",
+      "name": "Universia Brasil",
+      "logoUrl": "https://logo.clearbit.com/universiabrasil.com",
+      "industry": "Technology",
+      "website": "https://universiabrasil.com"
+    },
+    "slug": "it-analyst-ii-c-angular-universia-brasil-d24c6e4f",
+    "aiTags": {
+      "stack": [
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Venezuela"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "28768529769dfef5165304c2eaa0335e8cd4393a03d5e0e4f6ae89071af51879",
+    "title": "Full Stack Engineer (Java + React) - Remote - Latin America",
+    "applyUrl": "https://talent.fullstack.com/jobs/528565c1-ea4d-4f77-8636-7d7c26bb2563",
+    "description": "",
+    "location": "Remote - Uruguay",
+    "country": "Uruguay",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:26:21.227Z",
+    "sourceHash": "28768529769dfef5165304c2eaa0335e8cd4393a03d5e0e4f6ae89071af51879",
+    "company": {
+      "id": "fullstack",
+      "name": "FullStack",
+      "logoUrl": "https://logo.clearbit.com/fullstack.com",
+      "industry": "Technology",
+      "website": "https://fullstack.com"
+    },
+    "slug": "full-stack-engineer-java-react-remote-latin-america-fullstack-28768529",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Uruguay"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b1757f4a514fe2b356c8ac54959aca459fab3a7558f2f988ea9063ea39e5433c",
+    "title": "Full Stack Engineer (Java + React) - Remote - Latin America",
+    "applyUrl": "https://talent.fullstack.com/jobs/89ca5c55-595f-4ed9-8316-bb6c8c9aefec",
+    "description": "",
+    "location": "Remote - Uruguay",
+    "country": "Uruguay",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:26:14.758Z",
+    "sourceHash": "b1757f4a514fe2b356c8ac54959aca459fab3a7558f2f988ea9063ea39e5433c",
+    "company": {
+      "id": "fullstack",
+      "name": "FullStack",
+      "logoUrl": "https://logo.clearbit.com/fullstack.com",
+      "industry": "Technology",
+      "website": "https://fullstack.com"
+    },
+    "slug": "full-stack-engineer-java-react-remote-latin-america-fullstack-b1757f4a",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Uruguay"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "42c55f7767b440a5960d05fcd0167cb6ccb984a2d224d3328b9049d3d35d3856",
+    "title": "Full Stack Laravel + React Developer - Remote, Latin America",
+    "applyUrl": "https://jobs.lever.co/bluelightconsulting/b1db5829-42e4-4c0f-8cb2-3b73cd3a1791/apply?lever-source=LinkedIn",
+    "description": "",
+    "location": "Remote - Uruguay",
+    "country": "Uruguay",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:26:08.865Z",
+    "sourceHash": "42c55f7767b440a5960d05fcd0167cb6ccb984a2d224d3328b9049d3d35d3856",
+    "company": {
+      "id": "bluelight",
+      "name": "Bluelight",
+      "logoUrl": "https://logo.clearbit.com/bluelight.com",
+      "industry": "Technology",
+      "website": "https://bluelight.com"
+    },
+    "slug": "full-stack-laravel-react-developer-remote-latin-america-bluelight-42c55f77",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Uruguay"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "58c634104c07e639219989f1470d6d909164c76b876a32b2c7dec97a04ccf3d6",
+    "title": "Senior Product Engineer - Frontend",
+    "applyUrl": "https://foundationpartners.teamtailor.com/jobs/8081901-senior-product-engineer-frontend?utm_source=LinkedIn",
+    "description": "",
+    "location": "Remote - United Kingdom",
+    "country": "United Kingdom",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:25:16.461Z",
+    "sourceHash": "58c634104c07e639219989f1470d6d909164c76b876a32b2c7dec97a04ccf3d6",
+    "company": {
+      "id": "foundationpartners",
+      "name": "Foundation Partners",
+      "logoUrl": "https://logo.clearbit.com/foundationpartners.com",
+      "industry": "Technology",
+      "website": "https://foundationpartners.com"
+    },
+    "slug": "senior-product-engineer-frontend-foundation-partners-58c63410",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United Kingdom"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f3b6254bb47df3da3d491798a2360e12b0f00c0fe2a026d0f6aef4783ba59c60",
+    "title": "Mobile Engineer - React Native (100% Remote) - Worldwide",
+    "applyUrl": "https://careers.tether.io/o/mobile-engineer-react-native-100-remote-worldwide/c/new?source=LinkedIn+Basic+Jobs",
+    "description": "",
+    "location": "Remote - United Kingdom",
+    "country": "United Kingdom",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:25:10.392Z",
+    "sourceHash": "f3b6254bb47df3da3d491798a2360e12b0f00c0fe2a026d0f6aef4783ba59c60",
+    "company": {
+      "id": "tetherio",
+      "name": "Tether.io",
+      "logoUrl": "https://logo.clearbit.com/tetherio.com",
+      "industry": "Technology",
+      "website": "https://tetherio.com"
+    },
+    "slug": "mobile-engineer-react-native-100-remote-worldwide-tether-io-f3b6254b",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United Kingdom"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "5143461a854e2c971843a3f97ddd0855b9c37cd272a5ccf54ac5cee3e776fb96",
+    "title": "Principal Engineer - Frontend",
+    "applyUrl": "https://careers.g42.ai/inception/global/en/job/OGWOGJGLOBAL3388EXTERNALENGLOBAL/Principal-Engineer-Frontend?utm_source=linkedin-inception&utm_medium=phenom-feeds",
+    "description": "",
+    "location": "Remote - United Arab Emirates",
+    "country": "United Arab Emirates",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:24:47.131Z",
+    "sourceHash": "5143461a854e2c971843a3f97ddd0855b9c37cd272a5ccf54ac5cee3e776fb96",
+    "company": {
+      "id": "inception42",
+      "name": "Inception42",
+      "logoUrl": "https://logo.clearbit.com/inception42.com",
+      "industry": "Technology",
+      "website": "https://inception42.com"
+    },
+    "slug": "principal-engineer-frontend-inception42-5143461a",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United Arab Emirates"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3b1f7799432f2af16146fca771d51d5cb089868e47e8b79a811224cf87daa186",
+    "title": "Front End Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4461771754/",
+    "description": "",
+    "location": "Remote - United Arab Emirates",
+    "country": "United Arab Emirates",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:24:41.124Z",
+    "sourceHash": "3b1f7799432f2af16146fca771d51d5cb089868e47e8b79a811224cf87daa186",
+    "company": {
+      "id": "hantectrader",
+      "name": "Hantec Trader",
+      "logoUrl": "https://logo.clearbit.com/hantectrader.com",
+      "industry": "Technology",
+      "website": "https://hantectrader.com"
+    },
+    "slug": "front-end-developer-hantec-trader-3b1f7799",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United Arab Emirates"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "988b8ec66c720b387f9f1b00df8188b800ff1c5064f8450a10383b3dbdd1cbf4",
+    "title": "Middle Python + TypeScript/React/Next.js Engineer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4474287613/",
+    "description": "",
+    "location": "Remote - Ukraine",
+    "country": "Ukraine",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:24:24.123Z",
+    "sourceHash": "988b8ec66c720b387f9f1b00df8188b800ff1c5064f8450a10383b3dbdd1cbf4",
+    "company": {
+      "id": "nix",
+      "name": "N-iX",
+      "logoUrl": "https://logo.clearbit.com/nix.com",
+      "industry": "Technology",
+      "website": "https://nix.com"
+    },
+    "slug": "middle-python-typescript-react-next-js-engineer-n-ix-988b8ec6",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Ukraine"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "130a3cead523341c8edffeef14b630855c7c11e96deb30f0ca9039f5ec641899",
+    "title": "Frontend xEngineer",
+    "applyUrl": "https://www.scienelle.org/",
+    "description": "",
+    "location": "Remote - Ukraine",
+    "country": "Ukraine",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:24:18.060Z",
+    "sourceHash": "130a3cead523341c8edffeef14b630855c7c11e96deb30f0ca9039f5ec641899",
+    "company": {
+      "id": "wix",
+      "name": "Wix",
+      "logoUrl": "https://logo.clearbit.com/wix.com",
+      "industry": "Technology",
+      "website": "https://wix.com"
+    },
+    "slug": "frontend-xengineer-wix-130a3cea",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Ukraine"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "84c017b2a566dfec4bd70c8b65a0e71226b8ba0e6bcdfa016bc4f48552201c8d",
+    "title": "Senior MERN Developer (React.js + Node.js)",
+    "applyUrl": "https://career.proxify.io/apply?utm_source=linkedin&utm_medium=job_posting&utm_campaign=corporate_senior_mern_react_node_tr",
+    "description": "",
+    "location": "Remote - Trinidad and Tobago",
+    "country": "Trinidad and Tobago",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:21:01.874Z",
+    "sourceHash": "84c017b2a566dfec4bd70c8b65a0e71226b8ba0e6bcdfa016bc4f48552201c8d",
+    "company": {
+      "id": "proxify",
+      "name": "Proxify",
+      "logoUrl": "https://logo.clearbit.com/proxify.com",
+      "industry": "Technology",
+      "website": "https://proxify.com"
+    },
+    "slug": "senior-mern-developer-react-js-node-js-proxify-84c017b2",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Trinidad and Tobago"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "edfc805bb977afa96d8fc0eb0fcd451c38fc073d8f2de212aadda548d9700da9",
+    "title": "【Flexii】Fullstack Engineers (React+Springboot)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4478772081/",
+    "description": "",
+    "location": "Remote - Taiwan",
+    "country": "Taiwan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:18:48.134Z",
+    "sourceHash": "edfc805bb977afa96d8fc0eb0fcd451c38fc073d8f2de212aadda548d9700da9",
+    "company": {
+      "id": "taiwantecharenatta",
+      "name": "Taiwan Tech Arena (TTA)",
+      "logoUrl": "https://logo.clearbit.com/taiwantecharenatta.com",
+      "industry": "Technology",
+      "website": "https://taiwantecharenatta.com"
+    },
+    "slug": "flexii-fullstack-engineers-react-springboot-taiwan-tech-arena-tta-edfc805b",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Taiwan"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e180a9a3e8b274478cc8cbc3ac396426cb8690d53488246811d23b018b66d9c6",
+    "title": "Full-Stack Developer (.NET Core / React / TypeScript)",
+    "applyUrl": "https://trendmicro.wd3.myworkdayjobs.com/en-US/External/job/Taipei/Full-Stack-Developer--NET-Core---React---TypeScript-_R0008939-1?source=LinkedIn",
+    "description": "",
+    "location": "Remote - Taiwan",
+    "country": "Taiwan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:18:45.205Z",
+    "sourceHash": "e180a9a3e8b274478cc8cbc3ac396426cb8690d53488246811d23b018b66d9c6",
+    "company": {
+      "id": "trendai",
+      "name": "TrendAI",
+      "logoUrl": "https://logo.clearbit.com/trendai.com",
+      "industry": "Technology",
+      "website": "https://trendai.com"
+    },
+    "slug": "full-stack-developer-net-core-react-typescript-trendai-e180a9a3",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Taiwan"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ff32dd8ab7f23f37087bbddf55095abfa586e2b1c6d95254ef042ce9d4cc3136",
+    "title": "VueJS前端開發工程師_資訊處(台北)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4458364769/",
+    "description": "",
+    "location": "Remote - Taiwan",
+    "country": "Taiwan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:18:30.535Z",
+    "sourceHash": "ff32dd8ab7f23f37087bbddf55095abfa586e2b1c6d95254ef042ce9d4cc3136",
+    "company": {
+      "id": "deltaelectronics",
+      "name": "Delta Electronics",
+      "logoUrl": "https://logo.clearbit.com/deltaelectronics.com",
+      "industry": "Technology",
+      "website": "https://deltaelectronics.com"
+    },
+    "slug": "vuejs-delta-electronics-ff32dd8a",
+    "aiTags": {
+      "stack": [
+        "vue"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Taiwan"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "dd7c822debf2df3b431b84ea1ae45b031fcfde6c0c68d11037834cc64e15f8a6",
+    "title": "Senior Frontend Engineer - Web3 Wallet",
+    "applyUrl": "https://job-boards.eu.greenhouse.io/binance/jobs/5002553101?gh_src=eo7j0x62teu",
+    "description": "",
+    "location": "Remote - Taiwan",
+    "country": "Taiwan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:18:12.766Z",
+    "sourceHash": "dd7c822debf2df3b431b84ea1ae45b031fcfde6c0c68d11037834cc64e15f8a6",
+    "company": {
+      "id": "binance",
+      "name": "Binance",
+      "logoUrl": "https://logo.clearbit.com/binance.com",
+      "industry": "Technology",
+      "website": "https://binance.com"
+    },
+    "slug": "senior-frontend-engineer-web3-wallet-binance-dd7c822d",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Taiwan"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0e0ee437914e92b4934dc67dedf5418debe6692789ed26d7410963ea0e83eace",
+    "title": "Angular Developer",
+    "applyUrl": "https://citronity.com/angular-developer",
+    "description": "",
+    "location": "Remote - Switzerland",
+    "country": "Switzerland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:17:50.568Z",
+    "sourceHash": "0e0ee437914e92b4934dc67dedf5418debe6692789ed26d7410963ea0e83eace",
+    "company": {
+      "id": "citronity",
+      "name": "citronity",
+      "logoUrl": "https://logo.clearbit.com/citronity.com",
+      "industry": "Technology",
+      "website": "https://citronity.com"
+    },
+    "slug": "angular-developer-citronity-0e0ee437",
+    "aiTags": {
+      "stack": [
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Switzerland"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "eb61519103a826a909316a135c1db9a39f4e95f946f4c80c5a0fead1db07a8ed",
+    "title": "Fullstack Engineer mit Fokus auf Frontend/UX (m/w/d)  - 80-100%",
+    "applyUrl": "https://www.fiveinformatik.ch/de/ueber-five/jobs/fullstack-engineer-frontend-ux",
+    "description": "",
+    "location": "Remote - Switzerland",
+    "country": "Switzerland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:17:26.998Z",
+    "sourceHash": "eb61519103a826a909316a135c1db9a39f4e95f946f4c80c5a0fead1db07a8ed",
+    "company": {
+      "id": "fiveinformatikag",
+      "name": "FIVE Informatik AG",
+      "logoUrl": "https://logo.clearbit.com/fiveinformatikag.com",
+      "industry": "Technology",
+      "website": "https://fiveinformatikag.com"
+    },
+    "slug": "fullstack-engineer-mit-fokus-auf-frontend-ux-m-w-d-80-100-five-informatik-ag-eb615191",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Switzerland"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a1c781af9fc7ae47809a12c247ba6ec8a2b277e3ad6810a868bcb6b28e307f55",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://callista.recruitee.com/o/senior-frontend-engineer/c/new?source=LinkedIn+Basic+Jobs",
+    "description": "",
+    "location": "Remote - Switzerland",
+    "country": "Switzerland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:17:18.234Z",
+    "sourceHash": "a1c781af9fc7ae47809a12c247ba6ec8a2b277e3ad6810a868bcb6b28e307f55",
+    "company": {
+      "id": "callista",
+      "name": "Callista",
+      "logoUrl": "https://logo.clearbit.com/callista.com",
+      "industry": "Technology",
+      "website": "https://callista.com"
+    },
+    "slug": "senior-frontend-engineer-callista-a1c781af",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Switzerland"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ea2e891ee3f0b2454c595b471d252125550c16bcdbe8b5e3a52fa0c197010a1c",
+    "title": "Mobile Engineer - React Native (100% Remote)",
+    "applyUrl": "https://careers.tether.io/o/mobile-engineer-react-native-100-remote-4/c/new?source=LinkedIn+Basic+Jobs",
+    "description": "",
+    "location": "Remote - Switzerland",
+    "country": "Switzerland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:16:34.092Z",
+    "sourceHash": "ea2e891ee3f0b2454c595b471d252125550c16bcdbe8b5e3a52fa0c197010a1c",
+    "company": {
+      "id": "tetherio",
+      "name": "Tether.io",
+      "logoUrl": "https://logo.clearbit.com/tetherio.com",
+      "industry": "Technology",
+      "website": "https://tetherio.com"
+    },
+    "slug": "mobile-engineer-react-native-100-remote-tether-io-ea2e891e",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Switzerland"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "90a45caa4d7f5f431f7258b6dd2d4dd1951058fa771339837cf47fbd6d8eb241",
+    "title": "Frontend Software Engineer (100% Remote - worldwide)",
+    "applyUrl": "https://careers.tether.io/o/frontend-software-engineer-100-remote-worldwide/c/new?source=LinkedIn+Basic+Jobs",
+    "description": "",
+    "location": "Remote - Switzerland",
+    "country": "Switzerland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:16:31.019Z",
+    "sourceHash": "90a45caa4d7f5f431f7258b6dd2d4dd1951058fa771339837cf47fbd6d8eb241",
+    "company": {
+      "id": "tetherio",
+      "name": "Tether.io",
+      "logoUrl": "https://logo.clearbit.com/tetherio.com",
+      "industry": "Technology",
+      "website": "https://tetherio.com"
+    },
+    "slug": "frontend-software-engineer-100-remote-worldwide-tether-io-90a45caa",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Switzerland"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "5cb51c1af1bb4020de0fd727cae5c52d3ec70600162b1b7e3ead9acc85c29d18",
+    "title": "Frontend Developer – React & React Native",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4473481659/",
+    "description": "",
+    "location": "Remote - Sweden",
+    "country": "Sweden",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:13:53.814Z",
+    "sourceHash": "5cb51c1af1bb4020de0fd727cae5c52d3ec70600162b1b7e3ead9acc85c29d18",
+    "company": {
+      "id": "parkit",
+      "name": "Parkit",
+      "logoUrl": "https://logo.clearbit.com/parkit.com",
+      "industry": "Technology",
+      "website": "https://parkit.com"
+    },
+    "slug": "frontend-developer-react-react-native-parkit-5cb51c1a",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Sweden"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e801b58e75b0acf4fef54bbcb18159a8a0d9196ef9ce7f537524260c98b28f60",
+    "title": "Associate Full Stack Engineer (Java + React)",
+    "applyUrl": "https://www.careers-page.com/ilabs/job/3W8X57X8?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "",
+    "location": "Remote - Sri Lanka",
+    "country": "Sri Lanka",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:13:03.004Z",
+    "sourceHash": "e801b58e75b0acf4fef54bbcb18159a8a0d9196ef9ce7f537524260c98b28f60",
+    "company": {
+      "id": "ilabs",
+      "name": "iLabs",
+      "logoUrl": "https://logo.clearbit.com/ilabs.com",
+      "industry": "Technology",
+      "website": "https://ilabs.com"
+    },
+    "slug": "associate-full-stack-engineer-java-react-ilabs-e801b58e",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Sri Lanka"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "1d9d3706663ead4c2fcd0833619b2d5a8b8fafc1270c8b2a036683250f32a5ca",
+    "title": "Senior Full Stack Engineer (Strong Frontend Expertise)",
+    "applyUrl": "https://careers.swissre.com/job/Bratislava-Senior-Full-Stack-Engineer-%28Strong-Frontend-Expertise%29/1416276233/",
+    "description": "",
+    "location": "Remote - Slovakia",
+    "country": "Slovakia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:09:52.716Z",
+    "sourceHash": "1d9d3706663ead4c2fcd0833619b2d5a8b8fafc1270c8b2a036683250f32a5ca",
+    "company": {
+      "id": "swissre",
+      "name": "Swiss Re",
+      "logoUrl": "https://logo.clearbit.com/swissre.com",
+      "industry": "Technology",
+      "website": "https://swissre.com"
+    },
+    "slug": "senior-full-stack-engineer-strong-frontend-expertise-swiss-re-1d9d3706",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Slovakia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "eef9a3102c7c9ba18c5039fb7e9ae30f282e47ee70015a3938ce92227b3e6d32",
+    "title": "R&D Software Engineer — ARIS Flows (Frontend)",
+    "applyUrl": "https://jobs.dayforcehcm.com/en-US/aris/ARISPORTAL/jobs/2427?source=LinkedIn",
+    "description": "",
+    "location": "Remote - Slovakia",
+    "country": "Slovakia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:09:23.533Z",
+    "sourceHash": "eef9a3102c7c9ba18c5039fb7e9ae30f282e47ee70015a3938ce92227b3e6d32",
+    "company": {
+      "id": "aris",
+      "name": "ARIS",
+      "logoUrl": "https://logo.clearbit.com/aris.com",
+      "industry": "Technology",
+      "website": "https://aris.com"
+    },
+    "slug": "r-d-software-engineer-aris-flows-frontend-aris-eef9a310",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Slovakia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a5f3ececab77d7a804e9b14733f8a2d3bc57c4f66f29e4d9721207f631f5e239",
+    "title": "Frontend Developer (m/f/n)",
+    "applyUrl": "https://eset.wd3.myworkdayjobs.com/ESET_External/job/Bratislava/Software-Engineer--m-f-n-_JR-06077?source=LinkedIn",
+    "description": "",
+    "location": "Remote - Slovakia",
+    "country": "Slovakia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:08:51.293Z",
+    "sourceHash": "a5f3ececab77d7a804e9b14733f8a2d3bc57c4f66f29e4d9721207f631f5e239",
+    "company": {
+      "id": "eset",
+      "name": "ESET",
+      "logoUrl": "https://logo.clearbit.com/eset.com",
+      "industry": "Technology",
+      "website": "https://eset.com"
+    },
+    "slug": "frontend-developer-m-f-n-eset-a5f3ecec",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Slovakia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2ca2b641b0191d94349b76fe645586e95a492ccb3ca14d4efb45847a012e734d",
+    "title": "Full Stack Software Engineer (React / Node.js / React Native) - GS26020",
+    "applyUrl": "https://apply.workable.com/j/118A590209",
+    "description": "",
+    "location": "Remote - Singapore",
+    "country": "Singapore",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:08:39.562Z",
+    "sourceHash": "2ca2b641b0191d94349b76fe645586e95a492ccb3ca14d4efb45847a012e734d",
+    "company": {
+      "id": "activateinteractive",
+      "name": "Activate Interactive",
+      "logoUrl": "https://logo.clearbit.com/activateinteractive.com",
+      "industry": "Technology",
+      "website": "https://activateinteractive.com"
+    },
+    "slug": "full-stack-software-engineer-react-node-js-react-native-gs26020-activate-interactive-2ca2b641",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Singapore"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a7a6fef1caf804957c7d76dbe8ebc73d1cf2deb9ca6d87839ab6b9e0371e96ec",
+    "title": "Frontend Engineer (GenAI Applications)",
+    "applyUrl": "https://lnkd.in/g3R9PuSB",
+    "description": "",
+    "location": "Remote - Singapore",
+    "country": "Singapore",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:08:36.595Z",
+    "sourceHash": "a7a6fef1caf804957c7d76dbe8ebc73d1cf2deb9ca6d87839ab6b9e0371e96ec",
+    "company": {
+      "id": "capgemini",
+      "name": "Capgemini",
+      "logoUrl": "https://logo.clearbit.com/capgemini.com",
+      "industry": "Technology",
+      "website": "https://capgemini.com"
+    },
+    "slug": "frontend-engineer-genai-applications-capgemini-a7a6fef1",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Singapore"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2c4ecae4183a3100ef44666f10023747b49683e3be8e6e80308ea771a1d08c7a",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4477653805/",
+    "description": "",
+    "location": "Remote - Singapore",
+    "country": "Singapore",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:08:33.580Z",
+    "sourceHash": "2c4ecae4183a3100ef44666f10023747b49683e3be8e6e80308ea771a1d08c7a",
+    "company": {
+      "id": "easpiretechnolabsinc",
+      "name": "eAspire Technolabs Inc.",
+      "logoUrl": "https://logo.clearbit.com/easpiretechnolabsinc.com",
+      "industry": "Technology",
+      "website": "https://easpiretechnolabsinc.com"
+    },
+    "slug": "frontend-developer-easpire-technolabs-inc-2c4ecae4",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Singapore"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f9d0f2ba92cfea9a98533ca95a8d82c660f6b5554915f038ca09bc943ba260ad",
+    "title": "Frontend Software Engineer (Payment) - TikTok Live - Singapore - TikTok Global Live",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4475105126/",
+    "description": "",
+    "location": "Remote - Singapore",
+    "country": "Singapore",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:08:30.629Z",
+    "sourceHash": "f9d0f2ba92cfea9a98533ca95a8d82c660f6b5554915f038ca09bc943ba260ad",
+    "company": {
+      "id": "tiktok",
+      "name": "TikTok",
+      "logoUrl": "https://logo.clearbit.com/tiktok.com",
+      "industry": "Technology",
+      "website": "https://tiktok.com"
+    },
+    "slug": "frontend-software-engineer-payment-tiktok-live-singapore-tiktok-global-live-tiktok-f9d0f2ba",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Singapore"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "fcd62621146f0bea15bc1dd5098e00dd95738afdaeba7a67d886d2083b012a19",
+    "title": "Frontend Developer",
+    "applyUrl": "https://career012.successfactors.eu/career?career_ns=job_listing&company=C0001096615P&navBarLevel=JOB_SEARCH&rcm_site_locale=en_US&site=VjItMEZ2ZlZmT2hNS29mS0YxZit5VnBpdz09&career_job_req_id=61328",
+    "description": "",
+    "location": "Remote - Singapore",
+    "country": "Singapore",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:08:24.668Z",
+    "sourceHash": "fcd62621146f0bea15bc1dd5098e00dd95738afdaeba7a67d886d2083b012a19",
+    "company": {
+      "id": "biotronik",
+      "name": "BIOTRONIK",
+      "logoUrl": "https://logo.clearbit.com/biotronik.com",
+      "industry": "Technology",
+      "website": "https://biotronik.com"
+    },
+    "slug": "frontend-developer-biotronik-fcd62621",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Singapore"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "76b6b477b55c10c78f2d85da50b12cf788e055d8af57104dec744a5850ced39e",
+    "title": "React JS Fullstack Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4475690640/",
+    "description": "",
+    "location": "Remote - Singapore",
+    "country": "Singapore",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:08:15.786Z",
+    "sourceHash": "76b6b477b55c10c78f2d85da50b12cf788e055d8af57104dec744a5850ced39e",
+    "company": {
+      "id": "wipro",
+      "name": "Wipro",
+      "logoUrl": "https://logo.clearbit.com/wipro.com",
+      "industry": "Technology",
+      "website": "https://wipro.com"
+    },
+    "slug": "react-js-fullstack-developer-wipro-76b6b477",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Singapore"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0ae26d4d0779fc2b25703149b2f5a73da9373ab33eace05ab07b9508496eadc3",
+    "title": "Expert Frontend Engineer (React.JS & React Native)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4474654988/",
+    "description": "",
+    "location": "Remote - Singapore",
+    "country": "Singapore",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:08:00.402Z",
+    "sourceHash": "0ae26d4d0779fc2b25703149b2f5a73da9373ab33eace05ab07b9508496eadc3",
+    "company": {
+      "id": "vanguardsoftware",
+      "name": "Vanguard Software",
+      "logoUrl": "https://logo.clearbit.com/vanguardsoftware.com",
+      "industry": "Technology",
+      "website": "https://vanguardsoftware.com"
+    },
+    "slug": "expert-frontend-engineer-react-js-react-native-vanguard-software-0ae26d4d",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Singapore"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "eca76c441a3500b87c52c787fd5593bb74992aa944a7a9391b71b70fc415aaa4",
+    "title": "Senior Angular Engineer",
+    "applyUrl": "https://careers-en-nortal.icims.com/jobs/6524/senior-angular-engineer/job?hub=7&mode=apply&iis=LinkedIn",
+    "description": "",
+    "location": "Remote - Serbia",
+    "country": "Serbia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:07:12.540Z",
+    "sourceHash": "eca76c441a3500b87c52c787fd5593bb74992aa944a7a9391b71b70fc415aaa4",
+    "company": {
+      "id": "nortal",
+      "name": "Nortal",
+      "logoUrl": "https://logo.clearbit.com/nortal.com",
+      "industry": "Technology",
+      "website": "https://nortal.com"
+    },
+    "slug": "senior-angular-engineer-nortal-eca76c44",
+    "aiTags": {
+      "stack": [
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Serbia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a833da5ab73ab8f886ca32f5375357f687d1170d37e6e40bc53737f8418b79f6",
+    "title": "Web Developer",
+    "applyUrl": "https://careers.cisco.com/global/en/job/CISCISGLOBAL2027195EXTERNALENGLOBAL/Web-Developer?utm_source=linkedin&utm_medium=phenom-feeds",
+    "description": "",
+    "location": "Remote - Serbia",
+    "country": "Serbia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:07:09.536Z",
+    "sourceHash": "a833da5ab73ab8f886ca32f5375357f687d1170d37e6e40bc53737f8418b79f6",
+    "company": {
+      "id": "cisco",
+      "name": "Cisco",
+      "logoUrl": "https://logo.clearbit.com/cisco.com",
+      "industry": "Technology",
+      "website": "https://cisco.com"
+    },
+    "slug": "web-developer-cisco-a833da5a",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Serbia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "00b8854860adc75a68c2d50d4cdc29e9b3ffe810be2df5c53baeacdc383f686f",
+    "title": "Fullstack Engineer (Javascript, node.js, SQL)",
+    "applyUrl": "https://jobs.siemens.com/externaljobs/JobDetail/513128?source=LinkedIn&sourceType=PREMIUM_POST_SITE",
+    "description": "",
+    "location": "Remote - Serbia",
+    "country": "Serbia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:07:06.470Z",
+    "sourceHash": "00b8854860adc75a68c2d50d4cdc29e9b3ffe810be2df5c53baeacdc383f686f",
+    "company": {
+      "id": "siemensedasiemensdigitalindustriessoftware",
+      "name": "Siemens EDA (Siemens Digital Industries Software)",
+      "logoUrl": "https://logo.clearbit.com/siemensedasiemensdigitalindustriessoftware.com",
+      "industry": "Technology",
+      "website": "https://siemensedasiemensdigitalindustriessoftware.com"
+    },
+    "slug": "fullstack-engineer-javascript-node-js-sql-siemens-eda-siemens-digital-industries-software-00b88548",
+    "aiTags": {
+      "stack": [
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Serbia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "24766bb646a6dc5d4136da2b5a2abf915818b311111f7e65b1e630fce0f9a016",
+    "title": "Senior Software Engineer (React Native Mobile)",
+    "applyUrl": "https://candescent.wd501.myworkdayjobs.com/en-US/Hiring/job/SQ---Belgrade---Office/Senior-Software-Engineer--React-Native-Mobile-_R0002277?source=LinkedIn",
+    "description": "",
+    "location": "Remote - Serbia",
+    "country": "Serbia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:07:00.531Z",
+    "sourceHash": "24766bb646a6dc5d4136da2b5a2abf915818b311111f7e65b1e630fce0f9a016",
+    "company": {
+      "id": "candescent",
+      "name": "Candescent",
+      "logoUrl": "https://logo.clearbit.com/candescent.com",
+      "industry": "Technology",
+      "website": "https://candescent.com"
+    },
+    "slug": "senior-software-engineer-react-native-mobile-candescent-24766bb6",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Serbia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3bfc21a15474922e3d6c8a80566698dcf277ced1fc64b2689a484b1a99e00899",
+    "title": "Junior Web Developer",
+    "applyUrl": "https://maxbet.zohorecruit.eu/jobs/Careers/42944000012885137/Empty?source=linkedin",
+    "description": "",
+    "location": "Remote - Serbia",
+    "country": "Serbia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:06:51.593Z",
+    "sourceHash": "3bfc21a15474922e3d6c8a80566698dcf277ced1fc64b2689a484b1a99e00899",
+    "company": {
+      "id": "maxbet",
+      "name": "MaxBet",
+      "logoUrl": "https://logo.clearbit.com/maxbet.com",
+      "industry": "Technology",
+      "website": "https://maxbet.com"
+    },
+    "slug": "junior-web-developer-maxbet-3bfc21a1",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Serbia"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "46837c29d61c48d571237304977a736c704125a3ac297ba4428a453923899c62",
+    "title": "Frontend Software Engineer",
+    "applyUrl": "https://lnkd.in/d6cmNeYr",
+    "description": "",
+    "location": "Remote - Romania",
+    "country": "Romania",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:03:29.305Z",
+    "sourceHash": "46837c29d61c48d571237304977a736c704125a3ac297ba4428a453923899c62",
+    "company": {
+      "id": "swissquote",
+      "name": "Swissquote",
+      "logoUrl": "https://logo.clearbit.com/swissquote.com",
+      "industry": "Technology",
+      "website": "https://swissquote.com"
+    },
+    "slug": "frontend-software-engineer-swissquote-46837c29",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Romania"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "01cf56605fcd622f9fd0bc405b1cf80b0b60f0d8c835504efdc5596c7d6479c7",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://lseg.wd3.myworkdayjobs.com/Careers/job/Bucharest---Iuliu-Maniu-Boulevard/Frontend-Engineer_R0123248?source=Linkedin",
+    "description": "",
+    "location": "Remote - Romania",
+    "country": "Romania",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:03:25.982Z",
+    "sourceHash": "01cf56605fcd622f9fd0bc405b1cf80b0b60f0d8c835504efdc5596c7d6479c7",
+    "company": {
+      "id": "lseg",
+      "name": "LSEG",
+      "logoUrl": "https://logo.clearbit.com/lseg.com",
+      "industry": "Technology",
+      "website": "https://lseg.com"
+    },
+    "slug": "frontend-engineer-lseg-01cf5660",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Romania"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b0e46d509086e8e8313f2fa4b77a72e479d224e7f6536f90b241dd98e849350c",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4466301712/",
+    "description": "",
+    "location": "Remote - Romania",
+    "country": "Romania",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:03:23.050Z",
+    "sourceHash": "b0e46d509086e8e8313f2fa4b77a72e479d224e7f6536f90b241dd98e849350c",
+    "company": {
+      "id": "recrutopia",
+      "name": "Recrutopia",
+      "logoUrl": "https://logo.clearbit.com/recrutopia.com",
+      "industry": "Technology",
+      "website": "https://recrutopia.com"
+    },
+    "slug": "frontend-developer-recrutopia-b0e46d50",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Romania"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "071d175182e1218c767a21a129143bf57c0e664fbb60cdfb435818dcb0126b45",
+    "title": "Senior Full Stack Engineer (React, Full Remote, Cluj Area Only)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4448030044/",
+    "description": "",
+    "location": "Remote - Romania",
+    "country": "Romania",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:03:08.007Z",
+    "sourceHash": "071d175182e1218c767a21a129143bf57c0e664fbb60cdfb435818dcb0126b45",
+    "company": {
+      "id": "codeagency",
+      "name": "CodeAgency",
+      "logoUrl": "https://logo.clearbit.com/codeagency.com",
+      "industry": "Technology",
+      "website": "https://codeagency.com"
+    },
+    "slug": "senior-full-stack-engineer-react-full-remote-cluj-area-only-codeagency-071d1751",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Romania"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "928d25e7e64800f9c23e589ee96978ea4c301e051bc71173a6b0e9c05797dfd0",
+    "title": "Developer (Angular / Fullstack) - DFT - 080426",
+    "applyUrl": "https://www.careers-page.com/rippedboxstation/job/5W8V495R?utm_medium=free_job_board&utm_source=linkedin",
+    "description": "",
+    "location": "Remote - Philippines",
+    "country": "Philippines",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T05:00:31.513Z",
+    "sourceHash": "928d25e7e64800f9c23e589ee96978ea4c301e051bc71173a6b0e9c05797dfd0",
+    "company": {
+      "id": "rippedboxstation",
+      "name": "RippedBoxStation",
+      "logoUrl": "https://logo.clearbit.com/rippedboxstation.com",
+      "industry": "Technology",
+      "website": "https://rippedboxstation.com"
+    },
+    "slug": "developer-angular-fullstack-dft-080426-rippedboxstation-928d25e7",
+    "aiTags": {
+      "stack": [
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Philippines"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "acd22f5c70ceb826fee604e3a7238953b29d6870fa0f89105fb6d1efcb45fcc7",
+    "title": "Frontend 3D Engineer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4472942176/",
+    "description": "",
+    "location": "Remote - Pakistan",
+    "country": "Pakistan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:58:15.484Z",
+    "sourceHash": "acd22f5c70ceb826fee604e3a7238953b29d6870fa0f89105fb6d1efcb45fcc7",
+    "company": {
+      "id": "dbssolutions",
+      "name": "DBS Solutions",
+      "logoUrl": "https://logo.clearbit.com/dbssolutions.com",
+      "industry": "Technology",
+      "website": "https://dbssolutions.com"
+    },
+    "slug": "frontend-3d-engineer-dbs-solutions-acd22f5c",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Pakistan"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4eefaf68f85642c4010ed68540f730463962838425f1a2aa50de0df15c6f3352",
+    "title": "React Native Developer",
+    "applyUrl": "https://wqsoftwares.com/jobs/tec/react-native-developer/77049621",
+    "description": "",
+    "location": "Remote - Pakistan",
+    "country": "Pakistan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:58:12.444Z",
+    "sourceHash": "4eefaf68f85642c4010ed68540f730463962838425f1a2aa50de0df15c6f3352",
+    "company": {
+      "id": "wqsoftwares",
+      "name": "WQsoftwares",
+      "logoUrl": "https://logo.clearbit.com/wqsoftwares.com",
+      "industry": "Technology",
+      "website": "https://wqsoftwares.com"
+    },
+    "slug": "react-native-developer-wqsoftwares-4eefaf68",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Pakistan"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8d2d56f181a4ae5fcf5ea1abee53edb0b9a51fc3501a8cd31fee083b44b6cde9",
+    "title": "Mobile Engineer - React Native (100% Remote)",
+    "applyUrl": "https://careers.tether.io/o/mobile-engineer-react-native-100-remote-3/c/new?source=LinkedIn+Basic+Jobs",
+    "description": "",
+    "location": "Remote - Pakistan",
+    "country": "Pakistan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:57:57.521Z",
+    "sourceHash": "8d2d56f181a4ae5fcf5ea1abee53edb0b9a51fc3501a8cd31fee083b44b6cde9",
+    "company": {
+      "id": "tetherio",
+      "name": "Tether.io",
+      "logoUrl": "https://logo.clearbit.com/tetherio.com",
+      "industry": "Technology",
+      "website": "https://tetherio.com"
+    },
+    "slug": "mobile-engineer-react-native-100-remote-tether-io-8d2d56f1",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Pakistan"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "47a0a131732b7af2639bfb7316fa06ed6290f211ce25b3b13e7489c7a20218b5",
+    "title": "Frontend-utvikler",
+    "applyUrl": "https://jobs.smartrecruiters.com/SopraSteria1/744000149614409-frontend-utvikler?trid=2d92f286-613b-4daf-9dfa-6340ffbecf73",
+    "description": "",
+    "location": "Remote - Norway",
+    "country": "Norway",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:57:21.403Z",
+    "sourceHash": "47a0a131732b7af2639bfb7316fa06ed6290f211ce25b3b13e7489c7a20218b5",
+    "company": {
+      "id": "soprasteria",
+      "name": "Sopra Steria",
+      "logoUrl": "https://logo.clearbit.com/soprasteria.com",
+      "industry": "Technology",
+      "website": "https://soprasteria.com"
+    },
+    "slug": "frontend-utvikler-sopra-steria-47a0a131",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Norway"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ef70cc2cae0ecdd6526792d7a3e3ab29c20ef4cd1ccc746547526e1d05ef92ab",
+    "title": "Senior frontendutvikler",
+    "applyUrl": "https://www.norsk-tipping.no/karriere/ledige-stillinger?rmpage=job&rmjob=323",
+    "description": "",
+    "location": "Remote - Norway",
+    "country": "Norway",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:57:18.467Z",
+    "sourceHash": "ef70cc2cae0ecdd6526792d7a3e3ab29c20ef4cd1ccc746547526e1d05ef92ab",
+    "company": {
+      "id": "norsktipping",
+      "name": "Norsk Tipping",
+      "logoUrl": "https://logo.clearbit.com/norsktipping.com",
+      "industry": "Technology",
+      "website": "https://norsktipping.com"
+    },
+    "slug": "senior-frontendutvikler-norsk-tipping-ef70cc2c",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Norway"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "70753728d6174d2813b69297ac8dd35f14f423894d28c31b695e5becddc7bf0c",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://www.footprintscout.com/careers/senior-frontend-engineer",
+    "description": "",
+    "location": "Remote - Norway",
+    "country": "Norway",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:57:06.821Z",
+    "sourceHash": "70753728d6174d2813b69297ac8dd35f14f423894d28c31b695e5becddc7bf0c",
+    "company": {
+      "id": "footprint",
+      "name": "Footprint",
+      "logoUrl": "https://logo.clearbit.com/footprint.com",
+      "industry": "Technology",
+      "website": "https://footprint.com"
+    },
+    "slug": "senior-frontend-engineer-footprint-70753728",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Norway"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "39a2f0d0422a71aae22a507ea0fce91577e38791d90e0d6b81f4352dfc93c031",
+    "title": "Frontend-utvikler med lidenskap for React og gode brukeropplevelser - Tieto Tech Consulting (m/f/d)",
+    "applyUrl": "https://careers.tieto.com/job/frontend-utvikler-med-lidenskap-for-react-og-gode-brukeropplevelser-tieto-tech-consulting-m-f-d-in-fornebu-norway-jid-2632?_atxsrc=AttraxLinkedin&utm_source=AttraxLinkedin",
+    "description": "",
+    "location": "Remote - Norway",
+    "country": "Norway",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:56:57.906Z",
+    "sourceHash": "39a2f0d0422a71aae22a507ea0fce91577e38791d90e0d6b81f4352dfc93c031",
+    "company": {
+      "id": "tieto",
+      "name": "Tieto",
+      "logoUrl": "https://logo.clearbit.com/tieto.com",
+      "industry": "Technology",
+      "website": "https://tieto.com"
+    },
+    "slug": "frontend-utvikler-med-lidenskap-for-react-og-gode-brukeropplevelser-tieto-tech-consulting-m-f-d-tieto-39a2f0d0",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Norway"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7028985ecac77a2a8d55410844dc258073ff6243048adca620d051aaec6263b2",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://careers.sixrobotics.com/jobs/8222972-senior-frontend-engineer?utm_source=LinkedIn",
+    "description": "",
+    "location": "Remote - Norway",
+    "country": "Norway",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:56:54.872Z",
+    "sourceHash": "7028985ecac77a2a8d55410844dc258073ff6243048adca620d051aaec6263b2",
+    "company": {
+      "id": "sixrobotics",
+      "name": "Six Robotics",
+      "logoUrl": "https://logo.clearbit.com/sixrobotics.com",
+      "industry": "Technology",
+      "website": "https://sixrobotics.com"
+    },
+    "slug": "senior-frontend-engineer-six-robotics-7028985e",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Norway"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "60a27549f78b3066b06d9a6407385869d85785a5c6aee6f72a6b9ff5b97cdb45",
+    "title": "Medior / Senior Frontend Developer",
+    "applyUrl": "https://fanstr.nl/careers/medior-senior-frontend-developer",
+    "description": "",
+    "location": "Remote - Norway",
+    "country": "Norway",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:56:34.384Z",
+    "sourceHash": "60a27549f78b3066b06d9a6407385869d85785a5c6aee6f72a6b9ff5b97cdb45",
+    "company": {
+      "id": "fanstr",
+      "name": "Fanstr.",
+      "logoUrl": "https://logo.clearbit.com/fanstr.com",
+      "industry": "Technology",
+      "website": "https://fanstr.com"
+    },
+    "slug": "medior-senior-frontend-developer-fanstr-60a27549",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Norway"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ac239a7fadab0f02f042c89d645be9c4b1b21667f9c5cd80917ef4362a1b2715",
+    "title": "Frontend Developer",
+    "applyUrl": "https://vickeny.com/careers/frontend",
+    "description": "",
+    "location": "Remote - Nigeria",
+    "country": "Nigeria",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:55:18.464Z",
+    "sourceHash": "ac239a7fadab0f02f042c89d645be9c4b1b21667f9c5cd80917ef4362a1b2715",
+    "company": {
+      "id": "vickeny",
+      "name": "Vickeny",
+      "logoUrl": "https://logo.clearbit.com/vickeny.com",
+      "industry": "Technology",
+      "website": "https://vickeny.com"
+    },
+    "slug": "frontend-developer-vickeny-ac239a7f",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Nigeria"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "1b84f3b55db36ac614cafe0ad0d36188dc0341b4d761e29ea9187690a220d4e2",
+    "title": "Senior Full-Stack Engineer (TypeScript)",
+    "applyUrl": "https://assertive.bamboohr.com/careers/43?source=linkedin_premium",
+    "description": "",
+    "location": "Remote - Netherlands",
+    "country": "Netherlands",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:51:43.406Z",
+    "sourceHash": "1b84f3b55db36ac614cafe0ad0d36188dc0341b4d761e29ea9187690a220d4e2",
+    "company": {
+      "id": "assertiveyieldbv",
+      "name": "Assertive Yield B.V.",
+      "logoUrl": "https://logo.clearbit.com/assertiveyieldbv.com",
+      "industry": "Technology",
+      "website": "https://assertiveyieldbv.com"
+    },
+    "slug": "senior-full-stack-engineer-typescript-assertive-yield-b-v-1b84f3b5",
+    "aiTags": {
+      "stack": [
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Netherlands"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b51c825b2411aca756909398de329469e90dd036515c957e76c02ea204cb5b35",
+    "title": "Medior / Senior Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4476089795/",
+    "description": "",
+    "location": "Remote - Netherlands",
+    "country": "Netherlands",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:50:45.057Z",
+    "sourceHash": "b51c825b2411aca756909398de329469e90dd036515c957e76c02ea204cb5b35",
+    "company": {
+      "id": "aizy",
+      "name": "Aizy",
+      "logoUrl": "https://logo.clearbit.com/aizy.com",
+      "industry": "Technology",
+      "website": "https://aizy.com"
+    },
+    "slug": "medior-senior-frontend-developer-aizy-b51c825b",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Netherlands"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4f3c8a3b0b2f8dcb1da5bb2c62eb77220d799c1ce268a66f93263f614220caf7",
+    "title": "React + TypeScript Developer - Remote Work | REF#283126",
+    "applyUrl": "https://applicants.bairesdev.com/job/169/283126/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml",
+    "description": "",
+    "location": "Remote - Mozambique",
+    "country": "Mozambique",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:49:07.104Z",
+    "sourceHash": "4f3c8a3b0b2f8dcb1da5bb2c62eb77220d799c1ce268a66f93263f614220caf7",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "react-typescript-developer-remote-work-ref-283126-bairesdev-4f3c8a3b",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mozambique"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "61651c0ac6cf810866f870abcf99395995410b2af370255a477cd3a7c709fa01",
+    "title": "Développeur Full Stack Java / React",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4471919410/",
+    "description": "",
+    "location": "Remote - Morocco",
+    "country": "Morocco",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:48:41.116Z",
+    "sourceHash": "61651c0ac6cf810866f870abcf99395995410b2af370255a477cd3a7c709fa01",
+    "company": {
+      "id": "gecglobalexpertsconsulting",
+      "name": "GEC _ Global Experts Consulting",
+      "logoUrl": "https://logo.clearbit.com/gecglobalexpertsconsulting.com",
+      "industry": "Technology",
+      "website": "https://gecglobalexpertsconsulting.com"
+    },
+    "slug": "d-veloppeur-full-stack-java-react-gec-global-experts-consulting-61651c0a",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Morocco"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8f42f995ffe0374396e23c1f5662ffab00d8614e544bee495ddbfcc92bb6fb9a",
+    "title": "Ingénieur Développeur Fullstack Java / Spring / Vue3 H/F - CDI - Monaco",
+    "applyUrl": "https://inforca.mc/carriere/offres-emploi/ingenieur-developpeur-fullstack",
+    "description": "",
+    "location": "Remote - Monaco",
+    "country": "Monaco",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:46:28.889Z",
+    "sourceHash": "8f42f995ffe0374396e23c1f5662ffab00d8614e544bee495ddbfcc92bb6fb9a",
+    "company": {
+      "id": "inforca",
+      "name": "Inforca",
+      "logoUrl": "https://logo.clearbit.com/inforca.com",
+      "industry": "Technology",
+      "website": "https://inforca.com"
+    },
+    "slug": "ing-nieur-d-veloppeur-fullstack-java-spring-vue3-h-f-cdi-monaco-inforca-8f42f995",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Monaco"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b0d040947f24edd2777edfb39df14b229bafb191bf955a53079f20876d373e22",
+    "title": "Vue.js Engineer - Remote Work",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4479553731/",
+    "description": "",
+    "location": "Remote - Mexico",
+    "country": "Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:44:49.817Z",
+    "sourceHash": "b0d040947f24edd2777edfb39df14b229bafb191bf955a53079f20876d373e22",
+    "company": {
+      "id": "indistaffingservices",
+      "name": "INDI Staffing Services",
+      "logoUrl": "https://logo.clearbit.com/indistaffingservices.com",
+      "industry": "Technology",
+      "website": "https://indistaffingservices.com"
+    },
+    "slug": "vue-js-engineer-remote-work-indi-staffing-services-b0d04094",
+    "aiTags": {
+      "stack": [
+        "vue"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mexico"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8aec78f1343f1d1251f67371af5198a97200825188b9d1809501818d5fd79dea",
+    "title": "Sr Front End React.js Engineer - Remote in México",
+    "applyUrl": "https://www.capgemini.com/jobs/551935-es_ES_SAPBTP/Sr-Front-End-React.js-Engineer---Remote-in-México",
+    "description": "",
+    "location": "Remote - Mexico",
+    "country": "Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:44:46.780Z",
+    "sourceHash": "8aec78f1343f1d1251f67371af5198a97200825188b9d1809501818d5fd79dea",
+    "company": {
+      "id": "capgeminiengineering",
+      "name": "Capgemini Engineering",
+      "logoUrl": "https://logo.clearbit.com/capgeminiengineering.com",
+      "industry": "Technology",
+      "website": "https://capgeminiengineering.com"
+    },
+    "slug": "sr-front-end-react-js-engineer-remote-in-m-xico-capgemini-engineering-8aec78f1",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mexico"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "5b2eda34efa719a5ad68aa252f03e48caa514e918068b8368f6f9923bf3fee9d",
+    "title": "TypeScript Developer - Remote Work | REF#281590",
+    "applyUrl": "https://applicants.bairesdev.com/job/341/281590/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml",
+    "description": "",
+    "location": "Remote - Mexico",
+    "country": "Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:44:43.821Z",
+    "sourceHash": "5b2eda34efa719a5ad68aa252f03e48caa514e918068b8368f6f9923bf3fee9d",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "typescript-developer-remote-work-ref-281590-bairesdev-5b2eda34",
+    "aiTags": {
+      "stack": [
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mexico"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ef39756be40a82a56ba0af55a07086b4b32184d44c1214bcb22480f7ae8f75fb",
+    "title": "Software Engineer Frontend - React",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4477307941/",
+    "description": "",
+    "location": "Remote - Mexico",
+    "country": "Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:44:34.579Z",
+    "sourceHash": "ef39756be40a82a56ba0af55a07086b4b32184d44c1214bcb22480f7ae8f75fb",
+    "company": {
+      "id": "medtrainer",
+      "name": "MedTrainer",
+      "logoUrl": "https://logo.clearbit.com/medtrainer.com",
+      "industry": "Technology",
+      "website": "https://medtrainer.com"
+    },
+    "slug": "software-engineer-frontend-react-medtrainer-ef39756b",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mexico"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0aa4ef7faeea8c070b1739a4d9580d84fe88c285ccf8c3921d2aa024f481dd8c",
+    "title": "Senior Web Developer",
+    "applyUrl": "https://catenamedia.bamboohr.com/careers/73?source=aWQ9Mw%3D%3D",
+    "description": "",
+    "location": "Remote - Malta",
+    "country": "Malta",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:42:50.211Z",
+    "sourceHash": "0aa4ef7faeea8c070b1739a4d9580d84fe88c285ccf8c3921d2aa024f481dd8c",
+    "company": {
+      "id": "catenamedia",
+      "name": "Catena Media",
+      "logoUrl": "https://logo.clearbit.com/catenamedia.com",
+      "industry": "Technology",
+      "website": "https://catenamedia.com"
+    },
+    "slug": "senior-web-developer-catena-media-0aa4ef7f",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malta"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "6f725bd6d075f2e9c4dab049fbf37ffddc78717bede7c4440c708064a8d7e381",
+    "title": "Full Stack Engineer - TypeScript (Fully Remote)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4477657891/",
+    "description": "",
+    "location": "Remote - Malta",
+    "country": "Malta",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:42:35.394Z",
+    "sourceHash": "6f725bd6d075f2e9c4dab049fbf37ffddc78717bede7c4440c708064a8d7e381",
+    "company": {
+      "id": "konnekt",
+      "name": "Konnekt",
+      "logoUrl": "https://logo.clearbit.com/konnekt.com",
+      "industry": "Technology",
+      "website": "https://konnekt.com"
+    },
+    "slug": "full-stack-engineer-typescript-fully-remote-konnekt-6f725bd6",
+    "aiTags": {
+      "stack": [
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malta"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "5e94cec7c8171492fccbef6d73fb12681bd2aa0cf09e7f218e829447d599c986",
+    "title": "TECHNICAL CONSULTANT FULL STACK PHP/SYMFONY– REACT TYPE SCRIPT",
+    "applyUrl": "https://careers.chapsvision.com/jobs/8516648-technical-consultant-full-stack-php-symfony-react-type-script?utm_source=LinkedIn",
+    "description": "",
+    "location": "Remote - Mali",
+    "country": "Mali",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:42:24.446Z",
+    "sourceHash": "5e94cec7c8171492fccbef6d73fb12681bd2aa0cf09e7f218e829447d599c986",
+    "company": {
+      "id": "chapsvision",
+      "name": "ChapsVision",
+      "logoUrl": "https://logo.clearbit.com/chapsvision.com",
+      "industry": "Technology",
+      "website": "https://chapsvision.com"
+    },
+    "slug": "technical-consultant-full-stack-php-symfony-react-type-script-chapsvision-5e94cec7",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mali"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "c182b7620b98952832eaa73a8b4942aa3e3eb942cc6e8521736169e37550e0f6",
+    "title": "Développeur .NET / React  F/H",
+    "applyUrl": "https://lnkd.in/dRhyEtPt",
+    "description": "",
+    "location": "Remote - Mali",
+    "country": "Mali",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:42:21.480Z",
+    "sourceHash": "c182b7620b98952832eaa73a8b4942aa3e3eb942cc6e8521736169e37550e0f6",
+    "company": {
+      "id": "viseo",
+      "name": "VISEO",
+      "logoUrl": "https://logo.clearbit.com/viseo.com",
+      "industry": "Technology",
+      "website": "https://viseo.com"
+    },
+    "slug": "d-veloppeur-net-react-f-h-viseo-c182b762",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mali"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "be50fdbb942fef7afba60428ada1e0b05e7847175068038c325e8dfea41c000c",
+    "title": "Développeur Full Stack Java/React",
+    "applyUrl": "https://careers.societegenerale.com/en/job-offers/developpeur-full-stack-java-react-26000JI9-en?src=JB-14381",
+    "description": "",
+    "location": "Remote - Mali",
+    "country": "Mali",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:42:12.728Z",
+    "sourceHash": "be50fdbb942fef7afba60428ada1e0b05e7847175068038c325e8dfea41c000c",
+    "company": {
+      "id": "societegenerale",
+      "name": "Societe Generale",
+      "logoUrl": "https://logo.clearbit.com/societegenerale.com",
+      "industry": "Technology",
+      "website": "https://societegenerale.com"
+    },
+    "slug": "d-veloppeur-full-stack-java-react-societe-generale-be50fdbb",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mali"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b2d33d9b99c830e44fa98b9620d4a02e97d31ca5895d91d8ac802de011cd859a",
+    "title": "SOFTWARE DEVELOPER – JAVA / JEE / JAVASCRIPT DOCBRIDGE",
+    "applyUrl": "https://red-tic.com/poste/software-developer-java-jee-javascript-docbridge/",
+    "description": "",
+    "location": "Remote - Mali",
+    "country": "Mali",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:42:09.778Z",
+    "sourceHash": "b2d33d9b99c830e44fa98b9620d4a02e97d31ca5895d91d8ac802de011cd859a",
+    "company": {
+      "id": "redtic",
+      "name": "RED TIC",
+      "logoUrl": "https://logo.clearbit.com/redtic.com",
+      "industry": "Technology",
+      "website": "https://redtic.com"
+    },
+    "slug": "software-developer-java-jee-javascript-docbridge-red-tic-b2d33d9b",
+    "aiTags": {
+      "stack": [
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mali"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "21752736f509e59b59e1c4e1ee293788f4a0294e58cd7fcdb1050fafa644b0a8",
+    "title": "DEVELOPPEUR SYMFONY/VueJS",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4477661960/",
+    "description": "",
+    "location": "Remote - Mali",
+    "country": "Mali",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:42:06.763Z",
+    "sourceHash": "21752736f509e59b59e1c4e1ee293788f4a0294e58cd7fcdb1050fafa644b0a8",
+    "company": {
+      "id": "btechnologie",
+      "name": "Btechnologie",
+      "logoUrl": "https://logo.clearbit.com/btechnologie.com",
+      "industry": "Technology",
+      "website": "https://btechnologie.com"
+    },
+    "slug": "developpeur-symfony-vuejs-btechnologie-21752736",
+    "aiTags": {
+      "stack": [
+        "vue"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mali"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3eda8e8e1f9b72427fa34a5bda15741a5a5478023c205adb522d0bfc7b7422f8",
+    "title": "Ingénieur DevOps, Frontend (F/H)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4478784932/",
+    "description": "",
+    "location": "Remote - Mali",
+    "country": "Mali",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:42:00.810Z",
+    "sourceHash": "3eda8e8e1f9b72427fa34a5bda15741a5a5478023c205adb522d0bfc7b7422f8",
+    "company": {
+      "id": "sofrecommaroc",
+      "name": "Sofrecom Maroc",
+      "logoUrl": "https://logo.clearbit.com/sofrecommaroc.com",
+      "industry": "Technology",
+      "website": "https://sofrecommaroc.com"
+    },
+    "slug": "ing-nieur-devops-frontend-f-h-sofrecom-maroc-3eda8e8e",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mali"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "1e6a18fe17204f9b85e2f6d99a9050c38bc9cda91fddb99529e82db616649878",
+    "title": "Ingénieur développeur Fullstack Node JS / React (H-F)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4387817465/",
+    "description": "",
+    "location": "Remote - Mali",
+    "country": "Mali",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:41:48.749Z",
+    "sourceHash": "1e6a18fe17204f9b85e2f6d99a9050c38bc9cda91fddb99529e82db616649878",
+    "company": {
+      "id": "sqli",
+      "name": "SQLI",
+      "logoUrl": "https://logo.clearbit.com/sqli.com",
+      "industry": "Technology",
+      "website": "https://sqli.com"
+    },
+    "slug": "ing-nieur-d-veloppeur-fullstack-node-js-react-h-f-sqli-1e6a18fe",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mali"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "80cebd0c44b2b1923be099c8ee8f38581bfbf2889cb59d9bf6ba97a1bff1ede7",
+    "title": "Fullstack developer (Connaissance React)",
+    "applyUrl": "https://expleo-jobs-ma-fr.icims.com/jobs/47542/fullstack-developer-(connaissance-react)/job?in_iframe=1&mode=prepopulate&iis=LinkedIn&iisn=LinkedIn",
+    "description": "",
+    "location": "Remote - Mali",
+    "country": "Mali",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:41:45.743Z",
+    "sourceHash": "80cebd0c44b2b1923be099c8ee8f38581bfbf2889cb59d9bf6ba97a1bff1ede7",
+    "company": {
+      "id": "expleogroup",
+      "name": "Expleo Group",
+      "logoUrl": "https://logo.clearbit.com/expleogroup.com",
+      "industry": "Technology",
+      "website": "https://expleogroup.com"
+    },
+    "slug": "fullstack-developer-connaissance-react-expleo-group-80cebd0c",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mali"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f4bc69c5b20e7c2dbc1826e7a05dc66e7a7a61633cdf230f2762368a4ce50273",
+    "title": "Web Developer (React.js / Node.js)",
+    "applyUrl": "https://www.accenture.com/my-en/careers/jobdetails?id=R00360283_en&src=LINKEDINJP",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:41:04.961Z",
+    "sourceHash": "f4bc69c5b20e7c2dbc1826e7a05dc66e7a7a61633cdf230f2762368a4ce50273",
+    "company": {
+      "id": "accenturesoutheastasia",
+      "name": "Accenture Southeast Asia",
+      "logoUrl": "https://logo.clearbit.com/accenturesoutheastasia.com",
+      "industry": "Technology",
+      "website": "https://accenturesoutheastasia.com"
+    },
+    "slug": "web-developer-react-js-node-js-accenture-southeast-asia-f4bc69c5",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "9b0b087efc0351eaf3b51d6e7bd04d43f641c74071d74c769df7c18f9b7cdc2a",
+    "title": "Full Stack Developer (React, Angular, Vue, PHP, Node.js)",
+    "applyUrl": "https://dpdhlgroup.avature.net/ms_MY/jobs/ApplicationMethods?jobId=372994&source=LinkedIn&utm_source=LinkedIn&utm_medium=LIjob&utm_campaign=LIjobslot",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:41:01.941Z",
+    "sourceHash": "9b0b087efc0351eaf3b51d6e7bd04d43f641c74071d74c769df7c18f9b7cdc2a",
+    "company": {
+      "id": "dhl",
+      "name": "DHL",
+      "logoUrl": "https://logo.clearbit.com/dhl.com",
+      "industry": "Technology",
+      "website": "https://dhl.com"
+    },
+    "slug": "full-stack-developer-react-angular-vue-php-node-js-dhl-9b0b087e",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2b0b6841530704a1ca897fe6150b5391bb211fdc7b68e3904e68acf5c6d50c8e",
+    "title": "Mobile Developer (Nodejs + React Native)",
+    "applyUrl": "https://www.avanade.com/en/career/job-details/R00351094?source=LinkedIn",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:40:52.924Z",
+    "sourceHash": "2b0b6841530704a1ca897fe6150b5391bb211fdc7b68e3904e68acf5c6d50c8e",
+    "company": {
+      "id": "avanade",
+      "name": "Avanade",
+      "logoUrl": "https://logo.clearbit.com/avanade.com",
+      "industry": "Technology",
+      "website": "https://avanade.com"
+    },
+    "slug": "mobile-developer-nodejs-react-native-avanade-2b0b6841",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "dfa854d0ac8a240376d758cba1b632930117b92fcf13179c09241da86e6e962c",
+    "title": "Software Engineer (Front End)",
+    "applyUrl": "https://www.3ds.com/careers/jobs/software-engineer-front-end-550181?src=SNS-102",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:40:37.605Z",
+    "sourceHash": "dfa854d0ac8a240376d758cba1b632930117b92fcf13179c09241da86e6e962c",
+    "company": {
+      "id": "dassaultsystmes",
+      "name": "Dassault Systèmes",
+      "logoUrl": "https://logo.clearbit.com/dassaultsystmes.com",
+      "industry": "Technology",
+      "website": "https://dassaultsystmes.com"
+    },
+    "slug": "software-engineer-front-end-dassault-syst-mes-dfa854d0",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "04d693e7f425d42bf950589390f4145b71a5e8d1dafdf73035cc81ac3d5ed6f7",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4474293404/",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:40:25.616Z",
+    "sourceHash": "04d693e7f425d42bf950589390f4145b71a5e8d1dafdf73035cc81ac3d5ed6f7",
+    "company": {
+      "id": "rytbank",
+      "name": "Ryt Bank",
+      "logoUrl": "https://logo.clearbit.com/rytbank.com",
+      "industry": "Technology",
+      "website": "https://rytbank.com"
+    },
+    "slug": "senior-frontend-engineer-ryt-bank-04d693e7",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "5b898b9d28bc1a6b5954adf15ab99160b2047938e26f474e38883e505d0bd617",
+    "title": "Senior Typescript Fullstack Developer (ReactJs/NextJs/NodeJs)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4476541378/",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:40:22.473Z",
+    "sourceHash": "5b898b9d28bc1a6b5954adf15ab99160b2047938e26f474e38883e505d0bd617",
+    "company": {
+      "id": "ambition",
+      "name": "Ambition",
+      "logoUrl": "https://logo.clearbit.com/ambition.com",
+      "industry": "Technology",
+      "website": "https://ambition.com"
+    },
+    "slug": "senior-typescript-fullstack-developer-reactjs-nextjs-nodejs-ambition-5b898b9d",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3be679486c3e4d46322712b2ed02296ac05d89b9b9aff032daca2d42a1971fa6",
+    "title": "JavaScript Engineer",
+    "applyUrl": "https://sme.careers/apply/data-trainer?jobid=JS-25-112&jobPostingId=72a72727-ac4f-4529-b770-bd572b07562e&utm_source=linkedin&utm_medium=job_board&utm_campaign=linkedin_jobs_feed&utm_content=sme_jobs&src=LinkedIn",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:40:19.436Z",
+    "sourceHash": "3be679486c3e4d46322712b2ed02296ac05d89b9b9aff032daca2d42a1971fa6",
+    "company": {
+      "id": "smecareers",
+      "name": "SME Careers",
+      "logoUrl": "https://logo.clearbit.com/smecareers.com",
+      "industry": "Technology",
+      "website": "https://smecareers.com"
+    },
+    "slug": "javascript-engineer-sme-careers-3be67948",
+    "aiTags": {
+      "stack": [
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "26f689fb8b2793b10c27f538c401f747dd2506f86e779695de3fa66a45805494",
+    "title": "Front End Engineer Intern",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4444895542/",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:40:16.288Z",
+    "sourceHash": "26f689fb8b2793b10c27f538c401f747dd2506f86e779695de3fa66a45805494",
+    "company": {
+      "id": "antinternational",
+      "name": "Ant International",
+      "logoUrl": "https://logo.clearbit.com/antinternational.com",
+      "industry": "Technology",
+      "website": "https://antinternational.com"
+    },
+    "slug": "front-end-engineer-intern-ant-international-26f689fb",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "mid",
+      "employmentType": "internship"
+    }
+  },
+  {
+    "id": "0a9cd2aab806049a57443efe539028f26d845a530ac48fef469fbbe8ff591893",
+    "title": "Software Engineer (React)",
+    "applyUrl": "https://techstreet.co/jobs/soware-engineer-react-qdpzew?ts=QDPZEW",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:40:13.330Z",
+    "sourceHash": "0a9cd2aab806049a57443efe539028f26d845a530ac48fef469fbbe8ff591893",
+    "company": {
+      "id": "techstreetmalaysia",
+      "name": "Techstreet Malaysia",
+      "logoUrl": "https://logo.clearbit.com/techstreetmalaysia.com",
+      "industry": "Technology",
+      "website": "https://techstreetmalaysia.com"
+    },
+    "slug": "software-engineer-react-techstreet-malaysia-0a9cd2aa",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4e0d6bf36222e674e183ce4790925d71fcadbe14c7cb360161c3c4b2e342081c",
+    "title": "Digital Developer (Frontend) Consultant",
+    "applyUrl": "https://guidewire.wd5.myworkdayjobs.com/external/job/Malaysia---Kuala-Lumpur/UX-Designer--GDC_JR_14949?source=LinkedIn",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:40:10.242Z",
+    "sourceHash": "4e0d6bf36222e674e183ce4790925d71fcadbe14c7cb360161c3c4b2e342081c",
+    "company": {
+      "id": "guidewiresoftware",
+      "name": "Guidewire Software",
+      "logoUrl": "https://logo.clearbit.com/guidewiresoftware.com",
+      "industry": "Technology",
+      "website": "https://guidewiresoftware.com"
+    },
+    "slug": "digital-developer-frontend-consultant-guidewire-software-4e0d6bf3",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "86c16ee20553494345fce1e1c619909c848143719666312ce1a0930d012279eb",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4469833935/",
+    "description": "",
+    "location": "Remote - Malaysia",
+    "country": "Malaysia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:40:07.003Z",
+    "sourceHash": "86c16ee20553494345fce1e1c619909c848143719666312ce1a0930d012279eb",
+    "company": {
+      "id": "isoftstone",
+      "name": "iSoftStone",
+      "logoUrl": "https://logo.clearbit.com/isoftstone.com",
+      "industry": "Technology",
+      "website": "https://isoftstone.com"
+    },
+    "slug": "frontend-developer-isoftstone-86c16ee2",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Malaysia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "cb81cc1803555dbd8cfa4da9ae013649c2274668d7fa5e71f03bd69c85796e74",
+    "title": "Software Development Engineer in Test - Frontend",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4461710798/",
+    "description": "",
+    "location": "Remote - Luxembourg",
+    "country": "Luxembourg",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:38:01.522Z",
+    "sourceHash": "cb81cc1803555dbd8cfa4da9ae013649c2274668d7fa5e71f03bd69c85796e74",
+    "company": {
+      "id": "spacebackend",
+      "name": "Spacebackend",
+      "logoUrl": "https://logo.clearbit.com/spacebackend.com",
+      "industry": "Technology",
+      "website": "https://spacebackend.com"
+    },
+    "slug": "software-development-engineer-in-test-frontend-spacebackend-cb81cc18",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Luxembourg"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e54d56e8eb14c9d72b8c9d869d1b30cf1383d8fe09255efd7701abd989d17971",
+    "title": "Senior Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4479507596/",
+    "description": "",
+    "location": "Remote - Lithuania",
+    "country": "Lithuania",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:37:21.194Z",
+    "sourceHash": "e54d56e8eb14c9d72b8c9d869d1b30cf1383d8fe09255efd7701abd989d17971",
+    "company": {
+      "id": "coingate",
+      "name": "CoinGate",
+      "logoUrl": "https://logo.clearbit.com/coingate.com",
+      "industry": "Technology",
+      "website": "https://coingate.com"
+    },
+    "slug": "senior-frontend-developer-coingate-e54d56e8",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Lithuania"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b4cbe2c5958fdf36b9e01fa0d34498f89c4a3f6c33fbb146058dfcc7e6955fbd",
+    "title": "Frontend Product Engineer",
+    "applyUrl": "https://www.octocom.ai/careers/frontend-product-engineer",
+    "description": "",
+    "location": "Remote - Lithuania",
+    "country": "Lithuania",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:36:54.556Z",
+    "sourceHash": "b4cbe2c5958fdf36b9e01fa0d34498f89c4a3f6c33fbb146058dfcc7e6955fbd",
+    "company": {
+      "id": "octocom",
+      "name": "Octocom",
+      "logoUrl": "https://logo.clearbit.com/octocom.com",
+      "industry": "Technology",
+      "website": "https://octocom.com"
+    },
+    "slug": "frontend-product-engineer-octocom-b4cbe2c5",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Lithuania"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "6b1c001a6651e241df15be652a00cec6fd84d9a03613a83f521ad8764e38c9ac",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4472925779/",
+    "description": "",
+    "location": "Remote - Lithuania",
+    "country": "Lithuania",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:36:51.629Z",
+    "sourceHash": "6b1c001a6651e241df15be652a00cec6fd84d9a03613a83f521ad8764e38c9ac",
+    "company": {
+      "id": "ondato",
+      "name": "Ondato",
+      "logoUrl": "https://logo.clearbit.com/ondato.com",
+      "industry": "Technology",
+      "website": "https://ondato.com"
+    },
+    "slug": "frontend-developer-ondato-6b1c001a",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Lithuania"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d0469dfaddeebdb5445ad8bc76726ddcaee26b72169b83ac5922c80dc6dc37be",
+    "title": "SENIOR FRONT-END ENGINEER (ANGULAR)",
+    "applyUrl": "https://litit.recruitee.com/o/senior-front-end-engineer-angular/c/new?source=LinkedIn+Basic+Jobs",
+    "description": "",
+    "location": "Remote - Lithuania",
+    "country": "Lithuania",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:36:48.557Z",
+    "sourceHash": "d0469dfaddeebdb5445ad8bc76726ddcaee26b72169b83ac5922c80dc6dc37be",
+    "company": {
+      "id": "litit",
+      "name": "LITIT",
+      "logoUrl": "https://logo.clearbit.com/litit.com",
+      "industry": "Technology",
+      "website": "https://litit.com"
+    },
+    "slug": "senior-front-end-engineer-angular-litit-d0469dfa",
+    "aiTags": {
+      "stack": [
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Lithuania"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "88cc349807164423e40985ac8d083c134aaca17e448641fe497f43d684d7c7e5",
+    "title": "Senior Full Stack Developer (React + Node.js)",
+    "applyUrl": "https://aanantatech.com/careers/senior-full-stack-developer",
+    "description": "",
+    "location": "Remote - Liberia",
+    "country": "Liberia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:35:54.678Z",
+    "sourceHash": "88cc349807164423e40985ac8d083c134aaca17e448641fe497f43d684d7c7e5",
+    "company": {
+      "id": "aanantatechstravirallp",
+      "name": "AanantaTech Stravira LLP",
+      "logoUrl": "https://logo.clearbit.com/aanantatechstravirallp.com",
+      "industry": "Technology",
+      "website": "https://aanantatechstravirallp.com"
+    },
+    "slug": "senior-full-stack-developer-react-node-js-aanantatech-stravira-llp-88cc3498",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Liberia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ab21bea1d0dc3d05c2226dc966a1011e98742d62fa0310d96ec574083911dd7b",
+    "title": "Web Developer & Designer / SEO Specialist",
+    "applyUrl": "https://aiu.bamboohr.com/careers/522?source=linkedin_premium",
+    "description": "",
+    "location": "Remote - Kuwait",
+    "country": "Kuwait",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:32:56.679Z",
+    "sourceHash": "ab21bea1d0dc3d05c2226dc966a1011e98742d62fa0310d96ec574083911dd7b",
+    "company": {
+      "id": "americaninternationaluniversitykuwait",
+      "name": "American International University, Kuwait",
+      "logoUrl": "https://logo.clearbit.com/americaninternationaluniversitykuwait.com",
+      "industry": "Technology",
+      "website": "https://americaninternationaluniversitykuwait.com"
+    },
+    "slug": "web-developer-designer-seo-specialist-american-international-university-kuwait-ab21bea1",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Kuwait"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3f546dc05cde567b63067c82e5d2278e37b44ebe957796098120b29b39dc6610",
+    "title": "Web Developer Cum SEO Expert",
+    "applyUrl": "https://digitalmasterminds.online/web-developer",
+    "description": "",
+    "location": "Remote - Kenya",
+    "country": "Kenya",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:31:57.123Z",
+    "sourceHash": "3f546dc05cde567b63067c82e5d2278e37b44ebe957796098120b29b39dc6610",
+    "company": {
+      "id": "digitalmasterminds",
+      "name": "Digital Masterminds",
+      "logoUrl": "https://logo.clearbit.com/digitalmasterminds.com",
+      "industry": "Technology",
+      "website": "https://digitalmasterminds.com"
+    },
+    "slug": "web-developer-cum-seo-expert-digital-masterminds-3f546dc0",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Kenya"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0e2e591806d53a7e9bb878ce24843ba49ce023b6ddc0a9c1b2b4c0943b247b98",
+    "title": "Senior React Native Mobile Developer - Irbid",
+    "applyUrl": "https://bettervue.nextwo.com/apply/3784a2729f262149e0147f458fb9d8a7",
+    "description": "",
+    "location": "Remote - Jordan",
+    "country": "Jordan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:30:36.326Z",
+    "sourceHash": "0e2e591806d53a7e9bb878ce24843ba49ce023b6ddc0a9c1b2b4c0943b247b98",
+    "company": {
+      "id": "nextwoco",
+      "name": "Nextwo Co.",
+      "logoUrl": "https://logo.clearbit.com/nextwoco.com",
+      "industry": "Technology",
+      "website": "https://nextwoco.com"
+    },
+    "slug": "senior-react-native-mobile-developer-irbid-nextwo-co-0e2e5918",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Jordan"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "138c8704868b00bdef1d08b841373ef95e48b411e823b4c48a09fc16b3d92997",
+    "title": "フロントエンドエンジニア / Frontend Engineer（React／Angular・TypeScript／保険業界・グローバル大規模IT変革プロジェクト）",
+    "applyUrl": "https://lnkd.in/eC5ZVDPh",
+    "description": "",
+    "location": "Remote - Japan",
+    "country": "Japan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:29:51.426Z",
+    "sourceHash": "138c8704868b00bdef1d08b841373ef95e48b411e823b4c48a09fc16b3d92997",
+    "company": {
+      "id": "tataconsultancyservices",
+      "name": "Tata Consultancy Services",
+      "logoUrl": "https://logo.clearbit.com/tataconsultancyservices.com",
+      "industry": "Technology",
+      "website": "https://tataconsultancyservices.com"
+    },
+    "slug": "frontend-engineer-react-angular-typescript-it-tata-consultancy-services-138c8704",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Japan"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8aac7bfb44ae931babeee7154be28fe9dd29e5da6d680f6ad32fe6725c84e175",
+    "title": "Full Stack Engineer (TypeScript)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4475657992/",
+    "description": "",
+    "location": "Remote - Japan",
+    "country": "Japan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:29:45.412Z",
+    "sourceHash": "8aac7bfb44ae931babeee7154be28fe9dd29e5da6d680f6ad32fe6725c84e175",
+    "company": {
+      "id": "bloomtechinc",
+      "name": "BLOOMTECH, Inc",
+      "logoUrl": "https://logo.clearbit.com/bloomtechinc.com",
+      "industry": "Technology",
+      "website": "https://bloomtechinc.com"
+    },
+    "slug": "full-stack-engineer-typescript-bloomtech-inc-8aac7bfb",
+    "aiTags": {
+      "stack": [
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Japan"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "98dac828032b3cfb62cc5609622a685288b79f50df19d1eb89be2d0f557796f2",
+    "title": "FrontendEngineer Fully Remote",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4477345243/",
+    "description": "",
+    "location": "Remote - Japan",
+    "country": "Japan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:29:29.745Z",
+    "sourceHash": "98dac828032b3cfb62cc5609622a685288b79f50df19d1eb89be2d0f557796f2",
+    "company": {
+      "id": "bloomtechinc",
+      "name": "BLOOMTECH, Inc",
+      "logoUrl": "https://logo.clearbit.com/bloomtechinc.com",
+      "industry": "Technology",
+      "website": "https://bloomtechinc.com"
+    },
+    "slug": "frontendengineer-fully-remote-bloomtech-inc-98dac828",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Japan"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ca25b11fa70ad905f466dceb6a5c4db1c8f0b4b18af389761352203c73f010d7",
+    "title": "Full Stack Developer (Angular) – Freelance, Full Remote",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4477095225/",
+    "description": "",
+    "location": "Remote - Italy",
+    "country": "Italy",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:26:45.635Z",
+    "sourceHash": "ca25b11fa70ad905f466dceb6a5c4db1c8f0b4b18af389761352203c73f010d7",
+    "company": {
+      "id": "gestamsrl",
+      "name": "Gestam S.r.l.",
+      "logoUrl": "https://logo.clearbit.com/gestamsrl.com",
+      "industry": "Technology",
+      "website": "https://gestamsrl.com"
+    },
+    "slug": "full-stack-developer-angular-freelance-full-remote-gestam-s-r-l-ca25b11f",
+    "aiTags": {
+      "stack": [
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Italy"
+      ],
+      "seniority": "mid",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "aab485fe156d6937c54c778f29a1b411055894eaa744e44345ea916f097c5994",
+    "title": "Junior Web Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4472742077/",
+    "description": "",
+    "location": "Remote - Italy",
+    "country": "Italy",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:26:01.434Z",
+    "sourceHash": "aab485fe156d6937c54c778f29a1b411055894eaa744e44345ea916f097c5994",
+    "company": {
+      "id": "elettrasrl",
+      "name": "Elettra Srl",
+      "logoUrl": "https://logo.clearbit.com/elettrasrl.com",
+      "industry": "Technology",
+      "website": "https://elettrasrl.com"
+    },
+    "slug": "junior-web-developer-elettra-srl-aab485fe",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Italy"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "27c552c84c19a0017016b6b2e1c288f027ff0ca41a1bbfeebd99085cc1953366",
+    "title": "Freelance Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4476406667/",
+    "description": "",
+    "location": "Remote - Italy",
+    "country": "Italy",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:25:49.559Z",
+    "sourceHash": "27c552c84c19a0017016b6b2e1c288f027ff0ca41a1bbfeebd99085cc1953366",
+    "company": {
+      "id": "agentera",
+      "name": "AgentEra",
+      "logoUrl": "https://logo.clearbit.com/agentera.com",
+      "industry": "Technology",
+      "website": "https://agentera.com"
+    },
+    "slug": "freelance-frontend-developer-agentera-27c552c8",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Italy"
+      ],
+      "seniority": "mid",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "01f23fb78e7d7e6076193465aa892ab9897900de605e03de3d9faa5790c9fbc4",
+    "title": "Full Stack Developer – Node.js & React",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4476414413/",
+    "description": "",
+    "location": "Remote - Israel",
+    "country": "Israel",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:24:22.374Z",
+    "sourceHash": "01f23fb78e7d7e6076193465aa892ab9897900de605e03de3d9faa5790c9fbc4",
+    "company": {
+      "id": "wobiltd",
+      "name": "Wobi Ltd",
+      "logoUrl": "https://logo.clearbit.com/wobiltd.com",
+      "industry": "Technology",
+      "website": "https://wobiltd.com"
+    },
+    "slug": "full-stack-developer-node-js-react-wobi-ltd-01f23fb7",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Israel"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0e0a6b40440a6c5dfd5c52e5c7692e80adab1fbaca4bd5aa96b4887496ba3566",
+    "title": "Senior Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4476659700/",
+    "description": "",
+    "location": "Remote - Israel",
+    "country": "Israel",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:23:03.436Z",
+    "sourceHash": "0e0a6b40440a6c5dfd5c52e5c7692e80adab1fbaca4bd5aa96b4887496ba3566",
+    "company": {
+      "id": "inforu",
+      "name": "inforu",
+      "logoUrl": "https://logo.clearbit.com/inforu.com",
+      "industry": "Technology",
+      "website": "https://inforu.com"
+    },
+    "slug": "senior-frontend-developer-inforu-0e0a6b40",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Israel"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "aae5040a73b2120075b31e467af97784a42230cc4eacc3ef23b16946ecfe0f92",
+    "title": "Contract Developer: WordPress (Sensei LMS) + Embedded React/TypeScript.",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4477091783/",
+    "description": "",
+    "location": "Remote - Ireland",
+    "country": "Ireland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:22:40.778Z",
+    "sourceHash": "aae5040a73b2120075b31e467af97784a42230cc4eacc3ef23b16946ecfe0f92",
+    "company": {
+      "id": "horizonnua",
+      "name": "Horizon Nua",
+      "logoUrl": "https://logo.clearbit.com/horizonnua.com",
+      "industry": "Technology",
+      "website": "https://horizonnua.com"
+    },
+    "slug": "contract-developer-wordpress-sensei-lms-embedded-react-typescript-horizon-nua-aae5040a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Ireland"
+      ],
+      "seniority": "mid",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "bd5eec4ee7d4bcdb50bfcddeaf2434e069130b499c37f5073953c858abcc17fe",
+    "title": "Senior Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4477668144/",
+    "description": "",
+    "location": "Remote - Ireland",
+    "country": "Ireland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:22:31.709Z",
+    "sourceHash": "bd5eec4ee7d4bcdb50bfcddeaf2434e069130b499c37f5073953c858abcc17fe",
+    "company": {
+      "id": "apata",
+      "name": "Apata",
+      "logoUrl": "https://logo.clearbit.com/apata.com",
+      "industry": "Technology",
+      "website": "https://apata.com"
+    },
+    "slug": "senior-frontend-developer-apata-bd5eec4e",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Ireland"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "c07341e4c52fdab8ca45a5756b28fcd0f260543b874e0846e67516f18545d283",
+    "title": "Front End Developer – React / UX",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4469187523/",
+    "description": "",
+    "location": "Remote - Ireland",
+    "country": "Ireland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:22:05.064Z",
+    "sourceHash": "c07341e4c52fdab8ca45a5756b28fcd0f260543b874e0846e67516f18545d283",
+    "company": {
+      "id": "solasitrecruitment",
+      "name": "Solas IT Recruitment",
+      "logoUrl": "https://logo.clearbit.com/solasitrecruitment.com",
+      "industry": "Technology",
+      "website": "https://solasitrecruitment.com"
+    },
+    "slug": "front-end-developer-react-ux-solas-it-recruitment-c07341e4",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Ireland"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7adfd383d1e07654777f8a173db3fa892daf115a77a7fa2c427834b882952db9",
+    "title": "Mobile Developer (React Native)",
+    "applyUrl": "https://nextgen.co.id/jobs/mobile-developer-react-native/",
+    "description": "",
+    "location": "Remote - Indonesia",
+    "country": "Indonesia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:21:16.727Z",
+    "sourceHash": "7adfd383d1e07654777f8a173db3fa892daf115a77a7fa2c427834b882952db9",
+    "company": {
+      "id": "ptnextgeninovasiindonesia",
+      "name": "PT Nextgen Inovasi Indonesia",
+      "logoUrl": "https://logo.clearbit.com/ptnextgeninovasiindonesia.com",
+      "industry": "Technology",
+      "website": "https://ptnextgeninovasiindonesia.com"
+    },
+    "slug": "mobile-developer-react-native-pt-nextgen-inovasi-indonesia-7adfd383",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Indonesia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e155238eaddefc112ad639ef21d9ea9e585cd4d7d5138c0e01b733ac230983a9",
+    "title": "Frontend fejlesztő (Angular)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4476414093/",
+    "description": "",
+    "location": "Remote - Hungary",
+    "country": "Hungary",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:20:45.912Z",
+    "sourceHash": "e155238eaddefc112ad639ef21d9ea9e585cd4d7d5138c0e01b733ac230983a9",
+    "company": {
+      "id": "lpsolutions",
+      "name": "L&P Solutions",
+      "logoUrl": "https://logo.clearbit.com/lpsolutions.com",
+      "industry": "Technology",
+      "website": "https://lpsolutions.com"
+    },
+    "slug": "frontend-fejleszt-angular-l-p-solutions-e155238e",
+    "aiTags": {
+      "stack": [
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Hungary"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7c34adf775fec4134277f358e851adea5060410211c613e0489b82d9487638ba",
+    "title": "Senior Python/Flask+React Fullstack Engineer - Remote, Latin America",
+    "applyUrl": "https://jobs.lever.co/bluelightconsulting/c1968931-5446-40f6-8bfc-3fe300d71750/apply?lever-source=LinkedIn",
+    "description": "",
+    "location": "Remote - Guyana",
+    "country": "Guyana",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:19:22.162Z",
+    "sourceHash": "7c34adf775fec4134277f358e851adea5060410211c613e0489b82d9487638ba",
+    "company": {
+      "id": "bluelight",
+      "name": "Bluelight",
+      "logoUrl": "https://logo.clearbit.com/bluelight.com",
+      "industry": "Technology",
+      "website": "https://bluelight.com"
+    },
+    "slug": "senior-python-flask-react-fullstack-engineer-remote-latin-america-bluelight-7c34adf7",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Guyana"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ce870deddedb79acf7e0303204df9a5247416488c913f4dc165b3df45c9bd128",
+    "title": "Senior Python/Flask+React Fullstack Engineer - Remote, Latin America",
+    "applyUrl": "https://jobs.lever.co/bluelightconsulting/3f296df2-92cf-48da-9c96-1861079b52ee/apply?lever-source=LinkedIn",
+    "description": "",
+    "location": "Remote - Guyana",
+    "country": "Guyana",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:19:19.227Z",
+    "sourceHash": "ce870deddedb79acf7e0303204df9a5247416488c913f4dc165b3df45c9bd128",
+    "company": {
+      "id": "bluelight",
+      "name": "Bluelight",
+      "logoUrl": "https://logo.clearbit.com/bluelight.com",
+      "industry": "Technology",
+      "website": "https://bluelight.com"
+    },
+    "slug": "senior-python-flask-react-fullstack-engineer-remote-latin-america-bluelight-ce870ded",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Guyana"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "9c365c4720d587f4df5ebae526a4cc841130457590cd9424364878df69c40f27",
+    "title": "Senior Software Engineer (Python/Flask+React) - Remote, Latin America",
+    "applyUrl": "https://jobs.lever.co/bluelightconsulting/37bb6cfe-12c2-49cf-8366-f5319e702ccc/apply?lever-source=LinkedIn",
+    "description": "",
+    "location": "Remote - Guyana",
+    "country": "Guyana",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:19:16.295Z",
+    "sourceHash": "9c365c4720d587f4df5ebae526a4cc841130457590cd9424364878df69c40f27",
+    "company": {
+      "id": "bluelight",
+      "name": "Bluelight",
+      "logoUrl": "https://logo.clearbit.com/bluelight.com",
+      "industry": "Technology",
+      "website": "https://bluelight.com"
+    },
+    "slug": "senior-software-engineer-python-flask-react-remote-latin-america-bluelight-9c365c47",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Guyana"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "69d3e3998825c7beedc09ccfa8691ce34f915e2004e4ed36d574f03a6f0a542d",
+    "title": "Senior Software Engineer (Python/Flask+React) - Remote, Latin America",
+    "applyUrl": "https://jobs.lever.co/bluelightconsulting/d9c47080-8b74-45ca-b8ef-09665fc03630/apply?lever-source=LinkedIn",
+    "description": "",
+    "location": "Remote - Guyana",
+    "country": "Guyana",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:19:10.471Z",
+    "sourceHash": "69d3e3998825c7beedc09ccfa8691ce34f915e2004e4ed36d574f03a6f0a542d",
+    "company": {
+      "id": "bluelight",
+      "name": "Bluelight",
+      "logoUrl": "https://logo.clearbit.com/bluelight.com",
+      "industry": "Technology",
+      "website": "https://bluelight.com"
+    },
+    "slug": "senior-software-engineer-python-flask-react-remote-latin-america-bluelight-69d3e399",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Guyana"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "79c6f4e3aff65a191ccbe0fb4b1a69eff21ae138a196412ba56728315ff3b53d",
+    "title": "Full Stack Laravel + React Developer - Remote, Latin America",
+    "applyUrl": "https://jobs.lever.co/bluelightconsulting/7cc527fb-6bf1-4b0c-ab74-825ed40df61d/apply?lever-source=LinkedIn",
+    "description": "",
+    "location": "Remote - Guyana",
+    "country": "Guyana",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:18:55.850Z",
+    "sourceHash": "79c6f4e3aff65a191ccbe0fb4b1a69eff21ae138a196412ba56728315ff3b53d",
+    "company": {
+      "id": "bluelight",
+      "name": "Bluelight",
+      "logoUrl": "https://logo.clearbit.com/bluelight.com",
+      "industry": "Technology",
+      "website": "https://bluelight.com"
+    },
+    "slug": "full-stack-laravel-react-developer-remote-latin-america-bluelight-79c6f4e3",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Guyana"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "be42538abbdd72d2dffe3b48a17c143376dd34ced9e0ec85586609e0a849d0b0",
+    "title": "Full Stack Laravel + React Developer - Remote, Latin America",
+    "applyUrl": "https://jobs.lever.co/bluelightconsulting/a82c9265-2cf1-41ce-8edd-e23a4ad1db37/apply?lever-source=LinkedIn",
+    "description": "",
+    "location": "Remote - Guyana",
+    "country": "Guyana",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:18:52.889Z",
+    "sourceHash": "be42538abbdd72d2dffe3b48a17c143376dd34ced9e0ec85586609e0a849d0b0",
+    "company": {
+      "id": "bluelight",
+      "name": "Bluelight",
+      "logoUrl": "https://logo.clearbit.com/bluelight.com",
+      "industry": "Technology",
+      "website": "https://bluelight.com"
+    },
+    "slug": "full-stack-laravel-react-developer-remote-latin-america-bluelight-be42538a",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Guyana"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d531517270207d681c75e72818cd5fe9ff9e178b9cdf7bd10be72cc5dfcfc0a8",
+    "title": "Full Stack Engineer (Java + React) - Remote - Latin America",
+    "applyUrl": "https://talent.fullstack.com/jobs/e6bce769-1163-4066-a136-3f3124f5a886",
+    "description": "",
+    "location": "Remote - Guatemala",
+    "country": "Guatemala",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:17:30.169Z",
+    "sourceHash": "d531517270207d681c75e72818cd5fe9ff9e178b9cdf7bd10be72cc5dfcfc0a8",
+    "company": {
+      "id": "fullstack",
+      "name": "FullStack",
+      "logoUrl": "https://logo.clearbit.com/fullstack.com",
+      "industry": "Technology",
+      "website": "https://fullstack.com"
+    },
+    "slug": "full-stack-engineer-java-react-remote-latin-america-fullstack-d5315172",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Guatemala"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0ab2021a5220b2a70c9686f73958d7f3a0e8cd78c1043b09325734e754df477f",
+    "title": "Full Stack Laravel + React Developer - Remote, Latin America",
+    "applyUrl": "https://jobs.lever.co/bluelightconsulting/ca7c5125-8486-4264-9855-7c6cfa15232c/apply?lever-source=LinkedIn",
+    "description": "",
+    "location": "Remote - Guatemala",
+    "country": "Guatemala",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:17:24.292Z",
+    "sourceHash": "0ab2021a5220b2a70c9686f73958d7f3a0e8cd78c1043b09325734e754df477f",
+    "company": {
+      "id": "bluelight",
+      "name": "Bluelight",
+      "logoUrl": "https://logo.clearbit.com/bluelight.com",
+      "industry": "Technology",
+      "website": "https://bluelight.com"
+    },
+    "slug": "full-stack-laravel-react-developer-remote-latin-america-bluelight-0ab2021a",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Guatemala"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ccf3647eda4062e7cbc2fc95c74f508a4b7031fc7a7d249bf7fd7c932b2f5ac5",
+    "title": "Full Stack Laravel + React Developer - Remote, Latin America",
+    "applyUrl": "https://jobs.lever.co/bluelightconsulting/95b31a94-f8b2-4592-a3a3-2d901d0a0e1b/apply?lever-source=LinkedIn",
+    "description": "",
+    "location": "Remote - Guatemala",
+    "country": "Guatemala",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:17:18.349Z",
+    "sourceHash": "ccf3647eda4062e7cbc2fc95c74f508a4b7031fc7a7d249bf7fd7c932b2f5ac5",
+    "company": {
+      "id": "bluelight",
+      "name": "Bluelight",
+      "logoUrl": "https://logo.clearbit.com/bluelight.com",
+      "industry": "Technology",
+      "website": "https://bluelight.com"
+    },
+    "slug": "full-stack-laravel-react-developer-remote-latin-america-bluelight-ccf3647e",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Guatemala"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "22eda91440e15f419b0c2fe0a6c71b6c2ed7a18eb18d75ed8df6468b803f6ab7",
+    "title": "Web Developer (PHP & JavaScript)",
+    "applyUrl": "https://apply.workable.com/j/5ED6B33149",
+    "description": "",
+    "location": "Remote - Greece",
+    "country": "Greece",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:15:53.987Z",
+    "sourceHash": "22eda91440e15f419b0c2fe0a6c71b6c2ed7a18eb18d75ed8df6468b803f6ab7",
+    "company": {
+      "id": "tesaegroup",
+      "name": "TESAE group",
+      "logoUrl": "https://logo.clearbit.com/tesaegroup.com",
+      "industry": "Technology",
+      "website": "https://tesaegroup.com"
+    },
+    "slug": "web-developer-php-javascript-tesae-group-22eda914",
+    "aiTags": {
+      "stack": [
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Greece"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "bdf74abd490a6b98476d0611307203f371cb2ff276a2a308eeded89dfbc7af52",
+    "title": "Web Developer / Corporate Digital Support",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4418968356/",
+    "description": "",
+    "location": "Remote - Greece",
+    "country": "Greece",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:15:36.274Z",
+    "sourceHash": "bdf74abd490a6b98476d0611307203f371cb2ff276a2a308eeded89dfbc7af52",
+    "company": {
+      "id": "gnomoninformaticssa",
+      "name": "Gnomon Informatics SA",
+      "logoUrl": "https://logo.clearbit.com/gnomoninformaticssa.com",
+      "industry": "Technology",
+      "website": "https://gnomoninformaticssa.com"
+    },
+    "slug": "web-developer-corporate-digital-support-gnomon-informatics-sa-bdf74abd",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Greece"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2c9e55d64fec07cb0acf00412f13cd487a8ca3b0d6c791fbbc02772fc8e29c09",
+    "title": "Senior JavaScript Engineer",
+    "applyUrl": "https://contentpass.jobs.personio.com/job/2470053",
+    "description": "",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:13:43.126Z",
+    "sourceHash": "2c9e55d64fec07cb0acf00412f13cd487a8ca3b0d6c791fbbc02772fc8e29c09",
+    "company": {
+      "id": "contentpass",
+      "name": "contentpass",
+      "logoUrl": "https://logo.clearbit.com/contentpass.com",
+      "industry": "Technology",
+      "website": "https://contentpass.com"
+    },
+    "slug": "senior-javascript-engineer-contentpass-2c9e55d6",
+    "aiTags": {
+      "stack": [
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "bd9f7c15973ef7825d133a56e4bcd575307b3a91e572d03bcbe493fcf59d7cd0",
+    "title": "Senior Frontend Web Developer (all genders) Full Remote",
+    "applyUrl": "https://holzlandbecker.recruitee.com/o/senior-frontend-web-developer-all-genders-full-remote/c/new?source=LinkedIn+Basic+Jobs",
+    "description": "",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:13:31.319Z",
+    "sourceHash": "bd9f7c15973ef7825d133a56e4bcd575307b3a91e572d03bcbe493fcf59d7cd0",
+    "company": {
+      "id": "holzprofi24",
+      "name": "Holzprofi24",
+      "logoUrl": "https://logo.clearbit.com/holzprofi24.com",
+      "industry": "Technology",
+      "website": "https://holzprofi24.com"
+    },
+    "slug": "senior-frontend-web-developer-all-genders-full-remote-holzprofi24-bd9f7c15",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "6d05e90b1c61ba94ae26a5a58721012ee360f6fecac6fea43ef909e935cd0c3d",
+    "title": "UI Architect- Angular",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4473952802/",
+    "description": "",
+    "location": "Remote - Georgia",
+    "country": "Georgia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:13:19.739Z",
+    "sourceHash": "6d05e90b1c61ba94ae26a5a58721012ee360f6fecac6fea43ef909e935cd0c3d",
+    "company": {
+      "id": "citiustech",
+      "name": "CitiusTech",
+      "logoUrl": "https://logo.clearbit.com/citiustech.com",
+      "industry": "Technology",
+      "website": "https://citiustech.com"
+    },
+    "slug": "ui-architect-angular-citiustech-6d05e90b",
+    "aiTags": {
+      "stack": [
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Georgia"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f8fbd45298276b578ebe5c1605245a59b54dc54a5b51888309391e17d4d2e3cf",
+    "title": "Full-Stack Engineer (Frontend-Leaning) - CreativeMusic",
+    "applyUrl": "https://elevenlabs.io/careers/38bac641-02de-414d-96f3-d0adb603cb89/full-stack-engineer-frontend-leaning-creativemusic",
+    "description": "",
+    "location": "Remote - Georgia",
+    "country": "Georgia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:13:16.785Z",
+    "sourceHash": "f8fbd45298276b578ebe5c1605245a59b54dc54a5b51888309391e17d4d2e3cf",
+    "company": {
+      "id": "umaiconsultancy",
+      "name": "UMAI Consultancy",
+      "logoUrl": "https://logo.clearbit.com/umaiconsultancy.com",
+      "industry": "Technology",
+      "website": "https://umaiconsultancy.com"
+    },
+    "slug": "full-stack-engineer-frontend-leaning-creativemusic-umai-consultancy-f8fbd452",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Georgia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "1d094cbdb45cb28f5062d3922bb8dea590dbda06b1de5e2e27af6e47eaf0cc3d",
+    "title": "Staff Front End Software Engineer",
+    "applyUrl": "https://parkade.com/jobs?ashby_jid=a21137ac-2bbb-487d-81c0-a144ae016fbf&utm_source=1GJl2jPaeg",
+    "description": "",
+    "location": "Remote - Georgia",
+    "country": "Georgia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:13:13.757Z",
+    "sourceHash": "1d094cbdb45cb28f5062d3922bb8dea590dbda06b1de5e2e27af6e47eaf0cc3d",
+    "company": {
+      "id": "parkade",
+      "name": "Parkade",
+      "logoUrl": "https://logo.clearbit.com/parkade.com",
+      "industry": "Technology",
+      "website": "https://parkade.com"
+    },
+    "slug": "staff-front-end-software-engineer-parkade-1d094cbd",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Georgia"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "34994f21ea5e7ace60603d702118292cc0cc857e0fe2a28992f5c8c9d53b2af2",
+    "title": "Web Developer, eCRM,",
+    "applyUrl": "https://www.nten.org/jobs/web-developer-ecrm-2",
+    "description": "",
+    "location": "Remote - Georgia",
+    "country": "Georgia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:12:58.809Z",
+    "sourceHash": "34994f21ea5e7ace60603d702118292cc0cc857e0fe2a28992f5c8c9d53b2af2",
+    "company": {
+      "id": "nten",
+      "name": "NTEN",
+      "logoUrl": "https://logo.clearbit.com/nten.com",
+      "industry": "Technology",
+      "website": "https://nten.com"
+    },
+    "slug": "web-developer-ecrm-nten-34994f21",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Georgia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "146971cb358f08655b549f611522a438dc3bd3db0e9f3a65d36bc3360f81dd73",
+    "title": "React Software Engineer",
+    "applyUrl": "https://www.sundayy.com/job-description/us85A1E35D866F69A7ADCF1712C9F3BE46?source=Linkedin",
+    "description": "",
+    "location": "Remote - Georgia",
+    "country": "Georgia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:12:55.719Z",
+    "sourceHash": "146971cb358f08655b549f611522a438dc3bd3db0e9f3a65d36bc3360f81dd73",
+    "company": {
+      "id": "wiraa",
+      "name": "Wiraa",
+      "logoUrl": "https://logo.clearbit.com/wiraa.com",
+      "industry": "Technology",
+      "website": "https://wiraa.com"
+    },
+    "slug": "react-software-engineer-wiraa-146971cb",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Georgia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8628500e0a17afd86de2a180c42e3d45da0718ec25b9062b4cc24c007d079487",
+    "title": "Développeur front-end Next.js / React TypeScript",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4475452244/",
+    "description": "",
+    "location": "Remote - France",
+    "country": "France",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:12:16.434Z",
+    "sourceHash": "8628500e0a17afd86de2a180c42e3d45da0718ec25b9062b4cc24c007d079487",
+    "company": {
+      "id": "webnet",
+      "name": "Webnet",
+      "logoUrl": "https://logo.clearbit.com/webnet.com",
+      "industry": "Technology",
+      "website": "https://webnet.com"
+    },
+    "slug": "d-veloppeur-front-end-next-js-react-typescript-webnet-8628500e",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "France"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "11674e8dc98f3996f011d074ffa7a44163864748dc05ed040945ee3a047da375",
+    "title": "Frontend Developer",
+    "applyUrl": "https://careers.oodrive.com/jobs/8513154-frontend-developer?utm_source=LinkedIn",
+    "description": "",
+    "location": "Remote - France",
+    "country": "France",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:12:13.426Z",
+    "sourceHash": "11674e8dc98f3996f011d074ffa7a44163864748dc05ed040945ee3a047da375",
+    "company": {
+      "id": "oodrive",
+      "name": "Oodrive",
+      "logoUrl": "https://logo.clearbit.com/oodrive.com",
+      "industry": "Technology",
+      "website": "https://oodrive.com"
+    },
+    "slug": "frontend-developer-oodrive-11674e8d",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "France"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f51feb2718a3258578a5fd0d1b282e6dca3e7ce8f17d1019b3d442ca8ba1ce38",
+    "title": "Software engineer typescript - Web3",
+    "applyUrl": "https://lity.so/jobs/8189676f-0ef2-493f-b836-c1270fba989b/software-engineer-web3/",
+    "description": "",
+    "location": "Remote - France",
+    "country": "France",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:12:10.365Z",
+    "sourceHash": "f51feb2718a3258578a5fd0d1b282e6dca3e7ce8f17d1019b3d442ca8ba1ce38",
+    "company": {
+      "id": "lity",
+      "name": "LITY",
+      "logoUrl": "https://logo.clearbit.com/lity.com",
+      "industry": "Technology",
+      "website": "https://lity.com"
+    },
+    "slug": "software-engineer-typescript-web3-lity-f51feb27",
+    "aiTags": {
+      "stack": [
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "France"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "abab8702c11f8e46dab2daf82bfdc43f4420691e723a34163ce21a9a34fa23c7",
+    "title": "Front-End Engineer (React)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4344545229/",
+    "description": "",
+    "location": "Remote - France",
+    "country": "France",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:12:04.463Z",
+    "sourceHash": "abab8702c11f8e46dab2daf82bfdc43f4420691e723a34163ce21a9a34fa23c7",
+    "company": {
+      "id": "blockchaincom",
+      "name": "Blockchain.com",
+      "logoUrl": "https://logo.clearbit.com/blockchaincom.com",
+      "industry": "Technology",
+      "website": "https://blockchaincom.com"
+    },
+    "slug": "front-end-engineer-react-blockchain-com-abab8702",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "France"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3b7333bc54bf8c2172bb934ab789b1164e184c863f65f50adcfb97a8e9b1ba09",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://www.42cap.com/",
+    "description": "",
+    "location": "Remote - France",
+    "country": "France",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:12:01.491Z",
+    "sourceHash": "3b7333bc54bf8c2172bb934ab789b1164e184c863f65f50adcfb97a8e9b1ba09",
+    "company": {
+      "id": "marble",
+      "name": "Marble",
+      "logoUrl": "https://logo.clearbit.com/marble.com",
+      "industry": "Technology",
+      "website": "https://marble.com"
+    },
+    "slug": "frontend-engineer-marble-3b7333bc",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "France"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "daeff38980215a1c8f2fe4c19bf03e8e2f8315324956239b7234dc1929bcc45e",
+    "title": "React Native Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4473142298/",
+    "description": "",
+    "location": "Remote - Egypt",
+    "country": "Egypt",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:07:25.913Z",
+    "sourceHash": "daeff38980215a1c8f2fe4c19bf03e8e2f8315324956239b7234dc1929bcc45e",
+    "company": {
+      "id": "qnbeyondplus",
+      "name": "QNBeyond Plus",
+      "logoUrl": "https://logo.clearbit.com/qnbeyondplus.com",
+      "industry": "Technology",
+      "website": "https://qnbeyondplus.com"
+    },
+    "slug": "react-native-developer-qnbeyond-plus-daeff389",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Egypt"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "39064b17047ccf8a9cc2bc2766f0ff40000b0967c95a065a24bd0c3a2678357b",
+    "title": "React Native Tech Lead - Trabajo Remoto | REF#265633",
+    "applyUrl": "https://applicants.bairesdev.com/job/198/265633/apply?utm_source=linkedinjobposting&utm_medium=atsjobs&utm_campaign=jobpostingxml",
+    "description": "",
+    "location": "Remote - Ecuador",
+    "country": "Ecuador",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:06:56.206Z",
+    "sourceHash": "39064b17047ccf8a9cc2bc2766f0ff40000b0967c95a065a24bd0c3a2678357b",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "react-native-tech-lead-trabajo-remoto-ref-265633-bairesdev-39064b17",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Ecuador"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "493fbf116c1dc928984b00dd162cef1fbc6a1be77934a2176218756586f068e6",
+    "title": "Software Engineer, Frontend (Vue)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4477827766/",
+    "description": "",
+    "location": "Remote - Denmark",
+    "country": "Denmark",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:05:04.050Z",
+    "sourceHash": "493fbf116c1dc928984b00dd162cef1fbc6a1be77934a2176218756586f068e6",
+    "company": {
+      "id": "anthill",
+      "name": "Anthill",
+      "logoUrl": "https://logo.clearbit.com/anthill.com",
+      "industry": "Technology",
+      "website": "https://anthill.com"
+    },
+    "slug": "software-engineer-frontend-vue-anthill-493fbf11",
+    "aiTags": {
+      "stack": [
+        "vue"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Denmark"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "07e8ce30fd52778e924d9b87cebe79f769b17c7337c71ea37a58872664041296",
+    "title": "Staff Front End Engineer (Web Core)",
+    "applyUrl": "https://jobs.ashbyhq.com/pleo/bd73948a-1ca8-4f05-bb3d-3c8934b07c58?utm_source=VrNbgrZ8D7",
+    "description": "",
+    "location": "Remote - Denmark",
+    "country": "Denmark",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:05:01.070Z",
+    "sourceHash": "07e8ce30fd52778e924d9b87cebe79f769b17c7337c71ea37a58872664041296",
+    "company": {
+      "id": "pleo",
+      "name": "Pleo",
+      "logoUrl": "https://logo.clearbit.com/pleo.com",
+      "industry": "Technology",
+      "website": "https://pleo.com"
+    },
+    "slug": "staff-front-end-engineer-web-core-pleo-07e8ce30",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Denmark"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "86e77179bee1e83bd3d156b27ca88a3c845fa3f22702dc67bda5d2305163bd00",
+    "title": "Senior Software Engineer, Frontend",
+    "applyUrl": "https://careers.xenithpay.com/jobs/7808033-senior-software-engineer-frontend?utm_source=LinkedIn",
+    "description": "",
+    "location": "Remote - Cyprus",
+    "country": "Cyprus",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:04:18.169Z",
+    "sourceHash": "86e77179bee1e83bd3d156b27ca88a3c845fa3f22702dc67bda5d2305163bd00",
+    "company": {
+      "id": "xenith",
+      "name": "Xenith",
+      "logoUrl": "https://logo.clearbit.com/xenith.com",
+      "industry": "Technology",
+      "website": "https://xenith.com"
+    },
+    "slug": "senior-software-engineer-frontend-xenith-86e77179",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Cyprus"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ea5cb43720c7c9a688a4bdd896657a03c65ff577011018e693f41fa30185642b",
+    "title": "Full Stack Web Developer",
+    "applyUrl": "https://career.expo.cy/job.php?job=full-stack-web-developer",
+    "description": "",
+    "location": "Remote - Cyprus",
+    "country": "Cyprus",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:04:00.616Z",
+    "sourceHash": "ea5cb43720c7c9a688a4bdd896657a03c65ff577011018e693f41fa30185642b",
+    "company": {
+      "id": "digitalexpoltd",
+      "name": "Digital Expo Ltd",
+      "logoUrl": "https://logo.clearbit.com/digitalexpoltd.com",
+      "industry": "Technology",
+      "website": "https://digitalexpoltd.com"
+    },
+    "slug": "full-stack-web-developer-digital-expo-ltd-ea5cb437",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Cyprus"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "c2bb0bfd0994286f5475d9ebb6fb37a0df6a6745f9c5233d46edef106585c326",
+    "title": "Senior Frontend Developer",
+    "applyUrl": "https://jobs.ashbyhq.com/fayaracareers/a43e67be-3118-4fb3-9405-d00a2a9ec681?utm_source=LinkedInPaid",
+    "description": "",
+    "location": "Remote - Cyprus",
+    "country": "Cyprus",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:03:28.223Z",
+    "sourceHash": "c2bb0bfd0994286f5475d9ebb6fb37a0df6a6745f9c5233d46edef106585c326",
+    "company": {
+      "id": "fayaracom",
+      "name": "Fayara.com",
+      "logoUrl": "https://logo.clearbit.com/fayaracom.com",
+      "industry": "Technology",
+      "website": "https://fayaracom.com"
+    },
+    "slug": "senior-frontend-developer-fayara-com-c2bb0bfd",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Cyprus"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "1d654c0abacbc5cd858406a8a9f12ba19b6f08eeb12ea7ef47597ee648be05c3",
+    "title": "Staff Frontend Engineer",
+    "applyUrl": "https://jobs.ashbyhq.com/scorewarrior/9fdf23f9-1d8f-4d39-a3c6-c144eb6837dd",
+    "description": "",
+    "location": "Remote - Cyprus",
+    "country": "Cyprus",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:03:16.430Z",
+    "sourceHash": "1d654c0abacbc5cd858406a8a9f12ba19b6f08eeb12ea7ef47597ee648be05c3",
+    "company": {
+      "id": "scorewarrior",
+      "name": "Scorewarrior",
+      "logoUrl": "https://logo.clearbit.com/scorewarrior.com",
+      "industry": "Technology",
+      "website": "https://scorewarrior.com"
+    },
+    "slug": "staff-frontend-engineer-scorewarrior-1d654c0a",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Cyprus"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7a8c8a1ff7ca4cac9441b528be1501d5d4f629251f9015e2db2d92cee9e2b2c8",
+    "title": "Frontend Intern (React)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4448721142/",
+    "description": "",
+    "location": "Remote - China",
+    "country": "China",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:01:01.367Z",
+    "sourceHash": "7a8c8a1ff7ca4cac9441b528be1501d5d4f629251f9015e2db2d92cee9e2b2c8",
+    "company": {
+      "id": "wati",
+      "name": "Wati",
+      "logoUrl": "https://logo.clearbit.com/wati.com",
+      "industry": "Technology",
+      "website": "https://wati.com"
+    },
+    "slug": "frontend-intern-react-wati-7a8c8a1f",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "China"
+      ],
+      "seniority": "mid",
+      "employmentType": "internship"
+    }
+  },
+  {
+    "id": "609f8a8f7390430751ff35175e45e83cacbfa667a7f95172c9a6f4c44e66c80b",
+    "title": "React前端开发工程师-英语好(AI方向)外企",
+    "applyUrl": "https://m.liepin.com/job/1984513511.shtml?s=r&mscid=ly_h5_01",
+    "description": "",
+    "location": "Remote - China",
+    "country": "China",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:00:49.510Z",
+    "sourceHash": "609f8a8f7390430751ff35175e45e83cacbfa667a7f95172c9a6f4c44e66c80b",
+    "company": {
+      "id": "",
+      "name": "恩士迅信息科技(上海)有限公司",
+      "logoUrl": "https://logo.clearbit.com/.com",
+      "industry": "Technology",
+      "website": "https://.com"
+    },
+    "slug": "react-ai--609f8a8f",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "China"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "271d32c17d1e2e388c966ac485cf1ac575d018341eb39f27d360e713f1aa887c",
+    "title": "Software Development Engineer-Frontend",
+    "applyUrl": "https://m.liepin.com/job/1985546467.shtml?s=r&mscid=ly_h5_01",
+    "description": "",
+    "location": "Remote - China",
+    "country": "China",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:00:46.568Z",
+    "sourceHash": "271d32c17d1e2e388c966ac485cf1ac575d018341eb39f27d360e713f1aa887c",
+    "company": {
+      "id": "",
+      "name": "北京掌上先机网络科技有限公司",
+      "logoUrl": "https://logo.clearbit.com/.com",
+      "industry": "Technology",
+      "website": "https://.com"
+    },
+    "slug": "software-development-engineer-frontend--271d32c1",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "China"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "391293b2107f421dd98273f0b99fb556912c702061d09f52ca60e4b8874139f8",
+    "title": "React前端工程师",
+    "applyUrl": "https://m.liepin.com/job/1968662805.shtml?s=r&mscid=ly_h5_01",
+    "description": "",
+    "location": "Remote - China",
+    "country": "China",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T04:00:37.753Z",
+    "sourceHash": "391293b2107f421dd98273f0b99fb556912c702061d09f52ca60e4b8874139f8",
+    "company": {
+      "id": "",
+      "name": "恩士迅信息科技(上海)有限公司",
+      "logoUrl": "https://logo.clearbit.com/.com",
+      "industry": "Technology",
+      "website": "https://.com"
+    },
+    "slug": "react--391293b2",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "China"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0e23725ffd5b7fa39ca1067bdc423941ba6fdbf9f8ea415eac2b633791302a02",
+    "title": "Programmeur(euse) junior FrontEnd Angular",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4425401451/",
+    "description": "",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:59:17.738Z",
+    "sourceHash": "0e23725ffd5b7fa39ca1067bdc423941ba6fdbf9f8ea415eac2b633791302a02",
+    "company": {
+      "id": "tehorainc",
+      "name": "TEHORA inc.",
+      "logoUrl": "https://logo.clearbit.com/tehorainc.com",
+      "industry": "Technology",
+      "website": "https://tehorainc.com"
+    },
+    "slug": "programmeur-euse-junior-frontend-angular-tehora-inc-0e23725f",
+    "aiTags": {
+      "stack": [
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "9ba220c17f409b6106d73cec9bb0c63e7cd5ce7efafc1a6968ad8a6ece1996d5",
+    "title": "Sr Software Engineer II - Ads Manager (Front End)",
+    "applyUrl": "https://instacart.careers/job/?gh_jid=8237393&gh_src=26e143c51",
+    "description": "",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:59:14.615Z",
+    "sourceHash": "9ba220c17f409b6106d73cec9bb0c63e7cd5ce7efafc1a6968ad8a6ece1996d5",
+    "company": {
+      "id": "instacart",
+      "name": "Instacart",
+      "logoUrl": "https://logo.clearbit.com/instacart.com",
+      "industry": "Technology",
+      "website": "https://instacart.com"
+    },
+    "slug": "sr-software-engineer-ii-ads-manager-front-end-instacart-9ba220c1",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "137e18472d498e922ee9f9bc87b5c75bccc361d9aff70fde4d13831e3d04552e",
+    "title": "Frontend Engineer - Marketing & Digital Experience",
+    "applyUrl": "https://justbacked.com/jobs/nex-frontend-engineer-marketing-digital-experience-83c90f56",
+    "description": "",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:59:11.443Z",
+    "sourceHash": "137e18472d498e922ee9f9bc87b5c75bccc361d9aff70fde4d13831e3d04552e",
+    "company": {
+      "id": "justbacked",
+      "name": "JustBacked",
+      "logoUrl": "https://logo.clearbit.com/justbacked.com",
+      "industry": "Technology",
+      "website": "https://justbacked.com"
+    },
+    "slug": "frontend-engineer-marketing-digital-experience-justbacked-137e1847",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "c8cb778fe537c2eb0f6a5d8bb98e6282d4268324a08f9b71ad7d704d3acf9737",
+    "title": "Software Engineer, Frontend",
+    "applyUrl": "https://jobs.ashbyhq.com/ramp/4e64ab86-4e30-403b-b1b9-41dc052570ce?src=LinkedIn",
+    "description": "",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:58:59.547Z",
+    "sourceHash": "c8cb778fe537c2eb0f6a5d8bb98e6282d4268324a08f9b71ad7d704d3acf9737",
+    "company": {
+      "id": "ramp",
+      "name": "Ramp",
+      "logoUrl": "https://logo.clearbit.com/ramp.com",
+      "industry": "Technology",
+      "website": "https://ramp.com"
+    },
+    "slug": "software-engineer-frontend-ramp-c8cb778f",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f3866933b298c4a3d067eef4c6845c40c0ae56f5753e348a56cba6c0b13bcfa3",
+    "title": "Full-stack Web Developer",
+    "applyUrl": "https://www.optania.com/careers/developpeur-full-stack",
+    "description": "",
+    "location": "Remote - Cambodia",
+    "country": "Cambodia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:57:54.610Z",
+    "sourceHash": "f3866933b298c4a3d067eef4c6845c40c0ae56f5753e348a56cba6c0b13bcfa3",
+    "company": {
+      "id": "optania",
+      "name": "Optania",
+      "logoUrl": "https://logo.clearbit.com/optania.com",
+      "industry": "Technology",
+      "website": "https://optania.com"
+    },
+    "slug": "full-stack-web-developer-optania-f3866933",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Cambodia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d2be314b63df70a5af3385276030da6a74395959ba03663c96c460b0abbe1601",
+    "title": "Mobile Engineer - React Native (100% Remote)",
+    "applyUrl": "https://careers.tether.io/o/mobile-engineer-react-native-100-remote-2/c/new?source=LinkedIn+Basic+Jobs",
+    "description": "",
+    "location": "Remote - Cabo Verde",
+    "country": "Cabo Verde",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:56:27.025Z",
+    "sourceHash": "d2be314b63df70a5af3385276030da6a74395959ba03663c96c460b0abbe1601",
+    "company": {
+      "id": "tetherio",
+      "name": "Tether.io",
+      "logoUrl": "https://logo.clearbit.com/tetherio.com",
+      "industry": "Technology",
+      "website": "https://tetherio.com"
+    },
+    "slug": "mobile-engineer-react-native-100-remote-tether-io-d2be314b",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Cabo Verde"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "85aefbd595b2354f7c2c8dc915d3afc38fc63ec32ccf9588de013d694f4d33b2",
+    "title": "Frontend Developer (Node.js)",
+    "applyUrl": "https://www.wherewework.bg/en/jobs/frontend-developer-nodejs/114846?utm_source=linkedin&utm_medium=social&utm_campaign=linkedin_xml_jobs",
+    "description": "",
+    "location": "Remote - Bulgaria",
+    "country": "Bulgaria",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:55:36.542Z",
+    "sourceHash": "85aefbd595b2354f7c2c8dc915d3afc38fc63ec32ccf9588de013d694f4d33b2",
+    "company": {
+      "id": "frontendengineersfe",
+      "name": "Frontend Engineers FE",
+      "logoUrl": "https://logo.clearbit.com/frontendengineersfe.com",
+      "industry": "Technology",
+      "website": "https://frontendengineersfe.com"
+    },
+    "slug": "frontend-developer-node-js-frontend-engineers-fe-85aefbd5",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bulgaria"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "06277f8221f978d6a4c9b1b75dd0f05158a8a7e4347b40171237d3086cedb0df",
+    "title": "Associate Front End Developer",
+    "applyUrl": "https://lnw.wd5.myworkdayjobs.com/LightWonderExternalCareers/job/Sofia-Bulgaria/Associate-Front-End-Developer_R322546?source=LinkedIn_Auto_Source",
+    "description": "",
+    "location": "Remote - Bulgaria",
+    "country": "Bulgaria",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:55:27.771Z",
+    "sourceHash": "06277f8221f978d6a4c9b1b75dd0f05158a8a7e4347b40171237d3086cedb0df",
+    "company": {
+      "id": "lightwonderigaming",
+      "name": "Light & Wonder - iGaming",
+      "logoUrl": "https://logo.clearbit.com/lightwonderigaming.com",
+      "industry": "Technology",
+      "website": "https://lightwonderigaming.com"
+    },
+    "slug": "associate-front-end-developer-light-wonder-igaming-06277f82",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bulgaria"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8782d7702ec40371abdb2f31c9515aef380e8762accad304a01ec9726a415d42",
+    "title": "Junior Frontend Engineer",
+    "applyUrl": "https://jobs.ashbyhq.com/trading212/ba789615-ee3c-477b-8fe6-1974c480c2da/application?utm_source=LinkedIn+Applicant",
+    "description": "",
+    "location": "Remote - Bulgaria",
+    "country": "Bulgaria",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:55:18.813Z",
+    "sourceHash": "8782d7702ec40371abdb2f31c9515aef380e8762accad304a01ec9726a415d42",
+    "company": {
+      "id": "trading212",
+      "name": "Trading 212",
+      "logoUrl": "https://logo.clearbit.com/trading212.com",
+      "industry": "Technology",
+      "website": "https://trading212.com"
+    },
+    "slug": "junior-frontend-engineer-trading-212-8782d770",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bulgaria"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ca223d7367dacec335e1f2c70b2921ece28d3bff7b38c1fb340218adc9384413",
+    "title": "Junior React Developer - Remote Work",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4479536614/",
+    "description": "",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:54:39.332Z",
+    "sourceHash": "ca223d7367dacec335e1f2c70b2921ece28d3bff7b38c1fb340218adc9384413",
+    "company": {
+      "id": "indistaffingservices",
+      "name": "INDI Staffing Services",
+      "logoUrl": "https://logo.clearbit.com/indistaffingservices.com",
+      "industry": "Technology",
+      "website": "https://indistaffingservices.com"
+    },
+    "slug": "junior-react-developer-remote-work-indi-staffing-services-ca223d73",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "254b41dcbd17ca569b815f79c9ba9a5d6372d31f7252769e4ca5b5e12cb0a680",
+    "title": "Junior React Developer - Remote Work",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4479539546/",
+    "description": "",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:54:36.292Z",
+    "sourceHash": "254b41dcbd17ca569b815f79c9ba9a5d6372d31f7252769e4ca5b5e12cb0a680",
+    "company": {
+      "id": "indistaffingservices",
+      "name": "INDI Staffing Services",
+      "logoUrl": "https://logo.clearbit.com/indistaffingservices.com",
+      "industry": "Technology",
+      "website": "https://indistaffingservices.com"
+    },
+    "slug": "junior-react-developer-remote-work-indi-staffing-services-254b41dc",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0a3ea6bbfb6535d4e86f111ab129068ef24119e4a9604b13cf90448bd70f03fa",
+    "title": "React Engineer - Remote, Latin America",
+    "applyUrl": "https://jobs.lever.co/bluelightconsulting/5bbfd573-3a30-44f2-9236-3e659cbada45/apply?lever-source=LinkedIn",
+    "description": "",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:54:33.189Z",
+    "sourceHash": "0a3ea6bbfb6535d4e86f111ab129068ef24119e4a9604b13cf90448bd70f03fa",
+    "company": {
+      "id": "bluelight",
+      "name": "Bluelight",
+      "logoUrl": "https://logo.clearbit.com/bluelight.com",
+      "industry": "Technology",
+      "website": "https://bluelight.com"
+    },
+    "slug": "react-engineer-remote-latin-america-bluelight-0a3ea6bb",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "0c6b3efd07d9f65977c2637eeb2ccd838a0be61cb4d325d3257eb14d84e718ae",
+    "title": "Junior React Developer - Remote Work",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4479549101/",
+    "description": "",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:54:24.395Z",
+    "sourceHash": "0c6b3efd07d9f65977c2637eeb2ccd838a0be61cb4d325d3257eb14d84e718ae",
+    "company": {
+      "id": "indistaffingservices",
+      "name": "INDI Staffing Services",
+      "logoUrl": "https://logo.clearbit.com/indistaffingservices.com",
+      "industry": "Technology",
+      "website": "https://indistaffingservices.com"
+    },
+    "slug": "junior-react-developer-remote-work-indi-staffing-services-0c6b3efd",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ebf4c3fbd49f717771e324720a390a66c14f5baa02233be1dba8a7975d65cc4d",
+    "title": "Senior Software Engineer (TypeScript, Node.js, React)",
+    "applyUrl": "https://job-boards.greenhouse.io/exadelinc/jobs/6210541004?gh_src=4xw8n9y04us",
+    "description": "",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:54:21.256Z",
+    "sourceHash": "ebf4c3fbd49f717771e324720a390a66c14f5baa02233be1dba8a7975d65cc4d",
+    "company": {
+      "id": "exadel",
+      "name": "Exadel",
+      "logoUrl": "https://logo.clearbit.com/exadel.com",
+      "industry": "Technology",
+      "website": "https://exadel.com"
+    },
+    "slug": "senior-software-engineer-typescript-node-js-react-exadel-ebf4c3fb",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "de4f892b24614c831e0d38e5dbacc40942e850a20139ea7a9e0e8b96ea043ab6",
+    "title": "Desenvolvedor Frontend",
+    "applyUrl": "https://olist.inhire.app/vagas/10c4f6ef-74c9-4cb7-9447-e10ad75b81c7/desenvolvedor-frontend?source=linkedin",
+    "description": "",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:54:18.305Z",
+    "sourceHash": "de4f892b24614c831e0d38e5dbacc40942e850a20139ea7a9e0e8b96ea043ab6",
+    "company": {
+      "id": "olist",
+      "name": "Olist",
+      "logoUrl": "https://logo.clearbit.com/olist.com",
+      "industry": "Technology",
+      "website": "https://olist.com"
+    },
+    "slug": "desenvolvedor-frontend-olist-de4f892b",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b30e532448f7aeb1aba19de4a49cecb6c71b4116026db2e8dc12f31fa9044678",
+    "title": "Desenvolvedor React Frontend - Trabalho Remoto",
+    "applyUrl": "https://applicants.bairesdev.com/job/169/176831/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=Brazil-20261013",
+    "description": "",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:54:15.242Z",
+    "sourceHash": "b30e532448f7aeb1aba19de4a49cecb6c71b4116026db2e8dc12f31fa9044678",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "desenvolvedor-react-frontend-trabalho-remoto-bairesdev-b30e5324",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4708f48dba7d79994095db86672b43b254ada3e4af4505a12b1069ccdc2a2c46",
+    "title": "Full Stack Engineer (Java + React) - Remote - Latin America",
+    "applyUrl": "https://talent.fullstack.com/jobs/f1287728-e3fa-4622-ab8b-5cd0ef8c34df",
+    "description": "",
+    "location": "Remote - Bolivia",
+    "country": "Bolivia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:53:26.364Z",
+    "sourceHash": "4708f48dba7d79994095db86672b43b254ada3e4af4505a12b1069ccdc2a2c46",
+    "company": {
+      "id": "fullstack",
+      "name": "FullStack",
+      "logoUrl": "https://logo.clearbit.com/fullstack.com",
+      "industry": "Technology",
+      "website": "https://fullstack.com"
+    },
+    "slug": "full-stack-engineer-java-react-remote-latin-america-fullstack-4708f48d",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bolivia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e0523fa11b17d5d51a1e58ff6c41e67dc256128ed7b959dab703010392d94287",
+    "title": "Full Stack Engineer (Java + React) - Remote - Latin America",
+    "applyUrl": "https://talent.fullstack.com/jobs/a2ee6519-f5b1-4c61-9b4b-dd507f6d3b68",
+    "description": "",
+    "location": "Remote - Bolivia",
+    "country": "Bolivia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:53:23.405Z",
+    "sourceHash": "e0523fa11b17d5d51a1e58ff6c41e67dc256128ed7b959dab703010392d94287",
+    "company": {
+      "id": "fullstack",
+      "name": "FullStack",
+      "logoUrl": "https://logo.clearbit.com/fullstack.com",
+      "industry": "Technology",
+      "website": "https://fullstack.com"
+    },
+    "slug": "full-stack-engineer-java-react-remote-latin-america-fullstack-e0523fa1",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bolivia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "171f5009e85c13bb4d16341bd1e353c9d41325691cffe15bedca6eccf665f624",
+    "title": "Full Stack Engineer (Java + React) - Remote - Latin America",
+    "applyUrl": "https://talent.fullstack.com/jobs/5d837dc4-b7ed-4573-a085-ab3df6e23c53",
+    "description": "",
+    "location": "Remote - Bolivia",
+    "country": "Bolivia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:53:02.982Z",
+    "sourceHash": "171f5009e85c13bb4d16341bd1e353c9d41325691cffe15bedca6eccf665f624",
+    "company": {
+      "id": "fullstack",
+      "name": "FullStack",
+      "logoUrl": "https://logo.clearbit.com/fullstack.com",
+      "industry": "Technology",
+      "website": "https://fullstack.com"
+    },
+    "slug": "full-stack-engineer-java-react-remote-latin-america-fullstack-171f5009",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bolivia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "dc3b130eec8ba41a7ef2b918702204a9ca2280bec1069d4b5554dced8a204e28",
+    "title": "Full Stack Engineer (Java + React) - Remote - Latin America",
+    "applyUrl": "https://talent.fullstack.com/jobs/05e9ac24-81ca-4dd1-9de0-48494ab40165",
+    "description": "",
+    "location": "Remote - Bolivia",
+    "country": "Bolivia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:53:00.023Z",
+    "sourceHash": "dc3b130eec8ba41a7ef2b918702204a9ca2280bec1069d4b5554dced8a204e28",
+    "company": {
+      "id": "fullstack",
+      "name": "FullStack",
+      "logoUrl": "https://logo.clearbit.com/fullstack.com",
+      "industry": "Technology",
+      "website": "https://fullstack.com"
+    },
+    "slug": "full-stack-engineer-java-react-remote-latin-america-fullstack-dc3b130e",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bolivia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "44d104bd0f88ec8163a583da43b09851c43c232f13b10cfb3c501c373881e247",
+    "title": "Full Stack Engineer (Java + React) - Remote - Latin America",
+    "applyUrl": "https://talent.fullstack.com/jobs/9642a11c-6136-49b9-9987-02eb234e8f82",
+    "description": "",
+    "location": "Remote - Bolivia",
+    "country": "Bolivia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:52:39.525Z",
+    "sourceHash": "44d104bd0f88ec8163a583da43b09851c43c232f13b10cfb3c501c373881e247",
+    "company": {
+      "id": "fullstack",
+      "name": "FullStack",
+      "logoUrl": "https://logo.clearbit.com/fullstack.com",
+      "industry": "Technology",
+      "website": "https://fullstack.com"
+    },
+    "slug": "full-stack-engineer-java-react-remote-latin-america-fullstack-44d104bd",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bolivia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "15247aa68fe2a2b91d5ad0761e59a409aaabe0bd2003300f350c22029d6a4779",
+    "title": "Full Stack Engineer (Java + React) - Remote - Latin America",
+    "applyUrl": "https://talent.fullstack.com/jobs/7818516b-6b8e-4466-9922-0e1a66b5f706",
+    "description": "",
+    "location": "Remote - Bolivia",
+    "country": "Bolivia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:52:36.576Z",
+    "sourceHash": "15247aa68fe2a2b91d5ad0761e59a409aaabe0bd2003300f350c22029d6a4779",
+    "company": {
+      "id": "fullstack",
+      "name": "FullStack",
+      "logoUrl": "https://logo.clearbit.com/fullstack.com",
+      "industry": "Technology",
+      "website": "https://fullstack.com"
+    },
+    "slug": "full-stack-engineer-java-react-remote-latin-america-fullstack-15247aa6",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bolivia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "65b4afc3d367094b009ef71453be8a7e9de13624e045f2fcdc8f0fcf454a3e77",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4473751521/",
+    "description": "",
+    "location": "Remote - Belgium",
+    "country": "Belgium",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:51:15.587Z",
+    "sourceHash": "65b4afc3d367094b009ef71453be8a7e9de13624e045f2fcdc8f0fcf454a3e77",
+    "company": {
+      "id": "kcsit",
+      "name": "KCS iT",
+      "logoUrl": "https://logo.clearbit.com/kcsit.com",
+      "industry": "Technology",
+      "website": "https://kcsit.com"
+    },
+    "slug": "frontend-developer-kcs-it-65b4afc3",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Belgium"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2b9eb910f9d2191021945e1b5e465f7ee46c2a265cf01bb4ca114976fa75ab46",
+    "title": "Javascript Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4361514067/",
+    "description": "",
+    "location": "Remote - Belgium",
+    "country": "Belgium",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:51:03.748Z",
+    "sourceHash": "2b9eb910f9d2191021945e1b5e465f7ee46c2a265cf01bb4ca114976fa75ab46",
+    "company": {
+      "id": "axxesitconsultancy",
+      "name": "Axxes IT Consultancy",
+      "logoUrl": "https://logo.clearbit.com/axxesitconsultancy.com",
+      "industry": "Technology",
+      "website": "https://axxesitconsultancy.com"
+    },
+    "slug": "javascript-developer-axxes-it-consultancy-2b9eb910",
+    "aiTags": {
+      "stack": [
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Belgium"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3e093b0b562d66fd34e7eda0ec06a4c133541de7f52bfb595443e2318b2d4bb6",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4478107001/",
+    "description": "",
+    "location": "Remote - Belgium",
+    "country": "Belgium",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:50:28.679Z",
+    "sourceHash": "3e093b0b562d66fd34e7eda0ec06a4c133541de7f52bfb595443e2318b2d4bb6",
+    "company": {
+      "id": "onesourceconsulting",
+      "name": "OneSource Consulting",
+      "logoUrl": "https://logo.clearbit.com/onesourceconsulting.com",
+      "industry": "Technology",
+      "website": "https://onesourceconsulting.com"
+    },
+    "slug": "frontend-developer-onesource-consulting-3e093b0b",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Belgium"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "227e4320a4319f0bfb79ecdc90a8ed6281684d91cc75e44b741d63de647ad9b4",
+    "title": "Software Engineer / Full Stack Web Developer",
+    "applyUrl": "https://nextjobz.com.bd/linkedin-job-apply/IJOB202675462?src=Linkedin",
+    "description": "",
+    "location": "Remote - Bangladesh",
+    "country": "Bangladesh",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:49:34.518Z",
+    "sourceHash": "227e4320a4319f0bfb79ecdc90a8ed6281684d91cc75e44b741d63de647ad9b4",
+    "company": {
+      "id": "nextjobz",
+      "name": "nextjobz",
+      "logoUrl": "https://logo.clearbit.com/nextjobz.com",
+      "industry": "Technology",
+      "website": "https://nextjobz.com"
+    },
+    "slug": "software-engineer-full-stack-web-developer-nextjobz-227e4320",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bangladesh"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "349cdaa11f1260697d49f4c0b0b4d775429ccf953ec5a616fcdd072d1818f34c",
+    "title": "Full-Stack Developer (Go and React)",
+    "applyUrl": "https://erp360.strativ.se/career/full-stack-developer-go-and-react/2608-04-33",
+    "description": "",
+    "location": "Remote - Bangladesh",
+    "country": "Bangladesh",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:49:28.588Z",
+    "sourceHash": "349cdaa11f1260697d49f4c0b0b4d775429ccf953ec5a616fcdd072d1818f34c",
+    "company": {
+      "id": "strativab",
+      "name": "Strativ AB",
+      "logoUrl": "https://logo.clearbit.com/strativab.com",
+      "industry": "Technology",
+      "website": "https://strativab.com"
+    },
+    "slug": "full-stack-developer-go-and-react-strativ-ab-349cdaa1",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bangladesh"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b4d8754ff6c25616621a4c9b0f27e180e808046fc355c1e0981d7d4fc518dd11",
+    "title": "Web Developer (Laravel)",
+    "applyUrl": "https://techjob-bd.netlify.app/job/8wmzdbierc2578u",
+    "description": "",
+    "location": "Remote - Bangladesh",
+    "country": "Bangladesh",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:49:01.847Z",
+    "sourceHash": "b4d8754ff6c25616621a4c9b0f27e180e808046fc355c1e0981d7d4fc518dd11",
+    "company": {
+      "id": "urbanjob",
+      "name": "Urban Job",
+      "logoUrl": "https://logo.clearbit.com/urbanjob.com",
+      "industry": "Technology",
+      "website": "https://urbanjob.com"
+    },
+    "slug": "web-developer-laravel-urban-job-b4d8754f",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bangladesh"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8d3d6bc3267e7232eeff2453d5ae8c98b50eab52a70732507e0aa96ec5392c00",
+    "title": "Senior Full-Stack Developer (React.js & Node.js)",
+    "applyUrl": "https://nextjobz.com.bd/linkedin-job-apply/IJOB202673992?src=Linkedin",
+    "description": "",
+    "location": "Remote - Bangladesh",
+    "country": "Bangladesh",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:48:44.116Z",
+    "sourceHash": "8d3d6bc3267e7232eeff2453d5ae8c98b50eab52a70732507e0aa96ec5392c00",
+    "company": {
+      "id": "nextjobz",
+      "name": "nextjobz",
+      "logoUrl": "https://logo.clearbit.com/nextjobz.com",
+      "industry": "Technology",
+      "website": "https://nextjobz.com"
+    },
+    "slug": "senior-full-stack-developer-react-js-node-js-nextjobz-8d3d6bc3",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bangladesh"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "7204db336852928d751f0d5daae891a439f4762dd9aa6234377ddc19096bff34",
+    "title": "React Native Developer",
+    "applyUrl": "https://ihealthscreen.org/career/react-native-job-details",
+    "description": "",
+    "location": "Remote - Bangladesh",
+    "country": "Bangladesh",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:48:23.032Z",
+    "sourceHash": "7204db336852928d751f0d5daae891a439f4762dd9aa6234377ddc19096bff34",
+    "company": {
+      "id": "ihealthscreeninc",
+      "name": "iHealthScreen Inc",
+      "logoUrl": "https://logo.clearbit.com/ihealthscreeninc.com",
+      "industry": "Technology",
+      "website": "https://ihealthscreeninc.com"
+    },
+    "slug": "react-native-developer-ihealthscreen-inc-7204db33",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bangladesh"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3b7daa5fe9c9ed7b70f498c508ed9b850b7eeb70bd93aae70132d297f9c113a2",
+    "title": "Senior Frontend Engineer (m/w/x)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4454778011/",
+    "description": "",
+    "location": "Remote - Austria",
+    "country": "Austria",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:47:12.516Z",
+    "sourceHash": "3b7daa5fe9c9ed7b70f498c508ed9b850b7eeb70bd93aae70132d297f9c113a2",
+    "company": {
+      "id": "formunauts",
+      "name": "Formunauts",
+      "logoUrl": "https://logo.clearbit.com/formunauts.com",
+      "industry": "Technology",
+      "website": "https://formunauts.com"
+    },
+    "slug": "senior-frontend-engineer-m-w-x-formunauts-3b7daa5f",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Austria"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "bdfb989b026bf4860ba074c6faa6e146a82bbc3586d550f078f76fb2b144f164",
+    "title": "Senior Front End Developer @ Formunauts",
+    "applyUrl": "https://en.devjobs.at/team/formunauts",
+    "description": "",
+    "location": "Remote - Austria",
+    "country": "Austria",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:47:06.550Z",
+    "sourceHash": "bdfb989b026bf4860ba074c6faa6e146a82bbc3586d550f078f76fb2b144f164",
+    "company": {
+      "id": "devjobs",
+      "name": "DEVjobs",
+      "logoUrl": "https://logo.clearbit.com/devjobs.com",
+      "industry": "Technology",
+      "website": "https://devjobs.com"
+    },
+    "slug": "senior-front-end-developer-formunauts-devjobs-bdfb989b",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Austria"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "50843677e6333817d8e7ca9d90691326dc904749a294338a6c87bed914e1e775",
+    "title": "Fullstack Software Developer (React / .NET)",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4473639120/",
+    "description": "",
+    "location": "Remote - Austria",
+    "country": "Austria",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:46:39.916Z",
+    "sourceHash": "50843677e6333817d8e7ca9d90691326dc904749a294338a6c87bed914e1e775",
+    "company": {
+      "id": "infravisuals",
+      "name": "Infravisuals",
+      "logoUrl": "https://logo.clearbit.com/infravisuals.com",
+      "industry": "Technology",
+      "website": "https://infravisuals.com"
+    },
+    "slug": "fullstack-software-developer-react-net-infravisuals-50843677",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Austria"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "6440681214de951aede143630bbd54eab4999675daeb76408eed98e0e140868a",
+    "title": "Senior Frontend Developer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4478727052/",
+    "description": "",
+    "location": "Remote - Australia",
+    "country": "Australia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:46:10.364Z",
+    "sourceHash": "6440681214de951aede143630bbd54eab4999675daeb76408eed98e0e140868a",
+    "company": {
+      "id": "careconegroup",
+      "name": "CareCone Group",
+      "logoUrl": "https://logo.clearbit.com/careconegroup.com",
+      "industry": "Technology",
+      "website": "https://careconegroup.com"
+    },
+    "slug": "senior-frontend-developer-carecone-group-64406812",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Australia"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3cfc85d17abce2cd873534b3fe0e81b7d2b88149aacefeab4a30d2a04476bbca",
+    "title": "Frontend Software Engineer - TikTok LIVE, Sydney",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4469035796/",
+    "description": "",
+    "location": "Remote - Australia",
+    "country": "Australia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:46:07.392Z",
+    "sourceHash": "3cfc85d17abce2cd873534b3fe0e81b7d2b88149aacefeab4a30d2a04476bbca",
+    "company": {
+      "id": "tiktok",
+      "name": "TikTok",
+      "logoUrl": "https://logo.clearbit.com/tiktok.com",
+      "industry": "Technology",
+      "website": "https://tiktok.com"
+    },
+    "slug": "frontend-software-engineer-tiktok-live-sydney-tiktok-3cfc85d1",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Australia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e044be3254f2a899d8820b863eb57c92ac80af9a9f3c06b02e9de1df5d740b08",
+    "title": "ReactNative Developer",
+    "applyUrl": "https://careers.bridgit.com.au/jobs/8488918-reactnative-developer?utm_source=LinkedIn",
+    "description": "",
+    "location": "Remote - Australia",
+    "country": "Australia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:46:01.429Z",
+    "sourceHash": "e044be3254f2a899d8820b863eb57c92ac80af9a9f3c06b02e9de1df5d740b08",
+    "company": {
+      "id": "bridgit",
+      "name": "Bridgit",
+      "logoUrl": "https://logo.clearbit.com/bridgit.com",
+      "industry": "Technology",
+      "website": "https://bridgit.com"
+    },
+    "slug": "reactnative-developer-bridgit-e044be32",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Australia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "19adcf4c751e9e1e54ecd4936b5e06a13c4a6b4dc3e20bbb28a69e62dfd6f8ad",
+    "title": "Front End Software Engineer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4477933375/",
+    "description": "",
+    "location": "Remote - Australia",
+    "country": "Australia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:45:55.433Z",
+    "sourceHash": "19adcf4c751e9e1e54ecd4936b5e06a13c4a6b4dc3e20bbb28a69e62dfd6f8ad",
+    "company": {
+      "id": "skltechnology",
+      "name": "SKL Technology",
+      "logoUrl": "https://logo.clearbit.com/skltechnology.com",
+      "industry": "Technology",
+      "website": "https://skltechnology.com"
+    },
+    "slug": "front-end-software-engineer-skl-technology-19adcf4c",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Australia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "eff796d13a9ab030ca3beba6e6f2473e2765a1a5e5b10ae9571ceb5200181de5",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4456152216/",
+    "description": "",
+    "location": "Remote - Australia",
+    "country": "Australia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:45:52.442Z",
+    "sourceHash": "eff796d13a9ab030ca3beba6e6f2473e2765a1a5e5b10ae9571ceb5200181de5",
+    "company": {
+      "id": "foresightconsultinggroup",
+      "name": "Foresight Consulting Group",
+      "logoUrl": "https://logo.clearbit.com/foresightconsultinggroup.com",
+      "industry": "Technology",
+      "website": "https://foresightconsultinggroup.com"
+    },
+    "slug": "frontend-engineer-foresight-consulting-group-eff796d1",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Australia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "310f0163a3828da4e48ea4bd500c8b98192e9bb520b164f350fb032ab9ba0b30",
+    "title": "Full Stack Engineer- Frontend Focus",
+    "applyUrl": "https://careers.tyro.com/jobs/8488885-full-stack-engineer-frontend-focus?utm_source=LinkedIn",
+    "description": "",
+    "location": "Remote - Australia",
+    "country": "Australia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:45:46.508Z",
+    "sourceHash": "310f0163a3828da4e48ea4bd500c8b98192e9bb520b164f350fb032ab9ba0b30",
+    "company": {
+      "id": "tyropayments",
+      "name": "Tyro Payments",
+      "logoUrl": "https://logo.clearbit.com/tyropayments.com",
+      "industry": "Technology",
+      "website": "https://tyropayments.com"
+    },
+    "slug": "full-stack-engineer-frontend-focus-tyro-payments-310f0163",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Australia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "fcd9fa59cc89d2da4acd2c0089e46b52722f28f93ef95c8a4cf309fcaeee53cd",
+    "title": "Software Engineer - Python/React",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4479319458/",
+    "description": "",
+    "location": "Remote - Australia",
+    "country": "Australia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:45:40.661Z",
+    "sourceHash": "fcd9fa59cc89d2da4acd2c0089e46b52722f28f93ef95c8a4cf309fcaeee53cd",
+    "company": {
+      "id": "latitudeit",
+      "name": "Latitude IT",
+      "logoUrl": "https://logo.clearbit.com/latitudeit.com",
+      "industry": "Technology",
+      "website": "https://latitudeit.com"
+    },
+    "slug": "software-engineer-python-react-latitude-it-fcd9fa59",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Australia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d7e5feab8745a48c55710f573f419ea977edaa861a9bb059aad0ff368d2e6558",
+    "title": "Frontend Software Engineer, TikTok LIVE - Australia",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4474610410/",
+    "description": "",
+    "location": "Remote - Australia",
+    "country": "Australia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:45:37.671Z",
+    "sourceHash": "d7e5feab8745a48c55710f573f419ea977edaa861a9bb059aad0ff368d2e6558",
+    "company": {
+      "id": "tiktok",
+      "name": "TikTok",
+      "logoUrl": "https://logo.clearbit.com/tiktok.com",
+      "industry": "Technology",
+      "website": "https://tiktok.com"
+    },
+    "slug": "frontend-software-engineer-tiktok-live-australia-tiktok-d7e5feab",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Australia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2a1a99c98a4c44898dd5f416ff8b50ea8686202be894c9b1244f21b4d3800831",
+    "title": "Front End Engineer - 3D Visualisation",
+    "applyUrl": "https://www.linkedin.com/jobs/view/4479306328/",
+    "description": "",
+    "location": "Remote - Australia",
+    "country": "Australia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:45:22.849Z",
+    "sourceHash": "2a1a99c98a4c44898dd5f416ff8b50ea8686202be894c9b1244f21b4d3800831",
+    "company": {
+      "id": "augmenttechnologies",
+      "name": "Augment Technologies",
+      "logoUrl": "https://logo.clearbit.com/augmenttechnologies.com",
+      "industry": "Technology",
+      "website": "https://augmenttechnologies.com"
+    },
+    "slug": "front-end-engineer-3d-visualisation-augment-technologies-2a1a99c9",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Australia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "c836f999a0c2f0d4c1aeea49d1921544f493bab3bbd7f7bbc7997bb49f151af5",
+    "title": "Mobile Engineer - React Native (100% Remote)",
+    "applyUrl": "https://careers.tether.io/o/mobile-engineer-react-native-100-remote-1/c/new?source=LinkedIn+Basic+Jobs",
+    "description": "",
+    "location": "Remote - Armenia",
+    "country": "Armenia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:44:44.095Z",
+    "sourceHash": "c836f999a0c2f0d4c1aeea49d1921544f493bab3bbd7f7bbc7997bb49f151af5",
+    "company": {
+      "id": "tetherio",
+      "name": "Tether.io",
+      "logoUrl": "https://logo.clearbit.com/tetherio.com",
+      "industry": "Technology",
+      "website": "https://tetherio.com"
+    },
+    "slug": "mobile-engineer-react-native-100-remote-tether-io-c836f999",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Armenia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "71567ace9c13fb8ae7ef3a87ef5d161d8dd852473cff32177ac2d4a5e8e9e9cf",
+    "title": "Desarrollador Senior React + TypeScript  - Trabajo Remoto",
+    "applyUrl": "https://applicants.bairesdev.com/job/169/280646/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=Argentina-20261015",
+    "description": "",
+    "location": "Remote - Argentina",
+    "country": "Argentina",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T03:44:23.277Z",
+    "sourceHash": "71567ace9c13fb8ae7ef3a87ef5d161d8dd852473cff32177ac2d4a5e8e9e9cf",
+    "company": {
+      "id": "bairesdev",
+      "name": "BairesDev",
+      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
+      "industry": "Technology",
+      "website": "https://bairesdev.com"
+    },
+    "slug": "desarrollador-senior-react-typescript-trabajo-remoto-bairesdev-71567ace",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Argentina"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "629f2dc735fb090c5cb0474fc0162f7583c74f1419263a8b0d206a4b404bf0ab",
     "title": "Frontend Developer Collaborator",
     "applyUrl": "https://akaverse.net/job/frontend-developer-collaborator/",
