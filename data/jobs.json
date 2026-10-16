@@ -1,5 +1,70 @@
 [
   {
+    "id": "bb6c53db1119241b9f83bb2fac8a67da8b6f78935b7e9fc51462854cee1432d1",
+    "title": "Frontend Softwareentwickler (m/w/d)",
+    "applyUrl": "https://www.arbeitnow.com/jobs/companies/tecfox-gmbh/frontend-softwareentwickler-berlin-250708",
+    "description": "Über uns:Begeisterst du dich für moderne Webanwendungen, gut strukturierte Software und leistungsfähige Single-Page-Applikationen? Dann ist TecFox vielleicht genau der richtige nächste Schritt in deiner Karriere.\n\nWir, die TecFox GmbH, sind ein zukunftsorientiertes IT-Dienstleistungsunternehmen verwurzelt im Raum Braunschweig/Wolfsburg. Wir übernehmen bundesweit IT-Projekte bei namhaften Unternehmen und aus den unterschiedlichsten Branchen. Mit all unserem Wissen und unserer Erfahrung helfen wir bei der Neu- und Weiterentwicklung von IT. Die TecFox GmbH bietet Dir anspruchsvolle und komplexe Projekte in angenehmer Arbeitsatmosphäre.\n\nDeine Aufgaben bei uns:In deiner Rolle als Frontend-Entwickler:in gestaltest du bei uns innovative Benutzeroberflächen und bringst dich aktiv in technische wie qualitätsbezogene Entscheidungsprozesse ein:\n\n• Eigenständige Einarbeitung in die fachlichen Anforderungen an das zu entwickelnde Frontend\n\n• Konzeption und Dokumentation eines Architekturvorschlags bzw. Umsetzungsvorschlags des Frontends\n\n• Implementierung der Oberfläche mit Angular (ab v18) auf Basis von Design-Vorschlägen\n\n• Nutzung einer UI-Bibliothek wie PrimeNG ist optional\n\n• Erarbeitung von Testfällen\n\nDanach suchen wir:Du passt gut zu uns, wenn du methodisch vorgehst und großen Wert auf Qualität sowie sauberen, langfristig tragfähigen Code legst:\n\n• Mehrjährige Erfahrung in der UI Entwicklung\n\n• Langjährige Erfahrung mit modernen Frontend-Technologien wie Angular (optional: zusätzliche Erfahrung mit Frameworks wie React oder Vue.js)\n\n• Sehr gutes Verständnis der Angular-Architektur\n\n• Erfahrung in der Entwicklung von Single-Page-Anwendungen nach dem Micro-Frontend-Architekturprinzip\n\n• Fundierte Kenntnisse in TypeScript, seinen Konzepten und dem API-First-Prinzip zur Integration von RESTful APIs\n\n• Expertise in UI-Unit-Test-Frameworks wie Jest oder Jasmine\n\n• Fähigkeit, sinnvolle Unit-Tests zu schreiben\n\n• Verständnis für Prinzipien des responsiven Designs\n\n• Hohe Softwarequalität ist für dich kein Nice-to-have, sondern Standard\n\nDafür bieten wir dir:Wir schaffen Bedingungen, die die sowohl deine berufliche Weiterentwicklung als auch eine gute Work-Life-Balance fördern:\n\n• Flexible Arbeitsplatzgestaltung mit Remote und Homeoffice-Option\n\n• Offene Unternehmenskultur, kurze Entscheidungswege & viel Gestaltungsspielraum\n\n• Spannende Projekte mit namhaften, auch internationalen Kunden\n\n• Top aktueller Arbeitsplatz mit Hardwareausstattung nach Wunsch\n\n• Frisches Obst, kalte Getränke und Kaffeespezialitäten\n\n• Regelmäßige Teamevents\n\n• Beste Weiterbildungsmöglichkeiten und individuelle Karriereplanung\n\n• Äußerst attraktive Vergütungskonditionen\n\nKontakt:TecFox GmbH\nAnhal Osman\nHohetorwall 14\n38118 Braunschweig\nTel. +49 172 3996468\n\nsmart team – smart company\n\nWenn Du Dich angesprochen fühlst und uns gerne durch Dein Fachwissen und Deine Softskills voranbringen möchtest, dann sende uns doch zeitnah Deine aussagekräftigen Bewerbungsunterlagen, mit Angaben über Deine Verfügbarkeit und Gehaltsvorstellung.\n\nWir freuen uns auf Deine Bewerbung!\n\nFind Jobs in Germany on Arbeitnow",
+    "location": "Remote - Berlin",
+    "country": "Berlin",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T13:01:21.000Z",
+    "sourceHash": "bb6c53db1119241b9f83bb2fac8a67da8b6f78935b7e9fc51462854cee1432d1",
+    "company": {
+      "id": "tecfoxgmbh",
+      "name": "TecFox GmbH",
+      "logoUrl": "https://logo.clearbit.com/tecfoxgmbh.com",
+      "industry": "Technology",
+      "website": "https://tecfoxgmbh.com"
+    },
+    "slug": "frontend-softwareentwickler-m-w-d-tecfox-gmbh-bb6c53db",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "typescript",
+        "jest"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Berlin"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "26eec748cbf71b8c8cf3811a921b23afb2ddcbddff4fbaedfce01d182dc905d9",
+    "title": "Desarrollador Front-End Angular",
+    "applyUrl": "https://himalayas.app/companies/velaio/jobs/desarrollador-front-end-angular",
+    "description": "This is a remote position.En VELAIO, estamos buscando un Desarrollador Front-End en Angular apasionado por crear interfaces intuitivas y optimizadas. Únete a un equipo de expertos en TI que, desde 2010, ha trabajado con clientes en América Latina, EE. UU. y España. Si te entusiasma trabajar con las últimas tecnologías y deseas contribuir a la transformación digital de empresas líderes, ¡esta es tu oportunidad para crecer y desarrollar tu carrera!\nConocimientos en Front\n• Manejo del framework Angular 16 o superior\n\n• TypeScript\n\nConocimientos en backend\n• Conocimientos en API REST\n\n• Patrones de diseño\n\n• Manejo de repositorios GIT\n\nExperiencia mínima especifica en desarrollo 2 años\nRequirements\n* Conocimientos de inglés de lectura y escritura. * Estar siempre dispuesto a ayudar a sus compañeros de equipo y compartir conocimiento* Excelentes habilidades de comunicación verbal, oral y escrita* Ser capaz de comunicar ideas y diseños de software* Fuerte orientación al logro* Amplio deseo de aprender continuamente* Autodidacta* Gran capacidad de investigación y desarrollo\n\nOriginally posted on Himalayas",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-16T13:49:16.000Z",
+    "sourceHash": "26eec748cbf71b8c8cf3811a921b23afb2ddcbddff4fbaedfce01d182dc905d9",
+    "company": {
+      "id": "velaio",
+      "name": "VELAIO",
+      "logoUrl": "https://cdn-images.himalayas.app/sxn59eztibv8l2cyzrc75e0xgkpo",
+      "industry": "Technology",
+      "website": "https://velaio.com"
+    },
+    "slug": "desarrollador-front-end-angular-velaio-26eec748",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "66e4bb954608dfd70cd0ff0b220c9277f4d9b4e743a8cd6d313c532e97525435",
     "title": "Frontend Engineer",
     "applyUrl": "https://remoteOK.com/remote-jobs/remote-frontend-engineer-bjak-1137410",

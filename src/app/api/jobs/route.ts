@@ -99,9 +99,11 @@ export async function GET(request: Request) {
           industry: job.company?.industry || null,
           website: null,
         },
-        description: null,
-        location: null,
-        country: null,
+        description: job.description
+          ? job.description.substring(0, 300) + (job.description.length > 300 ? "..." : "")
+          : null,
+        location: job.location,
+        country: job.country,
         applyUrl: null,
         sourceHash: job.sourceHash,
       }));
