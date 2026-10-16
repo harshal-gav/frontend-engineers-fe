@@ -1,33 +1,5 @@
 [
   {
-    "id": "58c634104c07e639219989f1470d6d909164c76b876a32b2c7dec97a04ccf3d6",
-    "title": "Senior Product Engineer - Frontend",
-    "applyUrl": "https://foundationpartners.teamtailor.com/jobs/8081901-senior-product-engineer-frontend?utm_source=LinkedIn",
-    "description": "",
-    "location": "Remote - United Kingdom",
-    "country": "United Kingdom",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-16T05:25:16.461Z",
-    "sourceHash": "58c634104c07e639219989f1470d6d909164c76b876a32b2c7dec97a04ccf3d6",
-    "company": {
-      "id": "foundationpartners",
-      "name": "Foundation Partners",
-      "logoUrl": "https://logo.clearbit.com/foundationpartners.com",
-      "industry": "Technology",
-      "website": "https://foundationpartners.com"
-    },
-    "slug": "senior-product-engineer-frontend-foundation-partners-58c63410",
-    "aiTags": {
-      "stack": [],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United Kingdom"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
     "id": "5143461a854e2c971843a3f97ddd0855b9c37cd272a5ccf54ac5cee3e776fb96",
     "title": "Principal Engineer - Frontend",
     "applyUrl": "https://careers.g42.ai/inception/global/en/job/OGWOGJGLOBAL3388EXTERNALENGLOBAL/Principal-Engineer-Frontend?utm_source=linkedin-inception&utm_medium=phenom-feeds",
@@ -140,34 +112,6 @@
     }
   },
   {
-    "id": "eb61519103a826a909316a135c1db9a39f4e95f946f4c80c5a0fead1db07a8ed",
-    "title": "Fullstack Engineer mit Fokus auf Frontend/UX (m/w/d)  - 80-100%",
-    "applyUrl": "https://www.fiveinformatik.ch/de/ueber-five/jobs/fullstack-engineer-frontend-ux",
-    "description": "",
-    "location": "Remote - Switzerland",
-    "country": "Switzerland",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-16T05:17:26.998Z",
-    "sourceHash": "eb61519103a826a909316a135c1db9a39f4e95f946f4c80c5a0fead1db07a8ed",
-    "company": {
-      "id": "fiveinformatikag",
-      "name": "FIVE Informatik AG",
-      "logoUrl": "https://logo.clearbit.com/fiveinformatikag.com",
-      "industry": "Technology",
-      "website": "https://fiveinformatikag.com"
-    },
-    "slug": "fullstack-engineer-mit-fokus-auf-frontend-ux-m-w-d-80-100-five-informatik-ag-eb615191",
-    "aiTags": {
-      "stack": [],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Switzerland"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
     "id": "a1c781af9fc7ae47809a12c247ba6ec8a2b277e3ad6810a868bcb6b28e307f55",
     "title": "Senior Frontend Engineer",
     "applyUrl": "https://callista.recruitee.com/o/senior-frontend-engineer/c/new?source=LinkedIn+Basic+Jobs",
@@ -250,34 +194,6 @@
         "Sweden"
       ],
       "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "1d9d3706663ead4c2fcd0833619b2d5a8b8fafc1270c8b2a036683250f32a5ca",
-    "title": "Senior Full Stack Engineer (Strong Frontend Expertise)",
-    "applyUrl": "https://careers.swissre.com/job/Bratislava-Senior-Full-Stack-Engineer-%28Strong-Frontend-Expertise%29/1416276233/",
-    "description": "",
-    "location": "Remote - Slovakia",
-    "country": "Slovakia",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-16T05:09:52.716Z",
-    "sourceHash": "1d9d3706663ead4c2fcd0833619b2d5a8b8fafc1270c8b2a036683250f32a5ca",
-    "company": {
-      "id": "swissre",
-      "name": "Swiss Re",
-      "logoUrl": "https://logo.clearbit.com/swissre.com",
-      "industry": "Technology",
-      "website": "https://swissre.com"
-    },
-    "slug": "senior-full-stack-engineer-strong-frontend-expertise-swiss-re-1d9d3706",
-    "aiTags": {
-      "stack": [],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Slovakia"
-      ],
-      "seniority": "senior",
       "employmentType": "fulltime"
     }
   },
