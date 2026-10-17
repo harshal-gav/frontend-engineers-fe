@@ -616,13 +616,14 @@ export default function ReferralsPage() {
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between gap-4">
           <Link
             href="/"
-            className="font-bold text-gray-900 text-base sm:text-lg hover:text-[#2563eb] shrink-0 flex items-center gap-2"
+            className="font-bold text-gray-900 text-base sm:text-lg hover:text-[#2563eb] shrink-0 flex items-center gap-2 sm:gap-3 hover:opacity-90 transition-opacity"
           >
-            <div className="w-8 h-8 rounded-lg flex items-center justify-center text-white font-bold text-xs bg-[#2563eb] shrink-0">
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-white font-bold text-xs sm:text-sm bg-[#2563eb] shrink-0">
               FE
             </div>
-            <span className="hidden sm:inline">FrontendEngineers.com</span>
-            <span className="sm:hidden">FE</span>
+            <span className="text-base sm:text-lg font-bold text-gray-900 tracking-tight">
+              FrontendEngineers.com
+            </span>
           </Link>
           <div className="flex items-center gap-2 sm:gap-3">
             <Link

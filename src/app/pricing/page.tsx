@@ -24,7 +24,7 @@ const TESTIMONIALS: { name: string; role: string; quote: string; avatar?: string
 
 export default function PricingPage() {
   const router = useRouter();
-  const { user } = useAuth();
+  const { user, isSubscribed } = useAuth();
   const [error, setError] = useState<string | null>(null);
   const [providerKey, setProviderKey] = useState<number>(Date.now());
   const [stats, setStats] = useState<{ jobCount: number; companyCount: number } | null>(null);
@@ -131,8 +131,60 @@ export default function PricingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen bg-white text-gray-900 flex flex-col">
+      {/* ─── Header ─────────────────────────── */}
+      <header className="border-b border-[#e2e2e6] bg-white sticky top-0 z-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-2 sm:gap-4">
+          <Link
+            href="/"
+            className="font-bold text-gray-900 text-base sm:text-lg hover:text-[#2563eb] shrink-0 flex items-center gap-2 sm:gap-3 hover:opacity-90 transition-opacity"
+          >
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-white font-bold text-xs sm:text-sm bg-[#2563eb] shrink-0">
+              FE
+            </div>
+            <span className="text-base sm:text-lg font-bold text-gray-900 tracking-tight">
+              FrontendEngineers.com
+            </span>
+          </Link>
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            <Link
+              href="/"
+              className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors"
+            >
+              Jobs
+            </Link>
+            <Link
+              href="/referrals"
+              className="text-xs sm:text-sm bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-full font-bold hover:bg-emerald-100 transition-colors border border-emerald-200"
+            >
+              Referrals
+            </Link>
+            {user ? (
+              <Link
+                href="/dashboard"
+                className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors"
+              >
+                Dashboard
+              </Link>
+            ) : (
+              <Link
+                href="/auth/login?redirect=/pricing"
+                className="text-xs sm:text-sm bg-[#2563eb] text-white px-3 sm:px-4 py-1.5 rounded-full font-bold hover:bg-[#1d4ed8] transition-colors"
+              >
+                Sign In
+              </Link>
+            )}
+            {isSubscribed && (
+              <span className="text-[10px] sm:text-xs bg-[#d97706] text-white px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+                Pro
+              </span>
+            )}
+          </div>
+        </div>
+      </header>
+
+      <main className="flex-1 py-12 sm:py-16 px-4">
+        <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-12 flex flex-col items-center">
           <div className="inline-flex items-center justify-center gap-1.5 bg-[#f0fdf4] text-[#166534] border border-[#bbf7d0] px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold mb-4 sm:mb-6 shadow-sm uppercase tracking-wider">
             <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
@@ -251,7 +303,7 @@ export default function PricingPage() {
           {/* ─── Right Column (Pricing Card) ──────────────── */}
           {/* Order 1 on mobile (top of the page), Order 2 on desktop (right side) */}
           <div className="w-full lg:w-[420px] shrink-0 order-1 lg:order-2 lg:sticky lg:top-24">
-            <div className="glass-card p-6 lg:p-7 border border-[#e2e2e6] bg-white rounded-2xl">
+            <div className="glass-card p-5 sm:p-6 lg:p-7 border border-[#e2e2e6] bg-white rounded-2xl">
               <div className="text-[#2563eb] font-semibold tracking-wider uppercase mb-2 text-center">
                 Pro Membership
               </div>
@@ -319,11 +371,13 @@ export default function PricingPage() {
                 {!user ? (
                   <button
                     onClick={() => router.push("/auth/signup?redirect=/pricing")}
-                    className="w-full py-3 rounded-full text-white bg-[#d97706] hover:bg-[#b45309] font-bold text-lg shadow-lg shadow-orange-500/20 transition-colors"
+                    className="w-full py-3.5 sm:py-4 px-4 sm:px-6 rounded-full text-white bg-[#d97706] hover:bg-[#b45309] font-bold text-sm sm:text-base md:text-lg shadow-lg shadow-orange-500/20 transition-all flex items-center justify-center gap-1.5 sm:gap-2 text-center leading-tight active:scale-[0.99]"
                   >
-                    ⭐ Unlock 2,400+ Jobs & Referrals - $9/mo
+                    ⭐ Unlock Jobs &amp; Referrals - $9/mo
                   </button>
                 ) : (
+
+
                   <div className="flex flex-col gap-4">
 
                     <button
@@ -398,6 +452,7 @@ export default function PricingPage() {
 
         </div>
       </div>
-    </div>
+    </main>
+  </div>
   );
 }

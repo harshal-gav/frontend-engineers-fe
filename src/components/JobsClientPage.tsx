@@ -497,14 +497,17 @@ export default function JobsClientPage() {
       {/* ─── Header ─────────────────────────── */}
       <header className="border-b border-[#e2e2e6] bg-white sticky top-0 z-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-col sm:flex-row items-center sm:justify-between gap-3 sm:gap-0">
-          <div className="flex items-center justify-center gap-2 sm:gap-3 max-w-full">
+          <Link
+            href="/"
+            className="flex items-center justify-center gap-2 sm:gap-3 max-w-full hover:opacity-90 transition-opacity"
+          >
             <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-white font-bold text-xs sm:text-sm bg-[#2563eb] shrink-0">
               FE
             </div>
             <span className="text-base sm:text-lg font-bold text-gray-900 tracking-tight truncate">
               FrontendEngineers.com
             </span>
-          </div>
+          </Link>
           <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 relative max-w-full">
             {authLoading ? (
               <div className="w-20 h-8 skeleton rounded" />

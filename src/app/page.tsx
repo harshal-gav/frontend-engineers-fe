@@ -128,15 +128,14 @@ export default async function HomePage() {
         <div className="min-h-screen bg-white flex flex-col">
           <header className="border-b border-[#e2e2e6] bg-white sticky top-0 z-20">
             <div className="max-w-7xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-              <div className="flex items-center gap-2 sm:gap-3">
-                <div className="w-9 h-9 rounded-lg flex items-center justify-center text-white font-bold text-sm bg-[#2563eb]">
+              <Link href="/" className="flex items-center gap-2 sm:gap-3 hover:opacity-90 transition-opacity">
+                <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-white font-bold text-xs sm:text-sm bg-[#2563eb] shrink-0">
                   FE
                 </div>
                 <span className="text-base sm:text-lg font-bold text-gray-900 tracking-tight">
-                  <span className="hidden sm:inline">FrontendEngineers.com</span>
-                  <span className="sm:hidden">FrontendEngineers</span>
+                  FrontendEngineers.com
                 </span>
-              </div>
+              </Link>
               <div className="w-24 h-10 skeleton rounded" />
             </div>
           </header>

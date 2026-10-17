@@ -63,8 +63,55 @@ export default function EmployerPricingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-900 py-20 px-4">
-      <div className="max-w-6xl mx-auto">
+    <div className="min-h-screen bg-gray-50 text-gray-900 flex flex-col">
+      {/* ─── Header ─────────────────────────── */}
+      <header className="border-b border-[#e2e2e6] bg-white sticky top-0 z-20">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-2 sm:gap-4">
+          <Link
+            href="/"
+            className="font-bold text-gray-900 text-base sm:text-lg hover:text-[#2563eb] shrink-0 flex items-center gap-2 sm:gap-3 hover:opacity-90 transition-opacity"
+          >
+            <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-white font-bold text-xs sm:text-sm bg-[#2563eb] shrink-0">
+              FE
+            </div>
+            <span className="text-base sm:text-lg font-bold text-gray-900 tracking-tight">
+              FrontendEngineers.com
+            </span>
+          </Link>
+          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+            <Link
+              href="/"
+              className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors"
+            >
+              Jobs
+            </Link>
+            <Link
+              href="/pricing"
+              className="text-xs sm:text-sm bg-[#d97706] text-white px-3 sm:px-4 py-1.5 rounded-full font-bold shadow-md hover:bg-[#b45309] transition-all"
+            >
+              ⭐ Candidate Pricing
+            </Link>
+            {user ? (
+              <Link
+                href="/dashboard"
+                className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors"
+              >
+                Dashboard
+              </Link>
+            ) : (
+              <Link
+                href="/auth/login?redirect=/employers/pricing"
+                className="text-xs sm:text-sm bg-[#2563eb] text-white px-3 sm:px-4 py-1.5 rounded-full font-bold hover:bg-[#1d4ed8] transition-colors"
+              >
+                Sign In
+              </Link>
+            )}
+          </div>
+        </div>
+      </header>
+
+      <main className="flex-1 py-12 sm:py-16 px-4">
+        <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
             Your job post reaches 5,000+ frontend developers <span className="text-[#10b981]">in 24 hours</span>
@@ -231,6 +278,7 @@ export default function EmployerPricingPage() {
 
         </div>
       </div>
-    </div>
+    </main>
+  </div>
   );
 }
