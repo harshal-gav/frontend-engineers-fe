@@ -85,9 +85,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${jetbrainsMono.variable} h-full overflow-x-hidden`}
+      className={`${inter.variable} ${jetbrainsMono.variable} h-full overflow-x-clip`}
     >
-      <body className="min-h-full flex flex-col antialiased bg-white text-gray-900 overflow-x-hidden w-full max-w-full">
+      <body className="min-h-full flex flex-col antialiased bg-white text-gray-900 overflow-x-clip w-full max-w-full">
         <AuthProvider>
 
           <div className="relative z-10 flex flex-col min-h-full">

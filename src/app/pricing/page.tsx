@@ -131,51 +131,50 @@ export default function PricingPage() {
   };
 
   return (
-    <div className="min-h-screen bg-white text-gray-900 flex flex-col">
+    <div className="min-h-screen bg-white text-gray-900 flex flex-col w-full max-w-full overflow-x-clip">
       {/* ─── Header ─────────────────────────── */}
       <header className="border-b border-[#e2e2e6] bg-white sticky top-0 z-20">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between gap-2 sm:gap-4">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 py-3 sm:py-4 flex flex-col sm:flex-row items-center sm:justify-between gap-3 sm:gap-0">
           <Link
             href="/"
-            className="font-bold text-gray-900 text-base sm:text-lg hover:text-[#2563eb] shrink-0 flex items-center gap-2 sm:gap-3 hover:opacity-90 transition-opacity"
+            className="flex items-center justify-center gap-2 sm:gap-3 max-w-full hover:opacity-90 transition-opacity"
           >
             <div className="w-8 h-8 sm:w-9 sm:h-9 rounded-lg flex items-center justify-center text-white font-bold text-xs sm:text-sm bg-[#2563eb] shrink-0">
               FE
             </div>
-            <span className="text-base sm:text-lg font-bold text-gray-900 tracking-tight">
+            <span className="text-base sm:text-lg font-bold text-gray-900 tracking-tight truncate">
               FrontendEngineers.com
             </span>
           </Link>
-          <div className="flex items-center gap-2 sm:gap-3 shrink-0">
+          <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-3 relative max-w-full">
             <Link
               href="/"
-              className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors"
+              className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold hover:bg-gray-200 transition-colors flex items-center justify-center shrink-0"
             >
               Jobs
             </Link>
             <Link
               href="/referrals"
-              className="text-xs sm:text-sm bg-emerald-50 text-emerald-700 px-3 py-1.5 rounded-full font-bold hover:bg-emerald-100 transition-colors border border-emerald-200"
+              className="text-xs sm:text-sm bg-emerald-50 text-emerald-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold hover:bg-emerald-100 transition-colors flex items-center justify-center shrink-0 border border-emerald-200"
             >
               Referrals
             </Link>
-            {user ? (
-              <Link
-                href="/dashboard"
-                className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors"
-              >
-                Dashboard
-              </Link>
-            ) : (
+            <Link
+              href="/dashboard"
+              className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold hover:bg-gray-200 transition-colors flex items-center justify-center shrink-0"
+            >
+              Dashboard
+            </Link>
+            {!user && (
               <Link
                 href="/auth/login?redirect=/pricing"
-                className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors"
+                className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold hover:bg-gray-200 transition-colors flex items-center justify-center shrink-0"
               >
-                Sign In
+                Log In
               </Link>
             )}
             {isSubscribed && (
-              <span className="text-[10px] sm:text-xs bg-[#d97706] text-white px-2 py-0.5 rounded-full font-bold uppercase tracking-wider">
+              <span className="text-[10px] sm:text-xs bg-[#d97706] text-white px-2.5 py-1 rounded-full font-bold uppercase tracking-wider leading-none">
                 Pro
               </span>
             )}
