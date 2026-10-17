@@ -1,5 +1,440 @@
 [
   {
+    "id": "2da6278a1f0c514529e938a6c743646370d8ec953ad89796b67630fb53d1e0ef",
+    "title": "Staff Software Developer, Front End Technologies",
+    "applyUrl": "https://careers-kinaxis.icims.com/jobs/35185/staff-software-developer,-front-end-technologies/job?mode=apply&iis=LinkedIn",
+    "description": "About Kinaxis\n\nAre you looking to join an innovative, market-leading company where you can truly elevate your career? At Kinaxis we are serious about culture, we are serious about technology, we are serious about customers, and we are serious about not taking ourselves too seriously. If you are looking to be part of an incredible growth story, then we might just be the place for you!\n\nIn 1984, we started out as a team of three engineers. Today, we have grown to become a global organization with over 2000 employees around the world, 6 global office and a best-in-class HQ in Ottawa, Canada. As winners of several Top Employer awards globally, we are proud to work with our customers and employees towards solving some of the biggest challenges facing supply chains today.\n\nKinaxis is a global leader in modern supply chain orchestration, powering complex global supply chains, and supporting the people who manage them. Our powerful, AI infused platform provides full transparency and visibility across end-to-end supply chains, enabling our customers to make faster, better decisions. We are trusted by renowned global brands to provide the agility and predictability needed to navigate today’s volatility and disruption. With more than 40,000 users in over 100 countries, we are expanding our team as we continue to innovate and revolutionize how we support our customers.\n\nLocation\n\nOttawa and Toronto, Canada- Hybrid\n\nOther Canadian locations - Remote\n\nAbout The Team\n\nThe Front End Technology team consists of collaborative, high-performing engineers. The team’s primary mandate is to build a modern platform and web. We build user-friendly features to help our users visualize their supply chains, empowering them to make informed decisions to resolve their challenges effectively. Performance is a top priority as we need to handle our customers’ large complex datasets efficiently. We have designed our code architecture to be robust and easily maintained, while supporting a large team of engineers.\n\nIn this role, you will develop full stack application features using a variety of technologies (TypeScript, React, C#) that will bring the power of our software to an expanding user community.\n\nVacancy Status\n\nThis is an existing job vacancy\n\nWhat you will do\n\n\n Develop high quality features with a strong emphasis on exceptional user experience and performance \n Prepare and present technical designs, considering input from other team members and stakeholders \n Plan, design and implement new automated tests to ensure reliability \n Create prototypes and conduct design explorations to clarify requirements and resolve technical uncertainty \n Collaborate effectively with engineers, product managers and UX designers \n Innovate with Generative AI and new technologies \n\n\nTechnologies we use\n\n\n Typescript, Java, React \n C#, .NET \n Junit, Jest, Playwright \n GoJS \n\n\nWhat we are looking for\n\n\n Bachelors/master’s degree in computer science or equivalent related discipline \n 5-7 years of progressive software development experience including experience working on one or more enterprise-grade software applications \n Experience leading development on several high complexity features \n Strong advocacy for product quality and building highly maintainable software \n Solid understanding of design patterns and object-oriented programming \n Strong experience with React \n Experience with C# and .Net Core \n Familiar with data modeling and semantics \n Highly competent in the adoption and application of new tools to maximize velocity including AI \n Experience developing reliable, efficient, and scalable APIs \n Knowledge of Cloud platforms like GCP, Azure \n A clear, concise, and professional communicator with the ability to present complex information and demonstrate knowledge to challenge the status quo and engage the listener at the appropriate level \n Nice to have :\n Be a champion for technology and process improvements within the team\n Demonstrated willingness to mentor and coach junior team members\n Familiar with Agentic AI \n\n\n#Senior; \n\nWork With Impact: Our platform directly helps companies power the world’s supply chains. We see the results of what we do out in the world every day, when we see store shelves stocked, when medications are available for our loved ones, and so much more.\n\nWork with Fortune 500 Brands: Companies across industries trust us to help them take control of their integrated business planning and digital supply chain. Some of our customers include Lockheed Martin, Unilever, P&G, ExxonMobil, Cisco and more.\n\nSocial Responsibility at Kinaxis: Our Diversity, Equity, and Inclusion Committee weighs in on hiring practices, talent assessment training materials, and mandatory training on unconscious bias and inclusion fundamentals. Sustainability is key to what we do and we’re committed to a long-term net-zero operations strategy. We are involved in our communities and support causes where we can make the most impact.\n\nPeople matter at Kinaxis and here are some of the perks and benefits we offer, which may vary by location and employee:\n\n\nFlexible vacation and Kinaxis Days (company-wide days off)\nFlexible work options\nPhysical and mental well-being programs\nRegularly scheduled virtual fitness classes\nMentorship programs, training, and career development\nRecognition programs and referral rewards\nHackathons\n\n\nFor more information, visit the Kinaxis website at www.kinaxis.com or the company’s blog at http://blog.kinaxis.com .\n\nKinaxis welcomes candidates to apply to our inclusive community. We provide accommodations upon request to ensure fairness and accessibility throughout our recruitment process for all candidates, including those with specific needs or disabilities. If you require an accommodation, please reach out to us at recruitmentprograms@kinaxis.com. This contact information is for accessibility requests only and cannot be used to inquire about the status of applications.\n\nKinaxis is committed to ensuring a fair and transparent recruitment process. We use artificial intelligence (AI) tools in the initial step of the recruitment process to compare submitted resumes against the job description to identify candidates whose education, experience, and skills most closely match the requirements of the role. After the initial screening, all subsequent decisions regarding your application, including final selection, are made by our human recruitment team. AI does not make any final hiring decisions.\n\n\n… more",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T14:05:44.165Z",
+    "sourceHash": "2da6278a1f0c514529e938a6c743646370d8ec953ad89796b67630fb53d1e0ef",
+    "company": {
+      "id": "kinaxis",
+      "name": "Kinaxis",
+      "logoUrl": "https://logo.clearbit.com/kinaxis.com",
+      "industry": "Technology",
+      "website": "https://kinaxis.com"
+    },
+    "slug": "staff-software-developer-front-end-technologies-kinaxis-2da6278a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "9c5670f3bc4127df2b96b2a0ffa0276363a28d3299ebef04a5d79e1b8d4a9c5f",
+    "title": "Senior Software Engineer, Frontend",
+    "applyUrl": "https://jobs.ashbyhq.com/sardine/0602a07b-6f97-44c8-84e0-b2b1483852e9?src=Job+Boards:+LinkedIn",
+    "description": "Who We Are\n\nSardine is the leading agentic risk platform for fighting financial crime. Our integrated solution unifies data across risk teams to help organizations stop fraud in real time, prevent AI-driven attacks, and automate fraud and AML operations. Sardine’s platform is strengthened by one of the fastest-growing fraud consortiums in the market, spanning more than 6 billion profiled devices, 800 million consumers, and 3 million businesses worldwide. Leading companies including FIS, GoDaddy, Intuit, Edward Jones, ZoomInfo, and Checkout.com rely on Sardine to secure and grow trust in their products.\n\nOur Culture\n\n\nWe hire talented, self-motivated individuals with extreme ownership and high growth orientation. \nWe value performance and not hours worked. We believe you shouldn't have to miss your family dinner, your kid's school play, friends get-together, or doctor's appointments for the sake of adhering to an arbitrary work schedule.\nWe're a remote-first team spread across time zones, so no office to report to - work from wherever helps you do your best work. Just a couple of things to keep in mind: pay is based on where you're located, and you'll need to keep a home base in the country you're hired in. So while we love the \"coffee shop today, mountains tomorrow\" life, this isn't a passport-optional, work-from-anywhere-on-Earth kind of remote - think flexible within your country, not borderless.\n\n\nLocation:\n\nRemote — Canada (Eastern Time) To be considered for this position, you must reside in one of the following locations and be legally authorized to work in Canada:\n\n\nOntario\n\n\nAbout The Role\n\nAs a frontend-focused Senior Software Engineer, you will own the design and delivery of the user-facing experiences at the heart of our AI products. Your primary focus is building polished, performant, production-grade interfaces in React and TypeScript. You'll also work in Go on the backend services and APIs that power those experiences, but that's a secondary part of the role. This is a high-autonomy, high-leadership position: you'll develop new features at scale, set the standard for how we build on the frontend, mentor the engineers around you, and use AI/agentic tooling (like Claude) to ship far faster than a traditional team would. The ideal candidate pairs exceptional frontend craft with the judgment to lead and the discipline to be relentlessly efficient with modern, AI-assisted workflows.\n\nWhat You'll Be Doing\n\n\nDesign, build, and own user-facing features in React and TypeScript — polished, accessible, performant, and production-ready.\nSet the technical direction and quality bar for our frontend, and lift the people around you through mentorship and code review.\nUse AI and agentic development tools (such as Claude) fluently and effectively to move quickly, and help establish best practices for AI-assisted development across the team.\nDip into Go to build and extend the backend services and APIs behind your features when needed.\nCollaborate closely with business stakeholders to architect and implement new experiences from inception to delivery.\nContribute to product and technical roadmaps, and to the broader direction of the engineering team.\nCraft and maintain user-facing technical documentation that drives understanding and adoption of our products.\nPlay a pivotal role in shaping our engineering culture and ensuring high standards across the organization.\n\n\nWhat You'll Need\n\n\n7+ years of proven experience as a software engineer, with deep specialization in frontend development.\nExpert-level React and TypeScript, with a strong eye for UX, performance, and accessibility.\nDemonstrated fluency with AI and agentic coding tools (e.g., Claude), and a track record of using them to ship efficiently and raise your own throughput.\nLeadership experience: setting technical standards, mentoring engineers, and driving key technical decisions.\nA track record of shipping high-quality, production-grade frontend at scale.\nWorking proficiency in Go (or the ability to become productive in it quickly) for backend services — secondary to your frontend work.\nComfort with ambiguity and the ability to prioritize autonomously against business needs.\nCustomer-centric approach with strong empathy toward users.\nRelevant industry experience in fintech, fraud, compliance, risk, or regulated systems is preferred.\nProficient in English — from casual chats to formal reports.\nExposure to data tooling or pipelines is a nice-to-have, but not required.\n\n\nTechnologies We Use\n\n\nTypeScript (React + Node)\nGolang\nBigtable\nPostgres / PostgreSQL\nBigQuery\nPython\nJava\nTerraform\n\n\nBenefits We Offer\n\n\nGenerous compensation in cash and equity\nEarly exercise for all options, including pre-vested\nWork from anywhere: Remote-first Culture\nFlexible paid time off and Year-end break\nHealth insurance, dental, and vision coverage for employees and dependents - US and Canada specific\n4% matching in 401k / RRSP - US and Canada specific\nMacBook Pro delivered to your door\nOne-time stipend to set up a home office — desk, chair, screen, etc.\nMonthly meal stipend\nMonthly social meet-up stipend\nAnnual health and wellness stipend\nAnnual Learning stipend\n\n\nJoin a fast-growing company with world-class professionals from around the world. If you are seeking a meaningful career, you found the right place, and we would love to hear from you.\n\nTo learn more about how we process your personal information and your rights in regards to your personal information as an applicant and Sardine employee, please visit our Applicant and Worker Privacy Notice.\n… more",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T14:05:28.347Z",
+    "sourceHash": "9c5670f3bc4127df2b96b2a0ffa0276363a28d3299ebef04a5d79e1b8d4a9c5f",
+    "company": {
+      "id": "sardine",
+      "name": "Sardine",
+      "logoUrl": "https://logo.clearbit.com/sardine.com",
+      "industry": "Technology",
+      "website": "https://sardine.com"
+    },
+    "slug": "senior-software-engineer-frontend-sardine-9c5670f3",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d7d0302758f530f76bf68d27f4ec0ed855cc6d7252519a8f94dea9de78b3e53a",
+    "title": "Staff Software Engineer, Front End Web UI Platform",
+    "applyUrl": "https://githubinc.jibeapply.com/jobs/5732?lang=en-us&iis=Job+Board&iisn=LinkedIn&lever-source=LinkedinPosting",
+    "description": "About GitHub\n\nGitHub is the world’s leading platform for agentic software development — powered by Copilot to build, scale, and deliver secure software. Over 180 million developers, including more than 90% of the Fortune 100 companies, use GitHub to collaborate, and more than 77,000 organisations have adopted GitHub Copilot.\n\nLocations\n\nIn this role you can work from Remote, Canada\n\nOverview\n\nGitHub's Core UX organization owns the frontend platform behind GitHub.com: the architecture, tooling, and standards that let hundreds of engineers ship UI that is fast, accessible, consistent, and reliable. We're looking for a Principal Software Engineer to set technical direction across that platform and raise the ceiling on what the frontend can do for millions of developers.\n\nThis is a systems role, not a single-team role. You'll work across the concerns that overlap in frontend at scale: performance, accessibility, UX consistency, and availability. Much of the work is evolving a large, actively developed codebase rather than starting from scratch, so success depends as much on migration strategy and cross-team alignment as on architecture. You'll shape paved paths that many teams adopt, not one-off solutions that rely on heroics.\n\nYou'll partner closely with other Principal and Staff engineers, Engineering Managers, and Product and Design leadership to decide where the platform goes next and to drive that direction to real, shipped outcomes.\n\nResponsibilities\n\n\nOwn the technical direction for GitHub's web UI platform across performance, accessibility, consistency, and availability, balancing long-term architecture with hands-on execution.\nDrive large cross-team initiatives and migrations, sequencing the work so the platform moves forward without disrupting active product development.\nEstablish patterns, standards, and paved paths for frontend development that lower cognitive load and scale across many teams.\nProduce architecture and design proposals, evaluate tradeoffs honestly, and build alignment across engineering, product, and design.\nMentor and raise the bar for engineers at every level through design review, code review, and pairing.\nRepresent frontend platform priorities to leadership, securing the support and resourcing needed to deliver.\n\n\nWhat Success Looks Like In The First 6 Months\n\n\nYou've built a deep working understanding of GitHub's frontend systems, infrastructure, and their backend dependencies, and you're using it to make informed, high-leverage decisions.\nYou're leading at least one platform-wide initiative that measurably improves performance, availability, frontend infrastructure, or developer velocity.\nTeams are adopting the patterns and paved paths you've shaped, with less need for direct hand-holding.\n\n\nQualifications\n\nRequired Qualifications\n\n\n\n\n9+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python\nOR Associate’s Degree in Computer Science, Electrical Engineering, Electronics Engineering, Math, Physics, Computer Engineering, Computer Science, or related field AND 8+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python.\nOR Bachelor's Degree in Computer Science or related field AND 7+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python.\nOR Master's Degree in Computer Science, Electrical Engineering, Electronics Engineering, Math, Physics, Computer Engineering, Computer Science, or related field AND 5+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python.\nOR Doctorate in Computer Science, Electrical Engineering, Electronics Engineering, Math, Physics, Computer Engineering, Computer Science, or related field AND 3+ years experience in Software Engineering, Computer Science, or related technical discipline with proven experience maintaining and delivering production software coding in languages including, but not limited to, C, C++, C#, Java, JavaScript, Go, Ruby, Rust, or Python.\nOR equivalent experience.\n\nPreferred Qualifications\n\n\nDeep knowledge of React or Angular internals and server-side rendering, with experience modernizing frontend systems in large, multi-team codebases.\nTrack record of improving web performance (Core Web Vitals, interaction latency, bundle size) through systematic, data-driven work.\nExperience leading cross-team frontend migrations and rollouts, managing sequencing, deprecation, and incremental adoption across many engineers.\nStrong command of web platform and accessibility fundamentals (browser APIs, a11y standards, TypeScript, JavaScript, CSS) and how they interact with framework-level abstractions.\nExperience building design systems, shared component libraries, or paved-path tooling that many teams adopt.\n\n\nGitHub values\n\n\nCustomer-obsessed\nShip to learn\nGrowth mindset\nOwn the outcome\nBetter together\nDiverse and inclusive\n\n\nManager fundamentals\n\n\nModel\nCoach\nCare\n\n\nLeadership principles\n\n\nCreate clarity\nGenerate energy\nDeliver success\n\n\nWho We Are\n\nGitHub is the world’s leading AI-powered developer platform with 150 million developers and counting. We’re also home to the biggest open-source community on earth (and 99% of the world’s software has open-source code in its DNA). Many of the apps and programs you use every day are built on GitHub.\n\nOur teams are dreamers, doers, and pioneers, leading the way in AI, driving humanitarian efforts around the globe, and even sending open source to Mars (and beyond!). At GitHub, our goal is to create the space you need to do your best work. We’re remote-first and offer competitive pay, generous learning and growth opportunities, and excellent benefits to support you, wherever you are—because we know that people flourish when they can work on their own terms.\n\nJoin us, and let’s change the world, together.\n\nEqual Employment Opportunity\n\nGitHub is made up of people from a wide variety of backgrounds and lifestyles. We embrace diversity and invite applications from people of all walks of life. We don't discriminate against employees or applicants based on gender identity or expression, sexual orientation, race, religion, age, national origin, citizenship, disability, pregnancy status, veteran status, or any other differences. Also, if you have a disability, please let us know if there's any way we can make the interview process better for you; we're happy to accommodate!\n… more",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T14:05:18.889Z",
+    "sourceHash": "d7d0302758f530f76bf68d27f4ec0ed855cc6d7252519a8f94dea9de78b3e53a",
+    "company": {
+      "id": "github",
+      "name": "GitHub",
+      "logoUrl": "https://logo.clearbit.com/github.com",
+      "industry": "Technology",
+      "website": "https://github.com"
+    },
+    "slug": "staff-software-engineer-front-end-web-ui-platform-github-d7d03027",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "less",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "60c3c03fdaaab45690dbff4cd820868bdcd7c4c67f0230172beea25627cc3bc7",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://www.theladders.com/linkedin/89307657?src=LinkedIn",
+    "description": "For our client, we are seeking a Senior Frontend Engineer to join the team of a leader in the Enterprise Technology space.\n\nThis role will own the user-facing frontend experience for a growing product organization, with a strong emphasis on quality, performance, and accessibility. The ideal candidate will help shape polished web experiences that support both the core product and the company's marketing presence. As the team scales, this person will also help define frontend standards, reusable patterns, and development practices that improve consistency and speed.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $180,000 – $200,000 annually\n\nResponsibilities\n\n\n Build and ship customer-facing features using React, Next.js, and TypeScript\n Own the quality of the frontend, focusing on performance and accessibility\n Maintain and extend component patterns for product consistency\n Leverage AI coding tools to enhance development speed and quality\n Contribute to the marketing site, ensuring fast and polished pages\n Establish frontend standards and practices as the team grows\n\n\nQualifications\n\n\n 5+ years of experience building and shipping production web applications\n Deep expertise in React and TypeScript\n Strong focus on user experience and product-minded thinking\n Exceptional attention to detail in design elements like typography and motion\n Proficient in ensuring frontend quality, including performance and accessibility\n Familiarity with AI coding tools for efficient development\n\n\nBenefits\n\n\n Competitive salary and stock options\n Healthcare, dental, and vision coverage\n $100 monthly fitness stipend\n Flexible vacation time and regular company holidays\n Company retreats to various locations\n Parent-friendly policies, remote work options, and paid family leave\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification—your background could be exactly what this team needs.\n\n\n… more",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T13:59:41.415Z",
+    "sourceHash": "60c3c03fdaaab45690dbff4cd820868bdcd7c4c67f0230172beea25627cc3bc7",
+    "company": {
+      "id": "ladders",
+      "name": "Ladders",
+      "logoUrl": "https://logo.clearbit.com/ladders.com",
+      "industry": "Technology",
+      "website": "https://ladders.com"
+    },
+    "slug": "senior-frontend-engineer-ladders-60c3c03f",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "883b1cec7f7fa25302a60abcf68bf2615813e7f3aeeb31dcbc269a9f684dd900",
+    "title": "Senior Front-End Developer",
+    "applyUrl": "https://recruiting.ultipro.com/UNI1098UNAB/JobBoard/c633a9a4-5144-45eb-aca3-2ec4836c03b9/OpportunityDetail?opportunityId=eeba143b-104f-486c-a33b-855783551422&source=LinkedIn",
+    "description": "About Ua/Uniform Advantage Brands\n\nAt UA Brands, we’re changing the way healthcare and culinary professionals get dressed. For over 40 years, we’ve created stylish, high-performance uniforms designed to empower those on the front lines. Our apparel breaks the mold, combining brilliant design with real-world function. Join a team that values creativity, impact, and community, and help us redefine uniforms that don’t conform.\n\nAbout The Role\n\nUA Brands is seeking a Senior Frontend Developer to build and enhance modern, customer-facing web applications that support our ecommerce platforms and digital experiences. This role focuses on developing responsive, high-performance user interfaces using HTML5, CSS3, JavaScript, React and modern front-end development practices.\n\nAs a senior member of the development team, you will collaborate with designers, backend developers, product stakeholders, and business teams to deliver intuitive, scalable, and accessible web experiences. You will help drive front-end architecture decisions, optimize application performance, and ensure adherence to UI/UX best practices and web standards.\n\nThe ideal candidate is passionate about creating exceptional user experiences, writing clean and maintainable code, and leveraging modern development tools, including AI-assisted coding platforms such as Cursor to improve productivity and software quality.\n\nResponsibilities\n\nFront-End Development \n\n\nDesign, develop, and maintain responsive, user-facing web applications using HTML5, CSS3, JavaScript and React.\nBuild reusable front-end components and scalable UI architectures.\nDevelop new features and functionality that enhance the customer experience across ecommerce and business applications.\nImplement responsive designs that perform consistently across desktop, tablet, and mobile devices.\nEnsure cross-browser compatibility and adherence to modern web standards.\n\n\nUI/UX Implementation & Optimization \n\n\nCollaborate with UX/UI designers to translate designs into functional, high-quality interfaces. \nEvaluate and improve usability, accessibility, and overall user experience. \nOptimize applications for speed, scalability, SEO performance, and Core Web Vitals.\nEnhance existing interfaces and contribute to continuous UI/UX improvements.\n\n\nIntegrations & Technical Quality \n\n\nIntegrate and maintain third-party libraries, plugins, analytics tools, and front-end services. \nValidate user input and ensure seamless communication with backend APIs and services.\nAssess technical feasibility and performance impact before introducing new technologies or integrations.\n\n\nCollaboration & Continuous Improvement \n\n\nPartner with software engineers, product teams, and stakeholders to deliver business solutions. \nParticipate in code reviews, technical discussions, and development planning activities. \nTroubleshoot front-end issues and implement effective solutions.\nStay current with emerging front-end technologies, development frameworks, and AI-assisted coding tools.\n\n\nRequired Technical Skills\n\n\nCursor AI or similar AI coding assistants\nHTML5 / CSS3\nJavaScript (ES6+)\nResponsive Web Design\nSASS / LESS\nAJAX\nGit\nCross-Browser Compatibility\nAccessibility (WCAG)\nSEO Best Practices\nPerformance Optimization\nAgile Development\nReact.js\n\n\nPreferred Qualifications\n\n\nExperience developing ecommerce websites and digital commerce platforms. \nExperience working with enterprise-scale web applications. \nKnowledge of modern front-end performance optimization techniques.\nExperience implementing analytics, tracking tools, and third-party services.\nUnderstanding of accessibility, web security, and SEO best practices.\nExperience collaborating within Agile software development teams.\nFamiliarity with API-driven architectures and backend integrations.\nAssociate degree (AS/AA), Bachelor’s degree, or equivalent professional experience in Computer Science, Information Technology, Software Engineering, Mathematics or Related Technical Field\n\n\nExperience\n\n\n5–7+ years of professional front-end software development experience. \nProven experience building modern web applications using React and JavaScript. \nExperience developing responsive, customer-facing digital experiences.\nExperience working in collaborative software development environments.\n\n\nWhat Makes You Successful\n\n\nStrong problem-solving and analytical skills. \nPassion for front-end development and modern web technologies. \nAbility to balance user experience, performance, and maintainability. \nExcellent communication and collaboration skills.\nStrong attention to detail and commitment to quality.\nAbility to manage multiple priorities in a fast-paced ecommerce environment.\nContinuous learner with an interest in emerging technologies and AI-assisted development.\n\n\nWHERE YOU’LL WORK\n\nREMOTE – Work from Home (Within UA US employer states). Have workplace flexibility - you’ll work exclusively from the comfort of your home with no commute! Remote employees are expected to be online and available during the core business hours for their team. A company computer is provided for business use.\n\nPlenty Of Benefits Too\n\nUA BRANDS offers a full range of benefits, allowing you the opportunity to customize a benefits package that addresses both your health and financial needs.\n\n\nMedical and Pharmacy Coverage \nDental and Vision Coverage\nLife/AD&D Insurance\nEmployee Assistance Program – self-care and support for life’s everyday challenges\nExtensive 401(k) plan with company matching - Save for your future\nShort & Long Term Disability – Company Paid\nAccident, Hospital Care, and Critical Illness Insurance – Protect your Income\nLegal Insurance and ID Theft Protection\nNationwide Pet Insurance\nHoliday Pay\nPaid Parental Leave\nPaid Time Off – Life Balance\nVolunteer Time Off – Make an Impact\nSee more of the benefits we offer\n\n\nUA IS AN EQUAL OPPORTUNITY EMPLOYER \n\nAs an employee of any UA Brands division, you will be part of an established and dynamic organization. We believe that success starts from within, and we are seeking individuals who thrive in an environment that encourages and supports self-management. To provide equal employment and advancement opportunities to all individuals, employment decisions at UA Brands will be based on merit, qualifications, and abilities. UA Brands does not discriminate in employment opportunities or practices based on race, color, religion, sex, national origin, age, disability, or any other characteristic protected by law. UA Brands will make reasonable accommodations for qualified individuals with known disabilities unless doing so would result in an undue hardship.\n\nWe are a Drug-Free Workplace.\n… more",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T13:59:32.151Z",
+    "sourceHash": "883b1cec7f7fa25302a60abcf68bf2615813e7f3aeeb31dcbc269a9f684dd900",
+    "company": {
+      "id": "uniformadvantageuabrands",
+      "name": "Uniform Advantage (UA Brands)",
+      "logoUrl": "https://logo.clearbit.com/uniformadvantageuabrands.com",
+      "industry": "Technology",
+      "website": "https://uniformadvantageuabrands.com"
+    },
+    "slug": "senior-front-end-developer-uniform-advantage-ua-brands-883b1cec",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "sass",
+        "less",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "c7b8b9ed1f1fec256648cea78fc5b8884cb18fcfce149e77952f2fd7906620ac",
+    "title": "Technical Consultant - Front-end Development",
+    "applyUrl": "https://veevasystems.contacthr.com/153372534",
+    "description": "Veeva Systems is a mission-driven organization and pioneer in industry cloud, helping life sciences companies bring therapies to patients faster. As one of the fastest-growing SaaS companies in history, we surpassed $3B in revenue in our last fiscal year with extensive growth potential ahead.\n\nAt the heart of Veeva are our values: Do the Right Thing, Customer Success, Employee Success, and Speed. We're not just any public company – we made history in 2021 by becoming a public benefit corporation (PBC), legally bound to balancing the interests of customers, employees, society, and investors.\n\nAs a Work Anywhere company, we support your flexibility to work from home or in the office, so you can thrive in your ideal environment.\n\nJoin us in transforming the life sciences industry, committed to making a positive impact on its customers, employees, and communities.\n\nThe Role\n\nAre you a creative front-end developer looking for a company to grow with? Do you have a passion for crafting top-quality code, but you have an equal passion for talking about it? Do you enjoy having the power of being a hands-on software developer, but the flexibility and face-time of a consultant?\n\nIf so, we would love to talk to you!\n\nOur Technical Services Team is growing to meet the needs of our ever- growing customer base. Vault CRM is the premier cloud-based CRM system used by the Life Sciences Industry, built on the Veeva Vault platform. Technical Architects like you will help craft unique user experiences with CRM X-Pages. Come grow with us.\n\nThis is a remote, full-time permanent role with Veeva. This is a customer-facing role and we have no work location requirement if you are in close proximity to an airport and able to meet travel requirements.\n\nWhat You’ll Do\n\n\nDesign, develop, and evangelize custom user experiences, with an emphasis on data-driven workflow\nDirect customer-facing workshops, “own” project success, and overall solution design (both technical and functional)\nDesign and implement custom UI’s in Veeva CRM & Vault CRM (Vue.js, Veeva Vault JavaSDK)\nDevelop internal and external tools to help our customers and our consultants\n\n\nRequirements\n\n\n3+ years of development or technical consulting experience\nExperience in front-end web development\nSome experience in cloud-based full-stack development\nFamiliarity with API-based development\nWorking knowledge of modern JavaScript frameworks or languages (React or Vue.js)\nExperience with source code control systems like Git\nGood presentation skills and ability to learn quickly\nAbility to travel up to 25%\n\n\nNice to Have\n\n\nExperience in Veeva Commercial Cloud products (CRM, PromoMats, MedComms, Nitro, Align, Network, OpenData)\nExperience designing and developing cloud-based integrations\nExperience designing and developing data visualizations (Tableau, Qlik, PowerBI)\nDevelopment on AWS\nDemonstrated contributions to open-source JavaScript projects\n\n\nInterviewing with Veeva\n\nWe value your time and believe in a transparent hiring process. Here is the process you can expect.\n\n\nFollow the application process and submit your resume.\nWithin 3 days, you will receive a link to a personality assessment administered by a third party.\nOnce you complete the assessment, our team will review your full application package and follow up via email with our decision.\nIf moving to the interview stage, the process is as follows:\nA conversation with the hiring manager\nA practical case exercise\nA final conversation with our group's Senior Leader.\nOnce all interviews are complete, the manager will be in touch with a final decision.\nPerks & Benefits\n\n\nMedical, dental, vision, and basic life insurance\nFlexible PTO and company paid holidays\nRetirement programs\n1% charitable giving program\n\n\nCompensation\n\n\nBase pay: $75,000 - $150,000 \nThe salary range listed here has been provided to comply with local regulations and represents a potential base salary range for this role. Please note that actual salaries may vary within the range above or below, depending on experience and location. We look at compensation for each individual and base our offer on your unique qualifications, experience, and expected contributions. This position may also be eligible for other types of compensation in addition to base salary, such as variable bonus and/or stock bonus.\n\n\nVeeva’s headquarters is located in the San Francisco Bay Area with offices in more than 15 countries around the world.\n\nVeeva is an equal opportunity employer. All qualified applicants will receive consideration for employment without regard to race, color, sex, sexual orientation, gender identity or expression, religion, national origin or ancestry, age, disability, marital status, pregnancy, protected veteran status, protected genetic information, political affiliation, or any other characteristics protected by local laws, regulations, or ordinances. If you need assistance or accommodation due to a disability or special need when applying for a role or in our recruitment process, please contact us at talent_accommodations@veeva.com.\n\n\n… more",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T13:59:28.260Z",
+    "sourceHash": "c7b8b9ed1f1fec256648cea78fc5b8884cb18fcfce149e77952f2fd7906620ac",
+    "company": {
+      "id": "veevasystems",
+      "name": "Veeva Systems",
+      "logoUrl": "https://logo.clearbit.com/veevasystems.com",
+      "industry": "Technology",
+      "website": "https://veevasystems.com"
+    },
+    "slug": "technical-consultant-front-end-development-veeva-systems-c7b8b9ed",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "ebeee99f0ea706bb30705b55d320b27d4b52bda4523c014f324ef1aa282f3d0c",
+    "title": "Front End Developer",
+    "applyUrl": "https://app.workwolf.com/pipelineLink/PDZ9OBS4?utm_source=LINKEDIN",
+    "description": "Frontend Developer (Python / React)\n\nWe're looking for a Frontend Developer who enjoys building modern, intuitive web applications that solve real business problems. In this role, you'll help transform legacy Excel-based processes into scalable, user-friendly web solutions while collaborating with a talented team delivering innovative technology solutions in a secure, mission-driven environment.\n\nWhat You'll Do\n\n\nDesign and develop responsive, high-performance web applications.\nBuild modern user interfaces that replace spreadsheet-based workflows.\nIntegrate frontend applications with FastAPI backend services using REST APIs.\nCreate interactive dashboards and data visualizations for complex financial and business data.\nCollaborate with backend developers to deliver seamless, scalable solutions.\nOptimize applications for performance, usability, and cross-browser compatibility.\nContribute across the full stack when needed and help shape frontend architecture.\n\n\nWhat You'll Bring\n\n\nMust live in Maryland\nSole US Citizenship REQUIRED. No Exceptions\nPublic Trust Clearance or higher \nStrong Python programming experience.\nExperience with React, Vue, or Angular.\nSolid understanding of RESTful API integration.\nExperience building data-intensive web applications.\nKnowledge of responsive design and modern UI best practices.\nStrong analytical, troubleshooting, and problem-solving skills.\n\n\nPreferred\n\n\nExperience with financial or analytical data visualization.\nFamiliarity with FastAPI or other Python web frameworks.\nExperience with spreadsheet-like UI components or advanced data grids.\n\n\nWhy Join Us?\n\nYou'll work on meaningful, technically challenging projects alongside a collaborative team that values innovation, professional growth, and continuous learning. Comprehensive benefits include medical, dental, vision, 401(k) with employer match, paid time off, certification support, professional development, and flexible work arrangements.\n\nRequirements: Due to the nature of the work, applicants must be sole U.S. Citizens.\n… more",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T13:59:18.408Z",
+    "sourceHash": "ebeee99f0ea706bb30705b55d320b27d4b52bda4523c014f324ef1aa282f3d0c",
+    "company": {
+      "id": "lynnrodens",
+      "name": "Lynn Rodens",
+      "logoUrl": "https://logo.clearbit.com/lynnrodens.com",
+      "industry": "Technology",
+      "website": "https://lynnrodens.com"
+    },
+    "slug": "front-end-developer-lynn-rodens-ebeee99f",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "3c7b4d5e5afa3219508479745497ef50e4f0170c36aefe9261354cfd466c590f",
+    "title": "Frontend Software Developer - Remote Opportunity",
+    "applyUrl": "https://www.torentify.com/jobs/6ad30a2105fc7b607e52e044",
+    "description": "About the Company\n\n\n\n\nMaximus Technology and Consulting Services (TCS) provides technology and consulting support for government and defense missions. This role supports a United States Air Force (USAF) mission, focusing on frontend software development, user interface design, and secure application development.\n\n\n\n\nAbout the Role\n\n\n\n\nMaximus is seeking a Software Developer (Frontend) to support USAF mission requirements in a remote capacity. The role involves designing and developing user-facing applications, improving graphical user interfaces, and creating technical designs and documentation for program management offices (PMOs) and stakeholders. The ideal candidate has extensive frontend development experience, familiarity with DevSecOps practices, and the ability to develop secure applications in cloud environments. An active TS/SCI clearance is required, along with the ability to obtain a CI Polygraph.\n\n\n\n\nKey Responsibilities\n\n\n\n\nCreate technical design drawings, mockups, wireframes, and supporting documentation for PMO and stakeholder review.\nDesign, develop, and modify graphical user interfaces to meet application and mission requirements.\nBuild and optimize UI components, system navigation, and user-facing features to improve usability.\nApply user-centric design principles and established UI/UX practices throughout frontend development.\nConduct, prepare, and document system testing activities.\nTest web-based applications and use bug-tracking tools to identify and resolve issues.\nParticipate in software development programs and projects using agile methodologies.\nDevelop software using object-oriented and scripting languages, with experience in DevSecOps, microservices, and container tool suites.\nDevelop and support applications in cloud environments.\nIntegrate data between unclassified and classified application deployments.\nUse Jenkins, GitLab, and relevant development and testing tools to support software delivery.\n\n\n\n\nRequired Qualifications\n\n\n\n\nAn active TS/SCI security clearance and the ability to obtain a CI Polygraph.\nSeven years of overall experience in the functional area.\nA bachelor's degree; a master's degree may substitute for two years of experience.\nSeven years of software development experience with object-oriented and scripting languages, DevSecOps, microservices, and container tool suites.\nDemonstrated experience preparing, conducting, and documenting system tests.\nThree years of experience using bug-tracking software, such as Jira, and testing web-based applications.\nThree years of experience participating in software development programs or projects.\nPractical experience developing in cloud environments.\nExperience integrating data from unclassified to classified application deployments.\nFive years of experience with Jenkins and GitLab.\nFive years of experience with at least five of the following tools: NPM, Cypress.io, esbuild, Bun, Apache Tomcat, Maven, and SonarQube.\nThree years of recent frontend web design and development experience.\nDemonstrated experience with agile, user-centric application design and UI/UX best practices.\nDCWF Code 632 Intermediate certification requirement.\n\n\n\n\nPreferred Qualifications\n\n\n\n\nCSSLP certification.\nCompTIA Security+ certification.\n\n\n\n\nCompensation and Work Arrangement\n\n\n\n\nAnnual salary range: $115,000–$145,000.\nWork arrangement: Remote.\nTravel: The role may require travel to a site 10–20% of the time.\n\n\n\n\nEqual Employment Opportunity\n\n\n\n\nMaximus is an equal opportunity employer. Qualified applicants are evaluated without regard to race, color, religion, sex, age, national origin, disability, veteran status, genetic information, or other legally protected characteristics.\n\n… more",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T13:58:34.867Z",
+    "sourceHash": "3c7b4d5e5afa3219508479745497ef50e4f0170c36aefe9261354cfd466c590f",
+    "company": {
+      "id": "torentify",
+      "name": "Torentify",
+      "logoUrl": "https://logo.clearbit.com/torentify.com",
+      "industry": "Technology",
+      "website": "https://torentify.com"
+    },
+    "slug": "frontend-software-developer-remote-opportunity-torentify-3c7b4d5e",
+    "aiTags": {
+      "stack": [
+        "typescript",
+        "cypress"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "bfab1aee6ccf439808e195001321da2fefcec1b895b6c9b896a23a93f0836d5b",
+    "title": "Front End Web Developer (Marketing)",
+    "applyUrl": "https://www.sundayy.com/job-description/us1820F72017C07B538B049E72907E433E",
+    "description": "About the Company\n\nAtticor is an innovative AI-powered legal services platform dedicated to transforming how lawyers deliver justice to injured individuals. By streamlining case management, medical record tracking, accounting, and marketing operations, Atticor empowers legal professionals to focus on their core expertise—practicing law. Founded by legal entrepreneurs with a proven track record in revolutionizing mass claims litigation, the company has developed advanced technology and operational infrastructure that has served over 1.5 million clients, resulting in more than $3 billion in gross recoveries. Its core systems include a Case Acquisition Engine, Decision Infrastructure, Agentic AI Workflow & Operations, and an Institutional-Grade Backbone, all designed to optimize legal processes and enhance client outcomes.\n\n\n\n\nAbout the Role\n\nAtticor Group LLC is seeking a talented Marketing Web Developer to join its dynamic marketing team. In this role, you will be responsible for building and maintaining high-converting landing pages and websites that drive client acquisition across multiple national legal brands. This is a front-end focused position, where your expertise in designing visually appealing, fast-loading, and user-friendly pages will directly impact campaign performance. You will work closely with media buyers, designers, and other stakeholders to translate creative briefs into live digital assets that meet performance benchmarks such as conversion rate and cost per signed case.\n\nThe role offers a full-time, remote working arrangement, reporting directly to the Director of Marketing. The compensation package includes an annual base salary ranging from $140,000 to $160,000, depending on experience, along with eligibility for a discretionary year-end bonus and comprehensive benefits. The ideal candidate is someone who combines pixel-perfect craft with a performance-oriented mindset, capable of delivering high-quality work rapidly and efficiently.\n\n\n\n\nQualifications\n\n4+ years of experience building production websites and landing pages with a strong portfolio of live work\nProficiency in front-end technologies including HTML, CSS, and JavaScript\nExperience working with landing page platforms such as Unbounce, Instapage, Webflow, or similar\nWordPress theme development experience, including PHP templates, custom fields, and hooks\nDeep understanding of mobile-first design principles and optimization for Core Web Vitals\nKnowledge of tracking tools including Google Tag Manager, Meta Pixel, Google Ads conversion tracking, and GA4\nExperience building and debugging web forms, including validation, spam prevention, and third-party integrations\nConversion rate optimization experience, including designing and analyzing A/B tests\nFamiliarity with version control systems such as Git and deployment workflows\nStrong communication skills for collaboration with non-technical partners\n\n\n\n\nResponsibilities\n\nDevelop and deploy high-volume landing pages for multiple campaigns across various brands\nCreate and maintain brand websites, including developing new pages, templates, and features on WordPress\nImplement and analyze A/B tests to optimize page performance and conversion rates\nEnsure all pages meet Core Web Vitals standards, focusing on mobile performance\nImplement accurate tracking through Google Tag Manager, pixels, and server-side conversion events\nTranslate Figma mockups, design briefs, and prototypes into polished, responsive, and accessible web pages\nBuild reusable components, templates, and systems to streamline future page development\nUtilize AI tools such as Claude Code to accelerate development while maintaining high standards of code quality\nCollaborate effectively with media buyers, designers, attorneys, and other stakeholders to meet project deadlines and performance goals\n\n\n\n\nBenefits\n\nCompetitive annual salary of $140,000 to $160,000, commensurate with experience\nEligible for a year-end discretionary bonus\nComprehensive health, dental, and vision insurance plans\nFlexible remote work environment\nPaid time off and holidays\nProfessional development opportunities and ongoing training\nParticipation in a forward-thinking, innovative legal technology company\n\n\n\n\nEqual Opportunity\n\nAtticor Group LLC is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate based on race, color, religion, gender, gender identity or expression, sexual orientation, national origin, age, disability, veteran status, or any other protected class under applicable law. We encourage candidates from all backgrounds to apply and join our mission to revolutionize legal services through technology.\n\n… more",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T13:58:21.681Z",
+    "sourceHash": "bfab1aee6ccf439808e195001321da2fefcec1b895b6c9b896a23a93f0836d5b",
+    "company": {
+      "id": "wiraa",
+      "name": "Wiraa",
+      "logoUrl": "https://logo.clearbit.com/wiraa.com",
+      "industry": "Technology",
+      "website": "https://wiraa.com"
+    },
+    "slug": "front-end-web-developer-marketing-wiraa-bfab1aee",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "figma",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "415625e4b7f0cfb3c689ed00033ca68a54389237bd56b1576487e24f9a7a344f",
+    "title": "Front-End Engineer",
+    "applyUrl": "https://www.adzuna.com/details/5930264007?v=2C8470B948D52642B2F5F379BA09200129EE84AE&ccd=cb5b50f913217c1d272f352e799ecf61&r=22794290&frd=1a14e6977af4f9a999d8ea8c9d698cc1&utm_source=linkedin7&utm_medium=organic&chnlid=1931&title=Front-End Engineer&a=e",
+    "description": "Neptune Retail Solutions is the unparalleled leader in omnichannel retail marketing across the U.S. and Canada. Neptune's In-Store Media network is unmatched across 60,000 locations and 140 banners, including Albertsons, CVS, Dollar General, Family Dollar, HEB, Kroger, Loblaw, Metro, Publix, Sobeys, Southeastern Grocers, Meijer, HyVee, Total Wine & More and Wakefern. Linked to its market-leading Digital Incentives Network at many of the same retailers plus BJ's and Target, along with Neptune's exclusive ability to combine in-store and Digital OOH content into a single platform with unparalleled precision, scale and proven results, the Company is \"one of one,\" uniquely positioned to seamlessly drive traffic, conversion and profitable revenue growth for retailers and advertisers. For more information, visit www.neptuneretailsolutions.com.\n\nFront-End Engineer\n\nJob Description\n\nWork closely with product, design and backend teams while driving front-end best practices and mentoring peers; design, build, and maintain scalable frontend applications using Angular v18+, JavaScript, TypeScript, and RxJS; lead the development of interactive map-based features—custom filters, multi-layer visualizations, and spatial data handling using Google Maps API.\n\nRequirements\n\nBachelor's degree in Computer Science or a related field, and 2 years of experience in the job offered or related occupation, to include two years’ experience in each of the following: Angular v18+, JavaScript, TypeScript, and RxJS; Google Maps API and map-based interface development; performance optimization, accessibility, and cross-browser support; Test automation using frameworks such as Jest, Playwright, Karma or Jasmine; Node.js, MongoDB, MySQL; GCP cloud services, Docker, and Kubernetes; build and maintain complex, scalable web applications and code quality: testing, documentation, refactoring, and maintainability.\n\nWork from home in any U.S. state is permitted.\n\nEmployer will accept any suitable combination of education, experience, and training. Experiences may have been gained concurrently.\n\nRate of pay: $103,210-$140,000 per year.\n\nThis position is eligible for company sponsored health insurance, 401k benefits, PTO days and sick time.\n\nApplicants must be able to work for any U.S. employer and not require sponsorship either now or in the future.\n\nApplicant Privacy Notice\n\nNeptune Retail Solutions is an Equal Opportunity Employer\n… more",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T13:57:58.338Z",
+    "sourceHash": "415625e4b7f0cfb3c689ed00033ca68a54389237bd56b1576487e24f9a7a344f",
+    "company": {
+      "id": "neptuneretailsolutions",
+      "name": "Neptune Retail Solutions",
+      "logoUrl": "https://logo.clearbit.com/neptuneretailsolutions.com",
+      "industry": "Technology",
+      "website": "https://neptuneretailsolutions.com"
+    },
+    "slug": "front-end-engineer-neptune-retail-solutions-415625e4",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "javascript",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "junior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "27077409d5e82077dc02f81a25fe3d7b75e93b728b1df798ebb4c5592c5c496f",
+    "title": "Frontend Software Developer",
+    "applyUrl": "https://maximus.avature.net/careers/FolderDetail/United-States-Frontend-Software-Developer-JCC2-R/44135?source=LinkedIn",
+    "description": "Requirements\n\n Description & Requirements \n\nThe Software Developer (Frontend) provides subject matter proficiency for our USAF mission. This role is responsible for providing analytical skills to support process improvement, specialized studies, and definition of requirements. Shall perform engineering tasks for front-end design and development efforts including, but not limited to, creating technical design drawings, mockups, wireframes, and other associated documentation for PMO and stakeholder review, planning and implementing modifications to GUIs, constructing and optimizing various UI elements, optimizing system navigation practices and elements, and facilitating operator ease of use for user-facing feature development.\n\n This position is remote a requires an active TS/SCI with the ability to obtain a CI Poly. \n\nMaximus TCS (Technology and Consulting Services) Internal Job Profile Code: TCS196, T4, Band 7\n\n Job-Specific Essential Duties and Responsibilities: \n\n\n Active TS/SCI with the ability to obtain a CI Poly\n 7 years of overall experience in the functional area. Bachelor's degree required (Master's may substitute for 2 years). \n 7 years of software development experience in object-oriented and scripted languages with DevSecOps, microservices, and containers tool suites. \n Demonstrated experience in preparing, conducting, and documenting various systems tests. \n 3 years of experience with bug tracking software (e.g., Jira) and testing web-based applications. \n 3 years of experience participating in software development programs or projects. \n Practical experience developing in a cloud environment. \n Experience with integrating data from unclassified to classified application deployments. \n 5 years of experience with Jenkins and GitLab. \n 5 years of experience with at least five (5) of the following: NPM, Cypress.io, esbuild, Bun, Apache Tomcat, Maven, SonarQube. \n 3 years of recent front-end web design and development experience. \n Demonstrated experience engaging in agile, user-centric application design ensuring best-of-breed UI/UX practices. \nRequired Certifications: DCWF Code: 632 Intermediate\n Role may require travel to a site 10-20% of the time. \n\n\n Preferred Skills and Qualifications: \n\n\n CSSLP, CompTIA Security+\n\n\n#techjobs #clearance #VeteransPage #DODAIRFORCE-CICD #maxcleared\n\nMinimum Requirements\n\nTCS196, T4, Band 7\n\nEEO Statement\n\nMaximus is an equal opportunity employer. We evaluate qualified applicants without regard to race, color, religion, sex, age, national origin, disability, veteran status, genetic information and other legally protected characteristics.\n\nPay Transparency\n\nMaximus compensation is based on various factors including but not limited to job location, a candidate's education, training, experience, expected quality and quantity of work, required travel (if any), external market and internal value analysis including seniority and merit systems, as well as internal pay alignment. Annual salary is just one component of Maximus's total compensation package. Other rewards may include short- and long-term incentives as well as program-specific awards. Additionally, Maximus provides a variety of benefits to employees, including health insurance coverage, life and disability insurance, a retirement savings plan, paid holidays and paid time off. Compensation ranges may differ based on contract value but will be commensurate with job duties and relevant work experience. An applicant's salary history will not be used in determining compensation. Maximus will comply with regulatory minimum wage rates and exempt salary thresholds in all instances.\n\nAccommodations\n\nMaximus provides reasonable accommodations to individuals requiring assistance during any phase of the employment process due to a disability, medical condition, or physical or mental impairment. If you require assistance at any stage of the employment process—including accessing job postings, completing assessments, or participating in interviews,—please contact People Operations at  applicantaccom@maximus.com  .\n\nMinimum Salary\n\n$\n\n115,000.00\n\nMaximum Salary\n\n$\n\n145,000.00\n… more",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T13:57:51.986Z",
+    "sourceHash": "27077409d5e82077dc02f81a25fe3d7b75e93b728b1df798ebb4c5592c5c496f",
+    "company": {
+      "id": "maximus",
+      "name": "Maximus",
+      "logoUrl": "https://logo.clearbit.com/maximus.com",
+      "industry": "Technology",
+      "website": "https://maximus.com"
+    },
+    "slug": "frontend-software-developer-maximus-27077409",
+    "aiTags": {
+      "stack": [
+        "typescript",
+        "cypress"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "555ba6c644f0368eb97b692bf13cb45bff864600926fdb6624a77ec0f9c60c2b",
+    "title": "Front End Developer",
+    "applyUrl": "https://careerspage.io/cohen-development-group/front-end-developer-co103?src=37",
+    "description": "Description\n\nCohen Development Group is seeking an Entry Level Front End Developer to join our team. This full-time, fully remote position is based in Las Vegas, and offers an excellent opportunity to build your career in front end development within the construction industry.\n\nAs a Front End Developer, you will design and build user-facing web interfaces that help teams, clients, and stakeholders manage construction projects more efficiently. You will work closely with designers and senior developers to turn requirements into responsive, accessible, and high-performing web applications.\n\nThis role offers a salary in USD on a yearly basis, along with the chance to grow your skills in a supportive, collaborative environment at a company shaping the future of construction development.\n\nResponsibilities\n\n\nDevelop responsive and user-friendly web interfaces using modern front end technologies\nTranslate design mockups and wireframes into functional, pixel-accurate code\nCollaborate with designers, back end developers, and project stakeholders to deliver features\nWrite clean, maintainable, and reusable front end code\nEnsure cross-browser compatibility and optimal performance across devices\nDebug and resolve front end issues and usability concerns\nParticipate in code reviews and incorporate feedback to improve code quality\nIntegrate APIs and data sources to support dynamic application features\nFollow web accessibility standards and best practices\nStay current with emerging front end tools, frameworks, and industry trends\n\n\nRequirements\n\n\nEntry-level experience in front end development or a related field\nProficiency in HTML, CSS, and JavaScript\nFamiliarity with at least one modern framework or library such as React, Vue, or Angular\nUnderstanding of responsive design principles and mobile-first development\nBasic knowledge of version control systems such as Git\nAbility to work independently in a fully remote environment\nStrong attention to detail and commitment to delivering quality work\nExcellent communication and collaboration skills\nPreferred: Familiarity with CSS preprocessors or utility frameworks such as Sass or Tailwind CSS\nPreferred: Interest in or exposure to construction, real estate, or project management software\n… more",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T13:57:17.361Z",
+    "sourceHash": "555ba6c644f0368eb97b692bf13cb45bff864600926fdb6624a77ec0f9c60c2b",
+    "company": {
+      "id": "cdgmauiinc",
+      "name": "CDG Maui, Inc.",
+      "logoUrl": "https://logo.clearbit.com/cdgmauiinc.com",
+      "industry": "Technology",
+      "website": "https://cdgmauiinc.com"
+    },
+    "slug": "front-end-developer-cdg-maui-inc-555ba6c6",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "css",
+        "tailwind",
+        "sass",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "540a1254d8854b72da119b46ef476d1d275aacf71f3d4d509edf52306c3346b9",
+    "title": "Front-End Engineer",
+    "applyUrl": "https://www.remotehunter.com/apply-with-ai/a55cd456-9553-4055-b076-b4efba84f74d?utm_medium=job_posting&utm_source=linkedin&utm_campaign=software_engineer&utm_category=software_engineer&utm_term=front_end_engineer",
+    "description": "About Our Client:\n\nThis organization develops consumer web experiences and the internal tools necessary to manage them. Their products include mobile-first acquisition funnels, dynamic forms and surveys, administrative tools, and reporting interfaces used across multiple brands. The team focuses on creating solutions that support multiple brands and emphasize mobile user traffic.\n\n\n\n\nAbout the Opportunity:\n\nThe FRONT-END ENGINEER role involves transforming product requirements into clear, responsive, and reliable user interfaces. This position is responsible for building and maintaining both customer-facing sites and internal applications. The engineer collaborates closely with a senior engineer providing backend services, making design decisions that impact product behavior and user experience. The role ensures that interfaces are mobile-friendly, accessible, and maintainable, contributing directly to the quality and usability of the company's web offerings.\n\n\n\n\nResponsibilities:\n\nBuild and maintain responsive customer-facing experiences and internal web applications\nCreate clear, user-friendly forms, surveys, editors, dashboards, and reusable interface components\nTranslate requirements, brand direction, and stakeholder feedback into finished interfaces\nMake thoughtful decisions about layout, typography, interaction, and responsive behavior\nCollaborate with senior engineer and stakeholders on decisions affecting product behavior or shared systems\nIntegrate backend services and data contracts into the interface\nManage loading, success, empty, validation, and failure states effectively\nBuild for mobile use, accessibility, browser compatibility, and maintainability\nTest work as a user, document results, and respond to quality assurance and code review feedback\nKeep tickets and pull requests aligned with changing requirements\nSupport production incidents as assigned by the Engineering Lead\n\n\n\n\nRequirements:\n\nProfessional experience building and shipping front-end web applications\nExperience with responsive, mobile-first web applications\nStrong knowledge of HTML, CSS, component design, forms, validation, and browser behavior\nAbility to make interface decisions without finalized designs\nExperience integrating front-end applications with APIs or database-backed services\nTrack record of owning work through implementation, testing, review, and follow-up\nClear written communication and sound judgment in seeking input\nAvailability during Eastern Time workday\n\n\n\n\nPay Range and Compensation Package:\n\n$80,000.00 - $100,000.00 USD per year (Remote (United States))\n\n\n\n\nEqual Opportunity Statement: Our client is an equal opportunity employer. They celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, or national origin.\n\n\n\n\nNote:\n\nRemoteHunter is a recruitment partner of this role. Please note that all employment decisions, including candidate assessment, interviews, hiring, compensation, and employment terms, are made exclusively by the hiring employer.\n\n… more",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T13:57:05.137Z",
+    "sourceHash": "540a1254d8854b72da119b46ef476d1d275aacf71f3d4d509edf52306c3346b9",
+    "company": {
+      "id": "remotehunter",
+      "name": "RemoteHunter",
+      "logoUrl": "https://logo.clearbit.com/remotehunter.com",
+      "industry": "Technology",
+      "website": "https://remotehunter.com"
+    },
+    "slug": "front-end-engineer-remotehunter-540a1254",
+    "aiTags": {
+      "stack": [
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "ed2a6d0783fb3c52a0b505128e2b8808604c3f42847b6a4ecf6aa9d7dcf78bb8",
     "title": "Mid Level Front End Engineer",
     "applyUrl": "https://jobicy.com/jobs/150844-mid-level-front-end-engineer",

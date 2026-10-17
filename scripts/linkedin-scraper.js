@@ -36,7 +36,7 @@ if (fs.existsSync(envPath)) {
 
 // ─── Config ───────────────────────────────────────────────────────────
 const SEARCH_QUERY = "frontend developer";
-const COUNTRIES = (process.env.COUNTRY || process.argv[2]) ? [process.env.COUNTRY || process.argv[2]] : [
+const ALL_COUNTRIES = [
   "Afghanistan",
   "Albania",
   "Algeria",
@@ -232,8 +232,26 @@ const COUNTRIES = (process.env.COUNTRY || process.argv[2]) ? [process.env.COUNTR
   "Vietnam",
   "Yemen",
   "Zambia",
-  "Zimbabwe"
 ];
+
+function resolveCountries() {
+  if (process.env.COUNTRIES) {
+    return process.env.COUNTRIES.split(',').map(s => s.trim()).filter(Boolean);
+  }
+  if (process.env.COUNTRY || process.argv[2]) {
+    const raw = process.env.COUNTRY || process.argv[2];
+    return raw.split(',').map(s => s.trim()).filter(Boolean);
+  }
+  if (process.env.MAX_COUNTRIES) {
+    const max = parseInt(process.env.MAX_COUNTRIES, 10);
+    if (!isNaN(max) && max > 0) {
+      return ALL_COUNTRIES.slice(0, max);
+    }
+  }
+  return ALL_COUNTRIES;
+}
+
+const COUNTRIES = resolveCountries();
 
 const DATA_DIR = path.join(__dirname, "..", "data");
 const DB_FILE = path.join(DATA_DIR, "jobs.json");
@@ -272,8 +290,8 @@ function generateSlug(title, company, id) {
 /**
  * Strict filtering rules:
  * 1. Title MUST have "frontend" / "front-end" / "front end"
- * 2. Title MUST NOT contain "full stack", "fullstack", "backend", "back end"
- * 3. Title or Location MUST NOT contain "hybrid", "on-site", "onsite", "relocation provided"
+ * 2. Title MUST NOT contain "full stack", "fullstack", "backend", "back end", "java", "c#", "csharp", ".net", "dotnet"
+ * 3. Title or Location MUST NOT contain "hybrid", "on-site", "onsite", "relocation provided", "in-office"
  * 4. Must not match blocked IDs/slugs
  */
 function isStrictFrontend(title, location = '', description = '', checkId = '') {
@@ -288,8 +306,8 @@ function isStrictFrontend(title, location = '', description = '', checkId = '') 
     return false;
   }
 
-  // 2. Negative filter: NO Full Stack or Backend in title
-  if (/\b(full[\s-]*stack|fullstack|back[\s-]*end|backend)\b/i.test(t)) {
+  // 2. Negative filter: NO Full Stack, Backend, Java, C#, Csharp, .NET, Dotnet, Python, Golang in title
+  if (/\b(full[\s-]*stack|fullstack|back[\s-]*end|backend|java\b|c#|csharp|\.net|dotnet|golang|embedded|devops)\b/i.test(t)) {
     return false;
   }
 
@@ -302,6 +320,14 @@ function isStrictFrontend(title, location = '', description = '', checkId = '') 
   if (location) {
     const loc = location.toLowerCase();
     if (/\b(on-site|onsite|hybrid|in-office)\b/i.test(loc)) {
+      return false;
+    }
+  }
+
+  // 5. Check description for non-frontend roles
+  if (description) {
+    const d = description.toLowerCase();
+    if (/\b(full[\s-]*stack engineer|full[\s-]*stack developer|backend engineer|backend developer|java developer|c# developer|\.net developer)\b/i.test(d)) {
       return false;
     }
   }
@@ -496,10 +522,18 @@ async function runLinkedInScraper() {
         }
         await listContainer.evaluate((el) => el.scrollTo({ top: 0 }));
         await sleep(SLOW);
+      } else {
+        // Fallback for new LinkedIn UI
+        for (let i = 0; i < 6; i++) {
+          await page.mouse.wheel(0, 400);
+          await sleep(300);
+        }
+        await page.mouse.wheel(0, -2400);
+        await sleep(SLOW);
       }
 
-      // Wait for jobs to load (support both new AI UI and classic UI)
-      const cardSelector = '[componentkey^="job-card-component-ref-"][role="button"], .job-card-container, .job-search-card, [data-job-id], .job-card-list__title';
+      // Wait for jobs to load (support new AI UI, modern cards, and classic UI)
+      const cardSelector = 'div[role="button"][componentkey]:has(figure), [componentkey^="job-card-component-ref-"][role="button"], .job-card-container, .job-search-card, [data-job-id], .job-card-list__title';
       await page.waitForSelector(cardSelector, { timeout: 10000 }).catch(() => {});
 
       // Grab cards
@@ -530,14 +564,27 @@ async function runLinkedInScraper() {
             return null;
           });
 
-          if (jobId && state.processedJobIds.includes(jobId)) {
-            continue;
-          }
-
           await card.scrollIntoViewIfNeeded();
           await sleep(SLOW);
           await card.click();
           await sleep(MEDIUM);
+
+          // If jobId wasn't on the card element before click, check current URL
+          if (!jobId) {
+            jobId = await page.evaluate(() => {
+              try {
+                const u = new URL(window.location.href);
+                return u.searchParams.get('currentJobId');
+              } catch (_) {
+                return null;
+              }
+            });
+          }
+
+          if (jobId && state.processedJobIds.includes(jobId)) {
+            console.log(`   [${i + 1}/${jobCards.length}] ⏭️  Already processed job ID ${jobId} - skipping.`);
+            continue;
+          }
 
           newJobsFoundOnPage++;
 
@@ -548,24 +595,73 @@ async function runLinkedInScraper() {
           // Extract details (supports both new AI UI and classic UI)
           const titleEl = await page.$("a[href*='/jobs/view/'], .job-details-jobs-unified-top-card__job-title, .jobs-unified-top-card__job-title, h1.t-24, h1");
           const companyEl = await page.$("a[href*='/company/'], .job-details-jobs-unified-top-card__company-name, .jobs-unified-top-card__company-name");
-          const locationEl = await page.$(".job-details-jobs-unified-top-card__bullet, .jobs-unified-top-card__bullet");
-          const descriptionEl = await page.$(".jobs-description__container, #job-details");
+          const locationEl = await page.$(".job-details-jobs-unified-top-card__bullet, .jobs-unified-top-card__bullet, .jobs-unified-top-card__workplace-type");
 
-          const title = titleEl ? (await titleEl.innerText()).trim() : "Unknown Title";
-          const company = companyEl ? (await companyEl.innerText()).trim().split('\n')[0].trim() : "Unknown Company";
-          const location = locationEl ? (await locationEl.innerText()).trim() : country;
-          const description = descriptionEl ? (await descriptionEl.innerText()).trim() : "";
+          let title = titleEl ? (await titleEl.innerText()).trim() : "";
+          let company = companyEl ? (await companyEl.innerText()).trim().split('\n')[0].trim() : "";
+          let location = locationEl ? (await locationEl.innerText()).trim() : "";
+
+          // Fallback to card text if needed
+          const cardText = await card.innerText();
+          if (!title || !company) {
+            try {
+              const cardLines = cardText.split('\n').map(s => s.trim()).filter(Boolean);
+              const filteredLines = cardLines.filter(l => !l.startsWith('Selected,') && !l.includes('Verified job'));
+              if (!title && filteredLines.length > 0) title = filteredLines[0];
+              if (!company && filteredLines.length > 1) company = filteredLines[1];
+              if (!location && filteredLines.length > 2) location = filteredLines[2];
+            } catch (_) {}
+          }
+
+          if (!title) title = "Unknown Title";
+          if (!company) company = "Unknown Company";
+          if (!location) location = country;
+
+          // Extract full job description
+          let description = "";
+          try {
+            description = await page.evaluate(() => {
+              // 1. Classic container
+              const classic = document.querySelector("#job-details, .jobs-description__container, .jobs-description-content__text");
+              if (classic && classic.innerText.trim().length > 50) return classic.innerText.trim();
+
+              // 2. 'About the job' section in modern UI
+              const allEls = Array.from(document.querySelectorAll('*'));
+              const aboutEl = allEls.find(e => (e.innerText || '').trim() === 'About the job');
+              if (aboutEl) {
+                let curr = aboutEl;
+                for (let step = 0; step < 5; step++) {
+                  if (curr.nextElementSibling && curr.nextElementSibling.innerText.trim().length > 50) {
+                    return curr.nextElementSibling.innerText.trim();
+                  }
+                  curr = curr.parentElement;
+                }
+              }
+
+              // 3. Fallback to article or main
+              const article = document.querySelector('article, main section');
+              if (article && article.innerText.trim().length > 100) return article.innerText.trim();
+              return "";
+            });
+          } catch (_) {}
 
           console.log(`\n   [${i + 1}/${jobCards.length}] ${title} @ ${company}`);
 
-          // Strict Frontend Check
+          // Strict Frontend Check (excludes fullstack, backend, java, c#, csharp, .net, onsite, hybrid)
           if (!isStrictFrontend(title, location, description, jobId || '')) {
             console.log(`       ⏭️  Skipping non-frontend or non-remote job: ${title}`);
             saveState(state);
             continue;
           }
 
-          // Check direct offsite career page link (present in new AI layout)
+          // User Requirement: "do not take easy assply ones only take the apply ones where there is careers website"
+          if (/easy\s*apply/i.test(cardText)) {
+            console.log(`       ⏭️  Easy Apply listed on card - skipping.`);
+            saveState(state);
+            continue;
+          }
+
+          // Look for direct offsite careers URL or safety/go redirect link
           let cleanUrl = null;
           const directApplyLink = await page.$('a[href*="safety/go/?url="]');
           if (directApplyLink) {
@@ -578,23 +674,49 @@ async function runLinkedInScraper() {
             }
           }
 
-          const applyButton = await page.$('.jobs-details__main-content button.jobs-apply-button, .job-details-jobs-unified-top-card__container--two-pane button.jobs-apply-button, .jobs-unified-top-card button.jobs-apply-button, .jobs-details button.jobs-apply-button, .job-details-jobs-unified-top-card__content button.jobs-apply-button, button:has-text("Apply"), a:has-text("Apply")');
-
-          if (!cleanUrl && !applyButton) {
-            cleanUrl = jobId ? `https://www.linkedin.com/jobs/view/${jobId}/` : null;
-          }
+          const applyButton = await page.$(
+            '.jobs-details__main-content button.jobs-apply-button, ' +
+            '.job-details-jobs-unified-top-card__container--two-pane button.jobs-apply-button, ' +
+            '.jobs-unified-top-card button.jobs-apply-button, ' +
+            '.jobs-details button.jobs-apply-button, ' +
+            '.job-details-jobs-unified-top-card__content button.jobs-apply-button, ' +
+            'a[href*="safety/go/?url="], ' +
+            'button:has-text("Apply"), a:has-text("Apply")'
+          );
 
           if (!cleanUrl && applyButton) {
             const buttonText = (await applyButton.innerText()).trim();
 
-            if (buttonText.toLowerCase().includes("easy apply")) {
-              cleanUrl = jobId ? `https://www.linkedin.com/jobs/view/${jobId}/` : null;
-              console.log(`       ℹ️  Easy Apply job - using public LinkedIn URL: ${cleanUrl}`);
-            } else if (buttonText.toLowerCase().includes("applied")) {
-              console.log(`       ⏭️  Found '${buttonText}' button — skipping.`);
+            if (/easy\s*apply/i.test(buttonText)) {
+              console.log(`       ⏭️  Easy Apply button detected ('${buttonText}') - skipping as requested.`);
               saveState(state);
               continue;
-            } else {
+            }
+
+            if (/applied/i.test(buttonText)) {
+              console.log(`       ⏭️  Already applied button ('${buttonText}') — skipping.`);
+              saveState(state);
+              continue;
+            }
+
+            // Check if applyButton is an <a> tag pointing to safety/go or external link
+            const btnTag = await applyButton.evaluate(el => el.tagName);
+            const btnHref = await applyButton.getAttribute("href");
+            if (btnTag === 'A' && btnHref) {
+              if (btnHref.includes("safety/go/?url=")) {
+                try {
+                  const u = new URL(btnHref);
+                  cleanUrl = u.searchParams.get("url") || btnHref;
+                } catch (_) {
+                  cleanUrl = btnHref;
+                }
+              } else if (!btnHref.includes("linkedin.com")) {
+                cleanUrl = btnHref;
+              }
+            }
+
+            // If not resolved yet, click the Apply button to catch new tab or redirect to company careers page
+            if (!cleanUrl) {
               latestNewPageUrl = null;
               await applyButton.click({ timeout: 5000 }).catch(() => {});
               await sleep(LONG);
@@ -610,7 +732,7 @@ async function runLinkedInScraper() {
                 } catch (_) {}
               } else {
                 const currentUrl = page.url();
-                if (!currentUrl.includes("linkedin.com/jobs")) {
+                if (!currentUrl.includes("linkedin.com/jobs") && !currentUrl.includes("linkedin.com/feed")) {
                   cleanUrl = currentUrl;
                   await page.goBack();
                   await sleep(MEDIUM);
@@ -635,12 +757,27 @@ async function runLinkedInScraper() {
             }
           }
 
-          if (cleanUrl && (!cleanUrl.startsWith('http') || cleanUrl.includes('application-settings'))) {
-            cleanUrl = null;
+          // Unescape / decode cleanUrl if needed
+          if (cleanUrl) {
+            try {
+              if (cleanUrl.includes("safety/go/?url=")) {
+                const u = new URL(cleanUrl);
+                cleanUrl = u.searchParams.get("url") || cleanUrl;
+              }
+              cleanUrl = decodeURIComponent(cleanUrl);
+            } catch (_) {}
           }
 
-          if (!cleanUrl) {
-            console.log(`       ⏭️  No valid URL found. Skipping.`);
+          // Strictly require external company careers website (no LinkedIn links, no Easy Apply)
+          const isValidExternalCareersUrl = cleanUrl && 
+            cleanUrl.startsWith("http") && 
+            !cleanUrl.includes("linkedin.com") && 
+            !cleanUrl.includes("application-settings");
+
+          if (!isValidExternalCareersUrl) {
+            console.log(`       ⏭️  Skipping: No external company careers website found (URL: ${cleanUrl || 'none'}).`);
+            saveState(state);
+            continue;
           }
 
           if (cleanUrl) {
@@ -694,8 +831,8 @@ async function runLinkedInScraper() {
         }
       }
 
-      if (newJobsFoundOnPage === 0) {
-        console.log(`\n       ⏭️  0 new jobs found on this page. Reached the end of results. Moving to next country.`);
+      if (jobCards.length === 0) {
+        console.log(`\n       ⏭️  0 job cards found on this page. Reached the end of results. Moving to next country.`);
         hasMorePages = false;
         continue;
       }
@@ -707,7 +844,11 @@ async function runLinkedInScraper() {
       }
 
       try {
-        const nextButton = await page.$(`button[aria-label="Page ${currentPage + 1}"], li[data-test-pagination-page-btn="${currentPage + 1}"] button`);
+        const nextButton = await page.$(
+          `button[aria-label="Page ${currentPage + 1}"], ` +
+          `li[data-test-pagination-page-btn="${currentPage + 1}"] button, ` +
+          `button:has-text("${currentPage + 1}")`
+        );
         if (nextButton) {
           await nextButton.scrollIntoViewIfNeeded();
           await sleep(SLOW);
@@ -715,7 +856,7 @@ async function runLinkedInScraper() {
           currentPage++;
           await sleep(LONG);
         } else {
-          const nextArrow = await page.$('button[aria-label="Next"], button.artdeco-pagination__button--next');
+          const nextArrow = await page.$('button[aria-label="Next"], button.artdeco-pagination__button--next, button:has-text("Next")');
           if (nextArrow && (await nextArrow.isEnabled())) {
             await nextArrow.click({ force: true, timeout: 5000 });
             currentPage++;
