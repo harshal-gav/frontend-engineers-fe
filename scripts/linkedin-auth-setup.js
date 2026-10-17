@@ -14,9 +14,18 @@
  *   node scripts/linkedin-auth-setup.js
  */
 
-import 'dotenv/config';
-import { URL } from 'url';
-import readline from 'readline';
+const fs = require('fs');
+const path = require('path');
+const { URL } = require('url');
+const readline = require('readline');
+
+// Load environment variables if present
+const envPath = path.resolve(__dirname, '../.env');
+if (fs.existsSync(envPath)) {
+  try {
+    require('dotenv').config({ path: envPath });
+  } catch (_) {}
+}
 
 const CLIENT_ID = process.env.LINKEDIN_CLIENT_ID;
 const CLIENT_SECRET = process.env.LINKEDIN_CLIENT_SECRET;

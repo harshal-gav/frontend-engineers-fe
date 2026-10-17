@@ -1,4 +1,4 @@
-name: Scrape Remote Jobs
+name: Scrape Remote Jobs (Remote APIs & LinkedIn)
 
 on:
   schedule:
@@ -27,8 +27,15 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Run Scraper (Remote APIs)
-        run: node scripts/linkedin-scraper.js
+      - name: Install Playwright browsers
+        run: npx playwright install --with-deps chromium
+      
+      - name: Run Scraper Pipeline (Remote APIs + LinkedIn)
+        env:
+          LINKEDIN_AUTH_DATA: ${{ secrets.LINKEDIN_AUTH_JSON }}
+          MAX_PAGES: "2"
+          HEADED: "false"
+        run: node scripts/scrape-all-jobs.js
 
       - name: Enrich New Jobs with Regex
         run: node scripts/enrich-jobs-ai.js

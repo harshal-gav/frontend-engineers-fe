@@ -8,8 +8,12 @@
     "start": "next start",
     "lint": "eslint",
     "linkedin:auth": "node scripts/linkedin-auth-setup.js",
+    "linkedin:login": "node scripts/linkedin-login.js",
     "linkedin:post": "node scripts/post-to-linkedin.js",
-    "linkedin:post:dry": "node scripts/post-to-linkedin.js --dry-run"
+    "linkedin:post:dry": "node scripts/post-to-linkedin.js --dry-run",
+    "scrape": "node scripts/scrape-all-jobs.js",
+    "scrape:api": "node scripts/api-scraper.js",
+    "scrape:linkedin": "node scripts/linkedin-scraper.js"
   },
   "dependencies": {
     "@dodopayments/nextjs": "^0.3.9",
