@@ -3,9 +3,9 @@
  * Automated LinkedIn Combined Poster (Job Seekers + Employer Ads + Community Referrals)
  * 
  * Generates THREE distinct posts in a SINGLE Gemini AI prompt/API call:
- *   1. Remote Frontend Developer Career Post (promoting FrontendEngineers.com)
+ *   1. Remote Frontend Jobs & Referrals Post (all in one place for devs)
  *   2. Employer Hiring Post (promoting the $99/mo Unlimited Hiring Plan)
- *   3. Community Referrals Post (marketing free referral posting & Pro referral access)
+ *   3. Community Referral Contribution Post (free referral posting to support frontend devs)
  * 
  * Then publishes ALL THREE posts to all configured LinkedIn accounts with rate-limit safe delays.
  * Runs on a schedule every 2 hours via GitHub Actions.
@@ -61,7 +61,7 @@ const GEMINI_MODELS = [
 // ─── Gemini AI Generation (Single Prompt for 3 Posts) ─────────
 
 async function generateThreePostsWithGemini() {
-  const prompt = `You are an expert social media strategist and B2B growth marketing manager for FrontendEngineers.com - the premier job board built exclusively for remote frontend developers.
+  const prompt = `You are an expert social media strategist and B2B growth marketing manager for FrontendEngineers.com - the premier platform built exclusively for remote frontend developers.
 
 Generate THREE distinct, high-converting LinkedIn posts in this exact format with the exact delimiter tags:
 
@@ -78,18 +78,20 @@ Generate THREE distinct, high-converting LinkedIn posts in this exact format wit
 ===REFERRAL_POST_END===
 
 ---
-INSTRUCTIONS FOR POST 1 (Target: Remote Frontend Developers looking for jobs):
+INSTRUCTIONS FOR POST 1 (Target: Remote Frontend Developers looking for jobs & referrals in one place):
 - POSITIVE TONE ONLY: Inspiring, uplifting, and empowering. No negative hooks like "Tired of..." or "Sick of...".
-- FIRST LINE REQUIREMENT: You MUST explicitly mention the exact phrase "Remote Frontend Developer Job" and the website "FrontendEngineers.com" in the VERY FIRST line of the post. Example: "Find your dream Remote Frontend Developer Job today at FrontendEngineers.com! 🚀"
-- CORE MESSAGE: You will find an incredible remote frontend job from this website. Emphasize remote work benefits, mastering frontend technologies like React, Next.js, Vue, and TypeScript, and how we aggregate from 100+ sources so they never miss an opportunity.
-- USE LOTS OF EMOJIS: 🚀✨🔥💻 (make it vibrant and eye-catching).
+- FIRST LINE REQUIREMENT: You MUST explicitly mention that developers can get "Remote Frontend Developer Jobs" and "Referrals" all in one place at "FrontendEngineers.com" in the VERY FIRST line of the post. Example: "Get remote frontend developer jobs and direct employee referrals all in one place at FrontendEngineers.com! 🚀"
+- CORE MESSAGE: Highlight that FrontendEngineers.com is the single destination where frontend developers can access remote job links AND direct employee referrals side-by-side. Emphasize remote work benefits, top frontend tech stacks like React, Next.js, Vue, and TypeScript, aggregated roles from 100+ top sources, and direct community referrals to help candidates bypass applicant tracking systems and land interviews faster.
+- USE LOTS OF EMOJIS: 🚀✨🔥💻🤝💼 (make it vibrant and eye-catching).
 - LINKS REQUIRED (format as plain text):
-  🔍 Find your remote frontend job:
+  🔍 Find Remote Frontend Jobs & Referrals:
   https://www.frontendengineers.com
-  ⚡ Unlock All Jobs - $9/mo:
+  🤝 Explore Community Referrals:
+  https://www.frontendengineers.com/referrals
+  ⚡ Unlock All Jobs & Referrals - $9/mo:
   https://www.frontendengineers.com/pricing
-- ENGAGEMENT: Strong call to action asking them to comment and repost to help their network.
-- HASHTAGS: 25-35 optimized hashtags (#FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #WebDev, etc.).
+- ENGAGEMENT: Strong call to action asking them to comment their tech stack and repost to help their developer friends find jobs and referrals in one place.
+- HASHTAGS: 25-35 optimized hashtags (#FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #WebDev #JobReferrals #TechCareers, etc.).
 - LENGTH: 1000 - 1800 characters.
 
 ---
@@ -108,20 +110,19 @@ INSTRUCTIONS FOR POST 2 (Target: Tech Recruiters, Startup Founders, Engineering 
 - HASHTAGS: 5-8 hashtags like #Hiring #TechRecruitment #FrontendEngineers #Startups #RemoteHiring.
 
 ---
-INSTRUCTIONS FOR POST 3 (Target: Community Referrals - Frontend Developers with referrals to give & Job Seekers):
-- FIRST LINE HOOK: Must hook readers with remote frontend job referrals and explicitly mention "FrontendEngineers.com" in the first 2 lines. Example: "Have a referral for a remote frontend role? Share it for free on FrontendEngineers.com and help an engineer get hired! 🤝"
-- VALUE PROPOSITION & HOW IT WORKS:
-  1. POST REFERRALS FOR FREE: Anyone who works at a tech company and has employee referrals for remote frontend jobs can post them 100% free with no account or fees. Give back to the engineering community.
-  2. PRO MEMBERS UNLOCK ALL REFERRALS: Pro members get direct, unlocked access to all employee referrals, verified contacts, and direct referral links so they can skip the black hole of 1,000+ applicants and get straight into the interview pipeline.
-  3. WHY REFERRALS MATTER: Referred candidates are 4x more likely to be interviewed and hired than cold applicants.
-- USE LOTS OF EMOJIS: 🤝🚀🔥💼💡✨
+INSTRUCTIONS FOR POST 3 (Target: Working Frontend Developers, Tech Leads & Engineers with referrals to give):
+- FIRST LINE HOOK: Must inspire frontend engineers to post their referrals for free to support and help fellow frontend developers, explicitly mentioning "FrontendEngineers.com" in the first 2 lines. Example: "Post your referral on FrontendEngineers.com to support remote frontend developers - it is 100% free and helps a fellow engineer get hired! 🤝"
+- CORE MESSAGE - SUPPORT & EMPOWER THE FRONTEND COMMUNITY:
+  1. POST YOUR REFERRAL TO SUPPORT REMOTE FRONTEND DEVELOPERS: If your company is hiring remote frontend engineers (React, Next.js, Vue, TypeScript), post your referral to help a fellow developer land an interview.
+  2. IT IS 100% FREE: No fees, no account required, no catch. Posting a referral is completely free to give back to the developer community.
+  3. HELP OTHER FRONTEND DEVELOPERS: The job market can be tough with 1,000+ applicants per role. A referral gives another developer a genuine shot at an interview. Pay it forward and support your peers.
+  4. FAST & SIMPLE: Takes less than 60 seconds to submit a referral on FrontendEngineers.com.
+- USE LOTS OF EMOJIS: 🤝❤️🚀🔥💼💡✨ (warm, community-spirited, and uplifting).
 - LINKS REQUIRED (format as plain text):
-  🤝 Share or Find Remote Frontend Referrals:
+  🤝 Post your referral for free to help fellow developers:
   https://www.frontendengineers.com/referrals
-  ⭐ Unlock All Referrals & 2,400+ Jobs - $9/mo:
-  https://www.frontendengineers.com/pricing
-- ENGAGEMENT: "Are you hiring or does your company have an open frontend position? Post your referral link for free on our site or drop a comment below!"
-- HASHTAGS: 15-25 targeted hashtags (#JobReferrals #FrontendDeveloper #RemoteWork #ReactJS #WebDevelopment #TechJobs #JobHunt #ReferralProgram).
+- ENGAGEMENT: "Does your company have an open frontend position? Post your referral link for free on FrontendEngineers.com or tag an engineer who can help!"
+- HASHTAGS: 15-25 targeted hashtags (#PayItForward #CommunitySupport #FrontendDeveloper #JobReferrals #TechCommunity #RemoteWork #ReactJS #WebDevelopment #SoftwareEngineering #DevelopersHelpingDevelopers).
 - LENGTH: 900 - 1600 characters.
 
 ---
@@ -261,7 +262,7 @@ async function main() {
   console.log('\n🤖 Generating 3 posts with Gemini AI (single API request)...');
   const { jobPost, employerPost, referralPost } = await generateThreePostsWithGemini();
 
-  console.log('\n📄 [1/3] Candidate Job Post:');
+  console.log('\n📄 [1/3] Remote Jobs & Referrals Post:');
   console.log('─'.repeat(60));
   console.log(sanitizeForLinkedIn(jobPost));
   console.log('─'.repeat(60));
@@ -273,7 +274,7 @@ async function main() {
   console.log('─'.repeat(60));
   console.log(`Length: ${employerPost.length} chars`);
 
-  console.log('\n📄 [3/3] Community Referrals Post:');
+  console.log('\n📄 [3/3] Community Referral Support Post:');
   console.log('─'.repeat(60));
   console.log(sanitizeForLinkedIn(referralPost));
   console.log('─'.repeat(60));
