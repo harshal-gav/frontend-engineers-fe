@@ -1,5 +1,40 @@
 [
   {
+    "id": "c1de3689ae5ad177e7e8c388e8c6110b80e59d633704ff1a7e0bdabac76a2197",
+    "title": "Senior Frontend Engineer - React",
+    "applyUrl": "https://remotefirstjobs.com/companies/fincons-group/jobs/senior-frontend-engineer-react-872109",
+    "description": "Fincons Group is an IT business consulting company that has been designing the digital future of leading companies on international markets for 40 years. Fincons Group built its reputation on foreseeing and interpreting new business models and the rapid evolution of IT systems by building a complete range of services: from research and consulting to design and development, from system integration of leading vendor software solutions right up to application management, supporting clients step by step along their digital transformation journey. Fincons is a multinational with over 2,600 people and several offices worldwide (in Italy, Switzerland, Germany, France, the United Kingdom, Belgium and the USA), but above all a Family Company where the founders play a strategic role with commitment and passion, grounding the company in the same principles of a united and caring family.\n\nWe firmly believe in the value of cooperation and in the contribution that every idea and intuition can bring. We believe that everyone’s effort can make a difference. Transforming knowledge into a strategic resource is our company mission, and we pursue it with the help of our most strategic asset: our people.\n\nFor our Zurigo Branch we are looking for a Senior Front End Engineer (React) to be part of our team.\n\nResponsibilities and Duties\n\n• Design and implement scalable and reliable web applications\n\n• Develop and maintain thought-out solutions within the team’s responsibility\n\n• Improve and optimize existing functionalities\n\n• Ensure high-quality code and performance\n\n• Work on technical innovation and continuous improvement\n\n• Knowledge sharing and support other team members in an AGILE and international environment\n\nQualifications and Skills\n\n• Bachelor&rsquo;s/Master&rsquo;s degree preferably in computer science or engineering\n\n• Proven track record in frontend development using React.js and TypeScript, with a deep understanding of modern web technologies and frameworks\n\n• Advanced practical skills with Redux, React Router, React Query, React-hook-form\n\n• Hands-on proficiency in software testing tools, such as Jest\n\n• Good understanding of HTML5, SCSS, and experience in implementing responsive UI designs\n\n• Experience with Java and REST APIs would be considered a strong plus\n\n• Good command of spoken and written English is a must, German is a strong plus\n\nLocation Requirement:\n\n• Please note that a fully remote work policy is not offered for this role\n\n• Candidates should be prepared to relocate to Switzerland\n\n• Work-from-home days may be possible according to the Client&rsquo;s policy\n\nIf interested, please apply here!\n\nOur personnel search is addressed to candidates of all genders.\n\nThe data will be processed and stored exclusively for the purposes of this or future selections, in compliance with the Federal Data Protection Law (LPD) and guaranteeing the rights referred to in art. 13 Legislative Decree 196&frasl;03 and EU regulation 679&frasl;2016 (GDPR).",
+    "location": "Remote - Switzerland",
+    "country": "Switzerland",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-15T21:10:19.000Z",
+    "sourceHash": "c1de3689ae5ad177e7e8c388e8c6110b80e59d633704ff1a7e0bdabac76a2197",
+    "company": {
+      "id": "finconsgroup",
+      "name": "Fincons Group",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/finconsgroup.com-76d7b52db0-2.webp",
+      "industry": "Technology",
+      "website": "https://finconsgroup.com"
+    },
+    "slug": "senior-frontend-engineer-react-fincons-group-c1de3689",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "sass",
+        "redux",
+        "jest",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Switzerland"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "bb6c53db1119241b9f83bb2fac8a67da8b6f78935b7e9fc51462854cee1432d1",
     "title": "Frontend Softwareentwickler (m/w/d)",
     "applyUrl": "https://www.arbeitnow.com/jobs/companies/tecfox-gmbh/frontend-softwareentwickler-berlin-250708",
