@@ -141,8 +141,8 @@ export default function PricingPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-6 w-full">
             Get Hired Faster with <span className="text-[#2563eb]">Less Competition.</span>
           </h1>
-          <p className="text-xl text-gray-600 mt-2 max-w-2xl mx-auto text-center">
-            Skip the noise. We aggregate Remote Frontend Developer roles from 100+ sources so you never miss a remote opportunity. Unlock full descriptions, 1-click apply links, and daily alerts for $9/mo.
+          <p className="text-lg sm:text-xl text-gray-600 mt-2 max-w-2xl mx-auto text-center leading-relaxed">
+            Curated remote frontend jobs from 100+ sources. Unlock 1-click apply links, exclusive community referrals, and daily alerts for $9/mo.
           </p>
         </div>
 
@@ -178,6 +178,11 @@ export default function PricingPage() {
                       <td>1-click direct apply links to company career pages</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
+                    </tr>
+                    <tr>
+                      <td>Exclusive Community Employee Referrals (Direct internal links)</td>
+                      <td className="muted-cell text-center">🔒 Pro only</td>
+                      <td className="highlight-cell text-center">✓ Full Access</td>
                     </tr>
                     <tr>
                       <td>10+ fresh jobs delivered to your inbox daily</td>
@@ -280,6 +285,12 @@ export default function PricingPage() {
                   <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                   </svg>
+                  <span><strong>Exclusive Community Referrals</strong> - direct internal employee links to bypass queues</span>
+                </li>
+                <li className="flex items-center gap-3">
+                  <svg className="w-5 h-5 text-[#2563eb] shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
+                  </svg>
                   <span>1-click apply links direct to company career pages</span>
                 </li>
                 <li className="flex items-center gap-3">
@@ -310,7 +321,7 @@ export default function PricingPage() {
                     onClick={() => router.push("/auth/signup?redirect=/pricing")}
                     className="w-full py-3 rounded-full text-white bg-[#d97706] hover:bg-[#b45309] font-bold text-lg shadow-lg shadow-orange-500/20 transition-colors"
                   >
-                    ⭐ Unlock 2,400+ Jobs - $9/mo
+                    ⭐ Unlock 2,400+ Jobs & Referrals - $9/mo
                   </button>
                 ) : (
                   <div className="flex flex-col gap-4">

@@ -127,32 +127,34 @@ export default function DashboardPage() {
       <main className="max-w-5xl mx-auto px-4 sm:px-6 py-8">
         <h1 className="text-3xl font-extrabold text-gray-900 mb-8">Your Job Search Dashboard</h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-10">
           
           {/* Pro Status */}
-          <div className="glass-card p-6 bg-white rounded-2xl border border-[#e2e2e6] shadow-sm">
-            <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <svg className="w-5 h-5 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
-              Account Status
-            </h2>
-            {isSubscribed ? (
-              <div className="bg-amber-50 text-amber-700 px-4 py-3 rounded-xl border border-amber-200">
-                <p className="font-bold mb-1">⭐ Pro Member</p>
-                <p className="text-sm text-amber-600">You have full access to all features.</p>
-              </div>
-            ) : (
-              <div className="bg-gray-50 text-gray-700 px-4 py-3 rounded-xl border border-gray-200">
-                <p className="font-bold mb-1">Free Plan</p>
-                <p className="text-sm text-gray-600 mb-3">Unlock the full FrontendEngineers experience.</p>
-                <Link href="/pricing" className="block text-center w-full bg-[#d97706] hover:bg-[#b45309] text-white px-4 py-2 rounded-lg font-bold transition-colors">
-                  Upgrade to Pro - $9/month
-                </Link>
-              </div>
-            )}
+          <div className="glass-card p-6 bg-white rounded-2xl border border-[#e2e2e6] shadow-sm flex flex-col justify-between">
+            <div>
+              <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <svg className="w-5 h-5 text-[#2563eb]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+                Account Status
+              </h2>
+              {isSubscribed ? (
+                <div className="bg-amber-50 text-amber-700 px-4 py-3 rounded-xl border border-amber-200">
+                  <p className="font-bold mb-1">⭐ Pro Member</p>
+                  <p className="text-sm text-amber-600">Full access to all jobs & community referrals.</p>
+                </div>
+              ) : (
+                <div className="bg-gray-50 text-gray-700 px-4 py-3 rounded-xl border border-gray-200">
+                  <p className="font-bold mb-1">Free Plan</p>
+                  <p className="text-sm text-gray-600 mb-3">Unlock jobs & community employee referrals.</p>
+                  <Link href="/pricing" className="block text-center w-full bg-[#d97706] hover:bg-[#b45309] text-white px-4 py-2 rounded-lg font-bold transition-colors text-sm">
+                    Upgrade - $9/mo
+                  </Link>
+                </div>
+              )}
+            </div>
           </div>
 
           {/* Job Alerts */}
-          <div className="glass-card p-6 bg-white rounded-2xl border border-[#e2e2e6] shadow-sm relative overflow-hidden">
+          <div className="glass-card p-6 bg-white rounded-2xl border border-[#e2e2e6] shadow-sm relative overflow-hidden flex flex-col justify-between">
             {!isSubscribed && (
               <div className="absolute inset-0 bg-white/80 backdrop-blur-[2px] z-10 flex flex-col items-center justify-center p-4 text-center">
                 <p className="font-bold text-gray-900 mb-1">⭐ Pro Feature</p>
@@ -160,26 +162,49 @@ export default function DashboardPage() {
                 <Link href="/pricing" className="bg-[#d97706] hover:bg-[#b45309] text-white text-xs px-4 py-1.5 rounded-full font-bold shadow-md transition-colors">Get Pro</Link>
               </div>
             )}
-            <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
-              <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
-              Daily Job Alerts
-            </h2>
-            {alert ? (
-              <div className="text-sm text-gray-700">
-                <p className="mb-2">We send you daily alerts matching:</p>
-                <div className="bg-gray-100 px-3 py-2 rounded-md font-mono text-xs mb-3">
-                  {alert.query || "Frontend"} • {alert.location || "Any Remote"}
+            <div>
+              <h2 className="text-lg font-bold text-gray-900 mb-3 flex items-center gap-2">
+                <svg className="w-5 h-5 text-gray-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                Daily Job Alerts
+              </h2>
+              {alert ? (
+                <div className="text-sm text-gray-700">
+                  <p className="mb-2">We send daily alerts matching:</p>
+                  <div className="bg-gray-100 px-3 py-2 rounded-md font-mono text-xs mb-3">
+                    {alert.query || "Frontend"} • {alert.location || "Any Remote"}
+                  </div>
+                  <button onClick={() => setShowJobAlertForm(true)} className="text-[#2563eb] hover:underline font-medium text-xs">Edit settings</button>
                 </div>
-                <button onClick={() => setShowJobAlertForm(true)} className="text-[#2563eb] hover:underline font-medium">Edit alert settings</button>
-              </div>
-            ) : (
-              <div className="text-sm text-gray-600">
-                <p className="mb-3">Get matching jobs delivered straight to your inbox daily.</p>
-                <button onClick={() => setShowJobAlertForm(true)} className="w-full border border-[#2563eb] text-[#2563eb] px-4 py-2 rounded-lg font-bold hover:bg-blue-50 transition-colors">
-                  Create Job Alert
-                </button>
-              </div>
-            )}
+              ) : (
+                <div className="text-sm text-gray-600">
+                  <p className="mb-3 text-xs">Get matching jobs delivered straight to your inbox daily.</p>
+                  <button onClick={() => setShowJobAlertForm(true)} className="w-full border border-[#2563eb] text-[#2563eb] px-3 py-1.5 rounded-lg font-bold hover:bg-blue-50 transition-colors text-xs">
+                    Create Job Alert
+                  </button>
+                </div>
+              )}
+            </div>
+          </div>
+
+          {/* Community Referrals */}
+          <div className="glass-card p-6 bg-white rounded-2xl border border-[#e2e2e6] shadow-sm flex flex-col justify-between">
+            <div>
+              <h2 className="text-lg font-bold text-gray-900 mb-2 flex items-center gap-2">
+                <span className="text-lg">🤝</span>
+                Referrals
+              </h2>
+              <p className="text-xs text-gray-600 mb-3 leading-relaxed">
+                {isSubscribed
+                  ? "Browse verified internal employee referral links from developers at top tech companies."
+                  : "Post referrals for free to help engineers, or upgrade to Pro to unlock all direct referral links."}
+              </p>
+            </div>
+            <Link
+              href="/referrals"
+              className="block text-center w-full bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-3 py-2 rounded-lg font-bold text-xs transition-colors"
+            >
+              {isSubscribed ? "Browse Referrals →" : "View & Post Referrals →"}
+            </Link>
           </div>
 
           {/* New Since Last Visit */}

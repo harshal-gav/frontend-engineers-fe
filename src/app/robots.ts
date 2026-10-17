@@ -8,7 +8,7 @@ export default function robots(): MetadataRoute.Robots {
       disallow: [
         '/admin',
         '/api/',
-        '/auth/',           // Login/signup pages — low SEO value
+        '/auth/',           // Login/signup pages - low SEO value
         '/employers/post/', // Private employer job posting flow
         '/pricing/success/', // Post-payment confirmation page
       ],

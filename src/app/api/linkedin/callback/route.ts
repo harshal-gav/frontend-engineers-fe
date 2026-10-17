@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 /**
- * LinkedIn OAuth — Step 2: Handle the callback and exchange code for token
+ * LinkedIn OAuth - Step 2: Handle the callback and exchange code for token
  * LinkedIn redirects here after user authorizes
  */
 export async function GET(request: Request) {
@@ -81,7 +81,7 @@ export async function GET(request: Request) {
 
     const expiryDays = Math.round(tokenData.expires_in / 86400);
 
-    // Display the credentials (only show to admin — this page is not linked anywhere)
+    // Display the credentials (only show to admin - this page is not linked anywhere)
     return new Response(
       `<html>
       <body style="font-family:system-ui;max-width:700px;margin:40px auto;padding:20px;background:#0a0a0a;color:white;">

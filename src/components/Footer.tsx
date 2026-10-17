@@ -11,7 +11,7 @@ export default function Footer() {
   return (
     <footer className="relative z-10 bg-[#0f172a] pt-16 pb-8 text-sm mt-20">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Bold closing statement — the last thing visitors see (Principle #4: shareable footer) */}
+        {/* Bold closing statement - the last thing visitors see (Principle #4: shareable footer) */}
         <div className="text-center mb-12 pb-12 border-b border-white/10">
           <p className="text-3xl sm:text-4xl font-extrabold text-white mb-4 leading-tight">
             2,400+ remote frontend jobs.<br />
@@ -63,6 +63,7 @@ export default function Footer() {
               <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Browse 2,400+ Jobs</a></li>
               <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link></li>
               <li><Link href="/employers/pricing" className="text-gray-400 hover:text-white transition-colors font-medium">Post a Job</Link></li>
+              <li><Link href="/referrals" className="text-gray-400 hover:text-white transition-colors">Referrals</Link></li>
               <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About</Link></li>
             </ul>
           </div>

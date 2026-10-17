@@ -40,7 +40,7 @@ export default function HTMLSitemapPage() {
           <div>
             <h2 className="text-2xl font-semibold text-gray-900 mb-4 border-b border-[#e2e2e6] pb-2">Main Pages</h2>
             <ul className="space-y-3">
-              <li><Link href="/" className="hover:text-[#2563eb]">Home — Browse Remote Frontend Jobs</Link></li>
+              <li><Link href="/" className="hover:text-[#2563eb]">Home - Browse Remote Frontend Jobs</Link></li>
               <li><Link href="/about" className="hover:text-[#2563eb]">About FrontendEngineers.com</Link></li>
               <li><Link href="/pricing" className="hover:text-[#2563eb]">Pricing / Pro Membership</Link></li>
               <li><Link href="/employers/pricing" className="hover:text-[#2563eb]">Post a Job (Employers)</Link></li>

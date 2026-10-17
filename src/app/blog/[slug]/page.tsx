@@ -9,7 +9,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
 
   return {
     title: title,
-    description: `Read "${title}" — insights and guidance on remote frontend engineering careers from FrontendEngineers.com.`,
+    description: `Read "${title}" - insights and guidance on remote frontend engineering careers from FrontendEngineers.com.`,
     alternates: {
       canonical: `/blog/${slug}`,
     },

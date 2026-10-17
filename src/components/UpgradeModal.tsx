@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
 
-export type UpgradeContext = "search" | "filters" | "details" | "apply" | "alerts" | "save";
+export type UpgradeContext = "search" | "filters" | "details" | "apply" | "alerts" | "save" | "referrals";
 
 interface UpgradeModalProps {
   isOpen: boolean;
@@ -55,6 +55,10 @@ export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalP
     save: {
       title: "Save jobs and come back later",
       desc: "Bookmark roles you want. Review and apply when you're ready.",
+    },
+    referrals: {
+      title: "Unlock exclusive employee referrals",
+      desc: "Get internal referral links from verified frontend developers at top tech companies. Bypass crowded job queues.",
     },
   };
 
@@ -108,6 +112,10 @@ export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalP
               </li>
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
+                <span><strong>Exclusive Community Referrals</strong> - direct internal referral links</span>
+              </li>
+              <li className="flex items-start gap-2">
+                <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
                 <span>1-click apply links direct to company career pages</span>
               </li>
               <li className="flex items-start gap-2">
@@ -132,7 +140,7 @@ export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalP
             }}
             className="w-full bg-[#d97706] hover:bg-[#b45309] text-white px-6 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 transition-all flex items-center justify-center gap-2"
           >
-            ⭐ Unlock All Jobs - $9/mo
+            ⭐ Unlock Jobs & Referrals - $9/mo
           </button>
           
           <p className="mt-4 text-xs text-gray-500">

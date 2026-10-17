@@ -1,4 +1,4 @@
-name: Post to LinkedIn (Jobs & Employer Ad)
+name: Post to LinkedIn (Jobs, Employer Ad & Referrals)
 
 on:
   schedule:
@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: npm install dotenv
       
-      - name: Run LinkedIn Combined Auto-Poster
+      - name: Run LinkedIn Combined Auto-Poster (Jobs, Employers & Referrals)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}

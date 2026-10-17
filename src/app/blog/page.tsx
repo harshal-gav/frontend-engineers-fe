@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Frontend Engineering Blog — Career Guides & Remote Job Tips',
+  title: 'Frontend Engineering Blog - Career Guides & Remote Job Tips',
   description: 'Guides, tips, and insights on remote frontend engineering, interviewing, and career growth. Published by FrontendEngineers.com.',
   alternates: {
     canonical: '/blog',

@@ -94,7 +94,7 @@ async function main() {
       );
 
       // If user selected a specific alert (e.g. React js, specific location):
-      // Send ONLY their specific alert — do NOT also send the default daily alert!
+      // Send ONLY their specific alert - do NOT also send the default daily alert!
       if (hasSpecificAlert) {
         alertsToSend.push({
           email: data.email,
@@ -299,7 +299,7 @@ async function main() {
             ⭐ Upgrade to FrontendEngineers Pro for advanced search, filters, full job descriptions, direct apply links and daily job alerts.
           </p>
           <a href="https://frontendengineers.com/pricing" style="display: inline-block; background-color: #d97706; color: #ffffff; padding: 12px 24px; text-decoration: none; border-radius: 30px; font-weight: bold; font-size: 16px;">
-            Get Pro — $9/month
+            Get Pro - $9/month
           </a>
         </div>
         ` : ""}

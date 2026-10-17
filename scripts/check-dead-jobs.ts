@@ -1,7 +1,7 @@
 #!/usr/bin/env npx tsx
 
 /**
- * check-dead-jobs.ts — Cron-safe dead job detection script
+ * check-dead-jobs.ts - Cron-safe dead job detection script
  *
  * Reads data/jobs.json, HEAD-requests each job's applyUrl,
  * and marks jobs as "dead" if the URL returns 404/410/gone.
@@ -90,7 +90,7 @@ async function checkUrl(
 
     return { status: response.status, isDead: false, reason: "alive" };
   } catch (error: any) {
-    // Network errors, DNS failures, etc. — don't mark as dead
+    // Network errors, DNS failures, etc. - don't mark as dead
     // (could be temporary, or our IP might be blocked)
     const reason =
       error.name === "AbortError"
@@ -201,7 +201,7 @@ async function main() {
     console.log("\n── Newly Dead Jobs ─────────────────────────");
     for (const r of newlyDead) {
       console.log(
-        `  💀 [${r.status}] "${r.title}" at ${r.company} — ${r.applyUrl}`
+        `  💀 [${r.status}] "${r.title}" at ${r.company} - ${r.applyUrl}`
       );
     }
   }
@@ -210,7 +210,7 @@ async function main() {
     console.log("\n── Errors (not marked dead) ────────────────");
     for (const r of errors.slice(0, 10)) {
       console.log(
-        `  ⚠️  [${r.reason}] "${r.title}" — ${r.applyUrl}`
+        `  ⚠️  [${r.reason}] "${r.title}" - ${r.applyUrl}`
       );
     }
     if (errors.length > 10)

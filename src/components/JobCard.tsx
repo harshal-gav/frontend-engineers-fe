@@ -132,7 +132,7 @@ export default function JobCard({
 
       {/* Main content */}
       <div className="flex-1 min-w-0 w-full flex flex-col h-full">
-        {/* Top Row: Title & Meta — always clear and visible */}
+        {/* Top Row: Title & Meta - always clear and visible */}
         <div className={`flex flex-row justify-between items-start gap-2 mb-1.5 ${isLocked ? "relative z-10" : ""}`}>
           <div className="min-w-0 flex-1 pr-2 sm:pr-4">
             <div className="flex items-start justify-between gap-2">
@@ -157,7 +157,7 @@ export default function JobCard({
               )}
             </div>
 
-            {/* Company name — visible to all users */}
+            {/* Company name - visible to all users */}
             <div className="flex items-center gap-2 mt-1.5 text-sm font-medium text-gray-500 overflow-hidden whitespace-nowrap">
               <span className="text-gray-700 font-semibold truncate shrink-0 max-w-[60%]">{job.company?.name || "Company"}</span>
 
@@ -184,7 +184,7 @@ export default function JobCard({
           </div>
         )}
 
-        {/* Description Preview — blurred for locked */}
+        {/* Description Preview - blurred for locked */}
         {isLocked ? (
           <p className="text-[13px] sm:text-sm text-gray-500 line-clamp-2 mt-2 mb-4 leading-relaxed pr-2 job-locked-blur">
             Job description preview is available for Pro members. Upgrade to see full details...
@@ -197,7 +197,7 @@ export default function JobCard({
           )
         )}
 
-        {/* Bottom Tags & Action — blurred for locked */}
+        {/* Bottom Tags & Action - blurred for locked */}
         <div className={`mt-auto pt-4 border-t border-gray-100 flex items-center justify-between gap-3 min-w-0 ${isLocked ? "job-locked-blur" : ""}`}>
           <div className="flex items-center gap-2 min-w-0">
             <span className={`badge ${remote.class} px-2.5 py-1 text-[11px] font-bold rounded-md shadow-sm flex items-center gap-1.5 w-fit max-w-full`}>

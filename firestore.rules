@@ -39,6 +39,28 @@ service cloud.firestore {
       }
     }
 
+    // ----------------------------------------------------------------------
+    // REFERRALS (Community-posted referral links)
+    // Anyone can create a referral (no auth required)
+    // Reads are done server-side via Admin SDK (API route)
+    // ----------------------------------------------------------------------
+    match /referrals/{docId} {
+      allow create: if request.resource.data.keys().hasAll(['companyName', 'roleTitle', 'referralLink', 'posterName', 'posterEmail'])
+                    && request.resource.data.companyName is string
+                    && request.resource.data.companyName.size() > 0
+                    && request.resource.data.companyName.size() <= 100
+                    && request.resource.data.roleTitle is string
+                    && request.resource.data.roleTitle.size() > 0
+                    && request.resource.data.roleTitle.size() <= 150
+                    && request.resource.data.referralLink is string
+                    && request.resource.data.referralLink.size() > 0
+                    && request.resource.data.posterName is string
+                    && request.resource.data.posterName.size() > 0
+                    && request.resource.data.posterEmail is string
+                    && request.resource.data.posterEmail.size() > 0;
+      allow read, update, delete: if false;
+    }
+
     // Block everything else
     match /{document=**} {
       allow read, write: if false;

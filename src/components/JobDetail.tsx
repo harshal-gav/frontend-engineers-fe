@@ -80,7 +80,7 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
 
       {/* ─── Job Content ──────────────────────────── */}
       <main className="max-w-4xl mx-auto px-4 sm:px-6 py-6 sm:py-10 pb-28 sm:pb-10">
-        {/* Company + Title — Title is always visible */}
+        {/* Company + Title - Title is always visible */}
         <div className="flex items-start gap-4 mb-6">
           <div
             className="w-14 h-14 sm:w-16 sm:h-16 rounded-2xl flex items-center justify-center text-gray-900 font-bold text-xl flex-shrink-0 overflow-hidden"
@@ -154,7 +154,7 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
         </div>
       )}
 
-      {/* Badges — blurred for free users */}
+      {/* Badges - blurred for free users */}
       <div className={`flex flex-wrap items-center gap-2 mb-6 ${showLocked ? "locked-content" : ""}`}>
         <span className={`badge ${remote.class} ${showLocked ? "job-locked-blur" : ""}`}>
           {remote.icon} {remote.label}
@@ -168,7 +168,7 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
       </div>
 
 
-      {/* Apply Button (Desktop) — only for Pro users */}
+      {/* Apply Button (Desktop) - only for Pro users */}
       {!showLocked && job.applyUrl && (
         <div className="hidden sm:block mb-8">
           {user ? (
@@ -191,7 +191,7 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
         </div>
       )}
 
-      {/* Description — blurred for free users */}
+      {/* Description - blurred for free users */}
       <div className="mb-8">
         <h2 className="text-lg font-semibold mb-3">Job Description</h2>
         <div className={`prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap ${showLocked ? "job-locked-blur" : ""}`}>

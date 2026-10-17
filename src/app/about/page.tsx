@@ -2,7 +2,7 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About FrontendEngineers.com — Get Hired Faster",
+  title: "About FrontendEngineers.com - Get Hired Faster",
   description: "FrontendEngineers.com is a job portal for Remote Frontend Developer jobs. With less competition, it's much easier to stand out and get hired for React, Vue, and Angular roles.",
   alternates: {
     canonical: "/about",
@@ -49,7 +49,7 @@ export default function AboutPage() {
         <div className="prose prose-base md:prose-lg max-w-none break-words overflow-hidden w-full prose-p:text-gray-700 prose-headings:text-gray-900">
           <h1 className="text-4xl font-bold mb-6">About FrontendEngineers.com</h1>
 
-          {/* What we are — Entity SEO */}
+          {/* What we are - Entity SEO */}
           <p className="text-gray-700 leading-relaxed mb-4">
             FrontendEngineers.com is a specialized job portal focused exclusively on remote frontend developer jobs. By narrowing our focus, we provide a platform with significantly less competition, making it much easier for you to land your next role.
           </p>

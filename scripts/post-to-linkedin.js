@@ -1,22 +1,23 @@
 #!/usr/bin/env node
 /**
- * Automated LinkedIn Combined Poster (Job Seekers + Employer Ads)
+ * Automated LinkedIn Combined Poster (Job Seekers + Employer Ads + Community Referrals)
  * 
- * Generates TWO distinct posts in a SINGLE Gemini AI prompt/API call:
+ * Generates THREE distinct posts in a SINGLE Gemini AI prompt/API call:
  *   1. Remote Frontend Developer Career Post (promoting FrontendEngineers.com)
  *   2. Employer Hiring Post (promoting the $99/mo Unlimited Hiring Plan)
+ *   3. Community Referrals Post (marketing free referral posting & Pro referral access)
  * 
- * Then publishes BOTH posts to all configured LinkedIn accounts with a rate-limit safe delay.
+ * Then publishes ALL THREE posts to all configured LinkedIn accounts with rate-limit safe delays.
  * Runs on a schedule every 2 hours via GitHub Actions.
  * 
  * Environment variables required:
- *   GEMINI_API_KEY          — Google Gemini API key
- *   LINKEDIN_ACCESS_TOKEN   — LinkedIn OAuth2 access token
- *   LINKEDIN_PERSON_ID      — LinkedIn Person URN ID (optional)
- *   LINKEDIN_ORG_ID         — LinkedIn Organization URN ID (optional)
+ *   GEMINI_API_KEY          - Google Gemini API key
+ *   LINKEDIN_ACCESS_TOKEN   - LinkedIn OAuth2 access token
+ *   LINKEDIN_PERSON_ID      - LinkedIn Person URN ID (optional)
+ *   LINKEDIN_ORG_ID         - LinkedIn Organization URN ID (optional)
  * 
  * Flags:
- *   --dry-run    — Generate both posts but don't publish to LinkedIn
+ *   --dry-run    - Generate all three posts but don't publish to LinkedIn
  * 
  * Usage:
  *   node scripts/post-to-linkedin.js
@@ -57,12 +58,12 @@ const GEMINI_MODELS = [
   'gemini-2.5-flash-lite'
 ];
 
-// ─── Gemini AI Generation (Single Prompt for Both Posts) ─────
+// ─── Gemini AI Generation (Single Prompt for 3 Posts) ─────────
 
-async function generateBothPostsWithGemini() {
+async function generateThreePostsWithGemini() {
   const prompt = `You are an expert social media strategist and B2B growth marketing manager for FrontendEngineers.com - the premier job board built exclusively for remote frontend developers.
 
-Generate TWO distinct, high-converting LinkedIn posts in this exact format with the exact delimiter tags:
+Generate THREE distinct, high-converting LinkedIn posts in this exact format with the exact delimiter tags:
 
 ===JOB_POST_START===
 [Full text of Post 1 here]
@@ -71,6 +72,10 @@ Generate TWO distinct, high-converting LinkedIn posts in this exact format with 
 ===EMPLOYER_POST_START===
 [Full text of Post 2 here]
 ===EMPLOYER_POST_END===
+
+===REFERRAL_POST_START===
+[Full text of Post 3 here]
+===REFERRAL_POST_END===
 
 ---
 INSTRUCTIONS FOR POST 1 (Target: Remote Frontend Developers looking for jobs):
@@ -103,7 +108,24 @@ INSTRUCTIONS FOR POST 2 (Target: Tech Recruiters, Startup Founders, Engineering 
 - HASHTAGS: 5-8 hashtags like #Hiring #TechRecruitment #FrontendEngineers #Startups #RemoteHiring.
 
 ---
-CRITICAL RULES FOR BOTH POSTS:
+INSTRUCTIONS FOR POST 3 (Target: Community Referrals - Frontend Developers with referrals to give & Job Seekers):
+- FIRST LINE HOOK: Must hook readers with remote frontend job referrals and explicitly mention "FrontendEngineers.com" in the first 2 lines. Example: "Have a referral for a remote frontend role? Share it for free on FrontendEngineers.com and help an engineer get hired! 🤝"
+- VALUE PROPOSITION & HOW IT WORKS:
+  1. POST REFERRALS FOR FREE: Anyone who works at a tech company and has employee referrals for remote frontend jobs can post them 100% free with no account or fees. Give back to the engineering community.
+  2. PRO MEMBERS UNLOCK ALL REFERRALS: Pro members get direct, unlocked access to all employee referrals, verified contacts, and direct referral links so they can skip the black hole of 1,000+ applicants and get straight into the interview pipeline.
+  3. WHY REFERRALS MATTER: Referred candidates are 4x more likely to be interviewed and hired than cold applicants.
+- USE LOTS OF EMOJIS: 🤝🚀🔥💼💡✨
+- LINKS REQUIRED (format as plain text):
+  🤝 Share or Find Remote Frontend Referrals:
+  https://www.frontendengineers.com/referrals
+  ⭐ Unlock All Referrals & 2,400+ Jobs - $9/mo:
+  https://www.frontendengineers.com/pricing
+- ENGAGEMENT: "Are you hiring or does your company have an open frontend position? Post your referral link for free on our site or drop a comment below!"
+- HASHTAGS: 15-25 targeted hashtags (#JobReferrals #FrontendDeveloper #RemoteWork #ReactJS #WebDevelopment #TechJobs #JobHunt #ReferralProgram).
+- LENGTH: 900 - 1600 characters.
+
+---
+CRITICAL RULES FOR ALL THREE POSTS:
 - NO MARKDOWN: Absolutely NO **bold**, NO *italics*, NO backticks.
 - NO PARENTHESES: DO NOT use parentheses anywhere in the text. LinkedIn API silently truncates posts at '('. Use dashes or commas instead.
 - Output ONLY the requested delimiters and posts, nothing else.`;
@@ -121,7 +143,7 @@ CRITICAL RULES FOR BOTH POSTS:
               contents: [{ parts: [{ text: prompt }] }],
               generationConfig: {
                 temperature: 0.85,
-                maxOutputTokens: 4096,
+                maxOutputTokens: 6000,
               },
             }),
           }
@@ -134,7 +156,6 @@ CRITICAL RULES FOR BOTH POSTS:
             await new Promise(r => setTimeout(r, 6000));
             continue;
           }
-          // Break to next model on 429 or fatal error
           break;
         }
 
@@ -145,32 +166,33 @@ CRITICAL RULES FOR BOTH POSTS:
           break;
         }
 
-        // Extract both posts using delimiters
+        // Extract all three posts using delimiters
         const jobMatch = text.match(/===JOB_POST_START===([\s\S]*?)===JOB_POST_END===/);
         const empMatch = text.match(/===EMPLOYER_POST_START===([\s\S]*?)===EMPLOYER_POST_END===/);
+        const refMatch = text.match(/===REFERRAL_POST_START===([\s\S]*?)===REFERRAL_POST_END===/);
 
-        const jobPost = jobMatch ? jobMatch[1].trim() : null;
-        const employerPost = empMatch ? empMatch[1].trim() : null;
+        let jobPost = jobMatch ? jobMatch[1].trim() : null;
+        let employerPost = empMatch ? empMatch[1].trim() : null;
+        let referralPost = refMatch ? refMatch[1].trim() : null;
 
-        if (!jobPost || !employerPost) {
+        if (!jobPost || !employerPost || !referralPost) {
           console.warn(`   ⚠️ Delimiters not cleanly matched. Trying fallback extraction...`);
-          // Fallback if delimiters were slightly malformed
           const parts = text.split(/===+.*POST.*===+/i).filter(p => p.trim().length > 100);
-          if (parts.length >= 2) {
-            return {
-              jobPost: parts[0].trim(),
-              employerPost: parts[1].trim()
-            };
+          if (parts.length >= 3) {
+            jobPost = parts[0].trim();
+            employerPost = parts[1].trim();
+            referralPost = parts[2].trim();
+          } else {
+            continue;
           }
+        }
+
+        if (jobPost.length < 300 || employerPost.length < 200 || referralPost.length < 200) {
+          console.warn(`   ⚠️ One of the posts was too short. Retrying...`);
           continue;
         }
 
-        if (jobPost.length < 300 || employerPost.length < 200) {
-          console.warn(`   ⚠️ One of the posts was too short (job: ${jobPost.length}, emp: ${employerPost.length}). Retrying...`);
-          continue;
-        }
-
-        return { jobPost, employerPost };
+        return { jobPost, employerPost, referralPost };
       } catch (err) {
         console.warn(`   ⚠️ Exception calling Gemini model ${model}: ${err.message}`);
       }
@@ -231,28 +253,34 @@ async function postToLinkedIn(text, authorUrn, accessToken) {
 // ─── Main ────────────────────────────────────────────────────
 
 async function main() {
-  console.log('🚀 LinkedIn Combined Auto-Poster (Job + Employer Ad)');
+  console.log('🚀 LinkedIn Combined Auto-Poster (Job + Employer Ad + Community Referrals)');
   console.log('═'.repeat(60));
-  if (DRY_RUN) console.log('⚠️  DRY RUN MODE — will not publish to LinkedIn\n');
+  if (DRY_RUN) console.log('⚠️  DRY RUN MODE - will not publish to LinkedIn\n');
 
-  // 1. Generate both posts in a SINGLE Gemini AI call
-  console.log('\n🤖 Generating BOTH posts with Gemini AI (single API request)...');
-  const { jobPost, employerPost } = await generateBothPostsWithGemini();
+  // 1. Generate all 3 posts in a SINGLE Gemini AI call
+  console.log('\n🤖 Generating 3 posts with Gemini AI (single API request)...');
+  const { jobPost, employerPost, referralPost } = await generateThreePostsWithGemini();
 
-  console.log('\n📄 [1/2] Candidate Job Post:');
+  console.log('\n📄 [1/3] Candidate Job Post:');
   console.log('─'.repeat(60));
   console.log(sanitizeForLinkedIn(jobPost));
   console.log('─'.repeat(60));
   console.log(`Length: ${jobPost.length} chars`);
 
-  console.log('\n📄 [2/2] Employer Ad Post:');
+  console.log('\n📄 [2/3] Employer Ad Post:');
   console.log('─'.repeat(60));
   console.log(sanitizeForLinkedIn(employerPost));
   console.log('─'.repeat(60));
   console.log(`Length: ${employerPost.length} chars`);
 
+  console.log('\n📄 [3/3] Community Referrals Post:');
+  console.log('─'.repeat(60));
+  console.log(sanitizeForLinkedIn(referralPost));
+  console.log('─'.repeat(60));
+  console.log(`Length: ${referralPost.length} chars`);
+
   if (DRY_RUN) {
-    console.log('\n✅ DRY RUN complete. Both posts successfully generated with 1 API call!');
+    console.log('\n✅ DRY RUN complete. All 3 posts successfully generated with 1 API call!');
     return;
   }
 
@@ -290,7 +318,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`\n📤 Publishing to ${accounts.length} LinkedIn account(s)...`);
+  console.log(`\n📤 Publishing 3 posts to ${accounts.length} LinkedIn account(s)...`);
 
   let totalPublished = 0;
 
@@ -307,7 +335,7 @@ async function main() {
     for (const target of targets) {
       // 1. Post Candidate Job Post
       try {
-        console.log(`\n   [1/2] Posting Candidate Job Post to ${target.type} (${target.urn})...`);
+        console.log(`\n   [1/3] Posting Candidate Job Post to ${target.type} (${target.urn})...`);
         const res1 = await postToLinkedIn(jobPost, target.urn, acc.token);
         console.log(`   ✅ Posted Job Post! Post ID: ${res1.postId}`);
         totalPublished++;
@@ -321,12 +349,26 @@ async function main() {
 
       // 2. Post Employer Ad
       try {
-        console.log(`   [2/2] Posting Employer Ad to ${target.type} (${target.urn})...`);
+        console.log(`   [2/3] Posting Employer Ad to ${target.type} (${target.urn})...`);
         const res2 = await postToLinkedIn(employerPost, target.urn, acc.token);
         console.log(`   ✅ Posted Employer Ad! Post ID: ${res2.postId}`);
         totalPublished++;
       } catch (err) {
         console.error(`   ❌ Failed to post Employer Ad to ${target.type}: ${err.message}`);
+      }
+
+      // Safety delay between posts
+      console.log('   ⏳ Waiting 15s before posting Community Referrals Post...');
+      await new Promise(r => setTimeout(r, 15000));
+
+      // 3. Post Community Referrals Post
+      try {
+        console.log(`   [3/3] Posting Community Referrals Post to ${target.type} (${target.urn})...`);
+        const res3 = await postToLinkedIn(referralPost, target.urn, acc.token);
+        console.log(`   ✅ Posted Community Referrals Post! Post ID: ${res3.postId}`);
+        totalPublished++;
+      } catch (err) {
+        console.error(`   ❌ Failed to post Community Referrals Post to ${target.type}: ${err.message}`);
       }
     }
   }

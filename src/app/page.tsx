@@ -150,19 +150,16 @@ export default async function HomePage() {
               <span className="text-[#2563eb]">Developer jobs</span>
             </h1>
             <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
-              Skip the noise. We aggregate Remote Frontend Developer roles from 100+ sources so you never miss a remote opportunity.
+              Skip the noise. We aggregate remote frontend roles from 100+ sources and verified employee referrals so you get hired faster.
             </p>
-
-
 
             <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
               <Link
                 href="/pricing"
                 className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
               >
-                ⭐ Unlock All Jobs - $9/mo
+                ⭐ Unlock All Jobs & Referrals - $9/mo
               </Link>
-
             </div>
             <div className="flex justify-center w-full max-w-2xl mx-auto mb-4 sm:mb-6">
               <div className="w-full bg-white border border-[#e2e2e6] rounded-full h-12 sm:h-[54px] skeleton" />

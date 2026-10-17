@@ -10,7 +10,7 @@ interface BottomSheetProps {
 }
 
 /**
- * BottomSheet — slides up from bottom on mobile.
+ * BottomSheet - slides up from bottom on mobile.
  *
  * Design decisions:
  * - 44px drag handle area for easy thumb grip

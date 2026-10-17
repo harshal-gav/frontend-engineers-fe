@@ -1,7 +1,7 @@
 import { NextResponse } from 'next/server';
 
 /**
- * LinkedIn OAuth — Step 1: Redirect user to LinkedIn authorization
+ * LinkedIn OAuth - Step 1: Redirect user to LinkedIn authorization
  * Visit: https://www.frontendengineers.com/api/linkedin/auth
  */
 export async function GET() {

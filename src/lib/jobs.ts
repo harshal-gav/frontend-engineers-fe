@@ -42,7 +42,7 @@ export interface Job {
 }
 
 /**
- * Teaser version of a job — fields that free users can see.
+ * Teaser version of a job - fields that free users can see.
  * The applyUrl and salary fields are securely masked on the server so they cannot be inspected in the network tab.
  */
 export type TeaserJob = Omit<Job, "applyUrl" | "location" | "country"> & {

@@ -90,18 +90,18 @@ export async function generateMetadata({
   const locationStr = job.country ? ` in ${job.country}` : "";
 
   return {
-    title: `${job.title} at ${companyName} — Remote${locationStr}`,
+    title: `${job.title} at ${companyName} - Remote${locationStr}`,
     description:
       job.description?.substring(0, 155).replace(/\n/g, ' ').trim() ||
-      `Apply for ${job.title} at ${companyName} — remote frontend developer position on FrontendEngineers.com.`,
+      `Apply for ${job.title} at ${companyName} - remote frontend developer position on FrontendEngineers.com.`,
     alternates: {
       canonical: `/jobs/${slug}`,
     },
     openGraph: {
-      title: `${job.title} at ${companyName} — Remote Frontend Job`,
+      title: `${job.title} at ${companyName} - Remote Frontend Job`,
       description:
         job.description?.substring(0, 155).replace(/\n/g, ' ').trim() ||
-        `Apply for ${job.title} at ${companyName} — remote position.`,
+        `Apply for ${job.title} at ${companyName} - remote position.`,
       type: "website",
       url: `https://www.frontendengineers.com/jobs/${slug}`,
     },
@@ -192,7 +192,7 @@ export default async function JobDetailPage({
 
   // Build JobPosting JSON-LD structured data for SEO
   // Note: we include public info (title, remote type, employment type)
-  // but NOT gated info (apply URL, salary) — those are premium.
+  // but NOT gated info (apply URL, salary) - those are premium.
   const skills = extractSkills(job.title);
 
   const jsonLd = {

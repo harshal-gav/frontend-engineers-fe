@@ -235,7 +235,7 @@ export default function JobsClientPage() {
       });
     }
 
-    // Framework filter — use AI tags if available, fallback to text search
+    // Framework filter - use AI tags if available, fallback to text search
     if (filters.framework.length > 0) {
       filtered = filtered.filter((j) => {
         if (j.aiTags?.stack && j.aiTags.stack.length > 0) {
@@ -518,6 +518,13 @@ export default function JobsClientPage() {
                 </Link>
 
                 <Link
+                  href="/referrals"
+                  className="text-xs sm:text-sm bg-emerald-50 text-emerald-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold hover:bg-emerald-100 transition-colors flex items-center justify-center shrink-0 border border-emerald-200"
+                >
+                  Referrals
+                </Link>
+
+                <Link
                   href="/dashboard"
                   className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold hover:bg-gray-200 transition-colors flex items-center justify-center shrink-0"
                 >
@@ -565,6 +572,12 @@ export default function JobsClientPage() {
                   Post a Job
                 </Link>
                 <Link
+                  href="/referrals"
+                  className="text-xs sm:text-sm bg-emerald-50 text-emerald-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold hover:bg-emerald-100 transition-colors flex items-center justify-center shrink-0 border border-emerald-200"
+                >
+                  Referrals
+                </Link>
+                <Link
                   href="/dashboard"
                   className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold hover:bg-gray-200 transition-colors flex items-center justify-center shrink-0"
                 >
@@ -598,21 +611,29 @@ export default function JobsClientPage() {
           Remote Frontend{" "}
           <span className="text-[#2563eb]">Developer jobs</span>
         </h1>
-        <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
-          Skip the noise. We aggregate Remote Frontend Developer roles from 100+ sources so you never miss a remote opportunity.
+        <p className="text-sm sm:text-base max-w-2xl mx-auto mb-3 text-gray-600">
+          Skip the noise. We aggregate remote frontend roles from 100+ sources and verified employee referrals so you get hired faster.
         </p>
 
-
+        <div className="mb-4">
+          <Link
+            href="/referrals"
+            className="inline-flex items-center gap-1.5 bg-[#eff6ff] hover:bg-[#dbeafe] text-[#2563eb] border border-[#bfdbfe] px-3.5 py-1 rounded-full text-xs font-bold transition-all shadow-sm group"
+          >
+            <span>🤝 Community Referrals:</span>
+            <span className="font-normal text-blue-700">Post free or unlock with Pro</span>
+            <span className="group-hover:translate-x-0.5 transition-transform">→</span>
+          </Link>
+        </div>
 
         {!isSubscribed && (
-          <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">
+          <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-1">
             <Link
               href="/pricing"
               className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
             >
-              ⭐ Unlock All Jobs - $9/mo
+              ⭐ Unlock All Jobs & Referrals - $9/mo
             </Link>
-
           </div>
         )}
 
@@ -684,7 +705,7 @@ export default function JobsClientPage() {
               </button>
             </div>
 
-            {/* Job Cards — responsive grid */}
+            {/* Job Cards - responsive grid */}
             <div className="relative">
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                 {!dataLoaded
