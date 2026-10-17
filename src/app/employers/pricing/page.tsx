@@ -101,7 +101,7 @@ export default function EmployerPricingPage() {
             ) : (
               <Link
                 href="/auth/login?redirect=/employers/pricing"
-                className="text-xs sm:text-sm bg-[#2563eb] text-white px-3 sm:px-4 py-1.5 rounded-full font-bold hover:bg-[#1d4ed8] transition-colors"
+                className="text-xs sm:text-sm bg-gray-100 text-gray-700 px-3 py-1.5 rounded-full font-bold hover:bg-gray-200 transition-colors"
               >
                 Sign In
               </Link>
