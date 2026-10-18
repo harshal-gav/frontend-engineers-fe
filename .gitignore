@@ -39,4 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# auth sessions
 linkedin-auth.json
+twitter-auth.json
+data/linkedin-auth.json
+data/twitter-auth.json

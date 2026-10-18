@@ -1,0 +1,37 @@
+name: Post to Twitter/X (Jobs, Employer Ad & Referrals)
+
+on:
+  schedule:
+    # Run every 2 hours in a day
+    - cron: '0 */2 * * *'
+  workflow_dispatch: {}  # Manual trigger for testing
+
+jobs:
+  post-to-twitter:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+      
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+      
+      - name: Install dependencies
+        run: npm ci
+      
+      - name: Install Playwright Chromium
+        run: npx playwright install --with-deps chromium
+      
+      - name: Run Twitter/X Combined Auto-Poster (Jobs, Employers & Referrals)
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TWITTER_AUTH_JSON: ${{ secrets.TWITTER_AUTH_JSON }}
+        run: node scripts/post-to-twitter.js

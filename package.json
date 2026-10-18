@@ -11,6 +11,12 @@
     "linkedin:login": "node scripts/linkedin-login.js",
     "linkedin:post": "node scripts/post-to-linkedin.js",
     "linkedin:post:dry": "node scripts/post-to-linkedin.js --dry-run",
+    "twitter:login": "node scripts/twitter-login.js",
+    "twitter:post": "node scripts/post-to-twitter.js",
+    "twitter:post:headed": "node scripts/post-to-twitter.js --headed",
+    "twitter:post:dry": "node scripts/post-to-twitter.js --dry-run",
+    "post:all": "node scripts/post-all-socials.js",
+    "post:all:dry": "node scripts/post-all-socials.js --dry-run",
     "scrape": "node scripts/scrape-all-jobs.js",
     "scrape:api": "node scripts/api-scraper.js",
     "scrape:linkedin": "node scripts/linkedin-scraper.js"
