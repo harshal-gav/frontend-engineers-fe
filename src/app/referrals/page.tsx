@@ -20,7 +20,6 @@ interface Referral {
   isLocked?: boolean;
 }
 
-
 // ─── Tech Stack Suggestions ──────────────────────────────
 
 const TECH_SUGGESTIONS = [
@@ -607,7 +606,6 @@ export default function ReferralsPage() {
   };
 
   const totalReferrals = referrals.length;
-  const lockedCount = isSubscribed ? 0 : totalReferrals;
 
   return (
     <div className="min-h-screen bg-[#f8fafc] w-full max-w-full overflow-x-clip">
@@ -729,15 +727,21 @@ export default function ReferralsPage() {
       {/* ─── Stats Bar ──────────────────────────── */}
       <div className="bg-white border-b border-[#e2e2e6]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
-          <p className="text-sm text-gray-600">
-            <span className="font-bold text-gray-900">{totalReferrals}</span>{" "}
-            referral{totalReferrals !== 1 ? "s" : ""} available
-            {lockedCount > 0 && (
-              <span className="text-[#d97706] ml-2 font-semibold">
-                · {lockedCount} locked (Pro members only)
+          {isSubscribed ? (
+            <p className="text-sm text-gray-600">
+              <span className="font-bold text-gray-900">{totalReferrals}</span>{" "}
+              referral{totalReferrals !== 1 ? "s" : ""} available
+            </p>
+          ) : (
+            <p className="text-sm text-gray-600">
+              <span className="font-semibold text-gray-900">
+                Community Referrals
               </span>
-            )}
-          </p>
+              <span className="text-[#d97706] ml-2 font-semibold">
+                · Pro members only
+              </span>
+            </p>
+          )}
           <button
             onClick={() => {
               setShowForm(true);
@@ -795,36 +799,76 @@ export default function ReferralsPage() {
             ))}
           </div>
         ) : referrals.length === 0 ? (
-          <div className="text-center py-16">
-            <div className="w-20 h-20 bg-[#eff6ff] rounded-full flex items-center justify-center mx-auto mb-5">
-              <svg
-                className="w-10 h-10 text-[#2563eb]"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
+          isSubscribed ? (
+            <div className="text-center py-16">
+              <div className="w-20 h-20 bg-[#eff6ff] rounded-full flex items-center justify-center mx-auto mb-5">
+                <svg
+                  className="w-10 h-10 text-[#2563eb]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </div>
+              <h2 className="text-xl font-bold text-gray-900 mb-2">
+                No referrals yet
+              </h2>
+              <p className="text-gray-500 mb-6 max-w-sm mx-auto">
+                Be the first to share a referral and help fellow frontend
+                engineers land their dream remote job!
+              </p>
+              <button
+                onClick={() => setShowForm(true)}
+                className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-blue-500/20 transition-all"
               >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={1.5}
-                  d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                />
-              </svg>
+                Post the First Referral
+              </button>
             </div>
-            <h2 className="text-xl font-bold text-gray-900 mb-2">
-              No referrals yet
-            </h2>
-            <p className="text-gray-500 mb-6 max-w-sm mx-auto">
-              Be the first to share a referral and help fellow frontend
-              engineers land their dream remote job!
-            </p>
-            <button
-              onClick={() => setShowForm(true)}
-              className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-blue-500/20 transition-all"
-            >
-              Post the First Referral
-            </button>
-          </div>
+          ) : (
+            <div className="text-center py-16">
+              <div className="w-20 h-20 bg-[#eff6ff] rounded-full flex items-center justify-center mx-auto mb-5">
+                <svg
+                  className="w-10 h-10 text-[#2563eb]"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={1.5}
+                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
+                  />
+                </svg>
+              </div>
+              <h2 className="text-xl font-bold text-gray-900 mb-2">
+                Community Referrals
+              </h2>
+              <p className="text-gray-500 mb-6 max-w-md mx-auto">
+                Verified employee referrals from top tech companies will appear here for Pro members. Have an open role at your company? Share a referral to support fellow frontend developers!
+              </p>
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
+                <button
+                  onClick={() => setShowForm(true)}
+                  className="w-full sm:w-auto bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-blue-500/20 transition-all"
+                >
+                  Share a Referral - Free
+                </button>
+                <Link
+                  href="/pricing"
+                  className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-orange-500/20 transition-all"
+                >
+                  ⭐ Get Pro Access
+                </Link>
+              </div>
+            </div>
+          )
         ) : (
           <>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -845,7 +889,7 @@ export default function ReferralsPage() {
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#fffbeb]/50 pointer-events-none" />
                 <div className="relative z-10">
                   <p className="text-2xl font-extrabold text-gray-900 mb-2">
-                    ⭐ Unlock All {totalReferrals} Referrals
+                    ⭐ Unlock All Referrals
                   </p>
                   <p className="text-sm text-gray-600 mb-6 max-w-md mx-auto">
                     Pro members get full access to every referral link, direct
