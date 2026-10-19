@@ -1,5 +1,67 @@
 [
   {
+    "id": "d391e43342be1750652910ea83abcc072d7230de9f32bc364615e8433cf944a7",
+    "title": "Senior Frontend Engineer (m/f/x)",
+    "applyUrl": "https://www.arbeitnow.com/jobs/companies/makersite-gmbh/remote-senior-frontend-engineer-berlin-338888",
+    "description": "Senior Frontend Engineer (m/f/x) \n\nLocation: EU/UK \n\n(Remote) \n\nWho You’ll Work For:  \n\nAt Makersite, we're pioneering the future of sustainable product development and digital collaboration. As a leading platform for product lifecycle management (PLM), we empower companies to make smarter, more sustainable decisions across their entire supply chain. Our cutting-edge software enables teams to design, prototype, and manufacture with transparency, efficiency, and responsibility—reducing environmental impact while optimizing performance. \n\nWe're a fast-growing, innovative company that thrives on creativity, collaboration, and continuous learning. If you're passionate about technology, sustainability, and creating meaningful impact, we’d love to hear from you. Join us and be a part of shaping the future of manufacturing and product innovation. \n\nWho we're looking for:  \n\nAs part of our growing team, you will play a key role in shaping the future of sustainable product development. We’re looking for innovative, driven Frontend Engineers who are passionate about technology and sustainability to join us in building tools that enable companies to make smarter, more responsible decisions. In this role, you’ll have the opportunity to collaborate with talented professionals, contribute to cutting-edge projects, and help drive the digital transformation of industries worldwide. If you're ready to make an impact and contribute to meaningful change, we want to hear from you! \n\nThis role is a fixed, permanent position. All successful applicants will receive a permanent employment contract regardless of location.  \n\n The role:  \n\n• Frontend Feature Development: Design, develop and maintain frontend features and functionalities across the company's platform, delivering intuitive and reliable user experiences. \n\n• Angular Ownership: Take ownership of the Angular codebase, driving its ongoing development, maintenance and technical direction. \n\n• Frontend Architecture & Standards: Lead frontend architectural decisions and establish scalable patterns, reusable components and consistent development practices. \n\n• Design Systems & Component Libraries: Develop and maintain shared UI components and design systems to improve consistency, accessibility and development efficiency across the platform. \n\n• Testing & Code Quality: Implement automated tests, including unit, integration and end-to-end testing, to ensure application reliability and maintainability. \n\n• Performance & Maintenance: Investigate and resolve bugs, optimise frontend performance and continuously improve existing functionality. \n\n• Product Collaboration: Work closely with the Product Owner and engineering team to translate product requirements and domain logic into clear technical solutions. \n\n• Cross-Functional Delivery: Contribute to product development across different areas of the business, collaborating with backend and frontend engineers to deliver agreed roadmap priorities. \n\n• Technical Problem-Solving: Navigate an evolving codebase, investigate existing implementations and work independently to solve complex technical and product challenges. \n\n• Continuous Improvement: Identify opportunities to improve development workflows, technical practices and the overall quality and scalability of the platform. \n\n • Frontend Development: Several years of professional frontend development experience, with strong hands-on expertise in Angular, preferably version 17 or later. \n\n• Angular Expertise: Comfortable working with the Angular Signals API, RxJS and observable patterns, and modern Angular development practices. \n\n• Frontend Architecture: Experience making frontend architectural decisions, establishing coding standards and maintaining scalable, maintainable applications. \n\n• Component Libraries & Design Systems: Experience building and maintaining design systems and reusable component libraries, including applying smart/dumb component patterns. \n\n• Reusable & Accessible Components: Experience building accessible, reusable UI components using Angular Material or equivalent component libraries. \n\n• Automated Testing: Experience writing and maintaining unit, integration and end-to-end tests, including hands-on experience with Playwright. \n\n• Product Engineering: Ability to translate product requirements and domain logic into effective user experiences and reliable functionality. \n\n• Independent Delivery: Self-directed and delivery-focused, able to manage workload independently and take ownership of features from implementation through to release. \n\n• Problem-Solving & Quality: Strong debugging skills, attention to detail and the ability to resolve bugs, improve performance and maintain code quality. \n\n• Communication & Collaboration: Clear communicator who works effectively with product owners, engineers and cross-functional stakeholders. \n\n• Legally permitted to work within the EU or UK. \n\nDesirable Skills & Experience \n\n• Java & Spring: Experience with Java and Spring, particularly when working across frontend and backend boundaries, is a significant advantage. \n\n• Enterprise SaaS: Experience building B2B enterprise applications, including complex forms, data grids, role-based access and multi-tenant environments. \n\n• AI-Assisted Development: Interest in and experience using AI-assisted development tools and workflows. \n\n• Product Team Experience: Experience working in small, autonomous engineering teams within a fast-paced scale-up environment. \n\n• Domain Knowledge: An interest in sustainability, carbon footprint data or industrial data exchange is beneficial. \n\n• Experience using Storybook and collaborating with UX teams through Figma \n\n• Experience using OpenAPI-generated types and contract-first API development approaches \n\nWhat We Offer:  \n\n• Competitive Salary – We reward your skills and experience with a compensation package that reflects your value. \n\n• 30 Days Paid Time Off – Take the time you need to recharge and maintain a healthy work-life balance. \n\n• Remote-First Flexibility – Work from anywhere in the EU, and the UK, with the option to collaborate in person at our offices in Stuttgart, Berlin (role dependent). \n\n• Generous Learning & Development Budget – We invest in your growth, providing ample resources for personal and professional development. \n\n• Choose Your Ideal Work Equipment – Whether you prefer Apple or Microsoft, we’ll equip you with the tools you need to excel. \n\nThe Experience:  \n\n• Purpose-Driven Work – Build something meaningful. Here, you’re not just creating another app; you’re contributing to a transformative vision that you can be proud of. \n\n• Great Colleagues – Join a team that’s open, transparent, and international. We value inclusivity and foster a culture of collaboration and mutual respect. \n\n• Work-Life Balance – As a remote-first company, we trust you to do your best work, your way. You have the flexibility to work when it suits you, ensuring a healthy balance between personal and professional life. \n\n• Pride in Impact – We're already making a significant difference with global, well-known customers who share our vision. Be part of something that matters. \n\n• Stability with Ambition – With realistic growth plans, we’re committed to changing the way things are made—without sacrificing our ambitious goals for innovation and impact. \n\nIf you want to find out more about what it’s like to work at Makersite, check out our Careers Page here \n\nDiversity and Inclusion \n\nIf you have a medical condition or an individual need for an adjustment to our process, and you believe this may affect your ability to be at your best – please let us know so we can talk about how we can best support you and make any adjustments that may be needed.  \n\nAt Makersite, we are dedicated to fostering an environment that champions diversity, equity, inclusion, and belonging. We believe that diverse teams drive innovation and success, and we are proud to be an equal opportunity employer. We welcome applicants from all backgrounds and will consider all applications regardless of age, disability, gender identity, marital status, pregnancy or maternity, race, nationality, religion, sex, sexual orientation, or any other status protected by applicable law. Rest assured, all applications will be handled with the utmost confidentiality. \n\nFind more English Speaking Jobs in Germany on Arbeitnow",
+    "location": "Remote job",
+    "country": "Remote job",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-18T14:31:37.000Z",
+    "sourceHash": "d391e43342be1750652910ea83abcc072d7230de9f32bc364615e8433cf944a7",
+    "company": {
+      "id": "makersitegmbh",
+      "name": "Makersite GmbH",
+      "logoUrl": "https://logo.clearbit.com/makersitegmbh.com",
+      "industry": "Technology",
+      "website": "https://makersitegmbh.com"
+    },
+    "slug": "senior-frontend-engineer-m-f-x-makersite-gmbh-d391e433",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "storybook",
+        "figma",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "GLOBAL",
+      "eligibleRegions": [
+        "Global"
+      ],
+      "seniority": "senior",
+      "employmentType": "b2b"
+    }
+  },
+  {
+    "id": "616982e80620514e5b169ca2063e2c43596d3b801be02e0ccfee0520cbc85474",
+    "title": "Senior Engineer, Frontend Angular2x",
+    "applyUrl": "https://remotefirstjobs.com/companies/nagarro/jobs/senior-engineer-frontend-angular2x-873036",
+    "description": "Company Description\n\n👋🏼 We&rsquo;re Nagarro.\n\nWe are a digital product engineering company that is scaling in a big way! We build products, services, and experiences that inspire, excite, and delight. We work at scale — across all devices and digital mediums, and our people exist everywhere in the world (18,000+ experts across 33 countries, to be exact). Our work culture is dynamic and non-hierarchical. We&rsquo;re looking for great new colleagues. That&rsquo;s where you come in!\n\nJob Description\n\nYou have begun to prove your worth in our industry! How has the experience been so far? We hope it has been rewarding. At Nagarro, we want to take the word “hope” out of that sentence. At Nagarro, if you are ready to take the next step, we are ready to take you to the next level. Want to work with the coolest tech, the brightest minds, and be able to solve the most challenging problems, then look no further.\n\nAdditional Information\n\nClick here to access the application privacy notice",
+    "location": "Remote - South Africa",
+    "country": "South Africa",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-17T18:33:16.000Z",
+    "sourceHash": "616982e80620514e5b169ca2063e2c43596d3b801be02e0ccfee0520cbc85474",
+    "company": {
+      "id": "nagarro",
+      "name": "Nagarro",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/nagarro.com-b7fa0a3705-2.webp",
+      "industry": "Technology",
+      "website": "https://nagarro.com"
+    },
+    "slug": "senior-engineer-frontend-angular2x-nagarro-616982e8",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "South Africa"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "3eebbd542a6ecf88a6ce8d97ecf9df1c474b660a30c40f29e6d7c621b0a85255",
     "title": "Senior Frontend Engineer (m/f/x)",
     "applyUrl": "https://remotefirstjobs.com/companies/makersite/jobs/senior-frontend-engineer-mfx-872950",
