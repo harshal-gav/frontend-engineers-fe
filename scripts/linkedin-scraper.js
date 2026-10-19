@@ -18,7 +18,7 @@
  * Usage:
  *   node scripts/linkedin-scraper.js
  *   npm run scrape:linkedin
- *   MAX_PAGES=2 MAX_COUNTRIES=10 HEADED=true node scripts/linkedin-scraper.js
+ *   MAX_PAGES=5 MAX_COUNTRIES=10 HEADED=true node scripts/linkedin-scraper.js
  *   COUNTRY="Germany" node scripts/linkedin-scraper.js
  */
 
@@ -258,7 +258,7 @@ const DB_FILE = path.join(DATA_DIR, "jobs.json");
 const STATE_FILE = path.join(DATA_DIR, "scraper-state.json");
 const AUTH_FILE = path.join(DATA_DIR, "linkedin-auth.json");
 
-const MAX_PAGES_PER_COUNTRY = parseInt(process.env.MAX_PAGES || "2", 10);
+const MAX_PAGES_PER_COUNTRY = parseInt(process.env.MAX_PAGES || "5", 10);
 const MAX_COUNTRIES_PER_RUN = process.env.MAX_COUNTRIES ? parseInt(process.env.MAX_COUNTRIES, 10) : Infinity;
 const MAX_RUNTIME_MINUTES = process.env.MAX_RUNTIME_MINUTES ? parseInt(process.env.MAX_RUNTIME_MINUTES, 10) : Infinity;
 const THIRTY_DAYS_MS = 30 * 24 * 60 * 60 * 1000;

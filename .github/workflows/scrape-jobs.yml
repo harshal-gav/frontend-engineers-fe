@@ -33,7 +33,7 @@ jobs:
       - name: Run Scraper Pipeline (Remote APIs + LinkedIn)
         env:
           LINKEDIN_AUTH_DATA: ${{ secrets.LINKEDIN_AUTH_JSON }}
-          MAX_PAGES: "2"
+          MAX_PAGES: "5"
           HEADED: "false"
         run: node scripts/scrape-all-jobs.js
 
