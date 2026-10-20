@@ -60,6 +60,18 @@ function ReferralCard({
 }) {
   // Pro only: free users see locked and blurred cards
   const isLocked = !isProUser || referral.isLocked === true;
+  const [isExpanded, setIsExpanded] = useState(false);
+  const [copiedEmail, setCopiedEmail] = useState(false);
+
+  const handleCopyEmail = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    if (referral.posterEmail) {
+      navigator.clipboard.writeText(referral.posterEmail);
+      setCopiedEmail(true);
+      setTimeout(() => setCopiedEmail(false), 2000);
+    }
+  };
 
   const cardContent = (
     <article
@@ -92,15 +104,32 @@ function ReferralCard({
           </span>
         </div>
 
-        {/* Description - blurred for locked cards */}
+        {/* Description / Notes */}
         {referral.description && (
-          <p
-            className={`text-sm text-gray-600 mb-3 line-clamp-2 leading-relaxed ${
-              isLocked ? "job-locked-blur" : ""
-            }`}
-          >
-            {referral.description}
-          </p>
+          <div className={`mb-3.5 ${isLocked ? "job-locked-blur" : ""}`}>
+            <p
+              className={`text-sm text-gray-600 leading-relaxed whitespace-pre-line ${
+                !isExpanded && referral.description.length > 160
+                  ? "line-clamp-3"
+                  : ""
+              }`}
+            >
+              {referral.description}
+            </p>
+            {!isLocked && referral.description.length > 160 && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  setIsExpanded(!isExpanded);
+                }}
+                className="mt-1 text-xs text-[#2563eb] font-semibold hover:underline inline-flex items-center gap-0.5 cursor-pointer"
+              >
+                {isExpanded ? "Show less ↑" : "Read full description ↓"}
+              </button>
+            )}
+          </div>
         )}
 
         {/* Tech stack tags - blurred for locked cards */}
@@ -119,53 +148,157 @@ function ReferralCard({
         )}
       </div>
 
-      {/* Referral info & Apply link - blurred for locked cards */}
+      {/* Referral info, Email & Apply link */}
       <div
-        className={`flex items-center justify-between gap-3 pt-3 border-t border-[#e2e2e6] mt-auto ${
+        className={`pt-3.5 border-t border-[#e2e2e6] mt-auto flex flex-col sm:flex-row sm:items-center justify-between gap-3 ${
           isLocked ? "job-locked-blur" : ""
         }`}
       >
-        <div className="flex items-center gap-2 min-w-0">
-          <div className="w-7 h-7 rounded-full bg-[#2563eb]/10 flex items-center justify-center text-[#2563eb] text-xs font-bold shrink-0">
+        <div className="flex items-center gap-2.5 min-w-0">
+          <div className="w-8 h-8 rounded-full bg-[#2563eb]/10 flex items-center justify-center text-[#2563eb] text-xs font-bold shrink-0">
             {(referral.posterName || "?").charAt(0).toUpperCase()}
           </div>
-          <span className="text-xs text-gray-500 truncate">
-            Referred by{" "}
-            <span className="font-semibold text-gray-700">
-              {referral.posterName || "Anonymous"}
-            </span>
-          </span>
+          <div className="min-w-0 flex-1">
+            <p className="text-xs text-gray-500 truncate leading-tight">
+              Referred by{" "}
+              <span className="font-semibold text-gray-800">
+                {referral.posterName || "Anonymous"}
+              </span>
+            </p>
+
+            {/* Email for Pro Users */}
+            {!isLocked && referral.posterEmail ? (
+              <div className="flex items-center gap-1.5 mt-0.5">
+                <a
+                  href={`mailto:${referral.posterEmail}`}
+                  onClick={(e) => e.stopPropagation()}
+                  className="text-xs text-[#2563eb] hover:underline font-medium truncate flex items-center gap-1 max-w-[180px] sm:max-w-[200px]"
+                  title={`Email ${referral.posterEmail}`}
+                >
+                  <svg
+                    className="w-3 h-3 shrink-0 text-[#2563eb]"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <span className="truncate">{referral.posterEmail}</span>
+                </a>
+                <button
+                  type="button"
+                  onClick={handleCopyEmail}
+                  className="text-gray-400 hover:text-gray-700 p-0.5 rounded transition-colors shrink-0"
+                  title="Copy email address"
+                  aria-label="Copy email"
+                >
+                  {copiedEmail ? (
+                    <span className="text-[10px] font-bold text-emerald-600">
+                      Copied!
+                    </span>
+                  ) : (
+                    <svg
+                      className="w-3 h-3"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"
+                      />
+                    </svg>
+                  )}
+                </button>
+              </div>
+            ) : isLocked ? (
+              <span className="text-[11px] text-gray-400 flex items-center gap-1 mt-0.5">
+                <svg
+                  className="w-3 h-3"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"
+                  />
+                </svg>
+                <span className="blur-[3px] select-none">
+                  engineer@company.com
+                </span>
+              </span>
+            ) : null}
+          </div>
         </div>
 
-        {!isLocked && referral.referralLink && (
-          <a
-            href={referral.referralLink}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs sm:text-sm bg-[#2563eb] text-white px-3 sm:px-4 py-1.5 rounded-full font-bold hover:bg-[#1d4ed8] transition-colors shrink-0 flex items-center gap-1 shadow-sm"
-            onClick={(e) => {
-              e.stopPropagation();
-              trackEvent("referral_link_clicked", {
-                company: referral.companyName,
-              });
-            }}
-          >
-            Apply
-            <svg
-              className="w-3.5 h-3.5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
+        {/* Actions: Contact & Apply */}
+        <div className="flex items-center gap-2 shrink-0">
+          {!isLocked && referral.posterEmail && (
+            <a
+              href={`mailto:${referral.posterEmail}?subject=${encodeURIComponent(
+                `Referral inquiry for ${referral.roleTitle} at ${referral.companyName}`
+              )}`}
+              onClick={(e) => e.stopPropagation()}
+              className="text-xs bg-gray-100 hover:bg-gray-200 text-gray-700 px-3 py-1.5 rounded-full font-bold transition-colors shrink-0 flex items-center gap-1"
+              title="Email the referrer directly"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-              />
-            </svg>
-          </a>
-        )}
+              <svg
+                className="w-3.5 h-3.5 text-gray-600"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+              Contact
+            </a>
+          )}
+
+          {!isLocked && referral.referralLink && (
+            <a
+              href={referral.referralLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-xs sm:text-sm bg-[#2563eb] text-white px-3 sm:px-4 py-1.5 rounded-full font-bold hover:bg-[#1d4ed8] transition-colors shrink-0 flex items-center gap-1 shadow-sm"
+              onClick={(e) => {
+                e.stopPropagation();
+                trackEvent("referral_link_clicked", {
+                  company: referral.companyName,
+                });
+              }}
+            >
+              Apply
+              <svg
+                className="w-3.5 h-3.5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                />
+              </svg>
+            </a>
+          )}
+        </div>
       </div>
 
       {/* Lock overlay badge for locked cards */}
@@ -563,6 +696,8 @@ export default function ReferralsPage() {
   const { user, loading: authLoading, isSubscribed } = useAuth();
   const [referrals, setReferrals] = useState<Referral[]>([]);
   const [isLoading, setIsLoading] = useState(true);
+  const [isRefreshing, setIsRefreshing] = useState(false);
+  const [refreshNotice, setRefreshNotice] = useState<string | null>(null);
   const [showForm, setShowForm] = useState(false);
   const [showSuccess, setShowSuccess] = useState(false);
 
@@ -592,6 +727,15 @@ export default function ReferralsPage() {
       setIsLoading(false);
     }
   }, [user]);
+
+  const handleRefresh = async () => {
+    setIsRefreshing(true);
+    setRefreshNotice(null);
+    await fetchReferrals();
+    setIsRefreshing(false);
+    setRefreshNotice("Checked just now. Waiting for other referrals to populate.");
+    setTimeout(() => setRefreshNotice(null), 4000);
+  };
 
   useEffect(() => {
     if (authLoading) return;
@@ -728,10 +872,22 @@ export default function ReferralsPage() {
       <div className="bg-white border-b border-[#e2e2e6]">
         <div className="max-w-5xl mx-auto px-4 sm:px-6 py-3 flex items-center justify-between">
           {isSubscribed ? (
-            <p className="text-sm text-gray-600">
-              <span className="font-bold text-gray-900">{totalReferrals}</span>{" "}
-              referral{totalReferrals !== 1 ? "s" : ""} available
-            </p>
+            totalReferrals === 0 ? (
+              <div className="flex items-center gap-2">
+                <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-bold bg-amber-50 text-amber-800 border border-amber-200">
+                  <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse shrink-0" />
+                  All referrals consumed
+                </span>
+                <span className="text-xs text-gray-500 hidden sm:inline">
+                  Waiting for other referrals to populate
+                </span>
+              </div>
+            ) : (
+              <p className="text-sm text-gray-600">
+                <span className="font-bold text-gray-900">{totalReferrals}</span>{" "}
+                referral{totalReferrals !== 1 ? "s" : ""} available
+              </p>
+            )
           ) : (
             <p className="text-sm text-gray-600">
               <span className="font-semibold text-gray-900">
@@ -800,35 +956,142 @@ export default function ReferralsPage() {
           </div>
         ) : referrals.length === 0 ? (
           isSubscribed ? (
-            <div className="text-center py-16">
-              <div className="w-20 h-20 bg-[#eff6ff] rounded-full flex items-center justify-center mx-auto mb-5">
-                <svg
-                  className="w-10 h-10 text-[#2563eb]"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={1.5}
-                    d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"
-                  />
-                </svg>
+            <div className="py-8 sm:py-12 animate-fade-in-up">
+              <div className="max-w-2xl mx-auto bg-white rounded-3xl border border-amber-200/80 shadow-xl shadow-amber-500/5 p-6 sm:p-10 text-center relative overflow-hidden">
+                {/* Decorative background glow */}
+                <div className="absolute -top-24 left-1/2 -translate-x-1/2 w-96 h-96 bg-gradient-to-b from-amber-100/60 to-transparent rounded-full blur-3xl pointer-events-none" />
+
+                {/* Pro Status Header Tag */}
+                <div className="relative inline-flex items-center gap-2 bg-gradient-to-r from-amber-500/10 via-amber-500/15 to-orange-500/10 border border-amber-300 text-amber-800 px-3.5 py-1.5 rounded-full text-xs font-bold mb-6">
+                  <span className="relative flex h-2 w-2">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75" />
+                    <span className="relative inline-flex rounded-full h-2 w-2 bg-amber-500" />
+                  </span>
+                  <span className="tracking-wide uppercase text-[11px]">Pro Member Access</span>
+                  <span className="text-amber-400">•</span>
+                  <span>Live Pool</span>
+                </div>
+
+                {/* Main Icon */}
+                <div className="relative w-20 h-20 mx-auto mb-6 flex items-center justify-center">
+                  <div className="absolute inset-0 rounded-2xl bg-amber-100 rotate-6" />
+                  <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-amber-500 to-orange-400 opacity-90 shadow-lg shadow-orange-500/20" />
+                  <svg
+                    className="relative w-9 h-9 text-white"
+                    fill="none"
+                    stroke="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      strokeLinecap="round"
+                      strokeLinejoin="round"
+                      strokeWidth={2}
+                      d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
+                    />
+                  </svg>
+                </div>
+
+                {/* Title & Description */}
+                <h2 className="relative text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3 tracking-tight">
+                  All Referrals Consumed
+                </h2>
+                <p className="relative text-gray-600 text-sm sm:text-base leading-relaxed max-w-lg mx-auto mb-6">
+                  All current community referrals have been claimed. Please wait while other referrals populate as verified engineers from top tech companies share new openings.
+                </p>
+
+                {/* Live Status Informational Cards */}
+                <div className="relative grid grid-cols-1 sm:grid-cols-3 gap-3 text-left mb-8">
+                  <div className="bg-[#f8fafc] border border-gray-100 rounded-xl p-3.5">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-base">⏳</span>
+                      <span className="text-xs font-bold text-gray-900">Auto-Populating</span>
+                    </div>
+                    <p className="text-[11px] text-gray-500 leading-snug">
+                      New referrals populate as community members share active openings.
+                    </p>
+                  </div>
+
+                  <div className="bg-[#f8fafc] border border-gray-100 rounded-xl p-3.5">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-base">⭐</span>
+                      <span className="text-xs font-bold text-gray-900">Instant Access</span>
+                    </div>
+                    <p className="text-[11px] text-gray-500 leading-snug">
+                      Your Pro status grants immediate 1-click access the second they drop.
+                    </p>
+                  </div>
+
+                  <div className="bg-[#f8fafc] border border-gray-100 rounded-xl p-3.5">
+                    <div className="flex items-center gap-2 mb-1">
+                      <span className="text-base">🤝</span>
+                      <span className="text-xs font-bold text-gray-900">Pay It Forward</span>
+                    </div>
+                    <p className="text-[11px] text-gray-500 leading-snug">
+                      Hiring at your team? Share a referral link to help a fellow engineer.
+                    </p>
+                  </div>
+                </div>
+
+                {/* Action Buttons */}
+                <div className="relative flex flex-col sm:flex-row items-center justify-center gap-3">
+                  <button
+                    onClick={handleRefresh}
+                    disabled={isRefreshing}
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-6 py-3 rounded-full font-bold text-sm shadow-md shadow-blue-500/20 transition-all disabled:opacity-60"
+                  >
+                    <svg
+                      className={`w-4 h-4 ${isRefreshing ? "animate-spin" : ""}`}
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"
+                      />
+                    </svg>
+                    {isRefreshing ? "Checking Feed..." : "Check for New Referrals"}
+                  </button>
+
+                  <button
+                    onClick={() => {
+                      setShowForm(true);
+                      trackEvent("referral_form_opened");
+                    }}
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 bg-white hover:bg-gray-50 text-gray-800 border border-gray-300 px-6 py-3 rounded-full font-bold text-sm transition-all shadow-sm"
+                  >
+                    <svg
+                      className="w-4 h-4 text-[#2563eb]"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M12 4v16m8-8H4"
+                      />
+                    </svg>
+                    Post a Referral
+                  </button>
+
+                  <Link
+                    href="/"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-1.5 text-xs text-gray-500 hover:text-gray-900 font-semibold px-4 py-2 transition-colors"
+                  >
+                    Browse Remote Jobs →
+                  </Link>
+                </div>
+
+                {refreshNotice && (
+                  <p className="mt-4 text-xs text-amber-700 font-medium animate-fade-in">
+                    {refreshNotice}
+                  </p>
+                )}
               </div>
-              <h2 className="text-xl font-bold text-gray-900 mb-2">
-                No referrals yet
-              </h2>
-              <p className="text-gray-500 mb-6 max-w-sm mx-auto">
-                Be the first to share a referral and help fellow frontend
-                engineers land their dream remote job!
-              </p>
-              <button
-                onClick={() => setShowForm(true)}
-                className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-blue-500/20 transition-all"
-              >
-                Post the First Referral
-              </button>
             </div>
           ) : (
             <div className="text-center py-16">
