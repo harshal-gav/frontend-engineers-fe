@@ -132,34 +132,17 @@ export default function JobCard({
 
       {/* Main content */}
       <div className="flex-1 min-w-0 w-full flex flex-col h-full">
-        {/* Top Row: Title & Meta - always clear and visible */}
-        <div className={`flex flex-row justify-between items-start gap-2 mb-1.5 ${isLocked ? "relative z-10" : ""}`}>
-          <div className="min-w-0 flex-1 pr-2 sm:pr-4">
-            <div className="flex items-start justify-between gap-2">
-              {/* Title is ALWAYS visible */}
-              <h3 className="text-base sm:text-[1.1rem] font-bold text-gray-900 group-hover:text-[#2563eb] transition-colors leading-snug">
-                {job.title}
-              </h3>
-              {onSave && (
-                <button
-                  onClick={(e) => {
-                    e.preventDefault();
-                    e.stopPropagation();
-                    onSave(e);
-                  }}
-                  className="ml-2 p-1.5 text-gray-400 hover:text-[#d97706] transition-colors bg-gray-50 hover:bg-orange-50 rounded-md shrink-0"
-                  aria-label={isSaved ? "Unsave job" : "Save job"}
-                >
-                  <svg className={`w-5 h-5 ${isSaved ? "fill-[#d97706] text-[#d97706]" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
-                  </svg>
-                </button>
-              )}
-            </div>
+        {/* Top Row: Title & Company on Left, Actions & Time on Right */}
+        <div className={`flex flex-row justify-between items-start gap-2.5 mb-1.5 ${isLocked ? "relative z-10" : ""}`}>
+          <div className="min-w-0 flex-1">
+            {/* Title is ALWAYS visible */}
+            <h3 className="text-base sm:text-[1.1rem] font-bold text-gray-900 group-hover:text-[#2563eb] transition-colors leading-snug break-words">
+              {job.title}
+            </h3>
 
             {/* Company name - visible to all users */}
             <div className="flex items-center gap-2 mt-1.5 text-sm font-medium text-gray-500 overflow-hidden whitespace-nowrap">
-              <span className="text-gray-700 font-semibold truncate shrink-0 max-w-[60%]">{job.company?.name || "Company"}</span>
+              <span className="text-gray-700 font-semibold truncate shrink-0 max-w-[70%]">{job.company?.name || "Company"}</span>
 
               {job.company?.industry && (
                 <>
@@ -170,7 +153,25 @@ export default function JobCard({
             </div>
           </div>
 
-          <div className="flex items-center gap-2 flex-shrink-0 sm:flex-col sm:items-end sm:gap-1.5">
+          {/* Right Action Column: Save button and timeAgo stacked vertically so they never overlap */}
+          <div className="flex flex-col items-end gap-1 shrink-0">
+            {onSave && (
+              <button
+                type="button"
+                onClick={(e) => {
+                  e.preventDefault();
+                  e.stopPropagation();
+                  onSave(e);
+                }}
+                className="p-1.5 text-gray-400 hover:text-[#d97706] transition-colors bg-gray-50 hover:bg-orange-50 rounded-md shrink-0"
+                aria-label={isSaved ? "Unsave job" : "Save job"}
+                title={isSaved ? "Unsave job" : "Save job"}
+              >
+                <svg className={`w-5 h-5 ${isSaved ? "fill-[#d97706] text-[#d97706]" : ""}`} fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z" />
+                </svg>
+              </button>
+            )}
             <span className="text-xs font-semibold text-gray-400 whitespace-nowrap">
               {postedDate}
             </span>
