@@ -1,5 +1,375 @@
 [
   {
+    "id": "c6604dbd38ec2f018cd945ee96034a2db1c19819928ee38c56fd8896ab907320",
+    "title": "Desarrollador Cells/Frontend/Remoto",
+    "applyUrl": "https://tecnocomperu.pandape.computrabajo.com/Detail/13926124?ov=19&utm_source=linkedinjobboard&utm_medium=referral&utm_campaign=feed&utm_term=organic&utm_content=ats",
+    "description": "About the job\n\nEstamos en la búsqueda de este puesto para que sea nuestro representante frente a una empresa del rubro financiero.\n\n( 1) Desarrollador Cells/Remoto\n\n🎯 ¿Qué buscamos en ti?\n\n\nProfesional universitario o técnico de Ingeniería de Sistemas, Informática o carreras afines.\nExperiencia de 2 años como Desarrollador Cells.\nExperiencia en Polymer 2, Litelement, Cells.\n\n\n💡 Beneficios exclusivos\n\n\nHorario: Lunes a Viernes de 9:00 am a 6:30 pm\nModelo de trabajo: Remoto.\nEPS cubierto al 100% en Plan Base\nUdemy acceso total\nLínea de Carrera\nKit ergonómico para laborar desde casa\n\n\n¡Anímate y postula con nosotros!",
+    "location": "Remote - Peru",
+    "country": "Peru",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-20T04:57:25.822Z",
+    "sourceHash": "c6604dbd38ec2f018cd945ee96034a2db1c19819928ee38c56fd8896ab907320",
+    "company": {
+      "id": "indragroup",
+      "name": "Indra Group",
+      "logoUrl": "https://logo.clearbit.com/indragroup.com",
+      "industry": "Technology",
+      "website": "https://indragroup.com"
+    },
+    "slug": "desarrollador-cells-frontend-remoto-indra-group-c6604dbd",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Peru"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "03804444b51666c6717e08cbd51cfd0dcd33480c7ffdb1967a4d454b848f3f2a",
+    "title": "Développeur front-end et UX",
+    "applyUrl": "https://axone-sys.zohorecruit.eu/jobs/Careers/43747000006652055/Développeur-front-end-et-UX?source=LinkedIn-Basic&embedsource=LinkedIn+Limited+Listings",
+    "description": "About the job\n\nIntitulé du poste : Développeur front-end et UX\n\nModalités de travail :\n\n\nMode de travail : Full remote (100 % à distance). \nType de contrat : Freelance. \n\n\nProfil recherché :\n\nNous recrutons un Développeur front-end spécialisé dans l’expérience utilisateur (UX), capable de concevoir et de développer des interfaces web intuitives, ergonomiques, accessibles et adaptées aux différents supports.\n\nMissions principales :\n\n\nConcevoir et développer des interfaces web interactives et responsives. \nTransformer les maquettes graphiques et les prototypes en interfaces fonctionnelles. \nParticiper à la conception des parcours utilisateurs et à l’amélioration de l’expérience utilisateur. \nGarantir l’ergonomie, l’accessibilité et la compatibilité des interfaces sur différents navigateurs et appareils. \nOptimiser les performances et la qualité du code front-end. \nCollaborer avec les équipes back-end, design graphique et direction artistique. \nParticiper aux tests d’utilisabilité, à la détection des anomalies et à l’amélioration continue des interfaces. \n\n\nConditions requises :\n\n\nExpérience : 3 ans ou plus en développement front-end et/ou conception UX, avec une expérience pertinente dans la réalisation d’interfaces web. \nDiplôme : Aucun diplôme spécifique exigé. \n\n\nCompétences techniques souhaitées :\n\n\nMaîtrise de HTML, CSS et JavaScript. \nConnaissance des frameworks front-end modernes. \nBonne compréhension des principes UX/UI, de l’ergonomie et du responsive design. \nCapacité à exploiter des maquettes et des prototypes. \nSens du détail, créativité et esprit d’équipe.",
+    "location": "Remote - Morocco",
+    "country": "Morocco",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-20T04:54:16.915Z",
+    "sourceHash": "03804444b51666c6717e08cbd51cfd0dcd33480c7ffdb1967a4d454b848f3f2a",
+    "company": {
+      "id": "axone",
+      "name": "AXONE",
+      "logoUrl": "https://logo.clearbit.com/axone.com",
+      "industry": "Technology",
+      "website": "https://axone.com"
+    },
+    "slug": "d-veloppeur-front-end-et-ux-axone-03804444",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Morocco"
+      ],
+      "seniority": "mid",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "f511520988e61dba93f35c99206b9992a939d0e0ff71f3d9645185b59efd2e60",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://jobs.pitchnhire.com/freshtalent.africa/frontend-engineer/019f603b-9790-7aa0-b3ab-0bfc71eb6d8e?utm_source=linkedin&utm_medium=web-application",
+    "description": "About the job\n\nFrontend Engineer\n\nJob Type: Contract\n\nLocation: Remote\n\nOpenings: 50\n\nCompensation: $65–$120/hr\n\nRequired Skills\n\n\nJavaScript\nTypeScript\nReact\n\n\nJob Description\n\nWe are selecting skilled Frontend Engineers to support a customer's innovative project. In this role, you'll apply your UI development expertise to help train next-generation AI systems. Your work will shape how models learn, reason, and perform through high-quality, real-world input.\n\nNo prior experience in AI is required — your development skills are what matter.\n\nAs an expert, you will be creating Reinforcement Learning Environments that test an AI model's ability to solve frontend software problems related to fixing UI bugs, building interface features, and improving component code. You will be tasked with creating a reproducible environment and a golden reference solution for the problem.\n\nScope of Work\n\n\nContribute clear code samples, debugging approaches, and development insights in JavaScript, TypeScript, and a modern framework (React, Vue, or Angular).\nIdentify, troubleshoot, and resolve UI bugs, layout issues, and state-related problems across different codebases.\nBuild small to medium interface features, keeping components clean, reusable, and easy to follow.\nImprove existing frontend code for better readability, performance, and consistency.\nDocument your reasoning, approach, and code decisions to support AI training data quality.\nReview peer-contributed code and technical submissions for correctness and clarity.\n\n\nPreferred Qualifications\n\n\n1+ years of hands-on experience building user interfaces with JavaScript/TypeScript and a modern framework.\nSolid understanding of HTML, CSS, responsive design, and component-based architecture.\nAbility to debug UI issues using browser dev tools and reason through state and rendering behavior.\nComfortable working across different codebases and picking up unfamiliar components.\nGood documentation and communication skills to explain your technical decisions clearly.\nInterest in or curiosity about AI and its technical challenges (previous AI experience not required).\n\n\n\nDesired Skills and Experience\n\nJavascript, Typescript, React",
+    "location": "Remote - Mauritius",
+    "country": "Mauritius",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-20T04:52:54.229Z",
+    "sourceHash": "f511520988e61dba93f35c99206b9992a939d0e0ff71f3d9645185b59efd2e60",
+    "company": {
+      "id": "freshtalent",
+      "name": "FreshTalent",
+      "logoUrl": "https://logo.clearbit.com/freshtalent.com",
+      "industry": "Technology",
+      "website": "https://freshtalent.com"
+    },
+    "slug": "frontend-engineer-freshtalent-f5115209",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mauritius"
+      ],
+      "seniority": "junior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "637481904be20c7540c065aa977e1afbbe9567e7e0235d47d3e9d47b2a0583ae",
+    "title": "Front-End Developer",
+    "applyUrl": "https://remoting.work/candidate/jobview?id=591&src=LinkedIn",
+    "description": "About the job\n\nJob Description\n\nJob Overview\n\nWe are seeking a Front-End Developer to build the team web application and admin console for a new internal AI platform. You will implement in React and TypeScript from a completed design system, working closely with the AI Engineer who owns the backend. This is a four-month engagement. This position is with a USA- and Canada-based employer and is open to qualified candidates working remotely from outside North America.\n\nAbout The Company\n\nAn established family law practice in the northeastern United States, with multiple offices and a team of attorneys, mediators and support staff serving clients across the region. The firm is known for a client-centered approach built on care, integrity and dedication, and is now investing in purpose-built technology to support its legal and administrative teams.\n\nIdeal Candidate\n\nYou are a front-end developer who builds clean, dependable interfaces and follows a design system faithfully. You are comfortable working against a live API that is being built alongside you, and you raise questions early rather than guessing. You write maintainable code that another engineer can take over cleanly at the end of the engagement.\n\nKey Responsibilities\n\nApplication Build\n\n\nImplement the team web application in React and TypeScript from the design system.\nBuild chat and voice interfaces, task views and deadline views.\nBuild document review screens and approval queues.\n\n\nAdmin Console\n\n\nBuild the administrative console for configuration, approvals and reporting.\nImplement role-aware navigation so users only see what their permissions allow.\nBuild dashboards for reporting and usage visibility.\n\n\nIntegration and Quality\n\n\nIntegrate the front end with backend APIs as they become available.\nWrite component tests and maintain code quality standards.\nParticipate in continuous integration and code review.\n\n\nDocumentation and Handover\n\n\nDocument components and overall application structure.\nHand over a feature-complete, maintainable codebase at the end of the engagement.\nSupport the AI Engineer through the transition to ongoing maintenance.\n\n\nTechnical Skills\n\nSkill Sets Required / Preferred\n\n\nStrong proficiency in React and TypeScript.\nExperience building complex, state-heavy interfaces such as dashboards, queues and review tools.\nWorking with REST APIs, authentication flows and role-based access in the user interface.\nModern front-end tooling, component testing and version control with Git.\nExperience with real-time or streaming interfaces such as chat is preferred.\n\n\nSoft Skills\n\n\nClear, proactive written communication across time zones.\nDisciplined about following a design system rather than improvising.\nStrong attention to detail and quality.\nSelf-directed and reliable on a fixed timeline.\n\n\nExperience & Education\n\n\nFour or more years of professional front-end development experience.\nDemonstrated React and TypeScript work in production applications.\nBachelor's degree in Computer Science or a related field, or equivalent practical experience.",
+    "location": "Remote - Mauritius",
+    "country": "Mauritius",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-20T04:52:50.816Z",
+    "sourceHash": "637481904be20c7540c065aa977e1afbbe9567e7e0235d47d3e9d47b2a0583ae",
+    "company": {
+      "id": "remotingwork",
+      "name": "remoting.work",
+      "logoUrl": "https://logo.clearbit.com/remotingwork.com",
+      "industry": "Technology",
+      "website": "https://remotingwork.com"
+    },
+    "slug": "front-end-developer-remoting-work-63748190",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Mauritius"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f27af2561ed088b8f2aac18ed78c00d2752acc7b473054a7c9c408b90ae33340",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://www.bestjobtool.com/job-description/3197605051?src=LinkedIn",
+    "description": "About the job\n\nAbout Doss\n\nDOSS is revolutionizing the way physical product businesses manage their operations through its innovative Operations Cloud platform. Designed to be a modern, AI-native solution, DOSS provides real-time management of the flow of goods, dollars, and data across various critical functions including procurement, inventory, orders, fulfillment, and finance. The platform aims to replace traditional spreadsheet chaos and rigid, consultant-heavy enterprise resource planning (ERP) systems with a flexible, adaptable, and fast time-to-value solution. Through its Adaptive Resource Platform (ARP) and a unified operational data model, DOSS enables teams to deploy quickly, automate workflows, and implement changes seamlessly without lengthy re-implementation cycles. Recently, DOSS secured a $55 million Series B funding round, co-led by Madrona and Premji Invest, with participation from notable investors such as Intuit Ventures, Theory Ventures, General Catalyst, Contrary Capital, and Pathlight VC. Trusted by fast-growing operators, DOSS empowers organizations to run their critical operations with speed, control, and confidence.\n\nAbout The Role\n\nWe are seeking a talented and motivated Frontend Engineer to join our dynamic team at DOSS. In this role, you will be responsible for architecting and building the core frontend components of our collaborative cloud platform. Your work will directly impact the user experience, ensuring that our platform is intuitive, responsive, and scalable. You will own the technical roadmap related to the customer-facing features, collaborating closely with product managers, designers, and backend engineers to deliver high-quality solutions. Your expertise will help create flexible, reusable infrastructure and components that can scale within a composable software environment, similar to tools like Retool, Airtable, Zapier, Figma, and Notion. This is an exciting opportunity to shape the future of operational management for physical product businesses and to work in a fast-paced, innovative environment that values craftsmanship and customer satisfaction.\n\nQualifications\n\nTo succeed in this role, candidates should possess the following qualifications:\n\n\nProven experience in developing from 0 to 1 in ambiguous or rapidly evolving settings.\nFluency in Typescript, React, NextJS, and Tailwind CSS.\nFamiliarity with GraphQL, Postgres, Object-Relational Mappers (ORMs), and Node.js (Express).\nExperience in utilizing internal APIs to build complex front-end interfaces and components.\nAbility to translate sophisticated Figma UI/UX designs into pixel-perfect implementations in the browser.\n\n\nIdeal candidates will demonstrate strong problem-solving skills, adaptability, and a passion for creating intuitive user experiences.\n\nResponsibilities\n\n\nDesign, develop, and maintain the core frontend architecture of DOSS’s cloud platform.\nOwn and execute the technical roadmap for customer-facing features, ensuring alignment with product goals and user needs.\nCreate flexible and scalable infrastructure and components that support a composable software environment.\nCollaborate with cross-functional teams including product, design, and backend engineering to deliver seamless user experiences.\nTranslate detailed UI/UX designs from Figma into high-quality, pixel-perfect frontend implementations.\nParticipate in code reviews, testing, and documentation to uphold high standards of quality and maintainability.\nStay updated with the latest frontend technologies and best practices to continuously improve our platform.\n\n\nBenefits\n\nAt DOSS, we value our team members and offer a comprehensive benefits package designed to support your professional and personal growth. Benefits include competitive salary packages, health insurance coverage, flexible working hours, and remote work opportunities. We also provide opportunities for continuous learning and development through workshops, training programs, and conferences. Our collaborative environment fosters innovation, creativity, and a strong sense of community. Additionally, employees enjoy paid time off, wellness programs, and the chance to be part of a fast-growing company that is transforming operational management for the physical product industry.\n\nEqual Opportunity\n\nDOSS is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate based on race, religion, gender, sexual orientation, age, disability, or any other protected characteristic. We believe that a diverse team fosters innovation, creativity, and better problem-solving, which is essential to our mission of building a transformative Operations Cloud for the real world.\n\n\n\n\n\nDesired Skills and Experience\n\nReact, TypeScript, UI/UX Design, Frontend Development, GraphQL, CSS",
+    "location": "Remote - Georgia",
+    "country": "Georgia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-20T04:44:55.669Z",
+    "sourceHash": "f27af2561ed088b8f2aac18ed78c00d2752acc7b473054a7c9c408b90ae33340",
+    "company": {
+      "id": "agilegridsolutions",
+      "name": "AgileGrid Solutions",
+      "logoUrl": "https://logo.clearbit.com/agilegridsolutions.com",
+      "industry": "Technology",
+      "website": "https://agilegridsolutions.com"
+    },
+    "slug": "frontend-engineer-agilegrid-solutions-f27af256",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "tailwind",
+        "graphql",
+        "figma"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Georgia"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "d5d6db13928bc4cead40b1e6a84250a439d1f1de9557c7176a77f68ead483dfc",
+    "title": "Engineering | Frontend Engineer",
+    "applyUrl": "https://alice.inhire.app/vagas/6a95d07b-0490-43e4-bc06-a30fb843b35f/engineering-or-frontend-engineer?source=linkedin",
+    "description": "About the job\n\nSobre a Alice\n\nSomos uma healthtech fundada em 2019 com a missão de tornar o mundo mais saudável. Estamos trabalhando duro todos os dias para construir o que um sistema de saúde eficiente e humano deveria ser.\n\nSabemos que saúde é um dos maiores desafios da nossa geração: experiência ruim, resultados baixos e custos crescentes. Repensamos como a tecnologia deveria ser aplicada para gerar mais saúde e cuidado às pessoas, com cuidado coordenado e continuado, por meio de metodologias e tecnologias próprias, pensadas com o Membro no centro das decisões.\n\nO que você vai fazer\n\nArquitetura e código\n\n\nEntregar features na interface de ponta a ponta, com autonomia e qualidade\nModelar dados, estado e composables de forma que o próximo dev entenda em minutos\nCuidar do que você entrega até a produção: testes, performance, acessibilidade, métricas e alarmes\nContribuir com o Design System interno, não apenas consumir componentes prontos\n\n\nProduto e negócio\n\n\nTrabalhar junto com produto e design para entender o problema antes de pensar na solução\nQuestionar, sugerir e melhorar, não apenas implementar o que foi pedido\nTer sensibilidade para privacidade e segurança de dados em contexto de saúde: dado sensível por padrão, consentimento como requisito, nada de informação pessoal em URL ou log\n\n\nIA no dia a dia\n\n\nUsar IA como parte natural do seu fluxo de trabalho: para codificar, testar, revisar, documentar e depurar\nDesenvolver formas de trabalhar com IA que aumentem a produtividade de todo o time, não só a sua\nSaber quando a IA ajuda e quando atrapalha: aceitar, refinar ou descartar com senso crítico\n\n\nO que esperamos de você\n\n\nExperiência sólida como engenheiro(a) frontend (mínimo 3 anos focados em web moderna)\nHTML e CSS avançados: interface semântica, responsiva e acessível\nJavaScript e TypeScript fluentes: tipos no modelo, no estado e no contrato com o backend\nProficiência em Vue ou React (aqui usamos Vue 3 com Composition API) e vontade de se aprofundar\nTestes como ferramenta de design, não como item de checklist (Vitest ou Jest, Testing Library; mocks de API quando faz sentido)\nIntegração com APIs RESTful e BFFs (Backend for Frontend): versionar, aplicar cache, lidar com erros, estados de carregamento e novas tentativas\nDesign Systems: consumir, evoluir e contribuir, não apenas usar componentes prontos\nPerformance e acessibilidade desde o primeiro commit, não como polimento no final\nObservabilidade como parte da entrega: saber o que medir, o que logar e o que alarmar no frontend\nBoas práticas no dia a dia: Git, code review, lint e formatação, ferramentas de build modernas (Vite, Webpack), CI/CD e versionamento de dependências\nUso ativo de IA no desenvolvimento, não como curiosidade, mas como parte do seu fluxo cotidiano\nBoa comunicação e capacidade de trabalhar com times multidisciplinares\n\n\nDiferenciais\n\n\nExperiência evoluindo um Design System próprio (tokens, componentes compartilhados, migrações entre versões principais)\nExperimentação em produção com disciplina: feature flags, A/B tests, canary, rollback\nMonorepos frontend com múltiplos apps compartilhando bibliotecas\nValidação de dados com schemas (Zod, Yup, io-ts) usados do formulário à borda com o backend\nServer-side rendering moderno (Nuxt 3, Next 14+) para páginas públicas\nExperiência com domínio de saúde, financeiro ou contas médicas\nContribuições open source ou projetos pessoais relevantes\nExperiência com Dashboards Datadog & RUM\n\n\nRemuneração\n\n\nFazemos o nosso melhor para compensar de forma competitiva\nSempre fazemos nossa melhor oferta\nNão negociamos (isso é bom para você)",
+    "location": "Remote - Brazil",
+    "country": "Brazil",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-20T04:23:36.134Z",
+    "sourceHash": "d5d6db13928bc4cead40b1e6a84250a439d1f1de9557c7176a77f68ead483dfc",
+    "company": {
+      "id": "alice",
+      "name": "Alice",
+      "logoUrl": "https://logo.clearbit.com/alice.com",
+      "industry": "Technology",
+      "website": "https://alice.com"
+    },
+    "slug": "engineering-frontend-engineer-alice-d5d6db13",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "nuxtjs",
+        "typescript",
+        "javascript",
+        "css",
+        "webpack",
+        "vite",
+        "jest",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Brazil"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "1257dc443eb907b9ad34a90fb224f530ac8fc00e4bf05750e6f7545262f53155",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://evlo.ai/jobs/apply/bf-g0073-s04?utm_content=bf-g0073-s04&utm_term=software-engineering&utm_campaign=bluefunnel&utm_source=linkedin&src=LinkedIn-bluefunnel",
+    "description": "About the job\n\nAbout The Role\n\nThe role is for an engineer who treats the frontend as a product surface, not just markup and state - someone who cares about rendering performance, accessibility, and shipping interfaces that customers actually enjoy using.\n\nYou will join a small product engineering team responsible for customer-facing web applications used daily by thousands of users, working directly with designers and backend engineers to ship features end-to-end.\n\nKey Responsibilities\n\n\nBuild and maintain complex, stateful user interfaces in React and TypeScript for a production web application serving thousands of daily active users\nOwn features end-to-end: from design collaboration and API contract discussions to implementation, testing, deployment, and monitoring\nImprove Core Web Vitals and bundle performance across critical user flows, with measurable targets for load time and interaction latency\nDesign reusable component architecture and maintain the shared design system used across multiple product surfaces\nIntegrate with REST and GraphQL APIs, handling caching, optimistic updates, and error states with care\nWrite unit and integration tests with Jest and React Testing Library; maintain CI quality gates\nParticipate in code reviews, pairing sessions, and quarterly architecture planning with the broader engineering team\n\n\nWhat We Are Looking For\n\n\n3–6 years of frontend engineering experience building and shipping production web applications\nDeep expertise in React, TypeScript, and modern state management (Redux Toolkit, Zustand, or TanStack Query)\nStrong CSS fundamentals and experience with modern styling approaches (CSS Modules, Tailwind, or styled-components)\nExperience profiling and fixing real performance issues: bundle size, hydration cost, rendering bottlenecks\nTrack record of building accessible interfaces (WCAG 2.1) and testing across browsers and devices\nBachelor's degree in Computer Science or equivalent practical experience\nBonus: Experience with Next.js, WebSockets/real-time UIs, design systems tooling (Storybook), or contributions to open-source frontend tooling",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-20T04:17:01.035Z",
+    "sourceHash": "1257dc443eb907b9ad34a90fb224f530ac8fc00e4bf05750e6f7545262f53155",
+    "company": {
+      "id": "evloai",
+      "name": "Evlo AI",
+      "logoUrl": "https://logo.clearbit.com/evloai.com",
+      "industry": "Technology",
+      "website": "https://evloai.com"
+    },
+    "slug": "frontend-engineer-evlo-ai-1257dc44",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "tailwind",
+        "redux",
+        "zustand",
+        "graphql",
+        "storybook",
+        "jest",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "88b453879d7fdee5f0e94a13f1196b5253921474395047eb7883054b7b8f4045",
+    "title": "Frontend TypeScript Developer",
+    "applyUrl": "https://www.alignerr.com/jobs/932ffd6d-f665-4103-ab93-fff38f6eff3c?referral-source=linkedin-job",
+    "description": "About the job\n\nFrontend TypeScript Developer (AI Training)\n\nAbout The Role\n\nWhat if your TypeScript expertise could directly shape how AI writes code for millions of developers around the world? We're looking for experienced TypeScript developers to review, evaluate, and guide AI-generated frontend code — ensuring it meets the standards of type safety, scalability, and modern architecture that real-world applications demand.\n\nThis is a fully remote, flexible contract role built for senior developers who know TypeScript inside and out. You'll work alongside leading AI research teams, using your technical judgment to make AI smarter, more accurate, and genuinely useful for the developer community.\n\n\nOrganization: Alignerr\nType: Hourly Contract\nLocation: Remote\nCommitment: 10–40 hours/week\n\n\nWhat You'll Do\n\n\nReview AI-generated TypeScript code for strict type safety, accurate interface design, and correct use of generics and utility types\nDevelop complex, type-safe frontend components that deepen AI understanding of modern web architectures\nProvide clear, detailed technical commentary on architectural decisions and type-driven development strategies\nIdentify and flag weaknesses in AI responses related to complex type definitions, asynchronous patterns, and frontend edge cases\nWork independently and asynchronously — fully on your own schedule\n\n\nWho You Are\n\n\nDeep expertise in TypeScript — you're fluent in static typing, generics, interfaces, and utility types\n3–5 years of hands-on experience with modern frontend or full-stack frameworks such as React, Angular, Next.js, Nuxt.js, or Node.js\nStrong written communicator who can explain technical decisions clearly and concisely\nDetail-oriented and methodical — you notice when something is subtly wrong and you know why\nBachelor's degree or higher in Computer Science or a related field preferred\n\n\nNice to Have\n\n\nExperience with data annotation, model evaluation, or AI-assisted development workflows\nFamiliarity with testing frameworks and type-safe API design patterns\nExposure to monorepos, design systems, or large-scale frontend architectures\n\n\nWhy Join Us\n\n\nWork on cutting-edge AI projects alongside the world's leading research labs\nFully remote and flexible — work when and where it suits you\nFreelance autonomy with the structure of meaningful, task-based work\nMake a direct, tangible impact on how AI understands and generates real-world TypeScript code\nPotential for ongoing work and contract extension as new projects launch",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-20T04:16:39.757Z",
+    "sourceHash": "88b453879d7fdee5f0e94a13f1196b5253921474395047eb7883054b7b8f4045",
+    "company": {
+      "id": "alignerr",
+      "name": "Alignerr",
+      "logoUrl": "https://logo.clearbit.com/alignerr.com",
+      "industry": "Technology",
+      "website": "https://alignerr.com"
+    },
+    "slug": "frontend-typescript-developer-alignerr-88b45387",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "nextjs",
+        "nuxtjs",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "aa39ad16ebbf02501f2878ea8894ce8ed6d7610e66daa8723335ecf80acd7aba",
+    "title": "Frontend Developer",
+    "applyUrl": "https://www.fetchjobs.co/job-description-usb/73F7FD6A7E79693720542835664D4D1D?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nDelan Associates, Inc. is a leading organization committed to delivering innovative solutions and exceptional services across various industries. With a strong reputation for excellence and a customer-centric approach, the company prides itself on fostering a dynamic and inclusive work environment. Our dedication to continuous improvement and sustainable growth has positioned us as a trusted partner for clients worldwide. At Delan Associates, Inc., we value integrity, collaboration, and a passion for excellence, which drive us to achieve outstanding results and create meaningful impacts in the communities we serve.\n\nAbout The Role\n\nWe are seeking a highly motivated and skilled professional to join our team in the role of [Job Title]. This position offers an exciting opportunity to contribute to key projects, collaborate with cross-functional teams, and drive strategic initiatives that align with our organizational goals. The ideal candidate will possess a strong background in [relevant industry or field], demonstrate excellent problem-solving skills, and have a proactive approach to challenges. As part of our team, you will play a vital role in supporting our mission to deliver innovative solutions and ensure client satisfaction. This role requires a blend of technical expertise, effective communication, and a commitment to continuous learning to thrive in a fast-paced environment.\n\nQualifications\n\nThe successful candidate should possess the following qualifications:\n\n\nBachelor’s degree in [relevant field] or equivalent experience.\nProven experience of [X] years in [relevant industry or role].\nStrong understanding of [specific skills or technologies relevant to the role].\nExcellent communication and interpersonal skills.\nAbility to work independently and as part of a team.\nProficiency in [software/tools relevant to the position].\nDemonstrated problem-solving and analytical abilities.\nStrong organizational skills and attention to detail.\n\n\nResponsibilities\n\nThe primary responsibilities of this role include, but are not limited to:\n\n\nDeveloping and implementing strategies to meet project objectives and organizational goals.\nCollaborating with cross-functional teams to ensure seamless execution of projects and initiatives.\nManaging project timelines, budgets, and resources effectively.\nConducting research and analysis to inform decision-making processes.\nPreparing detailed reports, presentations, and documentation for stakeholders.\nEnsuring compliance with industry standards, regulations, and company policies.\nProviding leadership and mentorship to junior team members.\nEngaging with clients and stakeholders to understand their needs and deliver tailored solutions.\nContinuously seeking opportunities for process improvement and innovation.\n\n\nBenefits\n\nAt Delan Associates, Inc., we recognize the importance of supporting our employees’ well-being and professional growth. Our benefits package includes:\n\n\nCompetitive salary and performance-based incentives.\nComprehensive health, dental, and vision insurance plans.\nRetirement savings options with company matching contributions.\nPaid time off and holidays to promote work-life balance.\nProfessional development opportunities, including training and certifications.\nA collaborative and inclusive workplace culture.\nFlexible work arrangements to support diverse needs.\nEmployee assistance programs and wellness initiatives.\n\n\nEqual Opportunity\n\nDelan Associates, Inc. is an equal opportunity employer. We are committed to fostering an inclusive environment where all employees and applicants are treated with respect and dignity. We do not discriminate based on race, color, religion, sex, national origin, age, disability, sexual orientation, gender identity, or any other protected characteristic. Our commitment to diversity and inclusion is integral to our success and reflects our core values. We encourage individuals from all backgrounds to apply and join our team in making a positive impact.\n\n\n\n\n\nDesired Skills and Experience\n\nProject Management, Communication, Teamwork, Problem Solving, Strategic Planning, Stakeholder Engagement",
+    "location": "Remote - Worldwide",
+    "country": "Worldwide",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-20T04:16:13.494Z",
+    "sourceHash": "aa39ad16ebbf02501f2878ea8894ce8ed6d7610e66daa8723335ecf80acd7aba",
+    "company": {
+      "id": "taskverse",
+      "name": "TaskVerse",
+      "logoUrl": "https://logo.clearbit.com/taskverse.com",
+      "industry": "Technology",
+      "website": "https://taskverse.com"
+    },
+    "slug": "frontend-developer-taskverse-aa39ad16",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Worldwide"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "62bd54173bdcb591c267f7a07f7ac828e396c715a153b42026d035861cecd98f",
+    "title": "Staff FrontEnd Engineer - Platform - App Core Usage | US | Remote",
+    "applyUrl": "https://remotefirstjobs.com/companies/grafana-labs/jobs/staff-frontend-engineer-platform-app-core-usage-us-remote-873160",
+    "description": "Grafana Labs is the company behind Grafana Cloud, the fully managed observability platform trusted by more than 10,000 organizations to ensure reliability, resolve incidents faster, and optimize telemetry at scale. Built on open source and open standards and designed for interoperability across any stack, Grafana Cloud brings AI to observability and observability to AI, giving teams (and their agents) unified visibility so they can see, understand, and act on all their disparate data, wherever it lives, and move at the speed of their ambitions. Customers, including Anthropic, Bloomberg, NVIDIA, Microsoft, and Salesforce, rely on Grafana Labs. We are a 100% remote company with team members across 40+ countries, backed by leading investors including Lightspeed Venture Partners, Sequoia Capital, GIC, Coatue, J.P. Morgan, CapitalG, and Lead Edge Capital. Learn more at grafana.com and follow us on LinkedIn and X.\n\nWe’re scaling fast and staying true to what makes us different: an open-source legacy, a global collaborative culture, and a passion for meaningful work. Our team thrives in an innovation-driven environment where transparency, autonomy, and trust fuel everything we do.\n\nYou may not meet every requirement, and that’s okay. If this role excites you, we’d love you to raise your hand for what could be a truly career-defining opportunity.\n\nThis is a remote position. We are seeking candidates in US and Canada.\n\nThe Opportunity:\n\nApplication Core Services (AppCore) is a group within Platform, in the Foundations department. Foundations produces the Internal Engineering Platform (IEP) and partners closely with our Cloud, Enterprise, and Grafana teams. Our team develops the essential systems driving Grafana&rsquo;s business operations. We utilize the grafana.com platform to engineer bespoke integrations and solutions that unify the diverse technical ecosystem of a modern software enterprise.\n\nThe team owns important domain areas that help keep both our customer workflows and internal business processes running smoothly. AppCore is made up of multiple squads, each focused on one or more of these domains. Our work includes maintaining the billing engine responsible for customer usage calculations, automating provisioning after a customer signs a contract, integrating with cloud marketplaces such as AWS, Azure, and GCP, and building and maintaining the user portal our customers rely on to manage their accounts.\n\nThis is a team working at the intersection of product, platform, and business operations. The systems we build are critical to how Grafana Cloud scales. We are looking for engineers who enjoy solving complex workflow and systems problems, improving reliability and developer experience, and building software that directly supports both customers and internal stakeholders.\n\nAs a company we are remote-first and global, we embrace people of different experiences and backgrounds to build diverse teams where every person brings a unique perspective to the software. Engineers at Grafana Labs also have the opportunity to contribute to Open Source communities and collaborate across teams beyond their immediate scope.\n\nWhat You’ll Be Doing:\n\nThe Usage squad owns the essential systems driving Grafana&rsquo;s business operations and customer usage calculations. Our domain encompasses maintaining the billing engine responsible for customer usage calculation, cost management and billing applications, automating provisioning after a customer signs a contract, integrating with cloud marketplaces such as AWS, Azure, and GCP, and building and maintaining the customer user portal.\n\nOur work sits at the intersection of product, platform, and business operations. We build full-stack web applications, customer portals, backend services, APIs, and data integrations across internal Grafana platforms and third-party systems like NetSuite and Salesforce. When this domain works well, customers get clear usage visibility, reliable billing, and seamless account management workflows. This role is about 75% FrontEnd and 25% BackEnd.\n\n• Design, build, operate, and evolve reliable full-stack web applications, customer-facing account portals, and backend services that power core customer usage and billing workflows\n\n• Build and maintain backend APIs (Golang, Node.js) and intuitive user interfaces using modern frontend technologies (TypeScript, React)\n\n• Design and maintain integrations between Grafana systems and external business platforms such as NetSuite, Salesforce, and cloud marketplaces (AWS, Azure, GCP)\n\n• Develop and automate business logic for customer usage metering, pricing structures, promotions, and billing reconciliation\n\n• Collaborate across product management, DealOps, GTM, Support, and adjacent AppCore squads to deliver robust end-to-end features\n\n• Address technical debt, optimize CI/CD pipelines, strengthen test coverage, and improve system observability and operational resilience\n\n• Provide technical leadership and mentorship to engineers while shaping pragmatic solutions for complex systems challenges\n\n• Contribute to roadmap planning, technical design, OnCall improvements, and long-term simplification of stack operations\n\n• You will help own the production behavior of the systems you build. That includes improving runbooks, dashboards, alerts, reconciliation safety, rollout controls, and recovery procedures. You should be comfortable debugging across service boundaries and making careful changes in systems that affect customer stacks\n\nWhat Makes You a Great Fit:\n\nAt Grafana, we actively embrace AI-assisted and agentic development practices, integrating these technologies into both our engineering workflows and the systems we deliver. We encourage our engineers to thoughtfully leverage AI tools to enhance every stage of the lifecycle, from design and implementation to testing, documentation, and operations. We also look for strategic opportunities to embed agentic capabilities within our services to eliminate toil, bolster reliability, and ensure that complex customer workflows remain resilient and safe.\n\nWe are seeking a Staff FullStack Engineer who thrives on building production systems where correctness, scalability, and user experience are paramount. As a remote-first organization, you should be comfortable collaborating asynchronously across time zones and taking full ownership of the critical systems powering Grafana Cloud. Our team is small and operates with a high degree of independence; you will be expected to lead major projects, coordinate across service boundaries, and help define the technical direction for our domain.\n\nYou will be particularly successful in this role if you enjoy solving challenges related to stateful systems, eventual consistency, and reconciliation loops. We value engineers who can take ambiguous lifecycle requirements and transform them into explicit, modular solutions. You should be adept at breaking down complex systems work into safe, iterative increments while clearly communicating technical tradeoffs to both internal stakeholders and adjacent product teams.\n\nSome things you might be expected to do could include:\n\n• Writing efficient, readable, and easy to maintain code\n\n• Designing new microservices or systems\n\n• Collaborating with teammates and other departments to reach consensus on proposed solutions\n\n• Coordinating with product and UX when needed\n\n• Responding to customer requests and feedback\n\n• When ready, participating in our follow-the-sun OnCall rotation\n\n• Participating in team decisions, such as roadmap planning and prioritization\n\nRequirements:\n\n• You have at least 1 year of fully remote work experience\n\n• You have worked on a big SaaS platform and dealt with common distributed systems problems (e.g. scalability, multi-tenancy, data isolation, HA, …)\n\n• Strong professional experience with backend technologies (Golang, Node.js) as well as modern frontend web development (TypeScript, React)\n\n• Care deeply about developer and user experience and the quality of the products that you work on\n\n• Have some experience with delivering projects from gathering requirements, and brainstorming ideas to shipping a product to the customer’s hands in a self-driven way\n\n• You write clean, robust, well-tested software that other engineers can understand, operate, and maintain\n\n• Have experience with mentoring junior engineers in a collaborative but asynchronous environment\n\n• Can take on complex challenges and break them down to achieve tight learning loops: to analyze, design, and build modular solutions, deliver MVPs, gather data and feedback, and then progress iteratively\n\n• You are willing to work across teams. Your work has to be aligned with the needs of other squads and external stakeholders. You make your plans transparent, bring stakeholders on board, and are open to feedback and suggestions\n\n• Strong Kubernetes experience in AWS, GCP, or Azure, and familiarity with infrastructure-as-code tooling (Helm, Terraform, Jsonnet, etc.)\n\nBonus Points For:\n\n• Experience with high-volume usage metering, billing engines, or customer-facing cost management applications\n\n• Experience designing, building, and maintaining integrations with third-party business systems (e.g., NetSuite, Salesforce, Cloud Marketplaces)\n\n• Experience with frontend component libraries, design systems, and modern CSS-in-JS tooling\n\n• Familiarity with cloud marketplace integrations (AWS, Azure, GCP) and SaaS provisioning/tenancy patterns\n\n• Experience working on SaaS provisioning, tenancy, regional expansion, plugin rollout, or customer lifecycle systems\n\n• Experience with incident response involving configuration drift, partial failure, or cross-service state mismatch\n\nIn the United States, the compensation range for this role is $174,986 - $209,983 USD.  Actual compensation may vary based on level, experience, and skillset as assessed throughout the interview process. All of our roles include Restricted Stock Units (RSUs), giving every team member ownership in Grafana Labs&rsquo; success. We believe in shared outcomes—RSUs help us stay aligned and invested as we scale globally.\n\n*Compensation ranges are country specific. If you are applying for this role from a different location than listed above, your recruiter will discuss your specific market’s defined pay range & benefits at the beginning of the process.\n\nWhy You’ll Thrive at Grafana Labs:\n\n• 100% Remote, Global Culture - As a remote-only company, we bring together talent from around the world, united by a culture of collaboration and shared purpose.\n\n• Scaling Organization – Tackle meaningful work in a high-growth, ever-evolving environment.\n\n• Transparent Communication – Expect open decision-making and regular company-wide updates.\n\n• Innovation-Driven – Autonomy and support to ship great work and try new things.\n\n• Open Source Roots – Built on community-driven values that shape how we work.\n\n• Empowered Teams – High trust, low ego culture that values outcomes over optics.\n\n• Career Growth Pathways – Defined opportunities to grow and develop your career.\n\n• Approachable Leadership – Transparent execs who are involved, visible, and human.\n\n• Passionate People – Join a team of smart, supportive folks who care deeply about what they do.\n\n• In-Person onboarding- We want you to thrive from day 1 with your fellow new ‘Grafanistas’ to learn all about what we do and how we do it.\n\n• Balance is Key - We operate a global annual leave policy of 30 days per annum. 3 days of your annual leave entitlement are reserved for Grafana Shutdown Days to allow the team to really disconnect. *We will comply with local legislation where applicable.\n\nEqual Opportunity Employer: Grafana Labs is an equal opportunities employer. We welcome applications from everyone regardless of race, colour, nationality, origin, caste, sex, gender reassignment identity or expression, sexual orientation, age, religion or belief, disability, veteran status, genetic information, pregnancy, maternity, marital, family or carer status, or any other characteristic which is protected by local law. We believe that equality and diversity build a strong organisation, and we work hard to ensure that is the foundation of our organisation as we grow.\n\nGrafana Labs may utilize AI tools in its recruitment process to assist in matching information provided in CVs to job postings. The recruitment team will continue to review inbound CVs manually to identify alignment with current openings.\n\n#LI-Remote\n\nFor information about how your personal data is used once you’ve applied to a job, check out our privacy policy.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-19T02:08:08.000Z",
+    "sourceHash": "62bd54173bdcb591c267f7a07f7ac828e396c715a153b42026d035861cecd98f",
+    "company": {
+      "id": "grafanalabs",
+      "name": "Grafana Labs",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/grafana-labs-c183-0.webp",
+      "industry": "Technology",
+      "website": "https://grafanalabs.com"
+    },
+    "slug": "staff-frontend-engineer-platform-app-core-usage-us-remote-grafana-labs-62bd5417",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "principal",
+      "employmentType": "contract"
+    }
+  },
+  {
+    "id": "02b20a7704c050d0adc70c0cd9338d5e0775fcb05a7e993c240b9c408f8a4b53",
+    "title": "Staff FrontEnd Engineer - Platform - App Core Usage | Canada | Remote",
+    "applyUrl": "https://remotefirstjobs.com/companies/grafana-labs/jobs/staff-frontend-engineer-platform-app-core-usage-canada-remote-873161",
+    "description": "Grafana Labs is the company behind Grafana Cloud, the fully managed observability platform trusted by more than 10,000 organizations to ensure reliability, resolve incidents faster, and optimize telemetry at scale. Built on open source and open standards and designed for interoperability across any stack, Grafana Cloud brings AI to observability and observability to AI, giving teams (and their agents) unified visibility so they can see, understand, and act on all their disparate data, wherever it lives, and move at the speed of their ambitions. Customers, including Anthropic, Bloomberg, NVIDIA, Microsoft, and Salesforce, rely on Grafana Labs. We are a 100% remote company with team members across 40+ countries, backed by leading investors including Lightspeed Venture Partners, Sequoia Capital, GIC, Coatue, J.P. Morgan, CapitalG, and Lead Edge Capital. Learn more at grafana.com and follow us on LinkedIn and X.\n\nWe’re scaling fast and staying true to what makes us different: an open-source legacy, a global collaborative culture, and a passion for meaningful work. Our team thrives in an innovation-driven environment where transparency, autonomy, and trust fuel everything we do.\n\nYou may not meet every requirement, and that’s okay. If this role excites you, we’d love you to raise your hand for what could be a truly career-defining opportunity.\n\nThis is a remote position. We are seeking candidates in US and Canada.\n\nThe Opportunity:\n\nApplication Core Services (AppCore) is a group within Platform, in the Foundations department. Foundations produces the Internal Engineering Platform (IEP) and partners closely with our Cloud, Enterprise, and Grafana teams. Our team develops the essential systems driving Grafana&rsquo;s business operations. We utilize the grafana.com platform to engineer bespoke integrations and solutions that unify the diverse technical ecosystem of a modern software enterprise.\n\nThe team owns important domain areas that help keep both our customer workflows and internal business processes running smoothly. AppCore is made up of multiple squads, each focused on one or more of these domains. Our work includes maintaining the billing engine responsible for customer usage calculations, automating provisioning after a customer signs a contract, integrating with cloud marketplaces such as AWS, Azure, and GCP, and building and maintaining the user portal our customers rely on to manage their accounts.\n\nThis is a team working at the intersection of product, platform, and business operations. The systems we build are critical to how Grafana Cloud scales. We are looking for engineers who enjoy solving complex workflow and systems problems, improving reliability and developer experience, and building software that directly supports both customers and internal stakeholders.\n\nAs a company we are remote-first and global, we embrace people of different experiences and backgrounds to build diverse teams where every person brings a unique perspective to the software. Engineers at Grafana Labs also have the opportunity to contribute to Open Source communities and collaborate across teams beyond their immediate scope.\n\nWhat You’ll Be Doing:\n\nThe Usage squad owns the essential systems driving Grafana&rsquo;s business operations and customer usage calculations. Our domain encompasses maintaining the billing engine responsible for customer usage calculation, cost management and billing applications, automating provisioning after a customer signs a contract, integrating with cloud marketplaces such as AWS, Azure, and GCP, and building and maintaining the customer user portal.\n\nOur work sits at the intersection of product, platform, and business operations. We build full-stack web applications, customer portals, backend services, APIs, and data integrations across internal Grafana platforms and third-party systems like NetSuite and Salesforce. When this domain works well, customers get clear usage visibility, reliable billing, and seamless account management workflows. This role is about 75% FrontEnd and 25% BackEnd.\n\n• Design, build, operate, and evolve reliable full-stack web applications, customer-facing account portals, and backend services that power core customer usage and billing workflows\n\n• Build and maintain backend APIs (Golang, Node.js) and intuitive user interfaces using modern frontend technologies (TypeScript, React)\n\n• Design and maintain integrations between Grafana systems and external business platforms such as NetSuite, Salesforce, and cloud marketplaces (AWS, Azure, GCP)\n\n• Develop and automate business logic for customer usage metering, pricing structures, promotions, and billing reconciliation\n\n• Collaborate across product management, DealOps, GTM, Support, and adjacent AppCore squads to deliver robust end-to-end features\n\n• Address technical debt, optimize CI/CD pipelines, strengthen test coverage, and improve system observability and operational resilience\n\n• Provide technical leadership and mentorship to engineers while shaping pragmatic solutions for complex systems challenges\n\n• Contribute to roadmap planning, technical design, OnCall improvements, and long-term simplification of stack operations\n\n• You will help own the production behavior of the systems you build. That includes improving runbooks, dashboards, alerts, reconciliation safety, rollout controls, and recovery procedures. You should be comfortable debugging across service boundaries and making careful changes in systems that affect customer stacks\n\nWhat Makes You a Great Fit:\n\nAt Grafana, we actively embrace AI-assisted and agentic development practices, integrating these technologies into both our engineering workflows and the systems we deliver. We encourage our engineers to thoughtfully leverage AI tools to enhance every stage of the lifecycle, from design and implementation to testing, documentation, and operations. We also look for strategic opportunities to embed agentic capabilities within our services to eliminate toil, bolster reliability, and ensure that complex customer workflows remain resilient and safe.\n\nWe are seeking a Staff FullStack Engineer who thrives on building production systems where correctness, scalability, and user experience are paramount. As a remote-first organization, you should be comfortable collaborating asynchronously across time zones and taking full ownership of the critical systems powering Grafana Cloud. Our team is small and operates with a high degree of independence; you will be expected to lead major projects, coordinate across service boundaries, and help define the technical direction for our domain.\n\nYou will be particularly successful in this role if you enjoy solving challenges related to stateful systems, eventual consistency, and reconciliation loops. We value engineers who can take ambiguous lifecycle requirements and transform them into explicit, modular solutions. You should be adept at breaking down complex systems work into safe, iterative increments while clearly communicating technical tradeoffs to both internal stakeholders and adjacent product teams.\n\nSome things you might be expected to do could include:\n\n• Writing efficient, readable, and easy to maintain code\n\n• Designing new microservices or systems\n\n• Collaborating with teammates and other departments to reach consensus on proposed solutions\n\n• Coordinating with product and UX when needed\n\n• Responding to customer requests and feedback\n\n• When ready, participating in our follow-the-sun OnCall rotation\n\n• Participating in team decisions, such as roadmap planning and prioritization\n\nRequirements:\n\n• You have at least 1 year of fully remote work experience\n\n• You have worked on a big SaaS platform and dealt with common distributed systems problems (e.g. scalability, multi-tenancy, data isolation, HA, …)\n\n• Strong professional experience with backend technologies (Golang, Node.js) as well as modern frontend web development (TypeScript, React)\n\n• Care deeply about developer and user experience and the quality of the products that you work on\n\n• Have some experience with delivering projects from gathering requirements, and brainstorming ideas to shipping a product to the customer’s hands in a self-driven way\n\n• You write clean, robust, well-tested software that other engineers can understand, operate, and maintain\n\n• Have experience with mentoring junior engineers in a collaborative but asynchronous environment\n\n• Can take on complex challenges and break them down to achieve tight learning loops: to analyze, design, and build modular solutions, deliver MVPs, gather data and feedback, and then progress iteratively\n\n• You are willing to work across teams. Your work has to be aligned with the needs of other squads and external stakeholders. You make your plans transparent, bring stakeholders on board, and are open to feedback and suggestions\n\n• Strong Kubernetes experience in AWS, GCP, or Azure, and familiarity with infrastructure-as-code tooling (Helm, Terraform, Jsonnet, etc.)\n\nBonus Points For:\n\n• Experience with high-volume usage metering, billing engines, or customer-facing cost management applications\n\n• Experience designing, building, and maintaining integrations with third-party business systems (e.g., NetSuite, Salesforce, Cloud Marketplaces)\n\n• Experience with frontend component libraries, design systems, and modern CSS-in-JS tooling\n\n• Familiarity with cloud marketplace integrations (AWS, Azure, GCP) and SaaS provisioning/tenancy patterns\n\n• Experience working on SaaS provisioning, tenancy, regional expansion, plugin rollout, or customer lifecycle systems\n\n• Experience with incident response involving configuration drift, partial failure, or cross-service state mismatch\n\nIn Canada, the compensation range for this role is $186,368 - $223,642 CAD. Actual compensation may vary based on level, experience, and skillset as assessed throughout the interview process. All of our roles include Restricted Stock Units (RSUs), giving every team member ownership in Grafana Labs&rsquo; success. We believe in shared outcomes—RSUs help us stay aligned and invested as we scale globally.\n\n*Compensation ranges are country specific. If you are applying for this role from a different location than listed above, your recruiter will discuss your specific market’s defined pay range & benefits at the beginning of the process.\n\nWhy You’ll Thrive at Grafana Labs:\n\n• 100% Remote, Global Culture - As a remote-only company, we bring together talent from around the world, united by a culture of collaboration and shared purpose.\n\n• Scaling Organization – Tackle meaningful work in a high-growth, ever-evolving environment.\n\n• Transparent Communication – Expect open decision-making and regular company-wide updates.\n\n• Innovation-Driven – Autonomy and support to ship great work and try new things.\n\n• Open Source Roots – Built on community-driven values that shape how we work.\n\n• Empowered Teams – High trust, low ego culture that values outcomes over optics.\n\n• Career Growth Pathways – Defined opportunities to grow and develop your career.\n\n• Approachable Leadership – Transparent execs who are involved, visible, and human.\n\n• Passionate People – Join a team of smart, supportive folks who care deeply about what they do.\n\n• In-Person onboarding- We want you to thrive from day 1 with your fellow new ‘Grafanistas’ to learn all about what we do and how we do it.\n\n• Balance is Key - We operate a global annual leave policy of 30 days per annum. 3 days of your annual leave entitlement are reserved for Grafana Shutdown Days to allow the team to really disconnect. *We will comply with local legislation where applicable.\n\nEqual Opportunity Employer: Grafana Labs is an equal opportunities employer. We welcome applications from everyone regardless of race, colour, nationality, origin, caste, sex, gender reassignment identity or expression, sexual orientation, age, religion or belief, disability, veteran status, genetic information, pregnancy, maternity, marital, family or carer status, or any other characteristic which is protected by local law. We believe that equality and diversity build a strong organisation, and we work hard to ensure that is the foundation of our organisation as we grow.\n\nGrafana Labs may utilize AI tools in its recruitment process to assist in matching information provided in CVs to job postings. The recruitment team will continue to review inbound CVs manually to identify alignment with current openings.\n\n#LI-Remote\n\nFor information about how your personal data is used once you’ve applied to a job, check out our privacy policy.",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-19T02:09:14.000Z",
+    "sourceHash": "02b20a7704c050d0adc70c0cd9338d5e0775fcb05a7e993c240b9c408f8a4b53",
+    "company": {
+      "id": "grafanalabs",
+      "name": "Grafana Labs",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/grafana-labs-c183-0.webp",
+      "industry": "Technology",
+      "website": "https://grafanalabs.com"
+    },
+    "slug": "staff-frontend-engineer-platform-app-core-usage-canada-remote-grafana-labs-02b20a77",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "principal",
+      "employmentType": "contract"
+    }
+  },
+  {
     "id": "7cc87309c6a5150b9b9c5bfa92d88f14a485c52d43a895e1833367b02cb787ba",
     "title": "Frontend Software Engineer - Remote",
     "applyUrl": "https://yohrconsultancy.hiresome.ai/apply_form/frontend-software-engineer-remote-6a61fc5172d0474718846357?utm_source=linkedin",
@@ -1618,42 +1988,6 @@
       "remoteScope": "COUNTRY",
       "eligibleRegions": [
         "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "66e4bb954608dfd70cd0ff0b220c9277f4d9b4e743a8cd6d313c532e97525435",
-    "title": "Frontend Engineer",
-    "applyUrl": "https://remoteOK.com/remote-jobs/remote-frontend-engineer-bjak-1137410",
-    "description": "About ActAIThere are over 5 billion users using basic applications today such email, notes, tasks, calendar and they're not AI-native. Our mission is to build proactive applications for anyone in the world, who are not used to complex prompting. We aim to bring intelligence to conversations, errands, organising and workflows, with minimal to no prompting. Our application focuses on achieving high reliability for long-running workflows, persistent context, and real-world task completion. We believe products will greatly reduce hallucinations\n\nOur objective is to organise anyone's life.\n\nÂ RoleAs a Web Frontend Engineer, you will build the core web experiences, including Chat, Notes, Calendar, Docs and Sheets.\n\nYou will own complex, highly interactive product surfaces from architecture through implementation, working closely with product, design, backend and AI engineers to make AI a native part of how users communicate, write, organise and work.\n\nÂ What You'll Own• Build major web experiences across Chat, Notes, Calendar, Docs, and Sheets.\n\n• Develop complex interactions including real-time messaging, collaborative editing, rich-text editing, scheduling, tables, and spreadsheets.\n\n• Build reusable frontend architecture and components that work consistently across ActAI applications.\n\n• Integrate streaming AI responses, proactive actions, and model-driven experiences directly into product workflows.\n\n• Own frontend performance, responsiveness, reliability and accessibility across browsers and devices.\n\n• Work closely with product and design to take ideas from prototype to production quickly.\n\nÂ What We're Looking For• Strong experience building complex, production web applications using React, TypeScript and modern frontend technologies.\n\n• Deep understanding of frontend architecture, state management, browser APIs, and performance.\n\n• Experience building highly interactive products such as chat, collaboration, productivity, document editing, calendars, or workspaces.\n\n• Experience with real-time systems, WebSockets, streaming APIs, or collaborative interfaces.\n\n• Strong product and UI judgment with attention to interaction details.\n\n• Able to independently own features from technical design through production.\n\nÂ Outcomes• Users can communicate, write, organise and collaborate seamlessly across Chat, Notes, Calendar, Docs and Sheets.\n\n• Complex interactions such as group messaging, editing, scheduling and collaboration feel fast and reliable.\n\n• AI capabilities are integrated naturally into product workflows rather than added as separate chatbot experiences.\n\n• Frontend architecture remains fast, maintainable and reusable as ActAI expands into new applications and workflows.\n\nÂ Tech Stack• TypeScript\n\n• React.js / Next.js\n\n• HTML / CSS\n\n• WebSockets / streaming APIs\n\n• Node.js\n\n• REST / GraphQL APIs\n\nÂ How We WorkThe best products today in the world were built by small, world-class teams. We are a high talent density and hands-on team. We make decisions collectively and move at rapid speed, striking a balance between shipping high-quality work and learning.\n\nJoining our team requires the ability to bring structure, exercise judgment and execute independently. Our goal is to put in the hands of our users a truly magical product.\n\nÂ Interview ProcessIf there appears to be a fit, we'll reach out to schedule 3, but no more than 4 interviews.\n\nApplications are evaluated by our technical team members. Interviews will be conducted via virtual meetings and/or onsite.\n\nWe value transparency and efficiency, so expect a prompt decision. If you've demonstrated the exceptional skills and mindset we're looking for, we'll extend an offer to join us and help bring practical AI benefits to billions of users globally.\n\nPlease mention the word **STAINLESS** and tag RNDUuMTE3LjcyLjE2 when applying to show you read the job post completely (#RNDUuMTE3LjcyLjE2). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
-    "location": "Remote - Ireland",
-    "country": "Ireland",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-20T00:00:25.000Z",
-    "sourceHash": "66e4bb954608dfd70cd0ff0b220c9277f4d9b4e743a8cd6d313c532e97525435",
-    "company": {
-      "id": "bjak",
-      "name": "Bjak",
-      "logoUrl": "https://logo.clearbit.com/bjak.com",
-      "industry": "Technology",
-      "website": "https://bjak.com"
-    },
-    "slug": "frontend-engineer-bjak-66e4bb95",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "css",
-        "graphql",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Ireland"
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
