@@ -1,5 +1,303 @@
 [
   {
+    "id": "2cf4978a8d277ba5382a8109872177f251122076694d0a17ba00a34fe4c08ea0",
+    "title": "Frontend Engineer",
+    "applyUrl": "https://www.talenthop.com/apply-with-ai/b3ae9593-1a4d-49f0-a4e6-ea5a4bd6eae4?utm_medium=job_posting&utm_source=linkedin&utm_campaign=software_engineer&utm_category=software_engineer&utm_term=frontend_engineer",
+    "description": "About the job\n\nThis is a Fully Remote Job\n\n\n\n\nAbout Our Client:\n\nThis team operates within the Workflow pillar, focusing on communication technologies including calling, messaging, voicemail, transcription, and their supporting workflows. The organization develops interfaces utilized by thousands of businesses daily, aiming to enhance communication tools through scalable and reliable solutions.\n\n\n\n\nAbout the Opportunity:\n\nThe FRONTEND ENGINEER will contribute to building and improving critical communication interfaces. This role involves re-architecting calling systems, developing dashboards and tools for performance observability, and shipping new features that enhance user experience. The engineer will own projects end to end, collaborate with cross-functional teams, and support ongoing improvements in calling, messaging, voicemail, and transcription.\n\n\n\n\nResponsibilities:\n\nRe-architect calling infrastructure and standardize integration with calling providers\nDevelop dashboards and tools to monitor calling performance\nImplement new features such as URL unfurling, custom transcript summaries, group messaging, direct messages, and calling enhancements\nManage projects from initiation to delivery with senior engineer support\nImprove existing features, fix bugs, and update documentation\nWrite tests and ensure safe deployment through delivery pipelines\n\n\n\n\nRequirements:\n\nExperience with React and TypeScript\nUnderstanding of data flow from backend to frontend, including GraphQL and schema design\nAbility to write integration and unit tests, preferably using Playwright\nProblem-solving skills and collaborative approach to building user experiences\nKnowledge of web performance, observability, and accessibility concepts\nStrong ownership and communication skills\nTeam player mindset with willingness to contribute through bug fixes and documentation\nProactive and self-driven in a remote work environment\nMethodical approach to testing and quality assurance\nEmpathy and thoughtfulness in evaluating tradeoffs\nCuriosity and a drive for continuous learning\nClean, readable, testable, and maintainable code practices\nOpenness to integrating AI tools into engineering work\n\n\n\n\nNice to have:\n\nExperience with real-time messaging technologies such as WebSockets and WebRTC\nFamiliarity with CI/CD pipelines and mature delivery processes\nExperience with agentic AI workflows for feature generation and testing\n\n\n\n\nPay Range and Compensation Package:\n\nSF Bay Area, Los Angeles, Seattle, Portland, Boston, New York, and Washington, DC Metro: $170,000 - $200,000 USD annually\nAll other US Locations: $153,000 - $180,000 USD annually\nCanada: $156,000 - $183,000 CAD annually\nCompensation includes equity, extensive medical coverage, a monthly lifestyle stipend, and a flexible PTO policy\n\n\n\n\nEqual Opportunity Statement: Our client is an equal opportunity employer. They celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, or national origin.\n\n\n\n\nNote:\n\nTalentHop is a recruitment partner of this role. Please note that all employment decisions, including candidate assessment, interviews, hiring, compensation, and employment terms, are made exclusively by the hiring employer.",
+    "location": "Remote - Jordan",
+    "country": "Jordan",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-21T17:35:53.239Z",
+    "sourceHash": "2cf4978a8d277ba5382a8109872177f251122076694d0a17ba00a34fe4c08ea0",
+    "company": {
+      "id": "talenthop",
+      "name": "TalentHop",
+      "logoUrl": "https://logo.clearbit.com/talenthop.com",
+      "industry": "Technology",
+      "website": "https://talenthop.com"
+    },
+    "slug": "frontend-engineer-talenthop-2cf4978a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "graphql",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Jordan"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "152f802afdf34dc3c71a4914c283ef178b145dbdb5dc9468dd3574d9002a14a1",
+    "title": "Senior Frontend Engineer (Analytics Product Lead)",
+    "applyUrl": "https://jobs.lever.co/cmgx/25cc0eec-28ce-4d06-98c5-c1c6fbe56c3b/apply?lever-source=LinkedIn",
+    "description": "About the job\n\nThe Company\n\nCapital Markets Gateway LLC (CMG) is a capital markets-focused fintech transforming global equity capital markets (ECM) through data, technology, and connectivity. As the preferred source for ECM analytics and the first network connecting the buy-side and sell-side for ECM workflows, we are committed to reshaping how capital markets operate. Founded in 2017 by a team of ECM practitioners, CMG has completed three successful fundraising rounds and is backed by a group of the world’s most prestigious financial institutions. The CMG platform is currently relied upon by 25 global investment banks and 135 asset managers representing $40 trillion in AUM. For more information, please visit www.cmgx.io. \n\nThe Role \n\nWe’re looking for a Senior Frontend Engineer to join the Mission Control team (DataLab product) as the frontend technical lead for the western hemisphere-based team. As a frontend engineer, you will play a critical role in crafting user-centric, performant, and scalable interfaces that power our enterprise financial solutions using industry standard technologies like React, TypeScript, and GraphQL.\n\nYou will collaborate closely with product managers, back-end engineers, and engineering leaders to translate complex business requirements into clean, maintainable code. You will contribute to frontend architecture decisions, establish best practices in UI development, and champion design consistency, accessibility, and overall product quality.\n\nYou will also be empowered to use modern agentic coding tools thoughtfully to accelerate delivery, improve code quality, explore solutions, and raise the team’s engineering leverage while maintaining strong judgment, ownership, and review standards.\n\nOur Engineering Team \n\nThe CMG engineering team is made up of domain experts who collaborate across disciplines and The CMG engineering team is made up of domain experts who collaborate across disciplines and share knowledge openly. We value engineers who are passionate about modern technologies and best practices who can raise the bar for React, TypeScript, UI architecture, testing, accessibility, and developer experience. Our engineers are encouraged to challenge the status quo and are constantly seeking improvement and efficiency in our codebase and platform. CMG engineers are empowered to explore solutions and bring recommendations to the table. We are in a period of making impactful engineering decisions, and this role will help guide frontend technical direction through research, prototyping, code review, and production-quality implementation.\n\nResponsibilities\n\n\nServe as the frontend technical lead for CMG’s DataLab product, helping set direction for the Mission Control team in the Western Hemisphere. \nAI is changing how software gets built. In this role you'll contribute to the frontend development harness, push it hard as a daily user, and champion it across the team. \nDevelop and maintain complex, scalable user interfaces for web applications using React and TypeScript. \nPartner with your cross functional product team to come up with the best solution, regardless of role boundaries or where the work technically sits. \nGuide frontend architecture, component design, accessibility, performance, and developer experience improvements. \nContribute to overall product quality through unit, component, and E2E tests. \n\n\n\nQualifications\n\n\nReact: 5+ years \nTypeScript: 5+ years \nSoftware engineering: 10+ years \nExperience leading frontend technical decisions, mentoring engineers, and driving UI architecture standards \nDemonstrated ability to use agentic coding tools (we use Claude, Codex, and CoPilot) productively while maintaining high standards for correctness, security, maintainability, and team collaboration \nSolid full-stack experience is expected (Node.js or otherwise, we are a .NET shop) \nFintech experience is a plus \n\n\n\nOur Tech Stack \n\n\nReact - We’re all in on React - we maintain multiple single-page React apps \nTypeScript - 99% of our frontend codebase is TypeScript \nGraphQL - served by a.NET GraphQL gateway \nNx monorepo \nTesting - Jest/Testing Library/Playwright/Storybook \nMaterial UI - CMG’s design system is built on a tried-and-true component library \nContainerized - Run the entire stack on your machine with one click \nAutomatic preview environments created for every PR \nAI-assisted and agentic coding workflows to improve productivity, discovery, testing, and delivery \n\n\n\nOur Values \n\n\nWe innovate with purpose \nWe focus on outcomes vs. output \nWe believe diverse and inclusive teams fuel innovation \nWe are humble yet candid \nWe do right by the customer \n\n\n\nWhat We Offer\n\n\nComprehensive benefits program (Medical, Dental & Vision) \nEquity \n401k company match \nFlexible Spending & Health Savings Account \nUnlimited PTO \nRemote work environment \nEducation reimbursement \nContinuous learning opportunities \nLife insurance \nEmployee referral bonus \nParental leave \n\n\n\nThis employer participates in E-Verify and will provide the federal government with your Form I-9 information to confirm you are authorized to work in the U.S.\n\nCMG embraces our ongoing commitment to building a culture reflecting the people, perspectives, and passions it represents. We will accept nothing less than equity, inclusion, and belonging for all. With the only constant in life being change, we will always listen, learn, and improve for the betterment of our teams, customers, and communities. CMG is proud to be an Equal Opportunity Employer.\n\nThe successful candidate’s salary will be determined by non-discriminatory factors such as skills and experience. Additionally, this role is eligible to participate in our benefits program, including health, dental, vision, 401K, paid time off, and our equity plan.",
+    "location": "Remote - Georgia",
+    "country": "Georgia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-21T17:31:28.319Z",
+    "sourceHash": "152f802afdf34dc3c71a4914c283ef178b145dbdb5dc9468dd3574d9002a14a1",
+    "company": {
+      "id": "cmgcapitalmarketsgateway",
+      "name": "CMG (Capital Markets Gateway)",
+      "logoUrl": "https://logo.clearbit.com/cmgcapitalmarketsgateway.com",
+      "industry": "Technology",
+      "website": "https://cmgcapitalmarketsgateway.com"
+    },
+    "slug": "senior-frontend-engineer-analytics-product-lead-cmg-capital-markets-gateway-152f802a",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "less",
+        "graphql",
+        "storybook",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Georgia"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "f5532d566698ce9f6354598d4bf2c460c88a5a27eaa923ee8f4b7f041edfd256",
+    "title": "Lead Frontend Engineer",
+    "applyUrl": "https://www.bestjobtool.com/job-description/3198834542?src=LinkedIn",
+    "description": "About the job\n\nAbout The Company\n\nFinTech Collective, LLC is a dynamic and innovative financial technology firm dedicated to transforming the way financial services are delivered and experienced. With a focus on leveraging cutting-edge technology and data-driven solutions, we aim to empower businesses and consumers alike through seamless, secure, and efficient financial products. Our team comprises industry experts, visionary technologists, and strategic thinkers committed to pushing the boundaries of fintech innovation. As a leader in the industry, FinTech Collective, LLC fosters a collaborative and inclusive environment that encourages continuous learning, creativity, and impactful problem-solving.\n\nAbout The Role\n\nWe are seeking an experienced Lead Engineer to join our team and spearhead our frontend-first, full-stack development initiatives with a focus on AI-assisted development. This leadership role requires a strategic thinker with strong technical judgment, an eye for architectural excellence, and the ability to foster collaboration across cross-functional teams including product management, design, and engineering. As a Lead Engineer, you will play a critical role in shaping the technical direction of our projects, ensuring the delivery of high-quality, scalable, and maintainable solutions.\n\nYou will utilize advanced AI agents to prototype, refactor, and validate solutions, ensuring rapid iteration and innovation without compromising on standards of correctness, maintainability, and testing rigor. This position offers a unique opportunity to influence the future of fintech development through innovative use of AI tools and modern engineering practices, making a significant impact on our products and overall company growth.\n\nQualifications\n\n\nBachelor’s or Master’s degree in Computer Science, Software Engineering, or a related field.\nProven experience (minimum of 7 years) in full-stack development, with a strong emphasis on frontend technologies.\nExtensive experience in leading engineering teams and managing complex projects from conception to deployment.\nDeep understanding of modern software architecture, design patterns, and best practices.\nHands-on experience with AI and machine learning integration within software solutions.\nProficiency in programming languages such as JavaScript, TypeScript, Python, or similar.\nStrong knowledge of cloud platforms, CI/CD pipelines, and containerization technologies.\nExcellent communication and leadership skills, with the ability to collaborate effectively across diverse teams.\nExperience with agile development methodologies and a passion for continuous improvement.\n\n\nResponsibilities\n\n\nLead the development and delivery of full-stack solutions with a focus on frontend-first architecture.\nUtilize AI agents to prototype, refactor, and validate software solutions rapidly and efficiently.\nEstablish and uphold high standards for code quality, testing, and documentation.\nCollaborate closely with product managers, designers, and other engineers to define technical requirements and translate them into scalable solutions.\nMentor junior team members, fostering a culture of technical excellence and continuous learning.\nArchitect and implement robust, scalable, and maintainable systems that support business growth and innovation.\nStay abreast of emerging technologies and industry trends, integrating relevant innovations into the development process.\nEnsure compliance with security standards and best practices across all development activities.\nParticipate in strategic planning and contribute to the overall technical roadmap of the company.\n\n\nBenefits\n\n\nCompetitive salary package aligned with industry standards.\nFlexible work hours and remote work options to promote work-life balance.\nComprehensive health, dental, and vision insurance plans.\nOpportunities for professional development, including training, certifications, and conferences.\nCollaborative and inclusive work environment that values diversity and innovation.\nGenerous paid time off and holiday leave policies.\nStock options or equity participation, fostering a sense of ownership and long-term commitment.\nModern office amenities and state-of-the-art technology tools to support productivity and comfort.\n\n\nEqual Opportunity\n\nFinTech Collective, LLC is committed to creating a diverse and inclusive workplace. We are proud to be an equal opportunity employer and do not discriminate based on race, color, religion, sex, national origin, age, disability, sexual orientation, gender identity, or any other protected characteristic. We believe that a diverse team enhances innovation and drives better business outcomes. All qualified applicants will receive consideration for employment without regard to any protected status.\n\n\n\n\n\nDesired Skills and Experience\n\nFull Stack Development, Frontend Development, Software Architecture, AI Integration, Leadership, Agile Methodologies",
+    "location": "Remote - Georgia",
+    "country": "Georgia",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-21T17:31:24.786Z",
+    "sourceHash": "f5532d566698ce9f6354598d4bf2c460c88a5a27eaa923ee8f4b7f041edfd256",
+    "company": {
+      "id": "netrolynxai",
+      "name": "Netrolynx AI",
+      "logoUrl": "https://logo.clearbit.com/netrolynxai.com",
+      "industry": "Technology",
+      "website": "https://netrolynxai.com"
+    },
+    "slug": "lead-frontend-engineer-netrolynx-ai-f5532d56",
+    "aiTags": {
+      "stack": [
+        "typescript",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Georgia"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "631bbeb4575724b60b5de51770102339c6c5a891f4f4771d8c94f261704df1db",
+    "title": "Front End Developer Intern (HTML, CSS, JavaScript, React) | Remote",
+    "applyUrl": "https://forms.gle/frzDi1Zjom51e2HN6",
+    "description": "About the job\n\nFront End Developer Intern (HTML, CSS, JavaScript, React) | Remote\n\n\n\n\nCrossing Infotech is hiring a Front End Developer Intern for a full-time remote internship in India. The internship runs for 1 to 3 months with a monthly stipend of INR 15,500 to INR 16,500. Freshers and students are welcome to apply.\n\n\n\n\nAbout Crossing Infotech\n\nCrossing Infotech is an IT solutions company that provides technology, data and business support services to its clients. Interns work on live projects under the guidance of experienced team members.\n\n\n\n\nJob Details\n\nJob Title: Front End Developer Intern\n\nDuration: 1 to 3 months\n\nStipend: INR 15,500 to INR 16,500 per month\n\nEmployment Type: Full Time (Internship)\n\nWork Mode: Remote\n\nLocation: India (Remote)\n\nExperience Level: Internship / Entry Level\n\n\n\n\nResponsibilities\n\n- Build responsive web pages and user interfaces using HTML, CSS and JavaScript\n\n- Develop reusable components using React under guidance from the team\n\n- Convert design mockups from Figma or similar tools into working web pages\n\n- Make websites work smoothly across different browsers and screen sizes\n\n- Connect front end screens with REST APIs and display data dynamically\n\n- Use Git and GitHub for version control and code collaboration\n\n- Test, debug and fix UI issues and improve page performance\n\n- Work with the team to understand requirements and deliver tasks on time\n\n\n\n\nRequired Skills\n\n- Basic knowledge of HTML5 and CSS3 (Flexbox, Grid, responsive design)\n\n- Basic understanding of JavaScript (ES6, DOM manipulation)\n\n- Familiarity with React (components, props, state, hooks)\n\n- Familiarity with Git and GitHub\n\n- Good problem-solving and attention to detail\n\n- Good written and spoken English communication\n\n\n\n\nGood to Have\n\n- Knowledge of Bootstrap or Tailwind CSS\n\n- Basic understanding of REST APIs and JSON\n\n- Familiarity with Figma\n\n- Any front end project, portfolio or course experience\n\n\n\n\nEligibility\n\n- Students and recent graduates in B.Tech, BCA, MCA, B.Sc (Computer Science or IT), M.Sc or any related field\n\n- Freshers interested in building a career in front end development\n\n- Candidates with a laptop or computer and a stable internet connection\n\n\n\n\nBenefits\n\n- Monthly stipend of INR 15,500 to INR 16,500\n\n- Internship completion certificate\n\n- Hands-on experience on live web projects\n\n- Remote work from anywhere in India\n\n- Guidance and mentorship from the team\n\n\n\n\nEqual Opportunity\n\nCrossing Infotech is an equal opportunity employer. All qualified applicants will be considered without regard to gender, religion, caste, disability or any other protected status.\n\n\n\n\nHow to Apply\n\nClick the Apply button and submit your resume. Shortlisted candidates will be contacted for the next steps. No fee is charged to candidates at any stage of the hiring process.",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-21T16:56:09.435Z",
+    "sourceHash": "631bbeb4575724b60b5de51770102339c6c5a891f4f4771d8c94f261704df1db",
+    "company": {
+      "id": "crossinginfotech",
+      "name": "Crossing Infotech",
+      "logoUrl": "https://logo.clearbit.com/crossinginfotech.com",
+      "industry": "Technology",
+      "website": "https://crossinginfotech.com"
+    },
+    "slug": "front-end-developer-intern-html-css-javascript-react-remote-crossing-infotech-631bbeb4",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "tailwind",
+        "figma",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "mid",
+      "employmentType": "internship"
+    }
+  },
+  {
+    "id": "9c178e60620ebc8926bf8e2ffd9e0d4154d6a21dc30d2848df1771f14e543337",
+    "title": "Front-End Developer with AngularJS",
+    "applyUrl": "https://rochsystems.com/jobs/front-end-developer-with-angularjs",
+    "description": "About the job\n\nJob Description\n\nThis is a true remote work position. You can be located anywhere in the world. You must have a good Internet connection.\n\nWe need two (2) front-end developers with AngularJS to work with us on a full-time project basis, between 6 and 12 months, starting ASAP. You’ll be part of a team working collaboratively using scrum, TDD and BDD. You should have at least 6 years of full-time experience specializing in web development. You will be working with a team of over 10 developers, but you will be the master of your own domain.\n\nYou Will Be Responsible For\n\n\nBuilding speedy, functional web applications using AngularJS and AJAX. \nDesigning and implementing user experiences for mobile, tablets and browsers.\nWorking independently in coding and code testing.\nImplementing design specs accurately.\nProviding detailed analysis and recommendations to the project lead.\nImplementing recommended design changes, unit tests and regression tests for both performance and data integrity.\nCreating documentation.\n\n\nSkills And Requirements\n\nMUST HAVES:\n\n\nStrong TDD experience (writing test and code at the same time).\nStrong experience with AngularJS, JavaScript, and AJAX.\nStrong REST API design and implementation skills.\nHands-on experience with JSON schema. \nHands-on experience deploying mission-critical applications to production.\nStrong understanding of Git workflow.\nStrong verbal and written English language skills.\n\n\nNice To Have\n\n\nElasticsearch \nCucumber experience\nDocker experience\n\n\nIF YOU DO NOT HAVE THE TOP THREE “MUST HAVES,” PLEASE DO NOT APPLY!\n\nShare your git account when submitting your resume. We want to see what you have done!\n\nImportant Note: About our interview process: Please block out approximately 1.5 hours for your interview and make yourself comfortable. We will begin by asking you some questions about your experience (this will take approximately 30 minutes), after which our senior architect will give you two short, hands-on exercises. The exercises should take about 60 minutes or less to complete, depending on your speed. You’ll bring your own tools (editors) and share your screen on Hangout/Skype as you do the exercises. Our architect will be available if you have any questions. If your experience closely matches our requirements, you successfully complete the exercises and we can agree on the rate, we will offer you the job on the spot.\n\nWe look forward to hearing from you!\n\nNO RECRUITERS OR AGENCIES! RESUMES SUBMITTED BY THE AFOREMENTIONED WILL BE REJECTED.",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-21T16:54:32.832Z",
+    "sourceHash": "9c178e60620ebc8926bf8e2ffd9e0d4154d6a21dc30d2848df1771f14e543337",
+    "company": {
+      "id": "rochsystems",
+      "name": "Roch Systems",
+      "logoUrl": "https://logo.clearbit.com/rochsystems.com",
+      "industry": "Technology",
+      "website": "https://rochsystems.com"
+    },
+    "slug": "front-end-developer-with-angularjs-roch-systems-9c178e60",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "javascript",
+        "less"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "2427971606a8efd7a551fa0aec89f750e633f375df36d687120964a42e58ca84",
+    "title": "Frontend Engineer, II (Remote)",
+    "applyUrl": "https://www.torentify.com/jobs/6ad84e47804737917660876f",
+    "description": "About the job\n\nAbout the Company\n\n\n\n\nCoinbase is a financial technology company focused on increasing economic freedom. Its products help people access and manage digital assets and understand their financial activity. Coinbase operates as a remote-first company, with employees coming together quarterly for in-person working sessions known as “surges.”\n\n\n\n\nAbout the Role\n\n\n\n\nCoinbase is seeking a Senior Frontend Engineer to join its Portfolio team within the Consumer & Business group. The team develops the balances, holdings, and profit-and-loss (PnL) experiences that help millions of users understand their portfolios across the Coinbase app and website.\n\n\n\n\nIn this role, you will build and maintain frontend experiences that turn complex, real-time financial data into clear, accurate, and accessible interfaces. You will work across web technologies, including React and TypeScript, as well as native iOS and Android applications. Partnering with backend engineers, designers, and product teams, you will take complex problems from initial scoping through production release while contributing to frontend architecture, code quality, and engineering standards.\n\n\n\n\nKey Responsibilities\n\n\n\n\nOwn the design and delivery of core Portfolio features, including balances, holdings, and profit-and-loss experiences across web and native mobile platforms.\nDevelop performant, accessible, and pixel-accurate user interfaces that display real-time financial data at Coinbase scale.\nCollaborate with backend engineers, designers, and product partners to define requirements and take ambiguous problems from scoping through production rollout.\nDrive frontend architecture and engineering quality, including component reuse, state management, testing, and performance instrumentation.\nConduct thorough code reviews and provide technical mentorship to strengthen the team's engineering practices.\nDocument architectural decisions and contribute to maintainable, high-quality frontend systems.\nBuild interfaces that help users understand their financial holdings and portfolio performance accurately and efficiently.\nUse generative AI responsibly, maintaining human oversight while improving workflow efficiency, cost, and output quality.\n\n\n\n\nRequired Qualifications\n\n\n\n\nAt least five years of frontend engineering experience building consumer-facing web applications.\nStrong experience with React and TypeScript.\nA solid understanding of modern frontend fundamentals, including state management, rendering performance, and accessibility.\nExperience delivering and owning complex features throughout the production lifecycle.\nExperience building real-time or high-throughput user interfaces and integrating them with backend APIs.\nExperience working with REST or GraphQL APIs.\nAbility to collaborate effectively with design and product teams to shape product outcomes.\nExperience writing high-quality, well-tested production code.\nAbility to use generative AI responsibly, with appropriate human oversight and a focus on measurable improvements in efficiency, cost, and quality.\n\n\n\n\nPreferred Qualifications / Requirements\n\n\n\n\nExperience developing financial, trading, or other data-intensive applications where accuracy and latency are important.\nExperience working across web and native mobile platforms, including iOS and Android.\nExperience contributing to frontend architecture, technical documentation, code reviews, and engineering mentorship.\n\n\n\n\nLocation and Work Arrangement\n\n\n\n\nCoinbase is a remote-first company, with quarterly in-person working sessions called “surges.” The listing does not specify geographic restrictions for this position.\n\n\n\n\nSalary & Benefits\n\n\n\n\nThe annual base salary range is $186,065 to $218,900 USD, depending on location. Total compensation may also include equity and bonus eligibility.\n\n\n\n\nBenefits include medical, dental, and vision coverage, as well as a 401(k) plan.\n\n\n\n\nEqual Opportunity / EEO\n\n\n\n\nCoinbase is an Equal Opportunity Employer. All qualified applicants will receive consideration without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, protected veteran status, or genetic information. Applicants with criminal histories will be considered in accordance with applicable federal, state, and local laws.\n\n\n\n\nReasonable accommodations are available for applicants with disabilities. Requests may be sent to accommodations@coinbase.com.\n\n\n\n\nAdditional Information\n\n\n\n\nCandidates may submit a maximum of three applications within a six-month period. Applicants are subject to Coinbase's Candidate Privacy Notice and, where applicable, its arbitration provisions. US applicants can also review the Employee Rights, Know Your Rights, and E-Verify notices.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-21T16:52:49.616Z",
+    "sourceHash": "2427971606a8efd7a551fa0aec89f750e633f375df36d687120964a42e58ca84",
+    "company": {
+      "id": "torentify",
+      "name": "Torentify",
+      "logoUrl": "https://logo.clearbit.com/torentify.com",
+      "industry": "Technology",
+      "website": "https://torentify.com"
+    },
+    "slug": "frontend-engineer-ii-remote-torentify-24279716",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "graphql",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "82ca8ccc03dbaef381be1bb84a6af522adaca6d20a607a2d1cafb9a0f9a7980c",
+    "title": "Frontend Engineer (TypeScript/JavaScript) — Remote",
+    "applyUrl": "https://www.torentify.com/jobs/6ad7baa438820cbfff189a41",
+    "description": "About the job\n\nAbout the Company\n\n\n\n\nDatabento is a market data platform built for modern finance. It provides access to real-time and historical market data through a unified API, supporting teams working in trading and analytics.\n\n\n\n\nAbout the Role\n\n\n\n\nDatabento is seeking a skilled Software Engineer to develop frontend applications and contribute to backend services. The role focuses on building user-facing applications with React and Redux while supporting backend development using Python or Rust.\n\n\n\n\nYou will collaborate with design and engineering teams to develop and deliver product features efficiently. This position is suited to an engineer who can work across the frontend and backend, contribute to practical technical solutions, and help build applications that serve the needs of professionals working with financial market data.\n\n\n\n\nKey Responsibilities\n\n\n\n\nDevelop and maintain frontend applications using React and Redux.\nContribute to backend services using Python or Rust.\nCollaborate with design and engineering teams to plan and deliver product features.\nTranslate product requirements into functional software applications.\nSupport the development and improvement of applications used in trading and analytics workflows.\nWork with team members to deliver features efficiently in a remote-friendly environment.\n\n\n\n\nRequired Qualifications\n\n\n\n\nExperience developing frontend applications using React and Redux.\nExperience or working knowledge of backend development using Python or Rust.\nAbility to collaborate effectively with design and engineering teams.\nAbility to contribute to software development across frontend and backend systems.\n\n\n\n\nLocation and Work Arrangement\n\n\n\n\nDatabento offers a remote-friendly working environment. The original listing does not specify geographic restrictions or additional work arrangement details.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-21T16:52:36.629Z",
+    "sourceHash": "82ca8ccc03dbaef381be1bb84a6af522adaca6d20a607a2d1cafb9a0f9a7980c",
+    "company": {
+      "id": "torentify",
+      "name": "Torentify",
+      "logoUrl": "https://logo.clearbit.com/torentify.com",
+      "industry": "Technology",
+      "website": "https://torentify.com"
+    },
+    "slug": "frontend-engineer-typescript-javascript-remote-torentify-82ca8ccc",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "redux"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "b3c23ed6d40fe0a8313092e5f0364f07a55d5601386932ee19055ce66baf6396",
+    "title": "Engineering Manager (Frontend)",
+    "applyUrl": "https://jobicy.com/jobs/151249-engineering-manager-frontend",
+    "description": "At ClickUp, we're building the future of work: the first truly converged AI workspace unifying tasks, docs, chat, calendar, and enterprise search, all supercharged by context-driven AI. We are an AI-native company. Every team member is expected to leverage AI daily, and we evaluate AI fluency as part of our hiring process. Join us and help redefine what's possible. \n\nWe are seeking a highly technical and experienced Engineering Manager to one of our business critical engineering team. This role is ideal for a hands-on leader who thrives in a fast-paced environment, has a deep understanding of collaborative document editing technologies, and is passionate about building scalable, high-performance software. As the Manager, you will oversee the development and delivery of innovative features, ensure technical excellence, and mentor a team of talented engineers.\n\nThe Role:\n\n• \nTechnical Leadership: Provide hands-on technical guidance to the team, ensuring best practices in software development, architecture, and design.\n\n• \nTeam Management: Lead, mentor, and grow a team of engineers, fostering a culture of collaboration, innovation, and continuous improvement.\n\n• \nProduct Development: Drive the development of new features and enhancements, ensuring high performance, scalability, and reliability.\n\n• \nCollaboration: Work closely with product managers, designers, and other engineering teams to align on goals, prioritize initiatives, and deliver exceptional user experiences.\n\n• \nCode Quality: Oversee code reviews, ensure adherence to coding standards, and advocate for clean, maintainable, and testable code.\n\n• \nInnovation: Stay up-to-date with the latest trends and technologies in collaborative editing, cloud infrastructure, and web development, and apply them to improve our product.\n\n• \nOperational Excellence: Ensure the stability and performance of the Docs platform, proactively addressing technical debt and optimizing system architecture.\n\nQualifications:\n\n• \nTechnical Expertise:\n\n• \nProficiency in Node.js, relational databases, and at least one modern frontend framework.\n\n• \nExperience with AWS cloud services and infrastructure.\n\n• \nLeadership Experience:\n\n• \nProven track record of managing and scaling engineering teams.\n\n• \nStrong ability to mentor and develop technical talent.\n\n• \nProblem-Solving Skills:\n\n• \nAbility to tackle complex technical challenges and make data-driven decisions.\n\n• \nCommunication:\n\n• \nExcellent verbal and written communication skills, with the ability to articulate technical concepts to non-technical stakeholders.\n\n• \nEducation & Experience:\n\n• \nBachelor’s or Master’s degree in Computer Science, Engineering, or a related field, or equivalent industry experience.\n\n• \n7+ years of software engineering experience, with at least 1 year in a leadership role.\n\n#LI-Remote\n\n#LI-MAV\n\nEqual Opportunity Employer \n\nClickUp is an Equal Opportunity Employer, and qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, or national origin.\n\nPrivacy Notice\n\nClickUp collects and processes personal data in accordance with applicable data protection laws. You can find further details by viewing our Global Candidate Privacy Notice.\n\nIf you are a Philippine Job Applicant, please also see our Philippine Data Privacy Notice for further details.\n\nVisa Sponsorship\n\nPlease note we are unable to sponsor or take over sponsorship of an employment visa for roles outside of engineering and product at this time. Sponsorship for engineering and product roles is not guaranteed, but is instead based on the business needs for that specific role at that time. Please reach out to the recruiter with any questions.\n\nFraud Alert\n\nClickUp Talent Acquisition will only initiate contact via an @clickup.com email or through our official careers portal on clickup.com. We will never request fees, payments, or sensitive personal information. Please disregard any offers received outside these channels and report them to support@clickup.com.\n\nAI Processing Notice\n\nClickUp may use artificial intelligence and machine learning technologies to help review and screen candidates' employment applications against role-related criteria. These tools support, but do not replace, human decision‑making. If you have questions or need an accommodation in the recruitment process, please contact us at AskPeople@ClickUp.com.",
+    "location": "Remote - USA",
+    "country": "USA",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-21T03:05:21.000Z",
+    "sourceHash": "b3c23ed6d40fe0a8313092e5f0364f07a55d5601386932ee19055ce66baf6396",
+    "company": {
+      "id": "clickup",
+      "name": "ClickUp",
+      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/cd5be0ef-221.jpg",
+      "industry": "Technology",
+      "website": "https://clickup.com"
+    },
+    "slug": "engineering-manager-frontend-clickup-b3c23ed6",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "USA"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4b076e864edbe2a2a165ec398b2194f8c1c4916b25487531419141c868ff0395",
+    "title": "Senior Frontend Engineer (React)",
+    "applyUrl": "https://jobicy.com/jobs/153716-senior-frontend-engineer-react",
+    "description": "Join Our Team\n\nOowlish, one of Latin America's rapidly expanding software development companies, is seeking experienced technology professionals to enhance our diverse and vibrant team.\n\nAs a valued member of Oowlish, you will collaborate with premier clients from the United States and Europe, contributing to pioneering digital solutions. Our commitment to creating a nurturing work environment is recognized by our certification as a Great Place to Work, where you will have opportunities for professional development, growth, and a chance to make a significant international impact.\n\nWe offer the convenience of remote work, allowing you to craft a work-life balance that suits your personal and professional needs. We're looking for candidates who are passionate about technology, proficient in English, and excited to engage in remote collaboration for a worldwide presence.\n\nAbout the Role\nWe are looking for an experienced Senior Frontend Engineer to build modern, high-performance web applications and digital experiences using React and related frontend technologies.\n\nIn this role, you'll collaborate with designers, backend engineers, and product teams to create responsive, accessible, and SEO-friendly user experiences. You'll work on scalable frontend architectures, modern React applications, and headless CMS implementations while helping maintain high standards for performance, code quality, and user experience.\n\nThe ideal candidate has a strong passion for frontend engineering, enjoys solving UI challenges, and has experience building production-ready React applications with modern web technologies.\n\nResponsibilities:\n\n• Develop and maintain modern frontend applications using React.\n\n• Build responsive, accessible, and high-performance user interfaces.\n\n• Collaborate with designers to translate UI/UX concepts into production-ready applications.\n\n• Develop reusable React components and scalable frontend architectures.\n\n• Integrate frontend applications with REST APIs and GraphQL services.\n\n• Optimize applications for speed, SEO, and overall user experience.\n\n• Participate in architecture discussions and code reviews.\n\n• Troubleshoot frontend issues and continuously improve application performance.\n\n• Follow frontend best practices for maintainability and scalability.\n\n• Collaborate closely with cross-functional engineering teams throughout the development lifecycle.\n\nRequirements:\n\n• Senior-level frontend development experience.\n\n• Strong JavaScript, HTML, and CSS skills.\n\n• 6+ years of professional React development experience.\n\n• Strong understanding of modern React concepts and best practices.\n\n• Experience building responsive web applications.\n\n• Experience working with REST APIs and/or GraphQL.\n\n• Strong understanding of frontend performance optimization.\n\n• Strong written and verbal English communication skills.\n\nMust Have:\n\n• Mid/Senior Frontend development experience.\n\n• 6+ years of professional React development.\n\n• Strong JavaScript (ES6+) experience.\n\n• Solid HTML5 and CSS3 knowledge.\n\n• Strong understanding of:\n\n• React Components\n\n• Virtual DOM\n\n• Props\n\n• State\n\n• Hooks\n\n• React Lifecycle\n\n• Experience with React Context API and/or Redux.\n\n• Experience building responsive web applications.\n\n• Strong focus on clean, maintainable frontend architecture.\n\n• Experience consuming REST APIs and/or GraphQL.\n\nCompensation\nAdditional Information\nBenefits & Perks:\n\nHome office;\n\nCompetitive compensation based on experience;\n\nCareer plans to allow for extensive growth in the company;\n\nInternational Projects;\n\nOowlish English Program (Technical and Conversational);\n\nGames and Competitions;\n\nYou can also apply here:\n\nWebsite: https://www.oowlish.com/work-with-us/\n\nLinkedIn: https://www.linkedin.com/company/oowlish/jobs/\n\nInstagram: https://www.instagram.com/oowlishtechnology/",
+    "location": "Remote - Argentina,  Brazil,  Mexico",
+    "country": "Argentina,  Brazil,  Mexico",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-21T03:10:07.000Z",
+    "sourceHash": "4b076e864edbe2a2a165ec398b2194f8c1c4916b25487531419141c868ff0395",
+    "company": {
+      "id": "oowlishtechnology",
+      "name": "Oowlish Technology",
+      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/c279fe91-221.jpg",
+      "industry": "Technology",
+      "website": "https://oowlishtechnology.com"
+    },
+    "slug": "senior-frontend-engineer-react-oowlish-technology-4b076e86",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "redux",
+        "graphql",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Argentina,  Brazil,  Mexico"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "4e54d69fe94aa248e680f5188ef85c75c2b59f2a5c3686b8b18cd19d3eda20c1",
     "title": "Frontend Software Engineer - Remote",
     "applyUrl": "https://yohrconsultancy.hiresome.ai/apply_form/frontend-software-engineer-remote-6a61fe3872d0474718846af5?utm_source=linkedin",
@@ -32118,173 +32416,6 @@
         "Argentina"
       ],
       "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "f6cba45cd53f0a3e9dd825c3c4fc30287479ae1a5a4d5007f0d60ed34e45ae00",
-    "title": "Frontend Transformer",
-    "applyUrl": "https://techlabeg.com/techlab-careers-join-transformers#apply",
-    "description": "About the job\n\nWe are not looking for people who only finish tasks. We are looking for minds that think deeply, own outcomes, connect details, and help engineer how organizations operate.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-21T04:50:45.837Z",
-    "sourceHash": "f6cba45cd53f0a3e9dd825c3c4fc30287479ae1a5a4d5007f0d60ed34e45ae00",
-    "company": {
-      "id": "techlabcompany",
-      "name": "TechLab company",
-      "logoUrl": "https://logo.clearbit.com/techlabcompany.com",
-      "industry": "Technology",
-      "website": "https://techlabcompany.com"
-    },
-    "slug": "frontend-transformer-techlab-company-f6cba45c",
-    "aiTags": {
-      "stack": [],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "303f2ebb333634706d34c67ba48d17283151e4a2ac873ad8bf7a298bbe518523",
-    "title": "Frontend Engineer",
-    "applyUrl": "https://jobs.ashbyhq.com/bjakcareer/943e7184-c8fb-4aab-8f9e-9826ff5456f3/application?utm_source=YmpnOkRB66",
-    "description": "About the job\n\nAbout ActAI\n\nThere are over 5 billion users using basic applications today such email, notes, tasks, calendar and they're not AI-native. Our mission is to build proactive applications for anyone in the world, who are not used to complex prompting. We aim to bring intelligence to conversations, errands, organising and workflows, with minimal to no prompting. Our application focuses on achieving high reliability for long-running workflows, persistent context, and real-world task completion. We believe products will greatly reduce hallucinations\n\nOur objective is to organise anyone's life.\n\nRole\n\nAs a Web Frontend Engineer, you will build the core web experiences, including Chat, Notes, Calendar, Docs and Sheets.\n\nYou will own complex, highly interactive product surfaces from architecture through implementation, working closely with product, design, backend and AI engineers to make AI a native part of how users communicate, write, organise and work.\n\nWhat You'll Own\n\n\nBuild major web experiences across Chat, Notes, Calendar, Docs, and Sheets. \nDevelop complex interactions including real-time messaging, collaborative editing, rich-text editing, scheduling, tables, and spreadsheets. \nBuild reusable frontend architecture and components that work consistently across ActAI applications. \nIntegrate streaming AI responses, proactive actions, and model-driven experiences directly into product workflows. \nOwn frontend performance, responsiveness, reliability and accessibility across browsers and devices. \nWork closely with product and design to take ideas from prototype to production quickly. \n\n\nWhat We're Looking For\n\n\nStrong experience building complex, production web applications using React, TypeScript and modern frontend technologies. \nDeep understanding of frontend architecture, state management, browser APIs, and performance. \nExperience building highly interactive products such as chat, collaboration, productivity, document editing, calendars, or workspaces. \nExperience with real-time systems, WebSockets, streaming APIs, or collaborative interfaces. \nStrong product and UI judgment with attention to interaction details. \nAble to independently own features from technical design through production. \n\n\nOutcomes\n\n\nUsers can communicate, write, organise and collaborate seamlessly across Chat, Notes, Calendar, Docs and Sheets. \nComplex interactions such as group messaging, editing, scheduling and collaboration feel fast and reliable. \nAI capabilities are integrated naturally into product workflows rather than added as separate chatbot experiences. \nFrontend architecture remains fast, maintainable and reusable as ActAI expands into new applications and workflows. \n\n\nTech Stack\n\n\nTypeScript\nReact.js / Next.js\nHTML / CSS\nWebSockets / streaming APIs\nNode.js\nREST / GraphQL APIs\n\n\nHow We Work\n\nThe best products today in the world were built by small, world-class teams. We are a high talent density and hands-on team. We make decisions collectively and move at rapid speed, striking a balance between shipping high-quality work and learning.\n\nJoining our team requires the ability to bring structure, exercise judgment and execute independently. Our goal is to put in the hands of our users a truly magical product.\n\nInterview Process\n\nIf there appears to be a fit, we'll reach out to schedule 3, but no more than 4 interviews.\n\nApplications are evaluated by our technical team members. Interviews will be conducted via virtual meetings and/or onsite.\n\nWe value transparency and efficiency, so expect a prompt decision. If you've demonstrated the exceptional skills and mindset we're looking for, we'll extend an offer to join us and help bring practical AI benefits to billions of users globally.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-21T04:50:29.624Z",
-    "sourceHash": "303f2ebb333634706d34c67ba48d17283151e4a2ac873ad8bf7a298bbe518523",
-    "company": {
-      "id": "bjak",
-      "name": "BJAK",
-      "logoUrl": "https://logo.clearbit.com/bjak.com",
-      "industry": "Technology",
-      "website": "https://bjak.com"
-    },
-    "slug": "frontend-engineer-bjak-303f2ebb",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "css",
-        "graphql",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "26f8cb0e8f415ab1e1e1c432ae735dc014436fd725a16abd9d73bc75f4cb908f",
-    "title": "Software Engineer - Frontend",
-    "applyUrl": "https://www.alignerr.com/jobs/3b5a6fc0-2eed-41df-bec2-8b497127b0a1?referral-source=linkedin-job",
-    "description": "About the job\n\nSoftware Engineer – Frontend (AI Training Contract)\n\nAbout The Role\n\nFrontend developers: your expertise is in demand - not for building products, but for making AI smarter. We're looking for skilled frontend engineers to evaluate and improve AI-generated code as part of a cutting-edge AI training initiative. Your work will directly influence how the next generation of AI models understands and writes JavaScript, HTML, and CSS.\n\nThis is a fully remote, asynchronous contract - work on your schedule, from anywhere.\n\nWhat You'll Do\n\n\nReview and evaluate AI-generated frontend code for correctness, efficiency, accessibility, and clarity\nWrite high-quality solutions to UI and web development problems across varying difficulty levels\nCraft clear, well-reasoned explanations of design decisions, code logic, and problem-solving strategies\nIdentify edge cases, bugs, and ambiguities in problem statements or AI-generated responses\nHelp set the standard for what great frontend code looks like - at scale\n\n\nWho You Are\n\n\nProficient in JavaScript, including async/await, closures, DOM manipulation, ES6+ syntax, and browser APIs\nExperienced with modern frontend frameworks and tools such as React, Vue, or Angular\nStrong written communicator - able to explain technical concepts clearly and concisely in English\nDetail-oriented with a sharp eye for code quality, edge cases, and potential failure points\nSelf-motivated and comfortable working independently in an asynchronous environment\n\n\nNice to Have\n\n\n3–5+ years of professional frontend development experience\nBackground in computer science or a related field\nExperience with data labeling, RLHF, or AI training workflows\nFamiliarity with web performance optimization and accessibility standards\n\n\nWhy Join\n\n\nHigh impact - your code reviews and solutions directly shape AI models used by leading research labs and enterprises\nFull flexibility - fully remote and asynchronous, work when and where it suits you\nClear ownership - well-defined tasks with concrete quality standards, so you always know what success looks like\nGrowth potential - top contributors take on expanded responsibilities and help mentor other subject matter experts\nMeaningful work - help build AI that writes better, safer, more reliable code for developers everywhere",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-21T04:50:17.606Z",
-    "sourceHash": "26f8cb0e8f415ab1e1e1c432ae735dc014436fd725a16abd9d73bc75f4cb908f",
-    "company": {
-      "id": "alignerr",
-      "name": "Alignerr",
-      "logoUrl": "https://logo.clearbit.com/alignerr.com",
-      "industry": "Technology",
-      "website": "https://alignerr.com"
-    },
-    "slug": "software-engineer-frontend-alignerr-26f8cb0e",
-    "aiTags": {
-      "stack": [
-        "react",
-        "vue",
-        "angular",
-        "javascript",
-        "css",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "GLOBAL",
-      "eligibleRegions": [
-        "Global"
-      ],
-      "seniority": "mid",
-      "employmentType": "contract"
-    }
-  },
-  {
-    "id": "0ca87cc0f92ddba93ca985257082c09fa72ffa7f6b1658ab95352bb2ce6f8319",
-    "title": "Senior Software Engineer - Frontend Developer Experience",
-    "applyUrl": "https://job-boards.greenhouse.io/mercury/jobs/6116808004",
-    "description": "About the job\n\nAs long as there have been buildings, there has been scaffolding. In the caves of Lascaux, sockets in the cave wall were used to build scaffolds, allowing its Paleolithic inhabitants to craft their majestic cave-paintings, which survive to the modern day. From that time onward, every edifice has had its scaffold- from the bamboo poles that held the craftsmen of the Great Wall of China, to the steel trusses that held aloft the ironworkers who raised the Empire State Building.\n\nMercury is growing rapidly. As our product expands, we’re evolving the frontend foundations that support it. We have strong scaffolding in place today, but the expansion, renovation, and exploration that come next will require us to strengthen and refine it. We’re looking for an engineer to help build the battens and transoms that lift frontend work at Mercury. To put it differently, our job is to make our engineers as excited about the frontend as our customers are about our product.\n\nAs part of this role, you will:\n\n\nStrengthen the frontend foundations every Mercury engineer builds on. Evolve our React, TypeScript, and Vite infrastructure to support teams in shipping ambitious product work with speed and confidence.\nHelp engineers move efficiently with automation. Use static analysis, local tools, and LLM coding tools to help engineers quickly resolve the schlep so they can focus on what matters.\nOptimize our testing platform for fast feedback loops and high confidence. From unit tests to visual snapshots, you’ll provide the QA tools product teams need to move both quickly and safely.\nMake our CI/CD pipelines stable, ergonomic, and fast. Mercury ships fast- dozens of deploys to prod per day, and hundreds more commits on PR branches. You’ll keep the pipeline humming so Mercury’s engineers stay in flow and customers see fixes faster.\nMake our systems and organization observable. Drive decisions by unifying technical metrics from our tools with sentiment metrics from developer surveys. When that data doesn’t exist yet, you’ll build the observability that lets the team move with confidence.\nFoster enthusiasm about frontend work at Mercury by making the good path the easy path, and by representing our work in larger venues.\n\n\nThe ideal candidate:\n\n\nHas 6-8+ years of software development experience, with a strong focus on the frontend and deep experience with React and Typescript.\nHas experience leading complex engineering projects, such as projects that cut across multiple teams and functions, have multi-stage rollouts, or require research and consensus-building before action.\nIs a confident communicator, adept at communicating across organization boundaries, and driving discussions to productive ends.\nHas maintained internal libraries or platform tooling that other engineers depend on.\nPrioritizes being helpful, taking initiative to make other developers' lives easier.\nHas a thorough understanding of modern frontend developer tooling and workflows, including build systems, CI/CD, web hosting, and testing.\nDives into the gnarly side of the web platform- when it matters, happy to dig into Vite internals, upstream a fix, or bring a broken deploy pipeline back to life.\nBalances practicality with ideals, pushing the team to reach an ambitious North Star while charting a course there that matches our reality.\n\n\nIf this role interests you, we invite you to explore our public demo at personal-demo.mercury.com.\n\n*Mercury is a fintech company, not an FDIC-insured bank. Banking services provided through Choice Financial Group and Column N.A., Members FDIC.\n\nMercury values diversity & belonging and is proud to be an Equal Employment Opportunity employer. All individuals seeking employment at Mercury are considered without regard to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, sexual orientation, or any other legally protected characteristic. We are committed to providing reasonable accommodations throughout the recruitment process for applicants with disabilities or special needs. If you need assistance, or an accommodation, please let your recruiter know once you are contacted about a role.\n\nTotal Rewards\n\nThe total rewards package at Mercury includes base salary, equity (stock options/RSUs), and benefits.\n\nOur salary and equity ranges are highly competitive within the SaaS and fintech industry and are updated regularly using the most reliable compensation survey data for our industry. New hire offers are made based on a candidate’s experience, expertise, geographic location, and internal pay equity relative to peers.\n\nOur target new hire base salary ranges for this role are the following:\n\nUS employees (any location):\n\n$200,700-$250,900 USD\n\nCanadian employees (any location):\n\n$189,700-$237,100 CAD",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-21T04:48:31.236Z",
-    "sourceHash": "0ca87cc0f92ddba93ca985257082c09fa72ffa7f6b1658ab95352bb2ce6f8319",
-    "company": {
-      "id": "mercury",
-      "name": "Mercury",
-      "logoUrl": "https://logo.clearbit.com/mercury.com",
-      "industry": "Technology",
-      "website": "https://mercury.com"
-    },
-    "slug": "senior-software-engineer-frontend-developer-experience-mercury-0ca87cc0",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "vite"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "ca4eb43b4e0f684d59fac69052623ad15db13278b7cbde09ed1914d48cc233e0",
-    "title": "React Frontend Engineer",
-    "applyUrl": "https://trimble.eightfold.ai/careers/job/171843018891?microsite=trimble.com&domain=trimble.com&src=LinkedIN",
-    "description": "About the job\n\nBuild Next-Gen Transportation Logistics Tech: Front-End React Engineer\n\nAre you ready to build high-impact production UIs from scratch using modern React, TypeScript, and AI-augmented tools? Join a modern engineering environment where you will replace a legacy desktop application with a fast, browser-based React experience, shipping functional software directly to energy dispatchers every single week!\n\nAbout Us\n\nTrimble is a global technology company that connects the physical and digital worlds, transforming the ways work gets done. With relentless innovation in precise positioning, modeling and data analytics, Trimble enables essential industries including construction, geospatial and transportation. Whether it's helping customers build and maintain infrastructure, design and construct buildings, optimize global supply chains or map the world, Trimble is at the forefront, driving productivity and progress.\n\nIn the Transportation & Logistics segment, our solutions make it safer, simpler and more efficient to move freight-bringing together a global network of shippers, carriers, brokers and 3PLs.\n\nWhat Makes This Role Interesting\n\nIn this role, you will help build the next-generation TMW Suite Dispatch UI from scratch, directly shaping intuitive React interfaces that fuel dispatchers depend on to run daily bulk fuel and petroleum operations.\n\nYour Key Responsibilities\n\n\nBuild responsive, accessible React screens using TypeScript, Redux Toolkit, and MUI X DataGrid within a collaborative pod model.\nIntegrate frontend interfaces with backend API layers (CloudHub/OData/CHC) to connect real customer SQL database workflows seamlessly.\nShip working, fully tested software on a weekly demo cycle using Playwright and axe-core for end-to-end quality and accessibility.\nCreate intuitive user experiences for complex dispatcher needs, including drag-and-drop planning, real-time map synchronization, and performance-tuned data grids.\nLeverage modern AI tools like Cursor to accelerate development, build test scaffolding, and refine team component libraries.\n\n\nYour Essential Skills & Experience\n\n\nExperience in building production React applications with TypeScript \nStrong component architecture: you think in composable, testable components with clean prop contracts and proper state management\nExperience with data-heavy UIs: grids, tables, filters, server-side pagination, real-time updates\nComfort with REST/OData API integration - you’ve wired up front-ends to real backends and debugged the full request/response chain\nCSS/styling proficiency: responsive layouts, design system integration, consistent cross-browser rendering\nGit workflow fluency: trunk-based development, feature branches, clean commit history, PR reviews\nAbility to work in a tight collaboration with one other developer and an embedded generalist, shipping weekly\n\n\nBonus Points For\n\n\nDrag-and-drop implementation experience (dnd-kit, react-beautiful-dnd, or similar)\nExperience with AI coding assistants Cursor in daily development workflows\nFamiliarity with MUI (Material UI) component library and theming\nPrevious experience modernizing legacy desktop applications into browser-based UIs\nBackground in .NET/C# OData APIs (helpful for debugging the API layer, not required for the role)\nLogistics, transportation, or energy industry domain knowledge you understand what a dispatcher does and why their screen matters\n\n\nLocation: UK, Remote\n\nWhy You'll Enjoy Working With Us\n\n\nAt Trimble, we're not just a company that \"does good\"-we are a team dedicated to making a tangible, positive Real-World Impact.\nWe build innovative solutions designed to solve the world's most critical challenges. From construction sites to transportation hubs, our work tangibly improves how people live, build, move, and grow.\nYou'll work on projects that truly matter: Our purpose-driven culture means you'll be helping to build and deliver solutions that make work faster, safer, and more sustainable for millions of people worldwide. Our impact is tangible, from connected machines that save fuel to data-driven insights that reduce waste.\nCollaborate with like-minded people: Our strong internal culture is a \"hidden gem.\" You will work with a collaborative, supportive team that shares your purpose and fosters a genuine sense of belonging. We're a company of \"visionary pragmatists\" who think boldly and build things that work.\nBe an owner: Trimble thrives on individuals who take initiative and embrace ownership. You'll find an entrepreneurial spirit where success is often \"self-authored,\" empowering proactive \"doers.\"\n\n\nReact, TypeScript, Front-End Engineer, Software Developer, Redux, Material UI, Playwright, Greenfield, Transportation, Logistics\n\nHow to Apply: Please submit an online application for this position by clicking on the ‘Apply Now’ button located in this posting.\n\nJoin a Values-Driven Team: Belong, Grow, Innovate. \n\nAt Trimble, our core values of Belong, Grow, and Innovate aren't just words-they're the foundation of our culture. We foster an environment where you are seen, heard, and valued (Belong); where you have an opportunity to build a career and drive our collective growth (Grow); and where your innovative ideas shape the future (Innovate). We believe in empowering local teams to create impactful strategies, ensuring our global vision resonates with every individual. Become part of a team where your contributions truly matter.\n\nCandidate Privacy Notices by Country\n\nIf you need assistance or would like to request an accommodation in connection with the application process, please contact careers@trimble.com.",
-    "location": "Remote - United Kingdom",
-    "country": "United Kingdom",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-21T04:47:08.051Z",
-    "sourceHash": "ca4eb43b4e0f684d59fac69052623ad15db13278b7cbde09ed1914d48cc233e0",
-    "company": {
-      "id": "trimbleinc",
-      "name": "Trimble Inc.",
-      "logoUrl": "https://logo.clearbit.com/trimbleinc.com",
-      "industry": "Technology",
-      "website": "https://trimbleinc.com"
-    },
-    "slug": "react-frontend-engineer-trimble-inc-ca4eb43b",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "css",
-        "redux",
-        "playwright",
-        "accessibility"
-      ],
-      "remoteScope": "GLOBAL",
-      "eligibleRegions": [
-        "Global"
-      ],
-      "seniority": "mid",
       "employmentType": "fulltime"
     }
   }
