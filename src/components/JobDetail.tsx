@@ -154,9 +154,9 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
         </div>
       )}
 
-      {/* Badges - blurred for free users */}
-      <div className={`flex flex-wrap items-center gap-2 mb-6 ${showLocked ? "locked-content" : ""}`}>
-        <span className={`badge ${remote.class} ${showLocked ? "job-locked-blur" : ""}`}>
+      {/* Badges - Remote is visible to all, specific location blurred for free users */}
+      <div className="flex flex-wrap items-center gap-2 mb-6">
+        <span className={`badge ${remote.class}`}>
           {remote.icon} {remote.label}
         </span>
 
