@@ -1,5 +1,143 @@
 [
   {
+    "id": "4ddfb742851dfa57dd4362e1f0f6bcb14865aec6f30cf0d195ebabb559672bee",
+    "title": "Senior Frontend Software Engineer",
+    "applyUrl": "https://himalayas.app/companies/betwarrior/jobs/senior-frontend-software-engineer?utm_source=api",
+    "description": "JOIN OUR TEAMBetWarrior is a next-generation digital gaming company with a bold mission: to redefine the way people experience sports betting and casino entertainment across Latin America.\n\nWith a dynamic and diverse team, deep market insights, and cutting-edge technology, we're creating an experience that is personalized, responsible, and always player-first.\n\nGreat people, bold ideas, and a sharp focus on user experience set us apart.\n\nPurposeWe are looking for a Frontend Software Engineer with an analytical mindset and a product-oriented perspective to join our multidisciplinary teams. At BetWarrior, we are evolving toward a Spec-Driven Development (SDD) and Given-When-Then / Behavior-Driven Development (BDD) model.\n\nWe are not simply looking for a developer who turns designs into code, but rather an engineer who takes end-to-end ownership of the problem: from refining and technically specifying requirements (state diagrams, API contracts, Markdown/Gherkin specs) to delivering robust and scalable solutions.\n\nIn this role, you'll\n• Lead technical analysis based on initial Product/UX Acceptance Criteria. Define sequence/state diagrams, API contracts, and write functional specifications (MD/Gherkin) before writing code.\n\n• Model complex state flows and design resilient interface architectures capable of operating in high-traffic, low-latency environments.\n\n• Work closely with Product and UX teams in small, autonomous squads, acting as the technical bridge between business ideas and viable architectures.\n\n• Translate business scenarios into clear acceptance criteria and well-structured system behaviors, actively collaborating with the Automation QA team.\n\n• Design components and abstractions with long-term maintainability in mind, anticipating edge cases, critical bugs, and bottlenecks\n\nWhat we look for in an exceptional candidate\n\n• 5+ years of experience in software engineering, providing the foundation needed to have worked through the level of complexity required for problem-solving.\n\n• Strong analytical and problem-solving skills, with experience managing critical state flows in web applications or concurrent platforms.\n\n• Demonstrated ability to create technical documentation prior to development (OpenAPI/Swagger specs, UML/sequence diagrams, Markdown technical specs).\n\n• Familiarity with defining business-oriented scenarios using Given-When-Then / Gherkin.\n\n• Strong foundations in computer science or software engineering (design patterns, data structures, browser performance), beyond narrow expertise in a particular library.\n\n• Experience or working knowledge of JavaScript/TypeScript, UI libraries/frameworks such as React, and Node.js environments.\n\nBonus points if you also have\n• Experience working on high-traffic, high-concurrency, or real-time data platforms.\n\n• Experience going through complex production incidents or post-mortems that have shaped your approach to preventing errors through clear specifications.\n\n• Knowledge of event-driven architecture or real-time API technologies (WebSockets, Server-Sent Events)\n\nHow we do thingsBetWarrior is a company in expansion. The team is fast-moving, collaborative, and demanding — with high standards for quality and a genuine commitment to building something that lasts. We are not looking for someone to fill a seat. We are looking for people who want to grow with the company, take ownership of their work, and be part of building a regional team that operates at a high level across multiple markets.\n\nFor the right person, this is an opportunity to join at a stage where your contribution is visible, your growth is real, and the path forward is defined by what you deliver — not by time in role.\n\nWe expect every team member to live our values\n\nAccountability & Ownership –Take charge, own your craft\n\nReliability –Deliver with quality and consistency\n\nTeamwork –Collaborate, challenge, and grow together\n\nWinner Spirit –Compete with purpose and grit\n\nWellbeing –Build a career that energizes you\n\nCuriosity & Innovation –Keep questioning. Keep improving\n\nOriginally posted on Himalayas",
+    "location": "Remote - Argentina",
+    "country": "Argentina",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-23T14:46:43.000Z",
+    "sourceHash": "4ddfb742851dfa57dd4362e1f0f6bcb14865aec6f30cf0d195ebabb559672bee",
+    "company": {
+      "id": "betwarrior",
+      "name": "BetWarrior",
+      "logoUrl": "https://cdn-images.himalayas.app/sa1d674wi8ab3pv2jz0qyaozll8d",
+      "industry": "Technology",
+      "website": "https://betwarrior.com"
+    },
+    "slug": "senior-frontend-software-engineer-betwarrior-4ddfb742",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Argentina"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "10417285847c17342ae9739b0155b0879640dd34d6348990c5a0e186a49f3e7d",
+    "title": "Frontend Engineer (React.js)",
+    "applyUrl": "https://himalayas.app/companies/parser/jobs/frontend-engineer-react-js-631986367?utm_source=api",
+    "description": "Frontend Engineer (Mid-Level)Who is Parser?Technology alone does not create impact—the right teams do. Founded in 2018, Parser is a boutique technology services and consulting firm helping global organisations solve complex business challenges through digital transformation, product development and AI enablement.\n\nWe are a fast-growing team of 340+ engineers and consultants across Europe (UK, Spain, Portugal), the Americas (US, Argentina, Uruguay, Colombia), and the Middle East. We combine global reach with a mindset focused on agility, senior expertise, and close collaboration.\n\nWe work as an extension of our clients’ teams, helping them define the right problems, shape solutions, and deliver technology-driven outcomes that create measurable business value. Our expertise spans software engineering, AI & data, product development, and customer experience, delivered by teams that combine strong technical depth with a consulting mindset.\n\nWhy Join Us?If you are looking for a place where you can think beyond execution, take true ownership of outcomes, influence decisions, and continuously learn alongside top-tier specialists in a truly global environment, we’d love to meet you.\n\nHow will you impact?As a Mid-Level Frontend Engineer, you will own consumer-facing web features end-to-end within a microfrontend ecosystem. Your work directly drives organic acquisition and user experience through web performance optimizations, seamless right-to-left localization, and reliable product delivery.\n\nYour key responsibilities:Your responsibilities include, but not limited to:\n\n• Build and ship responsive, mobile-first user interfaces using React, TypeScript, and Next.js across server- and client-rendered applications.\n\n• Develop reusable design system components supporting multi-country configuration, internationalisation, and right-to-left (RTL) Arabic layouts.\n\n• Optimize web performance and Core Web Vitals, including bundle size, hydration costs, rendering paths, image/font loading, and caching strategies.\n\n• Maintain robust application contracts and shared libraries across microfrontend architectures.\n\n• Implement reliable analytics tracking, feature flags, and unit, component, and end-to-end testing (using Playwright and Storybook).\n\n• Utilize production signals, real-user monitoring, and error tracking tools to proactively resolve performance and user-facing issues.\n\n• Collaborate closely with product, design, SEO, and backend teams, delivering thoughtful code reviews and engineering improvements.\n\nWhat you’ll bring to the role:Essential Requirements:\n• 3+ years of professional frontend engineering experience delivering and operating production web applications.\n\n• Strong proficiency in React, TypeScript, and modern state/data-fetching patterns.\n\n• Hands-on experience with Next.js (SSR/SSG, routing, server vs. client-side execution).\n\n• Solid foundation in semantic HTML, CSS Modules/responsive layout systems, and web accessibility fundamentals.\n\n• Practical experience with API integration, unit/component testing, and automated E2E testing (Playwright preferred).\n\n• Proven understanding of Core Web Vitals, web performance measurement, and debugging techniques.\n\nDesirable Requirements:\n• Experience with microfrontend architectures, monorepos, or shared npm packages.\n\n• Hands-on experience with internationalisation (i18n), right-to-left (RTL) layouts, and SEO-driven products.\n\n• Exposure to frontend observability, tag management, feature flagging, or geospatial/maps APIs.\n\nLocation:Spain (Remote) Candidates must be able to accommodate UAE working hours.\n\nYou will receive: \n• The chance to join an organization with triple-digit growth that is changing the paradigm on how software products are built.\n\n• The opportunity to be part of an amazing, multicultural community of tech experts.\n\n• A highly competitive compensation package.\n\n• A flexible and hybrid working environment.\n\n• Medical insurance.\n\nParser is committed to fostering an inclusive workplace and providing equal employment opportunities to all applicants regardless of race, religion, gender, sexual orientation, age, disability, or any other protected characteristic under applicable law.\n\nIf you require reasonable accommodations during the recruitment process, please let us know and we will work with you to support your participation.\n\nBy applying to this role, you acknowledge that your personal data will be processed in accordance with Parser’s Privacy Notice for recruitment purposes.\n\nParser may use AI-assisted tools during certain stages of the recruitment process to support operational efficiency. Our recruiting teams use AI to streamline note-taking and scheduling. All hiring decisions are made by people, with human review and oversight.\n\nCome and join our #ParserCommunity.\n\nFollow us on Linkedin\n\nOriginally posted on Himalayas",
+    "location": "Remote - Spain",
+    "country": "Spain",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-23T14:48:59.000Z",
+    "sourceHash": "10417285847c17342ae9739b0155b0879640dd34d6348990c5a0e186a49f3e7d",
+    "company": {
+      "id": "parser",
+      "name": "Parser",
+      "logoUrl": "https://cdn-images.himalayas.app/6kjz60vu5ryj3e4xe4o73fdzpgvi",
+      "industry": "Technology",
+      "website": "https://parser.com"
+    },
+    "slug": "frontend-engineer-react-js-parser-10417285",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "css",
+        "storybook",
+        "playwright",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Spain"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "42d2f4f5b85860b4f1aa07ee6cad4b66bf9cc9f91a4783ec1a1a9dea15e7ed5c",
+    "title": "Senior Software Engineer (Frontend)",
+    "applyUrl": "https://jobicy.com/jobs/156500-senior-software-engineer-frontend-3",
+    "description": "ABOUT HAPPY MONEY\nHappy Money is a consumer finance company that empowers people to achieve their goals through simple, transparent loans funded by trusted financial institutions. Through its proprietary lending platform, Hive, Happy Money delivers a fully digital experience that simplifies borrowing for consumers and helps credit unions, banks and asset managers diversify balance sheets and scale with confidence. \n\nHappy Money’s end-to-end loan origination and participation programs provide partners with turnkey access to high-performing assets, underpinned by disciplined credit expertise and robust risk management. Together with its lending partners, Happy Money has originated more than $7 billion in loans to help nearly 350,000 people take greater control of their financial futures. Learn more at happymoney.com. View our Employee Privacy Policy here. \n\nHappy Money is a 100% fully distributed company. Remote work doesn’t mean less work, we work full-time jobs and show up to them fully every day. To learn more about our values and the way we work, review our Happy Money Way Overview!\n\nABOUT THE ROLE\nHappy Money’s Engineering team is seeking to hire a Senior Software Engineer to design, build, deploy, and own consumer applications, infrastructure, and data-delivering products and services in support of Happy Money’s lending business. You will work in an autonomous environment, and be able to take general direction and formulate specific tasks to accomplish the desired results for Happy Money Customers. You have a strong sense of product ownership and a customer mindset. You will work to contribute to complex functional specs and design docs when necessary.\n\nRESPONSIBILITIES\n\n• Develop and build products that provide an exceptional customer experience for our members. \n\n• Own design, test, development and delivery of new and existing features. \n\n• Participate in all phases of the software development life cycle.\n\n• Collaborate with product managers, designers, business owners, and other engineers to identify the best solutions.\n\n• Demonstrated experience driving engineering efficiency through the adoption of AI-driven coding agents and agentic workflows, to autonomously build, test, and ship complex React applications at scale.\n\n• Experience implementing automated frontend testing for critical components and user workflows.\n\n• Capable of working in isolation to design solutions to complex problems.\n\n• Design and develop maintainable, scalable, fault-tolerant, and efficient systems.\n\n• Upholding code quality to ensure features are up to standards to deliver a quality product.\n\n• Prioritize team needs in technical debt and tooling to relieve operational load and evolve the system to meet the changing needs of the environment.\n\n• Bring positive energy into meetings and ensure all coworkers feel valued and included in every interaction.\n\n• Mentor other frontend engineers across the Engineering team.\n\n• Demonstrate a proactive mindset by defaulting to action, taking initiative to address challenges, and driving projects forward.\n\nABOUT YOU\n\n• 5+ years building production React applications, with deep expertise in React, hooks, and component architecture at scale. \n\n• You have production experience developing in ReactJS, CSS, GraphQL, Javascript, NodeJS, and are a polyglot with working knowledge of Python, Java, and the ability to pick up new languages and technologies quickly.\n\n• Delivering a product across the entire technology stack motivates you more than working in an individual silo of frontend or backend, but you have a stronger affinity and experience building frontend user interfaces and UI based SDKs for other developers.\n\n• Believe strongly in testing everything you design and develop using automation. \n\n• Ability to scope, scale, and prioritize tasks to help team project plan and deliver on their milestones, delivering results over clear and ambiguous business and technical projects.\n\n• You have excellent written and verbal communication skills.\n\n• You are results-oriented, and know how to unblock yourself and others to achieve goals and objectives. \n\n• Familiarity with AWS technologies - EC2, S3, Lambda, API Gateway, etc.\n\n• You have production experience developing scalable/highly available consumer applications. \n\n• You have a BA/Master degree in Computer Science or related field of study or equivalent work experience.\n\nBENEFITS & PERKS\n\n• Generous medical, dental, and vision insurance options \n\n• Eligible for Annual Bonus\n\n• 401k Plan with a matching contribution\n\n• Generous PTO including sick leave, vacation, volunteer, and more\n\n• 12 Weeks Paid Parental Leave\n\n• Company-paid short & long term disability and life insurance\n\n• Monthly tech stipend to help cover expenses for remote work\n\n• Happy Money is a 100% fully distributed workforce\n\nBase Salary Range\n\n$140,000—$160,000 USD",
+    "location": "Remote - USA",
+    "country": "USA",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-23T07:05:31.000Z",
+    "sourceHash": "42d2f4f5b85860b4f1aa07ee6cad4b66bf9cc9f91a4783ec1a1a9dea15e7ed5c",
+    "company": {
+      "id": "happymoney",
+      "name": "Happy Money",
+      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2021/02/WRILS-210209211710-694513.jpg",
+      "industry": "Technology",
+      "website": "https://happymoney.com"
+    },
+    "slug": "senior-software-engineer-frontend-happy-money-42d2f4f5",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "less",
+        "graphql"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "USA"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "fb49e4746f0ca1ae6ceb744e0b691d327e4e60a7f708441343a68308869004d1",
+    "title": "Frontend Architect",
+    "applyUrl": "https://remotefirstjobs.com/companies/navan/jobs/frontend-architect-874544",
+    "description": "About The Job\n\nNavan is an all-in-one travel, corporate card, and expense management solution that eliminates the hassles of corporate travel & expense management while giving finance leaders real-time spend visibility and control.\n\nThe Frontend Architect plays a pivotal role in shaping the future of Navan&rsquo;s frontend infrastructure and developer experience across the organization. This role is central to architecting and maintaining the frontend platform that enables 20+ engineering teams to deploy independently while maintaining high quality standards. The Frontend Architect is essential to our mission, building shared libraries, developer tooling, and infrastructure, evolving the platform for both human and AI-assisted development, and driving performance and reliability initiatives.\n\nWhat You&rsquo;ll Do\n\n• Architect Micro-Frontend Infrastructure: Design and evolve micro-frontend platform using Module Federation in React & Angular. Create and maintain shared NPM packages enforcing consistency and patterns across the organization. Drive team collaboration through architectural governance, review processes, and cross-functional alignment.\n\n• Drive Developer Platform Strategy: Create developer tools and automation that streamline workflows and boost productivity across engineering teams. Build repeatable AI-assisted workflows for frontend implementation, browser testing, debugging, framework migrations, and delivery—from a task specification to a validated pull request. Author technical documentation and mentor engineers through code reviews.\n\n• Enable Reliable Coding Agent Workflows: Structure repositories, component libraries, documentation, and development environments so engineers and coding agents can reliably build, test, and extend the platform. Establish clear component contracts, runnable examples, predictable build and test commands, and reusable skills and integrations that provide relevant company context and actionable validation feedback.\n\n• Establish Shared Patterns for AI-Powered Experiences: Partner with product and AI platform teams to establish shared UI patterns for AI-powered experiences, including streaming responses, progress visibility, cancellation, error recovery, and user approval of consequential actions. Design reusable components with clear contracts that reduce integration time across teams.\n\n• Strengthen Testing and Validation: Establish fast, reliable feedback through component tests, browser automation, visual regression checks, and CI gates so changes can be validated consistently across teams. Define validation and human review requirements for AI-generated changes.\n\n• Drive Adoption and Measurable Outcomes: Pilot new workflows with engineering teams, measure delivery time, escaped defects, reliability, and AI usage cost, and turn successful approaches into supported company standards. Verify that tools, integrations, and workflows operate successfully in the teams and environments where they are adopted.\n\n• Partner on Secure AI-Assisted Development: Work with Security and the AI platform team to establish scoped tool access, safe handling of secrets and sensitive data, and clear accountability for agent-generated changes. Define appropriate human review and approval boundaries for frontend workflows.\n\n• Drive Reliability & Performance: Lead optimization initiatives to reduce bundle size and costs. Spearhead framework migrations delivering critical security fixes. Implement performance monitoring and optimization strategies that reduce latency and improve load times.\n\nWhat We&rsquo;re Looking For\n\n• At least 8 years of experience in frontend software development\n\n• At least 3 years of experience in frontend architecture with demonstrated organization-wide impact\n\n• Deep expertise with React and TypeScript; experience with Angular is highly valued\n\n• Experience with micro-frontend architectures (Module Federation, single-spa, Web Components, or similar approaches)\n\n• Strong knowledge of build tooling (Webpack, Vite, Rollup) and monorepo management\n\n• Experience with testing strategies (unit, integration, E2E) and establishing testing standards across teams, including component testing, browser automation, visual regression checks, and CI validation\n\n• Hands-on experience using AI coding tools to deliver production changes, with the ability to evaluate generated code, design effective validation, and explain where human review is necessary\n\n• Ability to demonstrate improvements in engineering delivery, quality, or reliability from AI-assisted workflows and drive adoption across teams\n\n• Practical understanding of scoped tool access, secrets, sensitive data, and accountability for AI-generated changes, in partnership with Security and AI platform teams\n\n• Excellent Communication: Strong verbal and written communication skills to effectively collaborate with team members and drive consensus across multiple teams.\n\n• Nice to have: Experience with observability platforms, CDN optimization, Next.js or other meta-frameworks, CI/CD pipelines, and AWS\n\nThe posted pay range represents the anticipated low and high end of the compensation for this position and is subject to change based on business need. To determine a successful candidate’s starting pay, we carefully consider a variety of factors, including primary work location, an evaluation of the candidate’s skills and experience, market demands, and internal parity.\n\nFor roles with on-target-earnings (OTE), the pay range includes both base salary and target incentive compensation. Target incentive compensation for some roles may include a ramping draw period. Compensation is higher for those who exceed targets. Candidates may receive more information from the recruiter.\n\nPay Range\n\n$129,600—$288,000 USD\n\nNavan uses AI-assisted Automated Employment Decision Tool (Metaview) to assist with evaluating resumes against job qualifications for this role. All final decisions are made by human recruiters and hiring managers.\n\nHuman oversight: Metaview does not automatically reject candidates or make final hiring decisions. Our recruiters and hiring managers review all outputs and make the final hiring decision regarding every application.\n\n• Your rights: If you prefer to have your application reviewed without AI assistance, you may request a human evaluation by entering your email here. Your decision to do so will not affect how your candidacy is evaluated.\n\nPlease refer to our Candidate Privacy Notice for more information about our processing of personal data, and your rights.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-22T14:08:13.000Z",
+    "sourceHash": "fb49e4746f0ca1ae6ceb744e0b691d327e4e60a7f708441343a68308869004d1",
+    "company": {
+      "id": "navan",
+      "name": "Navan",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/navan.com-a1f499a94c-2.webp",
+      "industry": "Technology",
+      "website": "https://navan.com"
+    },
+    "slug": "frontend-architect-navan-fb49e474",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "nextjs",
+        "typescript",
+        "webpack",
+        "vite"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "47a431d25c40a8893a3abb66c1545f318fe12d82244ba4513c2e266f7b18c661",
     "title": "Frontend Engineer, Growth & Agents",
     "applyUrl": "https://remotefirstjobs.com/companies/evenup/jobs/frontend-engineer-growth-agents-874074",
@@ -30961,208 +31099,6 @@
         "Europe"
       ],
       "seniority": "principal",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "9eaabcd3668786ff2bb946b76acfe1efa72bb8fd06a397a8063224ceba5a6b13",
-    "title": "Senior Frontend Entwickler/in (100% Remote)",
-    "applyUrl": "https://join.com/companies/blicksolutions/16721298-senior-frontend-entwickler-in-100-remote?pid=e65242534431eadcb0c9",
-    "description": "About the job\n\nHi, wir suchen dich als Frontend Entwickler/in (100% Remote) für unsere Shopify Agentur.\n\n\n\n\nDu verwandelst jedes Design in Code, hast kein Bock auf alt eingessen und die Chance dich persönlich weiterzuentwickeln? Dann sind wir ein Match.\n\n\n\n\nWir arbeiten mit starken D2C Brands wie Snocks, LiveFresh oder Rosental an ihren Onlineshops, gestalten Layouts, entwickeln Features und beraten umfassend rund um Shopify.\n\n\n\n\nAufgaben\n\n\n\n\n\nKunden: Du arbeitest mit E-Commerce Startups aus dem DACH-Raum – vom Höhle-der-Löwen-Startup bis hin zum etablierten Mittelständler.\n\n\nFertige Tasks: Unsere Projektmanager liefern dir klar strukturierte und dokumentierte Tasks, die du eigenständig im Code umsetzt.\n\n\nAnsprechpartner: Du berätst unsere Kunden und das interne Team zur technischen Umsetzbarkeit und bringst aktiv deine Ideen und Lösungen ein.\n\n\nKollegen: Dich erwartet ein Team mit viel Erfahrung in der E-Commerce- und Agenturwelt – alle mit dem gleichen Drive, Dinge voranzubringen.\n\n\n\n\n\n\n\n\n\nQualifikation\n\n\n\n\n\nBisherige Erfahrung: Du bringst mehrere Jahre Erfahrung in der Webentwicklung mit – idealerweise im E-Commerce oder mit Shopify – und hast bereits komplexere Projekte eigenständig umgesetzt.\n\n\nLevel: Du arbeitest auf Senior-Level, hast ein sehr starkes technisches Fundament und triffst eigenständig fundierte technische Entscheidungen.\n\n\nSkills: HTML, CSS und JavaScript beherrschst du auf hohem Niveau. Du hast fundierte Erfahrung mit modernen Frameworks (z. B. React) sowie idealerweise mit Shopify Liquid und/oder Node.js.\n\n\nArbeitsweise & Verantwortung: Du übernimmst Ownership für deine Themen, denkst in Lösungen statt in Problemen und bringst proaktiv Verbesserungsvorschläge ein – sowohl technisch als auch prozessual.\n\n\nAusbildung / Studium: Für uns zweitrangig – entscheidend ist deine Erfahrung, deine Arbeitsweise und die Qualität deiner Ergebnisse.\n\n\nSprachen: Sehr gutes Deutsch und fließendes Englisch.\n\n\n\n\n\n\n\n\n\nBenefits\n\n\n\n\n\nFinanzen: gutes Gehalt: 50.000€ - 70.000€ pro Jahr\n\n\nAuch mal frei: 30 Tage Urlaub + am Geburtstag ab 13 Uhr frei\n\n\nLeider: kein Obstkorb, kein Tischkicker und kein Mio Mate, sorry\n\n\nTeamkultur: Humor, klare Meeting-Formate & Feierabend\n\n\nArbeitszeit: wir bewerten dich nach Leistung, nicht nach Zeit\n\n\nArbeitseinteilung: arbeite wann du möchtest, egal ob Nachteule oder frühe Vogel\n\n\nRemote first: 100% remote, maximale Freiheit für dich\n\n\nWachstum: unser Growth Mindset bringt dich garantiert voran\n\n\nFür uns schon Basics: bestes Apple Equipment & Teamevents\n\n\n\n\n\n\n\n\n\nKlingt gut?\n\n\n\n\nDa haben wir Glück gehabt. “Konnten wir dein Interesse wecken?”\n\n\n\n\nSpaß - wenn du bis hier gelesen hast, sollten wir sprechen.\n\n\n\n\nBitte um ein kurzes ungezwungenes Anschreiben per du. Erzähl uns einfach: warum du, warum bei uns?\n\n\n\n\nLiebe Grüße\n\n\n\n\nVictoria",
-    "location": "Remote - Germany",
-    "country": "Germany",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-23T16:41:42.403Z",
-    "sourceHash": "9eaabcd3668786ff2bb946b76acfe1efa72bb8fd06a397a8063224ceba5a6b13",
-    "company": {
-      "id": "blicksolutionsgmbhshopifypluspartner",
-      "name": "BlickSolutions GmbH - Shopify Plus Partner",
-      "logoUrl": "https://logo.clearbit.com/blicksolutionsgmbhshopifypluspartner.com",
-      "industry": "Technology",
-      "website": "https://blicksolutionsgmbhshopifypluspartner.com"
-    },
-    "slug": "senior-frontend-entwickler-in-100-remote-blicksolutions-gmbh-shopify-plus-partner-9eaabcd3",
-    "aiTags": {
-      "stack": [
-        "react",
-        "javascript",
-        "css",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Germany"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "c1efa2c982a79ad057a9c3d4a8cf370885654143d552de8262b67c78985d7d16",
-    "title": "Front End Engineer (React.js, UI)",
-    "applyUrl": "https://www.sundayy.com/job-description2/WJU3B715A3FF37BCF6778132FAE5B360319?source=Linkedin",
-    "description": "About the job\n\nAbout The Company\n\nManulife Financial Corporation is a leading international financial services provider committed to helping individuals and businesses make informed decisions that enhance their financial well-being. With a rich history of innovation and customer-centric solutions, Manulife operates across multiple markets, including Canada, the United States, and Asia, offering a comprehensive range of insurance, wealth, and asset management services. The company's mission is to improve the financial security and well-being of its clients through innovative products, digital transformation, and a dedicated workforce. Manulife values diversity, inclusion, and sustainability, striving to create an environment where all employees can thrive and contribute to the company's ongoing success.\n\nAbout The Role\n\nWe are seeking a self-motivated Front-End Engineer to join our dynamic team, responsible for building and maintaining our internal React component library that implements Manulife's enterprise design system. This library supports over 100 active digital properties across our Canadian and US segments and is endorsed at the enterprise architecture level as the standard for React development. The role involves designing accessible, well-tested components, tooling, and documentation that empower thousands of engineers to deliver consistent, high-quality user experiences. As a product engineering role, the library is treated as a product, with developers as its primary customers. The successful candidate will collaborate closely with designers, architects, and product teams to enhance our front-end capabilities, advance AI-native tooling, and help evolve a shared component core that supports multiple platforms. This position offers an exciting opportunity to influence enterprise-wide front-end development practices, promote accessibility standards, and contribute to innovative AI integrations, all within a collaborative and agile environment.\n\nQualifications\n\n\n5 or more years of experience building production front-end applications or shared libraries in complex enterprise environments\nDeep expertise in React and TypeScript, with modern CSS skills\nPractical experience in accessibility, including semantic HTML, ARIA practices, focus and keyboard management, and assistive technology testing\nProven track record in building reusable libraries, design systems, or shared platforms used by multiple teams\nStrong testing discipline across unit, integration, visual regression, and automated accessibility checks\nFamiliarity with monorepos, CI/CD pipelines, release automation, and semantic versioning\nExcellent verbal and written communication skills, capable of articulating technical vision and trade-offs to diverse audiences\nUnderstanding of agile methodologies, DevOps principles, test-driven development, and continuous integration practices\n\n\nResponsibilities\n\n\nDesign, develop, and maintain accessible, high-quality React components, design tokens, and tooling aligned with the enterprise design system\nEnsure components meet WCAG 2.2 AA accessibility standards, implementing ARIA practices, keyboard interactions, and assistive technology support\nShape durable component APIs, considering backwards compatibility, semantic versioning, deprecation, and migration strategies\nEnhance documentation platforms, live code sandboxes, examples, and Figma integrations to facilitate easy adoption and learning for teams\nContribute to AI-native tooling development, including MCP server, Copilot agent skills, and generative UI guardrails for accessible, on-brand interfaces\nSupport the evolution of a shared headless component core for web, mobile, and future platforms\nTriaging issues, reviewing external contributions, and supporting delivery teams within a large engineering community\nCollaborate with cross-disciplinary teams to identify pain points and accelerate the delivery of new business value through agile practices\n\n\nBenefits\n\n\nCompetitive salary range between $86,100.00 CAD and $136,100.00 CAD, commensurate with experience and qualifications\nComprehensive health, dental, mental health, vision, and wellness benefits\nShort-term and long-term disability, life, and AD&D insurance coverage\nRetirement savings plans, including pension and global share ownership plans with employer matching contributions\nPaid time off including holidays, vacation, personal, and sick days, along with statutory leaves of absence\nOpportunities for professional growth, continuous learning, and career development\nFlexible work arrangements supporting work-life balance\nInclusive and diverse work environment that fosters well-being and innovation\n\n\nEqual Opportunity\n\nManulife is an Equal Opportunity Employer. We embrace diversity and are committed to creating an inclusive environment for all employees. We strive to attract, develop, and retain a workforce that reflects the communities we serve. Our recruitment, retention, and advancement practices are conducted without discrimination based on race, ethnicity, gender, age, religion, sexual orientation, gender identity, disability, or any other protected characteristic. We are dedicated to removing barriers to employment and providing reasonable accommodations during the application process. All applicants and employees are valued for their unique contributions, and we foster a culture of respect, fairness, and opportunity for everyone.\n\n\n\nDesired Skills and Experience\n\nInformation Technology",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-23T04:52:19.542Z",
-    "sourceHash": "c1efa2c982a79ad057a9c3d4a8cf370885654143d552de8262b67c78985d7d16",
-    "company": {
-      "id": "sundayy",
-      "name": "Sundayy",
-      "logoUrl": "https://logo.clearbit.com/sundayy.com",
-      "industry": "Technology",
-      "website": "https://sundayy.com"
-    },
-    "slug": "front-end-engineer-react-js-ui-sundayy-c1efa2c9",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "css",
-        "figma",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "REGION",
-      "eligibleRegions": [
-        "Asia"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "0c65a0efc4dcee23f5e90d845f0e20dc58ac15a352ffe72ec9e08caaaf9961ef",
-    "title": "Staff Frontend Engineer",
-    "applyUrl": "https://jobs.ashbyhq.com/trading212/27cb1380-efdf-4992-83af-28e9614d4d7e/application?utm_source=LinkedIn+Applicant",
-    "description": "About the job\n\nOur mission is to enable everyone to build wealth\n\nWe reinvent how trading and investing work by creating exceptional products people love.\n\nThat takes high standards, high velocity and engineers who own what they ship.\n\nToday, we serve over 6 million clients, with more than €38 billion in assets under management. At that scale, frontend architecture, performance and product quality have material business consequences.\n\nOur frontend platform spans web and mobile: TypeScript, React, React Native and React Native Web in an Nx and pnpm monorepo, with TanStack Query, Zustand, Playwright, Detox and Jest. Around 95% of our code is reused across web and mobile.\n\nAbout The Role\n\nStaff Frontend Engineers shape architecture and engineering direction across product teams while remaining close to the code. Your scope will include shared libraries, platform capabilities, developer tooling and difficult product-system problems.\n\nThis is not a people-management role. Its leverage comes from technical judgement, credible execution and making other engineers and teams more effective.\n\nWhat you’ll do\n\n\nSet direction for frontend architecture across React, React Native and the shared monorepo.\nOwn cross-team problems in platform capabilities, shared libraries, design-system foundations, tooling and developer experience.\nLead decisions on boundaries, abstractions, state and data flow, performance, testing and migration strategy.\nDiagnose systemic rendering, bundle, runtime and release-quality problems and create durable fixes.\nRemain hands-on where implementation, prototyping or technical investigation is the fastest way to create clarity.\nPartner with product, backend engineering and QA on risks and decisions that cross team boundaries.\nMentor senior engineers, raise review quality and make sound frontend judgement easier to reproduce across teams.\nBalance standardisation with team autonomy, avoiding platform work that creates more friction than leverage.\n\n\nWhat you need to have\n\n\nEvidence of architectural or platform impact across multiple frontend teams.\nDeep ownership of complex production systems built with React or React Native and TypeScript.\nStrong judgement in application boundaries, shared libraries, state management, performance and migration design.\nA track record of improving developer effectiveness, reliability or product quality through durable mechanisms.\nPractical experience diagnosing performance and correctness problems across web or mobile systems.\nThe ability to influence technical direction through evidence, clarity and trusted execution rather than title.\nClear communication that helps teams act on complex technical decisions.\nStrong engineering and product judgement, including knowing when not to introduce a new abstraction.\n\n\nStaff scope is assessed through ownership, judgement and sustained organisational impact-not years of experience or familiarity with every technology listed.\n\nWhat to expect\n\n\nRecruiter conversation\nCode Review\nExperience Deep Dive\nManagerial interview\n\n\nYour recruiter will explain each stage clearly and follow up after every conversation.\n\nBring your ambition to Europe’s fastest-growing mobile broker!",
-    "location": "Remote - United Kingdom",
-    "country": "United Kingdom",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-23T04:50:05.679Z",
-    "sourceHash": "0c65a0efc4dcee23f5e90d845f0e20dc58ac15a352ffe72ec9e08caaaf9961ef",
-    "company": {
-      "id": "trading212",
-      "name": "Trading 212",
-      "logoUrl": "https://logo.clearbit.com/trading212.com",
-      "industry": "Technology",
-      "website": "https://trading212.com"
-    },
-    "slug": "staff-frontend-engineer-trading-212-0c65a0ef",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "zustand",
-        "jest",
-        "playwright"
-      ],
-      "remoteScope": "REGION",
-      "eligibleRegions": [
-        "Europe"
-      ],
-      "seniority": "principal",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "937352493133ec98463fbb543fe98ccc131992a64c6020d99e63290da9a29118",
-    "title": "Senior Frontend Engineer",
-    "applyUrl": "https://jobs.ashbyhq.com/trading212/307f2b07-4aa3-4f89-97e3-537244060b11/application?utm_source=LinkedIn+Applicant",
-    "description": "About the job\n\nOur mission is to enable everyone to build wealth\n\nWe reinvent how trading and investing work by creating exceptional products people love.\n\nThat takes high standards, high velocity and engineers who own what they ship.\n\nToday, we serve over 6 million clients, with more than €38 billion in assets under management. At that scale, frontend performance, correctness and clarity are part of the product.\n\nOur frontend platform spans web and mobile: TypeScript, React, React Native and React Native Web in an Nx and pnpm monorepo, with TanStack Query, Zustand, Playwright, Detox and Jest. Around 95% of our code is reused across web and mobile.\n\nAbout The Role\n\nSenior Frontend Engineers work across our product domains. Your team match will reflect your strengths, interests and where you can contribute most.\n\nAcross every team, the model is the same: small, autonomous groups, a weekly release cycle and ownership from problem definition through production.\n\nWhat you’ll do\n\n\nOwn complex frontend features end to end across web and mobile.\nDesign and evolve React and React Native systems, shared libraries and durable abstractions.\nIdentify and resolve rendering, state-management, bundle and runtime-performance bottlenecks.\nUse TypeScript to make behaviour explicit and prevent defects rather than suppressing type errors.\nWork closely with product, backend engineering and QA to turn complex requirements into simple user experiences.\nKeep quality high through code review, unit, end-to-end and visual-regression testing.\nShare knowledge, mentor colleagues and raise the frontend engineering standard.\n\n\nWhat you need to have\n\n\nProven ownership of production frontend systems built with React or React Native and TypeScript.\nStrong knowledge of React rendering, component boundaries, data flow and state management.\nA track record of designing maintainable frontend architecture and reusable abstractions.\nPractical experience diagnosing performance problems in complex web or mobile products.\nSound testing judgement across unit, end-to-end and visual-regression coverage.\nClear, structured problem-solving and the ability to explain technical decisions and trade-offs.\nStrong engineering fundamentals, product judgement and confidence learning unfamiliar technologies.\n\n\nDepth in one frontend ecosystem and sound tool choice matter more than familiarity with every technology listed.\n\nWhat to expect\n\n\nRecruiter conversation\nCode Review\nExperience Deep Dive\nManagerial interview\n\n\nYour recruiter will explain each stage clearly and follow up after every conversation.\n\nBring your ambition to Europe’s fastest-growing mobile broker!",
-    "location": "Remote - United Kingdom",
-    "country": "United Kingdom",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-23T04:49:46.439Z",
-    "sourceHash": "937352493133ec98463fbb543fe98ccc131992a64c6020d99e63290da9a29118",
-    "company": {
-      "id": "trading212",
-      "name": "Trading 212",
-      "logoUrl": "https://logo.clearbit.com/trading212.com",
-      "industry": "Technology",
-      "website": "https://trading212.com"
-    },
-    "slug": "senior-frontend-engineer-trading-212-93735249",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "zustand",
-        "jest",
-        "playwright"
-      ],
-      "remoteScope": "REGION",
-      "eligibleRegions": [
-        "Europe"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "a2dc6bdbdcb42ee84af01474e7b7c307039353cb4952469771d5775abfbd7c0e",
-    "title": "Software Engineer - Frontend",
-    "applyUrl": "https://eslfaceitgroup.com/career/job/?gh_jid=4983033101&gh_src=6aqc1qo2teu",
-    "description": "About the job\n\nAt EFG (ESL FACEIT Group) we create worlds beyond gameplay where players and fans become community. We pride ourselves in having a corporate social responsibility which is that \"IT'S NOT GG, UNTIL IT'S GG FOR ALL\". We are passionate about the culture we foster that ultimately helps to create and shape the world of esports, gaming tournaments, leagues, events and holistic ecosystems staged for our millions of players, fans and heroes.\n\nEverything we do, from global esports tournaments and community-driven leagues to next-generation platforms and live events, is rooted in our passion, craftsmanship, and culture. With millions of players and fans around the world, we aim to shape the future of esports and gaming by building ecosystems that are inclusive, innovative, and enduring.\n\nAbout FACEIT\n\nAs one of the core pillars of EFG, FACEIT is the beating heart of competitive online gaming. With over 34 million registered users playing 30 million matches each month, we are the industry leader in competitive play. Our platform is where gamers of all levels come together to test their skills, climb the ranks, and forge communities.\n\nAt FACEIT, we're relentless in our pursuit of excellence. We push the limits of technology, deliver cutting-edge features, and provide an unparalleled competitive gaming experience. Our vision is simple: to empower every player to reach their full potential, while keeping competition fair, engaging, and thrilling.\n\nThe Problem You Will Solve\n\nEvery month, millions of players decide whether FACEIT is worth paying for - and your code is where that decision happens.\n\nSubscriptions is the primary revenue engine behind the FACEIT platform. It's a Stripe- and Xsolla-powered checkout, a Subscriber Portal managing the full lifecycle (upgrade, pause, resume, cancel, gift), and a Loyalty programme where tiers, streaks, XP and payment-anchored benefits turn one-off buyers into long-term members. It's a surface where a 1% conversion lift is measurable in weeks, a race condition costs real money, and complex financial state has to feel obvious at 2 a.m. on a phone, mid-queue.\n\nWe're looking for a Frontend Engineer who wants to be the person writing that code. You'll work in a modern stack - React 19, Next.js 16, TypeScript, TanStack Query, an in-house design system, Storybook + Chromatic + MSW - inside a monorepo of ~14 Subscription-owned packages. You'll ship alongside Product, Design and Backend, on features and experiments that move numbers the whole company watches.\n\nThe Team\n\nYou'll ship alongside a senior Frontend Engineer - your closest technical partner - plus two Backend Engineers, a Product Designer, a Product Manager and an Engineering Manager. Product and Design own the flows; you and the senior FE own how they land in production.\n\nWhat You'll Own\n\n\nThe paid conversion path, end-to-end. Conversion points across the app, the plan landing page, Stripe & Xsolla checkout (including gifting and upgrades), and the immediate post-purchase experience - you'll own the code, the experiments, and the conversion numbers they produce;\nThe subscriber lifecycle. Pause, resume, cancel, renewal and the Subscriber Portal - where retention is won or lost. You'll build the flows that reduce voluntary churn without dark patterns and recover involuntary churn cleanly;\nThe Loyalty programme UI. Tiers, streaks, XP, payment-anchored benefits, shop token allocation, badges. You'll turn our Loyalty service into an experience players actually understand, care about, and come back for;\nExperimentation velocity. Feature-flagged rollouts, A/B tests on pricing, bundling, activation and cancel-flow interventions, wired to analytics with the rigour to trust the results;\nThe technical health of a revenue-critical surface. Testing culture (Vitest + Storybook + Chromatic + MSW), observability, and the safe-rollout discipline that lets us ship confidently to code that processes real transactions every minute.\n\n\nWhat We Are Looking For\n\n\nSolid production experience with React 19, TypeScript, and Next.js (App Router);\nFluent with modern data-layer patterns - TanStack Query (or equivalent) and Redux Toolkit - and a clear point of view on when to reach for each;\nComfortable in a large monorepo: package boundaries, dependency hygiene, incremental migrations, working across many consumers of your code;\nTrack record of owning a high-traffic, business-critical surface - checkout, billing, payments or another revenue/retention path - and understanding the operational demands (idempotency, error recovery, race conditions, safe rollout, observability, and the uptime discipline that treats every minute of downtime as lost revenue);\nStrong eye for details of complex state in production: proration, entitlements, expirations, currency and tax, localisation, accessibility. You know the common pitfalls and handle them in code, not in post-mortems;\nFamiliarity with experimentation tooling and mechanics: feature flags, segmentation, A/B tracking, and the instrumentation that makes results trustworthy;\nSolid on testing culture - unit, component and visual regression. You don't ship revenue code without a safety net;\nCollaborative by default: fluent code review, clear writing, low-ego debates, comfortable partnering with Product, Design and Backend as equals;\nFluent with modern AI coding tools (Copilot, Cursor, Claude Code or similar) as part of your daily practice - and clear-eyed about when to lean on them and when not to, especially on revenue-critical code.\n\n\nBonus skills\n\n\nPassionate about learning new, cutting-edge technologies and finding applicable business cases as needed;\nA passion for video games and esports is a plus.\n\n\nFirmly rooted in our values, EFG is an affirmative action employer that celebrates being an equal opportunity workplace. Our unwavering commitment to fair employment extends to all individuals, regardless of their race, color, ancestry, religion, sex, national origin, age, sexual orientation, disability, citizenship, marital status, gender identity, or Veteran status.",
-    "location": "Remote - United Kingdom",
-    "country": "United Kingdom",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-23T04:49:40.228Z",
-    "sourceHash": "a2dc6bdbdcb42ee84af01474e7b7c307039353cb4952469771d5775abfbd7c0e",
-    "company": {
-      "id": "eslfaceitgroupefg",
-      "name": "ESL FACEIT Group - EFG",
-      "logoUrl": "https://logo.clearbit.com/eslfaceitgroupefg.com",
-      "industry": "Technology",
-      "website": "https://eslfaceitgroupefg.com"
-    },
-    "slug": "software-engineer-frontend-esl-faceit-group-efg-a2dc6bdb",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "redux",
-        "storybook",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United Kingdom"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "b61476c95c9b2d5c3ef3f7074eff1841b73b741acb5db1796be41e4d9cbc5222",
-    "title": "Desarrollador/a Frontend SmartTV – React Native",
-    "applyUrl": "https://knowmadmood.teamtailor.com/jobs/8435792-desarrollador-a-frontend-smarttv-react-native",
-    "description": "About the job\n\nWe are knowmad mood!\n\nSomos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Nacimos para provocar un cambio real a través de la innovación y el desarrollo sostenible, con la misión de aportar valor a los clientes e impulsar nuestro talento.\n\nFormado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto.\n\nLos valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza.\n\n¿Qué es lo que valoramos?\n\nExperiencia de al menos 3 años como Desarrollador SmartTV:\n\n\n Experiencia como desarrollador frontend con JavaScript, creando aplicaciones funcionales y fiables en múltiples pantallas.\n Experiencia trabajando con React Native para el desarrollo de aplicaciones.\n Nivel alto de inglés.\n Experiencia en la creación de soluciones de entretenimiento, tanto en aplicaciones con gran volumen de usuarios como en herramientas internas para optimizar el desarrollo.\n Capacidad de trabajo en equipo y comunicación efectiva con clientes y equipos multidisciplinarios.\n\n\n¿Cuáles serían tus funciones?\n\n\n Desarrollo de aplicaciones SmartTV: Diseñar, desarrollar y optimizar aplicaciones para entornos SmartTV, asegurando experiencias fluidas y de alta calidad en diferentes dispositivos.\n Desarrollo Frontend: Crear interfaces modernas y eficientes utilizando JavaScript y tecnologías asociadas, garantizando rendimiento y escalabilidad.\n Desarrollo con React Native: Implementar y mantener aplicaciones utilizando React Native, adaptando funcionalidades a múltiples plataformas y pantallas.\n Optimización de experiencia de usuario: Construir soluciones de entretenimiento robustas, ya sea para aplicaciones con millones de usuarios o para herramientas internas que mejoren la productividad del equipo.\n Colaboración Multidisciplinaria: Trabajar estrechamente con equipos de producto, diseño y desarrollo para ofrecer soluciones innovadoras y alineadas con las necesidades del negocio.\n Colaborar en el desarrollo de Soluciones Low-Code/No-Code: Crear y gestionar soluciones innovadoras utilizando la PowerPlatform (Power Apps, Power Automate, Power BI, Dataverse), adaptadas a las necesidades de nuestros clientes.\n\n\nNos encantaría si además te manejases bien con Inglés.\n\nAdemás, valoraremos muy positivamente si tienes experiencia y/o conocimientos en:\n\n\n Desarrollo para plataformas de SmartTV como Samsung, LG o Android TV.\n Experiencia trabajando con Shaka Player u otros reproductores de vídeo en JavaScript.\n Conocimientos en optimización de streaming y reproducción multimedia.\n Experiencia en entornos ágiles de desarrollo.\n Experiencia en el desarrollo de aplicaciones de alto rendimiento y escalabilidad.\n\n\nY con nosotros podrás disfrutar de:\n\n✅Contrato Indefinido\n\n✅ 100% REMOTO\n\n✅Formación interna y acceso a certificaciones ♻Consulta nuestro calendario aquí:\n\nhttps://www.knowmadmood.com/es/talento/formacion\n\n✅Plan de retribución flexible (seguro médico, transporte, tickets guardería, tickets restaurante)\n\n✅Embajador de nuestra marca, a través de nuestro plan amigo\n\n¡Recomienda a tus amigos y llévate un extra!\n\n✅¡Eventos, meetups, techdays, charlas...y mucho más!\n\n✅ 26 días de descanso (22 días vacaciones, 2 días de libre disposición y 24 y 31 diciembre festivos por defecto)\n\n✅ Horario: 8.30 a 18h ( flexible) L-J y V 8 a 15h e Intensiva de Verano Julio y Agosto de 8 a 15h\n\nPara estar al corriente de nuestras novedades síguenos aquí -> knowmad mood\n\nEn knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
-    "location": "Remote - Spain",
-    "country": "Spain",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-23T04:43:35.009Z",
-    "sourceHash": "b61476c95c9b2d5c3ef3f7074eff1841b73b741acb5db1796be41e4d9cbc5222",
-    "company": {
-      "id": "knowmadmood",
-      "name": "knowmad mood",
-      "logoUrl": "https://logo.clearbit.com/knowmadmood.com",
-      "industry": "Technology",
-      "website": "https://knowmadmood.com"
-    },
-    "slug": "desarrollador-a-frontend-smarttv-react-native-knowmad-mood-b61476c9",
-    "aiTags": {
-      "stack": [
-        "react",
-        "javascript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Spain"
-      ],
-      "seniority": "mid",
       "employmentType": "fulltime"
     }
   }
