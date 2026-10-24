@@ -51,25 +51,8 @@ export default async function HomePage() {
       const itemListElements = jobs.map((job: any, index: number) => ({
         "@type": "ListItem",
         "position": index + 1,
-        "item": {
-          "@type": "JobPosting",
-          "title": job.title,
-          "description": job.description || job.title,
-          "datePosted": job.postedAt || new Date().toISOString(),
-          "validThrough": new Date(new Date().setMonth(new Date().getMonth() + 1)).toISOString(),
-          "employmentType": "FULL_TIME",
-          "hiringOrganization": {
-            "@type": "Organization",
-            "name": job.company?.name || "Unknown Company",
-            "logo": job.company?.logoUrl || "https://www.frontendengineers.com/logo.png"
-          },
-          "jobLocationType": "TELECOMMUTE",
-          "applicantLocationRequirements": {
-            "@type": "Country",
-            "name": job.country || "Worldwide"
-          },
-
-        }
+        "name": `${job.title} at ${job.company?.name || "Company"}`,
+        "url": `https://www.frontendengineers.com/jobs/${job.slug || job.id}`,
       }));
 
       jsonLd = [
@@ -142,14 +125,14 @@ export default async function HomePage() {
           <section className="pt-6 sm:pt-10 pb-6 sm:pb-8 px-4 text-center bg-white flex flex-col items-center">
             <div className="inline-flex items-center justify-center gap-1.5 bg-[#f0fdf4] text-[#166534] border border-[#bbf7d0] px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold mb-4 sm:mb-6 shadow-sm uppercase tracking-wider">
               <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-              Get Hired Faster. Less Competition.
+              Curated Remote Roles • Updated Daily
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900 w-full">
-              Remote Frontend{" "}
-              <span className="text-[#2563eb]">Developer jobs</span>
+              The Remote Job Board for{" "}
+              <span className="text-[#2563eb]">Frontend Developers</span>
             </h1>
-            <p className="text-sm sm:text-base max-w-2xl mx-auto mb-4 text-gray-600">
-              Skip the noise. We aggregate remote frontend roles from 100+ sources and verified employee referrals so you get hired faster.
+            <p className="text-sm sm:text-base max-w-2xl mx-auto mb-3 text-gray-600">
+              Zero hybrid fluff. Zero non-technical spam. Verified React, TypeScript, Next.js, Vue, and Angular jobs from remote-first companies worldwide.
             </p>
 
             <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-2">

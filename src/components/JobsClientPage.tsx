@@ -608,14 +608,14 @@ export default function JobsClientPage() {
       <section className="pt-6 sm:pt-10 pb-6 sm:pb-8 px-4 text-center bg-white flex flex-col items-center">
         <div className="inline-flex items-center justify-center gap-1.5 bg-[#f0fdf4] text-[#166534] border border-[#bbf7d0] px-3 sm:px-4 py-1.5 rounded-full text-[10px] sm:text-xs font-bold mb-4 sm:mb-6 shadow-sm uppercase tracking-wider">
           <svg className="w-3.5 h-3.5 sm:w-4 sm:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
-          Get Hired Faster. Less Competition.
+          Curated Remote Roles • Updated Daily
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900 w-full">
-          Remote Frontend{" "}
-          <span className="text-[#2563eb]">Developer jobs</span>
+          The Remote Job Board for{" "}
+          <span className="text-[#2563eb]">Frontend Developers</span>
         </h1>
         <p className="text-sm sm:text-base max-w-2xl mx-auto mb-3 text-gray-600">
-          Skip the noise. We aggregate remote frontend roles from 100+ sources and verified employee referrals so you get hired faster.
+          Zero hybrid fluff. Zero non-technical spam. Verified React, TypeScript, Next.js, Vue, and Angular jobs from remote-first companies worldwide.
         </p>
 
         <div className="mb-4">
@@ -630,7 +630,7 @@ export default function JobsClientPage() {
         </div>
 
         {!isSubscribed && (
-          <div className="flex flex-col items-center justify-center gap-2 mb-8 mt-1">
+          <div className="flex flex-col items-center justify-center gap-2 mb-6 mt-1">
             <Link
               href="/pricing"
               className="w-full sm:w-auto bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3.5 rounded-full font-bold shadow-lg shadow-orange-500/20 flex items-center justify-center gap-2 text-sm sm:text-base transition-colors"
@@ -640,29 +640,65 @@ export default function JobsClientPage() {
           </div>
         )}
 
-        {/* Search Bar */}
-        {isSubscribed ? (
-          <div className="hero-search flex flex-col items-center w-full max-w-2xl mx-auto mb-4 sm:mb-6 relative">
+        {/* Search Bar Container */}
+        <div className="w-full max-w-2xl mx-auto mt-2 mb-4 relative">
+          <div className="relative flex items-center bg-white border border-[#e2e2e6] hover:border-gray-300 focus-within:border-[#2563eb] focus-within:ring-4 focus-within:ring-blue-500/10 rounded-full shadow-sm hover:shadow-md transition-all duration-200">
+            {/* Search Icon */}
+            <div className="pl-5 text-gray-400 pointer-events-none flex items-center justify-center">
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+              </svg>
+            </div>
+
+            {/* Input */}
             <input
               type="text"
-              placeholder="Search React, Senior, Discord..."
+              placeholder="Search by title, company, or technology (e.g. React, Senior)..."
               value={filters.q}
               onChange={(e) =>
                 handleFilterChange({ ...filters, q: e.target.value })
               }
-              className="w-full bg-white border border-[#e2e2e6] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-gray-900 outline-none focus:border-[#2563eb] transition-colors"
+              aria-label="Search remote frontend jobs"
+              className="w-full bg-transparent py-3.5 sm:py-4 pl-3.5 pr-10 text-sm sm:text-base text-gray-900 placeholder:text-gray-400 outline-none border-none ring-0 focus:ring-0"
             />
-          </div>
-        ) : (
-          <div onClick={() => setUpgradeModalContext("search")} className="block w-full max-w-2xl mx-auto mb-4 sm:mb-6">
-            <div className="w-full bg-gray-50 border border-[#e2e2e6] rounded-full py-3 sm:py-4 pl-4 sm:pl-6 pr-4 sm:pr-6 text-sm sm:text-base text-gray-400 flex items-center gap-2 cursor-pointer hover:border-[#d97706] transition-colors">
-              <svg className="w-4 h-4 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path></svg>
-              Search & filters are Pro features - Upgrade to unlock
-            </div>
-          </div>
-        )}
 
+            {/* Clear Button */}
+            {filters.q && (
+              <button
+                type="button"
+                onClick={() => handleFilterChange({ ...filters, q: "" })}
+                aria-label="Clear search query"
+                className="pr-5 text-gray-400 hover:text-gray-600 transition-colors cursor-pointer flex items-center justify-center"
+              >
+                <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2.5" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            )}
+          </div>
+        </div>
 
+        {/* Popular Tech Quick Filter Pills — spaced with clean breathing room */}
+        <div className="flex flex-wrap items-center justify-center gap-2 max-w-2xl mx-auto mb-8 px-2">
+          <span className="text-xs text-gray-400 font-medium mr-0.5">Popular:</span>
+          {["React", "TypeScript", "Next.js", "Vue", "Angular", "Senior", "Lead"].map((tag) => {
+            const isActive = filters.q.toLowerCase() === tag.toLowerCase();
+            return (
+              <button
+                key={tag}
+                type="button"
+                onClick={() => handleFilterChange({ ...filters, q: isActive ? "" : tag })}
+                className={`text-xs px-3.5 py-1.5 rounded-full font-medium transition-all cursor-pointer ${
+                  isActive
+                    ? "bg-[#2563eb] text-white shadow-sm border border-[#2563eb]"
+                    : "bg-white hover:bg-gray-50 text-gray-600 hover:text-gray-900 border border-gray-200 hover:border-gray-300 shadow-xs"
+                }`}
+              >
+                {tag}
+              </button>
+            );
+          })}
+        </div>
       </section>
 
       {/* ─── Main Content ───────────────────── */}
@@ -678,15 +714,16 @@ export default function JobsClientPage() {
                 ) : (
                   <>
                     <span className="font-semibold text-[#2563eb]">
-                      2,400+
+                      {totalJobs.toLocaleString()}
                     </span>{" "}
-                    jobs found
+                    {totalJobs === 1 ? "job" : "jobs"} found
                   </>
                 )}
               </p>
               {/* Filter toggle button */}
               <button
                 onClick={() => isSubscribed ? setShowFilters(true) : setUpgradeModalContext("filters")}
+                aria-label="Toggle job filters"
                 className="btn-secondary inline-flex items-center gap-2 min-h-[40px] px-3 text-sm"
               >
                 <svg
@@ -729,20 +766,25 @@ export default function JobsClientPage() {
               </div>
             </div>
 
-            {/* Empty state */}
+            {/* Empty state with recovery action */}
             {dataLoaded && jobs.length === 0 && (
-              <div className="text-center py-16 sm:py-20 text-gray-900">
+              <div className="text-center py-16 sm:py-20 text-gray-900 bg-gray-50 rounded-2xl border border-gray-200 p-6">
                 <div className="text-5xl mb-4">🔍</div>
-                <h3 className="text-lg font-semibold mb-2">
-                  No jobs found
+                <h3 className="text-lg font-bold mb-2">
+                  No matching jobs found
                 </h3>
-                <p className="text-sm text-gray-600">
-                  Try adjusting your filters or search terms
+                <p className="text-sm text-gray-600 mb-6 max-w-sm mx-auto">
+                  Try broadening your keyword search or clearing active filters to see all available remote roles.
                 </p>
+                <button
+                  type="button"
+                  onClick={() => handleFilterChange({ ...filters, q: "" })}
+                  className="px-6 py-2.5 bg-[#2563eb] text-white text-sm font-semibold rounded-xl hover:bg-blue-700 transition-colors cursor-pointer"
+                >
+                  Clear Search &amp; View All Jobs
+                </button>
               </div>
             )}
-
-
 
             {/* Pagination */}
             {dataLoaded && totalJobs > 0 && (
@@ -750,6 +792,7 @@ export default function JobsClientPage() {
                 <button
                   onClick={() => handlePageChange(Math.max(1, page - 1))}
                   disabled={page === 1}
+                  aria-label="Previous page"
                   className="btn-secondary w-full sm:w-auto px-4 py-2 text-sm disabled:opacity-30 disabled:cursor-not-allowed min-h-[44px]"
                 >
                   ← Previous
@@ -778,6 +821,7 @@ export default function JobsClientPage() {
                         <button
                           key={i}
                           onClick={() => handlePageChange(i)}
+                          aria-label={`Page ${i}`}
                           className={`w-10 h-10 rounded-lg flex items-center justify-center text-sm font-semibold transition-colors ${page === i
                             ? "bg-[#2563eb] text-white"
                             : "bg-white text-gray-600 hover:text-gray-900 border border-[#e2e2e6] hover:border-[#444]"
@@ -794,6 +838,7 @@ export default function JobsClientPage() {
                 <button
                   onClick={() => handlePageChange(page + 1)}
                   disabled={!hasMore}
+                  aria-label="Next page"
                   className="btn-secondary w-full sm:w-auto px-4 py-2 text-sm disabled:opacity-30 disabled:cursor-not-allowed min-h-[44px]"
                 >
                   Next →

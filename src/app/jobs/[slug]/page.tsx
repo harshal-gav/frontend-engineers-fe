@@ -1,7 +1,7 @@
 import { notFound, permanentRedirect } from "next/navigation";
 import { Suspense } from "react";
 import type { Metadata } from "next";
-import { generateSlug, type Job } from "@/lib/jobs";
+import { generateSlug, type Job, getEffectiveJobDescription } from "@/lib/jobs";
 import { loadJobsFromFile } from "@/lib/jobs.server";
 import JobDetail from "@/components/JobDetail";
 import Link from "next/link";
@@ -195,16 +195,31 @@ export default async function JobDetailPage({
   // but NOT gated info (apply URL, salary) - those are premium.
   const skills = extractSkills(job.title);
 
-  const jsonLd = {
+  // Map employment type to Schema.org standard
+  const empTypeMap: Record<string, string> = {
+    contract: "CONTRACTOR",
+    parttime: "PART_TIME",
+    internship: "INTERN",
+    b2b: "CONTRACTOR",
+    fulltime: "FULL_TIME",
+  };
+  const schemaEmploymentType = job.aiTags?.employmentType 
+    ? (empTypeMap[job.aiTags.employmentType] || "FULL_TIME")
+    : "FULL_TIME";
+
+  const postedDate = job.postedAt ? new Date(job.postedAt) : new Date();
+  const validThroughDate = new Date(postedDate.getTime() + 60 * 24 * 60 * 60 * 1000);
+
+  const isGlobalLocation = !job.country || ["global", "worldwide", "remote", "anywhere"].includes(job.country.trim().toLowerCase());
+
+  const jsonLd: Record<string, any> = {
     "@context": "https://schema.org",
     "@type": "JobPosting",
     title: job.title,
-    description: job.description || job.title,
-    datePosted: job.postedAt || new Date().toISOString(),
-    validThrough: new Date(
-      Date.now() + 30 * 24 * 60 * 60 * 1000
-    ).toISOString(),
-    employmentType: "FULL_TIME",
+    description: getEffectiveJobDescription(job),
+    datePosted: job.postedAt || postedDate.toISOString(),
+    validThrough: validThroughDate.toISOString(),
+    employmentType: schemaEmploymentType,
     hiringOrganization: {
       "@type": "Organization",
       name: job.company?.name || "Company",
@@ -212,10 +227,12 @@ export default async function JobDetailPage({
       ...(job.company?.website && { sameAs: job.company.website }),
     },
     jobLocationType: "TELECOMMUTE",
-    applicantLocationRequirements: {
-      "@type": "Country",
-      name: job.country || "Worldwide",
-    },
+    ...(!isGlobalLocation && {
+      applicantLocationRequirements: {
+        "@type": "Country",
+        name: job.country,
+      },
+    }),
     ...(skills.length > 0 && { skills: skills }),
     ...(job.company?.industry && { industry: job.company.industry }),
   };
@@ -246,6 +263,20 @@ export default async function JobDetailPage({
     ]
   };
 
+  // Find related active remote jobs (same tech stack or company, excluding current)
+  const currentStack = new Set(job.aiTags?.stack || []);
+  const relatedJobs = jobs
+    .filter((j) => (j.slug !== slug && j.id !== job.id) && !j.isDead)
+    .map((j) => {
+      let score = 0;
+      if (j.aiTags?.stack?.some((s) => currentStack.has(s))) score += 3;
+      if (j.company?.name && j.company.name === job.company?.name) score += 2;
+      return { job: j, score };
+    })
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 4)
+    .map((item) => item.job);
+
   // NEW BUSINESS MODEL:
   // The SSR page renders the FULL job data in the HTML for SEO crawlers.
   // The client-side JobDetail component handles gating (blur) for non-Pro users.
@@ -263,7 +294,7 @@ export default async function JobDetailPage({
       />
       <Breadcrumbs jobTitle={job.title} />
       <Suspense fallback={<div className="min-h-screen bg-[var(--bg-primary)]"></div>}>
-        <JobDetail job={job} />
+        <JobDetail job={job} relatedJobs={relatedJobs} />
       </Suspense>
     </>
   );

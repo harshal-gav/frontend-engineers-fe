@@ -274,8 +274,57 @@ export default function EmployerPricingPage() {
               </div>
             </div>
           </div>
-
         </div>
+
+        {/* ─── How It Works ───────────────────────── */}
+        <section className="mt-20 pt-12 border-t border-gray-200">
+          <div className="text-center max-w-2xl mx-auto mb-12">
+            <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-3">How Posting Works</h2>
+            <p className="text-gray-600 text-sm sm:text-base">Three simple steps to hire your next remote frontend engineer.</p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center">
+              <div className="w-12 h-12 bg-blue-50 text-[#2563eb] rounded-xl flex items-center justify-center font-bold text-xl mx-auto mb-4">1</div>
+              <h3 className="font-bold text-gray-900 mb-2">Subscribe & Unlock</h3>
+              <p className="text-xs sm:text-sm text-gray-600">Start your $99/month plan with zero contracts. Post unlimited roles anytime.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center">
+              <div className="w-12 h-12 bg-emerald-50 text-[#10b981] rounded-xl flex items-center justify-center font-bold text-xl mx-auto mb-4">2</div>
+              <h3 className="font-bold text-gray-900 mb-2">Publish In Seconds</h3>
+              <p className="text-xs sm:text-sm text-gray-600">Paste your job description, specify tech stack tags, and set your direct ATS link.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-200 shadow-sm text-center">
+              <div className="w-12 h-12 bg-amber-50 text-[#d97706] rounded-xl flex items-center justify-center font-bold text-xl mx-auto mb-4">3</div>
+              <h3 className="font-bold text-gray-900 mb-2">Receive Targeted Candidates</h3>
+              <p className="text-xs sm:text-sm text-gray-600">Your role is featured to 100% frontend developers. Applicants flow straight into your ATS.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* ─── Employer FAQ ───────────────────────── */}
+        <section className="mt-20 pt-12 border-t border-gray-200 max-w-3xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-extrabold text-gray-900 mb-8 text-center">Employer FAQ</h2>
+          <div className="space-y-6">
+            <div className="bg-white p-6 rounded-2xl border border-gray-200">
+              <h3 className="font-bold text-gray-900 mb-1">How quickly does my job posting appear live?</h3>
+              <p className="text-sm text-gray-600">Immediately upon submitting through your employer dashboard, your job goes live and is visible to all visitors.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-200">
+              <h3 className="font-bold text-gray-900 mb-1">Are all candidates frontend developers?</h3>
+              <p className="text-sm text-gray-600">Yes. Our platform caters specifically to React, Vue, Next.js, Angular, and TypeScript specialists. You don't have to sift through generic or irrelevant applicants.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-200">
+              <h3 className="font-bold text-gray-900 mb-1">How do candidates apply?</h3>
+              <p className="text-sm text-gray-600">Candidates click through directly to your company careers page, Greenhouse, Lever, Ashby, or custom application URL. We never intermediate candidate data.</p>
+            </div>
+            <div className="bg-white p-6 rounded-2xl border border-gray-200">
+              <h3 className="font-bold text-gray-900 mb-1">Can I cancel anytime?</h3>
+              <p className="text-sm text-gray-600">Yes. There are no contracts or commitments. You can cancel your subscription anytime with 1 click directly from your dashboard.</p>
+            </div>
+          </div>
+        </section>
+
       </div>
     </main>
   </div>

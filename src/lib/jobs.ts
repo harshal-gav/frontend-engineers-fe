@@ -97,12 +97,6 @@ export function timeAgo(dateStr: string | null): string {
   return date.toLocaleDateString("en-US", { month: "short", day: "numeric" });
 }
 
-/**
- * Mask a job for non-premium users.
- * Securely strips the apply URL and salary data on the backend.
- * Truncates the description to 300 characters so hackers cannot scrape full descriptions,
- * while leaving enough text for basic client-side search to function.
- */
 export function maskJobForTeaser(job: Job): TeaserJob {
   return {
     ...job,
@@ -114,3 +108,32 @@ export function maskJobForTeaser(job: Job): TeaserJob {
     country: null,
   };
 }
+
+/**
+ * Return an informative description for display and structured data.
+ * If the raw description is missing or extremely brief, synthesizes a structured summary
+ * from the verified job metadata (company, title, stack tags, seniority, remote scope).
+ */
+export function getEffectiveJobDescription(job: Job): string {
+  if (job.description && job.description.trim().length > 60) {
+    return job.description.trim();
+  }
+  const stack = job.aiTags?.stack?.length ? job.aiTags.stack.join(", ") : "React, TypeScript, and modern frontend tools";
+  const seniority = job.aiTags?.seniority ? `${job.aiTags.seniority.charAt(0).toUpperCase() + job.aiTags.seniority.slice(1)}` : "Frontend";
+  const company = job.company?.name || "The hiring team";
+  const remoteType = job.remoteType === "REMOTE" ? "100% Remote" : job.remoteType;
+  const location = job.country ? `Candidates in ${job.country}` : "Candidates worldwide";
+
+  return `${company} is hiring a ${seniority} ${job.title} to join their remote engineering team.
+
+Overview & Key Details:
+• Role: ${job.title}
+• Company: ${company}${job.company?.industry ? ` (${job.company.industry})` : ""}
+• Work Mode: ${remoteType} (${location})
+• Core Stack: ${stack}
+• Seniority Level: ${seniority}
+
+Click "Apply Now" to view the full job post, compensation, and apply directly on the company careers page.`;
+}
+
+

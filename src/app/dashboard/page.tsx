@@ -221,17 +221,41 @@ export default function DashboardPage() {
         <h2 className="text-2xl font-extrabold text-gray-900 mb-6 border-b border-gray-200 pb-2">Your Saved Jobs</h2>
         
         {!isSubscribed ? (
-          <div className="text-center py-16 bg-gray-50 rounded-2xl border border-[#e2e2e6] relative overflow-hidden flex flex-col items-center justify-center">
-            <p className="font-bold text-gray-900 mb-2 text-xl">⭐ Pro Feature</p>
-            <p className="text-sm text-gray-600 mb-6 max-w-sm mx-auto">Build your personalized list of remote frontend jobs by saving them to your profile. Upgrade to unlock.</p>
-            <Link href="/pricing" className="bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3 rounded-full font-bold shadow-md transition-colors">Get Pro - $9/month</Link>
+          <div className="text-center py-12 px-6 bg-gradient-to-b from-amber-50/50 to-white rounded-2xl border border-amber-200 shadow-sm relative overflow-hidden flex flex-col items-center justify-center">
+            <div className="w-14 h-14 rounded-full bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-2xl mb-4">
+              ⭐
+            </div>
+            <h3 className="font-extrabold text-gray-900 mb-2 text-xl">Save & Track Your Target Roles</h3>
+            <p className="text-sm text-gray-600 mb-6 max-w-md mx-auto leading-relaxed">
+              Organize your job search. Pro members can bookmark remote positions, track application statuses, and never lose track of high-match companies.
+            </p>
+            <div className="flex flex-wrap items-center justify-center gap-4 text-xs text-gray-600 mb-6">
+              <span className="flex items-center gap-1.5"><span className="text-green-500 font-bold">✓</span> Bookmark unlimited listings</span>
+              <span className="flex items-center gap-1.5"><span className="text-green-500 font-bold">✓</span> Sync across desktop & mobile</span>
+              <span className="flex items-center gap-1.5"><span className="text-green-500 font-bold">✓</span> 1-Click apply directly to ATS</span>
+            </div>
+            <Link href="/pricing" className="bg-[#d97706] hover:bg-[#b45309] text-white px-8 py-3 rounded-full font-bold shadow-lg shadow-orange-500/20 transition-all text-sm">
+              Unlock Saved Jobs - $9/month
+            </Link>
           </div>
         ) : savedJobs.length === 0 ? (
-          <div className="text-center py-12 bg-white rounded-2xl border border-dashed border-gray-300">
-            <svg className="w-12 h-12 text-gray-300 mx-auto mb-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+          <div className="text-center py-12 px-4 bg-white rounded-2xl border border-dashed border-gray-300">
+            <div className="w-12 h-12 rounded-full bg-blue-50 text-[#2563eb] flex items-center justify-center mx-auto mb-3">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 5a2 2 0 012-2h10a2 2 0 012 2v16l-7-3.5L5 21V5z"></path></svg>
+            </div>
             <h3 className="text-lg font-bold text-gray-900 mb-1">No saved jobs yet</h3>
-            <p className="text-gray-500 mb-4">Keep track of jobs you're interested in by saving them.</p>
-            <Link href="/" className="bg-[#2563eb] text-white px-6 py-2.5 rounded-lg font-bold hover:bg-blue-700 transition-colors">Browse Jobs</Link>
+            <p className="text-gray-500 text-sm mb-6 max-w-sm mx-auto">Click the bookmark icon on any job card to save listings you want to apply for later.</p>
+            <div className="flex flex-wrap items-center justify-center gap-2">
+              <Link href="/" className="bg-[#2563eb] text-white px-5 py-2 rounded-xl font-bold text-sm hover:bg-blue-700 transition-colors">
+                Browse All Jobs
+              </Link>
+              <Link href="/?q=React" className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-xl font-medium text-sm transition-colors">
+                React Jobs
+              </Link>
+              <Link href="/?q=TypeScript" className="bg-gray-100 hover:bg-gray-200 text-gray-800 px-4 py-2 rounded-xl font-medium text-sm transition-colors">
+                TypeScript Jobs
+              </Link>
+            </div>
           </div>
         ) : (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">

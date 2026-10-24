@@ -33,8 +33,8 @@ export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalP
 
   const contentMap: Record<UpgradeContext, { title: string; desc: string }> = {
     search: {
-      title: "Search 2,400+ remote frontend jobs",
-      desc: "Find the exact React, Vue, or TypeScript role you want in seconds - not hours.",
+      title: "Unlock advanced search & filters",
+      desc: "Find the exact React, Vue, or TypeScript role you want in seconds with advanced filters.",
     },
     filters: {
       title: "Filter by stack, seniority & remote scope",
@@ -49,7 +49,7 @@ export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalP
       desc: "Get 1-click links to apply on the company's own site. Skip the middleman.",
     },
     alerts: {
-      title: "Get 10+ matching jobs in your inbox daily",
+      title: "Get matching jobs in your inbox daily",
       desc: "Wake up to fresh remote frontend jobs every morning. Never miss a new listing.",
     },
     save: {
@@ -104,7 +104,7 @@ export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalP
             <ul className="space-y-3 text-sm text-gray-700">
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>
-                <span>Search & filter 2,400+ jobs by stack, seniority & scope</span>
+                <span>Filter all remote jobs by stack, seniority & scope</span>
               </li>
               <li className="flex items-start gap-2">
                 <svg className="w-5 h-5 text-green-500 shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path></svg>

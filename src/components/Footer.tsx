@@ -1,25 +1,102 @@
+"use client";
+
+import { useState, useEffect } from "react";
 import Link from "next/link";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const [jobCount, setJobCount] = useState<number | null>(null);
 
+  useEffect(() => {
+    fetch("/api/stats")
+      .then((res) => res.json())
+      .then((data) => setJobCount(data.jobCount || null))
+      .catch(() => {});
+  }, []);
+
+  const [newsletterEmail, setNewsletterEmail] = useState("");
+  const [newsletterStatus, setNewsletterStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+  const [newsletterMsg, setNewsletterMsg] = useState("");
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!newsletterEmail || !newsletterEmail.includes("@")) return;
+
+    setNewsletterStatus("loading");
+    try {
+      const res = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email: newsletterEmail, source: "footer" }),
+      });
+      const data = await res.json();
+      if (res.ok) {
+        setNewsletterStatus("success");
+        setNewsletterMsg(data.message || "Subscribed! Check your inbox.");
+        setNewsletterEmail("");
+      } else {
+        setNewsletterStatus("error");
+        setNewsletterMsg(data.error || "Subscription failed.");
+      }
+    } catch {
+      setNewsletterStatus("error");
+      setNewsletterMsg("Network error. Please try again.");
+    }
+  };
+
+  const shareCountText = jobCount ? `${jobCount}+` : "hundreds of";
   const shareText = encodeURIComponent(
-    "I found 2,400+ remote frontend jobs in one place. No LinkedIn noise. No irrelevant listings. Just React, Vue, Angular & TypeScript roles → frontendengineers.com"
+    `I found ${shareCountText} remote frontend jobs in one place. No LinkedIn noise. No irrelevant listings. Just React, Vue, Angular & TypeScript roles → frontendengineers.com`
   );
   const shareUrl = encodeURIComponent("https://www.frontendengineers.com");
 
   return (
     <footer className="relative z-10 bg-[#0f172a] pt-16 pb-8 text-sm mt-20">
       <div className="max-w-6xl mx-auto px-4">
-        {/* Bold closing statement - the last thing visitors see (Principle #4: shareable footer) */}
+        {/* Newsletter Signup & Bold closing statement */}
         <div className="text-center mb-12 pb-12 border-b border-white/10">
           <p className="text-3xl sm:text-4xl font-extrabold text-white mb-4 leading-tight">
-            2,400+ remote frontend jobs.<br />
+            {jobCount ? `${jobCount}+` : 'Hundreds of'} remote frontend jobs.<br />
             <span className="text-[#60a5fa]">Zero noise.</span>
           </p>
-          <p className="text-gray-400 text-base max-w-lg mx-auto mb-8">
+          <p className="text-gray-400 text-base max-w-lg mx-auto mb-6">
             Exclusive remote React, Vue, Angular &amp; TypeScript roles with less competition. Updated every 24 hours.
           </p>
+
+          {/* Email Capture Form */}
+          <div className="max-w-md mx-auto mb-8">
+            {newsletterStatus === "success" ? (
+              <div className="bg-[#1e293b] border border-green-500/30 text-green-400 rounded-xl px-4 py-3 text-sm flex items-center justify-center gap-2">
+                <svg className="w-5 h-5 text-green-400 shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
+                </svg>
+                <span>{newsletterMsg}</span>
+              </div>
+            ) : (
+              <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-2">
+                <input
+                  type="email"
+                  value={newsletterEmail}
+                  onChange={(e) => setNewsletterEmail(e.target.value)}
+                  placeholder="Enter your email for free job alerts..."
+                  aria-label="Email address for job alerts"
+                  required
+                  className="flex-1 bg-white/10 border border-white/20 rounded-xl px-4 py-2.5 text-white placeholder-gray-400 text-sm focus:outline-none focus:border-[#60a5fa] transition-colors"
+                />
+                <button
+                  type="submit"
+                  disabled={newsletterStatus === "loading"}
+                  className="bg-[#2563eb] hover:bg-[#1d4ed8] text-white px-5 py-2.5 rounded-xl font-semibold text-sm transition-colors shrink-0 disabled:opacity-50"
+                >
+                  {newsletterStatus === "loading" ? "Subscribing..." : "Subscribe Free"}
+                </button>
+              </form>
+            )}
+            {newsletterStatus === "error" && (
+              <p className="text-red-400 text-xs mt-2">{newsletterMsg}</p>
+            )}
+            <p className="text-xs text-gray-500 mt-2">No spam. Only verified remote frontend developer roles.</p>
+          </div>
 
           {/* Share buttons */}
           <div className="flex items-center justify-center gap-3">
@@ -52,7 +129,7 @@ export default function Footer() {
               Frontend<span className="text-[#60a5fa]">Engineers</span>
             </Link>
             <p className="text-gray-500 text-xs leading-relaxed">
-              The only job portal built exclusively for frontend developers. 2,400+ remote React, TypeScript, Vue, Angular &amp; Next.js roles - updated daily.
+              The only job portal built exclusively for frontend developers. Hand-curated remote React, TypeScript, Vue, Angular &amp; Next.js roles - updated daily.
             </p>
           </div>
 
@@ -60,7 +137,7 @@ export default function Footer() {
           <div>
             <h3 className="text-white font-semibold mb-3 uppercase tracking-wider text-xs">Platform</h3>
             <ul className="space-y-2 text-xs">
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Browse 2,400+ Jobs</a></li>
+              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Browse {jobCount ? `${jobCount}+` : ''} Jobs</a></li>
               <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link></li>
               <li><Link href="/employers/pricing" className="text-gray-400 hover:text-white transition-colors font-medium">Post a Job</Link></li>
               <li><Link href="/referrals" className="text-gray-400 hover:text-white transition-colors">Referrals</Link></li>
@@ -85,7 +162,7 @@ export default function Footer() {
           <div className="flex items-center gap-4">
             <a href="mailto:frontendengineersupport@gmail.com" className="hover:text-white transition-colors">Contact</a>
             <a href="https://www.linkedin.com/company/frontend-engineers-fe/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
-            <span className="text-gray-600">Payments by PayPal &amp; PayU</span>
+            <span className="text-gray-600">Secure payments by Dodo Payments &amp; PayPal</span>
           </div>
         </div>
       </div>

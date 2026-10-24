@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSearchParams, usePathname } from "next/navigation";
-import { type Job } from "@/lib/jobs";
+import { type Job, getEffectiveJobDescription } from "@/lib/jobs";
 import UpgradeModal, { type UpgradeContext } from "@/components/UpgradeModal";
 
 import { useState, useEffect } from "react";
@@ -17,8 +17,6 @@ const REMOTE_CONFIG = {
   ONSITE: { label: "On-site", class: "badge-onsite", icon: "📍" },
 } as const;
 
-
-
 const LOGO_GRADIENTS = [
   "linear-gradient(135deg, #6366f1, #8b5cf6)",
   "linear-gradient(135deg, #3b82f6, #06b6d4)",
@@ -31,14 +29,52 @@ const LOGO_GRADIENTS = [
 
 interface JobDetailProps {
   job: Job;
+  relatedJobs?: Job[];
 }
 
-export default function JobDetail({ job: initialJob }: JobDetailProps) {
+export default function JobDetail({ job: initialJob, relatedJobs = [] }: JobDetailProps) {
   const { user, isSubscribed, loading: authLoading } = useAuth();
   const searchParams = useSearchParams();
   const pathname = usePathname();
   const [job, setJob] = useState<Job>(initialJob);
   const [upgradeModalContext, setUpgradeModalContext] = useState<UpgradeContext | null>(null);
+
+  // Report job modal state
+  const [isReportOpen, setIsReportOpen] = useState(false);
+  const [reportReason, setReportReason] = useState("expired");
+  const [reportDetails, setReportDetails] = useState("");
+  const [reportSubmitting, setReportSubmitting] = useState(false);
+  const [reportSuccess, setReportSuccess] = useState(false);
+
+  const handleReportSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    setReportSubmitting(true);
+    try {
+      const res = await fetch("/api/jobs/report", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          jobId: job.id,
+          jobTitle: job.title,
+          companyName: job.company?.name,
+          reason: reportReason,
+          details: reportDetails,
+        }),
+      });
+      if (res.ok) {
+        setReportSuccess(true);
+        setTimeout(() => {
+          setIsReportOpen(false);
+          setReportSuccess(false);
+          setReportDetails("");
+        }, 2000);
+      }
+    } catch {
+      // Gracefully handle
+    } finally {
+      setReportSubmitting(false);
+    }
+  };
 
   const paramsString = searchParams?.toString();
   const backHref = paramsString ? `/?${paramsString}` : "/";
@@ -195,9 +231,53 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
       <div className="mb-8">
         <h2 className="text-lg font-semibold mb-3">Job Description</h2>
         <div className={`prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap ${showLocked ? "job-locked-blur" : ""}`}>
-          {job.description || "No description available."}
+          {getEffectiveJobDescription(job)}
+        </div>
+
+        {/* Report Listing */}
+        <div className="mt-8 pt-4 border-t border-[var(--border-card)] flex items-center justify-between text-xs text-[var(--text-muted)]">
+          <span>Found an issue with this listing?</span>
+          <button
+            onClick={() => setIsReportOpen(true)}
+            className="hover:text-red-400 underline transition-colors cursor-pointer"
+          >
+            Report job
+          </button>
         </div>
       </div>
+
+      {/* ─── Related Jobs Section ────────────────── */}
+      {relatedJobs && relatedJobs.length > 0 && (
+        <section className="mt-12 pt-8 border-t border-[var(--border-card)]">
+          <h2 className="text-xl font-bold mb-4 text-gray-900">Similar Remote Frontend Roles</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            {relatedJobs.map((relJob) => (
+              <Link
+                key={relJob.id}
+                href={`/jobs/${relJob.slug || relJob.id}`}
+                className="p-4 rounded-xl border border-[var(--border-card)] hover:border-[#2563eb] bg-[var(--bg-secondary)] hover:bg-white transition-all block group"
+              >
+                <div className="flex items-center justify-between text-xs text-[var(--text-muted)] mb-1">
+                  <span>{relJob.company?.name || "Company"}</span>
+                  <span className="text-emerald-600 font-medium">100% Remote</span>
+                </div>
+                <h3 className="font-semibold text-gray-900 group-hover:text-[#2563eb] transition-colors line-clamp-1 mb-2">
+                  {relJob.title}
+                </h3>
+                {relJob.aiTags?.stack && relJob.aiTags.stack.length > 0 && (
+                  <div className="flex flex-wrap gap-1">
+                    {relJob.aiTags.stack.slice(0, 3).map((tech) => (
+                      <span key={tech} className="text-[10px] bg-gray-100 text-gray-600 px-2 py-0.5 rounded-full">
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
+                )}
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
     </main>
 
       {/* ─── Mobile Sticky Apply CTA ─────────────── */}
@@ -247,6 +327,82 @@ export default function JobDetail({ job: initialJob }: JobDetailProps) {
             >
               🔒 Unlock Full Details - $9/mo
             </button>
+          </div>
+        </div>
+      )}
+
+      {/* ─── Report Job Modal ────────────────────── */}
+      {isReportOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+          <div className="absolute inset-0 bg-black/60 backdrop-blur-sm" onClick={() => setIsReportOpen(false)} />
+          <div className="relative bg-white rounded-2xl p-6 sm:p-8 max-w-md w-full shadow-2xl z-10">
+            <button
+              onClick={() => setIsReportOpen(false)}
+              className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 p-2"
+              aria-label="Close report modal"
+            >
+              ✕
+            </button>
+
+            <h3 className="text-xl font-bold text-gray-900 mb-2">Report this listing</h3>
+            <p className="text-sm text-gray-600 mb-4">
+              Help us maintain high quality. What is the issue with this job?
+            </p>
+
+            {reportSuccess ? (
+              <div className="bg-green-50 border border-green-200 text-green-800 p-4 rounded-xl text-sm font-medium text-center">
+                ✓ Thank you. We will review and verify this job.
+              </div>
+            ) : (
+              <form onSubmit={handleReportSubmit} className="space-y-4">
+                <div>
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-gray-700 mb-1">
+                    Reason
+                  </label>
+                  <select
+                    value={reportReason}
+                    onChange={(e) => setReportReason(e.target.value)}
+                    className="w-full border border-gray-300 rounded-xl px-3 py-2 text-sm text-gray-900 focus:outline-none focus:border-[#2563eb]"
+                  >
+                    <option value="expired">Job is closed / position filled</option>
+                    <option value="broken_link">Apply link is broken / 404</option>
+                    <option value="not_remote">Not a remote job (hybrid/onsite)</option>
+                    <option value="inaccurate">Inaccurate salary or requirements</option>
+                    <option value="other">Other issue</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label className="block text-xs font-semibold uppercase tracking-wider text-gray-700 mb-1">
+                    Additional notes (optional)
+                  </label>
+                  <textarea
+                    rows={3}
+                    value={reportDetails}
+                    onChange={(e) => setReportDetails(e.target.value)}
+                    placeholder="Provide details or updated link..."
+                    className="w-full border border-gray-300 rounded-xl p-3 text-sm text-gray-900 focus:outline-none focus:border-[#2563eb]"
+                  />
+                </div>
+
+                <div className="flex justify-end gap-2 pt-2">
+                  <button
+                    type="button"
+                    onClick={() => setIsReportOpen(false)}
+                    className="px-4 py-2 text-sm text-gray-600 hover:text-gray-900"
+                  >
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    disabled={reportSubmitting}
+                    className="px-5 py-2 text-sm font-bold text-white bg-red-600 hover:bg-red-700 rounded-xl transition-colors disabled:opacity-50"
+                  >
+                    {reportSubmitting ? "Submitting..." : "Submit Report"}
+                  </button>
+                </div>
+              </form>
+            )}
           </div>
         </div>
       )}

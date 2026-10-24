@@ -14,13 +14,9 @@ const initialOptions = {
 };
 
 // ─── Testimonials data ──────────────────────────────────
-// Add real testimonials here when available.
+// Add real, verified testimonials here when available.
 // The section will automatically hide if this array is empty.
-const TESTIMONIALS: { name: string; role: string; quote: string; avatar?: string }[] = [
-  { name: "David M.", role: "React Developer", quote: "I was exhausted applying on LinkedIn and seeing 800 applicants. Found my current remote role here in 5 days. Best $9 I've ever spent." },
-  { name: "Sarah K.", role: "Frontend Engineer", quote: "Finally, a board that actually filters out hybrid jobs disguised as remote. The quality of companies here is insanely high." },
-  { name: "James T.", role: "Senior Vue Developer", quote: "The daily email alerts are a game changer. I applied to a job 10 minutes after it was posted and had an interview the next day." },
-];
+const TESTIMONIALS: { name: string; role: string; quote: string; avatar?: string }[] = [];
 
 export default function PricingPage() {
   const router = useRouter();
@@ -216,12 +212,17 @@ export default function PricingPage() {
                   </thead>
                   <tbody>
                     <tr>
-                      <td>AI-Powered Filters (Tech Stack, Remote Scope, Seniority)</td>
+                      <td>Keyword search (titles, companies, technologies)</td>
+                      <td className="highlight-cell text-center">✓ Free</td>
+                      <td className="highlight-cell text-center">✓ Available</td>
+                    </tr>
+                    <tr>
+                      <td>Advanced AI Filters (Tech Stack, Remote Scope, Seniority)</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>Full job descriptions & requirements</td>
+                      <td>Full job specifications, requirements & salary data</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
@@ -236,17 +237,17 @@ export default function PricingPage() {
                       <td className="highlight-cell text-center">✓ Full Access</td>
                     </tr>
                     <tr>
-                      <td>10+ fresh jobs delivered to your inbox daily</td>
-                      <td className="muted-cell text-center">❌</td>
+                      <td>Daily curated email alerts matching your stack</td>
+                      <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>100% remote, frontend-only, curated daily</td>
-                      <td className="muted-cell text-center">✓ Available</td>
+                      <td>100% remote frontend developer jobs curated daily</td>
+                      <td className="highlight-cell text-center">✓ Free</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
                     <tr>
-                      <td>Save your searches as 1-click Filter Presets</td>
+                      <td>Save your favorite jobs & filter presets</td>
                       <td className="muted-cell text-center">🔒 Pro only</td>
                       <td className="highlight-cell text-center">✓ Available</td>
                     </tr>
@@ -438,7 +439,7 @@ export default function PricingPage() {
                   onClick={() => router.push("/")}
                   className="w-full text-gray-600 hover:text-gray-900 py-3 transition-colors underline mt-2"
                 >
-                  Browse 2,400+ Job Titles (Free)
+                  Browse {stats ? `${stats.jobCount}+` : ''} Job Titles (Free)
                 </button>
 
                 <div className="mt-4 pt-4 border-t border-[#e2e2e6] text-xs text-gray-500 text-center leading-relaxed">
