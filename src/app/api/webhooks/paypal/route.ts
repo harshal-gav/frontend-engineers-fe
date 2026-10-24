@@ -29,11 +29,12 @@ export async function POST(req: Request) {
           paypalSubscriptionId: resource.id,
           paymentGateway: 'paypal',
           subscriptionExpiresAt: expiresAt,
+          cancel_at_period_end: false,
           updatedAt: new Date()
         }, { merge: true });
 
-        // 2. Save the transaction record for analytics/accounting
-        await db.collection('paypal_transactions').doc(resource.id).set({
+        // 2. Save the transaction record for idempotency and analytics
+        await db.collection('paypal_transactions').doc(`${resource.id}_${event_type}`).set({
           uid: customId,
           status: 'activated',
           planId: planId,
@@ -50,29 +51,81 @@ export async function POST(req: Request) {
       
       if (subscriptionId) {
         const db = getAdminDb();
-        // Find the user with this subscription ID
         const usersSnapshot = await db.collection('users').where('paypalSubscriptionId', '==', subscriptionId).get();
         
         if (!usersSnapshot.empty) {
           const userDoc = usersSnapshot.docs[0];
-          // Extend the subscription by 30 days from now
           const expiresAt = new Date(Date.now() + 30 * 24 * 60 * 60 * 1000).toISOString();
           
           await userDoc.ref.set({
             isPremium: true,
             isSubscribed: true,
             subscriptionExpiresAt: expiresAt,
+            cancel_at_period_end: false,
             updatedAt: new Date()
           }, { merge: true });
 
-          // Log the recurring payment transaction
-          await db.collection('paypal_transactions').doc(resource.id).set({
+          // Log recurring payment transaction idempotently
+          await db.collection('paypal_transactions').doc(`${resource.id || subscriptionId}_sale`).set({
             uid: userDoc.id,
             status: 'sale_completed',
             subscriptionId: subscriptionId,
             transactionId: resource.id,
             amount: resource.amount?.total || "0.00",
             currency: resource.amount?.currency || "USD",
+            createdAt: new Date(),
+            eventType: event_type
+          }, { merge: true });
+        }
+      }
+    } else if (event_type === 'BILLING.SUBSCRIPTION.CANCELLED') {
+      const subscriptionId = resource.id;
+      if (subscriptionId) {
+        const db = getAdminDb();
+        const usersSnapshot = await db.collection('users').where('paypalSubscriptionId', '==', subscriptionId).get();
+
+        if (!usersSnapshot.empty) {
+          const userDoc = usersSnapshot.docs[0];
+          const userData = userDoc.data();
+          const expiresAt = userData?.subscriptionExpiresAt;
+          // Retain access until the paid period expires
+          const hasRemainingTime = expiresAt ? new Date(expiresAt) > new Date() : false;
+
+          await userDoc.ref.set({
+            isSubscribed: false,
+            cancel_at_period_end: true,
+            isPremium: hasRemainingTime,
+            updatedAt: new Date()
+          }, { merge: true });
+
+          await db.collection('paypal_transactions').doc(`${subscriptionId}_cancelled`).set({
+            uid: userDoc.id,
+            status: 'cancelled',
+            subscriptionId: subscriptionId,
+            createdAt: new Date(),
+            eventType: event_type
+          }, { merge: true });
+        }
+      }
+    } else if (event_type === 'BILLING.SUBSCRIPTION.SUSPENDED' || event_type === 'BILLING.SUBSCRIPTION.EXPIRED') {
+      const subscriptionId = resource.id;
+      if (subscriptionId) {
+        const db = getAdminDb();
+        const usersSnapshot = await db.collection('users').where('paypalSubscriptionId', '==', subscriptionId).get();
+
+        if (!usersSnapshot.empty) {
+          const userDoc = usersSnapshot.docs[0];
+          await userDoc.ref.set({
+            isSubscribed: false,
+            isPremium: false,
+            isEmployer: false,
+            updatedAt: new Date()
+          }, { merge: true });
+
+          await db.collection('paypal_transactions').doc(`${subscriptionId}_${event_type.toLowerCase()}`).set({
+            uid: userDoc.id,
+            status: event_type === 'BILLING.SUBSCRIPTION.EXPIRED' ? 'expired' : 'suspended',
+            subscriptionId: subscriptionId,
             createdAt: new Date(),
             eventType: event_type
           }, { merge: true });

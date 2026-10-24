@@ -6,6 +6,8 @@ import path from 'path';
 import JobsClientPage from "@/components/JobsClientPage";
 import FaqSchema, { type FaqItem } from "@/components/FaqSchema";
 
+import { loadJobsFromFile, filterActiveJobs } from "@/lib/jobs.server";
+
 export const metadata: Metadata = {
   alternates: {
     canonical: "/",
@@ -43,10 +45,8 @@ const HOMEPAGE_FAQ: FaqItem[] = [
 export default async function HomePage() {
   let jsonLd = null;
   try {
-    const jobsPath = path.join(process.cwd(), 'data', 'jobs.json');
-    if (fs.existsSync(jobsPath)) {
-      const raw = fs.readFileSync(jobsPath, 'utf-8');
-      const jobs = JSON.parse(raw).slice(0, 50); // limit to top 50 for page speed/SEO size limits
+    const allJobs = loadJobsFromFile();
+    const jobs = filterActiveJobs(allJobs).slice(0, 50); // limit to top 50 active deduplicated jobs for SEO
 
       const itemListElements = jobs.map((job: any, index: number) => ({
         "@type": "ListItem",
@@ -94,7 +94,6 @@ export default async function HomePage() {
           "itemListElement": itemListElements
         }
       ];
-    }
   } catch (e) {
     console.error("Failed to generate JSON-LD", e);
   }

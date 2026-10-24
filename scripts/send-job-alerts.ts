@@ -36,7 +36,7 @@ if (!RESEND_API_KEY && !isDryRun) {
 
 const resend = RESEND_API_KEY ? new Resend(RESEND_API_KEY) : null;
 
-import { Job, generateSlug } from "../src/lib/jobs";
+import { Job, generateSlug, formatLocation } from "../src/lib/jobs";
 
 async function main() {
   // 1. Load Jobs
@@ -48,10 +48,12 @@ async function main() {
 
   const rawJobs: Job[] = JSON.parse(fs.readFileSync(jobsPath, "utf-8"));
   
-  // 2. Filter New Jobs (added in the last 24 hours)
+  // 2. Filter New Jobs (added in the last 24 hours, excluding dead or incomplete listings)
   const oneDayAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
   
   const newJobs = rawJobs.filter((job) => {
+    if (job.isDead) return false;
+    if (!job.title || !job.applyUrl) return false;
     if (!job.postedAt) return false;
     const postedDate = new Date(job.postedAt);
     return postedDate > oneDayAgo;
@@ -116,6 +118,29 @@ async function main() {
         });
       }
     });
+
+    // Also fetch newsletter subscribers from footer signup
+    try {
+      const newsletterSnapshot = await db.collection("newsletter_subscribers").where("active", "==", true).get();
+      newsletterSnapshot.forEach((doc) => {
+        const data = doc.data();
+        if (!data.email) return;
+
+        const email = data.email.toLowerCase().trim();
+        if (seenEmails.has(email)) return;
+        seenEmails.add(email);
+
+        // Standalone newsletter subscribers get the daily curated remote digest (free tier)
+        alertsToSend.push({
+          email: data.email,
+          alert: { query: "", location: "worldwide" },
+          isPremium: false,
+          isDefault: true,
+        });
+      });
+    } catch (newsletterErr) {
+      console.warn("Could not fetch newsletter_subscribers (collection may be empty):", newsletterErr);
+    }
   } catch (error) {
     console.error("Error fetching users from Firebase:", error);
     process.exit(1);
@@ -254,7 +279,7 @@ async function main() {
             <strong>${job.company?.name || "Unknown Company"}</strong>
           </p>
           <p style="margin: 0 0 8px 0; color: #718096; font-size: 14px;">
-            📍 ${job.location || "Remote"}
+            📍 ${formatLocation(job)}
           </p>
           <a href="${jobUrl}" style="display: inline-block; background-color: #2563eb; color: #ffffff; padding: 8px 16px; text-decoration: none; border-radius: 6px; font-weight: bold; font-size: 14px;">View Job & Apply</a>
         </div>
@@ -305,8 +330,12 @@ async function main() {
         ` : ""}
 
         <div style="margin-top: 40px; padding-top: 20px; border-top: 1px solid #e2e8f0; text-align: center; color: #a0aec0; font-size: 12px;">
-          <p>You received this email because you created a job alert on Frontend Engineers.</p>
-          <p><a href="https://frontendengineers.com/dashboard" style="color: #2563eb;">Edit your alert preferences</a></p>
+          <p>You received this email because you created a job alert or subscribed on FrontendEngineers.com.</p>
+          <p>
+            <a href="https://frontendengineers.com/dashboard" style="color: #2563eb;">Edit alert preferences</a>
+            &nbsp;•&nbsp;
+            <a href="https://frontendengineers.com/api/newsletter/unsubscribe" style="color: #718096; text-decoration: underline;">Unsubscribe</a>
+          </p>
         </div>
       </div>
     `;

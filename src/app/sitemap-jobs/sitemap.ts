@@ -1,12 +1,12 @@
 import { MetadataRoute } from 'next';
-import { loadJobsFromFile } from '@/lib/jobs.server';
+import { loadJobsFromFile, filterActiveJobs } from '@/lib/jobs.server';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://www.frontendengineers.com';
   const jobs = loadJobsFromFile();
 
-  // Filter out dead/expired jobs - they shouldn't be in the sitemap
-  const activeJobs = jobs.filter((job) => !job.isDead);
+  // Deduplicate and filter out dead/expired/unpublished jobs
+  const activeJobs = filterActiveJobs(jobs);
 
   const jobsPages: MetadataRoute.Sitemap = activeJobs.map((job) => ({
     url: `${baseUrl}/jobs/${job.slug || job.id}`,

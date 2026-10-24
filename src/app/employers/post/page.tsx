@@ -19,7 +19,7 @@ export default function PostJobPage() {
     companyLogoUrl: "",
     companyWebsite: "",
     applyUrl: "",
-    location: "Worldwide",
+    location: "",
     description: "",
   });
 
@@ -75,7 +75,7 @@ export default function PostJobPage() {
         // Reset form
         setFormData({
           title: "", companyName: "", companyLogoUrl: "", companyWebsite: "",
-          applyUrl: "", location: "Worldwide", description: ""
+          applyUrl: "", location: "", description: ""
         });
       }
     } catch (err) {
@@ -94,13 +94,13 @@ export default function PostJobPage() {
     <div className="min-h-screen bg-gray-50 py-12 px-4">
       <div className="max-w-3xl mx-auto">
         <h1 className="text-3xl font-bold text-gray-900 mb-2">Post a New Job</h1>
-        <p className="text-gray-600 mb-8">Your job will be instantly emailed to our subscribers and featured at the top of the board.</p>
+        <p className="text-gray-600 mb-8">Your job will be featured at the top of the job board and included in our daily developer alerts.</p>
 
         {success ? (
           <div className="glass-card p-8 text-center bg-white border-t-4 border-[#10b981]">
             <div className="text-5xl mb-4">🎉</div>
             <h2 className="text-2xl font-bold mb-2">Job Posted Successfully!</h2>
-            <p className="text-gray-600 mb-6">Your job is now live and alerts are being sent out.</p>
+            <p className="text-gray-600 mb-6">Your job is now live and featured on the job board.</p>
             <div className="flex justify-center gap-4">
               <button onClick={() => setSuccess(false)} className="btn-secondary px-6 py-2">Post Another Job</button>
               <Link href="/" className="btn-primary bg-[#2563eb] text-white px-6 py-2 rounded">View Board</Link>

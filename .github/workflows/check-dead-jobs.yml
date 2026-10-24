@@ -1,0 +1,40 @@
+name: Check Dead Jobs
+
+on:
+  schedule:
+    # Run once a week on Sundays at 02:00 AM UTC
+    - cron: '0 2 * * 0'
+  workflow_dispatch: {} # Manual trigger from GitHub UI
+
+jobs:
+  check-and-clean:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Check dead job URLs
+        run: npx tsx scripts/check-dead-jobs.ts --concurrency 3
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add data/jobs.json
+          git commit -m "chore: archive dead/expired jobs [skip ci]" || echo "No changes to commit"
+          git pull --rebase origin main
+          git push

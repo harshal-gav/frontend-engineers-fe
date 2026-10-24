@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSearchParams } from "next/navigation";
-import { timeAgo, type Job } from "@/lib/jobs";
+import { timeAgo, formatLocation, type Job } from "@/lib/jobs";
 
 // ─── Config ──────────────────────────────────────────────
 
@@ -214,11 +214,7 @@ export default function JobCard({
             <span className="px-2.5 py-1 text-[11px] font-semibold text-gray-600 bg-gray-50 border border-gray-200/80 rounded-md shadow-sm flex items-center gap-1.5 w-fit max-w-full">
               <svg className="w-3.5 h-3.5 shrink-0 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.243-4.243a8 8 0 1111.314 0z"></path><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
               <span className="truncate text-left">
-                {isLocked ? "Location • Country" : (
-                  <>
-                    {displayLocation || job.country || "Worldwide"}
-                  </>
-                )}
+                {isLocked ? "Location • Country" : formatLocation(job)}
               </span>
             </span>
           </div>

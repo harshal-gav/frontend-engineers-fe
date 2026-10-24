@@ -113,7 +113,7 @@ export default function EmployerPricingPage() {
         <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Your job post reaches 5,000+ frontend developers <span className="text-[#10b981]">in 24 hours</span>
+            Hire top remote frontend engineers <span className="text-[#10b981]">with zero recruiter fees</span>
           </h1>
           <p className="text-xl text-gray-600">
             Not backend. Not DevOps. Not data scientists. Just React, Next.js, Vue, Angular, and TypeScript engineers actively looking for remote work. Post unlimited jobs for $99/mo.
@@ -143,8 +143,8 @@ export default function EmployerPricingPage() {
                     <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
                   </div>
                   <div>
-                    <h3 className="text-xl font-semibold mb-2">Direct Reach to 5,000+ Engineers</h3>
-                    <p className="text-gray-600">Every job you post lands in 5,000+ inboxes of frontend-specific subscribers. Not a drip. A blast. Immediate visibility means faster hires.</p>
+                    <h3 className="text-xl font-semibold mb-2">Direct Inclusion in Daily Frontend Alerts</h3>
+                    <p className="text-gray-600">Every job you post is indexed immediately, featured at the top of the job board, and sent directly to active remote frontend developers subscribed to our alerts.</p>
                   </div>
                 </div>
 
@@ -199,7 +199,7 @@ export default function EmployerPricingPage() {
                     onClick={() => router.push("/auth/signup?redirect=/employers/pricing")}
                     className="w-full py-4 rounded-xl text-white bg-[#2563eb] hover:bg-[#1d4ed8] font-bold text-lg shadow-lg transition-all hover:scale-[1.02]"
                   >
-                    Reach 5,000+ Frontend Developers → $99/mo
+                    Post Unlimited Frontend Jobs → $99/mo
                   </button>
                 ) : user && isEmployer ? (
                   <button

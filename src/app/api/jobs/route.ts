@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { getAdminAuth, getAdminDb } from "@/lib/firebase-admin";
-import { loadJobsFromFile } from "@/lib/jobs.server";
+import { getActiveJobs } from "@/lib/jobs.server";
 
 export async function GET(request: Request) {
   try {
@@ -33,26 +33,8 @@ export async function GET(request: Request) {
       }
     }
 
-    // Use shared utility to load, filter, and enrich jobs
-    let jobs = loadJobsFromFile();
-
-    // Fetch employer-posted jobs from Firestore
-    try {
-      const db = getAdminDb();
-      const firestoreJobsSnapshot = await db.collection("jobs").orderBy("postedAt", "desc").get();
-      const firestoreJobs: any[] = [];
-      firestoreJobsSnapshot.forEach(doc => {
-        const data = doc.data();
-        if (data.postedAt && data.postedAt.toDate) {
-          data.postedAt = data.postedAt.toDate().toISOString();
-        }
-        firestoreJobs.push(data);
-      });
-      // Prepend Firestore jobs to the top of the list
-      jobs = [...firestoreJobs, ...jobs];
-    } catch (dbError) {
-      console.error("Failed to fetch employer jobs from Firestore", dbError);
-    }
+    // Use single source of truth to load active, deduplicated, and enriched jobs
+    let jobs = await getActiveJobs({ includeFirestore: true });
 
     if (jobs.length === 0) {
       return NextResponse.json([]);

@@ -21,6 +21,7 @@
 
 import fs from "fs";
 import path from "path";
+import { isValidPublicHttpUrl } from "../src/lib/jobs";
 
 // ─── Types ───────────────────────────────────────────────
 
@@ -47,7 +48,7 @@ interface CheckResult {
 // ─── Config ──────────────────────────────────────────────
 
 const JOBS_PATH = path.join(process.cwd(), "data", "jobs.json");
-const DEAD_STATUS_CODES = [404, 410, 403]; // 403 often means the listing was removed
+const DEAD_STATUS_CODES = [404, 410]; // Only 404 (Not Found) & 410 (Gone). 403 often indicates WAF/Cloudflare bot defense, NOT a dead listing.
 const TIMEOUT_MS = 10_000; // 10 seconds per request
 const isDryRun = process.argv.includes("--dry-run");
 
@@ -62,6 +63,11 @@ async function checkUrl(
 ): Promise<{ status: number | "error"; isDead: boolean; reason: string }> {
   if (!url || url.trim() === "") {
     return { status: "error", isDead: false, reason: "empty_url" };
+  }
+
+  // Prevent SSRF against localhost, internal VPCs, or cloud metadata services
+  if (!isValidPublicHttpUrl(url)) {
+    return { status: "error", isDead: false, reason: "invalid_or_private_url" };
   }
 
   try {
@@ -86,6 +92,10 @@ async function checkUrl(
         isDead: true,
         reason: `http_${response.status}`,
       };
+    }
+
+    if (response.status === 403) {
+      return { status: 403, isDead: false, reason: "http_403_review_needed" };
     }
 
     return { status: response.status, isDead: false, reason: "alive" };

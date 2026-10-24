@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useSearchParams, usePathname } from "next/navigation";
-import { type Job, getEffectiveJobDescription } from "@/lib/jobs";
+import { type Job, getEffectiveJobDescription, hasSourceDescription, formatLocation } from "@/lib/jobs";
 import UpgradeModal, { type UpgradeContext } from "@/components/UpgradeModal";
 
 import { useState, useEffect } from "react";
@@ -196,11 +196,9 @@ export default function JobDetail({ job: initialJob, relatedJobs = [] }: JobDeta
           {remote.icon} {remote.label}
         </span>
 
-        {job.location && (
-          <span className={`text-sm text-[var(--text-muted)] ${showLocked ? "job-locked-blur" : ""}`}>
-            📍 {showLocked ? "Location, Country" : (job.location + (job.country ? `, ${job.country}` : ""))}
-          </span>
-        )}
+        <span className={`text-sm text-[var(--text-muted)] ${showLocked ? "job-locked-blur" : ""}`}>
+          📍 {showLocked ? "Location, Region" : formatLocation(job)}
+        </span>
       </div>
 
 
@@ -230,9 +228,33 @@ export default function JobDetail({ job: initialJob, relatedJobs = [] }: JobDeta
       {/* Description - blurred for free users */}
       <div className="mb-8">
         <h2 className="text-lg font-semibold mb-3">Job Description</h2>
-        <div className={`prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap ${showLocked ? "job-locked-blur" : ""}`}>
-          {getEffectiveJobDescription(job)}
-        </div>
+        {hasSourceDescription(job) ? (
+          <div className={`prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap ${showLocked ? "job-locked-blur" : ""}`}>
+            {job.description}
+          </div>
+        ) : (
+          <div className="rounded-xl border border-blue-200 bg-blue-50/70 p-6 text-gray-800">
+            <div className="flex items-start gap-3">
+              <span className="text-2xl" role="img" aria-label="Notice">📋</span>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Detailed Description Available on Source Portal</h3>
+                <p className="text-sm text-gray-600 mb-3">
+                  This {job.title} role is actively listed by {job.company?.name || "the employer"}. The complete requirements, responsibilities, and application details are published directly on the company&apos;s verified careers portal.
+                </p>
+                {!showLocked && job.applyUrl && (
+                  <a
+                    href={job.applyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#2563eb] hover:underline"
+                  >
+                    View Official Listing on {job.company?.name || "Company Site"} →
+                  </a>
+                )}
+              </div>
+            </div>
+          </div>
+        )}
 
         {/* Report Listing */}
         <div className="mt-8 pt-4 border-t border-[var(--border-card)] flex items-center justify-between text-xs text-[var(--text-muted)]">

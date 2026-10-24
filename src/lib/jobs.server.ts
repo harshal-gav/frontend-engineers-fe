@@ -47,7 +47,7 @@ export function hasRealLogo(logoUrl: string | null): boolean {
  * Normalize a job title for deduplication.
  * Strips REF numbers, campaign IDs, language variants, etc.
  */
-function normalizeTitle(title: string): string {
+export function normalizeTitle(title: string): string {
   return title
     .toLowerCase()
     .replace(/\s*[-|]\s*remote\s*(work)?/gi, "")
@@ -189,6 +189,129 @@ export function loadJobsFromFile(): Job[] {
   const finalJobs = spaceOutCompanies([...spacedCareer, ...spacedOther], 6);
   
   return finalJobs;
+}
+
+/**
+ * Deduplicate jobs array based on:
+ * 1. Canonical applyUrl (stripping query tracking strings)
+ * 2. Company name + Normalized Title + Country
+ * Always preserves the newest record by posted date.
+ */
+export function deduplicateJobs(jobs: Job[]): Job[] {
+  // Sort newest first so the most recent listing is kept
+  const sorted = [...jobs].sort((a, b) => {
+    const timeA = a.postedAt ? new Date(a.postedAt).getTime() : 0;
+    const timeB = b.postedAt ? new Date(b.postedAt).getTime() : 0;
+    return timeB - timeA;
+  });
+
+  const seenUrls = new Set<string>();
+  const seenTitleCompany = new Set<string>();
+  const deduplicated: Job[] = [];
+
+  for (const job of sorted) {
+    let cleanUrl = "";
+    if (job.applyUrl) {
+      try {
+        const u = new URL(job.applyUrl.trim());
+        cleanUrl = `${u.origin}${u.pathname.toLowerCase()}`;
+      } catch {
+        cleanUrl = job.applyUrl.trim().toLowerCase();
+      }
+    }
+
+    if (cleanUrl && seenUrls.has(cleanUrl)) {
+      continue;
+    }
+
+    const company = (job.company?.name || "").toLowerCase().trim();
+    const title = normalizeTitle(job.title || "");
+    const country = (job.country || "").toLowerCase().trim();
+    const tcKey = `${company}:::${title}:::${country}`;
+
+    if (company && title && seenTitleCompany.has(tcKey)) {
+      continue;
+    }
+
+    if (cleanUrl) seenUrls.add(cleanUrl);
+    if (company && title) seenTitleCompany.add(tcKey);
+    deduplicated.push(job);
+  }
+
+  return deduplicated;
+}
+
+/**
+ * Filter to active, eligible jobs:
+ * - Excludes dead jobs (isDead === true)
+ * - Excludes unpublished/draft/empty jobs (must have title, company name, applyUrl)
+ * - Deduplicates duplicates
+ */
+export function filterActiveJobs(jobs: Job[]): Job[] {
+  const eligible = jobs.filter((job) => {
+    if (job.isDead) return false;
+    if (!job.title || !job.company?.name || !job.applyUrl) return false;
+    return true;
+  });
+
+  return deduplicateJobs(eligible);
+}
+
+/**
+ * Single source of truth for active job inventory across the entire application.
+ * Loads jobs from local store and optionally merges active employer jobs from Firestore.
+ */
+export async function getActiveJobs(options: { includeFirestore?: boolean } = { includeFirestore: true }): Promise<Job[]> {
+  const fileJobs = loadJobsFromFile();
+  let allJobs = [...fileJobs];
+
+  if (options.includeFirestore) {
+    try {
+      const { getAdminDb } = await import("@/lib/firebase-admin");
+      const db = getAdminDb();
+      const firestoreJobsSnapshot = await db.collection("jobs").orderBy("postedAt", "desc").get();
+      const firestoreJobs: Job[] = [];
+      firestoreJobsSnapshot.forEach((doc) => {
+        const data = doc.data() as Job;
+        if (data.postedAt && (data.postedAt as any).toDate) {
+          data.postedAt = (data.postedAt as any).toDate().toISOString();
+        }
+        firestoreJobs.push(data);
+      });
+      allJobs = [...firestoreJobs, ...allJobs];
+    } catch {
+      // In offline, test, or build environments without Firebase credentials, fallback gracefully to fileJobs
+    }
+  }
+
+  return filterActiveJobs(allJobs);
+}
+
+/**
+ * Single source of truth for all job inventory statistics across the website.
+ */
+export async function getJobInventoryStats(options: { includeFirestore?: boolean } = { includeFirestore: true }) {
+  const activeJobs = await getActiveJobs(options);
+  const uniqueCompanies = new Set(
+    activeJobs.map((j) => (j.company?.name || "").trim().toLowerCase()).filter(Boolean)
+  );
+
+  const sevenDaysAgo = Date.now() - 7 * 24 * 60 * 60 * 1000;
+  const freshJobs = activeJobs.filter(
+    (j) => j.postedAt && new Date(j.postedAt).getTime() > sevenDaysAgo
+  );
+
+  const oneDayAgo = Date.now() - 24 * 60 * 60 * 1000;
+  const newToday = activeJobs.filter(
+    (j) => j.postedAt && new Date(j.postedAt).getTime() > oneDayAgo
+  );
+
+  return {
+    jobCount: activeJobs.length,
+    companyCount: uniqueCompanies.size,
+    freshJobCount: freshJobs.length,
+    newTodayCount: newToday.length,
+  };
 }
 
 

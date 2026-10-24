@@ -3,6 +3,7 @@ import { getAdminAuth, getAdminDb } from '@/lib/firebase-admin';
 import crypto from 'crypto';
 
 import { autoTagJob } from '@/lib/job-tagger';
+import { isValidPublicHttpUrl } from '@/lib/jobs';
 
 export async function POST(req: Request) {
   try {
@@ -28,6 +29,14 @@ export async function POST(req: Request) {
     // Validate required fields
     if (!body.title || !body.applyUrl || !body.company?.name || !body.description) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 });
+    }
+
+    // SSRF & URL validity check
+    if (!isValidPublicHttpUrl(body.applyUrl)) {
+      return NextResponse.json({ error: 'Invalid application URL. Must be a valid public HTTP or HTTPS web address.' }, { status: 400 });
+    }
+    if (body.company?.website && !isValidPublicHttpUrl(body.company.website)) {
+      return NextResponse.json({ error: 'Invalid company website URL.' }, { status: 400 });
     }
 
     // Auto-generate tags using rule-based extraction

@@ -110,30 +110,101 @@ export function maskJobForTeaser(job: Job): TeaserJob {
 }
 
 /**
- * Return an informative description for display and structured data.
- * If the raw description is missing or extremely brief, synthesizes a structured summary
- * from the verified job metadata (company, title, stack tags, seniority, remote scope).
+ * Check if the job has a real source description from the employer.
+ */
+export function hasSourceDescription(job: Job): boolean {
+  return Boolean(job.description && job.description.trim().length > 30);
+}
+
+/**
+ * Return an informative description for structured data and crawlers.
+ * NEVER fabricates false requirements or bullet points.
  */
 export function getEffectiveJobDescription(job: Job): string {
-  if (job.description && job.description.trim().length > 60) {
-    return job.description.trim();
+  if (hasSourceDescription(job)) {
+    return job.description!.trim();
   }
-  const stack = job.aiTags?.stack?.length ? job.aiTags.stack.join(", ") : "React, TypeScript, and modern frontend tools";
-  const seniority = job.aiTags?.seniority ? `${job.aiTags.seniority.charAt(0).toUpperCase() + job.aiTags.seniority.slice(1)}` : "Frontend";
-  const company = job.company?.name || "The hiring team";
-  const remoteType = job.remoteType === "REMOTE" ? "100% Remote" : job.remoteType;
-  const location = job.country ? `Candidates in ${job.country}` : "Candidates worldwide";
-
-  return `${company} is hiring a ${seniority} ${job.title} to join their remote engineering team.
-
-Overview & Key Details:
-• Role: ${job.title}
-• Company: ${company}${job.company?.industry ? ` (${job.company.industry})` : ""}
-• Work Mode: ${remoteType} (${location})
-• Core Stack: ${stack}
-• Seniority Level: ${seniority}
-
-Click "Apply Now" to view the full job post, compensation, and apply directly on the company careers page.`;
+  const company = job.company?.name || "Company";
+  return `Remote ${job.title} position at ${company}. Full job description, requirements, and application instructions are available directly on the official company careers page.`;
 }
+
+/**
+ * Format the job location accurately based on verified source evidence.
+ * NEVER infers 'Worldwide' without explicit global evidence.
+ */
+export function formatLocation(job: Job): string {
+  // If specific country is present and not a generic placeholder
+  const rawCountry = (job.country || "").trim();
+  const lowerCountry = rawCountry.toLowerCase();
+
+  const isGenericGlobal =
+    lowerCountry === "global" ||
+    lowerCountry === "worldwide" ||
+    lowerCountry === "anywhere";
+
+  if (rawCountry && !isGenericGlobal) {
+    return rawCountry;
+  }
+
+  // Check specific location string
+  const rawLoc = (job.location || "").trim();
+  if (rawLoc.toLowerCase().startsWith("remote - ")) {
+    const locPart = rawLoc.substring(9).trim();
+    if (locPart && locPart.toLowerCase() !== "global" && locPart.toLowerCase() !== "anywhere") {
+      return locPart;
+    }
+  } else if (rawLoc && rawLoc.toLowerCase() !== "remote" && !isGenericGlobal) {
+    return rawLoc;
+  }
+
+  // Check structured AI tags if verified
+  if (job.aiTags?.remoteScope === "GLOBAL" || (job.aiTags?.eligibleRegions && job.aiTags.eligibleRegions.includes("Global"))) {
+    return "Worldwide (Remote)";
+  }
+
+  if (job.aiTags?.eligibleRegions && job.aiTags.eligibleRegions.length > 0 && job.aiTags.eligibleRegions[0] !== "Global") {
+    return `${job.aiTags.eligibleRegions.join(", ")} (Remote)`;
+  }
+
+  // When no specific country or global evidence exists, be honest
+  return "Remote";
+}
+
+/**
+ * Validate that an external URL is a safe public HTTP or HTTPS destination.
+ * Prevents Server-Side Request Forgery (SSRF) against internal services, localhost, or cloud metadata.
+ */
+export function isValidPublicHttpUrl(urlString: string): boolean {
+  if (!urlString || typeof urlString !== "string") return false;
+  try {
+    const parsed = new URL(urlString.trim());
+    if (parsed.protocol !== "http:" && parsed.protocol !== "https:") {
+      return false;
+    }
+    const hostname = parsed.hostname.toLowerCase();
+    
+    // Block local, loopback, link-local, and cloud metadata endpoints
+    if (
+      hostname === "localhost" ||
+      hostname === "127.0.0.1" ||
+      hostname === "::1" ||
+      hostname === "0.0.0.0" ||
+      hostname === "169.254.169.254" || // AWS / GCP / Azure metadata
+      hostname.endsWith(".internal") ||
+      hostname.endsWith(".local") ||
+      hostname.endsWith(".localhost") ||
+      /^10\./.test(hostname) ||
+      /^192\.168\./.test(hostname) ||
+      /^172\.(1[6-9]|2[0-9]|3[0-1])\./.test(hostname) ||
+      /^127\./.test(hostname)
+    ) {
+      return false;
+    }
+    return true;
+  } catch {
+    return false;
+  }
+}
+
 
 
