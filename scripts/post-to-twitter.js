@@ -51,8 +51,10 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 // Cycle through available Gemini models if overload occurs
 const GEMINI_MODELS = [
   'gemini-2.5-flash',
-  'gemini-2.0-flash',
-  'gemini-3.6-flash',
+  'gemini-flash-latest',
+  'gemini-2.5-flash-lite',
+  'gemini-flash-lite-latest',
+  'gemini-2.5-pro'
 ];
 
 // ─── Twitter Character Counting & Truncation Helpers ─────────────────────────
@@ -166,8 +168,8 @@ INSTRUCTIONS FOR jobPost (Target: Frontend Devs seeking remote jobs & referrals 
 
 ---
 INSTRUCTIONS FOR employerPost (Target: Tech Recruiters & Engineering Hiring Managers):
-- Hook: Hiring frontend engineers? Reach 5,000+ remote React, Next.js & Vue devs for just $99/mo flat. 🎯
-- Value: Post unlimited jobs. 10x cheaper than LinkedIn ($300+/post).
+- Hook: Hiring remote frontend engineers? Post UNLIMITED jobs with zero recruiter fees for $99/mo flat on FrontendEngineers.com! 🎯
+- Value: React, Next.js, Vue & TS specialists. Instant featured placement + daily alert inclusion. 10x cheaper than LinkedIn.
 - Link: https://www.frontendengineers.com/employers/pricing
 - Hashtags: #Hiring #TechRecruitment #Startups
 - MUST be under 260 characters.

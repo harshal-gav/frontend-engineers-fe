@@ -55,8 +55,10 @@ if (!GEMINI_API_KEY) {
 // Resilient list of Gemini models to cycle through if quota/overload occurs
 const GEMINI_MODELS = [
   'gemini-2.5-flash',
-  'gemini-3.6-flash',
-  'gemini-2.5-flash-lite'
+  'gemini-flash-latest',
+  'gemini-2.5-flash-lite',
+  'gemini-flash-lite-latest',
+  'gemini-2.5-pro'
 ];
 
 // ─── Gemini AI Generation (Single Prompt for 3 Posts) ─────────
@@ -79,10 +81,15 @@ Generate THREE distinct, high-converting LinkedIn posts in this exact format wit
 ===REFERRAL_POST_END===
 
 ---
-INSTRUCTIONS FOR POST 1 (Target: Remote Frontend Developers looking for jobs & referrals in one place):
+INSTRUCTIONS FOR POST 1 (Target: Remote Frontend Developers looking for verified jobs & referrals in one place):
 - POSITIVE TONE ONLY: Inspiring, uplifting, and empowering. No negative hooks like "Tired of..." or "Sick of...".
-- FIRST LINE REQUIREMENT: You MUST explicitly mention that developers can get "Remote Frontend Developer Jobs" and "Referrals" all in one place at "FrontendEngineers.com" in the VERY FIRST line of the post. Example: "Get remote frontend developer jobs and direct employee referrals all in one place at FrontendEngineers.com! 🚀"
-- CORE MESSAGE: Highlight that FrontendEngineers.com is the single destination where frontend developers can access remote job links AND direct employee referrals side-by-side. Emphasize remote work benefits, top frontend tech stacks like React, Next.js, Vue, and TypeScript, aggregated roles from 100+ top sources, and direct community referrals to help candidates bypass applicant tracking systems and land interviews faster.
+- FIRST LINE REQUIREMENT: You MUST explicitly mention that developers can get "Remote Frontend Developer Jobs" and "Referrals" all in one place at "FrontendEngineers.com" in the VERY FIRST line of the post. Example: "Get verified remote frontend developer jobs and direct employee referrals all in one place at FrontendEngineers.com! 🚀"
+- CORE MESSAGE: Highlight that FrontendEngineers.com is the single destination where frontend developers can access verified remote job links AND direct employee referrals side-by-side. Emphasize:
+  1. 100% VERIFIED & DEDUPLICATED: Curated active frontend roles across React, Next.js, Vue, Angular, and TypeScript. Zero ghost jobs, zero expired listings, and zero dead links.
+  2. ACCURATE REMOTE LOCATIONS: Clear, transparent remote eligibility - Worldwide Remote, US, Europe/UK, LATAM, Canada, APAC - so developers never waste time applying to mislabeled hybrid roles.
+  3. DIRECT APPLICATION LINKS: Complete job specifications with direct links to official employer career portals.
+  4. COMMUNITY REFERRALS: Direct employee referrals from working frontend engineers to bypass automated ATS filters and get interviews faster.
+  5. DAILY TAILORED ALERTS: Fresh matching jobs delivered straight to your inbox daily.
 - USE LOTS OF EMOJIS: 🚀✨🔥💻🤝💼 (make it vibrant and eye-catching).
 - LINKS REQUIRED (format as plain text):
   🔍 Find Remote Frontend Jobs & Referrals:
@@ -97,18 +104,19 @@ INSTRUCTIONS FOR POST 1 (Target: Remote Frontend Developers looking for jobs & r
 
 ---
 INSTRUCTIONS FOR POST 2 (Target: Tech Recruiters, Startup Founders, Engineering Managers):
-- FIRST LINE HOOK: Must open with a number-driven statement about hiring frontend engineers and include "FrontendEngineers.com" in the first 2 lines. Example: "Your job post reaches 5,000+ frontend developers in 24 hours. FrontendEngineers.com."
-- PAIN POINT: 1-2 short punchy sentences highlighting that 1 job post on LinkedIn costs $300+, Indeed costs $2,000+ for 10 posts, and generic boards are full of unqualified noise.
-- 4 BULLET POINTS WITH EMOJIS & NUMBERS:
-  - 🎯 100% FRONTEND AUDIENCE - React, Next.js, Vue, Angular, TypeScript engineers only.
-  - 📩 5,000+ INBOXES - Lands in 5,000+ frontend developer subscriber inboxes.
-  - ⭐ UNLIMITED POSTS - Post 1 job or 100. $99/mo flat with no per-post fees.
-  - 💰 10x CHEAPER - One post on LinkedIn is $300+. Post unlimited here for $99/mo.
-- CTA: "Reach 5,000+ frontend developers for $99/mo. Cancel anytime."
+- FIRST LINE HOOK: Must open with a high-impact, number-driven statement about hiring remote frontend engineers with ZERO recruiter fees, and include "FrontendEngineers.com" in the first 2 lines. Example: "Hire top remote frontend engineers with zero recruiter fees and zero per-post limits on FrontendEngineers.com! 🚀"
+- PAIN POINT: 1-2 short punchy sentences highlighting that recruiting agencies charge 15-25% placement fees ($15,000-$25,000+ per hire), LinkedIn charges $300+ for a single job post, and generic job boards flood you with unqualified, non-technical resumes.
+- 4 BULLET POINTS WITH EMOJIS & REAL VALUE:
+  - 🎯 100% FRONTEND SPECIALIZED - Exclusively React, Next.js, Vue, Angular, and TypeScript developers. Zero backend, DevOps, or non-technical noise.
+  - 🚀 FEATURED & INSTANTLY INDEXED - Your role is featured at the top of the job board and indexed immediately for maximum visibility.
+  - 📩 DAILY DEVELOPER ALERTS - Included in daily job alert digests sent directly to active, subscribed remote frontend engineers.
+  - ⭐ UNLIMITED POSTINGS FOR $99/MO - Post 1 job or 50 roles. Flat $99/mo rate with zero recruiter commissions, zero per-post fees, and cancel anytime.
+- CTA: "Post unlimited remote frontend developer jobs for $99/mo. Zero recruiter fees. Cancel anytime."
 - LINK REQUIRED (format as plain text):
   👇 Start posting unlimited jobs:
   https://www.frontendengineers.com/employers/pricing
-- HASHTAGS: 5-8 hashtags like #Hiring #TechRecruitment #FrontendEngineers #Startups #RemoteHiring.
+- HASHTAGS: 5-8 hashtags like #Hiring #TechRecruitment #FrontendEngineers #Startups #RemoteHiring #EngineeringManagers.
+- LENGTH: 800 - 1500 characters.
 
 ---
 INSTRUCTIONS FOR POST 3 (Target: Working Frontend Developers, Tech Leads & Engineers with referrals to give):
@@ -116,7 +124,7 @@ INSTRUCTIONS FOR POST 3 (Target: Working Frontend Developers, Tech Leads & Engin
 - CORE MESSAGE - SUPPORT & EMPOWER THE FRONTEND COMMUNITY:
   1. POST YOUR REFERRAL TO SUPPORT REMOTE FRONTEND DEVELOPERS: If your company is hiring remote frontend engineers (React, Next.js, Vue, TypeScript), post your referral to help a fellow developer land an interview.
   2. IT IS 100% FREE: No fees, no account required, no catch. Posting a referral is completely free to give back to the developer community.
-  3. HELP OTHER FRONTEND DEVELOPERS: The job market can be tough with 1,000+ applicants per role. A referral gives another developer a genuine shot at an interview. Pay it forward and support your peers.
+  3. BEAT CROWDED ATS QUEUES: In a competitive market where postings get flooded with 1,000+ applicants, an employee referral gives another developer a genuine shot at an interview. Pay it forward and support your peers.
   4. FAST & SIMPLE: Takes less than 60 seconds to submit a referral on FrontendEngineers.com.
 - USE LOTS OF EMOJIS: 🤝❤️🚀🔥💼💡✨ (warm, community-spirited, and uplifting).
 - LINKS REQUIRED (format as plain text):
