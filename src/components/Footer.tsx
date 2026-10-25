@@ -122,9 +122,9 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 mb-8">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 mb-8">
           {/* Brand */}
-          <div>
+          <div className="col-span-2 sm:col-span-3 md:col-span-1">
             <Link href="/" className="text-lg font-bold text-white mb-3 block">
               Frontend<span className="text-[#60a5fa]">Engineers</span>
             </Link>
@@ -133,14 +133,39 @@ export default function Footer() {
             </p>
           </div>
 
+          {/* Remote by Tech */}
+          <div>
+            <h3 className="text-white font-semibold mb-3 uppercase tracking-wider text-xs">Remote by Tech</h3>
+            <ul className="space-y-2 text-xs">
+              <li><Link href="/remote-react-jobs" className="text-gray-400 hover:text-white transition-colors">React Jobs</Link></li>
+              <li><Link href="/remote-nextjs-jobs" className="text-gray-400 hover:text-white transition-colors">Next.js Jobs</Link></li>
+              <li><Link href="/remote-vue-jobs" className="text-gray-400 hover:text-white transition-colors">Vue.js Jobs</Link></li>
+              <li><Link href="/remote-angular-jobs" className="text-gray-400 hover:text-white transition-colors">Angular Jobs</Link></li>
+              <li><Link href="/remote-typescript-jobs" className="text-gray-400 hover:text-white transition-colors">TypeScript Jobs</Link></li>
+              <li><Link href="/remote-senior-frontend-jobs" className="text-gray-400 hover:text-white transition-colors">Senior Frontend</Link></li>
+            </ul>
+          </div>
+
+          {/* Remote by Region */}
+          <div>
+            <h3 className="text-white font-semibold mb-3 uppercase tracking-wider text-xs">Remote by Region</h3>
+            <ul className="space-y-2 text-xs">
+              <li><Link href="/remote-frontend-jobs-europe" className="text-gray-400 hover:text-white transition-colors">Europe</Link></li>
+              <li><Link href="/remote-frontend-jobs-usa" className="text-gray-400 hover:text-white transition-colors">USA</Link></li>
+              <li><Link href="/remote-frontend-jobs-india" className="text-gray-400 hover:text-white transition-colors">India</Link></li>
+              <li><Link href="/remote-frontend-jobs-worldwide" className="text-gray-400 hover:text-white transition-colors">Worldwide</Link></li>
+            </ul>
+          </div>
+
           {/* Platform */}
           <div>
             <h3 className="text-white font-semibold mb-3 uppercase tracking-wider text-xs">Platform</h3>
             <ul className="space-y-2 text-xs">
-              <li><a href="/" className="text-gray-400 hover:text-white transition-colors">Browse {jobCount ? `${jobCount}+` : ''} Jobs</a></li>
+              <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">Browse {jobCount ? `${jobCount}+` : ''} Jobs</Link></li>
               <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link></li>
               <li><Link href="/employers/pricing" className="text-gray-400 hover:text-white transition-colors font-medium">Post a Job</Link></li>
-              <li><Link href="/referrals" className="text-gray-400 hover:text-white transition-colors">Referrals</Link></li>
+              <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
               <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About</Link></li>
             </ul>
           </div>
@@ -160,7 +185,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-5 flex flex-col sm:flex-row justify-between items-center gap-3 text-xs text-gray-500">
           <p>&copy; {currentYear} FrontendEngineers.com</p>
           <div className="flex items-center gap-4">
-            <a href="mailto:frontendengineersupport@gmail.com" className="hover:text-white transition-colors">Contact</a>
+            <Link href="/contact" className="hover:text-white transition-colors">Contact Support</Link>
             <a href="https://www.linkedin.com/company/frontend-engineers-fe/" target="_blank" rel="noopener noreferrer" className="hover:text-white transition-colors">LinkedIn</a>
             <span className="text-gray-600">Secure payments by Dodo Payments &amp; PayPal</span>
           </div>

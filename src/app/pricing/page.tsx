@@ -282,7 +282,14 @@ export default function PricingPage() {
                     <p className="text-sm text-gray-700 mb-3 leading-relaxed">"{t.quote}"</p>
                     <div className="flex items-center gap-2">
                       {t.avatar ? (
-                        <img src={t.avatar} alt={t.name} className="w-8 h-8 rounded-full object-cover" />
+                        <img
+                          src={t.avatar}
+                          alt={`${t.name} testimonial avatar`}
+                          width={32}
+                          height={32}
+                          loading="lazy"
+                          className="w-8 h-8 rounded-full object-cover"
+                        />
                       ) : (
                         <div className="w-8 h-8 rounded-full bg-white flex items-center justify-center text-xs font-bold text-[#2563eb] border border-[#e2e2e6]">
                           {t.name[0]}

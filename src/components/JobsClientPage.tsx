@@ -611,8 +611,7 @@ export default function JobsClientPage() {
           Curated Remote Roles • Updated Daily
         </div>
         <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900 w-full">
-          The Remote Job Board for{" "}
-          <span className="text-[#2563eb]">Frontend Developers</span>
+          Remote Frontend Developer Jobs
         </h1>
         <p className="text-sm sm:text-base max-w-2xl mx-auto mb-3 text-gray-600">
           Zero hybrid fluff. Zero non-technical spam. Verified React, TypeScript, Next.js, Vue, and Angular jobs from remote-first companies worldwide.

@@ -8,6 +8,8 @@ import FaqSchema, { type FaqItem } from "@/components/FaqSchema";
 
 import { loadJobsFromFile, filterActiveJobs } from "@/lib/jobs.server";
 
+export const revalidate = 3600; // 1-hour ISR for homepage
+
 export const metadata: Metadata = {
   alternates: {
     canonical: "/",
@@ -127,8 +129,7 @@ export default async function HomePage() {
               Curated Remote Roles • Updated Daily
             </div>
             <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold mb-3 sm:mb-5 leading-tight text-gray-900 w-full">
-              The Remote Job Board for{" "}
-              <span className="text-[#2563eb]">Frontend Developers</span>
+              Remote Frontend Developer Jobs
             </h1>
             <p className="text-sm sm:text-base max-w-2xl mx-auto mb-3 text-gray-600">
               Zero hybrid fluff. Zero non-technical spam. Verified React, TypeScript, Next.js, Vue, and Angular jobs from remote-first companies worldwide.
@@ -150,6 +151,86 @@ export default async function HomePage() {
       }>
         <JobsClientPage />
       </Suspense>
+
+      {/* ─── Programmatic Landing Pages Links (Internal Linking) ─── */}
+      <section className="max-w-5xl mx-auto px-4 pt-10 pb-6">
+        <div className="border-t border-[#e2e2e6] pt-10">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 mb-2 text-center sm:text-left">
+            Browse Remote Frontend Jobs by Technology &amp; Location
+          </h2>
+          <p className="text-sm text-gray-600 mb-6 text-center sm:text-left">
+            Explore curated remote job listings tailored to your specific tech stack and region.
+          </p>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+            <div className="bg-gray-50/70 rounded-xl p-4 border border-[#e2e2e6]">
+              <h3 className="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wider">
+                Popular Technologies
+              </h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/remote-react-jobs" className="text-[#2563eb] hover:underline font-medium">
+                    Remote React Developer Jobs →
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/remote-nextjs-jobs" className="text-[#2563eb] hover:underline font-medium">
+                    Remote Next.js Developer Jobs →
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/remote-vue-jobs" className="text-[#2563eb] hover:underline font-medium">
+                    Remote Vue.js Developer Jobs →
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/remote-angular-jobs" className="text-[#2563eb] hover:underline font-medium">
+                    Remote Angular Developer Jobs →
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/remote-typescript-jobs" className="text-[#2563eb] hover:underline font-medium">
+                    Remote TypeScript Developer Jobs →
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/remote-senior-frontend-jobs" className="text-[#2563eb] hover:underline font-medium">
+                    Remote Senior Frontend Jobs →
+                  </Link>
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-50/70 rounded-xl p-4 border border-[#e2e2e6]">
+              <h3 className="text-sm font-semibold text-gray-900 mb-3 uppercase tracking-wider">
+                Remote by Region
+              </h3>
+              <ul className="space-y-2 text-sm">
+                <li>
+                  <Link href="/remote-frontend-jobs-europe" className="text-[#2563eb] hover:underline font-medium">
+                    Remote Frontend Jobs in Europe →
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/remote-frontend-jobs-usa" className="text-[#2563eb] hover:underline font-medium">
+                    Remote Frontend Jobs in USA →
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/remote-frontend-jobs-india" className="text-[#2563eb] hover:underline font-medium">
+                    Remote Frontend Jobs in India →
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/remote-frontend-jobs-worldwide" className="text-[#2563eb] hover:underline font-medium">
+                    Worldwide Remote Frontend Jobs →
+                  </Link>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* ─── Homepage FAQ for AEO/SEO ─────────────────── */}
       <section className="max-w-4xl mx-auto px-4 pb-16">

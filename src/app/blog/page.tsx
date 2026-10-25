@@ -2,10 +2,24 @@ import Link from 'next/link';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Frontend Engineering Blog - Career Guides & Remote Job Tips',
-  description: 'Guides, tips, and insights on remote frontend engineering, interviewing, and career growth. Published by FrontendEngineers.com.',
+  title: "Frontend Engineering Blog – Guides & Remote Job Tips",
+  description: "Read expert career guides and interview tips for remote frontend developers. Learn how to land high-paying React, TypeScript, and Vue roles worldwide.",
   alternates: {
-    canonical: '/blog',
+    canonical: "/blog",
+  },
+  openGraph: {
+    title: "Frontend Engineering Blog – Guides & Remote Job Tips",
+    description: "Read expert career guides and interview tips for remote frontend developers. Learn how to land high-paying React, TypeScript, and Vue roles worldwide.",
+    url: "https://www.frontendengineers.com/blog",
+    siteName: "FrontendEngineers.com",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1456, height: 816, alt: "Frontend Engineering Blog" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Frontend Engineering Blog – Guides & Remote Job Tips",
+    description: "Read expert career guides and interview tips for remote frontend developers. Learn how to land high-paying React, TypeScript, and Vue roles worldwide.",
+    images: ["/og-image.jpg"],
   },
 };
 

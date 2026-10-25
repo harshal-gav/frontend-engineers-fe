@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useSearchParams, usePathname } from "next/navigation";
+import { usePathname } from "next/navigation";
 import { type Job, getEffectiveJobDescription, hasSourceDescription, formatLocation } from "@/lib/jobs";
 import UpgradeModal, { type UpgradeContext } from "@/components/UpgradeModal";
 
@@ -34,8 +34,15 @@ interface JobDetailProps {
 
 export default function JobDetail({ job: initialJob, relatedJobs = [] }: JobDetailProps) {
   const { user, isSubscribed, loading: authLoading } = useAuth();
-  const searchParams = useSearchParams();
   const pathname = usePathname();
+  const [backHref, setBackHref] = useState("/");
+
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.location.search) {
+      setBackHref(`/${window.location.search}`);
+    }
+  }, []);
+
   const [job, setJob] = useState<Job>(initialJob);
   const [upgradeModalContext, setUpgradeModalContext] = useState<UpgradeContext | null>(null);
 
@@ -76,8 +83,6 @@ export default function JobDetail({ job: initialJob, relatedJobs = [] }: JobDeta
     }
   };
 
-  const paramsString = searchParams?.toString();
-  const backHref = paramsString ? `/?${paramsString}` : "/";
 
   const remote = REMOTE_CONFIG[job.remoteType] || REMOTE_CONFIG.REMOTE;
 
@@ -154,14 +159,28 @@ export default function JobDetail({ job: initialJob, relatedJobs = [] }: JobDeta
             </div>
             {/* Company name - visible to all users */}
             <p className="text-base sm:text-lg text-[var(--text-secondary)]">
-            {job.company?.name}
-            {job.company?.industry && (
-              <span className="text-[var(--text-muted)]">
-                {" "}
-                · {job.company.industry}
-              </span>
+              {job.company?.name}
+              {job.company?.industry && (
+                <span className="text-[var(--text-muted)]">
+                  {" "}
+                  · {job.company.industry}
+                </span>
+              )}
+            </p>
+
+            {/* Tech Tags - visible to all users */}
+            {job.aiTags?.stack && job.aiTags.stack.length > 0 && (
+              <div className="flex flex-wrap items-center gap-1.5 mt-2.5">
+                {job.aiTags.stack.map((tag) => (
+                  <span
+                    key={tag}
+                    className="text-xs font-medium bg-blue-50 text-[#2563eb] border border-blue-200/60 px-2.5 py-0.5 rounded-full"
+                  >
+                    {tag}
+                  </span>
+                ))}
+              </div>
             )}
-          </p>
         </div>
       </div>
 
@@ -190,14 +209,14 @@ export default function JobDetail({ job: initialJob, relatedJobs = [] }: JobDeta
         </div>
       )}
 
-      {/* Badges - Remote is visible to all, specific location blurred for free users */}
+      {/* Badges - Remote is visible to all, location visible to all */}
       <div className="flex flex-wrap items-center gap-2 mb-6">
         <span className={`badge ${remote.class}`}>
           {remote.icon} {remote.label}
         </span>
 
-        <span className={`text-sm text-[var(--text-muted)] ${showLocked ? "job-locked-blur" : ""}`}>
-          📍 {showLocked ? "Location, Region" : formatLocation(job)}
+        <span className="text-sm text-[var(--text-muted)] font-medium">
+          📍 {formatLocation(job)}
         </span>
       </div>
 
@@ -225,13 +244,33 @@ export default function JobDetail({ job: initialJob, relatedJobs = [] }: JobDeta
         </div>
       )}
 
-      {/* Description - blurred for free users */}
+      {/* Description - snippet visible to free users, rest paywalled */}
       <div className="mb-8">
         <h2 className="text-lg font-semibold mb-3">Job Description</h2>
-        {hasSourceDescription(job) ? (
-          <div className={`prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap ${showLocked ? "job-locked-blur" : ""}`}>
-            {job.description}
-          </div>
+        {hasSourceDescription(job) && job.description ? (
+          showLocked ? (
+            <div className="space-y-4">
+              {/* Unblurred Description Snippet visible to all users & crawlers */}
+              <div className="prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap">
+                {job.description.length > 280
+                  ? `${job.description.slice(0, 280)}...`
+                  : job.description}
+              </div>
+              {/* Paywalled remaining text blurred for free users */}
+              {job.description.length > 280 && (
+                <div
+                  className="paywalled-content job-locked-blur select-none pointer-events-none prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap"
+                  aria-hidden="true"
+                >
+                  {job.description.slice(280)}
+                </div>
+              )}
+            </div>
+          ) : (
+            <div className="prose prose-invert prose-sm max-w-none text-[var(--text-secondary)] leading-relaxed whitespace-pre-wrap">
+              {job.description}
+            </div>
+          )
         ) : (
           <div className="rounded-xl border border-blue-200 bg-blue-50/70 p-6 text-gray-800">
             <div className="flex items-start gap-3">

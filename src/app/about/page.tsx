@@ -2,10 +2,24 @@ import Link from "next/link";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About FrontendEngineers.com - Get Hired Faster",
-  description: "FrontendEngineers.com is a job portal for Remote Frontend Developer jobs. With less competition, it's much easier to stand out and get hired for React, Vue, and Angular roles.",
+  title: "About FrontendEngineers.com – Remote Frontend Job Board",
+  description: "Learn about FrontendEngineers.com, the dedicated remote job board for frontend developers. Hand-curated React, Vue, Angular, and TypeScript roles since 2024.",
   alternates: {
     canonical: "/about",
+  },
+  openGraph: {
+    title: "About FrontendEngineers.com – Remote Frontend Job Board",
+    description: "Learn about FrontendEngineers.com, the dedicated remote job board for frontend developers. Hand-curated React, Vue, Angular, and TypeScript roles since 2024.",
+    url: "https://www.frontendengineers.com/about",
+    siteName: "FrontendEngineers.com",
+    type: "website",
+    images: [{ url: "/og-image.jpg", width: 1456, height: 816, alt: "About FrontendEngineers.com" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "About FrontendEngineers.com – Remote Frontend Job Board",
+    description: "Learn about FrontendEngineers.com, the dedicated remote job board for frontend developers. Hand-curated React, Vue, Angular, and TypeScript roles since 2024.",
+    images: ["/og-image.jpg"],
   },
 };
 

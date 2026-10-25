@@ -9,15 +9,53 @@ interface LegalPageProps {
   params: Promise<{ slug: string }>;
 }
 
+const LEGAL_METADATA: Record<string, { title: string; description: string }> = {
+  "privacy-policy": {
+    title: "Privacy Policy – FrontendEngineers.com Legal Center",
+    description: "Read the official Privacy Policy for FrontendEngineers.com. Learn how we handle your personal data, job application information, cookies, and privacy rights.",
+  },
+  "terms-of-service": {
+    title: "Terms of Service – FrontendEngineers.com Legal Terms",
+    description: "Review the Terms of Service for using FrontendEngineers.com. Understand user rights, employer job posting rules, Pro membership billing, and platform terms.",
+  },
+  "refund-policy": {
+    title: "Refund Policy – FrontendEngineers.com Billing Support",
+    description: "Review the refund and cancellation policy for FrontendEngineers.com Pro memberships and employer job postings. Clear terms, instant access, and hassle-free.",
+  },
+  "disclaimer": {
+    title: "Disclaimer – FrontendEngineers.com Job Board Notices",
+    description: "Read the legal disclaimer for FrontendEngineers.com. Learn about third-party remote job listings, company representations, and external application policies.",
+  },
+};
+
 export async function generateMetadata({ params }: LegalPageProps): Promise<Metadata> {
   const resolvedParams = await params;
-  const title = resolvedParams.slug
-    .split("-")
-    .map((word) => word.charAt(0).toUpperCase() + word.slice(1))
-    .join(" ");
+  const slug = resolvedParams.slug;
+  const meta = LEGAL_METADATA[slug] || {
+    title: `${slug.replace(/-/g, " ").replace(/\b\w/g, (c) => c.toUpperCase())} – FrontendEngineers.com`,
+    description: "Legal policies, terms, and regulatory compliance documents for FrontendEngineers.com, the dedicated remote frontend developer job portal.",
+  };
 
   return {
-    title: `${title} | FrontendEngineers.com`,
+    title: meta.title,
+    description: meta.description,
+    alternates: {
+      canonical: `/legal/${slug}`,
+    },
+    openGraph: {
+      title: meta.title,
+      description: meta.description,
+      url: `https://www.frontendengineers.com/legal/${slug}`,
+      siteName: "FrontendEngineers.com",
+      type: "website",
+      images: [{ url: "/og-image.jpg", width: 1456, height: 816, alt: meta.title }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: meta.title,
+      description: meta.description,
+      images: ["/og-image.jpg"],
+    },
   };
 }
 

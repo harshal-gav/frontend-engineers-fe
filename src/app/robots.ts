@@ -6,16 +6,17 @@ export default function robots(): MetadataRoute.Robots {
       userAgent: '*',
       allow: '/',
       disallow: [
-        '/admin',
         '/api/',
-        '/auth/',           // Login/signup pages - low SEO value
-        '/employers/post/', // Private employer job posting flow
-        '/pricing/success/', // Post-payment confirmation page
+        '/dashboard/',
+        '/account/',
+        '/checkout/',
+        '/pricing/success/',
+        '/auth/',
+        '/admin/',
+        '/employers/post/',
+        '/referrals/',
       ],
     },
-    sitemap: [
-      'https://www.frontendengineers.com/sitemap.xml',
-      'https://www.frontendengineers.com/sitemap-jobs/sitemap.xml'
-    ],
+    sitemap: 'https://www.frontendengineers.com/sitemap.xml',
   };
 }

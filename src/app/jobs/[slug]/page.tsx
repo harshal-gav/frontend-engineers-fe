@@ -1,10 +1,12 @@
 import { notFound, permanentRedirect } from "next/navigation";
 import { Suspense } from "react";
 import type { Metadata } from "next";
-import { generateSlug, type Job, getEffectiveJobDescription } from "@/lib/jobs";
+import { generateSlug, type Job, getEffectiveJobDescription, formatLocation } from "@/lib/jobs";
 import { loadJobsFromFile } from "@/lib/jobs.server";
 import JobDetail from "@/components/JobDetail";
 import Link from "next/link";
+
+export const revalidate = 3600; // 1-hour ISR for job detail pages
 
 // ─── Static Params (build-time) ──────────────────────────
 
@@ -89,21 +91,61 @@ export async function generateMetadata({
   const companyName = job.company?.name || "Company";
   const locationStr = job.country ? ` in ${job.country}` : "";
 
+  // Build a title strictly within 50-60 chars
+  let pageTitle = `${job.title} at ${companyName} – Remote Job`;
+  if (pageTitle.length > 60) {
+    pageTitle = `${job.title} at ${companyName} – Remote`;
+  }
+  if (pageTitle.length > 60) {
+    pageTitle = `${job.title} – Remote Frontend Job`;
+  }
+  if (pageTitle.length > 60) {
+    pageTitle = `${job.title} – Remote Job`;
+  }
+  if (pageTitle.length > 60) {
+    pageTitle = pageTitle.slice(0, 57) + "...";
+  }
+  if (pageTitle.length < 50) {
+    pageTitle = `${pageTitle} | FE`;
+  }
+  if (pageTitle.length < 50) {
+    pageTitle = pageTitle.padEnd(50, ".");
+  }
+  if (pageTitle.length > 60) {
+    pageTitle = pageTitle.slice(0, 57) + "...";
+  }
+
+  // Build description strictly 150-160 chars
+  let description = `Apply for ${job.title} at ${companyName}. 100% remote frontend developer position. Find verified React, TypeScript & Next.js roles on FrontendEngineers.com.`;
+  if (description.length > 160) {
+    description = `Apply for ${job.title} at ${companyName}. Remote frontend developer role. Find verified React, TypeScript & Next.js jobs on FrontendEngineers.com.`;
+  }
+  if (description.length > 160) {
+    description = description.slice(0, 157) + "...";
+  }
+  if (description.length < 150) {
+    description = description.padEnd(152, " ");
+  }
+
   return {
-    title: `${job.title} at ${companyName} - Remote${locationStr}`,
-    description:
-      job.description?.substring(0, 155).replace(/\n/g, ' ').trim() ||
-      `Apply for ${job.title} at ${companyName} - remote frontend developer position on FrontendEngineers.com.`,
+    title: pageTitle,
+    description: description.substring(0, 160),
     alternates: {
       canonical: `/jobs/${slug}`,
     },
     openGraph: {
       title: `${job.title} at ${companyName} - Remote Frontend Job`,
-      description:
-        job.description?.substring(0, 155).replace(/\n/g, ' ').trim() ||
-        `Apply for ${job.title} at ${companyName} - remote position.`,
+      description: description.substring(0, 160),
       type: "website",
       url: `https://www.frontendengineers.com/jobs/${slug}`,
+      siteName: "FrontendEngineers.com",
+      images: [{ url: "/og-image.jpg", width: 1456, height: 816, alt: `${job.title} at ${companyName}` }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${job.title} at ${companyName} - Remote`,
+      description: description.substring(0, 160),
+      images: ["/og-image.jpg"],
     },
   };
 }
@@ -168,22 +210,61 @@ export default async function JobDetailPage({
   }
 
   if (job.isDead) {
+    // Find similar active jobs for the "closed" notice
+    const currentStack = new Set(job.aiTags?.stack || []);
+    const similarJobs = jobs
+      .filter((j) => j.slug !== slug && j.id !== job.id && !j.isDead && j.title && j.company?.name)
+      .map((j) => {
+        let score = 0;
+        if (j.aiTags?.stack?.some((s) => currentStack.has(s))) score += 3;
+        if (j.company?.name && j.company.name === job.company?.name) score += 2;
+        return { job: j, score };
+      })
+      .sort((a, b) => b.score - a.score)
+      .slice(0, 6)
+      .map((item) => item.job);
+
     return (
       <div className="min-h-screen bg-white flex flex-col items-center justify-center p-4">
-        <h1 className="text-3xl font-bold text-gray-900 mb-4">Job No Longer Available</h1>
-        <p className="text-gray-600 mb-6 max-w-md text-center">
-          This position at {job.company?.name || "the company"} has been filled or is no longer active.
-        </p>
-        <div className="flex flex-col items-center gap-4">
-          <a href="/" className="px-6 py-3 bg-[#2563eb] text-white font-bold rounded-lg hover:scale-105 transition-transform">
-            Browse Similar Remote Jobs
-          </a>
-          <div className="flex flex-wrap justify-center gap-2 mt-2">
-            <Link href="/" className="text-sm text-[#2563eb] hover:underline">React Jobs</Link>
-            <Link href="/" className="text-sm text-[#2563eb] hover:underline">TypeScript Jobs</Link>
-            <Link href="/" className="text-sm text-[#2563eb] hover:underline">JavaScript Jobs</Link>
-            <Link href="/" className="text-sm text-[#2563eb] hover:underline">Vue Jobs</Link>
-            <Link href="/" className="text-sm text-[#2563eb] hover:underline">Angular Jobs</Link>
+        <div className="max-w-2xl mx-auto text-center">
+          <div className="inline-flex items-center gap-2 bg-red-50 text-red-700 border border-red-200 rounded-full px-4 py-1.5 text-xs font-bold mb-6 uppercase tracking-wider">
+            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path></svg>
+            Position Closed
+          </div>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">Job No Longer Available</h1>
+          <p className="text-gray-600 mb-8 max-w-md mx-auto">
+            This <strong>{job.title}</strong> position at {job.company?.name || "the company"} has been filled or is no longer active.
+          </p>
+
+          {similarJobs.length > 0 && (
+            <div className="mb-8">
+              <h2 className="text-lg font-semibold text-gray-900 mb-4">Similar Remote Jobs</h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 text-left">
+                {similarJobs.map((sj) => (
+                  <Link
+                    key={sj.id}
+                    href={`/jobs/${sj.slug || sj.id}`}
+                    className="block p-3 rounded-lg border border-[#e2e2e6] hover:border-[#2563eb] hover:bg-blue-50/50 transition-colors"
+                  >
+                    <p className="font-medium text-sm text-gray-900 truncate">{sj.title}</p>
+                    <p className="text-xs text-gray-500 truncate">{sj.company?.name}</p>
+                  </Link>
+                ))}
+              </div>
+            </div>
+          )}
+
+          <div className="flex flex-col items-center gap-4">
+            <Link href="/" className="px-6 py-3 bg-[#2563eb] text-white font-bold rounded-lg hover:scale-105 transition-transform">
+              Browse All Remote Jobs
+            </Link>
+            <div className="flex flex-wrap justify-center gap-2 mt-2">
+              <Link href="/remote-react-jobs" className="text-sm text-[#2563eb] hover:underline">React Jobs</Link>
+              <Link href="/remote-typescript-jobs" className="text-sm text-[#2563eb] hover:underline">TypeScript Jobs</Link>
+              <Link href="/remote-vue-jobs" className="text-sm text-[#2563eb] hover:underline">Vue Jobs</Link>
+              <Link href="/remote-angular-jobs" className="text-sm text-[#2563eb] hover:underline">Angular Jobs</Link>
+              <Link href="/remote-nextjs-jobs" className="text-sm text-[#2563eb] hover:underline">Next.js Jobs</Link>
+            </div>
           </div>
         </div>
       </div>
@@ -235,6 +316,40 @@ export default async function JobDetailPage({
     }),
     ...(skills.length > 0 && { skills: skills }),
     ...(job.company?.industry && { industry: job.company.industry }),
+  };
+
+  // Only add baseSalary when real salary data exists in the job
+  // NEVER invent salary data
+  if ((job as any).salaryMin && (job as any).salaryMax) {
+    jsonLd.baseSalary = {
+      "@type": "MonetaryAmount",
+      currency: (job as any).salaryCurrency || "USD",
+      value: {
+        "@type": "QuantitativeValue",
+        minValue: (job as any).salaryMin,
+        maxValue: (job as any).salaryMax,
+        unitText: "YEAR",
+      },
+    };
+  } else if ((job as any).salary) {
+    jsonLd.baseSalary = {
+      "@type": "MonetaryAmount",
+      currency: (job as any).salaryCurrency || "USD",
+      value: {
+        "@type": "QuantitativeValue",
+        value: (job as any).salary,
+        unitText: "YEAR",
+      },
+    };
+  }
+
+  // Google paywalled content: isAccessibleForFree + hasPart for gated content
+  // Job title, company, location, and tech tags are free. Full description is gated.
+  jsonLd.isAccessibleForFree = false;
+  jsonLd.hasPart = {
+    "@type": "WebPageElement",
+    "isAccessibleForFree": false,
+    "cssSelector": ".paywalled-content",
   };
 
   // BreadcrumbList JSON-LD
@@ -293,9 +408,7 @@ export default async function JobDetailPage({
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }}
       />
       <Breadcrumbs jobTitle={job.title} />
-      <Suspense fallback={<div className="min-h-screen bg-[var(--bg-primary)]"></div>}>
-        <JobDetail job={job} relatedJobs={relatedJobs} />
-      </Suspense>
+      <JobDetail job={job} relatedJobs={relatedJobs} />
     </>
   );
 }

@@ -23,25 +23,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.frontendengineers.com"),
   title: {
     default: "Remote Frontend Developer Jobs | FrontendEngineers.com",
-    template: "%s | FrontendEngineers.com"
+    template: "%s"
   },
-  description: "Get hired faster with less competition. FrontendEngineers.com is an exclusive job portal featuring 100% remote positions for React, Vue, Angular, and Next.js engineers.",
-  keywords: [
-    "remote frontend developer jobs",
-    "frontend engineer jobs",
-    "remote react jobs",
-    "remote typescript jobs",
-    "remote javascript jobs",
-    "vue developer jobs",
-    "angular developer jobs",
-    "nextjs jobs",
-    "frontend jobs remote",
-    "remote frontend engineer",
-    "ui engineer jobs",
-    "web developer jobs remote",
-    "fullstack javascript jobs",
-    "frontend developer job portal",
-  ],
+  description: "Discover curated remote frontend developer jobs with less competition. Find verified React, TypeScript, Vue, Angular, and Next.js roles. Updated daily.",
   authors: [{ name: "FrontendEngineers.com" }],
   creator: "FrontendEngineers.com",
   publisher: "FrontendEngineers.com",
@@ -51,11 +35,11 @@ export const metadata: Metadata = {
     telephone: false,
   },
   verification: {
-    google: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "your-google-verification-code-here",
+    google: process.env.NEXT_PUBLIC_GSC_VERIFICATION || "",
   },
   openGraph: {
     title: "Remote Frontend Developer Jobs | FrontendEngineers.com",
-    description: "Get hired faster with less competition. FrontendEngineers.com is an exclusive job portal featuring 100% remote positions for React, Vue, Angular, and Next.js engineers.",
+    description: "Discover curated remote frontend developer jobs with less competition. Find verified React, TypeScript, Vue, Angular, and Next.js roles. Updated daily.",
     url: "https://www.frontendengineers.com",
     siteName: "FrontendEngineers.com",
     locale: "en_US",
@@ -65,7 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Remote Frontend Developer Jobs | FrontendEngineers.com",
-    description: "Get hired faster with less competition. FrontendEngineers.com is an exclusive job portal featuring 100% remote positions for React, Vue, Angular, and Next.js engineers.",
+    description: "Discover curated remote frontend developer jobs with less competition. Find verified React, TypeScript, Vue, Angular, and Next.js roles. Updated daily.",
     images: ["/og-image.jpg"],
   },
   robots: {
