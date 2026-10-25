@@ -333,8 +333,6 @@ async function main() {
           <p>You received this email because you created a job alert or subscribed on FrontendEngineers.com.</p>
           <p>
             <a href="https://frontendengineers.com/dashboard" style="color: #2563eb;">Edit alert preferences</a>
-            &nbsp;•&nbsp;
-            <a href="https://frontendengineers.com/api/newsletter/unsubscribe" style="color: #718096; text-decoration: underline;">Unsubscribe</a>
           </p>
         </div>
       </div>
