@@ -104,14 +104,14 @@ INSTRUCTIONS FOR POST 1 (Target: Remote Frontend Developers looking for verified
 
 ---
 INSTRUCTIONS FOR POST 2 (Target: Tech Recruiters, Startup Founders, Engineering Managers):
-- FIRST LINE HOOK: Must open with a high-impact, number-driven statement about hiring remote frontend engineers with ZERO recruiter fees, and include "FrontendEngineers.com" in the first 2 lines. Example: "Hire top remote frontend engineers with zero recruiter fees and zero per-post limits on FrontendEngineers.com! 🚀"
+- FIRST LINE HOOK: Must open with a high-impact statement about hiring remote frontend engineers for a flat $99/mo with zero per-post limits, and include "FrontendEngineers.com" in the first 2 lines. Example: "Hire top remote frontend engineers for a flat $99/mo with zero per-post limits on FrontendEngineers.com! 🚀"
 - PAIN POINT: 1-2 short punchy sentences highlighting that recruiting agencies charge 15-25% placement fees ($15,000-$25,000+ per hire), LinkedIn charges $300+ for a single job post, and generic job boards flood you with unqualified, non-technical resumes.
 - 4 BULLET POINTS WITH EMOJIS & REAL VALUE:
   - 🎯 100% FRONTEND SPECIALIZED - Exclusively React, Next.js, Vue, Angular, and TypeScript developers. Zero backend, DevOps, or non-technical noise.
   - 🚀 FEATURED & INSTANTLY INDEXED - Your role is featured at the top of the job board and indexed immediately for maximum visibility.
   - 📩 DAILY DEVELOPER ALERTS - Included in daily job alert digests sent directly to active, subscribed remote frontend engineers.
-  - ⭐ UNLIMITED POSTINGS FOR $99/MO - Post 1 job or 50 roles. Flat $99/mo rate with zero recruiter commissions, zero per-post fees, and cancel anytime.
-- CTA: "Post unlimited remote frontend developer jobs for $99/mo. Zero recruiter fees. Cancel anytime."
+  - ⭐ UNLIMITED POSTINGS FOR $99/MO - Post 1 job or 50 roles. Flat $99/mo rate with zero per-post fees, no commissions, and cancel anytime.
+- CTA: "Post unlimited remote frontend developer jobs for a flat $99/mo. Cancel anytime."
 - LINK REQUIRED (format as plain text):
   👇 Start posting unlimited jobs:
   https://www.frontendengineers.com/employers/pricing

@@ -168,7 +168,7 @@ INSTRUCTIONS FOR jobPost (Target: Frontend Devs seeking remote jobs & referrals 
 
 ---
 INSTRUCTIONS FOR employerPost (Target: Tech Recruiters & Engineering Hiring Managers):
-- Hook: Hiring remote frontend engineers? Post UNLIMITED jobs with zero recruiter fees for $99/mo flat on FrontendEngineers.com! 🎯
+- Hook: Hiring remote frontend engineers? Post UNLIMITED jobs for a flat $99/mo on FrontendEngineers.com! 🎯
 - Value: React, Next.js, Vue & TS specialists. Instant featured placement + daily alert inclusion. 10x cheaper than LinkedIn.
 - Link: https://www.frontendengineers.com/employers/pricing
 - Hashtags: #Hiring #TechRecruitment #Startups

@@ -113,7 +113,7 @@ export default function EmployerPricingPage() {
         <div className="max-w-6xl mx-auto">
         <div className="max-w-3xl mx-auto text-center mb-16">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-            Hire top remote frontend engineers <span className="text-[#10b981]">with zero recruiter fees</span>
+            Hire top remote frontend engineers <span className="text-[#10b981]">for a flat $99/month</span>
           </h1>
           <p className="text-xl text-gray-600">
             Not backend. Not DevOps. Not data scientists. Just React, Next.js, Vue, Angular, and TypeScript engineers actively looking for remote work. Post unlimited jobs for $99/mo.
