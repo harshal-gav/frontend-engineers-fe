@@ -1,5 +1,75 @@
 [
   {
+    "id": "b2034b259209f91102093ac8b60923222cf94b918e85957adcdb9c0e19e4d805",
+    "title": "Front-End Developer",
+    "applyUrl": "https://himalayas.app/companies/sotheby-s-institute-of-art/jobs/front-end-developer?utm_source=api",
+    "description": "Job Title: Front-End Developer\nLocation: Fully Remote (US)\nDepartment: Global Enrollment Marketing and Sales\nReports to: Director of Web Development\nClassification: Regular, Full-time\nFLSA Status: Exempt\nPrepared by: Global Head of Creative\nPrepared Date: 10/1/26\nSalary range: $85,000–$100,000\n\nAbout Edconic\nEdconic is a leading player in the alternative, experiential education space. We partner with the world's largest and most well-known brands to create and run schools that capture the legacy and value of each brand. Our students get truly unique, once-in-a-lifetime experiences that help shape their future and give them the skills they need to reach their goals.\n\nThe Role\nWe're looking for an experienced Front-End Developer to join our web team, which owns every Edconic digital property – from our school websites to landing pages and email templates. You'll work alongside designers, IT, and MarTech to build solutions that serve real business needs while protecting each brand's unique identity.\n\nYou'll be one of two developers on the team, working directly with our lead developer. That means real ownership of your work, a genuine voice in how we build, very little process overhead, and a codebase that is actively moving toward a modern, standardized WordPress stack. We value craft: fast pages and code that the next developer can read.\n\nWhat You'll Do\n\n• Build and maintain public-facing websites, micro-sites, and landing pages in collaboration with our lead developer, IT, and MarTech.\n\n• Work with UX/UI designers to confirm the technical feasibility of designs, then translate them into polished, responsive pages that stay true to each brand.\n\n• Build and maintain custom WordPress themes across both of our stacks: modern block-based builds (ACF Blocks, core blocks, block patterns, theme.json) and established classic themes built on PHP templates, Advanced Custom Fields, and Sass.\n\n• Collaborate with our lead developer to shape the team's coding standards, tooling, and workflow, and help migrate our existing sites toward our new modern stack.\n\n• Stay current on emerging web standards and bring ideas to the table where they genuinely fit.\n\nWhat You Bring\n\n• 4+ years of front-end web development experience, with strong skills in semantic HTML, CSS, JavaScript, PHP, and WordPress.\n\n• The ability to build a custom WordPress theme from scratch using PHP templates and Advanced Custom Fields.\n\n• Strong CSS skills across Sass and modern native CSS (custom properties, nesting), and solid vanilla JavaScript.\n\n• Comfort working in Git/GitHub with pull requests and code reviews, and with npm-based build tools and the command line.\n\n• A habit of writing semantic, well-structured HTML that covers accessibility basics, with an eye for reuse, cross-browser compatibility, performance, and SEO.\n\n• Experience building and testing HTML emails.\n\n• Strong UX/UI sensibilities and a desire to sweat the small stuff.\n\n• A proactive, self-directed working style – you can run with a project independently and prioritize across several at once.\n\n• Excellent written and verbal communication – you're positive, collaborative, objective, and solution-oriented.\n\nBonus Experience\n\n• Modern WordPress block development: ACF Blocks, block.json, theme.json, and block patterns.\n\n• Composer, Bedrock or other Roots tooling (Sage/Blade, Trellis), Vite, or CI/CD with GitHub Actions.\n\n• Deeper accessibility experience (WCAG, ARIA, assistive-technology testing).\n\n• CRM and marketing automation integration (Salesforce, Pardot/Account Engagement).\n\n• Multilingual WordPress sites.\n\n• A modern JavaScript framework such as React or Vue.\n\n• UX or UI design, and design tools such as Figma and Adobe Creative Suite.\n\nHow We Use AI\nAI-assisted development is a new and evolving part of our workflow. We use AI coding tools to speed up research, scaffolding, review, and routine work, and you're welcome to do the same.\n\nAI is a tool here, not a substitute for expertise. You are accountable for every line of code that you ship, which means you must be able to write, review, debug, and explain production code entirely on your own. Expect to demonstrate those skills without AI assistance during the interview process.\n\nLocation, Travel & Eligibility\n\n• Fully remote within the United States. Occasional travel to our New York office may be required.\n\n• Must be legally authorized to work in the US.\n\n• Bachelor's degree preferred (Computer Science, Interaction Design, Graphic Design, Communications, or a related field); equivalent professional experience is equally welcome.\n\nOur Commitment\nEdconic supports and embraces diversity and inclusiveness, and we encourage candidates from all backgrounds to apply, even if you don't meet every requirement listed here. Reasonable accommodations are available to enable individuals with disabilities to perform the essential functions of the role and to participate in the interview process.\n\nThe above statements describe the general nature and level of work for this position. They are not an exhaustive list of all duties, responsibilities, and skills. Edconic reserves the right to modify this job description at its sole discretion.\n\nOriginally posted on Himalayas",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-27T15:48:42.000Z",
+    "sourceHash": "b2034b259209f91102093ac8b60923222cf94b918e85957adcdb9c0e19e4d805",
+    "company": {
+      "id": "sothebysinstituteofart",
+      "name": "Sotheby's Institute of Art",
+      "logoUrl": "https://cdn-images.himalayas.app/nx5evgoqfdwd40wxg2sov1fuge4s",
+      "industry": "Technology",
+      "website": "https://sothebysinstituteofart.com"
+    },
+    "slug": "front-end-developer-sotheby-s-institute-of-art-b2034b25",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "javascript",
+        "css",
+        "sass",
+        "vite",
+        "figma",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a5dc182ec76ea6891be1d826d2f1410e63e84a750bb0fec5d470f003fa778bb9",
+    "title": "Senior Engineering Manager, Grafana Frontend | Germany | Remote",
+    "applyUrl": "https://jobicy.com/jobs/157408-senior-engineering-manager-grafana-frontend-germany-remote",
+    "description": "Grafana Labs is the company behind Grafana Cloud, the fully managed observability platform trusted by more than 10,000 organizations to ensure reliability, resolve incidents faster, and optimize telemetry at scale. Built on open source and open standards and designed for interoperability across any stack, Grafana Cloud brings AI to observability and observability to AI, giving teams (and their agents) unified visibility so they can see, understand, and act on all their disparate data, wherever it lives, and move at the speed of their ambitions. Customers, including Anthropic, Bloomberg, NVIDIA, Microsoft, and Salesforce, rely on Grafana Labs. We are a 100% remote company with team members across 40+ countries, backed by leading investors including Lightspeed Venture Partners, Sequoia Capital, GIC, Coatue, J.P. Morgan, CapitalG, and Lead Edge Capital. Learn more at grafana.com and follow us on LinkedIn and X.\n\nWe’re scaling fast and staying true to what makes us different: an open-source legacy, a global collaborative culture, and a passion for meaningful work. Our team thrives in an innovation-driven environment where transparency, autonomy, and trust fuel everything we do.\n\nYou may not meet every requirement, and that’s okay. If this role excites you, we’d love you to raise your hand for what could be a truly career-defining opportunity.\n\nSenior Engineering Manager, Grafana Frontend \nThe Opportunity: \nGrafana is an open-source observability product and a platform that teams and plugin developers build on. The Frontend group shapes its user experience (from dashboards and visualisation to navigation, search and sharing) and the foundations that support engineering teams and community contributors across the Grafana ecosystem.\n\nAs Senior Engineering Manager, you’ll lead the Frontend Platform and Navigation squads, owning their performance, delivery and customer outcomes. Frontend Platform enables teams to build reliable, high-quality experiences; Navigation helps users find and organise resources and move confidently through Grafana.\n\nYou’ll develop senior engineers, partner with Product and Design, and improve how teams work, including through AI and automation. We use Cloud-first rollout and experimentation to learn quickly, bringing relevant improvements to OSS and Enterprise.\n\nAI Notice: We invest heavily in developer productivity. You can use modern AI coding assistants as part of your daily workflow (your choice of tools, within security guidelines), backed by a company-funded usage budget so you can iterate quickly without unnecessary friction. We encourage pragmatic AI-assisted development: faster prototyping, test generation, refactors, documentation, and incident follow-ups—always with strong code review and quality standards. You'll also have access to the latest frontier models from OpenAI, Anthropic, and Google.\n\nWhat You’ll Be Doing:\n\n• Be accountable for the performance of two distributed engineering squads: set clear expectations, delegate effectively, coach and develop each team member, give timely feedback, address performance gaps and build a culture of trust and accountability.\n\n• Own hiring and team planning across both squads, aligning team capacity and skills with product priorities and longer-term needs.\n\n• Lead discovery with your squads: engage directly with customers, community members and internal users, combine their feedback with research and usage evidence, and use those insights to shape roadmaps and priorities.\n\n• Partner with Product, Design and engineering leaders to set priorities, resolve dependencies and make trade-offs between customer needs, long-term investments and operational demands.\n\n• Own delivery across both squads from discovery through rollout and measurement: set milestones, surface risks early and intervene when commitments are at risk.\n\n• Use AI regularly in your management work to synthesise research and feedback, inform roadmap and resourcing decisions, and streamline coordination, reporting and follow-through.\n\n• Improve how the squads plan, make decisions and deliver. Lead the adoption of AI and automation across engineering and operational workflows, evaluating their impact on delivery speed, quality and time spent on repetitive work.\n\n• Set engineering direction with senior engineers for the frontend foundations owned by your squads, including developer experience, accessibility, architecture, tooling, reliability and multitenant capabilities.\n\n• Set engineering direction for navigation, search and resource organisation, including where AI-assisted discovery can help users find what they need.\n\n• Set and uphold engineering standards for quality, security and operability, including how teams evaluate and validate AI-assisted work.\n\n• Lead improvements across Grafana and R&D that increase engineering productivity and improve business outcomes.\n\n• Participate in the engineering management on-call rota, coordinate responses and drive improvements that reduce recurring disruption. Regularly use Grafana’s AI capabilities for observability, incident investigation and management, bringing that experience into product feedback and roadmap decisions.\n\nWhat Makes You a Great Fit\n\n• Significant experience managing senior engineers, building healthy teams and developing technical leaders. You give clear feedback and address performance gaps directly and fairly.\n\n• A strong technical foundation in modern web or frontend systems, enabling you to evaluate technical trade-offs and shape architectural and engineering-quality decisions with senior engineers.\n\n• A track record of turning ambiguous, cross-team problems into clear priorities and measurable results, managing delivery risks and operational demands.\n\n• Strong product and customer judgement, with the ability to connect engineering investments to user, developer and business outcomes.\n\n• Clear, concise written communication and the ability to work effectively in a remote, globally distributed organisation.\n\n• An appreciation for open-source development and the judgement to balance Cloud-first delivery with the needs of customers, community members and internal teams.\n\n• Practical experience using AI and automation in your own leadership work, and leading teams to adopt them effectively. \n\nBonus Points For\n\n• Experience with React, TypeScript or comparable large-scale frontend ecosystems.\n\n• Experience leading a developer platform team, including support for plugins or extensions.\n\n• Experience with navigation, search, information architecture or resource-management products.\n\n• Experience delivering multitenant SaaS or major platform migrations.\n\n• Experience working on a widely adopted open-source product.\n\nCompensation & Rewards:\n\nIn Germany, the Base compensation range for this role is EUR 124,571 - EUR 149,485. Actual compensation may vary based on level, experience, and skillset as assessed in the interview process. \n\nAll of our roles include Restricted Stock Units (RSUs), giving every team member ownership in Grafana Labs' success. We believe in shared outcomes—RSUs help us stay aligned and invested as we scale globally.\n\n*Compensation ranges are country specific. If you are applying for this role from a different location than listed above, your recruiter will discuss your specific market’s defined pay range & benefits at the beginning of the process.\n\nWhy You’ll Thrive at Grafana Labs:\n\n• 100% Remote, Global Culture - As a remote-only company, we bring together talent from around the world, united by a culture of collaboration and shared purpose.\n\n• Scaling Organization – Tackle meaningful work in a high-growth, ever-evolving environment.\n\n• Transparent Communication – Expect open decision-making and regular company-wide updates.\n\n• Innovation-Driven – Autonomy and support to ship great work and try new things.\n\n• Open Source Roots – Built on community-driven values that shape how we work.\n\n• Empowered Teams – High trust, low ego culture that values outcomes over optics.\n\n• Career Growth Pathways – Defined opportunities to grow and develop your career.\n\n• Approachable Leadership – Transparent execs who are involved, visible, and human.\n\n• Passionate People – Join a team of smart, supportive folks who care deeply about what they do.\n\n• In-Person onboarding - We want you to thrive from day 1 with your fellow new ‘Grafanistas’ to learn all about what we do and how we do it. \n\n• Balance is Key - We operate a global annual leave policy of 30 days per annum. 3 days of your annual leave entitlement are reserved for Grafana Shutdown Days to allow the team to really disconnect. *We will comply with local legislation where applicable.\n\nEqual Opportunity Employer: Grafana Labs is an equal opportunities employer. We welcome applications from everyone regardless of race, colour, nationality, origin, caste, sex, gender reassignment identity or expression, sexual orientation, age, religion or belief, disability, veteran status, genetic information, pregnancy, maternity, marital, family or carer status, or any other characteristic which is protected by local law. We believe that equality and diversity build a strong organisation, and we work hard to ensure that is the foundation of our organisation as we grow.\n\nGrafana Labs may utilize AI tools in its recruitment process to assist in matching information provided in CVs to job postings. The recruitment team will continue to review inbound CVs manually to identify alignment with current openings.\n\n#LI-Remote\n\nFor information about how your personal data is used once you’ve applied to a job, check out our privacy policy.",
+    "location": "Remote - Germany",
+    "country": "Germany",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-27T14:08:14.000Z",
+    "sourceHash": "a5dc182ec76ea6891be1d826d2f1410e63e84a750bb0fec5d470f003fa778bb9",
+    "company": {
+      "id": "grafanalabs",
+      "name": "Grafana Labs",
+      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2021/11/42a3c42246467ec231dd876e92b63452.jpeg",
+      "industry": "Technology",
+      "website": "https://grafanalabs.com"
+    },
+    "slug": "senior-engineering-manager-grafana-frontend-germany-remote-grafana-labs-a5dc182e",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Germany"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "0e83ba2c1839e654baa3f5815e005161f7f757516ffc7ff031af33a4320ea338",
     "title": "Frontend Engineer, Ads",
     "applyUrl": "https://jobicy.com/jobs/157086-frontend-engineer-ads",
@@ -30185,320 +30255,5 @@
     },
     "isDead": true,
     "deadAt": "2026-10-25T07:07:36.569Z"
-  },
-  {
-    "id": "d02c0fcc4326aa2373c0c9e18355105391fc60e21d0381a51b1eb1dbc4694c3d",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/a875dfdd-9690-4e54-9f4b-e9f70094a60e?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer - Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-27T17:30:31.513Z",
-    "sourceHash": "d02c0fcc4326aa2373c0c9e18355105391fc60e21d0381a51b1eb1dbc4694c3d",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-d02c0fcc",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "e0eb3a9b7a1b0170ddb8d2f2ffb4ab6af6d1ac7b996d7299b561f5db264b4e97",
-    "title": "Staff Software Engineer, Front End",
-    "applyUrl": "https://job-boards.greenhouse.io/tebra?error=true",
-    "description": "About the job\n\nTebra only initiates contact with candidates via email from an official Tebra email address (@tebra.com, @patientpop.com, or @kareo.com) or through our applicant tracking system, Greenhouse. We will only ask you to provide sensitive personal information through our official application portal - not via social media or text message. We do not conduct interviews via instant messaging.\n\nAbout The Role\n\nAs a Staff Software Engineer, Front End, you will take on a critical technical leadership role, tackling meaningful, real-world challenges for healthcare providers. Your primary mission is to lead the architectural direction for our most ambitious, large-scale UI initiatives. We are counting on your expertise to guide this technical transformation, championing a customer-first mindset while making the thoughtful, pragmatic decisions that ensure long-term technical health. Concurrently, you will be a key pioneer in integrating AI into our products, shaping and building the new, intelligent user experiences that will define our next chapter.\n\nYour Area of Focus\n\n\nOwn a product end-to-end from defining the problem we should solve to meet our OKRs to designing, building, shipping, and operating the solution.\nAct as a key technical partner for Product Management, co-owning the roadmap, identifying key risks, and surfacing new engineering-led opportunities.\nRapidly form hypotheses based on data and iterate quickly to find tactics that deliver the biggest impact. Rinse and repeat.\nFocus on what’s right, not who. Solicit feedback, learn, teach, and give candid feedback to grow and improve together. Continuously.\nArchitect & code frameworks that can be leveraged by the team.\nInvest in technical foundations to accelerate our shipping rhythm. Ship products worthy of recognition.\nChampion the integration of AI tools (like coding assistants) into our daily development lifecycle to boost team velocity, improve code quality, and streamline testing.\n\n\nYour Professional Qualifications\n\n\n8+ years of software development experience including building production-grade web applications using React, Vue, Angular, or Material UI.\nMastery in utilizing REST/GraphQL APIs efficiently, influencing the shape of APIs where necessary.\nIn-depth knowledge of JavaScript/TypeScript, CSS, NodeJS, and the tooling ecosystem (NPM, Yarn, Babel, Jest, Cypress) to the extent you can describe its limitations and tradeoffs.\nDeep understanding of the tradeoffs between static generation, server-side rendering, and client-side rendering.\nExceptional level of engineering fundamentals including a strong grasp of data structures, caching strategies, and asynchronous programming (promises, futures, callbacks).\nUnderstanding and experience with monorepo environments and microfrontend architecture.\nLed and shipped large-scale projects from conception to production including post-launch support involving multiple teams.\nHave development experience working with LLMs, AI-driven UX, or agentic workflows.\nDesire to blaze the trail on less-glorious engineering tasks that are important to the business.\nConstructively dissatisfied with the status quo.\nComfortable working on problems that do not have well defined requirements.\nExperience building and mentoring software engineering teams.\nCan drive difficult engineering discussions with the team and present a menu of options to management.\nAble to communicate effectively with both technical and non-technical audiences.\nAbility to partner with product management to develop requirements.\nWell versed at recognizing project risks and opportunities.\nAble to make build vs. buy software decisions.\nAble to look beyond software best practices to make tough technical decisions that are tailored to business needs.\nFamiliarity with query and analytical tools such as SQL, Google Analytics and FullStory.\n\n\n (For Recruiter use only) \n\nIn compliance with California's pay transparency laws, the compensation range for this position will be provided and may include an hourly rate, annual salary, or On-Target Earnings (OTE), depending on the nature of the role. The specific compensation structure and detailed range will be discussed with qualified candidates during the initial talent screen.\n\nRemote Pay Range: $169,500 USD - $189,750 USD\n\nAbout Tebra\n\nTebra is the only all-in-one EHR+ platform built exclusively for independent healthcare practices. Designed to replace the clunky, fragmented tools built for corporate systems, Tebra connects EHR software, billing, automation, telehealth solution, and marketing - so providers can spend less time on admin and more time with patients. More than 42,000 private practices trust Tebra to streamline operations, increase revenue, and reduce burnout - helping clinicians leave work on time and rediscover their purpose. Learn more at www.tebra.com.\n\nOur ValuesStart with the Customer \n\nWe get to know our customers - and their patients - and look at the world through their lens.\n\nKeep It Simple\n\nHealthcare is too complex. We aim to simplify it for everyone.\n\nStay Entrepreneurial \n\nWe reject the status quo and solve problems with creativity, perseverance, and a bias to action.\n\nBetter Together\n\nWe are diverse, humble, and collaborative. We put the team first and win together.\n\nCelebrate Success\n\nLife is short and joy is underrated. We take time to have fun and celebrate success.\n\nPerks & Benefits\n\nUnited States: In addition to our healthcare benefits, we also offer amazing perks! Need work from home basics? We offer a discount through Dell! We also offer a number of resources to help you keep your mind and body healthy. Check out Gympass for a great workout, or TelusEmployee Assistance Program to find mental health resources, along with other resources for everyday occurrences.\n\nCosta Rica: To assist with all of life’s needs, Tebra also offers a wellness and childcare subsidy and a University/Education discount! We also offer a number of resources to help you keep your mind and body healthy. Check out Gympass for access to health and fitness apps, or Telus Employee Assistance Program to find mental health resources, along with other resources for everyday occurrences.\n\nCompliance & Privacy Disclosures\n\nNOTE: Tebra is an equal opportunity employer. All applicants will be considered for employment without attention to age, race, color, religion, sex, sexual orientation, gender identity, national origin, veteran or disability status.\n\nCalifornia residents who apply or are recruited for a job with us: please carefully review our California-specific Privacy Notice under the California Consumer Protection Act here: https://www.tebra.com/privacy-policy/california-supplemental-notice/\n\nIf you would like to report a fraudulent Tebra job posting, please contact us at talentacquisition@tebra.com and consider reporting your experience to the FBI's Internet Crime Complaint Center or the Better Business Bureau to help keep others safe online, too.\n\nAs part of our commitment to a fair and efficient hiring process, Tebra utilizes BrightHire, an interview intelligence platform, for our phone and video screenings. This technology records and transcribes interviews to help us ensure consistency, reduce bias, and make more informed hiring decisions. By applying for this position, you acknowledge that your interview may be recorded.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-27T17:30:12.252Z",
-    "sourceHash": "e0eb3a9b7a1b0170ddb8d2f2ffb4ab6af6d1ac7b996d7299b561f5db264b4e97",
-    "company": {
-      "id": "tebra",
-      "name": "Tebra",
-      "logoUrl": "https://logo.clearbit.com/tebra.com",
-      "industry": "Technology",
-      "website": "https://tebra.com"
-    },
-    "slug": "staff-software-engineer-front-end-tebra-e0eb3a9b",
-    "aiTags": {
-      "stack": [
-        "react",
-        "vue",
-        "angular",
-        "typescript",
-        "javascript",
-        "css",
-        "less",
-        "graphql",
-        "cypress",
-        "jest"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "principal",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "df6184940217784c5d12f6bffc3ddaa414ffea29257e89ea8ea5ec89b0d6526d",
-    "title": "Senior Frontend Engineer",
-    "applyUrl": "https://job-boards.greenhouse.io/gitlab/jobs/8826920002?lever-origin=applied&lever-source=LINKEDIN",
-    "description": "About the job\n\nGitLab is the intelligent orchestration platform for DevSecOps. GitLab enables organizations to increase developer productivity, improve operational efficiency, reduce security and compliance risk, and accelerate digital transformation. More than 50 million registered users and more than 50% of the Fortune 100* trust GitLab to ship better, more secure software faster.\n\nThe same principles built into our products are reflected in how our team works: we embrace AI as a core productivity multiplier, with all team members expected to incorporate AI into their daily workflows to drive efficiency, innovation, and impact. GitLab is where careers accelerate, innovation flourishes, and every voice is valued. Our high-performance culture is driven by our values and continuous knowledge exchange, enabling our team members to reach their full potential while collaborating with industry leaders to solve complex problems. Co-create the future with us as we build technology that transforms how the world develops software.\n\n\nFortune 500® is a registered trademark of Fortune Media IP Limited, used under license. Claim based on GitLab data. Fortune 100 refers to the top 20% ranked companies in the 2025 Fortune 500 list, published in June 2025. Fortune and Fortune Media IP Limited are not affiliated with, and do not endorse products or services of GitLab.\n\n\nSenior Frontend Engineer\n\nAn overview of this role\n\nAs a Senior Frontend Engineer, you'll solve high-scope frontend problems and influence your team's technical and product direction. You'll ship moderately sized features with minimal guidance, improve quality and performance, mentor other engineers, and help establish standards for a high-scale web environment. You'll partner across product, design, backend, and frontend to make sound trade-offs, communicate clearly, and improve how the team delivers software.\n\nThis is an opportunity to shape product experiences and frontend architecture for a global platform while helping define how modern frontend teams use agentic artificial intelligence. You'll apply artificial intelligence-assisted engineering workflows thoughtfully and help create trustworthy user experiences that incorporate artificial intelligence responsibly in a remote-first, asynchronous organization.\n\nWhat you’ll do\n\n\nDesign and ship moderately sized frontend features and improvements with minimal guidance, making pragmatic architectural choices.\nTurn ambiguous customer and product needs into clear technical plans and intuitive, accessible experiences.\nAdvocate for product quality, security, accessibility, performance, maintainability, and operational readiness throughout the development lifecycle.\nEstablish and improve practices for frontend architecture, styling, component design, testing, observability, maintainable code, and thoughtful use of artificial intelligence and agentic tools in production engineering work.\nMentor Associate and Intermediate Engineers, share knowledge, remove technical blockers, and improve team delivery practices.\nDiagnose and prevent frontend performance and reliability issues at scale using observability and production signals, and participate in incident response or on-call responsibilities under your team's ownership model.\nDesign or review independently buildable frontend surfaces and explicit contracts for data, events, authorization, feature flags, error handling, testing, and performance expectations.\nCollaborate with product, design, backend, quality, security, and other teams to deliver cohesive customer outcomes.\n\n\nWhat you’ll bring\n\n\nExperience applying frontend architecture, browser behavior, testing, accessibility, performance, and maintainability practices in a complex product or platform environment.\nExperience designing or evolving modular frontend boundaries, independently buildable surfaces, component systems, or migration-safe architectures.\nExperience making pragmatic trade-offs with product and design partners and turning complex requirements into clear user experiences.\nThe ability to lead through technical judgment, collaboration, and clear written communication rather than formal authority.\nExperience mentoring engineers and improving team practices through code review, design review, documentation, or hands-on collaboration.\nThe ability to work effectively in a remote, asynchronous organization by managing priorities, creating clarity, and communicating decisions in writing.\nPractical experience integrating artificial intelligence into a feature, workflow, or engineering process, or evaluating its reliability, security, privacy, and appropriate human oversight.\nHelpful, but not required: experience with Vue, React, Angular, TypeScript, or JavaScript; PostgreSQL, Redis, or object storage; representational state transfer or GraphQL; Kubernetes, Google Kubernetes Engine, Docker, or Google Cloud Platform; Prometheus or Sentry; and Git, GitLab Runner, or GitLab continuous integration and continuous delivery.\n\n\nAbout The Team\n\nWe own core repository capabilities, from Git command-line operations to web-based code exploration. Our roadmap includes feature and platform development, improvements to existing capabilities, maintainability, accessibility, performance, and workflows for teams using AI-assisted development tools.\n\nHow GitLab Supports Full-Time Employees\n\n\nBenefits to support your health, finances, and well-being\nFlexible Paid Time Off \nTeam Member Resource Groups\nEquity Compensation & Employee Stock Purchase Plan\nGrowth and Development Fund\nParental Leave \n\n\nPlease note that we welcome interest from candidates with varying levels of experience; many successful candidates do not meet every single requirement. Additionally, studies have shown that people from underrepresented groups are less likely to apply to a job unless they meet every single qualification. If you're excited about this role, please apply and allow our recruiters to assess your application.\n\nCountry Hiring Guidelines: GitLab hires new team members in countries around the world. All of our roles are remote, however some roles may carry specific location-based eligibility requirements. Our Talent Acquisition team can help answer any questions about location after starting the recruiting process.\n\nPrivacy Policy: Please review our Recruitment Privacy Policy. Your privacy is important to us.\n\nGitLab is proud to be an equal opportunity workplace and is an affirmative action employer. GitLab’s policies and practices relating to recruitment, employment, career development and advancement, promotion, and retirement are based solely on merit, regardless of race, color, religion, ancestry, sex (including pregnancy, lactation, sexual orientation, gender identity, or gender expression), national origin, age, citizenship, marital status, mental or physical disability, genetic information (including family medical history), discharge status from the military, protected veteran status (which includes disabled veterans, recently separated veterans, active duty wartime or campaign badge veterans, and Armed Forces service medal veterans), or any other basis protected by law. GitLab will not tolerate discrimination or harassment based on any of these characteristics. See also GitLab’s EEO Policy and EEO is the Law. If you have a disability or special need that requires accommodation, please let us know during the recruiting process.",
-    "location": "Remote - India",
-    "country": "India",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-27T16:58:00.686Z",
-    "sourceHash": "df6184940217784c5d12f6bffc3ddaa414ffea29257e89ea8ea5ec89b0d6526d",
-    "company": {
-      "id": "gitlab",
-      "name": "GitLab",
-      "logoUrl": "https://logo.clearbit.com/gitlab.com",
-      "industry": "Technology",
-      "website": "https://gitlab.com"
-    },
-    "slug": "senior-frontend-engineer-gitlab-df618494",
-    "aiTags": {
-      "stack": [
-        "react",
-        "vue",
-        "angular",
-        "typescript",
-        "javascript",
-        "less",
-        "graphql",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "India"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "c7fac406d12c336c2e6ee98e9af188923c53454751ff85227ae4785e87861b85",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/a7f2d30f-63c8-4f0c-81aa-6329fec6e65c?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nSenior Software Engineer\n\nJob Type: Contractor (:15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (:30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24–48 hours of completing onboarding.",
-    "location": "Remote - Canada",
-    "country": "Canada",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-27T16:44:44.469Z",
-    "sourceHash": "c7fac406d12c336c2e6ee98e9af188923c53454751ff85227ae4785e87861b85",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-developer-remote-yo-ai-labs-c7fac406",
-    "aiTags": {
-      "stack": [
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Canada"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "47273dc5544a74fdd5edf3a6dd5748bd5053dd542ea1b11529be6d73e90ee9b4",
-    "title": "Frontend Developer - Remote",
-    "applyUrl": "https://www.executiveplacements.com/JF/Frontend-Developer---Remote-jobs-in-Seattle-f144048b1.asp?sid=linkedin",
-    "description": "About the job\n\nJob Description\n\nJob Description\n\nSenior Software Engineer\n\nJob Type: Contractor (~15 hours/week)\n\nLocation: Remote\n\nJob Summary\n\nWe are seeking experienced Senior Software Engineers to support an AI training project by creating reinforcement learning environments that evaluate AI models on complex software engineering tasks using Model Context Protocol (MCP) tools.\n\nYou will design reproducible environments, deterministic verification, and reference solutions for tasks such as bug fixing, feature implementation, codebase refactoring, and performance optimization. No prior AI experience is required.\n\nKey Responsibilities\n\n\nCreate reinforcement learning environments for software engineering tasks.\nDesign tasks involving bug fixing, feature development, refactoring, and performance optimization.\nBuild deterministic verification systems and golden reference solutions.\nEvaluate AI agents' ability to reason through complex codebases and use MCP tools effectively.\nDevelop realistic, reproducible software engineering scenarios.\nEnsure tasks accurately measure coding ability, problem-solving, and tool usage.\nDocument solutions and provide clear technical feedback.\n\n\nRequired Skills\n\n\nStrong proficiency in Python 3, Java, Rust, C++, or TypeScript.\nStrong understanding of algorithms and data structures.\nExperience with bug fixing and debugging complex software issues.\nProven experience in feature implementation and codebase refactoring.\nStrong knowledge of performance optimization and tuning.\nExcellent written and verbal communication.\nStrong attention to detail.\n\n\nPreferred Qualifications\n\n\nExperience working with large-scale or distributed codebases.\nFamiliarity with AI/ML systems is a plus but not required.\nExperience with rigorous code reviews and software engineering best practices.\nExperience working effectively in remote or cross-functional teams.\n\n\nHiring Process\n\n\nSubmit an application and screening questions.\nComplete an AI interview (~30 minutes).\nComplete a technical assessment, if required.\nHiring Manager review.\n\n\nCompensation\n\nCompensation is output-based, with payment provided per task that meets project specifications. Minimum weekly submission requirements may apply.\n\nAvailability\n\nSelected experts should be prepared to begin their first tasks within 24-48 hours of completing onboarding.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-27T04:56:58.638Z",
-    "sourceHash": "47273dc5544a74fdd5edf3a6dd5748bd5053dd542ea1b11529be6d73e90ee9b4",
-    "company": {
-      "id": "executiveplacementscom",
-      "name": "ExecutivePlacements.com",
-      "logoUrl": "https://logo.clearbit.com/executiveplacementscom.com",
-      "industry": "Technology",
-      "website": "https://executiveplacementscom.com"
-    },
-    "slug": "frontend-developer-remote-executiveplacements-com-47273dc5",
-    "aiTags": {
-      "stack": [
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    },
-    "isDead": true,
-    "deadAt": "2026-10-25T07:07:36.569Z"
-  },
-  {
-    "id": "701bf3187b7d3a733606bbcd02a31fd91adb81853d352667dc08bc28a4a9acde",
-    "title": "Staff Frontend Engineer",
-    "applyUrl": "https://jobs.ashbyhq.com/bunch/27056107-4602-4f63-8c91-af2ffe88eb04/application?utm_source=kPWQ5dA5nB",
-    "description": "About the job\n\nbunch is building the backbone of private markets. We are enabling next-gen fund operations with one integrated system that combines secure data infrastructure, AI-powered workflows and expert fund services. If you value ownership, growth through real responsibility, and working with a thoughtful, ambitious team, this role might be for you.\n\nYour Role\n\nAs a Staff Frontend Engineer at bunch, you will shape the architecture, quality, and developer experience of the product surfaces our customers and internal teams rely on every day. You will work across product teams to make our frontend systems scalable, reliable, accessible, and fast - while helping engineers ship with clarity and confidence.\n\nThis is not only a delivery role. Your decisions will influence how frontend engineering at bunch evolves: the standards we adopt, the patterns we reuse, the quality bar we hold, and the way product, design, and engineering collaborate to build excellent user experiences.\n\nHow The Role Contributes To Our Vision\n\nbunch is building the backbone of private markets, combining exceptional expertise, operational excellence, and frictionless technology. Our platform enables funds and private investors to seamlessly and securely set up and manage their investment entities.\n\nAs a Staff Frontend Engineer, you will play a pivotal role in turning complex workflows into intuitive, robust, and scalable product experiences. You will help ensure our frontend foundation enables rapid delivery across teams while maintaining high standards for usability, performance, accessibility, and maintainability.\n\nTop priorities\n\n\nLead our migration from Svelte to React. Hold the architectural picture across both stacks, sequence the work against product delivery, and land it without stalling teams. \nMaintain and evolve our design system, together with the frontend guild, so product teams ship consistent, accessible UI faster. \nSupport and guide frontend initiatives across teams, with the frontend guild - application architecture, performance, testing strategy, developer experience, and technical debt reduction - from diagnosis through measurable delivery. \nBe the bar raiser for UX and UI quality, raising the standard through design reviews, reusable patterns, mentoring, and thoughtful technical writing. \nAdvance how we build with AI - find where agentic tooling genuinely improves engineering practice, and shape the codebase (module boundaries, API contracts, documentation) so it works well for people and agents alike. \n\n\nYour first 90 days\n\n\n30 days: map the frontend architecture, product domains, design system, team workflows, and the main bottlenecks affecting delivery and quality. \n60 days: publish a structured problem analysis and proposal for one cross-team frontend initiative with clear trade-offs, stakeholders, and success measures. \n90 days: lead a systemic improvement from kickoff to measurable progress across teams, while helping Senior Engineers grow through collaboration, reviews, and shared ownership. \n\n\nAbout you\n\n\nTrack record - You have already operated at Staff scope, with or without the title, and have shipped systemic frontend or product-engineering improvements across multiple teams. People listen to you because of what you have delivered, how clearly you think, and how effectively you collaborate. \nFrontend craft - Deep expertise in modern frontend engineering, with strong command of TypeScript, component architecture, state management, design systems, accessibility, performance, testing, and maintainable application architecture. \nAI-native practice - You use AI coding tools daily and have gone past autocomplete into agentic workflows. You have a considered view on where they genuinely help, where they don't, and what a codebase needs to be a good place to work in with agents. \nProduct judgment - You care about the user experience as much as the technical solution. You can translate ambiguous workflows and business constraints into pragmatic, elegant product experiences. \nSystems thinking - You are comfortable reasoning across frontend, backend, APIs, infrastructure, observability, security, and compliance when the problem requires it. \nOperating style - You think in quarters and years, not only sprints. You drive cross-team change through credibility, clear writing, architectural reasoning, and strong stakeholder alignment - not through authority. \nCollaborative Leadership: A proactive relationship-builder who can set technical direction and influence without formal authority, manage diverse stakeholders and build alignment on difficult technical decisions, while mentoring engineers. \nLanguage - Fluent English, written and spoken. You can make complex technical decisions legible to engineers, product partners, design partners, and leadership alike. \n\n\nOur tech stack\n\n\nFrontend: TypeScript, React, Svelte - we are consolidating on React, and this role leads that migration. \nBackend: TypeScript, Node.js, Nest.js\nDatabase: MySQL\nInfrastructure: Kubernetes on AWS\nSource Control & CI/CD: GitHub\nAuthentication: FusionAuth, Okta\nInternal Tools: Retool\nMessaging: Twilio, SendGrid\nForms: Tally\n\n\nWorkplace & Benefits\n\n\nCustomizable benefits package covering wellbeing, sport, mobility, food, and more\n28 days of vacation, plus 2 company days and local public holidays\nRemote setup, contract via EoR. \nA great tech and work setup\nWork with a diverse team of 130+ bunchies from 40+ countries, with leaders who are best-in-class in their domains\n\n\nHiring process\n\n\nInitial screening with Talent Acquisition (30 min): get acquainted with bunch, explore your motivation, and understand whether what we offer matches what you are looking for. \nHiring Manager call - Engineering (60 min): a conversation with Engineering leadership focused on your scope, frontend leadership, product-engineering mindset, and how you diagnose and lead systemic improvements. \nTechnical Interview (60 min): a hands-on technical conversation focused on frontend engineering craft, TypeScript, component design, maintainability, testing, and pragmatic problem-solving. \nTechnical Interview - System Design (60 min): a frontend/system design conversation focused on architecture, data flow, performance, accessibility, reliability, and trade-offs in complex product systems. \nVP Product conversation (45 min): a cross-functional conversation focused on product thinking, customer empathy, business acumen, and how you partner with Product and Design on ambiguous problems. \nFinal round (45 min): a closing conversation to align on what we heard across the process, answer remaining questions, and discuss expectations for the role and trial period. \n\n\nAbout Bunch\n\nbunch is building the operating infrastructure for the next generation of private markets. We combine AI-powered automation with deep regulatory expertise to replace fragmented spreadsheets and manual processes with one integrated platform across the fund lifecycle, purpose-built for private markets heading toward $32 trillion in Assets Under Management.\n\nWe've 4x our ARR in 2025, crossed 150 fund managers and 12,000 LPs on the platform, and just closed our $35M Series B in May 2026. We're looking for ambitious people who want real ownership of hard problems, and who care about building infrastructure that actually matters to the people using it.\n\n____\n\nAt bunch, we're committed to an inclusive environment where diversity is valued and celebrated. We provide equal opportunities to all qualified applicants.\n\nWe process personal data in line with applicable laws (including GDPR). See our Privacy Policy for details on your rights and how to reach us.",
-    "location": "Remote - Spain",
-    "country": "Spain",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-27T04:52:24.661Z",
-    "sourceHash": "701bf3187b7d3a733606bbcd02a31fd91adb81853d352667dc08bc28a4a9acde",
-    "company": {
-      "id": "bunch",
-      "name": "bunch",
-      "logoUrl": "https://logo.clearbit.com/bunch.com",
-      "industry": "Technology",
-      "website": "https://bunch.com"
-    },
-    "slug": "staff-frontend-engineer-bunch-701bf318",
-    "aiTags": {
-      "stack": [
-        "react",
-        "svelte",
-        "typescript",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Spain"
-      ],
-      "seniority": "principal",
-      "employmentType": "contract"
-    }
-  },
-  {
-    "id": "20a91a2cb9588c5e32c03c8881609b637c50f97cc03e48691f5fc630d39ce6e4",
-    "title": "Frontend Developer",
-    "applyUrl": "https://www.hirecrap.com/job-description-ina/15820_4466646439?src=LinkedIn",
-    "description": "About the job\n\nAbout The Company\n\nNavam Intellitech specializes in developing innovative educational technology solutions aimed at transforming classroom learning experiences. Their flagship product, Intellishala, is an AI-powered school platform tailored for CBSE classrooms from Grades 9 to 12. This platform offers an integrated environment that combines teaching, assessment, and learning tracking, designed to streamline administrative tasks and enhance student engagement. Features such as an NCERT-grounded AI tutor, a searchable question bank, automated test creation and scoring, and comprehensive class analytics make Intellishala a comprehensive tool for modern education. The platform also provides dedicated portals for teachers and students that align with real classroom workflows, moving beyond traditional administrative dashboards. Already operational in numerous CBSE schools, Intellishala continues to expand its reach, fostering innovation in AI-driven education and supporting educators in delivering personalized learning experiences.\n\nAbout The Role\n\nWe are seeking a passionate and skilled Frontend Developer to join Navam Intellitech on a full-time basis, working remotely from India. As the sole frontend developer at an early-stage company, you will work directly with the founder and play a critical role in shaping the user interface and experience of the Intellishala platform. Your primary responsibility will be to develop and maintain the web portal, translating Figma designs into responsive, accessible, and high-quality user interfaces. You will also contribute to refining existing workflows based on feedback from teachers actively using the platform in their classrooms. Additionally, you will be involved in building and maintaining the marketing website and collaborating on the design and development of the upcoming mobile application. Your work will involve shipping small, manageable pull requests, maintaining clear documentation, and ensuring the frontend codebase remains scalable and maintainable as the product evolves.\n\nQualifications\n\n\n1–3 years of hands-on experience building production-level user interfaces using React and TypeScript.\nProficiency with Next.js (using the App Router) and Tailwind CSS for rapid, responsive UI development.\nExperience with React Native or Expo, or a strong desire to learn mobile development quickly.\nAbility to implement Figma designs accurately, including responsive layouts and adherence to accessibility standards.\nWorking knowledge of Git, including managing pull requests and participating in code reviews.\nComfortable consuming RESTful APIs; familiarity with tools like Supabase or Prisma is a plus.\nAbility to work independently, communicate effectively in writing, and proactively identify and address potential issues.\nA degree in Computer Science, Software Engineering, or a related field, or equivalent practical experience (a compelling portfolio is highly valued).\nExperience in the ed-tech sector or publishing apps on the Play Store or App Store is an advantage.\n\n\nResponsibilities\n\n\nConvert Figma UI designs into fully functional, responsive, and accessible web interfaces.\nMaintain and enhance the existing Intellishala web portal, ensuring a seamless user experience for teachers and students.\nCollaborate closely with the founder and product team to refine workflows based on user feedback.\nContribute to the development and maintenance of the marketing website, ensuring consistent branding and messaging.\nAssist in designing and building the mobile application from early stages, aligning with web platform standards.\nWrite clean, well-documented code and participate in code reviews to uphold quality standards.\nStay updated with the latest frontend development trends and best practices, implementing improvements as needed.\nProactively identify potential technical challenges and communicate them effectively to the team.\n\n\nBenefits\n\nJoining Navam Intellitech offers a dynamic work environment with the opportunity to impact the future of education technology. You will work closely with a passionate team dedicated to innovation in AI-driven learning. The compensation package ranges from ₹6 to 10 LPA, commensurate with experience and skills. Additionally, you will have flexible working hours, the convenience of remote work from anywhere in India, and opportunities for professional growth and development. Navam Intellitech supports a collaborative culture that encourages continuous learning, creativity, and open communication. As part of our team, you will contribute to meaningful projects that aim to improve educational outcomes and empower teachers and students alike.\n\nEqual Opportunity\n\nNavam Intellitech is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate based on race, religion, gender, sexual orientation, age, disability, or any other protected characteristic. We believe that diverse perspectives foster innovation and are essential to our success. We encourage individuals from all backgrounds to apply and join us in our mission to revolutionize education through technology.\n\n\n\n\n\nDesired Skills and Experience\n\nReact, TypeScript, UI/UX Design, Responsive Design, Web Development, Accessibility",
-    "location": "Remote - India",
-    "country": "India",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-27T04:35:01.340Z",
-    "sourceHash": "20a91a2cb9588c5e32c03c8881609b637c50f97cc03e48691f5fc630d39ce6e4",
-    "company": {
-      "id": "taskverse",
-      "name": "TaskVerse",
-      "logoUrl": "https://logo.clearbit.com/taskverse.com",
-      "industry": "Technology",
-      "website": "https://taskverse.com"
-    },
-    "slug": "frontend-developer-taskverse-20a91a2c",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "css",
-        "tailwind",
-        "figma",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "India"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "25a9d1dcfe5808272487292fbea64833d9a4b4a9c28d051f52f87b3cbb795933",
-    "title": "Senior Frontend Engineer",
-    "applyUrl": "https://www.terminal.io/engineers/job-openings/8295?gh_src=627f00244us",
-    "description": "About the job\n\nAbout The Role\n\nVector builds mobile and web technology that makes freight move faster. Our platform is used by warehouses, distribution centers, and carriers to streamline check-ins, appointments, dock scheduling, and driver workflows. About the Role In your role as a Senior Software Engineer you will work with others to design, develop, and implement any changes, bug fixes, and new features to our web application used by our customers such as FedEx, Home Depot, Coca Cola, Sprouts, Clorox, Kraft Heinz and many others. You'll be working alongside team members in engineering, design and product to build and improve the features our customers rely on every day. Our web app is built with React and TypeScript.\n\nWhat You’ll Do\n\n\nWork on a lean, experienced engineering team and participate in all aspects of the development process\nActively participate in architecture discussions\nDevelop new features and modify existing features\nConduct code reviews and collaborate with other engineers\nContinuously look for ways to improve our code base and evaluate new technologies\n\n\nWhat You’ll Bring\n\n\nDemonstrated professional engineering experience building complex, commercially shipped software products\nStrong understanding, building and debugging of scalable, high performance web applications built with reusability and componentization in mind\nProficiency with Javascript frameworks such as React and Angular\nAdvanced level knowledge of TypeScript/JavaScript, CSS, and HTML5\nExperience building front end components with React using modular architecture\nKnowledge of state management frameworks, such as Redux or Flux\nStrong critical reasoning and problem solving abilities\nExcellent communication and collaboration skills\nBachelor’s degree in Engineering, Computer Science or a related field preferred You should be able to demonstrate superior understanding of CS fundamentals *For applicants in Canada, expected salary range is: CAD 147,155 - 254,691/year *This job posting exists to fill a vacancy.",
-    "location": "Remote - Canada",
-    "country": "Canada",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-27T04:27:15.749Z",
-    "sourceHash": "25a9d1dcfe5808272487292fbea64833d9a4b4a9c28d051f52f87b3cbb795933",
-    "company": {
-      "id": "terminal",
-      "name": "Terminal",
-      "logoUrl": "https://logo.clearbit.com/terminal.com",
-      "industry": "Technology",
-      "website": "https://terminal.com"
-    },
-    "slug": "senior-frontend-engineer-terminal-25a9d1dc",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript",
-        "javascript",
-        "css",
-        "redux",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Canada"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    },
-    "isDead": true,
-    "deadAt": "2026-10-25T07:07:36.569Z"
-  },
-  {
-    "id": "3b424a144ed0dd66c8f2dc07ad9362f3575d68aeacb2c2f29ea7e424cf90f6b2",
-    "title": "Associate Engineer (Front End)",
-    "applyUrl": "https://jobs.ashbyhq.com/xero/ea1597a0-aa1c-43e4-9195-b279f003fe08/application?utm_source=XeroLinkedInJobSlots",
-    "description": "About the job\n\nThe role\n\nAs an Associate Engineer, you will help supercharge small businesses by writing clean, reliable code and delivering well-defined features that directly support our product outcomes. Working alongside senior engineers, you will solve day-to-day technical challenges, design tests to ensure high quality, and debug code using logs and dashboards to maintain system health.\n\nBy bringing curiosity and a data-driven mindset, you will help keep our systems robust and aligned with customer needs. You will take ownership of your work, proactively share knowledge, and contribute to a supportive, inclusive environment where continuous learning drives success.\n\nThe Team & How They Connect\n\nOur engineering teams work collaboratively to build and maintain scalable technology for small businesses. We value open communication, thoughtful discussion, and working together across functions to remove blockers and solve problems efficiently.\n\nThe team is currently working on\n\n\nDeveloping front end features using HTML, CSS, and modern JavaScript (ES6+) with React\nIntegrating front end applications with back end REST APIs\nUtilising modern delivery and collaboration practices such as pair programming and continuous improvement\nExploring artificial intelligence tools to increase efficiency and automate routine tasks\n\n\nWhere And How You Can Work\n\nWe support a flexible working model that empowers you to balance your professional and personal life. You will have the option to work in a hybrid capacity, combining the focus of remote work with the collaboration of our office spaces and team boost days to foster connection and alignment.\n\nHere are some of the things we are looking for\n\n\nHands-on experience building web applications using modern JavaScript, HTML, and CSS\nPractical exposure to React and an understanding of connecting front end interfaces to REST APIs\nComfort navigating version control using Git and participating in pull request code reviews\nA sharp eye for UI/UX details, quality standards, and confidence debugging code locally\nCuriosity about leveraging AI tools to streamline everyday workflows and tasks\nFamiliarity with TypeScript, testing frameworks (like Jest or Cypress), component libraries, or web accessibility principles is a plus\n\n\nApply even if your experience isn't a perfect match! At Xero, we hire based on your skills, passion, and the unique perspective you can bring to enhance our culture and team.\n\nCompensation & Total Rewards\n\nAt Xero, we value the impact and skills you bring to the team. We believe in a Total Package philosophy - ensuring your value is recognised through a holistic lens that includes base salary, performance incentives, and world-class benefits.\n\nThe expected base salary range for this role is $109,100 - $136,400 CAD",
-    "location": "Remote - Canada",
-    "country": "Canada",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-27T04:27:09.471Z",
-    "sourceHash": "3b424a144ed0dd66c8f2dc07ad9362f3575d68aeacb2c2f29ea7e424cf90f6b2",
-    "company": {
-      "id": "xero",
-      "name": "Xero",
-      "logoUrl": "https://logo.clearbit.com/xero.com",
-      "industry": "Technology",
-      "website": "https://xero.com"
-    },
-    "slug": "associate-engineer-front-end-xero-3b424a14",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "css",
-        "cypress",
-        "jest",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Canada"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
   }
 ]
