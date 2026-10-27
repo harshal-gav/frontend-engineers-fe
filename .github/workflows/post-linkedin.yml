@@ -1,9 +1,9 @@
-name: Post to LinkedIn (Jobs, Employer Ad & Referrals)
+name: Post to LinkedIn (Remote Frontend Jobs, Referrals & Employer Hiring)
 
 on:
   schedule:
-    # Run every 2 hours in a day
-    - cron: '0 */2 * * *'
+    # Run every hour
+    - cron: '0 * * * *'
   workflow_dispatch: {}  # Manual trigger for testing
 
 jobs:
@@ -26,7 +26,7 @@ jobs:
       - name: Install dependencies
         run: npm install dotenv
       
-      - name: Run LinkedIn Combined Auto-Poster (Jobs, Employers & Referrals)
+      - name: Run LinkedIn Auto-Poster (Remote Frontend Jobs, Referrals & Employers)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}

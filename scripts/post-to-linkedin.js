@@ -1,14 +1,21 @@
 #!/usr/bin/env node
 /**
- * Automated LinkedIn Combined Poster (Job Seekers + Employer Ads + Community Referrals)
+ * Automated LinkedIn Poster (Remote Frontend Jobs, Community Referrals & Employer Hiring)
  * 
- * Generates THREE distinct posts in a SINGLE Gemini AI prompt/API call:
- *   1. Remote Frontend Jobs & Referrals Post (all in one place for devs)
- *   2. Employer Hiring Post (promoting the $99/mo Unlimited Hiring Plan)
- *   3. Community Referral Contribution Post (free referral posting to support frontend devs)
+ * Generates a SINGLE high-converting LinkedIn post with:
+ *   - MANDATORY OPENING: The very first sentence MUST mention "Remote Frontend Developer jobs" and "FrontendEngineers.com".
+ *   - FRESHNESS & VARIETY: Dynamically cycles creative angles and themes so every post is distinct and unique.
+ *   - PRIMARY FOCUS (80%+): Verified Remote Frontend Developer Jobs (React, Next.js, Vue, TypeScript)
+ *   - MINIMAL FOCUS (10%): Direct Community Employee Referrals
+ *   - MINIMAL FOCUS (10%): Employer Hiring ($99/mo Unlimited Plan)
+ *   - EXACT 2 LINKS ONLY:
+ *       👉 Explore remote frontend jobs:
+ *       https://www.frontendengineers.com
+ *       👉 Get pro access for just $9/month:
+ *       https://www.frontendengineers.com/pricing
  * 
- * Then publishes ALL THREE posts to all configured LinkedIn accounts with rate-limit safe delays.
- * Runs on a schedule every 2 hours via GitHub Actions.
+ * Then publishes the single post to all configured LinkedIn accounts (Personal Profile and/or Company Page).
+ * Runs on a schedule every hour via GitHub Actions.
  * 
  * Environment variables required:
  *   GEMINI_API_KEY          - Google Gemini API key
@@ -17,7 +24,7 @@
  *   LINKEDIN_ORG_ID         - LinkedIn Organization URN ID (optional)
  * 
  * Flags:
- *   --dry-run    - Generate all three posts but don't publish to LinkedIn
+ *   --dry-run    - Generate the post but don't publish to LinkedIn
  * 
  * Usage:
  *   node scripts/post-to-linkedin.js
@@ -61,89 +68,122 @@ const GEMINI_MODELS = [
   'gemini-2.5-pro'
 ];
 
-// ─── Gemini AI Generation (Single Prompt for 3 Posts) ─────────
+// Creative rotating angles to guarantee distinct, varied posts on each run
+const CREATIVE_THEMES = [
+  {
+    name: 'Verified Quality & Zero Ghost Jobs',
+    angle: 'Focus on the relief and speed of browsing 100% verified, active frontend roles with zero ghost jobs, zero expired links, and direct application portals.',
+    hookTone: 'Energizing, refreshing, and action-oriented.'
+  },
+  {
+    name: 'Modern Tech Stack Deep Dive',
+    angle: 'Focus on high-demand modern frontend technologies - React, Next.js, TypeScript, Vue 3, and Angular - curated specifically for frontend engineers and UI architects.',
+    hookTone: 'Tech-enthusiast, forward-looking, and developer-centric.'
+  },
+  {
+    name: 'Worldwide Remote Freedom',
+    angle: 'Focus on location independence and transparent remote policies - Worldwide Remote, US, Europe/UK, LATAM, Canada, APAC - with no hidden hybrid surprises.',
+    hookTone: 'Empowering, global, and lifestyle-freedom oriented.'
+  },
+  {
+    name: 'Direct Employer Application Links',
+    angle: 'Focus on transparency and cutting out middlemen: every role links directly to official employer career portals with full specs and salary ranges where available.',
+    hookTone: 'Transparent, direct, and straightforward.'
+  },
+  {
+    name: 'Beating the ATS with Daily Alerts & Referrals',
+    angle: 'Focus on applying fast: daily tailored job alerts straight to inbox plus direct employee referrals to bypass automated filter traps and land interviews.',
+    hookTone: 'Strategic, competitive edge, and career advancement.'
+  },
+  {
+    name: 'High-Impact Startups & Global Tech Leaders',
+    angle: 'Focus on finding high-growth startup and enterprise frontend engineering roles that elevate your portfolio and compensation.',
+    hookTone: 'Ambitious, inspiring, and high-impact.'
+  }
+];
 
-async function generateThreePostsWithGemini() {
-  const prompt = `You are an expert social media strategist and B2B growth marketing manager for FrontendEngineers.com - the premier platform built exclusively for remote frontend developers.
+// ─── Gemini AI Generation (Single Post with Jobs as Dominant Focus) ─
 
-Generate THREE distinct, high-converting LinkedIn posts in this exact format with the exact delimiter tags:
+async function generatePostWithGemini() {
+  const theme = CREATIVE_THEMES[Math.floor(Math.random() * CREATIVE_THEMES.length)];
+  const randomSalt = Math.floor(Math.random() * 900000 + 100000);
 
-===JOB_POST_START===
-[Full text of Post 1 here]
-===JOB_POST_END===
+  const prompt = `You are an expert social media strategist and growth marketing lead for FrontendEngineers.com - the premier platform built exclusively for remote frontend developers.
 
-===EMPLOYER_POST_START===
-[Full text of Post 2 here]
-===EMPLOYER_POST_END===
-
-===REFERRAL_POST_START===
-[Full text of Post 3 here]
-===REFERRAL_POST_END===
-
----
-INSTRUCTIONS FOR POST 1 (Target: Remote Frontend Developers looking for verified jobs & referrals in one place):
-- POSITIVE TONE ONLY: Inspiring, uplifting, and empowering. No negative hooks like "Tired of..." or "Sick of...".
-- FIRST LINE REQUIREMENT: You MUST explicitly mention that developers can get "Remote Frontend Developer Jobs" and "Referrals" all in one place at "FrontendEngineers.com" in the VERY FIRST line of the post. Example: "Get verified remote frontend developer jobs and direct employee referrals all in one place at FrontendEngineers.com! 🚀"
-- CORE MESSAGE: Highlight that FrontendEngineers.com is the single destination where frontend developers can access verified remote job links AND direct employee referrals side-by-side. Emphasize:
-  1. 100% VERIFIED & DEDUPLICATED: Curated active frontend roles across React, Next.js, Vue, Angular, and TypeScript. Zero ghost jobs, zero expired listings, and zero dead links.
-  2. ACCURATE REMOTE LOCATIONS: Clear, transparent remote eligibility - Worldwide Remote, US, Europe/UK, LATAM, Canada, APAC - so developers never waste time applying to mislabeled hybrid roles.
-  3. DIRECT APPLICATION LINKS: Complete job specifications with direct links to official employer career portals.
-  4. COMMUNITY REFERRALS: Direct employee referrals from working frontend engineers to bypass automated ATS filters and get interviews faster.
-  5. DAILY TAILORED ALERTS: Fresh matching jobs delivered straight to your inbox daily.
-- USE LOTS OF EMOJIS: 🚀✨🔥💻🤝💼 (make it vibrant and eye-catching).
-- LINKS REQUIRED (format as plain text):
-  🔍 Find Remote Frontend Jobs & Referrals:
-  https://www.frontendengineers.com
-  🤝 Explore Community Referrals:
-  https://www.frontendengineers.com/referrals
-  ⚡ Unlock All Jobs & Referrals - $9/mo:
-  https://www.frontendengineers.com/pricing
-- ENGAGEMENT: Strong call to action asking them to comment their tech stack and repost to help their developer friends find jobs and referrals in one place.
-- HASHTAGS: 25-35 optimized hashtags (#FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #WebDev #JobReferrals #TechCareers, etc.).
-- LENGTH: 1000 - 1800 characters.
-
----
-INSTRUCTIONS FOR POST 2 (Target: Tech Recruiters, Startup Founders, Engineering Managers):
-- FIRST LINE HOOK: Must open with a high-impact statement about hiring remote frontend engineers for a flat $99/mo with zero per-post limits, and include "FrontendEngineers.com" in the first 2 lines. Example: "Hire top remote frontend engineers for a flat $99/mo with zero per-post limits on FrontendEngineers.com! 🚀"
-- PAIN POINT: 1-2 short punchy sentences highlighting that recruiting agencies charge 15-25% placement fees ($15,000-$25,000+ per hire), LinkedIn charges $300+ for a single job post, and generic job boards flood you with unqualified, non-technical resumes.
-- 4 BULLET POINTS WITH EMOJIS & REAL VALUE:
-  - 🎯 100% FRONTEND SPECIALIZED - Exclusively React, Next.js, Vue, Angular, and TypeScript developers. Zero backend, DevOps, or non-technical noise.
-  - 🚀 FEATURED & INSTANTLY INDEXED - Your role is featured at the top of the job board and indexed immediately for maximum visibility.
-  - 📩 DAILY DEVELOPER ALERTS - Included in daily job alert digests sent directly to active, subscribed remote frontend engineers.
-  - ⭐ UNLIMITED POSTINGS FOR $99/MO - Post 1 job or 50 roles. Flat $99/mo rate with zero per-post fees, no commissions, and cancel anytime.
-- CTA: "Post unlimited remote frontend developer jobs for a flat $99/mo. Cancel anytime."
-- LINK REQUIRED (format as plain text):
-  👇 Start posting unlimited jobs:
-  https://www.frontendengineers.com/employers/pricing
-- HASHTAGS: 5-8 hashtags like #Hiring #TechRecruitment #FrontendEngineers #Startups #RemoteHiring #EngineeringManagers.
-- LENGTH: 800 - 1500 characters.
+Generate a SINGLE high-converting LinkedIn post that combines remote frontend jobs, community employee referrals, and employer hiring, with DOMINANT, FULL FOCUS on helping developers land remote frontend developer jobs.
 
 ---
-INSTRUCTIONS FOR POST 3 (Target: Working Frontend Developers, Tech Leads & Engineers with referrals to give):
-- FIRST LINE HOOK: Must inspire frontend engineers to post their referrals for free to support and help fellow frontend developers, explicitly mentioning "FrontendEngineers.com" in the first 2 lines. Example: "Post your referral on FrontendEngineers.com to support remote frontend developers - it is 100% free and helps a fellow engineer get hired! 🤝"
-- CORE MESSAGE - SUPPORT & EMPOWER THE FRONTEND COMMUNITY:
-  1. POST YOUR REFERRAL TO SUPPORT REMOTE FRONTEND DEVELOPERS: If your company is hiring remote frontend engineers (React, Next.js, Vue, TypeScript), post your referral to help a fellow developer land an interview.
-  2. IT IS 100% FREE: No fees, no account required, no catch. Posting a referral is completely free to give back to the developer community.
-  3. BEAT CROWDED ATS QUEUES: In a competitive market where postings get flooded with 1,000+ applicants, an employee referral gives another developer a genuine shot at an interview. Pay it forward and support your peers.
-  4. FAST & SIMPLE: Takes less than 60 seconds to submit a referral on FrontendEngineers.com.
-- USE LOTS OF EMOJIS: 🤝❤️🚀🔥💼💡✨ (warm, community-spirited, and uplifting).
-- LINKS REQUIRED (format as plain text):
-  🤝 Post your referral for free to help fellow developers:
-  https://www.frontendengineers.com/referrals
-- ENGAGEMENT: "Does your company have an open frontend position? Post your referral link for free on FrontendEngineers.com or tag an engineer who can help!"
-- HASHTAGS: 15-25 targeted hashtags (#PayItForward #CommunitySupport #FrontendDeveloper #JobReferrals #TechCommunity #RemoteWork #ReactJS #WebDevelopment #SoftwareEngineering #DevelopersHelpingDevelopers).
-- LENGTH: 900 - 1600 characters.
+TODAY'S UNIQUE CREATIVE FOCUS (Use this to make this post completely fresh and distinct):
+- Focus Angle: ${theme.name}
+- Creative Direction: ${theme.angle}
+- Hook Style: ${theme.hookTone}
+- Random Seed Key: ${randomSalt}
+Every post generated MUST feel original, engaging, and different from previous posts in rhythm, storytelling, phrasing, and structure.
 
 ---
-CRITICAL RULES FOR ALL THREE POSTS:
-- NO MARKDOWN: Absolutely NO **bold**, NO *italics*, NO backticks.
-- NO PARENTHESES: DO NOT use parentheses anywhere in the text. LinkedIn API silently truncates posts at '('. Use dashes or commas instead.
-- Output ONLY the requested delimiters and posts, nothing else.`;
+MANDATORY OPENING REQUIREMENT (NON-NEGOTIABLE):
+The VERY FIRST line/sentence of the post MUST prominently mention BOTH:
+1. "Remote Frontend Developer jobs" (or "Remote Frontend Developer roles")
+2. The exact website name "FrontendEngineers.com"
+
+Examples of varied opening hooks (invent a fresh, unique variation; do not copy word-for-word):
+- "Looking for verified Remote Frontend Developer jobs? Discover active roles with direct employer links at FrontendEngineers.com! 🚀"
+- "Your search for top-tier Remote Frontend Developer jobs starts and ends at FrontendEngineers.com! ✨"
+- "Ready to land high-paying Remote Frontend Developer jobs? Explore 100% verified opportunities today on FrontendEngineers.com! 💻"
+- "Take your career global with curated Remote Frontend Developer jobs available right now on FrontendEngineers.com! ⚡"
+- "Skip the recruiter noise and find transparent Remote Frontend Developer jobs directly on FrontendEngineers.com! 🔥"
+
+---
+CONTENT & STRUCTURE REQUIREMENTS:
+
+1. OPENING (1-2 lines):
+- Start with the mandatory opening mentioning Remote Frontend Developer jobs and FrontendEngineers.com.
+- POSITIVE, EMPOWERING, AND INSPIRING TONE ONLY: No negative complaints like "Tired of..." or "Sick of...". Focus on excitement, career growth, and transparent opportunities.
+
+2. CORE SECTION - FULL FOCUS ON REMOTE FRONTEND DEVELOPER JOBS (75-80% of post):
+- Make this the clear highlight of the post with rich details, vibrant emojis, and genuine value:
+  • 100% VERIFIED & DEDUPLICATED: Exclusively curated frontend engineering roles across React, Next.js, Vue, Angular, and TypeScript. Zero ghost jobs, zero expired listings, and zero dead application links.
+  • ACCURATE REMOTE LOCATIONS: Transparent remote eligibility - Worldwide Remote, US, Europe/UK, LATAM, Canada, and APAC - so engineers never waste time on mislabeled hybrid positions.
+  • DIRECT EMPLOYER APPLICATION LINKS: Full job specifications linking directly to official employer career portals with zero middlemen.
+  • DAILY MATCHING ALERTS: Tailored job alerts delivered straight to your inbox daily so you can apply early.
+
+3. MINIMAL MENTION 1 - COMMUNITY EMPLOYEE REFERRALS (10% of post):
+- Keep this concise and subtle (1-2 sentences):
+  • Mention that developers can also discover direct employee referrals from working frontend peers to bypass automated ATS filters and get interviews faster, or post their own referrals for free to support the developer community.
+
+4. MINIMAL MENTION 2 - EMPLOYER HIRING (5-10% of post):
+- Keep this to 1 short, punchy sentence:
+  • "Hiring frontend talent? Founders and tech recruiters can post unlimited remote frontend roles for a flat $99/mo with zero per-post fees at FrontendEngineers.com."
+
+5. STRICT LINK REQUIREMENT (INCLUDE ONLY THESE EXACT 2 LINKS - DO NOT INCLUDE ANY OTHER LINKS):
+👉 Explore remote frontend jobs:
+https://www.frontendengineers.com
+
+👉 Get pro access for just $9/month:
+https://www.frontendengineers.com/pricing
+
+6. ENGAGEMENT & COMMUNITY CALL TO ACTION:
+- Ask a fresh, high-engagement question tailored to today's topic (e.g. asking about tech stack, remote preferences, or dream projects).
+- Call to action: "Repost this to help a fellow frontend developer find their next verified remote role! 🚀"
+
+7. HASHTAGS:
+- 20-25 highly relevant hashtags:
+  #FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #Nextjs #WebDev #JavaScript #VueJS #Angular #SoftwareEngineering #TechCareers #RemoteWork #JobSearch #Hiring #FrontendJobs #WebDevelopment #FrontendEngineers
+
+---
+CRITICAL RULES FOR LINKEDIN API:
+- NO MARKDOWN: Absolutely NO **bold**, NO *italics*, NO backticks. LinkedIn API displays raw markdown characters as ugly plaintext.
+- NO PARENTHESES: DO NOT use parentheses anywhere in the text. LinkedIn API silently truncates posts at '('. Use dashes - or commas , instead.
+- LENGTH: 1100 to 1800 characters (optimal for LinkedIn algorithm dwell time and readability).
+- Output the post strictly between these delimiters:
+===POST_START===
+[Full text of the LinkedIn post here]
+===POST_END===`;
 
   for (const model of GEMINI_MODELS) {
     for (let attempt = 1; attempt <= 2; attempt++) {
       try {
-        console.log(`   Trying model: ${model} (attempt ${attempt}/2)...`);
+        console.log(`   Trying model: ${model} (attempt ${attempt}/2, angle: "${theme.name}")...`);
         const res = await fetch(
           `https://generativelanguage.googleapis.com/v1beta/models/${model}:generateContent?key=${GEMINI_API_KEY}`,
           {
@@ -152,7 +192,8 @@ CRITICAL RULES FOR ALL THREE POSTS:
             body: JSON.stringify({
               contents: [{ parts: [{ text: prompt }] }],
               generationConfig: {
-                temperature: 0.85,
+                temperature: 0.9,
+                topP: 0.95,
                 maxOutputTokens: 6000,
               },
             }),
@@ -176,43 +217,92 @@ CRITICAL RULES FOR ALL THREE POSTS:
           break;
         }
 
-        // Extract all three posts using delimiters
-        const jobMatch = text.match(/===JOB_POST_START===([\s\S]*?)===JOB_POST_END===/);
-        const empMatch = text.match(/===EMPLOYER_POST_START===([\s\S]*?)===EMPLOYER_POST_END===/);
-        const refMatch = text.match(/===REFERRAL_POST_START===([\s\S]*?)===REFERRAL_POST_END===/);
+        // Extract post using delimiters
+        const postMatch = text.match(/===POST_START===([\s\S]*?)===POST_END===/);
+        let post = postMatch ? postMatch[1].trim() : text.trim();
 
-        let jobPost = jobMatch ? jobMatch[1].trim() : null;
-        let employerPost = empMatch ? empMatch[1].trim() : null;
-        let referralPost = refMatch ? refMatch[1].trim() : null;
+        // Strip any residual delimiters if present
+        post = post.replace(/===+POST_START===+/gi, '').replace(/===+POST_END===+/gi, '').trim();
 
-        if (!jobPost || !employerPost || !referralPost) {
-          console.warn(`   ⚠️ Delimiters not cleanly matched. Trying fallback extraction...`);
-          const parts = text.split(/===+.*POST.*===+/i).filter(p => p.trim().length > 100);
-          if (parts.length >= 3) {
-            jobPost = parts[0].trim();
-            employerPost = parts[1].trim();
-            referralPost = parts[2].trim();
-          } else {
-            continue;
-          }
-        }
-
-        if (jobPost.length < 300 || employerPost.length < 200 || referralPost.length < 200) {
-          console.warn(`   ⚠️ One of the posts was too short. Retrying...`);
+        if (post.length < 300) {
+          console.warn(`   ⚠️ Generated post too short (${post.length} chars). Retrying...`);
           continue;
         }
 
-        return { jobPost, employerPost, referralPost };
+        // Guarantee that the opening mentions both "Remote Frontend Developer jobs" and "FrontendEngineers.com"
+        post = enforceMandatoryOpening(post);
+
+        // Guarantee strictly only the 2 required links are kept
+        post = enforceAllowedLinks(post);
+
+        return post;
       } catch (err) {
         console.warn(`   ⚠️ Exception calling Gemini model ${model}: ${err.message}`);
       }
     }
   }
 
-  throw new Error('Failed to generate posts after exhausting available Gemini models');
+  throw new Error('Failed to generate post after exhausting available Gemini models');
 }
 
-// ─── LinkedIn Helpers ────────────────────────────────────────
+// ─── Enforcement & Sanitization Helpers ──────────────────────
+
+function enforceMandatoryOpening(text) {
+  let cleaned = text.trim();
+  const firstLines = cleaned.split('\n').slice(0, 3).join(' ');
+
+  const hasJobs = /remote frontend developer (jobs|roles)/i.test(firstLines);
+  const hasSite = /frontendengineers\.com/i.test(firstLines);
+
+  if (!hasJobs || !hasSite) {
+    const fallbackHooks = [
+      'Looking for verified Remote Frontend Developer jobs? Discover active roles with direct employer links at FrontendEngineers.com! 🚀',
+      'Your gateway to top-tier Remote Frontend Developer jobs starts right here at FrontendEngineers.com! ✨',
+      'Ready to land high-paying Remote Frontend Developer jobs? Explore 100% verified opportunities on FrontendEngineers.com! 💻',
+      'Discover curated, active Remote Frontend Developer jobs directly on FrontendEngineers.com! 🔥',
+      'Accelerate your career with verified Remote Frontend Developer jobs available now on FrontendEngineers.com! ⚡'
+    ];
+    const hook = fallbackHooks[Math.floor(Math.random() * fallbackHooks.length)];
+    cleaned = `${hook}\n\n${cleaned}`;
+  }
+
+  return cleaned;
+}
+
+function enforceAllowedLinks(text) {
+  let cleaned = text;
+
+  // Remove any legacy /referrals or /employers/pricing URLs if accidentally generated
+  cleaned = cleaned.replace(/https?:\/\/www\.frontendengineers\.com\/referrals\S*/gi, '');
+  cleaned = cleaned.replace(/https?:\/\/www\.frontendengineers\.com\/employers\/pricing\S*/gi, '');
+
+  const targetLinksBlock = `👉 Explore remote frontend jobs:\nhttps://www.frontendengineers.com\n\n👉 Get pro access for just $9/month:\nhttps://www.frontendengineers.com/pricing`;
+
+  // Match from any link-intro line preceding frontendengineers.com up to the pricing link
+  const linkSectionRegex = /(?:[^\n]*(?:remote|jobs|explore|pro|access|pricing)[^\n]*\n+)?https:\/\/www\.frontendengineers\.com[\s\S]*?https:\/\/www\.frontendengineers\.com\/pricing/i;
+
+  if (linkSectionRegex.test(cleaned)) {
+    cleaned = cleaned.replace(linkSectionRegex, targetLinksBlock);
+  } else if (cleaned.includes('https://www.frontendengineers.com')) {
+    cleaned = cleaned.replace(
+      /(?:[^\n]*\n+)?https:\/\/www\.frontendengineers\.com/i,
+      targetLinksBlock
+    );
+  } else {
+    const hashIndex = cleaned.search(/#[a-zA-Z]/);
+    if (hashIndex !== -1) {
+      cleaned = `${cleaned.substring(0, hashIndex).trim()}\n\n${targetLinksBlock}\n\n${cleaned.substring(hashIndex).trim()}`;
+    } else {
+      cleaned = `${cleaned}\n\n${targetLinksBlock}`;
+    }
+  }
+
+  // Deduplicate any repeated consecutive label lines if any slipped through
+  cleaned = cleaned.replace(/(👉 Explore remote frontend jobs:\s*\n)+/g, '👉 Explore remote frontend jobs:\n');
+  cleaned = cleaned.replace(/(👉 Get pro access for just \$9\/month:\s*\n)+/g, '👉 Get pro access for just $9/month:\n');
+
+  return cleaned;
+}
 
 function sanitizeForLinkedIn(text) {
   // Replace Markdown links: [text](url) -> text - url
@@ -263,34 +353,22 @@ async function postToLinkedIn(text, authorUrn, accessToken) {
 // ─── Main ────────────────────────────────────────────────────
 
 async function main() {
-  console.log('🚀 LinkedIn Combined Auto-Poster (Job + Employer Ad + Community Referrals)');
-  console.log('═'.repeat(60));
+  console.log('🚀 LinkedIn Auto-Poster (Remote Frontend Jobs, Referrals & Employer Hiring)');
+  console.log('═'.repeat(65));
   if (DRY_RUN) console.log('⚠️  DRY RUN MODE - will not publish to LinkedIn\n');
 
-  // 1. Generate all 3 posts in a SINGLE Gemini AI call
-  console.log('\n🤖 Generating 3 posts with Gemini AI (single API request)...');
-  const { jobPost, employerPost, referralPost } = await generateThreePostsWithGemini();
+  // 1. Generate single post with Gemini AI
+  console.log('\n🤖 Generating LinkedIn post with Gemini AI...');
+  const post = await generatePostWithGemini();
 
-  console.log('\n📄 [1/3] Remote Jobs & Referrals Post:');
-  console.log('─'.repeat(60));
-  console.log(sanitizeForLinkedIn(jobPost));
-  console.log('─'.repeat(60));
-  console.log(`Length: ${jobPost.length} chars`);
-
-  console.log('\n📄 [2/3] Employer Ad Post:');
-  console.log('─'.repeat(60));
-  console.log(sanitizeForLinkedIn(employerPost));
-  console.log('─'.repeat(60));
-  console.log(`Length: ${employerPost.length} chars`);
-
-  console.log('\n📄 [3/3] Community Referral Support Post:');
-  console.log('─'.repeat(60));
-  console.log(sanitizeForLinkedIn(referralPost));
-  console.log('─'.repeat(60));
-  console.log(`Length: ${referralPost.length} chars`);
+  console.log('\n📄 Generated LinkedIn Post:');
+  console.log('─'.repeat(65));
+  console.log(sanitizeForLinkedIn(post));
+  console.log('─'.repeat(65));
+  console.log(`Length: ${post.length} chars`);
 
   if (DRY_RUN) {
-    console.log('\n✅ LinkedIn DRY RUN complete. All 3 posts successfully generated!');
+    console.log('\n✅ LinkedIn DRY RUN complete. Post successfully generated!');
     if (WITH_TWITTER) {
       console.log('\n🐦 Running Twitter/X Dry Run (--with-twitter)...');
       try {
@@ -342,7 +420,7 @@ async function main() {
     process.exit(1);
   }
 
-  console.log(`\n📤 Publishing 3 posts to ${accounts.length} LinkedIn account(s)...`);
+  console.log(`\n📤 Publishing post to ${accounts.length} LinkedIn account(s)...`);
 
   let totalPublished = 0;
 
@@ -356,49 +434,26 @@ async function main() {
     if (acc.personId) targets.push({ type: 'Personal Profile', urn: `urn:li:person:${acc.personId}` });
     if (acc.orgId) targets.push({ type: 'Company Page', urn: `urn:li:organization:${acc.orgId}` });
 
-    for (const target of targets) {
-      // 1. Post Candidate Job Post
-      try {
-        console.log(`\n   [1/3] Posting Candidate Job Post to ${target.type} (${target.urn})...`);
-        const res1 = await postToLinkedIn(jobPost, target.urn, acc.token);
-        console.log(`   ✅ Posted Job Post! Post ID: ${res1.postId}`);
-        totalPublished++;
-      } catch (err) {
-        console.error(`   ❌ Failed to post Job Post to ${target.type}: ${err.message}`);
+    for (let i = 0; i < targets.length; i++) {
+      const target = targets[i];
+      if (i > 0) {
+        console.log('   ⏳ Waiting 10s before publishing to next target...');
+        await new Promise(r => setTimeout(r, 10000));
       }
 
-      // Safety delay between posts to prevent spam detection or rate limiting
-      console.log('   ⏳ Waiting 15s before posting Employer Ad...');
-      await new Promise(r => setTimeout(r, 15000));
-
-      // 2. Post Employer Ad
       try {
-        console.log(`   [2/3] Posting Employer Ad to ${target.type} (${target.urn})...`);
-        const res2 = await postToLinkedIn(employerPost, target.urn, acc.token);
-        console.log(`   ✅ Posted Employer Ad! Post ID: ${res2.postId}`);
+        console.log(`\n   Posting to ${target.type} (${target.urn})...`);
+        const res = await postToLinkedIn(post, target.urn, acc.token);
+        console.log(`   ✅ Successfully posted! Post ID: ${res.postId}`);
         totalPublished++;
       } catch (err) {
-        console.error(`   ❌ Failed to post Employer Ad to ${target.type}: ${err.message}`);
-      }
-
-      // Safety delay between posts
-      console.log('   ⏳ Waiting 15s before posting Community Referrals Post...');
-      await new Promise(r => setTimeout(r, 15000));
-
-      // 3. Post Community Referrals Post
-      try {
-        console.log(`   [3/3] Posting Community Referrals Post to ${target.type} (${target.urn})...`);
-        const res3 = await postToLinkedIn(referralPost, target.urn, acc.token);
-        console.log(`   ✅ Posted Community Referrals Post! Post ID: ${res3.postId}`);
-        totalPublished++;
-      } catch (err) {
-        console.error(`   ❌ Failed to post Community Referrals Post to ${target.type}: ${err.message}`);
+        console.error(`   ❌ Failed to post to ${target.type}: ${err.message}`);
       }
     }
   }
 
   if (totalPublished > 0) {
-    console.log(`\n🎉 Successfully published ${totalPublished} post(s) to LinkedIn!`);
+    console.log(`\n🎉 Successfully published post to LinkedIn (${totalPublished} destination(s))!`);
   } else {
     console.error('\n❌ No posts were published successfully.');
     process.exit(1);
@@ -410,7 +465,7 @@ async function main() {
     console.log('\n🐦 Publishing to Twitter/X as requested (--with-twitter)...');
     try {
       const { postThreeTweetsToTwitter, generateThreeTwitterPostsWithGemini } = require('./post-to-twitter');
-      console.log('🤖 Generating 3 Twitter-optimized posts with Gemini AI...');
+      console.log('🤖 Generating Twitter-optimized posts with Gemini AI...');
       const twitterPosts = await generateThreeTwitterPostsWithGemini();
       await postThreeTweetsToTwitter({
         ...twitterPosts,
