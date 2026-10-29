@@ -102,10 +102,25 @@ const CREATIVE_THEMES = [
   }
 ];
 
+// High-energy variations of the mandatory first line concept
+const FASTER_OPENING_HOOKS = [
+  'Get Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🚀',
+  'Land your dream Remote Frontend Job faster than ever with FrontendEngineers.com! ⚡',
+  'Find verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! ✨',
+  'Score top-tier Remote Frontend Jobs faster than ever with FrontendEngineers.com! 💻',
+  'Get hired for verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🔥',
+  'Unlock high-impact Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🎯',
+  'Fast-track your search for Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🌟',
+  'Discover verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🚀',
+  'Secure interview-ready Remote Frontend Jobs faster than ever with FrontendEngineers.com! ⚡',
+  'Step into your next Remote Frontend Job faster than ever with FrontendEngineers.com! 💼'
+];
+
 // ─── Gemini AI Generation (Single Post with Jobs as Dominant Focus) ─
 
 async function generatePostWithGemini() {
   const theme = CREATIVE_THEMES[Math.floor(Math.random() * CREATIVE_THEMES.length)];
+  const suggestedOpeningHook = FASTER_OPENING_HOOKS[Math.floor(Math.random() * FASTER_OPENING_HOOKS.length)];
   const randomSalt = Math.floor(Math.random() * 900000 + 100000);
 
   const prompt = `You are an expert social media strategist and growth marketing lead for FrontendEngineers.com - the premier platform built exclusively for remote frontend developers.
@@ -122,23 +137,33 @@ Every post generated MUST feel original, engaging, and different from previous p
 
 ---
 MANDATORY OPENING REQUIREMENT (NON-NEGOTIABLE):
-The VERY FIRST line/sentence of the post MUST prominently mention BOTH:
-1. "Remote Frontend Developer jobs" (or "Remote Frontend Developer roles")
-2. The exact website name "FrontendEngineers.com"
+The VERY FIRST line/sentence of the post MUST open with a creative variation of:
+"Get Remote Frontend Jobs faster than ever with FrontendEngineers.com"
 
-Examples of varied opening hooks (invent a fresh, unique variation; do not copy word-for-word):
-- "Looking for verified Remote Frontend Developer jobs? Discover active roles with direct employer links at FrontendEngineers.com! 🚀"
-- "Your search for top-tier Remote Frontend Developer jobs starts and ends at FrontendEngineers.com! ✨"
-- "Ready to land high-paying Remote Frontend Developer jobs? Explore 100% verified opportunities today on FrontendEngineers.com! 💻"
-- "Take your career global with curated Remote Frontend Developer jobs available right now on FrontendEngineers.com! ⚡"
-- "Skip the recruiter noise and find transparent Remote Frontend Developer jobs directly on FrontendEngineers.com! 🔥"
+Suggested variation for this post:
+"${suggestedOpeningHook}"
+
+You can use this suggested variation or craft a compelling, fresh variation of it. It MUST prominently include:
+1. "Remote Frontend Job" (or "Remote Frontend Jobs")
+2. "faster than ever" (highlighting speed and efficiency)
+3. The exact website name "FrontendEngineers.com"
+
+Examples of variations to rotate and inspire from:
+- "Get Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🚀"
+- "Land your dream Remote Frontend Job faster than ever with FrontendEngineers.com! ⚡"
+- "Find verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! ✨"
+- "Score top-tier Remote Frontend Jobs faster than ever with FrontendEngineers.com! 💻"
+- "Get hired for verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🔥"
+- "Unlock high-impact Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🎯"
+- "Fast-track your search for Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🌟"
+- "Discover verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🚀"
 
 ---
 CONTENT & STRUCTURE REQUIREMENTS:
 
 1. OPENING (1-2 lines):
-- Start with the mandatory opening mentioning Remote Frontend Developer jobs and FrontendEngineers.com.
-- POSITIVE, EMPOWERING, AND INSPIRING TONE ONLY: No negative complaints like "Tired of..." or "Sick of...". Focus on excitement, career growth, and transparent opportunities.
+- Start with the mandatory opening variation of "Get Remote Frontend Jobs faster than ever with FrontendEngineers.com".
+- POSITIVE, EMPOWERING, AND INSPIRING TONE ONLY: No negative complaints like "Tired of..." or "Sick of...". Focus on excitement, speed of landing interviews, and transparent opportunities.
 
 2. CORE SECTION - FULL FOCUS ON REMOTE FRONTEND DEVELOPER JOBS (75-80% of post):
 - Make this the clear highlight of the post with rich details, vibrant emojis, and genuine value:
@@ -251,19 +276,19 @@ function enforceMandatoryOpening(text) {
   let cleaned = text.trim();
   const firstLines = cleaned.split('\n').slice(0, 3).join(' ');
 
-  const hasJobs = /remote frontend developer (jobs|roles)/i.test(firstLines);
+  const hasJobs = /remote frontend (developer )?jobs?/i.test(firstLines);
   const hasSite = /frontendengineers\.com/i.test(firstLines);
+  const hasFaster = /faster/i.test(firstLines);
 
-  if (!hasJobs || !hasSite) {
-    const fallbackHooks = [
-      'Looking for verified Remote Frontend Developer jobs? Discover active roles with direct employer links at FrontendEngineers.com! 🚀',
-      'Your gateway to top-tier Remote Frontend Developer jobs starts right here at FrontendEngineers.com! ✨',
-      'Ready to land high-paying Remote Frontend Developer jobs? Explore 100% verified opportunities on FrontendEngineers.com! 💻',
-      'Discover curated, active Remote Frontend Developer jobs directly on FrontendEngineers.com! 🔥',
-      'Accelerate your career with verified Remote Frontend Developer jobs available now on FrontendEngineers.com! ⚡'
-    ];
-    const hook = fallbackHooks[Math.floor(Math.random() * fallbackHooks.length)];
-    cleaned = `${hook}\n\n${cleaned}`;
+  if (!hasJobs || !hasSite || !hasFaster) {
+    const hook = FASTER_OPENING_HOOKS[Math.floor(Math.random() * FASTER_OPENING_HOOKS.length)];
+    const lines = cleaned.split('\n');
+    if (lines[0].includes('FrontendEngineers.com') || lines[0].toLowerCase().includes('frontend')) {
+      lines[0] = hook;
+      cleaned = lines.join('\n');
+    } else {
+      cleaned = `${hook}\n\n${cleaned}`;
+    }
   }
 
   return cleaned;
