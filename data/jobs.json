@@ -1,5 +1,71 @@
 [
   {
+    "id": "97f59966db4df909073339f7be38d53f559fd00710f746ac702e97b6008f6bad",
+    "title": "Frontend Developer - G2i Talent Pool",
+    "applyUrl": "https://himalayas.app/companies/g2i/jobs/frontend-developer-g2i-talent-pool-214144156?utm_source=api",
+    "description": "Join the G2i Talent PoolWe’re always meeting great people in tech. Join the G2i Talent Pool and let us get to know you.\n\nG2i works with top AI labs and fast-growing companies. Our community of engineers works on real projects, from evals and RL environments to training data for frontier models.\n\nWho we’re looking for\nSoftware, data, AI/ML, infrastructure, security, design, QA and product. Experienced or just starting out, fresh graduates are welcome. If you work in tech or are building your career in it, we’d love to meet you.\n\nHow it works\n• Apply in a few minutes with your real details and links.\n\n• We review your profile and send you a short technical assessment.\n\n• Once you pass, you join our pool and hear from us when a project fits your skills.\n\nJoining the pool doesn’t mean immediate work, since matching depends on what our clients need and on each profile. But we’re always working to match everyone in our pool with the right project.\n\nPlease note that eligibility may vary depending on your location, as some regions may not be supported by the client.\n\nOriginally posted on Himalayas",
+    "location": "Remote - Worldwide",
+    "country": "Worldwide",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-30T03:31:24.000Z",
+    "sourceHash": "97f59966db4df909073339f7be38d53f559fd00710f746ac702e97b6008f6bad",
+    "company": {
+      "id": "g2i",
+      "name": "G2i",
+      "logoUrl": "https://cdn-images.himalayas.app/49kfobngoz7995mexnwgqsabr7ah",
+      "industry": "Technology",
+      "website": "https://g2i.com"
+    },
+    "slug": "frontend-developer-g2i-talent-pool-g2i-97f59966",
+    "aiTags": {
+      "stack": [],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Worldwide"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "8d133047f6fc7a0332efb9fc6995402add3cbf1e8cc583f9cb71d6a8a9dd57e3",
+    "title": "Front End Developer",
+    "applyUrl": "https://remoteOK.com/remote-jobs/remote-front-end-developer-edconic-1137597",
+    "description": "Job Title: Front-End Developer\nLocation: Fully Remote (US)\nDepartment: Global Enrollment Marketing and Sales\nReports to: Director of Web Development\nClassification: Regular, Full-time\nFLSA Status: Exempt\nPrepared by: Global Head of Creative\nPrepared Date: 10/1/26\nSalary range:Â $85,000â$100,000\n\nAbout Edconic\n\nEdconic is a leading player in the alternative, experiential education space. We partner with the world's largest and most well-known brands to create and run schools that capture the legacy and value of each brand. Our students get truly unique, once-in-a-lifetime experiences that help shape their future and give them the skills they need to reach their goals.\n\nThe Role\n\nWe're looking for an experienced Front-End Developer to join our web team, which owns every Edconic digital property â from our school websites to landing pages and email templates. You'll work alongside designers, IT, and MarTech to build solutions that serve real business needs while protecting each brand's unique identity.\n\nYou'll be one of two developers on the team, working directly with our lead developer. That means real ownership of your work, a genuine voice in how we build, very little process overhead, and a codebase that is actively moving toward a modern, standardized WordPress stack. We value craft: fast pages and code that the next developer can read.\n\nWhat You'll Do\n\n• Build and maintain public-facing websites, micro-sites, and landing pages in collaboration with our lead developer, IT, and MarTech.\n• Work with UX/UI designers to confirm the technical feasibility of designs, then translate them into polished, responsive pages that stay true to each brand.\n• Build and maintain custom WordPress themes across both of our stacks: modern block-based builds (ACF Blocks, core blocks, block patterns, theme.json) and established classic themes built on PHP templates, Advanced Custom Fields, and Sass.\n• Collaborate with our lead developer to shape the team's coding standards, tooling, and workflow, and help migrate our existing sites toward our new modern stack.\n• Stay current on emerging web standards and bring ideas to the table where they genuinely fit.\nWhat You Bring\n\n• 4+ years of front-end web development experience, with strong skills in semantic HTML, CSS, JavaScript, PHP, and WordPress.\n• The ability to build a custom WordPress theme from scratch using PHP templates and Advanced Custom Fields.\n• Strong CSS skills across Sass and modern native CSS (custom properties, nesting), and solid vanilla JavaScript.\n• Comfort working in Git/GitHub with pull requests and code reviews, and with npm-based build tools and the command line.\n• A habit of writing semantic, well-structured HTML that covers accessibility basics, with an eye for reuse, cross-browser compatibility, performance, and SEO.\n• Experience building and testing HTML emails.\n• Strong UX/UI sensibilities and a desire to sweat the small stuff.\n• A proactive, self-directed working style â you can run with a project independently and prioritize across several at once.\n• Excellent written and verbal communication â you're positive, collaborative, objective, and solution-oriented.\nBonus Experience\n\n• Modern WordPress block development: ACF Blocks, block.json, theme.json, and block patterns.\n• Composer, Bedrock or other Roots tooling (Sage/Blade, Trellis), Vite, or CI/CD with GitHub Actions.\n• Deeper accessibility experience (WCAG, ARIA, assistive-technology testing).\n• CRM and marketing automation integration (Salesforce, Pardot/Account Engagement).\n• Multilingual WordPress sites.\n• A modern JavaScript framework such as React or Vue.\n• UX or UI design, and design tools such as Figma and Adobe Creative Suite.\n\nHow We Use AI\n\nAI-assisted development is a new and evolving part of our workflow. We use AI coding tools to speed up research, scaffolding, review, and routine work, and you're welcome to do the same.\n\nAI is a tool here, not a substitute for expertise. You are accountable for every line of code that you ship, which means you must be able to write, review, debug, and explain production code entirely on your own. Expect to demonstrate those skills without AI assistance during the interview process.\n\nLocation, Travel & Eligibility\n\n• Fully remote within the United States. Occasional travel to our New York office may be required.\n• Must be legally authorized to work in the US.\n• Bachelor's degree preferred (Computer Science, Interaction Design, Graphic Design, Communications, or a related field); equivalent professional experience is equally welcome.\nOur Commitment\n\nEdconic supports and embraces diversity and inclusiveness, and we encourage candidates from all backgrounds to apply, even if you don't meet every requirement listed here. Reasonable accommodations are available to enable individuals with disabilities to perform the essential functions of the role and to participate in the interview process.\n\nThe above statements describe the general nature and level of work for this position. They are not an exhaustive list of all duties, responsibilities, and skills. Edconic reserves the right to modify this job description at its sole discretion.\n\nApply Here\n\nPI288024527\n\nPlease mention the word **DAUNTLESS** and tag RMTcyLjE4My44OS42Ng== when applying to show you read the job post completely (#RMTcyLjE4My44OS42Ng==). This is a beta feature to avoid spam applicants. Companies can search these words to find applicants that read this and see they're human.",
+    "location": "Remote - Global",
+    "country": "Global",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-28T21:53:15.000Z",
+    "sourceHash": "8d133047f6fc7a0332efb9fc6995402add3cbf1e8cc583f9cb71d6a8a9dd57e3",
+    "company": {
+      "id": "edconic",
+      "name": "Edconic",
+      "logoUrl": "https://logo.clearbit.com/edconic.com",
+      "industry": "Technology",
+      "website": "https://edconic.com"
+    },
+    "slug": "front-end-developer-edconic-8d133047",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "javascript",
+        "css",
+        "sass",
+        "vite",
+        "figma",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Global"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "57d371ccded130d0ad7373864fa95f10a71088e5ac97bd5710530a3b5ecef001",
     "title": "Front-End Developer",
     "applyUrl": "https://weworkremotely.com/remote-jobs/edconic-front-end-developer",
@@ -29063,231 +29129,6 @@
       "remoteScope": "COUNTRY",
       "eligibleRegions": [
         "India"
-      ],
-      "seniority": "mid",
-      "employmentType": "internship"
-    }
-  },
-  {
-    "id": "b4a806aa60086154281fdf960072240ece384080da3ec460a6f9078bf74f4a13",
-    "title": "Ingénieur(e) développement logiciel frontend",
-    "applyUrl": "https://truckonline.pro/truckonline/recrutement/#formulaire",
-    "description": "About the job\n\nResponsabilités\n\nVos Missions\n\nCustomer Success Manager, c’est un poste clé chez Truckonline.\n\nNous nous sommes donné pour mission d’avoir un accompagnement et une qualité de service irréprochables.\n\nEn tant que CSM, vous êtes l’interlocuteur principal de nos clients et le garant de la réussite de notre mission. Vous menez le déploiement de notre solution, l’optimisation de son utilisation, vous décelez les opportunités de ventes additionnelles et favorisez l’adoption de nouveaux services par les clients. Vous aidez les clients à obtenir le meilleur retour sur investissement avec notre solution.\n\nVous évoluez dans un environnement à forte technicité (boîtiers IoT, données techniques véhicules, réglementation sociale européenne du transport, réglementation française, etc.) qui satisfera votre envie d’apprendre.\n\nCe Que Vous Faites Chez Truckonline\n\n\nGestion et Suivi des Déploiements\n\n\nPlanifier avec le client les différentes étapes du déploiement de la solution.\n\nPrendre en charge le déploiement de la solution: installation boîtiers, études des besoins client et paramétrage adéquat de la solution, suivi de l’adoption et des bonnes pratiques, formation, conseils d’utilisations, etc.\n\nExpliquer et démystifier les sujets techniques complexes auprès du client : récupération des données techniques véhicules (FMS), problématiques chronotachygraphes, limites et prérequis, etc.\n\nAssurer un suivi rigoureux des jalons, anticiper les risques de blocage et sécuriser une satisfaction utilisateur maximale.\n\n\nFidélisation et croissance\n\n\nMaintenir et développer des relations avec les personnes clés chez nos clients.\n\nAider le client à obtenir le meilleur ROI possible de notre solution pour la gestion de son activité en comprenant son utilisation et ses besoins métiers.\n\nIdentifier les opportunités de ventes additionnelles afin d’atteindre les objectifs de croissance.\n\nMener des revues périodiques personnalisées avec vos clients pour s’assurer de la meilleure utilisation possible de la solution.\n\nIdentifier au plus tôt les signaux faibles d’attrition et mettre en place un plan d’action pour y remédier (attrition cible de moins de 2%).\n\nGarantir la bonne fin de toutes les actions concernant vos clients (demande d’évolution, support, etc.)\n\n\nMentorat & Synergie Interne\n\n\nRemonter à l’équipe Produit des informations utiles pour l’amélioration de la solution dans une optique de création de valeur.\n\nAccompagner l’équipe CSM dans sa montée en compétences en partageant vos méthodologies et vos bonnes pratiques.\n\nCollaborer en continu avec le pôle Support pour fluidifier le traitement des dossiers complexes et résoudre les incidents escaladés.\n\n\nRéglementation & Reporting\nPratiquer une veille métier et réglementaire\nPiloter l’activité via un reporting régulier des indicateurs clés du climat client.\n\nCompétences requises\n\nVous avez l’habitude des structures logicielles solides, mais vous recherchez l’impact direct et la convivialité d’une PME de 26 personnes, avec la structure financière d’un groupe de 100 personnes.\n\n\nVous avez une expérience solide au sein d’un éditeur de logiciels d’envergure en tant que CSM\nVous savez définir et exécuter des plans de déploiement et d’accompagnement client\nVous disposez de très bonnes aptitudes relationnelles\nVous savez vous organiser, prioriser.\nVous savez comprendre une réglementation complexe et son application.\nVous êtes capable de maîtriser les tenants et aboutissants d’un logiciel\nSoft Skills : Leadership bienveillant, pédagogie, dynamisme et un fort esprit d’équipe.\nVous parlez anglais dans un cadre professionnel.\n\n\nVous n’avez pas besoin de cocher toutes les cases. Nous vous encourageons à postuler si vous pensez pouvoir exceller dans ce poste.\n\nFormation\n\nDiplôme de niveau Bac+5 (Ingénieur, École de Commerce ou Master en Informatique ou Gestion de Projet)\n\nCe que nous vous offrons \n\nDans un cadre de travail au pied des montagnes à Voiron, vous trouverez chez nous:\n\n\nEntre 40 et 50k€ brut annuel de base (fixé selon votre profil et votre expérience).\nPrime d’Intéressement plus autre prime possible en fonction des résultats.\n1 jour de télétravail par semaine.\nUn environnement axé sur l’innovation, l’intégration des nouvelles technologies (IA) et la cohésion d’équipe.\n\n\nProcessus de recrutement\n\nUn appel de 30 minutes pour valider la cohérence de votre candidature avec notre offre.\n\nUn entretien avec le directeur des opérations.\n\nUn entretien avec le dirigeant.\n\nJe postule",
-    "location": "Remote - France",
-    "country": "France",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T04:54:11.080Z",
-    "sourceHash": "b4a806aa60086154281fdf960072240ece384080da3ec460a6f9078bf74f4a13",
-    "company": {
-      "id": "truckonline",
-      "name": "TRUCKONLINE",
-      "logoUrl": "https://logo.clearbit.com/truckonline.com",
-      "industry": "Technology",
-      "website": "https://truckonline.com"
-    },
-    "slug": "ing-nieur-e-d-veloppement-logiciel-frontend-truckonline-b4a806aa",
-    "aiTags": {
-      "stack": [],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "France"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "82961713394af11145091af0e0e97fa7ad1ae22fc4d884289f55a74a66b662ad",
-    "title": "Frontend Engineer (Medical Imaging Viewer)",
-    "applyUrl": "https://careers.epam.com/en/vacancy/bltf2bisuru3zbhc7o0_en?country=Brazil&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
-    "description": "About the job\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
-    "location": "Remote - Brazil",
-    "country": "Brazil",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T04:45:19.215Z",
-    "sourceHash": "82961713394af11145091af0e0e97fa7ad1ae22fc4d884289f55a74a66b662ad",
-    "company": {
-      "id": "epamsystems",
-      "name": "EPAM Systems",
-      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
-      "industry": "Technology",
-      "website": "https://epamsystems.com"
-    },
-    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-82961713",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Brazil"
-      ],
-      "seniority": "junior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "730606495adedfd18ffe52de407ce827569ba53672b1ce04bdcb1f86e828bf9d",
-    "title": "Front End Developer",
-    "applyUrl": "https://atracaodetalentos.totvs.app/ihmstefanini/168/front-end-developer?applicationSource=0",
-    "description": "About the job\n\nDescrição\n\nEstamos em busca de um(a) Front End Developer para integrar nosso time de Tecnologia da Informação Industrial e ajudar a construir soluções que fazem diferença no dia a dia da fábrica. Se você é apaixonado(a) por tecnologia, gosta de transformar processos complexos em interfaces claras e está pronto(a) para encarar desafios, essa vaga é para você.\n\nEsta posição está aberta a profissionais de diferentes níveis de senioridade (Júnior, Pleno e Sênior). Avaliaremos cada candidatura considerando sua experiência, sua trajetória e o seu potencial de crescimento.\n\nResponsabilidades e atribuições\n\n\nDesenvolver e implementar interfaces para sistemas MES (Manufacturing Execution System) com a plataforma Proficy PlantApps e o ROB-EX Scheduler.\nConstruir telas e componentes em React, JavaScript, TypeScript e HTML pensados para o uso em ambientes industriais, onde clareza, agilidade e confiabilidade são essenciais.\nIntegrar o front-end a microserviços e a soluções em nuvem.\nTraduzir as necessidades de operadores, supervisores e planejadores da produção em experiências de uso simples e eficientes.\nParticipar de revisões de código, testes e da evolução das boas práticas do time.\nColaborar com times multidisciplinares (back-end, engenharia, operações e áreas de negócio), em contexto internacional.\n\n\nRequisitos e qualificações\n\nRequisitos Obrigatórios\n\n\nExperiência com React, JavaScript, TypeScript, HTML e Python.\nConhecimento em bancos de dados relacionais (PostgreSQL) e mensageria.\nExperiência com Docker.\nConhecimento em arquitetura de microsserviços orientada a eventos.\nExperiência prévia com software para ambientes industriais e de manufatura.\nInglês fluente.\n\n\nO Que Esperamos, Conforme o Seu Nível\n\n\nJúnior: base técnica sólida, boa capacidade de aprendizado e disposição para evoluir com o apoio do time.\nPleno: autonomia para entregar funcionalidades de ponta a ponta no front-end, com boa qualidade e comunicação clara.\nSênior: liderança técnica, influência em decisões de arquitetura e apoio ao desenvolvimento de colegas.\n\n\nBenefícios\n\n‍ Desconto em cursos, universidades e instituições de idiomas;\n\nLinkedIn Learning - cursos online, gratuitos, atualizados e com certificado;\n\nMentoring;\n\nTelemedicina gratuita para consultas com mais de 30 especialidades médicas, psicólogos e nutricionistas;\n\nClube de vantagens e descontos nos melhores estabelecimentos;\n\nClube de viagens;\n\nConvênio para Pet;\n\ne muito mais...",
-    "location": "Remote - Brazil",
-    "country": "Brazil",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T04:45:05.712Z",
-    "sourceHash": "730606495adedfd18ffe52de407ce827569ba53672b1ce04bdcb1f86e828bf9d",
-    "company": {
-      "id": "stefaniniihm",
-      "name": "Stefanini IHM",
-      "logoUrl": "https://logo.clearbit.com/stefaniniihm.com",
-      "industry": "Technology",
-      "website": "https://stefaniniihm.com"
-    },
-    "slug": "front-end-developer-stefanini-ihm-73060649",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Brazil"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "b0e906a86cf54ba89d10ea27a7ef529883f5db976941906817c3b967560e9536",
-    "title": "Sr. Software Engineer (Frontend) - Extensions Team",
-    "applyUrl": "https://ats.rippling.com/cerby/jobs/abd15dc5-39d6-4a2c-bc43-cafe55765312?src=LinkedIn",
-    "description": "About the job\n\nAbout Cerby\n\nAt Cerby, security is everyone's business.\n\nCerby extends your security perimeter to include your disconnected applications, providing identity automation and eliminating manual processes. It's one of the biggest blind spots in enterprise security, and we're the team closing it. If you want to work alongside the team solving one of the hardest, most overlooked problems in security, you're in the right place.\n\nFounded in 2020, Cerby is backed by leading investors and trusted by enterprises across the globe.\n\nAbout The Role\n\nAt Cerby, software engineers are at the heart of driving technology and product innovation. As a Senior Software Engineer on the Extension team, you will own and scale the browser extension at the core of Cerby's platform - the surface where users manage application passwords, autofill and inject credentials across the sites they use every day, and authenticate through passkeys and federated identity providers. The extension is a cross-browser Manifest V3 product shipping to Chrome, Edge, Firefox, and Safari, backed by service-worker-driven background synchronization, secure session lifecycle management.\n\nIn this role you will own the quality, performance, and security of the extension end-to-end, help lead a security-first engineering culture, and sharpen a product experience that our users' most sensitive credential interactions depend on. Because the extension injects UI into pages we don't control and brokers our users' most sensitive data, security is not a phase of the work - it is the work. You are also expected to embrace AI as a core part of how we build, actively exploring and incorporating AI-assisted tools and practices into your daily development workflow to improve team efficiency and accelerate impact.\n\nKey Responsibilities\n\n\nDesign and Develop: Build scalable, high-performance software solutions that align with business goals and user needs, leveraging AI-assisted tools and techniques as part of your engineering practice.\nCollaborate: Work closely with product managers, engineering managers, UX designers, and other engineers to deliver high-quality features and functionality.\nCode Excellence: Write clean, maintainable, and efficient code, adhering to best practices and coding standards. Help define and promote best practices across the engineering org, including how AI tools can be responsibly and effectively integrated into development workflows.\nContinuous Improvement: Participate in code reviews, share knowledge with team members, and continuously improve development processes.\nInnovation and Curiosity: Champion new technologies, frameworks, and methodologies that drive innovation and product evolution, while continuously exploring ways to leverage AI in your day-to-day work to boost personal efficiency and empower those around you to do the same.\nSecurity Mindset: Actively contribute to our security-first approach by proactively identifying vulnerabilities and implementing robust solutions, including treating the frontend dependency ecosystem as a security surface: owning PNPM workspace governance, auditing packages for CVEs, enforcing patching SLAs, and managing supply-chain risk across transitive dependencies. Applies the same critical lens to how AI tools are adopted in development workflows, evaluating their security implications and ensuring they don’t introduce new vectors for risk.\nRemote Collaboration: Collaborate effectively in a remote-first environment, ensuring seamless communication and teamwork across time zones.\nCulture: Demonstrates leadership and lives Cerby’s core values to achieve positive outcomes. Help cultivate an environment where experimenting with AI is encouraged, learnings are shared openly, and the team grows together.\nProblem-Solving: Strong analytical and problem-solving skills with a focus on delivering high-quality solutions.\nCommunication Skills: Ability to communicate complex technical concepts clearly and concisely both in written and verbal form\nTeam Collaboration: Collaborate and thrive in agile teams, actively mentoring engineers, sharing knowledge across the org, and leveraging AI to accelerate documentation (runbooks, ADRs, onboarding guides, post-mortems) to free more time for the deep technical conversations that actually transfer expertise.\n\n\nExperience\n\nQualifications & Required Skills\n\n\n5+ years of professional software engineering experience, with a focus on building and scaling SaaS applications.\nPrior experience developing and maintaining Distributed Applications\nPrevious experience mentoring junior developers and conducting security-first code reviews\n\n\nTechnical Expertise\n\n\nManifest V3 service-worker model: ephemeral execution and state persistence across termination (chrome.alarms, keep-alive), plus the distributed-system concerns that come with it - cross-tab coordination, background sync, and token-refresh/session races.\nContent scripts and injection into untrusted pages: isolated-world vs MAIN-world execution, Shadow DOM isolation, and MutationObserver-based DOM resilience.\nMessage passing across content scripts, service worker, popup/side panel, and offscreen documents, with sender/origin validation as a security boundary.\nCross-browser delivery to Chrome, Edge, Firefox, and Safari: API divergence (chrome.* vs browser.*), MV2/MV3 differences, Safari packaging, and per-store review/release (staged rollout, rollback, remote-code ban).\nNative messaging with native host applications, plus extension-specific performance (service-worker cold-start, bundle size, content-script efficiency).\n\n\nProficiency In\n\n\nStrong React + TypeScript with utility-first CSS (e.g., TailwindCSS), building UI across extension surfaces (popup, options, side panel, in-page) that is responsive, accessible (WCAG/ARIA), and reusable via a design system.\nCore frontend and browser fundamentals: browser API, client-side storage (localStorage, IndexedDB, chrome.storage), networking (fetch/XHR), and performance optimization.\nDesigning, consuming, and optimizing REST APIs with efficient data-fetching and caching (e.g., TanStack Query).\nFront-end security: mitigating XSS, CSRF, and CORS, and applying CSP, including the extension's own CSP model.\nModern authentication and identity: OAuth 2.0 / OIDC, SAML, SCIM, and WebAuthn / FIDO2 / passkeys; prior IAM or security experience.\nTesting (unit, integration, component) and observability (metrics, traces, logs; OpenTelemetry/Datadog a plus), owning delivery end-to-end from design to production in an Agile/CI-CD environment.\n\n\nNice To Have\n\n\nExperience working with security compliance frameworks (SOC 2, GDPR, HIPPA, etc.)\nFamiliarity with encryption processes and key management. \nPrior experience in a venture-funded high-growth SaaS startup preferred.\n\n\nDesired Qualities\n\n\nResourceful Achiever: Self-motivated, proactive, and adaptable in solving complex technical challenges.\nProduct Minded: Strong ability to understand customer value, to translate customer needs into software products that deliver tangible customer value.\nPrecision Executor: Focused on optimizing performance, scalability, and reliability in software delivery.\nTeam Player: Strong interpersonal skills, fostering a culture of collaboration and shared success. Actively mentor other engineers.\nLifelong Learner: A continuous curiosity to learn and explore emerging technologies and industry trends.\nInnovative Thinker: Open to creative solutions and comfortable navigating ambiguity.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-29T19:17:48.445Z",
-    "sourceHash": "b0e906a86cf54ba89d10ea27a7ef529883f5db976941906817c3b967560e9536",
-    "company": {
-      "id": "cerby",
-      "name": "Cerby",
-      "logoUrl": "https://logo.clearbit.com/cerby.com",
-      "industry": "Technology",
-      "website": "https://cerby.com"
-    },
-    "slug": "sr-software-engineer-frontend-extensions-team-cerby-b0e906a8",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "css",
-        "tailwind",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "08543f011f53d13307252b50a6cfb16d7f0aa5b5ce071a27e4fc927d573eafb0",
-    "title": "Senior Frontend Engineer (Medical Imaging Viewer)",
-    "applyUrl": "https://careers.epam.com/en/vacancy/bltqqch0xnul45b80pm_en?country=Mexico&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
-    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are looking for a Senior Frontend Engineer to build and evolve a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. You will collaborate with engineering, product, and design to solve complex UI and API-adjacent problems.\n\nResponsibilities\n\n\nDesign core functionality for a web-based medical imaging viewer\nBuild user interfaces using TypeScript and ReactJS\nMaintain existing frontend features and improve performance and reliability\nCollaborate with engineers to analyze problems and implement solutions\nCoordinate with product and design to deliver intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\n3+ years of professional frontend development experience\nStrong TypeScript and ReactJS experience\nProven DICOM Medical Viewers experience, including OHIF/DICOM\nStrong API and integration skills across client/server boundaries\nSolid frontend architecture knowledge, including state management and component design\nExcellent written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience with regulated environments or healthcare/clinical trial software\nExperience with Python or Go for backend collaboration\nExperience building CI/CD pipelines, with GitLab CI exposure\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
-    "location": "Remote - Mexico",
-    "country": "Mexico",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-29T18:39:42.523Z",
-    "sourceHash": "08543f011f53d13307252b50a6cfb16d7f0aa5b5ce071a27e4fc927d573eafb0",
-    "company": {
-      "id": "epamsystems",
-      "name": "EPAM Systems",
-      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
-      "industry": "Technology",
-      "website": "https://epamsystems.com"
-    },
-    "slug": "senior-frontend-engineer-medical-imaging-viewer-epam-systems-08543f01",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Mexico"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "670ec2a561d426d2d2756085f9280eb8ead6f0eed83a6d13ccec90b57764320e",
-    "title": "Frontend Engineer (Medical Imaging Viewer)",
-    "applyUrl": "https://careers.epam.com/en/vacancy/bltf2bisuru3zbhc7o0_en?country=Mexico&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
-    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
-    "location": "Remote - Mexico",
-    "country": "Mexico",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-29T18:39:20.375Z",
-    "sourceHash": "670ec2a561d426d2d2756085f9280eb8ead6f0eed83a6d13ccec90b57764320e",
-    "company": {
-      "id": "epamsystems",
-      "name": "EPAM Systems",
-      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
-      "industry": "Technology",
-      "website": "https://epamsystems.com"
-    },
-    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-670ec2a5",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Mexico"
-      ],
-      "seniority": "junior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "06979e51badb676424c31eab8d5362584e47a193cbbaf43d516ec5c072cf22ac",
-    "title": "Frontend Engineer (Next.js)",
-    "applyUrl": "https://namolabs.in/careers/apply?role=Frontend%20Engineer%20(Next.js)",
-    "description": "About the job\n\nBack to Careers\n\nApplying for\n\nFrontend Engineer (Next.js)\n\nCraft premium web experiences using Next.js and Tailwind CSS.\n\nDepartment Engineering\n\nFocus Frontend + Web Engineering\n\nLocation Remote\n\nOpen for Full-Time\n\n\n Internship\n\n\nRole details\n\nPreferred Skills\n\nTypeScriptReact / Next.jsTailwind CSSAccessibility (WCAG)Performance optimisationFigma-to-code\n\nResponsibilities\n\n\n Build and maintain Next.js web applications\n Translate Figma designs into pixel-perfect UIs\n Implement accessibility and performance best practices\n Collaborate with designers and backend engineers",
-    "location": "Remote - Indonesia",
-    "country": "Indonesia",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-29T18:28:29.359Z",
-    "sourceHash": "06979e51badb676424c31eab8d5362584e47a193cbbaf43d516ec5c072cf22ac",
-    "company": {
-      "id": "namolabs",
-      "name": "Namo Labs",
-      "logoUrl": "https://logo.clearbit.com/namolabs.com",
-      "industry": "Technology",
-      "website": "https://namolabs.com"
-    },
-    "slug": "frontend-engineer-next-js-namo-labs-06979e51",
-    "aiTags": {
-      "stack": [
-        "nextjs",
-        "css",
-        "tailwind",
-        "figma",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Indonesia"
       ],
       "seniority": "mid",
       "employmentType": "internship"
