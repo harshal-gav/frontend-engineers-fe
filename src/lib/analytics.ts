@@ -17,7 +17,7 @@ type EventName =
   | "referral_link_clicked"
   | "referral_upgrade_clicked";
 
-export function trackEvent(eventName: EventName, eventParams?: Record<string, any>) {
+export function trackEvent(eventName: EventName, eventParams?: Record<string, unknown>) {
   if (typeof window !== "undefined" && analytics) {
     try {
       logEvent(analytics, eventName, eventParams);

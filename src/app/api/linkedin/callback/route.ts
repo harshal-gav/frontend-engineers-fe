@@ -75,7 +75,7 @@ export async function GET(request: Request) {
         memberId = meData.sub;
         memberName = meData.name || '';
       }
-    } catch (e) {
+    } catch {
       // Non-fatal
     }
 
@@ -113,11 +113,12 @@ export async function GET(request: Request) {
       { status: 200, headers: { 'Content-Type': 'text/html' } }
     );
 
-  } catch (err: any) {
+  } catch (err: unknown) {
+    const message = err instanceof Error ? err.message : String(err);
     return new Response(
       `<html><body style="font-family:system-ui;max-width:600px;margin:40px auto;padding:20px;background:#0a0a0a;color:white;">
         <h1 style="color:#f43f5e;">❌ Token Exchange Failed</h1>
-        <pre style="background:#111;padding:12px;border-radius:8px;overflow:auto;color:#f43f5e;">${err.message}</pre>
+        <pre style="background:#111;padding:12px;border-radius:8px;overflow:auto;color:#f43f5e;">${message}</pre>
         <a href="/" style="color:#00ffcc;">← Back to home</a>
       </body></html>`,
       { status: 500, headers: { 'Content-Type': 'text/html' } }

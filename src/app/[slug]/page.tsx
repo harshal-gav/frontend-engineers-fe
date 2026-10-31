@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { ALL_LANDING_PAGES, getLandingPageConfig } from "@/lib/landing-pages";
 import { loadJobsFromFile, filterActiveJobs } from "@/lib/jobs.server";
-import FaqSchema, { type FaqItem } from "@/components/FaqSchema";
+import FaqSchema from "@/components/FaqSchema";
 import LandingJobList from "@/components/LandingJobList";
 
 export const revalidate = 3600; // 1-hour ISR for programmatic landing pages

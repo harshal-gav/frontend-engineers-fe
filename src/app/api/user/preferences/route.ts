@@ -46,7 +46,7 @@ export async function POST(request: Request) {
     const db = getAdminDb();
 
     // Support updating either job_alerts or saved_jobs or lastLoginAt
-    const updateData: any = { updatedAt: new Date() };
+    const updateData: Record<string, unknown> = { updatedAt: new Date() };
     if (body.job_alerts !== undefined) {
       updateData.job_alerts = body.job_alerts;
     }

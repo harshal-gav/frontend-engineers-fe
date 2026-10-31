@@ -28,8 +28,8 @@ function LoginForm() {
     try {
       await signInWithEmailAndPassword(auth, email, password);
       router.push(redirectUrl);
-    } catch (err: any) {
-      setError(err.message || "Failed to log in");
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : "Failed to log in");
     } finally {
       setLoading(false);
     }
@@ -94,7 +94,7 @@ function LoginForm() {
         </form>
 
         <p className="text-gray-600 text-center mt-6">
-          Don't have an account? <Link href={`/auth/signup${redirectUrl !== "/" ? `?redirect=${encodeURIComponent(redirectUrl)}` : ""}`} className="text-[#2563eb] hover:underline">Sign up</Link>
+          Don&apos;t have an account? <Link href={`/auth/signup${redirectUrl !== "/" ? `?redirect=${encodeURIComponent(redirectUrl)}` : ""}`} className="text-[#2563eb] hover:underline">Sign up</Link>
         </p>
       </div>
     </div>

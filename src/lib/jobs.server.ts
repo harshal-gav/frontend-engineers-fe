@@ -273,8 +273,9 @@ export async function getActiveJobs(options: { includeFirestore?: boolean } = { 
       const firestoreJobs: Job[] = [];
       firestoreJobsSnapshot.forEach((doc) => {
         const data = doc.data() as Job;
-        if (data.postedAt && (data.postedAt as any).toDate) {
-          data.postedAt = (data.postedAt as any).toDate().toISOString();
+        const rawPostedAt = data.postedAt as unknown;
+        if (rawPostedAt && typeof rawPostedAt === "object" && "toDate" in rawPostedAt && typeof (rawPostedAt as { toDate: () => Date }).toDate === "function") {
+          data.postedAt = (rawPostedAt as { toDate: () => Date }).toDate().toISOString();
         }
         firestoreJobs.push(data);
       });

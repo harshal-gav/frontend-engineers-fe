@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { createUserWithEmailAndPassword } from "firebase/auth";
-import { doc, setDoc, getDoc } from "firebase/firestore";
+import { doc, setDoc } from "firebase/firestore";
 import { auth, db } from "@/lib/firebase";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
@@ -52,8 +52,8 @@ function SignupForm() {
       });
 
       router.push(redirectUrl);
-    } catch (err: any) {
-      setError(err.message || "Failed to sign up");
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : "Failed to sign up");
     } finally {
       setLoading(false);
     }

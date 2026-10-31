@@ -1,9 +1,8 @@
 "use client";
 
-import React, { useState, useEffect, useCallback, useMemo, useRef } from "react";
+import React, { useState, useEffect, useCallback, useMemo } from "react";
 import { useRouter, useSearchParams } from "next/navigation";
 import Link from "next/link";
-import type { IFuseOptions } from "fuse.js";
 import { useAuth } from "@/context/AuthContext";
 import { auth } from "@/lib/firebase";
 import { signOut } from "firebase/auth";
@@ -21,22 +20,6 @@ import type { Job } from "@/lib/jobs";
 
 // Global cache for instant back-navigation
 let globalJobsCache: Job[] | null = null;
-
-// ─── Fuse.js config ──────────────────────────────────────
-
-const FUSE_OPTIONS: IFuseOptions<Job> = {
-  keys: [
-    { name: "title", weight: 0.4 },
-    { name: "company.name", weight: 0.25 },
-    { name: "description", weight: 0.2 },
-    { name: "location", weight: 0.1 },
-
-  ],
-  threshold: 0.35,
-  includeScore: true,
-  ignoreLocation: true,
-  minMatchCharLength: 2,
-};
 
 // ─── Skeleton ────────────────────────────────────────────
 
@@ -73,14 +56,6 @@ function computeFacets(jobs: Job[]) {
   return facets;
 }
 
-// ─── Sorting Helper ──────────────────────────────────────
-
-function hasCareerLink(url?: string): boolean {
-  if (!url) return false;
-  const lower = url.toLowerCase();
-  return lower.includes("career") || lower.includes("careers");
-}
-
 // ─── Main Component ──────────────────────────────────────
 
 export default function JobsClientPage() {
@@ -103,29 +78,23 @@ export default function JobsClientPage() {
     createDefaultFilters(searchParams)
   );
   const [allJobs, setAllJobs] = useState<Job[]>(globalJobsCache || []);
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => setMounted(true), []);
-
   const [dataLoaded, setDataLoaded] = useState(!!globalJobsCache);
   const [page, setPage] = useState(() => {
     const p = searchParams?.get("page");
     return p ? parseInt(p, 10) || 1 : 1;
   });
+  const [prevParams, setPrevParams] = useState(searchParams);
+  if (searchParams !== prevParams) {
+    setPrevParams(searchParams);
+    const p = searchParams?.get("page");
+    setPage(p ? parseInt(p, 10) || 1 : 1);
+    setFilters(createDefaultFilters(searchParams));
+  }
+
   const [showFilters, setShowFilters] = useState(false);
   const [upgradeModalContext, setUpgradeModalContext] = useState<UpgradeContext | null>(null);
   const [savedJobIds, setSavedJobIds] = useState<string[]>([]);
   const [savedPresets, setSavedPresets] = useState<SavedPreset[]>([]);
-
-  // Sync state with URL when searchParams change (e.g. back navigation)
-  useEffect(() => {
-    const p = searchParams?.get("page");
-    const newPage = p ? parseInt(p, 10) || 1 : 1;
-    setPage(newPage);
-
-    // Also sync filters so that if they had filters and pressed back, they are restored
-    setFilters(createDefaultFilters(searchParams));
-  }, [searchParams]);
 
   // Load jobs from secure API
   useEffect(() => {
@@ -208,6 +177,8 @@ export default function JobsClientPage() {
 
   // Compute facets from all jobs
   const facets = useMemo(() => computeFacets(allJobs), [allJobs]);
+
+  const [mountTime] = useState(() => Date.now());
 
   // Filter & paginate
   const { jobs, totalJobs, hasMore } = useMemo(() => {
@@ -315,7 +286,6 @@ export default function JobsClientPage() {
 
     // Posted Within
     if (filters.postedWithin) {
-      const now = Date.now();
       const map: Record<string, number> = {
         "1d": 24 * 60 * 60 * 1000,
         "7d": 7 * 24 * 60 * 60 * 1000,
@@ -325,18 +295,21 @@ export default function JobsClientPage() {
       if (limitMs) {
         filtered = filtered.filter((j) => {
           if (!j.postedAt) return false;
-          return now - new Date(j.postedAt).getTime() <= limitMs;
+          return mountTime - new Date(j.postedAt).getTime() <= limitMs;
         });
       }
     }
 
     // Sort strictly by date (newest first), handling both string dates and Firestore Timestamp objects
     filtered.sort((a, b) => {
-      const getTime = (val: any) => {
+      const getTime = (val: unknown) => {
         if (!val) return 0;
-        if (typeof val === "object" && val._seconds) return val._seconds * 1000;
+        if (typeof val === "object" && val !== null && "_seconds" in val && typeof (val as { _seconds: number })._seconds === "number") {
+          return (val as { _seconds: number })._seconds * 1000;
+        }
         if (typeof val === "number") return val;
-        return new Date(val).getTime() || 0;
+        if (typeof val === "string") return new Date(val).getTime() || 0;
+        return 0;
       };
 
       const timeA = getTime(a.postedAt);
@@ -382,19 +355,7 @@ export default function JobsClientPage() {
       totalJobs: total,
       hasMore: startIndex + PAGE_SIZE < total,
     };
-  }, [allJobs, filters, page, dataLoaded]);
-
-  const hasActiveFilters =
-    filters.q !== "" ||
-    filters.location !== "" ||
-    filters.remoteType.length > 0 ||
-    filters.framework.length > 0 ||
-    filters.sortBy !== "newest" ||
-    filters.postedWithin !== "" ||
-    filters.remoteScope.length > 0 ||
-    filters.seniority.length > 0 ||
-    filters.employmentType.length > 0 ||
-    filters.excludeKeywords !== "";
+  }, [allJobs, filters, page, dataLoaded, mountTime]);
 
   // URL sync
   const syncFiltersToUrl = useCallback(
@@ -435,7 +396,8 @@ export default function JobsClientPage() {
 
   // Saved presets handlers
   const handleSavePreset = async (name: string) => {
-    const { q, ...filterData } = filters;
+    const filterData = { ...filters };
+    delete (filterData as Partial<FilterState>).q;
     const newPreset: SavedPreset = {
       id: Date.now().toString(),
       name,
@@ -489,8 +451,6 @@ export default function JobsClientPage() {
     filters.employmentType.length > 0,
     !!filters.excludeKeywords,
   ].filter(Boolean).length;
-
-  const isLoading = !mounted || !dataLoaded;
 
   return (
     <>

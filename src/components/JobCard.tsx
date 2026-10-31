@@ -22,30 +22,6 @@ const LOGO_COLORS = [
   "#3b5c5c",
 ];
 
-// ─── Tech Stack Extraction ──────────────────────────────
-
-const TECH_KEYWORDS = [
-  "React", "Vue", "Angular", "TypeScript", "JavaScript",
-  "Next.js", "Node.js", "Svelte", "Remix", "GraphQL",
-  "Tailwind", "CSS", "HTML", "Redux", "Python",
-  "AWS", "Docker", "Kubernetes", "Go", "Rust",
-  "Swift", "Flutter", "React Native",
-];
-
-function extractTechStack(title: string, description: string | null): string[] {
-  const text = `${title} ${(description || "").substring(0, 500)}`;
-  const found: string[] = [];
-  for (const keyword of TECH_KEYWORDS) {
-    // Word-boundary aware match (case insensitive)
-    const regex = new RegExp(`\\b${keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}\\b`, "i");
-    if (regex.test(text)) {
-      found.push(keyword);
-    }
-    if (found.length >= 4) break; // Cap at 4 tags to avoid clutter
-  }
-  return found;
-}
-
 // ─── Component ───────────────────────────────────────────
 
 interface JobCardProps {
@@ -74,7 +50,6 @@ export default function JobCard({
 
   const gradientIndex =
     (job.company?.name || "X").charCodeAt(0) % LOGO_COLORS.length;
-  const techStack = extractTechStack(job.title, job.description);
   const postedDate = timeAgo(job.postedAt);
 
   // Locked cards link to pricing, unlocked cards link to job detail
@@ -111,7 +86,7 @@ export default function JobCard({
                 if (job.company?.website) {
                   try {
                     domain = new URL(job.company.website).hostname;
-                  } catch (e) { }
+                  } catch { }
                 } else if (job.company?.logoUrl && job.company.logoUrl.includes("clearbit.com/")) {
                   domain = job.company.logoUrl.split("clearbit.com/")[1];
                 }

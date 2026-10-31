@@ -2,12 +2,13 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { type Job, getEffectiveJobDescription, hasSourceDescription, formatLocation } from "@/lib/jobs";
+import { type Job, hasSourceDescription, formatLocation } from "@/lib/jobs";
 import UpgradeModal, { type UpgradeContext } from "@/components/UpgradeModal";
 
-import { useState, useEffect } from "react";
+import { useState, useSyncExternalStore } from "react";
 import { useAuth } from "@/context/AuthContext";
-import { getAuth } from "firebase/auth";
+
+const emptySubscribe = () => () => {};
 
 // ─── Config ──────────────────────────────────────────────
 
@@ -32,18 +33,15 @@ interface JobDetailProps {
   relatedJobs?: Job[];
 }
 
-export default function JobDetail({ job: initialJob, relatedJobs = [] }: JobDetailProps) {
+export default function JobDetail({ job, relatedJobs = [] }: JobDetailProps) {
   const { user, isSubscribed, loading: authLoading } = useAuth();
   const pathname = usePathname();
-  const [backHref, setBackHref] = useState("/");
+  const backHref = useSyncExternalStore(
+    emptySubscribe,
+    () => (typeof window !== "undefined" && window.location.search ? `/${window.location.search}` : "/"),
+    () => "/"
+  );
 
-  useEffect(() => {
-    if (typeof window !== "undefined" && window.location.search) {
-      setBackHref(`/${window.location.search}`);
-    }
-  }, []);
-
-  const [job, setJob] = useState<Job>(initialJob);
   const [upgradeModalContext, setUpgradeModalContext] = useState<UpgradeContext | null>(null);
 
   // Report job modal state

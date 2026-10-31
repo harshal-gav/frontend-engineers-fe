@@ -1,30 +1,30 @@
 "use client";
 
-import { useState, useEffect } from "react";
+import { useState, useSyncExternalStore } from "react";
 import Link from "next/link";
 
-export default function CookieConsent() {
-  const [showBanner, setShowBanner] = useState(false);
+const emptySubscribe = () => () => {};
 
-  useEffect(() => {
-    // Only run on client
-    const consent = localStorage.getItem("cookie_consent");
-    if (!consent) {
-      setShowBanner(true);
-    }
-  }, []);
+export default function CookieConsent() {
+  const [dismissed, setDismissed] = useState(false);
+
+  const hasConsent = useSyncExternalStore(
+    emptySubscribe,
+    () => localStorage.getItem("cookie_consent") !== null,
+    () => true
+  );
 
   const handleAcceptAll = () => {
     localStorage.setItem("cookie_consent", "all");
-    setShowBanner(false);
+    setDismissed(true);
   };
 
   const handleRejectNonEssential = () => {
     localStorage.setItem("cookie_consent", "essential_only");
-    setShowBanner(false);
+    setDismissed(true);
   };
 
-  if (!showBanner) return null;
+  if (hasConsent || dismissed) return null;
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 md:p-6 pointer-events-none">

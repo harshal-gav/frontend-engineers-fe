@@ -32,7 +32,7 @@ interface Job {
   isDead?: boolean;
   deadAt?: string | null;
   company?: { name: string };
-  [key: string]: any;
+  [key: string]: unknown;
 }
 
 interface CheckResult {
@@ -99,13 +99,14 @@ async function checkUrl(
     }
 
     return { status: response.status, isDead: false, reason: "alive" };
-  } catch (error: any) {
+  } catch (error: unknown) {
     // Network errors, DNS failures, etc. - don't mark as dead
     // (could be temporary, or our IP might be blocked)
+    const errObj = error as { name?: string; code?: string };
     const reason =
-      error.name === "AbortError"
+      errObj.name === "AbortError"
         ? "timeout"
-        : error.code || "network_error";
+        : errObj.code || "network_error";
     return { status: "error", isDead: false, reason };
   }
 }

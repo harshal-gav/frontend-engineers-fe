@@ -22,10 +22,10 @@ export async function POST(req: Request) {
     const name = decodedToken.name || decodedToken.email?.split('@')[0] || "User";
     const uid = decodedToken.uid;
 
-    let reqBody: any = {};
+    let reqBody: { type?: string } = {};
     try {
       reqBody = await req.json();
-    } catch (e) {
+    } catch {
       // ignore empty body
     }
 
@@ -63,8 +63,9 @@ export async function POST(req: Request) {
 
     return NextResponse.json({ checkout_url: session.checkout_url });
 
-  } catch (error: any) {
+  } catch (error: unknown) {
     console.error('Error creating Dodo checkout session:', error);
-    return NextResponse.json({ error: error?.message || 'Internal Server Error', details: error }, { status: 500 });
+    const message = error instanceof Error ? error.message : 'Internal Server Error';
+    return NextResponse.json({ error: message }, { status: 500 });
   }
 }

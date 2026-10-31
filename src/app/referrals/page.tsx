@@ -398,8 +398,8 @@ function PostReferralForm({
 
       trackEvent("referral_posted", { company: formData.companyName });
       onSuccess();
-    } catch (err: any) {
-      setError(err.message || "Failed to post referral");
+    } catch (err: unknown) {
+      setError(err instanceof Error ? err.message : "Failed to post referral");
     } finally {
       setSubmitting(false);
     }
@@ -739,8 +739,17 @@ export default function ReferralsPage() {
 
   useEffect(() => {
     if (authLoading) return;
-    fetchReferrals();
-    trackEvent("referrals_page_viewed");
+    let ignore = false;
+    async function load() {
+      await fetchReferrals();
+      if (!ignore) {
+        trackEvent("referrals_page_viewed");
+      }
+    }
+    load();
+    return () => {
+      ignore = true;
+    };
   }, [authLoading, fetchReferrals]);
 
   const handlePostSuccess = () => {

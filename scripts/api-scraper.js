@@ -86,7 +86,7 @@ function cleanHtmlText(html) {
  * 3. Title or Location MUST NOT contain "hybrid", "on-site", "onsite", "relocation provided"
  * 4. Must not match blocked IDs/slugs
  */
-function isStrictFrontend(title, location = '', description = '', checkId = '') {
+function isStrictFrontend(title, location = '', _description = '', checkId = '') {
   if (!title) return false;
   const t = title.toLowerCase();
 

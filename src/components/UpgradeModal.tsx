@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useSyncExternalStore } from "react";
 import { useRouter } from "next/navigation";
 import { trackEvent } from "@/lib/analytics";
 
@@ -12,12 +12,17 @@ interface UpgradeModalProps {
   context: UpgradeContext;
 }
 
+const emptySubscribe = () => () => {};
+
 export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalProps) {
   const router = useRouter();
-  const [mounted, setMounted] = useState(false);
+  const isMounted = useSyncExternalStore(
+    emptySubscribe,
+    () => true,
+    () => false
+  );
 
   useEffect(() => {
-    setMounted(true);
     if (isOpen) {
       document.body.style.overflow = "hidden";
       trackEvent("upgrade_modal_opened", { context });
@@ -29,7 +34,7 @@ export default function UpgradeModal({ isOpen, onClose, context }: UpgradeModalP
     };
   }, [isOpen, context]);
 
-  if (!mounted || !isOpen) return null;
+  if (!isMounted || !isOpen) return null;
 
   const contentMap: Record<UpgradeContext, { title: string; desc: string }> = {
     search: {

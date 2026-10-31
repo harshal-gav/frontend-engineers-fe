@@ -17,7 +17,7 @@ export default function EmployerPricingPage() {
   const router = useRouter();
   const { user, isEmployer } = useAuth();
   const [error, setError] = useState<string | null>(null);
-  const [providerKey, setProviderKey] = useState<number>(Date.now());
+  const [providerKey, setProviderKey] = useState<number>(() => Date.now());
 
   useEffect(() => {
     // Handle bfcache: force remount of PayPal buttons on back navigation
@@ -154,7 +154,7 @@ export default function EmployerPricingPage() {
                   </div>
                   <div>
                     <h3 className="text-xl font-semibold mb-2">Unlimited Jobs. $99/mo. No Per-Post Fees.</h3>
-                    <p className="text-gray-600">One job post on LinkedIn costs $300+. Post 10 on Indeed and you're out $2,000+. Post unlimited jobs here for a flat $99/mo.</p>
+                    <p className="text-gray-600">One job post on LinkedIn costs $300+. Post 10 on Indeed and you&apos;re out $2,000+. Post unlimited jobs here for a flat $99/mo.</p>
                   </div>
                 </div>
 
@@ -227,7 +227,7 @@ export default function EmployerPricingPage() {
                       <PayPalScriptProvider key={providerKey} options={initialOptions}>
                         <PayPalButtons
                           style={{ layout: "vertical", shape: "rect", color: "black", label: "subscribe" }}
-                          createSubscription={async (data, actions) => {
+                          createSubscription={async () => {
                             const response = await fetch("/api/paypal/create-subscription", {
                               method: "POST",
                               headers: {
@@ -245,7 +245,7 @@ export default function EmployerPricingPage() {
                             }
                             return result.id;
                           }}
-                          onApprove={async (data, actions) => {
+                          onApprove={async () => {
                             alert("🎉 Unlimited Job Posting subscription activated successfully!");
                             router.push("/");
                           }}
@@ -312,7 +312,7 @@ export default function EmployerPricingPage() {
             </div>
             <div className="bg-white p-6 rounded-2xl border border-gray-200">
               <h3 className="font-bold text-gray-900 mb-1">Are all candidates frontend developers?</h3>
-              <p className="text-sm text-gray-600">Yes. Our platform caters specifically to React, Vue, Next.js, Angular, and TypeScript specialists. You don't have to sift through generic or irrelevant applicants.</p>
+              <p className="text-sm text-gray-600">Yes. Our platform caters specifically to React, Vue, Next.js, Angular, and TypeScript specialists. You don&apos;t have to sift through generic or irrelevant applicants.</p>
             </div>
             <div className="bg-white p-6 rounded-2xl border border-gray-200">
               <h3 className="font-bold text-gray-900 mb-1">How do candidates apply?</h3>

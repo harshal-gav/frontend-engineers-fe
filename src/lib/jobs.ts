@@ -39,6 +39,11 @@ export interface Job {
   hasSalaryHidden?: boolean;
   /** True if this job's details are locked (free users see title only) */
   isLocked?: boolean;
+  // Optional salary fields
+  salary?: string | number | null;
+  salaryMin?: number | null;
+  salaryMax?: number | null;
+  salaryCurrency?: string | null;
 }
 
 /**

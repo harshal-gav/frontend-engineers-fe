@@ -30,7 +30,7 @@ interface Facets {
 
 interface FilterSidebarProps {
   filters: FilterState;
-  facets: Facets;
+  facets?: Facets;
   onFilterChange: (filters: FilterState) => void;
   /** Called when user taps "Show X results" on mobile */
   onApply?: () => void;
@@ -85,21 +85,12 @@ const EMPLOYMENT_OPTIONS = [
   { value: "internship", label: "Internship", icon: "🎓" },
 ];
 
-const POSTED_OPTIONS = [
-  { value: "", label: "Any time" },
-  { value: "1d", label: "24h" },
-  { value: "7d", label: "7 days" },
-  { value: "30d", label: "30 days" },
-];
-
 // ─── Component ───────────────────────────────────────────
 
 export default function FilterSidebar({
   filters,
-  facets,
   onFilterChange,
   onApply,
-  totalResults,
   isSubscribed,
   savedPresets,
   onSavePreset,

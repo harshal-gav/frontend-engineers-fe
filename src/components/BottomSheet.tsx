@@ -27,12 +27,19 @@ export default function BottomSheet({
   children,
 }: BottomSheetProps) {
   const sheetRef = useRef<HTMLDivElement>(null);
+  const [prevIsOpen, setPrevIsOpen] = useState(isOpen);
   const [isAnimating, setIsAnimating] = useState(false);
+
+  if (isOpen !== prevIsOpen) {
+    setPrevIsOpen(isOpen);
+    if (isOpen) {
+      setIsAnimating(true);
+    }
+  }
 
   // Prevent body scroll when sheet is open
   useEffect(() => {
     if (isOpen) {
-      setIsAnimating(true);
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";

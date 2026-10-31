@@ -2,7 +2,7 @@
 
 import { useAuth } from "@/context/AuthContext";
 import { useRouter } from "next/navigation";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useMemo } from "react";
 import Link from "next/link";
 import JobCard from "@/components/JobCard";
 import type { Job } from "@/lib/jobs";
@@ -11,14 +11,35 @@ import JobAlertForm from "@/components/JobAlertForm";
 import { auth } from "@/lib/firebase";
 import { signOut } from "firebase/auth";
 
+interface UserPreferences {
+  saved_jobs?: string[];
+  job_alerts?: {
+    query?: string;
+    location?: string;
+    frequency?: string;
+  };
+  filter_presets?: Array<{
+    id: string;
+    name: string;
+    filters: Record<string, unknown>;
+  }>;
+}
+
 export default function DashboardPage() {
   const { user, loading, isSubscribed } = useAuth();
   const router = useRouter();
   
-  const [prefs, setPrefs] = useState<any>(null);
+  const [prefs, setPrefs] = useState<UserPreferences | null>(null);
   const [allJobs, setAllJobs] = useState<Job[]>([]);
   const [isLoading, setIsLoading] = useState(true);
   const [showJobAlertForm, setShowJobAlertForm] = useState(false);
+  const [mountTime] = useState(() => Date.now());
+
+  // Calculate new jobs posted in the last 24 hours
+  const newJobs = useMemo(() => {
+    const twentyFourHoursAgo = new Date(mountTime - 24 * 60 * 60 * 1000);
+    return allJobs.filter(j => j.postedAt && new Date(j.postedAt) > twentyFourHoursAgo);
+  }, [allJobs, mountTime]);
 
   // Guest users are now allowed to view the dashboard
 
@@ -100,10 +121,6 @@ export default function DashboardPage() {
   const savedJobIds = prefs?.saved_jobs || [];
   const savedJobs = allJobs.filter(j => savedJobIds.includes(j.id));
   
-  // Calculate new jobs posted in the last 24 hours
-  const twentyFourHoursAgo = new Date(Date.now() - 24 * 60 * 60 * 1000);
-  const newJobs = allJobs.filter(j => j.postedAt && new Date(j.postedAt) > twentyFourHoursAgo);
-
   const alert = prefs?.job_alerts;
 
   return (

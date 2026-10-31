@@ -1,11 +1,9 @@
 import type { Metadata } from "next";
 import { Suspense } from "react";
 import Link from "next/link";
-import fs from 'fs';
-import path from 'path';
 import JobsClientPage from "@/components/JobsClientPage";
 import FaqSchema, { type FaqItem } from "@/components/FaqSchema";
-
+import type { Job } from "@/lib/jobs";
 import { loadJobsFromFile, filterActiveJobs } from "@/lib/jobs.server";
 
 export const revalidate = 3600; // 1-hour ISR for homepage
@@ -50,7 +48,7 @@ export default async function HomePage() {
     const allJobs = loadJobsFromFile();
     const jobs = filterActiveJobs(allJobs).slice(0, 50); // limit to top 50 active deduplicated jobs for SEO
 
-      const itemListElements = jobs.map((job: any, index: number) => ({
+      const itemListElements = jobs.map((job: Job, index: number) => ({
         "@type": "ListItem",
         "position": index + 1,
         "name": `${job.title} at ${job.company?.name || "Company"}`,

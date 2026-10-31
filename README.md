@@ -11,11 +11,11 @@ Welcome to **FrontendEngineers.com**, the ultimate job board for 100% remote fro
 ## Tech Stack
 - **Frontend:** Next.js (App Router), Tailwind CSS
 - **Backend:** Firebase Auth & Firestore
-- **Payments:** PayPal & PayU Subscriptions
+- **Payments:** PayPal & Dodo Payments
 - **Automation:** Node.js, Playwright, Gemini API
 
 ## Setup
 ```bash
 npm run dev
 ```
-Set up `.env` with Firebase, PayPal, PayU, and Gemini API keys to run fully locally.
+Set up `.env` with Firebase, PayPal, Dodo Payments, and Gemini API keys to run fully locally.

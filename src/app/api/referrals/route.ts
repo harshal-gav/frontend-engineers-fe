@@ -155,10 +155,10 @@ export async function GET(request: NextRequest) {
           isLocked,
         };
       })
-      .filter((ref: any) => ref.status !== "inactive" && ref.status !== "archived");
+      .filter((ref) => ref.status !== "inactive" && ref.status !== "archived");
 
     // In case fallback was used, ensure ordered by createdAt desc
-    referrals.sort((a: any, b: any) => {
+    referrals.sort((a, b) => {
       const timeA = new Date(a.createdAt).getTime() || 0;
       const timeB = new Date(b.createdAt).getTime() || 0;
       return timeB - timeA;

@@ -22,7 +22,7 @@ export default function PricingPage() {
   const router = useRouter();
   const { user, isSubscribed } = useAuth();
   const [error, setError] = useState<string | null>(null);
-  const [providerKey, setProviderKey] = useState<number>(Date.now());
+  const [providerKey, setProviderKey] = useState<number>(() => Date.now());
   const [stats, setStats] = useState<{ jobCount: number; companyCount: number } | null>(null);
 
   useEffect(() => {
@@ -80,49 +80,6 @@ export default function PricingPage() {
     } catch (err) {
       console.error(err);
       setError("Failed to initiate payment");
-    }
-  };
-
-
-  const handlePayUSubscription = async () => {
-    try {
-      if (!user) return;
-      const token = await user.getIdToken();
-
-      const res = await fetch("/api/payu/create-subscription", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${token}`
-        }
-      });
-
-      const data = await res.json();
-
-      if (!res.ok || data.error) {
-        setError(data.error || "Failed to initialize PayU");
-        return;
-      }
-
-      // Dynamically create and submit a form to PayU
-      const form = document.createElement("form");
-      form.setAttribute("method", "POST");
-      form.setAttribute("action", data.action);
-
-      Object.keys(data.params).forEach((key) => {
-        const hiddenField = document.createElement("input");
-        hiddenField.setAttribute("type", "hidden");
-        hiddenField.setAttribute("name", key);
-        hiddenField.setAttribute("value", data.params[key]);
-        form.appendChild(hiddenField);
-      });
-
-      document.body.appendChild(form);
-      form.submit();
-
-    } catch (err) {
-      console.error(err);
-      setError("Failed to initiate PayU payment");
     }
   };
 
@@ -279,7 +236,7 @@ export default function PricingPage() {
               <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
                 {TESTIMONIALS.map((t, i) => (
                   <div key={i} className="glass-card p-5 text-left">
-                    <p className="text-sm text-gray-700 mb-3 leading-relaxed">"{t.quote}"</p>
+                    <p className="text-sm text-gray-700 mb-3 leading-relaxed">&ldquo;{t.quote}&rdquo;</p>
                     <div className="flex items-center gap-2">
                       {t.avatar ? (
                         <img
@@ -404,7 +361,7 @@ export default function PricingPage() {
                       <PayPalScriptProvider key={providerKey} options={initialOptions}>
                         <PayPalButtons
                           style={{ layout: "vertical", shape: "rect", color: "gold" }}
-                          createSubscription={async (data, actions) => {
+                          createSubscription={async () => {
                             const response = await fetch("/api/paypal/create-subscription", {
                               method: "POST",
                               headers: {
@@ -421,7 +378,7 @@ export default function PricingPage() {
                             }
                             return result.id;
                           }}
-                          onApprove={async (data, actions) => {
+                          onApprove={async () => {
                             alert("🎉 Subscription created successfully! Your account will be upgraded momentarily.");
                             router.push("/");
                           }}

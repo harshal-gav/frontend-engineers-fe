@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { Metadata } from "next";
-
+import type { Job } from "@/lib/jobs";
 import { loadJobsFromFile } from "@/lib/jobs.server";
 
 export const metadata: Metadata = {
@@ -11,10 +11,8 @@ export const metadata: Metadata = {
   },
 };
 
-
-
 export default function HTMLSitemapPage() {
-  let jobs: any[] = [];
+  let jobs: Job[] = [];
   try {
     jobs = loadJobsFromFile();
   } catch (e) {

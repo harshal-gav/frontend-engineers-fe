@@ -152,7 +152,7 @@ async function runAudit() {
 
   // Count duplicate URL pairs
   let duplicateUrlPairs = 0;
-  for (const [_, ids] of urlMap) {
+  for (const ids of urlMap.values()) {
     if (ids.length > 1) {
       duplicateUrlPairs += ids.length - 1;
     }
@@ -160,7 +160,7 @@ async function runAudit() {
 
   // Count duplicate Title+Company pairs
   let duplicateTitleCompanyPairs = 0;
-  for (const [_, ids] of titleCompanyMap) {
+  for (const ids of titleCompanyMap.values()) {
     if (ids.length > 1) {
       duplicateTitleCompanyPairs += ids.length - 1;
     }

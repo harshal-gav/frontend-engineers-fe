@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server";
 import { getAdminAuth, getAdminDb } from "@/lib/firebase-admin";
 import { loadJobsFromFile } from "@/lib/jobs.server";
+import type { Job } from "@/lib/jobs";
 
 export async function GET(
   request: Request,
@@ -45,9 +46,9 @@ export async function GET(
         const db = getAdminDb();
         const doc = await db.collection("jobs").doc(slug).get();
         if (doc.exists) {
-          job = doc.data() as any;
+          job = doc.data() as unknown as Job;
         }
-      } catch (e) {
+      } catch {
         // Ignore firestore lookup errors
       }
     }

@@ -1,7 +1,6 @@
 import { notFound, permanentRedirect } from "next/navigation";
-import { Suspense } from "react";
 import type { Metadata } from "next";
-import { generateSlug, type Job, getEffectiveJobDescription, formatLocation } from "@/lib/jobs";
+import { generateSlug, type Job, getEffectiveJobDescription } from "@/lib/jobs";
 import { loadJobsFromFile } from "@/lib/jobs.server";
 import JobDetail from "@/components/JobDetail";
 import Link from "next/link";
@@ -89,7 +88,6 @@ export async function generateMetadata({
   }
 
   const companyName = job.company?.name || "Company";
-  const locationStr = job.country ? ` in ${job.country}` : "";
 
   // Build a title strictly within 50-60 chars
   let pageTitle = `${job.title} at ${companyName} – Remote Job`;
@@ -293,7 +291,7 @@ export default async function JobDetailPage({
 
   const isGlobalLocation = !job.country || ["global", "worldwide", "remote", "anywhere"].includes(job.country.trim().toLowerCase());
 
-  const jsonLd: Record<string, any> = {
+  const jsonLd: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "JobPosting",
     title: job.title,
@@ -320,24 +318,24 @@ export default async function JobDetailPage({
 
   // Only add baseSalary when real salary data exists in the job
   // NEVER invent salary data
-  if ((job as any).salaryMin && (job as any).salaryMax) {
+  if (job.salaryMin && job.salaryMax) {
     jsonLd.baseSalary = {
       "@type": "MonetaryAmount",
-      currency: (job as any).salaryCurrency || "USD",
+      currency: job.salaryCurrency || "USD",
       value: {
         "@type": "QuantitativeValue",
-        minValue: (job as any).salaryMin,
-        maxValue: (job as any).salaryMax,
+        minValue: job.salaryMin,
+        maxValue: job.salaryMax,
         unitText: "YEAR",
       },
     };
-  } else if ((job as any).salary) {
+  } else if (job.salary) {
     jsonLd.baseSalary = {
       "@type": "MonetaryAmount",
-      currency: (job as any).salaryCurrency || "USD",
+      currency: job.salaryCurrency || "USD",
       value: {
         "@type": "QuantitativeValue",
-        value: (job as any).salary,
+        value: job.salary,
         unitText: "YEAR",
       },
     };

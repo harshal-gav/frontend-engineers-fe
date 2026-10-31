@@ -19,7 +19,7 @@ export const POST = Webhooks({
           const userRecord = await auth.getUserByEmail(payloadData.customer.email);
           uid = userRecord.uid;
           console.log(`Found UID ${uid} by email ${payloadData.customer.email}`);
-        } catch (err) {
+        } catch {
           console.warn(`Could not find Firebase user by email: ${payloadData.customer.email}`);
         }
       }
@@ -31,7 +31,7 @@ export const POST = Webhooks({
             uid = userQuery.docs[0].id;
             console.log(`Found UID ${uid} by dodoSubscriptionId ${payloadData.subscription_id}`);
           }
-        } catch (err) {
+        } catch {
           console.warn(`Could not find Firebase user by dodoSubscriptionId: ${payloadData.subscription_id}`);
         }
       }

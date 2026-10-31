@@ -34,7 +34,7 @@ export async function GET(request: Request) {
     }
 
     // Use single source of truth to load active, deduplicated, and enriched jobs
-    let jobs = await getActiveJobs({ includeFirestore: true });
+    const jobs = await getActiveJobs({ includeFirestore: true });
 
     if (jobs.length === 0) {
       return NextResponse.json([]);

@@ -8,7 +8,7 @@
  *   npx tsx tests/job-counts.test.ts
  */
 
-import { deduplicateJobs, filterActiveJobs, normalizeTitle } from "../src/lib/jobs.server";
+import { filterActiveJobs, normalizeTitle } from "../src/lib/jobs.server";
 import type { Job } from "../src/lib/jobs";
 
 function assert(condition: boolean, message: string) {
