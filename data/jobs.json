@@ -1,5 +1,180 @@
 [
   {
+    "id": "d8bf4540082454ddfb8dbea24abc78a52bcabef7f4394b3d9a1348ed2b644196",
+    "title": "Senior Front-End Developer",
+    "applyUrl": "https://himalayas.app/companies/decisionpoint-corporation/jobs/senior-front-end-developer?utm_source=api",
+    "description": "OverviewDecisionPoint seeks a Senior Front-End Developer to design and implement modern, responsive, and accessible user interfaces for a large federal and DoD-aligned IT mission environment. This role builds reusable templates, UI components, interactive features, and front-end architectures that support enterprise content, applications, and mission-critical digital experiences. \n\nThe Senior Front-End Developer collaborates closely with UX designers, backend engineers, product managers, and CMS administrators to ensure UI consistency, performance, accessibility, and secure integration with backend systems. \n\nThis position is fully remote.\n\nDuties & ResponsibilitiesThe Senior Front-End Developer will: • Develop responsive, accessible, and performant pages, templates, components, and UI elements using HTML, CSS, and JavaScript. \n• Build reusable component libraries aligned with design system standards. \n• Implement user interaction and dynamic behaviors through front-end scripting and frameworks. \n• Ensure Section 508/WCAG accessibility compliance across all UI implementations. \n• Collaborate with backend developers and CMS engineers on API integrations and data-driven UI elements. \n• Optimize page load performance, rendering efficiency, and front-end asset usage. \n• Troubleshoot UI issues across browsers, devices, and environments. \n• Support code reviews, version control workflows, and best coding practices. \n• Contribute to style guides, front-end documentation, and component usage standards. \n• Work within Agile teams to deliver user stories, participate in sprints, and support deployment cycles. \nQualificationsClearance RequirementMust hold an active Secret clearance, supported by a Tier 3 background investigation. \n\nEducation (Required)Bachelor’s degree in Computer Science, Web Development, Software Engineering, or a related field. \n\nExperience (Required)• Minimum 7 years of professional experience in front-end development. \n• Experience developing enterprise-grade UI components, user interfaces, or responsive sites. \n• Experience working within Agile development teams and supporting iterative releases. \n• Experience with cross-browser compatibility, accessibility standards, and performance optimization. \nTechnical Knowledge (Required)• Expert-level skills in HTML5, CSS3, JavaScript, and responsive design. \n• Experience developing and maintaining component libraries or design systems. \n• Familiarity with accessibility standards (WCAG, Section 508). \n• Understanding of API-driven UI development. \nTechnical Knowledge (Preferred)• Experience with modern JavaScript frameworks (React, Vue, Angular). \n• Experience integrating with CMS platforms or headless content systems. \n• Familiarity with CI/CD pipelines and DevSecOps practices. \nCertifications\n\nPreferred:\n\n• ITIL v4 Foundation \n• Front-end or UX/UI development certifications \nSkills• Strong UI/UX awareness and ability to translate design requirements into functioning interfaces. \n• Excellent attention to detail and commitment to accessible, user-centered design. \n• Strong communication and collaboration skills. \n\n• Ability to troubleshoot complex UI issues and optimize front-end performance. \n\n• Strong organizational skills and ability to meet sprint deadlines. \n\nOur Equal Employment Opportunity Policy\n• EEO and Affirmative Action Policy: DecisionPoint Corporation is an Equal Employment Opportunity and Affirmative Action employer. It is the policy of DecisionPoint Corporation to provide equal employment opportunity in accordance with all applicable Equal Employment Opportunity/Affirmative Action laws, directives and regulations to all employees and qualified applicants without regard to race, ethnicity, color, religion, national origin, sex, age, disability status, pregnancy, sexual orientation, gender identity, genetic information, protected veteran status, or any other protected status under Federal, State or Local laws.\n\n• Pay Transparency Policy: In accordance with Presidential Executive Order 13665, DecisionPoint Corporation will not discharge or in any other manner discriminate against employees or applicants because they have inquired about, discussed, or disclosed their own pay or the pay of another employee or applicant. However, employees who have access to the compensation information of other employees or applicants as a part of their essential job functions cannot disclose the pay of other employees or applicants to individuals who do not otherwise have access to compensation information, unless the disclosure is (a) in response to a formal complaint or charge, (b) in furtherance of an investigation, proceeding, hearing, or action, including an investigation conducted by the employer, or (c) consistent with the contractor's legal duty to furnish information.\n\n• Authorization to Share Resume and Personal Information: By expressing your interest and submitting your resume for this position, you authorize DecisionPoint Corporation to share your resume, as well as personal information included on the resume, with its subsidiaries, affiliates and teaming partners for the purpose of considering you for this position and other available positions requiring comparable skills, education and experience. Should DecisionPoint Corporation. or its affiliates and teaming partners wish to initiate pre-employment discussions, you will be asked to complete an employment application and related employment documents.\n\nOriginally posted on Himalayas",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-31T03:28:16.000Z",
+    "sourceHash": "d8bf4540082454ddfb8dbea24abc78a52bcabef7f4394b3d9a1348ed2b644196",
+    "company": {
+      "id": "decisionpointcorporation",
+      "name": "DecisionPoint Corporation",
+      "logoUrl": "https://cdn-images.himalayas.app/6lw1zws22649szlobi43q1j3ymf3",
+      "industry": "Technology",
+      "website": "https://decisionpointcorporation.com"
+    },
+    "slug": "senior-front-end-developer-decisionpoint-corporation-d8bf4540",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "915d61a8162e0469756dba53f38fed017a11d33b35cb549afa175883e879e2c8",
+    "title": "Software Engineer- Frontend",
+    "applyUrl": "https://himalayas.app/companies/webengage/jobs/software-engineer-frontend?utm_source=api",
+    "description": "About Us: WebEngage is a customer data platform and marketing automation suite that makes user engagement and retention simplified. A 10 year vintage rock solid SaaS play growing near-profitably on the back of great product and service experience. Offers a single dashboard solution to consumer companies to unify and analyse their customer data, engage with customers across multiple channels and personalise every message including in-line content on the web / mobile apps. We work with thousands of brands worldwide, across industries like E-Commerce, Edtech, Fintech, Foodtech, Media & Publications, Gaming, BFSI, Healthcare, and Online Retail. One of the hottest global SaaS companies, we've been recognized by G2 as a Marketing Automation Leader in Asia 2021. We're growing 100% year-on-year, presently at $20M ARR with offices in Gurgaon, Mumbai, Bangalore and Dubai and are expanding this year to Brazil and Indonesia. A battle hardened team, accessible founders and a resilient culture of sustainable growth with no shortcuts. A somewhat uncommon, in-the-ring view of building a company to last. \n\nLearn more about us at www.webengage.com \n\nResponsibilities : \n• Responsible for the development of front-end applications and components \n\n• Operate effectively as an individual for quick turnaround of features and fixes \n\n• Coordinate with the backend engineers & designers \n\n• Responsible for creating POCs to design a scalable system \n\n• Build reusable code and libraries for future use \n\n• Would help the team implement unit testing in the project \n\nRequirements: \n• 3 to 5 years of experience in frontend technologies in marketing tech (experience in SaaS) \n\n• 3 to 5 years hands on experience with unit testing tools like jest, etc. \n\n• Prior hands-on experience in building responsive web interfaces at scale for consumers in a product engineering setup \n\n• Strong development experience on the following technologies - HTML5, CSS, Javascript, AJAX, working with REST APIs. \n\n• Good understanding XML, JSON and Web Services, Front end frameworks/library such as ReactJS, Redux, Web standards, Responsive design, and cross-browser compatibility, SEO \n\n• Excellent debugging and optimization skills \n\n• Good understanding of browser rendering behaviour and performance Familiar with JavaScript module loaders, such as Require.js and AMD \n\n• Familiar with front-end build tools, such as Webpack, Grunt and Gulp.js \n\n• Proficient understanding of code versioning tools such as Git \n\n• Experimental mindset and ever ready to take up new challenges \n\nLife at WebEngage: \n• We take transparency very seriously. Along with a full view of team goals, get a top-level view across the board with our monthly & quarterly town hall meetings. \n\n• A highly inclusive work culture that promotes a relaxed, creative and productive environment. \n\n• Practice autonomy, open communication, growth opportunities,while maintaining a perfect work-life balance \n\nPerks & Benefits: \n• Learning is a way of life. Unlock your full potential backed with cutting-edge tools and mentorship (Macbook for Engagers!) \n\n• Get the best in class medical insurance (with Covid Care facilities), programs for taking care of your mental health, and a Contemporary Leave Policy (beyond sick leaves) \n\nExplore more here: •  •  \n\n•  Do you think you fit the bill? Come along, letʼs redefine the future of Marketing Automation! \n\nWebEngage aims to be an equal opportunity employer. We strongly believe that when people feel respected and included they can be more creative, innovative, and successful. We believe that change is the only constant and are in the process and will continue to be in process with changing times to adapt and advance diversity and inclusion. We take affirmative action to ensure equal opportunity and complete non-disclosure of all applicants without any regard to race, color, religion, sex, sexual orientation, gender identity, national origin, disability, Veteran status, or any other characteristics not mentioned hereinabove which are protected under the law of the soil.\n\nOriginally posted on Himalayas",
+    "location": "Remote - India",
+    "country": "India",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-31T03:28:17.000Z",
+    "sourceHash": "915d61a8162e0469756dba53f38fed017a11d33b35cb549afa175883e879e2c8",
+    "company": {
+      "id": "webengage",
+      "name": "WebEngage",
+      "logoUrl": "https://cdn-images.himalayas.app/nvjgb6avb0pmh4hlqqaq6llozp5j",
+      "industry": "Technology",
+      "website": "https://webengage.com"
+    },
+    "slug": "software-engineer-frontend-webengage-915d61a8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "javascript",
+        "css",
+        "webpack",
+        "redux",
+        "jest",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "India"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e59d69578bf3cc5fbfc8340af2f42c26896b5bd78917559d28e0065dbd65e34e",
+    "title": "E-EFMP Front-End Developer",
+    "applyUrl": "https://himalayas.app/companies/decisionpoint-corporation/jobs/e-efmp-front-end-developer?utm_source=api",
+    "description": "OverviewDecisionPoint seeks E-EFMP Front-End Developers to support user interface development, page layout creation, interactive components, and front-end performance for enterprise applications within a large federal and DoD-aligned mission environment. These roles build modern, accessible, responsive, and user-centered interfaces using HTML, CSS, and JavaScript. \n\nThe E-EFMP Front-End Developers collaborate closely with UX designers, backend engineers, business analysts, and product owners to ensure that designs are accurately implemented, meet accessibility standards, and provide a seamless user experience. \n\nThese positions are fully remote. \n\nDuties & ResponsibilitiesThe E-EFMP Front-End Developer will: • Build responsive, accessible pages, templates, and UI components using modern HTML, CSS, and JavaScript. \n• Implement interactive elements, animations, and client-side logic to support user workflows. \n• Translate UX wireframes, prototypes, and design system elements into production-ready code. \n• Ensure Section 508/WCAG accessibility compliance across all UI elements and user experiences. \n• Support component library development and ensure consistent design patterns. \n• Collaborate with backend developers to integrate APIs and dynamic content. \n• Troubleshoot cross-browser, cross-device, and responsive UI issues. \n• Optimize front-end performance, page load times, and rendering behavior. \n• Participate in Agile ceremonies including sprint planning, refinement, and reviews. \n• Document UI components, coding standards, and front-end implementation guidance. \nQualificationsClearance RequirementMust hold an active Secret clearance, supported by a Tier 3 background investigation. \n\nEducation (Required)Bachelor’s degree in Computer Science, Web Development, Software Engineering, or a related field. \n\nExperience (Required)• Minimum 5years of experience in front-end development. \n• Experience building enterprise user interfaces, templates, and components. \n• Experience implementing front-end logic, interactive behaviors, and responsive layouts. \n• Experience supporting Agile development teams. \nTechnical Knowledge (Required)• Strong proficiency in HTML5, CSS3, JavaScript, and responsive design techniques. \n• Experience with UI accessibility and compliance with WCAG / Section 508. \n• Familiarity with consuming APIs and rendering dynamic content. \n• Ability to translate UX designs into functioning UI implementations. \nTechnical Knowledge (Preferred)• Experience with front-end frameworks (React, Angular, Vue). \n• Familiarity with CMS templating systems or headless CMS architectures. \n• Experience with CI/CD pipelines, Git workflows, and DevSecOps environments. \nCertifications (Preferred)• ITIL v4 Foundation \n• Front-end development or UX/UI certifications \nSkills• Strong UI development and styling capabilities. \n• Excellent communication and teamwork skills. \n• High attention to detail and commitment to quality. \n• Ability to troubleshoot complex front-end issues and optimize performance. \n• Ability to work in a fast-paced, mission-driven environment. \nOur Equal Employment Opportunity Policy\n• \nEEO and Affirmative Action Policy: DecisionPoint Corporation is an Equal Employment Opportunity and Affirmative Action employer. It is the policy of DecisionPoint Corporation to provide equal employment opportunity in accordance with all applicable Equal Employment Opportunity/Affirmative Action laws, directives and regulations to all employees and qualified applicants without regard to race, ethnicity, color, religion, national origin, sex, age, disability status, pregnancy, sexual orientation, gender identity, genetic information, protected veteran status, or any other protected status under Federal, State or Local laws.\n\n• \nPay Transparency Policy: In accordance with Presidential Executive Order 13665, DecisionPoint Corporation will not discharge or in any other manner discriminate against employees or applicants because they have inquired about, discussed, or disclosed their own pay or the pay of another employee or applicant. However, employees who have access to the compensation information of other employees or applicants as a part of their essential job functions cannot disclose the pay of other employees or applicants to individuals who do not otherwise have access to compensation information, unless the disclosure is (a) in response to a formal complaint or charge, (b) in furtherance of an investigation, proceeding, hearing, or action, including an investigation conducted by the employer, or (c) consistent with the contractor's legal duty to furnish information.\n\n• \nAuthorization to Share Resume and Personal Information: By expressing your interest and submitting your resume for this position, you authorize DecisionPoint Corporation to share your resume, as well as personal information included on the resume, with its subsidiaries, affiliates and teaming partners for the purpose of considering you for this position and other available positions requiring comparable skills, education and experience. Should DecisionPoint Corporation. or its affiliates and teaming partners wish to initiate pre-employment discussions, you will be asked to complete an employment application and related employment documents.\n\nOriginally posted on Himalayas",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-31T03:28:32.000Z",
+    "sourceHash": "e59d69578bf3cc5fbfc8340af2f42c26896b5bd78917559d28e0065dbd65e34e",
+    "company": {
+      "id": "decisionpointcorporation",
+      "name": "DecisionPoint Corporation",
+      "logoUrl": "https://cdn-images.himalayas.app/6lw1zws22649szlobi43q1j3ymf3",
+      "industry": "Technology",
+      "website": "https://decisionpointcorporation.com"
+    },
+    "slug": "e-efmp-front-end-developer-decisionpoint-corporation-e59d6957",
+    "aiTags": {
+      "stack": [
+        "react",
+        "vue",
+        "angular",
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "4c4559974b8e29c1023842a424367091d087a3f0ea21c4b7f8a5c2581cbe8d40",
+    "title": "Front-End Developer",
+    "applyUrl": "https://himalayas.app/companies/decisionpoint-corporation/jobs/front-end-developer?utm_source=api",
+    "description": "OverviewDecisionPoint seeks a Front-End Developer to support UI enhancements, accessibility compliance improvements, formatting corrections, and content-related code updates for a large federal and DoD-aligned mission environment. This role is central to ensuring that digital properties remain user-friendly, visually consistent, accessible, and aligned with enterprise design and content standards. \n\nThe Front-End Developer works closely with designers, content managers, UX specialists, and backend engineers to implement interface changes, optimize user experience, and contribute to structured, maintainable front-end code. \n\nThis position is fully remote. \n\nDuties & ResponsibilitiesThe Front-End Developer will: • Implement UI updates, CSS adjustments, and formatting refinements to improve user experience and consistency. \n• Apply accessibility (508/WCAG) fixes including semantic markup, alt-text, keyboard navigation, and structural updates. \n• Support content-driven code changes including template adjustments, layout updates, and component enhancements. \n• Collaborate with UX, design, and content teams to translate requirements into responsive, standards-compliant front-end code. \n• Conduct cross-browser testing and troubleshoot rendering inconsistencies. \n• Optimize page performance, asset delivery, and front-end load times. \n• Maintain reusable front-end components and support design system implementation. \n• Perform code reviews and adhere to secure coding, documentation, and version control practices. \n• Validate front-end changes in development, staging, and production environments. \n• Ensure all updates follow enterprise brand, content, and accessibility guidelines. \nQualificationsClearance RequirementCandidate must possess a Tier 2 Moderate Risk Public Trust (from any federal agency) or an active Secret clearance or higher. \n\nEducation (Required)Bachelor’s degree in Computer Science, Information Technology, Web Development, or a related technical field. \n\nExperience (Required)• Minimum 5 years of experience in front-end development. \n• Experience implementing UI changes, style updates, and content-driven code modifications. \n• Experience ensuring Section 508/WCAG accessibility compliance. \n• Experience collaborating within multidisciplinary teams including UX, design, and content roles. \nTechnical Knowledge (Required)• Proficiency in HTML5, CSS3, JavaScript, and responsive design. \n• Familiarity with front-end frameworks or component libraries. \n• Understanding of accessibility requirements (508/WCAG) and semantic coding. \n• Experience with version control (Git) and structured front-end workflows. \nTechnical Knowledge (Preferred)• Experience with CMS-driven environments. \n• Familiarity with federal or DoD digital environments. \n• Experience with performance optimization tools or continuous integration workflows. \nSkills• Strong attention to detail in UI, formatting, and accessibility. \n• Excellent problem-solving and debugging skills. \n• Ability to balance iterative fixes with long-term front-end improvements. \n• Strong communication and collaboration skills across technical and non-technical teams. \n• Ability to manage multiple tasks and deliver high-quality updates under deadlines. \nOur Equal Employment Opportunity Policy\n• \nEEO and Affirmative Action Policy: DecisionPoint Corporation is an Equal Employment Opportunity and Affirmative Action employer. It is the policy of DecisionPoint Corporation to provide equal employment opportunity in accordance with all applicable Equal Employment Opportunity/Affirmative Action laws, directives and regulations to all employees and qualified applicants without regard to race, ethnicity, color, religion, national origin, sex, age, disability status, pregnancy, sexual orientation, gender identity, genetic information, protected veteran status, or any other protected status under Federal, State or Local laws.\n\n• \nPay Transparency Policy: In accordance with Presidential Executive Order 13665, DecisionPoint Corporation will not discharge or in any other manner discriminate against employees or applicants because they have inquired about, discussed, or disclosed their own pay or the pay of another employee or applicant. However, employees who have access to the compensation information of other employees or applicants as a part of their essential job functions cannot disclose the pay of other employees or applicants to individuals who do not otherwise have access to compensation information, unless the disclosure is (a) in response to a formal complaint or charge, (b) in furtherance of an investigation, proceeding, hearing, or action, including an investigation conducted by the employer, or (c) consistent with the contractor's legal duty to furnish information.\n\n• \nAuthorization to Share Resume and Personal Information: By expressing your interest and submitting your resume for this position, you authorize DecisionPoint Corporation to share your resume, as well as personal information included on the resume, with its subsidiaries, affiliates and teaming partners for the purpose of considering you for this position and other available positions requiring comparable skills, education and experience. Should DecisionPoint Corporation. or its affiliates and teaming partners wish to initiate pre-employment discussions, you will be asked to complete an employment application and related employment documents.\n\nOriginally posted on Himalayas",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-31T03:28:33.000Z",
+    "sourceHash": "4c4559974b8e29c1023842a424367091d087a3f0ea21c4b7f8a5c2581cbe8d40",
+    "company": {
+      "id": "decisionpointcorporation",
+      "name": "DecisionPoint Corporation",
+      "logoUrl": "https://cdn-images.himalayas.app/6lw1zws22649szlobi43q1j3ymf3",
+      "industry": "Technology",
+      "website": "https://decisionpointcorporation.com"
+    },
+    "slug": "front-end-developer-decisionpoint-corporation-4c455997",
+    "aiTags": {
+      "stack": [
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "108f99f81c9e80faeb1d2e0fb96a84ed3728d920286e2b24e81373d6166850fc",
+    "title": "Staff Product Engineer, Frontend (LATAM)",
+    "applyUrl": "https://remotefirstjobs.com/companies/moxie/jobs/staff-product-engineer-frontend-latam-877341",
+    "description": "At Moxie, we empower ambitious aesthetic entrepreneurs to build profitable, independent practices—without burnout, overwhelm, or guesswork. In just a few years, we&rsquo;ve grown from an idea to a global, remote-first team now supporting 700+ practices nationwide.\n\nOur purpose is simple: to unlock sustainable success for aesthetic entrepreneurs, at every stage of their journey.\n\nStaff Product Engineer (Frontend)\n\nWe&rsquo;re looking for a Staff Product Engineer to be one of Moxie&rsquo;s leading frontend individual contributors, driving the highest-leverage frontend initiatives across the org in Q4 2026 and Q1 2027. The center of gravity here is horizontal: how every Moxie team builds, ships, and maintains UI. You&rsquo;ll be a leading contributor to our Design System and the entire frontend toolchain and CI. You’ll also play a key role as we rethink and redesign our architecture, tooling, and SDLC for the agentic eraYou&rsquo;ll most likely sit on the Financial Operations (FinOps) team and stay hands-on in product delivery there, so your standards stay grounded in real feature work. Day to day, you&rsquo;ll partner with Design, Product, engineering managers of UI-heavy domains, and other staff engineers across our frontend stack (Next.js, MUI, Apollo, GraphQL, Storybook, and more). stack of Next.js, MUI, Apollo, GraphQL codegen, and Storybook.\n\nOur Objectives for the Role\n\n• Ramp through real product work. Within three months you&rsquo;re shipping FinOps UI improvements that raise performance, consistency, or developer experience, such as consolidating a repeatedly forked pattern (such as confirm dialogs) or perhaps refactoring un-performant queries on a slow page.\n\n• Shape architecture across the company. Within three months you&rsquo;re ramped up to Moxie&rsquo;s system design and architecture, and opinionated on what we can do better, and what we should build next. You&rsquo;re comfortable developing technical proposals, and taking them from draft to review, approval, and final implementation.\n\n• Own non-project technical initiatives and engineering culture. Start owning at least one org-level initiative in your first three months (for example redesigning our frontend development SDLC for the agentic era), and by month nine own one or two initiatives with measurable gains in quality or velocity, while shipping v1 of one or more key initiatives.\n\nWe&rsquo;re Looking For\n\n• Design system or frontend platform experience. You&rsquo;ve built a design system or led a large React and GraphQL migration, including design tokens, theming, component API design, and a promotion path for canonical components, and you&rsquo;ve seen it adopted rather than decay.\n\n• Data layer depth. You know GraphQL client caching and fragment colocation well enough to move a complex route to one primary query with component-owned fragments, and to make that the default pattern.\n\n• A record of leading adoption without formal authority. You ship in slices, pilots, and migration guides instead of big-bang rewrites, and you earn adoption through clear docs and by making the right path the easy path for teams that don&rsquo;t report to you.\n\n• Hands-on product delivery. You stay in feature work, ramp quickly in a large codebase you didn&rsquo;t design, and can tell canonical patterns from forks.\n\n• Toolchain and performance sense. You&rsquo;ve improved CI time, type-checking, or page performance with measurable results, and you can reason about where install, caching, and build time go.\n\n• Fluency with AI tooling in daily work. You use AI tools in how you build and have a point of view on how AI can improve the software development lifecycle. Bonus points if you’re opinionated about harnesses, tooling (Ghosty, Herdr, Pi, Plannotator, etc), and multi-agent workflows and processes .\n\n• Technical leadership and influence. You partner with Design, Product, and engineering managers, communicate tradeoffs and status clearly, and level up other engineers through reviews and pairing.\n\nThis is not a role for someone who wants to work only on horizontal initiatives and step away from shipping product UI.\n\nWhy Join Us?\n\n• Own frontend architecture for a real, multi-domain product, while also helping shape and guide Moxie’s architecture and system design..\n\n• High-leverage horizontal work (design system, data architecture, tooling) while staying hands-on in product delivery.\n\n• Build the core that people and agents both use. You&rsquo;ll shape an AI-native frontend where generation in Figma and in code reuses canonical components.\n\n• Clear accountability at Staff level for decisions that materially affect the company, without needing Principal or org-design scope.\n\n• Above all, we&rsquo;re in this to empower small business owners to own and grow their businesses. If you succeed, Med Spas will remain the opportunity for independent owner-operators instead of being dominated by a small number of large chains. If that speaks to you, speak to us.\n\n• Competitive salary and a fully remote setup.\n\nAt Moxie, we believe in creating a workplace where everyone feels valued, trusted, and included. Our team lives by our values: act as owners, give more than we take, move with speed and care, and simplify and learn every day.\n\nWe welcome people of all backgrounds, experiences, and perspectives to apply. If you require any accommodations to fully participate in the interview process, please let us know, we’re happy to assist.",
+    "location": "Remote - Global",
+    "country": "Global",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-10-29T19:03:33.000Z",
+    "sourceHash": "108f99f81c9e80faeb1d2e0fb96a84ed3728d920286e2b24e81373d6166850fc",
+    "company": {
+      "id": "moxie",
+      "name": "Moxie",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/joinmoxie.com-fb016c6ba4-2.webp",
+      "industry": "Technology",
+      "website": "https://moxie.com"
+    },
+    "slug": "staff-product-engineer-frontend-latam-moxie-108f99f8",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "graphql",
+        "storybook",
+        "figma"
+      ],
+      "remoteScope": "GLOBAL",
+      "eligibleRegions": [
+        "Global"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "97f59966db4df909073339f7be38d53f559fd00710f746ac702e97b6008f6bad",
     "title": "Frontend Developer - G2i Talent Pool",
     "applyUrl": "https://himalayas.app/companies/g2i/jobs/frontend-developer-g2i-talent-pool-214144156?utm_source=api",
@@ -28752,386 +28927,6 @@
       ],
       "seniority": "senior",
       "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "e8c43279606e3903d647d0a6aef4bd47092fe72935ef4de3c1e84cfaf8aad011",
-    "title": "Member of Technical Staff, Front End",
-    "applyUrl": "https://jobs.ashbyhq.com/Abridge",
-    "description": "About the job\n\nAbout Abridge\n\nAbridge was founded in 2018 with the mission of powering deeper understanding in healthcare. Our AI-powered platform was purpose-built for medical conversations, improving clinical documentation efficiencies while enabling clinicians to focus on what matters most-their patients.\n\nOur enterprise-grade technology transforms patient-clinician conversations into structured clinical notes in real-time, with deep EMR integrations. Powered by Linked Evidence and our purpose-built, auditable AI, we are the only company that maps AI-generated summaries to ground truth, helping providers quickly trust and verify the output. As pioneers in generative AI for healthcare, we are setting the industry standards for the responsible deployment of AI across health systems.\n\nWe are a growing team of practicing MDs, AI scientists, PhDs, creatives, technologists, and engineers working together to empower people and make care make more sense. We have offices located in the Mission District in San Francisco, the SoHo neighborhood of New York, and East Liberty in Pittsburgh.\n\nThe Role\n\nAbridge is looking for experienced Front End Engineers to join our growing team! You’ll play a key role in our technology decisions and implementation, and you’ll see firsthand the impact that we’re making on healthcare. You’ll build and support functionality primarily in React but also across our APIs and other TypeScript codebases. As a growing startup at the edge of this wave of AI, you’ll have opportunities to work across our stack and help develop best practices as our industry continues to shift.\n\nWhat You’ll Do\n\n\nScale up our business by designing, building, and supporting easy-to-use React/Typescript applications\nSet standards for accessibility and design system use\nMake and implement technology decisions that support business needs without compromising security, privacy, or quality\nEnhance existing systems to add new functionality, and to improve performance, stability, quality, and security\nAdvocate for high standards; make quality-of-life improvements to the codebase; and help limit the growth of technical debt\nBuild deep user empathy and maintain a user-centric mindset\nCommunicate regularly and effectively within and on behalf of our cross-functional product delivery teams. You’ll work with other disciplines including design, product, machine learning, and infrastructure, and will have opportunities to learn from and contribute to projects across the company\nMentor and learn from other engineers\n\n\nWhat You’ll Bring\n\n\n7+ years’ experience building, shipping, and supporting web applications, including 5+ years of experience with React. You’ve seen what works, and what didn’t. \nHave independently worked and delivered a small web app or entire feature in a larger web app\nExcitement about working in our mobile tech stack, which includes React, Typescript, and potentially Electron\nAbility to act with autonomy & self-direction while working well in a team environment\nWillingness to pitch in wherever needed - as a fast-moving startup we need to do good work, quickly\nAre comfortable with working across domains and languages with a curiosity to experiment & learn new things\nDeep expertise in using AI tools to accelerate engineering workflows. We’re looking for candidates who have been deep in this for the last couple years. \nBonus points if you have experience with any of the following on web: audio playback, audio recording, file encryption, or online vs. offline mode support\n\n\nWhy Work at Abridge?\n\nAt Abridge, we’re transforming healthcare delivery experiences with generative AI, enabling clinicians and patients to connect in deeper, more meaningful ways. Our mission is clear: to power deeper understanding in healthcare. We’re driving real, lasting change, with millions of medical conversations processed each month.\n\nJoining Abridge means stepping into a fast-paced, high-growth startup where your contributions truly make a difference. Our culture requires extreme ownership-every employee has the ability to (and is expected to) make an impact on our customers and our business.\n\nBeyond individual impact, you will have the opportunity to work alongside a team of curious, high-achieving people in a supportive environment where success is shared, growth is constant, and feedback fuels progress. At Abridge, it’s not just what we do-it’s how we do it. Every decision is rooted in empathy, always prioritizing the needs of clinicians and patients.\n\nWe’re committed to supporting your growth, both professionally and personally. Whether it's flexible work hours, an inclusive culture, or ongoing learning opportunities, we are here to help you thrive and do the best work of your life.\n\nIf you are ready to make a meaningful impact alongside passionate people who care deeply about what they do, Abridge is the place for you.\n\nHow we take care of Abridgers:\n\n\nGenerous Time Off: 14 paid holidays, flexible PTO for salaried employees, and accrued time off for hourly employees\nComprehensive Health Plans: Medical, Dental, and Vision coverage for all full-time employees and their families. \nGenerous HSA Contribution: If you choose a High Deductible Health Plan, Abridge makes monthly contributions to your HSA. \nPaid Parental Leave: Generous paid parental leave for all full-time employees. \nFamily Forming Benefits: Resources and financial support to help you build your family. \n401(k) Matching: Contribution matching to help invest in your future. \nPersonal Device Allowance: Tax free funds for personal device usage. \nPre-tax Benefits: Access to Flexible Spending Accounts (FSA) and Commuter Benefits. \nLifestyle Wallet: Monthly contributions for fitness, professional development, coworking, and more. \nMental Health Support: Dedicated access to therapy and coaching to help you reach your goals. \nSabbatical Leave: Paid Sabbatical Leave after 5 years of employment. \nCompensation and Equity: Competitive compensation and equity grants for full time employees. \n... and much more!\n\n\nEqual Opportunity Employer\n\nAbridge is an equal opportunity employer and considers all qualified applicants equally without regard to race, color, religion, sex, sexual orientation, gender identity, national origin, veteran status, or disability.\n\nWe're committed to providing reasonable accommodations throughout the interview process. Once you submit your application, we'll follow up with details on how to request an accommodation for interviewing, completing any assessments, or otherwise participating in the selection process.\n\nStaying safe - Protect yourself from recruitment fraud\n\nWe are aware of individuals and entities fraudulently representing themselves as Abridge recruiters and/or hiring managers. Abridge will never ask for financial information or payment, or for personal information such as bank account number or social security number during the job application or interview process. Any emails from the Abridge recruiting team will come from an @abridge.com email address. You can learn more about how to protect yourself from these types of fraud by referring to this article. Please exercise caution and cease communications if something feels suspicious about your interactions.\n\nCompensation Range: $218K - $250K",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T19:09:08.415Z",
-    "sourceHash": "e8c43279606e3903d647d0a6aef4bd47092fe72935ef4de3c1e84cfaf8aad011",
-    "company": {
-      "id": "abridge",
-      "name": "Abridge",
-      "logoUrl": "https://logo.clearbit.com/abridge.com",
-      "industry": "Technology",
-      "website": "https://abridge.com"
-    },
-    "slug": "member-of-technical-staff-front-end-abridge-e8c43279",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "principal",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "6412ea7a0e14fcfdd130be81a0e42430412b721b7bef25614f4e0acfc5b3e6c7",
-    "title": "Software Engineer II, Frontend-leaning",
-    "applyUrl": "https://jobs.ashbyhq.com/turquoise-health/1fbc3cd7-fc6a-4b8a-8e73-d2c14f737826/application?utm_source=43A0Q3KXo2",
-    "description": "About the job\n\nThis is a fully remote role within the United States.\n\nWe're looking for a frontend-leaning Software Engineer II who loves building intuitive, data-rich user experiences and wants their work to matter. At Turquoise Health, we're making healthcare pricing transparent and understandable, and the interfaces you build will be how hospitals, insurers, and everyday people actually make sense of that data.\n\nYou’ll be a key member of a small, highly skilled engineering team, collaborating closely with the product team to shape the user experience from the component level up to the product decisions that influence them. While this is a full stack role and you'll touch backend systems, your primary impact will be in crafting the UI layer: turning complex healthcare pricing data into clean, interactive, and performant web experiences.\n\nWe're a fast moving startup, so you'll move fast too, taking on varied problems, shipping real features, and collaborating directly with the people who use what you build.\n\nResponsibilities\n\n\nDevelopment of Django-based websites using Python, Postgresql, etc. \nBuild frontend data visualization components that enable users to explore and interpret complex healthcare pricing data\nWrite effective, scalable code. \nTest and debug programs\nImprove functionality of existing systems\nAssess and prioritize feature requests\nCoordinate with other team members to understand user requirements and provide technical solutions\n\n\nWhat you'll bring to the role\n\n\n3+ years work experience in Python, or strong experience in another programming language and some exposure to Python\nProficiency in front-end technologies such as React, TypeScript and Vue.js\nExpertise in at least one popular Python web framework (preferably Django) or a similar popular web framework in another language (like Ruby or Rails)\nGood understanding of SQL and how to efficiently use databases to solve problems\nAbility to work effectively in a remote environment\nGood problem-solving skills\nGood communication skills\nDesire to learn new technologies\nBS in Computer Science, Engineering or equivalent experience/knowledge. We are happy to work with strong candidates with non-traditional educational backgrounds\n\n\nBonus\n\n\nExperience working on open-source projects\nExperience using with git and GitHub\nStrong writing skills\n\n\nBenefits\n\n\nCompetitive pay with equity options\nStellar health care plan options (Medical, Dental & Vision), with FSA, DCFSA, & HSA options\nCompany-sponsored disability & life insurance\nUnlimited PTO\n401(k) + 4% Matching\nFully remote work + flexible working hours\n$750 work-from-home setup budget\nPaid biannual in-person company summits\nQuarterly $150 co-hanging stipend to meet up with coworkers\nMonthly $100 health and wellness benefit\nGenerous paid family leave\nAnnual $1,200 learning & development stipend\n\n\nAbout Turquoise Health\n\nTurquoise Health is a Series C price transparency platform for finance leaders across healthcare. Backed by a16z, Oak HC/FT, Adams Street, Yosemite, Bessemer Venture Partners, and others, we power price transparency for 300+ enterprise organizations and are building the infrastructure for a more open, efficient healthcare marketplace. We're a remote-first, US-based team that values transparency, empathy, inclusivity, creativity, and ownership.\n\nWe operate on US business hours and work with clients entirely based in the US. For this role, we are seeking US-based candidates.\n\nWe strongly encourage BIPOC, people with disabilities, and LGBTQIA+ folks to apply for any open roles of interest. Healthcare affects all people differently, but it significantly affects those in underserved communities. With a robust, diverse team, we are stronger and better equipped to change the future of healthcare for all.\n\nWork Authorization\n\nThis role requires current authorization to work in the United States. Turquoise does not sponsor employment visas (H-1B, PERM, etc.) or assume sponsorship of existing visas for this position.\n\nDisability Accommodation Email\n\nTurquoise is committed to providing reasonable accommodations to applicants and employees with disabilities. Please tell us if you require a reasonable accommodation to apply for a job or to perform your job. Examples of reasonable accommodation include making a change to the application process or work procedures, providing documents in an alternate format, using a sign language interpreter, or using specialized equipment. If you require assistance or an accommodation with the hiring process, please contact recruiting@turquoise.health\n\nCompensation Range: $153K - $170K",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T19:06:25.233Z",
-    "sourceHash": "6412ea7a0e14fcfdd130be81a0e42430412b721b7bef25614f4e0acfc5b3e6c7",
-    "company": {
-      "id": "turquoise",
-      "name": "Turquoise",
-      "logoUrl": "https://logo.clearbit.com/turquoise.com",
-      "industry": "Technology",
-      "website": "https://turquoise.com"
-    },
-    "slug": "software-engineer-ii-frontend-leaning-turquoise-6412ea7a",
-    "aiTags": {
-      "stack": [
-        "react",
-        "vue",
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "808141ebb069212474453627a2791c4d23c265d3c41b2c8c165474e3a4b8c62d",
-    "title": "Associate Engineer (Front End)",
-    "applyUrl": "https://www.theladders.com/linkedin/89023515?src=LinkedIn",
-    "description": "About the job\n\nFor our client, we are seeking a Associate Engineer (Front End) to join the team of a leader in the Enterprise Technology space.\n\nThis role will focus on building and refining user-facing web experiences that support reliable product delivery and strong customer outcomes. You will work closely with senior engineers and cross-functional partners to ship clean, maintainable front-end solutions in a collaborative technology environment. The position emphasizes quality, testing, and thoughtful UI execution while contributing to a culture of continuous improvement.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $109,100 – $136,400 annually\n\nResponsibilities\n\n\n Write clean, reliable code to develop features that support product outcomes\n Collaborate with senior engineers to troubleshoot technical challenges\n Design and implement tests to ensure software quality\n Debug code using logs and dashboards to maintain system integrity\n Share knowledge proactively and contribute to a supportive team environment\n Engage in pair programming and continuous improvement practices\n\n\nQualifications\n\n\n 5-7 years of experience in web application development using modern JavaScript, HTML, and CSS\n Proficiency in React and understanding of REST API integration\n Familiarity with Git for version control and pull request reviews\n Strong attention to UI/UX details and quality standards\n Interest in using AI tools to enhance workflows\n Bonus: experience with TypeScript, testing frameworks, and web accessibility principles\n\n\nBenefits\n\n\n Flexible working model supporting a balance between professional and personal life\n Opportunity for hybrid work combining remote and office collaboration\n Encouragement of open communication and cross-functional teamwork\n Focus on continuous learning for professional growth\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification-your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nHTML, CSS, JavaScript, React, REST APIs, Git, TypeScript, Jest, Cypress, UI/UX principles, component libraries, AI tools, Agile methodologies, Testing frameworks, Cloud platforms",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T19:04:49.439Z",
-    "sourceHash": "808141ebb069212474453627a2791c4d23c265d3c41b2c8c165474e3a4b8c62d",
-    "company": {
-      "id": "ladders",
-      "name": "Ladders",
-      "logoUrl": "https://logo.clearbit.com/ladders.com",
-      "industry": "Technology",
-      "website": "https://ladders.com"
-    },
-    "slug": "associate-engineer-front-end-ladders-808141eb",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "css",
-        "cypress",
-        "jest",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "fb3e4d191440c85d84def0cd546046c79cae1b88fde168be3a58bd3a24750b3e",
-    "title": "Frontend Developer",
-    "applyUrl": "https://www.fetchjobs.co/job-description-usb/9D6E919EBB82AF1733432319D5D6BE63?src=LinkedIn",
-    "description": "About the job\n\nAbout The Company\n\nCynet Systems is a leading provider of innovative technology solutions and professional staffing services. With a commitment to excellence and a focus on client satisfaction, Cynet Systems has established itself as a trusted partner for organizations across various industries. The company specializes in delivering tailored IT solutions, consulting, and staffing services that help businesses optimize their operations, enhance productivity, and achieve their strategic goals. Cynet Systems prides itself on its talented team of professionals, cutting-edge technology, and a customer-centric approach that drives sustainable growth and success for its clients.\n\nAbout The Role\n\nWe are seeking a highly skilled and motivated [Job Title] to join our dynamic team at Cynet Systems. This role requires a proactive individual with a strong background in [relevant field or industry], capable of managing complex projects and collaborating effectively with cross-functional teams. The ideal candidate will play a crucial role in supporting our clients' initiatives, ensuring the delivery of high-quality solutions, and contributing to the continuous improvement of our services. This position offers an exciting opportunity to work in a fast-paced environment, leverage your expertise, and make a tangible impact on our clients' success.\n\nQualifications\n\nThe successful candidate will possess a combination of education, experience, and skills, including but not limited to:\n\n\nBachelor’s degree in Computer Science, Information Technology, or a related field; a master’s degree is a plus.\nProven experience in [specific area or technology relevant to the role], with a strong understanding of industry best practices.\nExceptional problem-solving and analytical skills, with the ability to troubleshoot and resolve issues efficiently.\nExcellent communication and interpersonal skills to effectively collaborate with clients and team members.\nAbility to manage multiple priorities and work under tight deadlines.\nRelevant certifications such as [list relevant certifications] are preferred.\n\n\nResponsibilities\n\nThe primary responsibilities of this role include, but are not limited to:\n\n\nDesign, develop, and implement solutions that meet client requirements and industry standards.\nCollaborate with cross-functional teams to ensure seamless project execution and delivery.\nProvide technical guidance and support to clients and internal teams.\nParticipate in project planning, status updates, and reporting to stakeholders.\nConduct system analysis and recommend improvements to enhance performance and security.\nMaintain comprehensive documentation of processes, configurations, and solutions.\nStay updated with the latest industry trends and emerging technologies to ensure the company remains competitive.\nAssist in training and mentoring junior team members as needed.\n\n\nBenefits\n\nCynet Systems offers a comprehensive benefits package designed to support our employees' well-being and professional growth. Benefits include competitive salary packages, health insurance, retirement plans, paid time off, and opportunities for career advancement. The company also promotes a positive work environment that encourages innovation, teamwork, and continuous learning. Employees have access to training programs, professional development resources, and a collaborative culture that values diversity and inclusion. Cynet Systems is dedicated to recognizing and rewarding talent, ensuring our team members feel valued and motivated.\n\nEqual Opportunity\n\nCynet Systems is an equal opportunity employer. We are committed to creating an inclusive environment where all employees and applicants are treated with fairness and respect, regardless of race, color, religion, gender, sexual orientation, gender identity or expression, age, national origin, disability, or any other protected characteristic. We believe diversity fosters innovation and drives success, and we welcome candidates from all backgrounds to apply and join our team.\n\n\n\n\n\nDesired Skills and Experience\n\nProject Management, Solution Design, Technical Support, Team Collaboration, System Analysis, Troubleshooting",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T19:00:57.962Z",
-    "sourceHash": "fb3e4d191440c85d84def0cd546046c79cae1b88fde168be3a58bd3a24750b3e",
-    "company": {
-      "id": "taskverse",
-      "name": "TaskVerse",
-      "logoUrl": "https://logo.clearbit.com/taskverse.com",
-      "industry": "Technology",
-      "website": "https://taskverse.com"
-    },
-    "slug": "frontend-developer-taskverse-fb3e4d19",
-    "aiTags": {
-      "stack": [],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "e101be34c8508f4d9c0884c43a421889ae753080b84a2bfa671d532ba6bcd3e8",
-    "title": "Frontend Developer",
-    "applyUrl": "https://haystack.cv/jobs/782a41df-ed98-4e98-b64a-cbe8d4b1423e?src=6739",
-    "description": "About the job\n\nWe're working with one of the UK's leading business services providers, renowned for its innovative solutions and commitment to employee development. This organisation fosters a dynamic and inclusive work environment where continuous learning and professional growth are highly encouraged.\n\nThe Role\n\n\n Develop marketing websites to drive lead generation\n Investigate complex problems and articulate clear solutions\n Deliver proposed plans with confidence, ensuring high quality\n Write unit tests and understand TDD/BDD/E2E principles\n Proactively suggest system improvements, new tools, and efficient ways of working\n Collaborate closely with Product Owners, Business Analysts, developers, and stakeholders to agree on technological solutions\n\n\nWhat You'll Need\n\n\n At least 2 years of Frontend Development experience\n Understanding of CI/CD pipelines\n Knowledge of agile methodologies\n Strong communication and stakeholder management skills\n Ability to troubleshoot, analyse, and problem-solve effectively\n A passion for providing excellent service and being a team player\n\n\nWhat's On Offer\n\n\n A supportive environment that encourages professional growth and continuous learning\n Opportunities for career progression within Software Delivery\n An inclusive, collaborative culture\n A competitive salary and benefits package\n\n\nApply via Haystack today!",
-    "location": "Remote - United Kingdom",
-    "country": "United Kingdom",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T18:58:14.985Z",
-    "sourceHash": "e101be34c8508f4d9c0884c43a421889ae753080b84a2bfa671d532ba6bcd3e8",
-    "company": {
-      "id": "haystack",
-      "name": "Haystack",
-      "logoUrl": "https://logo.clearbit.com/haystack.com",
-      "industry": "Technology",
-      "website": "https://haystack.com"
-    },
-    "slug": "frontend-developer-haystack-e101be34",
-    "aiTags": {
-      "stack": [],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United Kingdom"
-      ],
-      "seniority": "junior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "54e99d4962e35a7a76fc91732071c8a3bf889000063a7de3354ac60e564acf5a",
-    "title": "Frontend / React Developer",
-    "applyUrl": "https://mailermen.com/jobs/frontend-react-developer-remote-india-528",
-    "description": "About the job\n\nWhat this role pays, in context\n\nThis listing pays 12% below the median for React Developer roles in India, which sits at ₹6L a year.\n\n25th pct ₹4L75th pct ₹6L\n\nMedian of 15 other live React Developer listings in India on this board that state pay. Roles that do not disclose a salary are excluded rather than counted as zero.\n\nMailerMen is hiring a Frontend / React Developer for our Gurugram team. You will build modern, responsive user interfaces with React, focusing on performance, accessibility and clean component design. This role suits an engineer with about two years of experience who can own features end to end. The role is fully remote, with the Gurugram team as your home base for occasional meetups.\n\nDepartment: Engineering - Frontend Working hours: 10:00 AM–7:00 PM IST, Monday–Friday\n\nResponsibilities\n\n\nImprove Core Web Vitals and page-load performance.\nLearn and contribute to modern frontend development practices.\nWork with REST APIs and application state.\nWrite component tests and visual regression checks.\nFix UI bugs and improve frontend performance.\nConvert UI designs into reusable frontend components.\nFollow accessibility, responsive design and coding best practices.\n\n\nRequirements\n\n\nBachelor's degree, diploma or equivalent practical training in Computer Science/IT preferred.\nGood to have: Zustand, Framer Motion, Storybook, Figma, TypeScript, Redux\n\n\nSkills\n\nJavaScriptReact.jsHTMLCSSGitREST APIs\n\nBenefits\n\n\nFully remote role\nTeam outings and events\nMentorship program\nInternal mobility opportunities\nCertification support\n\n\nRelated searches\n\nReact Developer Remote Jobs in IndiaAll React Developer jobsJobs in India",
-    "location": "Remote - India",
-    "country": "India",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T18:16:52.685Z",
-    "sourceHash": "54e99d4962e35a7a76fc91732071c8a3bf889000063a7de3354ac60e564acf5a",
-    "company": {
-      "id": "mailermen",
-      "name": "MailerMen",
-      "logoUrl": "https://logo.clearbit.com/mailermen.com",
-      "industry": "Technology",
-      "website": "https://mailermen.com"
-    },
-    "slug": "frontend-react-developer-mailermen-54e99d49",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "redux",
-        "zustand",
-        "storybook",
-        "figma",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "India"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "06f32ed2f7f3840419696aae57b075a97deb4f6b244670945ccca1e8c27090e1",
-    "title": "Software Engineer 3-Frontend",
-    "applyUrl": "https://jobs.ashbyhq.com/bidgely-inc/364a0c99-7fbe-41af-a135-12dedb287733/application?utm_source=9d67XkrmQn&jobposting=linkedin",
-    "description": "About the job\n\nBidgely is looking for extraordinary and dynamic Software Engineers in Frontend to be part of its core team in Bangalore. You must have delivered exceptionally high-quality robust products dealing with large data, APIs/Framework integrations and a responsive User Interface. You have a highly analytical mind to figure out the cost-effective means to accomplish the module development and integration. Be part of a highly energetic and innovative team that believes nothing is impossible with some creativity and hard work.\n\nResponsibilities\n\n\nDesign and deliver scalable web and mobile user interfaces. Understand requirements and UI wireframes, suggest changes to UI design to provide superior user experience, develop reusable code using UI design patterns and component architecture and write unit test cases.\nCollaborate with product management, User Interface designers and engineering teams to elicit & understand their requirements & challenges and develop potential solutions\nStay current with the latest tools, technology ideas and methodologies; share knowledge by clearly articulating results and ideas to key decision-makers.\n\n\nRequirements\n\n\n4-8 years of strong experience in web user interface and responsive design.\n\n\nBS/BE/BTech/MS in Computer Science or equivalent\n\n\nExpert level knowledge in Generative AI, Agentic AI, and production LLM-based applications.\nStrong experience in Object-Oriented Design, Web and UI design patterns, Component architecture and developing highly scalable applications. Fluency in HTML5 / CSS3 / Javascript Frameworks(React/Angular/Vue) Familiarity in working with different browsers and mobile applications with UI development frameworks & packages.\nAbility to deliver code quickly from a wire-frame model in a fast-paced start-up environment.\nAttention to detail. Strong communication and collaboration skills.",
-    "location": "Remote - East Timor",
-    "country": "East Timor",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T18:05:00.149Z",
-    "sourceHash": "06f32ed2f7f3840419696aae57b075a97deb4f6b244670945ccca1e8c27090e1",
-    "company": {
-      "id": "bidgely",
-      "name": "Bidgely",
-      "logoUrl": "https://logo.clearbit.com/bidgely.com",
-      "industry": "Technology",
-      "website": "https://bidgely.com"
-    },
-    "slug": "software-engineer-3-frontend-bidgely-06f32ed2",
-    "aiTags": {
-      "stack": [
-        "react",
-        "vue",
-        "angular",
-        "javascript",
-        "css",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "East Timor"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "77ce53b8637f4dfe9cac2135f511529a9a2d9068bb73b735e7e764168499acf1",
-    "title": "Frontend Developer - UI/UX",
-    "applyUrl": "https://www.sundayy.com/job-description/usF726C4799128753DA685FC1800C4EFC6?source=Linkedin",
-    "description": "About the job\n\nAbout The Company\n\nVetsEZ is a leading provider of healthcare technology solutions dedicated to improving patient outcomes and streamlining healthcare delivery through innovative software development. With a strong focus on federal healthcare programs, VetsEZ partners with government agencies to develop cutting-edge applications that enhance clinical workflows, support decision-making, and ensure compliance with healthcare standards. The company values diversity, inclusion, and continuous learning, fostering a collaborative environment where talented professionals can thrive and contribute to meaningful healthcare advancements.\n\nAbout The Role\n\nWe are seeking a skilled Front-End (UI/UX) Developer to join our dynamic, remote team supporting a large federal government healthcare modernization project. In this role, you will be instrumental in developing an AI-powered Patient Health Data Summarization capability within the Joint Longitudinal Viewer (JLV). Your primary responsibility will be to create intuitive, accessible, and responsive user interfaces that facilitate clinical decision-making by providing clinicians with AI-generated insights derived from complex clinical documentation and health records. Working within an Agile environment, you will collaborate closely with multidisciplinary teams, including product owners, UX designers, clinical subject matter experts, architects, and engineers, to deliver seamless healthcare applications integrated into clinician workflows. This position requires a deep understanding of modern front-end technologies, healthcare standards, and accessibility compliance, all while supporting transparency, traceability, and usability of AI-generated clinical information.\n\nQualifications\n\n\nBachelor's degree in Computer Science, Human-Computer Interaction, Information Systems, or a related field, or equivalent professional experience\nMinimum of 5+ years of professional front-end development experience\nProficiency with HTML5, CSS3, JavaScript, and TypeScript\nExperience developing responsive, component-based web applications using frameworks such as React, Angular, or Vue\nStrong knowledge of accessibility standards including WCAG and ARIA\nExperience creating complex, data-intensive user interfaces and visualizations\nUnderstanding of healthcare interoperability standards like FHIR, C-CDA, CDS Hooks, SMART on FHIR\nExcellent analytical, problem-solving, and communication skills\nAbility to work effectively within Agile, multidisciplinary teams\n\n\nResponsibilities\n\n\nDesign and develop responsive, accessible, and user-friendly healthcare application interfaces, including reusable UI components\nCreate data-driven visualizations and workflows that simplify complex clinical information and support clinician decision-making\nImplement user interfaces supporting Clinical Decision Support workflows, including CDS cards, notifications, and patient-context-aware experiences\nIntegrate front-end applications with backend services and clinical data sources, ensuring transparency and traceability of AI-generated summaries\nDevelop and maintain automated unit, integration, and UI tests to ensure high-quality deliverables\nParticipate in code reviews, contribute to technical documentation, and adhere to application quality standards\nCollaborate within an Agile team on sprint planning, backlog refinement, demonstrations, testing, and releases\nSupport additional tasks as required to meet project objectives and improve application usability and performance\n\n\nBenefits\n\n\nMedical, Dental, and Vision Insurance\n401(k) plan with Employer Match\nPaid Time Off (PTO) and Federal Holidays\nCompany-provided Laptop and necessary hardware\nTraining and professional development opportunities\nRemote work flexibility\nSupportive and inclusive work environment\n\n\nEqual Opportunity\n\nVetsEZ is an equal opportunity employer. We are committed to creating a diverse and inclusive workplace where all qualified applicants receive consideration for employment without regard to race, color, religion, sex, national origin, sexual orientation, gender identity, disability, or protected veteran status. We do not sponsor employment visas at this time. All candidates must successfully complete a background check and be eligible to obtain and maintain a government or public trust clearance as required.\n\n\n\nDesired Skills and Experience\n\nInformation Technology",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T05:36:16.996Z",
-    "sourceHash": "77ce53b8637f4dfe9cac2135f511529a9a2d9068bb73b735e7e764168499acf1",
-    "company": {
-      "id": "wiraa",
-      "name": "Wiraa",
-      "logoUrl": "https://logo.clearbit.com/wiraa.com",
-      "industry": "Technology",
-      "website": "https://wiraa.com"
-    },
-    "slug": "frontend-developer-ui-ux-wiraa-77ce53b8",
-    "aiTags": {
-      "stack": [
-        "react",
-        "vue",
-        "angular",
-        "typescript",
-        "javascript",
-        "css",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "20cd5053e489c7c909f706edb70d6e7888e8cf18dde2d1015a804451f8d368ca",
-    "title": "Senior Frontend Developer (React, Redux & Microfrontends)",
-    "applyUrl": "https://knowmadmood.teamtailor.com/jobs/8474519-senior-frontend-developer-react-redux-microfrontends",
-    "description": "About the job\n\nWe are knowmad mood!\n\nSomos una compañía líder en transformación digital, en constante evolución y a la vanguardia de la tecnología. Nacimos para provocar un cambio real a través de la innovación y el desarrollo sostenible, con la misión de aportar valor a los clientes e impulsar nuestro talento.\n\nFormado por más de 3.000 personas creativas, digitales e innovadoras conectadas a un propósito y capaces de generar conexiones con personas de todo el mundo. Un equipo responsable, flexible y con alta capacidad de adaptación a las necesidades de nuestros clientes y del mercado, a la vez que proporciona valor, visión, creatividad, expertise, profesionalidad y pasión por la tecnología en cada proyecto.\n\nLos valores que marcan nuestro rumbo y nos guían hacia la excelencia son la colaboración, la innovación, el compromiso, la diversión y la conﬁanza.\n\n¿Qué es lo que valoramos?\n\nExperiencia de al menos 3-4 años como Desarrollador/a Frontend o Consultor/a Técnico en:\n\n\n Experiencia sólida con JavaScript ES6, React y Redux en entornos empresariales.\n Conocimientos avanzados de HTML5, CSS3 y desarrollo de aplicaciones web modernas.\n Experiencia en consumo e integración de APIs REST.\n Conocimientos de Clean Code, principios SOLID y buenas prácticas de desarrollo de software.\n Experiencia en desarrollo y mantenimiento de tests unitarios y conocimientos de estrategias de testing.\n Conocimientos y experiencia trabajando con Git.\n Experiencia con herramientas de testing end-to-end como Cypress.\n Conocimiento y experiencia en arquitecturas basadas en Shell + Microfrontends.\n Experiencia aplicando buenas prácticas dentro del ciclo de vida del desarrollo de software (SDLC), incluyendo calidad, rendimiento, seguridad y mantenibilidad.\n Capacidad de trabajo en equipo y excelentes habilidades de comunicación, colaborando con equipos multidisciplinares.\n\n\n¿Cuáles serían tus funciones?\n\n\n Desarrollo Frontend: Diseñar, desarrollar y evolucionar aplicaciones web utilizando JavaScript ES6, React y Redux, garantizando una experiencia de usuario moderna, eficiente y escalable.\n Arquitectura y Evolución Técnica: Participar en la definición e implementación de arquitecturas basadas en Shell y Microfrontends, asegurando la escalabilidad y mantenibilidad de las soluciones.\n Integración de Servicios: Desarrollar e integrar aplicaciones mediante APIs REST, garantizando una correcta comunicación entre sistemas y servicios.\n Calidad y Testing: Diseñar e implementar pruebas unitarias y pruebas end-to-end con Cypress, contribuyendo a la calidad y estabilidad de las aplicaciones.\n Buenas Prácticas de Desarrollo: Aplicar principios de Clean Code, SOLID y estándares de ingeniería para mantener un código limpio, eficiente y fácilmente mantenible.\n Ingeniería de Software y SDLC: Cumplir con las mejores prácticas durante todo el ciclo de desarrollo, incluyendo aspectos relacionados con calidad, seguridad, rendimiento y pruebas.\n Colaboración Multidisciplinaria: Trabajar conjuntamente con equipos de negocio, producto y tecnología para identificar necesidades y aportar soluciones innovadoras alineadas con los objetivos del proyecto.\n\n\nAdemás, valoraremos muy positivamente si tienes experiencia y/o conocimientos en:\n\n\n Arquitecturas frontend escalables basadas en Microfrontends.\n Herramientas de testing automatizado y calidad del software.\n Desarrollo en entornos ágiles utilizando metodologías como Scrum o Kanban.\n Prácticas de integración continua y despliegue continuo (CI/CD).\n Optimización del rendimiento y seguridad en aplicaciones web.\n Experiencia participando en proyectos de gran volumen o con múltiples equipos de desarrollo.\n Capacidad para aportar mejoras técnicas, fomentar buenas prácticas y contribuir a la evolución tecnológica de los equipos.\n\n\nY con nosotros podrás disfrutar de:\n\n✅Contrato Indefinido\n\n✅ 100% REMOTO\n\n✅Formación interna y acceso a certificaciones ♻Consulta nuestro calendario aquí:\n\nhttps://www.knowmadmood.com/es/talento/formacion\n\n✅Plan de retribución flexible (seguro médico, transporte, tickets guardería, tickets restaurante)\n\n✅Embajador de nuestra marca, a través de nuestro plan amigo\n\n¡Recomienda a tus amigos y llévate un extra!\n\n✅¡Eventos, meetups, techdays, charlas...y mucho más!\n\n✅ 26 días de descanso (22 días vacaciones, 2 días de libre disposición y 24 y 31 diciembre festivos por defecto)\n\n✅ Horario: 8.30 a 18h ( flexible) L-J y V 8 a 15h e Intensiva de Verano Julio y Agosto de 8 a 15h\n\nPara estar al corriente de nuestras novedades síguenos aquí -> knowmad mood\n\nEn knowmad mood nos comprometemos con la igualdad de oportunidades y el respeto a la diversidad. Aplicamos nuestro Plan de Igualdad y el principio de no discriminación en todos nuestros procesos de selección.",
-    "location": "Remote - Spain",
-    "country": "Spain",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T05:28:25.102Z",
-    "sourceHash": "20cd5053e489c7c909f706edb70d6e7888e8cf18dde2d1015a804451f8d368ca",
-    "company": {
-      "id": "knowmadmood",
-      "name": "knowmad mood",
-      "logoUrl": "https://logo.clearbit.com/knowmadmood.com",
-      "industry": "Technology",
-      "website": "https://knowmadmood.com"
-    },
-    "slug": "senior-frontend-developer-react-redux-microfrontends-knowmad-mood-20cd5053",
-    "aiTags": {
-      "stack": [
-        "react",
-        "javascript",
-        "css",
-        "redux",
-        "cypress",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Spain"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    },
-    "isDead": true,
-    "deadAt": "2026-10-25T07:07:36.569Z"
-  },
-  {
-    "id": "15b8d5e6bad1d82f68e5d22f3d90da4ccc1d5267a12bada587dca55adfd74c25",
-    "title": "Lead Front End Engineer",
-    "applyUrl": "https://www.undelucram.ro/en/jobs/lead-front-end-engineer/100760?utm_source=linkedin&utm_medium=social&utm_campaign=linkedin_xml_jobs",
-    "description": "About the job\n\nUndelucram.ro on behalf of:\n\nSoftServe\n\nAbout The Role\n\nAs a Lead Frontend Engineer, you will design and build the user interfaces of complex, modular web applications for our Client, a European public sector organization. You will own the front end of what you deliver - its architecture, performance, accessibility, and security - and act as the technical reference point for the team, from component design and state management through to release via the established CI/CD pipelines. The role requires security clearance, so eligibility to obtain it is part of the selection.\n\nResponsibilities\n\n\nDesign, develop, and maintain complex, modular client-side applications using Angular, TypeScript, and modern build tooling\nOwn the quality of the front end you deliver, including responsive and adaptive behavior, accessibility, SEO, and application performance\nProvide technical leadership to the team through code review and knowledge sharing, and work with backend engineers, designers, and stakeholders to turn requirements into working interfaces\nBuild reusable components and implement state management patterns that scale across applications\nIntegrate front ends with REST APIs and verify those integrations with web services testing tools\nImplement web security practices, including authentication and authorization flows based on OAuth and OpenID Connect\nWrite and maintain unit and integration tests, and integrate front-end builds into CI/CD pipelines\nMonitor client-side performance using real user monitoring tooling and optimize asset delivery, including through content delivery networks\n\n\nRequirements\n\n\nA university degree at master's level (or 5 years of higher education) with a minimum of 15 years of IT professional experience\nThe candidate must be security clearable or already hold EU-27 security clearance\nMinimum 2 years of experience with HTML and CSS3, with proficiency in HTML5, JavaScript, ES6, CSS3, and SASS\nMinimum 3.5 years of experience with Angular (v14+), including build tooling (Angular CLI, Webpack, Vite), and minimum 3.5 years with TypeScript, together with Bootstrap\nMinimum 2 years of experience with RxJS and minimum 1.5 years with React, with good knowledge of building complex, modular client-side applications using modern frameworks, Web Components, and state management patterns. Experience in Redux architecture is a plus\nMinimum 1.5 years of experience in web security and authentication and authorization protocols (OAuth, OpenID Connect)\nMinimum 2 years of experience with development and DevSecOps tooling, including version control (Git), issue tracking (JIRA), collaboration (Confluence), and CI/CD pipelines (Jenkins, Bamboo), and minimum 1.5 years with REST APIs and with tools for web services testing (Postman, ReadyAPI)\nExperience with responsive and adaptive design, client-side monitoring tools such as Dynatrace Real User Monitoring and Azure Application Insights, Content Delivery Networks such as Cloudflare or AWS CloudFront for optimizing asset delivery, and front-end testing frameworks and tools (e.g. Jest, Karma, Cypress) for unit and integration testing, together with an understanding of key design principles, SEO principles, and accessibility standards\nGood knowledge of English, both spoken and written, corresponding to Level C1 or higher (CEFR)\n\n\nSoftServe is an equal opportunity employer. Qualified applicants will receive consideration regardless of race, color, ancestry, ethnicity, national origin, religion, sex, sexual orientation, gender identity or expression, age, citizenship, disability, health condition, marital or family status, veteran status, or any other characteristic protected by applicable law.",
-    "location": "Remote - Romania",
-    "country": "Romania",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T05:23:23.658Z",
-    "sourceHash": "15b8d5e6bad1d82f68e5d22f3d90da4ccc1d5267a12bada587dca55adfd74c25",
-    "company": {
-      "id": "undelucramro",
-      "name": "Undelucram.ro",
-      "logoUrl": "https://logo.clearbit.com/undelucramro.com",
-      "industry": "Technology",
-      "website": "https://undelucramro.com"
-    },
-    "slug": "lead-front-end-engineer-undelucram-ro-15b8d5e6",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript",
-        "javascript",
-        "css",
-        "sass",
-        "webpack",
-        "vite",
-        "redux",
-        "cypress",
-        "jest",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Romania"
-      ],
-      "seniority": "lead",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "238e2ec6cce4c98d059788e8fc0184185a73b41a328c5578ec10eac0276a7d65",
-    "title": "Frontend / React Developer (Fresher)",
-    "applyUrl": "https://mailermen.com/jobs/frontend-react-developer-fresher-remote-india-504",
-    "description": "About the job\n\nWhat this role pays, in context\n\nThis listing pays 54% below the median for React Developer roles in India, which sits at ₹6L a year.\n\n25th pct ₹5.1L75th pct ₹6L\n\nMedian of 15 other live React Developer listings in India on this board that state pay. Roles that do not disclose a salary are excluded rather than counted as zero.\n\nMailerMen is hiring a Frontend / React Developer for our Surat team. You will build modern, responsive user interfaces with React, focusing on performance, accessibility and clean component design. Freshers with strong fundamentals and hands-on project or internship experience are encouraged to apply. The role is fully remote, with the Surat team as your home base for occasional meetups.\n\nDepartment: Engineering - Frontend Working hours: 10:00 AM–7:00 PM IST, Monday–Friday\n\nResponsibilities\n\n\nFollow accessibility, responsive design and coding best practices.\nConvert UI designs into reusable frontend components.\nImplement accessible components following WCAG basics.\nWrite component tests and visual regression checks.\nParticipate in code reviews and team discussions.\nBuild responsive user interfaces using React.\nLearn and contribute to modern frontend development practices.\nLearn team tools, coding standards and delivery processes with mentor support.\n\n\nRequirements\n\n\nBachelor's degree, diploma or equivalent practical training in Computer Science/IT preferred.\nGood to have: Figma, Storybook, Framer Motion, Next.js, Redux, TypeScript\n\n\nSkills\n\nCSSHTMLJavaScriptReact.jsREST APIs\n\nBenefits\n\n\nFully remote role\nModern hardware\nPerformance bonuses\nCertification support\nFlexible leave policy\n\n\nRelated searches\n\nReact Developer Remote Jobs in IndiaAll React Developer jobsJobs in India",
-    "location": "Remote - India",
-    "country": "India",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-09-30T05:00:17.720Z",
-    "sourceHash": "238e2ec6cce4c98d059788e8fc0184185a73b41a328c5578ec10eac0276a7d65",
-    "company": {
-      "id": "mailermen",
-      "name": "MailerMen",
-      "logoUrl": "https://logo.clearbit.com/mailermen.com",
-      "industry": "Technology",
-      "website": "https://mailermen.com"
-    },
-    "slug": "frontend-react-developer-fresher-mailermen-238e2ec6",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "redux",
-        "storybook",
-        "figma",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "India"
-      ],
-      "seniority": "mid",
-      "employmentType": "internship"
     }
   }
 ]
