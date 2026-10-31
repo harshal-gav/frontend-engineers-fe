@@ -45,7 +45,6 @@ if (!process.env.GEMINI_API_KEY && fs.existsSync(envPath)) {
 }
 
 const DRY_RUN = process.argv.includes('--dry-run');
-const WITH_TWITTER = process.argv.includes('--with-twitter') || process.argv.includes('--twitter');
 
 // ─── Config ──────────────────────────────────────────────────
 
@@ -394,20 +393,6 @@ async function main() {
 
   if (DRY_RUN) {
     console.log('\n✅ LinkedIn DRY RUN complete. Post successfully generated!');
-    if (WITH_TWITTER) {
-      console.log('\n🐦 Running Twitter/X Dry Run (--with-twitter)...');
-      try {
-        const { postThreeTweetsToTwitter, generateThreeTwitterPostsWithGemini } = require('./post-to-twitter');
-        const twitterPosts = await generateThreeTwitterPostsWithGemini();
-        await postThreeTweetsToTwitter({
-          ...twitterPosts,
-          dryRun: true,
-          headed: process.argv.includes('--headed'),
-        });
-      } catch (twErr) {
-        console.error('❌ Twitter dry run error:', twErr.message);
-      }
-    }
     return;
   }
 
@@ -485,23 +470,6 @@ async function main() {
   }
 
   console.log('\n✅ LinkedIn posting complete!');
-
-  if (WITH_TWITTER) {
-    console.log('\n🐦 Publishing to Twitter/X as requested (--with-twitter)...');
-    try {
-      const { postThreeTweetsToTwitter, generateThreeTwitterPostsWithGemini } = require('./post-to-twitter');
-      console.log('🤖 Generating Twitter-optimized posts with Gemini AI...');
-      const twitterPosts = await generateThreeTwitterPostsWithGemini();
-      await postThreeTweetsToTwitter({
-        ...twitterPosts,
-        dryRun: DRY_RUN,
-        headed: process.argv.includes('--headed'),
-      });
-    } catch (twErr) {
-      console.error('❌ Error publishing to Twitter/X:', twErr.message);
-    }
-  }
-
   console.log('\n✅ All tasks done!');
 }
 
