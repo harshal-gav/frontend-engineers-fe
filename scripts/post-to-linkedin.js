@@ -67,138 +67,83 @@ const GEMINI_MODELS = [
   'gemini-2.5-pro'
 ];
 
-// Creative rotating angles to guarantee distinct, varied posts on each run
+// High-engagement creative themes engineered for LinkedIn algorithm (Dwell time + "See more" clicks)
 const CREATIVE_THEMES = [
   {
-    name: 'Verified Quality & Zero Ghost Jobs',
-    angle: 'Focus on the relief and speed of browsing 100% verified, active frontend roles with zero ghost jobs, zero expired links, and direct application portals.',
-    hookTone: 'Energizing, refreshing, and action-oriented.'
+    name: 'Ghost Jobs Breakdown & Stale Listings',
+    angle: 'Contrarian analysis of why 30%+ of remote listings on big boards are ghost jobs that expired weeks ago, and why verified daily updates give applicants a massive advantage.',
+    hookStyle: 'Eye-opening, authentic, and contrarian.'
   },
   {
-    name: 'Modern Tech Stack Deep Dive',
-    angle: 'Focus on high-demand modern frontend technologies - React, Next.js, TypeScript, Vue 3, and Angular - curated specifically for frontend engineers and UI architects.',
-    hookTone: 'Tech-enthusiast, forward-looking, and developer-centric.'
+    name: 'The 2026 Frontend Hiring Reality',
+    angle: 'Actionable breakdown of what companies are actually filtering for (Next.js App Router, TypeScript strict mode, Core Web Vitals, API orchestration) vs outdated requirements.',
+    hookStyle: 'Insider, developer-first, and highly educational.'
   },
   {
-    name: 'Worldwide Remote Freedom',
-    angle: 'Focus on location independence and transparent remote policies - Worldwide Remote, US, Europe/UK, LATAM, Canada, APAC - with no hidden hybrid surprises.',
-    hookTone: 'Empowering, global, and lifestyle-freedom oriented.'
+    name: 'The Worldwide Remote Reality Check',
+    angle: 'Exposing the hidden trap of listings labeled Worldwide Remote that secretly filter for US/EU timezones, and why transparent location eligibility saves developers dozens of wasted hours.',
+    hookStyle: 'Relatable, empathetic, and empowering.'
   },
   {
-    name: 'Direct Employer Application Links',
-    angle: 'Focus on transparency and cutting out middlemen: every role links directly to official employer career portals with full specs and salary ranges where available.',
-    hookTone: 'Transparent, direct, and straightforward.'
+    name: 'Bypassing the 500-Applicant ATS Filter',
+    angle: 'Why the first 48 hours of a job opening decide 90% of interviews, and how applying directly to employer portals + employee referrals beats the resume black hole.',
+    hookStyle: 'Tactical, strategic, and career-advancement oriented.'
   },
   {
-    name: 'Beating the ATS with Daily Alerts & Referrals',
-    angle: 'Focus on applying fast: daily tailored job alerts straight to inbox plus direct employee referrals to bypass automated filter traps and land interviews.',
-    hookTone: 'Strategic, competitive edge, and career advancement.'
-  },
-  {
-    name: 'High-Impact Startups & Global Tech Leaders',
-    angle: 'Focus on finding high-growth startup and enterprise frontend engineering roles that elevate your portfolio and compensation.',
-    hookTone: 'Ambitious, inspiring, and high-impact.'
+    name: 'Direct Employer Applications vs Middleman Portals',
+    angle: 'How applying directly to official employer career portals (Greenhouse, Lever, Ashby) gets 4x higher response rates than third-party job aggregator forms.',
+    hookStyle: 'Direct, transparent, and high-impact.'
   }
 ];
 
-// High-energy variations of the mandatory first line concept
-const FASTER_OPENING_HOOKS = [
-  'Get Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🚀',
-  'Land your dream Remote Frontend Job faster than ever with FrontendEngineers.com! ⚡',
-  'Find verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! ✨',
-  'Score top-tier Remote Frontend Jobs faster than ever with FrontendEngineers.com! 💻',
-  'Get hired for verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🔥',
-  'Unlock high-impact Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🎯',
-  'Fast-track your search for Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🌟',
-  'Discover verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🚀',
-  'Secure interview-ready Remote Frontend Jobs faster than ever with FrontendEngineers.com! ⚡',
-  'Step into your next Remote Frontend Job faster than ever with FrontendEngineers.com! 💼'
-];
-
-// ─── Gemini AI Generation (Single Post with Jobs as Dominant Focus) ─
+// ─── Gemini AI Generation (Optimized for LinkedIn Algorithm Reach) ──
 
 async function generatePostWithGemini() {
   const theme = CREATIVE_THEMES[Math.floor(Math.random() * CREATIVE_THEMES.length)];
-  const suggestedOpeningHook = FASTER_OPENING_HOOKS[Math.floor(Math.random() * FASTER_OPENING_HOOKS.length)];
   const randomSalt = Math.floor(Math.random() * 900000 + 100000);
 
-  const prompt = `You are an expert social media strategist and growth marketing lead for FrontendEngineers.com - the premier platform built exclusively for remote frontend developers.
+  const prompt = `You are a top-tier LinkedIn tech voice and engineering founder who regularly earns thousands of impressions and comments.
 
-Generate a SINGLE high-converting LinkedIn post that combines remote frontend jobs, community employee referrals, and employer hiring, with DOMINANT, FULL FOCUS on helping developers land remote frontend developer jobs.
-
----
-TODAY'S UNIQUE CREATIVE FOCUS (Use this to make this post completely fresh and distinct):
-- Focus Angle: ${theme.name}
-- Creative Direction: ${theme.angle}
-- Hook Style: ${theme.hookTone}
-- Random Seed Key: ${randomSalt}
-Every post generated MUST feel original, engaging, and different from previous posts in rhythm, storytelling, phrasing, and structure.
+Write an authentic, highly readable, value-packed LinkedIn post specifically for remote frontend and full-stack developers.
 
 ---
-MANDATORY OPENING REQUIREMENT (NON-NEGOTIABLE):
-The VERY FIRST line/sentence of the post MUST open with a creative variation of:
-"Get Remote Frontend Jobs faster than ever with FrontendEngineers.com"
-
-Suggested variation for this post:
-"${suggestedOpeningHook}"
-
-You can use this suggested variation or craft a compelling, fresh variation of it. It MUST prominently include:
-1. "Remote Frontend Job" (or "Remote Frontend Jobs")
-2. "faster than ever" (highlighting speed and efficiency)
-3. The exact website name "FrontendEngineers.com"
-
-Examples of variations to rotate and inspire from:
-- "Get Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🚀"
-- "Land your dream Remote Frontend Job faster than ever with FrontendEngineers.com! ⚡"
-- "Find verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! ✨"
-- "Score top-tier Remote Frontend Jobs faster than ever with FrontendEngineers.com! 💻"
-- "Get hired for verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🔥"
-- "Unlock high-impact Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🎯"
-- "Fast-track your search for Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🌟"
-- "Discover verified Remote Frontend Jobs faster than ever with FrontendEngineers.com! 🚀"
+TODAY'S ANGLE:
+- Theme: ${theme.name}
+- Core Angle: ${theme.angle}
+- Tone: ${theme.hookStyle}
+(Random seed key: ${randomSalt} - use only for stylistic variety, never mention this number in the post text)
 
 ---
-CONTENT & STRUCTURE REQUIREMENTS:
+CRITICAL RULES FOR HIGH IMPRESSIONS (ALGORITHM OPTIMIZED):
 
-1. OPENING (1-2 lines):
-- Start with the mandatory opening variation of "Get Remote Frontend Jobs faster than ever with FrontendEngineers.com".
-- POSITIVE, EMPOWERING, AND INSPIRING TONE ONLY: No negative complaints like "Tired of..." or "Sick of...". Focus on excitement, speed of landing interviews, and transparent opportunities.
+1. THE FIRST 2 LINES (THE HOOK):
+- Must be scroll-stopping, authentic, and intriguing.
+- It must convince the developer to click "...see more" within 2 seconds.
+- NEVER start with an advertisement, cheerleading slogan, or "Get Remote Frontend Jobs faster with FrontendEngineers.com".
+- NEVER start with "Are you looking for a job?" or "Attention developers!".
+- Start with a bold market fact, surprising observation, contrarian truth, or relatable developer frustration (e.g. ghost jobs, misleading remote tags, ATS filters, tech stack trends).
 
-2. CORE SECTION - FULL FOCUS ON REMOTE FRONTEND DEVELOPER JOBS (75-80% of post):
-- Make this the clear highlight of the post with rich details, vibrant emojis, and genuine value:
-  • 100% VERIFIED & DEDUPLICATED: Exclusively curated frontend engineering roles across React, Next.js, Vue, Angular, and TypeScript. Zero ghost jobs, zero expired listings, and zero dead application links.
-  • ACCURATE REMOTE LOCATIONS: Transparent remote eligibility - Worldwide Remote, US, Europe/UK, LATAM, Canada, and APAC - so engineers never waste time on mislabeled hybrid positions.
-  • DIRECT EMPLOYER APPLICATION LINKS: Full job specifications linking directly to official employer career portals with zero middlemen.
-  • DAILY MATCHING ALERTS: Tailored job alerts delivered straight to your inbox daily so you can apply early.
+2. THE BODY (HIGH-DENSITY VALUE):
+- Provide 4-6 concise, punchy insights or takeaways with clean line spacing.
+- Mention modern, relevant technologies naturally: React, Next.js, TypeScript, Vue.
+- Make it relatable, educational, and genuinely useful to a software engineer browsing LinkedIn.
 
-3. MINIMAL MENTION 1 - COMMUNITY EMPLOYEE REFERRALS (10% of post):
-- Keep this concise and subtle (1-2 sentences):
-  • Mention that developers can also discover direct employee referrals from working frontend peers to bypass automated ATS filters and get interviews faster, or post their own referrals for free to support the developer community.
+3. THE WEBSITE & COMMUNITY MENTION:
+- Mention how FrontendEngineers.com provides 100% verified remote frontend roles, zero ghost jobs, and direct employer application links.
+- Note: The single link to FrontendEngineers.com is placed on top of the post. Do NOT include any secondary links or pricing links.
 
-4. MINIMAL MENTION 2 - EMPLOYER HIRING (5-10% of post):
-- Keep this to 1 short, punchy sentence:
-  • "Hiring frontend talent? Founders and tech recruiters can post unlimited remote frontend roles for a flat $99/mo with zero per-post fees at FrontendEngineers.com."
+4. CALL TO ACTION & QUESTION:
+- End with 1 thoughtful, engaging question to drive comments (the algorithm prioritizes posts with comment discussions).
 
-5. STRICT LINK REQUIREMENT (INCLUDE ONLY THESE EXACT 2 LINKS - DO NOT INCLUDE ANY OTHER LINKS):
-👉 Explore remote frontend jobs:
-https://www.frontendengineers.com
-
-👉 Get pro access for just $9/month:
-https://www.frontendengineers.com/pricing
-
-6. ENGAGEMENT & COMMUNITY CALL TO ACTION:
-- Ask a fresh, high-engagement question tailored to today's topic (e.g. asking about tech stack, remote preferences, or dream projects).
-- Call to action: "Repost this to help a fellow frontend developer find their next verified remote role! 🚀"
-
-7. HASHTAGS:
-- 20-25 highly relevant hashtags:
-  #FrontendDeveloper #RemoteJobs #ReactJS #TypeScript #Nextjs #WebDev #JavaScript #VueJS #Angular #SoftwareEngineering #TechCareers #RemoteWork #JobSearch #Hiring #FrontendJobs #WebDevelopment #FrontendEngineers
+5. HASHTAGS:
+- Include EXACTLY 3 to 5 targeted, high-traffic hashtags at the very bottom:
+#FrontendDeveloper #ReactJS #WebDevelopment #RemoteWork #TechJobs
 
 ---
 CRITICAL RULES FOR LINKEDIN API:
 - NO MARKDOWN: Absolutely NO **bold**, NO *italics*, NO backticks. LinkedIn API displays raw markdown characters as ugly plaintext.
-- NO PARENTHESES: DO NOT use parentheses anywhere in the text. LinkedIn API silently truncates posts at '('. Use dashes - or commas , instead.
-- LENGTH: 1100 to 1800 characters (optimal for LinkedIn algorithm dwell time and readability).
+- NO PARENTHESES: DO NOT use parentheses '(' or ')' anywhere in the post. LinkedIn API silently truncates posts at '('. Use dashes - or commas instead.
+- LENGTH: 1000 to 1400 characters (optimal for mobile reading dwell time).
 - Output the post strictly between these delimiters:
 ===POST_START===
 [Full text of the LinkedIn post here]
@@ -216,9 +161,9 @@ CRITICAL RULES FOR LINKEDIN API:
             body: JSON.stringify({
               contents: [{ parts: [{ text: prompt }] }],
               generationConfig: {
-                temperature: 0.9,
+                temperature: 0.85,
                 topP: 0.95,
-                maxOutputTokens: 6000,
+                maxOutputTokens: 4000,
               },
             }),
           }
@@ -253,10 +198,7 @@ CRITICAL RULES FOR LINKEDIN API:
           continue;
         }
 
-        // Guarantee that the opening mentions both "Remote Frontend Developer jobs" and "FrontendEngineers.com"
-        post = enforceMandatoryOpening(post);
-
-        // Guarantee strictly only the 2 required links are kept
+        // Guarantee strictly only the website link is kept and properly formatted
         post = enforceAllowedLinks(post);
 
         return post;
@@ -271,61 +213,46 @@ CRITICAL RULES FOR LINKEDIN API:
 
 // ─── Enforcement & Sanitization Helpers ──────────────────────
 
-function enforceMandatoryOpening(text) {
-  let cleaned = text.trim();
-  const firstLines = cleaned.split('\n').slice(0, 3).join(' ');
-
-  const hasJobs = /remote frontend (developer )?jobs?/i.test(firstLines);
-  const hasSite = /frontendengineers\.com/i.test(firstLines);
-  const hasFaster = /faster/i.test(firstLines);
-
-  if (!hasJobs || !hasSite || !hasFaster) {
-    const hook = FASTER_OPENING_HOOKS[Math.floor(Math.random() * FASTER_OPENING_HOOKS.length)];
-    const lines = cleaned.split('\n');
-    if (lines[0].includes('FrontendEngineers.com') || lines[0].toLowerCase().includes('frontend')) {
-      lines[0] = hook;
-      cleaned = lines.join('\n');
-    } else {
-      cleaned = `${hook}\n\n${cleaned}`;
-    }
-  }
-
-  return cleaned;
-}
-
 function enforceAllowedLinks(text) {
   let cleaned = text;
 
-  // Remove any legacy /referrals or /employers/pricing URLs if accidentally generated
-  cleaned = cleaned.replace(/https?:\/\/www\.frontendengineers\.com\/referrals\S*/gi, '');
-  cleaned = cleaned.replace(/https?:\/\/www\.frontendengineers\.com\/employers\/pricing\S*/gi, '');
+  // 1. Remove any full URLs like https:// or http:// or www.
+  cleaned = cleaned.replace(/https?:\/\/(www\.)?frontendengineers\.com[^\s\n]*/gi, '');
+  cleaned = cleaned.replace(/https?:\/\/[^\s\n]*/gi, '');
+  cleaned = cleaned.replace(/www\.frontendengineers\.com/gi, 'FrontendEngineers.com');
 
-  const targetLinksBlock = `👉 Explore remote frontend jobs:\nhttps://www.frontendengineers.com\n\n👉 Get pro access for just $9/month:\nhttps://www.frontendengineers.com/pricing`;
+  // 2. Remove any stray CTA header lines that might have been generated
+  cleaned = cleaned.replace(/^[ \t]*👉[^\n]*(?:remote|jobs|frontend|verified|pro|access|pricing)[^\n]*$/gim, '');
+  cleaned = cleaned.replace(/\n{3,}/g, '\n\n');
 
-  // Match from any link-intro line preceding frontendengineers.com up to the pricing link
-  const linkSectionRegex = /(?:[^\n]*(?:remote|jobs|explore|pro|access|pricing)[^\n]*\n+)?https:\/\/www\.frontendengineers\.com[\s\S]*?https:\/\/www\.frontendengineers\.com\/pricing/i;
+  // ONLY this: "FrontendEngineers.com" directly on top of the post
+  const topLinkBlock = `FrontendEngineers.com`;
 
-  if (linkSectionRegex.test(cleaned)) {
-    cleaned = cleaned.replace(linkSectionRegex, targetLinksBlock);
-  } else if (cleaned.includes('https://www.frontendengineers.com')) {
-    cleaned = cleaned.replace(
-      /(?:[^\n]*\n+)?https:\/\/www\.frontendengineers\.com/i,
-      targetLinksBlock
-    );
-  } else {
-    const hashIndex = cleaned.search(/#[a-zA-Z]/);
-    if (hashIndex !== -1) {
-      cleaned = `${cleaned.substring(0, hashIndex).trim()}\n\n${targetLinksBlock}\n\n${cleaned.substring(hashIndex).trim()}`;
+  // 3. Separate hashtags from post content
+  const lines = cleaned.split('\n');
+  const nonHashLines = [];
+  const hashTags = [];
+
+  for (const line of lines) {
+    if (line.trim().startsWith('#')) {
+      const tags = line.trim().match(/#[a-zA-Z0-9_]+/g);
+      if (tags) hashTags.push(...tags);
     } else {
-      cleaned = `${cleaned}\n\n${targetLinksBlock}`;
+      // Skip if this line is just FrontendEngineers.com to avoid duplicating the top line
+      if (line.trim().toLowerCase() === 'frontendengineers.com' || line.trim().toLowerCase() === '👉 frontendengineers.com') {
+        continue;
+      }
+      nonHashLines.push(line);
     }
   }
 
-  // Deduplicate any repeated consecutive label lines if any slipped through
-  cleaned = cleaned.replace(/(👉 Explore remote frontend jobs:\s*\n)+/g, '👉 Explore remote frontend jobs:\n');
-  cleaned = cleaned.replace(/(👉 Get pro access for just \$9\/month:\s*\n)+/g, '👉 Get pro access for just $9/month:\n');
+  const uniqueTags = Array.from(new Set(hashTags)).slice(0, 5);
+  const tagString = uniqueTags.length > 0
+    ? uniqueTags.join(' ')
+    : '#FrontendDeveloper #ReactJS #WebDevelopment #RemoteWork #TechJobs';
 
-  return cleaned;
+  // Return with ONLY "FrontendEngineers.com" placed on TOP of the post
+  return `${topLinkBlock}\n\n${nonHashLines.join('\n').trim()}\n\n${tagString}`.trim();
 }
 
 function sanitizeForLinkedIn(text) {
@@ -457,7 +384,12 @@ async function main() {
         console.log(`   ✅ Successfully posted! Post ID: ${res.postId}`);
         totalPublished++;
       } catch (err) {
-        console.error(`   ❌ Failed to post to ${target.type}: ${err.message}`);
+        if (err.message.includes('AUTHENTICATION_FAILED') || err.message.includes('RESTRICTED_MEMBER') || err.message.includes('401')) {
+          console.error(`   ❌ Authentication failed for ${acc.name} (${target.type}). Token is expired or invalid.`);
+          console.error(`   💡 Your 60-day LinkedIn OAuth token has expired. Run 'npm run linkedin:auth' to refresh it.`);
+        } else {
+          console.error(`   ❌ Failed to post to ${target.type}: ${err.message}`);
+        }
       }
     }
   }
