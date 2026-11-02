@@ -1,103 +1,5 @@
 [
   {
-    "id": "ea82a3e4e8f51ef46fbc0bd633452898b5a18c2e33617d834c3f8fbdebfbceb1",
-    "title": "Solidity Compiler Frontend Engineer",
-    "applyUrl": "https://jobicy.com/jobs/142139-solidity-compiler-frontend-engineer",
-    "description": "About the CompanyOne of the fastest-growing and most trusted companies in blockchain security, CertiK is a true market leader. To date, CertiK has worked with over 4,798 clients, secured over $597 billion worth of digital assets, and has monitored over 17,000 projects. Our clients include leading projects such as Aave, Polygon, Yearn, and Chiliz.\nInvestors = Insight Partners, Sequoia, Tiger Global, Coatue Management, Lightspeed, Advent International, SoftBank, Hillhouse Capital, Goldman Sachs, Shunwei Capital, IDG Capital, Wing, Legend Star, Danhua Capital and other investors.\nAbout the RoleWe are seeking an experienced Solidity Compiler Frontend Engineer to join our team working on cutting-edge blockchain compiler infrastructure and formal verification tools. You will participate in developing and optimizing the frontend components of Solidity compilation pipelines, with a focus on static analysis, type checking, and integration with formal verification systems.\r\n\nResponsibilities\r\n• Design and implement frontend components for the Solidity compiler, including lexical analysis, parsing, AST generation, and semantic analysis.\n• Optimize compiler performance and improve error reporting and diagnostics. \n• Develop integration layers between the Solidity compiler and formal verification tools. \n• Contribute to the evolution of Solidity language features and specification. \n• Collaborate with security researchers to implement static analysis and security checks. \n• Maintain and improve existing compiler infrastructure and tooling.\nRequirements\r\n• 3+ years of professional experience in Solidity compiler development or related compiler projects (e.g., EVM-based languages, smart contract compilers) \n• Strong proficiency in Java with deep understanding of Java based compiler development and optimization\n• Solid foundation in compiler theory, including parsing techniques, type systems, and intermediate representations \n• Experience with formal methods or formal verification tools (e.g., SMT solvers, theorem provers, or verification frameworks) \n• Strong understanding of the Ethereum Virtual Machine (EVM) and smart contract execution models \n• Excellent problem-solving skills and attention to detail\nPreferred Qualifications\r\n• Experience with LLVM or similar compiler infrastructure \n• Knowledge of programming language semantics and type theory \n• Contributions to open-source compiler projects\n• Experience with Solidity or other blockchain programming languages\nWhat We Offer\r\n• Opportunity to shape the national conversation on blockchain and security.\n• Collaborate with industry-leading security researchers, technologists, and global institutions.\n• Flexible work environment and mission-driven culture.\nCompensation: If the role is performed in the US, the target annual compensation is $140,000 - $220,000. The exact compensation at which this job is filled will be determined by the skills and experience of qualified candidates.\n#blockchain#startups#hiring\nCertiK accepts applications for this position on an ongoing basis. \nCertiK is proud to offer medical, vision, and dental insurance, 401(k) plan with company matching, life and accidental death and dismemberment insurance, HSA (with high deductible plan), FSA, and other benefits to all full-time employees, along with flexible paid time off and holidays. CertiK also offers a variable commission program for business development sales roles.\nIn compliance with federal law, all persons hired will be required to verify identity and eligibility to work in the United States and to complete the required employment eligibility verification form upon hire.\nCertiK is proud to be an equal opportunity employer. We will not discriminate against any applicant or employee on the basis of age, race, color, creed, religion, sex, sexual orientation, gender, gender identity or expression, medical condition, national origin, ancestry, citizenship, marital status or civil partnership/union status, physical or mental disability, pregnancy, childbirth, genetic information, military and veteran status, or any other basis prohibited by applicable federal, state or local law.\nCertiK will consider for employment qualified applicants with criminal histories in a manner consistent with local and federal requirements.https://www.eeoc.gov/sites/default/files/migrated_files/employers/poster_screen_reader_optimized.pdf\nAll CertiK employees are expected to actively support diversity on their teams, and in the Company.",
-    "location": "Remote - USA",
-    "country": "USA",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-31T03:30:17.000Z",
-    "sourceHash": "ea82a3e4e8f51ef46fbc0bd633452898b5a18c2e33617d834c3f8fbdebfbceb1",
-    "company": {
-      "id": "certik",
-      "name": "CertiK",
-      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2021/03/Jobicy-210308091023-955845.jpg",
-      "industry": "Technology",
-      "website": "https://certik.com"
-    },
-    "slug": "solidity-compiler-frontend-engineer-certik-ea82a3e4",
-    "aiTags": {
-      "stack": [],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "USA"
-      ],
-      "seniority": "mid",
-      "employmentType": "contract"
-    }
-  },
-  {
-    "id": "abda8f2e0906631167d755703bf3e289dfe474bb009f0f23c5ebf9f6a147bad6",
-    "title": "Staff Software Engineer, Frontend",
-    "applyUrl": "https://jobicy.com/jobs/158175-staff-software-engineer-frontend",
-    "description": "Hims & Hers is the leading health and wellness platform, on a mission to help the world feel great through the power of better health. We are redefining healthcare by putting the customer first and delivering access to care that is affordable, accessible, and personal, from diagnosis to treatment to delivery. No two people are the same, so we provide access to personalized care designed for results. By normalizing health & wellness challenges and innovating on their solutions, we’re making better health outcomes easier to achieve. \n\nHims & Hers is a public company, traded on the NYSE under the ticker symbol “HIMS.” To learn more about the brand and offerings, you can visit hims.com/about and hims.com/how-it-works . For information on the company’s outstanding benefits, culture, and its talent-first flexible/remote work approach, see below and visit www.hims.com/careers-professionals.\n\nAbout the Role:\nHims & Hers is seeking an experienced, self-motivated, and results-driven Staff Engineer to build, test, deploy and support our self-service platform used for pharmacy operations and customer order fulfillment.\n\nAs a leading technical voice within the Fulfillment and Pharmacy Engineering Front End team, you will collaborate with other engineers, product managers, designers, and Engineering leaders to deliver solutions for our Fulfillment and Pharmacy Operations teams. Your contributions will help ensure the resulting platform is safe, reliable, scalable, and adaptable to our growing business needs.\n\nYou Will:\n\n• \nLead the architecture of scalable, maintainable, and performant front end solutions aligned with product requirements\n\n• \nWork with other technical leaders to identify and drive adoption of common frameworks, patterns, and practices\n\n• \nEstablish and foster consistent best practices, design patterns, and coding standards across the Front End team\n\n• \nShape responsible adoption of AI across our software development process, raising team output while holding the bar for patient safety, quality, and maintainability\n\n• \nGuide the technical growth of Front End engineers through pair programming, mentorship opportunities, maintaining thorough technical documentation, and other avenues\n\n• \nInitiate efforts to reduce technical debt and enhance workflow efficiency\n\n• \nImplement tools and processes for monitoring, incident response, and performance optimization\n\n• \nDefine a multi-quarter front end architecture roadmap for Pharmacy & Fulfillment and break it into work other engineers can pick up\n\n• \nCollaborate with designers for intuitive and engaging user experiences\n\n• \nConduct design & code reviews and facilitate knowledge-sharing initiatives\n\n• \nStay informed of industry trends and standards to propose innovative enhancements\n\nYou Have:\n\n• \n10+ years of software engineering experience, with a track record of setting front end technical direction across multiple teams\n\n• \nProven experience in building scalable web applications and services, preferably in a cloud environment\n\n• \nProficiency in front-end technologies such as HTML, CSS, and JavaScript frameworks (React, React Native, NextJs, TypeScript) and back-end technologies (Node.js, Docker, Kubernetes, Redis)\n\n• \nExperience with monitoring and CI/CD technologies (Datadog, Github actions, Circle CI, etc…)\n\n• \nHands-on experience using AI tools in real engineering workflows, with good judgment about where they help and where they don't\n\n• \nExcellent problem-solving skills and the ability to think critically and strategically\n\n• \nStrong communication and collaboration skills, with the ability to work effectively across teams\n\n• \nCapable of prioritizing multiple projects in order to meet goals without management oversight\n\nPreferred Experience \n\n• \nIdentifies clarity in ambiguous situations, acting as a stabilizing influence during uncertainty.\n\n• \nFosters trust and collaboration across diverse teams\n\n• \nBalances confidence with humility, constructively addressing conflicts and resistance.\n\n• \nProvides empathetic feedback and promotes transparency\n\n• \nStrategically drives execution of initiatives, maintaining urgency and focus on critical priorities\n\n• \nChampions customer-centric design and ensures customer priorities are reflected\n\n• \nDemonstrates accountability, owning outcomes and the long-term success of technical systems\n\n• \nProactively identifies and addresses risks and gaps without awaiting direction.\n\n• \nPromotes curiosity, continuous improvement, and innovation\n\n• \nInfluences decisions through well-reasoned arguments and supports alignment post-decision\n\nOur Benefits (there are more but here are some highlights):\n\n• \nCompetitive salary & equity compensation for full-time roles\n\n• \nUnlimited PTO, company holidays, and quarterly mental health days\n\n• \nComprehensive health benefits including medical, dental & vision, and parental leave\n\n• \nEmployee Stock Purchase Program (ESPP)\n\n• \n401k benefits with employer matching contribution\n\n• \nOffsite team retreats\n\nWe are committed to building a workforce that reflects diverse perspectives and prioritizes ethics, wellness, and a strong sense of belonging. If you're excited about this role, we encourage you to apply—even if you're not sure if your background or experience is a perfect match.\n\nHims considers all qualified applicants for employment, including applicants with arrest or conviction records, in accordance with the San Francisco Fair Chance Ordinance, the Los Angeles County Fair Chance Ordinance, the California Fair Chance Act, and any similar state or local fair chance laws.\n\nIt is unlawful in Massachusetts to require or administer a lie detector test as a condition of employment or continued employment. An employer who violates this law shall be subject to criminal penalties and civil liability.\n\nHims & Hers is committed to providing reasonable accommodations for qualified individuals with disabilities and disabled veterans in our job application procedures. If you need assistance or an accommodation due to a disability, please contact us at accommodations@forhims.com and describe the needed accommodation. Your privacy is important to us, and any information you share will only be used for the legitimate purpose of considering your request for accommodation. Hims & Hers gives consideration to all qualified applicants without regard to any protected status, including disability. Please do not send resumes to this email address.\n\nTo learn more about how we collect, use, retain, and disclose Personal Information, please visit our Global Candidate Privacy Statement.",
-    "location": "Remote - USA",
-    "country": "USA",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-31T10:09:18.000Z",
-    "sourceHash": "abda8f2e0906631167d755703bf3e289dfe474bb009f0f23c5ebf9f6a147bad6",
-    "company": {
-      "id": "hims038hers",
-      "name": "hims &#038; hers",
-      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2023/11/e7b9b920-221.jpeg",
-      "industry": "Technology",
-      "website": "https://hims038hers.com"
-    },
-    "slug": "staff-software-engineer-frontend-hims-038-hers-abda8f2e",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "javascript",
-        "css",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "USA"
-      ],
-      "seniority": "principal",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "28fe9b386430c58b299eb7638c855d256417cfabb51f2aa21e88a5b2e79c27ee",
-    "title": "Frontend Engineer - Design Systems",
-    "applyUrl": "https://jobicy.com/jobs/158196-frontend-engineer-design-systems",
-    "description": "Mercury's Design Systems team helps product teams build interfaces that feel consistent, accessible, and carefully considered. We're hiring a Frontend Engineer to help evolve the shared components and patterns behind those experiences, making it easier for teams across Mercury to turn good ideas into well-crafted software.\n\nYou'll work closely with designers and engineers to understand product needs, explore solutions, and carry improvements into the hands of the teams using them. This role is open to early-career and intermediate engineers. You'll build depth in frontend engineering and design systems through meaningful project ownership, with guidance from experienced teammates suited to your experience.\n\nDesign systems will be your initial focus within the team's broader Design Foundations work. As opportunities and interests align, you can also contribute to code-based prototyping and tools that help designers and AI agents work with Mercury's components. Strong AI fluency is part of how we build from the start.\n\nAs part of this role, you will:\n\n• Build shared components and patterns that make Mercury's interfaces better. You'll work in React and TypeScript, turning recurring product needs into flexible solutions that teams can use across different experiences.\n\n• Partner with designers and product engineers to connect design intent with working software. Help evolve components and tokens across Figma and code, using feedback from real product work to improve the system.\n\n• Improve the quality of the experiences built with our components. Consider how they look and behave for different users, bringing accessibility, thoughtful interactions, and reliable behavior into implementation and testing.\n\n• Make the design system easier to use. Help teams adopt shared patterns and improve the examples, documentation, and workflows that let people build confidently with them.\n\n• Use AI tools to explore approaches and move ideas into working code. Apply your judgment to what agents produce, test the results in context, and contribute useful approaches back to the team.\n\nWhat you'll bring:\n\nWe're interested in what you've built and how you think. Your experience may come from professional work, internships, coursework, open source, or personal projects.\n\n• A foundation in React, TypeScript, HTML, and CSS, with experience building interfaces and the ability to explain the decisions behind your code.\n\n• Care for visual craft and how people use software, including an interest in accessible interfaces and the details that make interactions feel right.\n\n• Hands-on fluency with AI coding tools. You can provide useful context, evaluate and improve generated code, and verify that it works as intended.\n\n• Ownership and a willingness to learn: you follow work through, communicate when you need help, and use feedback to improve your approach.\n\n• Curiosity about reusable systems and the tradeoffs involved in serving different product needs with shared components.\n\n• An interest in solving problems alongside designers and engineers, contributing ideas, and understanding the needs behind a request.\n\n• Experience with design systems, prototyping, or developer tooling is a plus. You don't need to have held a design systems role to bring useful skills and ideas to this team.\n\nIf this role interests you, we invite you to explore our public demo at demo.mercury.com. \n\n*Mercury is a fintech company, not an FDIC-insured bank. Banking services provided through Choice Financial Group and Column N.A., Members FDIC.\n\nMercury values diversity & belonging and is proud to be an Equal Employment Opportunity employer. All individuals seeking employment at Mercury are considered without regard to race, color, religion, national origin, age, sex, marital status, ancestry, physical or mental disability, veteran status, gender identity, sexual orientation, or any other legally protected characteristic. We are committed to providing reasonable accommodations throughout the recruitment process for applicants with disabilities or special needs. If you need assistance, or an accommodation, please let your recruiter know once you are contacted about a role.\n\n#LI-MC1\n\nTotal Rewards\nThe total rewards package at Mercury includes base salary, equity (stock options/RSUs), and benefits.\n\nOur salary and equity ranges are highly competitive within the SaaS and fintech industry and are updated regularly using the most reliable compensation survey data for our industry. New hire offers are made based on a candidate’s experience, expertise, geographic location, and internal pay equity relative to peers.\n\nOur target new hire base salary ranges for this role are the following:\n\nUS employees (any location):\n\n$140,800—$158,400 USD\n\nCanadian employees (any location):\n\n$115,700—$149,700 CAD",
-    "location": "Remote - Canada,  USA",
-    "country": "Canada,  USA",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-31T10:10:29.000Z",
-    "sourceHash": "28fe9b386430c58b299eb7638c855d256417cfabb51f2aa21e88a5b2e79c27ee",
-    "company": {
-      "id": "mercury",
-      "name": "Mercury",
-      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2023/11/dfb1112a-221.jpeg",
-      "industry": "Technology",
-      "website": "https://mercury.com"
-    },
-    "slug": "frontend-engineer-design-systems-mercury-28fe9b38",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "css",
-        "figma",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Canada,  USA"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
     "id": "336f646c9dcff18f0d5a4fb93d9c436296329849e03d58100b3bb01a02ebd2b0",
     "title": "Frontend Desktop Engineer",
     "applyUrl": "https://remotefirstjobs.com/companies/tetherto/jobs/frontend-desktop-engineer-877541",
@@ -251,40 +153,6 @@
       "website": "https://tetherio.com"
     },
     "slug": "frontend-desktop-engineer-internal-tether-io-7ed6c16d",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "redux",
-        "zustand"
-      ],
-      "remoteScope": "GLOBAL",
-      "eligibleRegions": [
-        "Global"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "738c56004f7134606b1c84e61c4b744ee0c4762c28a8c6110e8989214e23d494",
-    "title": "Frontend Desktop Engineer (100% remote - Worldwide)",
-    "applyUrl": "https://remotefirstjobs.com/companies/tetherto/jobs/frontend-desktop-engineer-100-remote-worldwide-877667",
-    "description": "Description\n\nJoin Tether and Shape the Future of Digital Finance\n\nAt Tether, we’re not just building products, we’re pioneering a global financial revolution. Our cutting-edge solutions empower businesses—from exchanges and wallets to payment processors and ATMs—to seamlessly integrate reserve-backed tokens across blockchains. By harnessing the power of blockchain technology, Tether enables you to store, send, and receive digital tokens instantly, securely, and globally, all at a fraction of the cost. Transparency is the bedrock of everything we do, ensuring trust in every transaction.\n\nInnovate with Tether\n\nTether Finance: Our innovative product suite features the world’s most trusted stablecoin, USDT, relied upon by hundreds of millions worldwide, alongside pioneering digital asset tokenization services.\n\nBut that’s just the beginning:\n\nTether Power: Driving sustainable growth, our energy solutions optimize excess power for Bitcoin mining using eco-friendly practices in state-of-the-art, geo-diverse facilities.\n\nTether Data: Fueling breakthroughs in AI and peer-to-peer technology, we reduce infrastructure costs and enhance global communications with cutting-edge solutions like KEET, our flagship app that redefines secure and private data sharing.\n\nTether Education: Democratizing access to top-tier digital learning, we empower individuals to thrive in the digital and gig economies, driving global growth and opportunity.\n\nTether Evolution: At the intersection of technology and human potential, we are pushing the boundaries of what is possible, crafting a future where innovation and human capabilities merge in powerful, unprecedented ways.\n\nWhy Join Us?\n\nOur team is a global talent powerhouse, working remotely from every corner of the world. If you’re passionate about making a mark in the fintech space, this is your opportunity to collaborate with some of the brightest minds, pushing boundaries and setting new standards. We’ve grown fast, stayed lean, and secured our place as a leader in the industry.\n\nIf you have excellent English communication skills and are ready to contribute to the most innovative platform on the planet, Tether is the place for you.\n\nAre you ready to be part of the future?\n\nAbout the job\n\nOur pioneering P2P development platform, built on our open-source technology stack, Pear, eliminates the need for traditional server infrastructure. Pear platform facilitates direct deployment of applications from the developer’s machine to the user, enabling seamless scalability and performance. By leveraging Node.js-based technology akin to BitTorrent, we create robust peer-to-peer connections and data replication systems that set the foundation for a decentralized web.\n\nLearn more about Pear: docs.pears.com\n\nKeet, our flagship P2P communications app, is the first step towards this new era. It exemplifies the potential of P2P technology in everyday applications, from messaging and file sharing to complex collaborative environments, all while maintaining user sovereignty over personal data.\n\nLearn more about Keet: keet.io\n\nResponsibilities\n\nIn this role, you will be responsible for developing and maintaining Keet Desktop, our cross-platform P2P communications application built with React and running on the Pear runtime. You&rsquo;ll work on everything from UI/UX implementation to performance optimization, helping shape the future of decentralized communication.\n\nRequirements\n\n• Proven experience with React/Preact and modern JavaScript/TypeScript in production-scale applications.\n\n• Strong competency in state management (Redux, Redux Toolkit, Zustand, or similar).\n\n• Ability to write modular, maintainable, and well tested code.\n\n• Solid skillset in testing & debugging complex frontend applications.\n\n• Deep interest or experience with P2P technologies or distributed systems.\n\n• Comfort working in a remote, globally distributed team; good communication skills.\n\nPreferred Qualifications\n\n• Experience with desktop application development (Electron, Tauri, or similar runtimes).\n\n• Familiarity with video/audio APIs (WebRTC, media streams) and real-time communication.\n\n• Demonstrated ability to optimize UI performance: rendering, memory management.\n\n• Experience building cross platform applications (macOS, Windows, Linux, etc).\n\n• Bonus: Past contributions to OSS projects, especially in P2P or decentralized tech.\n\nImportant information for candidates\n\nRecruitment scams have become increasingly common. To protect yourself, please keep the following in mind when applying for roles:\n\n• Apply only through our official channels. We do not use third-party platforms or agencies for recruitment unless clearly stated. All open roles are listed on our official careers page: https://tether.recruitee.com/\n\n• Verify the recruiter’s identity. All our recruiters have verified LinkedIn profiles. If you’re unsure, you can confirm their identity by checking their profile or contacting us through our website.\n\n• Be cautious of unusual communication methods. We do not conduct interviews over WhatsApp, Telegram, or SMS. All communication is done through official company emails and platforms.\n\n• Double-check email addresses. All communication from us will come from emails ending in @ tether.to or @ tether.io\n\n• We will never request payment or financial details. If someone asks for personal financial information or payment at any point during the hiring process, it is a scam. Please report it immediately.\n\nWhen in doubt, feel free to reach out through our official website.",
-    "location": "Remote - Global",
-    "country": "Global",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-30T09:08:21.000Z",
-    "sourceHash": "738c56004f7134606b1c84e61c4b744ee0c4762c28a8c6110e8989214e23d494",
-    "company": {
-      "id": "tetherio",
-      "name": "Tether.io",
-      "logoUrl": "https://cdn.remotefirstjobs.com/logo/tether-io-fbddafd231-2.webp",
-      "industry": "Technology",
-      "website": "https://tetherio.com"
-    },
-    "slug": "frontend-desktop-engineer-100-remote-worldwide-tether-io-738c5600",
     "aiTags": {
       "stack": [
         "react",
@@ -1253,39 +1121,6 @@
       "remoteScope": "COUNTRY",
       "eligibleRegions": [
         "Monaco"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "9a5a9e3db41778badf1d375065a1eae561827cb713d457e2f99980594c98ea77",
-    "title": "Senior .NET Software Engineer (AI, Cloud & Front-End)",
-    "applyUrl": "https://careers.epam.com/en/vacancy/bltn32flmx5gld923mg_en?country=Lithuania&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
-    "description": "About the job\n\nWe are looking for a Senior .NET Software Engineer who is passionate about building modern AI-powered applications and can contribute across the full technology stack.\n\nIn this role, you will design and develop scalable cloud-native solutions, integrate Generative AI capabilities into enterprise products, and collaborate with cross-functional teams to deliver high-quality user experiences. You will work on innovative projects leveraging modern Microsoft technologies, cloud platforms, and front-end frameworks.\n\nTo discover more about .NET practice at EPAM, visit this page.\n\nFeel free to work remotely from anywhere across Lithuania or connect with colleagues at our Vilnius and Kaunas offices.\n\nResponsibilities\n\n\nDesign, develop, and maintain enterprise-grade applications using .NET and C#\nBuild and integrate AI-powered features leveraging LLMs, RAG architectures, AI agents, and related technologies\nDevelop cloud-native solutions utilizing modern Azure services\nContribute to front-end development using modern JavaScript frameworks\nDesign and implement RESTful APIs and microservices architectures\nCollaborate with architects, product owners, designers, and AI engineers to deliver business value\nEnsure application scalability, security, maintainability, and performance\nParticipate in technical design discussions, code reviews, and mentoring activities\n\n\nRequirements\n\n\n5+ years of experience in software development using .NET / C#\nStrong experience with ASP.NET Core and Microservices Architecture\nHands-on experience with Generative AI solutions, including LLM integrations (OpenAI, Azure OpenAI, Copilot ecosystem, LangChain, Semantic Kernel, or similar)\nExperience designing and implementing RAG-based applications and AI-powered workflows\nSolid experience with cloud platforms, preferably Microsoft Azure\nExperience with services such as Azure Functions, App Services, Azure Kubernetes Service (AKS), Azure AI Services, Azure Storage, and Azure DevOps\nExperience with front-end technologies such as React, Angular, or TypeScript\nStrong understanding of API design and modern software architecture patterns\nExperience with CI/CD pipelines and DevOps practices\nProficiency in English\n\n\nNice to have\n\n\nExperience with AI Agents and Agentic AI architectures\nKnowledge of vector databases and semantic search\nExperience with Kubernetes and containerized deployments\nFamiliarity with Microsoft Copilot technologies\nExperience working in large-scale enterprise environments\n\n\nWe offer\n\n\nEngineering Heritage: Best-in-class experts sharing a culture of engineering excellence and tackling complex engineering challenges for over 30 years\nAdvanced Tech Stack: Innovative projects where you can apply or enhance your expertise in Cloud, Data, AI, and other emerging technologies\nWorld-Class Clients: Work closely with 340+ of the Forbes Global 2000 on creating disruptive solutions that make a global impact\nProfessional Growth: Exceptional support for career development with comprehensive resources for upskilling or reskilling in pioneering practices\nGenAI Community: Strong AI competencies with 600+ experts across 55+ locations driving GenAI-enabled transformation journeys\nEntrepreneurial Culture: If you're passionate and dedicated to improving business transformation, we provide the support you need to bring your ideas to life\nHybrid Setup: The flexibility to work from any location in Lithuania, whether it's your home or our dynamic offices in Vilnius and Kaunas\nOther Benefits: Additional vacation and trust days, private health insurance, Employee Stock Purchase Plan and more\n\n\nSalary range €3.5K-€5.5K gross, based on your experience and interview results.\n\nEPAM is a leading global provider of digital platform engineering and development services. For over 30 years, our team has helped leading brands navigate the waves of digital transformation, building solutions that help them stay competitive through constant market disruption.With offices in 55+ countries, EPAM has grown in Lithuania to over 1,300+ talented innovators in just 5 years. We foster creativity and unconventional ways of doing things, welcoming like-minded professionals to join us.",
-    "location": "Remote - Lithuania",
-    "country": "Lithuania",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-24T16:25:06.365Z",
-    "sourceHash": "9a5a9e3db41778badf1d375065a1eae561827cb713d457e2f99980594c98ea77",
-    "company": {
-      "id": "epamsystems",
-      "name": "EPAM Systems",
-      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
-      "industry": "Technology",
-      "website": "https://epamsystems.com"
-    },
-    "slug": "senior-net-software-engineer-ai-cloud-front-end-epam-systems-9a5a9e3d",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript",
-        "javascript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Lithuania"
       ],
       "seniority": "senior",
       "employmentType": "fulltime"
