@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     url: "https://www.frontendengineers.com/about",
     siteName: "FrontendEngineers.com",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1456, height: 816, alt: "About FrontendEngineers.com" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "About FrontendEngineers.com" }],
   },
   twitter: {
     card: "summary_large_image",

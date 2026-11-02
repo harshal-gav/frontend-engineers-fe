@@ -9,6 +9,7 @@
     "lint": "eslint",
     "test": "npx tsx tests/job-counts.test.ts",
     "audit": "npx tsx scripts/audit-job-data.ts",
+    "og:generate": "node scripts/generate-og-image.js",
     "linkedin:auth": "node scripts/linkedin-auth-setup.js",
     "linkedin:login": "node scripts/linkedin-login.js",
     "linkedin:post": "node scripts/post-to-linkedin.js",

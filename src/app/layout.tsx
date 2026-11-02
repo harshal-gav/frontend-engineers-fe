@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     siteName: "FrontendEngineers.com",
     locale: "en_US",
     type: "website",
-    images: [{ url: "/og-image.jpg", width: 1456, height: 816, alt: "FrontendEngineers.com - Remote Frontend Developer Jobs" }],
+    images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: "FrontendEngineers.com - Remote Frontend Developer Jobs" }],
   },
   twitter: {
     card: "summary_large_image",

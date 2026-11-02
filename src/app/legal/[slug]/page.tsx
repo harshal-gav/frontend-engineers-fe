@@ -48,7 +48,7 @@ export async function generateMetadata({ params }: LegalPageProps): Promise<Meta
       url: `https://www.frontendengineers.com/legal/${slug}`,
       siteName: "FrontendEngineers.com",
       type: "website",
-      images: [{ url: "/og-image.jpg", width: 1456, height: 816, alt: meta.title }],
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: meta.title }],
     },
     twitter: {
       card: "summary_large_image",

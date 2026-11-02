@@ -31,7 +31,7 @@ export async function generateMetadata({ params }: { params: Promise<{ slug: str
       type: "article",
       url: `https://www.frontendengineers.com/blog/${slug}`,
       siteName: "FrontendEngineers.com",
-      images: [{ url: "/og-image.jpg", width: 1456, height: 816, alt: title }],
+      images: [{ url: "/og-image.jpg", width: 1200, height: 630, alt: title }],
     },
     twitter: {
       card: "summary_large_image",
