@@ -1,5 +1,111 @@
 [
   {
+    "id": "6e1ce53b234476209057db062ef5812f6cc05f3fc505e1faa61a5044a1d28bfd",
+    "title": "Front-End Developer",
+    "applyUrl": "https://himalayas.app/companies/human-power-bg/jobs/front-end-developer?utm_source=api",
+    "description": "Human Power BG is an HR agency that offers consultations and recruitment for some of the best companies in Bulgaria.\n\n﻿~~~\n\nOur partner is a dynamic, customer oriented company, specialized in providing business and IT consulting services in the energy and financial sectors, as well as in software development and IT outsourcing. ﻿\n\nThey are looking for an experienced and motivated Front-End Developer specialist to join to their company.\n\nResponsibilities\n• Design and develop custom software solutions using Angular, React Native/React.js, TypeScript, Azure Cloud and Azure DevOps\n\n• Maintain and extend existing software products and solutions\n\n• Design and create new apps and end-user solutions from scratch\n\n• Advise end-customers and users on best layout, process and practices\n\n• Responsible for the independent implementation and creation of technical concepts.\n\n• Support our clients during migration, upgrade and go-live phases\n\n• Close collaboration with the end-client business users and our business analysts\n\n• Be an active part in our organization\n\n• Share your knowledge by writing documentation and actively communicating with the team and customer.\n\n• Do performance and issue analyses and the write of automated tests, you guarantee the stability of our platform.\n\nRequirements\n• University degree in Computer Science, Physics, Mathematics or similar\n\n• 3+ years of professional experience with the creation and conception frontend applications based on Angular, React.js, Javascript\n\n• Deep knowledge of JavaScript, TypeScript, React, versioning tools.\n\n• Experience with various CSS concepts and libraries (e.g. less, sass, jss, styledcomponents, material-ui).\n\n• Expertise with Web Services Design, Development and deployment in cloud-first environment\n\n• Experience with cloud-based Solutions and Providers (Azure, AWS)\n\n• Excellent soft skills\n\n• You have already developed projects to market maturity and supported them in operation.\n\n• You are communicative and like to share your knowledge with your team members.\n\n• Excellent English knowledge is required, German knowledge is a plus\n\nDesired Skills and Experience\n• Willingness to work in an international environment \n\n• Experience in managing and leading more junior colleagues is a plus, but not a must\n\nWhat they offer?\n• Excellent salary package and performance-based yearly bonus scheme\n\n• Dynamic and interesting projects for international clients\n\n• 80-100% Remote work with optional workspace in co-working environment. Possibility to work from 4 co-working locations (3 in Sofia, one in Plovdiv)\n\n• Individual career development trainings with branching paths\n\n• Work-life balance, friendly work environment, exciting team buildings\n\n• Healthy work environment - company sponsored supplementary medical insurance and participation in a sport program (MultiSport)\n\n• Employee referral program\n\n• Technical skills development program – internal trainings, mentoring from colleagues and Microsoft Certification encouragement \n\nBenefitsAdditional Health Insurance and Dental Insurance!\n\nPTOsVacation, Sick and Paid leaves as well as an extra paid leave for every year in the business!\n\nWork from home!They offer full remote work as well as co-working space desks!\n\nSponsored EventsHappy Hours every month, 2 team buildings per year and more!\n\n~~~~~~~~~~\n\nIf this position is of interest to you and you meet the requirements, please send your updated CV.﻿\n\nFor any questions you may have, please contact us:\n or 087 834 4981﻿\n\nThank you!\n\n~~~~~~~~~~﻿﻿\n\nWe will contact only approved candidates!Our services are free of charge to all applicants.\n\n***\n\nAll candidates will be treated in strict confidence.\n\nAll data provided by you is protected by the meaning of the Personal Data Protection Law and will be used only for the purposes of this selection.\n\n***\n\nHuman Power has an indefinite license № 3084 issued by the National Employment Agency to provide services in the field of human resources.\n\n***\n\nHuman Power is part of BNI Industry.\n\n﻿Originally posted on Himalayas",
+    "location": "Remote - Bulgaria",
+    "country": "Bulgaria",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-03T17:38:05.000Z",
+    "sourceHash": "6e1ce53b234476209057db062ef5812f6cc05f3fc505e1faa61a5044a1d28bfd",
+    "company": {
+      "id": "humanpowerbg",
+      "name": "Human Power BG",
+      "logoUrl": "https://cdn-images.himalayas.app/5ujx1p2mlcgkg6ji9h2etf2c3wg3",
+      "industry": "Technology",
+      "website": "https://humanpowerbg.com"
+    },
+    "slug": "front-end-developer-human-power-bg-6e1ce53b",
+    "aiTags": {
+      "stack": [
+        "react",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "sass",
+        "less"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bulgaria"
+      ],
+      "seniority": "mid",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "a560bf0f789f0d24bd4d78835b06627c13f4c618af7e70d20f3ffeacc267198e",
+    "title": "Frontend Engineering Team Lead - MarTech",
+    "applyUrl": "https://jobicy.com/jobs/149869-frontend-engineering-team-lead-martech",
+    "description": "About the role\n\nAs the Team Lead for our Frontend development team, you will play a key role in driving the architecture, development, and delivery of high-quality software solutions. You will lead a group of talented developers, ensuring smooth collaboration, technical innovation, and strong delivery results. Your responsibilities will encompass both hands-on coding and line management, helping the team grow, improve, and thrive in a fast-paced environment.\n\nOur stack\n\n• Frontend: Vue.js, Vuex, Vue Router, Nuxt.js (Planned Migration), TypeScript, JavaScript (ES6+), Less, SCSS, Element UI \n\n• Testing & Build: Webpack, Playwright \n\n• Backend Exposure: Java, Spring Boot, Node.js \n\n• Infra & DevOps Exposure: AWS, Kubernetes (K8s), Jenkins, FreeMarker\n\nWhat you'll be doing\n\n• Lead and mentor a team of Frontend developers within the Marketing Tech and Social domain. \n\n• Drive high-level architecture and design decisions for complex software systems, ensuring high performance, scalability, and code quality. \n\n• Lead major technical migration projects, specifically executing our roadmap to transition the platform to Nuxt.js and Server-Side Rendering (SSR). \n\n• Focus heavily on performance engineering, optimizing site load speed, Core Web Vitals, and technical SEO for high-traffic environments. \n\n• Maintain a heavily hands-on contribution level (coding, architecture, and code reviews) alongside line management responsibilities. \n\n• Manage team members' performance, lead 1-on-1s, drive career development, and handle work allocation. \n\n• Drive continuous improvement in development processes, modern tools, and delivery standards across the team. \n\n• Collaborate closely with cross-functional stakeholders, backend engineers, and product teams to refine requirements and ship high-quality features. \n\nWhat you'll bring\n\n• 8+ years of software development experience with a primary focus on Frontend technologies. \n\n• 2+ years of experience in a formal leadership or line management role (mentoring, performance evaluations, work allocation). \n\n• Strong technical mastery of JavaScript/TypeScript (ES6+), CSS preprocessors (Less/Sass), Webpack, and Git. \n\n• Proven experience with state management architectures (e.g., Vuex, Redux, NgRx). \n\n• Experience planning and executing large-scale web migrations, particularly with Nuxt.js or Server-Side Rendering (SSR) frameworks. \n\n• Strong track record in web performance engineering, Core Web Vitals optimization, and technical SEO. \n\n• Experience working in high-traffic, high-scale environments such as MarTech, AdTech, E-commerce, Betting, or Events platforms. \n\n• Familiarity with modern end-to-end testing tools (e.g., Playwright) is a plus. \n\n• Basic awareness/understanding of backend environments (Java, SpringBoot) and DevOps concepts (AWS, Kubernetes, Jenkins) is a plus. \n\n• Excellent communication and stakeholder management skills. \n\nWhat’s in it for you\n\n• Sporty is a remote first company in pursuit of sustainability\n\n• A competitive salary + individual performance based bonuses every quarter\n\n• 28 days paid annual leave\n\n• Our core working hours are 10am-3pm in your local time zone with flexibility outside of this\n\n• Referral bonuses & flash bonuses\n\n• Top of the line equipment\n\n• Annual company retreats to provide great internal networking opportunities\n\nInterview Process\n\n• Remote video screening with our Talent Acquisition Team \n\n• Offline Take home assignment\n\n• Remote video interview with Team Members (60 Mins)\n\n• Final discussion with the hiring manager (60 mins)\n\nIf you're interested, we encourage you to apply! Every application is reviewed by a member of our team (AI is not used in our recruitment process), and we aim to respond within 48 hours.",
+    "location": "Remote - Europe",
+    "country": "Europe",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-03T03:27:00.000Z",
+    "sourceHash": "a560bf0f789f0d24bd4d78835b06627c13f4c618af7e70d20f3ffeacc267198e",
+    "company": {
+      "id": "sportygroup",
+      "name": "Sporty Group",
+      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/8e6c246a-221.png",
+      "industry": "Technology",
+      "website": "https://sportygroup.com"
+    },
+    "slug": "frontend-engineering-team-lead-martech-sporty-group-a560bf0f",
+    "aiTags": {
+      "stack": [
+        "vue",
+        "nuxtjs",
+        "typescript",
+        "javascript",
+        "css",
+        "sass",
+        "less",
+        "webpack",
+        "redux",
+        "playwright"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Europe"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "6c3bcfb2e405077e7d807efad5a4070c0f15a7a1c86a029b93fe253ce0ae6c8b",
+    "title": "Senior Frontend Engineer – Marketing (USA Only, 100% Remote)",
+    "applyUrl": "https://jobicy.com/jobs/154460-senior-frontend-engineer-marketing-usa-only-100-remote",
+    "description": "This job description was written by a person\n\nAbout Us\nSince 2013, we’ve been building a CRM that gets out of your way and helps your team sell more, faster. Now we’re building AI into every part of it, so Close does the busywork and your team does the selling. No manual data entry, no 10-click workflows. Just communication-first, AI-powered sales software designed to help you succeed and scale.\n\nWe're bootstrapped and profitable which means we answer to our customers and play by our rules. We're proud of our 120-person, 100% remote team, focused on building Close so that no small, scaling business fails because it can't figure out sales.\n\nAbout the Role\nOne of our values is “Build a house you want to live in.” In this metaphor, Close.com is the front door. Our website is where people learn about who we are, what we do and, even more importantly, it’s a critical touch point on their journey to becoming a Close customer. We’re dedicated to making it best-in-class. We’ve recently migrated from Webflow to our own codebase (Astro, Sanity, Vercel) so a new and improved foundation is in place. We believe building in-house gives us the flexibility, creativity, and speed to make our website a competitive advantage - this is where our first Sr. Frontend Engineer - Marketing comes in. As the technical owner of the website, you’ll be responsible for maintaining, optimizing, and instrumenting Close.com. You’ll work closely with Marketing, including a Marketing Designer, but report up through Engineering.\n\nYou are\n\n• \nA marketing website engineer. You’ve built beautiful, conversion-focused websites for a while now - probably 5+ years. You may have worked in an agency, but you’ve also had to build, own, and collaborate on websites long-term - seeing your work through impact and likely many iterations. Motion, ambitious CSS, and rich media are second nature, and you sweat page speed and how the site reads to both search engines and AI agents as much as how cool it looks. A modern stack like Astro paired with a headless CMS (Sanity is ours) is familiar territory to you.\n\n• \nFluent in measurement. The sites you build aren’t only beautiful, but they’re well-measured too. You understand cookies, conversion events, analytics, and experimentation tooling, and you've worked with tools like Segment, Amplitude, or Customer.io.\n\n• \nFocused on conversion and fueled by impact. We’re primarily a self-service SMB business and that means that Close.com isn’t just a brand experience. It’s a critical part of our acquisition funnel. This means that your work will have a direct effect on some of our most important business metrics - traffic, conversion, revenue. You’re the type who finds this motivating and is eager to parter with Marketing and Growth to move these numbers.\n\n• \nEnergized by empowering non-technical team members. You’ve built systems that allow Marketers or Designers to self-serve and solve problems quickly and independently. You’re comfortable thinking through guardrails, automations, and tooling.\n\n• \nAlready building with AI. You use AI to move faster and empower your team but are equally discerning about which moments require craftsmanship and taste.\n\n• \nResourceful and collaborative. You’ll bridge two teams (Marketing and Engineering) and will need to easily work with folks across departments and levels. No tweak or task is too small (or too big) for you to tackle.\n\nYou will\n\n• \nBuild and continuously improve a world-class marketing website. We want close.com to be responsive, highly interactive, and polished. The kind of site that brings the product to life through animation and interactivity. You'll ship new pages and continue raising the bar on core site functionality.\n\n• \nMake the site fast and findable. You’ll own performance, technical SEO, and how the site shows up to search engines and AI agents.\n\n• \nManage the infrastructure behind the site. The platform (Sanity), components, integrations, and deployment are for you to maintain and evolve.\n\n• \nOwn the technical integrity of site measurement and partner on experiments. Make sure tracking, attribution, conversion events, and funnel data are implemented correctly and reliably flow into our marketing and data systems.\n\n• \nBuild tools that let Marketing self-serve...and help the site self-improve. You’ll build automations and flows to help the team ship pages, campaigns, and experiments, but you’ll also help the website be a partner in its own development - be it catching regressions or flagging performance problems and SEO issues. The website of the future is a surface for collaboration between you, the marketing team, and AI agents.\n\n• \nStretch beyond the site and act as an engineering resource to marketing. The website is your focus, but there’s a lot of work to be done! You’ll be a resource for solving tricky problems, across the website and in other areas of marketing - sometimes that means hopping in yourself, or just knowing when to loop in the right person.\n\nBenefits\n\n• \nCompensation: Competitive pay plus an organization-wide goal-based bonus\n\n• \nPaid Time Off: ~5 weeks of PTO to start. Plus a 1-week all-company Winter Holiday Break and paid US holidays. You'll earn 2 extra days for every year you're with Close.\n\n• \n80% Work Option: Work with your manager to choose between a standard 5-day week or a 4-day week at 80% pay\n\n• \nParental Leave: Paid leave for primary and secondary caregivers\n\n• \nSabbatical: A 1-month paid sabbatical every 5 years with the team\n\n• \nHealthcare (US residents): Two medical plans with Close covering 99% of your premium, plus Dental, Vision, HSA, FSA, and company-paid Long-Term Disability\n\n• \n401k (US residents): We match your contributions up to 6%, vested immediately\n\nOur Values\nBuild a house you want to live in - Examine long-term thinking and action\n\nNo BS - Practice transparency and honesty, especially when it’s hard\n\nInvest in each other - Build successful relationships with your coworkers and customers\n\nDiscipline equals freedom - Keep your word to yourself and others\n\nStrive for greatness - Constantly challenge yourself and others\n\nLearn More\nListen to our CEO and Founder, Steli Efti, tell the story of Close’s journey in the $0-30m Blueprint.\n\nWatch our culture video from our 2023 team retreat in Milan. Every year our entire team gathers in person to build connection, foster cross-functional collaboration, and have fun. In 2027, we're headed to Dusseldorf, Germany!\n\nExplore our product. Check out a demo!\n\nOur Hiring Process\nWe ask a few role-specific questions as part of our application process. These questions are designed to help us learn more about you from the start, so please answer each one thoughtfully. We see this as an opportunity to get to know you beyond your resume.\n\nWe use AI tools daily at Close and expect candidates to do the same. In evaluating your application, we aim to get a sense for you - the way you think, how you communicate, the work you've done. Applications that read as fully AI-generated will not be considered.\n\nRegardless of fit, you can expect to hear back from our team with an update on the status of your candidacy.\n\nIf you progress to the interview process, you'll receive a full outline of the role-specific steps in your first touchpoint with us. We do our best to make the hiring process clear and human.\n\nOur Values\nBuild a house you want to live in - Examine long-term thinking and action\n\nNo BS - Practice transparency and honesty, especially when it’s hard\n\nInvest in each other - Build successful relationships with your coworkers and customers\n\nDiscipline equals freedom - Keep your word to yourself and others\n\nStrive for greatness - Constantly challenge yourself and others\n\nLearn More\nListen to our CEO and Founder, Steli Efti, tell the story of Close’s journey in the $0-30m Blueprint. \n\nWatch our culture video from our 2023 team retreat in Milan. Every year our entire team gathers in person to build connection, foster cross-functional collaboration, and have fun. In 2027, we're headed to Dusseldorf, Germany! \n\nExplore our product. Check out a demo!\n\nOur Hiring Process\nWe ask a few role-specific questions as part of our application process. These questions are designed to help us learn more about you from the start, so please answer each one thoughtfully. We see this as an opportunity to get to know you beyond your resume.\n\nWe use AI tools daily at Close and expect candidates to do the same. In evaluating your application, we aim to get a sense for you - the way you think, how you communicate, the work you've done. Applications that read as fully AI-generated will not be considered.\n\nRegardless of fit, you can expect to hear back from our team with an update on the status of your candidacy.\n\nIf you progress to the interview process, you'll receive a full outline of the role-specific steps in your first touchpoint with us. We do our best to make the hiring process clear and human.",
+    "location": "Remote - USA",
+    "country": "USA",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-03T03:36:47.000Z",
+    "sourceHash": "6c3bcfb2e405077e7d807efad5a4070c0f15a7a1c86a029b93fe253ce0ae6c8b",
+    "company": {
+      "id": "close",
+      "name": "Close",
+      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2020/09/Closeio.png",
+      "industry": "Technology",
+      "website": "https://close.com"
+    },
+    "slug": "senior-frontend-engineer-marketing-usa-only-100-remote-close-6c3bcfb2",
+    "aiTags": {
+      "stack": [
+        "css",
+        "astro"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "USA"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "03f519ba9b56f0c30c6840ff76300ec4967cae51953741362870333b61e758f1",
     "title": "Senior Frontend Developer",
     "applyUrl": "https://www.arbeitnow.ch/jobs/companies/exeon-analytics/remote-senior-frontend-developer-zurich-193922",
@@ -27381,185 +27487,6 @@
       ],
       "seniority": "senior",
       "employmentType": "b2b"
-    }
-  },
-  {
-    "id": "568f1ebf9b78ae7d532ac3317b12adb9dba073e35e0d5a8fa53f7b99c1142ff1",
-    "title": "Staff Frontend Engineer",
-    "applyUrl": "https://jobs.ashbyhq.com/Vetcove/7c0557ca-fadf-4e6d-8769-c39f87ee5f0d/application?utm_source=XddEOR0wKQ&SRC=LinkedIn",
-    "description": "About the job\n\nJoin Vetcove and help modernize the future of veterinary software and the pet parent healthcare experience. Our suite of platforms features a market-leading procurement marketplace, an ultra-modern home delivery ecommerce experience, and a next-generation practice management system. More than 25,000 hospitals across all 50 states rely on Vetcove daily, supporting tens of thousands of veterinarians who care for tens of millions of pets each year.\n\nWe are modernizing the 50 billion dollar plus animal health industry by giving veterinary organizations the tools to focus more on patient care. Backed by Y Combinator and top venture investors in Silicon Valley, New York and Miami, Vetcove is a fast-growing, mission-driven company. We are searching for talented and passionate people who want to help shape the future of veterinary care.\n\nAbout The Position\n\nAs a Staff Frontend Engineer, you’ll lead the architecture and evolution of the user facing experience across Vetcove’s platforms. You’ll own critical frontend systems that power how tens of thousands of veterinary professionals and millions of pet parents interact with our products daily; from clinical workflows to patient care tools.\n\nThis role goes beyond implementation. You’ll define frontend strategy, establish best practices, and shape how our applications scale in performance, usability, and maintainability. You’ll work closely with product, design, and backend teams to deliver seamless, high-quality user experiences at scale.\n\nAbout Our Team\n\nWe’re a fast-moving team solving big challenges in a field that’s rapidly adopting technology. Our platform powers every aspect of veterinary clinic operations, from medical records to pet parent experiences. At Vetcove, engineers work across the stack and have a holistic view of the platform. You’ll have the opportunity to work closely with users, influence the product roadmap, and make a real difference in an industry that impacts millions of animals and their caregivers. We operate in a fully remote environment, giving you the flexibility to do your best work while staying deeply connected to a fast-moving, highly collaborative team.\n\nWhat You’ll Do\n\n\nLead the architecture, design, and delivery of large scale frontend applications across web and mobile\nBuild and evolve high performance React and React Native applications\nDefine and enforce frontend best practices, including performance optimization, accessibility, and maintainability\nDevelop shared component libraries, design systems, and frontend infrastructure to improve team velocity\nDrive improvements in application performance, reliability, and user experience\nPartner closely with product managers, designers, and backend engineers to deliver cohesive, user centered features\nMentor junior front end engineers\nInfluence technical direction and frontend strategy across multiple product areas\nDebug and resolve complex frontend and cross stack issues\n\n\nWhat We’re Looking For\n\n\n8+ years of software engineering experience, with a strong focus on frontend development\nExperience building Claude/Cursor skills to help streamline FE best practices\nBachelor’s degree required, CS or technical degree preferred\nDeep expertise in JavaScript/TypeScript and modern frontend frameworks (especially React)\nExperience architecting and scaling complex frontend applications and systems\nStrong understanding of performance optimization, state management, and frontend architecture patterns\nExperience building and maintaining design systems or shared component libraries\nFamiliarity with mobile development (React Native or similar) is a plus\nSolid understanding of APIs and backend interactions (REST, GraphQL, etc.)\nProven ability to lead projects and mentor engineers\nStrong communication skills and a product-oriented mindset\nComfortable operating in fast paced, evolving environments\n\n\nTools We Use\n\n\nBackend: Python (Django, Django Rest Framework)\nFrontend: JavaScript (React, React-Query), TypeScript\nDatastores: Postgres, Elasticsearch, Redis, Clickhouse\nMobile: React Native\nVersion Control: Git\n\n\nBenefits (Full Time Roles)\n\n\n100% remote within the USA\nMedical, Dental, and Vision Insurance\nAutomatic 401k contribution\nEmployee referral program\nAt home office set up\nBi-annual company retreats\nOpen vacation policy\nEquity\nMonthly team events\n\n\nThe typical base pay range for this role across the U.S. is: $170,000/year - $230,000/year + significant bonus + equity + benefits. There is a different range applicable to specific work locations. For Colorado, the salary range is: $190,000 - $220,000 + bonus + equity + benefits. This salary range is a good faith estimate of what Vetcove may pay for this position at the time of posting. Actual compensation may vary based on skills, qualifications, and experience. The range reflects the base hourly rate or annual compensation (as applicable), and does not include bonus, equity or other incentives.\n\nIn addition to base compensation, Vetcove offers a comprehensive benefits\n\npackage. Please refer to the “Benefits (Full Time Roles)” section above for more\n\nDetails.\n\nTo apply, please submit your application through Vetcove’s Careers Page. The application deadline is accepted on an on going basis.\n\nPlease note we are unable to sponsor work visas at this time.\n\nAttention all job seekers! We want to ensure that you’re well-informed about a serious matter affecting the job market. It has come to our attention that scammers are operating in the industry, impersonating employees and attempting to deceive savvy applicants like you. Here’s what you need to know:\n\n\nOur job listings are exclusively available on official sites (our careers page, LinkedIn, BuiltIn, and Indeed). Be cautious of other sources claiming to represent us or any organization that you’re interested in. Stay on the lookout!\nAuthentic communications from our company will only come through verified email addresses and phone numbers. If you receive unexpected messages or calls, exercise caution and verify their authenticity. Don’t let scammers catch you off guard!\nIt's essential to independently verify the legitimacy of any job postings you come across. Visit our official careers page to confirm the validity of any openings. Stay proactive and protect yourself!\nRemember that during the application process, we will never request sensitive personal or financial information from you. Be wary of anyone asking for such information. Keep your personal data secure!\nIf you suspect any fraudulent activity or encounter suspicious individuals, please report it immediately to our recruiting department. By working together, we can combat these scams and keep the job market safer for everyone. \n\n\nWe understand the importance of your job search and want to ensure your experience is positive and secure. Always exercise caution and stay scam-smart!\n\nEmployment is contingent upon successful completion of a background check.\n\nVetcove is an equal opportunity employer and is committed to creating a diverse and inclusive workplace. We welcome applicants from all backgrounds, regardless of race, color, religion, sex, national origin, age, disability, veteran status, sexual orientation, gender identity, or any other protected status. We are dedicated to providing a work environment free from discrimination, harassment, and retaliation. It is our policy to provide equal employment opportunity to all applicants in accordance with all applicable laws and regulations. If you require accommodations during the application or interview process, please let us know and we will make every effort to accommodate your needs.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-04T17:26:24.985Z",
-    "sourceHash": "568f1ebf9b78ae7d532ac3317b12adb9dba073e35e0d5a8fa53f7b99c1142ff1",
-    "company": {
-      "id": "vetcove",
-      "name": "Vetcove",
-      "logoUrl": "https://logo.clearbit.com/vetcove.com",
-      "industry": "Technology",
-      "website": "https://vetcove.com"
-    },
-    "slug": "staff-frontend-engineer-vetcove-568f1ebf",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "graphql",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "principal",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "8a6fea6b877116c709fd087492bc648b5dc097995f7a0ddb542e6deabf296a68",
-    "title": "Frontend Developer Intern",
-    "applyUrl": "https://urtechcomputers.com/careers/frontend-developer-intern",
-    "description": "About the job\n\n🚀 Elite Talent Accelerator Program\n\nUR TECHNOLOGY - INTERNSHIP & CAREER PATHWAY\n\nMode: In-Office / Remote / Hybrid\n\n01\n\nStage 1 - The Internship Accelerator\n\n3 - 6 Months (Intensive Training & Practical Experience)\n\nTransform your academic knowledge into production-grade expertise. Work directly on real-world client architectures under 1-on-1 mentorship from veteran tech leads.\n\n\n Duration: 3 - 6 Months (Full Immersion)\n Nature: 100% Practical Training & Real-World Project Experience\n Stipend: No stipend (Skill Building & Portfolio Growth)\n Guidance: Dedicated 1-on-1 Senior Tech Supervisor & Mentor\n Evaluation: Regular performance evaluations & active feedback\n Certificate: Official Internship Completion Certificate on satisfactory completion\n\n\n02\n\nStage 2 - Full-Time Career Offer\n\nFast-Track Permanent Employment Pathway\n\nWe cultivate our future engineering & business leaders! Upon completing Stage 1, top-performing interns who exhibit technical mastery, discipline, and strong output are evaluated for full-time employment offers at UR Technology.\n\nEvaluation Criteria: Overall performance, technical/professional skills, attendance, learning ability, discipline, project contribution, and business requirements.\n\n\nSuch employment, if offered, will be subject to a separate employment/offer letter containing the applicable position, salary, benefits, terms and conditions. Completion of the internship does not guarantee permanent employment.\n\n\nAbout The Role\n\nObsessed with stunning web aesthetics and fluid interactions? The UR Technology Frontend Internship provides a 3 to 6 months deep dive into cutting-edge UI/UX engineering, web vitals optimization, state management, and modern component systems.\n\nStage 1 - The Internship Accelerator (Duration: 3 - 6 Months): Practical hands-on training building production web interfaces under a Senior Frontend Engineer. Includes bi-weekly progress reviews, 1-on-1 mentorship, and an official Internship Completion Certificate. No stipend.\n\nStage 2 - Full-Time Permanent Employment Opportunity: Exceptional interns demonstrating high UI precision, fast execution, and great teamwork will be evaluated for full-time Frontend Engineer offers.\n\nAbout URTech Computers: We are a leading IT solutions provider specializing in custom software development, digital transformation, and scalable enterprise architecture. By joining our team, you will be part of an innovative environment that values technical excellence and delivers cutting-edge digital products to clients globally.\n\nWhat You'll Do\n\n\n Translate Figma design mockups into responsive, accessible HTML, CSS, and React components.\n Build dynamic UI components using modern JavaScript (ES6+), React, and Next.js.\n Style client interfaces with modern CSS architectures (TailwindCSS, Framer Motion animations).\n Optimize web vitals, layout shifts, and cross-browser rendering compatibility.\n Connect frontend interfaces with backend REST APIs.\n\n\nWhat We're Looking For\n\n\nPursuing or completed degree in CS, IT, or related web design programs.\nGood command over HTML5, CSS3, JavaScript, and React basics.\nFamiliarity with Git and clean code practices.\nStrong aesthetic eye for visual alignment, typography, and user experience.\n\n\nTech Stack & Tools\n\nHTML5CSS3JavaScriptReactNext.jsTailwindCSSGit\n\nBenefits & Perks\n\nStage 1: 3 - 6 Months structured training & practical real-world project experience.\n\nAssigned 1-on-1 Senior Frontend Mentor & Supervisor.\n\nRegular performance evaluations & official Internship Completion Certificate.\n\nStage 2: Potential Full-Time Permanent Employment Opportunity based on overall performance & business requirements.\n\nThe Interview Process\n\n1\n\nResume & Portfolio Screening\n\n2\n\nFrontend UI Coding Challenge\n\n3\n\nTechnical Interview",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-04T17:26:18.841Z",
-    "sourceHash": "8a6fea6b877116c709fd087492bc648b5dc097995f7a0ddb542e6deabf296a68",
-    "company": {
-      "id": "urtechnologyandcomputers",
-      "name": "Ur Technology and Computers",
-      "logoUrl": "https://logo.clearbit.com/urtechnologyandcomputers.com",
-      "industry": "Technology",
-      "website": "https://urtechnologyandcomputers.com"
-    },
-    "slug": "frontend-developer-intern-ur-technology-and-computers-8a6fea6b",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "javascript",
-        "css",
-        "tailwind",
-        "figma",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "internship"
-    }
-  },
-  {
-    "id": "5fc3a10fa54bc4c07873bc779cd3e5a052c7bf3161136afec1f09e2206b0cae6",
-    "title": "Front End Developer with Security Clearance",
-    "applyUrl": "https://www.adzuna.com/land/ad/5870978163?v=8DCA181C695335D6C2D686A4F729DE77E00982F1&r=22716997&frd=f05ed4978f109c6d9933b6bf9a85eb8a&ccd=c99d5a152a0cc43eb3328cb49b0c2399&utm_source=linkedin5&utm_medium=organic&partnerb=1&chnlid=696&title=Front%20End%20Developer%20with%20Security%20Clearance&a=e",
-    "description": "About the job\nThis job is sourced from a job board. Learn More\n\nLocation: Remote hybrid at Huntsville, AL, McLean, VA, or Richmond, VA\n\nRequired Clearance: Must be a U.S. citizen\n\nRequired Education: HS/GED\n\nRequired Experience: Minimum 3 years of experience in front-end development, dashboard design, or data visualization platform development. Preferred 3-5 years' experience. Position Description PingWind is seeking a Front-End Developer to build and deliver the user experience layer of a highly strategic, federally aligned supply chain resilience initiative. Reporting to engineering leadership, this individual will own dashboards, user experience, and visualization delivery within a live control-tower environment.\n\nThe ideal candidate is a self-starter who can drive their work from conception to deployment with minimal supervision. This role requires a developer who is not only proficient in React but also passionate about writing clean, maintainable code and delivering exceptional user experiences, particularly when working with large data sets. Primary Responsibilities: Typical Responsibilities/Tasks:\n\n\n Develop and maintain responsive, user-friendly web applications using React.\n Collaborate with product managers and UX designers to implement innovative solutions.\n Work closely with backend developers to integrate APIs and ensure seamless data flow.\n Optimize applications for maximum speed and scalability.\n Conduct thorough testing and debugging to ensure high-quality code, including writing unit tests.\n Participate in code reviews and provide constructive feedback to peers.\n Stay up to date with the latest industry trends and best practices in front-end development.\n Contribute to continuous improvement of development processes and workflows.\n Drive projects from initial concept through deployment, ensuring milestones are met on time. Required Qualifications\n 3-5 years of experience in frontend development, full-stack development, data application development, or related roles.\n Strong proficiency in JavaScript (ES6+).\n Hands-on experience with React.\n Experience with state management libraries such as Redux or MobX.\n Solid understanding of HTML5, CSS3, and responsive design principles.\n Familiarity with modern front-end build tools (e.g., Webpack, Nx, Babel, NPM).\n Experience with Git and version control.\n Familiarity with RESTful APIs, GraphQL, and asynchronous request handling.\n Strong problem-solving skills and attention to detail. Desired Skills\n Strong understanding of UX/UI principles and the ability to translate complex data into intuitive interfaces.\n Knowledge of front-end performance optimization techniques.\n Experience with AI tools and agentic development.\n Experience with TypeScript and SCSS.\n Familiarity with Docker, Amazon Web Services (AWS), and CI/CD pipelines.\n Experience with modern testing frameworks. About Pingwind PingWind is focused on delivering outstanding services to the federal government. We have extensive experience in the fields of cybersecurity, development, IT infrastructure, supply chain management and other professional services such as system design and continuous improvement. PingWind is a VA CVE certified Service-Disabled Veteran-Owned Small Business (SDVOSB) and SBA HUBZone Certified with offices in Washington DC and Northern Virginia. www.PingWind.com Our benefits include:\n Eleven Federal Holidays\n Paid Time Off accrued each pay period\n Parental Leave\n Three medical plan choices with generous employer contribution\n Dental and Vision Insurance\n Company paid Short-Term and Long-Term Disability\n Company paid Life and AD&D Insurance\n 401k with competitive matching and vesting schedule\n Continuing education assistance\n Short Term / Long Term Disability & Life Insurance\n Medical, Dependent Care and Commuter Flexible Spending Accounts\n Employee Assistance Program\n Wellness benefits include Calm Health app and WellHub gym subsidy (formerly GymPass)\n 529 College Savings Plan\n Legal Insurance\n Pet Insurance Salary Range $115k-$160K The pay range for this job is a general guideline only and not a guarantee of compensation or salary. Additional factors considered in extending an offer include (but are not limited to) job responsibilities, education, certifications, experience, as well as internal equity mapping and alignment with market data, or other applicable laws. Veterans are encouraged to apply PingWind, Inc. does not discriminate in employment opportunities, terms, and conditions of employment, or practices on the basis of race, age, gender, religious or political beliefs, national origin or heritage, disability, sexual orientation, or any characteristic protected by law. We may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-04T17:26:12.669Z",
-    "sourceHash": "5fc3a10fa54bc4c07873bc779cd3e5a052c7bf3161136afec1f09e2206b0cae6",
-    "company": {
-      "id": "pingwind",
-      "name": "PingWind",
-      "logoUrl": "https://logo.clearbit.com/pingwind.com",
-      "industry": "Technology",
-      "website": "https://pingwind.com"
-    },
-    "slug": "front-end-developer-with-security-clearance-pingwind-5fc3a10f",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "css",
-        "sass",
-        "webpack",
-        "redux",
-        "mobx",
-        "graphql",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "85cd2ac0480863846980a2a1923d28033ef4d94b371fcb8d00c8b3f743c5fb65",
-    "title": "Frontend Engineer, Sr. - WFH Role",
-    "applyUrl": "https://www.torentify.com/jobs/6ac241b736bc880e7c436ae5",
-    "description": "About the job\n\n# Senior Frontend Engineer\n\n\n\n\n## About the Role\n\n\n\n\nSonatafy Technology is seeking a Senior Frontend Engineer to join a fast-paced customer development team supporting web application delivery. This role focuses on rapid problem-solving, cross-platform support, and using AI-assisted development tools to improve productivity, troubleshooting, learning, and delivery.\n\n\n\n\nThe ideal candidate is an experienced Angular developer with strong current frontend expertise, familiarity with mobile applications, and the ability to contribute across the stack when needed. You will collaborate with backend, QA, and mobile teams while helping develop, optimize, and support web and mobile applications in an Agile environment.\n\n\n\n\n## Key Responsibilities\n\n\n\n\n* Develop, maintain, and optimize web and mobile applications.\n\n* Troubleshoot, debug, and resolve issues across multiple platforms in a fast-paced development environment.\n\n* Collaborate with backend, QA, mobile, and other cross-functional teams to deliver features and fixes efficiently.\n\n* Use AI-assisted development tools such as Cursor and Windsurf to accelerate learning, troubleshooting, and software delivery.\n\n* Participate in code reviews and testing activities.\n\n* Contribute to system design and architecture improvements.\n\n* Support both frontend development using Angular and backend development using Node.js.\n\n* Ensure proper database integration and contribute to backend data handling as needed.\n\n\n\n\n## Required Qualifications\n\n\n\n\n### Experience\n\n\n\n\n* 5+ years of application development experience in production environments.\n\n* 5+ years of strong, current experience with Angular.\n\n* Experience working in fast-paced, Agile environments.\n\n* Demonstrated ability to quickly ramp up on complex applications.\n\n* Demonstrated use of AI development tools to improve productivity and learning.\n\n\n\n\n### Technical Skills\n\n\n\n\n* JavaScript\n\n* TypeScript\n\n* Angular\n\n* HTML5\n\n* CSS3\n\n* SASS, with 1–2 years minimum experience\n\n* Git and version control\n\n* SQL and/or NoSQL databases\n\n* Frontend application development\n\n* Web and mobile application development\n\n* AI-assisted development tools\n\n\n\n\n## Preferred Qualifications\n\n\n\n\n* Knowledge of AWS infrastructure, including EC2, S3, and Lambda.\n\n* Experience with Ionic.\n\n* Experience with Capacitor.\n\n* Backend development experience with Node.js.\n\n* Full-stack project experience spanning frontend, backend, and infrastructure.\n\n* Knowledge of Java for Android development.\n\n* Knowledge of Swift for iOS development.\n\n\n\n\n## Work Arrangement & Location\n\n\n\n\n* **Location:** Remote\n\n* **Candidate Eligibility:** Open to candidates throughout Latin America; not limited to Mexico.\n\n* Remote-first work environment.\n\n* Collaboration with U.S.-based development teams.\n\n\n\n\n## About Sonatafy Technology\n\n\n\n\nSonatafy Technology is headquartered in Scottsdale, Arizona, and is a nearshore software development company providing enterprise-level cloud and mobile application software development services. The company has an in-house team of engineers and supports client development teams through end-to-end software solutions and staff augmentation.\n\n\n\n\nEmployees work with innovative U.S.-based teams across industries and technologies in a fast-moving, client-first environment focused on real-world impact and career growth.\n\n\n\n\n## Compensation & Benefits\n\n\n\n\n* Competitive compensation.\n\n* Remote-first lifestyle.\n\n* Career growth opportunities across industries and technologies.\n\n\n\n\n## Recruitment Scam Notice\n\n\n\n\nSonatafy recruitment communications will only come from **@sonatafy.com** email addresses. Sonatafy does not request fees or sensitive financial information and does not conduct hiring solely through online forms without interviews. Suspicious communications can be reported to **[careers@sonatafy.com](mailto:careers@sonatafy.com)**.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-04T17:24:23.622Z",
-    "sourceHash": "85cd2ac0480863846980a2a1923d28033ef4d94b371fcb8d00c8b3f743c5fb65",
-    "company": {
-      "id": "torentify",
-      "name": "Torentify",
-      "logoUrl": "https://logo.clearbit.com/torentify.com",
-      "industry": "Technology",
-      "website": "https://torentify.com"
-    },
-    "slug": "frontend-engineer-sr-wfh-role-torentify-85cd2ac0",
-    "aiTags": {
-      "stack": [
-        "angular",
-        "typescript",
-        "javascript",
-        "css",
-        "sass",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "ce79ac84de1aabf8525861b4fd742d562b2ed9861e0dbad6c855eb19cc901103",
-    "title": "Frontend Engineer",
-    "applyUrl": "https://www.bestjobtool.com/job-description/3187883315?src=LinkedIn",
-    "description": "About the job\n\nAbout The Company\n\nSonatafy Technology, Inc., headquartered in Scottsdale, Arizona, is an award-winning nearshore software development company renowned for its commitment to delivering high-quality technology solutions. With a dedicated in-house team of experienced engineers, Sonatafy offers end-to-end software development services, including client staff augmentation to support various project needs. Serving organizations of all sizes across diverse industries, including some of the world's largest brands, Sonatafy has established a strong reputation for reliability, innovation, and technical excellence. The company's focus on nearshore delivery ensures seamless collaboration, cultural alignment, and timely project execution, making it a trusted partner for businesses seeking scalable and efficient software development solutions.\n\nAbout The Role\n\nWe are seeking a highly skilled Senior Frontend Engineer to join our client's dynamic and fast-paced development team. This role is pivotal in supporting the delivery and enhancement of their web application, with a particular emphasis on rapid problem-solving, cross-platform compatibility, and leveraging artificial intelligence tools to boost productivity. The ideal candidate will possess extensive experience in Angular development, with a solid understanding of mobile application support and the ability to operate across the full technology stack as needed. This role offers an exciting opportunity to work on innovative projects, contribute to system architecture, and collaborate with cross-functional teams to deliver impactful solutions in a collaborative environment.\n\nQualifications\n\nThe ideal candidate should have a minimum of 5+ years of professional experience in application development within production environments, demonstrating a strong proficiency in Angular and related technologies. They should possess expertise in JavaScript, TypeScript, HTML5, and CSS3, along with familiarity with SASS for styling. Experience with version control systems like Git is essential, as is a background working with databases such as SQL and NoSQL. A proven track record of working effectively in fast-paced, agile development environments is required, along with demonstrated experience utilizing AI development tools to enhance productivity and learning. Candidates should also have excellent problem-solving skills, the ability to adapt quickly to new technologies, and strong communication skills to collaborate effectively with multidisciplinary teams.\n\nResponsibilities\n\n\nDevelop, maintain, and optimize web and mobile applications to meet project requirements and performance standards.\nTroubleshoot, debug, and resolve issues across multiple platforms efficiently in a fast-paced environment.\nCollaborate closely with cross-functional teams, including backend developers, QA engineers, and mobile developers, to deliver new features, enhancements, and bug fixes.\nLeverage AI-assisted development tools such as Cursor and Windsurf to accelerate learning, troubleshooting, and delivery processes.\nParticipate in code reviews, testing, and contribute to improving system design, architecture, and best practices.\nProvide support for frontend tasks primarily using Angular, while also contributing to backend tasks with Node.js when necessary.\nEnsure seamless integration with databases and contribute to backend data handling as required to support frontend functionalities.\n\n\nBenefits\n\nAt Sonatafy, we value our team members and offer a comprehensive benefits package designed to support your professional growth and personal well-being. As part of our remote-first culture, you'll enjoy the flexibility of working from anywhere in Latin America, with opportunities to collaborate with talented professionals across the region. We provide competitive compensation packages aligned with industry standards, along with ongoing learning and development opportunities to help you stay at the forefront of technological advancements. Our inclusive environment fosters innovation, teamwork, and continuous improvement, ensuring you have the resources and support needed to excel in your role. Additionally, we promote a healthy work-life balance and recognize the importance of your contributions to our collective success.\n\nEqual Opportunity\n\nSonatafy Technology, Inc. is an equal opportunity employer committed to fostering an inclusive and diverse workplace. We do not discriminate based on race, ethnicity, gender, age, religion, disability, sexual orientation, or any other protected characteristic. We believe that diverse perspectives and backgrounds enhance our ability to deliver innovative solutions and create a positive work environment. All qualified candidates are encouraged to apply and will be considered based on their skills, experience, and alignment with our company values.\n\n\n\n\n\nDesired Skills and Experience\n\nAngular, JavaScript, TypeScript, HTML, CSS, Git",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-04T17:23:37.036Z",
-    "sourceHash": "ce79ac84de1aabf8525861b4fd742d562b2ed9861e0dbad6c855eb19cc901103",
-    "company": {
-      "id": "netrolynxai",
-      "name": "Netrolynx AI",
-      "logoUrl": "https://logo.clearbit.com/netrolynxai.com",
-      "industry": "Technology",
-      "website": "https://netrolynxai.com"
-    },
-    "slug": "frontend-engineer-netrolynx-ai-ce79ac84",
-    "aiTags": {
-      "stack": [
-        "angular",
-        "javascript",
-        "typescript",
-        "html",
-        "css",
-        "sass"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
     }
   }
 ]
