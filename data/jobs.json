@@ -1,5 +1,103 @@
 [
   {
+    "id": "3dbac4591bd3645475b373cc03bdfac61a6a637f2179b9e7ada014547aa17d86",
+    "title": "Frontend Architect",
+    "applyUrl": "https://jobicy.com/jobs/158912-frontend-architect-2",
+    "description": "Caylent is an AI-first cloud services company that helps organizations turn ambitious ideas into meaningful business impact. As an AWS Premier Tier Services Partner and a charter member of Anthropic’s Claude Partner Network, we combine deep expertise in AWS, artificial intelligence, and Anthropic’s Claude platform to help customers modernize their technology, build intelligent products, and move AI from experimentation into production.\n\nOur capabilities span generative and agentic AI, cloud migration and modernization, cloud-native application development, data and analytics, DevOps, managed services, security and compliance, and customer experience transformation. At Caylent, our people always come first.\n\nWe are a fully remote global company with employees in Canada, the United States and Latin America. We celebrate the culture of each of our team members and foster a community of technological curiosity. Come talk to us to learn more about what it means to be a Caylien!\n\nThe Mission \n\nWe're looking for an experienced and passionate Frontend Architect to join our Cloud Native Applications team. In this role, you will own the architecture of modern, high-performance, real-time web applications built on AWS, from the first customer discovery conversation through production launch. You will design how the browser, the edge, and the API layer fit together, using technologies such as React, Next.js, GraphQL, AWS AppSync, Amazon CloudFront, and AWS WAF, and codify it all in Terraform. You'll partner with Design, Backend, DevOps, and Project Management to turn ambiguous business needs into scalable, secure, and delightful user experiences, and you'll raise the bar for the engineers around you. If you thrive on being both a hands-on technologist and a trusted advisor to customers, we want to hear from you.\n\nYour Assignment \n\n• You will be a mission specialist, rocketing Customers forward as you lead technical discovery, define frontend and edge architecture, and guide delivery teams through standups, sprint planning, retrospectives, and more.\n\n• You will demonstrate Caylent's commitment to being an Exceptional Partner by authoring clear architecture decisions, solution designs, and diagrams, and by presenting trade-offs and recommendations to technical and executive stakeholders.\n\n• You will Lead By Example, staying hands-on in the code, setting frontend standards, conducting design and code reviews, and mentoring Senior and Mid-level engineers as your team builds together.\n\n• You will demonstrate a passion to Stay Curious as you evaluate emerging technologies, including AI-assisted development and AI-powered user experiences, and bring proven patterns back to Caylent and our customers.\n\n• You will partner with the Design team, Backend Architects, and Cloud/DevOps engineers to ensure the frontend architecture aligns with data models, API contracts, security requirements, and infrastructure.\n\nYour Qualifications \n\nCore Consulting Qualifications\n\nCustomer Experience\n\n• Deliver exceptional client experiences, act as a trusted technical advisor, respond professionally to customer inquiries, communicate project status and risk, and provide solutions aligned to client business outcomes.\n\nCollaboration\n\n• Demonstrate strong collaboration with internal teams and customer stakeholders, proactively aligning on priorities and incorporating feedback. Lead and coordinate technical work across engineers, designers, and project managers.\n\nCommunication\n\n• Communicate complex technical concepts clearly to both technical and non-technical audiences, actively listen to clients and team members, and document decisions so that teams can execute with confidence.\n\nTechnical Qualifications\n\n• 5+ years of professional software development experience, with at least 3 years focused on frontend engineering and 1+ years in a technical lead, architect, or equivalent role.\n\n• Expert-level experience building production applications with React.js and TypeScript, including state management, rendering performance, component architecture, and design systems.\n\n• Deep experience with Next.js, including the App Router, server components, SSR, SSG, ISR, route handlers, middleware, and caching strategies. Able to advise on rendering and hosting trade-offs on AWS (e.g., containers, Lambda, AWS Amplify, OpenNext).\n\n• Strong experience designing and consuming GraphQL APIs, including schema design, queries and mutations, fragments, pagination, caching, and client libraries such as Apollo Client, Relay, or urql.\n\n• Hands-on experience implementing GraphQL Subscriptions for real-time experiences (WebSockets), including connection lifecycle, reconnection, filtering, authorization, and scale considerations.\n\n• Practical experience with AWS AppSync, including resolvers (JavaScript/VTL), data sources (DynamoDB, Lambda, OpenSearch, HTTP), authorization modes (Amazon Cognito, IAM, OIDC, Lambda authorizers), and real-time/Events APIs.\n\n• Practical experience with Amazon CloudFront for content delivery, including cache policies, origin configuration, CloudFront Functions and Lambda@Edge, and performance and cost tuning.\n\n• Working knowledge of AWS WAF, including managed and custom rule groups, rate limiting, bot control, and protecting CloudFront and AppSync endpoints, plus a solid understanding of web security fundamentals (OWASP Top 10, CSP, CORS, XSS/CSRF, secure authentication flows).\n\n• Experience designing CI/CD pipelines for frontend applications, including automated builds, preview environments, and safe deployment strategies.\n\n• Deep understanding of web performance (Core Web Vitals, bundle optimization, code splitting, caching), accessibility (WCAG), and observability for the frontend (RUM, logging, error tracking).\n\n• Experience with frontend testing strategies, including unit, integration, and end-to-end testing (e.g., Jest, Vitest, React Testing Library, Playwright, Cypress).\n\n• Experience collaborating closely with UX/UI designers to turn wireframes and design systems into accessible, performant experiences, and the ability to contribute to early design conversations to ensure designs are feasible and scalable.\n\n• Experience with Generative AI technologies, both for personal productivity (Cursor, Claude Code, GitHub Copilot, etc.) and for integrating AI features (e.g., streaming responses, chat interfaces) into a frontend.\n\n• Experience contributing to and delivering on client-facing customer engagements.\n\nPreferred Qualifications \n\n• AWS certifications such as AWS Certified Solutions Architect (Associate or Professional) or AWS Certified Developer.\n\n• Experience with micro-frontends, monorepos (Nx, Turborepo), and design system / component library strategy.\n\n• Experience with Amazon Cognito or other identity providers, and with API gateways and BFF (Backend for Frontend) patterns.\n\n• Experience with AWS CDK, CloudFormation Terraform, or other IaC tools\n\n• Experience with Large Language Models (LLM), Amazon Bedrock, and building AI-first user experiences.\n\n• Experience with consulting or professional services environments.\n\nBenefits\n\n• 100% remote work\n\n• Equitable Life - Hybrid Plan\n\n• 100% Premium Coverage for the employee and dependents\n\n• Competitive phantom equity\n\n• Long-Term Disability\n\n• 4% Pension match (employer contribution)\n\n• Unlimited Vacations\n\n• Sick Leave \n\n• Paid Holidays \n\n• Parental Leave\n\n• Paid for exams and certifications\n\n• Peer bonus awards\n\n• State of the art laptop and tools\n\n• Equipment & Office Stipend\n\n• Individual professional development plan\n\n• Annual stipend for Learning and Development\n\n• Work with an amazing worldwide team and in an incredible corporate culture\n\nVacancy Status: This posting is for an existing vacancy.\n\nBase Salary Range: The expected base salary range for this position is CAD $152,000- $171,000 per year, commensurate with experience and qualifications.\n\nAdditional Compensation Components: In addition to the base salary, the compensation package may include bonuses, commissions, equity, and other incentives. The specific components will vary depending on the role and individual and/or company performance.\n\nNOTE: This position requires current legal authorization to work in the country where this position is located. Caylent is not able to sponsor visa or work permit applications at this time.\n\nAt Caylent, we are committed to fair, transparent, and inclusive hiring practices. As part of our recruitment process, we may use artificial intelligence (AI) tools or automated systems to assist with the screening and evaluation of applications to help match candidate qualifications with job requirements.\nThese tools are designed to support — not replace — human decision-making. Final hiring decisions are always made by our trained recruitment professionals.\nIf an AI or automated tool is used during your application process, it will only be in accordance with applicable laws and regulations, and your information will be handled in a secure and confidential manner.\nIf you have any questions, please contact talent@caylent.com \n\nCaylent is a place where everyone belongs. We celebrate diversity and are committed to creating an inclusive environment for all employees. Our approach helps us to build a winning team that represents a variety of backgrounds, perspectives, and abilities. So, regardless of how your diversity expresses itself, you can find a home here at Caylent. \n\nWe are proud to be an equal opportunity employer. We prohibit discrimination and harassment of any kind based on race, color, religion, national origin, sex (including pregnancy), sexual orientation, gender identity, gender expression, age, veteran status, genetic information, disability, or other applicable legally protected characteristics. If you would like to request an accommodation due to a disability, please contact us at hr@caylent.com.",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-04T13:24:20.000Z",
+    "sourceHash": "3dbac4591bd3645475b373cc03bdfac61a6a637f2179b9e7ada014547aa17d86",
+    "company": {
+      "id": "caylent",
+      "name": "Caylent",
+      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/9ed8d81b-221.jpg",
+      "industry": "Technology",
+      "website": "https://caylent.com"
+    },
+    "slug": "frontend-architect-caylent-3dbac459",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "javascript",
+        "graphql",
+        "cypress",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "72aaf79356187ab19b60fb562690cea77611150b92f03c10dee5357b297bde30",
+    "title": "Front End Engineer",
+    "applyUrl": "https://remotefirstjobs.com/companies/tailscale/jobs/front-end-engineer-878683",
+    "description": "Thank you for considering Tailscale. If this job description resonates with you, please apply. Frequently cited statistics show that people who identify with historically marginalized groups are likely to apply to jobs only if they meet 100% of the qualifications. We encourage you to help us break that statistic!\n\nAbout Tailscale\n\nTailscale is making safe connection effortless by delivering software that makes it easy to securely interconnect people and their devices, no matter where they are. From hobbyists to multinational corporations, teams of every size use Tailscale each day to protect their networks, share access to internal tools, and more. We&rsquo;re building a future for the Internet that&rsquo;s easy, sensible, and safe, like it used to be. Founded in 2019 and fully distributed, we&rsquo;re backed by Accel, CRV, Insight, Heavybit, and Uncork Capital.\n\nAbout the Role\n\nWe’re seeking a skilled and diligent full-time Frontend Engineer to join our growing team. You will work as part of our team to:\n\n• Own the technical direction and architecture of Tailscale’s next-generation web console\n\n• Build frontend infrastructure and platform capabilities that enable multiple Tailscale products to ship within a unified console experience\n\n• Bring a special focus to identity-adjacent frontend systems, including authentication, session management, secure cross-origin integrations, and product surfaces that span multiple services\n\nBecause we’re a fully remote company building a highly technical product, we’re looking for someone who can move fluidly between product engineering and platform engineering. This role sits at an important intersection of user experience, browser security, developer tooling, and internal platform design. The ability to think strategically, make pragmatic architecture decisions, collaborate across engineering, design, growth, and infrastructure, and help other teams build with confidence is essential.\n\nKey Responsibilities\n\n• Define and drive the frontend architecture for Tailscale’s next-generation console, including application structure, routing, state boundaries, shared abstractions, and long-term maintainability\n\n• Design and maintain cross-origin authentication and session infrastructure between the console and other services, including auth flows, CORS policies, CSRF protections, cookie/session strategies, and support for multiple deployment environments\n\n• Build and operate a frontend serving platform capable of hosting multiple Tailscale products under a unified development workflow\n\n• Establish shared infrastructure, conventions, and design patterns that consolidate distinct product experiences into a cohesive console platform\n\n• Create frontend architecture patterns, tooling, and abstractions that enable non-frontend engineers to build accessible, production-quality UI safely and efficiently\n\n• Partner closely with Product Design to turn complex infrastructure and identity concepts into intuitive user experiences\n\n• Collaborate with Growth, Design, Product, and other engineering teams on experimentation and iteration, including A/B testing, analytics instrumentation, and feature rollout strategies\n\n• Define and improve frontend testing strategy across the console, including integration testing, end-to-end coverage, local developer ergonomics, and abstractions that reduce testing complexity for product teams\n\n• Work with infrastructure and engineering tooling teams to improve local development workflows, build pipelines, preview deployments, release ergonomics, and operational reliability\n\n• Raise the quality bar for frontend engineering across Tailscale through technical leadership, reviews, mentoring, and clear platform guardrails\n\n• Required participation in our on-call rotation every x weeks, to triage and mitigate incidents\n\nWhat We Are Looking For\n\n• Deep experience building and operating production React applications at scale\n\n• Strong understanding of web platform fundamentals, including HTTP semantics, browser security boundaries, authentication flows, cookies, storage, CORS, and CSRF\n\n• Experience building internal platforms, frameworks, or shared libraries that enable other teams to ship products with strong guardrails\n\n• Experience driving a unified console or platform vision across disparate frontend codebases\n\n• Strong judgment around frontend architecture: knowing when to standardize, when to abstract, and how to keep systems understandable as they grow\n\n• Experience designing scalable frontend testing strategies that improve confidence while hiding incidental complexity from product engineers\n\n• Comfort collaborating across disciplines and functions, especially with design, growth, infrastructure, and developer tooling\n\n• Strong written and verbal communication, including the ability to explain tradeoffs and influence technical direction across teams\n\n• A high degree of ownership and autonomy, with the ability to identify important problems and drive them through ambiguity\n\nNice to Have\n\n• Experience designing frontend codebases and tooling optimized for AI-assisted development, including conventions and abstractions that help LLM-based agents produce correct, consistent UI with fewer iterations\n\n• Experience with design systems, component libraries, and connecting design tooling to production UI workflows\n\n• Experience with feature flagging, analytics, experimentation systems, and progressive delivery patterns\n\n• Experience working on identity, admin, B2B SaaS, or security-sensitive product surfaces\n\nAs a company, we strive to maintain fair and equitable compensation practices within our team across all roles and all levels. Tailscale&rsquo;s compensation package includes base salary, equity, and comprehensive benefits. The salary range displayed on each job posting represents the target range for a new hire&rsquo;s base salary. Individual offers may vary based on experience and skill set.\n\nUS Pay Range\n\n$163,000—$204,000 USD\n\nWhat We Offer\n\n• An inclusive, flexible environment where you can be your authentic self. We recognize the impact of diverse voices and backgrounds on the growth of our people, product, and company. And that flexibility in how and when you work empowers our team to integrate work and life.\n\n• A competitive total compensation package. This includes a base salary, an equity incentive plan and variable commission (for quota-based roles).\n\n• Comprehensive group benefits with no waiting period. Take advantage of coverage for health, vision, dental, and more for you and your family!\n\n• Remote first company—most of our teams work fully remotely. Enjoy a change of scenery wherever you can get wifi, participate in virtual and in-person social events, and leverage our corporate co-working program to visit WeWork (or other similar spaces near you). Some roles require in-office collaboration depending on team needs, which will be clearly noted in the job description.\n\n• Employer-funded retirement contributions. Tailscale will match your retirement contributions dollar-for-dollar, up to a maximum annual employer contribution equal to 0.75% of your eligible compensation.\n\n• Connect with other Tailscalars IRL. Attend our annual company retreat, participate in team off-sites, and collaborate in person with teammates across Canada, the United States, the United Kingdom, and Singapore. We support intentional in-person connection through team travel and distributed collaboration.\n\n• Support for your personal and professional development. Grow your career thoughtfully with $1500 USD annually for professional development, or take advantage of mentorship, coaching, and internal promotion opportunities.\n\n• Paid time off and a healthy work-life integration. Our flexible, paid time off program supports you for any situation life throws your way, whether moving homes or travelling the world!\n\n• A build-your-own home office setup. You choose your own company-owned laptop (Mac or PC), receive a monthly home internet reimbursement, and $500 USD to customize your workstation to make it your own.\n\n• Paid parental leave program. We care about your life outside of work and encourage new parents to take advantage of parental leave top-ups (20 weeks for birthing parents, 16 weeks for non-birthing parents).\n\nTailscale is committed to providing an accessible and inclusive hiring process. If you require an accommodation at any stage of the recruitment process or related to any aspect of this role, please contact your recruiter.\n\nOur hiring process uses AI-assisted tools to help screen and assess candidates. All hiring decisions are made by people.\n\nPlease be aware that legitimate emails from Tailscale&rsquo;s talent team will only originate from @tailscale.com, @greenhouse.io, and @interviews.modernloop.io email addresses. For more information about protecting yourself from impersonators and scams, please visit https://tailscale.com/scam-awareness.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-03T10:11:21.000Z",
+    "sourceHash": "72aaf79356187ab19b60fb562690cea77611150b92f03c10dee5357b297bde30",
+    "company": {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/tailscale-795b.webp",
+      "industry": "Technology",
+      "website": "https://tailscale.com"
+    },
+    "slug": "front-end-engineer-tailscale-72aaf793",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "mid",
+      "employmentType": "b2b"
+    }
+  },
+  {
+    "id": "00461c98734aac74c2e9a519687a8c29c331eac514daacf66fbb7c9d5e58b70a",
+    "title": "Front End Engineer",
+    "applyUrl": "https://remotefirstjobs.com/companies/tailscale/jobs/front-end-engineer-878685",
+    "description": "Thank you for considering Tailscale. If this job description resonates with you, please apply. Frequently cited statistics show that people who identify with historically marginalized groups are likely to apply to jobs only if they meet 100% of the qualifications. We encourage you to help us break that statistic!\n\nAbout Tailscale\n\nTailscale is making safe connection effortless by delivering software that makes it easy to securely interconnect people and their devices, no matter where they are. From hobbyists to multinational corporations, teams of every size use Tailscale each day to protect their networks, share access to internal tools, and more. We&rsquo;re building a future for the Internet that&rsquo;s easy, sensible, and safe, like it used to be. Founded in 2019 and fully distributed, we&rsquo;re backed by Accel, CRV, Insight, Heavybit, and Uncork Capital.\n\nAbout the Role\n\nWe’re seeking a skilled and diligent full-time Frontend Engineer to join our growing team. You will work as part of our team to:\n\n• Own the technical direction and architecture of Tailscale’s next-generation web console\n\n• Build frontend infrastructure and platform capabilities that enable multiple Tailscale products to ship within a unified console experience\n\n• Bring a special focus to identity-adjacent frontend systems, including authentication, session management, secure cross-origin integrations, and product surfaces that span multiple services\n\nBecause we’re a fully remote company building a highly technical product, we’re looking for someone who can move fluidly between product engineering and platform engineering. This role sits at an important intersection of user experience, browser security, developer tooling, and internal platform design. The ability to think strategically, make pragmatic architecture decisions, collaborate across engineering, design, growth, and infrastructure, and help other teams build with confidence is essential.\n\nKey Responsibilities\n\n• Define and drive the frontend architecture for Tailscale’s next-generation console, including application structure, routing, state boundaries, shared abstractions, and long-term maintainability\n\n• Design and maintain cross-origin authentication and session infrastructure between the console and other services, including auth flows, CORS policies, CSRF protections, cookie/session strategies, and support for multiple deployment environments\n\n• Build and operate a frontend serving platform capable of hosting multiple Tailscale products under a unified development workflow\n\n• Establish shared infrastructure, conventions, and design patterns that consolidate distinct product experiences into a cohesive console platform\n\n• Create frontend architecture patterns, tooling, and abstractions that enable non-frontend engineers to build accessible, production-quality UI safely and efficiently\n\n• Partner closely with Product Design to turn complex infrastructure and identity concepts into intuitive user experiences\n\n• Collaborate with Growth, Design, Product, and other engineering teams on experimentation and iteration, including A/B testing, analytics instrumentation, and feature rollout strategies\n\n• Define and improve frontend testing strategy across the console, including integration testing, end-to-end coverage, local developer ergonomics, and abstractions that reduce testing complexity for product teams\n\n• Work with infrastructure and engineering tooling teams to improve local development workflows, build pipelines, preview deployments, release ergonomics, and operational reliability\n\n• Raise the quality bar for frontend engineering across Tailscale through technical leadership, reviews, mentoring, and clear platform guardrails\n\n• Required participation in our on-call rotation every x weeks, to triage and mitigate incidents\n\nWhat We Are Looking For\n\n• Deep experience building and operating production React applications at scale\n\n• Strong understanding of web platform fundamentals, including HTTP semantics, browser security boundaries, authentication flows, cookies, storage, CORS, and CSRF\n\n• Experience building internal platforms, frameworks, or shared libraries that enable other teams to ship products with strong guardrails\n\n• Experience driving a unified console or platform vision across disparate frontend codebases\n\n• Strong judgment around frontend architecture: knowing when to standardize, when to abstract, and how to keep systems understandable as they grow\n\n• Experience designing scalable frontend testing strategies that improve confidence while hiding incidental complexity from product engineers\n\n• Comfort collaborating across disciplines and functions, especially with design, growth, infrastructure, and developer tooling\n\n• Strong written and verbal communication, including the ability to explain tradeoffs and influence technical direction across teams\n\n• A high degree of ownership and autonomy, with the ability to identify important problems and drive them through ambiguity\n\nNice to Have\n\n• Experience designing frontend codebases and tooling optimized for AI-assisted development, including conventions and abstractions that help LLM-based agents produce correct, consistent UI with fewer iterations\n\n• Experience with design systems, component libraries, and connecting design tooling to production UI workflows\n\n• Experience with feature flagging, analytics, experimentation systems, and progressive delivery patterns\n\n• Experience working on identity, admin, B2B SaaS, or security-sensitive product surfaces\n\nAs a company, we strive to maintain fair and equitable compensation practices within our team across all roles and all levels. Tailscale&rsquo;s compensation package includes base salary, equity, and comprehensive benefits. The salary range displayed on each job posting represents the target range for a new hire&rsquo;s base salary. Individual offers may vary based on experience and skill set.\n\nCAN Pay Range\n\n$218,420—$273,360 CAD\n\nWhat We Offer\n\n• An inclusive, flexible environment where you can be your authentic self. We recognize the impact of diverse voices and backgrounds on the growth of our people, product, and company. And that flexibility in how and when you work empowers our team to integrate work and life.\n\n• A competitive total compensation package. This includes a base salary, an equity incentive plan and variable commission (for quota-based roles).\n\n• Comprehensive group benefits with no waiting period. Take advantage of coverage for health, vision, dental, and more for you and your family!\n\n• Remote first company—most of our teams work fully remotely. Enjoy a change of scenery wherever you can get wifi, participate in virtual and in-person social events, and leverage our corporate co-working program to visit WeWork (or other similar spaces near you). Some roles require in-office collaboration depending on team needs, which will be clearly noted in the job description.\n\n• Employer-funded retirement contributions. Tailscale will match your retirement contributions dollar-for-dollar, up to a maximum annual employer contribution equal to 0.75% of your eligible compensation.\n\n• Connect with other Tailscalars IRL. Attend our annual company retreat, participate in team off-sites, and collaborate in person with teammates across Canada, the United States, the United Kingdom, and Singapore. We support intentional in-person connection through team travel and distributed collaboration.\n\n• Support for your personal and professional development. Grow your career thoughtfully with $1500 USD annually for professional development, or take advantage of mentorship, coaching, and internal promotion opportunities.\n\n• Paid time off and a healthy work-life integration. Our flexible, paid time off program supports you for any situation life throws your way, whether moving homes or travelling the world!\n\n• A build-your-own home office setup. You choose your own company-owned laptop (Mac or PC), receive a monthly home internet reimbursement, and $500 USD to customize your workstation to make it your own.\n\n• Paid parental leave program. We care about your life outside of work and encourage new parents to take advantage of parental leave top-ups (20 weeks for birthing parents, 16 weeks for non-birthing parents).\n\nTailscale is committed to providing an accessible and inclusive hiring process. If you require an accommodation at any stage of the recruitment process or related to any aspect of this role, please contact your recruiter.\n\nOur hiring process uses AI-assisted tools to help screen and assess candidates. All hiring decisions are made by people.\n\nPlease be aware that legitimate emails from Tailscale&rsquo;s talent team will only originate from @tailscale.com, @greenhouse.io, and @interviews.modernloop.io email addresses. For more information about protecting yourself from impersonators and scams, please visit https://tailscale.com/scam-awareness.",
+    "location": "Remote - Canada",
+    "country": "Canada",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-03T10:13:24.000Z",
+    "sourceHash": "00461c98734aac74c2e9a519687a8c29c331eac514daacf66fbb7c9d5e58b70a",
+    "company": {
+      "id": "tailscale",
+      "name": "Tailscale",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/tailscale-795b.webp",
+      "industry": "Technology",
+      "website": "https://tailscale.com"
+    },
+    "slug": "front-end-engineer-tailscale-00461c98",
+    "aiTags": {
+      "stack": [
+        "react"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Canada"
+      ],
+      "seniority": "mid",
+      "employmentType": "b2b"
+    }
+  },
+  {
     "id": "6e1ce53b234476209057db062ef5812f6cc05f3fc505e1faa61a5044a1d28bfd",
     "title": "Front-End Developer",
     "applyUrl": "https://himalayas.app/companies/human-power-bg/jobs/front-end-developer?utm_source=api",
@@ -27320,105 +27418,5 @@
       "seniority": "senior",
       "employmentType": "fulltime"
     }
-  },
-  {
-    "id": "59bfbea3d4d91644b3ccd2d93c14ec64db2929a2b29e10d94ae1d6abf08970d9",
-    "title": "Staff Software Engineer, Frontend",
-    "applyUrl": "https://hercules.app/careers?ashby_jid=f176648e-8e5f-406b-8e1d-5c9cd96d8430&utm_source=G4nORR8jbE",
-    "description": "About the job\n\nWhat are we looking for?\n\nHercules is looking for a staff level frontend software engineer to help us build the future of AI software development\n\nWhat will you do?\n\nYou will build and own user-facing interfaces and experiences across Hercules including our\n\n\nAI Agent, the AI harness that enables anyone to build powerful full-stack applications \nApp Builder, the interface that makes it ridiculously easy to build, preview, and deploy apps\nMobile app, our PWA-based mobile building experience\nMarketing pages, our public display pages for products, features, and docs\n\n\nWhat skills do we expect you to have?\n\nWe expect candidates to be incredibly strong across all of the following areas:\n\n\nSoftware fundamentals: system design, architecture, data modeling, and API design\nCode and codebase quality: write clean, maintainable code. Work effectively in monorepos\nProduct sense: track record of independently shipping lots of features to customers\nDesign sense: beautiful, opinionated UX/UI sense\nOur core frontend stack: TypeScript, React, (and ideally some containers, Postgres, and Redis experience)\nAI: able to truly 10x your workflow by being on frontier of AI coding \n\n\nWhat’s Hercules’ stack?\n\n\nTechnologies: Typescript, React, AI SDK, Postgres, Redis, Clickhouse, Tailwind, IaC (CDK, Terraform), Docker, Otel, Hono, Drizzle ORM, Temporal\nClouds: Cloudflare, AWS\nAI Models: OpenAI, Anthropic, Google\n\n\nWhat are Hercules’ operating principles?\n\nHercules’ operating principles guide how we make decisions every day. We take them very seriously. Most of the principles can be learned on the job, however, we do specifically filter for the following principles in our hiring process:\n\n\nWe ship. We ship fast, iterate, and correct mistakes quickly. Our bias for action speeds up our learning and delights our customers. \nWe strive for excellence. Doing things well is in our DNA. We have good taste. We get the details right. Our outputs are exceptionally simple and self-serve. We’re proud of our work. \nWe are hungry. We are willing to work hard and break through walls to achieve the outcomes we want. We are willing to operate at any level to get things done. \n\n\nIs Hercules in-office or remote?\n\nHercules founding team works in-office in San Francisco (Kearny and Bush). We have a very strong preference for in office. We are open to remote for exceptional candidates who are willing to 1) work in US time zones and 2) travel to the office regularly.\n\nWhat are Hercules’ benefits?\n\n\nUnlimited AI token budget\nTake what you need vacation policy\nHealthcare, vision, and dental\nDaily lunches, dinners and snacks in the office\nWe guarantee you will do the best work of your career here\n\n\nWhat’s the compensation?\n\n$100k-$300k + equity (variable based on seniority, equity, and location)\n\nCompensation Range: $100K - $300K",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-05T05:37:13.084Z",
-    "sourceHash": "59bfbea3d4d91644b3ccd2d93c14ec64db2929a2b29e10d94ae1d6abf08970d9",
-    "company": {
-      "id": "hercules",
-      "name": "Hercules",
-      "logoUrl": "https://logo.clearbit.com/hercules.com",
-      "industry": "Technology",
-      "website": "https://hercules.com"
-    },
-    "slug": "staff-software-engineer-frontend-hercules-59bfbea3",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "tailwind"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "principal",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "a160c545b52fe7d3f8a307d9e57186c6010f0a8a541f0b50ca1b710dad0f9161",
-    "title": "Frontend Engineer (Remote)",
-    "applyUrl": "https://www.torentify.com/jobs/6ac2f21c36bc880e7c44b3b9",
-    "description": "About the job\n\n# Software Engineer – Front End\n\n\n\n\n## About the Role\n\n\n\n\nSOUND DECISIONS is seeking a Software Engineer to own the front-end experience within a fully remote FinTech SaaS environment. This is a front-end-focused role with occasional backend exposure, reporting to the Front-End Lead.\n\n\n\n\nYou will work with JavaScript, TypeScript, React, and Vite to build and ship UI features end-to-end. You will collaborate with a small team and are expected to work autonomously while contributing to the continued development of the product.\n\n\n\n\n## Key Responsibilities\n\n\n\n\n* Own and develop the front-end experience for the FinTech SaaS platform.\n\n* Build and ship UI features end-to-end.\n\n* Develop applications using JavaScript and TypeScript.\n\n* Build user interfaces with React and Vite.\n\n* Collaborate with the front-end lead and a small engineering team.\n\n* Work autonomously on front-end development initiatives.\n\n* Contribute to backend development when needed.\n\n\n\n\n## Required Qualifications\n\n\n\n\n* 3–5 years of software engineering experience.\n\n* Strong front-end development experience.\n\n* Experience with JavaScript and/or TypeScript.\n\n* Experience with React.\n\n* Experience with Vite.\n\n* Ability to work autonomously.\n\n\n\n\n## Preferred Qualifications\n\n\n\n\n* Backend development experience or exposure.\n\n* Experience working in a FinTech SaaS environment.\n\n\n\n\n## Skills & Competencies\n\n\n\n\n* Front-end software development\n\n* JavaScript\n\n* TypeScript\n\n* React\n\n* Vite\n\n* UI development\n\n* End-to-end feature delivery\n\n* Autonomous work\n\n* Team collaboration\n\n* Backend exposure\n\n\n\n\n## Education & Experience\n\n\n\n\n**Education**\n\n\n\n\n* No specific educational requirement stated.\n\n\n\n\n**Experience**\n\n\n\n\n* 3–5 years of software engineering experience.\n\n* Front-end development experience with JavaScript/TypeScript, React, and Vite.\n\n\n\n\n## Work Arrangement & Schedule\n\n\n\n\n* Work arrangement: Fully remote.\n\n* Industry: FinTech / SaaS.\n\n* Employment type and specific schedule are not stated.\n\n\n\n\n## Compensation & Benefits\n\n\n\n\n* Compensation: Not specified in the provided job description.\n\n* Benefits: Not specified in the provided job description.\n\n\n\n\n## Compliance / Additional Information\n\n\n\n\n* The role is based in the United States.\n\n* The position reports to the Front-End Lead.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-05T05:34:35.251Z",
-    "sourceHash": "a160c545b52fe7d3f8a307d9e57186c6010f0a8a541f0b50ca1b710dad0f9161",
-    "company": {
-      "id": "torentify",
-      "name": "Torentify",
-      "logoUrl": "https://logo.clearbit.com/torentify.com",
-      "industry": "Technology",
-      "website": "https://torentify.com"
-    },
-    "slug": "frontend-engineer-remote-torentify-a160c545",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "vite"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "ba8137c31c96d3b03a6ef723ea010c8b8c831bc140b67198787f12dda771b750",
-    "title": "Frontend Engineer Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/51e0cf18-04c4-4974-91da-7d0100dd69fa?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nFrontend Engineer - Technical Reasoning\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Frontend Engineers to support a customer project focused on frontend development and AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze and explain frontend architecture and technical decisions.\nReview code, component architecture, and state management solutions.\nCreate technical documentation such as RFCs and ADRs.\nEvaluate performance, accessibility, and rendering strategies.\nProvide clear, structured technical feedback.\n\n\n\nRequired Skills\n\n\nJavaScript & TypeScript\nReact\nComponent Architecture\nState Management\nFrontend Performance\nAccessibility (a11y)\nSSR / CSR / SSG\nCode Review\nTechnical Writing (RFCs, ADRs)\n\n\n\nQualifications\n\n\n3+ years of professional frontend engineering experience.\nStrong knowledge of React, TypeScript, and modern frontend architecture.\nExcellent technical writing and communication skills.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-05T05:34:07.691Z",
-    "sourceHash": "ba8137c31c96d3b03a6ef723ea010c8b8c831bc140b67198787f12dda771b750",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-engineer-remote-yo-ai-labs-ba8137c3",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    },
-    "isDead": true,
-    "deadAt": "2026-10-25T07:07:36.569Z"
   }
 ]
