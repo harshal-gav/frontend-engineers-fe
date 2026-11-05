@@ -2,23 +2,30 @@
 /**
  * Automated LinkedIn Poster (Remote Frontend Jobs, Community Referrals & Employer Hiring)
  * 
- * Generates a high-converting LinkedIn post with:
- *   - MANDATORY FIRST LINE: Catchy hook containing "FrontendEngineers.com" and "Remote Frontend Job"
- *   - NO LINK AT THE TOP
- *   - VALUE STACK: Direct ATS links, employee referrals, verified salaries, instant alerts ($9/mo)
- *   - EXACT 2 IN-BETWEEN LINKS:
- *       👉 Explore remote frontend jobs:
+ * Generates a high-converting, long-form LinkedIn post modeled after proven top-performing posts:
+ *   - MANDATORY FIRST LINE: Catchy hook containing "FrontendEngineers.com" and "remote frontend jobs" + emoji
+ *   - DEVELOPER EMPATHY: Solves the frustration of generic job boards and void applications
+ *   - HIGH-IMPACT PILLARS:
+ *       ⚡ MASSIVE ACCESS FOR FRONTEND JOBS ONLY (no backend noise)
+ *       🌍 GO GLOBAL (worldwide remote frontend opportunities in one place)
+ *       🛡️ SAFE & ACCURATE (verified roles, zero ghost postings, zero spam)
+ *       🎯 DIRECT ATS & EMPLOYEE REFERRALS (Greenhouse/Lever/Ashby + bypass filters)
+ *   - PRO LEVERAGE ($9/mo for 1,000+ remote jobs - $0.30/day)
+ *   - DETERMINISTIC ACTION LINKS:
+ *       🔍 Explore active roles:
  *       https://www.frontendengineers.com
- *       👉 Get pro access for just $9/month:
+ *       ⚡ Upgrade to PRO access here:
  *       https://www.frontendengineers.com/pricing
+ *   - 8 HIGH-PERFORMING HASHTAGS:
+ *       #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment #FrontendEngineers #JavaScript #TechJobs #WorkFromAnywhere
  * 
  * Flags:
  *   --dry-run    - Generate the post but don't publish to LinkedIn
- *   --long       - Generate an expanded, story-driven post (1200-1600 chars)
+ *   --short      - Generate a compact post (700-950 chars) instead of standard long-form
+ *   --long       - Explicit long-form flag (now standard by default: 1100-1500 chars)
  * 
  * Usage:
  *   node scripts/post-to-linkedin.js --dry-run
- *   node scripts/post-to-linkedin.js --long --dry-run
  *   node scripts/post-to-linkedin.js
  */
 
@@ -36,7 +43,8 @@ if (!process.env.GEMINI_API_KEY && fs.existsSync(envPath)) {
 }
 
 const DRY_RUN = process.argv.includes('--dry-run');
-const IS_LONG = process.argv.includes('--long');
+const IS_SHORT = process.argv.includes('--short');
+const IS_LONG = !IS_SHORT; // Default to long-form high-performing post structure
 
 // ─── Config ──────────────────────────────────────────────────
 
@@ -59,37 +67,61 @@ const GEMINI_MODELS = [
   'gemini-2.5-pro'
 ];
 
-// High-engagement creative themes engineered for short, punchy $9 Pro conversions
+// High-performing creative themes engineered from viral LinkedIn career posts
 const CREATIVE_THEMES = [
   {
+    name: 'Frontend Only vs Generic Job Board Clutter',
+    angle: 'Generic job sites swallow applications into a black hole and force developers to scroll through thousands of irrelevant backend roles. FrontendEngineers.com is built 100% exclusively for frontend developers with pure React, Next.js, Vue, and CSS roles.',
+    hookStyle: 'Punchy question hook or bold statement focused on finding high-paying remote frontend jobs with FrontendEngineers.com.'
+  },
+  {
+    name: 'All Worldwide Remote Jobs in One Place',
+    angle: 'Stop jumping across 50 different browser tabs and obscure job boards. FrontendEngineers.com brings every verified remote frontend role from top global companies into a single curated platform.',
+    hookStyle: 'Inspiring, high-energy hook on global remote frontend opportunities.'
+  },
+  {
+    name: 'Safe, Verified & Zero Ghost Postings',
+    angle: 'Modern job hunting is plagued by ghost jobs, recruiter spam, and dead links. Every single job on FrontendEngineers.com is vetted and verified by our team so developers never waste hours on fake postings.',
+    hookStyle: 'Empathy-driven reality check on wasted applications vs verified active roles.'
+  },
+  {
     name: 'Skip the 500-Applicant ATS Queue',
-    angle: 'Stop applying to stale ghost jobs through free aggregators. For $9/month, Pro gives you direct 1-click ATS application links and employee referrals so your resume actually reaches hiring teams.',
-    hookStyle: 'Catchy, direct, and focused on landing a Remote Frontend Job with FrontendEngineers.com.'
+    angle: 'Aggregator job boards put you behind 600+ candidates who applied days earlier. For $9/month ($0.30/day), Pro gives you direct 1-click ATS application links on Greenhouse, Lever, and Ashby plus insider referrals.',
+    hookStyle: 'Tactical speed advantage on landing a remote frontend job fast.'
   },
   {
-    name: 'The $9 Career Investment vs Months of Ghosting',
-    angle: 'A remote frontend role pays $120k-$200k+. Why spend 6 months unemployed applying on broken free boards to save $9? FrontendEngineers.com Pro gives you the unfair advantage.',
-    hookStyle: 'Punchy mathematical reality check on landing a Remote Frontend Job.'
-  },
-  {
-    name: 'Why Aggregators Are A Trap For Frontend Devs',
-    angle: 'Free job boards feed you expired listings and 800-applicant queues. Pro gives you 100% verified remote roles, direct ATS links, and referrals for just $9/month ($0.30/day).',
-    hookStyle: 'Exposing the broken system vs FrontendEngineers.com.'
-  },
-  {
-    name: 'Apply In The First 30 Minutes',
-    angle: '90% of remote frontend callbacks go to the first 50 applicants on the company ATS. Pro alerts and direct links put you in the first 10 for $9/month.',
-    hookStyle: 'Tactical, urgent speed advantage for a Remote Frontend Job.'
+    name: 'The $9 Career Investment vs Months of Frustration',
+    angle: 'A remote frontend role pays $120k-$200k+. Why spend 6 months unemployed and stressed on broken free boards to save $9? For $0.30/day, unlock 1,000+ verified remote jobs and land interviews weeks faster.',
+    hookStyle: 'Mathematical ROI reality check for ambitious frontend developers.'
   }
+];
+
+// Top-performing tech hashtags
+const DEFAULT_HASHTAGS = [
+  '#FrontendDeveloper',
+  '#RemoteJobs',
+  '#ReactJS',
+  '#WebDevelopment',
+  '#FrontendEngineers',
+  '#JavaScript',
+  '#TechJobs',
+  '#WorkFromAnywhere'
+];
+
+const FALLBACK_HOOKS = [
+  'Searching for high-paying remote frontend jobs? FrontendEngineers.com is built exclusively for devs like you! 🚀',
+  'Finding high-paying remote frontend jobs is easier than ever with FrontendEngineers.com! 💻✨',
+  'Tired of searching endlessly for remote frontend jobs? FrontendEngineers.com brings every top opportunity straight to your screen! ⚡',
+  'Landing a high-paying remote frontend job shouldn\'t take months of silence - FrontendEngineers.com gives you the direct edge. 🎯'
 ];
 
 // ─── Gemini Prompt Builder ───────────────────────────────────
 
 function buildPrompt(theme, isLong, randomSalt) {
   if (isLong) {
-    return `You are an elite tech career advisor and engineering founder who writes viral, high-converting LinkedIn posts.
+    return `You are an elite tech career advisor and engineering founder who writes viral, high-converting LinkedIn posts for frontend developers.
 
-Write a HIGH-CONVERTING, STORY-DRIVEN LONG-FORM LinkedIn post (strictly 1200 to 1600 characters - well within LinkedIn 3000 limit) that exposes the brutal reality of the tech hiring market and aggressively converts readers to buy the FrontendEngineers.com Pro $9/month membership.
+Write a HIGH-PERFORMING, ENGAGING, LONG-FORM LinkedIn post (strictly 1100 to 1500 characters) that follows the proven winning formula of viral tech job posts for FrontendEngineers.com.
 
 ---
 TODAY'S ANGLE:
@@ -99,47 +131,56 @@ TODAY'S ANGLE:
 (Random seed key: ${randomSalt} - use only for stylistic variety, never mention this number in the post text)
 
 ---
-CRITICAL POST STRUCTURE & CONVERSION RULES:
+PROVEN WINNING POST STRUCTURE (FOLLOW THIS EXACT BLUEPRINT):
 
 1. THE FIRST LINE (MANDATORY CATCHY HOOK):
-- The VERY FIRST LINE must be a catchy, scroll-stopping sentence that MUST explicitly include both "FrontendEngineers.com" and "Remote Frontend Job" (for example: "Landing a high-paying Remote Frontend Job shouldn't take 6 months of being ghosted - FrontendEngineers.com was built to fix that.").
+- Must be a single scroll-stopping question or punchy sentence featuring both "FrontendEngineers.com" and "remote frontend jobs" (or "high-paying remote frontend jobs").
+- End with a relevant emoji (e.g., 🚀, 💻✨, or ⚡).
+- Examples of winning hooks:
+  "Searching for high-paying remote frontend jobs? FrontendEngineers.com is built exclusively for devs like you! 🚀"
+  "Finding high-paying remote frontend jobs is easier than ever with FrontendEngineers.com! 💻✨"
+  "Tired of searching endlessly for remote frontend jobs? FrontendEngineers.com brings every top opportunity straight to your screen! ⚡"
 - Absolutely NO URLs or links in the first line or at the top of the post.
 
-2. THE AGITATION & REALITY CHECK (WHY FREE JOB SEARCH IS BROKEN):
-- Break down why skilled React, Next.js, and TypeScript developers get zero callbacks right now:
-  - 40%+ of listings on free aggregators are expired ghost jobs kept up for ad impressions.
-  - Middleman aggregator forms mangle resume parsing before a recruiter ever sees it.
-  - Applying days late means competing with 600+ spam applicants. Recruiters stop after applicant #50.
+2. THE DEVELOPER PAIN POINT & EMPATHY (2-3 SENTENCES):
+- Speak directly to the developer's frustration with generic job boards:
+  - Applications disappearing into a void without a response.
+  - Sifting through hundreds of irrelevant backend and full-stack roles.
+  - Expired ghost listings and 500-applicant queues.
+- Explain how FrontendEngineers.com solves this by streamlining the search exclusively for frontend developers so they can get hired fast.
 
-3. WHAT WE SELL FOR $9/MONTH (THE PRO LEVERAGE):
-For $9/month - literally $0.30 a day - FrontendEngineers.com Pro gives you:
-- Direct 1-click ATS application links: Greenhouse, Lever, Ashby, Workday. Apply straight to the employer, zero middleman loops.
-- Insider employee referrals: Hand-deliver your resume to bypass automated ATS filters.
-- 850+ vetted remote roles: Verified salaries from $120k to $200k+. Zero ghost jobs, zero lowballs.
-- Real-time instant alerts: Apply in the first 30 minutes before the crowd arrives.
+3. THE TRANSITION LINE:
+- Exactly: "Here is why developers love us:" or "Here is why developers trust us:"
 
-4. THE ECONOMIC NO-BRAINER (ROI MATH):
-A remote frontend developer salary is $10,000 to $16,000 every single month ($120k to $200k per year).
-Spending $9/month - $0.30 a day - to land interviews weeks or months faster is a 1,000x return.
-Why spend 6 months unemployed and stressed just to save $9? Cancel anytime with 1 click.
+4. THE 3 TO 4 VALUE PILLARS (WITH EMOJIS & UPPERCASE HEADERS):
+Each pillar must start with an eye-catching emoji, a concise UPPERCASE title, followed by a colon and a punchy 1-2 sentence description. Include 3 or 4 of these:
+- ⚡ MASSIVE ACCESS FOR FRONTEND JOBS ONLY: Skip the clutter and focus 100% on UI, React, Next.js, Vue, TypeScript, and CSS roles. No backend noise.
+- 🌍 GO GLOBAL: Find worldwide remote frontend jobs from top global companies in one place without jumping across dozens of tabs.
+- 🛡️ SAFE, ACCURATE & NO GHOST POSTS: Every single job is vetted and verified before going live so you never waste time on dead links, recruiter spam, or fake postings.
+- 🎯 DIRECT ATS & EMPLOYEE REFERRALS: Skip 500-applicant aggregator queues. Apply directly on company ATS portals (Greenhouse, Lever, Ashby) and get insider employee referrals.
 
-5. IN-BETWEEN LINKS (KEEP EXACTLY THESE TWO IN THE BODY):
-👉 Explore remote frontend jobs:
+5. THE NO-BRAINER OFFER & PRICING:
+- "Ready to land your next big role? Upgrading your career shouldn't cost a fortune. You can unlock 1,000+ remote jobs with PRO access for just $9/month!"
+- Mention that landing one $120k-$200k+ role pays for this thousands of times over - literally $0.30 a day, cancel anytime.
+
+6. THE ACTION LINKS (KEEP EXACTLY THESE TWO IN THE BODY):
+🔍 Explore active roles:
 https://www.frontendengineers.com
 
-👉 Get pro access for just $9/month:
+⚡ Upgrade to PRO access here:
 https://www.frontendengineers.com/pricing
 
-6. HASHTAGS:
-Include 3 to 4 targeted hashtags at the very bottom:
-#FrontendDeveloper #ReactJS #RemoteWork #TechJobs
+7. HASHTAGS (8 HIGH-PERFORMING TECH HASHTAGS):
+Include exactly 8 targeted, high-performing hashtags at the very bottom:
+#FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment #FrontendEngineers #JavaScript #TechJobs #WorkFromAnywhere
 
 ---
 CRITICAL RULES FOR LINKEDIN API:
-- LENGTH: Strictly 1200 to 1600 characters - optimal for dwell time without exceeding limits.
+- LENGTH: Strictly 1100 to 1500 characters - optimal for dwell time, reader engagement, and readability.
 - NO LINK AT THE TOP: Do NOT put any link at the top. The post must start with the catchy sentence.
 - NO MARKDOWN: Absolutely NO **bold**, NO *italics*, NO backticks.
 - NO PARENTHESES: DO NOT use parentheses. Use dashes - or commas instead. LinkedIn API truncates on parentheses.
+- Generous paragraph spacing for mobile readability.
 - Output the post strictly between these delimiters:
 ===POST_START===
 [Full text of the LinkedIn post here]
@@ -148,49 +189,37 @@ CRITICAL RULES FOR LINKEDIN API:
 
   return `You are a high-converting tech career advisor and engineering founder.
 
-Write an ULTRA-SHORT, punchy, high-converting LinkedIn post (strictly 600 to 850 characters) that gets straight to the point about what FrontendEngineers.com Pro sells for $9/month.
+Write a punchy, high-converting LinkedIn post (strictly 700 to 950 characters) about FrontendEngineers.com.
 
 ---
 TODAY'S ANGLE:
 - Theme: ${theme.name}
 - Core Angle: ${theme.angle}
 - Tone: ${theme.hookStyle}
-(Random seed key: ${randomSalt} - use only for stylistic variety, never mention this number in the post text)
+(Random seed key: ${randomSalt})
 
 ---
-CRITICAL POST STRUCTURE & CONVERSION RULES:
-
-1. THE FIRST LINE (MANDATORY CATCHY HOOK):
-- The VERY FIRST LINE must be a catchy, scroll-stopping sentence that MUST explicitly include both "FrontendEngineers.com" and "Remote Frontend Job" (for example: "Landing a high-paying Remote Frontend Job shouldn't take 6 months of ghosting - FrontendEngineers.com gives you the direct edge.").
-- Absolutely NO URLs or links in the first line or at the top of the post.
-
-2. WHAT WE SELL FOR $9/MONTH (CLEAR, DIRECT BULLETS):
-For $9/month - literally $0.30 a day - FrontendEngineers.com Pro gives you:
-- Direct 1-click ATS links: Apply directly on Greenhouse, Lever, Ashby - skip aggregators.
-- Employee referrals: Get internal referrals to bypass the ATS filter entirely.
-- 850+ vetted remote roles: Verified salaries from $120k to $200k+.
-- Real-time instant alerts: Apply in the first 30 minutes before hundreds flood the role.
-
-3. PRICE & ROI (1 SHORT SENTENCE):
-Just $9/month - $0.30 a day, cancel anytime. Landing one $120k+ role pays for this thousands of times over.
-
-4. IN-BETWEEN LINKS (KEEP EXACTLY THESE TWO IN THE BODY):
-👉 Explore remote frontend jobs:
+CRITICAL POST STRUCTURE:
+1. THE FIRST LINE: Catchy hook containing "FrontendEngineers.com" and "remote frontend jobs" with an emoji. NO URLs at top.
+2. PAIN POINT & VALUE: Explain how generic boards waste dev time, and how FrontendEngineers.com provides verified, frontend-only roles.
+3. VALUE PILLARS (WITH EMOJIS):
+- ⚡ MASSIVE ACCESS FOR FRONTEND ONLY: Pure React, Vue, TypeScript, CSS roles.
+- 🌍 GLOBAL OPPORTUNITIES: Remote frontend jobs worldwide in one place.
+- 🛡️ SAFE & VERIFIED: No ghost jobs, zero spam.
+4. OFFER & PRICE: Unlock 1,000+ remote jobs with PRO access for just $9/month ($0.30/day).
+5. LINKS:
+🔍 Explore active roles:
 https://www.frontendengineers.com
 
-👉 Get pro access for just $9/month:
+⚡ Upgrade to PRO access here:
 https://www.frontendengineers.com/pricing
-
-5. HASHTAGS:
-Include 3 to 4 targeted hashtags at the very bottom:
-#FrontendDeveloper #ReactJS #RemoteWork #TechJobs
+6. HASHTAGS:
+#FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment #FrontendEngineers #JavaScript #TechJobs #WorkFromAnywhere
 
 ---
-CRITICAL RULES FOR LINKEDIN API:
-- SHORT & PUNCHY: Strictly 600 to 850 characters. Keep it brief, crisp, and to the point.
-- NO LINK AT THE TOP: Do NOT put any link at the top. The post must start with the catchy sentence.
-- NO MARKDOWN: Absolutely NO **bold**, NO *italics*, NO backticks.
-- NO PARENTHESES: DO NOT use parentheses. Use dashes - or commas instead. LinkedIn API truncates on parentheses.
+CRITICAL RULES:
+- NO MARKDOWN: NO **bold**, NO *italics*, NO backticks.
+- NO PARENTHESES: DO NOT use parentheses. Use dashes - or commas instead.
 - Output the post strictly between these delimiters:
 ===POST_START===
 [Full text of the LinkedIn post here]
@@ -277,69 +306,68 @@ async function generatePostWithGemini() {
 function enforceAllowedLinks(text) {
   let cleaned = text;
 
-  // 1. Remove all raw URLs and existing link CTA lines to guarantee deterministic formatting
+  // 1. Remove all raw URLs
   cleaned = cleaned.replace(/https?:\/\/(www\.)?frontendengineers\.com[^\s\n]*/gi, '');
   cleaned = cleaned.replace(/https?:\/\/[^\s\n]*/gi, '');
-  cleaned = cleaned.replace(/👉\s*Explore remote frontend jobs:?/gi, '');
-  cleaned = cleaned.replace(/👉\s*Get pro access[^\n]*/gi, '');
 
-  // 2. Separate hashtags from post content
+  // 2. Remove any variations of link CTA header lines preceding URLs to prevent duplicate headers
+  cleaned = cleaned.replace(/^(🔍|👉|⚡|🚀|🔗|\*|-)?\s*(browse active roles|explore current job listings|explore open listings today|explore open listings|explore active frontend roles|explore active roles|explore remote frontend jobs|get pro access here|upgrade to pro access here|upgrade to pro access|get pro access for just \$9\/month):?\s*$/gim, '');
+
+  // 3. Separate hashtags from post content
   const rawLines = cleaned.split('\n');
   const nonHashLines = [];
   const hashTags = [];
 
   for (const line of rawLines) {
     const trimmed = line.trim();
+    if (!trimmed) continue;
+
     if (trimmed.startsWith('#')) {
       const tags = trimmed.match(/#[a-zA-Z0-9_]+/g);
       if (tags) hashTags.push(...tags);
-    } else if (trimmed) {
-      if (trimmed.toLowerCase().includes('frontendengineers.com/pricing') || trimmed.toLowerCase() === 'frontendengineers.com') {
+    } else {
+      const lower = trimmed.toLowerCase();
+      // Skip leftover URL fragments or standalone link lines
+      if (lower === 'frontendengineers.com' || lower === 'frontendengineers.com/pricing' || lower.includes('https://') || lower.includes('http://')) {
         continue;
       }
       nonHashLines.push(trimmed);
     }
   }
 
-  // 3. Ensure the first line contains both "FrontendEngineers.com" and "Remote Frontend Job"
+  // 4. Ensure the first line contains both "FrontendEngineers.com" and frontend job reference
   if (nonHashLines.length > 0) {
     const firstLine = nonHashLines[0];
     const hasFE = /frontendengineers\.com/i.test(firstLine);
-    const hasJob = /remote frontend job/i.test(firstLine);
+    const hasJob = /(remote\s+)?frontend\s+(job|engineer|dev|role)s?/i.test(firstLine);
 
     if (!hasFE || !hasJob) {
-      nonHashLines[0] = `Landing a high-paying Remote Frontend Job shouldn't take months of being ghosted - FrontendEngineers.com gives you the direct edge.`;
+      nonHashLines[0] = FALLBACK_HOOKS[Math.floor(Math.random() * FALLBACK_HOOKS.length)];
     }
   } else {
-    nonHashLines.push(`Landing a high-paying Remote Frontend Job shouldn't take months of being ghosted - FrontendEngineers.com gives you the direct edge.`);
+    nonHashLines.push(FALLBACK_HOOKS[Math.floor(Math.random() * FALLBACK_HOOKS.length)]);
   }
 
-  // Group lines intelligently (keep bullet items grouped nicely)
+  // 5. Group body lines with clean spacing
   let bodyText = '';
   for (let i = 0; i < nonHashLines.length; i++) {
     const curr = nonHashLines[i];
-    const prev = i > 0 ? nonHashLines[i - 1] : null;
-    const isCurrBullet = curr.startsWith('-') || curr.startsWith('•');
-    const isPrevBullet = prev && (prev.startsWith('-') || prev.startsWith('•'));
-
     if (i === 0) {
       bodyText += curr;
-    } else if (isCurrBullet && isPrevBullet) {
-      bodyText += '\n' + curr;
     } else {
       bodyText += '\n\n' + curr;
     }
   }
 
-  // 4. In-between links block as requested
-  const linksBlock = `👉 Explore remote frontend jobs:\nhttps://www.frontendengineers.com\n\n👉 Get pro access for just $9/month:\nhttps://www.frontendengineers.com/pricing`;
+  // 6. Action links block formatted with high-converting emojis
+  const linksBlock = `🔍 Explore active roles:\nhttps://www.frontendengineers.com\n\n⚡ Upgrade to PRO access here:\nhttps://www.frontendengineers.com/pricing`;
 
-  const uniqueTags = Array.from(new Set(hashTags)).slice(0, 4);
-  const tagString = uniqueTags.length > 0
-    ? uniqueTags.join(' ')
-    : '#FrontendDeveloper #ReactJS #RemoteWork #TechJobs';
+  // 7. Combine extracted hashtags with top-performing defaults, keeping 8 unique tags
+  const combinedTags = [...hashTags, ...DEFAULT_HASHTAGS];
+  const uniqueTags = Array.from(new Set(combinedTags.map(t => t.trim()))).filter(Boolean).slice(0, 8);
+  const tagString = uniqueTags.join(' ');
 
-  // Construct final post: Catchy first line & body first -> Links in-between -> Hashtags at bottom
+  // Construct final post: Catchy hook & body -> Action links -> 8 High-performing hashtags
   return `${bodyText}\n\n${linksBlock}\n\n${tagString}`.trim();
 }
 
@@ -395,7 +423,11 @@ async function main() {
   console.log('🚀 LinkedIn Auto-Poster (Remote Frontend Jobs, Referrals & Employer Hiring)');
   console.log('═'.repeat(65));
   if (DRY_RUN) console.log('⚠️  DRY RUN MODE - will not publish to LinkedIn\n');
-  if (IS_LONG) console.log('📝 Long-form mode active (1200-1600 characters)\n');
+  if (IS_LONG) {
+    console.log('📝 Long-form mode active (1,100-1,500 characters, high-engagement layout)\n');
+  } else {
+    console.log('📝 Compact mode active (700-950 characters)\n');
+  }
 
   // 1. Generate single post with Gemini AI
   console.log('🤖 Generating LinkedIn post with Gemini AI...');
