@@ -23,10 +23,13 @@
  *   --dry-run    - Generate the post but don't publish to LinkedIn
  *   --short      - Generate a compact post (700-950 chars) instead of standard long-form
  *   --long       - Explicit long-form flag (now standard by default: 1100-1500 chars)
+ *   --hourly     - Run in continuous daemon mode, posting once every hour (60 min)
+ *   --loop <min> - Run in continuous daemon mode every <min> minutes
  * 
  * Usage:
  *   node scripts/post-to-linkedin.js --dry-run
  *   node scripts/post-to-linkedin.js
+ *   node scripts/post-to-linkedin.js --hourly
  */
 
 const fs = require('fs');
@@ -45,6 +48,11 @@ if (!process.env.GEMINI_API_KEY && fs.existsSync(envPath)) {
 const DRY_RUN = process.argv.includes('--dry-run');
 const IS_SHORT = process.argv.includes('--short');
 const IS_LONG = !IS_SHORT; // Default to long-form high-performing post structure
+const IS_HOURLY = process.argv.includes('--hourly');
+const LOOP_ARG_INDEX = process.argv.indexOf('--loop');
+const LOOP_INTERVAL_MINUTES = IS_HOURLY
+  ? 60
+  : (LOOP_ARG_INDEX !== -1 && process.argv[LOOP_ARG_INDEX + 1] ? parseInt(process.argv[LOOP_ARG_INDEX + 1], 10) : null);
 
 // ─── Config ──────────────────────────────────────────────────
 
@@ -417,10 +425,11 @@ async function postToLinkedIn(text, authorUrn, accessToken) {
   throw new Error(`LinkedIn API error: ${res.status} ${errBody}`);
 }
 
-// ─── Main ────────────────────────────────────────────────────
+// ─── Main Execution ──────────────────────────────────────────
 
-async function main() {
-  console.log('🚀 LinkedIn Auto-Poster (Remote Frontend Jobs, Referrals & Employer Hiring)');
+async function runSinglePostingCycle() {
+  console.log('\n🚀 Starting LinkedIn Post Cycle...');
+  console.log(`⏰ Current Timestamp: ${new Date().toISOString()}`);
   console.log('═'.repeat(65));
   if (DRY_RUN) console.log('⚠️  DRY RUN MODE - will not publish to LinkedIn\n');
   if (IS_LONG) {
@@ -519,10 +528,30 @@ async function main() {
     console.log(`\n🎉 Successfully published post to LinkedIn (${totalPublished} destination(s))!`);
   } else {
     console.error('\n❌ No posts were published successfully.');
-    process.exit(1);
+    if (!LOOP_INTERVAL_MINUTES) {
+      process.exit(1);
+    }
   }
 
   console.log('\n✅ LinkedIn posting complete!');
+}
+
+async function main() {
+  if (LOOP_INTERVAL_MINUTES) {
+    console.log(`🔁 Hourly continuous loop mode enabled: running every ${LOOP_INTERVAL_MINUTES} minutes.`);
+    while (true) {
+      try {
+        await runSinglePostingCycle();
+      } catch (err) {
+        console.error('❌ Cycle encountered an error:', err.message || err);
+      }
+      const nextTime = new Date(Date.now() + LOOP_INTERVAL_MINUTES * 60 * 1000).toLocaleTimeString();
+      console.log(`\n⏳ Next hourly cycle will run in ${LOOP_INTERVAL_MINUTES} minutes (at ${nextTime}). Sleeping...`);
+      await new Promise(r => setTimeout(r, LOOP_INTERVAL_MINUTES * 60 * 1000));
+    }
+  } else {
+    await runSinglePostingCycle();
+  }
 }
 
 main().catch((err) => {

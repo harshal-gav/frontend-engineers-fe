@@ -14,6 +14,7 @@
     "linkedin:login": "node scripts/linkedin-login.js",
     "linkedin:post": "node scripts/post-to-linkedin.js",
     "linkedin:post:dry": "node scripts/post-to-linkedin.js --dry-run",
+    "linkedin:hourly": "node scripts/post-to-linkedin.js --hourly",
     "scrape": "node scripts/scrape-all-jobs.js",
     "scrape:api": "node scripts/api-scraper.js",
     "scrape:linkedin": "node scripts/linkedin-scraper.js"
