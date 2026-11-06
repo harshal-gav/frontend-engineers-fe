@@ -1,5 +1,36 @@
 [
   {
+    "id": "76a408828abe0f45d569f678d5cc5a4627f7ce3484cf3bb8d611641eda98349a",
+    "title": "Senior Software Engineer, Frontend",
+    "applyUrl": "https://jobicy.com/jobs/152539-senior-software-engineer-frontend",
+    "description": "Phantom is on a mission to connect the world to the freedom of open markets. Tens of millions of people all over the world use Phantom to access global markets that never close, including perpetuals, prediction markets, tokenized assets, stablecoins and memes. Phantom users are able to discover the markets that matter and the cultural moments that shape them, building conviction through real-time data and the verified performance of top traders. With self-custody and access to open networks at its core, Phantom lets them control their financial moves in the same app they use to safely store or spend money worldwide.\n\nPhantom has reached #1 in Google Play's finance category and consistently ranks in the top 50 apps across all categories. Phantom partners with many of the most trusted and influential names in finance like Hyperliquid, Stripe, Kalshi and Visa, to make the most popular and innovative financial products accessible to everyone.\n\nWe are around 180 people, fully remote, backed by a $150M Series C investment from a16z, Sequoia Capital and Paradigm.\n\nResponsibilities\r\n\r\n• \r\nFeature development: You will be owning features on our web platforms – currently the Phantom Extension and our website.\n\n• \r\nNew initiatives and products: You will be leading initiatives to add support for other blockchains to Phantom, and to launch new complementary products or infrastructure.\n\n• \r\nInterfacing with users: You will be interfacing directly with end-users and developers building on Phantom – supporting them and collecting feedback to inform the direction of the product.\n\n• \r\nTeam building: You will be working with the team to create and foster a culture of raising the bar with each new hire.\n\nQualifications\r\n\r\n• \r\nBachelors degree in Computer Science or related technical field or equivalent practical experience\n\n• \r\n5+ years full-time software engineering experience with some of the following technologies:\n\n• \r\nReact / Typescript / React-Query\n\n• \r\nSolana web3.js / ethers.js\n\n• \r\nDemonstrated interest in open and community-driven platforms\n\n• \r\nEnglish language proficiency\n\n• \r\nNice-To-Have: experience in a blockchain based project\n\nBenefits\r\n\r\n• \r\nCompetitive salary and equity\n\n• \r\nComprehensive insurance (medical/dental/vision) — 100% covered\n\n• \r\nStipend for your ideal remote / WFH set-up: laptop, headphones, and any other work gear you may need\n\n• \r\nFlexible hours and a long-standing, supportive remote environment\n\n• \r\nUnlimited vacation: Take time when you need it (and we really mean it!)\n\n• \r\n401(k) retirement plan\n\n• \r\nWellness benefit\n\n• \r\nDaily lunch benefit\n\nThe target base salary for this role will range between $180,000 to $220,000 with the addition of equity and benefits. This is determined by a few factors including your skillset, prior relevant experience, quality of interviews and market factors (such as location) at the point in time of offer.\n\n#LI-DNP\n\nWe strongly encourage candidates of all backgrounds to apply. We believe that our work is stronger with a variety of perspectives, and we’re eager to further diversify our company. If you have a background that you feel would make an impact at Phantom, please consider applying. We’re committed to building an inclusive, supportive place for you to do the best work of your career.\n\nBy submitting your resume and application materials, you acknowledge and agree that Phantom Technologies, Inc. (\"Phantom\") collects and processes your personal information (including application materials, interview records, and related data) to evaluate your candidacy. Phantom may use AI-powered tools and third-party service providers for transcription, note-taking, scheduling, and other administrative tasks. Phantom does not sell your information and your materials will be handled securely and in accordance with applicable data protection laws.",
+    "location": "Remote - LATAM,  Canada,  Europe,  USA",
+    "country": "LATAM,  Canada,  Europe,  USA",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-06T03:10:08.000Z",
+    "sourceHash": "76a408828abe0f45d569f678d5cc5a4627f7ce3484cf3bb8d611641eda98349a",
+    "company": {
+      "id": "phantom",
+      "name": "Phantom",
+      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/08/3d0a3a49-221.png",
+      "industry": "Technology",
+      "website": "https://phantom.com"
+    },
+    "slug": "senior-software-engineer-frontend-phantom-76a40882",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "LATAM,  Canada,  Europe,  USA"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "9fc127028751f0967fb4866eb83ad94bc88d020f9e4268cb23835b72f88c24ed",
     "title": "Senior Front-End Engineer (Next.js/React) - Real Estate - Mexico",
     "applyUrl": "https://jobicy.com/jobs/159205-senior-front-end-engineer-next-js-react-real-estate-mexico",
@@ -26194,76 +26225,5 @@
       "seniority": "mid",
       "employmentType": "fulltime"
     }
-  },
-  {
-    "id": "1271938c35dfd7df5d5f6c0c2a59744f08e6c855bb8ef79d73d7c1067110f523",
-    "title": "Frontend Developer, Intermediate (Remote Canada)",
-    "applyUrl": "https://jobs.lever.co/smiledigitalhealth/a3849d66-bf5a-42d0-87da-99529847a149/apply?lever-source=LinkedIn&source=LinkedIn&lever-source=LinkedInJobs&lever-origin=applied&lever-source%255B%255D=LinkedIn&_pc=193155&lever-source=LinkedInJobs",
-    "description": "About the job\n\nWorking for a company like Smile Digital Health means supporting our mandate for #BetterGlobalHealth. We strive towards this goal every day, and the results can be seen in the impact of our innovative health data platform and data management solutions, which are used in over 20 countries. We were #19 on Deloitte's Technology Fast 50 Ranking for 2024!\n\nSmile Digital Health makes it easy for healthcare stakeholders to collect and exchange data with our leading FHIR-based data liberation platform.\n\nAt its heart, the Smile platform enables people and organizations to better manage healthcare data. We help generate and liberate structured healthcare data to ensure effective delivery across care teams and health systems bringing #BetterGlobalHealth to patients everyday!\n\nApply today and find plenty of reasons to SMILE!\nThe Intermediate Front End Developer is a technical role that supports building and maintaining the user-facing aspects of Smile Digital Health’s Clinical Intelligence platform. This role enables a seamless user experience by translating design concepts into functional technical roadmaps and developing a functional, interactive and intuitive user interface. This role will collaborate closely with cross-functional teams to gather requirements, design and implement applications and test components of the system.\n\nResponsibilities:\n\nSupport in shaping the approach, scope, milestones, and solution design of a responsive, performant and scalable user interface for assigned modules and features. \nWork closely with the development team(s) to implement solutions by writing code, creating components and modules that meet development requirements. \nWrite comprehensive and manageable code and unit tests as well as develop and maintain relevant documentation for front-end components. Participate in rigorous testing cycles and defect resolution. \nDevelop and maintain a deep understanding of the functionality being developed to provide support to the team. \nLead architectural design discussions with regards to Angular front-end designs and help mentor/coach other developers in learning these best practices. \nContribute and adhere to team/department coding standards to ensure consistency. \nAttend and participate in client meetings, as required. \nLead and engage in detailed and in-person code reviews, pair-programming and collaborative problem analysis with teammates. \nParticipate in monthly Technology meetings to help guide corporate technical processes, architecture, and strategy. \n\n\n\nRequirements:\n\n5+ years of software development experience with Angular, JavaScript/Typescript, HTML, CSS and Git. \nExperience in the healthcare and/or technology industry preferred. \nBachelor’s degree in computer science, engineering, or equivalent and/or equivalent work experience. \nDemonstrated experience with building apps using Angular and having an in-depth understanding of core concepts including, but not limited to, state management/ observables/interceptors/routing, etc. \nFamiliar with agile and scrum processes. \nExcellent written and verbal communication that ensures effective collaboration and clear documentation. \nExperience with Slack, Google technologies, Figma, Jira, GitLab, Postman, Microsoft Azure, Jasmine/Karma, Cordova/Ionic, REST APIs, Bootstrap, preferred. \nExperience with CI/CD pipelines, Docker containers and networking, preferred. \nKnowledge or experience in healthcare, HL7/ FHIR is an asset but not required. \n\n\n\nSmile discloses that artificial intelligence (AI) may be used in portions of the recruitment and selection process, such as resume screening or application assessment. All hiring decisions are ultimately made by qualified human decision-makers, and AI tools are used to support - not replace - fair and equitable hiring practices.\n\nThis position is a replacement role, created to support Smile’s continued growth and commitment to operational excellence.\n\nSome of the benefits we offer:\n\n Remote Work Environment\n Flexible Time Away From Work Policy including PTO, Personal and Sick Days\n Competitive Salary and Health/Medical Benefits\n RRSP/TFSA/401K Employee Contribution\n Life and Disability\n Employee Assistance Program\n FHIR Study Program and Skillsoft Learning\n Super HAPI Fun Club\n\n\n\nSmile's core values include respect, inclusion, embracing our differences, and celebrating shared values because our people are the foundation of our success. We are big on creating a sense of belonging and empowering each other to bring our authentic selves to work. We are dedicated to fostering a workplace that values diversity, equity, and inclusion.\n\nWe welcome and encourage candidates of all backgrounds to apply. Candidates are encouraged to inform us if they wish to discuss or require accommodations during interviews or while working at Smile.\n\nWe may use artificial intelligence (AI) tools to support parts of the hiring process, such as reviewing applications, analyzing resumes, or assessing responses and identifying potential inconsistencies or verification signals in application materials based on available information. These tools assist our recruitment team but do not replace human judgment. Final hiring decisions are ultimately made by humans. If you would like more information about how your data is processed, please contact us.",
-    "location": "Remote - Canada",
-    "country": "Canada",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-07T18:50:33.325Z",
-    "sourceHash": "1271938c35dfd7df5d5f6c0c2a59744f08e6c855bb8ef79d73d7c1067110f523",
-    "company": {
-      "id": "smiledigitalhealth",
-      "name": "Smile Digital Health",
-      "logoUrl": "https://logo.clearbit.com/smiledigitalhealth.com",
-      "industry": "Technology",
-      "website": "https://smiledigitalhealth.com"
-    },
-    "slug": "frontend-developer-intermediate-remote-canada-smile-digital-health-1271938c",
-    "aiTags": {
-      "stack": [
-        "angular",
-        "typescript",
-        "javascript",
-        "css",
-        "figma",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Canada"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "dc36477578683c2dd0361aa8699980c9cdb352b9f63c55eef3828463efc452b3",
-    "title": "Frontend Designer - Remote",
-    "applyUrl": "https://yoailabs.careers-page.com/jobs/5e460543-4d19-4860-9384-b4297b427bc2?utm_medium=free_job_board&utm_source=linkedin",
-    "description": "About the job\n\nDesign & Frontend Specialist\n\nRole Type: Contractor\n\nLocation: Remote\n\nmicro1 is seeking Design & Frontend Specialists to support a customer project focused on design, UX, and frontend technical reasoning for AI training. No prior AI experience is required.\n\nKey Responsibilities\n\n\nAnalyze design and frontend challenges and explain technical decisions.\nCreate and review design docs, research reports, RFCs, and ADRs.\nEvaluate design systems, accessibility, and frontend architecture.\nAnalyze trade-offs, constraints, and user impact.\nSynthesize complex information into clear, actionable insights.\n\n\n\nRequired Skills\n\n\nProduct, UX & UI/Visual Design\nDesign Systems & Figma\nJavaScript / TypeScript & React\nAccessibility\nDesign & Technical Rationale Writing\nDesign Docs, Research Reports, RFCs/ADRs\nTrade-Off Analysis\nAnalytical Writing & Complex Information Synthesis\nAttention to Detail\n\n\n\nQualifications\n\n\n3+ years of experience in product design, UX, UI, or frontend engineering.\nStrong design/technical documentation and analytical writing skills.\nExperience with Figma, design systems, accessibility, and modern frontend technologies.",
-    "location": "Remote - San Marino",
-    "country": "San Marino",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-07T05:49:32.138Z",
-    "sourceHash": "dc36477578683c2dd0361aa8699980c9cdb352b9f63c55eef3828463efc452b3",
-    "company": {
-      "id": "yoailabs",
-      "name": "YO AI Labs",
-      "logoUrl": "https://logo.clearbit.com/yoailabs.com",
-      "industry": "Technology",
-      "website": "https://yoailabs.com"
-    },
-    "slug": "frontend-designer-remote-yo-ai-labs-dc364775",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "figma",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "San Marino"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    },
-    "isDead": true,
-    "deadAt": "2026-10-25T07:07:36.569Z"
   }
 ]
