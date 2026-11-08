@@ -178,7 +178,9 @@
       ],
       "seniority": "senior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "2f34a7bc5cc2d1592a3b6bd0acd76704654dc1794f981900dbaaee389f2b1438",
@@ -647,7 +649,9 @@
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "8e9d1cc4e47cfd6f7cb21b4fe6e7d333d40faacd37bd178a0d9449cf83690052",
@@ -2702,7 +2706,9 @@
       ],
       "seniority": "mid",
       "employmentType": "internship"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "5e11de10a61d8cdec43c230fbc96719add4aa049dcce912a3f3ea6ecc2959b79",
@@ -5243,7 +5249,9 @@
       ],
       "seniority": "senior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "41bd7870274235f2d733a55b2906e41f341a0c70ef859b2e5f9b8ac7a264bc80",
@@ -5307,7 +5315,9 @@
       ],
       "seniority": "junior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "46090788a2ea261d6ec49108591ec2e1f34240879caf25a94823bbe1f33805d0",
@@ -5782,7 +5792,9 @@
       ],
       "seniority": "senior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "51ad9c4ed003fc7867e54a3b15e6ee453062f7ac6f3597d4d83e6dfef27db580",
@@ -5893,7 +5905,9 @@
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "fd99340893b68c133ebba152c77a7da2ee9af1fe2e5cef815d613d8b8a4619ab",
@@ -6372,7 +6386,9 @@
       ],
       "seniority": "junior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "27077409d5e82077dc02f81a25fe3d7b75e93b728b1df798ebb4c5592c5c496f",
@@ -7583,7 +7599,9 @@
       ],
       "seniority": "senior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "dfa854d0ac8a240376d758cba1b632930117b92fcf13179c09241da86e6e962c",
@@ -8071,7 +8089,9 @@
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "85aefbd595b2354f7c2c8dc915d3afc38fc63ec32ccf9588de013d694f4d33b2",
@@ -9509,7 +9529,9 @@
       ],
       "seniority": "mid",
       "employmentType": "parttime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "b03c229e9ec34fc695ada3eb0c9cda129821d13aed07e340d7b3616bf17a4b80",
@@ -10371,7 +10393,9 @@
       ],
       "seniority": "senior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "227b95ac736e6fd8cb8bb5c1fb03c341968a4b5b2d7b18885f7b2692a268e0a5",
@@ -13238,7 +13262,9 @@
       ],
       "seniority": "lead",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "00e925a163cb7a46cc977818ba68600aa9c6a517c3944b1bc8c1a995f9037cd3",
@@ -13984,7 +14010,9 @@
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "720b8545745d38b047c26fc3901bf0e1007e126bf0d5ca1c62b2fdcb2cc5b78d",
@@ -15096,7 +15124,9 @@
       ],
       "seniority": "junior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "900cd14f93156e9c1a795ab221a1fcbbd669ec49b0e90643a15f65ff0424edf6",
@@ -15406,7 +15436,9 @@
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "ad3fda07fadb69ef85215f02d2ddcde2edc6c942e17d6ac8dd413bb9174ed1e6",
@@ -15434,7 +15466,9 @@
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "55e94a0675bcdf96ba09ec42add330599414fc5bf6ecb84a10c2c6fc8edaec68",
@@ -16435,7 +16469,9 @@
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "51bd84699e122351e4e7bb1c54f692286da8743ea4be21fe9743bd5238c3f253",
@@ -16609,7 +16645,9 @@
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "d2c05cd24f5507595057959abc91d5a2b3f157086a5dca018f2c6024f554ae84",
@@ -17298,7 +17336,9 @@
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "b7b7736bca85543b75cd02815d3142bb62cf54cd2037ffc89eb6d02ac482663a",
@@ -21537,7 +21577,9 @@
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "3a3539999ba56e5fd658f86e540ad1c00b95a51ed6758a819ce118509b008fa7",
@@ -21913,7 +21955,9 @@
       ],
       "seniority": "senior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "95c8ad7fdc7fb8ade8568a3be87b40aee19a49527a889478d6e99c55f136a0db",
@@ -23299,7 +23343,9 @@
       ],
       "seniority": "senior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "16b0cb97e61042334b9aa7621b306acade6a9f60d1f7e7a2100e0b3aeb56672a",
@@ -23561,7 +23607,9 @@
       ],
       "seniority": "senior",
       "employmentType": "fulltime"
-    }
+    },
+    "isDead": true,
+    "deadAt": "2026-11-08T08:16:30.396Z"
   },
   {
     "id": "4a994913771becbe571b7ff269af7dfa5f738778c295bd7e6b3afffa5e43432e",
