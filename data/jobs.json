@@ -1,5 +1,119 @@
 [
   {
+    "id": "1bb070f830d3dfa7aec838132be4282d97605a5eaf767ad92af749e10d2c150a",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://jobicy.com/jobs/152642-senior-frontend-engineer-2",
+    "description": "At ClickUp, we're building the future of work: the first truly converged AI workspace unifying tasks, docs, chat, calendar, and enterprise search, all supercharged by context-driven AI. We are an AI-native company. Every team member is expected to leverage AI daily, and we evaluate AI fluency as part of our hiring process. Join us and help redefine what's possible. 🚀\n\nCollaboration and partnership are vital to how ClickUp operates. A significant portion of your responsibilities will include working closely with members of the backend team and Integrations team to develop features together. Engineers at ClickUp are also responsible for the quality of their own code, so you will work with a QA counterpart to ensure all edge cases are tested. We’re scaling quickly, so we’re recruiting teammates who share our core values, know how to get sh*t done, and add to our very driven culture. You should be proficient in using one or more of the modern JavaScript frameworks (Angular//Vue/etc.) and have a strong understanding of building reusable components and developing for performance.\n\nThe Role:\n\n• \nBuild features in Angular 2+ while collaborating with designers, engineers, and product\n\n• \nArchitect efficient and reusable front-end code that drive the ClickUp user experience\n\n• \nManage individual project priorities, deadlines and deliverables\n\n• \nIdentify and resolve performance and scalability issues\n\n• \nBuild and maintain unit and integration tests\n\n• \nFixing bugs fast and finding robust solutions to tackle hard problems\n\n• \nFollow established practices for maintaining state inside ClickUp\n\nQualifications:\n\n• \n5+ years working with JavaScript and one or more modern frameworks (Angular 2+ required)\n\n• \nExperience with Redux style state management NgRx, Typescript, and RxJs\n\n• \nHTML/CSS experience, including concepts like layout, specificity, cross browser compatibility, and accessibility\n\n• \nA strong self-starter, operationally-focused; a problem-solver\n\n• \nExcellent interpersonal, written, and oral communication skills\n\n• \nYou’ve mentored teammates on new ways to deepen their technical craft\n\nEqual Opportunity Employer \n\nClickUp is an Equal Opportunity Employer, and qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, or national origin.\n\nPrivacy Notice\n\nClickUp collects and processes personal data in accordance with applicable data protection laws. You can find further details by viewing our Global Candidate Privacy Notice.\n\nIf you are a Philippine Job Applicant, please also see our Philippine Data Privacy Notice for further details.\n\nVisa Sponsorship\n\nPlease note we are unable to sponsor or take over sponsorship of an employment visa for roles outside of engineering and product at this time. Sponsorship for engineering and product roles is not guaranteed, but is instead based on the business needs for that specific role at that time. Please reach out to the recruiter with any questions.\n\nFraud Alert\n\nClickUp Talent Acquisition will only initiate contact via an @clickup.com email or through our official careers portal on clickup.com. We will never request fees, payments, or sensitive personal information. Please disregard any offers received outside these channels and report them to support@clickup.com.\n\nAI Processing Notice\n\nClickUp may use artificial intelligence and machine learning technologies to help review and screen candidates' employment applications against role-related criteria. These tools support, but do not replace, human decision‑making. If you have questions or need an accommodation in the recruitment process, please contact us at AskPeople@ClickUp.com.",
+    "location": "Remote - Bulgaria,  Czechia,  Hungary,  Ireland,  Poland,  Ukraine",
+    "country": "Bulgaria,  Czechia,  Hungary,  Ireland,  Poland,  Ukraine",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-08T02:55:11.000Z",
+    "sourceHash": "1bb070f830d3dfa7aec838132be4282d97605a5eaf767ad92af749e10d2c150a",
+    "company": {
+      "id": "clickup",
+      "name": "ClickUp",
+      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/cd5be0ef-221.jpg",
+      "industry": "Technology",
+      "website": "https://clickup.com"
+    },
+    "slug": "senior-frontend-engineer-clickup-1bb070f8",
+    "aiTags": {
+      "stack": [
+        "vue",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "redux",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bulgaria,  Czechia,  Hungary,  Ireland,  Poland,  Ukraine"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "879ac7c1f808e69e24d67349ca597686d5bf13055f50136de59d2660278fd26a",
+    "title": "Staff Frontend Engineer",
+    "applyUrl": "https://jobicy.com/jobs/152644-staff-frontend-engineer",
+    "description": "At ClickUp, we're building the future of work: the first truly converged AI workspace unifying tasks, docs, chat, calendar, and enterprise search, all supercharged by context-driven AI. We are an AI-native company. Every team member is expected to leverage AI daily, and we evaluate AI fluency as part of our hiring process. Join us and help redefine what's possible. 🚀\n\nCollaboration and partnership are vital to how ClickUp operates. A significant portion of your responsibilities will include working closely with members of the backend team and Integrations team to develop features together. Engineers at ClickUp are also responsible for the quality of their own code, so you will work with a QA counterpart to ensure all edge cases are tested. We’re scaling quickly, so we’re recruiting teammates who share our core values, know how to get sh*t done, and add to our very driven culture. You should be proficient in using one or more of the modern JavaScript frameworks (Angular//Vue/etc.) and have a strong understanding of building reusable components and developing for performance.\n\nThe Role:\n\n• \nBuild features in Angular 2+ while collaborating with designers, engineers, and product\n\n• \nArchitect efficient and reusable front-end code that drive the ClickUp user experience\n\n• \nManage individual project priorities, deadlines and deliverables\n\n• \nIdentify and resolve performance and scalability issues\n\n• \nBuild and maintain unit and integration tests\n\n• \nFixing bugs fast and finding robust solutions to tackle hard problems\n\n• \nFollow established practices for maintaining state inside ClickUp\n\nQualifications:\n\n• \n8+ years working with JavaScript and one or more modern frameworks (Angular 2+ required)\n\n• \nExperience with Redux style state management NgRx, Typescript, and RxJs\n\n• \nHTML/CSS experience, including concepts like layout, specificity, cross browser compatibility, and accessibility\n\n• \nA strong self-starter, operationally-focused; a problem-solver\n\n• \nExcellent interpersonal, written, and oral communication skills\n\n• \nYou’ve mentored teammates on new ways to deepen their technical craft\n\nEqual Opportunity Employer \n\nClickUp is an Equal Opportunity Employer, and qualified applicants will receive consideration for employment without regard to race, color, religion, sex, sexual orientation, gender identity, or national origin.\n\nPrivacy Notice\n\nClickUp collects and processes personal data in accordance with applicable data protection laws. You can find further details by viewing our Global Candidate Privacy Notice.\n\nIf you are a Philippine Job Applicant, please also see our Philippine Data Privacy Notice for further details.\n\nVisa Sponsorship\n\nPlease note we are unable to sponsor or take over sponsorship of an employment visa for roles outside of engineering and product at this time. Sponsorship for engineering and product roles is not guaranteed, but is instead based on the business needs for that specific role at that time. Please reach out to the recruiter with any questions.\n\nFraud Alert\n\nClickUp Talent Acquisition will only initiate contact via an @clickup.com email or through our official careers portal on clickup.com. We will never request fees, payments, or sensitive personal information. Please disregard any offers received outside these channels and report them to support@clickup.com.\n\nAI Processing Notice\n\nClickUp may use artificial intelligence and machine learning technologies to help review and screen candidates' employment applications against role-related criteria. These tools support, but do not replace, human decision‑making. If you have questions or need an accommodation in the recruitment process, please contact us at AskPeople@ClickUp.com.",
+    "location": "Remote - Bulgaria,  Czechia,  Hungary,  Ireland,  Poland,  Ukraine",
+    "country": "Bulgaria,  Czechia,  Hungary,  Ireland,  Poland,  Ukraine",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-08T02:55:13.000Z",
+    "sourceHash": "879ac7c1f808e69e24d67349ca597686d5bf13055f50136de59d2660278fd26a",
+    "company": {
+      "id": "clickup",
+      "name": "ClickUp",
+      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/06/cd5be0ef-221.jpg",
+      "industry": "Technology",
+      "website": "https://clickup.com"
+    },
+    "slug": "staff-frontend-engineer-clickup-879ac7c1",
+    "aiTags": {
+      "stack": [
+        "vue",
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "redux",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Bulgaria,  Czechia,  Hungary,  Ireland,  Poland,  Ukraine"
+      ],
+      "seniority": "principal",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "bb29a318cf205d4e327ba9e813ef052fdfaa0f7aa8b6b5512c26451691bc2b42",
+    "title": "Senior Frontend Engineer - 100% Remote - EMEA",
+    "applyUrl": "https://remotefirstjobs.com/companies/hostaway/jobs/senior-frontend-engineer-100-remote-emea-880616",
+    "description": "Description\n\nNOTE: This is a FULLY remote role, but the candidate must be within EMEA to collaborate with their team, peers, and internal customers. You do not have to be in the specific country or city shown in this listing, but please only apply if you are physically based within EMEA.\n\nTrusted by 20,000+ property managers worldwide, Hostaway is an industry leading, AI-powered vacation rental management platform designed for professional short-term rental operators. Hostaway brings everything together for greater efficiency and faster growth.\n\nProfitable, high-growth, and the first short-term rental Property Management System unicorn 🦄. Join us at our most exciting stage yet! Learn more about our recent valuation and story here.\n\nAbout the role\n\nAs a Senior Frontend Engineer at Hostaway, you&rsquo;ll take ownership of building and evolving the interfaces that our customers rely on every day. You&rsquo;ll be a key contributor to our frontend architecture, working in close collaboration with Product, Design, and Backend teams to deliver intuitive, high-performance experiences at scale. Beyond shipping features, you&rsquo;ll help raise the bar across the team — through code reviews, mentorship, and driving technical improvements that make everyone more effective.\n\nOur technical stack:\n\n• Frontend: JavaScript, React, TypeScript, CSS, HTML, Redux-Saga, RESTful API, Webpack, Figma\n\n• Tools: Jira, GitHub (code reviews), GIT, Jenkins, Slack, Confluence\n\nResponsibilities:\n\n• Design, build, and maintain scalable, high-quality UI components, features, and reusable libraries that support our design system.\n\n• Develop intuitive, performant, accessible, and responsive user experiences across browsers and devices.\n\n• Build and maintain frontend integrations with backend services, including REST APIs, and WebSocket-based real-time functionality.\n\n• Identify, troubleshoot, and resolve complex frontend issues, including memory leaks, performance bottlenecks, and production bugs.\n\n• Define, present, and lead relevant technical initiatives with a clear understanding of the challenge, why it matters, and the impact the delivery brings.\n\n• Contribute to testing, code reviews, architecture decisions, and engineering best practices to ensure quality and maintainability.\n\n• Collaborate closely with cross-functional teams and support the monitoring and reliability of released software in production.\n\nRequirements\n\n• 6+ years of frontend software development experience, with a strong track record of building scalable, maintainable applications.\n\n• Strong proficiency in React, TypeScript, JavaScript, CSS and HTML.\n\n• Experience with state management solutions such as Redux, Context API, or similar.\n\n• Hands-on experience integrating with backend systems using REST APIs, and/or WebSockets.\n\n• Comfortable using AI coding tools (Claude Code, Cursor, Copilot, etc.) as part of your daily workflow, and able to get real leverage out of them.\n\n• Strong ability to diagnose and fix memory leaks, frontend performance issues, and browser/runtime inefficiencies.\n\n• Experience with testing frameworks such as Jest, Cypress, or Playwright.\n\n• Proficiency monitoring and supporting production software.\n\n• Demonstrated expertise in cloud-native development, with a strong understanding of how to build and maintain resilient and scalable frontend architectures in a cloud environment.\n\nBonus points for\n\n• Experience working on a mature SaaS product, with a focus on improving and extending the UI for a large user base.\n\nWhat we offer\n\n• Competitive Compensation: We offer competitive pay based on market rates in the country of the applicant.\n\n• 100% Remote: Enjoy the freedom to work from anywhere within your country of residence—be it a co-working space, your home office, or even your dining room table. The choice is yours. Just don’t ask to work in our office (we don’t have one).\n\n• Equity: Every role in our company comes with valuable stock options in a fast-growing and profitable company. This ensures we all share in the company’s success.\n\n• Values-Driven Leadership: Our Core Values are not just words we’ve written to make us feel good. We leverage them daily when making strategic and tactical decisions.\n\n• Professional Growth: Our rapid growth offers unparalleled learning and development opportunities, along with a multitude of career advancement opportunities.\n\n• Annual Paid Leave: The specific amounts vary by country and are aligned with country and/or contract-specific norms.\n\n• Geographic Specific Benefits: As an international employer, we offer different country-specific benefits such as Health Insurance and Pensions in countries where these perks are customary. The specifics depend on the country of the applicant.\n\n• Dynamic Team Culture: As a global company with team members in over 40 countries, our diverse and international culture fuels our innovation and creativity, providing a key pillar to our success (and making it a lot of fun to work here).\n\nThank you for your interest. If you apply for this role, you will receive an email from our Talent Acquisition team after your application has been reviewed alongside the qualifications for this role and the qualifications of others who have applied.",
+    "location": "Remote - Global",
+    "country": "Global",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-07T08:52:37.000Z",
+    "sourceHash": "bb29a318cf205d4e327ba9e813ef052fdfaa0f7aa8b6b5512c26451691bc2b42",
+    "company": {
+      "id": "hostaway",
+      "name": "Hostaway",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/hostaway.com-c4f0f5b283-2.webp",
+      "industry": "Technology",
+      "website": "https://hostaway.com"
+    },
+    "slug": "senior-frontend-engineer-100-remote-emea-hostaway-bb29a318",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "css",
+        "webpack",
+        "redux",
+        "figma",
+        "cypress",
+        "jest",
+        "playwright",
+        "html"
+      ],
+      "remoteScope": "GLOBAL",
+      "eligibleRegions": [
+        "Global"
+      ],
+      "seniority": "senior",
+      "employmentType": "contract"
+    }
+  },
+  {
     "id": "fc0ae1a1cfa0fd8d238bb49c2ffa0b526edfcb08582397d5e06aa685ca11d341",
     "title": "Senior Software Engineer, Frontend (Digital Products – Technician Hub)",
     "applyUrl": "https://remotefirstjobs.com/companies/scout-motors-inc/jobs/senior-software-engineer-frontend-digital-products-technician-hub-880151",
@@ -24499,166 +24613,6 @@
         "Ghana"
       ],
       "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "32dd0d85a1856faba8140d7b913f0ad10bb74898e784b37854834024fe4b441c",
-    "title": "Frontend Developer",
-    "applyUrl": "https://www.fetchjobs.co/job-description-usb/D6BEC9EF5B22373EA1F914626B29CB6E?src=LinkedIn",
-    "description": "About the job\n\nAbout The Company\n\nQuik Hire Staffing is a leading recruitment agency dedicated to connecting top-tier talent with innovative organizations across various industries. With a commitment to excellence and a client-centric approach, we specialize in providing comprehensive staffing solutions that meet the unique needs of each client. Our team of experienced professionals leverages industry insights and a vast network to deliver timely and effective staffing services, ensuring our clients can focus on their core business operations while we handle their talent acquisition needs.\n\nAbout The Role\n\nWe are seeking a highly motivated and detail-oriented Recruitment Specialist to join our dynamic team at Quik Hire Staffing. This role is pivotal in driving our mission to connect qualified candidates with the right opportunities. The Recruitment Specialist will be responsible for managing the end-to-end recruitment process, including sourcing, screening, interviewing, and onboarding candidates. The ideal candidate will have a strong understanding of various recruitment strategies, excellent communication skills, and the ability to build lasting relationships with both clients and candidates. This position offers an exciting opportunity to work in a fast-paced environment, contribute to the growth of our organization, and make a meaningful impact on our clients’ success.\n\nQualifications\n\nThe ideal candidate should possess a bachelor’s degree in Human Resources, Business Administration, or a related field. Prior experience in recruitment or staffing is preferred, with a proven track record of successfully placing candidates across different industries. Strong interpersonal and communication skills are essential, along with the ability to work independently and as part of a team. Familiarity with applicant tracking systems and other recruitment tools is highly desirable. The candidate should demonstrate excellent organizational skills, attention to detail, and the ability to manage multiple priorities effectively. A proactive attitude, adaptability, and a passion for talent acquisition are key attributes for success in this role.\n\nResponsibilities\n\nAs a Recruitment Specialist, your primary responsibilities will include sourcing candidates through various channels such as job boards, social media, and professional networks. You will review resumes, conduct initial screenings, and coordinate interviews to ensure a seamless candidate experience. Building and maintaining relationships with clients to understand their staffing needs and providing tailored recruitment solutions will be a core aspect of your role. You will also be responsible for managing candidate databases, maintaining accurate records, and preparing reports on recruitment activities. Additionally, you will stay updated on industry trends and best practices to continuously improve recruitment strategies. Ensuring compliance with employment laws and company policies during all stages of the hiring process is essential. You will collaborate with team members and contribute to the development of innovative staffing initiatives that enhance our service delivery.\n\nBenefits\n\nQuik Hire Staffing offers a competitive benefits package designed to support our employees’ well-being and professional growth. Benefits include health insurance coverage, paid time off, and opportunities for ongoing training and development. We foster a collaborative and inclusive work environment that encourages innovation and continuous learning. Employees also have access to performance-based incentives and career advancement opportunities within the organization. Our flexible work arrangements aim to promote work-life balance, ensuring our team members are motivated and engaged in their roles. We are committed to recognizing and rewarding outstanding performance, making Quik Hire Staffing a rewarding place to build your career.\n\nEqual Opportunity\n\nQuik Hire Staffing is an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all employees. We do not discriminate based on race, religion, gender, sexual orientation, age, disability, or any other protected characteristic. Our recruitment practices are designed to promote fairness and equal access to employment opportunities. We believe that a diverse workforce enhances our ability to serve our clients effectively and fosters a culture of innovation and respect. We encourage candidates from all backgrounds to apply and join our team.\n\n\n\n\n\nDesired Skills and Experience\n\nRecruitment, Talent Acquisition, Candidate Sourcing, Interviewing, Applicant Tracking Systems, Relationship Management",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T05:58:03.724Z",
-    "sourceHash": "32dd0d85a1856faba8140d7b913f0ad10bb74898e784b37854834024fe4b441c",
-    "company": {
-      "id": "taskverse",
-      "name": "TaskVerse",
-      "logoUrl": "https://logo.clearbit.com/taskverse.com",
-      "industry": "Technology",
-      "website": "https://taskverse.com"
-    },
-    "slug": "frontend-developer-taskverse-32dd0d85",
-    "aiTags": {
-      "stack": [],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "acfbd1371b7596937afb07c08e7b0339cedae925a02ec8ae05c0b77599d72062",
-    "title": "Designer + Frontend Developer",
-    "applyUrl": "https://www.onti.global/careers/designer-frontend-developer",
-    "description": "About the job\n\n← Volver a carreras\n\nProducto y Tecnología\n\n\n Remoto\n Tiempo completo\n 2 a 3 años de experiencia\n\n\nDesigner + Frontend Developer\n\nEn Onti trabajamos el despertar de la consciencia - ayudar a alguien a recordar quién ya es, no a fabricarle una versión mejorada. Así construimos el producto también: con calma, sin prisas artificiales. Buscamos a alguien con buen ojo para la experiencia y la interfaz, que además sepa programar lo que diseña. Que la app se sienta como lo que enseñamos: clara, tranquila, sin ruido. Trabajarás de cerca con Andy, nuestro CTO.\n\nResponsabilidades\n\n\nDiseño de producto - flujos, pantallas y prototipos en Figma, desde la idea hasta el detalle final.\nLa app - React Native con Expo. Llevar el diseño a código: cursos, meditaciones, animaciones y microinteracciones.\nLanding y admin - nuestra página en Next.js y el panel interno que usa el equipo, con Tailwind.\nSistema de diseño - cuidar y hacer crecer los componentes, tipografía y color de Onti para que todo se sienta de la misma casa.\n\n\nRequisitos\n\n\nEspañol nativo o con dominio profesional - es requisito indispensable.\nBuen ojo para UX y UI: jerarquía, ritmo, tipografía, espacio. Sabes explicar por qué una pantalla funciona o no.\nDominas Figma: componentes, auto layout, prototipos que se pueden probar con gente real.\nEscribes React y TypeScript con soltura, y has llevado diseños tuyos a producción.\nExperiencia con React Native / Expo, Next.js y Tailwind; si sabes de animación (Reanimated, Framer Motion), mucho mejor.\nTe importan la accesibilidad y el detalle: estados vacíos, errores, cargas, modo oscuro.\nVienes de startups o equipos chicos y multidisciplinarios, donde las prioridades cambian seguido.\n\n\nStack\n\nDiseño Figma, sistema de diseño, prototipado\n\nFrontend React, Next.js, React Native / Expo, TypeScript\n\nEstilos y motion Tailwind, Reanimated, Framer Motion\n\nFlujo GitHub, Vercel, desarrollo estructurado con IA\n\nProceso de seleccion\n\n\n1.\n\n\nPortafolio, cover letter y CV\n\nMándanos tu portafolio, tu CV y unas líneas sobre por qué te late este puesto en particular.\n\n\n2.\n\n\nRevisión de portafolio\n\nNos cuentas un par de proyectos: qué problema había, qué decidiste y por qué.\n\n\n3.\n\n\nPrueba de diseño y código\n\nUn ejercicio corto: diseñar una pantalla y llevarla a código, parecido a algo que harías aquí de verdad.\n\n\n4.\n\n\nEntrevista con el equipo tech\n\nRevisamos juntos tu prueba y profundizamos en cómo trabajas.\n\n\n5.\n\n\nCulture fit\n\nÚltima plática, ahora con los founders, para conocernos y ver si encajamos.\n\nPostularme a esta vacante",
-    "location": "Remote - United Kingdom",
-    "country": "United Kingdom",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T05:57:26.246Z",
-    "sourceHash": "acfbd1371b7596937afb07c08e7b0339cedae925a02ec8ae05c0b77599d72062",
-    "company": {
-      "id": "onti",
-      "name": "Onti",
-      "logoUrl": "https://logo.clearbit.com/onti.com",
-      "industry": "Technology",
-      "website": "https://onti.com"
-    },
-    "slug": "designer-frontend-developer-onti-acfbd137",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "tailwind",
-        "figma"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United Kingdom"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    },
-    "isDead": true,
-    "deadAt": "2026-11-01T08:22:37.593Z"
-  },
-  {
-    "id": "cb6317b6fe2c828e04dbbe6793bf05f11d4890fa877d21952f0db2f4d9c654cf",
-    "title": "Frontend Engineer (Medical Imaging Viewer)",
-    "applyUrl": "https://careers.epam.com/en/vacancy/bltoqjs6a1hiqx4s4ym_en?country=Mexico&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
-    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
-    "location": "Remote - Mexico",
-    "country": "Mexico",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T05:41:23.499Z",
-    "sourceHash": "cb6317b6fe2c828e04dbbe6793bf05f11d4890fa877d21952f0db2f4d9c654cf",
-    "company": {
-      "id": "epamsystems",
-      "name": "EPAM Systems",
-      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
-      "industry": "Technology",
-      "website": "https://epamsystems.com"
-    },
-    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-cb6317b6",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Mexico"
-      ],
-      "seniority": "junior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "0dc3b37a6ffb67365d53b3c8917fb3fb1a456371c56d88e1f24c4e37969ab80d",
-    "title": "Frontend Engineer (Medical Imaging Viewer)",
-    "applyUrl": "https://careers.epam.com/en/vacancy/bltoqjs6a1hiqx4s4ym_en?country=Chile&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
-    "description": "About the job\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
-    "location": "Remote - Chile",
-    "country": "Chile",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T05:19:25.630Z",
-    "sourceHash": "0dc3b37a6ffb67365d53b3c8917fb3fb1a456371c56d88e1f24c4e37969ab80d",
-    "company": {
-      "id": "epamsystems",
-      "name": "EPAM Systems",
-      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
-      "industry": "Technology",
-      "website": "https://epamsystems.com"
-    },
-    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-0dc3b37a",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Chile"
-      ],
-      "seniority": "junior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "794592fad6e61abb9ae1145d7cc25147664ccd53baa07f8130b131a74fb3b78c",
-    "title": "Frontend Engineer (Medical Imaging Viewer)",
-    "applyUrl": "https://careers.epam.com/en/vacancy/bltoqjs6a1hiqx4s4ym_en?country=Brazil&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
-    "description": "About the job\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
-    "location": "Remote - Brazil",
-    "country": "Brazil",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T05:17:32.110Z",
-    "sourceHash": "794592fad6e61abb9ae1145d7cc25147664ccd53baa07f8130b131a74fb3b78c",
-    "company": {
-      "id": "epamsystems",
-      "name": "EPAM Systems",
-      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
-      "industry": "Technology",
-      "website": "https://epamsystems.com"
-    },
-    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-794592fa",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Brazil"
-      ],
-      "seniority": "junior",
       "employmentType": "fulltime"
     }
   }
