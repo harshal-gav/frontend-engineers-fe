@@ -1,5 +1,42 @@
 [
   {
+    "id": "3284771d80583b6b2dee5cf2b835347e5c4131a78debfa7b0f104bd8e17570eb",
+    "title": "Senior Frontend Engineer (Analytics Product Lead)",
+    "applyUrl": "https://remotefirstjobs.com/companies/cmg/jobs/senior-frontend-engineer-analytics-product-lead-880841",
+    "description": "The working model for this role is fully remote.\n\nThe Company\n\nCapital Markets Gateway LLC (CMG) is a capital markets-focused fintech transforming global equity capital markets (ECM) through data, technology, and connectivity. As the preferred source for ECM analytics and the first network connecting the buy-side and sell-side for ECM workflows, we are committed to reshaping how capital markets operate. Founded in 2017 by a team of ECM practitioners, CMG has completed three successful fundraising rounds and is backed by a group of the world’s most prestigious financial institutions. The CMG platform is currently relied upon by 25 global investment banks and 135 asset managers representing $40 trillion in AUM. For more information, please visit www.cmgx.io.\n\nThe Role\n\nWe’re looking for a Senior Frontend Engineer to join the Mission Control team (DataLab product) as the frontend technical lead for the western hemisphere-based team. As a frontend engineer, you will play a critical role in crafting user-centric, performant, and scalable interfaces that power our enterprise financial solutions using industry standard technologies like React, TypeScript, and GraphQL.\n\nYou will collaborate closely with product managers, back-end engineers, and engineering leaders to translate complex business requirements into clean, maintainable code. You will contribute to frontend architecture decisions, establish best practices in UI development, and champion design consistency, accessibility, and overall product quality.\n\nYou will also be empowered to use modern agentic coding tools thoughtfully to accelerate delivery, improve code quality, explore solutions, and raise the team’s engineering leverage while maintaining strong judgment, ownership, and review standards.\n\nOur Engineering Team\n\nThe CMG engineering team is made up of domain experts who collaborate across disciplines and share knowledge openly. We value engineers who are passionate about modern technologies and best practices who can raise the bar for React, TypeScript, UI architecture, testing, accessibility, and developer experience. Our engineers are encouraged to challenge the status quo and are constantly seeking improvement and efficiency in our codebase and platform. CMG engineers are empowered to explore solutions and bring recommendations to the table. We are in a period of making impactful engineering decisions, and this role will help guide frontend technical direction through research, prototyping, code review, and production-quality implementation.\n\nResponsibilities\n\n• Serve as the frontend technical lead for CMG’s DataLab product, helping set direction for the Mission Control team in the Western Hemisphere.\n\n• AI is changing how software gets built. In this role you&rsquo;ll contribute to the frontend development harness, push it hard as a daily user, and champion it across the team.\n\n• Develop and maintain complex, scalable user interfaces for web applications using React and TypeScript.\n\n• Partner with your cross functional product team to come up with the best solution, regardless of role boundaries or where the work technically sits.\n\n• Guide frontend architecture, component design, accessibility, performance, and developer experience improvements.\n\n• Contribute to overall product quality through unit, component, and E2E tests.\n\nQualifications\n\n• React: 5+ years\n\n• TypeScript: 5+ years\n\n• Software engineering: 10+ years\n\n• Experience leading frontend technical decisions, mentoring engineers, and driving UI architecture standards\n\n• Demonstrated ability to use agentic coding tools (we use Claude, Codex, and CoPilot) productively while maintaining high standards for correctness, security, maintainability, and team collaboration\n\n• Solid full-stack experience is expected (Node.js or otherwise, we are a .NET shop)\n\n• Fintech experience is a plus\n\nOur Tech Stack\n\n• React - We’re all in on React – we maintain multiple single-page React apps\n\n• TypeScript – 99% of our frontend codebase is TypeScript\n\n• GraphQL - served by a.NET GraphQL gateway\n\n• Nx monorepo\n\n• Testing – Jest/Testing Library/Playwright/Storybook\n\n• Material UI - CMG’s design system is built on a tried-and-true component library\n\n• Containerized - Run the entire stack on your machine with one click\n\n• Automatic preview environments created for every PR\n\n• AI-assisted and agentic coding workflows to improve productivity, discovery, testing, and delivery\n\nOur Values\n\n• We innovate with purpose\n\n• We focus on outcomes vs. output\n\n• We believe diverse and inclusive teams fuel innovation\n\n• We are humble yet candid\n\n• We do right by the customer\n\nWhat We Offer\n\n• Comprehensive benefits program (Medical, Dental & Vision)\n\n• Equity\n\n• 401k company match\n\n• Flexible Spending & Health Savings Account\n\n• Unlimited PTO\n\n• Remote work environment\n\n• Education reimbursement\n\n• Continuous learning opportunities\n\n• Life insurance\n\n• Employee referral bonus\n\n• Parental leave\n\n$180,000 - $200,000 a year\n\nThe successful candidate’s salary will be determined by non-discriminatory factors such as skills and experience. Additionally, this role is eligible to participate in our benefits program, including health, dental, vision, 401K, paid time off, and our equity plan.\n\nThis employer participates in E-Verify and will provide the federal government with your Form I-9 information to confirm you are authorized to work in the U.S.\n\nCMG embraces our ongoing commitment to building a culture reflecting the people, perspectives, and passions it represents. We will accept nothing less than equity, inclusion, and belonging for all. With the only constant in life being change, we will always listen, learn, and improve for the betterment of our teams, customers, and communities. CMG is proud to be an Equal Opportunity Employer.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-08T05:16:47.000Z",
+    "sourceHash": "3284771d80583b6b2dee5cf2b835347e5c4131a78debfa7b0f104bd8e17570eb",
+    "company": {
+      "id": "cmgcapitalmarketsgateway",
+      "name": "CMG (Capital Markets Gateway)",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/cmgx.io-b3ffc96684-2.webp",
+      "industry": "Technology",
+      "website": "https://cmgcapitalmarketsgateway.com"
+    },
+    "slug": "senior-frontend-engineer-analytics-product-lead-cmg-capital-markets-gateway-3284771d",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "less",
+        "graphql",
+        "storybook",
+        "jest",
+        "playwright",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "lead",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "1bb070f830d3dfa7aec838132be4282d97605a5eaf767ad92af749e10d2c150a",
     "title": "Senior Frontend Engineer",
     "applyUrl": "https://jobicy.com/jobs/152642-senior-frontend-engineer-2",
@@ -6821,76 +6858,6 @@
     },
     "isDead": true,
     "deadAt": "2026-11-01T08:22:37.593Z"
-  },
-  {
-    "id": "ed1836fb6126e8750bb03b8f638be97ca4130748f965d5f11568629853db3296",
-    "title": "Frontend Software Engineer (100% Remote - worldwide)",
-    "applyUrl": "https://remotefirstjobs.com/companies/tetherto/jobs/frontend-software-engineer-100-remote-worldwide-870324",
-    "description": "Description\n\nJoin Tether and Shape the Future of Digital Finance\n\nAt Tether, we’re not just building products, we’re pioneering a global financial revolution. Our cutting-edge solutions empower businesses-from exchanges and wallets to payment processors and ATMs-to seamlessly integrate reserve-backed tokens across blockchains. By harnessing the power of blockchain technology, Tether enables you to store, send, and receive digital tokens instantly, securely, and globally, all at a fraction of the cost. Transparency is the bedrock of everything we do, ensuring trust in every transaction.\n\nInnovate with Tether\n\nTether Finance: Our innovative product suite features the world’s most trusted stablecoin, USDT, relied upon by hundreds of millions worldwide, alongside pioneering digital asset tokenization services.\n\nBut that’s just the beginning:\n\nTether Power: Driving sustainable growth, our energy solutions optimize excess power for Bitcoin mining using eco-friendly practices in state-of-the-art, geo-diverse facilities.\n\nTether Data: Fueling breakthroughs in AI and peer-to-peer technology, we reduce infrastructure costs and enhance global communications with cutting-edge solutions like KEET, our flagship app that redefines secure and private data sharing.\n\nTether Education: Democratizing access to top-tier digital learning, we empower individuals to thrive in the digital and gig economies, driving global growth and opportunity.\n\nTether Evolution: At the intersection of technology and human potential, we are pushing the boundaries of what is possible, crafting a future where innovation and human capabilities merge in powerful, unprecedented ways.\n\nWhy Join Us?\n\nOur team is a global talent powerhouse, working remotely from every corner of the world. If you’re passionate about making a mark in the fintech space, this is your opportunity to collaborate with some of the brightest minds, pushing boundaries and setting new standards. We’ve grown fast, stayed lean, and secured our place as a leader in the industry.\n\nIf you have excellent English communication skills and are ready to contribute to the most innovative platform on the planet, Tether is the place for you.\n\nAre you ready to be part of the future?\n\nAbout the job\n\nAs a Senior Frontend Engineer, you’re not just building interfaces-you’re translating AI intelligence into meaningful human experiences. Your work directly impacts how users perceive, trust, and rely on QV.AC, making you essential to the company’s success in the competitive local AI assistant market\n\nResponsibilities\n\n• Deliver new features and bug fixes with a focus on reliability, performance, and user satisfaction\n\n• Maintain high codebase quality through consistent coding standards, code reviews, and automated testing\n\n• Design and develop responsive, high-performance UI and application state ensuring seamless user experiences across platforms\n\nRequirements\n\n• Proven experience with React/Preact and modern JavaScript/TypeScript in production-scale applications.\n\n• Strong competency in state management (Redux, Redux Toolkit, Zustand, or similar).\n\n• Ability to write modular, maintainable, and well tested code.\n\n• Solid skillset in testing & debugging complex frontend applications.\n\n• Deep interest or experience with P2P technologies or distributed systems.\n\n• Comfort working in a remote, globally distributed team; good communication skills.\n\nPreferred Qualifications\n\n• Experience with desktop application development (Electron, Tauri, or similar runtimes).\n\n• Familiarity with video/audio APIs (WebRTC, media streams) and real-time communication.\n\n• Demonstrated ability to optimize UI performance: rendering, memory management.\n\n• Experience building cross platform applications (macOS, Windows, Linux, etc).\n\n• Bonus: Past contributions to OSS projects, especially in P2P or decentralized tech.\n\nImportant information for candidates\n\nRecruitment scams have become increasingly common. To protect yourself, please keep the following in mind when applying for roles:\n\n• Apply only through our official channels. We do not use third-party platforms or agencies for recruitment unless clearly stated. All open roles are listed on our official careers page: https://tether.recruitee.com/\n\n• Verify the recruiter’s identity. All our recruiters have verified LinkedIn profiles. If you’re unsure, you can confirm their identity by checking their profile or contacting us through our website.\n\n• Be cautious of unusual communication methods. We do not conduct interviews over WhatsApp, Telegram, or SMS. All communication is done through official company emails and platforms.\n\n• Double-check email addresses. All communication from us will come from emails ending in @ tether.to or @ tether.io\n\n• We will never request payment or financial details. If someone asks for personal financial information or payment at any point during the hiring process, it is a scam. Please report it immediately.\n\nWhen in doubt, feel free to reach out through our official website.",
-    "location": "Remote - Global",
-    "country": "Global",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T23:52:13.000Z",
-    "sourceHash": "ed1836fb6126e8750bb03b8f638be97ca4130748f965d5f11568629853db3296",
-    "company": {
-      "id": "tetherio",
-      "name": "Tether.io",
-      "logoUrl": "https://cdn.remotefirstjobs.com/logo/tether-io-fbddafd231-2.webp",
-      "industry": "Technology",
-      "website": "https://tetherio.com"
-    },
-    "slug": "frontend-software-engineer-100-remote-worldwide-tether-io-ed1836fb",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "redux",
-        "zustand"
-      ],
-      "remoteScope": "GLOBAL",
-      "eligibleRegions": [
-        "Global"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "2981171c798f3c19358bb3e7531621f23e7a60176a54c74aacfe19945b5f40bc",
-    "title": "Sr. Software Engineer - Front-End",
-    "applyUrl": "https://remotefirstjobs.com/companies/lively/jobs/sr-software-engineer-frontend-870336",
-    "description": "About Lively\n\nLively set out to raise the bar on benefit solutions, because we believe no one should have to sacrifice personal wellness for financial wellness. While traditional benefits focus more on transactions and less on the humans using them, Lively harnesses user-centric design and innovative technology to deliver an effortless experience for employers and account holders alike. Our modern HSA is consistently top-rated, and we have since expanded our offerings to provide a full suite of other benefits and services for companies, consumers, and financial institutions.\n\nLively is a remote-first company, headquartered in San Francisco with employees across the US. Come join us and help make getting the value out of your benefits as simple as it should be.\n\nAbout the Role\n\nWe are looking for a strong front-end Senior Software Engineer who wants to create deep and meaningful product engagement experiences! We have an increasing user base, and you will be focusing on implementing and enhancing our investment and financial products. Our customers trust us with a lot: integrating seamlessly across financial institutions, moving funds, tracking balances, helping with their healthcare decisions, and keeping their data extremely secure.\n\nIn order to take on this mission we’re building our applications on modern web technologies around HTML/CSS/JavaScript/React, NodeJS/TypeScript, PostgreSQL, Amazon Lambdas and Kinesis etc. You should be comfortable in contributing to every part of the stack: from UI to API development, to complex integrations with financial institutions and partners, and building infrastructure, but you will be expected to be focused mostly on front-end development. You should feel comfortable in a fast paced, growing, and nimble environment, keeping in mind that everything we do is to better the lives of our users!\n\nResponsibilities\n\n• Analyze and provide feedback on product requirements.\n\n• Implement features and functionality with clean and maintainable codes.\n\n• Take pride in software quality through rigorous functional testing and writing automated unit tests.\n\n• Troubleshoot production issues, provide resolutions and recommendations for improvement.\n\nSkills & Experience\n\n• 5+ years of experience in software development, with a strong front end development background.\n\n• Bachelor&rsquo;s degree in Computer Science, Engineering, or a related field; or equivalent practical experience.\n\n• Strong experience with JavaScript, TypeScript and Node.js and React.\n\n• Experience with Storybook.\n\n• Strong fundamental understanding of relational DataBases (PostgreSQL, MySQL).\n\n• Proven experience in designing and developing scalable, high-performance web applications.\n\n• Strong understanding of software architecture and design patterns.\n\n• Excellent problem-solving skills and a proactive approach to identifying and addressing challenges.\n\n• Proven experience on building frontend services with high availability and scalability requirements.\n\n• Able to model and design intuitive and scalable schemas.\n\n• Experience with agile/scrum development methodologies.\n\n• Strong communication and interpersonal skills, with the ability to collaborate effectively with cross-functional teams.\n\n• Passion for technology and a continuous learner mindset.\n\n• Motivated to leverage new AI tools and technologies.\n\n• Someone who isn&rsquo;t afraid of responsibility, a good sense of humor and a down-to-earth personality.\n\n• Familiarity with AWS cloud platforms and DevOps practices is a plus.\n\nThe base salary listed is a range for this position. Actual pay will depend on the candidate’s location and experience.\n\n$125,000-$200,000 USD\n\nWe encourage you to apply even if you do not meet all of the qualifications, but feel you would be a good fit for the position.\n\nBenefits & Perks\n\nWe offer competitive salaries, stock options, medical, dental, vision, life and disability coverage. An HSA with employer contribution, FSA, paid parental leave, medical travel benefits, a 401k plan, flexible vacation policy, lifestyle spending accounts, and more!\n\nAt Lively, we believe having diverse teams in which everyone can be their authentic self is key to our success. We encourage people from underrepresented backgrounds to apply.  Pursuant to the San Francisco Fair Chance Ordinance, we will consider for employment qualified applicants with arrest and conviction records.  Come join us in our mission to help people optimize their healthcare spending, maximize their savings, and better their livelihood!\n\nLively Inc. participates in the E-Verify program. Learn more about E-Verify here:\n\nhttps://e-verify.uscis.gov/web/media/resourcesContents/E-Verify_Participation_Poster_ES.pdf\n\n#LI-Remote",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-10T00:15:08.000Z",
-    "sourceHash": "2981171c798f3c19358bb3e7531621f23e7a60176a54c74aacfe19945b5f40bc",
-    "company": {
-      "id": "lively",
-      "name": "Lively",
-      "logoUrl": "https://cdn.remotefirstjobs.com/logo/lively-36b4.webp",
-      "industry": "Technology",
-      "website": "https://lively.com"
-    },
-    "slug": "sr-software-engineer-front-end-lively-2981171c",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "css",
-        "less",
-        "storybook",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
   },
   {
     "id": "3d3bcb26932c4eb8273e320ca46cb7d68f9673e7a7de27009772df8a88345f03",
@@ -24228,392 +24195,6 @@
       ],
       "seniority": "mid",
       "employmentType": "parttime"
-    }
-  },
-  {
-    "id": "bb6f763dcc8d414ec3a0cbcafd6b3cd0c45472e8eefb3e19fb28d6744c8fac29",
-    "title": "Senior Frontend Engineer (Medical Imaging Viewer)",
-    "applyUrl": "https://careers.epam.com/en/vacancy/blt01l2qnaoqxo476xi_en?country=Colombia&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
-    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are looking for a Senior Frontend Engineer to build and evolve a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. You will collaborate with engineering, product, and design to solve complex UI and API-adjacent problems.\n\nResponsibilities\n\n\nDesign core functionality for a web-based medical imaging viewer\nBuild user interfaces using TypeScript and ReactJS\nMaintain existing frontend features and improve performance and reliability\nCollaborate with engineers to analyze problems and implement solutions\nCoordinate with product and design to deliver intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\n3+ years of professional frontend development experience\nStrong TypeScript and ReactJS experience\nProven DICOM Medical Viewers experience, including OHIF/DICOM\nStrong API and integration skills across client/server boundaries\nSolid frontend architecture knowledge, including state management and component design\nExcellent written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience with regulated environments or healthcare/clinical trial software\nExperience with Python or Go for backend collaboration\nExperience building CI/CD pipelines, with GitLab CI exposure\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
-    "location": "Remote - Colombia",
-    "country": "Colombia",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-10T05:07:07.239Z",
-    "sourceHash": "bb6f763dcc8d414ec3a0cbcafd6b3cd0c45472e8eefb3e19fb28d6744c8fac29",
-    "company": {
-      "id": "epamsystems",
-      "name": "EPAM Systems",
-      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
-      "industry": "Technology",
-      "website": "https://epamsystems.com"
-    },
-    "slug": "senior-frontend-engineer-medical-imaging-viewer-epam-systems-bb6f763d",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Colombia"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "fc181b8733abc2c6e4bd09f9c1ea4d19c60cfd7c7db5567af4fb7af9cbf879a6",
-    "title": "Frontend Engineer, Underwriting",
-    "applyUrl": "https://www.theladders.com/linkedin/88902896?src=LinkedIn",
-    "description": "About the job\n\nFor our client, we are seeking a Frontend Engineer, Underwriting to join the team of a leader in the Information Technology space.\n\nThis role will focus on building polished, high-performing web experiences that support underwriting workflows in a data-intensive environment. You will partner closely with Product, Design, backend engineering, and end users to improve usability, trust, and speed across critical internal tools. The position will also contribute to AI-assisted workflows and help shape technical direction as the product scales.\n\nLocation: Remote - US based candidates only, no visa sponsorship available\n\nCompensation: $115,000 – $168,000 annually\n\nResponsibilities\n\n\n Build and enhance a web-based experience for underwriting teams and their workflows\n Ensure fast, reliable performance of a data-heavy application as usage grows\n Develop clear, trustworthy interfaces for AI-assisted workflows\n Collaborate with Product Management and Design to define user requirements\n Engage directly with underwriters to gather insights for product improvements\n Promote technical quality through code reviews and contributions to the technical roadmap\n\n\nQualifications\n\n\n Two or more years in software development; degree in Computer Science or similar experience\n Proficient in modern TypeScript, React, HTML, and CSS for web user interfaces\n Experience integrating frontend apps with REST APIs and collaborating with backend engineers\n Comfortable managing complex application state such as tables, filters, and synchronized workflows\n Skilled in diagnosing frontend performance issues using tools such as Chrome DevTools and Sentry\n Strong product judgment with the ability to navigate ambiguity effectively\n Familiarity with Git and agile development practices\n Demonstrates curiosity and a willingness to learn from users and teammates\n\n\nBenefits\n\n\n 100% medical, dental, and vision coverage\n Flexible PTO policy\n Annual home office stipend and access to WeWork\n Mental and physical health wellness programs\n Competitive compensation with advancement opportunities\n\n\nOur client is an equal opportunity employer. We encourage you to apply even if you don’t meet every qualification-your background could be exactly what this team needs.\n\n\n\n\n\nDesired Skills and Experience\n\nTypeScript, React, HTML, CSS, REST APIs, Git, Chrome DevTools, Sentry, Datadog, Python, relational databases, SQL, Next.js, Material UI, rich-text editors, virtualized tables, real-time collaborative interfaces, cybersecurity, insurtech, state management libraries (e.g., Redux, MobX), performance optimization techniques (e.g., code splitting, lazy loading), Agile methodologies, cloud services (e.g., AWS, Azure), UI/UX design principles, integrating third-party libraries and APIs",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T19:35:14.848Z",
-    "sourceHash": "fc181b8733abc2c6e4bd09f9c1ea4d19c60cfd7c7db5567af4fb7af9cbf879a6",
-    "company": {
-      "id": "ladders",
-      "name": "Ladders",
-      "logoUrl": "https://logo.clearbit.com/ladders.com",
-      "industry": "Technology",
-      "website": "https://ladders.com"
-    },
-    "slug": "frontend-engineer-underwriting-ladders-fc181b87",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "css",
-        "redux",
-        "mobx",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "52de774a2f3f0e22cfd2fa50bd2a565ac3814c5f62eec22676a551a3430b6ca3",
-    "title": "Software Engineer II, Frontend (Marketing and Privacy)",
-    "applyUrl": "https://job-boards.greenhouse.io/affirm/jobs/8010608003?gh_src=689c81d53us",
-    "description": "About the job\n\nAt Affirm, we exist for the moments that matter-giving people a clear, predictable way to pay over time, with no hidden fees, no surprises, and no tradeoffs on what matters most.\n\nMarketing & Privacy Engineering (MPE) builds trusted, privacy-aware consumer web experiences and measurement systems that enable sustainable growth. Within MPE, the MarTech pillar owns Affirm’s Logged-Out Web experiences, web experimentation, client-side tagging, marketing technology integrations, attribution, and measurement. As a Software Engineer II on MPE, you will build and improve high-traffic consumer web experiences while contributing to the experimentation, instrumentation, and marketing integrations that help Affirm understand and grow consumer acquisition. You will work in a modern web stack across React, TypeScript, shared component systems, testing, performance, and observability, with opportunities to develop deeper expertise in technologies such as Google Tag Manager, analytics and experimentation platforms, conversion tracking, and marketing APIs. You will partner with senior engineers as well as Product, Design, Marketing, Analytics, and Data Engineering to ship reliable experiences and ensure measurement and privacy requirements are considered during development. This role is a strong fit for an engineer who enjoys building polished web products, learning new technical domains, and taking increasing ownership of systems that operate at scale.\n\nWhat You'll Do\n\n\nWith the support of your team’s tech lead and manager, you will break down larger projects into individual tasks, deliver them in multiple phases, and collaborate with others to ensure timely delivery of your work.\nYou will support your peers and stakeholders in the product development lifecycle by collaborating with product management, design & analytics by participating in ideation, articulating technical constraints, and partnering on decisions that properly consider risks and trade-offs.\nYou will support the operations and availability of your team’s artifacts by creating and monitoring metrics, escalating when needed, and supporting “keep the lights on” & on-call efforts.\nYou will contribute to a sense of community on your team by engaging in growth and development activities such as participation in the interview process.\n\n\nWhat We Look For\n\n\nYou have a total of 1.5+ years of experience as a software engineer.\nYou have experience shipping web apps using declarative UI frameworks like React or Vue.\nYou have experience working with Javascript/Typescript.\nYou have mastered taking a simple problem or business scenario into a solution that interacts with multiple software components, and executing on it by writing clear, easily understood, well tested and extensible code.\nYou are comfortable navigating a large code base, debugging others' code, and providing feedback to other engineers through code reviews.\nYour experience demonstrates that you take ownership of your growth, proactively seeking feedback from your team, your manager, and your stakeholders.\nYou have strong verbal and written communication skills that support effective collaboration with our global engineering team.\nThis position requires either equivalent practical experience or a Bachelor’s degree in a related field\n\n\nBase Pay Grade - L\n\nEquity Grade - 6\n\nEmployees new to Affirm typically come in at the start of the pay range. Affirm focuses on providing a simple and transparent pay structure which is based on a variety of factors, including location, experience and job-related skills.\n\nBase pay is part of a total compensation package that may include equity rewards, monthly stipends for health, wellness and tech spending, and benefits (including 100% subsidized medical coverage, dental and vision for you and your dependents.)\n\nUSA base pay range (CA, WA, NY, NJ, CT) per year: $165,000 - $225,000\n\nUSA base pay range (all other U.S. states) per year: $146,000 - $206,000\n\nRemote-first with flexibility built in\n\nAffirm is proud to be a remote-first company. Most roles can be done from almost anywhere within the country of employment. Some positions may occasionally require in-person work at an Affirm office, and a few are office-based due to the nature of the work. All new hires will be invited to attend an in-person onboarding experience.\n\nBenefits Designed For You\n\nOur benefits reflect our commitment to care, transparency, and flexibility. Here are a few highlights:\n\n\nHealth coverage at no cost: We cover 100% of premiums for employees and their dependents.\nSpending stipends: Monthly stipends support your tech setup, and the ability to choose health and wellness options that are right for you.\nTime off to recharge: Flexible time off and generous holiday calendars help you rest when you need to.\nOwn a piece of what you build: Our employee stock purchase plan (ESPP) lets you buy Affirm stock at a discount.\n\n\nWe’re committed to providing an inclusive interview process, including accommodations for candidates with disabilities. If you need support, we’re happy to help.\n\nFor positions based in San Francisco or Los Angeles: Affirm considers qualified applicants with arrest and conviction records, as required by law.\n\nBy clicking \"Submit Application,\" you acknowledge that you have read Affirm's Global Candidate Privacy Notice and consent to the use of your personal information as described.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T19:29:49.261Z",
-    "sourceHash": "52de774a2f3f0e22cfd2fa50bd2a565ac3814c5f62eec22676a551a3430b6ca3",
-    "company": {
-      "id": "affirm",
-      "name": "Affirm",
-      "logoUrl": "https://logo.clearbit.com/affirm.com",
-      "industry": "Technology",
-      "website": "https://affirm.com"
-    },
-    "slug": "software-engineer-ii-frontend-marketing-and-privacy-affirm-52de774a",
-    "aiTags": {
-      "stack": [
-        "react",
-        "vue",
-        "typescript",
-        "javascript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "41dc349b9c4d213677a6b6171fdde436040b1b00ce28efbeedff6d0b5e122a25",
-    "title": "Senior Software Engineer (Frontend)",
-    "applyUrl": "https://www.remotehunter.com/apply-with-ai/cd35514b-8f26-4680-946c-df06b6aef3b7?utm_medium=job_posting&utm_source=linkedin&utm_campaign=software_engineer&utm_category=software_engineer&utm_term=senior_software_engineer_frontend",
-    "description": "About the job\n\nAbout Our Client:\n\nHappy Money operates in the consumer finance industry, addressing the challenge of simplifying access to loans. The organization offers a fully digital lending platform that enables consumers to obtain straightforward loans while assisting credit unions, banks, and asset managers to diversify balance sheets and scale effectively. It has originated more than $7 billion in loans, supporting nearly 350,000 customers in managing their financial futures. The company functions as a fully distributed workforce.\n\n\n\n\nAbout the Opportunity:\n\nThe SENIOR SOFTWARE ENGINEER role focuses on designing, developing, deploying, and maintaining consumer-facing applications, infrastructure, and data products that support the lending business. This position demands a strong sense of product ownership and customer focus, with responsibilities including contributing to complex specifications and ensuring high-quality software delivery. The role impacts the organization by enhancing the customer experience and driving product innovation.\n\n\n\n\nResponsibilities:\n\nDevelop and maintain products delivering exceptional customer experiences.\nOwn design, testing, development, and delivery of new and existing features.\nParticipate in all stages of the software development lifecycle.\nCollaborate with cross-functional teams to identify optimal solutions.\nDrive engineering efficiency using AI-driven coding agents and workflows for scalable React applications.\nImplement automated frontend testing for key components and workflows.\nIndependently design solutions for complex problems.\nBuild maintainable, scalable, fault-tolerant, and efficient systems.\nEnsure code quality to meet product standards.\nPrioritize technical debt and tooling to reduce operational burden and evolve systems.\nFoster positive team dynamics and inclusion.\nMentor frontend engineers across the team.\nTake initiative and proactively advance projects.\n\n\n\n\nRequirements:\n\n5+ years of production experience with React, including hooks and component architecture.\nProficient in ReactJS, CSS, GraphQL, JavaScript, NodeJS; familiarity with Python and Java.\nStrong preference for full-stack development with emphasis on frontend interfaces and SDKs.\nCommitment to automated testing practices.\nAbility to scope, prioritize, and deliver on projects across ambiguous and clear requirements.\nExcellent written and verbal communication skills.\nResults-oriented approach with problem-solving aptitude.\nExperience with AWS services such as EC2, S3, Lambda, and API Gateway.\nBackground in developing scalable, high-availability consumer applications.\nBachelor's or Master's degree in Computer Science or related field or equivalent experience.\n\n\n\n\nPay Range and Compensation Package:\n\nBase salary range $140,000 to $160,000 USD.\n\n\n\n\nBenefits & Perks:\n\nMedical, dental, and vision insurance options.\nEligibility for annual bonus.\n401(k) plan with matching contributions.\nGenerous paid time off including sick leave, vacation, and volunteer days.\n12 weeks paid parental leave.\nCompany-paid short and long-term disability and life insurance.\nMonthly technology stipend for remote work expenses.\nFully distributed workforce.\n\n\n\n\nEqual Opportunity Statement: Our client is an equal opportunity employer. They celebrate diversity and are committed to creating an inclusive environment for all employees. All qualified applicants will receive consideration for employment without regard to race, color, religion, gender, gender identity or expression, sexual orientation, or national origin.\n\n\n\n\nNote:\n\nRemoteHunter is a recruitment partner of this role. Please note that all employment decisions, including candidate assessment, interviews, hiring, compensation, and employment terms, are made exclusively by the hiring employer.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T19:25:38.096Z",
-    "sourceHash": "41dc349b9c4d213677a6b6171fdde436040b1b00ce28efbeedff6d0b5e122a25",
-    "company": {
-      "id": "remotehunter",
-      "name": "RemoteHunter",
-      "logoUrl": "https://logo.clearbit.com/remotehunter.com",
-      "industry": "Technology",
-      "website": "https://remotehunter.com"
-    },
-    "slug": "senior-software-engineer-frontend-remotehunter-41dc349b",
-    "aiTags": {
-      "stack": [
-        "react",
-        "javascript",
-        "css",
-        "graphql"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "d8eff2b982f08efbc516eef12262549fb0694f59a04b44d4bd75483e40caed3f",
-    "title": "Frontend Developer II - WFH Opportunity",
-    "applyUrl": "https://www.torentify.com/jobs/6ac8d2fb05fc7b607e33cac9",
-    "description": "About the job\n\nAbout the Company\n\n\n\n\nA fast-growing, highly profitable fintech company is building a premium financial product for a sophisticated customer base. The team values strong engineering, thoughtful product decisions, and a high standard of design and user experience.\n\n\n\n\nAbout the Role\n\n\n\n\nThe company is looking for a Senior Frontend Engineer to help improve and expand its customer-facing product. This role is suited to an engineer who cares about frontend quality, enjoys working closely with product and design teams, and wants to take ownership of meaningful product areas.\n\n\n\n\nYou’ll contribute to the frontend architecture, establish engineering standards, and help shape the technical direction as the team continues to scale.\n\n\n\n\nKey Responsibilities\n\n\n\n\n•Build polished, high-quality user experiences using React and TypeScript.\n\n•Work closely with product and design teams to bring new product experiences to life.\n\n•Help shape frontend architecture, reusable patterns, and engineering standards.\n\n•Take ownership of meaningful product areas, from implementation through ongoing improvement.\n\n•Contribute to technical decisions that support scalability and maintainability.\n\n•Maintain a strong focus on UI/UX quality and the overall customer experience.\n\n\n\n\nRequired Qualifications\n\n\n\n\n•5+ years of software engineering experience.\n\n•Strong hands-on experience with React and TypeScript.\n\n•Experience building production-grade, customer-facing applications.\n\n•A strong eye for UI/UX, visual consistency, and design quality.\n\n•Understanding of frontend architecture, scalability, and maintainable code.\n\n•Ability to work effectively with product and design teams.\n\n\n\n\nPreferred Qualifications\n\n\n\n\n•Experience working at a startup or a big technology company.\n\n•Familiarity with Redux, Python, Django, or PostgreSQL.\n\n•Experience in financial services or fintech.\n\n\n\n\nIdeal Candidate Profile\n\n\n\n\nThe ideal candidate combines strong frontend engineering skills with a genuine interest in product development. They pay attention to the details that shape the user experience, care about how an application looks and feels, and take responsibility for delivering high-quality work. They’re comfortable contributing beyond individual tickets and helping influence the direction of the product and its underlying technology.\n\n\n\n\nWork Arrangement\n\n\n\n\n•Remote position.\n\n\n\n\nSalary and Equity\n\n\n\n\n•Salary of up to $230,000.\n\n•Equity is included as part of the opportunity.\n\n\n\n\nHow to Express Interest\n\n\n\n\nCandidates interested in exploring the opportunity can contact the recruiter directly.",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T19:23:37.613Z",
-    "sourceHash": "d8eff2b982f08efbc516eef12262549fb0694f59a04b44d4bd75483e40caed3f",
-    "company": {
-      "id": "torentify",
-      "name": "Torentify",
-      "logoUrl": "https://logo.clearbit.com/torentify.com",
-      "industry": "Technology",
-      "website": "https://torentify.com"
-    },
-    "slug": "frontend-developer-ii-wfh-opportunity-torentify-d8eff2b9",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "redux"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "c8185e989a3d73076497b94ac080d11e453136635d6ecb46798928e46217b1ca",
-    "title": "Desarrollador React Frontend - Trabajo Remoto",
-    "applyUrl": "https://applicants.bairesdev.com/job/169/161868/apply?utm_source=linkedinjobposting&utm_medium=jobposting&utm_campaign=Lima,Peru-20261009&__cf_chl_rt_tk=bGLTR6J0CkTr_5QPBRwyEyHe89cRTwlvLxVBEGfgFKw-1791572065-1.0.1.1-OgQc4UISTTzreORzkC63J6DymDLY2BU_dLAGFVktFvQ",
-    "description": "About the job\n\nEn BairesDev® llevamos 15 años liderando proyectos de tecnología para clientes como Google, Rolls-Royce y las startups más innovadoras de Silicon Valley. Actualmente, contamos con un equipo de 4000 profesionales conformado por el top 1% de la industria trabajando de forma remota desde más de 50 países.\n\n\n\n\nAl postularte a esta vacante, estarás dando el primer paso en un proceso que va más allá de lo convencional: Buscaremos conocer en profundidad tus habilidades, intereses y expectativas con el objetivo de realizar una búsqueda personalizada y encontrar el rol ideal para ti en BairesDev.\n\n\n\n\nDesarrollador React Frontend en BairesDev\n\n\n\n\nSer un Desarrollador React Frontend en nuestro equipo de Desarrollo es ser un solucionador de problemas a tiempo completo. Esperamos que tus habilidades sean una combinación de experiencia, conocimientos e independencia. La Innovación es también el corazón de la estrategia en BairesDev. Por lo tanto, si estás dispuesto a asumir las tareas más complejas y ser un experto en tu stack tech en React, entonces probablemente seas uno de esos talentos únicos que estamos buscando para formar parte de nuestro equipo.\n\nEn esta posición, afrontarás numerosos retos técnicos, por lo que deberás utilizar las tecnologías actuales, involucrarse en el mundo de los móviles, de aplicaciones web, dispositivos, etc.\n\n\n\n\nActividades Principales:\n\n\n\n\n- Diseñar soluciones prácticas para resolver problemas.\n\n- Participar en las revisiones de código y pruebas.\n\n- Proporcionar la tecnología para una plataforma que facilite las solicitudes mensuales.\n\n- Trabajar con Big Data y análisis predictivo en un sistema distribuido.\n\n- Colaborar con el equipo de Desarrollo, Product Owners, servicios al cliente, a fin de innovar y ejecutar tareas\n\n\n\n\n¿Qué Buscamos?:\n\n\n\n\n- 4+ años de experiencia en React.\n\n- 4+ años de experiencia en desarrollo Front End con sólidas habilidades en JavaScript, CSS3 y HTML5.\n\n- 1+ año de experiencia en desarrollo de aplicaciones Web usando ReactJS, Flux, Redux, Relay, entre otros.\n\n- Experiencia trabajando con otros Frameworks de Javascript tales como Angular, Backbone, Marionette.\n\n- Experiencia trabajando con ES2015 (ES6 / ES7).\n\n- Experiencia con comandos de línea, APIs y desempeño al lado del cliente.\n\n- Estar familiarizado con los conceptos básicos de programación, estructura de datos, tipos de variables e idiosincrasias.\n\n- Nivel de Inglés avanzado.\n\n\n\n\nQué ofrecemos para que tu trabajo (y tu vida) seja mais fácil:\n\n\n\n\n- Trabajo 100% remoto: trabaja desde tu casa o donde quieras.\n\n- Compensación en USD o en tu moneda local, como prefieras, muy por encima de la media del mercado.\n\n- Hardware y software.\n\n- Horarios flexibles\n\n- Licencias por mater/paternidad, vacaciones y días festivos nacionales pagos.\n\n- Ambiente laboral multicultural e innovador, perfecto para hacer amigos, colaborar y aprender de las personas más talentosas del mundo.\n\n- Oportunidades de crecimiento y desarrollo profesional a través de mentorías y entrenamientos.\n\n\n\n\n¡Únete a nuestro equipo global!",
-    "location": "Remote - Peru",
-    "country": "Peru",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T18:54:28.926Z",
-    "sourceHash": "c8185e989a3d73076497b94ac080d11e453136635d6ecb46798928e46217b1ca",
-    "company": {
-      "id": "bairesdev",
-      "name": "BairesDev",
-      "logoUrl": "https://logo.clearbit.com/bairesdev.com",
-      "industry": "Technology",
-      "website": "https://bairesdev.com"
-    },
-    "slug": "desarrollador-react-frontend-trabajo-remoto-bairesdev-c8185e98",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "javascript",
-        "css",
-        "redux",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Peru"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "f295901be8be8f7a065a0caa6ad8e1c86c905e5578a4963d5336242983c216eb",
-    "title": "Frontend Developer",
-    "applyUrl": "https://www.kiyo.my/careers/frontend-developer",
-    "description": "About the job\n\nAbout The Role\n\nOur company is seeking a talented Frontend Developer to join our development team. As a Frontend Developer, you will be responsible for creating and maintaining the user-facing side of our web and mobile applications. You will work closely with our designers and backend developers to ensure seamless integration of user interfaces with backend systems.\n\nWe Are Particularly Interested In Hearing From You If\n\n\nYou have at least 1 year of experience in frontend development\nProficiency in HTML, CSS, TypeScript, and React\nKnowledge of web standards and cross-browser compatibility\nFamiliarity with frontend build tools such as Webpack, Babel, and NPM\nExperience with version control systems such as Git\nAbility to work collaboratively in a team environment\nStrong problem-solving and analytical skills\nExcellent written and verbal communication skills\n\n\nBonus Points If\n\n\nYou have experience with Next.js and have know-how of SSR/SSG/ISR\nKnowledge of server-side programming languages such as Node.js or Go\nExperience with mobile development frameworks such as React Native or Flutter\nFamiliarity with design tools such as Sketch or Figma\n\n\nWe offer a competitive salary and a dynamic work environment that encourages creativity and innovation. If you are passionate about frontend development and want to work with a talented team of professionals, we encourage you to apply for this exciting opportunity.\n\nWhat is it like to work at Apex?\n\nApex employees are currently based in Malaysia. We are all trusted to produce high quality work in the remote-first environment that works best for us.\n\nApex is for people who own their role, learn quickly, are endlessly curious and find happiness in delivering consistently brilliant outcomes that push the company forward. We love to work with people who are passionate about working this way and will do whatever it takes to get things done.\n\nKindness is evident in how we work and there is a high level of respect across the team thanks to working hard. This allows us all to challenge ideas, be independent and attract world class talent to join us. We have an office in Kuala Lumpur should you wish to work there 5 days a week or visit occasionally.\n\nWhat are some of the things you'll be doing?\n\nIn This Role, You Will Be Expected To\n\n\nCollaborate with designers to implement user-friendly interfaces and responsive layouts for web and mobile applications\nWrite clean, well-documented, and efficient code using modern web technologies such as HTML, CSS, JavaScript, and React\nDevelop and maintain reusable components and UI libraries to improve development speed and consistency across projects\nEnsure cross-browser and cross-device compatibility of user interfaces\nOptimize web applications for maximum speed and scalability\nParticipate in code reviews and provide constructive feedback to other developers\nTroubleshoot and debug user interface issues reported by clients and other team members\nStay up-to-date with emerging trends and technologies in frontend development\n\n\nWhat does the hiring process look like?\n\nWe respond to applicants before the end of each week and within 24 hours of each interview, we will request and share feedback at every stage.\n\nApplicants Can Expect The Following\n\n\nIntroductory phone call ~ 15 minutes\nAssessment ~ Take home + 60 minutes discussion\nFinal interview ~ 45 minutes\nOffer stage\n\n\nWhat will an offer consist of?\n\n\nA competitive annual salary of between MYR48,000 - MYR84,000\nAutonomous work. We work collaboratively on projects, working at your own flexibility according to pace of the team.\nPaid time off. 12 days paid vacation leave. And other additional paid sick leave and paid parental leave.\nRegular team bonding events in Kuala Lumpur.\nA beautiful office to work in if you prefer working outside of home.",
-    "location": "Remote - Malaysia",
-    "country": "Malaysia",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T18:45:36.063Z",
-    "sourceHash": "f295901be8be8f7a065a0caa6ad8e1c86c905e5578a4963d5336242983c216eb",
-    "company": {
-      "id": "kiyo",
-      "name": "Kiyo",
-      "logoUrl": "https://logo.clearbit.com/kiyo.com",
-      "industry": "Technology",
-      "website": "https://kiyo.com"
-    },
-    "slug": "frontend-developer-kiyo-f295901b",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "javascript",
-        "css",
-        "webpack",
-        "figma",
-        "flutter",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Malaysia"
-      ],
-      "seniority": "junior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "8d845386e0ba0819a6082855da75416e5617908f144dc9f34f09790e472fe949",
-    "title": "Front End Developer",
-    "applyUrl": "https://reteinformaticalavoro.it/lavoro/61631/front-end-developer?ref=linkedin",
-    "description": "About the job\nThis job is sourced from a job board. Learn More\n\nProxima è un gruppo di aziende con skill funzionali e tecnologiche innovative, che mettono a fattor comune la propria esperienza in un’offerta congiunta di sviluppo di soluzioni all’interno della nostra Software Factory. Offriamo consulenza e servizi di Application Management e Quality Assurance.\n\nChi cerchiamo? \n\nFront End Developer ( 3 anni di esperienza )\n\nDove e come? \n\nItalia, Full Remote\n\nDi cosa ti occuperai?\n\nAttività Consulenziale In Ambito Gaming Gambling\n\n\n Sviluppo e manutenzione di web application per dispositivi touch integrate in app native, utilizzando Next.js, React e TypeScript.\n Realizzazione di interfacce responsive a partire da design e specifiche grafiche (Figma), garantendo qualità visiva e user experience.\n Integrazione di web app in WebView Android e gestione della comunicazione tra layer web e nativo tramite bridge JavaScript.\n Collaborazione con team di Design, Backend e QA durante tutte le fasi di sviluppo, test e rilascio.\n Redazione e aggiornamento della documentazione tecnica relativa a componenti, funzionalità e integrazioni.\n\n\nHai queste competenze? \n\n\n Esperienza nello sviluppo Front End con Next.js, React, TypeScript, HTML5 e CSS3.\n Capacità di tradurre mockup e specifiche grafiche in interfacce moderne, responsive e ottimizzate per dispositivi touch.\n Conoscenza delle integrazioni tramite WebView Android e della comunicazione JavaScript-Native.\n Esperienza nella documentazione tecnica e nella gestione delle integrazioni applicative.\n Buone capacità relazionali e di collaborazione con team multidisciplinari.\n\n\nCosa offriamo? \n\n\n Contratto a tempo indeterminato CCNL commercio RANGE RAL 28/30.000€ + BUONI PASTO (anche in modalità da remoto) + ASSICURAZIONE SANITARIA CON COPERTURA INTEGRATIVA\n\n\nI nostri benefit \n\nPERCORSI DI CARRIERA\n\nAbbiamo un articolato sistema di valutazione delle competenze e misurazione delle performance che consente al dipendente di crescere insieme a noi.\n\nFORMAZIONE PROFESSIONALIZZANTE\n\nOffriamo percorsi di formazione e di aggiornamento professionale con taglio tecnico/pratico su tematiche in ambito ICT.\n\nSCONTI E PROMOZIONI RISERVATE\n\nAbbiamo stabilito degli accordi con delle piattaforme per riservare ai nostri dipendenti scontistica e promozioni esclusive.\n\nIl presente annuncio è rivolto a entrambi i sessi, ai sensi delle leggi 903/77 e 125/91, e a persone di tutte le età e tutte le nazionalità, ai sensi dei decreti legislativi 215/03 e 216/03.",
-    "location": "Remote - Italy",
-    "country": "Italy",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T18:39:24.524Z",
-    "sourceHash": "8d845386e0ba0819a6082855da75416e5617908f144dc9f34f09790e472fe949",
-    "company": {
-      "id": "proximagroup",
-      "name": "Proxima Group",
-      "logoUrl": "https://logo.clearbit.com/proximagroup.com",
-      "industry": "Technology",
-      "website": "https://proximagroup.com"
-    },
-    "slug": "front-end-developer-proxima-group-8d845386",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "javascript",
-        "css",
-        "figma",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Italy"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    },
-    "isDead": true,
-    "deadAt": "2026-10-25T07:07:36.569Z"
-  },
-  {
-    "id": "784e5a9abe9945f9cf93eb00d8471239d5b12bb291d3c65e4e369c9a660698f0",
-    "title": "Junior Frontend Developer",
-    "applyUrl": "https://gosuperedtech.com/career/junior-frontend-developer",
-    "description": "About the job\n\nAbout GoSuper EdTech\n\nAt GoSuper EdTech, we are a team of passionate innovators dedicated to reshaping the education sector through cutting-edge technology.\n\nOur mission is to make high-quality education accessible, efficient, and impactful for everyone. With a global footprint and a deep understanding of local needs, we bridge traditional education with modern, AI-driven solutions.\n\nWe're building a new kind of learning platform - where community, AI, and SaaS intersect to create scalable, personalized experiences for millions of learners.\n\nIf you're driven by high-impact challenges, product ownership, and meaningful work, GoSuper offers a front-row seat to the future of education technology.\n\nRole Overview\n\nWe are looking for a Junior Frontend Developer who is enthusiastic about building intuitive and responsive user interfaces. This is an excellent opportunity for fresh graduates or early-career developers who want to grow their frontend development skills in a supportive environment.\n\nYou will work closely with product managers, designers, and senior engineers to develop beautiful, accessible, and user-friendly web applications primarily using React. Your work will directly impact learners engaging with our platform daily.\n\nKey Responsibilities\n\n\nDevelop reusable, maintainable, and efficient frontend components using React\nTranslate UI/UX designs and wireframes into high-quality code\nEnsure applications are responsive, accessible, and performant across devices and browsers\nCollaborate with backend developers to integrate APIs and ensure smooth data flow\nWrite clean, well-documented code and adhere to coding standards\nParticipate in peer code reviews and contribute to continuous improvement of frontend quality\nIdentify and fix bugs, performance bottlenecks, and UI issues\nWork within Agile teams to deliver features iteratively and respond to user feedback\nLearn and adopt best practices in frontend development, testing, and deployment\nActively seek mentorship and feedback to grow technical and professional skills\n\n\nWhat We’re Looking For\n\n\nStrong fundamentals in JavaScript, including ES6+ features\nPractical experience or coursework in React - understanding of components, state, props, and hooks\nFamiliarity with HTML5 and CSS3, including responsive design techniques\nUnderstanding of RESTful APIs and ability to consume them on the frontend\nEagerness to learn and grow within a fast-paced startup environment\nGood problem-solving skills and attention to detail\nEffective communication and teamwork abilities\nPassion for building engaging user experiences and creating impact\n\n\nNice to Have (Not Mandatory)\n\n\nExposure to TypeScript or strong interest in learning it\nBasic knowledge of frontend testing tools (e.g., Jest, React Testing Library)\nExperience with Next.js or server-side rendering frameworks\nFamiliarity with Git and collaborative version control workflows\nPersonal or academic projects demonstrating your frontend skills\nPrevious internship or freelance experience in web development\n\n\nWhat You’ll Gain\n\n\nHands-on experience developing full-featured web applications used by thousands of learners\nClose mentorship from senior engineers and access to a vibrant learning culture\nExposure to end-to-end product development lifecycle including design, implementation, testing, and deployment\nOpportunity to contribute ideas and take ownership of your work from early on\nAccess to Cult Elite and Cult Play Pass for wellness, fitness, and lifestyle benefits\nRegular team activities, virtual hangouts, and company retreats fostering collaboration and fun\nClear growth path with opportunities to expand into backend, mobile, or fullstack roles over time\n\n\nCompensation & Benefits\n\n\nCompetitive salary aligned with your experience and skills\nPerformance-based bonuses in a high-growth startup\nFlexible remote work options with the choice to work from our Bengaluru office\nLearning & development budget to support courses, workshops, and certifications\nWellness perks including Cult Elite membership and Cult Play Pass for employees\nSupportive, transparent, and inclusive company culture\n\n\nLife at GoSuper EdTech\n\nAt GoSuper, engineers are creators. We value curiosity, ownership, and fast iteration. You’ll work on meaningful problems and build tools that touch the lives of real users every day.\n\nWe're building with purpose - and we're looking for like-minded people who want to build with us.\n\nApply via mail\n\nSend your application through mail to with your resume and a short note. Mention the specific role in the subject line.\n\nMention “Junior Frontend Developer” in the subject line.\n\nNeed Assistance?\n\nContact our HR team at +91 91117 47111 for any queries.",
-    "location": "Remote - India",
-    "country": "India",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T18:36:44.266Z",
-    "sourceHash": "784e5a9abe9945f9cf93eb00d8471239d5b12bb291d3c65e4e369c9a660698f0",
-    "company": {
-      "id": "gosuperedtech",
-      "name": "Gosuper Edtech",
-      "logoUrl": "https://logo.clearbit.com/gosuperedtech.com",
-      "industry": "Technology",
-      "website": "https://gosuperedtech.com"
-    },
-    "slug": "junior-frontend-developer-gosuper-edtech-784e5a9a",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "javascript",
-        "css",
-        "jest",
-        "html"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "India"
-      ],
-      "seniority": "junior",
-      "employmentType": "internship"
-    }
-  },
-  {
-    "id": "a2e2860a4da74a57829112563b1a6d92cc2db93fcae14cadd9e2396049a9718c",
-    "title": "Frontend Developer (Intern / Early Contributor)",
-    "applyUrl": "https://mycornerstonegh.com/careers/frontend-developer",
-    "description": "About the job\n\nBack to Careers\n\nFrontend Developer (Intern / Early Contributor)\n\nEngineering\n\nRemote / Accra, Ghana\n\nIntern\n\nTurn complex payment processes into simple, beautiful, and intuitive user experiences that power financial inclusion across Africa.\n\nAbout The Role\n\nYou'll work with React, modern CSS, and design systems to bring our products to life - from USSD companion tools to institution dashboards.\n\nWhat You'll Do\n\n\n Build responsive, accessible, and beautiful UI components\n Collaborate closely with design and backend teams\n Implement and maintain real-time features and dashboards\n Write clean, reusable, and well-tested frontend code\n Optimise for performance and mobile responsiveness\n\n\nYou'll Thrive Here If You\n\n\nAt least 1 year of experience with React or a similar framework\nProficiency in HTML, CSS, and JavaScript/TypeScript\nAttention to detail in UI and UX\nExperience working with REST APIs\nAbility to translate designs into working interfaces\n\n\nBonus Points\n\n\nExperience with Next.js\nKnowledge of Tailwind CSS\nFintech or payments product experience\nUnderstanding of accessibility standards\n\n\nApply Now\n\nSend your application to info@mycornerstonegh.com\n\nWe review applications on a rolling basis\n\nWhat We Offer\n\n\n Real-world experience building systems that power digital payments\n Mentorship from experienced engineers and startup founders\n Opportunity to work on live projects that impact real users\n Flexible, collaborative, and supportive remote environment\n Chance to grow your technical and professional skills quickly\n Letter of recommendation upon successful completion\n Possibility of full-time role after internship based on performance\n\n\nOur Hiring Process\n\n\n 1\n\n\nApply\n\nSend us your resume \n\n\n 2\n\n\nChat\n\nQuick conversation with our team \n\n\n 3\n\n\nTechnical Discussion\n\nTalk through your experience and problem-solving approach \n\n\n 4\n\n\nTeam Fit\n\nMeet a few teammates and learn about how we work \n\n\n 5\n\n\nOffer\n\nIf it's a great fit, we'll make it official! \n\nReady to Build Something Big?\n\nJoin our growing team and help shape the future of payments and financial access across Africa.\n\nApply Now\n\nWe review applications on a rolling basis - early applications are encouraged.",
-    "location": "Remote - Ghana",
-    "country": "Ghana",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T18:31:49.092Z",
-    "sourceHash": "a2e2860a4da74a57829112563b1a6d92cc2db93fcae14cadd9e2396049a9718c",
-    "company": {
-      "id": "cornerstone",
-      "name": "Cornerstone",
-      "logoUrl": "https://logo.clearbit.com/cornerstone.com",
-      "industry": "Technology",
-      "website": "https://cornerstone.com"
-    },
-    "slug": "frontend-developer-intern-early-contributor-cornerstone-a2e2860a",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "javascript",
-        "css",
-        "tailwind",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Ghana"
-      ],
-      "seniority": "junior",
-      "employmentType": "internship"
-    }
-  },
-  {
-    "id": "2b5fb9335f7e5649f080262fb4c1b6618a37ccd6bf67cb520145cbf390bae404",
-    "title": "Frontend Engineer (Mobile & Web)",
-    "applyUrl": "https://www.blvcksapphire.com/candidate/apply?jobId=188fbe25-4140-4b0f-9baf-f60cb59b049d",
-    "description": "About the job\n\nAbout Blvck Sapphire\n\nAt Blvck Sapphire, we are architects of the future. We leverage the transformative power of Artificial Intelligence, modern technology infrastructure, and robust Cybersecurity to solve complex challenges across diverse industries. With a strong commitment to innovation and ethical deployment, we empower businesses and communities, particularly across Africa, to thrive in the digital age. We strive to pioneer scalable architectures that redefine operational limits, bridging the gap between raw data and actionable intelligence to create resilient ecosystems designed to withstand the challenges of tomorrow.\n\nThe Role\n\nWe are seeking a talented Frontend Engineer to join our engineering team and contribute to the design and development of innovative digital products across mobile and web platforms. The ideal candidate combines strong frontend engineering expertise with product thinking and a passion for building intuitive, scalable, and reliable user experiences. You will work closely with product managers, designers, and backend engineers to translate complex requirements into well-designed and high-quality applications.\n\nThis role involves developing sophisticated applications with complex workflows, data-driven interfaces, and real-time interactions. You will contribute throughout the product lifecycle, from understanding user needs and improving product experiences to implementing, testing, and enhancing production systems. Your key responsibilities will focus mainly on coding and developing mobile applications and other frontend elements of our flagship products, connecting and working with in-house developed APIs, polishing and improving the UX and UI of existing products, developing mobile and web UX/UI for upcoming products among others.\n\nWe are looking for someone who can take ownership of frontend development, contribute to technical and product decisions, and help establish strong frontend engineering practices as our product portfolio continues to grow.\n\nKey Responsibilities\n\n\nDesign, develop, and maintain mobile and web applications, focusing on logistical workflows and high-density data environments.\nTranslate product requirements into scalable frontend architectures and intuitive user experiences.\nCollaborate with designers to improve interfaces, workflows, and overall product usability.\nBuild reusable components, frontend libraries, and design systems that support multiple products.\nDevelop complex, data-driven interfaces involving workflows, approvals, notifications, and real-time interactions.\nIntegrate frontend applications with backend services, APIs, authentication systems, and real-time communication platforms.\nOptimize application performance, responsiveness, reliability, and accessibility.\nParticipate in technical planning, product discussions, code reviews, and continuous improvement initiatives.\nContribute to frontend standards, engineering practices, and development processes.\n\n\nRequired Skills & Qualifications\n\n\nStrong proficiency in React Native, React, Next.js, TypeScript, and JavaScript.\nExperience building production-grade mobile and web applications.\nStrong understanding of frontend architecture, component-driven development, and state management patterns.\nExperience working with REST APIs, GraphQL, WebSocket, and real-time data applications.\nExperience with modern frontend development tools, testing practices, and Git-based workflows.\nStrong analytical and problem-solving skills with the ability to work independently and collaboratively.\nExperience with UI/UX design, prototyping, and product design using Figma/Sketch/Penpot or other design tools. Eye for engaging and creative designs.\nExperience working with cloud platforms such as AWS.\n\n\nNice-to-Have Skills\n\n\nAbility to evaluate user workflows and improve interaction design.\nPrior experience building workforce management, shift scheduling, roster systems, or enterprise healthcare SaaS platforms.\nFamiliarity with native mobile development using Swift or Kotlin.\nExperience developing reusable design systems and component libraries.\n\n\nThe Reward\n\n\nCompetitive compensation based on experience and expertise.\nFully remote working environment.\nOpportunity to build impactful products from concept through production.\nExposure to modern technologies across AI, cloud computing, enterprise software, and emerging technology domains.\nPerformance-based incentives and project bonuses.",
-    "location": "Remote - Ghana",
-    "country": "Ghana",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-09T18:31:42.679Z",
-    "sourceHash": "2b5fb9335f7e5649f080262fb4c1b6618a37ccd6bf67cb520145cbf390bae404",
-    "company": {
-      "id": "blvcksapphire",
-      "name": "BLVCK SAPPHIRE",
-      "logoUrl": "https://logo.clearbit.com/blvcksapphire.com",
-      "industry": "Technology",
-      "website": "https://blvcksapphire.com"
-    },
-    "slug": "frontend-engineer-mobile-web-blvck-sapphire-2b5fb933",
-    "aiTags": {
-      "stack": [
-        "react",
-        "nextjs",
-        "typescript",
-        "javascript",
-        "graphql",
-        "figma",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Ghana"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
     }
   }
 ]
