@@ -6,7 +6,7 @@ import FaqSchema, { type FaqItem } from "@/components/FaqSchema";
 import type { Job } from "@/lib/jobs";
 import { loadJobsFromFile, filterActiveJobs } from "@/lib/jobs.server";
 
-export const revalidate = 3600; // 1-hour ISR for homepage
+export const revalidate = 86400; // 24-hour cache for homepage (regenerated on daily deployments)
 
 export const metadata: Metadata = {
   alternates: {

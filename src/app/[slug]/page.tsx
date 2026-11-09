@@ -6,7 +6,7 @@ import { loadJobsFromFile, filterActiveJobs } from "@/lib/jobs.server";
 import FaqSchema from "@/components/FaqSchema";
 import LandingJobList from "@/components/LandingJobList";
 
-export const revalidate = 3600; // 1-hour ISR for programmatic landing pages
+export const revalidate = 86400; // 24-hour cache for programmatic landing pages
 
 // ─── Static Params ────────────────────────────────────────
 

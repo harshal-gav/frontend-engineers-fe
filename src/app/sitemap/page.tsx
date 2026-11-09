@@ -64,7 +64,7 @@ export default function HTMLSitemapPage() {
         <div className="mt-12">
           <h2 className="text-2xl font-semibold text-gray-900 mb-4 border-b border-[#e2e2e6] pb-2">Recent Remote Jobs</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-3">
-            {jobs.filter(j => !j.isDead).slice(0, 100).map((job) => (
+            {jobs.slice(0, 100).map((job) => (
               <div key={job.id} className="truncate">
                 <Link href={`/jobs/${job.slug || job.id}`} className="text-sm hover:text-[#2563eb]">
                   {job.title} at {job.company?.name || "Unknown"}
@@ -72,7 +72,7 @@ export default function HTMLSitemapPage() {
               </div>
             ))}
           </div>
-          {jobs.filter(j => !j.isDead).length > 100 && (
+          {jobs.length > 100 && (
             <p className="mt-4 text-sm text-gray-600 italic">
               Showing the 100 most recent jobs. Please use the search function on the <Link href="/" className="text-[#2563eb] hover:underline">homepage</Link> to find more.
             </p>

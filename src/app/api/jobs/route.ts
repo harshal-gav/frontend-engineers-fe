@@ -92,7 +92,7 @@ export async function GET(request: Request) {
 
       // Cache heavily at the Edge for non-authenticated (public) visitors to save Fast Origin Transfer & CPU
       if (!authHeader) {
-        responseHeaders.set("Cache-Control", "public, s-maxage=300, stale-while-revalidate=600");
+        responseHeaders.set("Cache-Control", "public, s-maxage=3600, stale-while-revalidate=86400");
       } else {
         responseHeaders.set("Cache-Control", "private, max-age=60");
       }

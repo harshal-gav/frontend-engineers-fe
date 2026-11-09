@@ -8,7 +8,7 @@
  *   npx tsx tests/job-counts.test.ts
  */
 
-import { filterActiveJobs, normalizeTitle } from "../src/lib/jobs.server";
+import { filterActiveJobs, deduplicateJobs, normalizeTitle } from "../src/lib/jobs.server";
 import type { Job } from "../src/lib/jobs";
 
 function assert(condition: boolean, message: string) {
@@ -134,47 +134,39 @@ function runTests() {
     "normalizeTitle strips reference codes"
   );
 
-  // Test 2: filterActiveJobs removes dead and unpublished records
+  // Test 2: filterActiveJobs preserves all valid jobs while excluding incomplete records
   const activeJobs = filterActiveJobs(mockJobs);
-
-  assert(
-    !activeJobs.some((j) => j.isDead),
-    "filterActiveJobs excludes dead jobs"
-  );
 
   assert(
     !activeJobs.some((j) => !j.title || !j.applyUrl),
     "filterActiveJobs excludes incomplete/unpublished jobs"
   );
 
-  // Test 3: Deduplication excludes duplicate URLs and duplicate (title, company, country)
+  // Test 3: Deduplication helper excludes duplicate URLs and duplicate (title, company, country)
+  const deduped = deduplicateJobs(activeJobs);
+
   assert(
-    !activeJobs.some((j) => j.id === "job-1-duplicate"),
+    !deduped.some((j) => j.id === "job-1-duplicate"),
     "deduplicateJobs excludes duplicate URL keeping newer record"
   );
 
   assert(
-    !activeJobs.some((j) => j.id === "job-1-title-dup"),
+    !deduped.some((j) => j.id === "job-1-title-dup"),
     "deduplicateJobs excludes normalized (title, company, country) duplicates"
   );
 
   // Test 4: Legitimate unique jobs are preserved
   assert(
-    activeJobs.some((j) => j.id === "job-1"),
+    deduped.some((j) => j.id === "job-1"),
     "Preserves original job-1"
   );
   assert(
-    activeJobs.some((j) => j.id === "job-2"),
+    deduped.some((j) => j.id === "job-2"),
     "Preserves different job at same company"
   );
   assert(
-    activeJobs.some((j) => j.id === "job-3"),
+    deduped.some((j) => j.id === "job-3"),
     "Preserves same title in different country"
-  );
-
-  assert(
-    activeJobs.length === 3,
-    `Expected exactly 3 active deduplicated jobs, got ${activeJobs.length}`
   );
 
   console.log("\n🎉 All Job Count & Deduplication tests passed successfully!");

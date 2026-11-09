@@ -5,7 +5,7 @@ import { loadJobsFromFile } from "@/lib/jobs.server";
 import JobDetail from "@/components/JobDetail";
 import Link from "next/link";
 
-export const revalidate = 3600; // 1-hour ISR for job detail pages
+export const revalidate = 86400; // 24-hour cache for static job pages (regenerated on daily deployments)
 
 // ─── Static Params (build-time) ──────────────────────────
 
@@ -78,13 +78,6 @@ export async function generateMetadata({
 
   if (!job) {
     return { title: "Job Not Found" };
-  }
-
-  if (job.isDead) {
-    return {
-      title: "Job No Longer Available",
-      robots: { index: false, follow: true }
-    };
   }
 
   const companyName = job.company?.name || "Company";

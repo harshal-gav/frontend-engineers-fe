@@ -151,12 +151,8 @@ export function loadJobsFromFile(): Job[] {
       isCareerUrl: (job.applyUrl || "").toLowerCase().includes("career"),
     }));
 
-  // Sort: Jobs with logos first, then frontend titles, then by date, dead jobs at the end
+  // Sort: Jobs with logos first, then frontend titles, then by date
   validJobs.sort((a, b) => {
-    // Dead jobs go to the bottom
-    if (a.isDead && !b.isDead) return 1;
-    if (!a.isDead && b.isDead) return -1;
-
     const aHasLogo = !!a.company?.logoUrl;
     const bHasLogo = !!b.company?.logoUrl;
 
@@ -243,18 +239,14 @@ export function deduplicateJobs(jobs: Job[]): Job[] {
 
 /**
  * Filter to active, eligible jobs:
- * - Excludes dead jobs (isDead === true)
  * - Excludes unpublished/draft/empty jobs (must have title, company name, applyUrl)
- * - Deduplicates duplicates
+ * - Returns all jobs from jobs.json
  */
 export function filterActiveJobs(jobs: Job[]): Job[] {
-  const eligible = jobs.filter((job) => {
-    if (job.isDead) return false;
+  return jobs.filter((job) => {
     if (!job.title || !job.company?.name || !job.applyUrl) return false;
     return true;
   });
-
-  return deduplicateJobs(eligible);
 }
 
 /**
