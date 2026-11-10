@@ -163,7 +163,7 @@ export default function Footer() {
             <ul className="space-y-2 text-xs">
               <li><Link href="/" className="text-gray-400 hover:text-white transition-colors">Browse {jobCount ? `${jobCount}+` : ''} Jobs</Link></li>
               <li><Link href="/pricing" className="text-gray-400 hover:text-white transition-colors">Pricing</Link></li>
-              <li><Link href="/employers/pricing" className="text-gray-400 hover:text-white transition-colors font-medium">Post a Job</Link></li>
+              <li><Link href="/employers/pricing" className="text-gray-400 hover:text-white transition-colors font-medium">For Employers</Link></li>
               <li><Link href="/blog" className="text-gray-400 hover:text-white transition-colors">Blog</Link></li>
               <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
               <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About</Link></li>

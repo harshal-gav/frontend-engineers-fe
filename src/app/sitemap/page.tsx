@@ -41,7 +41,7 @@ export default function HTMLSitemapPage() {
               <li><Link href="/" className="hover:text-[#2563eb]">Home - Browse Remote Frontend Jobs</Link></li>
               <li><Link href="/about" className="hover:text-[#2563eb]">About FrontendEngineers.com</Link></li>
               <li><Link href="/pricing" className="hover:text-[#2563eb]">Pricing / Pro Membership</Link></li>
-              <li><Link href="/employers/pricing" className="hover:text-[#2563eb]">Post a Job (Employers)</Link></li>
+              <li><Link href="/employers/pricing" className="hover:text-[#2563eb]">For Employers</Link></li>
               <li><Link href="/blog" className="hover:text-[#2563eb]">Blog</Link></li>
             </ul>
           </div>

@@ -477,7 +477,7 @@ export default function JobsClientPage() {
                   href={isEmployer ? "/employers/post" : "/employers/pricing"}
                   className="text-xs sm:text-sm bg-[#2563eb] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold shadow-md hover:bg-[#1d4ed8] hover:shadow-lg transition-all flex items-center justify-center shrink-0"
                 >
-                  Post a Job
+                  For Employers
                 </Link>
 
                 <Link
@@ -532,7 +532,7 @@ export default function JobsClientPage() {
                   href="/employers/pricing"
                   className="text-xs sm:text-sm bg-[#2563eb] text-white px-3 sm:px-4 py-1.5 sm:py-2 rounded-full font-bold shadow-md hover:bg-[#1d4ed8] hover:shadow-lg transition-all flex items-center justify-center shrink-0"
                 >
-                  Post a Job
+                  For Employers
                 </Link>
                 <Link
                   href="/referrals"
@@ -574,7 +574,7 @@ export default function JobsClientPage() {
           Remote Frontend Developer Jobs
         </h1>
         <p className="text-sm sm:text-base max-w-2xl mx-auto mb-3 text-gray-600">
-          Zero hybrid fluff. Zero non-technical spam. Verified React, TypeScript, Next.js, Vue, and Angular jobs from remote-first companies worldwide.
+          Aggregated jobs from 100+ sources to save your time. Verified React, TypeScript, Next.js, Vue, and Angular jobs from remote-first companies worldwide.
         </p>
 
         <div className="mb-4">

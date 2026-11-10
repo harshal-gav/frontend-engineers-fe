@@ -83,9 +83,9 @@ const CREATIVE_THEMES = [
     hookStyle: 'Punchy question hook or bold statement focused on finding high-paying remote frontend jobs with FrontendEngineers.com.'
   },
   {
-    name: 'All Worldwide Remote Jobs in One Place',
-    angle: 'Stop jumping across 50 different browser tabs and obscure job boards. FrontendEngineers.com brings every verified remote frontend role from top global companies into a single curated platform.',
-    hookStyle: 'Inspiring, high-energy hook on global remote frontend opportunities.'
+    name: 'Aggregated from 100+ Sources to Save Your Time',
+    angle: 'Stop jumping across 50 different browser tabs and obscure job boards. FrontendEngineers.com aggregates verified remote frontend roles from 100+ sources into one single curated platform to save hours of your time every week.',
+    hookStyle: 'Punchy hook on saving hours of searching with 100+ aggregated sources in one place.'
   },
   {
     name: 'Safe, Verified & Zero Ghost Postings',
@@ -163,7 +163,7 @@ PROVEN WINNING POST STRUCTURE (FOLLOW THIS EXACT BLUEPRINT):
 4. THE 3 TO 4 VALUE PILLARS (WITH EMOJIS & UPPERCASE HEADERS):
 Each pillar must start with an eye-catching emoji, a concise UPPERCASE title, followed by a colon and a punchy 1-2 sentence description. Include 3 or 4 of these:
 - ⚡ MASSIVE ACCESS FOR FRONTEND JOBS ONLY: Skip the clutter and focus 100% on UI, React, Next.js, Vue, TypeScript, and CSS roles. No backend noise.
-- 🌍 GO GLOBAL: Find worldwide remote frontend jobs from top global companies in one place without jumping across dozens of tabs.
+- ⚡ AGGREGATED FROM 100+ SOURCES: Stop jumping across dozens of tabs. We aggregate and verify frontend jobs from 100+ sources in one clean feed to save your time.
 - 🛡️ SAFE, ACCURATE & NO GHOST POSTS: Every single job is vetted and verified before going live so you never waste time on dead links, recruiter spam, or fake postings.
 - 🎯 DIRECT ATS & EMPLOYEE REFERRALS: Skip 500-applicant aggregator queues. Apply directly on company ATS portals (Greenhouse, Lever, Ashby) and get insider employee referrals.
 

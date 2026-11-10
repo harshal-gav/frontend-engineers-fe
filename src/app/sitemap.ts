@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { loadJobsFromFile, filterActiveJobs } from '@/lib/jobs.server';
 import { ALL_LANDING_PAGES } from '@/lib/landing-pages';
 
-export const revalidate = 86400; // Revalidate sitemap every 24 hours
+export const revalidate = false; // Pure SSG (generated statically at build time; refreshed on daily deployments)
 
 /**
  * Main sitemap: includes home, pricing, about, legal pages,
