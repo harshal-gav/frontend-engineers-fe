@@ -1,5 +1,38 @@
 [
   {
+    "id": "6162fda0450df994d97fbb544da408a1530ab68dbf7160d1888d13a3e4c9f7cf",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://www.arbeitnow.co.uk/jobs/companies/reactive-markets/senior-frontend-engineer-united-kingdom-408750",
+    "description": "Senior Frontend EngineerRemote (UK-based) | Full-Time\n\nAbout UsReactive Markets is the 2026 OTC Trading Platform of the Year (Risk.net). Our network handles over $75 billion in daily trading volumes across FX, Equities, and Cryptocurrency, connecting 60+ of the world's leading liquidity providers.\n\nWe build trading systems that operate at the edge of what's technically possible — where nanoseconds matter and a dropped message costs real money. Our engineering team is small, senior, and deeply invested in the craft of building cutting edge, reliable, high-performance systems.\n\nThe RoleWe're looking for a senior full-stack engineer to build the trading platform our clients use every day. Despite the \"frontend\" name, this is not a UI-only role — our Frontend team works across the whole application stack in TypeScript and Rust, from the trader-facing interfaces down to the services behind them. It's distinct from our Backend team, who own the low-latency C++/Go trading engine.\n\nThis is a senior individual contributor role for someone who takes on the hardest problems and delivers them under their own steam. You'll own complex, ambiguous, performance-critical work end-to-end — designed, built, tested, deployed, and supported in production. You lead through code, craft, and mentoring, setting the technical example the rest of the team calibrates to. This is not a role where you write code and throw it over a wall: our engineers own the full lifecycle, and when something breaks, you're part of the team that investigates and fixes it.\n\nOccasional hours outside the normal working day are required for production releases, scheduled maintenance windows, and Level 3 support during critical incidents. We keep this to a minimum and recognise the commitment — but owning a production trading platform means being there when it matters.\n\nWhat You'll Work On• Complex full-stack features in TypeScript and Rust — from trader-facing interfaces to the application services behind them\n\n• Real-time market-data presentation and high-throughput, low-latency application code across FX, Equities, and Cryptocurrency\n\n• React and reactive state management (RX, MobX, or similar) for demanding, data-dense trading interfaces\n\n• Distributed systems and real-time data over REST, WebSockets, and network protocols\n\n• Architecture and solution design for the hardest technical problems the team faces\n\n• Observability and monitoring — dashboards, alerting, and metrics that make frontend behaviour visible\n\n• Production systems that handle real money — reliability is not optional\n\nWhat We NeedTechnical:\n\n• Strong full-stack engineering ability with deep TypeScript / JavaScript (ES6+) (5+ years)\n\n• Solid experience with React and reactive state management (RX, MobX, or similar)\n\n• Working knowledge of Rust, or the clear appetite and ability to get there — it's part of our stack\n\n• Strong grasp of distributed systems, API design, and real-time data (REST, WebSockets, network protocols such as TCP/UDP and binary protocols)\n\n• Comfortable reasoning about architecture and making defensible technical trade-offs\n\n• Python for scripting, automation, and tooling is a bonus\n\n• Git and Linux fundamentals\n\n• Experience in financial services or trading technology is a plus but not essential\n\nHow you work:\n\n• You ship. You're delivery-focused — you iterate, you improve, you get things into production\n\n• You run with things. Give you an ambiguous, complex problem and you drive it to done without being managed through it. Senior here means trusted, not just experienced\n\n• You have range. You're not just strong in the familiar parts of the stack — you pick up the unfamiliar and hold your own on the hardest work\n\n• You own it. When you build something, you take responsibility for its behaviour in production. You respond to incidents (15-minute acknowledgement SLA during working hours), investigate issues, and close the loop\n\n• You raise the bar. You review peers' work thoughtfully, mentor the engineers around you through the craft, and set a standard others calibrate to\n\n• You write things down. Documentation is not an afterthought — it's how we scale knowledge across a distributed team. If it's not written down, it doesn't exist\n\n• You communicate. We're a distributed team across multiple time zones. Clear, proactive communication — especially when things go wrong — is essential\n\n• You embrace AI tooling. We use AI tools (Claude, Gemini) to amplify our engineering capability — from code review and debugging to incident investigation and documentation. You don't need to be an expert, but you should be curious and willing to learn\n\nWhat You Get• Real problems — trading systems where performance is measured in microseconds, not user clicks\n\n• An excellent team — senior engineers who care about craft, collaborate openly, and hold each other to high standards\n\n• Ownership — small teams, clear accountability, direct impact on the platform and our clients\n\n• Competitive package — up to 30 days leave + bank holidays, private health insurance, pension, life insurance, dental/optical cashback, cycle to work, socials and offsites\n\n• Remote-friendly — work from home with flexibility. We trust our people to deliver\n\n• Sustainable pace — we work hard, but we don't burn people out. Balance is how we stay sharp\n\n• Growth — career progression to senior roles, performance specialisation, or technical leadership. We invest in people who invest in us\n\nWe believe in transparency, honest feedback, and writing things down. We celebrate delivery, not activity. We frame AI as empowering people — removing toil, amplifying capability, enabling higher-value work.\n\nWe aim to build systems that don't depend on the heroics of individuals to maintain and support — systems and processes that are resilient, documented, and sustainable.\n\nOur Hiring ProcessWe keep our process focused and respectful of your time. Our process follows three stages.\n\nStage 1: Initial Conversation with Talent Acquisition\nFormat: Video call, ~30-45 minutes\n\nStage 2: Hiring Manager Conversation with the relevant team lead or hiring manager\nFormat: Video call, ~60 minutes\n\nStage 3: Technical Interview with two members of the relevant engineering team\nFormat: Video call, interactive session, ~60 minutes\n\nWhat to expect in each stage will be explained by Talent Acquisition if you're invited to interview. Throughout the process, we aim to keep momentum with no unnecessary delays between stages, and feedback typically comes within a few business days.\n\n*Please note that depending on availability, Stage 2 and 3 may swap around.\n\nHow to ApplyPlease apply directly via this job posting — all applications, including those submitted via LinkedIn, are managed through our applicant tracking system, so you'll always land in the same place regardless of where you found this role.\n\n Right to Work: Candidates must have the existing right to work in the UK. We are not currently able to offer visa sponsorship for this role.\n\nEqual Opportunities: Reactive Markets is an equal opportunities employer. We welcome applications from all qualified candidates regardless of age, disability, gender reassignment, marriage or civil partnership, pregnancy or maternity, race, religion or belief, sex, or sexual orientation.\n\nReasonable Adjustments: If you need any adjustments or support during the application or interview process, please let us know — we're happy to accommodate.\n\nData Protection: By applying, you consent to Reactive Markets processing your personal data for recruitment purposes, in line with our privacy policy.\n\n#Hiring #SoftwareEngineering #Frontend #TypeScript #Rust #FinTech #TradingTechnology #RemoteWork #FullStack\n\nFind more English Speaking Jobs in United Kingdom on Arbeitnow",
+    "location": "Remote",
+    "country": "Remote",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-11T03:40:12.000Z",
+    "sourceHash": "6162fda0450df994d97fbb544da408a1530ab68dbf7160d1888d13a3e4c9f7cf",
+    "company": {
+      "id": "reactivemarkets",
+      "name": "Reactive Markets",
+      "logoUrl": "https://logo.clearbit.com/reactivemarkets.com",
+      "industry": "Technology",
+      "website": "https://reactivemarkets.com"
+    },
+    "slug": "senior-frontend-engineer-reactive-markets-6162fda0",
+    "aiTags": {
+      "stack": [
+        "react",
+        "typescript",
+        "javascript",
+        "mobx"
+      ],
+      "remoteScope": "GLOBAL",
+      "eligibleRegions": [
+        "Global"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "7b3ff6a50642986cc786670822f3737b35def1401d4e0987b4532175081c3195",
     "title": "Frontend Developer",
     "applyUrl": "https://job-boards.greenhouse.io/canonical_managed_posts/jobs/8371098?gh_src=l3evnqyy1us",
@@ -6886,39 +6919,6 @@
         "United States"
       ],
       "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "beb41ed9f9619559a04a6fc5d3a11ff6445840137153a3d5cd6f82d8d31c64e0",
-    "title": "Senior Software Engineer - Frontend",
-    "applyUrl": "https://jobicy.com/jobs/155063-senior-software-engineer-frontend-2",
-    "description": "Join us in bringing joy to customer experience. Five9 is a leading provider of cloud contact center software, bringing the power of cloud innovation to customers worldwide. \n\nLiving our values everyday results in our team-first culture and enables us to innovate, grow, and thrive while enjoying the journey together. We celebrate diversity and foster an inclusive environment, empowering our employees to be their authentic selves. \n\nFive9 has led the cloud revolution in contact centers, helping organisations transition from legacy premise-based solutions to the cloud. The cloud contact center market has become the hot space for innovation in real-time communications, and is the tip of the spear for the application of Artificial Intelligence, especially Generative AI and Large Language Models (LLM). Our innovative AI team is responsible for developing a suite of leading edge AI products built upon industry-leading AI tech from vendors like OpenAI, Google, and Amazon. These products include enterprise voice and chatbots (think: ChatGPT for businesses), agent assistance, and conversation analytics. This team - the fastest growing at Five9 - is seeking a talented and experienced Senior Front End React/Redux Software Engineer. In this role, you will be part of the team that builds software that brings AI technologies to users. Prior AI experience is not required - you will receive on-the-job experience for some of the hottest skills on the market. An ideal candidate for us is an experienced engineer who is passionate about building high performance web platforms and applications, a brilliant problem solver and a creative self-starter.\n\nKey Responsibilities:\n\n• Implement UX designs by working with UX Designers on a day-to-day basis, using React/Redux based framework.\n\n• Build custom widgets for dashboards developed using Google Looker Studio plugins.\n\n• Be part of an agile team to develop a scalable, highly available application platform using modern PaaS platforms such as GCP.\n\n• Participate and contribute to requirements analysis and grooming.\n\n• Understand how to leverage PaaS components, such as CDN, noSQL databases when developing software in order to achieve scalability, reliability, and operability.\n\n• Document and communicate clearly architecture and implementation solutions.\n\n• Have ownership of your code in production, including on-call, troubleshooting.\n\nKey Skills:\n\n• 5+ years software development experience.\n\n• React/Redux focus.\n\n• Highly proficient in JavaScript and TypeScript.\n\n• Experience in operational code ownership – on-call, troubleshooting, uptime\n\n• Experience in applying modern UI design patterns and separating concerns in a distributed system.\n\n• Must have experience working within an Agile/Scrum team.\n\n• Positive, self-motivated and enthusiastic attitude with a strong sense of ownership.\n\n• Strong pro-active communication skills, both verbal and written.\n\n• Experience in contact center software is a plus but not required.\n\n• Experience with custom widget development using Google Looker Studio is a plus but not required.\n\nWorkplace location: This role is fully remote for candidates who reside outside Porto, Maia, Matosinhos, Gondomar, Valongo e Vila Nova de Gaia. Candidates who reside within those municipalities would be required to work in-office 3 days a week. \n\nBenefits:\n\n• Five9 Shares\n\n• Bonus Scheme\n\n• 10% Flexi Benefit\n\n• Meal Allowance\n\n• Medical Insurance\n\n• Life Insurance \n\n• 25 day Annual Leave + Public Holidays\n\nFive9 embraces diversity and is committed to building a team that represents a variety of backgrounds, perspectives, and skills.  The more inclusive we are, the better we are.  Five9 is an equal opportunity employer. \n\nFive9 is committed to providing reasonable accommodations for qualified individuals with disabilities throughout the application and interview process. If you need assistance or an accommodation due to a disability, please contact us at accommodations@five9.com to request an accommodation. Requests will be handled confidentially and in accordance with applicable law.\n\nView our privacy policy, including our privacy notice to California residents here: https://www.five9.com/pt-pt/legal. \n\nNote: Five9 will never request that an applicant send money as a prerequisite for commencing employment with Five9.",
-    "location": "Remote - Portugal",
-    "country": "Portugal",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-12T03:26:03.000Z",
-    "sourceHash": "beb41ed9f9619559a04a6fc5d3a11ff6445840137153a3d5cd6f82d8d31c64e0",
-    "company": {
-      "id": "five9",
-      "name": "Five9",
-      "logoUrl": "https://jobicy.com/data/server-nyc0409/galaxy/mercury/2025/08/7c3d754e-221.png",
-      "industry": "Technology",
-      "website": "https://five9.com"
-    },
-    "slug": "senior-software-engineer-frontend-five9-beb41ed9",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "redux"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Portugal"
-      ],
-      "seniority": "senior",
       "employmentType": "fulltime"
     }
   },
@@ -23431,104 +23431,6 @@
       "remoteScope": "COUNTRY",
       "eligibleRegions": [
         "United Kingdom"
-      ],
-      "seniority": "senior",
-      "employmentType": "contract"
-    }
-  },
-  {
-    "id": "916ccadcde50fa0f3f8c84f21df1fdb2e645428cf3dcc00203edc79977dafbc2",
-    "title": "Frontend Code Evaluation Specialist",
-    "applyUrl": "https://work.mercor.com/login?utm_medium=free_job_board&utm_source=linkedin&utm_term=6366V6Y5&utm_content=manatal_deflect_no_mapping",
-    "description": "About the job\n\nAbout The Job\n\nMercor connects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.\n\nPosition: Frontend Engineer\n\nType: Contract\n\nCompensation: $90/hour\n\nLocation: Remote\n\nRole Responsibilities\n\n\nRender a reference page and two candidate replications at 1920×1080. Judge which is the closer reproduction, state by state.\nDiff visual fidelity in detail: box model and spacing, typography (family, size, weight, line-height, letter-spacing), color and border treatment, image and asset handling, z-order, and overflow.\nRead the source of both attempts and grade construction quality. Distinguish a replication that is genuinely correct from one that merely looks correct at one viewport.\nTest responsiveness. Identify defects such as a nav bar that looks right at 1920px but collapses at 1400px.\nWrite specific, evidence-cited justifications for every preference. Provide detailed explanations like \"B nests the article body in a single absolutely-positioned div, so the text overlaps the footer below 1600px, while A uses normal document flow.\"\nUse the \"this task is broken\" escape hatch with judgment. Distinguish a task that genuinely cannot be completed from one that is merely hard.\n\n\n\nQualifications\n\nMust-Have\n\n\n3–8 years of professional web development experience in frontend or full-stack work.\nFluency across web eras, including legacy layouts like used for layout.\nCommand of hand-written HTML and CSS: semantic markup, flexbox, grid, media queries, and legacy float- and table-based layouts.\nBrowser DevTools as muscle memory.\nCommand-line comfort: unzipping an archive, standing up a static local server, and untangling a broken image reference.\nEnough JavaScript to read a page's scripts and understand their DOM impact.\nProfessional written English for task justification.\n\n\n\nPreferred\n\n\nPrior RLHF, preference-labeling, model-evaluation, or structured code-review work.\nPixel-perfect design-to-code experience.\nAccessibility expertise (ARIA, semantic landmarks, heading hierarchy).\nFamiliarity with how LLMs fail at code generation.\nWeb scraping, archiving, or DOM-parsing background.\nMore than one completed Mercor project and availability in contiguous multi-hour blocks.\n\n\n\nApplication Process (Takes 20–30 mins to complete)\n\n\nUpload resume\nAI interview based on your resume\nSubmit form\n\n\n\nResources & Support\n\n\nFor details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome\nFor any help or support, reach out to: support@mercor.com\n\n\n\nPS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.",
-    "location": "Remote - Estonia",
-    "country": "Estonia",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-12T05:11:18.794Z",
-    "sourceHash": "916ccadcde50fa0f3f8c84f21df1fdb2e645428cf3dcc00203edc79977dafbc2",
-    "company": {
-      "id": "mercor",
-      "name": "Mercor",
-      "logoUrl": "https://logo.clearbit.com/mercor.com",
-      "industry": "Technology",
-      "website": "https://mercor.com"
-    },
-    "slug": "frontend-code-evaluation-specialist-mercor-916ccadc",
-    "aiTags": {
-      "stack": [
-        "javascript",
-        "css",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Estonia"
-      ],
-      "seniority": "senior",
-      "employmentType": "contract"
-    }
-  },
-  {
-    "id": "c60103b4ab54cce618540d9bfdba32db115ddfb238e9410c268986f4c9aa6cd2",
-    "title": "Frontend Engineer (Medical Imaging Viewer)",
-    "applyUrl": "https://careers.epam.com/en/vacancy/bltoqjs6a1hiqx4s4ym_en?country=Colombia&utm_medium=xml&utm_campaign=ta&utm_source=linkedin",
-    "description": "About the job\n\nEPAM is a leading global provider of digital platform engineering and development services. We are committed to having a positive impact on our customers, our employees, and our communities. We embrace a dynamic and inclusive culture. Here you will collaborate with multi-national teams, contribute to a myriad of innovative projects that deliver the most creative and cutting-edge solutions, and have an opportunity to continuously learn and grow. No matter where you are located, you will join a dedicated, creative, and diverse community that will help you discover your fullest potential.\n\nWe are building a web-based medical imaging viewer that helps researchers and scientists turn imaging data into actionable insights. As a Middle Frontend Engineer (Medical Imaging Viewer), you will partner with engineering, product, and design to tackle complex UI work and API-adjacent integration challenges.\n\nResponsibilities\n\n\nDesign foundational functionality for a web-based medical imaging viewer\nDevelop user interfaces with TypeScript and ReactJS\nMaintain current frontend capabilities while improving performance and reliability\nCollaborate with engineers to investigate issues and deliver effective solutions\nCoordinate with product and design to ship intuitive, responsive UI aligned with a design system\nParticipate in Agile/Scrum ceremonies such as refinement, planning, standups, and retrospectives\nContribute to an Angular-based frontend application when needed\n\n\nRequirements\n\n\nHands-on frontend development experience of 2+ years in professional settings\nStrong proficiency in TypeScript and ReactJS\nProven experience with DICOM Medical Viewers, including OHIF/DICOM\nSolid API and integration skills across client/server boundaries\nGood knowledge of frontend architecture, including state management and component design\nClear written and verbal communication skills\nUpper-Intermediate English proficiency (B2)\n\n\nNice to have\n\n\nExperience working in regulated environments or on healthcare/clinical trial software\nExperience with Python or Go to collaborate effectively on backend topics\nExperience creating CI/CD pipelines, including exposure to GitLab CI\nExperience contributing to or maintaining large open-source projects\n\n\nWe offer\n\n\nInternational projects with top brands\nWork with global teams of highly skilled, diverse peers\nHealthcare benefits\nEmployee financial programs\nPaid time off and sick leave\nUpskilling, reskilling and certification courses\nUnlimited access to the LinkedIn Learning library and 22,000+ courses\nGlobal career opportunities\nVolunteer and community involvement opportunities\nEPAM Employee Groups\nAward-winning culture recognized by Glassdoor, Newsweek and LinkedIn\n\n\nEPAM is an Equal Opportunity Employer. All qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, age, sexual orientation, gender identity or expression, disability, protected veteran status, or any other characteristic protected by applicable law.",
-    "location": "Remote - Colombia",
-    "country": "Colombia",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-12T05:08:01.549Z",
-    "sourceHash": "c60103b4ab54cce618540d9bfdba32db115ddfb238e9410c268986f4c9aa6cd2",
-    "company": {
-      "id": "epamsystems",
-      "name": "EPAM Systems",
-      "logoUrl": "https://logo.clearbit.com/epamsystems.com",
-      "industry": "Technology",
-      "website": "https://epamsystems.com"
-    },
-    "slug": "frontend-engineer-medical-imaging-viewer-epam-systems-c60103b4",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Colombia"
-      ],
-      "seniority": "junior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "d88c4fac2ec2987840b133a53146fb0cb9dd0e9843bdfc5c7b9c4af4cc589034",
-    "title": "Frontend Code Evaluation Specialist",
-    "applyUrl": "https://work.mercor.com/login?utm_medium=free_job_board&utm_source=linkedin&utm_term=3W8776YV&utm_content=manatal_deflect_apps_disabled&listingId=list_AAABoAPp1LEAbgpoCqdGza4o",
-    "description": "About the job\n\nAbout The Job\n\nMercor connects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.\n\nPosition: Frontend Engineer\n\nType: Contract\n\nCompensation: $90/hour\n\nLocation: Remote\n\nRole Responsibilities\n\n\nRender a reference page and two candidate replications at 1920×1080. Judge which is the closer reproduction, state by state.\nDiff visual fidelity in detail: box model and spacing, typography (family, size, weight, line-height, letter-spacing), color and border treatment, image and asset handling, z-order, and overflow.\nRead the source of both attempts and grade construction quality. Distinguish a replication that is genuinely correct from one that merely looks correct at one viewport.\nTest responsiveness. Identify defects such as a nav bar that looks right at 1920px but collapses at 1400px.\nWrite specific, evidence-cited justifications for every preference. Provide detailed explanations like \"B nests the article body in a single absolutely-positioned div, so the text overlaps the footer below 1600px, while A uses normal document flow.\"\nUse the \"this task is broken\" escape hatch with judgment. Distinguish a task that genuinely cannot be completed from one that is merely hard.\n\n\n\nQualifications\n\nMust-Have\n\n\n3–8 years of professional web development experience in frontend or full-stack work.\nFluency across web eras, including legacy layouts like used for layout.\nCommand of hand-written HTML and CSS: semantic markup, flexbox, grid, media queries, and legacy float- and table-based layouts.\nBrowser DevTools as muscle memory.\nCommand-line comfort: unzipping an archive, standing up a static local server, and untangling a broken image reference.\nEnough JavaScript to read a page's scripts and understand their DOM impact.\nProfessional written English for task justification.\n\n\n\nPreferred\n\n\nPrior RLHF, preference-labeling, model-evaluation, or structured code-review work.\nPixel-perfect design-to-code experience.\nAccessibility expertise (ARIA, semantic landmarks, heading hierarchy).\nFamiliarity with how LLMs fail at code generation.\nWeb scraping, archiving, or DOM-parsing background.\nMore than one completed Mercor project and availability in contiguous multi-hour blocks.\n\n\n\nApplication Process (Takes 20–30 mins to complete)\n\n\nUpload resume\nAI interview based on your resume\nSubmit form\n\n\n\nResources & Support\n\n\nFor details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome\nFor any help or support, reach out to: support@mercor.com\n\n\n\nPS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.",
-    "location": "Remote - Austria",
-    "country": "Austria",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-12T05:03:21.530Z",
-    "sourceHash": "d88c4fac2ec2987840b133a53146fb0cb9dd0e9843bdfc5c7b9c4af4cc589034",
-    "company": {
-      "id": "mercor",
-      "name": "Mercor",
-      "logoUrl": "https://logo.clearbit.com/mercor.com",
-      "industry": "Technology",
-      "website": "https://mercor.com"
-    },
-    "slug": "frontend-code-evaluation-specialist-mercor-d88c4fac",
-    "aiTags": {
-      "stack": [
-        "javascript",
-        "css",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "Austria"
       ],
       "seniority": "senior",
       "employmentType": "contract"
