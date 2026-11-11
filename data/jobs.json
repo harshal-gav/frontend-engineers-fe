@@ -1,5 +1,77 @@
 [
   {
+    "id": "041d95c4bda34862ad96e0ea43e8e760a40562f07acfff23faf42d1c84fb3170",
+    "title": "Senior Frontend Engineer",
+    "applyUrl": "https://remotefirstjobs.com/companies/credible/jobs/senior-frontend-engineer-881187",
+    "description": "Who is Credible?\n\nCredible is a leading U.S. consumer finance marketplace, transforming the way consumers access and compare financial products. We operate at a consumer and enterprise level. On the consumer side, we help millions of people make smarter financial decisions by comparing personalized, pre-qualified offers across student loans, personal loans, mortgages, credit cards, and insurance — all without impacting their credit score. On the enterprise side, we power financial product comparison and distribution through deep integrations and partnerships with lenders, insurance carriers, and financial institutions, as well as providing marketplace technology and capabilities to third-party partners and distribution channels.\n\nAbout the Role\n\nWe are looking for a talented and passionate Senior Frontend Engineer to join our software engineering team. You&rsquo;ll build the user-facing side of an extraordinary web-based platform that has already helped thousands of people save money and aims to help millions more, while also contributing to the APIs and services that power it. If you&rsquo;ve been seeking a product that&rsquo;s worthy of your skills, then read on!\n\nResponsibilities\n\n• Own the design and delivery of customer-facing web features in React and TypeScript, with a passion for quality in user experience, web design principles, and code quality\n\n• Contribute to backend work that supports the frontend, such as building and extending REST and/or GraphQL APIs, backend-for-frontend layers, and Node.js services\n\n• Understand customer requirements and efficiently translate them into code\n\n• Be a self-starter who works in an Agile/Lean environment with minimal supervision\n\n• Thrive on collaboration; Credible&rsquo;s Software team works closely with Product Management, Design and Operations for everything from roll-out to feature enhancement\n\n• Show strong leadership and verbal communication skills, including mentoring other engineers\n\n• Take pride in writing and maintaining clean, modular, well-tested code\n\n• Be resourceful and mindful; you move fast and show empathy for your colleagues\n\n• Stay open to learning new technologies\n\nEducation and Experience\n\n• 8+ years of solid web and front-end development\n\n• 8+ years of experience programming JavaScript and TypeScript, including concepts like asynchronous programming, closures, promises, and types\n\n• Solid experience with React\n\n• Mastery of ES6, HTML5, and CSS3\n\n• Working experience with Node.js, Express.js, Next.js, Webpack, Babel, or similar tools\n\n• Experience building and consuming REST and/or GraphQL APIs, including contributing to server-side code that backs them\n\n• Working knowledge of relational databases and SQL\n\n• Demonstrable experience building testable software with tests\n\n• BS in Engineering, Computer Science, or equivalent experience\n\nNice to Have\n\n• Solid experience with SEO\n\n• Experience with AWS services such as EC2, RDS, S3 and SQS\n\n• Knowledge or experience with Docker\n\n• Experience with Ruby on Rails or a similar MVC framework (e.g., Django), with RSpec or similar test frameworks\n\nPursuant to state and local pay disclosure requirements, the pay ranges for this role, with final offer amount dependent on education, skills, experience, and location, are listed below. This role is also eligible for an annual discretionary bonus, various benefits, including medical/dental/vision, insurance, a 401(k) plan, paid time off, and other benefits in accordance with applicable plan documents.\n\nView more details about Credible Benefits\n\nFor high cost of labor markets such as but not limited to New York City and San Francisco:\n\n$114,000—$150,000 USD\n\nFor all other US locations:\n\n$100,000—$140,000 USD\n\nWhy work at Credible?\n\nWe combine the intelligence, expertise, and confidence of a financial advisor with the approachability and honesty of a friend. In other words, we’re the friend you always wish you had in finance.\n\nWe are optimistic, challengers, trustworthy, clever, and smart. We are open and transparent. We strive to act as advisors by being friendly, objective, and open in our communication. We use language that is intelligent yet approachable. When appropriate, we’ll drop in a bit of wit to position ourselves as a fresh, reliable voice in the financial world.\n\nWe are an equal opportunity employer and all qualified applicants will receive consideration for employment without regard to race, color, religion, sex, national origin, gender identity, disability, protected veteran status, or any other characteristic protected by law. We will consider for employment qualified applicants with criminal histories consistent with applicable law.",
+    "location": "Remote - United States",
+    "country": "United States",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-10T12:23:28.000Z",
+    "sourceHash": "041d95c4bda34862ad96e0ea43e8e760a40562f07acfff23faf42d1c84fb3170",
+    "company": {
+      "id": "credible",
+      "name": "Credible",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/crediblelabs-1a43-0.webp",
+      "industry": "Technology",
+      "website": "https://credible.com"
+    },
+    "slug": "senior-frontend-engineer-credible-041d95c4",
+    "aiTags": {
+      "stack": [
+        "react",
+        "nextjs",
+        "typescript",
+        "javascript",
+        "css",
+        "webpack",
+        "graphql",
+        "html"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "United States"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
+    "id": "e9f989d99f8efb07baf7767124e3706fc6b35e13d8dcc1f329de5160d42ae455",
+    "title": "Senior Frontend Developer (Angular)",
+    "applyUrl": "https://remotefirstjobs.com/companies/advansys/jobs/senior-frontend-developer-angular-881210",
+    "description": "• Design and develop dynamic, high-performance web applications using Angular.\n\n• Collaborate with UX/UI designers to translate wireframes and mock-ups into responsive web applications.\n\n• Enhance application performance through optimization techniques and best practices.\n\n• Implement state management solutions effectively, ensuring efficient data handling and application flow.\n\n• Conduct code reviews and provide constructive feedback to peers, ensuring high code quality.\n\n• Stay informed on the latest trends and advancements in the Angular ecosystem and web development.\n\n• Troubleshoot and debug issues to improve front-end performance and user experience.\n\n• Bachelor’s degree in Computer Science, Engineering, or a related field (or equivalent work experience).\n\n• 3+ years of experience in front-end development, with a strong focus on Angular.\n\n• Proficient in HTML, CSS, and JavaScript/TypeScript.\n\n• Experience with state management libraries (e.g., NgRx) and component libraries.\n\n• Familiarity with RESTful APIs and integrating back-end services.\n\n• Understanding of responsive design and web accessibility standards.\n\n• Experience with version control systems (e.g., Git) and agile methodologies.\n\n• Strong analytical and problem-solving skills.\n\n-Hybrid working model\n\n-Social and medical insurance\n\n-Transportation",
+    "location": "Remote - Egypt",
+    "country": "Egypt",
+    "remoteType": "REMOTE",
+    "postedAt": "2026-11-10T15:08:20.000Z",
+    "sourceHash": "e9f989d99f8efb07baf7767124e3706fc6b35e13d8dcc1f329de5160d42ae455",
+    "company": {
+      "id": "advansys",
+      "name": "Advansys",
+      "logoUrl": "https://cdn.remotefirstjobs.com/logo/advansys-esc.com-d249cf0ea8-2.webp",
+      "industry": "Technology",
+      "website": "https://advansys.com"
+    },
+    "slug": "senior-frontend-developer-angular-advansys-e9f989d9",
+    "aiTags": {
+      "stack": [
+        "angular",
+        "typescript",
+        "javascript",
+        "css",
+        "html",
+        "accessibility"
+      ],
+      "remoteScope": "COUNTRY",
+      "eligibleRegions": [
+        "Egypt"
+      ],
+      "seniority": "senior",
+      "employmentType": "fulltime"
+    }
+  },
+  {
     "id": "6162fda0450df994d97fbb544da408a1530ab68dbf7160d1888d13a3e4c9f7cf",
     "title": "Senior Frontend Engineer",
     "applyUrl": "https://www.arbeitnow.co.uk/jobs/companies/reactive-markets/senior-frontend-engineer-united-kingdom-408750",
@@ -6917,74 +6989,6 @@
       "remoteScope": "COUNTRY",
       "eligibleRegions": [
         "United States"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "c28ecd421ea2d8dadeaeaf83f9410f0ca5047c55d1ae41c7e94c109383d2aa5f",
-    "title": "Frontend Desktop Engineer (100% remote - Worldwide)",
-    "applyUrl": "https://remotefirstjobs.com/companies/tetherto/jobs/frontend-desktop-engineer-100-remote-worldwide-870725",
-    "description": "Description\n\nJoin Tether and Shape the Future of Digital Finance\n\nAt Tether, we’re not just building products, we’re pioneering a global financial revolution. Our cutting-edge solutions empower businesses-from exchanges and wallets to payment processors and ATMs-to seamlessly integrate reserve-backed tokens across blockchains. By harnessing the power of blockchain technology, Tether enables you to store, send, and receive digital tokens instantly, securely, and globally, all at a fraction of the cost. Transparency is the bedrock of everything we do, ensuring trust in every transaction.\n\nInnovate with Tether\n\nTether Finance: Our innovative product suite features the world’s most trusted stablecoin, USDT, relied upon by hundreds of millions worldwide, alongside pioneering digital asset tokenization services.\n\nBut that’s just the beginning:\n\nTether Power: Driving sustainable growth, our energy solutions optimize excess power for Bitcoin mining using eco-friendly practices in state-of-the-art, geo-diverse facilities.\n\nTether Data: Fueling breakthroughs in AI and peer-to-peer technology, we reduce infrastructure costs and enhance global communications with cutting-edge solutions like KEET, our flagship app that redefines secure and private data sharing.\n\nTether Education: Democratizing access to top-tier digital learning, we empower individuals to thrive in the digital and gig economies, driving global growth and opportunity.\n\nTether Evolution: At the intersection of technology and human potential, we are pushing the boundaries of what is possible, crafting a future where innovation and human capabilities merge in powerful, unprecedented ways.\n\nWhy Join Us?\n\nOur team is a global talent powerhouse, working remotely from every corner of the world. If you’re passionate about making a mark in the fintech space, this is your opportunity to collaborate with some of the brightest minds, pushing boundaries and setting new standards. We’ve grown fast, stayed lean, and secured our place as a leader in the industry.\n\nIf you have excellent English communication skills and are ready to contribute to the most innovative platform on the planet, Tether is the place for you.\n\nAre you ready to be part of the future?\n\nAbout the job\n\nOur pioneering P2P development platform, built on our open-source technology stack, Pear, eliminates the need for traditional server infrastructure. Pear platform facilitates direct deployment of applications from the developer’s machine to the user, enabling seamless scalability and performance. By leveraging Node.js-based technology akin to BitTorrent, we create robust peer-to-peer connections and data replication systems that set the foundation for a decentralized web.\n\nLearn more about Pear: docs.pears.com\n\nKeet, our flagship P2P communications app, is the first step towards this new era. It exemplifies the potential of P2P technology in everyday applications, from messaging and file sharing to complex collaborative environments, all while maintaining user sovereignty over personal data.\n\nLearn more about Keet: keet.io\n\nResponsibilities\n\nIn this role, you will be responsible for developing and maintaining Keet Desktop, our cross-platform P2P communications application built with React and running on the Pear runtime. You&rsquo;ll work on everything from UI/UX implementation to performance optimization, helping shape the future of decentralized communication.\n\nRequirements\n\n• Proven experience with React/Preact and modern JavaScript/TypeScript in production-scale applications.\n\n• Strong competency in state management (Redux, Redux Toolkit, Zustand, or similar).\n\n• Ability to write modular, maintainable, and well tested code.\n\n• Solid skillset in testing & debugging complex frontend applications.\n\n• Deep interest or experience with P2P technologies or distributed systems.\n\n• Comfort working in a remote, globally distributed team; good communication skills.\n\nPreferred Qualifications\n\n• Experience with desktop application development (Electron, Tauri, or similar runtimes).\n\n• Familiarity with video/audio APIs (WebRTC, media streams) and real-time communication.\n\n• Demonstrated ability to optimize UI performance: rendering, memory management.\n\n• Experience building cross platform applications (macOS, Windows, Linux, etc).\n\n• Bonus: Past contributions to OSS projects, especially in P2P or decentralized tech.\n\nImportant information for candidates\n\nRecruitment scams have become increasingly common. To protect yourself, please keep the following in mind when applying for roles:\n\n• Apply only through our official channels. We do not use third-party platforms or agencies for recruitment unless clearly stated. All open roles are listed on our official careers page: https://tether.recruitee.com/\n\n• Verify the recruiter’s identity. All our recruiters have verified LinkedIn profiles. If you’re unsure, you can confirm their identity by checking their profile or contacting us through our website.\n\n• Be cautious of unusual communication methods. We do not conduct interviews over WhatsApp, Telegram, or SMS. All communication is done through official company emails and platforms.\n\n• Double-check email addresses. All communication from us will come from emails ending in @ tether.to or @ tether.io\n\n• We will never request payment or financial details. If someone asks for personal financial information or payment at any point during the hiring process, it is a scam. Please report it immediately.\n\nWhen in doubt, feel free to reach out through our official website.",
-    "location": "Remote - Global",
-    "country": "Global",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-12T11:58:00.000Z",
-    "sourceHash": "c28ecd421ea2d8dadeaeaf83f9410f0ca5047c55d1ae41c7e94c109383d2aa5f",
-    "company": {
-      "id": "tetherio",
-      "name": "Tether.io",
-      "logoUrl": "https://cdn.remotefirstjobs.com/logo/tether-io-fbddafd231-2.webp",
-      "industry": "Technology",
-      "website": "https://tetherio.com"
-    },
-    "slug": "frontend-desktop-engineer-100-remote-worldwide-tether-io-c28ecd42",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "redux",
-        "zustand"
-      ],
-      "remoteScope": "GLOBAL",
-      "eligibleRegions": [
-        "Global"
-      ],
-      "seniority": "mid",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "0fd81adc19a759a4dfd3b82f3cb09d681e507af8b31770b82ac0787e15e50ed0",
-    "title": "Frontend Desktop Engineer (Internal)",
-    "applyUrl": "https://remotefirstjobs.com/companies/tetherto/jobs/frontend-desktop-engineer-internal-870731",
-    "description": "Description\n\nJoin Tether and Shape the Future of Digital Finance\n\nAt Tether, we’re not just building products, we’re pioneering a global financial revolution. Our cutting-edge solutions empower businesses-from exchanges and wallets to payment processors and ATMs-to seamlessly integrate reserve-backed tokens across blockchains. By harnessing the power of blockchain technology, Tether enables you to store, send, and receive digital tokens instantly, securely, and globally, all at a fraction of the cost. Transparency is the bedrock of everything we do, ensuring trust in every transaction.\n\nInnovate with Tether\n\nTether Finance: Our innovative product suite features the world’s most trusted stablecoin, USDT, relied upon by hundreds of millions worldwide, alongside pioneering digital asset tokenization services.\n\nBut that’s just the beginning:\n\nTether Power: Driving sustainable growth, our energy solutions optimize excess power for Bitcoin mining using eco-friendly practices in state-of-the-art, geo-diverse facilities.\n\nTether Data: Fueling breakthroughs in AI and peer-to-peer technology, we reduce infrastructure costs and enhance global communications with cutting-edge solutions like KEET, our flagship app that redefines secure and private data sharing.\n\nTether Education: Democratizing access to top-tier digital learning, we empower individuals to thrive in the digital and gig economies, driving global growth and opportunity.\n\nTether Evolution: At the intersection of technology and human potential, we are pushing the boundaries of what is possible, crafting a future where innovation and human capabilities merge in powerful, unprecedented ways.\n\nWhy Join Us?\n\nOur team is a global talent powerhouse, working remotely from every corner of the world. If you’re passionate about making a mark in the fintech space, this is your opportunity to collaborate with some of the brightest minds, pushing boundaries and setting new standards. We’ve grown fast, stayed lean, and secured our place as a leader in the industry.\n\nIf you have excellent English communication skills and are ready to contribute to the most innovative platform on the planet, Tether is the place for you.\n\nAre you ready to be part of the future?\n\nAbout the job\n\nOur pioneering P2P development platform, built on our open-source technology stack, Pear, eliminates the need for traditional server infrastructure. Pear platform facilitates direct deployment of applications from the developer’s machine to the user, enabling seamless scalability and performance. By leveraging Node.js-based technology akin to BitTorrent, we create robust peer-to-peer connections and data replication systems that set the foundation for a decentralized web.\n\nLearn more about Pear: docs.pears.com\n\nKeet, our flagship P2P communications app, is the first step towards this new era. It exemplifies the potential of P2P technology in everyday applications, from messaging and file sharing to complex collaborative environments, all while maintaining user sovereignty over personal data.\n\nLearn more about Keet: keet.io\n\nResponsibilities\n\nIn this role, you will be responsible for developing and maintaining Keet Desktop, our cross-platform P2P communications application built with React and running on the Pear runtime. You&rsquo;ll work on everything from UI/UX implementation to performance optimization, helping shape the future of decentralized communication.\n\nRequirements\n\n• Proven experience with React/Preact and modern JavaScript/TypeScript in production-scale applications.\n\n• Strong competency in state management (Redux, Redux Toolkit, Zustand, or similar).\n\n• Ability to write modular, maintainable, and well tested code.\n\n• Solid skillset in testing & debugging complex frontend applications.\n\n• Deep interest or experience with P2P technologies or distributed systems.\n\n• Comfort working in a remote, globally distributed team; good communication skills.\n\nPreferred Qualifications\n\n• Experience with desktop application development (Electron, Tauri, or similar runtimes).\n\n• Familiarity with video/audio APIs (WebRTC, media streams) and real-time communication.\n\n• Demonstrated ability to optimize UI performance: rendering, memory management.\n\n• Experience building cross platform applications (macOS, Windows, Linux, etc).\n\n• Bonus: Past contributions to OSS projects, especially in P2P or decentralized tech.\n\nImportant information for candidates\n\nRecruitment scams have become increasingly common. To protect yourself, please keep the following in mind when applying for roles:\n\n• Apply only through our official channels. We do not use third-party platforms or agencies for recruitment unless clearly stated. All open roles are listed on our official careers page: https://tether.recruitee.com/\n\n• Verify the recruiter’s identity. All our recruiters have verified LinkedIn profiles. If you’re unsure, you can confirm their identity by checking their profile or contacting us through our website.\n\n• Be cautious of unusual communication methods. We do not conduct interviews over WhatsApp, Telegram, or SMS. All communication is done through official company emails and platforms.\n\n• Double-check email addresses. All communication from us will come from emails ending in @ tether.to or @ tether.io\n\n• We will never request payment or financial details. If someone asks for personal financial information or payment at any point during the hiring process, it is a scam. Please report it immediately.\n\nWhen in doubt, feel free to reach out through our official website.",
-    "location": "Remote - Global",
-    "country": "Global",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-12T12:04:32.000Z",
-    "sourceHash": "0fd81adc19a759a4dfd3b82f3cb09d681e507af8b31770b82ac0787e15e50ed0",
-    "company": {
-      "id": "tetherio",
-      "name": "Tether.io",
-      "logoUrl": "https://cdn.remotefirstjobs.com/logo/tether-io-fbddafd231-2.webp",
-      "industry": "Technology",
-      "website": "https://tetherio.com"
-    },
-    "slug": "frontend-desktop-engineer-internal-tether-io-0fd81adc",
-    "aiTags": {
-      "stack": [
-        "react",
-        "typescript",
-        "javascript",
-        "redux",
-        "zustand"
-      ],
-      "remoteScope": "GLOBAL",
-      "eligibleRegions": [
-        "Global"
       ],
       "seniority": "mid",
       "employmentType": "fulltime"
@@ -23366,74 +23370,6 @@
       ],
       "seniority": "senior",
       "employmentType": "b2b"
-    }
-  },
-  {
-    "id": "2dc267059084f321633beb95c3c854d2952ea69ac80100090316c3ab31103b37",
-    "title": "Frontend Developer",
-    "applyUrl": "https://www.bestjobtool.com/job-description/3193681878?src=LinkedIn",
-    "description": "About the job\n\nAbout The Company\n\nBNY, a leading global financial services organization, plays a pivotal role in shaping the future of finance by leveraging innovative technologies and strategic insights. With a rich history of delivering exceptional financial solutions, BNY manages nearly 20% of the world's investible assets, underscoring its influence and leadership in the industry. The company fosters a culture of innovation, collaboration, and continuous growth, empowering its employees to thrive and contribute to transformative projects. Recognized as a top destination for forward-thinking professionals, BNY is committed to harnessing cutting-edge AI, breakthrough technologies, and sustainable practices to redefine industry standards and create value for clients worldwide.\n\nAbout The Role\n\nWe are seeking a highly experienced Senior Front-End Developer to join BNY's dynamic team, focusing on the development and evolution of our design system. In this role, you will be instrumental in building scalable, reusable, and maintainable web components that serve as the foundation for our digital products. Your expertise will ensure consistency, quality, and efficiency across all applications, enabling our product teams to deliver exceptional user experiences. Collaborating closely with designers, product managers, and fellow developers, you will translate design principles into technical solutions that align with our strategic vision. This position offers an exciting opportunity to influence the core of our digital ecosystem, working with a modern tech stack and contributing to innovative projects that impact millions of users globally.\n\nQualifications\n\nThe ideal candidate will possess over 8 years of experience as a Front-End Developer, with a strong focus on design system development. You should demonstrate expert-level proficiency in JavaScript and TypeScript, along with deep expertise in modern front-end frameworks such as Angular and React. A comprehensive understanding of CSS, including pre-processors, CSS variables, variable stacking, and advanced styling techniques, is essential. Experience working with Web Components in large-scale systems and managing complex theming architectures is highly desirable. Additionally, candidates should have a solid grasp of version control, library dependency management, and packaged asset versioning. Excellent communication skills, a keen eye for design aesthetics, and the ability to collaborate effectively with cross-functional teams are critical to success in this role. A passion for documentation, creating working code demonstrations, and mentoring junior developers will set you apart.\n\nResponsibilities\n\n\nLead the development and ongoing evolution of BNY's design system, ensuring it remains scalable, reusable, and maintainable.\nArchitect and implement web components that serve as the building blocks for user interfaces across various applications.\nDrive advanced theming solutions to accommodate different brand identities and user preferences, utilizing CSS variables, variable stacking, and sophisticated color systems.\nManage the full lifecycle of design system components, including development, deployment, versioning, and continuous maintenance.\nOversee library and package dependency management, ensuring a stable and efficient development environment.\nCollaborate with design, product, and engineering teams to translate visual and interaction designs into functional, technical solutions.\nChampion best practices in front-end development, focusing on performance, accessibility, and responsiveness.\nMentor and guide other developers on design system principles, implementation strategies, and coding standards.\nDevelop and maintain comprehensive documentation and guidelines to facilitate seamless collaboration between designers and developers.\nCreate working code demonstrations to showcase component capabilities and usage scenarios.\n\n\nBenefits\n\nBNY offers a competitive compensation package aligned with market standards, with a base salary ranging between $95,000 and $209,000 annually, depending on experience and location. The total compensation package may include performance-based bonuses, discretionary incentives, long-term incentives, and comprehensive benefits programs. The company values work-life balance and provides a range of employee benefits, including health insurance, retirement plans, professional development opportunities, and wellness programs. BNY fosters a collaborative and inclusive work environment that encourages innovation, continuous learning, and career growth. Employees are empowered to make meaningful contributions to impactful projects, with ample opportunities for advancement and skill development. The organization also emphasizes a culture of recognition and support, ensuring that every team member's efforts are acknowledged and valued.\n\nEqual Opportunity\n\nBNY is an equal opportunity employer committed to fostering an inclusive workplace. We celebrate diversity and are dedicated to creating an environment where all employees can thrive regardless of race, gender, sexual orientation, age, disability, or background. We believe that diverse perspectives drive innovation and contribute to our success. All employment decisions are made based on qualifications, merit, and business needs. We encourage qualified candidates from all backgrounds to apply and join our team in shaping the future of finance.\n\n\n\n\n\nDesired Skills and Experience\n\nFront-End Development, Web Components, JavaScript, TypeScript, CSS, Design Systems",
-    "location": "Remote - United States",
-    "country": "United States",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-12T05:51:24.848Z",
-    "sourceHash": "2dc267059084f321633beb95c3c854d2952ea69ac80100090316c3ab31103b37",
-    "company": {
-      "id": "netrolynxai",
-      "name": "Netrolynx AI",
-      "logoUrl": "https://logo.clearbit.com/netrolynxai.com",
-      "industry": "Technology",
-      "website": "https://netrolynxai.com"
-    },
-    "slug": "frontend-developer-netrolynx-ai-2dc26705",
-    "aiTags": {
-      "stack": [
-        "react",
-        "angular",
-        "typescript",
-        "javascript",
-        "css",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United States"
-      ],
-      "seniority": "senior",
-      "employmentType": "fulltime"
-    }
-  },
-  {
-    "id": "5875e5be14eccb6320ba05808d6dacad11b20ffb6ddfb311f4bc1c6efb30a949",
-    "title": "Frontend Code Evaluation Specialist",
-    "applyUrl": "https://work.mercor.com/login?utm_medium=free_job_board&utm_source=linkedin&utm_term=V687Y5WR&utm_content=manatal_deflect_apps_disabled&listingId=list_AAABoAPp1LEAbgpoCqdGza4o",
-    "description": "About the job\n\nAbout The Job\n\nMercor connects elite creative and technical talent with leading AI research labs. Headquartered in San Francisco, our investors include Benchmark, General Catalyst, Peter Thiel, Adam D'Angelo, Larry Summers, and Jack Dorsey.\n\nPosition: Frontend Engineer\n\nType: Contract\n\nCompensation: $90/hour\n\nLocation: Remote\n\nRole Responsibilities\n\n\nRender a reference page and two candidate replications at 1920×1080. Judge which is the closer reproduction, state by state.\nDiff visual fidelity in detail: box model and spacing, typography (family, size, weight, line-height, letter-spacing), color and border treatment, image and asset handling, z-order, and overflow.\nRead the source of both attempts and grade construction quality. Distinguish a replication that is genuinely correct from one that merely looks correct at one viewport.\nTest responsiveness. Identify defects such as a nav bar that looks right at 1920px but collapses at 1400px.\nWrite specific, evidence-cited justifications for every preference. Provide detailed explanations like \"B nests the article body in a single absolutely-positioned div, so the text overlaps the footer below 1600px, while A uses normal document flow.\"\nUse the \"this task is broken\" escape hatch with judgment. Distinguish a task that genuinely cannot be completed from one that is merely hard.\n\n\n\nQualifications\n\nMust-Have\n\n\n3–8 years of professional web development experience in frontend or full-stack work.\nFluency across web eras, including legacy layouts like used for layout.\nCommand of hand-written HTML and CSS: semantic markup, flexbox, grid, media queries, and legacy float- and table-based layouts.\nBrowser DevTools as muscle memory.\nCommand-line comfort: unzipping an archive, standing up a static local server, and untangling a broken image reference.\nEnough JavaScript to read a page's scripts and understand their DOM impact.\nProfessional written English for task justification.\n\n\n\nPreferred\n\n\nPrior RLHF, preference-labeling, model-evaluation, or structured code-review work.\nPixel-perfect design-to-code experience.\nAccessibility expertise (ARIA, semantic landmarks, heading hierarchy).\nFamiliarity with how LLMs fail at code generation.\nWeb scraping, archiving, or DOM-parsing background.\nMore than one completed Mercor project and availability in contiguous multi-hour blocks.\n\n\n\nApplication Process (Takes 20–30 mins to complete)\n\n\nUpload resume\nAI interview based on your resume\nSubmit form\n\n\n\nResources & Support\n\n\nFor details about the interview process and platform information, please check: https://talent.docs.mercor.com/welcome\nFor any help or support, reach out to: support@mercor.com\n\n\n\nPS: Our team reviews applications daily. Please complete your AI interview and application steps to be considered for this opportunity.",
-    "location": "Remote - United Kingdom",
-    "country": "United Kingdom",
-    "remoteType": "REMOTE",
-    "postedAt": "2026-10-12T05:46:01.877Z",
-    "sourceHash": "5875e5be14eccb6320ba05808d6dacad11b20ffb6ddfb311f4bc1c6efb30a949",
-    "company": {
-      "id": "mercor",
-      "name": "Mercor",
-      "logoUrl": "https://logo.clearbit.com/mercor.com",
-      "industry": "Technology",
-      "website": "https://mercor.com"
-    },
-    "slug": "frontend-code-evaluation-specialist-mercor-5875e5be",
-    "aiTags": {
-      "stack": [
-        "javascript",
-        "css",
-        "html",
-        "accessibility"
-      ],
-      "remoteScope": "COUNTRY",
-      "eligibleRegions": [
-        "United Kingdom"
-      ],
-      "seniority": "senior",
-      "employmentType": "contract"
     }
   }
 ]
