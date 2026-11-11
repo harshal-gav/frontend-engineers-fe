@@ -75,32 +75,32 @@ const GEMINI_MODELS = [
   'gemini-2.5-pro'
 ];
 
-// High-performing creative themes engineered from viral LinkedIn career posts
+// High-performing creative themes engineered for maximum viral conversion on LinkedIn
 const CREATIVE_THEMES = [
   {
-    name: 'Frontend Only vs Generic Job Board Clutter',
-    angle: 'Generic job sites swallow applications into a black hole and force developers to scroll through thousands of irrelevant backend roles. FrontendEngineers.com is built 100% exclusively for frontend developers with pure React, Next.js, Vue, and CSS roles.',
-    hookStyle: 'Punchy question hook or bold statement focused on finding high-paying remote frontend jobs with FrontendEngineers.com.'
-  },
-  {
-    name: 'Aggregated from 100+ Sources to Save Your Time',
-    angle: 'Stop jumping across 50 different browser tabs and obscure job boards. FrontendEngineers.com aggregates verified remote frontend roles from 100+ sources into one single curated platform to save hours of your time every week.',
-    hookStyle: 'Punchy hook on saving hours of searching with 100+ aggregated sources in one place.'
-  },
-  {
-    name: 'Safe, Verified & Zero Ghost Postings',
-    angle: 'Modern job hunting is plagued by ghost jobs, recruiter spam, and dead links. Every single job on FrontendEngineers.com is vetted and verified by our team so developers never waste hours on fake postings.',
-    hookStyle: 'Empathy-driven reality check on wasted applications vs verified active roles.'
-  },
-  {
-    name: 'Skip the 500-Applicant ATS Queue',
-    angle: 'Aggregator job boards put you behind 600+ candidates who applied days earlier. For $9/month ($0.30/day), Pro gives you direct 1-click ATS application links on Greenhouse, Lever, and Ashby plus insider referrals.',
-    hookStyle: 'Tactical speed advantage on landing a remote frontend job fast.'
+    name: 'All Remote Jobs in One Place - Delete Your 30 Job Tabs',
+    angle: 'Developers waste 10-15 hours a week jumping between LinkedIn, Indeed, Wellfound, and company career pages. FrontendEngineers.com aggregates every verified remote frontend role from 100+ sources into one single feed so you never have to visit another platform. Upgrade to Pro for just $9/mo to unlock direct ATS links and referrals.',
+    hookStyle: 'Relatable, high-energy hook on deleting 30 job tabs and accessing every remote frontend job in one place.'
   },
   {
     name: 'The $9 Career Investment vs Months of Frustration',
-    angle: 'A remote frontend role pays $120k-$200k+. Why spend 6 months unemployed and stressed on broken free boards to save $9? For $0.30/day, unlock 1,000+ verified remote jobs and land interviews weeks faster.',
-    hookStyle: 'Mathematical ROI reality check for ambitious frontend developers.'
+    angle: 'A remote frontend role pays $100k-$200k+. Why spend 6 months unemployed and stressed on broken free boards to save $9? For $0.30/day, Pro unlocks 1,000+ verified remote jobs, direct Greenhouse/Lever/Ashby apply links, and insider referrals in one unified dashboard.',
+    hookStyle: 'High-converting ROI reality check comparing a $9 subscription to a 6-figure remote career.'
+  },
+  {
+    name: 'Why You Never Need Another Job Board Again',
+    angle: 'Stop juggling 5 different platforms filled with backend clutter, ghost jobs, and expired links. We aggregate verified frontend roles from 100+ sources into one clean hub. For just $9/month, skip the 500-applicant line and apply direct.',
+    hookStyle: 'Bold, provocative hook challenging developers to stop hopping between job platforms.'
+  },
+  {
+    name: 'Skip the 500-Applicant ATS Queue for Just $9',
+    angle: 'Generic aggregator platforms put you behind 500 candidates who applied days earlier. FrontendEngineers.com brings all top remote frontend jobs into one place and gives you direct ATS links and insider referrals for only $9/month.',
+    hookStyle: 'Tactical speed advantage hook on landing remote frontend interviews fast for $9.'
+  },
+  {
+    name: 'Reclaim 15 Hours a Week with All-in-One Aggregation',
+    angle: 'Hunting for remote frontend roles across 20 websites is exhausting. FrontendEngineers.com does all the heavy lifting by aggregating 100+ sources in one screen. For less than $0.30 a day ($9/mo), get full Pro access to direct links and community referrals.',
+    hookStyle: 'Time-saving empathy hook on reclaiming hours of job hunting every single week.'
   }
 ];
 
@@ -117,19 +117,19 @@ const DEFAULT_HASHTAGS = [
 ];
 
 const FALLBACK_HOOKS = [
-  'Searching for high-paying remote frontend jobs? FrontendEngineers.com is built exclusively for devs like you! 🚀',
-  'Finding high-paying remote frontend jobs is easier than ever with FrontendEngineers.com! 💻✨',
-  'Tired of searching endlessly for remote frontend jobs? FrontendEngineers.com brings every top opportunity straight to your screen! ⚡',
-  'Landing a high-paying remote frontend job shouldn\'t take months of silence - FrontendEngineers.com gives you the direct edge. 🎯'
+  'Stop opening 30 tabs every day to find remote frontend jobs - FrontendEngineers.com puts them all in one place! 🛑💻🚀',
+  'Ready to land a high-paying remote frontend job without jumping across 10 platforms? FrontendEngineers.com is your all-in-one hub! ⚡🌍🔥',
+  'Searching for remote frontend jobs across dozens of boards? FrontendEngineers.com brings every top opportunity into one single feed! 🎯💎🚀',
+  'Want all verified remote frontend jobs in one place for just $9/month? FrontendEngineers.com is built for developers like you! 💻🔥✨'
 ];
 
 // ─── Gemini Prompt Builder ───────────────────────────────────
 
 function buildPrompt(theme, isLong, randomSalt) {
   if (isLong) {
-    return `You are an elite tech career advisor and engineering founder who writes viral, high-converting LinkedIn posts for frontend developers.
+    return `You are an elite tech career growth expert, copywriter, and engineering founder who writes viral, high-converting LinkedIn posts that sell subscriptions to developers.
 
-Write a HIGH-PERFORMING, ENGAGING, LONG-FORM LinkedIn post (strictly 1100 to 1500 characters) that follows the proven winning formula of viral tech job posts for FrontendEngineers.com.
+Write a HIGH-PERFORMING, ENGAGING, EMOJI-RICH, LONG-FORM LinkedIn post (strictly 1100 to 1450 characters) designed to SELL the $9/month Pro subscription for FrontendEngineers.com and convince developers that they NEVER need to visit another job board again.
 
 ---
 TODAY'S ANGLE:
@@ -139,65 +139,62 @@ TODAY'S ANGLE:
 (Random seed key: ${randomSalt} - use only for stylistic variety, never mention this number in the post text)
 
 ---
-PROVEN WINNING POST STRUCTURE (FOLLOW THIS EXACT BLUEPRINT):
+WINNING POST BLUEPRINT (FOLLOW EVERY STEP STRICTLY):
 
 1. THE FIRST LINE (MANDATORY CATCHY HOOK):
-- Must be a single scroll-stopping question or punchy sentence featuring both "FrontendEngineers.com" and "remote frontend jobs" (or "high-paying remote frontend jobs").
-- End with a relevant emoji (e.g., 🚀, 💻✨, or ⚡).
-- Examples of winning hooks:
-  "Searching for high-paying remote frontend jobs? FrontendEngineers.com is built exclusively for devs like you! 🚀"
-  "Finding high-paying remote frontend jobs is easier than ever with FrontendEngineers.com! 💻✨"
-  "Tired of searching endlessly for remote frontend jobs? FrontendEngineers.com brings every top opportunity straight to your screen! ⚡"
-- Absolutely NO URLs or links in the first line or at the top of the post.
+- Must be a single scroll-stopping sentence or question containing both "FrontendEngineers.com" and "remote frontend jobs" (or "high-paying remote frontend jobs").
+- Include multiple vibrant emojis (e.g., 🛑💻🚀, ⚡🌍🔥, or 🎯💎✨).
+- Absolutely NO URLs or links in the first line or anywhere in the intro.
+- Examples:
+  "Stop opening 30 browser tabs every day searching for remote frontend jobs - FrontendEngineers.com brings them all into one place! 🛑💻🚀"
+  "Why are you still checking 5 different job boards for remote frontend jobs? FrontendEngineers.com puts 1,000+ roles on one screen! ⚡🌍🔥"
 
-2. THE DEVELOPER PAIN POINT & EMPATHY (2-3 SENTENCES):
-- Speak directly to the developer's frustration with generic job boards:
-  - Applications disappearing into a void without a response.
-  - Sifting through hundreds of irrelevant backend and full-stack roles.
-  - Expired ghost listings and 500-applicant queues.
-- Explain how FrontendEngineers.com solves this by streamlining the search exclusively for frontend developers so they can get hired fast.
+2. THE DEVELOPER REALITY & THE ALL-IN-ONE SOLUTION (2-3 punchy sentences):
+- Describe the exhausting reality of job hunting: spending hours juggling LinkedIn, Indeed, Wellfound, Twitter, and dozens of company career pages. 🤦‍♂️⏳
+- Emphasize the core superpower: You NEVER need to go to another platform again. FrontendEngineers.com aggregates verified remote frontend roles from 100+ sources into one single high-speed dashboard, saving 10-15+ hours every week! 🌍⚡💻
 
-3. THE TRANSITION LINE:
-- Exactly: "Here is why developers love us:" or "Here is why developers trust us:"
+3. TRANSITION LINE (WITH EMOJIS):
+- Exactly: "Here is why ambitious developers use our all-in-one hub: 👇✨" or "Here is why smart developers stopped searching anywhere else: 👇🚀"
 
-4. THE 3 TO 4 VALUE PILLARS (WITH EMOJIS & UPPERCASE HEADERS):
-Each pillar must start with an eye-catching emoji, a concise UPPERCASE title, followed by a colon and a punchy 1-2 sentence description. Include 3 or 4 of these:
-- ⚡ MASSIVE ACCESS FOR FRONTEND JOBS ONLY: Skip the clutter and focus 100% on UI, React, Next.js, Vue, TypeScript, and CSS roles. No backend noise.
-- ⚡ AGGREGATED FROM 100+ SOURCES: Stop jumping across dozens of tabs. We aggregate and verify frontend jobs from 100+ sources in one clean feed to save your time.
-- 🛡️ SAFE, ACCURATE & NO GHOST POSTS: Every single job is vetted and verified before going live so you never waste time on dead links, recruiter spam, or fake postings.
-- 🎯 DIRECT ATS & EMPLOYEE REFERRALS: Skip 500-applicant aggregator queues. Apply directly on company ATS portals (Greenhouse, Lever, Ashby) and get insider employee referrals.
+4. 3 TO 4 VALUE PILLARS (PACKED WITH EMOJIS & UPPERCASE HEADERS):
+Each pillar must start with 1-2 eye-catching emojis, an UPPERCASE title, followed by a colon and a punchy description. Include these key angles:
+- 🌍 ALL ROLES IN ONE PLACE: Aggregated from 100+ verified global sources into one clean feed. Say goodbye to tab overload and endless searching! 🛑💻
+- ⚡ 100% FRONTEND FOCUS: Pure React, Next.js, TypeScript, Vue, and Angular positions. Zero backend noise and zero non-technical clutter! 🎯💎
+- 🚀 DIRECT ATS & SKIP THE QUEUE: Bypass 500-applicant aggregator queues with direct Greenhouse, Lever, and Ashby application links! ⚡🏢
+- 🤝 INSIDER REFERRALS: Connect directly with developers inside top remote tech companies to get your resume to hiring managers! 🔥👥
 
-5. THE NO-BRAINER OFFER & PRICING:
-- "Ready to land your next big role? Upgrading your career shouldn't cost a fortune. You can unlock 1,000+ remote jobs with PRO access for just $9/month!"
-- Mention that landing one $120k-$200k+ role pays for this thousands of times over - literally $0.30 a day, cancel anytime.
+5. THE AGGRESSIVE $9 PRO SALES PITCH (MAKE IT AN IRRESISTIBLE NO-BRAINER):
+- Dedicated, high-energy section selling the $9/month subscription hard! 💰💎
+- Contrast the numbers: Why spend 3 to 6 months unemployed and stressed on broken free boards to save $9? 🤷‍♂️
+- For just $9/month - literally $0.30 a day, less than half a cup of coffee - PRO unlocks 1,000+ remote jobs, direct ATS links, and insider employee referrals! 🔓🚀
+- Landing just ONE remote frontend offer paying $100k-$180k+ pays for this subscription 10,000 times over! Cancel anytime with zero hassle. 📈💵
 
-6. THE ACTION LINKS (KEEP EXACTLY THESE TWO IN THE BODY):
+6. CALL TO ACTION & ACTION LINKS (PRESERVE EXACTLY THESE):
 🔍 Explore active roles:
 https://www.frontendengineers.com
 
 ⚡ Upgrade to PRO access here:
 https://www.frontendengineers.com/pricing
 
-7. HASHTAGS (8 HIGH-PERFORMING TECH HASHTAGS):
-Include exactly 8 targeted, high-performing hashtags at the very bottom:
+7. HASHTAGS (8 TARGETED HASHTAGS AT THE VERY END):
 #FrontendDeveloper #RemoteJobs #ReactJS #WebDevelopment #FrontendEngineers #JavaScript #TechJobs #WorkFromAnywhere
 
 ---
 CRITICAL RULES FOR LINKEDIN API:
-- LENGTH: Strictly 1100 to 1500 characters - optimal for dwell time, reader engagement, and readability.
-- NO LINK AT THE TOP: Do NOT put any link at the top. The post must start with the catchy sentence.
+- EMOJIS: Use LOTS of engaging, modern emojis throughout the entire post (🔥, 🚀, 💻, ⚡, 🌍, 🎯, 💰, ✨, 🛑, 💎, ⏳, 🤝, 📈, 🔓, 💵) to make it thumb-stopping and visually captivating!
+- LENGTH: Strictly 1100 to 1450 characters total - optimal for dwell time, mobile readability, and LinkedIn algorithm push.
 - NO MARKDOWN: Absolutely NO **bold**, NO *italics*, NO backticks.
 - NO PARENTHESES: DO NOT use parentheses. Use dashes - or commas instead. LinkedIn API truncates on parentheses.
-- Generous paragraph spacing for mobile readability.
+- Generous paragraph spacing with blank lines between sections for effortless mobile scanning.
 - Output the post strictly between these delimiters:
 ===POST_START===
 [Full text of the LinkedIn post here]
 ===POST_END===`;
   }
 
-  return `You are a high-converting tech career advisor and engineering founder.
+  return `You are an elite tech career growth expert and copywriter.
 
-Write a punchy, high-converting LinkedIn post (strictly 700 to 950 characters) about FrontendEngineers.com.
+Write a punchy, high-converting, EMOJI-RICH LinkedIn post (strictly 750 to 950 characters) designed to SELL the $9/month Pro subscription for FrontendEngineers.com and show developers why they NEVER need to visit another job board again.
 
 ---
 TODAY'S ANGLE:
@@ -208,13 +205,13 @@ TODAY'S ANGLE:
 
 ---
 CRITICAL POST STRUCTURE:
-1. THE FIRST LINE: Catchy hook containing "FrontendEngineers.com" and "remote frontend jobs" with an emoji. NO URLs at top.
-2. PAIN POINT & VALUE: Explain how generic boards waste dev time, and how FrontendEngineers.com provides verified, frontend-only roles.
+1. THE FIRST LINE: Catchy hook containing "FrontendEngineers.com" and "remote frontend jobs" with vibrant emojis (e.g., 🛑💻🚀 or ⚡🌍🔥). NO URLs at top.
+2. ALL-IN-ONE VALUE: Explain that developers do not need to check 10 different platforms anymore. We aggregate 100+ sources into one single feed.
 3. VALUE PILLARS (WITH EMOJIS):
-- ⚡ MASSIVE ACCESS FOR FRONTEND ONLY: Pure React, Vue, TypeScript, CSS roles.
-- 🌍 GLOBAL OPPORTUNITIES: Remote frontend jobs worldwide in one place.
-- 🛡️ SAFE & VERIFIED: No ghost jobs, zero spam.
-4. OFFER & PRICE: Unlock 1,000+ remote jobs with PRO access for just $9/month ($0.30/day).
+- 🌍 ALL ROLES IN ONE PLACE: 100+ sources aggregated into one clean screen. No more tab hopping! 💻✨
+- ⚡ 100% FRONTEND FOCUS: Pure React, Next.js, and TypeScript roles with zero clutter! 🎯
+- 🚀 DIRECT ATS & REFERRALS: Skip 500-applicant queues with direct Greenhouse/Lever links! 🔥
+4. THE $9 SALES PITCH: For just $9/month - literally $0.30 a day - unlock 1,000+ verified remote jobs, direct links, and insider referrals. A $120k+ remote role pays this back 10,000x over! 💰💎
 5. LINKS:
 🔍 Explore active roles:
 https://www.frontendengineers.com
@@ -226,7 +223,8 @@ https://www.frontendengineers.com/pricing
 
 ---
 CRITICAL RULES:
-- NO MARKDOWN: NO **bold**, NO *italics*, NO backticks.
+- EMOJIS: Use lots of vibrant emojis (🔥, 🚀, 💻, ⚡, 🌍, 🎯, 💰, ✨, 🛑, 💎, 🤝) throughout!
+- NO MARKDOWN: Absolutely NO **bold**, NO *italics*, NO backticks.
 - NO PARENTHESES: DO NOT use parentheses. Use dashes - or commas instead.
 - Output the post strictly between these delimiters:
 ===POST_START===
