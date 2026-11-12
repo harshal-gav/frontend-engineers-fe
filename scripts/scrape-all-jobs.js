@@ -14,6 +14,10 @@
 
 const fs = require('fs');
 const path = require('path');
+
+// Limit scraper to first 3 pages by default
+process.env.MAX_PAGES = process.env.MAX_PAGES || '3';
+
 const { runApiScraper } = require('./api-scraper.js');
 
 async function main() {
