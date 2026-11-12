@@ -254,39 +254,52 @@ async function fetchSafeJson(url, options = {}) {
 
 // ─── Source 1: RemoteFirstJobs API ────────────────────────────────────
 async function scrapeRemoteFirstJobs(jobs, existingApplyUrls, existingHashes, state) {
-  console.log('\n🌐 [1/7] Scraping RemoteFirstJobs API (?query=frontend)...');
+  console.log('\n🌐 [1/7] Scraping RemoteFirstJobs API (Full scrape - no page limit)...');
   let added = 0;
-  try {
-    const data = await fetchSafeJson('https://remotefirstjobs.com/api/search-jobs?query=frontend');
-    if (!data || !Array.isArray(data.jobs)) return 0;
+  let page = 1;
+  while (true) {
+    try {
+      const data = await fetchSafeJson(`https://remotefirstjobs.com/api/search-jobs?query=frontend&page=${page}`);
+      if (!data || !Array.isArray(data.jobs) || data.jobs.length === 0) break;
 
-    for (const job of data.jobs) {
-      const title = job.title || '';
-      const company = job.company_name || '';
-      const applyUrl = job.url || '';
-      const description = job.description || job.body || '';
-      const location = Array.isArray(job.locations) && job.locations.length > 0 ? job.locations.join(', ') : 'Global';
-      const logo = job.company_logo || '';
-      const publishedAt = job.published_at || '';
+      let allExpired = true;
+      for (const job of data.jobs) {
+        const title = job.title || '';
+        const company = job.company_name || '';
+        const applyUrl = job.url || '';
+        const description = job.description || job.body || '';
+        const location = Array.isArray(job.locations) && job.locations.length > 0 ? job.locations.join(', ') : 'Global';
+        const logo = job.company_logo || '';
+        const publishedAt = job.published_at || '';
 
-      const saved = buildAndSaveJob({
-        title,
-        companyName: company,
-        applyUrl,
-        description,
-        location,
-        country: location,
-        logoUrl: logo,
-        postedAt: publishedAt
-      }, jobs, existingApplyUrls, existingHashes, state);
+        const jobTime = publishedAt ? new Date(publishedAt).getTime() : Date.now();
+        if (!isNaN(jobTime) && (Date.now() - jobTime) <= THIRTY_DAYS_MS) {
+          allExpired = false;
+        }
 
-      if (saved) {
-        added++;
-        console.log(`  ✅ Saved: ${title} @ ${company}`);
+        const saved = buildAndSaveJob({
+          title,
+          companyName: company,
+          applyUrl,
+          description,
+          location,
+          country: location,
+          logoUrl: logo,
+          postedAt: publishedAt
+        }, jobs, existingApplyUrls, existingHashes, state);
+
+        if (saved) {
+          added++;
+          console.log(`  ✅ Saved: ${title} @ ${company}`);
+        }
       }
+
+      if (allExpired && data.jobs.length > 0) break;
+      page++;
+    } catch (err) {
+      console.log(`  ⚠️ RemoteFirstJobs error: ${err.message}`);
+      break;
     }
-  } catch (err) {
-    console.log(`  ⚠️ RemoteFirstJobs error: ${err.message}`);
   }
   console.log(`  ✨ RemoteFirstJobs completed. Added ${added} new jobs.`);
   return added;
@@ -346,9 +359,9 @@ async function scrapeJobicy(jobs, existingApplyUrls, existingHashes, state) {
   console.log('\n🌐 [3/7] Scraping Jobicy API (?tag=react, ?tag=frontend, & ?industry=dev)...');
   let added = 0;
   const endpoints = [
-    'https://jobicy.com/api/v2/remote-jobs?count=50&tag=frontend',
-    'https://jobicy.com/api/v2/remote-jobs?count=50&tag=react',
-    'https://jobicy.com/api/v2/remote-jobs?count=50&industry=dev'
+    'https://jobicy.com/api/v2/remote-jobs?count=100&tag=frontend',
+    'https://jobicy.com/api/v2/remote-jobs?count=100&tag=react',
+    'https://jobicy.com/api/v2/remote-jobs?count=100&industry=dev'
   ];
 
   for (const url of endpoints) {
@@ -438,28 +451,90 @@ async function scrapeRemotive(jobs, existingApplyUrls, existingHashes, state) {
 
 // ─── Source 5: Himalayas API ──────────────────────────────────────────
 async function scrapeHimalayas(jobs, existingApplyUrls, existingHashes, state) {
-  console.log('\n🌐 [5/7] Scraping Himalayas API (Client-side title & category filter)...');
+  console.log('\n🌐 [5/7] Scraping Himalayas API (Full scrape - no page limit)...');
   let added = 0;
-  try {
-    let cursor = '';
-    for (let page = 0; page < 3; page++) {
-      const url = cursor
-        ? `https://himalayas.app/jobs/api?cursor=${cursor}`
-        : `https://himalayas.app/jobs/api`;
-      
-      const data = await fetchSafeJson(url);
-      if (!data || !Array.isArray(data.jobs) || data.jobs.length === 0) break;
+  const queries = ['frontend', 'react'];
 
-      for (const job of data.jobs) {
+  for (const q of queries) {
+    let page = 1;
+    while (true) {
+      try {
+        const url = `https://himalayas.app/jobs/api/search?q=${q}&page=${page}`;
+        const data = await fetchSafeJson(url);
+        if (!data || !Array.isArray(data.jobs) || data.jobs.length === 0) break;
+
+        let allExpired = true;
+        for (const job of data.jobs) {
+          const publishedAt = job.pubDate ? new Date(job.pubDate * 1000).toISOString() : '';
+          const jobTime = publishedAt ? new Date(publishedAt).getTime() : Date.now();
+          if (!isNaN(jobTime) && (Date.now() - jobTime) <= THIRTY_DAYS_MS) {
+            allExpired = false;
+          }
+
+          const title = job.title || '';
+          const company = job.companyName || '';
+          const applyUrl = job.applicationLink || job.guid || '';
+          const description = job.description || job.excerpt || '';
+          const location = Array.isArray(job.locationRestrictions) && job.locationRestrictions.length > 0
+            ? job.locationRestrictions.join(', ')
+            : 'Worldwide';
+          const logo = job.companyLogo || '';
+
+          const saved = buildAndSaveJob({
+            title,
+            companyName: company,
+            applyUrl,
+            description,
+            location,
+            country: location,
+            logoUrl: logo,
+            postedAt: publishedAt
+          }, jobs, existingApplyUrls, existingHashes, state);
+
+          if (saved) {
+            added++;
+            console.log(`  ✅ Saved: ${title} @ ${company}`);
+          }
+        }
+
+        if (allExpired && data.jobs.length > 0) break;
+        page++;
+      } catch (err) {
+        console.log(`  ⚠️ Himalayas error for ${q} (page ${page}): ${err.message}`);
+        break;
+      }
+    }
+  }
+  console.log(`  ✨ Himalayas completed. Added ${added} new jobs.`);
+  return added;
+}
+
+// ─── Source 6: Arbeitnow API ──────────────────────────────────────────
+async function scrapeArbeitnow(jobs, existingApplyUrls, existingHashes, state) {
+  console.log('\n🌐 [6/7] Scraping Arbeitnow API (Full scrape - no page limit)...');
+  let added = 0;
+  let nextUrl = 'https://www.arbeitnow.com/api/job-board-api';
+
+  while (nextUrl) {
+    try {
+      const data = await fetchSafeJson(nextUrl);
+      if (!data || !Array.isArray(data.data) || data.data.length === 0) break;
+
+      let allExpired = true;
+      for (const job of data.data) {
+        if (job.remote !== true) continue;
+
+        const publishedAt = job.created_at ? new Date(job.created_at * 1000).toISOString() : '';
+        const jobTime = publishedAt ? new Date(publishedAt).getTime() : Date.now();
+        if (!isNaN(jobTime) && (Date.now() - jobTime) <= THIRTY_DAYS_MS) {
+          allExpired = false;
+        }
+
         const title = job.title || '';
-        const company = job.companyName || '';
-        const applyUrl = job.applicationLink || job.guid || '';
-        const description = job.description || job.excerpt || '';
-        const location = Array.isArray(job.locationRestrictions) && job.locationRestrictions.length > 0
-          ? job.locationRestrictions.join(', ')
-          : 'Worldwide';
-        const logo = job.companyLogo || '';
-        const publishedAt = job.pubDate ? new Date(job.pubDate * 1000).toISOString() : '';
+        const company = job.company_name || '';
+        const applyUrl = job.url || '';
+        const description = job.description || '';
+        const location = job.location || 'Remote';
 
         const saved = buildAndSaveJob({
           title,
@@ -468,7 +543,7 @@ async function scrapeHimalayas(jobs, existingApplyUrls, existingHashes, state) {
           description,
           location,
           country: location,
-          logoUrl: logo,
+          logoUrl: '',
           postedAt: publishedAt
         }, jobs, existingApplyUrls, existingHashes, state);
 
@@ -478,52 +553,12 @@ async function scrapeHimalayas(jobs, existingApplyUrls, existingHashes, state) {
         }
       }
 
-      cursor = data.nextCursor;
-      if (!cursor) break;
+      if (allExpired && data.data.length > 0) break;
+      nextUrl = data.links?.next || null;
+    } catch (err) {
+      console.log(`  ⚠️ Arbeitnow error: ${err.message}`);
+      break;
     }
-  } catch (err) {
-    console.log(`  ⚠️ Himalayas error: ${err.message}`);
-  }
-  console.log(`  ✨ Himalayas completed. Added ${added} new jobs.`);
-  return added;
-}
-
-// ─── Source 6: Arbeitnow API ──────────────────────────────────────────
-async function scrapeArbeitnow(jobs, existingApplyUrls, existingHashes, state) {
-  console.log('\n🌐 [6/7] Scraping Arbeitnow API (Client-side remote=true & title filter)...');
-  let added = 0;
-  try {
-    const data = await fetchSafeJson('https://www.arbeitnow.com/api/job-board-api');
-    if (!data || !Array.isArray(data.data)) return 0;
-
-    for (const job of data.data) {
-      if (job.remote !== true) continue;
-
-      const title = job.title || '';
-      const company = job.company_name || '';
-      const applyUrl = job.url || '';
-      const description = job.description || '';
-      const location = job.location || 'Remote';
-      const publishedAt = job.created_at ? new Date(job.created_at * 1000).toISOString() : '';
-
-      const saved = buildAndSaveJob({
-        title,
-        companyName: company,
-        applyUrl,
-        description,
-        location,
-        country: location,
-        logoUrl: '',
-        postedAt: publishedAt
-      }, jobs, existingApplyUrls, existingHashes, state);
-
-      if (saved) {
-        added++;
-        console.log(`  ✅ Saved: ${title} @ ${company}`);
-      }
-    }
-  } catch (err) {
-    console.log(`  ⚠️ Arbeitnow error: ${err.message}`);
   }
   console.log(`  ✨ Arbeitnow completed. Added ${added} new jobs.`);
   return added;
