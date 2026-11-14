@@ -1,9 +1,10 @@
 name: Post to LinkedIn (Remote Frontend Jobs, Referrals & Employer Hiring)
 
 on:
-  schedule:
-    # Run 4 times a day (every 6 hours at 00:00, 06:00, 12:00, 18:00 UTC)
-    - cron: '0 */6 * * *'
+  # Disabled - automated schedule disabled due to GitHub Actions usage limits
+  # schedule:
+  #   # Run 4 times a day (every 6 hours at 00:00, 06:00, 12:00, 18:00 UTC)
+  #   - cron: '0 */6 * * *'
   workflow_dispatch: {}  # Manual trigger for testing
 
 jobs:

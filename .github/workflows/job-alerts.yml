@@ -1,7 +1,8 @@
 name: Send Daily Job Alerts
 on:
-  schedule:
-    - cron: '0 9 * * *' # Runs every day at 9:00 AM UTC
+  # Disabled - automated schedule disabled due to GitHub Actions usage limits
+  # schedule:
+  #   - cron: '0 9 * * *' # Runs every day at 9:00 AM UTC
   workflow_dispatch: # Allows manual triggering for testing
 
 jobs:

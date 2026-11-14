@@ -1,9 +1,10 @@
 name: Revoke Expired Subscriptions
 
 on:
-  schedule:
-    # Run daily at midnight UTC
-    - cron: '0 0 * * *'
+  # Disabled - automated schedule disabled due to GitHub Actions usage limits
+  # schedule:
+  #   # Run daily at midnight UTC
+  #   - cron: '0 0 * * *'
   workflow_dispatch: {}  # Manual trigger
 
 jobs:

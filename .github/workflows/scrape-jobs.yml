@@ -1,9 +1,10 @@
 name: Scrape Remote Jobs (Remote APIs & LinkedIn)
 
 on:
-  schedule:
-    # Run once a day at 00:00 UTC
-    - cron: '0 0 * * *'
+  # Disabled - automated schedule disabled due to GitHub Actions usage limits
+  # schedule:
+  #   # Run once a day at 00:00 UTC
+  #   - cron: '0 0 * * *'
   workflow_dispatch: {}  # Manual trigger to run it whenever you want
 
 jobs:
