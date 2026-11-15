@@ -34,6 +34,7 @@
 
 const fs = require('fs');
 const path = require('path');
+const { chromium } = require('playwright');
 
 // Load environment variables if running locally without --env-file
 const envPath = path.resolve(__dirname, '../.env');
@@ -49,6 +50,8 @@ const DRY_RUN = process.argv.includes('--dry-run');
 const IS_SHORT = process.argv.includes('--short');
 const IS_LONG = !IS_SHORT; // Default to long-form high-performing post structure
 const IS_HOURLY = process.argv.includes('--hourly');
+const SKIP_COMPANY_PAGES = process.argv.includes('--no-company-pages');
+const COMPANY_PAGES_ONLY = process.argv.includes('--company-pages-only');
 const LOOP_ARG_INDEX = process.argv.indexOf('--loop');
 const LOOP_INTERVAL_MINUTES = IS_HOURLY
   ? 60
@@ -60,6 +63,24 @@ const GEMINI_API_KEY = process.env.GEMINI_API_KEY;
 const LINKEDIN_ACCESS_TOKEN = process.env.LINKEDIN_ACCESS_TOKEN;
 const LINKEDIN_PERSON_ID = process.env.LINKEDIN_PERSON_ID;
 const LINKEDIN_ORG_ID = process.env.LINKEDIN_ORG_ID;
+
+// Company pages managed by the LinkedIn account
+const COMPANY_PAGES = [
+  {
+    name: 'Frontend Engineers FE',
+    slug: 'frontend-engineers-fe',
+    orgId: '144480977',
+    adminUrl: 'https://www.linkedin.com/company/144480977/admin/page-posts/published/',
+    dashboardUrl: 'https://www.linkedin.com/company/144480977/admin/dashboard/'
+  },
+  {
+    name: 'Remote Frontend Developer Jobs',
+    slug: 'remote-frontend-developer-jobs',
+    orgId: '145381752',
+    adminUrl: 'https://www.linkedin.com/company/145381752/admin/page-posts/published/',
+    dashboardUrl: 'https://www.linkedin.com/company/145381752/admin/dashboard/'
+  }
+];
 
 if (!GEMINI_API_KEY) {
   console.error('❌ Missing GEMINI_API_KEY environment variable');
@@ -423,6 +444,207 @@ async function postToLinkedIn(text, authorUrn, accessToken) {
   throw new Error(`LinkedIn API error: ${res.status} ${errBody}`);
 }
 
+// ─── Playwright Automated Company Page Poster ────────────────
+
+function hydrateLinkedInAuthSession() {
+  const authPath = path.resolve(__dirname, '../data/linkedin-auth.json');
+  const dataDir = path.dirname(authPath);
+  if (!fs.existsSync(dataDir)) {
+    fs.mkdirSync(dataDir, { recursive: true });
+  }
+
+  const envAuth = process.env.LINKEDIN_AUTH_JSON || process.env.LINKEDIN_AUTH_DATA;
+  if (envAuth && !fs.existsSync(authPath)) {
+    try {
+      console.log('💧 Hydrating LinkedIn auth session from environment variable...');
+      fs.writeFileSync(authPath, envAuth.trim());
+    } catch (err) {
+      console.warn('⚠️ Could not write auth session from env:', err.message);
+    }
+  }
+
+  return authPath;
+}
+
+async function postToCompanyPagesWithPlaywright(postText) {
+  const authFile = hydrateLinkedInAuthSession();
+
+  if (!fs.existsSync(authFile)) {
+    console.log('ℹ️  Skipping Playwright company page posting: No session file found at data/linkedin-auth.json');
+    return { successCount: 0, totalPages: COMPANY_PAGES.length };
+  }
+
+  console.log('\n🎭 Starting Playwright automated company page poster...');
+  console.log(`📋 Target Company Pages (${COMPANY_PAGES.length}):`);
+  COMPANY_PAGES.forEach((p, idx) => console.log(`   ${idx + 1}. ${p.name}`));
+
+  // Browser launch mode (headed by default for local reliability, headless if specified)
+  const hasHeadedFlag = process.argv.includes('--headed') || process.env.HEADED === 'true';
+  const hasHeadlessFlag = process.argv.includes('--headless') || process.env.HEADLESS === 'true';
+  const isHeadless = hasHeadlessFlag || (process.env.CI === 'true' && !hasHeadedFlag);
+
+  console.log(`🖥️  Browser mode: ${isHeadless ? 'HEADLESS' : 'HEADED (visible window)'}`);
+
+  const browser = await chromium.launch({
+    headless: isHeadless,
+    slowMo: isHeadless ? 30 : 100,
+    args: isHeadless
+      ? ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']
+      : ['--start-maximized']
+  });
+
+  let successCount = 0;
+
+  try {
+    const context = await browser.newContext({
+      storageState: authFile,
+      viewport: isHeadless ? { width: 1280, height: 800 } : null,
+      userAgent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36'
+    });
+    const page = await context.newPage();
+
+    // 1. Session warmup on feed
+    console.log('🔐 Verifying LinkedIn session on feed...');
+    try {
+      await page.goto('https://www.linkedin.com/feed/', { waitUntil: 'domcontentloaded', timeout: 35000 });
+      await page.waitForTimeout(3000);
+    } catch (e) {
+      console.warn('   ⚠️ Feed navigation timeout or slow network, continuing...');
+    }
+
+    if (page.url().includes('/login') || page.url().includes('/authwall') || page.url().includes('/checkpoint/')) {
+      console.error('❌ LinkedIn session expired or challenge detected! Please re-login via `npm run linkedin:login`.');
+      await browser.close();
+      return { successCount: 0, totalPages: COMPANY_PAGES.length };
+    }
+
+    const cleanText = sanitizeForLinkedIn(postText);
+
+    // 2. Post to each company page
+    for (let i = 0; i < COMPANY_PAGES.length; i++) {
+      const comp = COMPANY_PAGES[i];
+      console.log(`\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+      console.log(`🏢 [${i + 1}/${COMPANY_PAGES.length}] Target Company Page: ${comp.name}`);
+      console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+
+      if (i > 0) {
+        console.log('   ⏳ Waiting 12s before posting to next company page to avoid rate limits...');
+        await page.waitForTimeout(12000);
+      }
+
+      try {
+        console.log(`   Navigating to admin page posts: ${comp.adminUrl}...`);
+        await page.goto(comp.adminUrl, { waitUntil: 'domcontentloaded', timeout: 35000 });
+        await page.waitForTimeout(4000);
+
+        // Check if "Start a post" button is directly available
+        let startBtn = await page.$('button:has-text("Start a post"), button.share-box-feed-entry__trigger, div[role="button"]:has-text("Start a post")');
+
+        // Fallback: If not on page-posts, try dashboard
+        if (!startBtn) {
+          console.log(`   Trying dashboard fallback for ${comp.name}...`);
+          await page.goto(comp.dashboardUrl, { waitUntil: 'domcontentloaded', timeout: 30000 });
+          await page.waitForTimeout(4000);
+
+          const createBtn = await page.$('button:has-text("Create"), a:has-text("Create")');
+          if (createBtn) {
+            await createBtn.click();
+            await page.waitForTimeout(1500);
+            startBtn = await page.$('span:has-text("Start a post"), div:has-text("Start a post"), [role="dialog"] button:has-text("Start a post")');
+          }
+        }
+
+        if (!startBtn) {
+          throw new Error(`Could not locate "Start a post" button on ${comp.name} admin page.`);
+        }
+
+        console.log('   Clicking "Start a post" button...');
+        await startBtn.click();
+        await page.waitForTimeout(2500);
+
+        // Find the modal and editor
+        const modal = await page.$('.share-box-v2__modal, [role="dialog"]');
+        if (!modal) {
+          throw new Error(`Share modal did not open on ${comp.name}.`);
+        }
+
+        const editor = await modal.$('div.ql-editor[contenteditable="true"], div[aria-label="Text editor for creating content"], div[role="textbox"]');
+        if (!editor) {
+          throw new Error(`Text editor inside modal did not open on ${comp.name}.`);
+        }
+
+        console.log('   Focusing post editor and inserting content...');
+        await editor.click();
+        await page.waitForTimeout(500);
+
+        // Insert full post text
+        await page.keyboard.insertText(cleanText);
+        await page.waitForTimeout(2000);
+
+        // Locate real Post submit button scoped strictly to primary action
+        const postBtn = await modal.$('button.share-actions__primary-action');
+        if (!postBtn) {
+          throw new Error(`"Post" button not found inside share modal on ${comp.name}.`);
+        }
+
+        const isPostReady = await postBtn.evaluate(btn => !btn.disabled && btn.getAttribute('aria-disabled') !== 'true');
+        if (!isPostReady) {
+          throw new Error(`"Post" button remained disabled after inserting content on ${comp.name}.`);
+        }
+
+        // Click real Post button
+        console.log('   🚀 Submitting post to ' + comp.name + '...');
+        await postBtn.click();
+
+        // Wait for modal to dismiss and success confirmation toast
+        console.log('   ⏳ Waiting for post publication confirmation...');
+        let isPublished = false;
+
+        for (let waitSec = 0; waitSec < 15; waitSec++) {
+          await page.waitForTimeout(1000);
+          const state = await page.evaluate(() => {
+            const alerts = Array.from(document.querySelectorAll('.artdeco-toast-item, .artdeco-inline-feedback, [role="alert"]'))
+              .map(a => (a.innerText || '').toLowerCase());
+            const hasSuccess = alerts.some(t => t.includes('post successful') || t.includes('shared') || t.includes('published'));
+            const shareModal = document.querySelector('.share-box-v2__modal');
+            return { hasSuccess, modalGone: !shareModal };
+          });
+
+          if (state.hasSuccess || state.modalGone) {
+            isPublished = true;
+            break;
+          }
+        }
+
+        if (!isPublished) {
+          throw new Error(`Modal did not close or publish confirmation timed out on ${comp.name}.`);
+        }
+
+        console.log(`   ✅ Successfully published post to company page "${comp.name}"!`);
+        successCount++;
+      } catch (err) {
+        console.error(`   ❌ Failed to post on "${comp.name}":`, err.message);
+        // Attempt to dismiss modal if stuck
+        try {
+          await page.keyboard.press('Escape');
+          const discardBtn = await page.$('button:has-text("Discard")');
+          if (discardBtn) await discardBtn.click();
+        } catch (_) {}
+      }
+    }
+
+    // Save updated session state
+    try {
+      await context.storageState({ path: authFile });
+    } catch (_) {}
+
+  } finally {
+    await browser.close().catch(() => {});
+  }
+
+  return { successCount, totalPages: COMPANY_PAGES.length };
+}
+
 // ─── Main Execution ──────────────────────────────────────────
 
 async function runSinglePostingCycle() {
@@ -448,78 +670,93 @@ async function runSinglePostingCycle() {
 
   if (DRY_RUN) {
     console.log('\n✅ LinkedIn DRY RUN complete. Post successfully generated!');
+    console.log('\n📋 Configured Target Destinations:');
+    if (!COMPANY_PAGES_ONLY && LINKEDIN_ACCESS_TOKEN && (LINKEDIN_PERSON_ID || LINKEDIN_ORG_ID)) {
+      console.log('   🔹 LinkedIn REST API targets:');
+      if (LINKEDIN_PERSON_ID) console.log(`      - Personal Profile (urn:li:person:${LINKEDIN_PERSON_ID})`);
+      if (LINKEDIN_ORG_ID) console.log(`      - Organization (urn:li:organization:${LINKEDIN_ORG_ID})`);
+    }
+    if (!SKIP_COMPANY_PAGES) {
+      console.log('   🔹 Playwright Company Pages:');
+      COMPANY_PAGES.forEach((p, idx) => console.log(`      ${idx + 1}. ${p.name} (${p.adminUrl})`));
+    }
     return;
   }
 
-  // 2. Discover all configured LinkedIn accounts
-  const accounts = [];
-
-  // Primary Account
-  if (LINKEDIN_ACCESS_TOKEN && (LINKEDIN_PERSON_ID || LINKEDIN_ORG_ID)) {
-    accounts.push({
-      token: LINKEDIN_ACCESS_TOKEN,
-      personId: LINKEDIN_PERSON_ID,
-      orgId: LINKEDIN_ORG_ID,
-      name: 'Primary Account'
-    });
-  }
-
-  // Additional Accounts (e.g., LINKEDIN_ACCESS_TOKEN_2, _3, etc.)
-  let idx = 2;
-  while (process.env[`LINKEDIN_ACCESS_TOKEN_${idx}`]) {
-    const pId = process.env[`LINKEDIN_PERSON_ID_${idx}`];
-    const oId = process.env[`LINKEDIN_ORG_ID_${idx}`];
-    if (pId || oId) {
-      accounts.push({
-        token: process.env[`LINKEDIN_ACCESS_TOKEN_${idx}`],
-        personId: pId,
-        orgId: oId,
-        name: `Account ${idx}`
-      });
-    }
-    idx++;
-  }
-
-  if (accounts.length === 0) {
-    console.error('❌ Missing LINKEDIN_ACCESS_TOKEN or (LINKEDIN_PERSON_ID / LINKEDIN_ORG_ID) in environment variables.');
-    process.exit(1);
-  }
-
-  console.log(`\n📤 Publishing post to ${accounts.length} LinkedIn account(s)...`);
-
   let totalPublished = 0;
 
-  for (const acc of accounts) {
-    console.log(`\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
-    console.log(`➡️  Target Account: ${acc.name}`);
-    console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+  // 2. Discover and publish to configured LinkedIn REST API accounts
+  if (!COMPANY_PAGES_ONLY) {
+    const accounts = [];
 
-    // Target URNs for this account
-    const targets = [];
-    if (acc.personId) targets.push({ type: 'Personal Profile', urn: `urn:li:person:${acc.personId}` });
-    if (acc.orgId) targets.push({ type: 'Company Page', urn: `urn:li:organization:${acc.orgId}` });
+    // Primary Account
+    if (LINKEDIN_ACCESS_TOKEN && (LINKEDIN_PERSON_ID || LINKEDIN_ORG_ID)) {
+      accounts.push({
+        token: LINKEDIN_ACCESS_TOKEN,
+        personId: LINKEDIN_PERSON_ID,
+        orgId: LINKEDIN_ORG_ID,
+        name: 'Primary Account'
+      });
+    }
 
-    for (let i = 0; i < targets.length; i++) {
-      const target = targets[i];
-      if (i > 0) {
-        console.log('   ⏳ Waiting 10s before publishing to next target...');
-        await new Promise(r => setTimeout(r, 10000));
+    // Additional Accounts (e.g., LINKEDIN_ACCESS_TOKEN_2, _3, etc.)
+    let idx = 2;
+    while (process.env[`LINKEDIN_ACCESS_TOKEN_${idx}`]) {
+      const pId = process.env[`LINKEDIN_PERSON_ID_${idx}`];
+      const oId = process.env[`LINKEDIN_ORG_ID_${idx}`];
+      if (pId || oId) {
+        accounts.push({
+          token: process.env[`LINKEDIN_ACCESS_TOKEN_${idx}`],
+          personId: pId,
+          orgId: oId,
+          name: `Account ${idx}`
+        });
       }
+      idx++;
+    }
 
-      try {
-        console.log(`\n   Posting to ${target.type} (${target.urn})...`);
-        const res = await postToLinkedIn(post, target.urn, acc.token);
-        console.log(`   ✅ Successfully posted! Post ID: ${res.postId}`);
-        totalPublished++;
-      } catch (err) {
-        if (err.message.includes('AUTHENTICATION_FAILED') || err.message.includes('RESTRICTED_MEMBER') || err.message.includes('401')) {
-          console.warn(`   ⚠️ Authentication failed for ${acc.name} (${target.type}): Account token is expired or restricted.`);
-          console.warn(`   💡 Run 'npm run linkedin:auth' to re-authenticate this account.`);
-        } else {
-          console.error(`   ❌ Failed to post to ${target.type}: ${err.message}`);
+    if (accounts.length > 0) {
+      console.log(`\n📤 Publishing post via REST API to ${accounts.length} LinkedIn account(s)...`);
+
+      for (const acc of accounts) {
+        console.log(`\n━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+        console.log(`➡️  Target Account (REST API): ${acc.name}`);
+        console.log(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
+
+        // Target URNs for this account
+        const targets = [];
+        if (acc.personId) targets.push({ type: 'Personal Profile', urn: `urn:li:person:${acc.personId}` });
+        if (acc.orgId) targets.push({ type: 'Company Page', urn: `urn:li:organization:${acc.orgId}` });
+
+        for (let i = 0; i < targets.length; i++) {
+          const target = targets[i];
+          if (i > 0) {
+            console.log('   ⏳ Waiting 10s before publishing to next target...');
+            await new Promise(r => setTimeout(r, 10000));
+          }
+
+          try {
+            console.log(`\n   Posting to ${target.type} (${target.urn})...`);
+            const res = await postToLinkedIn(post, target.urn, acc.token);
+            console.log(`   ✅ Successfully posted! Post ID: ${res.postId}`);
+            totalPublished++;
+          } catch (err) {
+            if (err.message.includes('AUTHENTICATION_FAILED') || err.message.includes('RESTRICTED_MEMBER') || err.message.includes('401')) {
+              console.warn(`   ⚠️ Authentication failed for ${acc.name} (${target.type}): Account token is expired or restricted.`);
+              console.warn(`   💡 Run 'npm run linkedin:auth' to re-authenticate this account.`);
+            } else {
+              console.error(`   ❌ Failed to post to ${target.type}: ${err.message}`);
+            }
+          }
         }
       }
     }
+  }
+
+  // 3. Publish to Company Pages via Playwright
+  if (!SKIP_COMPANY_PAGES) {
+    const pwResult = await postToCompanyPagesWithPlaywright(post);
+    totalPublished += pwResult.successCount;
   }
 
   if (totalPublished > 0) {

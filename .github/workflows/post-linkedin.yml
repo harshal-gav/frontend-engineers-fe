@@ -30,6 +30,7 @@ jobs:
       - name: Run LinkedIn Auto-Poster (Remote Frontend Jobs, Referrals & Employers)
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          LINKEDIN_AUTH_JSON: ${{ secrets.LINKEDIN_AUTH_JSON }}
           LINKEDIN_ACCESS_TOKEN: ${{ secrets.LINKEDIN_ACCESS_TOKEN }}
           LINKEDIN_PERSON_ID: ${{ secrets.LINKEDIN_PERSON_ID }}
           LINKEDIN_ORG_ID: ${{ secrets.LINKEDIN_ORG_ID }}
