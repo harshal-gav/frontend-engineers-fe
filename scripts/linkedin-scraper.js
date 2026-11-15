@@ -16,9 +16,10 @@
  * - Generates fast regex AI enrichment tags on insertion
  * 
  * Usage:
- *   node scripts/linkedin-scraper.js
+ *   node scripts/linkedin-scraper.js            (runs in headed mode by default)
+ *   node scripts/linkedin-scraper.js --headless (runs in headless mode)
  *   npm run scrape:linkedin
- *   MAX_PAGES=3 MAX_COUNTRIES=10 HEADED=true node scripts/linkedin-scraper.js
+ *   MAX_PAGES=3 MAX_COUNTRIES=10 node scripts/linkedin-scraper.js
  *   COUNTRY="Germany" node scripts/linkedin-scraper.js
  */
 
@@ -240,6 +241,61 @@ const ALL_COUNTRIES = [
   "Zambia",
 ];
 
+// Comprehensive LinkedIn GeoID mapping for accurate country targeting
+const LINKEDIN_GEO_IDS = {
+  "United States": "103644278",
+  "United Kingdom": "101165590",
+  "Canada": "101174742",
+  "Germany": "101282230",
+  "India": "102713980",
+  "Australia": "101452733",
+  "Netherlands": "102890719",
+  "France": "105015875",
+  "Spain": "105646813",
+  "Ireland": "104738515",
+  "Switzerland": "106693272",
+  "Poland": "105072130",
+  "Brazil": "106057199",
+  "Singapore": "102454443",
+  "Sweden": "105117694",
+  "Japan": "101355337",
+  "Israel": "101620260",
+  "Italy": "103350119",
+  "Mexico": "103323778",
+  "Romania": "106670623",
+  "Portugal": "100364837",
+  "Austria": "103883259",
+  "Denmark": "104514075",
+  "Norway": "103819153",
+  "Finland": "100456013",
+  "New Zealand": "105490917",
+  "Argentina": "100446943",
+  "Colombia": "100876405",
+  "Chile": "104621616",
+  "Czech Republic": "104769905",
+  "Belgium": "100565514",
+  "South Africa": "105365761",
+  "United Arab Emirates": "104305770",
+  "Estonia": "104990846",
+  "Greece": "104677530",
+  "Hungary": "100288700",
+  "Indonesia": "102478259",
+  "Malaysia": "106808692",
+  "Philippines": "103121230",
+  "Taiwan": "104187078",
+  "Thailand": "105490917",
+  "Turkey": "102105699",
+  "Ukraine": "102264497",
+  "Vietnam": "104195383",
+  "Nigeria": "102410884",
+  "Pakistan": "101022442",
+  "Egypt": "106155005",
+  "Kenya": "100710459",
+  "Saudi Arabia": "100459316",
+  "South Korea": "105149562",
+  "Hong Kong": "103291313"
+};
+
 function resolveCountries() {
   if (process.env.COUNTRIES) {
     return process.env.COUNTRIES.split(',').map(s => s.trim()).filter(Boolean);
@@ -355,8 +411,9 @@ function isStrictFrontend(title, location = '', description = '', checkId = '') 
   // Check blocked targets
   if (checkId && BLOCKED_TARGETS.some(b => checkId.includes(b))) return false;
 
-  // 1. MUST contain frontend
-  if (!/front[\s-]*end/i.test(t)) {
+  // 1. MUST contain frontend or pure UI frontend technologies
+  const isFrontendRole = /(front[\s-]*end|react(\.js)?\b|next\.?js|vue(\.js)?\b|angular\b|svelte\b|ui\s+(developer|engineer)|web\s+developer)/i.test(t);
+  if (!isFrontendRole) {
     return false;
   }
 
@@ -476,8 +533,12 @@ async function runLinkedInScraper() {
 
   console.log("\n🔑 Loading saved LinkedIn session...");
 
-  // Headless mode enabled for CI and automated scraping (set HEADED=true for local headed mode)
-  const isHeadless = process.env.HEADED !== "true";
+  // Default to headed mode for visible browser window; allow --headless or HEADLESS=true
+  const hasHeadedFlag = process.argv.includes('--headed') || process.env.HEADED === 'true';
+  const hasHeadlessFlag = process.argv.includes('--headless') || process.env.HEADLESS === 'true';
+  const isHeadless = hasHeadlessFlag || (process.env.CI === 'true' && !hasHeadedFlag);
+
+  console.log(`🖥️  Browser mode: ${isHeadless ? 'HEADLESS' : 'HEADED (visible browser window)'}`);
   const browser = await chromium.launch({
     headless: isHeadless,
     slowMo: isHeadless ? 30 : 150,
@@ -555,9 +616,18 @@ async function runLinkedInScraper() {
 
     console.log(`\n🌍 Discovering jobs in ${country}...`);
     
-    const jobsUrl = new URL("https://www.linkedin.com/jobs/search/");
-    jobsUrl.searchParams.set("keywords", SEARCH_QUERY);
-    jobsUrl.searchParams.set("location", country);
+    const geoId = LINKEDIN_GEO_IDS[country];
+    const jobsUrl = new URL("https://www.linkedin.com/jobs/search-results/");
+    if (country === "Worldwide") {
+      jobsUrl.searchParams.set("keywords", "frontend developer remote");
+    } else if (geoId) {
+      jobsUrl.searchParams.set("keywords", "frontend developer remote");
+      jobsUrl.searchParams.set("location", country);
+      jobsUrl.searchParams.set("geoId", geoId);
+    } else {
+      jobsUrl.searchParams.set("keywords", `frontend developer in ${country} remote`);
+      jobsUrl.searchParams.set("location", country);
+    }
     jobsUrl.searchParams.set("f_WT", "2"); // Remote
     jobsUrl.searchParams.set("sortBy", "DD"); // Most recent
     
@@ -568,6 +638,21 @@ async function runLinkedInScraper() {
     }
     await sleep(LONG);
     await dismissModals(page);
+
+    // Guard against stale cached search (e.g. Zimbabwe redirect or stuck query)
+    try {
+      const pageText = await page.evaluate(() => document.body ? document.body.innerText.slice(0, 1500) : "");
+      if (country !== "Zimbabwe" && pageText.includes("Zimbabwe")) {
+        console.log(`   ⚠️ Detected stale cached Zimbabwe search! Re-routing directly for ${country}...`);
+        const searchInput = await page.$('input[placeholder*="Describe the job"], input[id*="jobs-search-box"]');
+        if (searchInput) {
+          await searchInput.fill(`frontend developer in ${country} remote`);
+          await page.keyboard.press("Enter");
+          await sleep(LONG);
+          await dismissModals(page);
+        }
+      }
+    } catch (_) {}
 
     // Check if there are no exact matches
     let noResults = null;
