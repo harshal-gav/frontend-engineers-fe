@@ -81,27 +81,72 @@ function cleanHtmlText(html) {
 
 /**
  * Strict filtering rules:
- * 1. Title MUST have "frontend" / "front-end" / "front end"
- * 2. Title MUST NOT contain "full stack", "fullstack", "backend", "back end"
- * 3. Title or Location MUST NOT contain "hybrid", "on-site", "onsite", "relocation provided"
+ * 1. Title MUST have "frontend" / "front-end" / "front end" or core UI technologies (react, next.js, vue, angular, svelte, ui developer/engineer, web developer)
+ * 2. Title MUST NOT contain:
+ *    - Backend & Fullstack: backend, back-end, back end, fullstack, full-stack, full stack
+ *    - Specific backend languages & frameworks: c#, csharp, python, flask, django, fastapi, java (not javascript), spring, .net, dotnet, asp.net, c++, embedded, firmware, ruby, rails, php, laravel, symfony, wordpress, golang, rust, node, nodejs, express, nest, nestjs, mern, mean, lamp, blazor
+ *    - Enterprise backend / CMS / ERP: sharepoint, salesforce, sap, erp, odoo, netsuite
+ *    - DevOps & Cloud: devops, sre, sysadmin, infrastructure, kubernetes, docker, terraform, cloud engineer
+ *    - Data & ML: data engineer, data scientist, machine learning, ml, ai/ml, big data, etl, database, dba, postgres, sql, mongodb
+ *    - QA / Testing: qa, sdet, quality assurance, test engineer, test automation
+ * 3. Title or Location MUST NOT contain "hybrid", "on-site", "onsite", "relocation provided", "in-office"
  * 4. Must not match blocked IDs/slugs
  */
-function isStrictFrontend(title, location = '', _description = '', checkId = '') {
+function isStrictFrontend(title, location = '', description = '', checkId = '') {
   if (!title) return false;
-  const t = title.toLowerCase();
+  const t = title.trim();
 
   // Check blocked targets
   if (checkId && BLOCKED_TARGETS.some(b => checkId.includes(b))) return false;
 
-  // 1. MUST contain frontend
-  if (!/front[\s-]*end/i.test(t)) {
+  // 1. MUST contain frontend or pure UI frontend technologies
+  const isFrontendRole = /(front[\s-]*end|react(\.js)?\b|next\.?js|vue(\.js)?\b|angular\b|svelte\b|ui\s+(developer|engineer)|web\s+developer|client[\s-]*side)/i.test(t);
+  if (!isFrontendRole) {
     return false;
   }
 
-  // 2. Negative filter: NO Full Stack or Backend in title
-  if (/\b(full[\s-]*stack|fullstack|back[\s-]*end|backend)\b/i.test(t)) {
-    return false;
-  }
+  // 2. Negative filter: Backend, fullstack, and backend tech in title
+  // C# and C-Sharp
+  if (/(?:^|[^a-z0-9])c#(?![a-z0-9])/i.test(t)) return false;
+  if (/\b(csharp|c-sharp)\b/i.test(t)) return false;
+
+  // Python, Flask, Django, FastAPI
+  if (/\b(python|flask|django|fastapi)\b/i.test(t)) return false;
+
+  // Backend & Fullstack generic
+  if (/\b(back[\s-]*end|backend|back\s+end)\b/i.test(t)) return false;
+  if (/\b(full[\s-]*stack|fullstack|full\s+stack)\b/i.test(t)) return false;
+
+  // Java (except JavaScript) & Spring
+  if (/\bjava\b(?!script)/i.test(t)) return false;
+  if (/\b(spring[\s-]*boot|spring|j2ee|hibernate)\b/i.test(t)) return false;
+
+  // .NET & C++
+  if (/(?:^|[^a-z0-9])\.net\b/i.test(t)) return false;
+  if (/\b(dotnet|asp\.net|c\+\+|embedded|firmware)\b/i.test(t)) return false;
+
+  // PHP, Laravel, Symfony, WordPress, Ruby, Rails
+  if (/\b(php|laravel|symfony|codeigniter|wordpress)\b/i.test(t)) return false;
+  if (/\b(ruby|rails)\b/i.test(t)) return false;
+
+  // Golang, Rust
+  if (/\b(golang|go\s+developer|go\s+engineer|rust)\b/i.test(t)) return false;
+
+  // Node.js, Express, NestJS backend, MERN, MEAN
+  if (/\b(node(\.js)?|nodejs|express(\.js)?|nest(\.js)?|nestjs)\b/i.test(t)) return false;
+  if (/\b(mern|mean|lamp)\b/i.test(t)) return false;
+
+  // Blazor, Enterprise backend CMS/ERP
+  if (/\b(blazor|sharepoint|salesforce|sap|erp|odoo|netsuite)\b/i.test(t)) return false;
+
+  // DevOps, Cloud, SRE
+  if (/\b(devops|sre|sysadmin|infrastructure|kubernetes|docker|terraform|cloud\s+engineer|aws\s+cloud)\b/i.test(t)) return false;
+
+  // Data Engineering, AI/ML backend
+  if (/\b(data\s+engineer|data\s+scientist|machine\s+learning|\bai\/ml\b|\bml\b|big\s+data|etl|database|dba|postgres|sql|mongodb)\b/i.test(t)) return false;
+
+  // QA & Testing
+  if (/\b(qa\b|sdet|quality\s+assurance|test\s+engineer|test\s+automation)\b/i.test(t)) return false;
 
   // 3. Negative filter: NO On-site / Hybrid / Relocation in title
   if (/\b(hybrid|on-site|onsite|relocation\s+provided|in-office)\b/i.test(t)) {
@@ -112,6 +157,14 @@ function isStrictFrontend(title, location = '', _description = '', checkId = '')
   if (location) {
     const loc = location.toLowerCase();
     if (/\b(on-site|onsite|hybrid|in-office)\b/i.test(loc)) {
+      return false;
+    }
+  }
+
+  // 5. Check description for non-frontend roles
+  if (description) {
+    const d = description.toLowerCase();
+    if (/\b(full[\s-]*stack engineer|full[\s-]*stack developer|backend engineer|backend developer|java developer|c# developer|\.net developer|python developer|django developer)\b/i.test(d)) {
       return false;
     }
   }
