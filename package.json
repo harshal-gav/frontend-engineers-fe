@@ -13,6 +13,7 @@
     "linkedin:auth": "node scripts/linkedin-auth-setup.js",
     "linkedin:login": "node scripts/linkedin-login.js",
     "linkedin:post": "node scripts/post-to-linkedin.js",
+    "linkedin:post:company": "node scripts/post-to-linkedin.js --company-pages-only",
     "linkedin:post:dry": "node scripts/post-to-linkedin.js --dry-run",
     "linkedin:hourly": "node scripts/post-to-linkedin.js --hourly",
     "scrape": "node scripts/scrape-all-jobs.js",

@@ -59,11 +59,23 @@ const AUTH_FILE = path.join(DATA_DIR, 'linkedin-auth.json');
   console.log('║     here to this terminal and press [ENTER] to save session.   ║');
   console.log('╚════════════════════════════════════════════════════════════════╝\n');
 
-  // Wait for the user to press Enter in terminal
-  await new Promise((resolve) => {
-    process.stdin.resume();
-    process.stdin.once('data', resolve);
-  });
+  // Wait for either the user to reach the feed OR press Enter in the terminal
+  console.log('⏳ Waiting for login... (will auto-detect once you reach your feed, or press [ENTER])');
+  await Promise.race([
+    page.waitForURL((url) => {
+      const u = url.toString();
+      return u.includes('/feed') || u.includes('/company') || u.includes('/mynetwork');
+    }, { timeout: 300000 }).catch(() => {}),
+    new Promise((resolve) => {
+      if (process.stdin.isTTY) {
+        process.stdin.resume();
+        process.stdin.once('data', resolve);
+      }
+    })
+  ]);
+
+  // Give the browser 3 seconds to fully set all persistent session cookies
+  await page.waitForTimeout(3000).catch(() => {});
 
   // Save auth state
   await context.storageState({ path: AUTH_FILE });
