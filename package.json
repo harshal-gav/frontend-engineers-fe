@@ -13,12 +13,15 @@
     "linkedin:auth": "node scripts/linkedin-auth-setup.js",
     "linkedin:login": "node scripts/linkedin-login.js",
     "linkedin:post": "node scripts/post-to-linkedin.js",
+    "linkedin:post:headless": "node scripts/post-to-linkedin.js --headless",
     "linkedin:post:company": "node scripts/post-to-linkedin.js --company-pages-only",
+    "linkedin:post:company:headless": "node scripts/post-to-linkedin.js --company-pages-only --headless",
     "linkedin:post:dry": "node scripts/post-to-linkedin.js --dry-run",
     "linkedin:hourly": "node scripts/post-to-linkedin.js --hourly",
     "scrape": "node scripts/scrape-all-jobs.js",
     "scrape:api": "node scripts/api-scraper.js",
-    "scrape:linkedin": "node scripts/linkedin-scraper.js"
+    "scrape:linkedin": "node scripts/linkedin-scraper.js",
+    "scrape:linkedin:headless": "node scripts/linkedin-scraper.js --headless"
   },
   "dependencies": {
     "@dodopayments/nextjs": "^0.3.9",
