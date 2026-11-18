@@ -300,8 +300,10 @@ function resolveCountries() {
   if (process.env.COUNTRIES) {
     return process.env.COUNTRIES.split(',').map(s => s.trim()).filter(Boolean);
   }
-  if (process.env.COUNTRY || process.argv[2]) {
-    const raw = process.env.COUNTRY || process.argv[2];
+  // Ignore CLI flags like --headless or --headed when checking for a positional country argument
+  const positionalCountry = process.argv.slice(2).find(arg => !arg.startsWith('-'));
+  if (process.env.COUNTRY || positionalCountry) {
+    const raw = process.env.COUNTRY || positionalCountry;
     return raw.split(',').map(s => s.trim()).filter(Boolean);
   }
   return ALL_COUNTRIES;
